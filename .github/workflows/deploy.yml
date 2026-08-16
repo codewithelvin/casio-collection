@@ -86,15 +86,31 @@ jobs:
       # This is the failure mode that is invisible in local development, where
       # Vite's dev server rewrites for free. Without this step, D13 breaking is
       # something a visitor discovers by refreshing a shared link.
+      # The status code is NOT the thing to assert here, and the first version
+      # of this step got it wrong. GitHub Pages serves a custom 404.html with
+      # its *body* but keeps the **404 status** — that is the mechanism, not a
+      # fault. A deep link therefore returns 404 while working perfectly: the
+      # browser loads the shell, the router reads the path, and the right route
+      # renders. Asserting 200 can never pass on Pages.
+      #
+      # What proves D13 is that the response body is our app shell rather than
+      # GitHub's generic "There isn't a GitHub Pages site here" page. If the
+      # 404.html copy ever stops happening, this body check is what catches it.
       - name: Smoke test a deep link
         run: |
           url="${{ steps.deployment.outputs.page_url }}watch/ga-2100-1a1"
           echo "GET $url"
           for attempt in 1 2 3 4 5; do
-            code=$(curl -sS -o /dev/null -w '%{http_code}' -L "$url" || echo 000)
-            echo "attempt $attempt: HTTP $code"
-            [ "$code" = "200" ] && exit 0
+            response=$(curl -sS -L -w '\n%{http_code}' "$url" || true)
+            code=$(printf '%s' "$response" | tail -n1)
+            body=$(printf '%s' "$response" | sed '$d')
+            if printf '%s' "$body" | grep -q 'id="root"' \
+               && printf '%s' "$body" | grep -q 'casio-collection/assets/'; then
+              echo "attempt $attempt: HTTP $code, app shell served — SPA fallback works"
+              exit 0
+            fi
+            echo "attempt $attempt: HTTP $code, body is not the app shell"
             sleep 10
           done
-          echo "Deep link did not return 200 — the 404.html SPA fallback is not working (D13)."
+          echo "The deep link did not return the app shell — the 404.html SPA fallback is broken (D13)."
           exit 1
