@@ -102,6 +102,7 @@ const en = {
   'watch.notFound.body':
     'It may not have been sourced yet. Nothing enters this catalogue without a page to read it off.',
   'watch.specs': 'Specification',
+  'watch.zoom': 'View larger',
   'watch.otherInSeries': 'Other models in this series',
   'watch.officialPage': 'Casio product page',
   'watch.leavesSite': 'opens casio.com',
@@ -114,6 +115,10 @@ const en = {
   // D41 — the credit under a photograph. "Photograph by" and not "Image from":
   // the licence asks for the person, not the website.
   'image.creditBy': 'Photograph by',
+  // The distinction is the point: "by" names someone who granted a licence,
+  // "from" names a page a file was taken from under D11.
+  'image.creditFrom': 'Photograph from',
+  'licence.rights-reserved': 'All rights reserved',
   'licence.cc-by-sa-4.0': 'CC BY-SA 4.0',
   'licence.cc-by-sa-3.0': 'CC BY-SA 3.0',
   'licence.cc-by-4.0': 'CC BY 4.0',
@@ -146,14 +151,14 @@ const en = {
   // meta description so it travels with a link preview (FR-10.4).
   'footer.disclaimer':
     'An independent, non-commercial project, not affiliated with or endorsed by Casio Computer Co., Ltd.',
-  // D41 changed this line. It used to read "Product images and reference codes
-  // are the property of Casio Computer Co., Ltd.", which stopped being true the
-  // moment a photograph taken by somebody else appeared on the site: that file
-  // belongs to the person who took it, under a licence with terms. Reference
-  // codes and product names are still Casio's, and the sentence now says only
-  // what it can support.
+  // Two claims, because there are two kinds of picture here (D41): Casio's
+  // product photography, and photographs licensed to us by whoever took them.
+  // It was drafted at three sentences and cut back to two — the footer is small
+  // print carrying a legal position, and a legal position nobody finishes
+  // reading is not doing its job. The detail belongs on the watch, where the
+  // credit under the picture says exactly which kind it is.
   'footer.attribution':
-    'Reference codes and product names are the property of Casio Computer Co., Ltd. Photographs are used under the licence each one names, and are credited on the watch they show.',
+    'Reference codes and product photography are the property of Casio Computer Co., Ltd. Other photographs are credited on the watch they show.',
   'footer.source': 'Source code',
   'footer.catalogVersion': 'Catalogue',
   'footer.madeBy': 'Made by Claude for Casio Lovers',
@@ -249,6 +254,7 @@ const LICENCE_LABELS: Record<string, StringKey> = {
   'cc0-1.0': 'licence.cc0-1.0',
   'public-domain': 'licence.public-domain',
   'own-work': 'licence.own-work',
+  'rights-reserved': 'licence.rights-reserved',
 }
 
 /**

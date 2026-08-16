@@ -25,4 +25,8 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 50
     features: [world-time, multi-alarm, hourly-time-signal, telememo, stopwatch]
-    image: null
+    image: bgp-200
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-bgp-200'

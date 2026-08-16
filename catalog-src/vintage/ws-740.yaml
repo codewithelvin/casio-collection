@@ -23,4 +23,8 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 100
     features: [alarm, stopwatch, dual-time, countdown-timer]
-    image: null
+    image: ws-740
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ws-740'

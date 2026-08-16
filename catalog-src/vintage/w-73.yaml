@@ -23,4 +23,8 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, stopwatch, dual-time, countdown-timer]
-    image: null
+    image: w-73
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_w-73'

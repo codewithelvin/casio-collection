@@ -24,4 +24,8 @@ models:
     case: { material: resin }
     water_resistance_m: 100
     features: [multi-alarm, stopwatch, dual-time, countdown-timer]
-    image: null
+    image: ts-100
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_ts-100-1v'

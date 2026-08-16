@@ -22,4 +22,8 @@ models:
     module: '1527'
     case: { material: chrome plated resin }
     features: [alarm, stopwatch]
-    image: null
+    image: a168
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-a168'

@@ -1,7 +1,17 @@
 import { Layout, theme as antdTheme } from 'antd'
 import { t } from '../i18n/strings'
 
-const REPO_URL = 'https://github.com/codewithelvin/casio-vault'
+/**
+ * D39 renames the repository to `casio-vault` and this line was written against
+ * that name — but **the rename has not been done**, so the link 404s on the live
+ * site. An audit found it; a visitor would have found it too.
+ *
+ * It points at the repository that exists. The day the rename happens, GitHub
+ * redirects the old name indefinitely, so this keeps working either way — which
+ * is exactly why D39 says the rename has to be a deliberate act rather than
+ * something noticed when it breaks.
+ */
+const REPO_URL = 'https://github.com/codewithelvin/casio-collection'
 
 /**
  * FR-10.3 — in this order: the D11 non-affiliation notice, the image

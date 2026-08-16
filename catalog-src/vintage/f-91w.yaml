@@ -70,7 +70,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Black with gold accent ring
-    image: null
+    image: f-91wg-9
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91w-3
     ref: F-91W-3
@@ -87,7 +91,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Black with dark green accents
-    image: null
+    image: f-91w-3
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   # --- WC, the monochrome series ------------------------------------------
   - id: f-91wc-2a
@@ -105,7 +113,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Light blue monochrome
-    image: null
+    image: f-91wc-2a
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91wc-3
     ref: F-91WC-3
@@ -122,7 +134,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Green monochrome
-    image: null
+    image: f-91wc-3
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91wc-4a
     ref: F-91WC-4A
@@ -139,7 +155,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Pink monochrome
-    image: null
+    image: f-91wc-4a
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91wc-4a2
     ref: F-91WC-4A2
@@ -156,7 +176,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Orange monochrome
-    image: null
+    image: f-91wc-4a2
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91wc-8a
     ref: F-91WC-8A
@@ -173,7 +197,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Cream monochrome
-    image: null
+    image: f-91wc-8a
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91wc-9a
     ref: F-91WC-9A
@@ -190,7 +218,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Yellow monochrome
-    image: null
+    image: f-91wc-9a
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   # --- WM, the metallic series --------------------------------------------
   - id: f-91wm-1b
@@ -208,7 +240,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Metallic grey case, black strap
-    image: null
+    image: f-91wm-1b
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91wm-2a
     ref: F-91WM-2A
@@ -225,7 +261,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Metallic blue case, black strap
-    image: null
+    image: f-91wm-2a
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91wm-3a
     ref: F-91WM-3A
@@ -242,7 +282,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Metallic olive case, black strap
-    image: null
+    image: f-91wm-3a
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91wm-7a
     ref: F-91WM-7A
@@ -259,7 +303,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Metallic silver case, black strap
-    image: null
+    image: f-91wm-7a
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91wm-9a
     ref: F-91WM-9A
@@ -276,7 +324,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Metallic gold case, black strap
-    image: null
+    image: f-91wm-9a
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   # --- WS, the translucent series -----------------------------------------
   - id: f-91ws-2
@@ -294,7 +346,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Translucent light blue
-    image: null
+    image: f-91ws-2
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91ws-4
     ref: F-91WS-4
@@ -311,7 +367,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Translucent pink
-    image: null
+    image: f-91ws-4
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91ws-7
     ref: F-91WS-7
@@ -328,7 +388,11 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Translucent white
-    image: null
+    image: f-91ws-7
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
 
   - id: f-91ws-8
     ref: F-91WS-8
@@ -345,4 +409,8 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Translucent grey
-    image: null
+    image: f-91ws-8
+    image_credit:
+      author: Casio Restore
+      licence: rights-reserved
+      url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'

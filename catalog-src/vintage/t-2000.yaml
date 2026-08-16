@@ -22,4 +22,8 @@ models:
     module: '219'
     case: { material: stainless steel }
     features: [alarm, stopwatch, dual-time]
-    image: null
+    image: t-2000
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-t-2000'

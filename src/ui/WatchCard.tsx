@@ -24,6 +24,13 @@ import { LINE_ACCENTS } from '../theme/tokens'
  * puts the code under the image because the image cannot say it; a tile that has
  * just said it in 28 px does not need a second, smaller copy underneath.
  */
+/**
+ * The caption block, at its tallest: a reference line (14 px at AntD's 1.571
+ * line-height) over a name-and-year line (12 px at 1.667), plus 12 px of
+ * padding top and bottom. Every card reserves it whether it fills it or not.
+ */
+const CAPTION_HEIGHT = 22 + 20 + 24
+
 export function WatchCard({
   model,
   seriesName,
@@ -51,7 +58,20 @@ export function WatchCard({
       // NFR-7 — explicit geometry so the grid does not reflow as images arrive.
       width={400}
       height={400}
-      style={{ aspectRatio: '1 / 1', objectFit: 'contain', width: '100%', padding: 12 }}
+      // `height: auto` is load-bearing and its absence is invisible on a desktop
+      // grid. The `height` attribute above resolves to a used height of 400 px,
+      // which **wins over `aspect-ratio`** — so in a 170 px column on a phone the
+      // cover stayed 400 px tall and letterboxed the watch inside half a screen
+      // of empty card. Letting the height be computed puts the ratio back in
+      // charge; the attributes still do their NFR-7 job of reserving the space
+      // before the file arrives.
+      style={{
+        aspectRatio: '1 / 1',
+        objectFit: 'contain',
+        width: '100%',
+        height: 'auto',
+        padding: 12,
+      }}
     />
   ) : (
     <div
@@ -100,7 +120,15 @@ export function WatchCard({
       <Card
         hoverable
         cover={cover}
-        styles={{ body: { padding: 12 } }}
+        // §8.6 — a photograph card and a typographic card are **the same
+        // height**, and until M3 that was only true by luck. A photograph card
+        // captions two lines (the reference, then the name and year) where a
+        // typographic one captions at most one, because the tile has already
+        // set the reference in 28 px. One card a line taller than its
+        // neighbours stretches the whole grid row and leaves the others with a
+        // gap under them. Reserving the caption's height makes the geometry a
+        // constant instead of a consequence of which watches got photographed.
+        styles={{ body: { padding: 12, minHeight: CAPTION_HEIGHT } }}
         style={{ height: '100%', borderTop: `3px solid ${lineAccent}` }}
       >
         {sources ? (

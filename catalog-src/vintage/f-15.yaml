@@ -21,4 +21,8 @@ models:
     year: 1984
     module: '350'
     case: { material: resin }
-    image: null
+    image: f-15
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_f-151'

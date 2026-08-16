@@ -43,6 +43,10 @@ prevents is silent — nothing goes red, the catalogue just becomes untrue.
 5. **Write only inside `catalog-src/` and `public/img/models/`** (plus the two
    confirmed exceptions above). Never `src/`, never the migrations, never the
    workflow, and never anything in the specification vault.
+   - **5a. Never publish an image you cannot say where you got** (D41). Every
+     image carries `image_credit` — author or source, the basis, and the page —
+     and check 5a fails the build without it. Never invent a licence: if the
+     page does not state one, it is `rights-reserved` under D11.
 6. **Never leave the repo failing `npm run catalog:validate`.** If a run cannot
    end clean, revert your own changes and report why. There is one gate and this
    is it.
@@ -78,6 +82,10 @@ models:
     features: [alarm, stopwatch, el-backlight]
     colorway: Black
     image: f-91w-1 # or null — null is normal and not a failure
+    image_credit: # required with an image, refused without one (D41, check 5a)
+      author: Multicherry
+      licence: cc-by-sa-4.0 # or rights-reserved for a file used under D11
+      url: 'https://commons.wikimedia.org/wiki/File:…'
     official_url: 'https://…'
     discontinued: true
 ```
@@ -185,17 +193,43 @@ Only the images missing from a series that is already written.
 2. Find a usable photograph. Product shot, watch roughly filling the frame, plain
    or transparent ground. A wrist shot, a lifestyle photo or a listing collage is
    not usable — leave it and say so.
-3. Save into `catalog-src/images/raw/<id>.<ext>`. **The filename is the model
+3. **Prove it is the right watch before taking it.** The test that has actually
+   worked: the _filename_ carries the reference with a boundary after it —
+   `Casio-F-91W-1-Black.png` is F-91W-1 and `Casio-F-91WM-1B-Metallic.png` is
+   not, and a substring match hands the second to the first. Where the source
+   names its files `50016.jpg`, the page's own lead image is the best available
+   evidence and is **not** proof: look at it, and prefer a dial that prints the
+   model name. Anything you could not verify is reported, not written.
+4. Save into `catalog-src/images/raw/<id>.<ext>`. **The filename is the model
    id** — that is the whole convention, and `catalog:images` refuses a filename
    that could not be one. Raw files are not committed.
-4. `npm run catalog:images` normalises to 400 px and 800 px WebP into
+5. `npm run catalog:images` normalises to 400 px and 800 px WebP into
    `public/img/models/`. It refuses anything over the 40 KB / 110 KB budgets —
    crop the source or find a cleaner one; do not lower the budget.
-5. Set `image: <id>` on the model and validate.
+6. Set `image: <id>` **and `image_credit`** on the model, then validate. The
+   credit is not optional and check 5a fails the build without it (D41):
 
-An image that cannot be found honestly is `image: null`. The typographic card is
-a designed primary state, not a fallback, and it is the correct rendering for a
-watch nobody has photographed cleanly.
+   ```yaml
+   image: f-91w-1
+   image_credit:
+     author: Multicherry # the person, for a licensed file; the site, otherwise
+     licence: cc-by-sa-4.0 # or rights-reserved for a file used under D11
+     url: 'https://commons.wikimedia.org/wiki/File:…' # the page it came from
+   ```
+
+**Two rules about where an image may come from (D41).** A freely licensed
+photograph — Wikimedia Commons, the wider CC pool, or the client's own — is
+credited by its author under its own licence. Casio's product photography and an
+archive's or a retailer's is `rights-reserved`, credited to the source, used
+under D11: non-commercial, attributed, withdrawn in full on request. **Never
+guess a licence.** If the page does not say, it is `rights-reserved`.
+
+**Do not publish a photograph narrower than 300 px.** It renders softer than the
+typographic tile it replaces, and that tile is a designed primary state rather
+than a fallback — a blurry picture is a downgrade, not an improvement.
+
+An image that cannot be found honestly is `image: null`, and so is one you could
+not verify. Ten of the sixty-one Vintage references sit that way on purpose.
 
 ### `/casio-catalog audit`
 

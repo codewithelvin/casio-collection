@@ -23,17 +23,25 @@ export const SOURCE_KINDS = ['official', 'retailer', 'community'] as const
 export type SourceKind = (typeof SOURCE_KINDS)[number]
 
 /**
- * D41 — the licences a catalogue photograph may carry.
+ * D41 — the basis on which a catalogue photograph is published.
  *
  * A controlled list for the same reason the feature list is one, and with more
- * at stake: a free-text licence field would let `CC BY-SA 4.0` and `CC-BY-SA
- * 4.0` and `Creative Commons` all be written for the same file, and a claim
- * about the right to use somebody's photograph is not a field to be casual
- * about. Every value here is a licence whose terms this site can actually meet
- * — credit the author, name the licence, link to both.
+ * at stake: free text would let `CC BY-SA 4.0` and `CC-BY-SA 4.0` and
+ * `Creative Commons` all be written for the same file, and a claim about the
+ * right to use somebody's photograph is not a field to be casual about.
  *
- * `own-work` is the site owner's own photograph, which needs no permission and
- * is still credited, because a reader cannot tell the difference by looking.
+ * The first five are **licences** — terms this site can meet by crediting the
+ * author, naming the licence and linking to both. `own-work` is the site
+ * owner's own photograph, which needs no permission and is still credited,
+ * because a reader cannot tell the difference by looking.
+ *
+ * `rights-reserved` is **not a licence and does not pretend to be one**. It is
+ * Casio's product photography, and photography published by a retailer or an
+ * enthusiast archive, used under D11's position: non-commercial, attributed,
+ * and taken down in full on request. Recording it as its own value rather than
+ * leaving the field blank is the D27 argument applied to pictures — a catalogue
+ * that shows its working can be corrected, and one that hides it cannot. The
+ * reader is told which kind of thing they are looking at.
  */
 export const IMAGE_LICENCES = [
   'cc-by-sa-4.0',
@@ -42,10 +50,16 @@ export const IMAGE_LICENCES = [
   'cc0-1.0',
   'public-domain',
   'own-work',
+  'rights-reserved',
 ] as const
 export type ImageLicence = (typeof IMAGE_LICENCES)[number]
 
-/** Where each licence's own terms live. A credit that cannot be checked is decoration. */
+/**
+ * Where each licence's own terms live. A credit that cannot be checked is
+ * decoration. The two empty strings are the two values that have no terms to
+ * link to — the owner's own photograph, and a file used under D11 rather than
+ * under a grant.
+ */
 export const IMAGE_LICENCE_URLS: Record<ImageLicence, string> = {
   'cc-by-sa-4.0': 'https://creativecommons.org/licenses/by-sa/4.0/',
   'cc-by-sa-3.0': 'https://creativecommons.org/licenses/by-sa/3.0/',
@@ -53,7 +67,16 @@ export const IMAGE_LICENCE_URLS: Record<ImageLicence, string> = {
   'cc0-1.0': 'https://creativecommons.org/publicdomain/zero/1.0/',
   'public-domain': 'https://en.wikipedia.org/wiki/Public_domain',
   'own-work': '',
+  'rights-reserved': '',
 }
+
+/**
+ * Whether the photograph carries an actual grant. `Photograph **by** Ashley
+ * Pomeroy` names a person who licensed their work; `Photograph **from** the
+ * Digital Watch Library` names a page it was taken from. Saying "by" over a
+ * file nobody granted would dress a borrowing up as a licence.
+ */
+export const isLicensed = (licence: string): boolean => licence !== 'rights-reserved'
 
 /** What the dial shows. Three values, and they are exhaustive for Casio. */
 export const DISPLAYS = ['digital', 'analog', 'ana-digi'] as const

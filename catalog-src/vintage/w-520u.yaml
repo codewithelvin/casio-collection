@@ -24,4 +24,8 @@ models:
     case: { material: resin }
     water_resistance_m: 100
     features: [world-time, multi-alarm, hourly-time-signal, stopwatch, countdown-timer]
-    image: null
+    image: w-520u
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-w-520u'

@@ -1,6 +1,15 @@
 import type { ReactNode } from 'react'
 import { useEffect } from 'react'
-import { Alert, Breadcrumb, Card, Descriptions, Tag, Typography, theme as antdTheme } from 'antd'
+import {
+  Alert,
+  Breadcrumb,
+  Card,
+  Descriptions,
+  Image,
+  Tag,
+  Typography,
+  theme as antdTheme,
+} from 'antd'
 import ExportOutlined from '@ant-design/icons/ExportOutlined'
 import ProfileOutlined from '@ant-design/icons/ProfileOutlined'
 import SafetyCertificateOutlined from '@ant-design/icons/SafetyCertificateOutlined'
@@ -24,7 +33,7 @@ import {
   useCatalog,
 } from '../../catalog/client.ts'
 import type { Catalog, ImageCredit, PublishedModel } from '../../catalog/schema.ts'
-import { IMAGE_LICENCE_URLS } from '../../catalog/vocabulary.ts'
+import { IMAGE_LICENCE_URLS, isLicensed } from '../../catalog/vocabulary.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
 import { LINE_ACCENTS } from '../../theme/tokens'
@@ -130,18 +139,34 @@ function WatchDetail({
         />
       ) : null}
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24, marginBottom: 24 }}>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 24,
+          marginBottom: 24,
+          // Without this the short column stretches to the tall one's height and
+          // the photograph floats in the middle of its own half.
+          alignItems: 'flex-start',
+        }}
+      >
         <div style={{ flex: '0 1 320px', minWidth: 240 }}>
           {sources ? (
             <>
-              <img
+              {/* Click to enlarge. A catalogue photograph is the one thing on
+                  this page a collector wants closer — the dial text, the case
+                  finish, the exact shade of a colourway — and the 2× file is
+                  already downloaded for the retina case, so the larger view
+                  costs nothing to serve. */}
+              <Image
                 src={sources.src}
                 srcSet={sources.srcSet}
                 alt={model.ref}
-                width={400}
-                height={400}
+                width="100%"
+                height="auto"
                 decoding="async"
-                style={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'contain' }}
+                preview={{ mask: t('watch.zoom') }}
+                style={{ aspectRatio: '1 / 1', objectFit: 'contain' }}
               />
               <ImageCreditLine credit={model.image_credit} />
             </>
@@ -204,33 +229,44 @@ function WatchDetail({
 
           {/* FR-3.3's Owned One and Wishlist controls belong here. They arrive
               with M5, on top of M4's auth — see the note in WatchCard. */}
+
+          {/* The specification lives **beside** the picture, not under it. It
+              read the other way until M3 and the cost was only visible once
+              there were photographs to look at: a 320 px image left the whole
+              right-hand half of a laptop screen empty while the table it should
+              have been sitting next to queued up underneath. The wrap does the
+              responsive work — one column on a phone, two side by side from
+              about 700 px, and no breakpoint written down anywhere. */}
+          <SectionHeading icon={<ProfileOutlined />} text={t('watch.specs')} />
+          {rows.length === 0 ? (
+            <Typography.Paragraph type="secondary">{t('watch.noSpecs')}</Typography.Paragraph>
+          ) : (
+            /* One column, not a responsive pair. `column` is resolved against
+               the **window** and not against the element, so a two-column table
+               inside a 380 px panel on a 1440 px screen breaks "1989" into four
+               stacked digits — correct by AntD's rules and unreadable. */
+            <Descriptions bordered size="small" column={1} items={rows} />
+          )}
+
+          {model.features?.length ? (
+            <div style={{ marginTop: 16 }}>
+              {model.features.map((feature) => (
+                <Tag key={feature} style={{ marginBottom: 8 }}>
+                  {featureLabel(feature)}
+                </Tag>
+              ))}
+            </div>
+          ) : null}
+
+          {/* FR-3.2a — what kind of page this was read off, linked to the page. */}
+          <SectionHeading icon={<SafetyCertificateOutlined />} text={t('watch.sourceHeading')} />
+          <Typography.Paragraph style={{ marginBottom: 0 }}>
+            <a href={model.source.url} target="_blank" rel="noreferrer noopener">
+              {sourceLabel(model.source.kind)} <ExportOutlined />
+            </a>
+          </Typography.Paragraph>
         </div>
       </div>
-
-      <SectionHeading icon={<ProfileOutlined />} text={t('watch.specs')} />
-      {rows.length === 0 ? (
-        <Typography.Paragraph type="secondary">{t('watch.noSpecs')}</Typography.Paragraph>
-      ) : (
-        <Descriptions bordered size="small" column={{ xs: 1, md: 2 }} items={rows} />
-      )}
-
-      {model.features?.length ? (
-        <div style={{ marginTop: 16 }}>
-          {model.features.map((feature) => (
-            <Tag key={feature} style={{ marginBottom: 8 }}>
-              {featureLabel(feature)}
-            </Tag>
-          ))}
-        </div>
-      ) : null}
-
-      {/* FR-3.2a — what kind of page this was read off, linked to the page. */}
-      <SectionHeading icon={<SafetyCertificateOutlined />} text={t('watch.sourceHeading')} />
-      <Typography.Paragraph>
-        <a href={model.source.url} target="_blank" rel="noreferrer noopener">
-          {sourceLabel(model.source.kind)} <ExportOutlined />
-        </a>
-      </Typography.Paragraph>
 
       {/* FR-3.4 — the rest of the series, excluding this model.
           FR-3.4 originally specified a horizontally scrollable strip. The client
@@ -258,26 +294,12 @@ function WatchDetail({
                   style={{ height: '100%', borderTop: `3px solid ${accent}` }}
                   styles={{ body: { padding: 0 } }}
                 >
-                  {/* The same typographic tile as the grid, in miniature, so the
-                      strip reads as the catalogue rather than as a list of
-                      links. §8.6 all the way down. */}
-                  <div
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '18px 8px',
-                      background: `${accent}14`,
-                      fontFamily: token.fontFamilyCode,
-                      fontSize: 14,
-                      fontWeight: 600,
-                      wordBreak: 'break-word',
-                      textAlign: 'center',
-                      color: token.colorText,
-                    }}
-                  >
-                    {other.ref}
-                  </div>
+                  {/* §8.6 all the way down: the photograph where there is one,
+                      the typographic tile where there is not. Until D41 there
+                      never was one, so this was written as a tile and nothing
+                      revealed the omission — a strip of tiles under a page with
+                      a photograph on it reads as a different catalogue. */}
+                  <OtherTile model={other} accent={accent} />
                   {other.colorway || other.year ? (
                     <div style={{ padding: '8px 10px' }}>
                       <Typography.Paragraph
@@ -410,14 +432,68 @@ function SectionHeading({ icon, text }: { icon: ReactNode; text: string }) {
 }
 
 /** Loading geometry that matches the detail layout, not a generic spinner. */
+/** FR-3.4's tile: the photograph at 148 px where there is one, the reference set
+ *  in the mono face where there is not. Same rule as the card, same geometry. */
+function OtherTile({ model, accent }: { model: PublishedModel; accent: string }) {
+  const { token } = antdTheme.useToken()
+  const sources = imageSources(model.image)
+
+  if (sources) {
+    return (
+      <img
+        src={sources.src}
+        srcSet={sources.srcSet}
+        alt={model.ref}
+        loading="lazy"
+        decoding="async"
+        width={148}
+        height={148}
+        // `height: auto` for the same reason as the card — see WatchCard.
+        style={{
+          width: '100%',
+          height: 'auto',
+          aspectRatio: '1 / 1',
+          objectFit: 'contain',
+          display: 'block',
+        }}
+      />
+    )
+  }
+
+  return (
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        aspectRatio: '1 / 1',
+        padding: '8px',
+        background: `${accent}14`,
+        fontFamily: token.fontFamilyCode,
+        fontSize: 14,
+        fontWeight: 600,
+        wordBreak: 'break-word',
+        textAlign: 'center',
+        color: token.colorText,
+      }}
+    >
+      {model.ref}
+    </div>
+  )
+}
+
 /**
- * D41 — the photograph says whose it is.
+ * FR-3.2b / D41 — the photograph says where it came from and on what footing.
  *
- * Every image in this catalogue is used under a licence that asks for credit by
- * name, and the honest place for that credit is beneath the picture rather than
- * in a list at the bottom of the site. Two links, because a credit that cannot
- * be checked is decoration: one to the page the file came from, one to the
- * licence it came under.
+ * Some of these files are licensed to us by the person who took them and some
+ * are used under D11 without a grant at all, and **the reader is told which**.
+ * That is D27's argument applied to pictures: a catalogue that shows its
+ * working can be corrected, and one that hides it cannot. *Photograph by* names
+ * someone who licensed their work; *Photograph from* names a page a file was
+ * taken off. Saying "by" over a borrowing would dress it up as a licence.
+ *
+ * The credit sits beneath the picture rather than in a list at the bottom of
+ * the site, because for the licensed ones attribution is the term of use.
  */
 function ImageCreditLine({ credit }: { credit: ImageCredit | undefined }) {
   const { token } = antdTheme.useToken()
@@ -425,6 +501,7 @@ function ImageCreditLine({ credit }: { credit: ImageCredit | undefined }) {
 
   const licenceUrl = IMAGE_LICENCE_URLS[credit.licence]
   const licence = imageLicenceLabel(credit.licence)
+  const lead = isLicensed(credit.licence) ? t('image.creditBy') : t('image.creditFrom')
 
   return (
     <div
@@ -438,7 +515,7 @@ function ImageCreditLine({ credit }: { credit: ImageCredit | undefined }) {
       }}
     >
       <a href={credit.url} target="_blank" rel="noopener noreferrer">
-        {`${t('image.creditBy')} ${credit.author}`}
+        {`${lead} ${credit.author}`}
       </a>
       {licenceUrl ? (
         <a href={licenceUrl} target="_blank" rel="noopener noreferrer">

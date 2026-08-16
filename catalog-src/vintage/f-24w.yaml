@@ -21,4 +21,8 @@ models:
     year: 1986
     module: '586'
     case: { material: resin }
-    image: null
+    image: f-24w
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-f-24w'

@@ -23,4 +23,8 @@ models:
     module: '643'
     case: { material: chrome plated resin }
     features: [alarm, stopwatch, dual-time, countdown-timer]
-    image: null
+    image: a300u
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-a300u'
