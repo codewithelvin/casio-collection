@@ -12,21 +12,38 @@ const REPO_URL = 'https://github.com/codewithelvin/casio-collection'
  * Casio's product line (D21), the mark is their bezel (D34) and the colour is
  * their corporate blue. Together those read as an official Casio property,
  * which is precisely what D11 says this is not. This sentence is what pays for
- * the design — so it is set at body size in the normal text colour, and the
- * jokey line below it is the one that gets muted.
+ * the design — so it is set at body size in the normal text colour.
+ *
+ * Everything *else* is one wrapping line of small print, which is the whole
+ * shape of this component. Four stacked paragraphs took a screenful on a phone
+ * for content that is legally required rather than useful, and principle 5 says
+ * the phone is the real device. The requirement is that the **notice** carries
+ * weight, not that the footer does: the attribution, the source link and the
+ * version are metadata and read as metadata, and the closing line stays last
+ * because FR-10.3 says the footer closes with it.
  */
 export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
   const { token } = antdTheme.useToken()
+
+  // A separator glyph rather than a string: it is punctuation between items,
+  // it is hidden from assistive technology, and there is nothing in it for a
+  // second locale to translate. D12's rule is about user-facing *text*, which is
+  // why this is written as an expression and not as JSX text.
+  const separator = (
+    <span aria-hidden="true" style={{ opacity: 0.5 }}>
+      {'·'}
+    </span>
+  )
 
   return (
     <Layout.Footer
       style={{
         borderTop: `1px solid ${token.colorBorderSecondary}`,
-        padding: '24px 16px',
+        padding: '12px 16px',
         background: token.colorBgContainer,
       }}
     >
-      <div style={{ maxWidth: 960, margin: '0 auto', display: 'grid', gap: 8 }}>
+      <div style={{ maxWidth: 960, margin: '0 auto', display: 'grid', gap: 4 }}>
         <p
           style={{
             margin: 0,
@@ -40,14 +57,17 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
         <p
           style={{
             margin: 0,
-            fontSize: token.fontSize,
-            lineHeight: token.lineHeight,
+            display: 'flex',
+            flexWrap: 'wrap',
+            columnGap: 6,
+            rowGap: 2,
+            fontSize: token.fontSizeSM,
+            lineHeight: token.lineHeightSM,
             color: token.colorTextSecondary,
           }}
         >
-          {t('footer.attribution')}
-        </p>
-        <p style={{ margin: 0, fontSize: token.fontSizeSM, color: token.colorTextSecondary }}>
+          <span>{t('footer.attribution')}</span>
+          {separator}
           <a href={REPO_URL} rel="noreferrer noopener" target="_blank">
             {t('footer.source')}
           </a>
@@ -56,19 +76,14 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
               exist yet (principle 4). */}
           {catalogVersion ? (
             <>
-              {' · '}
-              {t('footer.catalogVersion')} {catalogVersion}
+              {separator}
+              <span>
+                {t('footer.catalogVersion')} {catalogVersion}
+              </span>
             </>
           ) : null}
-        </p>
-        <p
-          style={{
-            margin: '4px 0 0',
-            fontSize: token.fontSizeSM,
-            color: token.colorTextTertiary,
-          }}
-        >
-          {t('footer.madeBy')}
+          {separator}
+          <span style={{ color: token.colorTextTertiary }}>{t('footer.madeBy')}</span>
         </p>
       </div>
     </Layout.Footer>

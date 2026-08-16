@@ -4,6 +4,16 @@ coverage
 playwright-report
 test-results
 
+# §6.2 / §14.3 — catalog.json is a build artefact emitted by `catalog:build`
+# ahead of the Vite build, not a committed file. The source of truth is the YAML
+# under catalog-src/, which is what a git diff should be showing.
+public/catalog
+
+# §10.3 — raw source images are dropped here at whatever size they arrive in and
+# are never committed. What ships is the normalised WebP under
+# public/img/models/, which is.
+catalog-src/images/raw
+
 # S2 — the service-role key lives in an untracked local file used only by
 # /casio-catalog requests (§10.7). It never reaches the browser, never becomes a
 # GitHub secret, and never lands here.

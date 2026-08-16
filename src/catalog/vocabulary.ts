@@ -1,0 +1,129 @@
+/**
+ * The controlled vocabularies — §10.2 check 6.
+ *
+ * A typo in a facet value does not fail: it becomes a **new facet value with a
+ * count of one**, sitting in the filter bar under a name nobody will ever type,
+ * hiding the watch it was meant to describe. That is the silent failure this
+ * file exists to make impossible, so these lists are enforced by the schema at
+ * parse time rather than checked afterwards — a bad value cannot be written into
+ * the catalogue at all.
+ *
+ * The lists are deliberately the **facetable fields and only those** (FR-1.3:
+ * year, display, movement, feature). Everything else a model carries — the case
+ * material, the colourway, the module number — is spec-table decoration read by
+ * a human, and a controlled vocabulary over free description buys nothing.
+ *
+ * These lists **grow**, and growing one is an explicit, reported step (§10.6
+ * guardrail 4). The skill may never add a value silently, because a vocabulary
+ * that grows on its own is the same thing as no vocabulary.
+ */
+
+/** D27 / FR-D1 — where a model's data was read from, shown to the reader. */
+export const SOURCE_KINDS = ['official', 'retailer', 'community'] as const
+export type SourceKind = (typeof SOURCE_KINDS)[number]
+
+/** What the dial shows. Three values, and they are exhaustive for Casio. */
+export const DISPLAYS = ['digital', 'analog', 'ana-digi'] as const
+export type Display = (typeof DISPLAYS)[number]
+
+/**
+ * How the watch is driven, in the terms a collector uses rather than a
+ * horologist's. "Solar" is strictly a power source rather than a movement, but
+ * *Tough Solar* is how Casio sells it and how a buyer searches for it, and a
+ * facet exists to be recognised. A watch that is both solar and radio-synced is
+ * one value, not two, because that is the combination Casio ships and names.
+ */
+export const MOVEMENTS = ['quartz', 'solar', 'solar-radio', 'automatic', 'manual'] as const
+export type Movement = (typeof MOVEMENTS)[number]
+
+/**
+ * Feature tags. The rule for adding one: it has to be something a **product
+ * page states plainly** and a collector would filter by. "Water resistant" is
+ * not here because `water_resistance_m` is a number; "shock resistant" is,
+ * because on a Casio it is a claim printed on the case rather than a measurement.
+ *
+ * Starting narrow is deliberate. A short list makes the skill stop and report
+ * when it meets something new, which is where a human decides whether it is
+ * genuinely a new feature or a new name for one already here.
+ */
+export const FEATURES = [
+  // Timekeeping
+  'world-time',
+  'stopwatch',
+  'countdown-timer',
+  'alarm',
+  'multi-alarm',
+  'dual-time',
+  'calendar',
+  'full-auto-calendar',
+  'hourly-time-signal',
+  // Light
+  'led-light',
+  'el-backlight',
+  'super-illuminator',
+  'auto-light',
+  'afterglow',
+  // Synchronisation and power
+  'radio-controlled',
+  'bluetooth',
+  'tough-solar',
+  'power-saving',
+  // Sensors
+  'altimeter',
+  'barometer',
+  'compass',
+  'thermometer',
+  'step-counter',
+  'tide-graph',
+  'moon-data',
+  'sunrise-sunset',
+  // Construction
+  'shock-resistant',
+  'mud-resistant',
+  'magnetic-resistant',
+  'screw-lock-crown',
+  'sapphire-crystal',
+  'mineral-glass',
+  // The odd ones Casio is actually known for
+  'calculator',
+  'telememo',
+  'databank',
+  'vibration-alarm',
+  'flash-alert',
+] as const
+export type Feature = (typeof FEATURES)[number]
+
+/**
+ * The fields a facet can be built from (FR-1.3), and therefore the fields whose
+ * density D26 measures. `year` is in the list and is **exempt from the 60%
+ * threshold** — it keeps an explicit *Unknown year* option instead (D5, D25),
+ * which buys the same honesty a different way.
+ */
+export const FACET_FIELDS = ['year', 'display', 'movement', 'features'] as const
+export type FacetField = (typeof FACET_FIELDS)[number]
+
+/**
+ * The optional fields the coverage table reports on (§10.2 check 10). Wider
+ * than the facet list on purpose: the point of the table is to show what a
+ * seeding session actually filled in, and `image` and `module` are two of the
+ * things most likely to be missing on a watch discontinued in 1997.
+ */
+export const COVERAGE_FIELDS = [
+  'name',
+  'year',
+  'display',
+  'movement',
+  'module',
+  'case',
+  'water_resistance_m',
+  'features',
+  'colorway',
+  'image',
+] as const
+export type CoverageField = (typeof COVERAGE_FIELDS)[number]
+
+/** D26 — a facet renders only where this share of the models in view carry it. */
+export const DENSITY_THRESHOLD = 0.6
+
+/** §10.2 check 9 — a Casio quartz watch cannot predate the Casiotron. */
+export const EARLIEST_YEAR = 1974

@@ -20,5 +20,10 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.ts"]
+  /* The catalogue scripts are TypeScript, run directly by Node's native type
+     stripping, so that the build validates against the **same** Zod schema the
+     browser parses with (§6.2 — exactly one definition of a model). They pull
+     src/catalog/*.ts in with them; those files are also checked by the stricter
+     app config, which is the one that governs. */
+  "include": ["vite.config.ts", "scripts/**/*.ts"]
 }

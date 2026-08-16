@@ -14,7 +14,13 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "budget": "node scripts/bundle-budget.mjs"
+    "budget": "node scripts/bundle-budget.mjs",
+    "catalog:validate": "node scripts/catalog/validate.ts",
+    "catalog:build": "node scripts/catalog/build.ts",
+    "catalog:images": "node scripts/catalog/images.ts"
+  },
+  "engines": {
+    "node": ">=22.18"
   },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
@@ -48,6 +54,7 @@
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.45.0",
     "vite": "^7.1.7",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "yaml": "^2.9.0"
   }
 }

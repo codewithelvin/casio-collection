@@ -33,9 +33,12 @@ jobs:
       # build down with it. Pages is enabled once, by hand, at
       # Settings -> Pages -> Source: GitHub Actions. Nothing here needs the
       # action's outputs — the base path is fixed by D13, not discovered.
+      # The catalogue pipeline is TypeScript run directly by Node, so that the
+      # build and the browser share one Zod schema (§6.2). Native type stripping
+      # needs Node 22.18 or later; 24 is what it is developed against.
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
 
       - run: npm ci
@@ -51,8 +54,12 @@ jobs:
       - name: Unit tests and coverage gate
         run: npm run test:coverage
 
-      # M1 adds `npm run catalog:build` here, ahead of the Vite build: the
-      # published catalog.json is a build artefact, not a committed one.
+      # §10.2 — every integrity check is a build failure, and this is where that
+      # becomes true of the deploy too. It runs ahead of the Vite build because
+      # public/catalog/catalog.json is a build artefact rather than a committed
+      # file, and Vite copies public/ into dist as it goes.
+      - name: Catalogue build
+        run: npm run catalog:build
 
       - name: Build
         run: npm run build

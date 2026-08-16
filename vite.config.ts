@@ -73,12 +73,23 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],
     css: false,
+
+    // Vitest's 5 s default is a poor fit for this suite and it showed up as a
+    // flake: one component test failed on a loaded machine and passed on an idle
+    // one. A single AppShell render under jsdom costs about two seconds here —
+    // AntD's CSS-in-JS builds a whole token set per mount — so a test that
+    // renders, clicks and waits twice is inside the default by a margin that ten
+    // parallel test files eat. Raising the ceiling is right where the work is
+    // genuinely slow; what is not acceptable is a red gate that is not about the
+    // code, because D31 makes CI the thing that blocks a deploy.
+    testTimeout: 20_000,
     coverage: {
       provider: 'v8',
       reporter: ['text', 'lcov'],
       include: ['src/**/*.{ts,tsx}'],
       exclude: [
         'src/**/*.test.{ts,tsx}',
+        'src/**/*.fixtures.ts',
         'src/test/**',
         'src/main.tsx',
         'src/vite-env.d.ts',

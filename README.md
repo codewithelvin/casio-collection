@@ -47,7 +47,39 @@ npm run test:coverage
 npm run lint
 npm run typecheck
 npm run budget       # initial JS against the 380 KB gzipped budget
+
+npm run catalog:validate   # parse catalog-src and run every integrity check
+npm run catalog:build      # validate, then emit public/catalog/catalog.json
+npm run catalog:images     # normalise catalog-src/images/raw to 400/800 WebP
 ```
+
+**Node 22.18 or later.** The catalogue scripts are TypeScript run directly by
+Node's native type stripping, so the build validates against the *same* Zod
+schema the browser parses with. There is exactly one definition of a model in
+this repo and it is `src/catalog/schema.ts`.
+
+## The catalogue
+
+`catalog-src/` is the authored source: `lines.yaml` for the eight lines, then one
+YAML file per series in a folder named after its line. `catalog:build` turns that
+into a single versioned `public/catalog/catalog.json` — a build artefact, **not**
+a committed file. What gets committed and reviewed is the YAML.
+
+Everything deciding whether the catalogue is *correct* lives in `src/catalog/` as
+pure functions under a 90% coverage floor; `scripts/catalog/` only reads files
+and prints. Every integrity check fails the build, and every run prints a
+coverage table showing what share of models carry each optional field — so the
+60% threshold that decides whether a filter renders at all is a number somebody
+reads rather than a silent gate.
+
+Two rules worth knowing before editing any of it:
+
+- **A reference that does not match its line's pattern is a warning, not an
+  error.** Silence it with a `# ref-exception: <why>` comment on the entry. The
+  exception is usually real, and a rule that blocks real data gets deleted.
+- **`catalog-src/.published-ids.json` only ever grows.** An id that leaves the
+  source without a tombstone fails the build, because nothing in the database
+  can follow a rename.
 
 ## Rules that are easy to break by accident
 
