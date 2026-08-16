@@ -57,6 +57,7 @@ function MarkFull({ size, className }: MarkVariantProps) {
         <circle cx="18.5" cy="45.5" r="2.2" />
       </g>
       <path
+        className="cc-mark-check"
         d="M23 33 L29.5 39.5 L42.5 26.5"
         stroke="currentColor"
         strokeWidth="6"
@@ -86,6 +87,7 @@ function MarkCompact({ size, className }: MarkVariantProps) {
         strokeLinejoin="round"
       />
       <path
+        className="cc-mark-check"
         d="M20 33 L28.5 41.5 L44 25"
         stroke="currentColor"
         strokeWidth="7"

@@ -3,6 +3,7 @@ import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
 import { useUiStore } from './uiStore'
+import { NAV_LINES } from './lines'
 import { t } from '../i18n/strings'
 
 /**
@@ -60,6 +61,22 @@ describe('the app shell (§8.1, §8.2)', () => {
 
     await waitFor(() => expect(useUiStore.getState().drawerOpen).toBe(true))
     expect(await screen.findByRole('menuitem', { name: /G-SHOCK/ })).toBeInTheDocument()
+  })
+
+  it('gives every line in the rail a glyph', async () => {
+    const user = userEvent.setup()
+    renderApp('/')
+
+    await user.click(await screen.findByRole('button', { name: t('nav.open') }))
+    await screen.findByRole('menuitem', { name: /G-SHOCK/ })
+
+    // A line added later without an entry in LINE_ICONS renders bare, which is
+    // silent — it looks like a styling choice rather than a missing mapping.
+    const items = screen.getAllByRole('menuitem')
+    expect(items).toHaveLength(NAV_LINES.length)
+    for (const item of items) {
+      expect(item.querySelector('svg'), `${item.textContent} has no glyph`).not.toBeNull()
+    }
   })
 
   it('labels the Vintage line with both of its senses (D21)', async () => {

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Casio Collection">
+  <!--
+    The favicon, and a separate file from mark-compact.svg on purpose.
+
+    The two flat marks are drawn in `currentColor` so one file serves both
+    themes inside the app (§8.11). A favicon has no inherited colour: the
+    browser renders it in isolation, `currentColor` falls back to black, and the
+    mark all but disappears on a dark browser tab. So this one carries the
+    colour itself, and adapts to the tab's theme rather than the page's.
+
+    Geometry is mark-compact.svg's, unchanged — screws and strap stubs dropped,
+    chamfers cut deeper, strokes thickened, because at 16px the screws become
+    grey mush and take the octagon's shape with them (D34).
+  -->
+  <style>
+    .glyph { stroke: #0033A0; }
+    @media (prefers-color-scheme: dark) {
+      .glyph { stroke: #4D9BFF; }
+    }
+  </style>
+  <path class="glyph" d="M22 6 H42 L58 22 V42 L42 58 H22 L6 42 V22 Z"
+        stroke-width="6" stroke-linejoin="round"/>
+  <path class="glyph" d="M20 33 L28.5 41.5 L44 25"
+        stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

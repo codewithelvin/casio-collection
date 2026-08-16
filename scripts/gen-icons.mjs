@@ -17,3 +17,23 @@ for (const size of [192, 512]) {
   await sharp(source, { density: 384 }).resize(size, size).png({ compressionLevel: 9 }).toFile(out)
   console.log(`wrote public/icon-${size}.png`)
 }
+
+// A raster fallback for the handful of browsers that ignore an SVG favicon.
+// Rendered from favicon.svg rather than mark-compact.svg, because that is the
+// file that carries an explicit colour — the compact mark is currentColor and
+// would rasterise to black.
+const favicon = await readFile(join(root, 'public', 'favicon.svg'))
+await sharp(favicon, { density: 512 })
+  .resize(32, 32)
+  .png({ compressionLevel: 9 })
+  .toFile(join(root, 'public', 'favicon-32.png'))
+console.log('wrote public/favicon-32.png')
+
+// The apple-touch icon comes from the *maskable* source, not the favicon: iOS
+// composites a transparent icon onto black, so the filled Casio-blue ground is
+// the whole point (§8.11).
+await sharp(source, { density: 512 })
+  .resize(180, 180)
+  .png({ compressionLevel: 9 })
+  .toFile(join(root, 'public', 'apple-touch-icon.png'))
+console.log('wrote public/apple-touch-icon.png')

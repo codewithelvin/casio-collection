@@ -27,15 +27,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Creates the Pages site on the first run if it does not exist yet, using
-      # the workflow's own pages:write token. Without this the first deploy
-      # fails on a repository that has never had Pages switched on, and the
-      # error points at deploy-pages rather than at the missing setting.
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
+      # No actions/configure-pages step. It was tried with enablement:true to
+      # save a manual setting and it fails: the default GITHUB_TOKEN cannot
+      # create a Pages site, and because the step runs first it took the whole
+      # build down with it. Pages is enabled once, by hand, at
+      # Settings -> Pages -> Source: GitHub Actions. Nothing here needs the
+      # action's outputs — the base path is fixed by D13, not discovered.
       - uses: actions/setup-node@v4
         with:
           node-version: 22

@@ -5,7 +5,7 @@ import MenuOutlined from '@ant-design/icons/MenuOutlined'
 import SearchOutlined from '@ant-design/icons/SearchOutlined'
 import BulbOutlined from '@ant-design/icons/BulbOutlined'
 import BulbFilled from '@ant-design/icons/BulbFilled'
-import { Link, Outlet, useNavigate } from 'react-router-dom'
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { Lockup } from './Mark'
 import { LineNav } from './LineNav'
 import { Footer } from './Footer'
@@ -29,6 +29,7 @@ export function AppShell() {
   const { token } = antdTheme.useToken()
   const screens = Grid.useBreakpoint()
   const navigate = useNavigate()
+  const { pathname } = useLocation()
   const { mode, toggleTheme, drawerOpen, setDrawerOpen } = useUiStore()
 
   const isMobile = !screens.md
@@ -76,6 +77,7 @@ export function AppShell() {
 
         <Button
           type="text"
+          className="cc-theme-toggle"
           aria-label={mode === 'dark' ? t('theme.toLight') : t('theme.toDark')}
           icon={mode === 'dark' ? <BulbFilled /> : <BulbOutlined />}
           onClick={toggleTheme}
@@ -126,7 +128,13 @@ export function AppShell() {
 
         <Layout style={{ background: token.colorBgLayout }}>
           <Layout.Content style={{ padding: isMobile ? 16 : 24 }}>
-            <Outlet />
+            {/* Keyed on the path so the entrance replays per navigation. The
+                key is deliberately the pathname and not the full location:
+                changing a filter in the query string (FR-1.6) must not
+                re-animate the grid someone is reading. */}
+            <div key={pathname} className="cc-route">
+              <Outlet />
+            </div>
           </Layout.Content>
           <Footer />
         </Layout>

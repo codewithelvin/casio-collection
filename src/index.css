@@ -1,8 +1,76 @@
 /*
  * AntD 5 is CSS-in-JS, so there is no framework stylesheet to import (§5.1).
- * This file holds only what a component cannot: the document-level reset, and
- * the focus ring that NFR-8 requires be visible everywhere.
+ * This file holds only what a component cannot: the typeface, the
+ * document-level reset, and the focus ring NFR-8 requires be visible.
  */
+
+/*
+ * IBM Plex — self-hosted, because S8 allows no font from another origin and the
+ * CSP in index.html says font-src 'self'. The files live under src/assets so
+ * Vite hashes them and resolves the base path; a url() into public/ with a
+ * leading slash is exactly the D13 trap.
+ *
+ * Plex Sans over the usual Inter for a reason that is about this product: the
+ * catalogue is mostly reference codes, and Plex was drawn by a type foundry for
+ * an engineering company, so its digits, its capitals and its hyphen are built
+ * to be read as data rather than as words. It also sits with the mark — an
+ * octagonal bezel with four screws is industrial, and a neutral grotesk beside
+ * it says nothing.
+ *
+ * Plex Mono carries the reference codes themselves (.cc-ref). GA-2100-1A1 and
+ * GW-M5610-1 differ by a character or two, and persona P2 collects by exact
+ * suffix; a monospace column makes that difference land where proportional
+ * spacing hides it.
+ *
+ * Only the latin subsets are shipped, and only the weights actually used.
+ * font-display: swap so text is readable before the font arrives (NFR-1).
+ */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/ibm-plex-sans-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./assets/fonts/ibm-plex-sans-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./assets/fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/ibm-plex-mono-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./assets/fonts/ibm-plex-mono-latin-500-normal.woff2') format('woff2');
+}
+
+/*
+ * A reference code, wherever one is shown. The card, the detail heading and the
+ * search results all use this, so the catalogue's primary identifier looks like
+ * one thing across the site.
+ */
+.cc-ref {
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-feature-settings: 'zero' 1; /* slashed zero — 0 and O are both common here */
+  letter-spacing: 0.01em;
+}
 
 *,
 *::before,
@@ -36,6 +104,96 @@ body {
 .cc-defer-paint {
   content-visibility: auto;
   contain-intrinsic-size: auto 320px;
+}
+
+/* ------------------------------------------------------------------------- *
+ * Motion
+ *
+ * Two durations and one curve, so everything on the site moves like one thing.
+ * The curve decelerates hard — motion that arrives and settles rather than
+ * drifting, which is what makes an interface feel quick rather than animated.
+ *
+ * The rule everything here follows: motion may never delay what someone came
+ * for. Entrances are short and never block input, nothing animates on a value
+ * the user is reading, and every one of these is switched off wholesale by the
+ * prefers-reduced-motion block at the end of this file. NFR-8 is not satisfied
+ * by an animation someone can't turn off.
+ * ------------------------------------------------------------------------- */
+:root {
+  --cc-quick: 160ms;
+  --cc-enter: 320ms;
+  --cc-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* The route's content rises a few pixels as it fades in. Keyed on the pathname,
+   so it replays per navigation and gives the eye somewhere to land — 8px, small
+   enough that nobody consciously sees it move. */
+@keyframes cc-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.cc-route {
+  animation: cc-rise var(--cc-enter) var(--cc-ease) both;
+}
+
+/* The rail glyphs: colour eases in when a line becomes the active one, and the
+   glyph lifts very slightly under the pointer. */
+.cc-nav-icon {
+  display: inline-flex;
+  transition:
+    color var(--cc-quick) var(--cc-ease),
+    transform var(--cc-quick) var(--cc-ease);
+}
+
+.ant-menu-item:hover .cc-nav-icon {
+  transform: scale(1.12);
+}
+
+/* The theme toggle turns as it swaps. The icon is the thing that changed, so
+   the icon is the thing that moves. */
+.cc-theme-toggle .anticon {
+  transition: transform var(--cc-enter) var(--cc-ease);
+}
+
+.cc-theme-toggle:hover .anticon {
+  transform: rotate(24deg) scale(1.08);
+}
+
+/* The mark's check draws itself once, on first paint. It is the Owned One
+   button at its smallest size (D34), so the identity performs the product's
+   single gesture the moment the page opens — and then never again, because a
+   logo that keeps moving is a logo people learn to ignore. */
+@keyframes cc-draw {
+  from {
+    stroke-dashoffset: 48;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.cc-mark-check {
+  /* Longer than either check path (the full mark's is ~28 units, the compact
+     one's ~35), so the dash never repeats and shows a second stroke. */
+  stroke-dasharray: 48;
+  animation: cc-draw var(--cc-enter) var(--cc-ease) 120ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* The check must still be *drawn* — only not drawn *in*. Without this the
+     dash offset stays where the animation would have started and the mark
+     renders as a bezel with no check in it. */
+  .cc-mark-check {
+    stroke-dasharray: none;
+    animation: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -39,8 +39,23 @@ export function themeConfig(mode: ThemeMode): ThemeConfig {
       // Slightly tightened from AntD's 6px — the mark is a chamfered octagon and
       // a softer radius reads as a different family of shape.
       borderRadius: 4,
+
+      // §5.1 ships no stylesheet, so the typeface is declared here and in the
+      // @font-face block in index.css, and nowhere else. See that file for why
+      // Plex: the catalogue is mostly reference codes, and Plex draws digits,
+      // capitals and hyphens to be read as data.
       fontFamily:
-        "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+        "'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      fontFamilyCode: "'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace",
+
+      // Up from AntD's 14. The phone is the real device (principle 5) and the
+      // primary content is a reference code read at arm's length in a shop, so
+      // the base size is set for that rather than for a dense desktop table.
+      // Everything else derives from it — headings, the rail, the footer — so
+      // this is the one number to change.
+      fontSize: 16,
+      fontSizeSM: 14,
+      fontSizeLG: 18,
     },
     components: {
       Layout: {
