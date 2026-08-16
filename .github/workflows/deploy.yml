@@ -1,0 +1,94 @@
+# §14.3 — every step before deploy-pages is a gate.
+#
+# A failing test or a coverage floor breach (D31) stops the deploy exactly as a
+# type error does. There is deliberately no "deploy anyway" path: the one time
+# it would be used is the time it shouldn't be.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# A queued deploy is superseded by a newer one, but a running deploy is never
+# cancelled — a half-published Pages site is worse than a slightly stale one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      # D31 — the coverage floor on the pure-logic modules is enforced here and
+      # is not lowerable. Raising it is fine; lowering it costs a decision in §0.
+      - name: Unit tests and coverage gate
+        run: npm run test:coverage
+
+      # M1 adds `npm run catalog:build` here, ahead of the Vite build: the
+      # published catalog.json is a build artefact, not a committed one.
+
+      - name: Build
+        run: npm run build
+        env:
+          VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+
+      # NFR-3 / D28 — 380 KB gzipped. `npm run build` has already copied
+      # index.html to 404.html (D13); this reads the entry graph out of it.
+      - name: Bundle budget
+        run: npm run budget
+
+      - name: Verify the SPA fallback exists (D13)
+        run: test -f dist/404.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+      # §14.3 — request a deep link directly and fail the job on a real 404.
+      # This is the failure mode that is invisible in local development, where
+      # Vite's dev server rewrites for free. Without this step, D13 breaking is
+      # something a visitor discovers by refreshing a shared link.
+      - name: Smoke test a deep link
+        run: |
+          url="${{ steps.deployment.outputs.page_url }}watch/ga-2100-1a1"
+          echo "GET $url"
+          for attempt in 1 2 3 4 5; do
+            code=$(curl -sS -o /dev/null -w '%{http_code}' -L "$url" || echo 000)
+            echo "attempt $attempt: HTTP $code"
+            [ "$code" = "200" ] && exit 0
+            sleep 10
+          done
+          echo "Deep link did not return 200 — the 404.html SPA fallback is not working (D13)."
+          exit 1

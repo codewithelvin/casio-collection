@@ -1,0 +1,49 @@
+/*
+ * AntD 5 is CSS-in-JS, so there is no framework stylesheet to import (§5.1).
+ * This file holds only what a component cannot: the document-level reset, and
+ * the focus ring that NFR-8 requires be visible everywhere.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* NFR-9 — 320 px with no horizontal scroll. A single wide element inside a
+     grid is the usual cause, and it should be caught here rather than hidden. */
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NFR-8 — keyboard-complete with a visible focus ring. :focus-visible keeps it
+   off mouse clicks, which is what stops people removing it altogether. */
+:focus-visible {
+  outline: 2px solid var(--cc-accent, #0033a0);
+  outline-offset: 2px;
+}
+
+/* §12 — grid rows below the fold are skipped during layout. The intrinsic size
+   is what keeps the scrollbar honest and CLS inside NFR-7's 0.05. */
+.cc-defer-paint {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 320px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

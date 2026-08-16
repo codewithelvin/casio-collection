@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!--
+      S7 — a CSP served as a meta tag, since GitHub Pages serves no headers.
+      connect-src is 'self' only until M4 adds the Supabase project origin; that
+      origin is a build variable (§14.2), so M4 injects it here rather than
+      widening this to a wildcard.
+      style-src needs 'unsafe-inline' because AntD 5 is CSS-in-JS and injects
+      style tags at runtime — that is the cost of D4, and it is worth naming.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; object-src 'none'"
+    />
+
+    <title>Casio Collection</title>
+
+    <!--
+      FR-10.4 — the non-affiliation sentence lives in the description so it
+      travels with every link preview, not only with people who scroll to the
+      footer. The word "official" appears on no page (§8.11).
+    -->
+    <meta
+      name="description"
+      content="Browse the Casio watch catalogue by line and series and keep track of the ones you own. An independent, non-commercial project, not affiliated with or endorsed by Casio Computer Co., Ltd."
+    />
+
+    <!-- D13 — %BASE_URL% is substituted by Vite. A leading-slash path here works
+         in dev and 404s in production, which is the exact failure D13 predicts. -->
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%mark-compact.svg" />
+    <link rel="apple-touch-icon" href="%BASE_URL%icon-192.png" />
+    <link rel="manifest" href="%BASE_URL%manifest.webmanifest" />
+    <meta name="theme-color" content="#0033A0" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Casio Collection" />
+    <meta
+      property="og:description"
+      content="Browse the Casio watch catalogue by line and series and keep track of the ones you own."
+    />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

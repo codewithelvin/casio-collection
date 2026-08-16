@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Casio Collection">
+  <!-- Small-size variant, below 32px: favicon, tab, dense lists.
+       Strap stubs and bezel screws are both dropped — at 16px they render as
+       grey mush and cost the octagon its shape. The chamfers are cut deeper and
+       the strokes thickened so the silhouette still reads as an octagon. -->
+  <path d="M22 6 H42 L58 22 V42 L42 58 H22 L6 42 V22 Z"
+        stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M20 33 L28.5 41.5 L44 25"
+        stroke="currentColor" stroke-width="7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

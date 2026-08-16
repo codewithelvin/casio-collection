@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Casio Collection">
+  <!-- PWA install icon (D33). Filled ground, because a transparent icon looks
+       broken on an Android home screen. Rendered at 192px and 512px, where the
+       bezel screws are comfortably legible.
+       Maskable: the glyph is scaled 0.92 about the centre so its widest points,
+       plus half the stroke, stay inside the 80%-diameter safe circle. -->
+  <rect width="64" height="64" rx="14" fill="#0033A0"/>
+  <g transform="translate(32 32) scale(0.92) translate(-32 -32)">
+    <path d="M23 9 H41 L55 23 V41 L41 55 H23 L9 41 V23 Z"
+          fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+    <g fill="#FFFFFF">
+      <circle cx="18.5" cy="18.5" r="2.2"/>
+      <circle cx="45.5" cy="18.5" r="2.2"/>
+      <circle cx="45.5" cy="45.5" r="2.2"/>
+      <circle cx="18.5" cy="45.5" r="2.2"/>
+    </g>
+    <path d="M23 33 L29.5 39.5 L42.5 26.5"
+          fill="none" stroke="#FFFFFF" stroke-width="6"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

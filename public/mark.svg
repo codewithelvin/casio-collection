@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Casio Collection">
+  <!-- Primary mark (D34): octagonal bezel with four screws on the chamfers,
+       holding a check. The check is the Owned One button at its smallest size.
+       Use at 32px and above — below that the screws mush; use mark-compact.svg. -->
+  <rect x="23" y="1"  width="18" height="11" rx="3" fill="currentColor" opacity="0.3"/>
+  <rect x="23" y="52" width="18" height="11" rx="3" fill="currentColor" opacity="0.3"/>
+  <path d="M23 9 H41 L55 23 V41 L41 55 H23 L9 41 V23 Z"
+        stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+  <g fill="currentColor">
+    <circle cx="18.5" cy="18.5" r="2.2"/>
+    <circle cx="45.5" cy="18.5" r="2.2"/>
+    <circle cx="45.5" cy="45.5" r="2.2"/>
+    <circle cx="18.5" cy="45.5" r="2.2"/>
+  </g>
+  <path d="M23 33 L29.5 39.5 L42.5 26.5"
+        stroke="currentColor" stroke-width="6"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

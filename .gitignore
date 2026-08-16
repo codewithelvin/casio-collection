@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+playwright-report
+test-results
+
+# S2 — the service-role key lives in an untracked local file used only by
+# /casio-catalog requests (§10.7). It never reaches the browser, never becomes a
+# GitHub secret, and never lands here.
+.env
+.env.local
+.env.*.local
+
+.DS_Store
+*.log
