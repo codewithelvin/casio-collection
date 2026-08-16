@@ -79,14 +79,16 @@ describe('the app shell (§8.1, §8.2)', () => {
     }
   })
 
-  it('labels the Vintage line with both of its senses (D21)', async () => {
+  it('labels the Vintage line with both of its senses', async () => {
     const user = userEvent.setup()
     renderApp('/')
 
     await user.click(await screen.findByRole('button', { name: t('nav.open') }))
 
-    // D21 kept the site's name knowing it collides with Casio's own line. The
-    // nav label is the thing that keeps the two distinguishable inside the site.
+    // Casio calls this line "Casio Collection" in Europe and "Vintage" elsewhere,
+    // and a reader arrives with one word or the other. It was also the site's own
+    // name until D39, which is the collision D21 accepted and the rename removed —
+    // the label was never about our name and did not change with it.
     expect(await screen.findByRole('menuitem', { name: /Vintage \/ Casio Collection/ })).toBeInTheDocument()
   })
 })

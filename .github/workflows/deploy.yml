@@ -103,6 +103,11 @@ jobs:
       # What proves D13 is that the response body is our app shell rather than
       # GitHub's generic "There isn't a GitHub Pages site here" page. If the
       # 404.html copy ever stops happening, this body check is what catches it.
+      #
+      # The asset check reads `src="/assets/` rather than a project path: D39
+      # moved the site to the root of casiovault.com. It stays anchored on the
+      # leading slash so it still proves Vite substituted a base into the shell,
+      # which is the half of D13 that a bare `assets/` would stop proving.
       - name: Smoke test a deep link
         run: |
           url="${{ steps.deployment.outputs.page_url }}watch/ga-2100-1a1"
@@ -112,7 +117,7 @@ jobs:
             code=$(printf '%s' "$response" | tail -n1)
             body=$(printf '%s' "$response" | sed '$d')
             if printf '%s' "$body" | grep -q 'id="root"' \
-               && printf '%s' "$body" | grep -q 'casio-collection/assets/'; then
+               && printf '%s' "$body" | grep -q 'src="/assets/'; then
               echo "attempt $attempt: HTTP $code, app shell served — SPA fallback works"
               exit 0
             fi

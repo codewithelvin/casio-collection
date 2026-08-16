@@ -7,9 +7,12 @@
  */
 const en = {
   // Identity and shell
-  'app.name': 'Casio Collection',
+  // D39 — the product is Casio Vault. The wordmark is two spans rather than one
+  // string because §8.11 sets CASIO at weight 600 and the second word at 400,
+  // and a single string cannot carry two weights without markup in the copy.
+  'app.name': 'Casio Vault',
   'app.name.casio': 'CASIO',
-  'app.name.collection': 'COLLECTION',
+  'app.name.vault': 'VAULT',
   'app.tagline': 'Browse the catalogue. Mark what you own.',
   'nav.open': 'Open navigation',
   'nav.close': 'Close navigation',
@@ -21,7 +24,7 @@ const en = {
   'account.signIn': 'Sign in',
 
   // Routes — placeholder headings until the milestone that fills them
-  'route.home.title': 'Casio Collection',
+  'route.home.title': 'Casio Vault',
   'route.line.title': 'Line',
   'route.series.title': 'Series',
   'route.watch.title': 'Watch',

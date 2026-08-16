@@ -43,9 +43,13 @@ lines:
       - id: octagonal
         name: Octagonal
 
-  # D21 — "Casio Collection" is what Casio calls this line in Europe and also the
-  # name of this site. Carrying both senses in the label is what keeps them apart
-  # inside the product.
+  # "Casio Collection" is Casio's own name for this line in Europe; "Vintage" is
+  # what it is called elsewhere and what collectors say. Both are in the label
+  # because a reader arrives with one word or the other.
+  #
+  # Until D39 this was also the name of the site, which is what D21 accepted as a
+  # permanent search collision and what the rename removed. The label is unchanged
+  # — it was always about Casio's naming and never about ours.
   - id: vintage
     name: Vintage / Casio Collection
     slug: vintage

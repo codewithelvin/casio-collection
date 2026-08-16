@@ -20,9 +20,10 @@ export interface NavLine {
 
 export const NAV_LINES: readonly NavLine[] = [
   { id: 'g-shock', slug: 'g-shock', name: 'G-SHOCK' },
-  // D21: "Casio Collection" is what Casio calls this line in Europe and also the
-  // name of this site. Labelling it with both senses is what keeps them apart
-  // inside the product.
+  // "Casio Collection" is Casio's European name for this line and "Vintage" is
+  // the one collectors use, so the label carries both. It was also the name of
+  // this site until D39, which is the collision D21 accepted and the rename
+  // removed; the label itself never needed to change.
   { id: 'vintage', slug: 'vintage', name: 'Vintage / Casio Collection' },
   { id: 'edifice', slug: 'edifice', name: 'Edifice' },
   { id: 'pro-trek', slug: 'pro-trek', name: 'Pro Trek' },

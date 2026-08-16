@@ -1,10 +1,10 @@
-# Casio Collection
+# Casio Vault
 
 A website where a Casio owner browses the watch catalogue by line and series and
 presses **Owned One**. Everything they press collects on a personal page they can
 keep private or publish.
 
-**Live at [codewithelvin.com/casio-collection](https://codewithelvin.com/casio-collection/)**
+**Live at [casiovault.com](https://casiovault.com/)**
 
 > This is an independent, non-commercial project, **not affiliated with or
 > endorsed by Casio Computer Co., Ltd.** Product images and reference codes are
@@ -29,7 +29,7 @@ client-side join against the catalogue already in memory.
 | Catalogue | One static versioned `catalog.json` + WebP in this repo |
 | Backend | Supabase — auth and the user's own rows, RLS on every table |
 | Auth | Google at launch. Magic link is built but held behind one constant |
-| Hosting | GitHub Pages, base path `/casio-collection/`, `404.html` SPA fallback |
+| Hosting | GitHub Pages at the root of `casiovault.com`, `404.html` SPA fallback |
 
 `@ant-design/v5-patch-for-react-19` is **mandatory** and is imported on the first
 line of `src/main.tsx`. Ant Design 5's static `message` / `notification` /
@@ -51,7 +51,12 @@ npm run budget       # initial JS against the 380 KB gzipped budget
 npm run catalog:validate   # parse catalog-src and run every integrity check
 npm run catalog:build      # validate, then emit public/catalog/catalog.json
 npm run catalog:images     # normalise catalog-src/images/raw to 400/800 WebP
+npm run catalog:audit      # report what is missing; changes nothing, fails nothing
 ```
+
+The catalogue is maintained through the `/casio-catalog` skill in
+`.claude/skills/`, which is why Claude Code is launched inside *this* repo rather
+than the notes vault to work on it.
 
 **Node 22.18 or later.** The catalogue scripts are TypeScript run directly by
 Node's native type stripping, so the build validates against the *same* Zod
@@ -96,8 +101,9 @@ Two rules worth knowing before editing any of it:
   or it hides. A filter over a sparse field lies by omission.
 - **Every table denies by default.** RLS is the only access control; the anon key
   is public and always was.
-- **Build every path from `import.meta.env.BASE_URL`.** A hard-coded
-  `/catalog/catalog.json` works in dev and 404s in production.
+- **Build every path from `import.meta.env.BASE_URL`.** The base is `/` now that
+  the site has its own domain, so a hard-coded path happens to work — which is
+  exactly why this rule needs writing down rather than noticing.
 - **Tests are mandatory.** 90% line coverage on `src/catalog/`,
   `src/collection/` and `src/auth/pendingIntent.ts`, enforced in CI and never
   lowered. Every bug fix ships with a test that fails without it. `.only` and

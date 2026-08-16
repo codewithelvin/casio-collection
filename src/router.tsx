@@ -58,7 +58,8 @@ export const routes: RouteObject[] = [
 ]
 
 /**
- * `basename` comes from BASE_URL, never a literal: D13 puts the site under
- * /casio-collection/ today, and O1 may move it to a domain root tomorrow.
+ * `basename` comes from BASE_URL, never a literal. It read `/casio-collection/`
+ * until D39 moved the site to the root of casiovault.com, and this line did not
+ * have to change — which is the only proof that writing it this way was right.
  */
 export const router = createBrowserRouter(routes, { basename: import.meta.env.BASE_URL })

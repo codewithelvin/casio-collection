@@ -1,22 +1,29 @@
 import { defineConfig, type Plugin } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 
-const BASE = '/casio-collection/'
+// D39 — the site serves from the root of its own domain, casiovault.com. This
+// read `/casio-collection/` until that domain existed, and dropping to `/` is
+// half the reason the rename was worth doing now: D13's rule still stands and
+// every path is still built from import.meta.env.BASE_URL, but the failure it
+// guards against — works in dev, 404s in production — no longer has anywhere
+// to hide. It stays a named constant threaded into the manifest, because a
+// second copy of this value is precisely the D13 failure it prevents.
+const BASE = '/'
 
 /**
  * FR-11.1 — the web app manifest, generated rather than committed.
  *
- * `start_url`, `scope` and every icon path have to carry the base path, and the
- * base path is the one thing O1 will change when a domain is chosen. A static
+ * `start_url`, `scope` and every icon path have to carry the base path. A static
  * public/manifest.webmanifest would be a second place holding that value, and
  * the copy that nobody remembers to update is exactly the D13 failure — works
  * in dev, 404s in production. Generating it keeps `BASE` above as the only
- * definition.
+ * definition, which matters no less now that the value is `/`: the day it is
+ * ever anything else again, one line changes.
  */
 function manifestPlugin(): Plugin {
   const manifest = {
-    name: 'Casio Collection',
-    short_name: 'Casio Collection',
+    name: 'Casio Vault',
+    short_name: 'Casio Vault',
     description: 'Browse the Casio watch catalogue and keep track of the ones you own.',
     start_url: BASE,
     scope: BASE,

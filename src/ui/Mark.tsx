@@ -100,9 +100,12 @@ function MarkCompact({ size, className }: MarkVariantProps) {
 
 /**
  * §8.11 — the wordmark: the app's own UI typeface, all caps, CASIO at 600 and
- * COLLECTION at 400 with 0.08em letterspacing. Never set in, or styled to
- * resemble, Casio's logotype — D11 says this site claims no affiliation and the
- * header is the most visible place in the product to contradict that.
+ * VAULT at 400 with 0.08em letterspacing. Never set in, or styled to resemble,
+ * Casio's logotype — D11 says this site claims no affiliation and the header is
+ * the most visible place in the product to contradict that.
+ *
+ * D39 shortened the second word from COLLECTION to VAULT, which the lockup takes
+ * without a change: the two weights are what carry the reading, not the length.
  *
  * Below 120 px wide the letterspacing stops reading, so the mark stands alone.
  */
@@ -122,7 +125,7 @@ export function Lockup({ markSize = 32, showWordmark = true }: { markSize?: numb
       {showWordmark ? (
         <span style={{ display: 'inline-flex', gap: '0.35em', fontSize: 15, whiteSpace: 'nowrap' }}>
           <span style={{ fontWeight: 600, letterSpacing: '0.08em' }}>{t('app.name.casio')}</span>
-          <span style={{ fontWeight: 400, letterSpacing: '0.08em' }}>{t('app.name.collection')}</span>
+          <span style={{ fontWeight: 400, letterSpacing: '0.08em' }}>{t('app.name.vault')}</span>
         </span>
       ) : null}
     </span>

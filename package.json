@@ -1,5 +1,5 @@
 {
-  "name": "casio-collection",
+  "name": "casio-vault",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,7 +17,8 @@
     "budget": "node scripts/bundle-budget.mjs",
     "catalog:validate": "node scripts/catalog/validate.ts",
     "catalog:build": "node scripts/catalog/build.ts",
-    "catalog:images": "node scripts/catalog/images.ts"
+    "catalog:images": "node scripts/catalog/images.ts",
+    "catalog:audit": "node scripts/catalog/audit.ts"
   },
   "engines": {
     "node": ">=22.18"

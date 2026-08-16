@@ -1,18 +1,23 @@
 import { Layout, theme as antdTheme } from 'antd'
 import { t } from '../i18n/strings'
 
-const REPO_URL = 'https://github.com/codewithelvin/casio-collection'
+const REPO_URL = 'https://github.com/codewithelvin/casio-vault'
 
 /**
  * FR-10.3 — in this order: the D11 non-affiliation notice, the image
  * attribution, the source link, the catalogue version, and the closing line.
  *
  * §8.11 is explicit that the disclaimer is **legible body text and not small
- * print**, and the reason is worth keeping next to the code: the name is
- * Casio's product line (D21), the mark is their bezel (D34) and the colour is
- * their corporate blue. Together those read as an official Casio property,
- * which is precisely what D11 says this is not. This sentence is what pays for
- * the design — so it is set at body size in the normal text colour.
+ * print**, and the reason is worth keeping next to the code: the name starts
+ * with theirs, the mark is their bezel (D34) and the colour is their corporate
+ * blue. Together those read as an official Casio property, which is precisely
+ * what D11 says this is not. This sentence is what pays for the design — so it
+ * is set at body size in the normal text colour.
+ *
+ * D39 removed one leg of that argument and not the sentence. The old name *was*
+ * a Casio product line (D21), and "Vault" is nobody's; but "Casio" is still the
+ * first word, on a domain that is now casiovault.com, which if anything reads
+ * more like a property than a project path did.
  *
  * Everything *else* is one wrapping line of small print, which is the whole
  * shape of this component. Four stacked paragraphs took a screenful on a phone
