@@ -27,6 +27,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Creates the Pages site on the first run if it does not exist yet, using
+      # the workflow's own pages:write token. Without this the first deploy
+      # fails on a repository that has never had Pages switched on, and the
+      # error points at deploy-pages rather than at the missing setting.
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
