@@ -23,11 +23,19 @@ import {
   seriesById,
   useCatalog,
 } from '../../catalog/client.ts'
-import type { Catalog, PublishedModel } from '../../catalog/schema.ts'
+import type { Catalog, ImageCredit, PublishedModel } from '../../catalog/schema.ts'
+import { IMAGE_LICENCE_URLS } from '../../catalog/vocabulary.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
 import { LINE_ACCENTS } from '../../theme/tokens'
-import { displayLabel, featureLabel, movementLabel, sourceLabel, t } from '../../i18n/strings'
+import {
+  displayLabel,
+  featureLabel,
+  imageLicenceLabel,
+  movementLabel,
+  sourceLabel,
+  t,
+} from '../../i18n/strings'
 
 /**
  * FR-3 — the watch page.
@@ -125,15 +133,18 @@ function WatchDetail({
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24, marginBottom: 24 }}>
         <div style={{ flex: '0 1 320px', minWidth: 240 }}>
           {sources ? (
-            <img
-              src={sources.src}
-              srcSet={sources.srcSet}
-              alt={model.ref}
-              width={400}
-              height={400}
-              decoding="async"
-              style={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'contain' }}
-            />
+            <>
+              <img
+                src={sources.src}
+                srcSet={sources.srcSet}
+                alt={model.ref}
+                width={400}
+                height={400}
+                decoding="async"
+                style={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'contain' }}
+              />
+              <ImageCreditLine credit={model.image_credit} />
+            </>
           ) : (
             // §8.6 — the same designed primary state as the card, at the larger
             // size. Not a placeholder for a photograph that is coming.
@@ -399,6 +410,47 @@ function SectionHeading({ icon, text }: { icon: ReactNode; text: string }) {
 }
 
 /** Loading geometry that matches the detail layout, not a generic spinner. */
+/**
+ * D41 — the photograph says whose it is.
+ *
+ * Every image in this catalogue is used under a licence that asks for credit by
+ * name, and the honest place for that credit is beneath the picture rather than
+ * in a list at the bottom of the site. Two links, because a credit that cannot
+ * be checked is decoration: one to the page the file came from, one to the
+ * licence it came under.
+ */
+function ImageCreditLine({ credit }: { credit: ImageCredit | undefined }) {
+  const { token } = antdTheme.useToken()
+  if (!credit) return null
+
+  const licenceUrl = IMAGE_LICENCE_URLS[credit.licence]
+  const licence = imageLicenceLabel(credit.licence)
+
+  return (
+    <div
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: 8,
+        marginTop: 8,
+        fontSize: token.fontSizeSM,
+        color: token.colorTextTertiary,
+      }}
+    >
+      <a href={credit.url} target="_blank" rel="noopener noreferrer">
+        {`${t('image.creditBy')} ${credit.author}`}
+      </a>
+      {licenceUrl ? (
+        <a href={licenceUrl} target="_blank" rel="noopener noreferrer">
+          {licence}
+        </a>
+      ) : (
+        <span>{licence}</span>
+      )}
+    </div>
+  )
+}
+
 function WatchSkeleton() {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24, maxWidth: 1080 }}>

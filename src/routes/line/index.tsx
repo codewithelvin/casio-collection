@@ -1,12 +1,15 @@
 import { useMemo } from 'react'
-import { Breadcrumb, Typography, theme as antdTheme } from 'antd'
+import { Breadcrumb, Button, Typography, theme as antdTheme } from 'antd'
 import { Link, useParams } from 'react-router-dom'
 import { lineBySlug, modelsInSeries, seriesInLine, useCatalog } from '../../catalog/client.ts'
+import { applyViewState, NO_FILTERS } from '../../catalog/filters.ts'
 import type { PublishedSeries } from '../../catalog/schema.ts'
 import { WatchGrid } from '../../ui/WatchGrid'
 import { SkeletonGrid } from '../../ui/SkeletonGrid'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
+import { FilterBar } from '../../ui/FilterBar'
+import { useViewState } from '../../ui/useViewState'
 import { LINE_ACCENTS } from '../../theme/tokens'
 import { t } from '../../i18n/strings'
 
@@ -25,6 +28,7 @@ import { t } from '../../i18n/strings'
 export default function LineRoute() {
   const { line: slug } = useParams<{ line: string }>()
   const { token } = antdTheme.useToken()
+  const [view, setView] = useViewState()
   const { data, isPending, isError, refetch } = useCatalog()
 
   const line = data ? lineBySlug(data, slug) : undefined
@@ -38,6 +42,25 @@ export default function LineRoute() {
         (a, b) => b.models.length - a.models.length || a.series.name.localeCompare(b.series.name),
       )
   }, [data, line])
+
+  /**
+   * The filter bar reads the whole line — D26 measures density over the view,
+   * and the view here is the line, not each series in turn. A movement facet
+   * that appeared over one section and vanished over the next would be four
+   * bars pretending to be one.
+   */
+  const models = useMemo(() => groups.flatMap((group) => group.models), [groups])
+
+  // The groups keep their §8.5 sticky headings; a group with nothing left after
+  // the filter disappears entirely rather than becoming a heading over a gap.
+  const shownGroups = useMemo(
+    () =>
+      groups
+        .map((group) => ({ ...group, models: applyViewState(group.models, view) }))
+        .filter((group) => group.models.length > 0),
+    [groups, view],
+  )
+  const shownCount = shownGroups.reduce((total, group) => total + group.models.length, 0)
 
   if (isPending) return <SkeletonGrid />
   if (isError || !data) return <ErrorState onRetry={() => void refetch()} />
@@ -63,10 +86,24 @@ export default function LineRoute() {
       ) : (
         <>
           <Typography.Paragraph type="secondary">
-            {`${line.count} ${t('home.models')}`}
+            {`${shownCount} ${t('home.models')}`}
           </Typography.Paragraph>
 
-          {groups.map(({ series, models }) => (
+          <FilterBar models={models} state={view} onChange={setView} />
+
+          {shownGroups.length === 0 ? (
+            <EmptyState
+              title={t('filter.none.title')}
+              body={t('filter.none.body')}
+              action={
+                <Button onClick={() => setView({ ...view, filters: NO_FILTERS })}>
+                  {t('filter.clearAllFilters')}
+                </Button>
+              }
+            />
+          ) : null}
+
+          {shownGroups.map(({ series, models }) => (
             <section key={series.id} style={{ marginBottom: 32 }}>
               {/* §8.5's sticky sub-heading. `top` clears the 64 px header, which
                   is itself sticky — without the offset the heading parks itself

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { CURRENT_YEAR, aLinesFile, aModel, aSeries, aSource } from './catalog.fixtures.ts'
-import { checkIntegrity, type CatalogSource } from './integrity.ts'
+import { CURRENT_YEAR, aCredit, aLinesFile, aModel, aSeries, aSource } from './catalog.fixtures.ts'
+import { checkIntegrity, type CatalogSource, type SeriesSource } from './integrity.ts'
 
 /**
  * §13.1 — one case per §10.2 check, each breaking exactly one thing against a
@@ -253,7 +253,7 @@ describe('check 5 — an image exists at both widths, or is explicitly absent', 
   it('fails when only the 400 px file was written', () => {
     const source = aSource({
       series: [
-        aSeries({ models: [aModel({ image: 'dw-5600e-1v' })] }),
+        aSeries({ models: [aModel({ image: 'dw-5600e-1v', image_credit: aCredit() })] }),
         ...aSource().series.slice(1),
       ],
       images: new Set(['dw-5600e-1v.webp']),
@@ -266,7 +266,7 @@ describe('check 5 — an image exists at both widths, or is explicitly absent', 
   it('passes when both widths are there', () => {
     const source = aSource({
       series: [
-        aSeries({ models: [aModel({ image: 'dw-5600e-1v' })] }),
+        aSeries({ models: [aModel({ image: 'dw-5600e-1v', image_credit: aCredit() })] }),
         ...aSource().series.slice(1),
       ],
       images: new Set(['dw-5600e-1v.webp', 'dw-5600e-1v@2x.webp']),
@@ -279,6 +279,34 @@ describe('check 5 — an image exists at both widths, or is explicitly absent', 
       series: [aSeries({ models: [aModel({ image: null })] }), ...aSource().series.slice(1)],
     })
     expect(run(source).failures).toEqual([])
+  })
+})
+
+describe('check 5a — a photograph names whose it is (D41)', () => {
+  const withImages = (models: SeriesSource['models']) =>
+    aSource({
+      series: [aSeries({ models }), ...aSource().series.slice(1)],
+      images: new Set(['dw-5600e-1v.webp', 'dw-5600e-1v@2x.webp']),
+    })
+
+  it('fails an image with no credit', () => {
+    // A CC BY-SA photograph published without its attribution is a licence
+    // breach, and it looks exactly like one published with it. Nothing but this
+    // check can tell the difference.
+    const report = run(withImages([aModel({ image: 'dw-5600e-1v' })]))
+    expect(checks(report.failures)).toEqual(['5a'])
+    expect(report.failures[0]?.message).toMatch(/image_credit/)
+  })
+
+  it('fails a credit with no image', () => {
+    const report = run(withImages([aModel({ image: null, image_credit: aCredit() })]))
+    expect(checks(report.failures)).toEqual(['5a'])
+  })
+
+  it('passes when the photograph carries its author, licence and source', () => {
+    expect(
+      run(withImages([aModel({ image: 'dw-5600e-1v', image_credit: aCredit() })])).failures,
+    ).toEqual([])
   })
 })
 
@@ -317,7 +345,7 @@ describe('the report itself', () => {
         aSeries({
           models: [
             aModel({ year: 1900 }),
-            aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', image: 'x' }),
+            aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', image: 'x', image_credit: aCredit() }),
           ],
         }),
         ...aSource().series.slice(1),

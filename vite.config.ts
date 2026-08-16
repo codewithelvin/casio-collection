@@ -64,13 +64,34 @@ export default defineConfig({
   base: BASE,
   plugins: [react(), manifestPlugin()],
   build: {
-    // Route-level splitting is what keeps us under D28's 380 KB. The vendor
-    // split keeps React and AntD out of every route chunk's diff.
+    /**
+     * D40, closing O10 — **React is pinned to its own chunk and AntD is not.**
+     *
+     * Naming `antd` here looks like the same kind of caching win as naming
+     * `react`, and it is the opposite. The shell imports AntD, so that chunk is
+     * always in the first load — and once it exists, *every* AntD module goes
+     * into it, including the ones only a lazy route imports. M3's Select,
+     * Popover, Checkbox and AutoComplete are used on three routes and were
+     * being downloaded by everyone before they reached any of them.
+     *
+     * Measured with M3 in, against D28's 380 KB:
+     *
+     *   react + antd pinned (what this was)        349.3 KB
+     *   nothing pinned                             308.4 KB, as one chunk
+     *   react pinned, AntD placed by use           308.7 KB + a 33.7 KB react
+     *
+     * The third is 40.6 KB off the first load and keeps the one dependency that
+     * genuinely never changes in a chunk of its own. What it gives up is the
+     * AntD vendor cache: an app-code change now re-hashes the AntD the shell
+     * uses along with it. That is the right way round **while the site is
+     * proving itself** (D30) — a first visit is every visit, and repeat-visit
+     * caching is an optimisation for traffic that does not exist yet. It is
+     * also the difference between M4 having 71 KB of headroom and having 30.
+     */
     rollupOptions: {
       output: {
         manualChunks: {
           react: ['react', 'react-dom', 'react-router-dom'],
-          antd: ['antd', '@ant-design/icons'],
         },
       },
     },
@@ -89,7 +110,21 @@ export default defineConfig({
     // parallel test files eat. Raising the ceiling is right where the work is
     // genuinely slow; what is not acceptable is a red gate that is not about the
     // code, because D31 makes CI the thing that blocks a deploy.
-    testTimeout: 20_000,
+    testTimeout: 30_000,
+
+    /**
+     * M3 added two files of full-shell component tests and the suite started
+     * failing three or four assertions per run — never the same ones, all of
+     * them "unable to find" on a screen that renders correctly when the file is
+     * run alone. Vitest defaults to one worker per core and every one of those
+     * workers is mounting AntD, so on a 4-core CI runner the suite was competing
+     * with itself for the machine.
+     *
+     * Halving the workers is the fix rather than raising the timeout again: the
+     * tests were not slow, they were starved. The wall clock barely moves,
+     * because the work was queued either way.
+     */
+    maxWorkers: '50%',
     coverage: {
       provider: 'v8',
       reporter: ['text', 'lcov'],

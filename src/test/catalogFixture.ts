@@ -94,6 +94,13 @@ export const catalogFixture: Catalog = {
       water_resistance_m: 200,
       features: ['stopwatch', 'alarm', 'el-backlight'],
       image: 'dw-5600e-1v',
+      // D41 — an image never travels without its credit, so the fixture does not
+      // model a state check 5a exists to make impossible.
+      image_credit: {
+        author: 'Multicherry',
+        licence: 'cc-by-sa-4.0',
+        url: 'https://commons.wikimedia.org/wiki/File:Casio_DW-5600E.jpg',
+      },
       official_url: 'https://www.casio.com/dw-5600e-1v',
     },
     {

@@ -59,6 +59,7 @@ function publishModel(model: Model, line: string, series: string): Record<string
     features: model.features && model.features.length > 0 ? model.features : undefined,
     colorway: model.colorway,
     image: model.image,
+    image_credit: model.image_credit ? compact(model.image_credit) : undefined,
     official_url: model.official_url,
     discontinued: model.discontinued === true ? true : undefined,
     tombstone: model.tombstone ? compact(model.tombstone) : undefined,

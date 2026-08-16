@@ -65,6 +65,38 @@ const en = {
   'series.backToLine': 'All series in this line',
   'grid.empty': 'Nothing to show here yet.',
 
+  // Filters and sorting (M3, FR-1.3 to FR-1.5)
+  'filter.year': 'Year',
+  'filter.display': 'Display',
+  'filter.movement': 'Movement',
+  'filter.features': 'Features',
+  'filter.unknownYear': 'Unknown year',
+  'filter.clearAll': 'Clear all',
+  // The empty state says the long form. Beside the chips the context is the
+  // chips; alone on an empty grid, "Clear all" does not say all of what.
+  'filter.clearAllFilters': 'Clear all filters',
+  'filter.remove': 'Remove',
+  'filter.sort': 'Sort',
+  'filter.showing': 'shown',
+  'sort.ref': 'Reference A–Z',
+  'sort.year-desc': 'Year, newest first',
+  'sort.year-asc': 'Year, oldest first',
+  'filter.none.title': 'Nothing here carries every filter',
+  'filter.none.body':
+    'These filters are all set at once, and no watch in this view matches all of them. Drop one, or clear them all.',
+
+  // Search (M3, FR-2)
+  'search.results': 'results',
+  'search.result': 'result',
+  'search.seeAll': 'See all',
+  'search.hint': 'Press / to search',
+  'search.noTerm.title': 'Type a reference, a name, or the word collectors use',
+  'search.noTerm.body':
+    'GA-2100 and ga2100 are the same search. So is the square, which reaches DW-5600, GW-M5610 and every other case that shape.',
+  'search.empty.title': 'Nothing matches that',
+  'search.empty.body':
+    'It may not be catalogued yet — most of this catalogue is still to be sourced. Try the reference without punctuation, or the series name on its own.',
+
   // The watch page (FR-3)
   'watch.notFound.title': 'That reference is not catalogued',
   'watch.notFound.body':
@@ -79,6 +111,16 @@ const en = {
   'watch.source.community': 'From an enthusiast source',
   'watch.tombstone.title': 'This entry has been retired',
   'watch.tombstone.replacedBy': 'Use this entry instead',
+  // D41 — the credit under a photograph. "Photograph by" and not "Image from":
+  // the licence asks for the person, not the website.
+  'image.creditBy': 'Photograph by',
+  'licence.cc-by-sa-4.0': 'CC BY-SA 4.0',
+  'licence.cc-by-sa-3.0': 'CC BY-SA 3.0',
+  'licence.cc-by-4.0': 'CC BY 4.0',
+  'licence.cc0-1.0': 'CC0 1.0',
+  'licence.public-domain': 'Public domain',
+  'licence.own-work': 'Photographed for this catalogue',
+
   'watch.noSpecs':
     'Nobody has sourced the specifications for this reference yet. Absent means unknown, not zero.',
 
@@ -104,8 +146,14 @@ const en = {
   // meta description so it travels with a link preview (FR-10.4).
   'footer.disclaimer':
     'An independent, non-commercial project, not affiliated with or endorsed by Casio Computer Co., Ltd.',
+  // D41 changed this line. It used to read "Product images and reference codes
+  // are the property of Casio Computer Co., Ltd.", which stopped being true the
+  // moment a photograph taken by somebody else appeared on the site: that file
+  // belongs to the person who took it, under a licence with terms. Reference
+  // codes and product names are still Casio's, and the sentence now says only
+  // what it can support.
   'footer.attribution':
-    'Product images and reference codes are the property of Casio Computer Co., Ltd.',
+    'Reference codes and product names are the property of Casio Computer Co., Ltd. Photographs are used under the licence each one names, and are credited on the watch they show.',
   'footer.source': 'Source code',
   'footer.catalogVersion': 'Catalogue',
   'footer.madeBy': 'Made by Claude for Casio Lovers',
@@ -194,9 +242,81 @@ export const displayLabel = (value: string): string => DISPLAY_LABELS[value] ?? 
 export const movementLabel = (value: string): string => MOVEMENT_LABELS[value] ?? humanise(value)
 export const featureLabel = (value: string): string => FEATURE_LABELS[value] ?? humanise(value)
 
+const LICENCE_LABELS: Record<string, StringKey> = {
+  'cc-by-sa-4.0': 'licence.cc-by-sa-4.0',
+  'cc-by-sa-3.0': 'licence.cc-by-sa-3.0',
+  'cc-by-4.0': 'licence.cc-by-4.0',
+  'cc0-1.0': 'licence.cc0-1.0',
+  'public-domain': 'licence.public-domain',
+  'own-work': 'licence.own-work',
+}
+
+/**
+ * D41 — the licence name as it is written by the body that wrote it. These are
+ * not translated and must not be: *CC BY-SA 4.0* is the licence's own
+ * identifier, and a localised paraphrase of a licence name is a different claim.
+ */
+export const imageLicenceLabel = (licence: string): string => {
+  const key = LICENCE_LABELS[licence]
+  return key ? t(key) : licence
+}
+
 /** FR-3.2a — the reader is told what kind of page the data was read off. */
 export function sourceLabel(kind: string): string {
   if (kind === 'official') return t('watch.source.official')
   if (kind === 'retailer') return t('watch.source.retailer')
   return t('watch.source.community')
 }
+
+/* ------------------------------------------------------------------------- *
+ * The filter bar and the search results (M3)
+ *
+ * These compose rather than interpolate. A dictionary of sentences with holes
+ * in them is the thing that makes a second locale a rewrite, and every string
+ * here is short enough that joining two of them reads the same in English as
+ * one would. Where a number sits inside a phrase — *See all 24 results* — the
+ * phrase is split at the number rather than templated around it.
+ * ------------------------------------------------------------------------- */
+
+const FACET_LABELS: Record<string, StringKey> = {
+  year: 'filter.year',
+  display: 'filter.display',
+  movement: 'filter.movement',
+  features: 'filter.features',
+}
+
+export const facetLabel = (field: string): string => {
+  const key = FACET_LABELS[field]
+  return key ? t(key) : humanise(field)
+}
+
+const SORT_LABELS: Record<string, StringKey> = {
+  ref: 'sort.ref',
+  'year-desc': 'sort.year-desc',
+  'year-asc': 'sort.year-asc',
+}
+
+export const sortLabel = (sort: string): string => {
+  const key = SORT_LABELS[sort]
+  return key ? t(key) : humanise(sort)
+}
+
+/**
+ * A facet value as the reader sees it. `unknown` is the one value that is not
+ * data at all — it is D5's explicit option, and it is written out in words
+ * because "unknown" on its own beside a year reads as a broken row.
+ */
+export function facetValueLabel(field: string, value: string): string {
+  if (field === 'year') return value === 'unknown' ? t('filter.unknownYear') : value
+  if (field === 'display') return displayLabel(value)
+  if (field === 'movement') return movementLabel(value)
+  return featureLabel(value)
+}
+
+/** *24 results*, *1 result* — the count and its noun, agreeing. */
+export const resultCount = (count: number): string =>
+  `${count} ${count === 1 ? t('search.result') : t('search.results')}`
+
+/** FR-2.3 — *See all 24 results*, the last row of the dropdown. */
+export const seeAllResults = (count: number): string =>
+  `${t('search.seeAll')} ${resultCount(count)}`

@@ -1,14 +1,13 @@
 import type { CSSProperties } from 'react'
-import { useState } from 'react'
-import { Button, Drawer, Grid, Input, Layout, theme as antdTheme } from 'antd'
+import { Button, Drawer, Grid, Layout, theme as antdTheme } from 'antd'
 import MenuOutlined from '@ant-design/icons/MenuOutlined'
-import SearchOutlined from '@ant-design/icons/SearchOutlined'
 import BulbOutlined from '@ant-design/icons/BulbOutlined'
 import BulbFilled from '@ant-design/icons/BulbFilled'
-import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 import { Lockup } from './Mark'
 import { LineNav } from './LineNav'
 import { Footer } from './Footer'
+import { SearchBox } from './SearchBox'
 import { useUiStore } from './uiStore'
 import { t } from '../i18n/strings'
 
@@ -28,7 +27,6 @@ const TOUCH_TARGET = 44
 export function AppShell() {
   const { token } = antdTheme.useToken()
   const screens = Grid.useBreakpoint()
-  const navigate = useNavigate()
   const { pathname } = useLocation()
   const { mode, toggleTheme, drawerOpen, setDrawerOpen } = useUiStore()
 
@@ -69,10 +67,7 @@ export function AppShell() {
         </Link>
 
         <div style={{ flex: 1, display: 'flex', justifyContent: 'center', minWidth: 0 }}>
-          <HeaderSearch
-            collapsedToIcon={isMobile}
-            onSubmit={(term) => navigate(`/search?q=${encodeURIComponent(term)}`)}
-          />
+          <SearchBox collapsedToIcon={isMobile} />
         </div>
 
         <Button
@@ -143,50 +138,6 @@ export function AppShell() {
   )
 }
 
-/**
- * §8.2 — below 768 px the search collapses to an icon that expands full-width.
- * At M0 it navigates to /search?q=, which is where FR-1.6 says the term lives:
- * putting it in the URL now means M3 implements matching, not plumbing.
- */
-function HeaderSearch({
-  collapsedToIcon,
-  onSubmit,
-}: {
-  collapsedToIcon: boolean
-  onSubmit: (term: string) => void
-}) {
-  const [expanded, setExpanded] = useState(false)
-  const [term, setTerm] = useState('')
-
-  const submit = () => {
-    const trimmed = term.trim()
-    if (trimmed) onSubmit(trimmed)
-  }
-
-  if (collapsedToIcon && !expanded) {
-    return (
-      <Button
-        type="text"
-        aria-label={t('search.open')}
-        icon={<SearchOutlined />}
-        onClick={() => setExpanded(true)}
-        style={{ width: TOUCH_TARGET, height: TOUCH_TARGET, marginInlineStart: 'auto' }}
-      />
-    )
-  }
-
-  return (
-    <Input
-      allowClear
-      value={term}
-      onChange={(event) => setTerm(event.target.value)}
-      onPressEnter={submit}
-      onBlur={() => setExpanded(false)}
-      autoFocus={expanded}
-      prefix={<SearchOutlined />}
-      placeholder={t('search.placeholder')}
-      aria-label={t('search.placeholder')}
-      style={{ maxWidth: 520, height: collapsedToIcon ? TOUCH_TARGET : undefined }}
-    />
-  )
-}
+/* §8.2's collapsing search field moved to SearchBox at M3, where it grew a
+   dropdown, a matcher and a keyboard shortcut. The shell only decides whether
+   it is an icon or a field. */

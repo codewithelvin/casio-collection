@@ -124,6 +124,23 @@ describe('the watch route (FR-3)', () => {
     expect(document.title).toContain('GA-2100-1A1')
   })
 
+  it('credits the photograph to the person who took it (D41)', async () => {
+    renderApp('/watch/dw-5600e-1v')
+
+    // Attribution is the term of use, not a courtesy, so it sits under the
+    // picture rather than in a credits page nobody opens.
+    const author = await screen.findByRole('link', { name: /Multicherry/ })
+    expect(author).toHaveAttribute(
+      'href',
+      'https://commons.wikimedia.org/wiki/File:Casio_DW-5600E.jpg',
+    )
+
+    // …and the licence has to be reachable too. A credit nobody can check is
+    // decoration.
+    const licence = await screen.findByRole('link', { name: 'CC BY-SA 4.0' })
+    expect(licence).toHaveAttribute('href', 'https://creativecommons.org/licenses/by-sa/4.0/')
+  })
+
   it('says the reference is not catalogued rather than rendering a blank page', async () => {
     renderApp('/watch/does-not-exist')
     expect(await screen.findByText(t('watch.notFound.title'))).toBeInTheDocument()

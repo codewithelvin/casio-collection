@@ -24,6 +24,20 @@ export function aModel(overrides: Partial<Model> = {}): Model {
   }
 }
 
+/**
+ * D41 — a photograph never travels without its credit, so neither does a
+ * fixture that carries one. A test that set an image and no credit would be
+ * asserting against a state check 5a exists to make impossible.
+ */
+export function aCredit(overrides: Partial<Model['image_credit']> = {}) {
+  return {
+    author: 'Multicherry',
+    licence: 'cc-by-sa-4.0' as const,
+    url: 'https://commons.wikimedia.org/wiki/File:Casio_F-91W.jpg',
+    ...overrides,
+  }
+}
+
 export function aSeries(overrides: Partial<SeriesSource> = {}): SeriesSource {
   return {
     file: 'catalog-src/g-shock/dw-5600.yaml',

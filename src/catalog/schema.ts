@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { DISPLAYS, FEATURES, MOVEMENTS, SOURCE_KINDS } from './vocabulary.ts'
+import { DISPLAYS, FEATURES, IMAGE_LICENCES, MOVEMENTS, SOURCE_KINDS } from './vocabulary.ts'
 
 /**
  * §6.2 — **there is exactly one definition of a model in the system**, and this
@@ -39,6 +39,25 @@ export const SOURCE = z.strictObject({
   kind: z.enum(SOURCE_KINDS),
 })
 export type Source = z.infer<typeof SOURCE>
+
+/**
+ * D41 — who took the photograph, under what licence, and where it came from.
+ *
+ * Required wherever a model carries an `image`, and that is the point of it.
+ * The site's footer can say honestly that reference codes belong to Casio; it
+ * cannot say anything true about a photograph taken by a stranger and licensed
+ * CC BY-SA. Attribution is not a courtesy under that licence, it is the term of
+ * use — so the credit travels with the file it describes rather than living in
+ * a page nobody opens.
+ */
+export const IMAGE_CREDIT = z.strictObject({
+  /** As the licence asks it to be given: the name on the source page. */
+  author: z.string().min(1),
+  licence: z.enum(IMAGE_LICENCES),
+  /** The page the file was taken from, so the claim can be checked. */
+  url: z.url(),
+})
+export type ImageCredit = z.infer<typeof IMAGE_CREDIT>
 
 /** Decoration for the spec table (FR-3.2), not a facet — hence no vocabulary. */
 export const CASE = z.strictObject({
@@ -93,6 +112,8 @@ export const MODEL = z.strictObject({
   colorway: z.string().min(1).nullish(),
   /** The image basename, which is the model id by convention. `null` is normal. */
   image: idField.nullish(),
+  /** D41 — required with an `image`, refused without one (§10.2 check 5a). */
+  image_credit: IMAGE_CREDIT.nullish(),
   /** The official product page, where one still exists (FR-3.5). */
   official_url: z.url().nullish(),
   discontinued: z.boolean().nullish(),
@@ -190,6 +211,7 @@ export const PUBLISHED_MODEL = z.strictObject({
   features: z.array(z.enum(FEATURES)).optional(),
   colorway: z.string().optional(),
   image: z.string().optional(),
+  image_credit: IMAGE_CREDIT.optional(),
   official_url: z.string().optional(),
   discontinued: z.boolean().optional(),
   tombstone: z.strictObject({ reason: z.string(), replaced_by: z.string().optional() }).optional(),

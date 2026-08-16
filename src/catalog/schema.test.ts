@@ -70,6 +70,36 @@ describe('the model schema', () => {
     )
   })
 
+  // D41 — the same argument as check 6, with more at stake. A free-text licence
+  // would let a photograph go out under a licence nobody granted, spelled just
+  // differently enough to look deliberate.
+  it('rejects a licence outside the controlled list', () => {
+    const credit = { author: 'Someone', url: 'https://example.com/file' }
+    const withLicence = (licence: string) =>
+      MODEL.safeParse({
+        id: 'aa',
+        ref: 'A',
+        source,
+        image: 'aa',
+        image_credit: { ...credit, licence },
+      }).success
+
+    expect(withLicence('cc-by-sa')).toBe(false)
+    expect(withLicence('cc-by-sa-4.0')).toBe(true)
+  })
+
+  it('rejects a credit that names no author', () => {
+    expect(
+      MODEL.safeParse({
+        id: 'aa',
+        ref: 'A',
+        source,
+        image: 'aa',
+        image_credit: { licence: 'cc-by-sa-4.0', url: 'https://example.com/file' },
+      }).success,
+    ).toBe(false)
+  })
+
   // §10.2 check 7
   it('rejects a model with no source at all (check 7)', () => {
     expect(MODEL.safeParse({ id: 'aa', ref: 'A' }).success).toBe(false)

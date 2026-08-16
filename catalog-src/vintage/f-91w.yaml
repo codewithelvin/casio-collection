@@ -45,7 +45,15 @@ models:
     water_resistance_m: 30
     features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
     colorway: Black with blue accent ring
-    image: null
+    # The photograph matches this entry and not merely this series: the blue
+    # accent ring in the picture is the colourway recorded on the line above,
+    # which is what makes attaching it to -1 rather than to any of the other
+    # seventeen a reading rather than a guess (§10.6 guardrail 2).
+    image: f-91w-1
+    image_credit:
+      author: Multicherry
+      licence: cc-by-sa-4.0
+      url: 'https://commons.wikimedia.org/wiki/File:Casio_F-91W_watch_(2023)_(front_closeup_-_time)_(minor_retouch).jpg'
 
   - id: f-91wg-9
     ref: F-91WG-9

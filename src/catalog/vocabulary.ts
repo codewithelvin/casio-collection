@@ -22,6 +22,39 @@
 export const SOURCE_KINDS = ['official', 'retailer', 'community'] as const
 export type SourceKind = (typeof SOURCE_KINDS)[number]
 
+/**
+ * D41 — the licences a catalogue photograph may carry.
+ *
+ * A controlled list for the same reason the feature list is one, and with more
+ * at stake: a free-text licence field would let `CC BY-SA 4.0` and `CC-BY-SA
+ * 4.0` and `Creative Commons` all be written for the same file, and a claim
+ * about the right to use somebody's photograph is not a field to be casual
+ * about. Every value here is a licence whose terms this site can actually meet
+ * — credit the author, name the licence, link to both.
+ *
+ * `own-work` is the site owner's own photograph, which needs no permission and
+ * is still credited, because a reader cannot tell the difference by looking.
+ */
+export const IMAGE_LICENCES = [
+  'cc-by-sa-4.0',
+  'cc-by-sa-3.0',
+  'cc-by-4.0',
+  'cc0-1.0',
+  'public-domain',
+  'own-work',
+] as const
+export type ImageLicence = (typeof IMAGE_LICENCES)[number]
+
+/** Where each licence's own terms live. A credit that cannot be checked is decoration. */
+export const IMAGE_LICENCE_URLS: Record<ImageLicence, string> = {
+  'cc-by-sa-4.0': 'https://creativecommons.org/licenses/by-sa/4.0/',
+  'cc-by-sa-3.0': 'https://creativecommons.org/licenses/by-sa/3.0/',
+  'cc-by-4.0': 'https://creativecommons.org/licenses/by/4.0/',
+  'cc0-1.0': 'https://creativecommons.org/publicdomain/zero/1.0/',
+  'public-domain': 'https://en.wikipedia.org/wiki/Public_domain',
+  'own-work': '',
+}
+
 /** What the dial shows. Three values, and they are exhaustive for Casio. */
 export const DISPLAYS = ['digital', 'analog', 'ana-digi'] as const
 export type Display = (typeof DISPLAYS)[number]

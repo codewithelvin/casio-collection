@@ -15,8 +15,16 @@ import { catalogFixtureJson } from './catalogFixture'
  * symptom is the worst kind of red: three tests failing in a full run and
  * passing when run alone. The fix is to give the wait room, not to make the
  * tests assert less.
+ *
+ * **Raised from 5 s to 15 s at M3**, after the coverage run — and only the
+ * coverage run — started failing the *first* test of two different files while
+ * every later test in the same file passed comfortably. That shape is the
+ * diagnosis: a cold worker under v8 instrumentation pays for compiling AntD and
+ * building a token set before the first assertion, and it was paying more than
+ * five seconds. Nothing here waits on an absence, so a longer ceiling makes a
+ * genuine failure slower to report and never makes one pass.
  */
-configure({ asyncUtilTimeout: 5000 })
+configure({ asyncUtilTimeout: 15_000 })
 
 afterEach(() => {
   cleanup()

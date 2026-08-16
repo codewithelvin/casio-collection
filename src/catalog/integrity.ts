@@ -225,6 +225,27 @@ export function checkIntegrity(
         }
       }
 
+      /* --- check 5a: a photograph names whose it is (D41) --- */
+      if (model.image && !model.image_credit) {
+        // The one integrity check that is about a promise to somebody outside
+        // this project rather than about the data being consistent. A CC BY-SA
+        // photograph published without its credit is a licence breach, and it
+        // looks exactly like a photograph published with one.
+        fail(
+          '5a',
+          where,
+          `image "${model.image}" has no image_credit. A photograph carries its author, ` +
+            `its licence and the page it came from (D41), or it is not published`,
+        )
+      }
+      if (model.image_credit && !model.image) {
+        fail(
+          '5a',
+          where,
+          `image_credit with no image — the credit describes a file that is not there`,
+        )
+      }
+
       /* --- check 9: a plausible year, or none --- */
       if (model.year != null) {
         const latest = options.currentYear + 1

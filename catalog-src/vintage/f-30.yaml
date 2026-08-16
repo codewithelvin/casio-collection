@@ -21,4 +21,12 @@ models:
     year: 1993
     module: '1007'
     case: { material: resin }
-    image: null
+    # A well-used example rather than a press shot, which is what a freely
+    # licensed photograph of a 1993 watch looks like. It is the right reference
+    # — the dial says F-30 — and it is the only free photograph of one that
+    # exists. The scratches are not a defect in the catalogue (D41).
+    image: f-30
+    image_credit:
+      author: Monoklon
+      licence: cc-by-sa-4.0
+      url: 'https://commons.wikimedia.org/wiki/File:Casio_F-30.jpg'
