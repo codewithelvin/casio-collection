@@ -36,9 +36,13 @@ export function themeConfig(mode: ThemeMode): ThemeConfig {
     token: {
       colorPrimary: accent,
       colorLink: accent,
-      // Slightly tightened from AntD's 6px — the mark is a chamfered octagon and
-      // a softer radius reads as a different family of shape.
-      borderRadius: 4,
+      // Was 4, tightened from AntD's 6 on the argument that the mark is a
+      // chamfered octagon and a softer radius reads as a different family of
+      // shape. The client looked at the built grids and asked for rounder, which
+      // settles it: the mark is 32 px of bezel and the cards are the page, so
+      // the cards are what the site's shape language actually is. 8 is soft
+      // enough to read as deliberate and still far from a pill.
+      borderRadius: 8,
 
       // §5.1 ships no stylesheet, so the typeface is declared here and in the
       // @font-face block in index.css, and nowhere else. See that file for why

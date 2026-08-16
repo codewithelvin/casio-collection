@@ -1,6 +1,20 @@
+import type { ReactNode } from 'react'
 import { useEffect } from 'react'
 import { Alert, Breadcrumb, Card, Descriptions, Tag, Typography, theme as antdTheme } from 'antd'
 import ExportOutlined from '@ant-design/icons/ExportOutlined'
+import ProfileOutlined from '@ant-design/icons/ProfileOutlined'
+import SafetyCertificateOutlined from '@ant-design/icons/SafetyCertificateOutlined'
+import AppstoreOutlined from '@ant-design/icons/AppstoreOutlined'
+import CalendarOutlined from '@ant-design/icons/CalendarOutlined'
+import EyeOutlined from '@ant-design/icons/EyeOutlined'
+import SyncOutlined from '@ant-design/icons/SyncOutlined'
+import BarcodeOutlined from '@ant-design/icons/BarcodeOutlined'
+import BorderOutlined from '@ant-design/icons/BorderOutlined'
+import ColumnWidthOutlined from '@ant-design/icons/ColumnWidthOutlined'
+import ColumnHeightOutlined from '@ant-design/icons/ColumnHeightOutlined'
+import DashboardOutlined from '@ant-design/icons/DashboardOutlined'
+import ExperimentOutlined from '@ant-design/icons/ExperimentOutlined'
+import BgColorsOutlined from '@ant-design/icons/BgColorsOutlined'
 import { Link, useParams } from 'react-router-dom'
 import {
   imageSources,
@@ -182,7 +196,7 @@ function WatchDetail({
         </div>
       </div>
 
-      <Typography.Title level={4}>{t('watch.specs')}</Typography.Title>
+      <SectionHeading icon={<ProfileOutlined />} text={t('watch.specs')} />
       {rows.length === 0 ? (
         <Typography.Paragraph type="secondary">{t('watch.noSpecs')}</Typography.Paragraph>
       ) : (
@@ -200,41 +214,69 @@ function WatchDetail({
       ) : null}
 
       {/* FR-3.2a — what kind of page this was read off, linked to the page. */}
-      <Typography.Title level={4} style={{ marginTop: 24 }}>
-        {t('watch.sourceHeading')}
-      </Typography.Title>
+      <SectionHeading icon={<SafetyCertificateOutlined />} text={t('watch.sourceHeading')} />
       <Typography.Paragraph>
         <a href={model.source.url} target="_blank" rel="noreferrer noopener">
           {sourceLabel(model.source.kind)} <ExportOutlined />
         </a>
       </Typography.Paragraph>
 
-      {/* FR-3.4 — a horizontally scrollable strip, excluding this model. */}
+      {/* FR-3.4 — the rest of the series, excluding this model.
+          FR-3.4 originally specified a horizontally scrollable strip. The client
+          looked at it built and called it not web friendly, which is fair: a
+          sideways scrollbar on a desktop page is a mouse-wheel dead end, and
+          eighteen F-91W colourways meant most of them were off-screen with
+          nothing saying so. This wraps instead — `auto-fill` gives the strip on
+          a phone and a tidy block on a laptop, from one rule and with no
+          breakpoint. Revised 2026-08-16 at the client's request. */}
       {others.length > 0 ? (
         <>
-          <Typography.Title level={4} style={{ marginTop: 24 }}>
-            {t('watch.otherInSeries')}
-          </Typography.Title>
-          <div style={{ display: 'flex', gap: 12, overflowX: 'auto', paddingBottom: 8 }}>
+          <SectionHeading icon={<AppstoreOutlined />} text={t('watch.otherInSeries')} />
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(148px, 1fr))',
+              gap: 12,
+            }}
+          >
             {others.map((other) => (
-              <Link key={other.id} to={`/watch/${other.id}`} style={{ flex: '0 0 auto' }}>
+              <Link key={other.id} to={`/watch/${other.id}`} aria-label={other.ref}>
                 <Card
                   hoverable
                   size="small"
-                  style={{ width: 160, borderTop: `3px solid ${accent}` }}
-                  styles={{ body: { padding: 10 } }}
+                  style={{ height: '100%', borderTop: `3px solid ${accent}` }}
+                  styles={{ body: { padding: 0 } }}
                 >
-                  <Typography.Text style={{ fontFamily: token.fontFamilyCode, fontSize: 13 }}>
+                  {/* The same typographic tile as the grid, in miniature, so the
+                      strip reads as the catalogue rather than as a list of
+                      links. §8.6 all the way down. */}
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      padding: '18px 8px',
+                      background: `${accent}14`,
+                      fontFamily: token.fontFamilyCode,
+                      fontSize: 14,
+                      fontWeight: 600,
+                      wordBreak: 'break-word',
+                      textAlign: 'center',
+                      color: token.colorText,
+                    }}
+                  >
                     {other.ref}
-                  </Typography.Text>
-                  {other.colorway ? (
-                    <Typography.Paragraph
-                      type="secondary"
-                      ellipsis={{ rows: 2 }}
-                      style={{ fontSize: 12, marginBottom: 0 }}
-                    >
-                      {other.colorway}
-                    </Typography.Paragraph>
+                  </div>
+                  {other.colorway || other.year ? (
+                    <div style={{ padding: '8px 10px' }}>
+                      <Typography.Paragraph
+                        type="secondary"
+                        ellipsis={{ rows: 2 }}
+                        style={{ fontSize: 12, marginBottom: 0 }}
+                      >
+                        {other.colorway ?? String(other.year)}
+                      </Typography.Paragraph>
+                    </div>
                   ) : null}
                 </Card>
               </Link>
@@ -252,28 +294,108 @@ function WatchDetail({
  * conditionals, so "omitted, never empty" is structural instead of remembered.
  */
 function specRows(model: PublishedModel) {
-  const rows: { key: string; label: string; children: string }[] = []
-  const push = (key: string, label: string, value: string | number | undefined | null) => {
+  const rows: { key: string; label: ReactNode; children: string }[] = []
+
+  // The icon sits with the label, not the value. A spec table is scanned down
+  // the left edge for the row you want, and a glyph per row is what makes that
+  // a glance instead of a read — which matters most on the models carrying two
+  // rows and the ones carrying ten, both of which exist here.
+  const push = (
+    key: string,
+    icon: ReactNode,
+    label: string,
+    value: string | number | undefined | null,
+  ) => {
     if (value === undefined || value === null || value === '') return
-    rows.push({ key, label, children: String(value) })
+    rows.push({
+      key,
+      label: (
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+          <Glyph>{icon}</Glyph>
+          {label}
+        </span>
+      ),
+      children: String(value),
+    })
   }
 
-  push('year', t('spec.year'), model.year)
-  push('display', t('spec.display'), model.display ? displayLabel(model.display) : undefined)
-  push('movement', t('spec.movement'), model.movement ? movementLabel(model.movement) : undefined)
-  push('module', t('spec.module'), model.module)
-  push('material', t('spec.case.material'), model.case?.material)
-  push('width', t('spec.case.width_mm'), model.case?.width_mm && `${model.case.width_mm} mm`)
-  push('height', t('spec.case.height_mm'), model.case?.height_mm && `${model.case.height_mm} mm`)
-  push('depth', t('spec.case.depth_mm'), model.case?.depth_mm && `${model.case.depth_mm} mm`)
-  push('weight', t('spec.case.weight_g'), model.case?.weight_g && `${model.case.weight_g} g`)
+  push('year', <CalendarOutlined />, t('spec.year'), model.year)
+  push(
+    'display',
+    <EyeOutlined />,
+    t('spec.display'),
+    model.display ? displayLabel(model.display) : undefined,
+  )
+  push(
+    'movement',
+    <SyncOutlined />,
+    t('spec.movement'),
+    model.movement ? movementLabel(model.movement) : undefined,
+  )
+  push('module', <BarcodeOutlined />, t('spec.module'), model.module)
+  push('material', <BorderOutlined />, t('spec.case.material'), model.case?.material)
+  push(
+    'width',
+    <ColumnWidthOutlined />,
+    t('spec.case.width_mm'),
+    model.case?.width_mm && `${model.case.width_mm} mm`,
+  )
+  push(
+    'height',
+    <ColumnHeightOutlined />,
+    t('spec.case.height_mm'),
+    model.case?.height_mm && `${model.case.height_mm} mm`,
+  )
+  push(
+    'depth',
+    <ColumnWidthOutlined />,
+    t('spec.case.depth_mm'),
+    model.case?.depth_mm && `${model.case.depth_mm} mm`,
+  )
+  push(
+    'weight',
+    <DashboardOutlined />,
+    t('spec.case.weight_g'),
+    model.case?.weight_g && `${model.case.weight_g} g`,
+  )
   push(
     'wr',
+    <ExperimentOutlined />,
     t('spec.water_resistance_m'),
     model.water_resistance_m === undefined ? undefined : `${model.water_resistance_m} m`,
   )
-  push('colorway', t('spec.colorway'), model.colorway)
+  push('colorway', <BgColorsOutlined />, t('spec.colorway'), model.colorway)
   return rows
+}
+
+/**
+ * A glyph that is decoration and nothing else.
+ *
+ * AntD renders every icon as `role="img"` with an `aria-label` of its own name,
+ * so an unwrapped icon inside a heading makes that heading announce
+ * "appstore Other models in this series" — and makes a test querying the
+ * heading by name fail for a reason that has nothing to do with the heading.
+ * Every icon added for looks goes through here.
+ */
+function Glyph({ children }: { children: ReactNode }) {
+  return (
+    <span aria-hidden="true" style={{ display: 'inline-flex' }}>
+      {children}
+    </span>
+  )
+}
+
+/** A section heading with its glyph, so the page is scannable by shape. */
+function SectionHeading({ icon, text }: { icon: ReactNode; text: string }) {
+  return (
+    <Typography.Title
+      level={4}
+      style={{ marginTop: 24, display: 'flex', alignItems: 'center', gap: 10 }}
+    >
+      <Glyph>{icon}</Glyph>
+      {text}
+    </Typography.Title>
+  )
 }
 
 /** Loading geometry that matches the detail layout, not a generic spinner. */
