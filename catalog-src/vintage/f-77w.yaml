@@ -1,0 +1,25 @@
+# F-77W — seeded 2026-08-16 (M1c, the sourcing spike).
+#
+# One model, read off one page in the Digital Watch Library. That is a
+# community source and is labelled as one: casio.com answers 403 to anything
+# that is not a person, so no official page was available to prefer.
+#
+# Movement is absent because the page does not state one, and display is absent
+# unless the page describes the dial. The page shows a "light" icon with no
+# type, and the vocabulary has five specific light values and no generic one,
+# so no light feature is claimed. Absent means nobody has found it (D27).
+
+series:
+  id: f-77w
+  name: F-77W
+  line: vintage
+
+models:
+  - id: f-77w
+    ref: F-77W
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_f-77w', kind: community }
+    year: 1986
+    module: '587'
+    case: { material: resin }
+    features: [alarm, stopwatch]
+    image: null

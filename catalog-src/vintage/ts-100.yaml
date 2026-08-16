@@ -1,0 +1,27 @@
+# TS-100 — seeded 2026-08-16 (M1c, the sourcing spike).
+#
+# One model, read off one page in the Digital Watch Library. That is a
+# community source and is labelled as one: casio.com answers 403 to anything
+# that is not a person, so no official page was available to prefer.
+#
+# Movement is absent because the page does not state one, and display is absent
+# unless the page describes the dial. The page shows a "light" icon with no
+# type, and the vocabulary has five specific light values and no generic one,
+# so no light feature is claimed. Absent means nobody has found it (D27).
+
+series:
+  id: ts-100
+  name: TS-100
+  line: vintage
+  aka: ["World Time"]
+
+models:
+  - id: ts-100
+    ref: TS-100
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_ts-100-1v', kind: community }
+    year: 1989
+    module: '815'
+    case: { material: resin }
+    water_resistance_m: 100
+    features: [multi-alarm, stopwatch, dual-time, countdown-timer]
+    image: null
