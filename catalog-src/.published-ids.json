@@ -1,4 +1,23 @@
 {
   "note": "D2 — every model id this catalogue has ever published, sorted. `npm run catalog:build` appends to it and never removes from it. An id that leaves catalog-src without a tombstone fails the build (§10.2 check 2), because nothing in the database can follow a rename: collection_items.model_id is a plain string with no foreign key, so permanence is the only integrity mechanism this system has. Commit this file with the catalogue change that produced it.",
-  "ids": []
+  "ids": [
+    "f-91w-1",
+    "f-91w-3",
+    "f-91wc-2a",
+    "f-91wc-3",
+    "f-91wc-4a",
+    "f-91wc-4a2",
+    "f-91wc-8a",
+    "f-91wc-9a",
+    "f-91wg-9",
+    "f-91wm-1b",
+    "f-91wm-2a",
+    "f-91wm-3a",
+    "f-91wm-7a",
+    "f-91wm-9a",
+    "f-91ws-2",
+    "f-91ws-4",
+    "f-91ws-7",
+    "f-91ws-8"
+  ]
 }

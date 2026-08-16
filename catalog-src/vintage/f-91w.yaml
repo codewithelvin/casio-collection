@@ -1,0 +1,268 @@
+# F-91W — the first series in the catalogue, seeded 2026-08-16 (M1b/M1c).
+#
+# Every model here is sourced from one page, casiorestore.com's technical-data
+# article, which carries the specification block and a dated variant table. That
+# is a `community` source and is labelled as one: casio.com is unreachable from
+# the machine this was seeded on (Akamai answers 403 to anything that is not a
+# person), so there was no official page to prefer. The reader is told which it
+# was, which is the whole point of FR-D1.
+#
+# Two things were deliberately NOT written, and they are worth naming because
+# both would have looked perfectly reasonable in a diff:
+#
+#   * No backlight feature. The source says "EL backlight"; two other sources
+#     read while cross-checking this series call it a micro-light and a "dim
+#     green backlight", which is a different part. When sources disagree about a
+#     fact, absent is the honest answer (principle 4) — and `el-backlight` on
+#     eighteen models would have been eighteen wrong facts, findable by filter.
+#   * No `discontinued` flag. The article says production is ongoing for the
+#     line, not for each variant, and the WC and WM colourways are plainly no
+#     longer sold. Nobody has checked variant by variant, so nobody claims it.
+#
+# The year on a WC, WM or WS entry is the year the source gives for that group,
+# not a guess from the reference code.
+
+series:
+  id: f-91w
+  name: F-91W
+  line: vintage
+  aka: [F91W]
+
+models:
+  # --- The classic black versions -----------------------------------------
+  - id: f-91w-1
+    ref: F-91W-1
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 1989
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Black with blue accent ring
+    image: null
+
+  - id: f-91wg-9
+    ref: F-91WG-9
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 1997
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Black with gold accent ring
+    image: null
+
+  - id: f-91w-3
+    ref: F-91W-3
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2003
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Black with dark green accents
+    image: null
+
+  # --- WC, the monochrome series ------------------------------------------
+  - id: f-91wc-2a
+    ref: F-91WC-2A
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2010
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Light blue monochrome
+    image: null
+
+  - id: f-91wc-3
+    ref: F-91WC-3
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2010
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Green monochrome
+    image: null
+
+  - id: f-91wc-4a
+    ref: F-91WC-4A
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2010
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Pink monochrome
+    image: null
+
+  - id: f-91wc-4a2
+    ref: F-91WC-4A2
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2010
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Orange monochrome
+    image: null
+
+  - id: f-91wc-8a
+    ref: F-91WC-8A
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2010
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Cream monochrome
+    image: null
+
+  - id: f-91wc-9a
+    ref: F-91WC-9A
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2010
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Yellow monochrome
+    image: null
+
+  # --- WM, the metallic series --------------------------------------------
+  - id: f-91wm-1b
+    ref: F-91WM-1B
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2018
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Metallic grey case, black strap
+    image: null
+
+  - id: f-91wm-2a
+    ref: F-91WM-2A
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2018
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Metallic blue case, black strap
+    image: null
+
+  - id: f-91wm-3a
+    ref: F-91WM-3A
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2018
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Metallic olive case, black strap
+    image: null
+
+  - id: f-91wm-7a
+    ref: F-91WM-7A
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2018
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Metallic silver case, black strap
+    image: null
+
+  - id: f-91wm-9a
+    ref: F-91WM-9A
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2018
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Metallic gold case, black strap
+    image: null
+
+  # --- WS, the translucent series -----------------------------------------
+  - id: f-91ws-2
+    ref: F-91WS-2
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2020
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Translucent light blue
+    image: null
+
+  - id: f-91ws-4
+    ref: F-91WS-4
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2020
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Translucent pink
+    image: null
+
+  - id: f-91ws-7
+    ref: F-91WS-7
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2020
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Translucent white
+    image: null
+
+  - id: f-91ws-8
+    ref: F-91WS-8
+    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    year: 2020
+    display: digital
+    movement: quartz
+    module: '593'
+    case: { material: resin, weight_g: 21 }
+    water_resistance_m: 30
+    features: [alarm, hourly-time-signal, stopwatch, full-auto-calendar]
+    colorway: Translucent grey
+    image: null
