@@ -13,7 +13,7 @@ series:
   id: ts-100
   name: TS-100
   line: vintage
-  aka: ["World Time"]
+  aka: ['World Time']
 
 models:
   - id: ts-100

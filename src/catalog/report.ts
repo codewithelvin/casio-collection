@@ -52,7 +52,11 @@ function valueAt(document: unknown, path: readonly PropertyKey[]): unknown {
  * which for the feature vocabulary is thirty-odd words of noise wrapped around
  * the one word that matters — the one that was actually written.
  */
-export function issuesFromSchema(file: string, issues: readonly SchemaIssue[], document?: unknown): Issue[] {
+export function issuesFromSchema(
+  file: string,
+  issues: readonly SchemaIssue[],
+  document?: unknown,
+): Issue[] {
   return issues.map((issue) => {
     const path = issue.path.map(String)
     const field = path.filter((part) => !/^\d+$/.test(part)).at(-1) ?? ''

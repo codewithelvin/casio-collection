@@ -66,7 +66,12 @@ describe('the coverage table', () => {
     const empty = buildCatalog(
       aSource({ series: [aSeries({ models: [aModel({ tombstone: { reason: 'retired' } })] })] }),
     )
-    const text = renderCoverageTable(coverageTable(empty.models.filter((model) => !model.tombstone), empty.lines))
+    const text = renderCoverageTable(
+      coverageTable(
+        empty.models.filter((model) => !model.tombstone),
+        empty.lines,
+      ),
+    )
     expect(text).toContain('no models yet')
   })
 })

@@ -65,7 +65,10 @@ function publishModel(model: Model, line: string, series: string): Record<string
   })
 }
 
-function facetOf(models: readonly PublishedModel[], field: (typeof FACET_FIELDS)[number]): FacetSummary {
+function facetOf(
+  models: readonly PublishedModel[],
+  field: (typeof FACET_FIELDS)[number],
+): FacetSummary {
   const counts = new Map<string, number>()
   let present = 0
 
@@ -125,7 +128,10 @@ export function buildCatalog(source: CatalogSource): CatalogPayload {
       models.push(publishModel(model, entry.series.line, entry.series.id))
     }
 
-    modelsPerLine.set(entry.series.line, (modelsPerLine.get(entry.series.line) ?? 0) + browsable.length)
+    modelsPerLine.set(
+      entry.series.line,
+      (modelsPerLine.get(entry.series.line) ?? 0) + browsable.length,
+    )
 
     if (entry.series.family) {
       const forLine = familiesInUse.get(entry.series.line) ?? new Set<string>()

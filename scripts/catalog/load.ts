@@ -140,7 +140,9 @@ export async function loadCatalogSource(): Promise<LoadResult> {
     try {
       const parsed: unknown = JSON.parse(manifestText)
       const ids = (parsed as { ids?: unknown }).ids
-      publishedIds = Array.isArray(ids) ? ids.filter((id): id is string => typeof id === 'string') : []
+      publishedIds = Array.isArray(ids)
+        ? ids.filter((id): id is string => typeof id === 'string')
+        : []
     } catch {
       // D2's only integrity mechanism is this file. An unreadable one is not a
       // thing to shrug at and carry on from — the check it feeds would pass

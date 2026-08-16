@@ -1,5 +1,10 @@
 import type { PublishedModel } from './schema.ts'
-import { COVERAGE_FIELDS, DENSITY_THRESHOLD, FACET_FIELDS, type CoverageField } from './vocabulary.ts'
+import {
+  COVERAGE_FIELDS,
+  DENSITY_THRESHOLD,
+  FACET_FIELDS,
+  type CoverageField,
+} from './vocabulary.ts'
 
 /**
  * §10.2 check 10 — the coverage table, printed on every build.
@@ -42,7 +47,12 @@ function carries(model: PublishedModel, field: CoverageField): boolean {
 export function coverageOf(models: readonly PublishedModel[]): CoverageRow[] {
   return COVERAGE_FIELDS.map((field) => {
     const present = models.filter((model) => carries(model, field)).length
-    return { field, present, total: models.length, share: models.length === 0 ? 0 : present / models.length }
+    return {
+      field,
+      present,
+      total: models.length,
+      share: models.length === 0 ? 0 : present / models.length,
+    }
   })
 }
 
@@ -78,15 +88,23 @@ export function renderCoverageTable(columns: CoverageColumn[]): string {
   const fieldWidth = Math.max(...COVERAGE_FIELDS.map((field) => field.length)) + 2
   const columnWidth = Math.max(9, ...columns.map((column) => column.label.length + 2))
 
-  const head = ['field'.padEnd(fieldWidth), ...columns.map((column) => column.label.padStart(columnWidth))].join('')
-  const counts = ['models'.padEnd(fieldWidth), ...columns.map((column) => String(column.total).padStart(columnWidth))].join('')
+  const head = [
+    'field'.padEnd(fieldWidth),
+    ...columns.map((column) => column.label.padStart(columnWidth)),
+  ].join('')
+  const counts = [
+    'models'.padEnd(fieldWidth),
+    ...columns.map((column) => String(column.total).padStart(columnWidth)),
+  ].join('')
 
   const facetFields = new Set<string>(FACET_FIELDS)
   const body = COVERAGE_FIELDS.map((field, index) => {
     // A leading dot marks the fields a filter can be built from, because those
     // are the only rows the 60% rule has anything to say about.
     const label = `${facetFields.has(field) ? '·' : ' '} ${field}`.padEnd(fieldWidth)
-    const cells = columns.map((column) => percent(column.rows[index]?.share ?? 0).padStart(columnWidth))
+    const cells = columns.map((column) =>
+      percent(column.rows[index]?.share ?? 0).padStart(columnWidth),
+    )
     return [label, ...cells].join('')
   })
 

@@ -27,7 +27,11 @@ type MarkVariantProps = { size: number; className?: string | undefined }
  * than at every call site where someone would eventually forget.
  */
 export function Mark({ size = 32, className }: MarkProps) {
-  return size < 32 ? <MarkCompact size={size} className={className} /> : <MarkFull size={size} className={className} />
+  return size < 32 ? (
+    <MarkCompact size={size} className={className} />
+  ) : (
+    <MarkFull size={size} className={className} />
+  )
 }
 
 function MarkFull({ size, className }: MarkVariantProps) {
@@ -109,7 +113,13 @@ function MarkCompact({ size, className }: MarkVariantProps) {
  *
  * Below 120 px wide the letterspacing stops reading, so the mark stands alone.
  */
-export function Lockup({ markSize = 32, showWordmark = true }: { markSize?: number; showWordmark?: boolean }) {
+export function Lockup({
+  markSize = 32,
+  showWordmark = true,
+}: {
+  markSize?: number
+  showWordmark?: boolean
+}) {
   return (
     <span
       style={{

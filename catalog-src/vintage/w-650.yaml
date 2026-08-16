@@ -13,7 +13,7 @@ series:
   id: w-650
   name: W-650
   line: vintage
-  aka: ["Multi Alarm"]
+  aka: ['Multi Alarm']
 
 models:
   - id: w-650

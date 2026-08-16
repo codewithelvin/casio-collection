@@ -13,7 +13,7 @@ series:
   id: fs-12
   name: FS-12
   line: vintage
-  aka: ["DIGIPAPER"]
+  aka: ['DIGIPAPER']
 
 models:
   - id: fs-12

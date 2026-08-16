@@ -13,7 +13,7 @@ series:
   id: t-2000
   name: T-2000
   line: vintage
-  aka: ["Dictionary"]
+  aka: ['Dictionary']
 
 models:
   - id: t-2000

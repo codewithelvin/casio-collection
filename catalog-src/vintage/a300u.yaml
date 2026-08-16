@@ -13,7 +13,7 @@ series:
   id: a300u
   name: A300U
   line: vintage
-  aka: ["World Time"]
+  aka: ['World Time']
 
 models:
   - id: a300u

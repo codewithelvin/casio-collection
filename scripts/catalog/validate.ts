@@ -30,7 +30,9 @@ export async function runValidation(): Promise<ValidationResult> {
     series: source.series.length,
     models: source.series.reduce((total, entry) => total + entry.models.length, 0),
   }
-  console.log(`catalog-src: ${counts.lines} lines, ${counts.series} series, ${counts.models} models`)
+  console.log(
+    `catalog-src: ${counts.lines} lines, ${counts.series} series, ${counts.models} models`,
+  )
 
   const report = checkIntegrity(source, { currentYear: new Date().getFullYear() })
 
@@ -45,7 +47,14 @@ export async function runValidation(): Promise<ValidationResult> {
   }
 
   const payload = buildCatalog(source)
-  console.log(`\n${renderCoverageTable(coverageTable(payload.models.filter((model) => !model.tombstone), payload.lines))}`)
+  console.log(
+    `\n${renderCoverageTable(
+      coverageTable(
+        payload.models.filter((model) => !model.tombstone),
+        payload.lines,
+      ),
+    )}`,
+  )
 
   return { ok: true, payload }
 }

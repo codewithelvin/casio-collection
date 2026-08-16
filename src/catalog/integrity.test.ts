@@ -92,7 +92,9 @@ describe('check 2a — a tombstone must point somewhere', () => {
   it('fails when the successor is the tombstone itself', () => {
     const source = aSource({
       series: [
-        aSeries({ models: [aModel({ tombstone: { reason: 'oops', replaced_by: 'dw-5600e-1v' } })] }),
+        aSeries({
+          models: [aModel({ tombstone: { reason: 'oops', replaced_by: 'dw-5600e-1v' } })],
+        }),
         ...aSource().series.slice(1),
       ],
     })
@@ -123,7 +125,10 @@ describe('check 3 — references are unique and match their own line', () => {
 
   it('warns — never fails — on a reference the line pattern does not match', () => {
     const source = aSource({
-      series: [aSeries({ models: [aModel({ id: 'dw-5600', ref: 'DW-5600 (early)' })] }), ...aSource().series.slice(1)],
+      series: [
+        aSeries({ models: [aModel({ id: 'dw-5600', ref: 'DW-5600 (early)' })] }),
+        ...aSource().series.slice(1),
+      ],
     })
     const report = run(source)
     expect(report.failures.filter((issue) => issue.check === '3')).toEqual([])
@@ -210,7 +215,9 @@ describe('check 4 — lines, families and the folder they are filed under', () =
     })
     expect(checks(run(aSource({ lines: duplicateFamily })).failures)).toContain('4')
 
-    const duplicateSeries = aSource({ series: [aSeries(), aSeries({ file: 'catalog-src/g-shock/other.yaml' })] })
+    const duplicateSeries = aSource({
+      series: [aSeries(), aSeries({ file: 'catalog-src/g-shock/other.yaml' })],
+    })
     expect(checks(run(duplicateSeries).failures)).toContain('4')
   })
 })
@@ -218,7 +225,10 @@ describe('check 4 — lines, families and the folder they are filed under', () =
 describe('check 4a — a series id is the prefix its models actually share (D32)', () => {
   it('fails a model whose reference does not begin with its series id', () => {
     const source = aSource({
-      series: [aSeries({ models: [aModel({ id: 'ga-2100-1a1', ref: 'GA-2100-1A1' })] }), ...aSource().series.slice(1)],
+      series: [
+        aSeries({ models: [aModel({ id: 'ga-2100-1a1', ref: 'GA-2100-1A1' })] }),
+        ...aSource().series.slice(1),
+      ],
     })
     const report = run(source)
     expect(checks(report.failures)).toContain('4a')
@@ -242,7 +252,10 @@ describe('check 4a — a series id is the prefix its models actually share (D32)
 describe('check 5 — an image exists at both widths, or is explicitly absent', () => {
   it('fails when only the 400 px file was written', () => {
     const source = aSource({
-      series: [aSeries({ models: [aModel({ image: 'dw-5600e-1v' })] }), ...aSource().series.slice(1)],
+      series: [
+        aSeries({ models: [aModel({ image: 'dw-5600e-1v' })] }),
+        ...aSource().series.slice(1),
+      ],
       images: new Set(['dw-5600e-1v.webp']),
     })
     const report = run(source)
@@ -252,7 +265,10 @@ describe('check 5 — an image exists at both widths, or is explicitly absent', 
 
   it('passes when both widths are there', () => {
     const source = aSource({
-      series: [aSeries({ models: [aModel({ image: 'dw-5600e-1v' })] }), ...aSource().series.slice(1)],
+      series: [
+        aSeries({ models: [aModel({ image: 'dw-5600e-1v' })] }),
+        ...aSource().series.slice(1),
+      ],
       images: new Set(['dw-5600e-1v.webp', 'dw-5600e-1v@2x.webp']),
     })
     expect(run(source).failures).toEqual([])
@@ -276,7 +292,10 @@ describe('check 9 — a year, where there is one, has to be possible', () => {
 
   it('fails a year further out than next year', () => {
     const source = aSource({
-      series: [aSeries({ models: [aModel({ year: CURRENT_YEAR + 2 })] }), ...aSource().series.slice(1)],
+      series: [
+        aSeries({ models: [aModel({ year: CURRENT_YEAR + 2 })] }),
+        ...aSource().series.slice(1),
+      ],
     })
     expect(checks(run(source).failures)).toEqual(['9'])
   })
@@ -295,7 +314,12 @@ describe('the report itself', () => {
   it('is ordered the same way every run, so two runs diff cleanly', () => {
     const source = aSource({
       series: [
-        aSeries({ models: [aModel({ year: 1900 }), aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', image: 'x' })] }),
+        aSeries({
+          models: [
+            aModel({ year: 1900 }),
+            aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', image: 'x' }),
+          ],
+        }),
         ...aSource().series.slice(1),
       ],
     })

@@ -13,7 +13,7 @@ series:
   id: w-60u
   name: W-60U
   line: vintage
-  aka: ["USA Six Time Zone"]
+  aka: ['USA Six Time Zone']
 
 models:
   - id: w-60u

@@ -166,7 +166,10 @@ export function auditCatalogue(input: AuditInput): AuditReport {
       series: series.id,
       models: inSeries.length,
       gaps: gapsFor(inSeries),
-      bare: inSeries.filter(carriesNothing).map((model) => model.id).sort(),
+      bare: inSeries
+        .filter(carriesNothing)
+        .map((model) => model.id)
+        .sort(),
     })
   }
 
@@ -213,15 +216,26 @@ export function auditCatalogue(input: AuditInput): AuditReport {
     models: browsable.length,
     tombstoned: all.length - browsable.length,
     sources,
-    unsourced: unsourced.sort((a, b) => a.line.localeCompare(b.line) || a.series.localeCompare(b.series)),
-    images: { without: without.sort(), broken: broken.sort((a, b) => a.id.localeCompare(b.id)), orphans },
+    unsourced: unsourced.sort(
+      (a, b) => a.line.localeCompare(b.line) || a.series.localeCompare(b.series),
+    ),
+    images: {
+      without: without.sort(),
+      broken: broken.sort((a, b) => a.id.localeCompare(b.id)),
+      orphans,
+    },
     vocabulary: {
       rejected: input.parseFailures.filter((issue) => issue.check === '6'),
-      singletons: singletons.sort((a, b) => a.field.localeCompare(b.field) || a.value.localeCompare(b.value)),
+      singletons: singletons.sort(
+        (a, b) => a.field.localeCompare(b.field) || a.value.localeCompare(b.value),
+      ),
     },
     size: input.size,
     drift: {
-      vanished: input.publishedIds.filter((id) => !present.has(id)).slice().sort(),
+      vanished: input.publishedIds
+        .filter((id) => !present.has(id))
+        .slice()
+        .sort(),
       pending: [...present].filter((id) => !known.has(id)).sort(),
       tombstones: all
         .filter((model) => model.tombstone)
@@ -267,19 +281,27 @@ export function renderAudit(report: AuditReport): string {
   /* 1 */
   const gapLines: string[] = []
   for (const entry of report.unsourced) {
-    gapLines.push(`${entry.line}/${entry.series} — ${entry.models} model${entry.models === 1 ? '' : 's'}`)
+    gapLines.push(
+      `${entry.line}/${entry.series} — ${entry.models} model${entry.models === 1 ? '' : 's'}`,
+    )
     if (entry.gaps.length === 0) gapLines.push('  every optional field is filled')
     for (const gap of entry.gaps) {
       const mark = FACETS.has(gap.field) ? '·' : ' '
       const label = `${mark} ${gap.field}`.padEnd(22)
-      gapLines.push(`  ${label}${String(gap.missing).padStart(4)} of ${gap.total}   ${idList(gap.ids)}`)
+      gapLines.push(
+        `  ${label}${String(gap.missing).padStart(4)} of ${gap.total}   ${idList(gap.ids)}`,
+      )
     }
     if (entry.bare.length > 0) {
       gapLines.push(`  nothing but id, ref and source: ${idList(entry.bare)}`)
     }
   }
   if (gapLines.length === 0) gapLines.push('no models yet.')
-  else gapLines.push('', '· marks a field a filter is built from. Under 60% in view it does not render (D26).')
+  else
+    gapLines.push(
+      '',
+      '· marks a field a filter is built from. Under 60% in view it does not render (D26).',
+    )
   blocks.push(section(1, 'Unsourced fields — absent means nobody has found it (D27)', gapLines))
 
   /* 2 */
@@ -292,7 +314,9 @@ export function renderAudit(report: AuditReport): string {
     )
   }
   for (const entry of report.images.broken) {
-    imageLines.push(`${entry.id}: claims ${entry.missing.join(' and ')}, which is not there — §10.2 check 5 fails`)
+    imageLines.push(
+      `${entry.id}: claims ${entry.missing.join(' and ')}, which is not there — §10.2 check 5 fails`,
+    )
   }
   if (report.images.orphans.length > 0) {
     imageLines.push(`unclaimed files under public/img/models: ${idList(report.images.orphans, 12)}`)
@@ -308,7 +332,8 @@ export function renderAudit(report: AuditReport): string {
   for (const single of report.vocabulary.singletons) {
     vocabLines.push(`${single.field} "${single.value}" is carried by one model`)
   }
-  if (vocabLines.length === 0) vocabLines.push('every facet value is in the vocabulary and shared by more than one model.')
+  if (vocabLines.length === 0)
+    vocabLines.push('every facet value is in the vocabulary and shared by more than one model.')
   else {
     vocabLines.push(
       '',
@@ -323,7 +348,9 @@ export function renderAudit(report: AuditReport): string {
     section(
       4,
       'Budget',
-      report.size ? renderSize(report.size).text.split('\n') : ['nothing was serialised — the source did not parse.'],
+      report.size
+        ? renderSize(report.size).text.split('\n')
+        : ['nothing was serialised — the source did not parse.'],
     ),
   )
 
@@ -333,11 +360,15 @@ export function renderAudit(report: AuditReport): string {
     driftLines.push(`"${id}" was published and is gone. A collection row still points at it (D2)`)
   }
   if (report.drift.pending.length > 0) {
-    driftLines.push(`${report.drift.pending.length} id${report.drift.pending.length === 1 ? '' : 's'} the next build publishes for the first time — permanent from that moment:`)
+    driftLines.push(
+      `${report.drift.pending.length} id${report.drift.pending.length === 1 ? '' : 's'} the next build publishes for the first time — permanent from that moment:`,
+    )
     driftLines.push(`  ${idList(report.drift.pending, 12)}`)
   }
   for (const stone of report.drift.tombstones) {
-    driftLines.push(`tombstone ${stone.id}${stone.replacedBy ? ` → ${stone.replacedBy}` : ' (no successor)'}`)
+    driftLines.push(
+      `tombstone ${stone.id}${stone.replacedBy ? ` → ${stone.replacedBy}` : ' (no successor)'}`,
+    )
   }
   if (driftLines.length === 0) driftLines.push('the manifest and the source agree.')
   blocks.push(section(5, 'Id drift against .published-ids.json', driftLines))

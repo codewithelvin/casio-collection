@@ -13,7 +13,7 @@ series:
   id: bgp-200
   name: BGP-200
   line: vintage
-  aka: ["Multi Planner"]
+  aka: ['Multi Planner']
 
 models:
   - id: bgp-200

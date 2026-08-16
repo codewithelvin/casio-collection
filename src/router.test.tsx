@@ -6,20 +6,24 @@ import { t } from './i18n/strings'
 describe('the route table (§7.3)', () => {
   it('renders the home route at /', async () => {
     renderApp('/')
-    expect(await screen.findByRole('heading', { name: t('route.home.title'), level: 1 })).toBeInTheDocument()
+    expect(
+      await screen.findByRole('heading', { name: t('route.home.title'), level: 2 }),
+    ).toBeInTheDocument()
   })
 
-  it('resolves a watch deep link and reads the model id', async () => {
+  it('resolves a watch deep link and renders that model', async () => {
     // D13's whole problem: this URL has to work when it is the first thing the
     // browser asks for, not only when it is reached by clicking. The router
     // half is proven here; the 404.html half is proven by the CI smoke step.
     renderApp('/watch/ga-2100-1a1')
-    expect(await screen.findByText('ga-2100-1a1')).toBeInTheDocument()
+    expect(
+      await screen.findByRole('heading', { name: 'GA-2100-1A1', level: 2 }),
+    ).toBeInTheDocument()
   })
 
   it('resolves a series URL with both segments (D32)', async () => {
     renderApp('/line/g-shock/dw-5600')
-    expect(await screen.findByText('g-shock / dw-5600')).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: 'DW-5600', level: 2 })).toBeInTheDocument()
   })
 
   it('carries the search term in the URL (FR-1.6)', async () => {

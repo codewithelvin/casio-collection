@@ -13,7 +13,7 @@ series:
   id: ws-720
   name: WS-720
   line: vintage
-  aka: ["Marlin"]
+  aka: ['Marlin']
 
 models:
   - id: ws-720

@@ -7,7 +7,7 @@ description: Research, seed and maintain the Casio Vault catalogue under catalog
 
 You are seeding a watch catalogue whose credibility is the entire product. Most
 of what it lists was discontinued years ago and is off casio.com, so the honest
-answer is often *nobody has found this out*. Writing that down is the job. A
+answer is often _nobody has found this out_. Writing that down is the job. A
 plausible case diameter is indistinguishable from a real one in a diff, which is
 exactly why it must never be written.
 
@@ -60,25 +60,25 @@ Five fields are required and everything else is optional (D27). `line` and
 
 ```yaml
 series:
-  id: f-91w            # the reference prefix, lowercased — mechanical (D32)
+  id: f-91w # the reference prefix, lowercased — mechanical (D32)
   name: F-91W
-  line: vintage        # must equal the folder the file is in
-  aka: [F91W]          # optional; what people actually type
+  line: vintage # must equal the folder the file is in
+  aka: [F91W] # optional; what people actually type
 models:
   - id: f-91w-1
     ref: F-91W-1
-    source: { url: "https://…", kind: official }
+    source: { url: 'https://…', kind: official }
     # everything below is optional; absent means nobody has found it
     year: 1989
     display: digital
     movement: quartz
-    module: "593"
+    module: '593'
     case: { material: resin, width_mm: 38.2 }
     water_resistance_m: 30
     features: [alarm, stopwatch, el-backlight]
     colorway: Black
-    image: f-91w-1      # or null — null is normal and not a failure
-    official_url: "https://…"
+    image: f-91w-1 # or null — null is normal and not a failure
+    official_url: 'https://…'
     discontinued: true
 ```
 
@@ -90,7 +90,7 @@ Three things that are easy to get wrong:
   reference does not start with it, it belongs in a different file.
 - **`discontinued` and a tombstone are different facts.** Discontinued means
   Casio stopped selling it, which is true of most of this catalogue.
-  A tombstone means *this catalogue entry* was retired.
+  A tombstone means _this catalogue entry_ was retired.
 
 Every object is strict: an unrecognised key fails the parse. That is on purpose —
 `wather_resistance_m` would otherwise publish a watch with no water resistance.
@@ -100,11 +100,11 @@ Every object is strict: an unrecognised key fails the parse. That is on purpose 
 `kind` is shown to the reader, so it is a claim about the page and not
 bookkeeping:
 
-| kind | what it is |
-|---|---|
-| `official` | casio.com or a Casio regional site — including a support/manual page |
-| `retailer` | a shop listing |
-| `community` | a wiki, a forum, an enthusiast database |
+| kind        | what it is                                                           |
+| ----------- | -------------------------------------------------------------------- |
+| `official`  | casio.com or a Casio regional site — including a support/manual page |
+| `retailer`  | a shop listing                                                       |
+| `community` | a wiki, a forum, an enthusiast database                              |
 
 Try in that order and **stop at the first page that actually states the fields**,
 rather than collecting three pages for one watch. A retailer page that lists the
@@ -123,12 +123,12 @@ Rules that keep the sourcing honest:
   identifies the movement, and a manual for module 593 tells you the features of
   every watch that uses it. Look for it first.
 - **Never infer a year from a module number** or from "looks eighties". D25 is
-  explicit: unknown year is `null`, never *circa*.
+  explicit: unknown year is `null`, never _circa_.
 - **A reference with a letter suffix is a colourway, not a new watch** —
   `F-91W-1` and `F-91W-3` are separate models with separate ids, both real. Do
   not collapse them and do not invent the ones in between.
 - If two sources disagree, take the more official one and note nothing. If they
-  disagree on the *reference itself*, do not write the model at all — report it.
+  disagree on the _reference itself_, do not write the model at all — report it.
 
 ## The commands
 

@@ -13,7 +13,7 @@ series:
   id: w-54us
   name: W-54US
   line: vintage
-  aka: ["USA Six Time Zone"]
+  aka: ['USA Six Time Zone']
 
 models:
   - id: w-54us

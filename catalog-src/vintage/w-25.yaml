@@ -13,7 +13,7 @@ series:
   id: w-25
   name: W-25
   line: vintage
-  aka: ["Marlin"]
+  aka: ['Marlin']
 
 models:
   - id: w-25

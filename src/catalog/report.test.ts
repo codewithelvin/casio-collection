@@ -41,8 +41,13 @@ describe('a schema rejection, rendered as a §10.2 failure', () => {
   })
 
   it('still reads when the document it came from is not to hand', () => {
-    const issues = issuesFromSchema('f.yaml', MODEL.safeParse({ id: 'aa', ref: 'A', display: 'x' }).error?.issues ?? [])
-    expect(issues.some((issue) => issue.check === '6' && issue.message.includes('that value'))).toBe(true)
+    const issues = issuesFromSchema(
+      'f.yaml',
+      MODEL.safeParse({ id: 'aa', ref: 'A', display: 'x' }).error?.issues ?? [],
+    )
+    expect(
+      issues.some((issue) => issue.check === '6' && issue.message.includes('that value')),
+    ).toBe(true)
   })
 })
 
@@ -59,7 +64,9 @@ describe('the rendered report', () => {
   })
 
   it('drops the §10.2 prefix where the parse failed before any numbered check ran', () => {
-    const text = renderIssues('Failures', [{ check: 'yaml', where: 'f.yaml: line 3', message: 'bad indent' }])
+    const text = renderIssues('Failures', [
+      { check: 'yaml', where: 'f.yaml: line 3', message: 'bad indent' },
+    ])
     expect(text).not.toContain('§10.2')
     expect(text).toContain('yaml')
   })
@@ -75,7 +82,11 @@ describe('the size report (§10.2 check 8)', () => {
   })
 
   it('fails over the budget and points at the split rather than at a bigger number', () => {
-    const { ok, text } = renderSize({ bytes: 2_000_000, gzipBytes: CATALOG_BUDGET_GZIP + 1, models: 3000 })
+    const { ok, text } = renderSize({
+      bytes: 2_000_000,
+      gzipBytes: CATALOG_BUDGET_GZIP + 1,
+      models: 3000,
+    })
     expect(ok).toBe(false)
     expect(text).toContain('split')
     expect(text).toContain('not one of the options')

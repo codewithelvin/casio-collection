@@ -13,7 +13,7 @@ series:
   id: w-520u
   name: W-520U
   line: vintage
-  aka: ["World Time"]
+  aka: ['World Time']
 
 models:
   - id: w-520u

@@ -33,7 +33,9 @@ async function updateManifest(ids: string[]): Promise<number> {
   const text = await readFile(MANIFEST_FILE, 'utf8').catch(() => '{}')
   const parsed: unknown = JSON.parse(text)
   const previous = (parsed as { ids?: unknown }).ids
-  const known = new Set(Array.isArray(previous) ? previous.filter((id): id is string => typeof id === 'string') : [])
+  const known = new Set(
+    Array.isArray(previous) ? previous.filter((id): id is string => typeof id === 'string') : [],
+  )
   const added = ids.filter((id) => !known.has(id))
   if (added.length === 0) return 0
 

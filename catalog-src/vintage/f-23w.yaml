@@ -13,7 +13,7 @@ series:
   id: f-23w
   name: F-23W
   line: vintage
-  aka: ["Sporty Casual"]
+  aka: ['Sporty Casual']
 
 models:
   - id: f-23w

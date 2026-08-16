@@ -32,7 +32,11 @@ models:
   # --- The classic black versions -----------------------------------------
   - id: f-91w-1
     ref: F-91W-1
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 1989
     display: digital
     movement: quartz
@@ -45,7 +49,11 @@ models:
 
   - id: f-91wg-9
     ref: F-91WG-9
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 1997
     display: digital
     movement: quartz
@@ -58,7 +66,11 @@ models:
 
   - id: f-91w-3
     ref: F-91W-3
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2003
     display: digital
     movement: quartz
@@ -72,7 +84,11 @@ models:
   # --- WC, the monochrome series ------------------------------------------
   - id: f-91wc-2a
     ref: F-91WC-2A
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2010
     display: digital
     movement: quartz
@@ -85,7 +101,11 @@ models:
 
   - id: f-91wc-3
     ref: F-91WC-3
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2010
     display: digital
     movement: quartz
@@ -98,7 +118,11 @@ models:
 
   - id: f-91wc-4a
     ref: F-91WC-4A
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2010
     display: digital
     movement: quartz
@@ -111,7 +135,11 @@ models:
 
   - id: f-91wc-4a2
     ref: F-91WC-4A2
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2010
     display: digital
     movement: quartz
@@ -124,7 +152,11 @@ models:
 
   - id: f-91wc-8a
     ref: F-91WC-8A
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2010
     display: digital
     movement: quartz
@@ -137,7 +169,11 @@ models:
 
   - id: f-91wc-9a
     ref: F-91WC-9A
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2010
     display: digital
     movement: quartz
@@ -151,7 +187,11 @@ models:
   # --- WM, the metallic series --------------------------------------------
   - id: f-91wm-1b
     ref: F-91WM-1B
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2018
     display: digital
     movement: quartz
@@ -164,7 +204,11 @@ models:
 
   - id: f-91wm-2a
     ref: F-91WM-2A
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2018
     display: digital
     movement: quartz
@@ -177,7 +221,11 @@ models:
 
   - id: f-91wm-3a
     ref: F-91WM-3A
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2018
     display: digital
     movement: quartz
@@ -190,7 +238,11 @@ models:
 
   - id: f-91wm-7a
     ref: F-91WM-7A
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2018
     display: digital
     movement: quartz
@@ -203,7 +255,11 @@ models:
 
   - id: f-91wm-9a
     ref: F-91WM-9A
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2018
     display: digital
     movement: quartz
@@ -217,7 +273,11 @@ models:
   # --- WS, the translucent series -----------------------------------------
   - id: f-91ws-2
     ref: F-91WS-2
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2020
     display: digital
     movement: quartz
@@ -230,7 +290,11 @@ models:
 
   - id: f-91ws-4
     ref: F-91WS-4
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2020
     display: digital
     movement: quartz
@@ -243,7 +307,11 @@ models:
 
   - id: f-91ws-7
     ref: F-91WS-7
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2020
     display: digital
     movement: quartz
@@ -256,7 +324,11 @@ models:
 
   - id: f-91ws-8
     ref: F-91WS-8
-    source: { url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/', kind: community }
+    source:
+      {
+        url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
+        kind: community,
+      }
     year: 2020
     display: digital
     movement: quartz

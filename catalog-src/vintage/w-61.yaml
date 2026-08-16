@@ -13,7 +13,7 @@ series:
   id: w-61
   name: W-61
   line: vintage
-  aka: ["Sailboat"]
+  aka: ['Sailboat']
 
 models:
   - id: w-61

@@ -53,14 +53,21 @@ describe('the model schema', () => {
 
   // §10.2 check 6
   it('rejects a feature outside the controlled vocabulary (check 6)', () => {
-    const parsed = MODEL.safeParse({ id: 'aa', ref: 'A', source, features: ['world-time', 'sollar'] })
+    const parsed = MODEL.safeParse({
+      id: 'aa',
+      ref: 'A',
+      source,
+      features: ['world-time', 'sollar'],
+    })
     expect(parsed.success).toBe(false)
     expect(parsed.error?.issues[0]?.path).toEqual(['features', 1])
   })
 
   it('rejects a display or movement outside the vocabulary (check 6)', () => {
     expect(MODEL.safeParse({ id: 'aa', ref: 'A', source, display: 'digi-ana' }).success).toBe(false)
-    expect(MODEL.safeParse({ id: 'aa', ref: 'A', source, movement: 'eco-drive' }).success).toBe(false)
+    expect(MODEL.safeParse({ id: 'aa', ref: 'A', source, movement: 'eco-drive' }).success).toBe(
+      false,
+    )
   })
 
   // §10.2 check 7
@@ -69,16 +76,23 @@ describe('the model schema', () => {
   })
 
   it('rejects a source missing its kind, or claiming a kind that is not one of the three (check 7)', () => {
-    expect(MODEL.safeParse({ id: 'aa', ref: 'A', source: { url: 'https://x.test/a' } }).success).toBe(false)
     expect(
-      MODEL.safeParse({ id: 'aa', ref: 'A', source: { url: 'https://x.test/a', kind: 'wikipedia' } }).success,
+      MODEL.safeParse({ id: 'aa', ref: 'A', source: { url: 'https://x.test/a' } }).success,
+    ).toBe(false)
+    expect(
+      MODEL.safeParse({
+        id: 'aa',
+        ref: 'A',
+        source: { url: 'https://x.test/a', kind: 'wikipedia' },
+      }).success,
     ).toBe(false)
   })
 
   it('rejects a source url that is not a url (check 7)', () => {
-    expect(MODEL.safeParse({ id: 'aa', ref: 'A', source: { url: 'casio.com', kind: 'official' } }).success).toBe(
-      false,
-    )
+    expect(
+      MODEL.safeParse({ id: 'aa', ref: 'A', source: { url: 'casio.com', kind: 'official' } })
+        .success,
+    ).toBe(false)
   })
 
   it('rejects a misspelt field rather than ignoring it', () => {
@@ -105,14 +119,22 @@ describe('the model schema', () => {
   })
 
   it('rejects a tombstone with no reason — a retirement nobody explained', () => {
-    expect(MODEL.safeParse({ id: 'aa', ref: 'A', source, tombstone: { replaced_by: 'bb' } }).success).toBe(false)
+    expect(
+      MODEL.safeParse({ id: 'aa', ref: 'A', source, tombstone: { replaced_by: 'bb' } }).success,
+    ).toBe(false)
   })
 })
 
 describe('the series file schema', () => {
   it('accepts the §6.1 shape', () => {
     const parsed = SERIES_FILE.safeParse({
-      series: { id: 'ga-2100', name: 'GA-2100', line: 'g-shock', family: 'octagonal', aka: ['CasiOak'] },
+      series: {
+        id: 'ga-2100',
+        name: 'GA-2100',
+        line: 'g-shock',
+        family: 'octagonal',
+        aka: ['CasiOak'],
+      },
       models: [{ id: 'ga-2100-1a1', ref: 'GA-2100-1A1', source }],
     })
     expect(parsed.success).toBe(true)

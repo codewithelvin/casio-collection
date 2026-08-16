@@ -59,8 +59,9 @@ export default tseslint.config(
         'error',
         {
           selector:
-            "MemberExpression[object.name=/^(describe|it|test)$/][property.name=/^(only|skip)$/]",
-          message: 'D31: .only and .skip are not allowed — a skipped test looks like a passing one.',
+            'MemberExpression[object.name=/^(describe|it|test)$/][property.name=/^(only|skip)$/]',
+          message:
+            'D31: .only and .skip are not allowed — a skipped test looks like a passing one.',
         },
       ],
     },

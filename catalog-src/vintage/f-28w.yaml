@@ -13,7 +13,7 @@ series:
   id: f-28w
   name: F-28W
   line: vintage
-  aka: ["5mm Slim"]
+  aka: ['5mm Slim']
 
 models:
   - id: f-28w

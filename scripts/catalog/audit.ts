@@ -33,7 +33,9 @@ async function runAudit(): Promise<void> {
   console.log(rule('catalog:audit — §10.5. Nothing here is written and nothing here fails.'))
 
   if (!source) {
-    console.log(`\n${renderIssues('The catalogue source will not parse, so there is nothing to audit', failures)}`)
+    console.log(
+      `\n${renderIssues('The catalogue source will not parse, so there is nothing to audit', failures)}`,
+    )
     console.log('\nFix the parse first: npm run catalog:validate')
     return
   }
@@ -50,7 +52,8 @@ async function runAudit(): Promise<void> {
       `\nBuild state: ${blocking.length} failure${blocking.length === 1 ? '' : 's'}, ` +
         `${report.warnings.length} warning${report.warnings.length === 1 ? '' : 's'}.`,
     )
-    if (blocking.length > 0) console.log(`\n${renderIssues('Failures — these stop a deploy (§10.2)', blocking)}`)
+    if (blocking.length > 0)
+      console.log(`\n${renderIssues('Failures — these stop a deploy (§10.2)', blocking)}`)
     if (report.warnings.length > 0) console.log(`\n${renderIssues('Warnings', report.warnings)}`)
   }
 
@@ -61,12 +64,18 @@ async function runAudit(): Promise<void> {
   try {
     payload = buildCatalog(source)
     const text = serialiseCatalog(stamp(payload, 'audit', '1970-01-01'))
-    size = { bytes: Buffer.byteLength(text, 'utf8'), gzipBytes: gzipSync(text).length, models: payload.models.length }
+    size = {
+      bytes: Buffer.byteLength(text, 'utf8'),
+      gzipBytes: gzipSync(text).length,
+      models: payload.models.length,
+    }
   } catch (error) {
     // Not fatal here. The catalogue is broken in a way that stops it being
     // assembled at all, which the failures above have already said out loud —
     // the four sections that do not need a payload still have something to say.
-    console.log(`\nThe catalogue could not be assembled: ${error instanceof Error ? error.message : String(error)}`)
+    console.log(
+      `\nThe catalogue could not be assembled: ${error instanceof Error ? error.message : String(error)}`,
+    )
   }
 
   console.log(rule('The catalogue as it stands'))

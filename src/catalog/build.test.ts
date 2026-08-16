@@ -23,7 +23,9 @@ describe('the published artefact (§6.2)', () => {
 
   it('omits an unknown field instead of publishing a null', () => {
     const catalog = buildCatalog(
-      aSource({ series: [aSeries({ models: [aModel({ year: null, name: null, features: [] })] })] }),
+      aSource({
+        series: [aSeries({ models: [aModel({ year: null, name: null, features: [] })] })],
+      }),
     )
     const model = catalog.models[0]
     expect(model).toBeDefined()
@@ -33,7 +35,9 @@ describe('the published artefact (§6.2)', () => {
 
   it('drops an empty case object rather than publishing an empty one', () => {
     const catalog = buildCatalog(
-      aSource({ series: [aSeries({ models: [aModel({ case: { material: null, width_mm: null } })] })] }),
+      aSource({
+        series: [aSeries({ models: [aModel({ case: { material: null, width_mm: null } })] })],
+      }),
     )
     expect(catalog.models[0]?.case).toBeUndefined()
   })
@@ -43,7 +47,10 @@ describe('the published artefact (§6.2)', () => {
       aSource({
         series: [
           aSeries({
-            models: [aModel(), aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', tombstone: { reason: 'duplicate' } })],
+            models: [
+              aModel(),
+              aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', tombstone: { reason: 'duplicate' } }),
+            ],
           }),
         ],
       }),
@@ -56,10 +63,14 @@ describe('the published artefact (§6.2)', () => {
 
   it('publishes a family only where a series uses it, in vocabulary order (D32)', () => {
     const withFamily = buildCatalog(aSource())
-    expect(withFamily.families).toEqual([{ id: 'square', name: 'The square', line: 'g-shock', order: 0 }])
+    expect(withFamily.families).toEqual([
+      { id: 'square', name: 'The square', line: 'g-shock', order: 0 },
+    ])
 
     const withoutFamily = buildCatalog(
-      aSource({ series: [aSeries({ series: { id: 'dw-5600', name: 'DW-5600', line: 'g-shock' } })] }),
+      aSource({
+        series: [aSeries({ series: { id: 'dw-5600', name: 'DW-5600', line: 'g-shock' } })],
+      }),
     )
     expect(withoutFamily.families).toEqual([])
   })
@@ -87,7 +98,11 @@ describe('the published artefact (§6.2)', () => {
         ],
       }),
     )
-    expect(catalog.models.map((model) => model.ref)).toEqual(['DW-5600BB-1', 'DW-5600E-1V', 'GW-M5610U-1'])
+    expect(catalog.models.map((model) => model.ref)).toEqual([
+      'DW-5600BB-1',
+      'DW-5600E-1V',
+      'GW-M5610U-1',
+    ])
   })
 })
 
@@ -97,7 +112,13 @@ describe('the facets (D26)', () => {
       aSeries({
         models: [
           aModel({ year: 1996, display: 'digital', features: ['stopwatch', 'alarm'] }),
-          aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', year: 2018, display: 'digital', features: ['stopwatch'] }),
+          aModel({
+            id: 'dw-5600bb-1',
+            ref: 'DW-5600BB-1',
+            year: 2018,
+            display: 'digital',
+            features: ['stopwatch'],
+          }),
           aModel({ id: 'dw-5600c-1', ref: 'DW-5600C-1' }),
         ],
       }),
@@ -139,7 +160,9 @@ describe('the stamp', () => {
   })
 
   it('ends the file with a newline, so git is happy with it', () => {
-    expect(serialiseCatalog(stamp(buildCatalog(aSource()), 'v1', '2026-08-16')).endsWith('\n')).toBe(true)
+    expect(
+      serialiseCatalog(stamp(buildCatalog(aSource()), 'v1', '2026-08-16')).endsWith('\n'),
+    ).toBe(true)
   })
 
   it('leaves the stamp out of the digest input, so a rebuild of the same data is the same version', () => {

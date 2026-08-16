@@ -23,13 +23,13 @@ Supabase holds **only** identity and each user's own rows. There is therefore no
 SQL join between a watch and a collection row: every "what do I own" screen is a
 client-side join against the catalogue already in memory.
 
-| | |
-|---|---|
-| Frontend | React 19 · TypeScript · Vite · Ant Design 5 |
-| Catalogue | One static versioned `catalog.json` + WebP in this repo |
-| Backend | Supabase — auth and the user's own rows, RLS on every table |
-| Auth | Google at launch. Magic link is built but held behind one constant |
-| Hosting | GitHub Pages at the root of `casiovault.com`, `404.html` SPA fallback |
+|           |                                                                       |
+| --------- | --------------------------------------------------------------------- |
+| Frontend  | React 19 · TypeScript · Vite · Ant Design 5                           |
+| Catalogue | One static versioned `catalog.json` + WebP in this repo               |
+| Backend   | Supabase — auth and the user's own rows, RLS on every table           |
+| Auth      | Google at launch. Magic link is built but held behind one constant    |
+| Hosting   | GitHub Pages at the root of `casiovault.com`, `404.html` SPA fallback |
 
 `@ant-design/v5-patch-for-react-19` is **mandatory** and is imported on the first
 line of `src/main.tsx`. Ant Design 5's static `message` / `notification` /
@@ -55,11 +55,11 @@ npm run catalog:audit      # report what is missing; changes nothing, fails noth
 ```
 
 The catalogue is maintained through the `/casio-catalog` skill in
-`.claude/skills/`, which is why Claude Code is launched inside *this* repo rather
+`.claude/skills/`, which is why Claude Code is launched inside _this_ repo rather
 than the notes vault to work on it.
 
 **Node 22.18 or later.** The catalogue scripts are TypeScript run directly by
-Node's native type stripping, so the build validates against the *same* Zod
+Node's native type stripping, so the build validates against the _same_ Zod
 schema the browser parses with. There is exactly one definition of a model in
 this repo and it is `src/catalog/schema.ts`.
 
@@ -70,7 +70,7 @@ YAML file per series in a folder named after its line. `catalog:build` turns tha
 into a single versioned `public/catalog/catalog.json` — a build artefact, **not**
 a committed file. What gets committed and reviewed is the YAML.
 
-Everything deciding whether the catalogue is *correct* lives in `src/catalog/` as
+Everything deciding whether the catalogue is _correct_ lives in `src/catalog/` as
 pure functions under a 90% coverage floor; `scripts/catalog/` only reads files
 and prints. Every integrity check fails the build, and every run prints a
 coverage table showing what share of models carry each optional field — so the

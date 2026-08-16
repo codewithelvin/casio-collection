@@ -13,7 +13,7 @@ series:
   id: abx-20
   name: ABX-20
   line: vintage
-  aka: ["TwinCept", "TwinCept Databank"]
+  aka: ['TwinCept', 'TwinCept Databank']
 
 models:
   - id: abx-20

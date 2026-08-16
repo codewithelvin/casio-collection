@@ -3,7 +3,7 @@ import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
 import { useUiStore } from './uiStore'
-import { NAV_LINES } from './lines'
+import { catalogFixture } from '../test/catalogFixture'
 import { t } from '../i18n/strings'
 
 /**
@@ -12,6 +12,9 @@ import { t } from '../i18n/strings'
  * layout §8.2 calls the real device, so it is the right default for these
  * tests — and it is what makes the drawer reachable here at all.
  */
+/** Line names carry `/` and `-`, which are regex syntax in a name matcher. */
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
 describe('the app shell (§8.1, §8.2)', () => {
   beforeEach(() => {
     useUiStore.setState({ mode: 'light', drawerOpen: false })
@@ -72,11 +75,28 @@ describe('the app shell (§8.1, §8.2)', () => {
 
     // A line added later without an entry in LINE_ICONS renders bare, which is
     // silent — it looks like a styling choice rather than a missing mapping.
-    const items = screen.getAllByRole('menuitem')
-    expect(items).toHaveLength(NAV_LINES.length)
-    for (const item of items) {
-      expect(item.querySelector('svg'), `${item.textContent} has no glyph`).not.toBeNull()
+    // Asserted per line rather than over every menuitem on screen, because from
+    // M2 the rail also holds series rows, and those deliberately have no glyph.
+    for (const line of catalogFixture.lines) {
+      const item = await screen.findByRole('menuitem', {
+        name: new RegExp(escapeRegExp(line.name)),
+      })
+      expect(item.querySelector('svg'), `${line.name} has no glyph`).not.toBeNull()
     }
+  })
+
+  it('carries the model count beside each seeded line (FR-1.1)', async () => {
+    const user = userEvent.setup()
+    renderApp('/')
+
+    await user.click(await screen.findByRole('button', { name: t('nav.open') }))
+
+    // G-SHOCK has four models in the fixture and Edifice has none. A count of
+    // zero is not rendered: it reads as a claim about Casio rather than about
+    // this catalogue, which is the state seven of the eight lines are in.
+    expect(await screen.findByRole('menuitem', { name: /G-SHOCK\s*4/ })).toBeInTheDocument()
+    const edifice = await screen.findByRole('menuitem', { name: /Edifice/ })
+    expect(edifice.textContent).toBe('Edifice')
   })
 
   it('labels the Vintage line with both of its senses', async () => {
@@ -89,6 +109,8 @@ describe('the app shell (§8.1, §8.2)', () => {
     // and a reader arrives with one word or the other. It was also the site's own
     // name until D39, which is the collision D21 accepted and the rename removed —
     // the label was never about our name and did not change with it.
-    expect(await screen.findByRole('menuitem', { name: /Vintage \/ Casio Collection/ })).toBeInTheDocument()
+    expect(
+      await screen.findByRole('menuitem', { name: /Vintage \/ Casio Collection/ }),
+    ).toBeInTheDocument()
   })
 })

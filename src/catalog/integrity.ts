@@ -57,7 +57,11 @@ export interface IntegrityReport {
 }
 
 function compareIssues(a: Issue, b: Issue): number {
-  return a.check.localeCompare(b.check) || a.where.localeCompare(b.where) || a.message.localeCompare(b.message)
+  return (
+    a.check.localeCompare(b.check) ||
+    a.where.localeCompare(b.where) ||
+    a.message.localeCompare(b.message)
+  )
 }
 
 export function checkIntegrity(
@@ -66,8 +70,10 @@ export function checkIntegrity(
 ): IntegrityReport {
   const failures: Issue[] = []
   const warnings: Issue[] = []
-  const fail = (check: string, where: string, message: string) => failures.push({ check, where, message })
-  const warn = (check: string, where: string, message: string) => warnings.push({ check, where, message })
+  const fail = (check: string, where: string, message: string) =>
+    failures.push({ check, where, message })
+  const warn = (check: string, where: string, message: string) =>
+    warnings.push({ check, where, message })
 
   const linesById = new Map<string, LineDef>()
   for (const line of source.lines.lines) {
@@ -81,7 +87,8 @@ export function checkIntegrity(
   const slugs = new Map<string, string>()
   for (const line of source.lines.lines) {
     const owner = slugs.get(line.slug)
-    if (owner) fail('4', 'lines.yaml', `lines "${owner}" and "${line.id}" share the slug "${line.slug}"`)
+    if (owner)
+      fail('4', 'lines.yaml', `lines "${owner}" and "${line.id}" share the slug "${line.slug}"`)
     else slugs.set(line.slug, line.id)
   }
 
@@ -96,7 +103,11 @@ export function checkIntegrity(
     try {
       new RegExp(line.ref_pattern)
     } catch {
-      fail('3', 'lines.yaml', `line "${line.id}" has a ref_pattern that is not a valid regular expression`)
+      fail(
+        '3',
+        'lines.yaml',
+        `line "${line.id}" has a ref_pattern that is not a valid regular expression`,
+      )
     }
   }
 
@@ -119,7 +130,11 @@ export function checkIntegrity(
 
     const line = linesById.get(series.line)
     if (!line) {
-      fail('4', file, `series "${series.id}" names the line "${series.line}", which is not in lines.yaml`)
+      fail(
+        '4',
+        file,
+        `series "${series.id}" names the line "${series.line}", which is not in lines.yaml`,
+      )
     } else if (entry.folder !== line.id) {
       // The folder is the line, so a file in the wrong one publishes a whole
       // series under a line nobody meant. It is invisible in the YAML itself.
@@ -149,7 +164,11 @@ export function checkIntegrity(
       }
       const previousId = idOwner.get(model.id)
       if (previousId) {
-        fail('1', where, `id "${model.id}" is already used in ${previousId}. Ids are permanent and unique (D2)`)
+        fail(
+          '1',
+          where,
+          `id "${model.id}" is already used in ${previousId}. Ids are permanent and unique (D2)`,
+        )
       } else {
         idOwner.set(model.id, file)
       }
@@ -197,7 +216,11 @@ export function checkIntegrity(
       if (model.image) {
         for (const name of [`${model.image}.webp`, `${model.image}@2x.webp`]) {
           if (!source.images.has(name)) {
-            fail('5', where, `image "${name}" is missing from public/img/models. Run catalog:images, or set image: null`)
+            fail(
+              '5',
+              where,
+              `image "${name}" is missing from public/img/models. Run catalog:images, or set image: null`,
+            )
           }
         }
       }
@@ -217,7 +240,11 @@ export function checkIntegrity(
     if (used.length === 1) {
       // A warning, not a failure. §8.4 hides a single-series family anyway, so
       // nothing renders wrong — it is just a grouping somebody started.
-      warn('4', 'lines.yaml', `family "${key}" holds only ${used[0]}. A family of one does not render as a heading (D32)`)
+      warn(
+        '4',
+        'lines.yaml',
+        `family "${key}" holds only ${used[0]}. A family of one does not render as a heading (D32)`,
+      )
     }
   }
 

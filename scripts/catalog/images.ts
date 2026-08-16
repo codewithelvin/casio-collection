@@ -66,7 +66,9 @@ async function runImages(): Promise<boolean> {
       path: join(IMAGE_DIR, `${id}${suffix}.webp`),
     }))
 
-    const upToDate = await Promise.all(outputs.map(async (out) => (await modifiedAt(out.path)) > sourceModified))
+    const upToDate = await Promise.all(
+      outputs.map(async (out) => (await modifiedAt(out.path)) > sourceModified),
+    )
     if (upToDate.every(Boolean)) {
       // Guardrail 7 — running the same command twice produces no diff.
       skipped += 1
@@ -108,7 +110,9 @@ async function runImages(): Promise<boolean> {
     }
   }
 
-  console.log(`\n${written} file${written === 1 ? '' : 's'} written, ${skipped} model${skipped === 1 ? '' : 's'} already current`)
+  console.log(
+    `\n${written} file${written === 1 ? '' : 's'} written, ${skipped} model${skipped === 1 ? '' : 's'} already current`,
+  )
 
   if (failures.length > 0) {
     console.error(`\nRefused ${failures.length}:`)

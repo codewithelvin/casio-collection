@@ -192,9 +192,7 @@ export const PUBLISHED_MODEL = z.strictObject({
   image: z.string().optional(),
   official_url: z.string().optional(),
   discontinued: z.boolean().optional(),
-  tombstone: z
-    .strictObject({ reason: z.string(), replaced_by: z.string().optional() })
-    .optional(),
+  tombstone: z.strictObject({ reason: z.string(), replaced_by: z.string().optional() }).optional(),
 })
 export type PublishedModel = z.infer<typeof PUBLISHED_MODEL>
 
@@ -207,6 +205,7 @@ export const PUBLISHED_LINE = z.strictObject({
   /** Models in the line, tombstones excluded — a retired entry is not stock. */
   count: z.number().int().nonnegative(),
 })
+export type PublishedLine = z.infer<typeof PUBLISHED_LINE>
 
 export const PUBLISHED_FAMILY = z.strictObject({
   id: z.string(),
@@ -214,6 +213,7 @@ export const PUBLISHED_FAMILY = z.strictObject({
   line: z.string(),
   order: z.number().int().nonnegative(),
 })
+export type PublishedFamily = z.infer<typeof PUBLISHED_FAMILY>
 
 export const PUBLISHED_SERIES = z.strictObject({
   id: z.string(),
@@ -227,6 +227,7 @@ export const PUBLISHED_SERIES = z.strictObject({
   aka: z.array(z.string()).optional(),
   count: z.number().int().nonnegative(),
 })
+export type PublishedSeries = z.infer<typeof PUBLISHED_SERIES>
 
 /**
  * D26 — what the filter bar can be built from. `coverage` is the share of

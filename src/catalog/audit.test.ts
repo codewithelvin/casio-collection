@@ -51,7 +51,10 @@ describe('1 — unsourced fields', () => {
     const source = aSource({
       series: [
         aSeries({
-          models: [aModel({ id: 'dw-5600e-1v', year: 1996 }), aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1' })],
+          models: [
+            aModel({ id: 'dw-5600e-1v', year: 1996 }),
+            aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1' }),
+          ],
         }),
       ],
     })
@@ -80,7 +83,11 @@ describe('1 — unsourced fields', () => {
         aSeries({
           models: [
             aModel({ id: 'dw-5600e-1v' }),
-            aModel({ id: 'dw-5600c-1', ref: 'DW-5600C-1', source: { url: 'https://wiki/x', kind: 'community' } }),
+            aModel({
+              id: 'dw-5600c-1',
+              ref: 'DW-5600C-1',
+              source: { url: 'https://wiki/x', kind: 'community' },
+            }),
           ],
         }),
       ],
@@ -138,7 +145,11 @@ describe('3 — out-of-vocabulary facets', () => {
   it('carries through the values the schema refused', () => {
     const report = auditOf(aSource(), {
       parseFailures: [
-        { check: '6', where: 'catalog-src/vintage/f-91w.yaml: models.0.features.0', message: '"stopwach" is not …' },
+        {
+          check: '6',
+          where: 'catalog-src/vintage/f-91w.yaml: models.0.features.0',
+          message: '"stopwach" is not …',
+        },
         { check: 'schema', where: 'elsewhere', message: 'unrelated' },
       ],
     })
@@ -153,13 +164,20 @@ describe('3 — out-of-vocabulary facets', () => {
         aSeries({
           models: [
             aModel({ id: 'dw-5600e-1v', movement: 'quartz', features: ['stopwatch'] }),
-            aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', movement: 'quartz', features: ['stopwatch', 'tide-graph'] }),
+            aModel({
+              id: 'dw-5600bb-1',
+              ref: 'DW-5600BB-1',
+              movement: 'quartz',
+              features: ['stopwatch', 'tide-graph'],
+            }),
           ],
         }),
       ],
     })
 
-    expect(auditOf(source).vocabulary.singletons).toEqual([{ field: 'features', value: 'tide-graph' }])
+    expect(auditOf(source).vocabulary.singletons).toEqual([
+      { field: 'features', value: 'tide-graph' },
+    ])
   })
 
   it('says nothing about a year with one model in it — that is a thin catalogue, not a typo', () => {
@@ -190,8 +208,16 @@ describe('5 — id drift', () => {
         aSeries({
           models: [
             aModel({ id: 'dw-5600e-1v' }),
-            aModel({ id: 'dw-5600-dupe', ref: 'DW-5600-DUPE', tombstone: { reason: 'dup', replaced_by: 'dw-5600e-1v' } }),
-            aModel({ id: 'dw-5600-ghost', ref: 'DW-5600-GHOST', tombstone: { reason: 'never existed' } }),
+            aModel({
+              id: 'dw-5600-dupe',
+              ref: 'DW-5600-DUPE',
+              tombstone: { reason: 'dup', replaced_by: 'dw-5600e-1v' },
+            }),
+            aModel({
+              id: 'dw-5600-ghost',
+              ref: 'DW-5600-GHOST',
+              tombstone: { reason: 'never existed' },
+            }),
           ],
         }),
       ],
@@ -210,7 +236,9 @@ describe('a catalogue that would not parse', () => {
       payload: null,
       images: new Set(['orphan.webp']),
       publishedIds: ['f-91w-1'],
-      parseFailures: [{ check: '6', where: 'catalog-src/vintage/f-91w.yaml', message: 'bad feature' }],
+      parseFailures: [
+        { check: '6', where: 'catalog-src/vintage/f-91w.yaml', message: 'bad feature' },
+      ],
       size: null,
     })
 
@@ -257,7 +285,9 @@ describe('rendering', () => {
     const source = aSource({
       images: new Set(['dw-5600e-1v.webp', 'dw-5600e-1v@2x.webp']),
       publishedIds: ['dw-5600e-1v'],
-      series: [aSeries({ models: [aModel({ image: 'dw-5600e-1v', year: 1996, movement: 'quartz' })] })],
+      series: [
+        aSeries({ models: [aModel({ image: 'dw-5600e-1v', year: 1996, movement: 'quartz' })] }),
+      ],
     })
 
     const text = renderAudit(auditOf(source))
@@ -278,7 +308,13 @@ describe('rendering', () => {
 
   it('reports an empty catalogue as empty rather than as clean', () => {
     const text = renderAudit(
-      auditCatalogue({ payload: null, images: new Set(), publishedIds: [], parseFailures: [], size: null }),
+      auditCatalogue({
+        payload: null,
+        images: new Set(),
+        publishedIds: [],
+        parseFailures: [],
+        size: null,
+      }),
     )
 
     expect(text).toContain('0 browsable models')
