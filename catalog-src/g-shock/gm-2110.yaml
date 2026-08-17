@@ -1,0 +1,144 @@
+# GM-2110 — seeded 2026-08-17 (M9), on the same module as GA-2100.
+#
+# THE SOURCE IS THE MODULE MANUAL (D44). casio.com answers 403 to every product
+# path on every locale, but serves the operation guides from its /content/dam/
+# CDN, and §10.6 counts a manual page as `official`. Every field below is read
+# off the Specifications block of the module 5611 guide named in `source` — the
+# same guide, and the same reading, already reviewed for GA-2100 in M2b.
+#
+# WHICH REFERENCES USE MODULE 5611 is the one fact the manual does not carry.
+# That list comes from ShockBase's module index, which states in so many words
+# "These are all watches with module 5611":
+#   https://shockbase.org/watches/modules_dyn.php?module=5611
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# COLLABORATION REFERENCES ARE LEFT OUT, and that is not squeamishness. The
+# index lists collaborations under strings that are community constructions
+# rather than references — a doubled hyphen, or a collaborator's name appended
+# to a reference that ends before it. D2 makes an id permanent and the sourcing
+# rule says a model whose sources disagree on the reference itself is not
+# written at all. The filter keeps the shape Casio prints: prefix, number, a
+# variant of at most four letters, one suffix.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference (D25).
+#   * `case` and `water_resistance_m` — properties of the watch, not the
+#     module. 200 m is true of every one of these and it is still not on this
+#     page.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `family` — GM-2110 is the octagonal case in another material, so
+#     `octagonal` is the obvious grouping. Guardrail 4a reserves that judgement
+#     for a person, so it is proposed in the session summary, not written here.
+#   * `image` — D41 needs a licence and a proof it is the right watch.
+
+series:
+  id: gm-2110
+  name: GM-2110
+  line: g-shock
+  aka: [GM2110]
+
+models:
+  - id: gm-2110d-2a
+    ref: GM-2110D-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2110d-2b
+    ref: GM-2110D-2B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2110d-3a
+    ref: GM-2110D-3A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2110d-3a1
+    ref: GM-2110D-3A1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2110d-4a
+    ref: GM-2110D-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2110d-7a
+    ref: GM-2110D-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2110d-8a
+    ref: GM-2110D-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2110sh-2a
+    ref: GM-2110SH-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2110sh-7a
+    ref: GM-2110SH-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
