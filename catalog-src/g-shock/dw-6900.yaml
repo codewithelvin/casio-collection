@@ -1,0 +1,1289 @@
+# DW-6900 — seeded 2026-08-17 (M9), from the module 3230 operation guide.
+#
+# ONLY THE MODULE 3230 REFERENCES ARE HERE, and the reason is worth writing
+# down. DW-6900 runs on six modules. The classic one is 1289, and Casio's
+# "manual" for 1289 is an OPERATION CHART — a scanned CCITTFax image whose only
+# machine-readable text is the line "OPERATION CHART:MODULE QW-1289". It states
+# no specifications at all, so under guardrail 3 there is nothing to read a
+# field off, and 157 references sit outside this file waiting for a source that
+# says something. Modules 1449, 1557, 3529 and 3530 are the same story or have
+# no Specifications block. That is 154 known DW-6900 references deliberately
+# not seeded, and `catalog:audit` is not the place they show up — this comment
+# is.
+#
+# NO `flash-alert`, WHICH THE SQUARES HAVE. Module 3229's guide has a section on
+# enabling Flash Alert and dw-5600.yaml carries the tag. This guide has none.
+# Same shape of watch, same era, different module, different answer.
+#
+# ITS ALARM IS ONE ALARM. The guide says "Multi-function alarm, hourly time
+# signal" — one alarm with several setting modes, which is `alarm`, not
+# `multi-alarm`. The Frogmen and Mudmasters below say "5 daily alarms" and get
+# the other tag. That distinction was drawn in M2b and it still holds.
+#
+# THE SOURCE IS THE MODULE MANUAL (D44). casio.com answers 403 to every product
+# path on every locale, but serves the operation guides from its /content/dam/
+# CDN, and §10.6 counts a manual page as `official`. Every field below is read
+# off the Specifications block of the module 3230 guide named in `source`.
+#
+# WHICH REFERENCES USE MODULE 3230 is the one fact the manual does not carry.
+# That list comes from ShockBase's module index, which states in so many words
+# "These are all watches with module 3230":
+#   https://shockbase.org/watches/modules_dyn.php?module=3230
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# COLLABORATION REFERENCES ARE LEFT OUT. The index lists collaborations under
+# strings that are community constructions rather than references — a doubled
+# hyphen, or a collaborator's name appended to a reference that ends before it.
+# D2 makes an id permanent and the sourcing rule says a model whose sources
+# disagree on the reference itself is not written at all.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference (D25).
+#   * `case` and `water_resistance_m` — properties of the watch, not the module.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `image` — D41 needs a licence and a proof it is the right watch.
+
+series:
+  id: dw-6900
+  name: DW-6900
+  line: g-shock
+  aka: [DW6900]
+
+models:
+  - id: dw-6900-1v
+    ref: DW-6900-1V
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ac-2
+    ref: DW-6900AC-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900bb-1
+    ref: DW-6900BB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900bba-1
+    ref: DW-6900BBA-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900bbn-1
+    ref: DW-6900BBN-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900bmc-1
+    ref: DW-6900BMC-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900bne-1
+    ref: DW-6900BNE-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900br-5
+    ref: DW-6900BR-5
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900btg-7
+    ref: DW-6900BTG-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900bw-1
+    ref: DW-6900BW-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900bwd-1
+    ref: DW-6900BWD-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cb-1
+    ref: DW-6900CB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cb-2
+    ref: DW-6900CB-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cb-4
+    ref: DW-6900CB-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cc-2
+    ref: DW-6900CC-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cc-3
+    ref: DW-6900CC-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cc-6
+    ref: DW-6900CC-6
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cl-4
+    ref: DW-6900CL-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cr-1
+    ref: DW-6900CR-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cr-3
+    ref: DW-6900CR-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cr-7
+    ref: DW-6900CR-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cs-1
+    ref: DW-6900CS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cs-4
+    ref: DW-6900CS-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900cs-7
+    ref: DW-6900CS-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900d-9
+    ref: DW-6900D-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900da-4
+    ref: DW-6900DA-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ds-1
+    ref: DW-6900DS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900e-1
+    ref: DW-6900E-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ew-7
+    ref: DW-6900EW-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900fg-8
+    ref: DW-6900FG-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900fs-8
+    ref: DW-6900FS-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900fsmp-1
+    ref: DW-6900FSMP-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900g-1v
+    ref: DW-6900G-1V
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900gd-9
+    ref: DW-6900GD-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900gda-9
+    ref: DW-6900GDA-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900gl-4
+    ref: DW-6900GL-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900hm-1
+    ref: DW-6900HM-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900hm-2
+    ref: DW-6900HM-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900jk-4
+    ref: DW-6900JK-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900kth-7
+    ref: DW-6900KTH-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900la-1w
+    ref: DW-6900LA-1W
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ld-7
+    ref: DW-6900LD-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ls-1
+    ref: DW-6900LS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ls-2
+    ref: DW-6900LS-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900lu-1
+    ref: DW-6900LU-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900lu-3
+    ref: DW-6900LU-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900lu-8
+    ref: DW-6900LU-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900mf-1
+    ref: DW-6900MF-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900mf-2
+    ref: DW-6900MF-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900mf-4
+    ref: DW-6900MF-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900mm-2
+    ref: DW-6900MM-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900mm-4
+    ref: DW-6900MM-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900mma-1
+    ref: DW-6900MMA-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900mma-2
+    ref: DW-6900MMA-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900mr-1
+    ref: DW-6900MR-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900mr-7
+    ref: DW-6900MR-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ms-1
+    ref: DW-6900MS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900mt-7
+    ref: DW-6900MT-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900nb-1
+    ref: DW-6900NB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900nb-3
+    ref: DW-6900NB-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900nb-4
+    ref: DW-6900NB-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900nb-7
+    ref: DW-6900NB-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900nc-7
+    ref: DW-6900NC-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ns-1
+    ref: DW-6900NS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ns-7
+    ref: DW-6900NS-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ns-9
+    ref: DW-6900NS-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ny-1
+    ref: DW-6900NY-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900pf-1
+    ref: DW-6900PF-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900pl-1
+    ref: DW-6900PL-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900pl-4
+    ref: DW-6900PL-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900pl-7
+    ref: DW-6900PL-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900pl-9
+    ref: DW-6900PL-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900rgb-1
+    ref: DW-6900RGB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900rh-2
+    ref: DW-6900RH-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900rmus-1
+    ref: DW-6900RMUS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sb-2
+    ref: DW-6900SB-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sb-4
+    ref: DW-6900SB-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sb-8
+    ref: DW-6900SB-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sb-9
+    ref: DW-6900SB-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sby-2
+    ref: DW-6900SBY-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sc-1
+    ref: DW-6900SC-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sc-4
+    ref: DW-6900SC-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sc-7
+    ref: DW-6900SC-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sc-8
+    ref: DW-6900SC-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sd-8
+    ref: DW-6900SD-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sf-1d
+    ref: DW-6900SF-1D
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sg-2
+    ref: DW-6900SG-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sk-1
+    ref: DW-6900SK-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900slg-1
+    ref: DW-6900SLG-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sn-1
+    ref: DW-6900SN-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sn-3
+    ref: DW-6900SN-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sn-4
+    ref: DW-6900SN-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sn-7
+    ref: DW-6900SN-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sp-1
+    ref: DW-6900SP-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sp-7
+    ref: DW-6900SP-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900stf-1
+    ref: DW-6900STF-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900sw-6
+    ref: DW-6900SW-6
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900tal-4
+    ref: DW-6900TAL-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900tcb-4
+    ref: DW-6900TCB-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900td-4
+    ref: DW-6900TD-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900tf-4
+    ref: DW-6900TF-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900tg-9
+    ref: DW-6900TG-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900tga-9
+    ref: DW-6900TGA-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ws-1
+    ref: DW-6900WS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ws-2
+    ref: DW-6900WS-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900ww-7s
+    ref: DW-6900WW-7S
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900y-9
+    ref: DW-6900Y-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900yg-1
+    ref: DW-6900YG-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900zb-2
+    ref: DW-6900ZB-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900zb-3
+    ref: DW-6900ZB-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900zb-8
+    ref: DW-6900ZB-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+  - id: dw-6900zb-9
+    ref: DW-6900ZB-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3230'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
