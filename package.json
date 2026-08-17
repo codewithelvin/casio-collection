@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && node scripts/spa-fallback.mjs",
+    "build": "tsc -b && vite build && node scripts/spa-fallback.mjs && node scripts/seo.ts && node scripts/sw.ts",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
     "lint": "eslint .",

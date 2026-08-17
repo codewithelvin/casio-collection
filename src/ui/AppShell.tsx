@@ -9,6 +9,7 @@ import { LineNav } from './LineNav'
 import { Footer } from './Footer'
 import { SearchBox } from './SearchBox'
 import { AccountMenu } from './AccountMenu'
+import { OfflineBar } from './OfflineBar'
 import { AuthHost } from '../auth/AuthHost'
 import { useUiStore } from './uiStore'
 import { t } from '../i18n/strings'
@@ -110,6 +111,17 @@ export function AppShell() {
         <AccountMenu compact={isMobile} />
       </Layout.Header>
 
+      {/* Keyboard users reach the content without tabbing the whole rail on
+          every navigation. Visible only when focused — a skip link that is
+          always visible is a design decision nobody asked for, and one that is
+          never visible is one nobody can use. */}
+      <a className="cc-skip" href="#main">
+        {t('nav.skip')}
+      </a>
+
+      {/* FR-11.7 / FR-11.2 — said once, under the header, and nowhere else. */}
+      <OfflineBar />
+
       <Layout>
         {isMobile ? (
           <Drawer
@@ -153,9 +165,12 @@ export function AppShell() {
                 key is deliberately the pathname and not the full location:
                 changing a filter in the query string (FR-1.6) must not
                 re-animate the grid someone is reading. */}
-            <div key={pathname} className="cc-route">
+            {/* The one landmark a screen-reader user navigates by, and the
+                target of the skip link. AntD's Content is a plain div, so
+                without this the whole page is one undifferentiated region. */}
+            <main id="main" key={pathname} className="cc-route">
               <Outlet />
-            </div>
+            </main>
           </Layout.Content>
           <Footer />
         </Layout>

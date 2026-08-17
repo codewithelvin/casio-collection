@@ -1,5 +1,5 @@
 import type { MouseEvent } from 'react'
-import { App, Button } from 'antd'
+import { App, Button, Tooltip } from 'antd'
 import CheckOutlined from '@ant-design/icons/CheckOutlined'
 import HeartOutlined from '@ant-design/icons/HeartOutlined'
 import HeartFilled from '@ant-design/icons/HeartFilled'
@@ -76,6 +76,13 @@ export function OwnershipControls({
   const wishlisted = ownership.status === 'wishlist'
 
   /**
+   * FR-11.5 — offline, disabled **with a visible explanation**. The tooltip is
+   * the explanation: a control that is simply grey is a control the reader
+   * assumes is broken, and D33's rule is worth stating rather than implying.
+   */
+  const disabled = ownership.pending || ownership.offline
+
+  /**
    * The card wraps itself in a stretched link (§8.6). These controls sit above
    * it in the stacking order, so a press lands here — but a press that bubbles
    * would still be a navigation on the way up. Stopping it is what keeps
@@ -111,7 +118,7 @@ export function OwnershipControls({
     ownership.set('wishlist')
   }
 
-  return (
+  const row = (
     <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
       <Button
         size={size}
@@ -137,7 +144,7 @@ export function OwnershipControls({
         // `Glyph` exists for, arriving on the one control that matters most.
         icon={owned ? <span aria-hidden="true"><CheckOutlined /></span> : undefined}
         loading={ownership.pending}
-        disabled={ownership.pending}
+        disabled={disabled}
         onClick={onOwned}
         // **`flex: 1` is what makes §8.7's "no size change, no layout shift"
         // true.** The label changes length between states and `loading` adds a
@@ -157,10 +164,15 @@ export function OwnershipControls({
         type="text"
         aria-label={wishlisted ? t('wishlist.remove') : t('wishlist.add')}
         icon={wishlisted ? <HeartFilled /> : <HeartOutlined />}
-        disabled={ownership.pending}
+        disabled={disabled}
         onClick={onWishlist}
         style={{ flexShrink: 0 }}
       />
     </div>
   )
+
+  // FR-11.7 asks for the offline state to be said once, calmly, in the header —
+  // so this is not a second announcement. It is the reason THIS control is
+  // disabled, available where somebody just tried to press it.
+  return ownership.offline ? <Tooltip title={t('offline.cannotChange')}>{row}</Tooltip> : row
 }

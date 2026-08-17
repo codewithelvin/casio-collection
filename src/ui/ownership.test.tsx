@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderWithProviders } from '../test/renderWithProviders'
@@ -378,6 +378,60 @@ describe('removing a mark (FR-4.4)', () => {
 
     await waitFor(() => expect(db.remove).toHaveBeenCalled())
     expect(await screen.findByRole('button', { name: strings['owned.mark'] })).toBeInTheDocument()
+  })
+})
+
+/**
+ * D33's one sentence: you can look offline, you cannot change anything offline.
+ * FR-11.5 refuses the press rather than queueing it, because a queue replayed
+ * later is an offline collection by another name and an offline collection is
+ * the two-way merge D6 exists to prevent.
+ */
+describe('offline (FR-11.5)', () => {
+  const goOffline = () => {
+    Object.defineProperty(navigator, 'onLine', { value: false, configurable: true })
+  }
+  const goOnline = () => {
+    Object.defineProperty(navigator, 'onLine', { value: true, configurable: true })
+  }
+
+  afterEach(goOnline)
+
+  it('disables both controls', async () => {
+    goOffline()
+    asCollector()
+    renderWithProviders(<OwnershipControls model={MODEL} />)
+
+    expect(await screen.findByRole('button', { name: strings['owned.mark'] })).toBeDisabled()
+    expect(screen.getByRole('button', { name: strings['wishlist.add'] })).toBeDisabled()
+  })
+
+  /**
+   * The disabled attribute is a presentation. This is the guard behind it: a
+   * press can still arrive from a keyboard, a test, or a stale render, and what
+   * must not happen is a write that gets queued or optimistically applied.
+   */
+  it('writes nothing even if the press gets through', async () => {
+    goOffline()
+    asCollector()
+    renderWithProviders(<OwnershipControls model={MODEL} />)
+
+    const button = await screen.findByRole('button', { name: strings['owned.mark'] })
+    await userEvent.click(button, { pointerEventsCheck: 0 })
+
+    expect(db.upsert).not.toHaveBeenCalled()
+    // Nothing optimistic either — the button still says what it said.
+    expect(button).toBeInTheDocument()
+  })
+
+  it('marks normally again once the connection is back', async () => {
+    goOnline()
+    asCollector()
+    renderWithProviders(<OwnershipControls model={MODEL} />)
+
+    await userEvent.click(await screen.findByRole('button', { name: strings['owned.mark'] }))
+
+    await waitFor(() => expect(db.upsert).toHaveBeenCalled())
   })
 })
 

@@ -13,6 +13,7 @@ import {
 } from './api.ts'
 import { useSessionStore } from '../auth/session.ts'
 import { writePendingIntent } from '../auth/pendingIntent.ts'
+import { recallCollection, rememberCollection, useOnline } from '../pwa/offline.ts'
 import type { PublishedModel } from '../catalog/schema.ts'
 
 /**
@@ -117,10 +118,25 @@ export function useCollection(): UseQueryResult<CollectionItem[], Error> {
 
   return useQuery({
     queryKey: collectionKey(userId),
-    queryFn: () => fetchCollection(userId as string),
+    queryFn: async () => {
+      const rows = await fetchCollection(userId as string)
+      // FR-11.4 — the app's own last known copy, written after a fetch that
+      // actually succeeded. The service worker never answers for Supabase
+      // (FR-11.3); this is a different layer and the app knows when it is
+      // reading it, which is what lets FR-11.5 refuse a write rather than
+      // accept one against data it cannot trust.
+      rememberCollection(userId as string, rows)
+      return rows
+    },
     enabled: userId !== null,
     staleTime: 30_000,
     refetchOnWindowFocus: true,
+    // Offline, the fetch fails and this is what the screen renders instead.
+    // `placeholderData` rather than `initialData` deliberately: initialData
+    // would be treated as a successful fetch and suppress the refetch that
+    // replaces it the moment the network returns.
+    placeholderData: () =>
+      userId === null ? undefined : recallCollection<CollectionItem[]>(userId),
   })
 }
 
@@ -138,6 +154,16 @@ export interface OwnershipHandlers {
 export interface Ownership {
   status: CollectionStatus | null
   item: CollectionItem | undefined
+  /**
+   * FR-11.5 — **offline, the ownership controls are disabled with a visible
+   * explanation.** They are never optimistically applied and never queued.
+   *
+   * D33's whole rule is one sentence: you can look offline, you cannot change
+   * anything offline. A queued write replayed later is an offline collection by
+   * another name, and an offline collection is the two-way merge D6 exists to
+   * prevent — so this is refused at the control rather than absorbed by it.
+   */
+  offline: boolean
   /**
    * FR-4.6 — disabled with a visible pending state, and **only this watch's
    * controls**. One mutation per model, so marking one watch cannot freeze
@@ -168,6 +194,7 @@ export function useOwnership(model: PublishedModel, handlers: OwnershipHandlers 
   const sessionStatus = useSessionStore((state) => state.status)
   const userId = useSessionStore((state) => state.user?.id ?? null)
   const promptSignIn = useSessionStore((state) => state.promptSignIn)
+  const online = useOnline()
   const { data: items, isPending: itemsPending } = useCollection()
 
   const key = collectionKey(userId)
@@ -234,13 +261,19 @@ export function useOwnership(model: PublishedModel, handlers: OwnershipHandlers 
   return {
     status: signedIn ? statusOf(rows, model.id) : null,
     item: signedIn ? itemFor(rows, model.id) : undefined,
+    offline: !online,
     pending:
       mutation.isPending || sessionStatus === 'restoring' || (signedIn && itemsPending),
     set: (status) => {
+      // FR-11.5 — refused here, not queued. The control is already disabled and
+      // says why; this is the guard behind it, because a disabled button is a
+      // presentation and a press can still arrive from a keyboard or a test.
+      if (!online) return
       if (!signedIn) return rememberAndPrompt(status)
       mutation.mutate({ kind: 'set', status })
     },
     clear: () => {
+      if (!online) return
       // A guest cannot hold a mark, so there is nothing here to clear. Doing
       // nothing is right: opening a sign-in modal to undo something that was
       // never done would be a dialogue about a state that does not exist.

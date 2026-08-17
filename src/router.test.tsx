@@ -31,9 +31,32 @@ describe('the route table (§7.3)', () => {
     expect(await screen.findByText('ga2100')).toBeInTheDocument()
   })
 
+  /**
+   * FR-7.4 — the route resolves for a visitor with **no session at all**, which
+   * is the half §7.3 marks public. With no Supabase project configured there is
+   * nothing to look a handle up in, so what renders is FR-7.5's neutral page —
+   * and that it is FR-7.5's page rather than the guard's panel is the
+   * assertion. Nothing on this route asks anybody to sign in.
+   */
   it('renders a public profile route without a session (FR-7.4)', async () => {
     renderApp('/u/elvin')
-    expect(await screen.findByText('elvin')).toBeInTheDocument()
+
+    expect(await screen.findByText(t('profile.notFound.title'))).toBeInTheDocument()
+    expect(screen.queryByText(t('auth.required.title'))).not.toBeInTheDocument()
+  })
+
+  /**
+   * The SEO build writes a real file at `dist/watch/<id>/index.html`, so Pages
+   * redirects `/watch/<id>` to `/watch/<id>/` and the router is handed a
+   * trailing slash it never saw before. If that stopped matching, every
+   * catalogued deep link on the live site would render the 404 — which is
+   * precisely the class of failure D13 exists for, arriving through a new door.
+   */
+  it('resolves a watch deep link with the trailing slash Pages redirects to', async () => {
+    renderApp('/watch/ga-2100-1a1/')
+    expect(
+      await screen.findByRole('heading', { name: 'GA-2100-1A1', level: 2 }),
+    ).toBeInTheDocument()
   })
 
   it('renders the 404 for an unknown route (FR-10.2)', async () => {

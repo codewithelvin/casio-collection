@@ -9,6 +9,7 @@ import { putCollectionItem, type CollectionStatus } from '../../collection/api.t
 import { collectionKey } from '../../collection/mutations.ts'
 import { catalogQueryOptions, modelById } from '../../catalog/client.ts'
 import { EmptyState } from '../../ui/EmptyState'
+import { useUiStore } from '../../ui/uiStore'
 import { t } from '../../i18n/strings'
 
 /**
@@ -76,6 +77,18 @@ export default function AuthCallbackRoute() {
         // from unmarked to marked in front of the person who pressed it.
         if (intent?.kind === 'collection') {
           await applyPendingMark(queryClient, data.session.user.id, intent.modelId, intent.status, message)
+        }
+
+        // FR-9.3 — the other thing §9.4's slot carries. The draft is handed to
+        // the form rather than submitted: a report is a sentence somebody was
+        // still writing, and sending it unread on their behalf is not what the
+        // press meant.
+        if (intent?.kind === 'request') {
+          useUiStore.getState().setRequestDraft({
+            ref: intent.ref,
+            link: intent.link,
+            note: intent.note,
+          })
         }
 
         // `replace`, so the back button goes to the watch they were looking at

@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Col, Row, Tabs, Typography } from 'antd'
+import { Col, Row, Statistic, Tabs, Tag, Typography, theme as antdTheme } from 'antd'
 import { Link } from 'react-router-dom'
 import { useCatalog } from '../../catalog/client.ts'
 import {
@@ -18,6 +18,7 @@ import {
   viewEntries,
   type CollectionEntry,
 } from '../../collection/join.ts'
+import { collectionStats } from '../../collection/export.ts'
 import { FilterBar } from '../../ui/FilterBar'
 import { WatchCard } from '../../ui/WatchCard'
 import { UnlistedCard } from '../../ui/UnlistedCard'
@@ -42,9 +43,8 @@ import { t } from '../../i18n/strings'
  * behaviours to learn. What this screen adds is a fourth sort (FR-6.2), a
  * status split, and FR-6.5's card for a row the catalogue can no longer explain.
  *
- * §8.8's three `Statistic` tiles and FR-6.6's export are **M10's** — the
- * milestone table puts the stats strip and the JSON/CSV export there, and the
- * counts a reader needs to see now are in the tab labels where FR-6.1 puts them.
+ * §8.8's three `Statistic` tiles arrived with **M10** and are `StatsStrip`
+ * below; FR-6.6's export lives on `/settings`, where FR-7.1 puts it.
  */
 export default function CollectionRoute() {
   const catalog = useCatalog()
@@ -91,6 +91,9 @@ export default function CollectionRoute() {
         {t('route.collection.title')}
       </Typography.Title>
 
+      {/* FR-6.3 / §8.8 — three tiles: owned, wishlist, lines represented. M10. */}
+      <StatsStrip entries={entries} lines={catalog.data.lines} />
+
       <Tabs
         // FR-6.1 — the count is in the label. It counts what is *held*, never
         // what survived the filters: a tab reading "Owned (3)" over a grid of
@@ -124,6 +127,58 @@ export default function CollectionRoute() {
           },
         ]}
       />
+    </div>
+  )
+}
+
+/**
+ * FR-6.3 / §8.8 — "total owned, total on wishlist, and a breakdown by line",
+ * as three `Statistic` tiles.
+ *
+ * The third tile is **lines represented** rather than a total, because a total
+ * is already the sum of the first two and a tile that restates its neighbours
+ * is furniture. The breakdown sits under it as line names in held order, which
+ * is the shape of the answer to "what do I actually collect" — a question the
+ * two counts cannot answer between them.
+ *
+ * FR-6.5's unlisted rows are counted in owned and wishlist and belong to no
+ * line, which is exactly right and is why `collectionStats` keeps them apart.
+ */
+function StatsStrip({
+  entries,
+  lines,
+}: {
+  entries: CollectionEntry[]
+  lines: Catalog['lines']
+}) {
+  const { token } = antdTheme.useToken()
+  const stats = collectionStats(entries)
+  const nameOf = (id: string) => lines.find((line) => line.id === id)?.name ?? id
+
+  return (
+    <div style={{ marginBottom: 16 }}>
+      <Row gutter={[16, 8]}>
+        <Col xs={8}>
+          <Statistic title={t('collection.tab.owned')} value={stats.owned} />
+        </Col>
+        <Col xs={8}>
+          <Statistic title={t('collection.tab.wishlist')} value={stats.wishlist} />
+        </Col>
+        <Col xs={8}>
+          <Statistic title={t('collection.stats.lines')} value={stats.byLine.length} />
+        </Col>
+      </Row>
+
+      {stats.byLine.length > 0 ? (
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 8 }}>
+          {stats.byLine.map(({ line, count }) => (
+            <Tag key={line} style={{ marginInlineEnd: 0 }}>
+              {nameOf(line)}
+              <span style={{ color: token.colorTextTertiary, marginInlineStart: 6 }}>{count}</span>
+            </Tag>
+          ))}
+        </div>
+      ) : null}
     </div>
   )
 }

@@ -4,6 +4,7 @@ import type { PublishedModel } from '../catalog/schema.ts'
 import { authCallbackUrl } from './config.ts'
 import { getSupabase, hasStoredSession, isAuthConfigured } from './supabase.ts'
 import { clearPendingIntent } from './pendingIntent.ts'
+import { purgeCaches } from '../pwa/offline.ts'
 
 /**
  * §7.2 — the session lives in Zustand, seeded from `getSession()` and kept
@@ -190,6 +191,8 @@ export const useSessionStore = create<SessionState>((set, get) => ({
       // Whatever the network did, this browser is signed out. A sign-out that
       // fails silently and leaves the header showing an account is the worst
       // possible outcome on a shared machine.
+      // FR-11.6 — a shared device must not hold the last person's watches.
+      purgeCaches()
       clearPendingIntent()
       set({ status: 'guest', user: null, prompt: { open: false, model: null } })
     }

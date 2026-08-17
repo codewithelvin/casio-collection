@@ -205,3 +205,23 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/*
+ * The skip link. Off-screen until focused, which is the only version of this
+ * control that works: always visible is a design nobody asked for, never
+ * visible is one nobody can use.
+ */
+.cc-skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 16px;
+  background: #0033a0;
+  color: #fff;
+  border-radius: 0 0 8px 0;
+  text-decoration: none;
+}
+.cc-skip:focus {
+  left: 0;
+}

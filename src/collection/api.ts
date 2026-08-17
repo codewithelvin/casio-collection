@@ -157,6 +157,114 @@ export async function fetchProfile(userId: string): Promise<Profile | null> {
   return (data ?? null) as Profile | null
 }
 
+/** FR-7.1 / FR-7.3 — the only fields a client may change on its own profile. */
+export interface ProfileUpdate {
+  handle?: string | null
+  display_name?: string | null
+  is_public?: boolean
+}
+
+export async function updateProfile(userId: string, patch: ProfileUpdate): Promise<void> {
+  const supabase = await getSupabase()
+  const { error } = await supabase.from('profiles').update(patch).eq('id', userId)
+  if (error) throw new Error(`profile: ${error.message}`)
+}
+
+/**
+ * FR-7.2 — live availability, through a SECURITY DEFINER function rather than a
+ * select.
+ *
+ * A signed-in user cannot read anybody else's profile row (§6.4), so there is
+ * no query that answers this. The function answers exactly one bit and cannot
+ * be used to enumerate handles: you have to already know the string to ask
+ * about it.
+ */
+export async function isHandleAvailable(handle: string): Promise<boolean> {
+  const supabase = await getSupabase()
+  const { data, error } = await supabase.rpc('handle_available', { candidate: handle })
+  if (error) throw new Error(`handle: ${error.message}`)
+  return data === true
+}
+
+/**
+ * FR-7.4 / FR-7.5 — a published profile by handle, for a visitor with no
+ * session at all.
+ *
+ * **`null` covers both "no such handle" and "handle exists but is private",
+ * and the caller cannot tell them apart.** That is the requirement, not an
+ * accident of the return type: the `public profile readable` policy only
+ * matches `is_public = true`, so a private profile is genuinely invisible
+ * here rather than filtered out afterwards where a timing difference could
+ * still leak it.
+ */
+export async function fetchProfileByHandle(handle: string): Promise<Profile | null> {
+  const supabase = await getSupabase()
+  const { data, error } = await supabase
+    .from('profiles')
+    .select('id, handle, display_name, is_public')
+    .eq('handle', handle)
+    .eq('is_public', true)
+    .maybeSingle()
+
+  if (error) throw new Error(`profile: ${error.message}`)
+  return (data ?? null) as Profile | null
+}
+
+/** FR-7.4 — somebody else's published rows. Same shape, different policy. */
+export async function fetchPublicCollection(userId: string): Promise<CollectionItem[]> {
+  const supabase = await getSupabase()
+  const { data, error } = await supabase
+    .from(TABLE)
+    .select(COLUMNS)
+    .eq('user_id', userId)
+    .order('created_at', { ascending: false })
+
+  if (error) throw new Error(`collection: ${error.message}`)
+  return (data ?? []) as unknown as CollectionItem[]
+}
+
+/**
+ * FR-9 / D22 — report a missing reference into the queue.
+ *
+ * There is no reading side to this and there never will be (FR-9.6): the table
+ * has no select policy, so this function has no counterpart. FR-9.5's cap of
+ * twenty is enforced by the insert policy, which means the refusal arrives as a
+ * PostgREST error and the form has to turn it into a friendly sentence rather
+ * than an error toast.
+ */
+export interface CatalogRequest {
+  ref: string
+  link?: string | undefined
+  note?: string | undefined
+}
+
+export async function submitCatalogRequest(
+  userId: string,
+  request: CatalogRequest,
+): Promise<void> {
+  const supabase = await getSupabase()
+  const { error } = await supabase.from('catalog_requests').insert({
+    user_id: userId,
+    ref: request.ref.trim(),
+    link: request.link?.trim() || null,
+    note: request.note?.trim() || null,
+  })
+  if (error) throw new Error(`request: ${error.message}`)
+}
+
+/**
+ * FR-7.6 — irreversible, and it takes no argument.
+ *
+ * The row removed is `auth.uid()`'s because the function has no parameter to
+ * point anywhere else. Everything cascades from `auth.users`, which is why this
+ * is one call rather than a sequence the browser could half-finish.
+ */
+export async function deleteOwnAccount(): Promise<void> {
+  const supabase = await getSupabase()
+  const { error } = await supabase.rpc('delete_own_account')
+  if (error) throw new Error(`account: ${error.message}`)
+}
+
 export async function removeCollectionItem(userId: string, modelId: string): Promise<void> {
   const supabase = await getSupabase()
   const { error } = await supabase

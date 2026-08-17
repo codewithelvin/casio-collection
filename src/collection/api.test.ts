@@ -1,5 +1,17 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { fetchCollection, putCollectionItem, removeCollectionItem } from './api.ts'
+import {
+  deleteOwnAccount,
+  fetchCollection,
+  fetchProfile,
+  fetchProfileByHandle,
+  fetchPublicCollection,
+  isHandleAvailable,
+  putCollectionItem,
+  removeCollectionItem,
+  setCollectionNote,
+  submitCatalogRequest,
+  updateProfile,
+} from './api.ts'
 import { resetSupabaseClient } from '../auth/supabase.ts'
 
 /**
@@ -20,12 +32,15 @@ import { resetSupabaseClient } from '../auth/supabase.ts'
 const { db, createClient } = vi.hoisted(() => {
   const db = {
     result: { data: [] as unknown, error: null as { message: string } | null },
+    lastTable: '',
     lastFilters: {} as Record<string, unknown>,
     lastPayload: null as unknown,
     lastOnConflict: undefined as string | undefined,
+    lastRpc: null as { name: string; args: unknown } | null,
   }
 
-  const from = vi.fn(() => {
+  const from = vi.fn((table: string) => {
+    db.lastTable = table
     const chain: Record<string, unknown> = {}
     chain['select'] = vi.fn(() => chain)
     chain['order'] = vi.fn(() => chain)
@@ -33,6 +48,7 @@ const { db, createClient } = vi.hoisted(() => {
       db.lastFilters[column] = value
       return chain
     })
+    chain['maybeSingle'] = vi.fn(() => Promise.resolve(db.result))
     chain['then'] = (resolve: (value: unknown) => void, reject: (reason: unknown) => void) =>
       Promise.resolve(db.result).then(resolve, reject)
 
@@ -42,11 +58,26 @@ const { db, createClient } = vi.hoisted(() => {
       return Promise.resolve(db.result)
     })
 
+    chain['update'] = vi.fn((payload: unknown) => {
+      db.lastPayload = payload
+      return chain
+    })
+
+    chain['insert'] = vi.fn((payload: unknown) => {
+      db.lastPayload = payload
+      return Promise.resolve(db.result)
+    })
+
     chain['delete'] = vi.fn(() => chain)
     return chain
   })
 
-  return { db, createClient: vi.fn(() => ({ auth: {}, from })) }
+  const rpc = vi.fn((name: string, args?: unknown) => {
+    db.lastRpc = { name, args }
+    return Promise.resolve(db.result)
+  })
+
+  return { db, createClient: vi.fn(() => ({ auth: {}, from, rpc })) }
 })
 
 vi.mock('@supabase/supabase-js', () => ({ createClient }))
@@ -56,7 +87,9 @@ beforeEach(() => {
   vi.stubEnv('VITE_SUPABASE_URL', 'https://ref.supabase.co')
   vi.stubEnv('VITE_SUPABASE_ANON_KEY', 'anon.key')
   db.result = { data: [], error: null }
+  db.lastTable = ''
   db.lastFilters = {}
+  db.lastRpc = null
   db.lastPayload = null
   db.lastOnConflict = undefined
   resetSupabaseClient()
@@ -109,6 +142,154 @@ describe('writing a mark', () => {
     await expect(putCollectionItem('user-1', 'ga-2100-1a1', 'owned')).rejects.toThrow(
       'row-level security',
     )
+  })
+})
+
+describe('the note (FR-5.1)', () => {
+  /**
+   * An update rather than an upsert, and that is the requirement rather than a
+   * preference: a note belongs to a mark, so there is always a row. An upsert
+   * would let a note create a collection row with no status behind it — a watch
+   * that is neither owned nor wished for, which the schema permits and nothing
+   * in the product means.
+   */
+  it('updates the row that already exists', async () => {
+    await setCollectionNote('user-1', 'ga-2100-1a1', 'Bought in Osaka.')
+
+    expect(db.lastPayload).toEqual({ note: 'Bought in Osaka.' })
+    expect(db.lastFilters).toEqual({ user_id: 'user-1', model_id: 'ga-2100-1a1' })
+  })
+
+  /**
+   * FR-4.4 decides whether to ask before removing a mark by asking whether a
+   * note exists. Two ways of having no note would mean two answers.
+   */
+  it('stores an emptied note as null rather than as an empty string', async () => {
+    await setCollectionNote('user-1', 'ga-2100-1a1', '   ')
+    expect(db.lastPayload).toEqual({ note: null })
+
+    await setCollectionNote('user-1', 'ga-2100-1a1', null)
+    expect(db.lastPayload).toEqual({ note: null })
+  })
+
+  it('throws when the write is refused', async () => {
+    db.result = { data: null, error: { message: 'permission denied' } }
+    await expect(setCollectionNote('user-1', 'x', 'note')).rejects.toThrow('permission denied')
+  })
+})
+
+describe('the profile (M8)', () => {
+  it('reads the signed-in user’s own row', async () => {
+    db.result = { data: { id: 'user-1', handle: null, display_name: null, is_public: false }, error: null }
+
+    await expect(fetchProfile('user-1')).resolves.toMatchObject({ id: 'user-1' })
+    expect(db.lastFilters).toEqual({ id: 'user-1' })
+  })
+
+  it('reads a missing profile as null rather than throwing', async () => {
+    db.result = { data: null, error: null }
+    await expect(fetchProfile('user-1')).resolves.toBeNull()
+  })
+
+  it('writes only the fields it was given', async () => {
+    await updateProfile('user-1', { handle: 'elvin', is_public: true })
+
+    expect(db.lastTable).toBe('profiles')
+    expect(db.lastPayload).toEqual({ handle: 'elvin', is_public: true })
+    expect(db.lastFilters).toEqual({ id: 'user-1' })
+  })
+
+  it('throws when the profile write is refused', async () => {
+    db.result = { data: null, error: { message: 'violates check constraint' } }
+    await expect(updateProfile('user-1', { handle: 'ADMIN' })).rejects.toThrow('check constraint')
+  })
+
+  /**
+   * FR-7.2 — through a function rather than a select, because §6.4 gives a
+   * signed-in user no way to read anybody else's profile row. It answers one
+   * bit and cannot enumerate handles: you have to know the string to ask.
+   */
+  it('checks availability through the function, not a query', async () => {
+    db.result = { data: true, error: null }
+
+    await expect(isHandleAvailable('elvin')).resolves.toBe(true)
+    expect(db.lastRpc).toEqual({ name: 'handle_available', args: { candidate: 'elvin' } })
+  })
+
+  it('treats anything but a true from the function as taken', async () => {
+    db.result = { data: false, error: null }
+    await expect(isHandleAvailable('admin')).resolves.toBe(false)
+  })
+})
+
+describe('a published profile (FR-7.4, FR-7.5)', () => {
+  /**
+   * The filter is the requirement. Asking for `is_public = true` means a
+   * private profile is invisible to the *query*, rather than fetched and then
+   * filtered here — where a timing difference could still tell a stranger that
+   * the handle exists and has been withdrawn.
+   */
+  it('asks only for published profiles', async () => {
+    db.result = { data: null, error: null }
+
+    await fetchProfileByHandle('elvin')
+
+    expect(db.lastFilters).toEqual({ handle: 'elvin', is_public: true })
+  })
+
+  it('answers null for a handle that is unknown or private, alike', async () => {
+    db.result = { data: null, error: null }
+    await expect(fetchProfileByHandle('nobody')).resolves.toBeNull()
+  })
+
+  it('reads a published collection by user id', async () => {
+    db.result = { data: [{ model_id: 'f-91w-1' }], error: null }
+
+    await expect(fetchPublicCollection('user-2')).resolves.toHaveLength(1)
+    expect(db.lastFilters['user_id']).toBe('user-2')
+  })
+})
+
+describe('the request queue (D22)', () => {
+  it('sends the reference and drops empty optional fields', async () => {
+    await submitCatalogRequest('user-1', { ref: '  GA-2100-1A1 ', link: '  ', note: '' })
+
+    expect(db.lastTable).toBe('catalog_requests')
+    expect(db.lastPayload).toEqual({
+      user_id: 'user-1',
+      ref: 'GA-2100-1A1',
+      link: null,
+      note: null,
+    })
+  })
+
+  it('keeps a link and a note when they are given', async () => {
+    await submitCatalogRequest('user-1', { ref: 'X-1', link: 'https://example.com', note: 'seen it' })
+
+    expect(db.lastPayload).toMatchObject({ link: 'https://example.com', note: 'seen it' })
+  })
+
+  /** FR-9.5's cap arrives as a policy refusal, which the form turns into copy. */
+  it('throws so the form can read the refusal', async () => {
+    db.result = { data: null, error: { message: 'new row violates row-level security policy' } }
+    await expect(submitCatalogRequest('user-1', { ref: 'X-1' })).rejects.toThrow('row-level security')
+  })
+})
+
+describe('deleting an account (FR-7.6)', () => {
+  /**
+   * It takes no argument, and that is the whole safety property: the row
+   * removed is auth.uid()'s because there is no parameter pointing anywhere
+   * else. This asserts the call site keeps it that way.
+   */
+  it('calls the function with nothing to point at somebody else', async () => {
+    await deleteOwnAccount()
+    expect(db.lastRpc).toEqual({ name: 'delete_own_account', args: undefined })
+  })
+
+  it('throws rather than reporting a deletion that did not happen', async () => {
+    db.result = { data: null, error: { message: 'not authenticated' } }
+    await expect(deleteOwnAccount()).rejects.toThrow('not authenticated')
   })
 })
 

@@ -40,10 +40,19 @@ export function WatchCard({
   model,
   seriesName,
   accent,
+  /**
+   * §8.10 — on `/u/<handle>` the ownership controls are removed **at the
+   * component level, not hidden with CSS**. A prop that stops them being
+   * rendered is a different thing from a class that stops them being seen: the
+   * second is still in the DOM, still focusable, and still pressable by anyone
+   * who opens the inspector on somebody else's collection.
+   */
+  readOnly = false,
 }: {
   model: PublishedModel
   seriesName?: string | undefined
   accent?: string | undefined
+  readOnly?: boolean
 }) {
   const { token } = antdTheme.useToken()
   const sources = imageSources(model.image)
@@ -173,9 +182,11 @@ export function WatchCard({
       {/* §8.6 and FR-4.1 — Owned One on every card in the grid, not only on the
           detail page. That is the whole shape of the product: browse a series,
           press the ones you have, never open a page you did not want. */}
-      <div style={{ position: 'relative', zIndex: 2, marginTop: 10 }}>
-        <OwnershipControls model={model} size="small" />
-      </div>
+      {readOnly ? null : (
+        <div style={{ position: 'relative', zIndex: 2, marginTop: 10 }}>
+          <OwnershipControls model={model} size="small" />
+        </div>
+      )}
     </Card>
   )
 }

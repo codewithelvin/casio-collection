@@ -8,6 +8,7 @@ import { WatchGrid } from '../../ui/WatchGrid'
 import { SkeletonGrid } from '../../ui/SkeletonGrid'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
+import { ReportMissing } from '../../ui/ReportMissing'
 import { FilterBar } from '../../ui/FilterBar'
 import { useViewState } from '../../ui/useViewState'
 import { resultCount, t } from '../../i18n/strings'
@@ -59,8 +60,17 @@ export default function SearchRoute() {
       </Typography.Title>
       <Typography.Paragraph type="secondary">{resultCount(shown.length)}</Typography.Paragraph>
 
+      {/* FR-9.1 puts the report control in the search empty state, and FR-9.2
+          pre-fills it with the term that produced nothing — which is what makes
+          this the right place for it rather than an item in a menu. Somebody
+          who has just been told the catalogue does not have their watch is the
+          only person who wants this control. */}
       {hits.length === 0 ? (
-        <EmptyState title={t('search.empty.title')} body={t('search.empty.body')} />
+        <EmptyState
+          title={t('search.empty.title')}
+          body={t('search.empty.body')}
+          action={<ReportMissing prefill={term} />}
+        />
       ) : (
         <>
           <FilterBar models={hits} state={view} onChange={setView} />

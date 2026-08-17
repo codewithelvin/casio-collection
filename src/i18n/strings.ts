@@ -17,6 +17,7 @@ const en = {
   'nav.open': 'Open navigation',
   'nav.close': 'Close navigation',
   'nav.lines': 'Lines',
+  'nav.skip': 'Skip to content',
   'theme.toLight': 'Switch to light theme',
   'theme.toDark': 'Switch to dark theme',
   'search.placeholder': 'Search a reference — GA-2100, F-91W, square',
@@ -243,6 +244,9 @@ const en = {
   // My Collection (M6, §3.6, §8.8)
   'collection.tab.owned': 'Owned',
   'collection.tab.wishlist': 'Wishlist',
+  // FR-6.3's third tile. Not a total — that is the sum of the other two, and a
+  // tile restating its neighbours is furniture.
+  'collection.stats.lines': 'Lines',
   // FR-6.4 — a designed first run, not a blank page. It points at the thing to
   // do next rather than describing the state of the database.
   'collection.empty.title': 'Nothing marked yet',
@@ -257,6 +261,95 @@ const en = {
   'collection.unlisted.badge': 'No longer listed',
   'collection.unlisted.body':
     'You marked this reference and the catalogue no longer carries it. Your mark is kept.',
+
+  // Settings, sharing and the public profile (M8, §3.7)
+  'settings.identity': 'Your profile',
+  'settings.displayName': 'Display name',
+  'settings.displayName.hint': 'Shown on your published profile. Leave it empty to stay unnamed.',
+  'settings.handle': 'Handle',
+  // FR-7.2 — the rule stated before it is broken, not after.
+  'settings.handle.hint':
+    '3 to 30 characters: lowercase letters, digits, hyphens and underscores, starting with a letter or a digit.',
+  'settings.handle.checking': 'Checking',
+  'settings.handle.free': 'Available',
+  'settings.handle.taken': 'Already taken',
+  'settings.handle.tooShort': 'Too short — three characters at least.',
+  'settings.handle.tooLong': 'Too long — thirty characters at most.',
+  'settings.handle.shape': 'Lowercase letters, digits, hyphens and underscores only.',
+  'settings.handle.reserved': 'That one is reserved — it collides with a page on this site.',
+  'settings.sharing': 'Sharing',
+  // FR-7.3 — what becomes visible, stated plainly and before the switch, not in
+  // a paragraph somebody reads after their notes are already public.
+  'settings.sharing.toggle': 'Publish my collection',
+  'settings.sharing.explains':
+    'Publishing puts your watches, whether each one is owned or on your wishlist, your notes and your display name on a public page. Anyone with the link can read it. Turning it off takes effect immediately.',
+  'settings.sharing.needsHandle': 'Choose a handle first — a published profile needs an address.',
+  'settings.sharing.url': 'Your public page',
+  'settings.copy': 'Copy',
+  'settings.copied': 'Copied',
+  'settings.save': 'Save',
+  'settings.saved': 'Saved',
+  'settings.appearance': 'Appearance',
+  'settings.export': 'Export',
+  'settings.export.body':
+    'Everything you have marked, as a file you keep. Reference, line, series, status, note and the date you added it.',
+  'settings.export.json': 'Download JSON',
+  'settings.export.csv': 'Download CSV',
+  'settings.danger': 'Delete account',
+  // FR-7.6 — it says what goes and asks you to type something to prove you meant it.
+  'settings.danger.body':
+    'This removes your account and every watch you have marked. It cannot be undone and there is no copy. Export first if you want one.',
+  'settings.danger.confirmLabel': 'Type your email address to confirm',
+  'settings.danger.mismatch': 'That does not match the address on this account.',
+  'settings.danger.action': 'Delete my account',
+  'settings.danger.failed': 'The account could not be deleted. Nothing has changed.',
+
+  // The public profile (FR-7.4, FR-7.5, §8.10)
+  'profile.owned': 'Owned',
+  'profile.wishlist': 'Wishlist',
+  'profile.footer': 'A collection kept on Casio Vault',
+  // FR-7.5 — an unknown handle and a private one render the same page. The copy
+  // must not hint that the second exists.
+  'profile.notFound.title': 'No collection here',
+  'profile.notFound.body':
+    'There is nothing published at this address. The link may be old, or the person may have stopped sharing.',
+  'profile.empty': 'Nothing published in this list yet.',
+
+  // Reporting a missing reference (M8, §3.8, D22)
+  'request.trigger': "Can't find your watch?",
+  'request.title': 'Report a missing reference',
+  'request.lead':
+    'Tell us the reference and a person will look it up. Nothing you type here goes into the catalogue automatically.',
+  'request.ref': 'Reference code',
+  'request.ref.placeholder': 'GA-2100-1A1',
+  'request.link': 'A link, if you have one',
+  'request.note': 'Anything else worth knowing',
+  'request.submit': 'Send it',
+  'request.cancel': 'Cancel',
+  'request.ref.required': 'A reference code is needed — two characters at least.',
+  // FR-9.4 — confirms in plain terms, and says it is not automatic.
+  'request.sent.title': 'Thank you — that is on the list',
+  'request.sent.body':
+    'A person reads these and sources the reference from a real page before it appears. That takes as long as it takes, and there is no queue to watch.',
+  // FR-9.5 — a friendly refusal, not an error.
+  'request.capped':
+    'You have twenty reports open already, which is plenty. They are all still on the list.',
+  'request.failed': 'That did not send. Trying again usually settles it.',
+  'request.duplicate': 'You have already reported that one — it is on the list.',
+
+  // Offline (M6b, D33, §3.9)
+  //
+  // The whole rule in one sentence, said where somebody meets it. D33 refuses
+  // to queue an offline mark because a queue replayed later is the two-way
+  // merge D6 exists to prevent — so the copy has to explain a refusal rather
+  // than apologise for a delay.
+  'offline.title': 'Offline',
+  'offline.body': 'You can browse and read your collection. Marking a watch needs a connection.',
+  'offline.cannotChange': 'Offline — marking a watch needs a connection',
+  // FR-11.2 — a new build is installed and waiting. Offered, never forced: a
+  // page that reloads itself mid-sentence is worse than a slightly old one.
+  'update.available': 'A new version is ready',
+  'update.action': 'Reload',
 
   // The account control in the header (§8.1)
   'account.menu': 'Account',
