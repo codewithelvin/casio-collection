@@ -1,0 +1,1831 @@
+# GA-110 — seeded 2026-08-17 (M9), from the module 5146 operation guide.
+#
+# THE SOURCE IS THE MODULE MANUAL (D44). casio.com answers 403 to every product
+# path on every locale, but serves the operation guides from its /content/dam/
+# CDN, and §10.6 counts a manual page as `official`. Every field below is read
+# off the Specifications block of the guide named in `source`.
+#
+# ONE GUIDE, TWO MODULES. Its title page reads "Operation Guide 5146 5425"
+# and it carries a single Specifications block for both. The only difference it
+# draws between them is a dial graphic that moves with the seconds count, marked
+# "Module 5146 only" — a dial layout, not a function, and not a field here.
+#
+# WHICH REFERENCES USE MODULE 5146 is the one fact the manual does not carry.
+# That list comes from ShockBase's module index, which states in so many words
+# "These are all watches with module 5146":
+#   https://shockbase.org/watches/modules_dyn.php?module=5146
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# COLLABORATION REFERENCES ARE LEFT OUT. The index lists collaborations under
+# strings that are community constructions rather than references — a doubled
+# hyphen, or a collaborator's name appended to a reference that ends before it.
+# D2 makes an id permanent and the sourcing rule says a model whose sources
+# disagree on the reference itself is not written at all.
+#
+# NO `full-auto-calendar`, AND THAT ABSENCE IS THE CAREFUL ONE. Module 3229's
+# guide has a "Calendar system:" row saying the calendar is pre-programmed to
+# 2099, and the squares carry the tag because of it. This guide has no such row
+# — it states month, day and day of the week as things the display shows, and
+# stops. The watch on the wrist may well have a full auto-calendar; this page
+# does not say so, and guardrail 2 is that unknown is unknown.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference (D25).
+#   * `case` and `water_resistance_m` — properties of the watch, not the module.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `image` — D41 needs a licence and a proof it is the right watch.
+
+series:
+  id: ga-110
+  name: GA-110
+  line: g-shock
+  aka: [GA110]
+
+models:
+  - id: ga-110-1a
+    ref: GA-110-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110-1b
+    ref: GA-110-1B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110a-4
+    ref: GA-110A-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110a-9
+    ref: GA-110A-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ac-4a
+    ref: GA-110AC-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ac-7a
+    ref: GA-110AC-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ape-5a
+    ref: GA-110APE-5A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110as-2a
+    ref: GA-110AS-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110as-5a
+    ref: GA-110AS-5A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110b-1a2
+    ref: GA-110B-1A2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110b-1a3
+    ref: GA-110B-1A3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110b-2
+    ref: GA-110B-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110b-3
+    ref: GA-110B-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110b-4
+    ref: GA-110B-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110bc-2a
+    ref: GA-110BC-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110bc-7a
+    ref: GA-110BC-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110bc-8a
+    ref: GA-110BC-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110bc-9a
+    ref: GA-110BC-9A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110br-5a
+    ref: GA-110BR-5A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110bt-1a
+    ref: GA-110BT-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110bw-1a
+    ref: GA-110BW-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110bwp-2a
+    ref: GA-110BWP-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110by-1a
+    ref: GA-110BY-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110c-1a
+    ref: GA-110C-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110c-7a
+    ref: GA-110C-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110carp-4
+    ref: GA-110CARP-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cb-1a
+    ref: GA-110CB-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cc-2a
+    ref: GA-110CC-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cd-1a2
+    ref: GA-110CD-1A2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cd-1a3
+    ref: GA-110CD-1A3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cd-1a9
+    ref: GA-110CD-1A9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cm-1a
+    ref: GA-110CM-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cm-3a
+    ref: GA-110CM-3A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cm-8a
+    ref: GA-110CM-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cm-9a
+    ref: GA-110CM-9A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cr-2a
+    ref: GA-110CR-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cr-4a
+    ref: GA-110CR-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cr-7a
+    ref: GA-110CR-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110cs-4a
+    ref: GA-110CS-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110db-7a
+    ref: GA-110DB-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110dbr-7a
+    ref: GA-110DBR-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110dc-1a
+    ref: GA-110DC-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110dc-2a
+    ref: GA-110DC-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110dc-2a7
+    ref: GA-110DC-2A7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ddr-7a
+    ref: GA-110DDR-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110dn-4a
+    ref: GA-110DN-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110dn-6a
+    ref: GA-110DN-6A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110dr-1a
+    ref: GA-110DR-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110eh-8a
+    ref: GA-110EH-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ev-6a
+    ref: GA-110EV-6A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ew-4a
+    ref: GA-110EW-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110f-2
+    ref: GA-110F-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110fc-1a
+    ref: GA-110FC-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110fc-2a
+    ref: GA-110FC-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110frg-7a
+    ref: GA-110FRG-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110gb-1a
+    ref: GA-110GB-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110gbg-7a
+    ref: GA-110GBG-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110gbpa-1a
+    ref: GA-110GBPA-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110gbx-1a
+    ref: GA-110GBX-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110gd-9a
+    ref: GA-110GD-9A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110gd-9b
+    ref: GA-110GD-9B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110gd-9b2
+    ref: GA-110GD-9B2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110gdtw-9a
+    ref: GA-110GDTW-9A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110gl-4a
+    ref: GA-110GL-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110gw-7a
+    ref: GA-110GW-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110hc-1a
+    ref: GA-110HC-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110hc-2a
+    ref: GA-110HC-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110hc-6a
+    ref: GA-110HC-6A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110hd-8a
+    ref: GA-110HD-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110hds-7a
+    ref: GA-110HDS-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110hr-1a
+    ref: GA-110HR-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ht-1a
+    ref: GA-110HT-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ht-2a
+    ref: GA-110HT-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ht-7a
+    ref: GA-110HT-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ht-8a
+    ref: GA-110HT-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110jdb-1a4
+    ref: GA-110JDB-1A4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110jop-1a4
+    ref: GA-110JOP-1A4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110jt-2a
+    ref: GA-110JT-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110la-7a
+    ref: GA-110LA-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110lb-7a
+    ref: GA-110LB-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110lc-7a
+    ref: GA-110LC-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ld-7a
+    ref: GA-110LD-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110le-7a
+    ref: GA-110LE-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110lk-7a
+    ref: GA-110LK-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ll-1a
+    ref: GA-110LL-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110lm-7a
+    ref: GA-110LM-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ln-1a
+    ref: GA-110LN-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ln-2a
+    ref: GA-110LN-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ln-3a
+    ref: GA-110LN-3A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ln-8a
+    ref: GA-110LN-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110lp-1a
+    ref: GA-110LP-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110lp-3a
+    ref: GA-110LP-3A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110lp-7a
+    ref: GA-110LP-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110lpa-1a
+    ref: GA-110LPA-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110lpa-4a
+    ref: GA-110LPA-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ls-1a
+    ref: GA-110LS-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ls-7a
+    ref: GA-110LS-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110lt-1a
+    ref: GA-110LT-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ly-1a
+    ref: GA-110LY-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110mb-1a
+    ref: GA-110MB-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110mc-1a
+    ref: GA-110MC-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110mc-2a
+    ref: GA-110MC-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110mc-4a
+    ref: GA-110MC-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110mc-7a
+    ref: GA-110MC-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110mf-1a
+    ref: GA-110MF-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110mh-7a
+    ref: GA-110MH-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110mmc-1a
+    ref: GA-110MMC-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110mr-4a
+    ref: GA-110MR-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110mw-7a
+    ref: GA-110MW-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110nc-2a
+    ref: GA-110NC-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110nc-6a
+    ref: GA-110NC-6A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ne-9a
+    ref: GA-110NE-9A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110nm-2a
+    ref: GA-110NM-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110nm-3a
+    ref: GA-110NM-3A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110nm-4a
+    ref: GA-110NM-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110nm-9a
+    ref: GA-110NM-9A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110pc-1a
+    ref: GA-110PC-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110pkm-7a
+    ref: GA-110PKM-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110pm-1a
+    ref: GA-110PM-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ps-7a
+    ref: GA-110PS-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110rb-1a
+    ref: GA-110RB-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110rd-4a
+    ref: GA-110RD-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110rf-9a
+    ref: GA-110RF-9A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110rg-1a
+    ref: GA-110RG-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110rg-7a
+    ref: GA-110RG-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110rl-1a
+    ref: GA-110RL-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110rrb-4a
+    ref: GA-110RRB-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110sg-4a
+    ref: GA-110SG-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110sgg-3a
+    ref: GA-110SGG-3A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110sgh-4a
+    ref: GA-110SGH-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ske-8a
+    ref: GA-110SKE-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110sl-3a
+    ref: GA-110SL-3A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110sl-4a
+    ref: GA-110SL-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110sl-8a
+    ref: GA-110SL-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110sla-1a
+    ref: GA-110SLA-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110slb-7a
+    ref: GA-110SLB-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110slc-9a
+    ref: GA-110SLC-9A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110slv-1a
+    ref: GA-110SLV-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110sn-3a
+    ref: GA-110SN-3A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110sn-7a
+    ref: GA-110SN-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110sr-1a
+    ref: GA-110SR-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ss-1a
+    ref: GA-110SS-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110tl-7a
+    ref: GA-110TL-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110tls-8a
+    ref: GA-110TLS-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110tp-1a
+    ref: GA-110TP-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110tp-7a
+    ref: GA-110TP-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110tr-7a
+    ref: GA-110TR-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ts-1a4
+    ref: GA-110TS-1A4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ts-8a2
+    ref: GA-110TS-8A2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ts-8a3
+    ref: GA-110TS-8A3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ts-8a4
+    ref: GA-110TS-8A4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110tu-1a5
+    ref: GA-110TU-1A5
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110tx-1a
+    ref: GA-110TX-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110tx-2a
+    ref: GA-110TX-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110tx-7a
+    ref: GA-110TX-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110vla-4a
+    ref: GA-110VLA-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110wb-7a
+    ref: GA-110WB-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110wd-1a
+    ref: GA-110WD-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110wg-7a
+    ref: GA-110WG-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110wlp-7a
+    ref: GA-110WLP-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110ws-7a
+    ref: GA-110WS-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+  - id: ga-110y-9a
+    ref: GA-110Y-9A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5146'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
