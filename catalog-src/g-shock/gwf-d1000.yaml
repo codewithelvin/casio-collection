@@ -1,0 +1,132 @@
+# GWF-D1000 — the depth-gauge Frogman, seeded 2026-08-17 (M9), from module
+# 3445's guide.
+#
+# TWO ABSENCES THAT ARE NOT OVERSIGHTS.
+#
+# No `full-auto-calendar`. The Timekeeping row lists year, month, day and day of
+# the week as things the display shows, and the guide has no "Calendar system:"
+# row of the kind modules 3184, 3266 and 3230 all carry. It very likely has one;
+# this page does not say so.
+#
+# No lamp feature. The Illumination row reads "…Light Switch (Full Auto Light
+# operates only in the dark)" — the words naming the lamp itself did not survive
+# the font's encoding, so `auto-light` is written and `el-backlight` is not.
+# Reporting the half we can read is the honest half.
+#
+# AND THE ONE THE VOCABULARY CANNOT HOLD: a water depth sensor, 0.1 m units,
+# auto start at 1.5 metres. That is the whole point of this watch and there is no
+# feature value for it. Guardrail 4 forbids adding one inside a seeding commit,
+# so it is proposed in the session summary.
+#
+# THE SOURCE IS THE MODULE MANUAL (D44). casio.com answers 403 to every product
+# path on every locale, but serves the operation guides from its /content/dam/
+# CDN, and §10.6 counts a manual page as `official`. Every field below is read
+# off the Specifications block of the module 3445 guide named in `source`.
+#
+# WHICH REFERENCES USE MODULE 3445 is the one fact the manual does not carry.
+# That list comes from ShockBase's module index, which states in so many words
+# "These are all watches with module 3445":
+#   https://shockbase.org/watches/modules_dyn.php?module=3445
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# COLLABORATION REFERENCES ARE LEFT OUT. The index lists collaborations under
+# strings that are community constructions rather than references — a doubled
+# hyphen, or a collaborator's name appended to a reference that ends before it.
+# D2 makes an id permanent and the sourcing rule says a model whose sources
+# disagree on the reference itself is not written at all.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference (D25).
+#   * `case` and `water_resistance_m` — properties of the watch, not the module.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `image` — D41 needs a licence and a proof it is the right watch.
+
+series:
+  id: gwf-d1000
+  name: GWF-D1000
+  line: g-shock
+  aka: [GWFD1000, Frogman]
+
+models:
+  - id: gwf-d1000-1
+    ref: GWF-D1000-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3445'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+  - id: gwf-d1000arr-1
+    ref: GWF-D1000ARR-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3445'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+  - id: gwf-d1000b-1
+    ref: GWF-D1000B-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3445'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+  - id: gwf-d1000jcg-9
+    ref: GWF-D1000JCG-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3445'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+  - id: gwf-d1000k-7
+    ref: GWF-D1000K-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3445'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+  - id: gwf-d1000mb-3
+    ref: GWF-D1000MB-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3445'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+  - id: gwf-d1000nv-2
+    ref: GWF-D1000NV-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3445'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
