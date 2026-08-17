@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
@@ -83,6 +83,60 @@ describe('a filter that matches nothing (FR-1.5)', () => {
 
     expect(await screen.findByRole('link', { name: 'GA-2100-1A1' })).toBeInTheDocument()
     expect(router.state.location.search).toBe('')
+  })
+})
+
+describe('where the page starts when you arrive', () => {
+  it('opens a watch at the top, however far down the grid it was clicked', async () => {
+    // The bug this replaces: a single-page navigation keeps the browser's scroll
+    // position, so opening the eighteenth card of a series landed two thousand
+    // pixels down a page four hundred pixels tall — on the footer.
+    const scrollTo = vi.fn()
+    vi.stubGlobal('scrollTo', scrollTo)
+
+    const user = userEvent.setup()
+    renderApp('/line/vintage/f-91w')
+    await screen.findByRole('link', { name: 'F-91W-3' })
+    scrollTo.mockClear()
+
+    await user.click(screen.getByRole('link', { name: 'F-91W-3' }))
+
+    await screen.findByRole('heading', { name: 'F-91W-3', level: 2 })
+    expect(scrollTo).toHaveBeenCalledWith(0, 0)
+  })
+
+  it('holds its place when a filter changes, because that is the same page', async () => {
+    // FR-1.6 makes a filter a navigation. Scrolling to the top on every one of
+    // them would throw the reader out of the grid they are reading.
+    const scrollTo = vi.fn()
+    vi.stubGlobal('scrollTo', scrollTo)
+
+    const user = userEvent.setup()
+    renderApp('/line/g-shock')
+    await user.click(await screen.findByRole('button', { name: /Year/ }))
+
+    /**
+     * **Pretend the reader has scrolled**, and assert the restored offset
+     * rather than the absence of a call.
+     *
+     * ScrollRestoration scrolls on *every* navigation — either to the position
+     * saved under the key, or to the top when there is none. jsdom's scrollY is
+     * permanently 0, so both branches call `scrollTo(0, 0)` and "was not
+     * called" could never pass: it cannot tell *held its place* from *jumped to
+     * the top*, which is the entire behaviour being tested. Giving the page a
+     * scroll offset separates them — 820 comes back only if the key matched.
+     */
+    Object.defineProperty(window, 'scrollY', { value: 820, configurable: true })
+    scrollTo.mockClear()
+
+    try {
+      await user.click(await screen.findByRole('checkbox', { name: /2019/ }))
+
+      await waitFor(() => expect(cardsNamed(/^DW-5600E-1V$/)).toHaveLength(0))
+      expect(scrollTo).toHaveBeenCalledWith(0, 820)
+    } finally {
+      Object.defineProperty(window, 'scrollY', { value: 0, configurable: true })
+    }
   })
 })
 

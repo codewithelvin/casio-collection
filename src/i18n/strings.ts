@@ -145,6 +145,60 @@ const en = {
   'spec.line': 'Line',
   'spec.series': 'Series',
 
+  // Authentication (M4, §8.9, §9)
+  //
+  // §8.9 gives this modal one job. D6 asks for an email address before the site
+  // has demonstrated anything, so the copy has to do the persuading that the
+  // architecture refuses to do: one line saying what happens, the watch that
+  // triggered it, the button. No tabs, no password field, no terms wall.
+  'auth.modal.title': 'Sign in to keep track of the watches you own',
+  'auth.modal.lead':
+    'Your collection is private to your account. Nothing is shared unless you choose to share it.',
+  'auth.modal.thisOne': "We'll mark this one for you",
+  'auth.google': 'Continue with Google',
+  'auth.googleOnly':
+    'Google is the only way in at the moment. An email sign-in link is built and will be switched on later.',
+  'auth.or': 'or',
+  'auth.email.label': 'Email address',
+  'auth.email.placeholder': 'you@example.com',
+  'auth.email.send': 'Email me a sign-in link',
+  'auth.email.invalid': 'That does not look like an email address.',
+  'auth.inbox.title': 'Check your inbox',
+  'auth.inbox.body': 'A sign-in link is on its way to',
+  'auth.inbox.hint': 'The link works once. If it has not arrived in a minute, look in spam.',
+  'auth.error.title': 'That did not work',
+  'auth.error.body':
+    'Something went wrong reaching the sign-in service. Trying again usually settles it.',
+  'auth.error.retry': 'Try again',
+  'auth.close': 'Close',
+
+  // The state the site is in before the Supabase project exists (§14.2). It is
+  // a real state and not a placeholder: browsing is unaffected by design.
+  'auth.unavailable.title': 'Signing in is not switched on yet',
+  'auth.unavailable.body':
+    'Accounts arrive shortly. Everything in the catalogue is public and works without one.',
+
+  // §7.3 — a required route renders the modal over a blurred shell rather than
+  // redirecting, so the URL survives and you land where you meant to.
+  'auth.required.title': 'Sign in to see this page',
+  'auth.required.body':
+    'This page shows what you have marked, so it has to know who you are. The address you typed is kept — signing in brings you straight back to it.',
+
+  // The OAuth and magic-link return (§9.2, §9.4)
+  'auth.callback.working': 'One moment — putting you back where you were.',
+  'auth.callback.failed.title': 'That sign-in did not complete',
+  'auth.callback.failed.body':
+    'The link may have been used already, or it may have expired. Nothing is wrong with your account; starting again takes a moment.',
+  'auth.callback.home': 'Back to the catalogue',
+
+  // The account control in the header (§8.1)
+  'account.menu': 'Account',
+  'account.signedInAs': 'Signed in as',
+  'account.myCollection': 'My Collection',
+  'account.settings': 'Settings',
+  'account.signOut': 'Sign out',
+  'account.restoring': 'Restoring your session',
+
   // Footer — FR-10.3. The non-affiliation notice is body text, not small print
   // (§8.11): the name, the shape and the colour all point at Casio, so this
   // sentence is what pays for them. It is repeated on the About page and in the

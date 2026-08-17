@@ -1,0 +1,204 @@
+import { create } from 'zustand'
+import type { Session, SupabaseClient } from '@supabase/supabase-js'
+import type { PublishedModel } from '../catalog/schema.ts'
+import { authCallbackUrl } from './config.ts'
+import { getSupabase, hasStoredSession, isAuthConfigured } from './supabase.ts'
+import { clearPendingIntent } from './pendingIntent.ts'
+
+/**
+ * §7.2 — the session lives in Zustand, seeded from `getSession()` and kept
+ * current by `onAuthStateChange` (§9.5).
+ *
+ * The one thing here that is not in the specification's two lines is the
+ * **`restoring` status**, and it exists because §7.2 and §12 pull in opposite
+ * directions. §12 says a guest must never download the auth library; §7.2 says
+ * the session is seeded from `getSession()`, which *is* the auth library. Both
+ * are satisfiable only if the shell can tell a guest from a returning user
+ * before it imports anything — which is what `hasStoredSession()` does with a
+ * single localStorage read.
+ *
+ * So a guest is `guest` on the first paint, downloads nothing, and sees the
+ * right header immediately. A returning user is `restoring` for as long as one
+ * lazy chunk takes, and the header shows a placeholder rather than a **Sign in**
+ * button it would have to take back.
+ */
+export type SessionStatus =
+  /** No Supabase project is configured yet (§14.2). The account control hides. */
+  | 'unavailable'
+  /** A stored token exists; the client is loading and will settle this. */
+  | 'restoring'
+  | 'guest'
+  | 'authenticated'
+
+export interface AccountUser {
+  id: string
+  email: string | null
+  displayName: string | null
+}
+
+interface SignInPrompt {
+  open: boolean
+  /** §8.9 — the watch that triggered the modal, shown as a thumbnail. */
+  model: PublishedModel | null
+}
+
+interface SessionState {
+  status: SessionStatus
+  user: AccountUser | null
+  prompt: SignInPrompt
+
+  hydrate: () => Promise<void>
+  applySession: (session: Session | null) => void
+  promptSignIn: (model?: PublishedModel | null) => void
+  dismissSignIn: () => void
+  signInWithGoogle: () => Promise<void>
+  signInWithEmail: (email: string) => Promise<void>
+  signOut: () => Promise<void>
+}
+
+function initialStatus(): SessionStatus {
+  if (!isAuthConfigured()) return 'unavailable'
+  return hasStoredSession() ? 'restoring' : 'guest'
+}
+
+function initialData(): Pick<SessionState, 'status' | 'user' | 'prompt'> {
+  return { status: initialStatus(), user: null, prompt: { open: false, model: null } }
+}
+
+/**
+ * Google returns a name and a picture; magic link returns neither. Every field
+ * is optional and absent renders as itself — the account menu falls back to the
+ * email address, and then to a generic label.
+ *
+ * **The picture is deliberately not kept.** Google serves it from
+ * `lh3.googleusercontent.com`, which S7's `img-src 'self' data:` forbids and S8
+ * forbids more broadly: displaying it would put a request to Google on every
+ * page a signed-in user loads. Not storing the URL is stronger than not
+ * rendering it — a field that is present is a field somebody renders later.
+ *
+ * `full_name` is what Google's OIDC claims map to, and it is also what §6.3's
+ * sign-up trigger copies into `profiles.display_name`. The same value in two
+ * places is fine here because one is a cache of the other and neither is
+ * authoritative until M6 lets the user edit it.
+ */
+function toAccountUser(session: Session): AccountUser {
+  const metadata = session.user.user_metadata as Record<string, unknown>
+  const text = (key: string): string | null => {
+    const value = metadata[key]
+    return typeof value === 'string' && value.trim() !== '' ? value.trim() : null
+  }
+  return {
+    id: session.user.id,
+    email: session.user.email ?? null,
+    displayName: text('full_name') ?? text('name'),
+  }
+}
+
+/**
+ * §9.5 — one subscription per page load. Guarded because two callers reach it:
+ * `hydrate()` on a returning visit, and the callback route straight after an
+ * exchange. A second subscription would double every state change.
+ */
+let listenerAttached = false
+export function ensureAuthListener(supabase: SupabaseClient): void {
+  if (listenerAttached) return
+  listenerAttached = true
+  supabase.auth.onAuthStateChange((_event, session) => {
+    useSessionStore.getState().applySession(session)
+  })
+}
+
+let hydration: Promise<void> | null = null
+
+export const useSessionStore = create<SessionState>((set, get) => ({
+  ...initialData(),
+
+  /**
+   * Settles `restoring`. Runs at most once, and **returns without importing
+   * anything when there is nothing to restore** — that early exit is §12's rule
+   * expressed as code rather than as a comment.
+   */
+  hydrate: async () => {
+    hydration ??= (async () => {
+      if (!isAuthConfigured()) {
+        set({ status: 'unavailable', user: null })
+        return
+      }
+      if (!hasStoredSession() && get().status !== 'authenticated') {
+        set({ status: 'guest', user: null })
+        return
+      }
+      try {
+        const supabase = await getSupabase()
+        ensureAuthListener(supabase)
+        const { data } = await supabase.auth.getSession()
+        get().applySession(data.session)
+      } catch {
+        // A stored token we cannot exchange is indistinguishable from no token.
+        // Browsing does not depend on any of this (D1, D6), so the honest state
+        // is signed out rather than an error page over a working catalogue.
+        set({ status: 'guest', user: null })
+      }
+    })()
+    return hydration
+  },
+
+  applySession: (session) => {
+    if (!session) {
+      set({ status: 'guest', user: null })
+      return
+    }
+    set({ status: 'authenticated', user: toAccountUser(session), prompt: { open: false, model: null } })
+  },
+
+  promptSignIn: (model) => set({ prompt: { open: true, model: model ?? null } }),
+  dismissSignIn: () => set({ prompt: { open: false, model: null } }),
+
+  /**
+   * §9.3 — a full-page redirect, not a popup. A popup is a second window whose
+   * `sessionStorage` is not this one's, which would quietly break §9.4's slot.
+   */
+  signInWithGoogle: async () => {
+    const supabase = await getSupabase()
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: { redirectTo: authCallbackUrl() },
+    })
+    if (error) throw error
+  },
+
+  /** §9.2 — built and tested; reachable only when AUTH_METHODS lists 'email'. */
+  signInWithEmail: async (email) => {
+    const supabase = await getSupabase()
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: { emailRedirectTo: authCallbackUrl() },
+    })
+    if (error) throw error
+  },
+
+  /**
+   * §9.5 — clears the store and returns the user to `/`. Resetting the query
+   * cache is the caller's half of it (`useSignOut`), because the cache lives in
+   * a React context and this store deliberately does not.
+   */
+  signOut: async () => {
+    try {
+      const supabase = await getSupabase()
+      await supabase.auth.signOut()
+    } finally {
+      // Whatever the network did, this browser is signed out. A sign-out that
+      // fails silently and leaves the header showing an account is the worst
+      // possible outcome on a shared machine.
+      clearPendingIntent()
+      set({ status: 'guest', user: null, prompt: { open: false, model: null } })
+    }
+  },
+}))
+
+/** Tests only — production creates this store once and keeps it. */
+export function resetSessionStore(): void {
+  hydration = null
+  listenerAttached = false
+  useSessionStore.setState(initialData())
+}

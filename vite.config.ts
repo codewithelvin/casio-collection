@@ -1,4 +1,7 @@
 import { defineConfig, type Plugin } from 'vitest/config'
+// `vitest/config` re-exports defineConfig but not loadEnv, so this one comes
+// from vite itself. Same function, same resolution rules.
+import { loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // D39 — the site serves from the root of its own domain, casiovault.com. This
@@ -56,13 +59,71 @@ function manifestPlugin(): Plugin {
   }
 }
 
+/**
+ * S7 — the Content-Security-Policy, which M4 has to widen and must not widen by
+ * hand.
+ *
+ * GitHub Pages serves no headers, so the policy is a `<meta>` tag in a static
+ * file — and from M4 it has to name the Supabase project origin under
+ * `connect-src`, or every auth call is blocked by the browser. That origin is a
+ * build variable (§14.2) and differs between the production project and CI's,
+ * so the value cannot be written into index.html.
+ *
+ * Vite's own `%VITE_X%` substitution would do the replacement, and it fails in
+ * the wrong direction: with the variable unset it leaves the literal text
+ * `%VITE_SUPABASE_URL%` inside the policy, where a browser silently ignores the
+ * unparseable source and keeps the rest. A CSP that is quietly wrong is exactly
+ * the kind of failure S7 exists to catch, so this does it explicitly instead —
+ * it validates the value and **fails the build** on a malformed one.
+ *
+ * An absent variable is not an error. It is the state the site is in until the
+ * Supabase project exists, and it produces the policy M3 shipped.
+ */
+function cspPlugin(supabaseUrl: string): Plugin {
+  let origin = ''
+  if (supabaseUrl.trim() !== '') {
+    let parsed: URL
+    try {
+      parsed = new URL(supabaseUrl)
+    } catch {
+      throw new Error(`csp: VITE_SUPABASE_URL is not a URL: ${supabaseUrl}`)
+    }
+    if (parsed.protocol !== 'https:') {
+      throw new Error(`csp: VITE_SUPABASE_URL must be https, got ${parsed.protocol}`)
+    }
+    origin = parsed.origin
+  }
+
+  return {
+    name: 'cc-csp',
+    transformIndexHtml(html) {
+      if (origin === '') return html
+      // Supabase speaks HTTP for auth and PostgREST and WebSocket for realtime.
+      // Realtime is unused (D1 puts the catalogue in a file and §17 rules out
+      // anything social), so only the HTTP origin is granted. If realtime is
+      // ever wanted, that is a deliberate second entry here.
+      const widened = html.replace("connect-src 'self'", `connect-src 'self' ${origin}`)
+      if (widened === html) {
+        throw new Error("csp: could not find \"connect-src 'self'\" in index.html")
+      }
+      return widened
+    },
+  }
+}
+
 // D13: the project base path. Every asset and every fetch must be built from
 // import.meta.env.BASE_URL — a hard-coded '/catalog/catalog.json' works in dev
 // and 404s in production. Closing O1 (the domain) changes this line, the OAuth
 // redirect allow-list and the Supabase site URL together, never one alone.
-export default defineConfig({
+export default defineConfig(({ mode }) => {
+  // The third argument is '' rather than 'VITE_' so a missing prefix is visible
+  // as a missing value here instead of as a mystery at runtime. In CI these
+  // arrive as real environment variables; locally they come from .env.local.
+  const env = loadEnv(mode, process.cwd(), '')
+
+  return {
   base: BASE,
-  plugins: [react(), manifestPlugin()],
+  plugins: [react(), manifestPlugin(), cspPlugin(env['VITE_SUPABASE_URL'] ?? '')],
   build: {
     /**
      * D40, closing O10 — **React is pinned to its own chunk and AntD is not.**
@@ -110,7 +171,18 @@ export default defineConfig({
     // parallel test files eat. Raising the ceiling is right where the work is
     // genuinely slow; what is not acceptable is a red gate that is not about the
     // code, because D31 makes CI the thing that blocks a deploy.
-    testTimeout: 30_000,
+    //
+    // **Raised from 30 s to 60 s at M4**, for the third instance of the same
+    // measurement rather than for a new reason. Under v8 coverage instrumentation
+    // a full-shell test file runs roughly ten times slower than it does alone:
+    // the filtering file's slowest test is 2.3 s standalone and 22.5 s in a
+    // coverage run, and M4's two new component files pushed the one beside it
+    // over the old ceiling. M3's note stands — the tests are starved, not slow —
+    // and the workers are already halved; what is left is a ceiling that clears
+    // the slowest honest test on the slowest machine. Nothing in this suite
+    // waits on an absence, so a higher ceiling makes a genuine failure slower to
+    // report and never makes one pass.
+    testTimeout: 60_000,
 
     /**
      * M3 added two files of full-shell component tests and the suite started
@@ -144,7 +216,14 @@ export default defineConfig({
         'src/catalog/**': { lines: 90, functions: 90, statements: 90 },
         'src/collection/**': { lines: 90, functions: 90, statements: 90 },
         'src/auth/pendingIntent.ts': { lines: 90, functions: 90, statements: 90 },
+        // M4 adds two more that fail silently. `session.ts` decides whether a
+        // page thinks you are signed in and `config.ts` decides whether the
+        // sign-in machinery exists at all; neither throws when it is wrong, it
+        // just shows the wrong header to the wrong person.
+        'src/auth/session.ts': { lines: 90, functions: 90, statements: 90 },
+        'src/auth/config.ts': { lines: 90, functions: 90, statements: 90 },
       },
     },
   },
+  }
 })

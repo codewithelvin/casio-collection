@@ -1,0 +1,61 @@
+# WHY THIS EXISTS, AND WHEN TO DELETE IT — D23.
+#
+# The free Supabase tier pauses a project after seven days without activity.
+# When it pauses, sign-in and every collection read break at random while
+# browsing carries on working perfectly (D1 puts the catalogue in a static
+# file), so the failure presents as a bug in auth rather than as a sleeping
+# database. This workflow makes one trivial request every three days so the
+# timer never runs out.
+#
+# **Delete this file once the site has daily users.** Organic traffic keeps the
+# project warm on its own, and a cron nobody remembers is a cron nobody removes.
+# It also goes if the project is ever upgraded to a paid tier.
+name: Supabase keep-alive
+
+on:
+  schedule:
+    # 05:11 UTC every third day. Off the hour deliberately — GitHub's scheduler
+    # is busiest on the hour and delays a run that has no reason to be prompt.
+    - cron: '11 5 */3 * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping the project
+        env:
+          SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+        run: |
+          set -euo pipefail
+
+          # Before the project exists there is nothing to keep awake. Skipping
+          # loudly is not the same as failing silently: the log says why, and
+          # the run is green because nothing is wrong.
+          if [ -z "${SUPABASE_URL}" ] || [ -z "${SUPABASE_ANON_KEY}" ]; then
+            echo "No Supabase project configured yet (§14.2) — nothing to keep awake."
+            exit 0
+          fi
+
+          # A read against a real table, not a health endpoint. GoTrue can
+          # answer /health while Postgres is asleep, and Postgres is what the
+          # seven-day timer watches. RLS returns [] for an anonymous caller
+          # (§6.4), which is a successful query and exactly the point.
+          url="${SUPABASE_URL}/rest/v1/profiles?select=id&limit=1"
+          echo "GET ${url}"
+
+          code=$(curl -sS -o /tmp/keepalive.out -w '%{http_code}' \
+            -H "apikey: ${SUPABASE_ANON_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_ANON_KEY}" \
+            "${url}")
+
+          echo "HTTP ${code}"
+          cat /tmp/keepalive.out
+
+          # Fails loudly, by design. A keep-alive that has been erroring for a
+          # month is indistinguishable from no keep-alive at all.
+          if [ "${code}" != "200" ]; then
+            echo "::error::Supabase keep-alive got HTTP ${code}. The project may be paused or the anon key rotated."
+            exit 1
+          fi

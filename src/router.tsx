@@ -1,5 +1,32 @@
+import type { ComponentType } from 'react'
 import { createBrowserRouter, type RouteObject } from 'react-router-dom'
 import { AppShell } from './ui/AppShell'
+import { RequireSession } from './auth/RequireSession'
+
+/**
+ * §7.3's *Auth* column, made real (M4).
+ *
+ * It belongs in the route table rather than inside each screen for the same
+ * reason the table is exported rather than inlined: a rule each new route has
+ * to remember to apply is a rule a route will one day forget, and the failure
+ * mode is a private page rendering for a stranger. Here, adding a route without
+ * deciding which column it is in is not possible.
+ *
+ * The guard wraps the screen **after** its lazy import resolves, so a guest
+ * still downloads nothing until they navigate.
+ */
+async function guarded(
+  load: () => Promise<{ default: ComponentType }>,
+): Promise<{ Component: ComponentType }> {
+  const { default: Screen } = await load()
+  return {
+    Component: () => (
+      <RequireSession>
+        <Screen />
+      </RequireSession>
+    ),
+  }
+}
 
 /**
  * §7.3 — the route table. Every route is lazily imported so only the shell and
@@ -33,14 +60,9 @@ export const routes: RouteObject[] = [
         path: 'search',
         lazy: async () => ({ Component: (await import('./routes/search')).default }),
       },
-      {
-        path: 'collection',
-        lazy: async () => ({ Component: (await import('./routes/collection')).default }),
-      },
-      {
-        path: 'settings',
-        lazy: async () => ({ Component: (await import('./routes/settings')).default }),
-      },
+      // The two rows §7.3 marks "required".
+      { path: 'collection', lazy: () => guarded(() => import('./routes/collection')) },
+      { path: 'settings', lazy: () => guarded(() => import('./routes/settings')) },
       {
         path: 'u/:handle',
         lazy: async () => ({ Component: (await import('./routes/profile')).default }),

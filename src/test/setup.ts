@@ -29,8 +29,17 @@ configure({ asyncUtilTimeout: 15_000 })
 afterEach(() => {
   cleanup()
   localStorage.clear()
+  // M4 — the pending intent lives in sessionStorage (§9.4) and it is a *single
+  // slot*, so a leftover from one test is not stale data in the next one, it is
+  // the value the next one reads. That is precisely the failure the slot's
+  // expiry exists to prevent, and leaving it uncleared here would hide it.
+  sessionStorage.clear()
   // A test that overrode fetch must not leave that override for the next one.
   vi.unstubAllGlobals()
+  // Likewise the Supabase build variables (§14.2): whether they are set is what
+  // decides if the account control renders at all, so one test's stub would
+  // change what the next test's shell looks like.
+  vi.unstubAllEnvs()
 })
 
 /**

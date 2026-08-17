@@ -3,11 +3,13 @@ import { Button, Drawer, Grid, Layout, theme as antdTheme } from 'antd'
 import MenuOutlined from '@ant-design/icons/MenuOutlined'
 import BulbOutlined from '@ant-design/icons/BulbOutlined'
 import BulbFilled from '@ant-design/icons/BulbFilled'
-import { Link, Outlet, useLocation } from 'react-router-dom'
+import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
 import { Lockup } from './Mark'
 import { LineNav } from './LineNav'
 import { Footer } from './Footer'
 import { SearchBox } from './SearchBox'
+import { AccountMenu } from './AccountMenu'
+import { AuthHost } from '../auth/AuthHost'
 import { useUiStore } from './uiStore'
 import { t } from '../i18n/strings'
 
@@ -36,6 +38,28 @@ export function AppShell() {
 
   return (
     <Layout style={{ ...rootStyle, minHeight: '100vh' }}>
+      {/*
+        A browser resets the scroll on every page it loads; a single-page app has
+        to do it itself, and until now this one did not. Opening a watch from the
+        eighteenth card of a series left you two thousand pixels down a page that
+        is four hundred tall, looking at a footer.
+
+        **The key is the pathname, not the location key.** React Router's default
+        gives every navigation entry its own key, which is exactly right for
+        pages and exactly wrong here: FR-1.6 puts the filters and the sort in the
+        query string, so ticking a year is a navigation, and with the default key
+        every filter press would throw the reader back to the top of the grid
+        they were reading. Keying on the pathname makes a filter change the same
+        page — it holds its position — while a different page is a different page
+        and starts at the top. Going back restores where you were.
+      */}
+      <ScrollRestoration getKey={(location) => location.pathname} />
+
+      {/* §9.5 — restores a session if there is one to restore, and hosts the
+          sign-in modal (§8.9). Mounted once at the shell because the modal is
+          opened from four places: the header, a guarded route, the Owned button
+          from M5, and the missing-reference form from M8. */}
+      <AuthHost />
       <Layout.Header
         style={{
           position: 'sticky',
@@ -79,9 +103,11 @@ export function AppShell() {
           style={{ width: TOUCH_TARGET, height: TOUCH_TARGET, flexShrink: 0 }}
         />
 
-        {/* §8.1 lists an account menu here. It is deliberately absent until M4
-            builds authentication: a Sign in button that opens nothing is worse
-            than no button, and D6 requires the modal it would open. */}
+        {/* §8.1's account menu, which from M0 until M4 was this comment saying
+            a Sign in button that opens nothing is worse than no button. It
+            renders nothing at all until a Supabase project is configured, which
+            is the same rule holding rather than a new one. */}
+        <AccountMenu compact={isMobile} />
       </Layout.Header>
 
       <Layout>
