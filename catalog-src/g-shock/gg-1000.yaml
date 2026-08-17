@@ -1,0 +1,156 @@
+# GG-1000 — the Mudmaster, seeded 2026-08-17 (M9), from module 5476's guide.
+#
+# `movement: quartz`, not solar: the Battery row says two silver oxide cells,
+# type SR927W. The Mudmaster next door, GWG-1000, is solar and radio. Adjacent
+# watches in the same nickname, two different answers, both read off the page.
+#
+# NO `mud-resistant`, WHICH IS THIS WATCH'S NAME. The same argument as
+# `shock-resistant` on a G-SHOCK: it is what the model is sold as, the guide does
+# not state it, and writing it would be the catalogue asserting something on
+# Casio's behalf (FR-10.4). A reader will notice and be right to.
+#
+# THE SOURCE IS THE MODULE MANUAL (D44). casio.com answers 403 to every product
+# path on every locale, but serves the operation guides from its /content/dam/
+# CDN, and §10.6 counts a manual page as `official`. Every field below is read
+# off the Specifications block of the module 5476 guide named in `source`.
+#
+# WHICH REFERENCES USE MODULE 5476 is the one fact the manual does not carry.
+# That list comes from ShockBase's module index, which states in so many words
+# "These are all watches with module 5476":
+#   https://shockbase.org/watches/modules_dyn.php?module=5476
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# COLLABORATION REFERENCES ARE LEFT OUT. The index lists collaborations under
+# strings that are community constructions rather than references — a doubled
+# hyphen, or a collaborator's name appended to a reference that ends before it.
+# D2 makes an id permanent and the sourcing rule says a model whose sources
+# disagree on the reference itself is not written at all.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference (D25).
+#   * `case` and `water_resistance_m` — properties of the watch, not the module.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `image` — D41 needs a licence and a proof it is the right watch.
+
+series:
+  id: gg-1000
+  name: GG-1000
+  line: g-shock
+  aka: [GG1000, Mudmaster]
+
+models:
+  - id: gg-1000-1a
+    ref: GG-1000-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5476'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+  - id: gg-1000-1a3
+    ref: GG-1000-1A3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5476'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+  - id: gg-1000-1a5
+    ref: GG-1000-1A5
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5476'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+  - id: gg-1000-1a8
+    ref: GG-1000-1A8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5476'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+  - id: gg-1000btn-1a
+    ref: GG-1000BTN-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5476'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+  - id: gg-1000gb-1a
+    ref: GG-1000GB-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5476'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+  - id: gg-1000gb-4a
+    ref: GG-1000GB-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5476'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+  - id: gg-1000rg-1a
+    ref: GG-1000RG-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5476'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+  - id: gg-1000tlc-1a
+    ref: GG-1000TLC-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5476'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+  - id: gg-1000wlp-1a
+    ref: GG-1000WLP-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5476'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
