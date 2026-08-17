@@ -22,6 +22,12 @@
 # written at all. The filter keeps the shape Casio prints: prefix, number, a
 # variant of at most four letters, one suffix.
 #
+# `family: octagonal`, DECIDED BY THE CLIENT 2026-08-17 rather than assumed here.
+# Guardrail 4a reserves the family for a person, and GM-2100 being the GA-2100
+# case in another material is exactly the judgement it means. The client’s rule is
+# that a category of one is worse than no category — which is also what §10.2
+# check 4 warns about, and `octagonal` held only ga-2100 until now.
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the
@@ -31,15 +37,13 @@
 #   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
 #     it. Writing it here would be the catalogue asserting something on Casio's
 #     behalf, which is the one thing FR-10.4 rules out.
-#   * `family` — GM-2100 is the octagonal case in another material, so
-#     `octagonal` is the obvious grouping. Guardrail 4a reserves that judgement
-#     for a person, so it is proposed in the session summary, not written here.
 #   * `image` — D41 needs a licence and a proof it is the right watch.
 
 series:
   id: gm-2100
   name: GM-2100
   line: g-shock
+  family: octagonal
   aka: [GM2100]
 
 models:
