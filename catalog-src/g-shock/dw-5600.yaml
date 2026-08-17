@@ -1,0 +1,1388 @@
+# DW-5600 — seeded 2026-08-17 (M2b), the first G-SHOCK series in the catalogue
+# and the first entries anywhere in it sourced from an **official** Casio page.
+#
+# THE SOURCE IS THE MODULE MANUAL, and that needs explaining because it is not
+# a product page. casio.com answers 403 to every product path on every locale
+# (Akamai bot protection — a browser user agent does not help, which is how the
+# earlier "connection reset" reading was wrong). What casio.com does serve, on
+# its /content/dam/ CDN path, is the operation guides — and §10.6 is explicit
+# that `official` includes "a support/manual page". So every field below is read
+# off the Specifications block of the module manual named in `source`.
+#
+# WHICH REFERENCES USE MODULE 3229 is the one fact the manual does not
+# carry. That list comes from ShockBase's module index, which states in so many
+# words "These are all watches with module 3229":
+#   https://shockbase.org/watches/modules_dyn.php?module=3229
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference. Guessing a
+#     release year from a module is exactly what D25 forbids.
+#   * `case` and `water_resistance_m` — properties of the watch, not the module.
+#     200 m is true of every square ever made and it is still not on this page.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `image` — D41 needs a licence and a proof it is the right watch. Neither
+#     exists yet for these; `catalog:audit` lists them all under section 2.
+#
+# ONE WORD READ CAREFULLY: the manual says "Multi-function alarm", which is one
+# alarm with several setting modes — daily, by date, by month. It is NOT the
+# vocabulary's `multi-alarm`, whose label reads "Multiple alarms". The square
+# has one alarm. Module 5611 genuinely has five, and says so, and gets the
+# other tag. Two watches, two sources, two different words meaning two
+# different things — and a filter that got this wrong would be wrong quietly.
+
+series:
+  id: dw-5600
+  name: DW-5600
+  line: g-shock
+  family: square
+  aka: [DW5600, square]
+
+models:
+  - id: dw-5600ader-1
+    ref: DW-5600ADER-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600arc-3
+    ref: DW-5600ARC-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600bb-1
+    ref: DW-5600BB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600bb-1g
+    ref: DW-5600BB-1G
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600bbm-1
+    ref: DW-5600BBM-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600bbm-2
+    ref: DW-5600BBM-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600bbma-1
+    ref: DW-5600BBMA-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600bbmb-1
+    ref: DW-5600BBMB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600bbn-1
+    ref: DW-5600BBN-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600bbtl-1
+    ref: DW-5600BBTL-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600bud-20
+    ref: DW-5600BUD-20
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600bwp-2
+    ref: DW-5600BWP-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ca-2
+    ref: DW-5600CA-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ca-8
+    ref: DW-5600CA-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600cc-2
+    ref: DW-5600CC-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600cma-9
+    ref: DW-5600CMA-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600cmb-1
+    ref: DW-5600CMB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600cs-1
+    ref: DW-5600CS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600cu-7
+    ref: DW-5600CU-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600cu-9
+    ref: DW-5600CU-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600da-4
+    ref: DW-5600DA-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600dc-1
+    ref: DW-5600DC-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600dc-2
+    ref: DW-5600DC-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600de-2
+    ref: DW-5600DE-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600dn-7
+    ref: DW-5600DN-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600dp-1
+    ref: DW-5600DP-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600dqm-1
+    ref: DW-5600DQM-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600e-1
+    ref: DW-5600E-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600eg-9
+    ref: DW-5600EG-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600et-3
+    ref: DW-5600ET-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600et-5
+    ref: DW-5600ET-5
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600eva-02
+    ref: DW-5600EVA-02
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ew-7
+    ref: DW-5600EW-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600gc-7
+    ref: DW-5600GC-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600gl-9
+    ref: DW-5600GL-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600gu-7
+    ref: DW-5600GU-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600hdr-1
+    ref: DW-5600HDR-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600hr-1
+    ref: DW-5600HR-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600hs-4
+    ref: DW-5600HS-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ht-1
+    ref: DW-5600HT-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600huf-1
+    ref: DW-5600HUF-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600jk-1
+    ref: DW-5600JK-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600lcu-1
+    ref: DW-5600LCU-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600lg-1
+    ref: DW-5600LG-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600lh-4
+    ref: DW-5600LH-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600lj-7w
+    ref: DW-5600LJ-7W
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600lp-1
+    ref: DW-5600LP-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ls-2
+    ref: DW-5600LS-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ls-7
+    ref: DW-5600LS-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600lu-2
+    ref: DW-5600LU-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600lu-8
+    ref: DW-5600LU-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600m-2
+    ref: DW-5600M-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600m-3
+    ref: DW-5600M-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600m-4
+    ref: DW-5600M-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600m-8
+    ref: DW-5600M-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600mco-1
+    ref: DW-5600MCO-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600mnt-1
+    ref: DW-5600MNT-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600mnt-8
+    ref: DW-5600MNT-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ms-1
+    ref: DW-5600MS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600mt-1
+    ref: DW-5600MT-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600mw-7
+    ref: DW-5600MW-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600mwct-7
+    ref: DW-5600MWCT-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ne-1
+    ref: DW-5600NE-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600nh-1
+    ref: DW-5600NH-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600nh-7
+    ref: DW-5600NH-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600nn-1
+    ref: DW-5600NN-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600p-1
+    ref: DW-5600P-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600p-4
+    ref: DW-5600P-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600p-9
+    ref: DW-5600P-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600pgb-1
+    ref: DW-5600PGB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600pgw-7
+    ref: DW-5600PGW-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600pm-1
+    ref: DW-5600PM-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600pr-4
+    ref: DW-5600PR-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600pt-5
+    ref: DW-5600PT-5
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600rb-2
+    ref: DW-5600RB-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600rb-3
+    ref: DW-5600RB-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600rec-9
+    ref: DW-5600REC-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sb-2
+    ref: DW-5600SB-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sb-3
+    ref: DW-5600SB-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sb-4
+    ref: DW-5600SB-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sbtg-3
+    ref: DW-5600SBTG-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sby-4
+    ref: DW-5600SBY-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sc-2
+    ref: DW-5600SC-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sc-4
+    ref: DW-5600SC-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sc-8
+    ref: DW-5600SC-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sg-7
+    ref: DW-5600SG-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sk-1
+    ref: DW-5600SK-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600skc-1
+    ref: DW-5600SKC-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ske-7
+    ref: DW-5600SKE-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600skgt-6
+    ref: DW-5600SKGT-6
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sl-1
+    ref: DW-5600SL-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sl-7
+    ref: DW-5600SL-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sla-1
+    ref: DW-5600SLA-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600slb-2
+    ref: DW-5600SLB-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600slc-9
+    ref: DW-5600SLC-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600slg-7
+    ref: DW-5600SLG-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600slv-1
+    ref: DW-5600SLV-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600smb-4
+    ref: DW-5600SMB-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sn-1
+    ref: DW-5600SN-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600sr-1
+    ref: DW-5600SR-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600srs-7
+    ref: DW-5600SRS-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tal-1
+    ref: DW-5600TAL-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tb-1
+    ref: DW-5600TB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tb-4a
+    ref: DW-5600TB-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tb-4b
+    ref: DW-5600TB-4B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tb-6
+    ref: DW-5600TB-6
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tcb-1
+    ref: DW-5600TCB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tg-9
+    ref: DW-5600TG-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tga-9
+    ref: DW-5600TGA-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600thb-7
+    ref: DW-5600THB-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600thc-1
+    ref: DW-5600THC-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ths-1
+    ref: DW-5600THS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tmn-1
+    ref: DW-5600TMN-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tmn-7
+    ref: DW-5600TMN-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600tnt-7
+    ref: DW-5600TNT-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600wb-7
+    ref: DW-5600WB-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600wm-5
+    ref: DW-5600WM-5
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ws-1
+    ref: DW-5600WS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600ws-4
+    ref: DW-5600WS-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600yg-1
+    ref: DW-5600YG-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600yg-4
+    ref: DW-5600YG-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+  - id: dw-5600yu-7
+    ref: DW-5600YU-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3229'
+    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]

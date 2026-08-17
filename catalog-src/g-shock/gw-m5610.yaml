@@ -1,0 +1,344 @@
+# GW-M5610 — seeded 2026-08-17 (M2b), the first G-SHOCK series in the catalogue
+# and the first entries anywhere in it sourced from an **official** Casio page.
+#
+# THE SOURCE IS THE MODULE MANUAL, and that needs explaining because it is not
+# a product page. casio.com answers 403 to every product path on every locale
+# (Akamai bot protection — a browser user agent does not help, which is how the
+# earlier "connection reset" reading was wrong). What casio.com does serve, on
+# its /content/dam/ CDN path, is the operation guides — and §10.6 is explicit
+# that `official` includes "a support/manual page". So every field below is read
+# off the Specifications block of the module manual named in `source`.
+#
+# WHICH REFERENCES USE MODULE 3159 is the one fact the manual does not
+# carry. That list comes from ShockBase's module index, which states in so many
+# words "These are all watches with module 3159":
+#   https://shockbase.org/watches/modules_dyn.php?module=3159
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference. Guessing a
+#     release year from a module is exactly what D25 forbids.
+#   * `case` and `water_resistance_m` — properties of the watch, not the module.
+#     200 m is true of every square ever made and it is still not on this page.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `image` — D41 needs a licence and a proof it is the right watch. Neither
+#     exists yet for these; `catalog:audit` lists them all under section 2.
+#
+# The 3159 guide is an older MO-format PDF whose Specifications block did not
+# survive extraction, so the features here are the MODES the manual documents
+# and nothing beyond them. No backlight tag: the guide describes one and does
+# not name the technology, and EL and LED are different parts.
+#
+# `movement: solar-radio` rather than a `radio-controlled` feature as well —
+# the vocabulary is explicit that solar-plus-radio is one value, not two.
+
+series:
+  id: gw-m5610
+  name: GW-M5610
+  line: g-shock
+  family: square
+  aka: [GWM5610, square]
+
+models:
+  - id: gw-m5610-1
+    ref: GW-M5610-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610-1b
+    ref: GW-M5610-1B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610b-1
+    ref: GW-M5610B-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610ba-1
+    ref: GW-M5610BA-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610bb-1
+    ref: GW-M5610BB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610bc-1
+    ref: GW-M5610BC-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610bw-7
+    ref: GW-M5610BW-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610by-1
+    ref: GW-M5610BY-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610cc-2
+    ref: GW-M5610CC-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610cc-3
+    ref: GW-M5610CC-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610ew-4
+    ref: GW-M5610EW-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610k-1
+    ref: GW-M5610K-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610kg-3
+    ref: GW-M5610KG-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610lg-8
+    ref: GW-M5610LG-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610ly-1
+    ref: GW-M5610LY-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610md-2
+    ref: GW-M5610MD-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610md-7
+    ref: GW-M5610MD-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610md-9
+    ref: GW-M5610MD-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610mr-4
+    ref: GW-M5610MR-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610mw-7
+    ref: GW-M5610MW-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610nv-2
+    ref: GW-M5610NV-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610pc-1
+    ref: GW-M5610PC-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610r-1
+    ref: GW-M5610R-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610rb-4
+    ref: GW-M5610RB-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610sd-8
+    ref: GW-M5610SD-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610th-1
+    ref: GW-M5610TH-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
+  - id: gw-m5610tr-7
+    ref: GW-M5610TR-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3159'
+    features: [world-time, stopwatch, countdown-timer, alarm]
