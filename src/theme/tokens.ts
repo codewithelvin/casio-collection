@@ -26,7 +26,6 @@ export const LINE_ACCENTS: Record<string, string> = {
   'baby-g': '#E5559E',
   sheen: '#8E7CC3',
   oceanus: '#0091C8',
-  databank: '#6D6D6D',
 }
 
 export function themeConfig(mode: ThemeMode): ThemeConfig {

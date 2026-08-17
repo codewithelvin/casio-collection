@@ -5,7 +5,7 @@ import { LineGrid, LineGridSkeleton } from '../../ui/LineGrid'
 import { t } from '../../i18n/strings'
 
 /**
- * The catalogue front door: the eight lines of D15, in editorial order.
+ * The catalogue front door: the seven lines of D15, in editorial order.
  *
  * The grid and the skeleton it loads through are both in `LineGrid`, which owns
  * the one copy of their shared geometry. Two copies of a column span are two
@@ -26,7 +26,7 @@ export default function HomeRoute() {
 
       <Typography.Title level={4}>{t('home.linesHeading')}</Typography.Title>
       {isPending ? (
-        <LineGridSkeleton count={8} />
+        <LineGridSkeleton count={7} />
       ) : isError || !data ? (
         <ErrorState onRetry={() => void refetch()} />
       ) : (

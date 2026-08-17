@@ -53,7 +53,7 @@ describe('the home route', () => {
     const main = heading.closest('main')
     expect(main).not.toBeNull()
 
-    expect(main!.querySelectorAll('.ant-card')).toHaveLength(8)
+    expect(main!.querySelectorAll('.ant-card')).toHaveLength(7)
     // A line card has no photograph, so its skeleton has no square tile. The
     // watch grid's skeleton does, and borrowing it here put an image placeholder
     // above every line name and then collapsed it when the catalogue landed.
@@ -83,7 +83,7 @@ describe('the line route (FR-1.2)', () => {
     expect(await screen.findByText(t('line.empty.title'))).toBeInTheDocument()
   })
 
-  it('says so when the line is not one of the eight', async () => {
+  it('says so when the line is not one of the seven', async () => {
     renderApp('/line/rolex')
     expect(await screen.findByText(t('line.notFound.title'))).toBeInTheDocument()
   })

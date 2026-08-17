@@ -15,7 +15,7 @@ import type { Catalog } from '../catalog/schema.ts'
  *   * a series with no family at all, which is the normal case,
  *   * a model with a photograph and models without, so §8.6's three image mixes
  *     are all reachable,
- *   * a line with a zero count, which is seven of the eight lines today,
+ *   * a line with a zero count, which Sheen and Oceanus both are today,
  *   * a model carrying nothing but the five required fields (D27), which is what
  *     makes the empty specification table a real state rather than a hypothesis.
  */
@@ -37,7 +37,6 @@ export const catalogFixture: Catalog = {
     { id: 'baby-g', name: 'Baby-G', slug: 'baby-g', accent: '#E5559E', order: 4, count: 0 },
     { id: 'sheen', name: 'Sheen', slug: 'sheen', accent: '#8E7CC3', order: 5, count: 0 },
     { id: 'oceanus', name: 'Oceanus', slug: 'oceanus', accent: '#0091C8', order: 6, count: 0 },
-    { id: 'databank', name: 'Databank', slug: 'databank', accent: '#6D6D6D', order: 7, count: 0 },
   ],
   families: [
     { id: 'square', name: 'The square', line: 'g-shock', order: 0 },

@@ -1,6 +1,7 @@
-# The eight watch lines of D15, and the three things the build needs to know
-# about each one: how it is presented, what a reference code looks like in it,
-# and which display groupings its series may belong to.
+# The watch lines of D15 — seven of them since D49 moved Databank into Vintage as
+# a family — and the three things the build needs to know about each one: how it
+# is presented, what a reference code looks like in it, and which display
+# groupings its series may belong to.
 #
 # ORDER IS EDITORIAL AND IS THE ORDER OF THIS LIST. There is no `order:` field,
 # because a number beside a list is a second copy of the same fact and the two
@@ -10,7 +11,7 @@
 # `AE-1200WHD-1AV` and `EQB-1100D-1A` share no shape — so each line carries its
 # own and refines it as the line is seeded. Every line starts from the same
 # permissive pattern below, which is derived from references that actually exist
-# across all eight lines rather than from a rule Casio publishes (they publish
+# across every line rather than from a rule Casio publishes (they publish
 # none). A reference the pattern does not match is a **warning, not a failure**:
 # the exception is usually real, and a rule that blocks real data gets deleted.
 # Silence it by writing `# ref-exception: <why>` on the model entry.
@@ -55,6 +56,21 @@ lines:
     slug: vintage
     accent: '#B08D57'
     ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{2,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
+    families:
+      # D49 — Databank was one of D15's eight lines and is now a family here,
+      # because Casio files it here. There is no `databank` segment anywhere in
+      # casio.com's sitemap: DB-, DBC- and the calculator shapes are all inside
+      # the general `casio` roster, which is the same roster Vintage comes from.
+      # A line whose roster does not exist can never be seeded, and a permanent
+      # empty card on the front door is worse than an honest grouping one level
+      # down.
+      #
+      # Nothing is tagged into it yet. `abx-20` is the only Databank-shaped
+      # series seeded, and a family of one does not render as a heading (D32,
+      # check 4) — it would only add a warning. It gets tagged when a second one
+      # arrives, along with that one.
+      - id: databank
+        name: Databank
 
   - id: edifice
     name: Edifice
@@ -84,10 +100,4 @@ lines:
     name: Oceanus
     slug: oceanus
     accent: '#0091C8'
-    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{2,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
-
-  - id: databank
-    name: Databank
-    slug: databank
-    accent: '#6D6D6D'
     ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{2,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'

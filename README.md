@@ -65,7 +65,7 @@ this repo and it is `src/catalog/schema.ts`.
 
 ## The catalogue
 
-`catalog-src/` is the authored source: `lines.yaml` for the eight lines, then one
+`catalog-src/` is the authored source: `lines.yaml` for the seven lines, then one
 YAML file per series in a folder named after its line. `catalog:build` turns that
 into a single versioned `public/catalog/catalog.json` — a build artefact, **not**
 a committed file. What gets committed and reviewed is the YAML.

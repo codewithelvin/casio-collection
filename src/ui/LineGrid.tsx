@@ -5,13 +5,12 @@ import { LINE_ACCENTS } from '../theme/tokens'
 import { t } from '../i18n/strings'
 
 /**
- * The front door's grid: the eight lines of D15 in editorial order, each with its
+ * The front door's grid: the seven lines of D15 in editorial order, each with its
  * real model count.
  *
  * Its own spans, not the watch grid's. They agree up to `lg` and deliberately
  * stop there — the watch grid goes to six across at `xl` because a reference code
- * under a photograph stays legible that narrow, and a line name does not. Eight
- * cards also do not want a sixth column: it leaves a row of two.
+ * under a photograph stays legible that narrow, and a line name does not.
  */
 export const LINE_SPANS = { xs: 12, md: 8, lg: 6 } as const
 export const LINE_GUTTER: [number, number] = [16, 16]
@@ -91,7 +90,7 @@ export function LineGrid({ lines }: { lines: readonly PublishedLine[] }) {
  * the moment the catalogue landed. A skeleton that jumps is worse than none —
  * it is the exact failure the skeleton exists to prevent, performed on purpose.
  */
-export function LineGridSkeleton({ count = 8 }: { count?: number }) {
+export function LineGridSkeleton({ count = 7 }: { count?: number }) {
   const { token } = antdTheme.useToken()
 
   return (

@@ -58,7 +58,7 @@ export function coverageOf(models: readonly PublishedModel[]): CoverageRow[] {
 
 /**
  * One column per line that has models, plus an `all` column. A line with nothing
- * in it is left out — eight columns of dashes says only that the catalogue is
+ * in it is left out — a column of dashes says only that the catalogue is
  * not seeded, which the model count already said.
  */
 export function coverageTable(

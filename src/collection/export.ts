@@ -101,7 +101,7 @@ export interface CollectionStats {
 
 /**
  * §8.8's three tiles come out of this: owned, wishlist, and the length of
- * `byLine`. The breakdown is sorted by count because a list of eight lines in
+ * `byLine`. The breakdown is sorted by count because a list of seven lines in
  * catalogue order buries the one the reader actually collects.
  */
 export function collectionStats(entries: readonly CollectionEntry[]): CollectionStats {

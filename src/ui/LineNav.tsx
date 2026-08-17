@@ -9,16 +9,18 @@ import CompassOutlined from '@ant-design/icons/CompassOutlined'
 import HeartOutlined from '@ant-design/icons/HeartOutlined'
 import StarOutlined from '@ant-design/icons/StarOutlined'
 import GlobalOutlined from '@ant-design/icons/GlobalOutlined'
-import CalculatorOutlined from '@ant-design/icons/CalculatorOutlined'
 import { lineTree, useCatalog } from '../catalog/client.ts'
 import { LINE_ACCENTS } from '../theme/tokens'
 import { t } from '../i18n/strings'
 
 /**
  * One glyph per line, each saying what the line is *for* rather than decorating
- * it: the shock that names G-SHOCK, a compass for the outdoor line, a calculator
- * for the watch that is one. A rail of identical dots teaches nothing and a rail
+ * it: the shock that names G-SHOCK, a compass for the outdoor line, a stopwatch
+ * face for the vintage one. A rail of identical dots teaches nothing and a rail
  * of arbitrary shapes teaches something false.
+ *
+ * The calculator went with Databank when D49 made it a family of Vintage rather
+ * than a line. A family has no rail row, so it has no glyph.
  *
  * This is presentation and stays in code — an icon component is not something a
  * JSON catalogue can carry. Everything else the rail knows now comes from
@@ -35,7 +37,6 @@ const LINE_ICONS: Record<string, ComponentType> = {
   'baby-g': HeartOutlined,
   sheen: StarOutlined,
   oceanus: GlobalOutlined,
-  databank: CalculatorOutlined,
 }
 
 /**
@@ -119,7 +120,7 @@ function NavRow({
  *
  * A line with no models is rendered as a leaf with no expander rather than as an
  * empty submenu — an arrow that opens onto nothing is a worse answer than no
- * arrow, and seven of the eight lines are in that state today.
+ * arrow, and two of the seven lines are in that state today.
  */
 export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
   const navigate = useNavigate()
@@ -131,7 +132,7 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
     onNavigate?.()
   }
 
-  // Not memoised: eight lines and their series is a trivial map, and a memo here
+  // Not memoised: seven lines and their series is a trivial map, and a memo here
   // would have to close over the navigate handler and list it as a dependency,
   // which recreates the array every render anyway.
   const items: MenuProps['items'] = !data
@@ -167,8 +168,8 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
           // both halves of FR-1.1.
           //
           // A count of zero is not rendered: it reads as a claim about Casio
-          // rather than about this catalogue, and seven of the eight lines are
-          // in that state today.
+          // rather than about this catalogue, and Sheen and Oceanus are both in
+          // that state today.
           label: (
             <NavRow
               label={line.name}
@@ -178,7 +179,7 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
             />
           ),
           // §8.3 — the per-line accent *is* the active indicator, so only the
-          // active glyph carries it. Colouring all eight would make the rail a
+          // active glyph carries it. Colouring all seven would make the rail a
           // legend for a code nobody has to learn and would stop the colour
           // meaning "you are here", which is its one job.
           icon: Icon ? (

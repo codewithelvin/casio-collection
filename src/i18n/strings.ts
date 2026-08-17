@@ -60,7 +60,7 @@ const en = {
   'line.empty.body':
     'No references for this line have been sourced yet. The catalogue is seeded a series at a time, from real sources only — nothing here is invented to fill a gap.',
   'line.notFound.title': 'No such line',
-  'line.notFound.body': 'That line is not one of the eight this catalogue covers.',
+  'line.notFound.body': 'That line is not one of the seven this catalogue covers.',
   'series.notFound.title': 'No such series',
   'series.notFound.body': 'That series is not in the catalogue.',
   'series.backToLine': 'All series in this line',
