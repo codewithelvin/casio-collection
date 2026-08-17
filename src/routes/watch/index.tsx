@@ -36,6 +36,7 @@ import type { Catalog, ImageCredit, PublishedModel } from '../../catalog/schema.
 import { IMAGE_LICENCE_URLS, isLicensed } from '../../catalog/vocabulary.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
+import { OwnershipControls } from '../../ui/OwnershipControls'
 import { LINE_ACCENTS } from '../../theme/tokens'
 import {
   displayLabel,
@@ -227,8 +228,15 @@ function WatchDetail({
             </Typography.Paragraph>
           ) : null}
 
-          {/* FR-3.3's Owned One and Wishlist controls belong here. They arrive
-              with M5, on top of M4's auth — see the note in WatchCard. */}
+          {/* FR-3.3 / FR-4.1 — the Owned One and Wishlist controls, above the
+              specification rather than below it. A collector who came here from
+              a grid has already decided; making them read a table of case
+              dimensions first puts the page's furniture in front of its point.
+              Capped in width because a full-bleed primary button beside a
+              photograph reads as a banner. */}
+          <div style={{ maxWidth: 320, marginBottom: 8 }}>
+            <OwnershipControls model={model} size="large" />
+          </div>
 
           {/* The specification lives **beside** the picture, not under it. It
               read the other way until M3 and the cost was only visible once

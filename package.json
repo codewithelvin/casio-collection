@@ -18,7 +18,8 @@
     "catalog:validate": "node scripts/catalog/validate.ts",
     "catalog:build": "node scripts/catalog/build.ts",
     "catalog:images": "node scripts/catalog/images.ts",
-    "catalog:audit": "node scripts/catalog/audit.ts"
+    "catalog:audit": "node scripts/catalog/audit.ts",
+    "test:rls": "node scripts/security/rls.ts"
   },
   "engines": {
     "node": ">=22.18"

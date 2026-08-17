@@ -42,9 +42,24 @@ export async function fetchCatalog(signal?: AbortSignal): Promise<Catalog> {
   return CATALOG.parse(await response.json())
 }
 
-/** §7.2 — one query, immutable per version, shared by every screen. */
+/**
+ * §7.2 — one query, immutable per version, shared by every screen.
+ *
+ * The options are separated from the hook because M5 needs the catalogue
+ * somewhere a hook cannot go: `/auth/callback` applies a pending press inside an
+ * effect and has to name the watch in the toast that confirms it, which means
+ * awaiting the data rather than rendering on it. Both paths going through one
+ * definition is what stops a second query key existing for the same file — two
+ * keys would mean two copies of a 300 KB document in the cache and a screen
+ * that refetches what another screen already has.
+ */
+export const catalogQueryOptions = {
+  queryKey: ['catalog'] as const,
+  queryFn: ({ signal }: { signal?: AbortSignal }) => fetchCatalog(signal),
+}
+
 export function useCatalog(): UseQueryResult<Catalog, Error> {
-  return useQuery({ queryKey: ['catalog'], queryFn: ({ signal }) => fetchCatalog(signal) })
+  return useQuery(catalogQueryOptions)
 }
 
 /* ------------------------------------------------------------------------- *

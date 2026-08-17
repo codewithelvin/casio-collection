@@ -79,6 +79,33 @@ jobs:
         with:
           path: dist
 
+  # §13.3 — the proof behind D14, run against a real disposable project (§14.5).
+  #
+  # A separate job rather than a step in `build`, and deliberately **not** a gate
+  # on the deploy. What it tests is the database, which is already live and
+  # already enforcing whatever it enforces; blocking a front-end deploy on it
+  # would neither fix a bad policy nor protect anyone from one. It fails loudly,
+  # and it blocks M7 — which is where §13.3 genuinely is a launch blocker.
+  #
+  # It skips green with a ::warning:: until the CI project exists. D42 records
+  # why that project keeps email/password sign-up on when production does not:
+  # the alternative is putting the service-role key into CI, and that is the one
+  # key that bypasses every policy this job exists to prove.
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Row level security (§13.3)
+        run: npm run test:rls
+        env:
+          SUPABASE_CI_URL: ${{ vars.SUPABASE_CI_URL }}
+          SUPABASE_CI_ANON_KEY: ${{ vars.SUPABASE_CI_ANON_KEY }}
+
   deploy:
     needs: build
     runs-on: ubuntu-latest

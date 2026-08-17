@@ -1,9 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
-import { Button, Spin, Typography } from 'antd'
+import { App, Button, Spin, Typography } from 'antd'
+import { useQueryClient, type QueryClient } from '@tanstack/react-query'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { getSupabase } from '../../auth/supabase.ts'
 import { ensureAuthListener, useSessionStore } from '../../auth/session.ts'
 import { takePendingIntent } from '../../auth/pendingIntent.ts'
+import { putCollectionItem, type CollectionStatus } from '../../collection/api.ts'
+import { collectionKey } from '../../collection/mutations.ts'
+import { catalogQueryOptions, modelById } from '../../catalog/client.ts'
 import { EmptyState } from '../../ui/EmptyState'
 import { t } from '../../i18n/strings'
 
@@ -27,6 +31,8 @@ export default function AuthCallbackRoute() {
   const [failed, setFailed] = useState(false)
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
+  const queryClient = useQueryClient()
+  const { message } = App.useApp()
   const applySession = useSessionStore((state) => state.applySession)
   const promptSignIn = useSessionStore((state) => state.promptSignIn)
 
@@ -64,6 +70,14 @@ export default function AuthCallbackRoute() {
         applySession(data.session)
 
         const intent = takePendingIntent()
+        // §9.4 step 4 — apply the press that was interrupted, before leaving.
+        // Doing it here rather than on the destination page means the watch is
+        // already marked when the page it is on renders, so nothing flickers
+        // from unmarked to marked in front of the person who pressed it.
+        if (intent?.kind === 'collection') {
+          await applyPendingMark(queryClient, data.session.user.id, intent.modelId, intent.status, message)
+        }
+
         // `replace`, so the back button goes to the watch they were looking at
         // rather than to a callback URL whose code has already been spent.
         navigate(intent?.returnTo ?? '/', { replace: true })
@@ -71,7 +85,7 @@ export default function AuthCallbackRoute() {
         setFailed(true)
       }
     })()
-  }, [searchParams, navigate, applySession])
+  }, [searchParams, navigate, applySession, queryClient, message])
 
   if (failed) {
     return (
@@ -100,4 +114,54 @@ export default function AuthCallbackRoute() {
       <Typography.Text type="secondary">{t('auth.callback.working')}</Typography.Text>
     </div>
   )
+}
+
+/**
+ * §9.4 step 4 — **the half of the pending intent that M4 could not build**,
+ * because `collection_items` did not exist and neither did the button that
+ * writes one.
+ *
+ * D6 is the decision this pays for. Browsing needs no account and every write
+ * needs a session, so a guest who presses *Owned One* is sent away to Google
+ * mid-gesture; the promise made in exchange is that the press survives. This is
+ * where it is kept.
+ *
+ * **A failed write does not fail the return.** They are signed in, they are
+ * about to land on the watch they pressed, and the button there is one press
+ * away — where turning a successful sign-in into an error page would lose them
+ * the sign-in as well as the press. Quiet is the right failure here precisely
+ * because the recovery is visible and immediate.
+ */
+async function applyPendingMark(
+  queryClient: QueryClient,
+  userId: string,
+  modelId: string,
+  status: CollectionStatus,
+  message: ReturnType<typeof App.useApp>['message'],
+): Promise<void> {
+  try {
+    await putCollectionItem(userId, modelId, status)
+  } catch {
+    return
+  }
+
+  // Nothing has read these rows yet — the query is disabled without a session —
+  // but the write must not be racing a fetch that started the moment the store
+  // said `authenticated`.
+  await queryClient.invalidateQueries({ queryKey: collectionKey(userId) })
+
+  // §9.4: "confirms with a toast **naming the watch**". A toast saying *marked*
+  // with no reference in it is a toast about nothing — after a redirect out to
+  // Google and back, the entire point is to show that the site remembered which
+  // watch. The shell has already started this fetch, so awaiting it joins the
+  // request in flight rather than making a second one; the id is the fallback
+  // for the case where the catalogue itself could not be loaded.
+  let ref = modelId
+  try {
+    ref = modelById(await queryClient.ensureQueryData(catalogQueryOptions), modelId)?.ref ?? modelId
+  } catch {
+    // Keep the id. A confirmation carrying a raw id is worse copy and true; no
+    // confirmation at all would be a press that looks lost when it was not.
+  }
+  void message.success(`${ref} · ${t('owned.restored')}`)
 }

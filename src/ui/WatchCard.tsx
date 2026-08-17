@@ -2,6 +2,7 @@ import { Card, Typography, theme as antdTheme } from 'antd'
 import { Link } from 'react-router-dom'
 import type { PublishedModel } from '../catalog/schema.ts'
 import { imageSources } from '../catalog/client.ts'
+import { OwnershipControls } from './OwnershipControls'
 import { LINE_ACCENTS } from '../theme/tokens'
 
 /**
@@ -28,6 +29,10 @@ import { LINE_ACCENTS } from '../theme/tokens'
  * The caption block, at its tallest: a reference line (14 px at AntD's 1.571
  * line-height) over a name-and-year line (12 px at 1.667), plus 12 px of
  * padding top and bottom. Every card reserves it whether it fills it or not.
+ *
+ * M5's controls sit below this and are the same height on every card, so they
+ * add a constant rather than a variable — which is the property that matters.
+ * The reason this number exists at all is that the *caption* was variable.
  */
 const CAPTION_HEIGHT = 22 + 20 + 24
 
@@ -112,45 +117,65 @@ export function WatchCard({
   )
 
   return (
-    <Link
-      to={`/watch/${model.id}`}
-      aria-label={model.ref}
-      style={{ display: 'block', height: '100%', color: 'inherit' }}
+    <Card
+      hoverable
+      cover={cover}
+      // §8.6 — a photograph card and a typographic card are **the same
+      // height**, and until M3 that was only true by luck. A photograph card
+      // captions two lines (the reference, then the name and year) where a
+      // typographic one captions at most one, because the tile has already
+      // set the reference in 28 px. One card a line taller than its
+      // neighbours stretches the whole grid row and leaves the others with a
+      // gap under them. Reserving the caption's height makes the geometry a
+      // constant instead of a consequence of which watches got photographed.
+      styles={{ body: { padding: 12, minHeight: CAPTION_HEIGHT } }}
+      // `position: relative` is what the stretched link below is measured
+      // against. See the comment on it — this line is half of that mechanism.
+      style={{ height: '100%', borderTop: `3px solid ${lineAccent}`, position: 'relative' }}
     >
-      <Card
-        hoverable
-        cover={cover}
-        // §8.6 — a photograph card and a typographic card are **the same
-        // height**, and until M3 that was only true by luck. A photograph card
-        // captions two lines (the reference, then the name and year) where a
-        // typographic one captions at most one, because the tile has already
-        // set the reference in 28 px. One card a line taller than its
-        // neighbours stretches the whole grid row and leaves the others with a
-        // gap under them. Reserving the caption's height makes the geometry a
-        // constant instead of a consequence of which watches got photographed.
-        styles={{ body: { padding: 12, minHeight: CAPTION_HEIGHT } }}
-        style={{ height: '100%', borderTop: `3px solid ${lineAccent}` }}
-      >
-        {sources ? (
-          <Typography.Text
-            strong
-            style={{ fontFamily: token.fontFamilyCode, display: 'block' }}
-            ellipsis={{ tooltip: model.ref }}
-          >
-            {model.ref}
-          </Typography.Text>
-        ) : null}
-        {meta ? (
-          <Typography.Text type="secondary" style={{ fontSize: token.fontSizeSM }}>
-            {meta}
-          </Typography.Text>
-        ) : null}
+      {/*
+        **The whole card is a link, and it is this one absolutely positioned
+        anchor rather than a wrapper.**
 
-        {/* §8.6 puts the Owned One button here and FR-3.3 specifies it. It is
-            deliberately absent until M5 builds ownership on top of M4's auth: a
-            primary action that does nothing is worse than no action, and it is
-            the one button this whole product is about. */}
-      </Card>
-    </Link>
+        Until M5 the card was `<Link><Card/></Link>`, which was right while the
+        card was pure content. FR-4.1 puts a button on it, and a `<button>`
+        inside an `<a>` is invalid HTML that browsers are entitled to reparent —
+        and is a keyboard trap regardless, because the press and the navigation
+        are the same gesture.
+
+        Stretching one link over the card instead keeps exactly one link with
+        exactly one accessible name, leaves the controls as ordinary siblings,
+        and needs no `preventDefault` on the way out of them. The controls sit
+        above it in the stacking order; everything else sits under it and is
+        therefore clickable as "open this watch".
+      */}
+      <Link
+        to={`/watch/${model.id}`}
+        aria-label={model.ref}
+        style={{ position: 'absolute', inset: 0, zIndex: 1 }}
+      />
+
+      {sources ? (
+        <Typography.Text
+          strong
+          style={{ fontFamily: token.fontFamilyCode, display: 'block' }}
+          ellipsis={{ tooltip: model.ref }}
+        >
+          {model.ref}
+        </Typography.Text>
+      ) : null}
+      {meta ? (
+        <Typography.Text type="secondary" style={{ fontSize: token.fontSizeSM }}>
+          {meta}
+        </Typography.Text>
+      ) : null}
+
+      {/* §8.6 and FR-4.1 — Owned One on every card in the grid, not only on the
+          detail page. That is the whole shape of the product: browse a series,
+          press the ones you have, never open a page you did not want. */}
+      <div style={{ position: 'relative', zIndex: 2, marginTop: 10 }}>
+        <OwnershipControls model={model} size="small" />
+      </div>
+    </Card>
   )
 }

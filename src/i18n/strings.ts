@@ -191,6 +191,38 @@ const en = {
     'The link may have been used already, or it may have expired. Nothing is wrong with your account; starting again takes a moment.',
   'auth.callback.home': 'Back to the catalogue',
 
+  // Ownership (M5, §3.4, §8.7)
+  //
+  // The two labels are the product in two words. "Owned One" is what the button
+  // says before it is pressed and it is phrased as the thing you are claiming
+  // rather than as an instruction — *Add to collection* describes the software,
+  // *Owned One* describes the reader. After the press it is a statement of
+  // fact, so it loses the verb entirely.
+  'owned.mark': 'Owned One',
+  'owned.marked': 'Owned',
+  'wishlist.add': 'Add to wishlist',
+  'wishlist.remove': 'Remove from wishlist',
+  // FR-4.5 — D8 moves a watch rather than duplicating it, and a press that
+  // silently empties one list to fill another has to say so.
+  'owned.moved': 'Moved from your wishlist',
+  // FR-4.3 — the optimistic write failed and the button has already gone back
+  // to what it said. What is owed is the reason and a second attempt, not an
+  // apology: nothing the reader did was wrong and nothing of theirs is lost.
+  'owned.failed.title': 'That did not save',
+  'owned.failed.body':
+    'The mark has been put back to what it was. Your connection may have dropped — trying again usually settles it.',
+  'owned.retry': 'Try again',
+  // FR-4.4 — the only ownership action that destroys something typed. It asks
+  // once, says exactly what goes, and does not ask at all when there is nothing
+  // to lose: a confirmation on every removal is a confirmation nobody reads.
+  'owned.removeNote.title': 'Remove this watch and its note?',
+  'owned.removeNote.body':
+    'The note you wrote against this watch is stored with the mark, so removing the mark deletes the note too. This cannot be undone.',
+  'owned.removeNote.confirm': 'Remove it',
+  'owned.removeNote.cancel': 'Keep it',
+  // §9.4 step 4 — the press that survived a sign-in, applied on the way back.
+  'owned.restored': 'Marked, as you asked before signing in',
+
   // The account control in the header (§8.1)
   'account.menu': 'Account',
   'account.signedInAs': 'Signed in as',
