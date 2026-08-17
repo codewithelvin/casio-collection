@@ -1,0 +1,353 @@
+# GM-2100 — seeded 2026-08-17 (M9), on the same module as GA-2100.
+#
+# THE SOURCE IS THE MODULE MANUAL (D44). casio.com answers 403 to every product
+# path on every locale, but serves the operation guides from its /content/dam/
+# CDN, and §10.6 counts a manual page as `official`. Every field below is read
+# off the Specifications block of the module 5611 guide named in `source` — the
+# same guide, and the same reading, already reviewed for GA-2100 in M2b.
+#
+# WHICH REFERENCES USE MODULE 5611 is the one fact the manual does not carry.
+# That list comes from ShockBase's module index, which states in so many words
+# "These are all watches with module 5611":
+#   https://shockbase.org/watches/modules_dyn.php?module=5611
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# COLLABORATION REFERENCES ARE LEFT OUT, and that is not squeamishness. The
+# index lists collaborations under strings that are community constructions
+# rather than references — a doubled hyphen, or a collaborator's name appended
+# to a reference that ends before it. D2 makes an id permanent and the sourcing
+# rule says a model whose sources disagree on the reference itself is not
+# written at all. The filter keeps the shape Casio prints: prefix, number, a
+# variant of at most four letters, one suffix.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference (D25).
+#   * `case` and `water_resistance_m` — properties of the watch, not the
+#     module. 200 m is true of every one of these and it is still not on this
+#     page.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `family` — GM-2100 is the octagonal case in another material, so
+#     `octagonal` is the obvious grouping. Guardrail 4a reserves that judgement
+#     for a person, so it is proposed in the session summary, not written here.
+#   * `image` — D41 needs a licence and a proof it is the right watch.
+
+series:
+  id: gm-2100
+  name: GM-2100
+  line: g-shock
+  aka: [GM2100]
+
+models:
+  - id: gm-2100-1a
+    ref: GM-2100-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100b-3a
+    ref: GM-2100B-3A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100b-4a
+    ref: GM-2100B-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100bb-1a
+    ref: GM-2100BB-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100bm-1a
+    ref: GM-2100BM-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100brw-1a
+    ref: GM-2100BRW-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100c-5a
+    ref: GM-2100C-5A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100cb-1a
+    ref: GM-2100CB-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100cb-3a
+    ref: GM-2100CB-3A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100ch-1a
+    ref: GM-2100CH-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100cl-5a
+    ref: GM-2100CL-5A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100g-1a9
+    ref: GM-2100G-1A9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100gc-1a
+    ref: GM-2100GC-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100lxb-1a
+    ref: GM-2100LXB-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100lxb-1a9
+    ref: GM-2100LXB-1A9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100m-1a
+    ref: GM-2100M-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100mf-5a
+    ref: GM-2100MF-5A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100mg-1a
+    ref: GM-2100MG-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100mwg-1a
+    ref: GM-2100MWG-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100n-2a
+    ref: GM-2100N-2A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100rw-1a
+    ref: GM-2100RW-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100ss-1a
+    ref: GM-2100SS-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100tttr-8a
+    ref: GM-2100TTTR-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100ws-7a
+    ref: GM-2100WS-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100ym-8a
+    ref: GM-2100YM-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100ymg-9a
+    ref: GM-2100YMG-9A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100ymg-9a9
+    ref: GM-2100YMG-9A9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+  - id: gm-2100yra-8a
+    ref: GM-2100YRA-8A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: quartz
+    module: '5611'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
