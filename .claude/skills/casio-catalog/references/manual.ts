@@ -131,8 +131,9 @@ function encryptDict(latin: string): string | null {
   const ref = /\/Encrypt\s+(\d+)\s+(\d+)\s+R/.exec(latin)
   if (!ref) return null
   const objRe = new RegExp(`(?:^|[^0-9])${ref[1]}\\s+${ref[2]}\\s+obj\\b`, 'g')
-  let m: RegExpExecArray | null
-  while ((m = objRe.exec(latin))) {
+  // The match itself is not wanted — only where it ended, so the dictionary can
+  // be read from there.
+  while (objRe.exec(latin) !== null) {
     const end = latin.indexOf('endobj', objRe.lastIndex)
     const body = latin.slice(objRe.lastIndex, end === -1 ? objRe.lastIndex + 2000 : end)
     if (/\/Filter\s*\/Standard/.test(body)) return body
