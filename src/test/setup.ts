@@ -54,6 +54,29 @@ afterEach(() => {
  * which is what the failure-path tests do.
  */
 beforeEach(() => {
+  /**
+   * §14.2 — **the default state of every test is "no Supabase project".**
+   *
+   * This has to be stated rather than inherited. `unstubAllEnvs` in the
+   * `afterEach` above restores the *ambient* environment, and Vite loads `.env`
+   * into it — so on a machine that has followed `supabase/README.md` and written
+   * the pair into `.env`, `import.meta.env.VITE_SUPABASE_URL` is a real project
+   * and the three tests that assert the not-configured branch fail. They were
+   * passing because the machine happened to be empty.
+   *
+   * CI happened to be empty too: the workflow passes the variables to the build
+   * step and not to the test step, so the gate stayed green by luck rather than
+   * by design. That is the part worth fixing — a test that describes the state
+   * the live site is in until M4's console steps are done must establish that
+   * state itself.
+   *
+   * Empty strings rather than deleted keys, because `supabaseConfig()` treats
+   * blank and absent as the same thing and an empty string is visible: a test
+   * can assert it, which is what pins this in place.
+   */
+  vi.stubEnv('VITE_SUPABASE_URL', '')
+  vi.stubEnv('VITE_SUPABASE_ANON_KEY', '')
+
   vi.stubGlobal(
     'fetch',
     vi.fn(async (input: RequestInfo | URL) => {

@@ -36,6 +36,28 @@ describe('supabaseConfig (§14.2)', () => {
     vi.stubEnv('VITE_SUPABASE_ANON_KEY', ' anon.key ')
     expect(supabaseConfig()).toEqual({ url: 'https://ref.supabase.co', anonKey: 'anon.key' })
   })
+
+  /**
+   * The suite's default state, asserted here so it cannot drift back.
+   *
+   * Three tests elsewhere describe what the site does with **no** project — the
+   * ownership controls render nothing, the account control is absent, a guarded
+   * route says accounts are not switched on yet. All three were reading the
+   * ambient environment, and Vite loads `.env` into it, so the moment a real
+   * project was written into `.env` all three failed. CI did not catch it,
+   * because the workflow hands the variables to the build step and not to the
+   * test step — the gate was green by luck rather than by design.
+   *
+   * `src/test/setup.ts` now stubs both to empty before every test. The empty
+   * string is what holds it there: an *unset* variable reads back `undefined`,
+   * so this line fails if that stub is ever removed — on a clean machine as
+   * well as on a configured one.
+   */
+  it('is null by default in tests, and that default is stated rather than inherited', () => {
+    expect(import.meta.env.VITE_SUPABASE_URL).toBe('')
+    expect(import.meta.env.VITE_SUPABASE_ANON_KEY).toBe('')
+    expect(supabaseConfig()).toBeNull()
+  })
 })
 
 describe('authCallbackUrl (§9.1, §9.3)', () => {
