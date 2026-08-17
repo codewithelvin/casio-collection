@@ -20,6 +20,45 @@ describe('the home route', () => {
     // about this catalogue and the other reads as being about Casio.
     expect(await screen.findAllByText(t('home.unseeded'))).not.toHaveLength(0)
   })
+
+  /**
+   * jsdom does not lay out, so neither of these can measure a card. They pin the
+   * two mechanisms that made the measurement wrong on a real phone instead.
+   *
+   * What was reported: on a 360 px screen the G-SHOCK card stood 24 px shorter
+   * than the `Vintage / Casio Collection` card beside it, and the whole block
+   * shrank by 400 px the moment the catalogue arrived.
+   */
+  it('passes the column height through the link, so a card cannot sit short of its row', async () => {
+    renderApp('/')
+
+    const link = await screen.findByRole('link', { name: /G-SHOCK/ })
+    // The card asks for `height: 100%`, which is a claim about its parent. This
+    // anchor is that parent.
+    expect(link).toHaveStyle({ height: '100%' })
+  })
+
+  it('loads through a skeleton of the front door s own shape, not the watch grid s', async () => {
+    // Never resolves, so the page stays in its loading state for the assertions.
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(() => new Promise(() => {})),
+    )
+    renderApp('/')
+
+    // The heading is not part of the skeleton — it is known before the fetch, so
+    // it does not arrive later and shift the grid down under it. Awaited because
+    // the route itself is lazy (router.tsx), not because the catalogue is.
+    const heading = await screen.findByRole('heading', { name: t('home.linesHeading') })
+    const main = heading.closest('main')
+    expect(main).not.toBeNull()
+
+    expect(main!.querySelectorAll('.ant-card')).toHaveLength(8)
+    // A line card has no photograph, so its skeleton has no square tile. The
+    // watch grid's skeleton does, and borrowing it here put an image placeholder
+    // above every line name and then collapsed it when the catalogue landed.
+    expect(main!.querySelector('.ant-card-cover')).toBeNull()
+  })
 })
 
 describe('the line route (FR-1.2)', () => {

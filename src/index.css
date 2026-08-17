@@ -143,6 +143,16 @@ body {
   animation: cc-rise var(--cc-enter) var(--cc-ease) both;
 }
 
+/* The front door's skeleton reserves the same box its cards will fill, and
+   AntD's Skeleton paragraph carries 16 px of margin above and below its bars —
+   32 px the real card does not have, which pushed each skeleton row 6 px past
+   what replaced it. The bars are the whole content of the card body, so the
+   margins have nothing to separate it from. Zeroed here rather than in the
+   component because the element belongs to AntD and is not exposed to props. */
+.cc-line-skeleton .ant-skeleton-paragraph {
+  margin-block: 0;
+}
+
 /* The rail glyphs: colour eases in when a line becomes the active one, and the
    glyph lifts very slightly under the pointer. */
 .cc-nav-icon {

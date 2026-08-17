@@ -1,27 +1,19 @@
-import { Card, Col, Row, Typography, theme as antdTheme } from 'antd'
-import { Link } from 'react-router-dom'
+import { Typography } from 'antd'
 import { useCatalog } from '../../catalog/client.ts'
 import { ErrorState } from '../../ui/ErrorState'
-import { SkeletonGrid } from '../../ui/SkeletonGrid'
-import { LINE_ACCENTS } from '../../theme/tokens'
+import { LineGrid, LineGridSkeleton } from '../../ui/LineGrid'
 import { t } from '../../i18n/strings'
 
 /**
- * The catalogue front door: the eight lines of D15 in editorial order, each with
- * its real model count.
+ * The catalogue front door: the eight lines of D15, in editorial order.
  *
- * A line with nothing in it says **"Not catalogued yet"** rather than "0".
- * Those are different claims — one is about this catalogue and the other reads
- * as being about Casio — and seven of the eight lines are in that state today.
- * The card still links through, because the line page has a designed empty
- * state that explains it, and a dead card teaches nothing.
+ * The grid and the skeleton it loads through are both in `LineGrid`, which owns
+ * the one copy of their shared geometry. Two copies of a column span are two
+ * things to keep in step, and the symptom of them drifting is a layout jump at
+ * exactly the moment the page is supposed to feel settled.
  */
 export default function HomeRoute() {
-  const { token } = antdTheme.useToken()
   const { data, isPending, isError, refetch } = useCatalog()
-
-  if (isPending) return <SkeletonGrid count={8} />
-  if (isError || !data) return <ErrorState onRetry={() => void refetch()} />
 
   return (
     <div>
@@ -33,35 +25,13 @@ export default function HomeRoute() {
       </Typography.Paragraph>
 
       <Typography.Title level={4}>{t('home.linesHeading')}</Typography.Title>
-      <Row gutter={[16, 16]}>
-        {data.lines.map((line) => {
-          const accent = LINE_ACCENTS[line.id] ?? token.colorPrimary
-          return (
-            <Col key={line.id} xs={12} md={8} lg={6}>
-              <Link to={`/line/${line.slug}`} style={{ display: 'block', color: 'inherit' }}>
-                <Card
-                  hoverable
-                  styles={{ body: { padding: 16 } }}
-                  style={{ height: '100%', borderTop: `3px solid ${accent}` }}
-                >
-                  <Typography.Text strong style={{ display: 'block' }}>
-                    {line.name}
-                  </Typography.Text>
-                  {line.count > 0 ? (
-                    <Typography.Text type="secondary" style={{ fontSize: token.fontSizeSM }}>
-                      {`${line.count} ${t('home.models')}`}
-                    </Typography.Text>
-                  ) : (
-                    <Typography.Text type="secondary" style={{ fontSize: token.fontSizeSM }}>
-                      {t('home.unseeded')}
-                    </Typography.Text>
-                  )}
-                </Card>
-              </Link>
-            </Col>
-          )
-        })}
-      </Row>
+      {isPending ? (
+        <LineGridSkeleton count={8} />
+      ) : isError || !data ? (
+        <ErrorState onRetry={() => void refetch()} />
+      ) : (
+        <LineGrid lines={data.lines} />
+      )}
     </div>
   )
 }
