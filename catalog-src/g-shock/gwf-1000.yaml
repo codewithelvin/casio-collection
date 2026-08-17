@@ -1,0 +1,160 @@
+# GWF-1000 — the Frogman, seeded 2026-08-17 (M9), from module 3184's guide.
+#
+# `movement: solar-radio` and no `tough-solar` or `radio-controlled` feature
+# beside it: the vocabulary is explicit that solar-plus-radio is one value, not
+# two. The guide states both — a solar cell charging a rechargeable battery, and
+# six named calibration transmitters from Mainflingen to Shangqiu.
+#
+# `tide-graph` and `moon-data` come from the guide's "Tide/Moon Data" row. This
+# is a diver's watch and its guide says so in fields this catalogue can hold.
+#
+# ONE THING THE GUIDE STATES THAT THE VOCABULARY CANNOT HOLD: a diving-log
+# function, ten records of dive time and interval. There is no feature for it and
+# guardrail 4 says a new one is proposed and confirmed, never added on the way
+# past. It is proposed in the session summary and absent here.
+#
+# THE SOURCE IS THE MODULE MANUAL (D44). casio.com answers 403 to every product
+# path on every locale, but serves the operation guides from its /content/dam/
+# CDN, and §10.6 counts a manual page as `official`. Every field below is read
+# off the Specifications block of the module 3184 guide named in `source`.
+#
+# WHICH REFERENCES USE MODULE 3184 is the one fact the manual does not carry.
+# That list comes from ShockBase's module index, which states in so many words
+# "These are all watches with module 3184":
+#   https://shockbase.org/watches/modules_dyn.php?module=3184
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# COLLABORATION REFERENCES ARE LEFT OUT. The index lists collaborations under
+# strings that are community constructions rather than references — a doubled
+# hyphen, or a collaborator's name appended to a reference that ends before it.
+# D2 makes an id permanent and the sourcing rule says a model whose sources
+# disagree on the reference itself is not written at all.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference (D25).
+#   * `case` and `water_resistance_m` — properties of the watch, not the module.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `image` — D41 needs a licence and a proof it is the right watch.
+
+series:
+  id: gwf-1000
+  name: GWF-1000
+  line: g-shock
+  aka: [GWF1000, Frogman]
+
+models:
+  - id: gwf-1000-1
+    ref: GWF-1000-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3184'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gwf-1000b-1
+    ref: GWF-1000B-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3184'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gwf-1000bp-1
+    ref: GWF-1000BP-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3184'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gwf-1000bs-1
+    ref: GWF-1000BS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3184'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gwf-1000g-1
+    ref: GWF-1000G-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3184'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gwf-1000mm-1
+    ref: GWF-1000MM-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3184'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gwf-1000nv-2
+    ref: GWF-1000NV-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3184'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gwf-1000rd-4
+    ref: GWF-1000RD-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3184'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gwf-1000sr-4
+    ref: GWF-1000SR-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3184'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gwf-1000tm-4
+    ref: GWF-1000TM-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar-radio
+    module: '3184'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
