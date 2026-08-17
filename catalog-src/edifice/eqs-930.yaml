@@ -1,0 +1,115 @@
+# EQS-930 — seeded 2026-08-17 (M9).
+#
+# THE ROSTER IS CASIO'S OWN SITEMAP, which is what closed O11. casio.com's
+# product pages answer 403 and its AEM paths return the location picker, but
+# `casio.com/<locale>/sitemap.xml` answers 200 and lists every product URL with
+# the reference in the path:
+#   https://www.casio.com/us/watches/edifice/product.EFR-527D-1AV/
+# So "which references exist" is Casio saying so, where G-SHOCK's roster is a
+# community index saying the same thing. It is still provenance for a model's
+# IDENTITY only — the sitemap states no specifications.
+#
+# THE FIELDS ARE THE MODULE GUIDE (D44), named in `source`, read off its
+# Specifications table. WHICH MODULE a series runs is the one link neither source
+# provides: that comes from casiofanmag's per-line table, a community source that
+# says of itself that it cannot guarantee accuracy. It is used exactly as
+# ShockBase is — identity, never fields.
+#
+# So three sources, and the split is deliberate: Casio for what exists, a
+# community table for which guide to open, and Casio's guide for every value
+# written. A reader clicking `source` lands on the page every field came from,
+# which is what §10.6's one-page rule is for.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `year` — the guide dates the module, never the reference (D25).
+#   * `case`, `water_resistance_m`, `colorway` — the guide is about the module.
+#   * `image` — D41 needs a licence and a proof it is the right watch, and
+#     Wikimedia Commons has nothing for these (O12).
+
+series:
+  id: eqs-930
+  name: EQS-930
+  line: edifice
+  aka: [EQS930]
+
+models:
+  - id: eqs-930bl-2av
+    ref: EQS-930BL-2AV
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
+        kind: official,
+      }
+    movement: solar
+    module: '5661'
+    features: [stopwatch]
+  - id: eqs-930d-1av
+    ref: EQS-930D-1AV
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
+        kind: official,
+      }
+    movement: solar
+    module: '5661'
+    features: [stopwatch]
+  - id: eqs-930db-1av
+    ref: EQS-930DB-1AV
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
+        kind: official,
+      }
+    movement: solar
+    module: '5661'
+    features: [stopwatch]
+  - id: eqs-930dc-1av
+    ref: EQS-930DC-1AV
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
+        kind: official,
+      }
+    movement: solar
+    module: '5661'
+    features: [stopwatch]
+  - id: eqs-930hr-1a
+    ref: EQS-930HR-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
+        kind: official,
+      }
+    movement: solar
+    module: '5661'
+    features: [stopwatch]
+  - id: eqs-930md-8av
+    ref: EQS-930MD-8AV
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
+        kind: official,
+      }
+    movement: solar
+    module: '5661'
+    features: [stopwatch]
+  - id: eqs-930mdc-1av
+    ref: EQS-930MDC-1AV
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
+        kind: official,
+      }
+    movement: solar
+    module: '5661'
+    features: [stopwatch]
+  - id: eqs-930tl-1av
+    ref: EQS-930TL-1AV
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
+        kind: official,
+      }
+    movement: solar
+    module: '5661'
+    features: [stopwatch]
