@@ -119,7 +119,26 @@ rather than collecting three pages for one watch. A retailer page that lists the
 module number is worth more than an official page that lists nothing.
 
 See `references/sources.md` for where this data actually lives, which is not
-where you would expect.
+where you would expect. Two tools live beside it, and the reason they are
+committed rather than rewritten each time is that both of the things they know
+fail **silently** — an unreadable manual looks like a manual with no
+specifications, and a bad roster filter looks like a reference:
+
+```
+node .claude/skills/casio-catalog/references/manual.ts 5611 --specs
+node .claude/skills/casio-catalog/references/roster.ts modules 2100
+node .claude/skills/casio-catalog/references/roster.ts refs 5611 GM-2100
+```
+
+`manual.ts` fetches an operation guide, decrypts it, and prints its
+Specifications block. It **verifies its own decryption key** against the PDF's
+`/U` entry and refuses rather than printing rubbish, and it reports every glyph
+it dropped — because the way this went wrong the first time was a font that
+names its digits `/one /two /three`, which deleted every number in the document
+and left the prose intact.
+
+`roster.ts` reads ShockBase, and its filter is the one the reviewed M2b commits
+used, not a new judgement. Do not loosen it to gain references.
 
 Rules that keep the sourcing honest:
 
