@@ -1,0 +1,160 @@
+# GWG-1000 — the Mudmaster, seeded 2026-08-17 (M9), from module 5463's guide,
+# and the richest single reading in this catalogue so far.
+#
+# The table states, in its own rows: a digital compass, an altimeter measuring
+# from −700 to 10,000 m, a barometer from 260 to 1,100 hPa, a thermometer, world
+# time over 29 cities, a full auto-calendar to 2099, five daily alarms, an hourly
+# time signal, a 1/100-second stopwatch, a countdown timer, an LED light with an
+# auto light switch that "operates only in the dark", and Power Saving. Thirteen
+# features, every one of them a row on the page.
+#
+# `movement: solar-radio` — a solar panel and a rechargeable battery, plus the
+# six calibration transmitters. One value, not two.
+#
+# NO `mud-resistant`, for the same reason it is absent from GG-1000.
+#
+# THE SOURCE IS THE MODULE MANUAL (D44). casio.com answers 403 to every product
+# path on every locale, but serves the operation guides from its /content/dam/
+# CDN, and §10.6 counts a manual page as `official`. Every field below is read
+# off the Specifications block of the module 5463 guide named in `source`.
+#
+# WHICH REFERENCES USE MODULE 5463 is the one fact the manual does not carry.
+# That list comes from ShockBase's module index, which states in so many words
+# "These are all watches with module 5463":
+#   https://shockbase.org/watches/modules_dyn.php?module=5463
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# COLLABORATION REFERENCES ARE LEFT OUT. The index lists collaborations under
+# strings that are community constructions rather than references — a doubled
+# hyphen, or a collaborator's name appended to a reference that ends before it.
+# D2 makes an id permanent and the sourcing rule says a model whose sources
+# disagree on the reference itself is not written at all.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference (D25).
+#   * `case` and `water_resistance_m` — properties of the watch, not the module.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `image` — D41 needs a licence and a proof it is the right watch.
+
+series:
+  id: gwg-1000
+  name: GWG-1000
+  line: g-shock
+  aka: [GWG1000, Mudmaster]
+
+models:
+  - id: gwg-1000-1a
+    ref: GWG-1000-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: solar-radio
+    module: '5463'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+  - id: gwg-1000-1a1
+    ref: GWG-1000-1A1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: solar-radio
+    module: '5463'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+  - id: gwg-1000-1a3
+    ref: GWG-1000-1A3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: solar-radio
+    module: '5463'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+  - id: gwg-1000-1a9
+    ref: GWG-1000-1A9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: solar-radio
+    module: '5463'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+  - id: gwg-1000dc-1a5
+    ref: GWG-1000DC-1A5
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: solar-radio
+    module: '5463'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+  - id: gwg-1000gb-1a
+    ref: GWG-1000GB-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: solar-radio
+    module: '5463'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+  - id: gwg-1000gb-4a
+    ref: GWG-1000GB-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: solar-radio
+    module: '5463'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+  - id: gwg-1000mh-1a
+    ref: GWG-1000MH-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: solar-radio
+    module: '5463'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+  - id: gwg-1000rd-4a
+    ref: GWG-1000RD-4A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: solar-radio
+    module: '5463'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+  - id: gwg-1000wlp-1a
+    ref: GWG-1000WLP-1A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
+        kind: official,
+      }
+    display: ana-digi
+    movement: solar-radio
+    module: '5463'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
