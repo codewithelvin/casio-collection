@@ -15,10 +15,26 @@ import { DENSITY_THRESHOLD, FACET_FIELDS, type FacetField } from './vocabulary.t
 /** D5 / D25 — the explicit option that keeps an undated watch reachable. */
 export const UNKNOWN_YEAR = 'unknown'
 
+/** FR-1.4 — the orders a catalogue grid offers. */
 export const SORTS = ['ref', 'year-desc', 'year-asc'] as const
-export type SortKey = (typeof SORTS)[number]
+
+/**
+ * FR-6.2 — the collection offers one more, and **only the collection**.
+ *
+ * *Date added* is a fact about a row in `collection_items`, not about a watch,
+ * so it is meaningless on a series page and is deliberately not in `SORTS`.
+ * Which vocabulary applies is the screen's to declare (`useViewState` takes it),
+ * which is what keeps `?sort=added` on a catalogue URL from parsing into an
+ * order that silently means something else.
+ */
+export const COLLECTION_SORTS = ['added', 'ref', 'year-desc', 'year-asc'] as const
+
+export type SortKey = (typeof COLLECTION_SORTS)[number]
+
 /** FR-1.4 — reference A→Z, which is the order a collector reads a series in. */
 export const DEFAULT_SORT: SortKey = 'ref'
+/** FR-6.2 — newest first, because the collection is a record of what you did. */
+export const DEFAULT_COLLECTION_SORT: SortKey = 'added'
 
 export type Filters = Record<FacetField, string[]>
 
@@ -177,7 +193,11 @@ export function applyFilters(
 export function sortModels(models: readonly PublishedModel[], sort: SortKey): PublishedModel[] {
   const sorted = [...models]
 
-  if (sort === 'ref') return sorted.sort(compareByRef)
+  // A bare model carries no date added — that lives on the collection row. The
+  // collection sorts *entries* rather than models (`collection/join.ts`), so
+  // this branch is only reachable if a screen ever offers `added` without the
+  // rows to honour it, and reference order is the honest answer to that.
+  if (sort === 'ref' || sort === 'added') return sorted.sort(compareByRef)
 
   const direction = sort === 'year-desc' ? -1 : 1
   return sorted.sort((a, b) => {
@@ -224,8 +244,8 @@ export function toggleFilter(filters: Filters, field: FacetField, value: string)
 
 const SEPARATOR = ','
 
-function isSort(value: string | null): value is SortKey {
-  return value !== null && (SORTS as readonly string[]).includes(value)
+function isSort(value: string | null, allowed: readonly SortKey[]): value is SortKey {
+  return value !== null && (allowed as readonly string[]).includes(value)
 }
 
 /**
@@ -234,7 +254,11 @@ function isSort(value: string | null): value is SortKey {
  * the filter responsible — which is a readable answer, where silently deleting
  * the parameter would show a full grid and a URL that lied about it.
  */
-export function parseViewState(params: URLSearchParams): ViewState {
+export function parseViewState(
+  params: URLSearchParams,
+  allowed: readonly SortKey[] = SORTS,
+  fallback: SortKey = DEFAULT_SORT,
+): ViewState {
   const read = (field: FacetField): string[] => {
     const raw = params.get(field)
     if (!raw) return []
@@ -257,7 +281,7 @@ export function parseViewState(params: URLSearchParams): ViewState {
       movement: read('movement'),
       features: read('features'),
     },
-    sort: isSort(sort) ? sort : DEFAULT_SORT,
+    sort: isSort(sort, allowed) ? sort : fallback,
   }
 }
 
@@ -267,7 +291,11 @@ export function parseViewState(params: URLSearchParams): ViewState {
  * the default sort are **removed** rather than written empty: the URL of an
  * unfiltered grid is the bare path, which is the one people paste.
  */
-export function writeViewState(params: URLSearchParams, state: ViewState): URLSearchParams {
+export function writeViewState(
+  params: URLSearchParams,
+  state: ViewState,
+  fallback: SortKey = DEFAULT_SORT,
+): URLSearchParams {
   const next = new URLSearchParams(params)
 
   for (const field of FACET_FIELDS) {
@@ -276,7 +304,10 @@ export function writeViewState(params: URLSearchParams, state: ViewState): URLSe
     else next.set(field, selected.join(SEPARATOR))
   }
 
-  if (state.sort === DEFAULT_SORT) next.delete('sort')
+  // The screen's own default is what gets omitted, not the catalogue's — on
+  // `/collection` the bare path means *recently added*, and writing `?sort=added`
+  // into it would put a parameter in every link that changes nothing.
+  if (state.sort === fallback) next.delete('sort')
   else next.set('sort', state.sort)
 
   return next

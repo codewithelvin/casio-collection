@@ -25,7 +25,19 @@ const { auth, createClient } = vi.hoisted(() => {
     onAuthStateChange: vi.fn(() => ({ data: { subscription: { unsubscribe: vi.fn() } } })),
     signOut: vi.fn(async () => ({ error: null })),
   }
-  return { auth, createClient: vi.fn(() => ({ auth })) }
+
+  // From M6 `/collection` is a real screen that reads rows, so a client with
+  // only an `auth` on it puts the guard's own test behind an error state.
+  const from = vi.fn(() => {
+    const chain: Record<string, unknown> = {}
+    for (const method of ['select', 'eq', 'order']) chain[method] = vi.fn(() => chain)
+    chain['maybeSingle'] = vi.fn(() => Promise.resolve({ data: null, error: null }))
+    chain['then'] = (resolve: (value: unknown) => void, reject: (reason: unknown) => void) =>
+      Promise.resolve({ data: [], error: null }).then(resolve, reject)
+    return chain
+  })
+
+  return { auth, createClient: vi.fn(() => ({ auth, from })) }
 })
 
 vi.mock('@supabase/supabase-js', () => ({ createClient }))
@@ -139,7 +151,10 @@ describe('a route §7.3 marks required', () => {
     // account menu appearing is the signal that the session has settled.
     await screen.findByRole('button', { name: strings['account.menu'] })
 
-    expect(screen.getByText(strings['route.collection.title'])).toBeInTheDocument()
+    // M6 made this a real screen, and with no rows behind it that screen is
+    // FR-6.4's first run. Which page it is does not matter here; that it is the
+    // page rather than the guard's panel is the whole assertion.
+    expect(await screen.findByText(strings['collection.empty.title'])).toBeInTheDocument()
     expect(screen.queryByText(strings['auth.required.title'])).not.toBeInTheDocument()
   })
 })

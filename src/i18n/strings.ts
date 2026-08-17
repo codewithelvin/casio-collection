@@ -78,6 +78,8 @@ const en = {
   'filter.remove': 'Remove',
   'filter.sort': 'Sort',
   'filter.showing': 'shown',
+  // FR-6.2 — the collection's default, and only the collection's.
+  'sort.added': 'Recently added',
   'sort.ref': 'Reference A–Z',
   'sort.year-desc': 'Year, newest first',
   'sort.year-asc': 'Year, oldest first',
@@ -222,6 +224,39 @@ const en = {
   'owned.removeNote.cancel': 'Keep it',
   // §9.4 step 4 — the press that survived a sign-in, applied on the way back.
   'owned.restored': 'Marked, as you asked before signing in',
+
+  // The note (M6, §3.5)
+  //
+  // FR-5.3 — plain text, escaped on render, line breaks kept. No Markdown and
+  // no links parsed: a note is what you typed, and a field that quietly turns
+  // a hyphen into a bullet is a field arguing with its author.
+  'note.heading': 'Your note',
+  'note.placeholder': 'Where you found it, what you paid, whose it was.',
+  'note.save': 'Save',
+  'note.saving': 'Saving',
+  'note.saved': 'Saved',
+  'note.failed': 'Not saved — it will try again when you next edit it',
+  // FR-5.4 — said while they are typing, not afterwards.
+  'note.public': 'Your profile is published, so this note is visible to anyone with the link.',
+  'note.private': 'Only you can see this.',
+
+  // My Collection (M6, §3.6, §8.8)
+  'collection.tab.owned': 'Owned',
+  'collection.tab.wishlist': 'Wishlist',
+  // FR-6.4 — a designed first run, not a blank page. It points at the thing to
+  // do next rather than describing the state of the database.
+  'collection.empty.title': 'Nothing marked yet',
+  'collection.empty.body':
+    'Press Owned One on any watch and it lands here. Nothing is shared unless you publish your profile.',
+  'collection.empty.browse': 'Browse the catalogue',
+  'collection.emptyWishlist.title': 'Nothing on the wishlist',
+  'collection.emptyWishlist.body':
+    'The heart beside Owned One puts a watch here — for the ones you are still looking for.',
+  // FR-6.5 — the row outlived the catalogue entry. Never dropped, and never
+  // dressed up as a watch the catalogue can describe.
+  'collection.unlisted.badge': 'No longer listed',
+  'collection.unlisted.body':
+    'You marked this reference and the catalogue no longer carries it. Your mark is kept.',
 
   // The account control in the header (§8.1)
   'account.menu': 'Account',
@@ -383,6 +418,7 @@ export const facetLabel = (field: string): string => {
 }
 
 const SORT_LABELS: Record<string, StringKey> = {
+  added: 'sort.added',
   ref: 'sort.ref',
   'year-desc': 'sort.year-desc',
   'year-asc': 'sort.year-asc',

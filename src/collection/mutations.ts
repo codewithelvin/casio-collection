@@ -1,11 +1,15 @@
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useMutation, useQuery, useQueryClient, type UseQueryResult } from '@tanstack/react-query'
 import { useLocation } from 'react-router-dom'
 import {
   fetchCollection,
+  fetchProfile,
   putCollectionItem,
   removeCollectionItem,
+  setCollectionNote,
   type CollectionItem,
   type CollectionStatus,
+  type Profile,
 } from './api.ts'
 import { useSessionStore } from '../auth/session.ts'
 import { writePendingIntent } from '../auth/pendingIntent.ts'
@@ -247,3 +251,176 @@ export function useOwnership(model: PublishedModel, handlers: OwnershipHandlers 
 }
 
 type Change = { kind: 'set'; status: CollectionStatus } | { kind: 'clear' }
+
+/* ------------------------------------------------------------------------- *
+ * FR-5 — the note.
+ * ------------------------------------------------------------------------- */
+
+/** §6.3's constraint, so the field can stop the text before the database does. */
+export const NOTE_MAX = 2000
+
+/**
+ * Long enough that a sentence is one save rather than eight, short enough that
+ * *Saved* appears while somebody is still looking at the field.
+ */
+export const NOTE_DEBOUNCE_MS = 1200
+
+/** FR-5.4 — is what I am typing public? One boolean, and it has to be current. */
+export function useProfile(): UseQueryResult<Profile | null, Error> {
+  const userId = useSessionStore((state) => state.user?.id ?? null)
+
+  return useQuery({
+    queryKey: ['profile', userId] as const,
+    queryFn: () => fetchProfile(userId as string),
+    enabled: userId !== null,
+    staleTime: 30_000,
+  })
+}
+
+export type NoteStatus = 'idle' | 'saving' | 'saved' | 'failed'
+
+export interface NoteEditor {
+  value: string
+  status: NoteStatus
+  /** FR-5.4 — true when what is typed here is visible at `/u/<handle>`. */
+  isPublic: boolean
+  change: (next: string) => void
+  /** FR-5.2's blur and its explicit *Save*, which are the same thing. */
+  save: () => void
+}
+
+/**
+ * FR-5.2 — "saves on blur and on an explicit *Save*, with a debounce; a *Saved*
+ * indicator confirms it. **It is never lost by navigating away mid-edit.**"
+ *
+ * That last clause is the whole design. A debounce plus save-on-blur handles
+ * every way of leaving a field except the one that matters most in a
+ * single-page app: pressing a link. A route change unmounts the editor without
+ * ever blurring it, so a pending debounce is simply cancelled and a sentence
+ * somebody typed thirty seconds ago is gone — with no error, no warning, and
+ * nothing to suggest it did not save.
+ *
+ * So the flush happens in the unmount cleanup, and it calls the API directly
+ * rather than through the mutation: by then this component is gone and its
+ * mutation with it, while the write and the cache it invalidates are not this
+ * component's to abandon.
+ *
+ * The draft is seeded from the stored note **once per watch**, not whenever the
+ * stored value changes. Re-seeding on every change would let a background
+ * refetch — the query refetches when the tab regains focus — overwrite a
+ * half-typed sentence with what the server still had.
+ */
+export function useNote(model: PublishedModel): NoteEditor {
+  const queryClient = useQueryClient()
+  const userId = useSessionStore((state) => state.user?.id ?? null)
+  const { data: items } = useCollection()
+  const { data: profile } = useProfile()
+
+  const stored = itemFor(items ?? [], model.id)?.note ?? ''
+  const [value, setValue] = useState(stored)
+  const [status, setStatus] = useState<NoteStatus>('idle')
+
+  /**
+   * **Memoised, and the memo is load-bearing.** `collectionKey` builds a new
+   * array every call, so an unmemoised key changes identity on every render —
+   * which puts it in the flush effect's dependencies as a value that is never
+   * equal to itself. The cleanup then ran between every keystroke, saw a draft
+   * that differed from the last saved value, and fired the unmount flush: one
+   * network write per character typed, and a `save()` on blur that found
+   * nothing left to do and never showed *Saved*.
+   */
+  const key = useMemo(() => collectionKey(userId), [userId])
+
+  // Everything the unmount flush needs, in refs, because the cleanup closes over
+  // the render it was created in and a stale draft is exactly what it must not
+  // write back.
+  const draft = useRef(stored)
+  const savedValue = useRef(stored)
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const seeded = useRef(model.id)
+
+  if (seeded.current !== model.id) {
+    seeded.current = model.id
+    draft.current = stored
+    savedValue.current = stored
+    if (value !== stored) setValue(stored)
+    if (status !== 'idle') setStatus('idle')
+  }
+
+  // The first render of a watch whose rows had not arrived yet: seed once the
+  // stored note appears, but only while the field is still untouched.
+  if (draft.current === '' && value === '' && stored !== '' && savedValue.current === '') {
+    draft.current = stored
+    savedValue.current = stored
+    setValue(stored)
+  }
+
+  const persist = useCallback(
+    async (next: string) => {
+      if (userId === null) return
+      savedValue.current = next
+      setStatus('saving')
+      try {
+        await setCollectionNote(userId, model.id, next)
+        // The cache is corrected rather than refetched: the row is otherwise
+        // unchanged, and a refetch here would race the next keystroke.
+        queryClient.setQueryData<CollectionItem[]>(key, (rows) =>
+          (rows ?? []).map((row) =>
+            row.model_id === model.id ? { ...row, note: next.trim() === '' ? null : next } : row,
+          ),
+        )
+        setStatus('saved')
+      } catch {
+        setStatus('failed')
+      }
+    },
+    [userId, model.id, queryClient, key],
+  )
+
+  const save = useCallback(() => {
+    if (timer.current) clearTimeout(timer.current)
+    timer.current = null
+    if (draft.current === savedValue.current) return
+    void persist(draft.current)
+  }, [persist])
+
+  const change = useCallback(
+    (next: string) => {
+      const clipped = next.slice(0, NOTE_MAX)
+      draft.current = clipped
+      setValue(clipped)
+      setStatus('idle')
+      if (timer.current) clearTimeout(timer.current)
+      timer.current = setTimeout(() => {
+        timer.current = null
+        if (draft.current !== savedValue.current) void persist(draft.current)
+      }, NOTE_DEBOUNCE_MS)
+    },
+    [persist],
+  )
+
+  useEffect(() => {
+    // FR-5.2's last clause. Not `save()` — that closes over this render, and by
+    // the time this runs the refs are the only thing still telling the truth.
+    return () => {
+      if (timer.current) clearTimeout(timer.current)
+      if (draft.current === savedValue.current || userId === null) return
+      const flushed = draft.current
+      savedValue.current = flushed
+      void setCollectionNote(userId, model.id, flushed)
+        .then(() => queryClient.invalidateQueries({ queryKey: key }))
+        .catch(() => {
+          // Nothing left to tell: the editor is unmounted and the page it was
+          // on is gone. The next visit re-reads the row, which is the truth.
+        })
+    }
+  }, [userId, model.id, queryClient, key])
+
+  return {
+    value,
+    status,
+    isPublic: profile?.is_public ?? false,
+    change,
+    save,
+  }
+}

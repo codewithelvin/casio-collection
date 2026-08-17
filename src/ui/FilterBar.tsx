@@ -10,6 +10,7 @@ import {
   SORTS,
   toggleFilter,
   type Facet,
+  type SortKey,
   type ViewState,
 } from '../catalog/filters.ts'
 import { facetLabel, facetValueLabel, sortLabel, t } from '../i18n/strings'
@@ -32,10 +33,18 @@ export function FilterBar({
   models,
   state,
   onChange,
+  /**
+   * FR-6.2 — the collection offers a fourth order, *date added*, and no other
+   * screen does. A prop with the catalogue's list as its default rather than a
+   * module read, for the same reason §8.9 gives `AUTH_METHODS` to the sign-in
+   * modal that way: the other branch stays testable without mutating a constant.
+   */
+  sorts = SORTS,
 }: {
   models: readonly PublishedModel[]
   state: ViewState
   onChange: (next: ViewState) => void
+  sorts?: readonly SortKey[]
 }) {
   const { token } = antdTheme.useToken()
   const screens = Grid.useBreakpoint()
@@ -88,7 +97,7 @@ export function FilterBar({
             aria-label={t('filter.sort')}
             value={state.sort}
             onChange={(sort) => onChange({ ...state, sort })}
-            options={SORTS.map((sort) => ({ value: sort, label: sortLabel(sort) }))}
+            options={sorts.map((sort) => ({ value: sort, label: sortLabel(sort) }))}
             style={{ minWidth: 168, height: touch }}
           />
         </div>

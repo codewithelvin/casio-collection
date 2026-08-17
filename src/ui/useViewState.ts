@@ -1,6 +1,13 @@
 import { useCallback, useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { parseViewState, writeViewState, type ViewState } from '../catalog/filters.ts'
+import {
+  DEFAULT_SORT,
+  SORTS,
+  parseViewState,
+  writeViewState,
+  type SortKey,
+  type ViewState,
+} from '../catalog/filters.ts'
 
 /**
  * FR-1.6 / §7.2 — **the URL owns the filters, the sort and the search term, and
@@ -13,14 +20,24 @@ import { parseViewState, writeViewState, type ViewState } from '../catalog/filte
  * bury the page a reader arrived from under four history entries, and *Back*
  * would walk them out one filter at a time.
  */
-export function useViewState(): [ViewState, (next: ViewState) => void] {
+export function useViewState(
+  /**
+   * FR-6.2 — **which sorts this screen offers, and which one its bare URL
+   * means.** The catalogue's three by default; `/collection` passes its four,
+   * because *date added* is a fact about a row rather than about a watch. The
+   * screen declaring its own vocabulary is what stops `?sort=added` parsing on
+   * a series page into an order that quietly means reference A–Z.
+   */
+  sorts: readonly SortKey[] = SORTS,
+  defaultSort: SortKey = DEFAULT_SORT,
+): [ViewState, (next: ViewState) => void] {
   const [params, setParams] = useSearchParams()
 
-  const state = useMemo(() => parseViewState(params), [params])
+  const state = useMemo(() => parseViewState(params, sorts, defaultSort), [params, sorts, defaultSort])
 
   const setState = useCallback(
-    (next: ViewState) => setParams(writeViewState(params, next), { replace: true }),
-    [params, setParams],
+    (next: ViewState) => setParams(writeViewState(params, next, defaultSort), { replace: true }),
+    [params, setParams, defaultSort],
   )
 
   return [state, setState]

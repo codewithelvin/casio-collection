@@ -37,6 +37,8 @@ import { IMAGE_LICENCE_URLS, isLicensed } from '../../catalog/vocabulary.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
 import { OwnershipControls } from '../../ui/OwnershipControls'
+import { NoteEditor } from '../../ui/NoteEditor'
+import { useOwnership } from '../../collection/mutations.ts'
 import { LINE_ACCENTS } from '../../theme/tokens'
 import {
   displayLabel,
@@ -238,6 +240,11 @@ function WatchDetail({
             <OwnershipControls model={model} size="large" />
           </div>
 
+          {/* FR-5.1 — the note belongs to the mark, so it appears with one and
+              not before. This is where the room is: a textarea on a 170 px card
+              in a grid would be a field nobody can write a sentence in. */}
+          <MarkedNote model={model} />
+
           {/* The specification lives **beside** the picture, not under it. It
               read the other way until M3 and the cost was only visible once
               there were photographs to look at: a 320 px image left the whole
@@ -327,6 +334,20 @@ function WatchDetail({
       ) : null}
     </div>
   )
+}
+
+/**
+ * FR-5.1 — "a signed-in user **who has marked a watch** may attach one note".
+ *
+ * The condition is the component. Rendering the editor unconditionally would
+ * offer a field with nowhere to store what is typed in it — the note is a column
+ * on the collection row, so with no row there is no note, and `setCollectionNote`
+ * would update nothing and report success.
+ */
+function MarkedNote({ model }: { model: PublishedModel }) {
+  const { status } = useOwnership(model)
+  if (status === null) return null
+  return <NoteEditor model={model} />
 }
 
 /**

@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import type { ReactElement, ReactNode } from 'react'
 import { ConfigProvider, App as AntdApp } from 'antd'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { MemoryRouter } from 'react-router-dom'
@@ -21,7 +21,7 @@ import { render } from '@testing-library/react'
  * so a toast assertion would fail for a reason that has nothing to do with the
  * toast. Motion is off for the same reason `renderApp` turns it off.
  */
-export function renderWithProviders(ui: ReactNode, { route = '/' }: { route?: string } = {}) {
+export function renderWithProviders(ui: ReactElement, { route = '/' }: { route?: string } = {}) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: { retry: false, staleTime: Infinity },
@@ -31,16 +31,23 @@ export function renderWithProviders(ui: ReactNode, { route = '/' }: { route?: st
     },
   })
 
-  return {
-    queryClient,
-    ...render(
+  /**
+   * Passed as `wrapper` rather than wrapped around `ui` inline, so that
+   * `rerender` swaps only the component under test. Inline, a rerender replaces
+   * the whole tree — new providers, new query cache, remounted component — and
+   * a test that changes a prop would be testing a fresh mount instead.
+   */
+  function Wrapper({ children }: { children: ReactNode }) {
+    return (
       <ConfigProvider theme={{ token: { motion: false } }}>
         <AntdApp>
           <QueryClientProvider client={queryClient}>
-            <MemoryRouter initialEntries={[route]}>{ui}</MemoryRouter>
+            <MemoryRouter initialEntries={[route]}>{children}</MemoryRouter>
           </QueryClientProvider>
         </AntdApp>
-      </ConfigProvider>,
-    ),
+      </ConfigProvider>
+    )
   }
+
+  return { queryClient, ...render(ui, { wrapper: Wrapper }) }
 }

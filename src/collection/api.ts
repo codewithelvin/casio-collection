@@ -99,6 +99,64 @@ export async function putCollectionItem(
  * *their* row for that model and nobody else's. Naming it keeps the statement
  * readable as what it is instead of as what RLS will make of it.
  */
+/**
+ * FR-5.1 — one note per marked watch, up to 2 000 characters (§6.3 checks the
+ * bound; this only has to send it).
+ *
+ * An `update`, not an upsert, and that is the requirement rather than a
+ * preference: a note belongs to a mark, so there is always a row to update. An
+ * upsert here would let a note create a collection row with no status behind it
+ * — a watch in the collection that is neither owned nor wished for, which the
+ * schema permits and nothing in the product means.
+ *
+ * An empty note is stored as `null` rather than as `''`. FR-4.4 asks before
+ * destroying a note, and it decides by asking whether one exists; two ways of
+ * having no note means two answers to that question.
+ */
+export async function setCollectionNote(
+  userId: string,
+  modelId: string,
+  note: string | null,
+): Promise<void> {
+  const supabase = await getSupabase()
+  const { error } = await supabase
+    .from(TABLE)
+    .update({ note: note === null || note.trim() === '' ? null : note })
+    .eq('user_id', userId)
+    .eq('model_id', modelId)
+
+  if (error) throw new Error(`collection: ${error.message}`)
+}
+
+/**
+ * FR-5.4 — the note editor has to say, while somebody is typing, whether what
+ * they type will be public. That is one boolean and it lives on `profiles`,
+ * which M4 created and M8 makes editable.
+ *
+ * Returns `null` for a profile that is not there. The sign-up trigger creates
+ * one for every account (§6.3), so absent means something went wrong rather than
+ * something is new — and the safe reading of "I do not know if you are public"
+ * is the one that warns.
+ */
+export interface Profile {
+  id: string
+  handle: string | null
+  display_name: string | null
+  is_public: boolean
+}
+
+export async function fetchProfile(userId: string): Promise<Profile | null> {
+  const supabase = await getSupabase()
+  const { data, error } = await supabase
+    .from('profiles')
+    .select('id, handle, display_name, is_public')
+    .eq('id', userId)
+    .maybeSingle()
+
+  if (error) throw new Error(`profile: ${error.message}`)
+  return (data ?? null) as Profile | null
+}
+
 export async function removeCollectionItem(userId: string, modelId: string): Promise<void> {
   const supabase = await getSupabase()
   const { error } = await supabase
