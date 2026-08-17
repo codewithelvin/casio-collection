@@ -9,6 +9,23 @@ it outside the database. That is what this file is for: the settings are made by
 hand in a console, they are invisible to the build, and every one of them fails
 at the worst possible moment if it is wrong.
 
+> [!important] Outstanding: drop `public.zzz_probe` from the production project
+> A one-column table created by hand on 2026-08-17 to find out which project the
+> SQL editor was writing to. It answered the question — but it was created
+> **without RLS**, so it is readable by the anon key, which is to say by anybody.
+> It is empty and always was, so nothing has leaked; it is still the exact state
+> D14 exists to prevent, and it is the reason D14 pairs a table with its policies
+> in one migration instead of trusting a follow-up.
+>
+> ```sql
+> drop table if exists public.zzz_probe;
+> ```
+>
+> It is also the first statement of the migration bundle, so applying the
+> migrations removes it. Either way, confirm it is gone:
+> `curl -s "$VITE_SUPABASE_URL/rest/v1/zzz_probe?select=x" -H "apikey: $VITE_SUPABASE_ANON_KEY"`
+> should answer `PGRST205`, not `[]`.
+
 ## Applying migrations
 
 ```
@@ -18,6 +35,52 @@ supabase db push
 
 Or paste the file into the SQL editor **once**, in order, and record that you
 did. Either is fine; skipping one is not.
+
+> [!warning] The SQL editor asks before it runs, and dismissing that modal runs nothing
+> Supabase shows a *potentially destructive operation* modal for anything that
+> changes the schema. **Dismissing it executes nothing and reports nothing** — the
+> editor returns to idle, which is indistinguishable from a query that ran and had
+> no output. This cost a session on 2026-08-17: the migrations were pasted, the
+> modal was dismissed, the run looked fine, and every table was still missing an
+> hour later.
+>
+> The paste has not run until the results pane says **`Success. No rows
+> returned`**. If it says nothing at all, nothing happened. Also select nothing
+> before pressing Run — with text selected, the editor runs only the selection.
+
+### Checking it worked, from outside
+
+The anon key alone answers this, so it needs no dashboard access:
+
+```
+curl -s "$VITE_SUPABASE_URL/rest/v1/profiles?select=id&limit=1" -H "apikey: $VITE_SUPABASE_ANON_KEY"
+```
+
+`PGRST205 — Could not find the table 'public.profiles' in the schema cache` means
+the migration did not run. `[]` means it did **and** that RLS is denying, which is
+the correct answer for an anonymous caller.
+
+**Do not use `GET /rest/v1/` as a health check.** It answers `401 — Only secret
+API keys can be used for this endpoint`, which is that endpoint's own rule and
+says nothing about the schema — while looking exactly like a rejected key.
+
+## The anon key may not be called "anon" any more
+
+Supabase now issues **publishable** keys — `sb_publishable_…`, around 46
+characters, and **not a JWT**, so it has no dot-separated parts to decode and
+names no project inside itself. §14.2 and D14 say "anon key" throughout, and this
+is that key: public by design, safe in the bundle, and what goes in
+`VITE_SUPABASE_ANON_KEY`.
+
+Verified 2026-08-17 through `@supabase/supabase-js` itself rather than only over
+HTTP — `from().select()`, `auth.getSession()` and
+`auth.signInWithOAuth({ provider: 'google' })` all behave correctly with it. The
+distinction mattered: a valid key the *pinned SDK* did not understand would have
+failed at the moment somebody first tried to sign in, and nothing earlier would
+have shown it.
+
+**A `sb_secret_…` key is the other one** — the service-role key under a new name.
+S2 applies to it unchanged: never in the browser, never a GitHub secret.
 
 ## Production project
 
