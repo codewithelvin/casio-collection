@@ -1,0 +1,431 @@
+# BG-169 — seeded 2026-08-17 (M9).
+#
+# THE ROSTER IS CASIO'S OWN SITEMAP, which is what closed O11. casio.com's
+# product pages answer 403 and its AEM paths return the location picker, but
+# `casio.com/<locale>/sitemap.xml` answers 200 and lists every product URL with
+# the reference in the path:
+#   https://www.casio.com/us/watches/edifice/product.EFR-527D-1AV/
+# So "which references exist" is Casio saying so, where G-SHOCK's roster is a
+# community index saying the same thing. It is still provenance for a model's
+# IDENTITY only — the sitemap states no specifications.
+#
+# THE FIELDS ARE THE MODULE GUIDE (D44), named in `source`, read off its
+# Specifications table. WHICH MODULE a series runs is the one link neither source
+# provides: that comes from casiofanmag's per-line table, a community source that
+# says of itself that it cannot guarantee accuracy. It is used exactly as
+# ShockBase is — identity, never fields.
+#
+# So three sources, and the split is deliberate: Casio for what exists, a
+# community table for which guide to open, and Casio's guide for every value
+# written. A reader clicking `source` lands on the page every field came from,
+# which is what §10.6's one-page rule is for.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `year` — the guide dates the module, never the reference (D25).
+#   * `case`, `water_resistance_m`, `colorway` — the guide is about the module.
+#   * `image` — D41 needs a licence and a proof it is the right watch, and
+#     Wikimedia Commons has nothing for these (O12).
+
+series:
+  id: bg-169
+  name: BG-169
+  line: baby-g
+  aka: [BG169]
+
+models:
+  - id: bg-169ch-4
+    ref: BG-169CH-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169ch-9
+    ref: BG-169CH-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169cm-2
+    ref: BG-169CM-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169cm-4
+    ref: BG-169CM-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169cmb-8
+    ref: BG-169CMB-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169g-1
+    ref: BG-169G-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169g-4
+    ref: BG-169G-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169g-4b
+    ref: BG-169G-4B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169g-7b
+    ref: BG-169G-7B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169gd-1
+    ref: BG-169GD-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169gd-7
+    ref: BG-169GD-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169hrb-7
+    ref: BG-169HRB-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169kb-1
+    ref: BG-169KB-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169kb-4
+    ref: BG-169KB-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169kb-4b1
+    ref: BG-169KB-4B1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169m-1
+    ref: BG-169M-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169m-4
+    ref: BG-169M-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169mh-7
+    ref: BG-169MH-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169pb-2
+    ref: BG-169PB-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169pb-4
+    ref: BG-169PB-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169pb-7
+    ref: BG-169PB-7
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-1
+    ref: BG-169R-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-1b
+    ref: BG-169R-1B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-2
+    ref: BG-169R-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-2b
+    ref: BG-169R-2B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-2c
+    ref: BG-169R-2C
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-3
+    ref: BG-169R-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-4
+    ref: BG-169R-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-7a
+    ref: BG-169R-7A
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-7e
+    ref: BG-169R-7E
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-8
+    ref: BG-169R-8
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169r-8b
+    ref: BG-169R-8B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169u-1c
+    ref: BG-169U-1C
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169u-3
+    ref: BG-169U-3
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169u-4b
+    ref: BG-169U-4B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+  - id: bg-169u-8b
+    ref: BG-169U-8B
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: quartz
+    module: '3252'
+    features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
