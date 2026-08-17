@@ -133,9 +133,33 @@ only thing found that says which guide to open. That is a community source, used
 exactly as ShockBase is: identity, never fields.
 
 **Where the join is empty, the line stays empty.** Sheen and Oceanus have 186
-references between them and no module for any of their series — casiofanmag's
-pages for those two are review articles rather than tables. Do not fill the gap
-by deriving a module from a similar reference.
+references between them and almost no module for any of their series. Do not fill
+the gap by deriving a module from a similar reference.
+
+**What "no module" actually means for those two, measured 2026-08-17.**
+`getmanuals/sheen/` and `getmanuals/oceanus/` do not 404 — they **301** to
+`casiofanmag.com/sheen/` and `/oceanus/`, which is why `seriesModules()` returns
+an empty map rather than throwing. Those categories are not review articles
+either: each holds one post per series whose `<title>` **names the module** —
+`Casio Sheen SHE-3040 / 5456 / All Models`. Fifteen pairs are there for the
+taking:
+
+| | |
+| --- | --- |
+| Sheen | `she-3040` 5456 · `she-3046` 5483 · `she-3062` 5420 · `shs-4502` 5548 · `shs-4525` 5584 · `shs-d100` 5548 · `shs-d300` 5584 · `shw-1700` 5435 · `shw-5100` 5592 · `shw-5200` 5253 |
+| Oceanus | `ocw-s340` 5496 · `ocw-s3400` 5453 · `ocw-s5000` 5603 · `ocw-t2600` 5347 · `ocw-t3000` 5583 |
+
+**And they are almost all the wrong series.** casiofanmag documents what people
+own; Casio's sitemap lists what Casio sells. Joined against the roster the
+overlap is **0 of Sheen's 39 series and 1 of Oceanus's 5** — `ocw-s5000`, module
+5603, six references. Everything else casiofanmag names is discontinued and gone
+from the sitemap, and everything the sitemap lists (`she-45xx`, `ocw-s7000`) is
+too new for casiofanmag.
+
+So the honest statement is not "there is no module source" but **"the module
+source and the roster describe different decades"**. Anything more than those six
+references needs a source that names the module of a *current* Sheen or Oceanus,
+which is what casio.com's own product page would say if it answered.
 
 ### The rest of what has been checked
 

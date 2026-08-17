@@ -25,6 +25,17 @@ export async function seriesModules(line: string): Promise<Map<string, string[]>
       headers: { 'user-agent': UA },
     })
     if (!res.ok) throw new Error(`${line} → HTTP ${res.status}`)
+    // A line with no table does not 404 — it **301s to the line's category page**,
+    // which is a 200 holding no table at all. `res.ok` is true, the parse below
+    // finds nothing, and the caller reports "0 series have a known module": a
+    // sentence that reads as "no source exists" when it means "wrong URL shape".
+    // Two sessions read it the first way. Say so instead.
+    if (res.redirected && !new URL(res.url).pathname.startsWith('/getmanuals/'))
+      console.warn(
+        `!! ${line}: getmanuals/ redirected to ${res.url} — there is no table for this line.\n` +
+          `   That category holds one post per series and its <title> names the module.\n` +
+          `   Read references/sources.md before concluding the module is unknown.`,
+      )
     writeFileSync(f, await res.text())
   }
   const rows = readFileSync(f, 'utf8')
