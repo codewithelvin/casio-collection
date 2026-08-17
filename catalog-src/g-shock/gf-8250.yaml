@@ -1,0 +1,102 @@
+# GF-8250 — the Frogman, seeded 2026-08-17 (M9), from module 3266's guide.
+#
+# `movement: solar` AND NOT `solar-radio`, WHICH IS THE READING THAT MATTERS
+# HERE. Module 3266's guide and module 3184's are near-identical documents — the
+# same diving functions, the same tide and moon rows, the same illumination
+# line. What 3266's table does not have is the "Time Calibration Signal
+# Reception" row. Its power supply is a solar cell and nothing more. Two Frogmen
+# that look the same on the page and are two different watches.
+#
+# The diving-log function is stated here too, and there is still no vocabulary
+# value for it. Proposed in the summary, absent here (guardrail 4).
+#
+# THE SOURCE IS THE MODULE MANUAL (D44). casio.com answers 403 to every product
+# path on every locale, but serves the operation guides from its /content/dam/
+# CDN, and §10.6 counts a manual page as `official`. Every field below is read
+# off the Specifications block of the module 3266 guide named in `source`.
+#
+# WHICH REFERENCES USE MODULE 3266 is the one fact the manual does not carry.
+# That list comes from ShockBase's module index, which states in so many words
+# "These are all watches with module 3266":
+#   https://shockbase.org/watches/modules_dyn.php?module=3266
+# The roster is provenance for the *identity* of these models; every *field* on
+# them comes from the manual. That distinction is what keeps this inside the
+# one-page rule rather than merging two sources into one entry.
+#
+# COLLABORATION REFERENCES ARE LEFT OUT. The index lists collaborations under
+# strings that are community constructions rather than references — a doubled
+# hyphen, or a collaborator's name appended to a reference that ends before it.
+# D2 makes an id permanent and the sourcing rule says a model whose sources
+# disagree on the reference itself is not written at all.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is a real one:
+#   * `year` — the manual dates the module, never the reference (D25).
+#   * `case` and `water_resistance_m` — properties of the watch, not the module.
+#   * `colorway` — the reference suffix encodes it and decoding it is a guess.
+#   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
+#     it. Writing it here would be the catalogue asserting something on Casio's
+#     behalf, which is the one thing FR-10.4 rules out.
+#   * `image` — D41 needs a licence and a proof it is the right watch.
+
+series:
+  id: gf-8250
+  name: GF-8250
+  line: g-shock
+  aka: [GF8250, Frogman]
+
+models:
+  - id: gf-8250-9
+    ref: GF-8250-9
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar
+    module: '3266'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gf-8250bs-1
+    ref: GF-8250BS-1
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar
+    module: '3266'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gf-8250cm-2
+    ref: GF-8250CM-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar
+    module: '3266'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gf-8250er-2
+    ref: GF-8250ER-2
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar
+    module: '3266'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+  - id: gf-8250k-4
+    ref: GF-8250K-4
+    source:
+      {
+        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',
+        kind: official,
+      }
+    display: digital
+    movement: solar
+    module: '3266'
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
