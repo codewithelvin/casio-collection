@@ -5,21 +5,40 @@
 //
 // WHY THIS EXISTS. D44 made the module manual the catalogue's official source.
 // casio.com answers 403 on every product path (Akamai) but serves the guides
-// from /content/dam/ with a 200. The guides are encrypted, and both of the
-// traps below fail silently — they look like an unreadable document rather than
-// a bug, which is how they cost a session the first time.
+// from /content/dam/ with a 200.
+//
+// DO NOT REWRITE THIS. Every trap below fails SILENTLY — each one looks like a
+// guide that does not state its specifications rather than like a bug, and one of
+// them looks like a guide that states them wrongly, which is worse. They were
+// found one at a time across two sessions.
 //
 //   TRAP 1: the encryption dictionary carries TWO /Length keys in different
 //   units. The top-level one is 128 (bits); the crypt-filter sub-dictionary one
 //   is 16 (bytes). Matching the first hit derives a 2-byte key that decrypts
-//   nothing, reports no error, and leaves every stream refusing to inflate.
-//   The derivation is checkable — Algorithm 5 recomputes /U from the key — so
-//   this script verifies it and refuses rather than printing rubbish.
+//   nothing, reports no error, and leaves every stream refusing to inflate. The
+//   derivation is checkable — /U is recomputed from the key — so this refuses
+//   rather than printing rubbish. Revision 2 documents need a different
+//   derivation AND a different check, and older modules are R2.
 //
-//   TRAP 2: the specification tables are set in a font whose strings are
-//   written as <hex>. A reader that only understands (literal) strings returns
-//   all of the prose and NONE of the numbers, which reads exactly like a manual
-//   that does not state its specifications.
+//   TRAP 2: strings are written as <hex>, so a reader that only understands
+//   (literal) strings returns all of the prose and NONE of the numbers.
+//
+//   TRAP 3: the fonts carry custom /Encoding maps, differently per document, so
+//   "Specifications" arrives as "Speci cations" in one guide and "SpeciÞcations"
+//   in another. Read the document's own /Differences arrays. AND WATCH THE
+//   DIGITS: some fonts name them /one /two /three, so a reader that drops
+//   unrecognised glyph names deletes every number and leaves the prose intact.
+//
+//   TRAP 4: some fonts are a plain byte OFFSET declared nowhere at all. Module
+//   5698's contents page reads "ÅÄÊ»ÄÊÉ", which is "ontents" shifted by +0x56.
+//   Detected by scoring all 256 shifts against words every guide contains.
+//
+// And one that is not the PDF's fault: page order is OBJECT order, the word
+// "Specifications" also appears in the contents, and a contents page full of
+// "Using the Alarm . . . E-82" lines looks exactly like a table full of rows.
+// That is why `specRows` scans the whole document for known spec labels instead
+// of trying to locate a block — two attempts at locating one both picked the
+// contents.
 
 import { createHash } from 'node:crypto'
 import { inflateSync, inflateRawSync } from 'node:zlib'
@@ -363,8 +382,49 @@ export async function readManual(mod: string): Promise<string> {
   const glyphs = glyphTable(latin)
   return streams(pdf, key)
     .filter((s) => /\bTJ\b|\bTj\b/.test(s))
-    .map((s) => textOf(s, glyphs))
+    .map((s) => unshift(textOf(s, glyphs)))
     .join('\n')
+}
+
+/**
+ * TRAP 4. Some guides embed a font whose encoding is a plain byte OFFSET and
+ * declare it nowhere — no /Differences to read, so the glyph table above has
+ * nothing to say and latin1 returns mojibake. Module 5698's contents page comes
+ * back as "ÅÄÊ»ÄÊÉ È»¹·ËÊ¿ÅÄÉ", which is "ontents recautions" shifted by +0x56
+ * (the capitals land on unprintable codes and vanish, which is why the first
+ * letter of each word is missing).
+ *
+ * This is recoverable and, more importantly, it is CHECKABLE: shift the whole
+ * run by each of 255 possible offsets and score the result against words that
+ * appear in every one of these documents. A real offset scores in double figures
+ * and the wrong ones score zero, so there is no judgement call — and if nothing
+ * scores, the text is returned untouched rather than mangled into something that
+ * reads like English but is not.
+ */
+const MARKERS =
+  /\b(the|and|watch|time|press|mode|button|battery|second|minute|display|setting|operation)\b/gi
+
+function unshift(run: string): string {
+  const score = (s: string) => (s.match(MARKERS) ?? []).length
+  const asIs = score(run)
+  // Only bother when the run looks wrong: mostly high bytes and few real words.
+  const highBytes = [...run].filter((c) => c.charCodeAt(0) > 127).length
+  if (asIs > 2 || highBytes < run.length / 4) return run
+
+  let best = { offset: 0, hits: asIs, text: run }
+  for (let off = 1; off < 256; off++) {
+    const shifted = [...run]
+      .map((c) => {
+        const b = c.charCodeAt(0)
+        return b > 255 ? c : String.fromCharCode((b - off + 256) % 256)
+      })
+      .join('')
+    const hits = score(shifted)
+    if (hits > best.hits) best = { offset: off, hits, text: shifted }
+  }
+  if (best.offset === 0) return run
+  process.stderr.write(`[byte-offset font: shifted a run by -0x${best.offset.toString(16)}]\n`)
+  return best.text
 }
 
 /**
@@ -372,6 +432,71 @@ export async function readManual(mod: string): Promise<string> {
  * reads. The word appears twice — once in the contents list and once as the
  * heading — so this takes the LAST occurrence.
  */
+/**
+ * The specification rows, taken from the WHOLE document rather than from a block.
+ *
+ * Locating the block was the wrong idea and it failed the same way twice. The
+ * heading is unreliable (the ligature decodes differently per document), the page
+ * order is object order rather than reading order, and the word "Specifications"
+ * also appears in the contents — so a loose enough pattern to survive the first
+ * two problems starts matching the third, and a contents page full of
+ * "Using the Alarm . . . E-82" lines looks exactly like a table full of rows.
+ *
+ * These labels are what a Casio guide calls the things this catalogue records,
+ * and they appear only in the table. A contents entry always carries dot leaders,
+ * so that is the one exclusion needed.
+ */
+const SPEC_LABELS = [
+  'Accuracy',
+  'Accuracy at normal temperature',
+  'Timekeeping',
+  'Digital Timekeeping',
+  'Analog Timekeeping',
+  'Time system',
+  'Time format',
+  'Calendar system',
+  'Alarm',
+  'Alarms',
+  'Stopwatch',
+  'Countdown Timer',
+  'Timer',
+  'World Time',
+  'Illumination',
+  'Battery',
+  'Battery Life',
+  'Power Supply',
+  'Digital Compass',
+  'Barometer',
+  'Thermometer',
+  'Altimeter',
+  'Tide/Moon',
+  'Tide/Moon Data',
+  'Sunrise/sunset',
+  'Diving Functions',
+  'Time Calibration Signal Reception',
+  'Bearing Sensor Precision',
+  'Temperature Sensor Precision',
+  'Pressure Sensor Precision',
+  'Low Battery Indicator',
+  'Other',
+]
+
+export function specRows(text: string): Map<string, string> {
+  const lines = text.split('\n')
+  const out = new Map<string, string>()
+  const leader = /\.\s*\.\s*\./
+  lines.forEach((line, i) => {
+    const m = /^([A-Z][A-Za-z ()/-]{2,40}?):\s*(.*)$/.exec(line.trim())
+    if (!m || leader.test(line)) return
+    const [, label, inline] = m
+    if (!SPEC_LABELS.includes(label)) return
+    // The value is on the same line or the next one, and a guide uses both.
+    const value = inline.trim() || (lines[i + 1] ?? '').trim()
+    if (!leader.test(value) && value && !out.has(label)) out.set(label, value)
+  })
+  return out
+}
+
 export function specsOf(text: string): string | null {
   // TWO REASONS THE OBVIOUS SEARCH FAILS.
   //
@@ -385,9 +510,14 @@ export function specsOf(text: string): string | null {
   // taking the LAST occurrence finds a page near the front of the booklet. The
   // anchor that works is the table's own first row, and where a guide repeats it
   // the right block is the one followed by the most `Label:` rows.
+  // `Speci.{0,4}?cations` rather than a tidier pattern because every guide
+  // mangles the ligature differently: "Specifications" whole, "Speci cations"
+  // where the glyph dropped, "SpeciÞcations" where latin1 guessed, and
+  // "Specifi\ncations" where the layout split the word across two runs. A
+  // pattern that assumes any one of those misses the other three.
   const candidates = [
     ...text.matchAll(/Accuracy at normal temperature/g),
-    ...text.matchAll(/Speci[^a-z]{0,3}cations/g),
+    ...text.matchAll(/Speci.{0,4}?cations/gs),
   ].map((m) => m.index!)
   if (!candidates.length) return null
 
@@ -413,7 +543,14 @@ export function specsOf(text: string): string | null {
     const last = kept.reduce((acc, l, i) => (ROW.test(l) ? i : acc), -1)
     return (last === -1 ? kept : kept.slice(0, last + 8)).join('\n')
   }
-  const rows = (s: string) => s.split('\n').filter((l) => ROW.test(l)).length
+  // A contents page also contains the word "Specifications", and once the
+  // heading pattern was loosened enough to survive the ligature it started
+  // matching there too. A contents entry is a label followed by dot leaders and
+  // a page number, so lines carrying leaders do not count as rows — which makes
+  // the real table win the score rather than the first mention of the word.
+  const LEADER = /\.\s*\.\s*\./
+  const rows = (s: string) =>
+    s.split('\n').filter((l) => ROW.test(l) && !LEADER.test(l)).length
   return block(candidates.sort((a, b) => rows(block(b)) - rows(block(a)))[0]).trim()
 }
 

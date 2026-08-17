@@ -94,7 +94,50 @@ its "(157 in total)" heading sits above sixteen entries. The **module** page
 `nicknames_dyn.php?nickname=Frogman`, which lists subseries with modules — the
 only way to find the Frogmen, since "Frogman" is not a reference prefix.
 
-**For every other line it is unsolved.** What has been checked:
+### For every other line, the roster is Casio's own sitemap
+
+**`casio.com/<locale>/sitemap.xml` answers 200.** The product *pages* 403 and the
+AEM paths under `/content/casio/…` return the location picker, but the sitemap is
+served — and the reference is in the path:
+
+```
+https://www.casio.com/us/watches/edifice/product.EFR-527D-1AV/
+```
+
+That makes the roster **official** for every line, which is better than G-SHOCK
+has. Three locales are enough to cover what the others repeat — `us`, `intl` and
+`de`; `eu` 404s and `jp`/`asia` list no products. Deduped, they hold:
+
+| line | references |
+| --- | --- |
+| `casio` (Standard, includes Databank shapes) | 1955 |
+| `gshock` | 1443 |
+| `edifice` | 430 |
+| `babyg` | 381 |
+| `casio/vintage` | 195 |
+| `sheen` | 160 |
+| `protrek` | 97 |
+| `oceanus` | 26 |
+
+```
+node .claude/skills/casio-catalog/references/sitemap.ts            # every line, counts
+node .claude/skills/casio-catalog/references/sitemap.ts edifice    # its series, by size
+node .claude/skills/casio-catalog/references/candidates.ts edifice:edifice
+```
+
+`candidates.ts` is the join that matters: Casio's roster against the series →
+module table, ranked by how many references a series would bring in. A series
+needs both — the sitemap states no specifications, so **the module guide is still
+where every field comes from**, and `casiofanmag.com/getmanuals/<line>/` is the
+only thing found that says which guide to open. That is a community source, used
+exactly as ShockBase is: identity, never fields.
+
+**Where the join is empty, the line stays empty.** Sheen and Oceanus have 186
+references between them and no module for any of their series — casiofanmag's
+pages for those two are review articles rather than tables. Do not fill the gap
+by deriving a module from a similar reference.
+
+### The rest of what has been checked
 
 | Source | Covers | Gives |
 | --- | --- | --- |
