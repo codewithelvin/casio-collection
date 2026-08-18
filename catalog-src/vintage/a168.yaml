@@ -27,3 +27,255 @@ models:
       author: The Digital Watch Library
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-a168'
+
+# ADDED 2026-08-18: 21 more references, from Casio's own
+# product pages via the archive (D52). The entry above this block predates them
+# and is left exactly as it was — a different source, and a `year` these pages
+# do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: a168wa-1
+    ref: A168WA-1
+    source:
+      { url: 'https://web.archive.org/web/20240714215853id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WA-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 50, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168wa-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215853id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WA-1/'
+  - id: a168wegb-1b
+    ref: A168WEGB-1B
+    source:
+      { url: 'https://web.archive.org/web/20240714215857id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEGB-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168wegb-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215857id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEGB-1B/'
+  - id: a168wegc-3
+    ref: A168WEGC-3
+    source:
+      { url: 'https://web.archive.org/web/20240715101518id_/https://www.casio.com/europe/watches/casio/product.A168WEGC-3/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168wegc-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101518id_/https://www.casio.com/europe/watches/casio/product.A168WEGC-3/'
+  - id: a168wegg-1b
+    ref: A168WEGG-1B
+    source:
+      { url: 'https://web.archive.org/web/20240714215825id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEGG-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Black chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168wegg-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215825id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEGG-1B/'
+  - id: a168wegm-9
+    ref: A168WEGM-9
+    source:
+      { url: 'https://web.archive.org/web/20240715101538id_/https://www.casio.com/europe/watches/casio/product.A168WEGM-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight, mineral-glass]
+    image: a168wegm-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101538id_/https://www.casio.com/europe/watches/casio/product.A168WEGM-9/'
+  - id: a168weha-9a
+    ref: A168WEHA-9A
+    source:
+      { url: 'https://web.archive.org/web/20240714220038id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEHA-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168weha-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220038id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEHA-9A/'
+  - id: a168wehb-1a
+    ref: A168WEHB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220041id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEHB-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168wehb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220041id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEHB-1A/'
+  - id: a168wem-1
+    ref: A168WEM-1
+    source:
+      { url: 'https://web.archive.org/web/20240714215833id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight, mineral-glass]
+    image: a168wem-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215833id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-1/'
+  - id: a168wem-2
+    ref: A168WEM-2
+    source:
+      { url: 'https://web.archive.org/web/20240714215838id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight, mineral-glass]
+    image: a168wem-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215838id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-2/'
+  - id: a168wem-2b
+    ref: A168WEM-2B
+    source:
+      { url: 'https://web.archive.org/web/20240714220126id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-2B/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight, mineral-glass]
+    image: a168wem-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220126id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-2B/'
+  - id: a168wem-7
+    ref: A168WEM-7
+    source:
+      { url: 'https://web.archive.org/web/20240714215830id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight, mineral-glass]
+    image: a168wem-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215830id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-7/'
+  - id: a168wemb-1b
+    ref: A168WEMB-1B
+    source:
+      { url: 'https://web.archive.org/web/20240714220110id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEMB-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 55, material: 'Resin / Black chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168wemb-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220110id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEMB-1B/'
+  - id: a168wepc-7a
+    ref: A168WEPC-7A
+    source:
+      { url: 'https://web.archive.org/web/20250407153145id_/https://www.casio.com/de/watches/casio/vintage/product.A168WEPC-7A/', kind: official }
+    features: [alarm]
+    image: a168wepc-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250407153145id_/https://www.casio.com/de/watches/casio/vintage/product.A168WEPC-7A/'
+  - id: a168wer-2a
+    ref: A168WER-2A
+    source:
+      { url: 'https://web.archive.org/web/20240714220214id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WER-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168wer-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220214id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WER-2A/'
+  - id: a168weuc-1a
+    ref: A168WEUC-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220232id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEUC-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168weuc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220232id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEUC-1A/'
+  - id: a168wg-9
+    ref: A168WG-9
+    source:
+      { url: 'https://web.archive.org/web/20240714215818id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WG-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168wg-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215818id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WG-9/'
+  - id: a168wg-9w
+    ref: A168WG-9W
+    source:
+      { url: 'https://web.archive.org/web/20230811084202id_/https://www.casio.com/intl/watches/casio/product.A168WG-9W/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168wg-9w
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230811084202id_/https://www.casio.com/intl/watches/casio/product.A168WG-9W/'
+  - id: a168wgg-1a
+    ref: A168WGG-1A
+    source:
+      { url: 'https://web.archive.org/web/20220520225647id_/https://www.casio.com/intl/watches/casio/product.A168WGG-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Black chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168wgg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220520225647id_/https://www.casio.com/intl/watches/casio/product.A168WGG-1A/'
+  - id: a168wgg-1b
+    ref: A168WGG-1B
+    source:
+      { url: 'https://web.archive.org/web/20221103214521id_/https://www.casio.com/us/watches/casio/product.A168WGG-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Black chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+  - id: a168xes-1b
+    ref: A168XES-1B
+    source:
+      { url: 'https://web.archive.org/web/20240714220116id_/https://www.casio.com/europe/watches/casio/vintage/product.A168XES-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 39.4, width_mm: 36.3, depth_mm: 9.7, weight_g: 25, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168xes-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220116id_/https://www.casio.com/europe/watches/casio/vintage/product.A168XES-1B/'
+  - id: a168xesg-9a
+    ref: A168XESG-9A
+    source:
+      { url: 'https://web.archive.org/web/20240714220113id_/https://www.casio.com/europe/watches/casio/vintage/product.A168XESG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 39.4, width_mm: 36.3, depth_mm: 9.7, weight_g: 25, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
+    image: a168xesg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220113id_/https://www.casio.com/europe/watches/casio/vintage/product.A168XESG-9A/'

@@ -21,6 +21,7 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { ENOUGH_ROWS, archivedFor, imageUrl, isEnglish, page, specRows } from './archive.ts'
+import { isReference } from './roster.ts'
 import { modelYaml, toModel, type Seeded } from './seed.ts'
 import { seriesOf } from './sitemap.ts'
 
@@ -50,7 +51,22 @@ console.log(`${series}: ${present.size} references already in the file`)
  * ------------------------------------------------------------------------- */
 
 const found = await archivedFor(line)
-const mine = [...found].filter(([ref]) => seriesOf(ref) === series)
+const inSeries = [...found].filter(([ref]) => seriesOf(ref) === series)
+
+/**
+ * **D47 — an archived page is not a reference just because Casio served it.**
+ * The A168 crawl turned up `A168XESG-9ADF-SC` and `A168XES-1BDF-SC`, which are
+ * distributor SKUs with a regional block bolted on, not references Casio prints.
+ * Under D2 an id is permanent, so seeding one is not a mistake that can be
+ * tidied up later. The shape rule is `roster.ts`'s, recovered from the reviewed
+ * M2b commits rather than invented here.
+ */
+const malformed = inSeries.filter(([ref]) => !isReference(ref)).map(([ref]) => ref)
+const mine = inSeries.filter(([ref]) => isReference(ref))
+if (malformed.length > 0) {
+  console.log(`${malformed.length} are not references Casio prints, so they are refused (D47): ${malformed.join(', ')}`)
+}
+
 const missing = mine.filter(([ref]) => !present.has(ref.toUpperCase()))
 console.log(
   `${mine.length} archived pages are in this series; ${missing.length} are not in the file yet`,
@@ -114,10 +130,29 @@ for (const [ref, candidates] of missing) {
 if (thin.length > 0) console.log(`\n${thin.length} state too little to seed from (D50): ${thin.join(', ')}`)
 if (unreachable.length > 0) console.log(`${unreachable.length} could not be read: ${unreachable.join(', ')}`)
 
-const models: Seeded[] = readings
-  .map((r) => toModel(r.ref, r.url, r.rows, r.image))
-  // A page whose every field is unreadable would claim `official` and say
-  // nothing — worse than absence, and the same rule seed.ts applies (D46).
+const read = readings.map((r) => ({ ...toModel(r.ref, r.url, r.rows, r.image), url: r.url }))
+
+/**
+ * A page whose every field is unreadable would claim `official` and state
+ * nothing — worse than absence, and the same rule `seed.ts` applies (D46).
+ *
+ * **These are named, not merely dropped.** The first run of this script filtered
+ * them silently and reported "14 entries ready" out of 30 pages it had just said
+ * it read, which invites the reader to assume the other 16 do not exist. They do
+ * exist; this reader cannot parse them, and almost always because the only
+ * capture is in a language whose labels it does not know — the failure
+ * `sources.md` records for German, now reachable in twenty more languages since
+ * the locale list went from 8 to 29.
+ */
+const unreadable = read.filter((model) => Object.values(model.fields).every((v) => v === undefined))
+if (unreadable.length > 0) {
+  console.log(`\n${unreadable.length} state specifications this reader cannot parse (D46), so they are not seeded:`)
+  for (const model of unreadable) {
+    console.log(`  ${model.ref.padEnd(16)} ${model.url.replace(/^https:\/\/web\.archive\.org\/web\/\d+id_\//, '')}`)
+  }
+}
+
+const models: Seeded[] = read
   .filter((model) => Object.values(model.fields).some((value) => value !== undefined))
   .sort((a, b) => a.ref.localeCompare(b.ref))
 

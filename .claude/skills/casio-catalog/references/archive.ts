@@ -190,7 +190,18 @@ export async function snapshots(line: string): Promise<Map<string, Snapshot[]>> 
       ref,
       // Four is a bound on politeness, not on correctness: a reference captured
       // in eight locales does not need eight requests to the archive to be read.
-      list.sort((a, b) => b.length - a.length).slice(0, 4),
+      //
+      // **English first, then size — and the order of those two matters more
+      // since the locale list went from 8 to 29.** Sorting by size alone is a
+      // bias toward whichever template is heaviest, and with `br`, `es`, `fr`,
+      // `pt`, `jp` and the rest in the pool that regularly buried the English
+      // capture below the cut. The reader matches English labels, so a foreign
+      // page yields an entry with a full row count and **no fields at all**
+      // (D46) — which is what happened to 12 of the 30 A168 references, every
+      // one of them served from `es`, `fr`, `pt` or `br`.
+      list
+        .sort((a, b) => Number(isEnglish(b.url)) - Number(isEnglish(a.url)) || b.length - a.length)
+        .slice(0, 4),
     ]),
   )
 }
