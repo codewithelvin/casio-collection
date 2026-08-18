@@ -20,11 +20,22 @@
 # written. A reader clicking `source` lands on the page every field came from,
 # which is what §10.6's one-page rule is for.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `year` — the guide dates the module, never the reference (D25).
 #   * `case`, `water_resistance_m`, `colorway` — the guide is about the module.
-#   * `image` — D41 needs a licence and a proof it is the right watch, and
-#     Wikimedia Commons has nothing for these (O12).
 
 series:
   id: efr-526
@@ -43,6 +54,11 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    image: efr-526bk-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220508id_/https://www.casio.com/europe/watches/edifice/product.EFR-526BK-1A1V/'
   - id: efr-526d-1av
     ref: EFR-526D-1AV
     source:
@@ -53,6 +69,11 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    image: efr-526d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220451id_/https://www.casio.com/europe/watches/edifice/product.EFR-526D-1AV/'
   - id: efr-526d-2av
     ref: EFR-526D-2AV
     source:
@@ -63,6 +84,11 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    image: efr-526d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240708220823id_/https://www.casio.com/de/watches/edifice/product.EFR-526D-2AV/'
   - id: efr-526d-3av
     ref: EFR-526D-3AV
     source:
@@ -73,6 +99,11 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    image: efr-526d-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240708220826id_/https://www.casio.com/de/watches/edifice/product.EFR-526D-3AV/'
   - id: efr-526d-5cv
     ref: EFR-526D-5CV
     source:
@@ -83,6 +114,11 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    image: efr-526d-5cv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230127085649id_/https://www.casio.com/in/watches/edifice/product.EFR-526D-5CV/'
   - id: efr-526d-7av
     ref: EFR-526D-7AV
     source:
@@ -93,6 +129,11 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    image: efr-526d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220456id_/https://www.casio.com/europe/watches/edifice/product.EFR-526D-7AV/'
   - id: efr-526l-1av
     ref: EFR-526L-1AV
     source:
@@ -103,6 +144,11 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    image: efr-526l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220512id_/https://www.casio.com/europe/watches/edifice/product.EFR-526L-1AV/'
   - id: efr-526l-2av
     ref: EFR-526L-2AV
     source:
@@ -113,6 +159,11 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    image: efr-526l-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628161531id_/https://www.casio.com/in/watches/edifice/product.EFR-526L-2AV/'
   - id: efr-526l-2cv
     ref: EFR-526L-2CV
     source:
@@ -123,6 +174,11 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    image: efr-526l-2cv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220610id_/https://www.casio.com/europe/watches/edifice/product.EFR-526L-2CV/'
   - id: efr-526l-7av
     ref: EFR-526L-7AV
     source:
@@ -133,3 +189,8 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    image: efr-526l-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220522013322id_/https://www.casio.com/in/watches/edifice/product.EFR-526L-7AV/'
