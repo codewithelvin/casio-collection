@@ -47,6 +47,9 @@ function publishModel(model: Model, line: string, series: string): Record<string
     source: model.source,
     name: model.name,
     year: model.year,
+    // D54 — travels with the year, because a year read off a different page
+    // than the specifications has to say so on the page that shows it.
+    year_source: model.year_source,
     display: model.display,
     movement: model.movement,
     module: model.module,

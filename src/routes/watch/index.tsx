@@ -356,7 +356,10 @@ function MarkedNote({ model }: { model: PublishedModel }) {
  * conditionals, so "omitted, never empty" is structural instead of remembered.
  */
 function specRows(model: PublishedModel) {
-  const rows: { key: string; label: ReactNode; children: string }[] = []
+  // `children` is a node rather than a string because one row can carry a link:
+  // a year read off a different page than the specifications names that page
+  // (D54), the way the photograph already names its own.
+  const rows: { key: string; label: ReactNode; children: ReactNode }[] = []
 
   // The icon sits with the label, not the value. A spec table is scanned down
   // the left edge for the row you want, and a glyph per row is what makes that
@@ -381,7 +384,43 @@ function specRows(model: PublishedModel) {
     })
   }
 
-  push('year', <CalendarOutlined />, t('spec.year'), model.year)
+  /**
+   * D54 — a year read off a page this entry does not otherwise cite says so.
+   *
+   * Every other row here comes from `source`, and a reader is entitled to assume
+   * that. A year may now come from Casio's dated news release while the
+   * specifications come from the product page, and the one thing that keeps
+   * that honest rather than a quiet merge is showing which page said it — the
+   * same argument `image_credit` already makes beneath the photograph.
+   */
+  if (model.year != null && model.year_source) {
+    rows.push({
+      key: 'year',
+      label: (
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+          <Glyph>
+            <CalendarOutlined />
+          </Glyph>
+          {t('spec.year')}
+        </span>
+      ),
+      children: (
+        <span style={{ display: 'inline-flex', alignItems: 'baseline', gap: 8, flexWrap: 'wrap' }}>
+          {String(model.year)}
+          <a
+            href={model.year_source}
+            target="_blank"
+            rel="noreferrer noopener"
+            style={{ fontSize: '0.875em' }}
+          >
+            {t('spec.year.source')}
+          </a>
+        </span>
+      ),
+    })
+  } else {
+    push('year', <CalendarOutlined />, t('spec.year'), model.year)
+  }
   push(
     'display',
     <EyeOutlined />,

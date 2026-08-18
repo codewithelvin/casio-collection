@@ -134,6 +134,12 @@ const en = {
 
   // Specification field labels (FR-3.2). Only rendered for fields the model has.
   'spec.year': 'Year',
+  // D54 — shown beside a year that came from a page other than `source`.
+  // "Announced" rather than "released", because that is the fact Casio's news
+  // release states: it is dated the day Casio said the watch exists, which is
+  // not necessarily the day it reached a shop. D25's argument is that the
+  // catalogue reports what a page says and nothing adjacent to it.
+  'spec.year.source': 'announced',
   'spec.display': 'Display',
   'spec.movement': 'Movement',
   'spec.module': 'Module',

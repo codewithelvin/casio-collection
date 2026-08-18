@@ -103,6 +103,24 @@ export const MODEL = z.strictObject({
   // Range checked in integrity.ts rather than here, so the message can name the
   // year and the file instead of reading "invalid input".
   year: z.number().int().nullish(),
+  /**
+   * D54 — the page that states the year, where it is not the page in `source`.
+   *
+   * Casio's product page dates nothing (D25), which is why `year` is absent
+   * across every line but Vintage. Casio's **news release** does date a
+   * reference — the date is in the URL and on the page — so a year may be read
+   * from there while the specifications still come from the product page. That
+   * is one entry citing two pages, which §10.6 otherwise forbids, and this
+   * field is what makes it honest rather than a merge: the year carries its own
+   * source the way a photograph carries `image_credit`.
+   *
+   * Absent where the year came from the same page as everything else — the
+   * Vintage entries read off The Digital Watch Library are dated by the source
+   * they already cite, and adding a second URL saying the same thing would be
+   * noise. Integrity check 6 enforces the direction that matters: a
+   * `year_source` with no `year` is a citation for a fact that is not there.
+   */
+  year_source: z.url().nullish(),
   display: z.enum(DISPLAYS).nullish(),
   movement: z.enum(MOVEMENTS).nullish(),
   module: z.string().min(1).nullish(),
@@ -203,6 +221,8 @@ export const PUBLISHED_MODEL = z.strictObject({
 
   name: z.string().optional(),
   year: z.number().int().optional(),
+  /** D54 — the page that states the year, where it is not the one in `source`. */
+  year_source: z.url().optional(),
   display: z.enum(DISPLAYS).optional(),
   movement: z.enum(MOVEMENTS).optional(),
   module: z.string().optional(),

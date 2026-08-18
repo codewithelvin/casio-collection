@@ -246,6 +246,14 @@ export function checkIntegrity(
         )
       }
 
+      /* --- check 6: a year read off another page cites it (D54) --- */
+      if (model.year_source && model.year == null) {
+        // The mirror of 5a, failing for the same reason. A citation with
+        // nothing to cite is not a harmless spare field: it asserts that
+        // somebody established a fact the entry does not actually state.
+        fail('6', where, `year_source with no year — a citation for a fact that is not there (D54)`)
+      }
+
       /* --- check 9: a plausible year, or none --- */
       if (model.year != null) {
         const latest = options.currentYear + 1

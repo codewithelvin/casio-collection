@@ -282,6 +282,32 @@ describe('check 5 — an image exists at both widths, or is explicitly absent', 
   })
 })
 
+describe('check 6 — a year read off another page cites it (D54)', () => {
+  const NEWS = 'https://www.casio.com/intl/news/2026/0527-mrg-bf1000eb/'
+
+  it('fails a year_source with no year', () => {
+    // The mirror of 5a. A citation with nothing to cite claims somebody
+    // established a fact the entry does not state.
+    const report = run(aSource({ series: [aSeries({ models: [aModel({ year_source: NEWS })] })] }))
+    expect(checks(report.failures)).toEqual(['6'])
+    expect(report.failures[0]?.message).toMatch(/year_source/)
+  })
+
+  it('passes a year that carries the page stating it', () => {
+    const report = run(
+      aSource({ series: [aSeries({ models: [aModel({ year: 2026, year_source: NEWS })] })] }),
+    )
+    expect(report.failures).toEqual([])
+  })
+
+  it('passes a year with no year_source — the entry’s own source dates it', () => {
+    // Vintage is read off a page that states the year itself, so a second URL
+    // repeating it would be noise. Only the reverse direction is a fault.
+    const report = run(aSource({ series: [aSeries({ models: [aModel({ year: 1991 })] })] }))
+    expect(report.failures).toEqual([])
+  })
+})
+
 describe('check 5a — a photograph names whose it is (D41)', () => {
   const withImages = (models: SeriesSource['models']) =>
     aSource({
