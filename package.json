@@ -19,7 +19,8 @@
     "catalog:build": "node scripts/catalog/build.ts",
     "catalog:images": "node scripts/catalog/images.ts",
     "catalog:audit": "node scripts/catalog/audit.ts",
-    "test:rls": "node scripts/security/rls.ts"
+    "test:rls": "node scripts/security/rls.ts",
+    "ci:status": "node scripts/ci-status.mjs"
   },
   "engines": {
     "node": ">=22.18"

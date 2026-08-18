@@ -112,7 +112,15 @@ export function parse(text: string): Omit<Robots, 'unrestricted'> {
   return { rules, crawlDelayMs, sitemaps }
 }
 
-/** `/a/*​/b$` → a regex. `*` is any run, `$` anchors the end; everything else is literal. */
+/**
+ * A robots path pattern to a regex: a star is any run of characters, a trailing
+ * `$` anchors the end, and everything else is matched literally.
+ *
+ * Written out in words rather than shown, because the obvious example contains a
+ * star followed by a slash and that ends this comment. The first version hid the
+ * problem with a zero-width space, which parsed, read identically, and failed
+ * the lint gate in CI two pushes running.
+ */
 function toRegExp(path: string): RegExp {
   const anchored = path.endsWith('$')
   const body = anchored ? path.slice(0, -1) : path

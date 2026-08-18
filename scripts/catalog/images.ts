@@ -117,20 +117,31 @@ async function runImages(): Promise<boolean> {
      */
     const encoded = await Promise.all(
       outputs.map(async (out) => {
-        let best = { buffer: Buffer.alloc(0), quality: 0 }
-        for (const quality of QUALITY_LADDER) {
-          // Alpha is preserved rather than flattened: a cut-out watch on a
-          // transparent ground sits correctly on both themes (§8.3), and
-          // flattening to white would put a card-coloured box behind it in dark
-          // mode.
-          const buffer = await sharp(sourcePath)
+        // Alpha is preserved rather than flattened: a cut-out watch on a
+        // transparent ground sits correctly on both themes (§8.3), and
+        // flattening to white would put a card-coloured box behind it in dark
+        // mode.
+        const encode = (quality: number) =>
+          sharp(sourcePath)
             .resize({ width: out.width, withoutEnlargement: true })
             .webp({ quality })
             .toBuffer()
-          best = { buffer, quality }
-          if (buffer.length <= out.budget) break
+
+        // No placeholder buffer to seed the loop with: `Buffer.alloc(0)` types as
+        // `Buffer<ArrayBuffer>` where sharp returns `Buffer<ArrayBufferLike>`,
+        // and the mismatch fails `tsc` rather than anything at runtime.
+        // `quality` is widened to `number` deliberately: `QUALITY_LADDER` is
+        // `as const`, so its first element types as the literal `82` and the
+        // step down to 78 will not assign.
+        let attempt = {
+          buffer: await encode(QUALITY_LADDER[0]),
+          quality: QUALITY_LADDER[0] as number,
         }
-        return { out, ...best }
+        for (const quality of QUALITY_LADDER.slice(1)) {
+          if (attempt.buffer.length <= out.budget) break
+          attempt = { buffer: await encode(quality), quality }
+        }
+        return { out, ...attempt }
       }),
     )
 
