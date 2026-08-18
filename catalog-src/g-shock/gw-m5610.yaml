@@ -30,6 +30,19 @@
 # whose capture names no asset for it. The typographic card is the state for
 # those, and it is a primary state rather than a fallback (D29).
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference. Guessing a
 #     release year from a module is exactly what D25 forbids.
@@ -83,6 +96,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    image: gw-m5610-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210414192450id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610-1B/'
   - id: gw-m5610b-1
     ref: GW-M5610B-1
     source:
@@ -105,6 +123,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    image: gw-m5610ba-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210317091451id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610BA-1/'
   - id: gw-m5610bb-1
     ref: GW-M5610BB-1
     source:
@@ -127,6 +150,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    image: gw-m5610bc-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210414201658id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610BC-1/'
   - id: gw-m5610bw-7
     ref: GW-M5610BW-7
     source:
@@ -248,6 +276,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    image: gw-m5610md-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210527113020id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610MD-7/'
   - id: gw-m5610md-9
     ref: GW-M5610MD-9
     source:
@@ -292,6 +325,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    image: gw-m5610nv-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210929015122id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610NV-2/'
   - id: gw-m5610pc-1
     ref: GW-M5610PC-1
     source:
@@ -314,6 +352,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    image: gw-m5610r-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210806193623id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610R-1/'
   - id: gw-m5610rb-4
     ref: GW-M5610RB-4
     source:
@@ -325,6 +368,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    image: gw-m5610rb-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211019100031id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610RB-4/'
   - id: gw-m5610sd-8
     ref: GW-M5610SD-8
     source:

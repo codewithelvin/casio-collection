@@ -28,6 +28,19 @@
 # D2 makes an id permanent and the sourcing rule says a model whose sources
 # disagree on the reference itself is not written at all.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the module.
@@ -35,7 +48,6 @@
 #   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
 #     it. Writing it here would be the catalogue asserting something on Casio's
 #     behalf, which is the one thing FR-10.4 rules out.
-#   * `image` — D41 needs a licence and a proof it is the right watch.
 
 series:
   id: gg-1000
@@ -55,6 +67,11 @@ models:
     movement: quartz
     module: '5476'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+    image: gg-1000-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231007162744id_/https://www.casio.com/za/watches/gshock/product.GG-1000-1A/'
   - id: gg-1000-1a3
     ref: GG-1000-1A3
     source:
@@ -66,6 +83,11 @@ models:
     movement: quartz
     module: '5476'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+    image: gg-1000-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220511205228id_/https://www.casio.com/us/watches/gshock/product.GG-1000-1A3/'
   - id: gg-1000-1a5
     ref: GG-1000-1A5
     source:
@@ -77,6 +99,11 @@ models:
     movement: quartz
     module: '5476'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+    image: gg-1000-1a5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722073245id_/https://www.casio.com/id/watches/gshock/product.GG-1000-1A5/'
   - id: gg-1000-1a8
     ref: GG-1000-1A8
     source:
@@ -88,6 +115,11 @@ models:
     movement: quartz
     module: '5476'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+    image: gg-1000-1a8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220511205228id_/https://www.casio.com/us/watches/gshock/product.GG-1000-1A8/'
   - id: gg-1000btn-1a
     ref: GG-1000BTN-1A
     source:

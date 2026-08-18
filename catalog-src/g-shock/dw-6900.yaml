@@ -52,6 +52,32 @@
 # whose capture names no asset for it. The typographic card is the state for
 # those, and it is a primary state rather than a fallback (D29).
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the module.
@@ -121,6 +147,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900bba-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210805023223id_/https://www.casio.com/jp/watches/gshock/product.DW-6900BBA-1/'
   - id: dw-6900bbn-1
     ref: DW-6900BBN-1
     source:
@@ -471,6 +502,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900gd-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230207150309id_/https://www.casio.com/us/watches/gshock/product.DW-6900GD-9/'
   - id: dw-6900gda-9
     ref: DW-6900GDA-9
     source:
@@ -1125,6 +1161,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900sk-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722073825id_/https://www.casio.com/id/watches/gshock/product.DW-6900SK-1/'
   - id: dw-6900slg-1
     ref: DW-6900SLG-1
     source:
@@ -1321,6 +1362,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900ws-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220511205254id_/https://www.casio.com/us/watches/gshock/product.DW-6900WS-1/'
   - id: dw-6900ws-2
     ref: DW-6900WS-2
     source:
@@ -1332,6 +1378,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900ws-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722072914id_/https://www.casio.com/id/watches/gshock/product.DW-6900WS-2/'
   - id: dw-6900ww-7s
     ref: DW-6900WW-7S
     source:
@@ -1403,6 +1454,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900zb-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220926183813id_/https://www.casio.com/us/watches/gshock/product.DW-6900ZB-8/'
   - id: dw-6900zb-9
     ref: DW-6900ZB-9
     source:

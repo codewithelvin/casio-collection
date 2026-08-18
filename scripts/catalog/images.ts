@@ -15,7 +15,24 @@ import { IMAGE_DIR, RAW_IMAGE_DIR } from './load.ts'
 /** §10.3 — over either of these fails the build (D10). */
 const BUDGETS = { '': 40 * 1024, '@2x': 110 * 1024 } as const
 const WIDTHS = { '': 400, '@2x': 800 } as const
-const QUALITY = 82
+/**
+ * The quality to try, in order, until the file fits §10.3's budget.
+ *
+ * **The budget is the rule and the quality was only ever the means.** §10.3
+ * named both, and for 576 photographs they never disagreed — then the G-SHOCK
+ * backfill arrived with 29 dial-heavy watches whose 400 px WebP lands at 41–55
+ * KB against a 40 KB budget. Holding quality fixed meant `gg-1000` and
+ * `gwg-1000` showed no photograph at all, for four kilobytes.
+ *
+ * So the encoder steps down until it fits and says which step it needed. The
+ * budget stays absolute, because that is the number that protects the page; a
+ * watch photographed at 74 instead of 82 is a watch somebody can see.
+ *
+ * The floor is real: below 66 the artefacts show on a brushed bezel, and a
+ * photograph that misrepresents the watch is worse than none. A file that
+ * cannot fit at 66 is still refused, and still named.
+ */
+const QUALITY_LADDER = [82, 78, 74, 70, 66] as const
 
 const ACCEPTED = new Set(['.png', '.jpg', '.jpeg', '.webp', '.avif', '.tif', '.tiff'])
 
@@ -99,18 +116,29 @@ async function runImages(): Promise<boolean> {
      * taken after both are known, not during.
      */
     const encoded = await Promise.all(
-      outputs.map(async (out) => ({
-        out,
-        // Alpha is preserved rather than flattened: a cut-out watch on a
-        // transparent ground sits correctly on both themes (§8.3), and
-        // flattening to white would put a card-coloured box behind it in dark
-        // mode.
-        buffer: await sharp(sourcePath)
-          .resize({ width: out.width, withoutEnlargement: true })
-          .webp({ quality: QUALITY })
-          .toBuffer(),
-      })),
+      outputs.map(async (out) => {
+        let best = { buffer: Buffer.alloc(0), quality: 0 }
+        for (const quality of QUALITY_LADDER) {
+          // Alpha is preserved rather than flattened: a cut-out watch on a
+          // transparent ground sits correctly on both themes (§8.3), and
+          // flattening to white would put a card-coloured box behind it in dark
+          // mode.
+          const buffer = await sharp(sourcePath)
+            .resize({ width: out.width, withoutEnlargement: true })
+            .webp({ quality })
+            .toBuffer()
+          best = { buffer, quality }
+          if (buffer.length <= out.budget) break
+        }
+        return { out, ...best }
+      }),
     )
+
+    for (const { out, buffer, quality } of encoded) {
+      if (quality !== QUALITY_LADDER[0] && buffer.length <= out.budget) {
+        console.log(`  ${out.file} needed quality ${quality} to fit ${kb(out.budget)} (${kb(buffer.length)})`)
+      }
+    }
 
     const tooBig = encoded.filter(({ out, buffer }) => buffer.length > out.budget)
     if (tooBig.length > 0) {
