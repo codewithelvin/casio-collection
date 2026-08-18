@@ -84,27 +84,47 @@ async function runImages(): Promise<boolean> {
       )
     }
 
-    for (const out of outputs) {
-      // Alpha is preserved rather than flattened: a cut-out watch on a
-      // transparent ground sits correctly on both themes (§8.3), and flattening
-      // to white would put a card-coloured box behind it in dark mode.
-      const buffer = await sharp(sourcePath)
-        .resize({ width: out.width, withoutEnlargement: true })
-        .webp({ quality: QUALITY })
-        .toBuffer()
+    /**
+     * **Encode both, then publish both or neither.**
+     *
+     * Check 5 needs the pair, so a model whose 1× busts the budget cannot be
+     * published whatever its 2× weighs — and writing the 2× anyway leaves a file
+     * no entry references. `catalog:audit` found 26 of those after the
+     * photograph backfill: dead weight in the repo forever, because a half-pair
+     * looks like a success to everything downstream.
+     *
+     * Deleting inside the loop did not fix it and is worth recording: the 1×
+     * failed, removed both files, and then the 2× encoded fine on the next turn
+     * of the same loop and wrote itself straight back. The decision has to be
+     * taken after both are known, not during.
+     */
+    const encoded = await Promise.all(
+      outputs.map(async (out) => ({
+        out,
+        // Alpha is preserved rather than flattened: a cut-out watch on a
+        // transparent ground sits correctly on both themes (§8.3), and
+        // flattening to white would put a card-coloured box behind it in dark
+        // mode.
+        buffer: await sharp(sourcePath)
+          .resize({ width: out.width, withoutEnlargement: true })
+          .webp({ quality: QUALITY })
+          .toBuffer(),
+      })),
+    )
 
-      if (buffer.length > out.budget) {
+    const tooBig = encoded.filter(({ out, buffer }) => buffer.length > out.budget)
+    if (tooBig.length > 0) {
+      for (const { out, buffer } of tooBig) {
         failures.push(
           `${out.file}: ${kb(buffer.length)} is over the ${kb(out.budget)} budget (§10.3). ` +
             `Crop the source, or start from a cleaner original.`,
         )
-        // Nothing half-written is left behind: check 5 then reports the image as
-        // missing until it is fixed, instead of a build passing with a file
-        // nobody meant to publish.
-        await unlink(out.path).catch(() => {})
-        continue
       }
+      await Promise.all(outputs.map((out) => unlink(out.path).catch(() => {})))
+      continue
+    }
 
+    for (const { out, buffer } of encoded) {
       await writeFile(out.path, buffer)
       written += 1
     }

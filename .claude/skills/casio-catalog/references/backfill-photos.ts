@@ -106,8 +106,10 @@ function readSeries(line: string): SeriesFile[] {
  * ------------------------------------------------------------------------- */
 
 const [line, mode] = process.argv.slice(2)
-if (!line || !['--plan', '--crawl', '--recheck', '--write'].includes(mode ?? '')) {
-  console.error('usage: backfill-photos.ts <line> [--plan | --crawl | --recheck | --write]')
+if (!line || !['--plan', '--crawl', '--recheck', '--write', '--gaps'].includes(mode ?? '')) {
+  console.error(
+    'usage: backfill-photos.ts <line> [--plan | --crawl | --recheck | --write | --gaps]',
+  )
   process.exit(1)
 }
 
@@ -141,6 +143,73 @@ const cachedPage = (snapshot: Snapshot): string | null => {
   const file = join(CACHE, `page-${snapshot.ref}-${snapshot.timestamp}.html`)
   if (!existsSync(file) || statSync(file).size === 0) return null
   return readFileSync(file, 'utf8')
+}
+
+/**
+ * **Why each watch has no photograph — one line per model, no exceptions.**
+ *
+ * "483 models have no photograph" is a number, not an account. It cannot tell
+ * anybody whether that is 483 references Casio never published a page for, or a
+ * crawl that quietly stopped, and those need opposite work. Every model without
+ * a picture falls into exactly one of the reasons below, and a model that falls
+ * into none of them is the interesting case: it means nobody has looked yet.
+ *
+ * This reads the caches and the published files. It may fetch the CDX index for
+ * a line nobody has indexed, because that index *is* the answer to "did Casio
+ * publish a page" — but it never fetches a page.
+ */
+if (mode === '--gaps') {
+  const found = await archivedFor(line)
+  const byKey = new Set([...found.keys()].map(key))
+
+  const listed = new Map<string, string>()
+  if (existsSync(listPath)) {
+    for (const row of readFileSync(listPath, 'utf8').split('\n').filter(Boolean)) {
+      const [id, url] = row.split('\t')
+      listed.set(id, url)
+    }
+  }
+
+  const rawDir = join(REPO, 'catalog-src', 'images', 'raw')
+  const raw = new Set(
+    existsSync(rawDir) ? readdirSync(rawDir).map((n) => n.replace(/\.[^.]+$/, '')) : [],
+  )
+
+  const reasons = new Map<string, string[]>()
+  const note = (why: string, ref: string) => {
+    if (!reasons.has(why)) reasons.set(why, [])
+    reasons.get(why)!.push(ref)
+  }
+
+  for (const entry of wanted) {
+    if (!byKey.has(key(entry.ref))) {
+      // Casio published no product page the archive ever captured, in any of the
+      // 29 locales. There is no route to a photograph this way, and that is a
+      // fact about the archive rather than a task for somebody.
+      note('no archived product page in any locale', entry.ref)
+    } else if (!listed.has(entry.id)) {
+      note('archived, but no capture names an asset for this reference', entry.ref)
+    } else if (raw.has(entry.id)) {
+      // The file came down and `catalog:images` would not publish it: over
+      // §10.3's budget at quality 82, which is a decision and not a bug.
+      note('downloaded, refused by the §10.3 size budget', entry.ref)
+    } else {
+      note('listed but not downloaded — run photos.ts', entry.ref)
+    }
+  }
+
+  console.log(`\n${wanted.length} models in ${line} have no photograph:\n`)
+  for (const [why, refs] of [...reasons].sort((a, b) => b[1].length - a[1].length)) {
+    console.log(`  ${String(refs.length).padStart(4)}  ${why}`)
+    console.log(`        ${refs.slice(0, 8).join(', ')}${refs.length > 8 ? `, +${refs.length - 8} more` : ''}`)
+  }
+  const actionable = (reasons.get('listed but not downloaded — run photos.ts') ?? []).length
+  console.log(
+    actionable > 0
+      ? `\n${actionable} are work somebody can do. The rest are the archive's ceiling or §10.3's.`
+      : `\nNone of these is outstanding work: every one is the archive's ceiling or §10.3's.`,
+  )
+  process.exit(0)
 }
 
 if (mode === '--plan' || mode === '--crawl' || mode === '--recheck') {
