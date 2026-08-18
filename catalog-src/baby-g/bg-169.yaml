@@ -20,11 +20,22 @@
 # written. A reader clicking `source` lands on the page every field came from,
 # which is what §10.6's one-page rule is for.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `year` — the guide dates the module, never the reference (D25).
 #   * `case`, `water_resistance_m`, `colorway` — the guide is about the module.
-#   * `image` — D41 needs a licence and a proof it is the right watch, and
-#     Wikimedia Commons has nothing for these (O12).
 
 series:
   id: bg-169
@@ -44,6 +55,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169ch-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250407114834id_/https://www.casio.com/de/watches/babyg/product.BG-169CH-4/'
   - id: bg-169ch-9
     ref: BG-169CH-9
     source:
@@ -55,6 +71,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169ch-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250407114832id_/https://www.casio.com/de/watches/babyg/product.BG-169CH-9/'
   - id: bg-169cm-2
     ref: BG-169CM-2
     source:
@@ -99,6 +120,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169g-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518184000id_/https://www.casio.com/us/watches/babyg/product.bg-169g-1/'
   - id: bg-169g-4
     ref: BG-169G-4
     source:
@@ -110,6 +136,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169g-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518201512id_/https://www.casio.com/us/watches/babyg/product.bg-169g-4/'
   - id: bg-169g-4b
     ref: BG-169G-4B
     source:
@@ -121,6 +152,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169g-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118092539id_/https://www.casio.com/us/watches/babyg/product.BG-169G-4B/'
   - id: bg-169g-7b
     ref: BG-169G-7B
     source:
@@ -132,6 +168,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169g-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250117235146id_/https://www.casio.com/us/watches/babyg/product.BG-169G-7B/'
   - id: bg-169gd-1
     ref: BG-169GD-1
     source:
@@ -165,6 +206,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169hrb-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240708220244id_/https://www.casio.com/de/watches/babyg/product.BG-169HRB-7/'
   - id: bg-169kb-1
     ref: BG-169KB-1
     source:
@@ -209,6 +255,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169m-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118081449id_/https://www.casio.com/us/watches/babyg/product.BG-169M-1/'
   - id: bg-169m-4
     ref: BG-169M-4
     source:
@@ -220,6 +271,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169m-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518191646id_/https://www.casio.com/us/watches/babyg/product.bg-169m-4/'
   - id: bg-169mh-7
     ref: BG-169MH-7
     source:
@@ -242,6 +298,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169pb-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240817234227id_/https://www.casio.com/us/watches/babyg/product.BG-169PB-2/'
   - id: bg-169pb-4
     ref: BG-169PB-4
     source:
@@ -253,6 +314,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169pb-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240817234228id_/https://www.casio.com/us/watches/babyg/product.BG-169PB-4/'
   - id: bg-169pb-7
     ref: BG-169PB-7
     source:
@@ -264,6 +330,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169pb-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240708220332id_/https://www.casio.com/de/watches/babyg/product.BG-169PB-7/'
   - id: bg-169r-1
     ref: BG-169R-1
     source:
@@ -275,6 +346,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626203929id_/https://www.casio.com/intl/watches/babyg/product.BG-169R-1/'
   - id: bg-169r-1b
     ref: BG-169R-1B
     source:
@@ -286,6 +362,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220525043953id_/https://www.casio.com/in/watches/babyg/product.BG-169R-1B/'
   - id: bg-169r-2
     ref: BG-169R-2
     source:
@@ -297,6 +378,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193724id_/https://www.casio.com/us/watches/babyg/product.BG-169R-2/'
   - id: bg-169r-2b
     ref: BG-169R-2B
     source:
@@ -308,6 +394,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220523001837id_/https://www.casio.com/intl/watches/babyg/product.BG-169R-2B/'
   - id: bg-169r-2c
     ref: BG-169R-2C
     source:
@@ -319,6 +410,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-2c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220818231959id_/https://www.casio.com/us/watches/babyg/product.BG-169R-2C/'
   - id: bg-169r-3
     ref: BG-169R-3
     source:
@@ -330,6 +426,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240423041435id_/https://www.casio.com/sg/watches/babyg/product.BG-169R-3/'
   - id: bg-169r-4
     ref: BG-169R-4
     source:
@@ -352,6 +453,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230314061136id_/https://www.casio.com/us/watches/babyg/product.BG-169R-7A/'
   - id: bg-169r-7e
     ref: BG-169R-7E
     source:
@@ -363,6 +469,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-7e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220813204318id_/https://www.casio.com/us/watches/babyg/product.BG-169R-7E/'
   - id: bg-169r-8
     ref: BG-169R-8
     source:
@@ -374,6 +485,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250312143757id_/https://www.casio.com/us/watches/babyg/product.BG-169R-8/'
   - id: bg-169r-8b
     ref: BG-169R-8B
     source:
@@ -385,6 +501,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-8b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220813212604id_/https://www.casio.com/us/watches/babyg/product.BG-169R-8B/'
   - id: bg-169u-1c
     ref: BG-169U-1C
     source:
@@ -396,6 +517,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169u-1c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119142300id_/https://www.casio.com/intl/watches/babyg/product.BG-169U-1C/'
   - id: bg-169u-3
     ref: BG-169U-3
     source:
@@ -407,6 +533,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169u-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119142315id_/https://www.casio.com/intl/watches/babyg/product.BG-169U-3/'
   - id: bg-169u-4b
     ref: BG-169U-4B
     source:
@@ -418,6 +549,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169u-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119142300id_/https://www.casio.com/intl/watches/babyg/product.BG-169U-4B/'
   - id: bg-169u-8b
     ref: BG-169U-8B
     source:
@@ -429,3 +565,8 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169u-8b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119142303id_/https://www.casio.com/intl/watches/babyg/product.BG-169U-8B/'
