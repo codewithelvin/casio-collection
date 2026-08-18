@@ -14,7 +14,7 @@
 // invent. A row it does not recognise is reported by `--survey` and ignored here,
 // which is the direction the error has to fall: an unrecognised row costs a
 // missing field, and a mis-recognised one publishes a wrong fact.
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { ENOUGH_ROWS, imageUrl, snapshots, specRows } from './archive.ts'
