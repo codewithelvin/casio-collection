@@ -123,12 +123,35 @@ self.addEventListener('fetch', (event) => {
   // A navigation gets the shell. The app is a single page; which route it
   // renders is the router's business and the shell is the same file for all of
   // them, including the prerendered ones the SEO step writes.
+  //
+  // NETWORK FIRST, and the cache-first version it replaces was a production
+  // bug. It read \`return cached ?? network\`, so a cached shell always won and
+  // the fresh response it had already begun fetching was discarded — not
+  // stale-while-revalidate either, because nothing wrote the new copy back. The
+  // shell therefore pinned itself to one deploy's hashed chunk names forever;
+  // and since every route is a dynamic import, the next deploy 404'd the chunk
+  // that pinned shell asked for. The visitor got "Failed to fetch dynamically
+  // imported module", and reloading could not clear it because the reload was
+  // answered from the same cache. \`install\` has no \`skipWaiting\` by design, so
+  // the new worker waited for every tab to close while the old one kept serving
+  // a shell pointing at files that no longer existed.
+  //
+  // Network first costs one request on a full page load, which is rare in an
+  // SPA, and it is what lets a deploy reach somebody who already has the site.
+  // Offline is unchanged: the catch falls back to the cached shell (FR-11.4).
+  // The fresh copy is written back, so what is kept for offline is the last
+  // shell that actually worked rather than the first one ever seen.
   if (request.mode === 'navigate') {
     event.respondWith(
-      caches.match('/').then((cached) => {
-        const network = fetch(request).catch(() => cached)
-        return cached ?? network
-      }),
+      fetch(request)
+        .then((response) => {
+          if (response.ok) {
+            const copy = response.clone()
+            void caches.open(SHELL).then((cache) => cache.put('/', copy))
+          }
+          return response
+        })
+        .catch(() => caches.match('/').then((cached) => cached ?? Response.error())),
     )
     return
   }
