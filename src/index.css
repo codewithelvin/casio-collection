@@ -235,3 +235,25 @@ body {
 .cc-skip:focus {
   left: 0;
 }
+
+/*
+ * Keep the modal title out from under the close button.
+ *
+ * AntD gives `.ant-modal-title` no `padding-inline-end` at all and positions the
+ * 32 px close button absolutely in the corner, so the two collide as soon as the
+ * title is long enough to reach it. Measured on "Sign in to keep track of the
+ * watches you own": the text ran to x=630 and the button started at x=615, which
+ * drew a faint grey X on top of the last word.
+ *
+ * It shows up here rather than in AntD's own demos because §8's type scale sets
+ * the base size to 16 — a reference code read at arm's length in a shop — which
+ * renders the title at 18 px instead of AntD's 16. Same title, wider, into the
+ * corner. So this is our type decision's bill rather than a library bug, and it
+ * is paid once here instead of per modal: every future modal inherits the fix,
+ * which a `styles={{ header }}` prop on the two current ones would not.
+ *
+ * 44px is the button's 32 px plus its 13 px inset, less a rounding pixel.
+ */
+.ant-modal-title {
+  padding-inline-end: 44px;
+}
