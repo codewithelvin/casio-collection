@@ -5,12 +5,38 @@ import { aModel, aSeries, aSource } from './catalog.fixtures.ts'
 describe('the published artefact (§6.2)', () => {
   it('keeps the lines in editorial order and counts what is in them', () => {
     const catalog = buildCatalog(aSource())
-    expect(catalog.lines.map((line) => line.id)).toEqual(['g-shock', 'vintage'])
-    expect(catalog.lines.map((line) => line.order)).toEqual([0, 1])
+    expect(catalog.lines.map((line) => line.id)).toEqual(['g-shock'])
+    expect(catalog.lines.map((line) => line.order)).toEqual([0])
     expect(catalog.lines.find((line) => line.id === 'g-shock')?.count).toBe(2)
-    // A line with nothing in it is published with a count of 0 rather than
-    // dropped: the rail lists every line of D15 whether or not it is seeded.
-    expect(catalog.lines.find((line) => line.id === 'vintage')?.count).toBe(0)
+  })
+
+  it('does not publish a line with nothing in it (D51)', () => {
+    // `vintage` is declared in this source's lines.yaml and holds no models. It
+    // used to publish with a count of 0, and the front door rendered that as a
+    // "Not catalogued yet" card — a category with nothing behind it, which is
+    // the thing D51 exists to make impossible rather than merely absent.
+    expect(buildCatalog(aSource()).lines.map((line) => line.id)).not.toContain('vintage')
+  })
+
+  it('takes a line’s order from where it is declared, not from what survives', () => {
+    // g-shock is declared first and vintage second. Put the models in vintage
+    // and none in g-shock: vintage must still publish with order 1. Numbering
+    // the survivors instead would reshuffle the front door every time a line is
+    // seeded, which is exactly what lines.yaml's "no order: field" note forbids.
+    const catalog = buildCatalog(
+      aSource({
+        series: [
+          aSeries({
+            file: 'catalog-src/vintage/f-91w.yaml',
+            folder: 'vintage',
+            series: { id: 'f-91w', name: 'F-91W', line: 'vintage' },
+            models: [aModel({ id: 'f-91w-1', ref: 'F-91W-1' })],
+          }),
+        ],
+      }),
+    )
+    expect(catalog.lines.map((line) => line.id)).toEqual(['vintage'])
+    expect(catalog.lines.find((line) => line.id === 'vintage')?.order).toBe(1)
   })
 
   it('writes the line and the series onto every model, because the YAML does not repeat them', () => {

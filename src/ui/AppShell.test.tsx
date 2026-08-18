@@ -85,18 +85,19 @@ describe('the app shell (§8.1, §8.2)', () => {
     }
   })
 
-  it('carries the model count beside each seeded line (FR-1.1)', async () => {
+  it('carries the model count beside every line in the rail (FR-1.1)', async () => {
     const user = userEvent.setup()
     renderApp('/')
 
     await user.click(await screen.findByRole('button', { name: t('nav.open') }))
 
-    // G-SHOCK has four models in the fixture and Edifice has none. A count of
-    // zero is not rendered: it reads as a claim about Casio rather than about
-    // this catalogue, which is the state seven of the eight lines are in.
+    // This used to assert that Edifice, holding nothing, rendered its name with
+    // no count beside it. D51 removed the state rather than the count: a line
+    // with no models is not published, so every row in the rail has a real
+    // number and none of them can be zero.
     expect(await screen.findByRole('menuitem', { name: /G-SHOCK\s*4/ })).toBeInTheDocument()
-    const edifice = await screen.findByRole('menuitem', { name: /Edifice/ })
-    expect(edifice.textContent).toBe('Edifice')
+    expect(await screen.findByRole('menuitem', { name: /Vintage.*2/ })).toBeInTheDocument()
+    expect(screen.queryByRole('menuitem', { name: /Edifice/ })).toBeNull()
   })
 
   it('labels the Vintage line with both of its senses', async () => {

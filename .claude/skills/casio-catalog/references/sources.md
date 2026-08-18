@@ -3,11 +3,57 @@
 Not where you would expect. Read this before researching anything — every line
 of it was learned by getting it wrong first.
 
+## Read this first: the product page is not closed, it is only offline
+
+Everything below about the 403 wall is still true of **live** casio.com. It stopped
+being the end of the story on 2026-08-17.
+
+**`web.archive.org` serves Casio's own product pages, at 200, in the original
+markup.** The same AEM page that 403s live comes back with its Specifications
+accordion server-rendered and its `/content/dam/` image URLs intact — and those
+image URLs are **still served live by casio.com today, at 200**. So the archive
+is a way of *retrieving* Casio's page, not a new source with its own authority
+(D52), and §10.6's one-page rule binds harder here than anywhere: every field on
+a model seeded this way, and its photograph, come from the one page in
+`source.url`.
+
+```
+node .claude/skills/casio-catalog/references/archive.ts sheen              # what is archived
+node .claude/skills/casio-catalog/references/archive.ts sheen SHE-4550D-7A # one page, read
+node .claude/skills/casio-catalog/references/archive.ts oceanus --all      # the line, as JSON
+```
+
+What this changes: the product page states `case`, `water_resistance_m`,
+`colorway` and the features **about the reference**, where a module guide can
+only ever state them about the module (D25). And it does not need the module at
+all, which is what had Sheen and Oceanus blocked.
+
+Three things it will lie to you about if you let it:
+
+- **Size is not richness.** The reader keeps every capture of a reference and
+  parses them in size order, because the biggest is often the newest template,
+  which carries more chrome and fewer server-rendered rows. OCW-S400-2A's 53 KB
+  capture states **one** specification; the 33 KB capture beside it states eleven.
+- **There are two generations of the row markup, differing by one tag** — the
+  label is an `<h4>` in the 2024 captures and a bare `<div>` in the 2022 ones. A
+  reader written against either returns **zero rows** on the other. Not an error,
+  not a short table: nothing, which reads exactly like a page that states no
+  specifications. That single tag was worth 144 Sheen references.
+- **The playback endpoint 503s under load**, often, and a script without backoff
+  reports "not archived" for a page that is. Never cache a failure — an empty
+  file written for a 503 is a permanent lie that survives the retry that would
+  have fixed it.
+
+D46 still applies: a capture whose accordion states nothing is reported and
+skipped, not filled in from somewhere else.
+
 ## casio.com is open, and it is not the part you want
 
 | Path | Answers |
 | --- | --- |
 | `casio.com/us/watches/...`, `/intl/`, `/jp/`, `gshock.casio.com` | **403** |
+| `web.archive.org/web/<ts>id_/…/product.<REF>/` | **200**, with the specs and the image URLs |
+| `casio.com/content/dam/casio/product-info/…/assets/<REF>[_Seq1].png` | **200** — the photograph, live |
 | `casio.com/content/casio/locales/us/en/watches/casio/product.<REF>.html` | 200, and it is the **location picker** — no product content |
 | `casio.com/content/dam/casio/global/support/manuals/watches/pdf/<NN>/<module>/qw<module>_EN.pdf` | **200** |
 | `support.casio.com/<loc>/manual/manuallist.php?cid=004` | 403 — redirects into the walled site |
@@ -132,9 +178,13 @@ where every field comes from**, and `casiofanmag.com/getmanuals/<line>/` is the
 only thing found that says which guide to open. That is a community source, used
 exactly as ShockBase is: identity, never fields.
 
-**Where the join is empty, the line stays empty.** Sheen and Oceanus have 186
-references between them and almost no module for any of their series. Do not fill
-the gap by deriving a module from a similar reference.
+**Where the join is empty, the line used to stay empty.** Sheen and Oceanus have
+186 references between them and almost no module for any of their series. Do not
+fill the gap by deriving a module from a similar reference — and as of D52 you no
+longer have to, because **those two lines do not need the join at all**. The
+archived product page states the fields itself, so the module is one more thing
+read off the page rather than the key that unlocks it. Everything below about
+casiofanmag's decade gap is still accurate and is no longer a blocker.
 
 **What "no module" actually means for those two, measured 2026-08-17.**
 `getmanuals/sheen/` and `getmanuals/oceanus/` do not 404 — they **301** to
@@ -203,3 +253,53 @@ Wikimedia Commons answers a generic user agent **403**; send a browser agent.
 It holds free photographs of a handful of the references in §10.4's list. Casio's
 own product photography is `rights-reserved` under D11 — never guess a licence,
 and never publish a file whose page does not name one (D41, check 5a).
+
+**Commons photographs vintage Casios and does not photograph current G-SHOCK.**
+Measured: 50 files for F-91W, and **zero** for GA-110, DW-6900, GM-2100,
+GMA-S2100, the Frogmen and the Mudmasters. The one GA-2100 file is a *modified*
+watch. That was O12, and it is closed by the archive rather than by Commons.
+
+**The archived product page names the file, and casio.com serves it.** The page
+carries absolute `/content/dam/casio/product-info/…/assets/<REF>_Seq1.png` URLs,
+and those answer **200** live today with a browser agent. So D41's rule is met
+the way D41 asks it to be met — the file is not derived from the reference, it is
+**read off the page that publishes it**:
+
+```
+image_credit:
+  author: Casio Computer Co., Ltd.
+  licence: rights-reserved
+  url: <the archived product page — the same URL as `source`>
+```
+
+`url` is the archived page rather than the live one for the same reason
+`source.url` is: a credit that cannot be opened is decoration, and the live URL
+403s.
+
+Two traps in the URLs themselves:
+
+- **Take the reference's own asset, not the first image on the page.** Every
+  product page also carries `…/color-variation/…` URLs for the *other*
+  references in the series. Publishing the first match would put a photograph of
+  a different watch under this one's reference, and nothing would go red.
+- **`.transform/<name>/image.png` is a rendition**, capped at whatever width that
+  CSS breakpoint wanted. Take the untransformed asset; `catalog:images` does the
+  resizing, and §10.3's budgets are enforced on the output.
+- **Every locale publishes its own copy of the same asset, and they are not the
+  same bytes.** `SHE-3048PGL-7B_Seq1.png` under `/locales/intl/`, `/sg/` and
+  `/in/` has three different SHA-256s and two different byte lengths, and `de`,
+  `europe` and `us` 404 for it entirely. So a photograph has to be fetched from
+  the URL **its own credit page names** — which means the filename alone cannot
+  decide whether a raw file is current. When `seed.ts` picks a different capture
+  for a reference, the locale in the image URL moves with it. `photos.ts` keeps a
+  `photos-<line>.json` manifest of what was fetched from where, and re-fetches on
+  a mismatch rather than trusting that a file with the right name is the right
+  file.
+
+**Prefer an English capture even over a richer one.** Casio's `de` pages state
+the same rows in German — `Gehäusegröße (L x B x H)`, `Wasserdichtigkeit`,
+`Glas` — and every field reader matches on the English label. A German capture
+therefore clears the row gate with six rows and yields an entry with **no fields
+at all**, displacing a page that would have filled the table. `seed.ts` ranks
+English first and falls back to German rather than dropping the reference, so a
+reference captured only in German is still seeded, sparsely and honestly.

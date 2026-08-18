@@ -140,6 +140,31 @@ and left the prose intact.
 `roster.ts` reads ShockBase, and its filter is the one the reviewed M2b commits
 used, not a new judgement. Do not loosen it to gain references.
 
+**The other route is Casio's own product page (D52), and where it is available it
+is the better one** — it states `case`, `water_resistance_m` and `colorway` about
+the *reference*, which a module guide cannot, and it names the photograph:
+
+```
+node .claude/skills/casio-catalog/references/archive.ts sheen --all   # crawl, slowly
+node .claude/skills/casio-catalog/references/seed.ts    sheen --write # YAML from the cache
+node .claude/skills/casio-catalog/references/photos.ts  sheen         # the photographs
+npm run catalog:images && npm run catalog:build
+```
+
+All four are idempotent and the page cache is the progress, so a crawl the
+archive cuts short is resumed rather than restarted. `seed.ts --survey` prints
+every label and value the cached pages state, which is what to read **before**
+trusting the field mapping on a line nobody has seeded this way yet — the rows
+Casio prints differ between lines, and "the guide talks about hands" is not a
+statement (`sources.md`).
+
+Three silent failures are handled and worth knowing about: the largest capture
+is often the emptiest, two generations of the row markup differ by one tag and
+return **zero rows** rather than an error on the wrong reader, and the archive's
+per-IP cooldown 503s every playback mode at once while the CDX index keeps
+answering. A reference that could not be fetched is reported as **unreachable**
+and never as D46 — those are different facts about different things.
+
 Rules that keep the sourcing honest:
 
 - **One page per model.** The `source` is the page you read the specs off. Do not

@@ -1,0 +1,99 @@
+# SHE-4556 — seeded 2026-08-17 (M9), from Casio's own
+# product pages (D52).
+#
+# EVERY FIELD ON EVERY ENTRY BELOW, AND EVERY PHOTOGRAPH, COMES FROM THE ONE PAGE
+# NAMED IN ITS `source`. That is §10.6's one-page rule met exactly rather than
+# approximately, and it is the reason this line could be seeded at all: a module
+# guide describes a module, so `case`, `water_resistance_m` and the rest could
+# never be written from one (D25), and no source names the module of a current
+# sheen reference anyway. The product page describes the reference.
+#
+# The page answers 403 on casio.com and 200 from the Internet Archive, which is a
+# retrieval route and not a second source — the bytes are Casio's AEM markup, the
+# Specifications accordion is server-rendered in them, and the `/content/dam/`
+# image URL each entry credits is still served live by casio.com today.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `year` — the page states no release date for the reference (D25).
+#   * `family` — a judgement about how a watch looks, and a human's to make
+#     (§10.6 guardrail 4a). Proposed, never written by the skill.
+#   * any field the page does not state. 5 references here; the rows
+#     Casio printed differ between them, and an absent field means the page was
+#     silent, not that the watch lacks it (D27).
+
+series:
+  id: she-4556
+  name: SHE-4556
+  line: sheen
+
+models:
+  - id: she-4556pg-2a
+    ref: SHE-4556PG-2A
+    source:
+      { url: 'https://web.archive.org/web/20230328051657id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PG-2A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 39, width_mm: 32, depth_mm: 6.2, weight_g: 57, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4556pg-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230328051657id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PG-2A/'
+  - id: she-4556pg-7a
+    ref: SHE-4556PG-7A
+    source:
+      { url: 'https://web.archive.org/web/20230328062206id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PG-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 39, width_mm: 32, depth_mm: 6.2, weight_g: 57, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4556pg-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230328062206id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PG-7A/'
+  - id: she-4556pgl-6a
+    ref: SHE-4556PGL-6A
+    source:
+      { url: 'https://web.archive.org/web/20230328045240id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PGL-6A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 39, width_mm: 32, depth_mm: 6.2, weight_g: 27, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4556pgl-6a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230328045240id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PGL-6A/'
+  - id: she-4556pgl-7a
+    ref: SHE-4556PGL-7A
+    source:
+      { url: 'https://web.archive.org/web/20230328055900id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PGL-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 39, width_mm: 32, depth_mm: 6.2, weight_g: 27, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4556pgl-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230328055900id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PGL-7A/'
+  - id: she-4556spg-5a
+    ref: SHE-4556SPG-5A
+    source:
+      { url: 'https://web.archive.org/web/20230328055359id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556SPG-5A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 39, width_mm: 32, depth_mm: 6.2, weight_g: 57, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4556spg-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230328055359id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556SPG-5A/'

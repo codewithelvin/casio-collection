@@ -1,0 +1,71 @@
+# SHE-4550 — seeded 2026-08-17 (M9), from Casio's own
+# product pages (D52).
+#
+# EVERY FIELD ON EVERY ENTRY BELOW, AND EVERY PHOTOGRAPH, COMES FROM THE ONE PAGE
+# NAMED IN ITS `source`. That is §10.6's one-page rule met exactly rather than
+# approximately, and it is the reason this line could be seeded at all: a module
+# guide describes a module, so `case`, `water_resistance_m` and the rest could
+# never be written from one (D25), and no source names the module of a current
+# sheen reference anyway. The product page describes the reference.
+#
+# The page answers 403 on casio.com and 200 from the Internet Archive, which is a
+# retrieval route and not a second source — the bytes are Casio's AEM markup, the
+# Specifications accordion is server-rendered in them, and the `/content/dam/`
+# image URL each entry credits is still served live by casio.com today.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `year` — the page states no release date for the reference (D25).
+#   * `family` — a judgement about how a watch looks, and a human's to make
+#     (§10.6 guardrail 4a). Proposed, never written by the skill.
+#   * any field the page does not state. 3 references here; the rows
+#     Casio printed differ between them, and an absent field means the page was
+#     silent, not that the watch lacks it (D27).
+
+series:
+  id: she-4550
+  name: SHE-4550
+  line: sheen
+
+models:
+  - id: she-4550d-2b
+    ref: SHE-4550D-2B
+    source:
+      { url: 'https://web.archive.org/web/20240714221333id_/https://www.casio.com/europe/watches/sheen/product.SHE-4550D-2B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.5, width_mm: 32.2, depth_mm: 7.6, weight_g: 59, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4550d-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221333id_/https://www.casio.com/europe/watches/sheen/product.SHE-4550D-2B/'
+  - id: she-4550g-9a
+    ref: SHE-4550G-9A
+    source:
+      { url: 'https://web.archive.org/web/20240714221342id_/https://www.casio.com/europe/watches/sheen/product.SHE-4550G-9A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.5, width_mm: 32.2, depth_mm: 7.6, weight_g: 59, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4550g-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221342id_/https://www.casio.com/europe/watches/sheen/product.SHE-4550G-9A/'
+  - id: she-4550pg-4a
+    ref: SHE-4550PG-4A
+    source:
+      { url: 'https://web.archive.org/web/20240714221257id_/https://www.casio.com/europe/watches/sheen/product.SHE-4550PG-4A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.5, width_mm: 32.2, depth_mm: 7.6, weight_g: 59, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4550pg-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221257id_/https://www.casio.com/europe/watches/sheen/product.SHE-4550PG-4A/'

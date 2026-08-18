@@ -53,8 +53,8 @@ const en = {
   'home.lead': 'Browse by line, then by series. Press Owned One on anything you have.',
   'home.linesHeading': 'Lines',
   'home.models': 'models',
-  'home.unseeded': 'Not catalogued yet',
-  'home.unseededHint': 'This line has no references in the catalogue yet.',
+  // `home.unseeded` and `home.unseededHint` sat here until D51. A line holding no
+  // models is no longer published, so there is no card left to write them on.
   'line.seriesHeading': 'Series in this line',
   'line.empty.title': 'This line is not catalogued yet',
   'line.empty.body':

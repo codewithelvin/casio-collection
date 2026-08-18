@@ -153,14 +153,24 @@ export function buildCatalog(source: CatalogSource): CatalogPayload {
     )
   }
 
-  const lines = source.lines.lines.map((line, index) => ({
-    id: line.id,
-    name: line.name,
-    slug: line.slug,
-    accent: line.accent,
-    order: index,
-    count: modelsPerLine.get(line.id) ?? 0,
-  }))
+  // Only lines that actually hold a model are published — D51, and the same
+  // sentence as the family rule below, one level up. `lines.yaml` declares the
+  // lines that *may* be seeded; the artefact describes what exists, and a card
+  // reading "Not catalogued yet" is a category with nothing in it.
+  //
+  // `order` is the index in the declared list and is taken **before** the
+  // filter, so the editorial order of lines.yaml survives a line dropping out
+  // and coming back when it is seeded.
+  const lines = source.lines.lines
+    .map((line, index) => ({
+      id: line.id,
+      name: line.name,
+      slug: line.slug,
+      accent: line.accent,
+      order: index,
+      count: modelsPerLine.get(line.id) ?? 0,
+    }))
+    .filter((line) => line.count > 0)
 
   // Only families that actually hold a series are published. The vocabulary in
   // lines.yaml is a list of names that *may* be used; the artefact describes what

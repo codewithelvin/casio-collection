@@ -1,0 +1,85 @@
+# SHE-4559 — seeded 2026-08-17 (M9), from Casio's own
+# product pages (D52).
+#
+# EVERY FIELD ON EVERY ENTRY BELOW, AND EVERY PHOTOGRAPH, COMES FROM THE ONE PAGE
+# NAMED IN ITS `source`. That is §10.6's one-page rule met exactly rather than
+# approximately, and it is the reason this line could be seeded at all: a module
+# guide describes a module, so `case`, `water_resistance_m` and the rest could
+# never be written from one (D25), and no source names the module of a current
+# sheen reference anyway. The product page describes the reference.
+#
+# The page answers 403 on casio.com and 200 from the Internet Archive, which is a
+# retrieval route and not a second source — the bytes are Casio's AEM markup, the
+# Specifications accordion is server-rendered in them, and the `/content/dam/`
+# image URL each entry credits is still served live by casio.com today.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `year` — the page states no release date for the reference (D25).
+#   * `family` — a judgement about how a watch looks, and a human's to make
+#     (§10.6 guardrail 4a). Proposed, never written by the skill.
+#   * any field the page does not state. 4 references here; the rows
+#     Casio printed differ between them, and an absent field means the page was
+#     silent, not that the watch lacks it (D27).
+
+series:
+  id: she-4559
+  name: SHE-4559
+  line: sheen
+
+models:
+  - id: she-4559bd-1a
+    ref: SHE-4559BD-1A
+    source:
+      { url: 'https://web.archive.org/web/20240408193239id_/https://www.casio.com/intl/watches/sheen/product.SHE-4559BD-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 35, width_mm: 30, depth_mm: 6.2, weight_g: 60, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4559bd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193239id_/https://www.casio.com/intl/watches/sheen/product.SHE-4559BD-1A/'
+  - id: she-4559g-8a
+    ref: SHE-4559G-8A
+    source:
+      { url: 'https://web.archive.org/web/20240408193055id_/https://www.casio.com/intl/watches/sheen/product.SHE-4559G-8A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 35, width_mm: 30, depth_mm: 6.2, weight_g: 60, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4559g-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193055id_/https://www.casio.com/intl/watches/sheen/product.SHE-4559G-8A/'
+  - id: she-4559gl-8a
+    ref: SHE-4559GL-8A
+    source:
+      { url: 'https://web.archive.org/web/20240408193054id_/https://www.casio.com/intl/watches/sheen/product.SHE-4559GL-8A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 35, width_mm: 30, depth_mm: 6.2, weight_g: 25, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4559gl-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193054id_/https://www.casio.com/intl/watches/sheen/product.SHE-4559GL-8A/'
+  - id: she-4559pg-4a
+    ref: SHE-4559PG-4A
+    source:
+      { url: 'https://web.archive.org/web/20240408193244id_/https://www.casio.com/intl/watches/sheen/product.SHE-4559PG-4A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 35, width_mm: 30, depth_mm: 6.2, weight_g: 60, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [sapphire-crystal]
+    image: she-4559pg-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193244id_/https://www.casio.com/intl/watches/sheen/product.SHE-4559PG-4A/'

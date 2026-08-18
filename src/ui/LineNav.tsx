@@ -167,13 +167,14 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
           // from the rail. Clicking the label navigates *and* expands, which is
           // both halves of FR-1.1.
           //
-          // A count of zero is not rendered: it reads as a claim about Casio
-          // rather than about this catalogue, and Sheen and Oceanus are both in
-          // that state today.
+          // The count is always real, because a line holding none is not
+          // published at all (D51). The branch that used to hide a zero went
+          // with it: a guard against a state the artefact can no longer contain
+          // reads as though that state were still possible.
           label: (
             <NavRow
               label={line.name}
-              count={line.count > 0 ? line.count : undefined}
+              count={line.count}
               hasArrow={children.length > 0}
               onClick={() => navigateToLine(line.slug)}
             />

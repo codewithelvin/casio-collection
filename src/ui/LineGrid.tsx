@@ -36,10 +36,12 @@ export const LINE_GUTTER: [number, number] = [16, 16]
 const BODY_HEIGHT = 24 * 3 + 32
 
 /**
- * A line with nothing in it says **"Not catalogued yet"** rather than "0". Those
- * are different claims — one is about this catalogue and the other reads as being
- * about Casio. The card still links through, because the line page has a designed
- * empty state that explains it, and a dead card teaches nothing.
+ * Every card here holds a real count, because **a line with nothing in it is not
+ * published** (D51). This used to read "Not catalogued yet" instead of "0" — a
+ * true sentence about a card that should not have been on the page at all, and
+ * the client's rule is that a category with nothing in it is worse than no
+ * category. It is the same rule §8.4 already applied to a family of one, and the
+ * build applies at the source rather than each grid hiding it separately.
  */
 export function LineGrid({ lines }: { lines: readonly PublishedLine[] }) {
   const { token } = antdTheme.useToken()
@@ -71,7 +73,7 @@ export function LineGrid({ lines }: { lines: readonly PublishedLine[] }) {
                   {line.name}
                 </Typography.Text>
                 <Typography.Text type="secondary" style={{ fontSize: token.fontSizeSM }}>
-                  {line.count > 0 ? `${line.count} ${t('home.models')}` : t('home.unseeded')}
+                  {`${line.count} ${t('home.models')}`}
                 </Typography.Text>
               </Card>
             </Link>

@@ -1,0 +1,81 @@
+# OCW-S6000 — seeded 2026-08-17 (M9), from Casio's own
+# product pages (D52).
+#
+# EVERY FIELD ON EVERY ENTRY BELOW, AND EVERY PHOTOGRAPH, COMES FROM THE ONE PAGE
+# NAMED IN ITS `source`. That is §10.6's one-page rule met exactly rather than
+# approximately, and it is the reason this line could be seeded at all: a module
+# guide describes a module, so `case`, `water_resistance_m` and the rest could
+# never be written from one (D25), and no source names the module of a current
+# oceanus reference anyway. The product page describes the reference.
+#
+# The page answers 403 on casio.com and 200 from the Internet Archive, which is a
+# retrieval route and not a second source — the bytes are Casio's AEM markup, the
+# Specifications accordion is server-rendered in them, and the `/content/dam/`
+# image URL each entry credits is still served live by casio.com today.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `year` — the page states no release date for the reference (D25).
+#   * `family` — a judgement about how a watch looks, and a human's to make
+#     (§10.6 guardrail 4a). Proposed, never written by the skill.
+#   * any field the page does not state. 4 references here; the rows
+#     Casio printed differ between them, and an absent field means the page was
+#     silent, not that the watch lacks it (D27).
+
+series:
+  id: ocw-s6000
+  name: OCW-S6000
+  line: oceanus
+
+models:
+  - id: ocw-s6000-1a
+    ref: OCW-S6000-1A
+    source:
+      { url: 'https://web.archive.org/web/20220603223109id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000-1A/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 47.1, width_mm: 42.5, depth_mm: 8.7, weight_g: 86, material: 'Titanium' }
+    water_resistance_m: 100
+    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ocw-s6000-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220603223109id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000-1A/'
+  - id: ocw-s6000bv-1a
+    ref: OCW-S6000BV-1A
+    source:
+      { url: 'https://web.archive.org/web/20241229110333id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000BV-1A/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 47.1, width_mm: 42.5, depth_mm: 9.3, weight_g: 90, material: 'Titanium' }
+    water_resistance_m: 100
+    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ocw-s6000bv-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241229110333id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000BV-1A/'
+  - id: ocw-s6000jc-2a
+    ref: OCW-S6000JC-2A
+    source:
+      { url: 'https://web.archive.org/web/20231226141530id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000JC-2A/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 47, width_mm: 42.5, depth_mm: 9.2, weight_g: 87, material: 'Titanium' }
+    water_resistance_m: 100
+    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ocw-s6000jc-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231226141530id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000JC-2A/'
+  - id: ocw-s6000sw-2a
+    ref: OCW-S6000SW-2A
+    source:
+      { url: 'https://web.archive.org/web/20230825074523id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000SW-2A/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 47.1, width_mm: 42.5, depth_mm: 9.2, weight_g: 88, material: 'Titanium' }
+    water_resistance_m: 100
+    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ocw-s6000sw-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230825074523id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000SW-2A/'

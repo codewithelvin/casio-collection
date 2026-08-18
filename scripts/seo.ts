@@ -72,7 +72,11 @@ const canonical = (path: string) => `${ORIGIN}/${path}${path === '' ? '' : '/'}`
  * ------------------------------------------------------------------------- */
 
 function homePage(catalog: Catalog): Page {
-  const lines = catalog.lines.filter((line) => line.count > 0)
+  // This filtered out the unseeded lines so the JSON-LD would not offer a reader
+  // a category with nothing in it. D51 moved that decision into the build, where
+  // it holds for the rail and the front door too, so the filter here would now
+  // only be hiding a state the artefact cannot contain.
+  const lines = catalog.lines
   return {
     path: '',
     title: 'Casio Vault — the Casio watch catalogue, and the ones you own',

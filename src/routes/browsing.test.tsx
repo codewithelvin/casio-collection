@@ -10,15 +10,27 @@ import { t } from '../i18n/strings'
  */
 
 describe('the home route', () => {
-  it('lists every line with its real count, and says why a line is empty', async () => {
+  it('lists every published line with its real count', async () => {
     renderApp('/')
 
     const gShock = await screen.findByRole('link', { name: /G-SHOCK/ })
     expect(gShock).toHaveAttribute('href', '/line/g-shock')
+    expect(await screen.findByText(`4 ${t('home.models')}`)).toBeInTheDocument()
+  })
 
-    // "Not catalogued yet" rather than "0". Those are different claims: one is
-    // about this catalogue and the other reads as being about Casio.
-    expect(await screen.findAllByText(t('home.unseeded'))).not.toHaveLength(0)
+  it('puts no card on the front door that has nothing behind it (D51)', async () => {
+    renderApp('/')
+    await screen.findByRole('link', { name: /G-SHOCK/ })
+
+    // The front door used to carry a "Not catalogued yet" card for each of the
+    // five unseeded lines. D51 took that state out of the artefact rather than
+    // out of the card, so the assertion is about every card's count rather than
+    // about one string — "0 models" is the same empty category wearing a number.
+    const cards = screen.getAllByRole('link', { name: new RegExp(`${t('home.models')}$`) })
+    expect(cards.length).toBeGreaterThan(0)
+    for (const card of cards) {
+      expect(card.textContent).not.toMatch(new RegExp(`(^|\\D)0 ${t('home.models')}$`))
+    }
   })
 
   /**
@@ -78,12 +90,16 @@ describe('the line route (FR-1.2)', () => {
     expect(await screen.findByRole('link', { name: 'GA-2100-1A1' })).toBeInTheDocument()
   })
 
-  it('explains an unseeded line instead of showing an empty grid (FR-1.5)', async () => {
+  it('is not reachable for a line that holds nothing (D51)', async () => {
+    // `/line/edifice` used to render a designed "not catalogued yet" page.
+    // Edifice is not in the published artefact when it holds no models, so the
+    // honest answer is that there is no such line *in this catalogue* — which is
+    // what the not-found state already says.
     renderApp('/line/edifice')
-    expect(await screen.findByText(t('line.empty.title'))).toBeInTheDocument()
+    expect(await screen.findByText(t('line.notFound.title'))).toBeInTheDocument()
   })
 
-  it('says so when the line is not one of the seven', async () => {
+  it('says so when the line is not one Casio Vault covers', async () => {
     renderApp('/line/rolex')
     expect(await screen.findByText(t('line.notFound.title'))).toBeInTheDocument()
   })
@@ -99,9 +115,11 @@ describe('the series route', () => {
   })
 
   it('refuses a series that exists but does not live in the line the URL claims', async () => {
-    // /line/edifice/f-91w would otherwise render the Vintage series under an
-    // Edifice breadcrumb — a URL that looks authoritative and is wrong.
-    renderApp('/line/edifice/f-91w')
+    // /line/g-shock/f-91w would otherwise render the Vintage series under a
+    // G-SHOCK breadcrumb — a URL that looks authoritative and is wrong. Both
+    // halves have to exist for this to test what it says: with an unpublished
+    // line in the URL it would pass because the *line* was missing.
+    renderApp('/line/g-shock/f-91w')
     expect(await screen.findByText(t('series.notFound.title'))).toBeInTheDocument()
   })
 })
