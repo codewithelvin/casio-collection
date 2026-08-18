@@ -17,7 +17,7 @@
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { ENOUGH_ROWS, imageUrl, snapshots, specRows } from './archive.ts'
+import { ENOUGH_ROWS, imageUrl, isEnglish, snapshots, specRows } from './archive.ts'
 import { seriesOf } from './sitemap.ts'
 
 const CACHE = join(tmpdir(), 'casio-catalog-cache', 'archive')
@@ -273,7 +273,7 @@ export function toModel(ref: string, url: string, rows: Map<string, string>, ima
 
 const quote = (s: string) => `'${s.replace(/'/g, "''")}'`
 
-function modelYaml(model: Seeded): string {
+export function modelYaml(model: Seeded): string {
   const lines = [`  - id: ${model.id}`, `    ref: ${model.ref}`]
   lines.push(`    source:`)
   lines.push(`      { url: ${quote(model.url)}, kind: official }`)
@@ -384,7 +384,10 @@ if (isMain) {
     const scored = mine
       .map((capture) => {
         const url = candidates.find((c) => c.timestamp === capture.timestamp)?.url ?? ''
-        return { ...capture, url, english: !/\/de\/watches\//.test(url) }
+        // `isEnglish` is a whitelist of the locales Casio writes in English. It
+        // replaced a `!/\/de\//` test that was right for eight locales and wrong
+        // for twenty-nine — see ENGLISH_LOCALES in archive.ts.
+        return { ...capture, url, english: isEnglish(url) }
       })
       .filter((capture) => capture.url !== '')
       .sort((a, b) => Number(b.english) - Number(a.english) || b.rows.size - a.rows.size)

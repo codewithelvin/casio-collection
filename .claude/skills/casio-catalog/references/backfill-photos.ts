@@ -29,7 +29,7 @@
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { imageUrl, page, snapshots, type Snapshot } from './archive.ts'
+import { archivedFor, imageUrl, page, type Snapshot } from './archive.ts'
 
 const CACHE = join(tmpdir(), 'casio-catalog-cache', 'archive')
 const REPO = join(import.meta.dirname, '..', '..', '..', '..')
@@ -41,44 +41,6 @@ const quote = (s: string) => `'${s.replace(/'/g, "''")}'`
 
 /** Casio prints the same reference with and without its hyphens across systems. */
 const key = (ref: string) => ref.toUpperCase().replace(/[^A-Z0-9]/g, '')
-
-/**
- * **This catalogue's line id is not casio.com's URL segment, and the difference
- * is silent.** `g-shock` here is `gshock` there; `baby-g` is `babyg`; `pro-trek`
- * is `protrek`. Sheen and Oceanus happen to match, which is why `seed.ts` was
- * able to pass the line id straight through and why nothing had caught this.
- *
- * A CDX query on the wrong segment answers **200 with an empty list**, and the
- * first run of this script duly reported "0 archived product pages" for all 670
- * G-SHOCK references — a well-formed answer to the wrong question, which is the
- * exact shape of lie `sources.md` keeps a section for. The segments below are
- * read off Casio's own sitemap (`node sitemap.ts`), not guessed.
- *
- * A line can have more than one: Casio files 31 references under
- * `gshock/lifestyle` that are G-SHOCKs like any other.
- */
-const SEGMENTS: Record<string, string[]> = {
-  'g-shock': ['gshock', 'gshock/lifestyle'],
-  'baby-g': ['babyg'],
-  edifice: ['edifice'],
-  'pro-trek': ['protrek'],
-  sheen: ['sheen'],
-  oceanus: ['oceanus'],
-  vintage: ['casio/vintage', 'casio'],
-}
-
-/** Every archived capture for a line, across every segment Casio files it under. */
-async function archived(line: string): Promise<Map<string, Snapshot[]>> {
-  const merged = new Map<string, Snapshot[]>()
-  for (const segment of SEGMENTS[line] ?? [line]) {
-    for (const [ref, list] of await snapshots(segment)) {
-      // Four captures per reference is `snapshots()`'s bound on politeness, and
-      // merging two segments must not quietly double it.
-      merged.set(ref, [...(merged.get(ref) ?? []), ...list].slice(0, 4))
-    }
-  }
-  return merged
-}
 
 /* ------------------------------------------------------------------------- *
  * Reading the series files
@@ -182,7 +144,7 @@ const cachedPage = (snapshot: Snapshot): string | null => {
 }
 
 if (mode === '--plan' || mode === '--crawl' || mode === '--recheck') {
-  const found = await archived(line)
+  const found = await archivedFor(line)
   const byKey = new Map<string, Snapshot[]>()
   for (const [ref, list] of found) byKey.set(key(ref), list)
 

@@ -22,6 +22,7 @@
 // model seeded this way, and its photograph, come from the single page named in
 // `source.url`.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { allowed } from './robots.ts'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 
@@ -55,6 +56,14 @@ const PACE_MS = 5_000
  * worse and then reports the line as unarchived.
  */
 async function fetchText(url: string, tries = 4): Promise<string | null> {
+  // Ask before knocking. Everything here sends a browser user agent because
+  // casio.com 403s anything else, so the site cannot tell us apart from a person
+  // — which makes robots.txt the only place it can say no, and the only place we
+  // can be sure we heard it.
+  if (!(await allowed(url))) {
+    console.error(`  robots.txt disallows ${url}`)
+    return null
+  }
   const backoff = [30_000, 60_000, 120_000, 240_000]
   for (let attempt = 0; attempt < tries; attempt++) {
     const res = await fetch(url, { headers: { 'user-agent': UA } }).catch(() => null)
@@ -86,6 +95,49 @@ async function cached(key: string, url: string): Promise<string | null> {
   return body
 }
 
+/**
+ * Every locale casio.com actually serves, measured rather than guessed.
+ *
+ * The list is what answered **200** to `casio.com/<locale>/sitemap.xml` out of 50
+ * plausible codes, so it is Casio's own answer to which locales exist. It matters
+ * because the archive indexes each locale separately: the first photograph
+ * backfill asked eight of these and found a product page for 259 of G-SHOCK's
+ * 670 references. A reference is not unarchived because `us` and `intl` missed
+ * it — it may only ever have been sold, and captured, in Brazil or Japan.
+ *
+ * Locales that stop existing cost one CDX request each and return nothing, so
+ * this list degrades quietly rather than breaking.
+ */
+export const LOCALES = [
+  'us', 'intl', 'de', 'uk', 'europe', 'asia', 'sg', 'in',
+  'fr', 'es', 'it', 'nl', 'tr', 'br', 'mx', 'latin',
+  'id', 'my', 'th', 'vn', 'ph', 'tw', 'hk', 'kr',
+  'jp', 'cn', 'za', 'pt', 'se',
+] as const
+
+/**
+ * The locales whose pages are written in English.
+ *
+ * **This is a whitelist because the blacklist it replaces was one locale wide.**
+ * `seed.ts` ranks an English capture above a richer foreign one, and it did that
+ * by testing the URL for `/de/` — correct while the crawler only knew eight
+ * locales, seven of them English. With 29 it is actively dangerous: a French or
+ * Japanese capture would pass the test, win on row count, and yield an entry
+ * that clears D50's row gate with **no fields on it at all**, because every
+ * field reader matches an English label. That failure is already recorded in
+ * `sources.md` for German; widening the locale list without widening this test
+ * would have reintroduced it in twenty-one new languages at once.
+ */
+export const ENGLISH_LOCALES: ReadonlySet<string> = new Set([
+  'us', 'intl', 'uk', 'europe', 'asia', 'sg', 'in', 'za', 'ph', 'my',
+])
+
+/** Is this archived URL a page written in English? */
+export const isEnglish = (url: string): boolean => {
+  const locale = /https?:\/\/[^/]*casio\.com\/([^/]+)\//.exec(url)?.[1]
+  return locale ? ENGLISH_LOCALES.has(locale) : false
+}
+
 export interface Snapshot {
   ref: string
   /** The archived URL — this is what goes in `source.url`, because it answers. */
@@ -110,7 +162,7 @@ export interface Snapshot {
  */
 export async function snapshots(line: string): Promise<Map<string, Snapshot[]>> {
   const sized = new Map<string, (Snapshot & { length: number })[]>()
-  for (const locale of ['us', 'intl', 'de', 'uk', 'europe', 'asia', 'sg', 'in']) {
+  for (const locale of LOCALES) {
     const query = `www.casio.com/${locale}/watches/${line}/product.*`
     const url =
       `http://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(query)}` +
@@ -141,6 +193,41 @@ export async function snapshots(line: string): Promise<Map<string, Snapshot[]>> 
       list.sort((a, b) => b.length - a.length).slice(0, 4),
     ]),
   )
+}
+
+/**
+ * This catalogue's line id → the segment casio.com files it under.
+ *
+ * They are not the same and the difference is silent: `g-shock` is `gshock`
+ * there, `baby-g` is `babyg`, `vintage` lives under `casio/vintage`. A CDX query
+ * on the wrong segment answers **200 with an empty list**, which is how the
+ * first photograph backfill reported "0 archived product pages" for all 670
+ * G-SHOCK references. Read off Casio's own sitemap (`node sitemap.ts`).
+ *
+ * A line can have more than one: 31 G-SHOCKs live under `gshock/lifestyle`, and
+ * the vintage roster is carved out of the general `casio` one.
+ */
+export const SEGMENTS: Record<string, string[]> = {
+  'g-shock': ['gshock', 'gshock/lifestyle'],
+  'baby-g': ['babyg'],
+  edifice: ['edifice'],
+  'pro-trek': ['protrek'],
+  sheen: ['sheen'],
+  oceanus: ['oceanus'],
+  vintage: ['casio/vintage', 'casio'],
+}
+
+/** Every archived capture for a line, across every segment Casio files it under. */
+export async function archivedFor(line: string): Promise<Map<string, Snapshot[]>> {
+  const merged = new Map<string, Snapshot[]>()
+  for (const segment of SEGMENTS[line] ?? [line]) {
+    for (const [ref, list] of await snapshots(segment)) {
+      // Four captures per reference is `snapshots()`'s bound on politeness, and
+      // merging two segments must not quietly double it.
+      merged.set(ref, [...(merged.get(ref) ?? []), ...list].slice(0, 4))
+    }
+  }
+  return merged
 }
 
 /** A specification table worth the name. Below this the page is reported, not read. */

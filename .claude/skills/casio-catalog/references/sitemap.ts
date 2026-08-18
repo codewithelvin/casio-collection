@@ -14,6 +14,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
+import { allowed } from './robots.ts'
 
 /** Downloads are cached OUTSIDE the repo — they are large and they are not source. */
 const CACHE = join(tmpdir(), 'casio-catalog-cache')
@@ -27,7 +28,9 @@ export async function refresh(): Promise<void> {
   for (const loc of LOCALES) {
     const f = join(CACHE, `sm-${loc}.xml`)
     if (existsSync(f)) continue
-    const res = await fetch(`https://www.casio.com/${loc}/sitemap.xml`, {
+    const url = `https://www.casio.com/${loc}/sitemap.xml`
+    if (!(await allowed(url))) throw new Error(`${loc} → robots.txt disallows ${url}`)
+    const res = await fetch(url, {
       headers: { 'user-agent': UA },
     })
     if (!res.ok) throw new Error(`${loc} → HTTP ${res.status}`)

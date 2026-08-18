@@ -151,7 +151,23 @@ export function OwnershipControls({
         // spinner where an unmarked button has no icon, so a button sized by
         // its content would resize under the cursor mid-press. Sized by its
         // row, it cannot.
-        style={{ flex: 1, minWidth: 0 }}
+        //
+        // **Unmarked, it wears the accent rather than the default grey.** §8.7
+        // asks for "outline when not", and this is still an outline — what
+        // changes is that the outline is Casio blue instead of the neutral
+        // border every secondary control on the page already uses. This is the
+        // one action the whole product exists for (the product in one line:
+        // press *Owned One*), and rendering it in the same grey as a filter
+        // reset said the opposite. The marked state keeps its solid fill, so
+        // the two are still told apart by fill and by the check, not by hue
+        // alone — which matters for anyone who cannot use the hue.
+        style={{
+          flex: 1,
+          minWidth: 0,
+          ...(owned
+            ? {}
+            : { borderColor: 'var(--cc-accent, #0033a0)', color: 'var(--cc-accent, #0033a0)' }),
+        }}
       >
         {owned ? t('owned.marked') : t('owned.mark')}
       </Button>

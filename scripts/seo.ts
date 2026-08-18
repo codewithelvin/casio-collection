@@ -393,6 +393,73 @@ function render(shell: string, page: Page, hints: string[]): string {
  * mono 400 for a reference code, which is what every card is made of.
  * Preloading all five would compete with the bundle for the same connection.
  */
+/* ------------------------------------------------------------------------- *
+ * robots.txt
+ * ------------------------------------------------------------------------- */
+
+/**
+ * The paths no crawler should list, and why each one.
+ *
+ * `/u/` is the important one, and it is a **privacy** decision rather than a
+ * crawl-budget one (D45). FR-7.3 tells somebody that publishing means "anyone
+ * with the link can read it". Being listed in Google is a materially different
+ * sentence, and the person who agreed to the first did not agree to the second.
+ * The pages stay public and shareable; they are simply not advertised.
+ *
+ * `/collection` and `/settings` need a session and would only ever render the
+ * sign-in panel to a crawler. `/auth/` is a redirect target and never a page.
+ */
+const DISALLOWED = ['/auth/', '/collection', '/settings', '/u/']
+
+/**
+ * Crawlers named individually, all of them given exactly the rules above.
+ *
+ * **Nothing here is blocked that `*` does not already block**, and that is the
+ * client's decision: the catalogue is public Casio reference data and being read
+ * is the point (D45 exists to make it findable). What the named groups buy is
+ * the private paths — a crawler that reads its own group and ignores `*` still
+ * sees that `/u/` is closed, and `/u/` is the one place this site holds anything
+ * belonging to a person.
+ *
+ * Consecutive `User-agent` lines share the rules that follow them, which is how
+ * the standard says to address a set of agents with one block.
+ */
+const NAMED_CRAWLERS = [
+  // Search
+  'Googlebot', 'Googlebot-Image', 'Bingbot', 'Slurp', 'DuckDuckBot', 'Baiduspider',
+  'YandexBot', 'Applebot', 'Qwantify', 'SeznamBot', 'Naverbot',
+  // Assistants and training corpora
+  'GPTBot', 'ChatGPT-User', 'OAI-SearchBot', 'ClaudeBot', 'Claude-User',
+  'Claude-SearchBot', 'anthropic-ai', 'CCBot', 'Google-Extended', 'Applebot-Extended',
+  'PerplexityBot', 'Perplexity-User', 'Bytespider', 'Amazonbot', 'meta-externalagent',
+  'FacebookBot', 'cohere-ai', 'Diffbot', 'ImagesiftBot', 'Omgilibot', 'YouBot',
+  'Timpibot', 'AI2Bot', 'Kangaroo Bot', 'Webzio-Extended',
+  // Link previews — these fetch a single page to render a card, and a watch
+  // shared into a chat should still show its photograph and its reference.
+  'facebookexternalhit', 'Twitterbot', 'LinkedInBot', 'Slackbot', 'Discordbot',
+  'TelegramBot', 'WhatsApp', 'Mastodon', 'Pinterestbot',
+]
+
+export function robotsTxt(): string {
+  const rules = ['Allow: /', ...DISALLOWED.map((path) => `Disallow: ${path}`)]
+  return [
+    '# casiovault.com — an independent, non-commercial Casio catalogue.',
+    '# Not affiliated with or endorsed by Casio Computer Co., Ltd.',
+    '',
+    'User-agent: *',
+    ...rules,
+    '',
+    '# Every crawler below gets the same answer as *. Named individually so that',
+    '# one reading only its own group still sees that /u/ is closed: a member',
+    '# published a page for people with the link, not for an index.',
+    ...NAMED_CRAWLERS.map((agent) => `User-agent: ${agent}`),
+    ...rules,
+    '',
+    `Sitemap: ${ORIGIN}/sitemap.xml`,
+    '',
+  ].join('\n')
+}
+
 async function resourceHints(): Promise<string[]> {
   const assets = await readdir(join(dist, 'assets'))
   const critical = assets.filter(
@@ -453,30 +520,7 @@ async function main() {
     'utf8',
   )
 
-  /**
-   * `/u/` is disallowed on purpose, and it is a privacy decision rather than a
-   * crawl-budget one. FR-7.3 tells somebody that publishing means "anyone with
-   * the link can read it". Being listed in Google is a materially different
-   * thing from that sentence, and the person agreeing to it did not agree to
-   * the second. The pages stay public and shareable; they are simply not
-   * advertised. `/collection` and `/settings` need a session and would only
-   * ever render the sign-in panel to a crawler.
-   */
-  await writeFile(
-    join(dist, 'robots.txt'),
-    [
-      'User-agent: *',
-      'Allow: /',
-      'Disallow: /auth/',
-      'Disallow: /collection',
-      'Disallow: /settings',
-      'Disallow: /u/',
-      '',
-      `Sitemap: ${ORIGIN}/sitemap.xml`,
-      '',
-    ].join('\n'),
-    'utf8',
-  )
+  await writeFile(join(dist, 'robots.txt'), robotsTxt(), 'utf8')
 
   console.log(
     `seo: ${pages.length} pages written (${indexed.length} in the sitemap), robots.txt, sitemap.xml`,

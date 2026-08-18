@@ -54,17 +54,28 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
     <Layout.Footer
       style={{
         borderTop: `1px solid ${token.colorBorderSecondary}`,
-        padding: '12px 16px',
+        padding: '10px 16px',
         background: token.colorBgContainer,
       }}
     >
-      <div style={{ maxWidth: 960, margin: '0 auto', display: 'grid', gap: 4 }}>
+      <div style={{ maxWidth: 960, margin: '0 auto', display: 'grid', gap: 2 }}>
         <p
           style={{
             margin: 0,
             fontSize: token.fontSize,
-            lineHeight: token.lineHeight,
+            // Measured before it was changed: at 360 px the footer was 191 px,
+            // **24% of the screen**, and principle 5 says the phone is the real
+            // device. The size stays — §8.11 requires this sentence in legible
+            // body text and not small print, and it is what pays for a name, a
+            // bezel and a blue that all point at Casio. What comes down is the
+            // leading, which costs nothing legally and 1.5 never earned on a
+            // three-line paragraph of small type.
+            lineHeight: 1.4,
             color: token.colorText,
+            // No `maxWidth` here, and that was measured too: a 68ch measure reads
+            // better in the abstract and wrapped this sentence onto a second line
+            // at 1280 px, making the footer *taller* on desktop while saving
+            // nothing on the phone. The 960 container is the only limit it needs.
           }}
         >
           {t('footer.disclaimer')}
@@ -75,9 +86,9 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
             display: 'flex',
             flexWrap: 'wrap',
             columnGap: 6,
-            rowGap: 2,
+            rowGap: 0,
             fontSize: token.fontSizeSM,
-            lineHeight: token.lineHeightSM,
+            lineHeight: 1.35,
             color: token.colorTextSecondary,
           }}
         >

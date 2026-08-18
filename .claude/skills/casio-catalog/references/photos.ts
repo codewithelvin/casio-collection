@@ -12,6 +12,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { extname, join } from 'node:path'
+import { allowed } from './robots.ts'
 
 const CACHE = join(tmpdir(), 'casio-catalog-cache', 'archive')
 const RAW = join(import.meta.dirname, '..', '..', '..', '..', 'catalog-src', 'images', 'raw')
@@ -27,7 +28,14 @@ if (!line) {
   process.exit(1)
 }
 
-const list = join(CACHE, `${line}-images.tsv`)
+/**
+ * Which list to fetch. Defaults to the line's own, so every existing call is
+ * unchanged; `seed-into.ts` writes a per-series list and passes its name, because
+ * adding 24 A168 photographs must not overwrite the vintage line's list.
+ */
+const listKey = process.argv[3] ?? line
+
+const list = join(CACHE, `${listKey}-images.tsv`)
 if (!existsSync(list)) {
   console.error(`No ${list}. Run: node seed.ts ${line} --write`)
   process.exit(1)
@@ -47,7 +55,7 @@ mkdirSync(RAW, { recursive: true })
  * Skipping on "a file with that name exists" would preserve the mismatch
  * forever.
  */
-const manifestPath = join(CACHE, `photos-${line}.json`)
+const manifestPath = join(CACHE, `photos-${listKey}.json`)
 const manifest: Record<string, string> = existsSync(manifestPath)
   ? JSON.parse(readFileSync(manifestPath, 'utf8'))
   : {}
@@ -68,6 +76,10 @@ for (const row of readFileSync(list, 'utf8').split('\n').filter(Boolean)) {
     continue
   }
 
+  if (!(await allowed(url))) {
+    refused.push(`${id}: robots.txt disallows ${url}`)
+    continue
+  }
   const res = await fetch(url, { headers: { 'user-agent': UA } }).catch(() => null)
   if (!res || res.status !== 200) {
     refused.push(`${id}: HTTP ${res?.status ?? 'no response'}`)
