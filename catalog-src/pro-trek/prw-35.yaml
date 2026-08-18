@@ -20,11 +20,22 @@
 # written. A reader clicking `source` lands on the page every field came from,
 # which is what §10.6's one-page rule is for.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `year` — the guide dates the module, never the reference (D25).
 #   * `case`, `water_resistance_m`, `colorway` — the guide is about the module.
-#   * `image` — D41 needs a licence and a proof it is the right watch, and
-#     Wikimedia Commons has nothing for these (O12).
 
 series:
   id: prw-35
@@ -44,6 +55,11 @@ models:
     movement: solar-radio
     module: '3490'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    image: prw-35-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221416id_/https://www.casio.com/europe/watches/protrek/product.PRW-35-1A/'
   - id: prw-35-7
     ref: PRW-35-7
     source:
@@ -55,6 +71,11 @@ models:
     movement: solar-radio
     module: '3490'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    image: prw-35-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121085154id_/https://www.casio.com/in/watches/protrek/product.PRW-35-7/'
   - id: prw-35ld-5
     ref: PRW-35LD-5
     source:
@@ -77,6 +98,11 @@ models:
     movement: solar-radio
     module: '3490'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    image: prw-35y-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231119162205id_/https://www.casio.com/de/watches/protrek/product.PRW-35Y-1B/'
   - id: prw-35y-2
     ref: PRW-35Y-2
     source:
@@ -99,6 +125,11 @@ models:
     movement: solar-radio
     module: '3490'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    image: prw-35y-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144259id_/https://www.casio.com/in/watches/protrek/product.PRW-35Y-3/'
   - id: prw-35y-3b
     ref: PRW-35Y-3B
     source:
@@ -110,3 +141,8 @@ models:
     movement: solar-radio
     module: '3490'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    image: prw-35y-3b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121085037id_/https://www.casio.com/in/watches/protrek/product.PRW-35Y-3B/'

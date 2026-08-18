@@ -20,11 +20,22 @@
 # written. A reader clicking `source` lands on the page every field came from,
 # which is what §10.6's one-page rule is for.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `year` — the guide dates the module, never the reference (D25).
 #   * `case`, `water_resistance_m`, `colorway` — the guide is about the module.
-#   * `image` — D41 needs a licence and a proof it is the right watch, and
-#     Wikimedia Commons has nothing for these (O12).
 
 series:
   id: prg-30
@@ -44,6 +55,11 @@ models:
     movement: solar
     module: '3499'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    image: prg-30-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220816162654id_/https://www.casio.com/in/watches/protrek/product.PRG-30-1/'
   - id: prg-30-2
     ref: PRG-30-2
     source:
@@ -55,6 +71,11 @@ models:
     movement: solar
     module: '3499'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    image: prg-30-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220816153154id_/https://www.casio.com/in/watches/protrek/product.PRG-30-2/'
   - id: prg-30-5
     ref: PRG-30-5
     source:
@@ -66,6 +87,11 @@ models:
     movement: solar
     module: '3499'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    image: prg-30-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220816165024id_/https://www.casio.com/in/watches/protrek/product.PRG-30-5/'
   - id: prg-30b-3
     ref: PRG-30B-3
     source:
@@ -77,6 +103,11 @@ models:
     movement: solar
     module: '3499'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    image: prg-30b-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220929202407id_/https://www.casio.com/in/watches/protrek/product.PRG-30B-3/'
   - id: prg-30b-4
     ref: PRG-30B-4
     source:
@@ -88,3 +119,8 @@ models:
     movement: solar
     module: '3499'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    image: prg-30b-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220929213812id_/https://www.casio.com/in/watches/protrek/product.PRG-30B-4/'
