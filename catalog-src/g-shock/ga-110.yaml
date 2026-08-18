@@ -31,6 +31,19 @@
 # stops. The watch on the wrist may well have a full auto-calendar; this page
 # does not say so, and guardrail 2 is that unknown is unknown.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the module.
@@ -38,7 +51,6 @@
 #   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
 #     it. Writing it here would be the catalogue asserting something on Casio's
 #     behalf, which is the one thing FR-10.4 rules out.
-#   * `image` — D41 needs a licence and a proof it is the right watch.
 
 series:
   id: ga-110
@@ -58,6 +70,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065325id_/https://www.casio.com/europe/watches/gshock/product.GA-110-1A/'
   - id: ga-110-1b
     ref: GA-110-1B
     source:
@@ -69,6 +86,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065355id_/https://www.casio.com/europe/watches/gshock/product.GA-110-1B/'
   - id: ga-110a-4
     ref: GA-110A-4
     source:
@@ -289,6 +311,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110bwp-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065330id_/https://www.casio.com/europe/watches/gshock/product.GA-110BWP-2A/'
   - id: ga-110by-1a
     ref: GA-110BY-1A
     source:
@@ -366,6 +393,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110cd-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135621id_/https://www.casio.com/de/watches/gshock/product.GA-110CD-1A2/'
   - id: ga-110cd-1a3
     ref: GA-110CD-1A3
     source:
@@ -377,6 +409,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110cd-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408194018id_/https://www.casio.com/us/watches/gshock/product.GA-110CD-1A3/'
   - id: ga-110cd-1a9
     ref: GA-110CD-1A9
     source:
@@ -388,6 +425,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110cd-1a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084710id_/https://www.casio.com/us/watches/gshock/product.GA-110CD-1A9/'
   - id: ga-110cm-1a
     ref: GA-110CM-1A
     source:
@@ -498,6 +540,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110dbr-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625142249id_/https://www.casio.com/in/watches/gshock/product.GA-110DBR-7A/'
   - id: ga-110dc-1a
     ref: GA-110DC-1A
     source:
@@ -663,6 +710,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110gb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065351id_/https://www.casio.com/europe/watches/gshock/product.GA-110GB-1A/'
   - id: ga-110gbg-7a
     ref: GA-110GBG-7A
     source:
@@ -806,6 +858,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110hd-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240709034322id_/https://www.casio.com/de/watches/gshock/product.GA-110HD-8A/'
   - id: ga-110hds-7a
     ref: GA-110HDS-7A
     source:
@@ -828,6 +885,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110hr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220521183422id_/https://www.casio.com/sg/watches/gshock/product.GA-110HR-1A/'
   - id: ga-110ht-1a
     ref: GA-110HT-1A
     source:
@@ -982,6 +1044,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110ll-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065649id_/https://www.casio.com/europe/watches/gshock/product.GA-110LL-1A/'
   - id: ga-110lm-7a
     ref: GA-110LM-7A
     source:
@@ -1004,6 +1071,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110ln-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220511205351id_/https://www.casio.com/us/watches/gshock/product.GA-110LN-1A/'
   - id: ga-110ln-2a
     ref: GA-110LN-2A
     source:
@@ -1114,6 +1186,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110ls-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220521183017id_/https://www.casio.com/sg/watches/gshock/product.GA-110LS-7A/'
   - id: ga-110lt-1a
     ref: GA-110LT-1A
     source:
@@ -1147,6 +1224,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110mb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221104162707id_/https://www.casio.com/us/watches/gshock/product.GA-110MB-1A/'
   - id: ga-110mc-1a
     ref: GA-110MC-1A
     source:
@@ -1202,6 +1284,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110mf-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240910021249id_/https://www.casio.com/in/watches/gshock/product.GA-110MF-1A/'
   - id: ga-110mh-7a
     ref: GA-110MH-7A
     source:
@@ -1411,6 +1498,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110rg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220811075606id_/https://www.casio.com/us/watches/gshock/product.GA-110RG-1A/'
   - id: ga-110rg-7a
     ref: GA-110RG-7A
     source:
@@ -1422,6 +1514,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110rg-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625103213id_/https://www.casio.com/intl/watches/gshock/product.GA-110RG-7A/'
   - id: ga-110rl-1a
     ref: GA-110RL-1A
     source:
@@ -1433,6 +1530,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110rl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250122195917id_/https://www.casio.com/us/watches/gshock/product.GA-110RL-1A/'
   - id: ga-110rrb-4a
     ref: GA-110RRB-4A
     source:
@@ -1554,6 +1656,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110slc-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221128073536id_/https://www.casio.com/de/watches/gshock/product.GA-110SLC-9A/'
   - id: ga-110slv-1a
     ref: GA-110SLV-1A
     source:
@@ -1598,6 +1705,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110sr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065339id_/https://www.casio.com/europe/watches/gshock/product.GA-110SR-1A/'
   - id: ga-110ss-1a
     ref: GA-110SS-1A
     source:
@@ -1609,6 +1721,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110ss-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221602id_/https://www.casio.com/europe/watches/gshock/product.GA-110SS-1A/'
   - id: ga-110tl-7a
     ref: GA-110TL-7A
     source:
@@ -1631,6 +1748,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110tls-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241117230241id_/https://www.casio.com/us/watches/gshock/product.GA-110TLS-8A/'
   - id: ga-110tp-1a
     ref: GA-110TP-1A
     source:
@@ -1719,6 +1841,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110tu-1a5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240910213515id_/https://www.casio.com/us/watches/gshock/product.GA-110TU-1A5/'
   - id: ga-110tx-1a
     ref: GA-110TX-1A
     source:
@@ -1785,6 +1912,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110wd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126221830id_/https://www.casio.com/us/watches/gshock/product.GA-110WD-1A/'
   - id: ga-110wg-7a
     ref: GA-110WG-7A
     source:
@@ -1807,6 +1939,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110wlp-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220126141624id_/https://www.casio.com/sg/watches/gshock/product.GA-110WLP-7A/'
   - id: ga-110ws-7a
     ref: GA-110WS-7A
     source:
@@ -1818,6 +1955,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110ws-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231030235814id_/https://www.casio.com/sg/watches/gshock/product.GA-110WS-7A/'
   - id: ga-110y-9a
     ref: GA-110Y-9A
     source:
@@ -1829,3 +1971,8 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    image: ga-110y-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230322094529id_/https://www.casio.com/sg/watches/gshock/product.GA-110Y-9A/'

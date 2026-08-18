@@ -17,6 +17,19 @@
 # them comes from the manual. That distinction is what keeps this inside the
 # one-page rule rather than merging two sources into one entry.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference. Guessing a
 #     release year from a module is exactly what D25 forbids.
@@ -26,8 +39,6 @@
 #   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
 #     it. Writing it here would be the catalogue asserting something on Casio's
 #     behalf, which is the one thing FR-10.4 rules out.
-#   * `image` — D41 needs a licence and a proof it is the right watch. Neither
-#     exists yet for these; `catalog:audit` lists them all under section 2.
 
 series:
   id: ga-2100
@@ -48,6 +59,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240927193651id_/https://www.casio.com/us/watches/gshock/product.GA-2100-1A/'
   - id: ga-2100-1a1
     ref: GA-2100-1A1
     source:
@@ -59,6 +75,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-1a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065713id_/https://www.casio.com/europe/watches/gshock/product.GA-2100-1A1/'
   - id: ga-2100-1a2
     ref: GA-2100-1A2
     source:
@@ -70,6 +91,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064957id_/https://www.casio.com/europe/watches/gshock/product.GA-2100-1A2/'
   - id: ga-2100-1a3
     ref: GA-2100-1A3
     source:
@@ -81,6 +107,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065000id_/https://www.casio.com/europe/watches/gshock/product.GA-2100-1A3/'
   - id: ga-2100-1a4
     ref: GA-2100-1A4
     source:
@@ -92,6 +123,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-1a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065006id_/https://www.casio.com/europe/watches/gshock/product.GA-2100-1A4/'
   - id: ga-2100-2a
     ref: GA-2100-2A
     source:
@@ -103,6 +139,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065003id_/https://www.casio.com/europe/watches/gshock/product.GA-2100-2A/'
   - id: ga-2100-2a2
     ref: GA-2100-2A2
     source:
@@ -114,6 +155,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-2a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240716161532id_/https://www.casio.com/de/watches/gshock/product.GA-2100-2A2/'
   - id: ga-2100-4a
     ref: GA-2100-4A
     source:
@@ -125,6 +171,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065013id_/https://www.casio.com/europe/watches/gshock/product.GA-2100-4A/'
   - id: ga-2100-5a
     ref: GA-2100-5A
     source:
@@ -136,6 +187,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021938id_/https://www.casio.com/europe/watches/gshock/product.GA-2100-5A/'
   - id: ga-2100-7a
     ref: GA-2100-7A
     source:
@@ -147,6 +203,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065017id_/https://www.casio.com/europe/watches/gshock/product.GA-2100-7A/'
   - id: ga-2100-7a7
     ref: GA-2100-7A7
     source:
@@ -158,6 +219,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-7a7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240729103128id_/https://www.casio.com/de/watches/gshock/product.GA-2100-7A7/'
   - id: ga-2100-9a9
     ref: GA-2100-9A9
     source:
@@ -169,6 +235,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100-9a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240729091334id_/https://www.casio.com/de/watches/gshock/product.GA-2100-9A9/'
   - id: ga-2100ah-6a
     ref: GA-2100AH-6A
     source:
@@ -180,6 +251,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100ah-6a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408194028id_/https://www.casio.com/us/watches/gshock/product.GA-2100AH-6A/'
   - id: ga-2100asb-1
     ref: GA-2100ASB-1
     source:
@@ -202,6 +278,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100bce-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240207004245id_/https://www.casio.com/de/watches/gshock/product.GA-2100BCE-1A/'
   - id: ga-2100bm-7a2
     ref: GA-2100BM-7A2
     source:
@@ -213,6 +294,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100bm-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250404060238id_/https://www.casio.com/us/watches/gshock/product.GA-2100BM-7A2/'
   - id: ga-2100bm-7a5
     ref: GA-2100BM-7A5
     source:
@@ -224,6 +310,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100bm-7a5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250402162145id_/https://www.casio.com/us/watches/gshock/product.GA-2100BM-7A5/'
   - id: ga-2100bm-7a8
     ref: GA-2100BM-7A8
     source:
@@ -235,6 +326,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100bm-7a8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250402150302id_/https://www.casio.com/us/watches/gshock/product.GA-2100BM-7A8/'
   - id: ga-2100bp-1a
     ref: GA-2100BP-1A
     source:
@@ -246,6 +342,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100bp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021924id_/https://www.casio.com/europe/watches/gshock/product.GA-2100BP-1A/'
   - id: ga-2100bwp-2a
     ref: GA-2100BWP-2A
     source:
@@ -257,6 +358,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100bwp-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021927id_/https://www.casio.com/europe/watches/gshock/product.GA-2100BWP-2A/'
   - id: ga-2100ca-8a
     ref: GA-2100CA-8A
     source:
@@ -268,6 +374,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100ca-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021930id_/https://www.casio.com/europe/watches/gshock/product.GA-2100CA-8A/'
   - id: ga-2100cc-3a
     ref: GA-2100CC-3A
     source:
@@ -334,6 +445,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100ff-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240709033953id_/https://www.casio.com/de/watches/gshock/product.GA-2100FF-8A/'
   - id: ga-2100fl-1a
     ref: GA-2100FL-1A
     source:
@@ -345,6 +461,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100fl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250117230229id_/https://www.casio.com/de/watches/gshock/product.GA-2100FL-1A/'
   - id: ga-2100fl-8a
     ref: GA-2100FL-8A
     source:
@@ -356,6 +477,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100fl-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250117233034id_/https://www.casio.com/de/watches/gshock/product.GA-2100FL-8A/'
   - id: ga-2100fls-8a2
     ref: GA-2100FLS-8A2
     source:
@@ -367,6 +493,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100fls-8a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118082304id_/https://www.casio.com/de/watches/gshock/product.GA-2100FLS-8A2/'
   - id: ga-2100fls-8a4
     ref: GA-2100FLS-8A4
     source:
@@ -378,6 +509,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100fls-8a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118012955id_/https://www.casio.com/de/watches/gshock/product.GA-2100FLS-8A4/'
   - id: ga-2100fr-3a
     ref: GA-2100FR-3A
     source:
@@ -389,6 +525,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100fr-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021941id_/https://www.casio.com/europe/watches/gshock/product.GA-2100FR-3A/'
   - id: ga-2100fr-5a
     ref: GA-2100FR-5A
     source:
@@ -400,6 +541,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100fr-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021935id_/https://www.casio.com/europe/watches/gshock/product.GA-2100FR-5A/'
   - id: ga-2100ft-8a
     ref: GA-2100FT-8A
     source:
@@ -411,6 +557,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100ft-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064701id_/https://www.casio.com/europe/watches/gshock/product.GA-2100FT-8A/'
   - id: ga-2100gb-1a
     ref: GA-2100GB-1A
     source:
@@ -422,6 +573,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100gb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240709034200id_/https://www.casio.com/de/watches/gshock/product.GA-2100GB-1A/'
   - id: ga-2100hc-2a
     ref: GA-2100HC-2A
     source:
@@ -444,6 +600,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100hc-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220611030331id_/https://www.casio.com/us/watches/gshock/product.GA-2100HC-4A/'
   - id: ga-2100hd-8a
     ref: GA-2100HD-8A
     source:
@@ -455,6 +616,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100hd-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212740id_/https://www.casio.com/us/watches/gshock/product.GA-2100HD-8A/'
   - id: ga-2100hds-7a
     ref: GA-2100HDS-7A
     source:
@@ -488,6 +654,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100ht-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221216023213id_/https://www.casio.com/us/watches/gshock/product.GA-2100HT-1A/'
   - id: ga-2100huf-5a
     ref: GA-2100HUF-5A
     source:
@@ -499,6 +670,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100huf-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064657id_/https://www.casio.com/europe/watches/gshock/product.GA-2100HUF-5A/'
   - id: ga-2100k-1a
     ref: GA-2100K-1A
     source:
@@ -587,6 +763,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100mng-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240729103016id_/https://www.casio.com/de/watches/gshock/product.GA-2100MNG-2A/'
   - id: ga-2100mng-7a
     ref: GA-2100MNG-7A
     source:
@@ -598,6 +779,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100mng-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240729112554id_/https://www.casio.com/sg/watches/gshock/product.GA-2100MNG-7A/'
   - id: ga-2100nc-3a
     ref: GA-2100NC-3A
     source:
@@ -620,6 +806,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100nn-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064704id_/https://www.casio.com/europe/watches/gshock/product.GA-2100NN-1A/'
   - id: ga-2100oct-1a1
     ref: GA-2100OCT-1A1
     source:
@@ -642,6 +833,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100p-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231117121328id_/https://www.casio.com/us/watches/gshock/product.GA-2100P-1A/'
   - id: ga-2100ppgd-1a1
     ref: GA-2100PPGD-1A1
     source:
@@ -664,6 +860,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100pt-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230106143032id_/https://www.casio.com/us/watches/gshock/product.GA-2100PT-2A/'
   - id: ga-2100pts-8a
     ref: GA-2100PTS-8A
     source:
@@ -675,6 +876,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100pts-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230322101819id_/https://www.casio.com/sg/watches/gshock/product.GA-2100PTS-8A/'
   - id: ga-2100rb-3a
     ref: GA-2100RB-3A
     source:
@@ -686,6 +892,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100rb-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231213060005id_/https://www.casio.com/sg/watches/gshock/product.GA-2100RB-3A/'
   - id: ga-2100rc-1a
     ref: GA-2100RC-1A
     source:
@@ -697,6 +908,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100rc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121091753id_/https://www.casio.com/in/watches/gshock/product.GA-2100RC-1A/'
   - id: ga-2100rgb-1a
     ref: GA-2100RGB-1A
     source:
@@ -708,6 +924,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100rgb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064650id_/https://www.casio.com/europe/watches/gshock/product.GA-2100RGB-1A/'
   - id: ga-2100rl-1a
     ref: GA-2100RL-1A
     source:
@@ -719,6 +940,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100rl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250408201112id_/https://www.casio.com/in/watches/gshock/product.GA-2100RL-1A/'
   - id: ga-2100rrb-4a
     ref: GA-2100RRB-4A
     source:
@@ -741,6 +967,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100rw-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240927182134id_/https://www.casio.com/us/watches/gshock/product.GA-2100RW-1A/'
   - id: ga-2100sb-1a
     ref: GA-2100SB-1A
     source:
@@ -752,6 +983,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100sb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240709034308id_/https://www.casio.com/de/watches/gshock/product.GA-2100SB-1A/'
   - id: ga-2100ske-7a
     ref: GA-2100SKE-7A
     source:
@@ -763,6 +999,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100ske-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221618id_/https://www.casio.com/europe/watches/gshock/product.GA-2100SKE-7A/'
   - id: ga-2100sr-1a
     ref: GA-2100SR-1A
     source:
@@ -774,6 +1015,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100sr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221614id_/https://www.casio.com/europe/watches/gshock/product.GA-2100SR-1A/'
   - id: ga-2100srs-7a
     ref: GA-2100SRS-7A
     source:
@@ -785,6 +1031,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100srs-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221612id_/https://www.casio.com/europe/watches/gshock/product.GA-2100SRS-7A/'
   - id: ga-2100su-1a
     ref: GA-2100SU-1A
     source:
@@ -796,6 +1047,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100su-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221617id_/https://www.casio.com/europe/watches/gshock/product.GA-2100SU-1A/'
   - id: ga-2100th-1a
     ref: GA-2100TH-1A
     source:
@@ -840,6 +1096,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100tl-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240729112235id_/https://www.casio.com/us/watches/gshock/product.GA-2100TL-7A/'
   - id: ga-2100tls-8a
     ref: GA-2100TLS-8A
     source:
@@ -851,6 +1112,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100tls-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240729112930id_/https://www.casio.com/us/watches/gshock/product.GA-2100TLS-8A/'
   - id: ga-2100vb-1a
     ref: GA-2100VB-1A
     source:
@@ -862,6 +1128,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100vb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021556id_/https://www.casio.com/europe/watches/gshock/product.GA-2100VB-1A/'
   - id: ga-2100wd-1a
     ref: GA-2100WD-1A
     source:
@@ -873,6 +1144,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100wd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121093611id_/https://www.casio.com/in/watches/gshock/product.GA-2100WD-1A/'
   - id: ga-2100ws-7a
     ref: GA-2100WS-7A
     source:
@@ -884,3 +1160,8 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: ga-2100ws-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022224id_/https://www.casio.com/europe/watches/gshock/product.GA-2100WS-7A/'

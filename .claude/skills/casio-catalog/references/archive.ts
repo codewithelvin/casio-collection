@@ -115,7 +115,9 @@ export async function snapshots(line: string): Promise<Map<string, Snapshot[]>> 
     const url =
       `http://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(query)}` +
       `&output=json&filter=statuscode:200&collapse=urlkey&fl=original,timestamp,length&limit=4000`
-    const body = await cached(`cdx-${line}-${locale}.json`, url)
+    // Casio files some lines under a nested path — `gshock/lifestyle`,
+    // `casio/vintage` — and a slash is a directory separator, not a filename.
+    const body = await cached(`cdx-${line.replace(/\//g, '-')}-${locale}.json`, url)
     if (!body || !body.trim()) continue
     for (const [original, timestamp, length] of JSON.parse(body).slice(1) as string[][]) {
       const match = /product\.([^/]+)\/?$/.exec(original)
@@ -297,17 +299,72 @@ export function specRows(html: string): Map<string, string> {
  * one — taking the first image on the page would silently publish a photograph
  * of a different watch.
  */
-export function imageUrl(html: string, ref: string): string | null {
+export function imageUrl(html: string, ref: string, others?: ReadonlySet<string>): string | null {
   const wanted = ref.toUpperCase()
   const candidates = [
     ...new Set(
       [...html.matchAll(/\/content\/dam\/casio\/product-info\/[^"'\s)\\]+/g)].map((m) => m[0]),
     ),
   ]
-  const mine = candidates.filter((u) => {
+  /** `…/assets/SHE-4539CM-4AU_Seq1.png` → `SHE-4539CM-4AU`. */
+  const stemOf = (u: string) => {
     const asset = /\/assets\/([^/]+?)(?:_Seq\d+)?\.(?:png|jpg|jpeg)/i.exec(u)
-    return asset ? asset[1].toUpperCase().startsWith(wanted) : false
-  })
+    return asset ? asset[1].toUpperCase() : null
+  }
+
+  /** `DW-5600THC-1_L` → `DW-5600THC-1`. The part before any underscore. */
+  const headOf = (stem: string) => stem.split('_')[0]
+
+  /**
+   * A second reference in the filename means a second watch in the picture.
+   *
+   * The underscore itself is innocent — `DW-5600THC-1_l.png` and
+   * `DW-5600BBM-1_01.png` are this watch, at another size and from another
+   * angle. What is not innocent is `SHE-4539CM-4A_SHE-4540CM-3A.jpg`, which is a
+   * photograph of **two** watches and would go under one of them.
+   */
+  const sharesTheFrame = (stem: string) =>
+    stem
+      .split('_')
+      .slice(1)
+      .some((part) => others?.has(part) || /^[A-Z]{2,}-[A-Z0-9-]*\d/.test(part))
+  /**
+   * **A prefix match is right most of the time and catastrophic the rest.**
+   * Casio names the asset for `SHE-4539CM-4A` as `SHE-4539CM-4AU`, so an exact
+   * match alone loses 83 of Sheen's 141 photographs. But `GA-2100-1A` is also a
+   * prefix of `GA-2100-1A1`, which is **a different watch in this catalogue** —
+   * and its `color-variation` URL sits on the same page. Taking it would publish
+   * a photograph of the wrong watch under the right reference, and nothing would
+   * go red.
+   *
+   * So `others` is the set of references known to exist — the catalogue's and the
+   * archive's roster — and a stem that extends `ref` into one of them is that
+   * watch's photograph, not this one's. Optional, and absent it behaves exactly
+   * as before, which is what keeps the reviewed Sheen and Oceanus files
+   * reproducible.
+   */
+  const mine = candidates
+    .filter((u) => {
+      const stem = stemOf(u)
+      if (!stem || sharesTheFrame(stem)) return false
+      const head = headOf(stem)
+      if (head === wanted) return true
+      if (!head.startsWith(wanted)) return false
+      // Casio's own asset suffix is a letter or two — `SHE-4539CM-4A` is
+      // published as `SHE-4539CM-4AU`, and refusing that costs 83 of Sheen's
+      // 141 photographs. A **digit** is not a suffix, it is another reference:
+      // `GA-2100-1A` extends to `GA-2100-1A1`, a different watch in this
+      // catalogue whose photograph sits on the same page.
+      const extra = head.slice(wanted.length)
+      if (!/^[A-Z]{1,3}$/.test(extra)) return false
+      return !others?.has(head)
+    })
+  // **Page order is kept, and ranking by anything else makes it worse.** Sorting
+  // an exact stem ahead of an extended one sounds safer and is not: Casio's main
+  // product shot is `<REF>U.png` on some templates, and the exactly-named files
+  // beside it are `_front`, `_square`, `_model-cut` and `_beautycut` — crops and
+  // a photograph of somebody's wrist. The main visual comes first in the markup,
+  // which is the only signal that actually tracks what is wanted.
   // The untransformed asset is the original; a `.transform/…` URL is a rendition
   // capped at the width its CSS breakpoint wanted.
   const original = mine.find((u) => !u.includes('.transform/') && /_Seq1\./i.test(u))

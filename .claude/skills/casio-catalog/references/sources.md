@@ -28,8 +28,18 @@ What this changes: the product page states `case`, `water_resistance_m`,
 only ever state them about the module (D25). And it does not need the module at
 all, which is what had Sheen and Oceanus blocked.
 
-Three things it will lie to you about if you let it:
+Four things it will lie to you about if you let it:
 
+- **This catalogue's line id is not casio.com's URL segment.** `g-shock` is
+  `gshock` on casio.com, `baby-g` is `babyg`, `pro-trek` is `protrek`, and
+  `vintage` lives under `casio/vintage`. Sheen and Oceanus match, which is the
+  only reason `seed.ts` gets away with passing the line id straight through. A
+  CDX query on the wrong segment answers **200 with an empty list**, so the first
+  photograph backfill reported "0 archived product pages" for all 670 G-SHOCK
+  references — a well-formed answer to the wrong question. Read the segments off
+  Casio's own sitemap (`node sitemap.ts` prints them); never type them from
+  memory. Note also that Casio files 31 G-SHOCKs under `gshock/lifestyle`, so a
+  line can have more than one segment.
 - **Size is not richness.** The reader keeps every capture of a reference and
   parses them in size order, because the biggest is often the newest template,
   which carries more chrome and fewer server-rendered rows. OCW-S400-2A's 53 KB
@@ -282,6 +292,15 @@ Two traps in the URLs themselves:
   product page also carries `…/color-variation/…` URLs for the *other*
   references in the series. Publishing the first match would put a photograph of
   a different watch under this one's reference, and nothing would go red.
+- **Matching the asset by prefix takes the wrong watch, and matching it exactly
+  loses most of them.** Casio names the asset for `SHE-4539CM-4A` as
+  `SHE-4539CM-4AU`, so an exact match drops **83 of Sheen's 141** photographs.
+  But `GA-2100-1A` is a prefix of `GA-2100-1A1`, which is a different watch in
+  this catalogue whose `color-variation` URL is on the same page — and there are
+  assets named `SHE-4539CM-4A_SHE-4540CM-3A.jpg`, which are a picture of **two**
+  watches. So the rule is: exact wins; otherwise the reference may be extended
+  only by **one to three letters**, and only where that does not spell another
+  known reference. A digit or an underscore means it is not this watch.
 - **`.transform/<name>/image.png` is a rendition**, capped at whatever width that
   CSS breakpoint wanted. Take the untransformed asset; `catalog:images` does the
   resizing, and §10.3's budgets are enforced on the output.

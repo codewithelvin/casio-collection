@@ -28,6 +28,19 @@
 # that a category of one is worse than no category — which is also what §10.2
 # check 4 warns about, and `octagonal` held only ga-2100 until now.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the
@@ -37,7 +50,6 @@
 #   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
 #     it. Writing it here would be the catalogue asserting something on Casio's
 #     behalf, which is the one thing FR-10.4 rules out.
-#   * `image` — D41 needs a licence and a proof it is the right watch.
 
 series:
   id: gm-2100
@@ -58,6 +70,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065524id_/https://www.casio.com/europe/watches/gshock/product.GM-2100-1A/'
   - id: gm-2100b-3a
     ref: GM-2100B-3A
     source:
@@ -69,6 +86,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100b-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065535id_/https://www.casio.com/europe/watches/gshock/product.GM-2100B-3A/'
   - id: gm-2100b-4a
     ref: GM-2100B-4A
     source:
@@ -80,6 +102,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100b-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065538id_/https://www.casio.com/europe/watches/gshock/product.GM-2100B-4A/'
   - id: gm-2100bb-1a
     ref: GM-2100BB-1A
     source:
@@ -91,6 +118,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100bb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121011249id_/https://www.casio.com/in/watches/gshock/product.GM-2100BB-1A/'
   - id: gm-2100bm-1a
     ref: GM-2100BM-1A
     source:
@@ -113,6 +145,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100brw-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024900id_/https://www.casio.com/us/watches/gshock/product.GM-2100BRW-1A/'
   - id: gm-2100c-5a
     ref: GM-2100C-5A
     source:
@@ -124,6 +161,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100c-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065521id_/https://www.casio.com/europe/watches/gshock/product.GM-2100C-5A/'
   - id: gm-2100cb-1a
     ref: GM-2100CB-1A
     source:
@@ -135,6 +177,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100cb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065058id_/https://www.casio.com/europe/watches/gshock/product.GM-2100CB-1A/'
   - id: gm-2100cb-3a
     ref: GM-2100CB-3A
     source:
@@ -146,6 +193,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100cb-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065102id_/https://www.casio.com/europe/watches/gshock/product.GM-2100CB-3A/'
   - id: gm-2100ch-1a
     ref: GM-2100CH-1A
     source:
@@ -157,6 +209,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100ch-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930102301id_/https://www.casio.com/in/watches/gshock/product.GM-2100CH-1A/'
   - id: gm-2100cl-5a
     ref: GM-2100CL-5A
     source:
@@ -168,6 +225,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100cl-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144014id_/https://www.casio.com/us/watches/gshock/product.GM-2100CL-5A/'
   - id: gm-2100g-1a9
     ref: GM-2100G-1A9
     source:
@@ -179,6 +241,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100g-1a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065105id_/https://www.casio.com/europe/watches/gshock/product.GM-2100G-1A9/'
   - id: gm-2100gc-1a
     ref: GM-2100GC-1A
     source:
@@ -190,6 +257,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100gc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212722id_/https://www.casio.com/in/watches/gshock/product.GM-2100GC-1A/'
   - id: gm-2100lxb-1a
     ref: GM-2100LXB-1A
     source:
@@ -234,6 +306,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100mf-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022046id_/https://www.casio.com/europe/watches/gshock/product.GM-2100MF-5A/'
   - id: gm-2100mg-1a
     ref: GM-2100MG-1A
     source:
@@ -245,6 +322,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100mg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022053id_/https://www.casio.com/europe/watches/gshock/product.GM-2100MG-1A/'
   - id: gm-2100mwg-1a
     ref: GM-2100MWG-1A
     source:
@@ -256,6 +338,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100mwg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121115048id_/https://www.casio.com/in/watches/gshock/product.GM-2100MWG-1A/'
   - id: gm-2100n-2a
     ref: GM-2100N-2A
     source:
@@ -267,6 +354,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100n-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022056id_/https://www.casio.com/europe/watches/gshock/product.GM-2100N-2A/'
   - id: gm-2100rw-1a
     ref: GM-2100RW-1A
     source:
@@ -278,6 +370,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100rw-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GM-2100RW-1A/'
   - id: gm-2100ss-1a
     ref: GM-2100SS-1A
     source:
@@ -289,6 +386,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100ss-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022050id_/https://www.casio.com/europe/watches/gshock/product.GM-2100SS-1A/'
   - id: gm-2100tttr-8a
     ref: GM-2100TTTR-8A
     source:
@@ -300,6 +402,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100tttr-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250411000859id_/https://www.casio.com/us/watches/gshock/product.GM-2100TTTR-8A/'
   - id: gm-2100ws-7a
     ref: GM-2100WS-7A
     source:
@@ -311,6 +418,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100ws-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144200id_/https://www.casio.com/us/watches/gshock/product.GM-2100WS-7A/'
   - id: gm-2100ym-8a
     ref: GM-2100YM-8A
     source:
@@ -322,6 +434,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100ym-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250411072302id_/https://www.casio.com/europe/watches/gshock/product.GM-2100YM-8A/'
   - id: gm-2100ymg-9a
     ref: GM-2100YMG-9A
     source:
@@ -333,6 +450,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100ymg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250408200812id_/https://www.casio.com/in/watches/gshock/product.GM-2100YMG-9A/'
   - id: gm-2100ymg-9a9
     ref: GM-2100YMG-9A9
     source:
@@ -344,6 +466,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2100ymg-9a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250411072309id_/https://www.casio.com/europe/watches/gshock/product.GM-2100YMG-9A9/'
   - id: gm-2100yra-8a
     ref: GM-2100YRA-8A
     source:

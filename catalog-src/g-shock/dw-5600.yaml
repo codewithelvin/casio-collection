@@ -17,6 +17,19 @@
 # them comes from the manual. That distinction is what keeps this inside the
 # one-page rule rather than merging two sources into one entry.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference. Guessing a
 #     release year from a module is exactly what D25 forbids.
@@ -26,8 +39,6 @@
 #   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
 #     it. Writing it here would be the catalogue asserting something on Casio's
 #     behalf, which is the one thing FR-10.4 rules out.
-#   * `image` — D41 needs a licence and a proof it is the right watch. Neither
-#     exists yet for these; `catalog:audit` lists them all under section 2.
 #
 # ONE WORD READ CAREFULLY: the manual says "Multi-function alarm", which is one
 # alarm with several setting modes — daily, by date, by month. It is NOT the
@@ -77,6 +88,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600bb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022133id_/https://www.casio.com/europe/watches/gshock/product.DW-5600BB-1/'
   - id: dw-5600bb-1g
     ref: DW-5600BB-1G
     source:
@@ -99,6 +115,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600bbm-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220928093408id_/https://www.casio.com/in/watches/gshock/product.DW-5600BBM-1/'
   - id: dw-5600bbm-2
     ref: DW-5600BBM-2
     source:
@@ -110,6 +131,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600bbm-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230217205555id_/https://www.casio.com/in/watches/gshock/product.DW-5600BBM-2/'
   - id: dw-5600bbma-1
     ref: DW-5600BBMA-1
     source:
@@ -121,6 +147,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600bbma-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518131634id_/https://www.casio.com/in/watches/gshock/product.DW-5600BBMA-1/'
   - id: dw-5600bbmb-1
     ref: DW-5600BBMB-1
     source:
@@ -132,6 +163,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600bbmb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220812084429id_/https://www.casio.com/in/watches/gshock/product.DW-5600BBMB-1/'
   - id: dw-5600bbn-1
     ref: DW-5600BBN-1
     source:
@@ -143,6 +179,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600bbn-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922113357id_/https://www.casio.com/sg/watches/gshock/product.DW-5600BBN-1/'
   - id: dw-5600bbtl-1
     ref: DW-5600BBTL-1
     source:
@@ -176,6 +217,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600bwp-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221534id_/https://www.casio.com/europe/watches/gshock/product.DW-5600BWP-2/'
   - id: dw-5600ca-2
     ref: DW-5600CA-2
     source:
@@ -187,6 +233,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600ca-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221539id_/https://www.casio.com/europe/watches/gshock/product.DW-5600CA-2/'
   - id: dw-5600ca-8
     ref: DW-5600CA-8
     source:
@@ -198,6 +249,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600ca-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221537id_/https://www.casio.com/europe/watches/gshock/product.DW-5600CA-8/'
   - id: dw-5600cc-2
     ref: DW-5600CC-2
     source:
@@ -209,6 +265,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600cc-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220627085833id_/https://www.casio.com/in/watches/gshock/product.DW-5600CC-2/'
   - id: dw-5600cma-9
     ref: DW-5600CMA-9
     source:
@@ -275,6 +336,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600da-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922114025id_/https://www.casio.com/sg/watches/gshock/product.DW-5600DA-4/'
   - id: dw-5600dc-1
     ref: DW-5600DC-1
     source:
@@ -319,6 +385,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600dn-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922115406id_/https://www.casio.com/sg/watches/gshock/product.DW-5600DN-7/'
   - id: dw-5600dp-1
     ref: DW-5600DP-1
     source:
@@ -374,6 +445,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600et-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211130054357id_/https://www.casio.com/sg/watches/gshock/product.DW-5600ET-3/'
   - id: dw-5600et-5
     ref: DW-5600ET-5
     source:
@@ -418,6 +494,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600gc-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065315id_/https://www.casio.com/europe/watches/gshock/product.DW-5600GC-7/'
   - id: dw-5600gl-9
     ref: DW-5600GL-9
     source:
@@ -429,6 +510,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600gl-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193909id_/https://www.casio.com/in/watches/gshock/product.DW-5600GL-9/'
   - id: dw-5600gu-7
     ref: DW-5600GU-7
     source:
@@ -440,6 +526,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600gu-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065305id_/https://www.casio.com/europe/watches/gshock/product.DW-5600GU-7/'
   - id: dw-5600hdr-1
     ref: DW-5600HDR-1
     source:
@@ -462,6 +553,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600hr-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808190427id_/https://www.casio.com/us/watches/gshock/product.DW-5600HR-1/'
   - id: dw-5600hs-4
     ref: DW-5600HS-4
     source:
@@ -506,6 +602,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600jk-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210724180631id_/https://www.casio.com/sg/watches/gshock/product.DW-5600JK-1/'
   - id: dw-5600lcu-1
     ref: DW-5600LCU-1
     source:
@@ -572,6 +673,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600ls-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065319id_/https://www.casio.com/europe/watches/gshock/product.DW-5600LS-2/'
   - id: dw-5600ls-7
     ref: DW-5600LS-7
     source:
@@ -583,6 +689,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600ls-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231216203448id_/https://www.casio.com/us/watches/gshock/product.DW-5600LS-7/'
   - id: dw-5600lu-2
     ref: DW-5600LU-2
     source:
@@ -671,6 +782,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600mnt-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220629005814id_/https://www.casio.com/intl/watches/gshock/product.DW-5600MNT-1/'
   - id: dw-5600mnt-8
     ref: DW-5600MNT-8
     source:
@@ -682,6 +798,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600mnt-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628154418id_/https://www.casio.com/intl/watches/gshock/product.DW-5600MNT-8/'
   - id: dw-5600ms-1
     ref: DW-5600MS-1
     source:
@@ -693,6 +814,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600ms-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220629004646id_/https://www.casio.com/intl/watches/gshock/product.DW-5600MS-1/'
   - id: dw-5600mt-1
     ref: DW-5600MT-1
     source:
@@ -715,6 +841,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600mw-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065300id_/https://www.casio.com/europe/watches/gshock/product.DW-5600MW-7/'
   - id: dw-5600mwct-7
     ref: DW-5600MWCT-7
     source:
@@ -737,6 +868,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600ne-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220718193549id_/https://www.casio.com/us/watches/gshock/product.DW-5600NE-1/'
   - id: dw-5600nh-1
     ref: DW-5600NH-1
     source:
@@ -770,6 +906,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600nn-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064557id_/https://www.casio.com/europe/watches/gshock/product.DW-5600NN-1/'
   - id: dw-5600p-1
     ref: DW-5600P-1
     source:
@@ -858,6 +999,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600pt-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230331000341id_/https://www.casio.com/sg/watches/gshock/product.DW-5600PT-5/'
   - id: dw-5600rb-2
     ref: DW-5600RB-2
     source:
@@ -869,6 +1015,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600rb-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064553id_/https://www.casio.com/europe/watches/gshock/product.DW-5600RB-2/'
   - id: dw-5600rb-3
     ref: DW-5600RB-3
     source:
@@ -880,6 +1031,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600rb-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064546id_/https://www.casio.com/europe/watches/gshock/product.DW-5600RB-3/'
   - id: dw-5600rec-9
     ref: DW-5600REC-9
     source:
@@ -891,6 +1047,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600rec-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064605id_/https://www.casio.com/europe/watches/gshock/product.DW-5600REC-9/'
   - id: dw-5600sb-2
     ref: DW-5600SB-2
     source:
@@ -902,6 +1063,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600sb-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922115244id_/https://www.casio.com/sg/watches/gshock/product.DW-5600SB-2/'
   - id: dw-5600sb-3
     ref: DW-5600SB-3
     source:
@@ -913,6 +1079,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600sb-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922115944id_/https://www.casio.com/sg/watches/gshock/product.DW-5600SB-3/'
   - id: dw-5600sb-4
     ref: DW-5600SB-4
     source:
@@ -924,6 +1095,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600sb-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808184710id_/https://www.casio.com/us/watches/gshock/product.DW-5600SB-4/'
   - id: dw-5600sbtg-3
     ref: DW-5600SBTG-3
     source:
@@ -946,6 +1122,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600sby-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230227113213id_/https://www.casio.com/intl/watches/gshock/product.DW-5600SBY-4/'
   - id: dw-5600sc-2
     ref: DW-5600SC-2
     source:
@@ -957,6 +1138,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600sc-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922120827id_/https://www.casio.com/sg/watches/gshock/product.DW-5600SC-2/'
   - id: dw-5600sc-4
     ref: DW-5600SC-4
     source:
@@ -968,6 +1154,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600sc-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922122015id_/https://www.casio.com/sg/watches/gshock/product.DW-5600SC-4/'
   - id: dw-5600sc-8
     ref: DW-5600SC-8
     source:
@@ -979,6 +1170,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600sc-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922104342id_/https://www.casio.com/sg/watches/gshock/product.DW-5600SC-8/'
   - id: dw-5600sg-7
     ref: DW-5600SG-7
     source:
@@ -1001,6 +1197,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600sk-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231020163738id_/https://www.casio.com/us/watches/gshock/product.DW-5600SK-1/'
   - id: dw-5600skc-1
     ref: DW-5600SKC-1
     source:
@@ -1012,6 +1213,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600skc-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064548id_/https://www.casio.com/europe/watches/gshock/product.DW-5600SKC-1/'
   - id: dw-5600ske-7
     ref: DW-5600SKE-7
     source:
@@ -1023,6 +1229,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600ske-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064601id_/https://www.casio.com/europe/watches/gshock/product.DW-5600SKE-7/'
   - id: dw-5600skgt-6
     ref: DW-5600SKGT-6
     source:
@@ -1089,6 +1300,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600slc-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240709094548id_/https://www.casio.com/de/watches/gshock/product.DW-5600SLC-9/'
   - id: dw-5600slg-7
     ref: DW-5600SLG-7
     source:
@@ -1122,6 +1338,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600smb-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021845id_/https://www.casio.com/europe/watches/gshock/product.DW-5600SMB-4/'
   - id: dw-5600sn-1
     ref: DW-5600SN-1
     source:
@@ -1144,6 +1365,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600sr-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021850id_/https://www.casio.com/europe/watches/gshock/product.DW-5600SR-1/'
   - id: dw-5600srs-7
     ref: DW-5600SRS-7
     source:
@@ -1155,6 +1381,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600srs-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021848id_/https://www.casio.com/europe/watches/gshock/product.DW-5600SRS-7/'
   - id: dw-5600tal-1
     ref: DW-5600TAL-1
     source:
@@ -1243,6 +1474,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600tga-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922111359id_/https://www.casio.com/sg/watches/gshock/product.DW-5600TGA-9/'
   - id: dw-5600thb-7
     ref: DW-5600THB-7
     source:
@@ -1254,6 +1490,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600thb-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922123319id_/https://www.casio.com/sg/watches/gshock/product.DW-5600THB-7/'
   - id: dw-5600thc-1
     ref: DW-5600THC-1
     source:
@@ -1265,6 +1506,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600thc-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211130061303id_/https://www.casio.com/sg/watches/gshock/product.DW-5600THC-1/'
   - id: dw-5600ths-1
     ref: DW-5600THS-1
     source:
@@ -1276,6 +1522,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600ths-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220517182836id_/https://www.casio.com/in/watches/gshock/product.DW-5600THS-1/'
   - id: dw-5600tmn-1
     ref: DW-5600TMN-1
     source:
@@ -1331,6 +1582,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600wm-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220521055102id_/https://www.casio.com/in/watches/gshock/product.DW-5600WM-5/'
   - id: dw-5600ws-1
     ref: DW-5600WS-1
     source:
@@ -1342,6 +1598,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600ws-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808193041id_/https://www.casio.com/us/watches/gshock/product.DW-5600WS-1/'
   - id: dw-5600ws-4
     ref: DW-5600WS-4
     source:
@@ -1353,6 +1614,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: dw-5600ws-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220627080337id_/https://www.casio.com/in/watches/gshock/product.DW-5600WS-4/'
   - id: dw-5600yg-1
     ref: DW-5600YG-1
     source:

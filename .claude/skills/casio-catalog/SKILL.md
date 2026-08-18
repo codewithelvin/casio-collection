@@ -158,6 +158,27 @@ trusting the field mapping on a line nobody has seeded this way yet — the rows
 Casio prints differ between lines, and "the guide talks about hands" is not a
 statement (`sources.md`).
 
+**A line that is already seeded from the manuals takes the photograph and nothing
+else.** `seed.ts --write` regenerates a whole series file, so pointing it at
+G-SHOCK, Baby-G, Edifice or Pro Trek would overwrite 27 reviewed files and
+replace fields read off a manual with fields read off a product page. The
+backfill adds `image` and `image_credit` to entries that have neither, and
+touches nothing else:
+
+```
+node .claude/skills/casio-catalog/references/backfill-photos.ts g-shock --plan
+node .claude/skills/casio-catalog/references/backfill-photos.ts g-shock --crawl
+node .claude/skills/casio-catalog/references/photos.ts           g-shock
+npm run catalog:images
+node .claude/skills/casio-catalog/references/backfill-photos.ts g-shock --write
+npm run catalog:build && npm run catalog:validate
+```
+
+`--write` runs **after** `catalog:images` on purpose: its gate is the published
+`.webp`, not the downloaded original. `catalog:images` refuses a source it cannot
+fit inside §10.3's budget and deletes what it half-wrote, so writing `image:` off
+the download would assert a file that is not there and fail integrity check 5.
+
 Three silent failures are handled and worth knowing about: the largest capture
 is often the emptiest, two generations of the row markup differ by one tag and
 return **zero rows** rather than an error on the wrong reader, and the archive's

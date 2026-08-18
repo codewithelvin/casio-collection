@@ -17,6 +17,19 @@
 # them comes from the manual. That distinction is what keeps this inside the
 # one-page rule rather than merging two sources into one entry.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference. Guessing a
 #     release year from a module is exactly what D25 forbids.
@@ -26,8 +39,6 @@
 #   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
 #     it. Writing it here would be the catalogue asserting something on Casio's
 #     behalf, which is the one thing FR-10.4 rules out.
-#   * `image` — D41 needs a licence and a proof it is the right watch. Neither
-#     exists yet for these; `catalog:audit` lists them all under section 2.
 #
 # The 3159 guide is an older MO-format PDF whose Specifications block did not
 # survive extraction, so the features here are the MODES the manual documents
@@ -56,6 +67,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    image: gw-m5610-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065242id_/https://www.casio.com/europe/watches/gshock/product.GW-M5610-1/'
   - id: gw-m5610-1b
     ref: GW-M5610-1B
     source:

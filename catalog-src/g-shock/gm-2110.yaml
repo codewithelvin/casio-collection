@@ -28,6 +28,19 @@
 # that a category of one is worse than no category — which is also what §10.2
 # check 4 warns about, and `octagonal` held only ga-2100 until now.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the
@@ -37,7 +50,6 @@
 #   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
 #     it. Writing it here would be the catalogue asserting something on Casio's
 #     behalf, which is the one thing FR-10.4 rules out.
-#   * `image` — D41 needs a licence and a proof it is the right watch.
 
 series:
   id: gm-2110
@@ -58,6 +70,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2110d-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241006230830id_/https://www.casio.com/europe/watches/gshock/product.GM-2110D-2A/'
   - id: gm-2110d-2b
     ref: GM-2110D-2B
     source:
@@ -69,6 +86,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2110d-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240915200411id_/https://www.casio.com/us/watches/gshock/product.GM-2110D-2B/'
   - id: gm-2110d-3a
     ref: GM-2110D-3A
     source:
@@ -80,6 +102,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2110d-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GM-2110D-3A/'
   - id: gm-2110d-3a1
     ref: GM-2110D-3A1
     source:
@@ -102,6 +129,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2110d-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240924204718id_/https://www.casio.com/us/watches/gshock/product.GM-2110D-4A/'
   - id: gm-2110d-7a
     ref: GM-2110D-7A
     source:
@@ -113,6 +145,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    image: gm-2110d-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240915200605id_/https://www.casio.com/us/watches/gshock/product.GM-2110D-7A/'
   - id: gm-2110d-8a
     ref: GM-2110D-8A
     source:

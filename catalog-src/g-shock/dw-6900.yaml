@@ -39,6 +39,19 @@
 # D2 makes an id permanent and the sourcing rule says a model whose sources
 # disagree on the reference itself is not written at all.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the module.
@@ -46,7 +59,6 @@
 #   * `shock-resistant` — it is what G-SHOCK means and the manual does not say
 #     it. Writing it here would be the catalogue asserting something on Casio's
 #     behalf, which is the one thing FR-10.4 rules out.
-#   * `image` — D41 needs a licence and a proof it is the right watch.
 
 series:
   id: dw-6900
@@ -66,6 +78,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900-1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220813203748id_/https://www.casio.com/us/watches/gshock/product.DW-6900-1V/'
   - id: dw-6900ac-2
     ref: DW-6900AC-2
     source:
@@ -88,6 +105,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900bb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220814160128id_/https://www.casio.com/us/watches/gshock/product.DW-6900BB-1/'
   - id: dw-6900bba-1
     ref: DW-6900BBA-1
     source:
@@ -121,6 +143,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900bmc-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220411114923id_/https://www.casio.com/intl/watches/gshock/product.DW-6900BMC-1/'
   - id: dw-6900bne-1
     ref: DW-6900BNE-1
     source:
@@ -176,6 +203,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900bwd-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021901id_/https://www.casio.com/europe/watches/gshock/product.DW-6900BWD-1/'
   - id: dw-6900cb-1
     ref: DW-6900CB-1
     source:
@@ -187,6 +219,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900cb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210929013844id_/https://www.casio.com/sg/watches/gshock/product.DW-6900CB-1/'
   - id: dw-6900cb-2
     ref: DW-6900CB-2
     source:
@@ -341,6 +378,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900da-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210929014848id_/https://www.casio.com/sg/watches/gshock/product.DW-6900DA-4/'
   - id: dw-6900ds-1
     ref: DW-6900DS-1
     source:
@@ -440,6 +482,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900gda-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021856id_/https://www.casio.com/europe/watches/gshock/product.DW-6900GDA-9/'
   - id: dw-6900gl-4
     ref: DW-6900GL-4
     source:
@@ -451,6 +498,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900gl-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021853id_/https://www.casio.com/europe/watches/gshock/product.DW-6900GL-4/'
   - id: dw-6900hm-1
     ref: DW-6900HM-1
     source:
@@ -484,6 +536,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900jk-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210715055730id_/https://www.casio.com/sg/watches/gshock/product.DW-6900JK-4/'
   - id: dw-6900kth-7
     ref: DW-6900KTH-7
     source:
@@ -528,6 +585,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900ls-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021910id_/https://www.casio.com/europe/watches/gshock/product.DW-6900LS-1/'
   - id: dw-6900ls-2
     ref: DW-6900LS-2
     source:
@@ -539,6 +601,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900ls-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021905id_/https://www.casio.com/europe/watches/gshock/product.DW-6900LS-2/'
   - id: dw-6900lu-1
     ref: DW-6900LU-1
     source:
@@ -649,6 +716,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900mma-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625143724id_/https://www.casio.com/in/watches/gshock/product.DW-6900MMA-2/'
   - id: dw-6900mr-1
     ref: DW-6900MR-1
     source:
@@ -682,6 +754,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900ms-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220814150558id_/https://www.casio.com/us/watches/gshock/product.DW-6900MS-1/'
   - id: dw-6900mt-7
     ref: DW-6900MT-7
     source:
@@ -704,6 +781,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900nb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221126131524id_/https://www.casio.com/us/watches/gshock/product.DW-6900NB-1/'
   - id: dw-6900nb-3
     ref: DW-6900NB-3
     source:
@@ -737,6 +819,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900nb-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626210720id_/https://www.casio.com/intl/watches/gshock/product.DW-6900NB-7/'
   - id: dw-6900nc-7
     ref: DW-6900NC-7
     source:
@@ -858,6 +945,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900rgb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021858id_/https://www.casio.com/europe/watches/gshock/product.DW-6900RGB-1/'
   - id: dw-6900rh-2
     ref: DW-6900RH-2
     source:
@@ -869,6 +961,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900rh-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221547id_/https://www.casio.com/europe/watches/gshock/product.DW-6900RH-2/'
   - id: dw-6900rmus-1
     ref: DW-6900RMUS-1
     source:
@@ -935,6 +1032,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900sby-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230208173856id_/https://www.casio.com/intl/watches/gshock/product.DW-6900SBY-2/'
   - id: dw-6900sc-1
     ref: DW-6900SC-1
     source:
@@ -1089,6 +1191,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900sp-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221126132553id_/https://www.casio.com/us/watches/gshock/product.DW-6900SP-1/'
   - id: dw-6900sp-7
     ref: DW-6900SP-7
     source:
@@ -1100,6 +1207,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900sp-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221126120016id_/https://www.casio.com/us/watches/gshock/product.DW-6900SP-7/'
   - id: dw-6900stf-1
     ref: DW-6900STF-1
     source:
@@ -1155,6 +1267,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900td-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221555id_/https://www.casio.com/europe/watches/gshock/product.DW-6900TD-4/'
   - id: dw-6900tf-4
     ref: DW-6900TF-4
     source:
@@ -1188,6 +1305,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900tga-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210929012109id_/https://www.casio.com/sg/watches/gshock/product.DW-6900TGA-9/'
   - id: dw-6900ws-1
     ref: DW-6900WS-1
     source:
@@ -1232,6 +1354,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    image: dw-6900y-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221551id_/https://www.casio.com/europe/watches/gshock/product.DW-6900Y-9/'
   - id: dw-6900yg-1
     ref: DW-6900YG-1
     source:
