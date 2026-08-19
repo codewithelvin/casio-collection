@@ -2,7 +2,7 @@
 // be wrong is silent — a plausible file under the wrong reference renders
 // perfectly and nothing goes red. These are the four ways it was wrong.
 import { describe, expect, it } from 'vitest'
-import { decideLine, imageUrl } from './archive.ts'
+import { decideLine, imageUrl, specRows } from './archive.ts'
 
 const DAM = '/content/dam/casio/product-info/locales/intl/en/timepiece/product/watch'
 
@@ -54,6 +54,66 @@ describe('imageUrl', () => {
     // it are crops and a photograph of somebody's wrist.
     const html = pageWith('SHE-4554GYM-8AU.png', 'SHE-4554GYM-8A_model-cut.jpg')
     expect(imageUrl(html, 'SHE-4554GYM-8A')).toContain('SHE-4554GYM-8AU.png')
+  })
+})
+
+/**
+ * `specRows` decides every field on every D52-seeded entry, and it had no tests
+ * at all while carrying three documented silent failure modes. All three are
+ * here, because each one returns *less data* rather than an error.
+ */
+describe('specRows', () => {
+  const C = 'p-product_detail-spec-accordion__'
+  /** One accordion row: a label element, then one value element per string. */
+  const row = (label: string, ...values: string[]) =>
+    `<li class="${C}panel-item">` +
+    `<div class="${C}panel-item-ttl"><h4>${label}</h4></div>` +
+    values.map((v) => `<div class="${C}panel-item-cont">${v}</div>`).join('') +
+    `</li>`
+  const page = (...rows: string[]) => `<div class="specifications">Specifications${rows.join('')}</div>`
+
+  it('reads a label and its value', () => {
+    expect(specRows(page(row('Weight', '48 g'))).get('Weight')).toBe('48 g')
+  })
+
+  it('keeps every value div in a row, not just the first', () => {
+    // DBC-611-1's `Other features` emits four sibling value divs. Reading only
+    // the first returned the calculator and dropped **Data Bank**, which is why
+    // `databank` sat on one model in the whole catalogue and read as a typo in
+    // audit §3 for three sessions. No error, no short table — a fact that was
+    // quietly not there.
+    const rows = specRows(
+      page(row('Other features', '8-digit calculator', '12/24-hour format', 'Data Bank')),
+    )
+    expect(rows.get('Other features')).toBe('8-digit calculator · 12/24-hour format · Data Bank')
+  })
+
+  it('reads the 2022 markup, where the label is a bare div and not an h4', () => {
+    // One tag's difference returned zero rows rather than an error, and was
+    // worth 144 Sheen references. The reader names neither tag.
+    const bare =
+      `<div class="${C}panel-item-ttl"><div>Glass</div></div>` +
+      `<div class="${C}panel-item-cont">Mineral Glass</div>`
+    expect(specRows(`Specifications${bare}`).get('Glass')).toBe('Mineral Glass')
+  })
+
+  it('does not let the class attribute leak into the label', () => {
+    // The split lands inside the label element's own class attribute, so the
+    // chunk opens with `">` — a label of `"> Weight` matches no field reader and
+    // would silently drop the row it just found.
+    expect([...specRows(page(row('Weight', '48 g'))).keys()]).toEqual(['Weight'])
+  })
+
+  it('turns a <br> inside one value into the same separator', () => {
+    expect(specRows(page(row('Band', 'Adjustable Clasp<br>Stainless Steel'))).get('Band')).toBe(
+      'Adjustable Clasp · Stainless Steel',
+    )
+  })
+
+  it('skips a row with a label and no value rather than storing an empty one', () => {
+    // A section heading — Basic Information, Watch Features — is a label with
+    // nothing of its own, and unknown must never render as a blank.
+    expect(specRows(page(row('Watch Features'))).has('Watch Features')).toBe(false)
   })
 })
 

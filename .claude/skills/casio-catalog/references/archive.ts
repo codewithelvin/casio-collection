@@ -446,22 +446,48 @@ function specBlock(html: string): string {
  * Features* — are deliberately not returned. They group rows for a reader and
  * carry no value of their own, and Casio does not file the same row under the
  * same heading on every page.
+ *
+ * **One row can hold several value divs, and reading only the first loses the
+ * rest.** DBC-611-1's `Other features` emits four sibling `…-item-cont`
+ * elements — the calculator, the 12/24-hour format, **Data Bank**, and regular
+ * timekeeping — and a reader that stopped at the first `</div>` returned the
+ * calculator and dropped the other three. That is why `databank` sat on exactly
+ * one model in the whole catalogue and read as a possible typo in `audit` §3
+ * for three sessions: not a vocabulary problem, a row that never arrived. Same
+ * signature as the two failures above — no error, no short table, just a fact
+ * that is quietly not there.
+ *
+ * So the block is split on the *label* marker, and every value div inside a
+ * chunk belongs to that chunk's label. They are joined with the same ` · ` a
+ * `<br>` becomes, because to every reader downstream this is one row's text.
  */
 export function specRows(html: string): Map<string, string> {
   const block = specBlock(html)
   const rows = new Map<string, string>()
-  const item = /panel-item-ttl[^>]*>([\s\S]*?)panel-item-cont[^>]*>([\s\S]*?)<\/div>/g
-  for (const [, title, cont] of block.matchAll(item)) {
+  // `panel-item-cont` contains `panel-item` but never `panel-item-ttl`, so this
+  // split is unambiguous — and it names neither `<h4>` nor `<div>`, which is what
+  // keeps one reader working across both generations of the markup.
+  for (const chunk of block.split('panel-item-ttl').slice(1)) {
+    const firstValue = chunk.indexOf('panel-item-cont')
+    const title = firstValue === -1 ? chunk : chunk.slice(0, firstValue)
     const label = decode(
       title
-        // The capture runs up to the *class name* of the value element, so it
-        // ends mid-tag — `<div class="p-product_detail-…`. That fragment has no
-        // closing bracket, so the tag stripper below leaves it in the label.
+        // The split lands *inside* the label element's class attribute, so the
+        // chunk opens with the rest of that tag — `"> <h4>Accuracy</h4>`. Drop it
+        // up to the first `>` or the label reads `"> Accuracy`.
+        .replace(/^[^>]*>/, '')
+        // And the slice ends mid-tag for the same reason at the other end —
+        // `<div class="p-product_detail-…` has no closing bracket, so the tag
+        // stripper below would otherwise leave the fragment in the label.
         .replace(/<[^>]*$/, '')
         .replace(/<[^>]+>/g, ' '),
     )
-    const value = decode(cont.replace(/<br\s*\/?>/gi, ' · ').replace(/<[^>]+>/g, ' '))
-    if (label && value) rows.set(label, value)
+    if (!label) continue
+    const values = [...chunk.matchAll(/panel-item-cont[^>]*>([\s\S]*?)<\/div>/g)].map(([, cont]) =>
+      decode(cont.replace(/<br\s*\/?>/gi, ' · ').replace(/<[^>]+>/g, ' ')),
+    )
+    const value = values.filter(Boolean).join(' · ')
+    if (value) rows.set(label, value)
   }
   return rows
 }

@@ -202,6 +202,15 @@ const FEATURE_WORDS: [string, RegExp][] = [
   ['flash-alert', /flash alert/i],
 ]
 
+/**
+ * The vocabulary order, which is the order a `features:` line is written in.
+ *
+ * Exported so `reread.ts` can put a union back into this order rather than
+ * appending to the end of an existing list — a diff that reads as insertions is
+ * reviewable, and one that reorders eleven tags to add one is not.
+ */
+export const FEATURE_ORDER: readonly string[] = FEATURE_WORDS.map(([tag]) => tag)
+
 function features(rows: Map<string, string>): string[] {
   const text = [...rows].map(([label, value]) => `${label}: ${value}`).join(' \n ')
   const found: string[] = []

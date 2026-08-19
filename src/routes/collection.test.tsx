@@ -146,10 +146,25 @@ describe('the note (FR-5)', () => {
     renderApp('/watch/ga-2100-1a1')
 
     const field = await screen.findByRole('textbox', { name: strings['note.heading'] })
-    await userEvent.type(field, 'Bought in Osaka.')
+    // **Five characters, and keep it that way.** `userEvent.type` dispatches a
+    // full event sequence per character, and every one re-renders a TextArea whose
+    // `autoSize` measures the DOM and whose `showCount` re-wraps it. This read
+    // `Bought in Osaka.` — sixteen characters — and took **25 s on its own with no
+    // instrumentation**, which is roughly 10× cheaper than under coverage: the
+    // test then timed out at the 60 s ceiling twice during `test:coverage`, once
+    // on a fully idle machine, for a reason that has nothing to do with what it
+    // asserts.
+    //
+    // What it asserts is that **leaving the field saves what was typed**. The
+    // sentence was never the subject, and the eleven extra keystrokes bought
+    // nothing except the flake.
+    await userEvent.type(field, 'Osaka')
     await userEvent.tab()
 
     expect(await screen.findByText(strings['note.saved'])).toBeInTheDocument()
+    // Asserted explicitly now, because shortening the input would otherwise make
+    // "what was typed" a claim nothing in the test checks.
+    expect(field).toHaveValue('Osaka')
   })
 
   /** FR-5.4 — said while they are typing, and it changes with the profile. */
