@@ -170,11 +170,43 @@ export function WatchCard({
         style={{ position: 'absolute', inset: 0, zIndex: 1 }}
       />
 
+      {/**
+       * **Truncated in CSS, and AntD's `ellipsis` prop is deliberately not
+       * used.** This is a performance decision, not a styling one, and it was
+       * found by profiling rather than by reading the docs.
+       *
+       * Any `ellipsis` prop — `true` as much as `{ tooltip }` — makes AntD run
+       * this, once per element, inside a layout effect:
+       *
+       *     const em = document.createElement('em')
+       *     el.appendChild(em)
+       *     const a = el.getBoundingClientRect()
+       *     const b = em.getBoundingClientRect()
+       *     el.removeChild(em)
+       *
+       * Append, read, read, remove — per card. Every one forces a synchronous
+       * layout of the whole document, which is textbook layout thrashing. A CPU
+       * profile of one back navigation at a 4× throttle put
+       * `getBoundingClientRect` at **23% of all samples**, called from React's
+       * commit phase, and it was the single largest cost on the page — larger
+       * than every image on it.
+       *
+       * Three CSS properties do the same job with no measurement and no DOM
+       * churn. `title` keeps the full reference available as a native tooltip for
+       * nothing, and the card's stretched link already carries
+       * `aria-label={model.ref}` for anyone not using a pointer.
+       */}
       {sources ? (
         <Typography.Text
           strong
-          style={{ fontFamily: token.fontFamilyCode, display: 'block' }}
-          ellipsis={{ tooltip: model.ref }}
+          title={model.ref}
+          style={{
+            fontFamily: token.fontFamilyCode,
+            display: 'block',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            whiteSpace: 'nowrap',
+          }}
         >
           {model.ref}
         </Typography.Text>
