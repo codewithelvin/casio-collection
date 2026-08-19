@@ -1,0 +1,173 @@
+# MRG-B2000 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mrg-b2000
+  name: MRG-B2000
+  line: g-shock
+
+models:
+  - id: mrg-b2000b-1a
+    ref: MRG-B2000B-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715064531id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2000b-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064531id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A/'
+  - id: mrg-b2000b-1a1
+    ref: MRG-B2000B-1A1
+    source:
+      { url: 'https://web.archive.org/web/20240715064509id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A1/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2000b-1a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064509id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A1/'
+  - id: mrg-b2000b-1a4
+    ref: MRG-B2000B-1A4
+    source:
+      { url: 'https://web.archive.org/web/20240715064515id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A4/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2000b-1a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064515id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A4/'
+  - id: mrg-b2000bs-3a
+    ref: MRG-B2000BS-3A
+    source:
+      { url: 'https://web.archive.org/web/20240715064526id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000BS-3A/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 163, material: 'Titanium / Cobarion' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2000bs-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064526id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000BS-3A/'
+  - id: mrg-b2000d-1a
+    ref: MRG-B2000D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715064536id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000D-1A/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2000d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064536id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000D-1A/'
+  - id: mrg-b2000ga-1a
+    ref: MRG-B2000GA-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715064521id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000GA-1A/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2000ga-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064521id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000GA-1A/'
+  - id: mrg-b2000js-1a
+    ref: MRG-B2000JS-1A
+    source:
+      { url: 'https://web.archive.org/web/20241127024501id_/https://www.casio.com/us/watches/gshock/product.MRG-B2000JS-1A/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 154, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, magnetic-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2000js-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241127024501id_/https://www.casio.com/us/watches/gshock/product.MRG-B2000JS-1A/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/1024-mrgb2000js/'
+  - id: mrg-b2000r-1a
+    ref: MRG-B2000R-1A
+    source:
+      { url: 'https://web.archive.org/web/20220529013156id_/https://www.casio.com/us/watches/gshock/product.mrg-b2000r-1a/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 138, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2000r-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529013156id_/https://www.casio.com/us/watches/gshock/product.mrg-b2000r-1a/'
+  - id: mrg-b2000rg-3a
+    ref: MRG-B2000RG-3A
+    source:
+      { url: 'https://web.archive.org/web/20251114200529id_/https://www.casio.com/de/watches/gshock/product.MRG-B2000RG-3A/', kind: official }
+    movement: solar
+    features: [alarm, super-illuminator, bluetooth, tough-solar]
+    image: mrg-b2000rg-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251114200529id_/https://www.casio.com/de/watches/gshock/product.MRG-B2000RG-3A/'
+  - id: mrg-b2000sg-1a
+    ref: MRG-B2000SG-1A
+    source:
+      { url: 'https://web.archive.org/web/20231218233618id_/https://www.casio.com/my/watches/gshock/product.MRG-B2000SG-1A/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 138, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, magnetic-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2000sg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231218233618id_/https://www.casio.com/my/watches/gshock/product.MRG-B2000SG-1A/'
+  - id: mrg-b2000sh-5a
+    ref: MRG-B2000SH-5A
+    source:
+      { url: 'https://web.archive.org/web/20211028110113id_/https://www.casio.com/sg/watches/gshock/product.MRG-B2000SH-5A/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2000sh-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211028110113id_/https://www.casio.com/sg/watches/gshock/product.MRG-B2000SH-5A/'

@@ -1,0 +1,60 @@
+# GPR-H1000 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gpr-h1000
+  name: GPR-H1000
+  line: g-shock
+
+models:
+  - id: gpr-h1000-1
+    ref: GPR-H1000-1
+    source:
+      { url: 'https://web.archive.org/web/20250120000455id_/https://www.casio.com/in/watches/gshock/product.GPR-H1000-1/', kind: official }
+    case: { height_mm: 60.6, width_mm: 53.2, depth_mm: 20.3, weight_g: 92, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, power-saving, tide-graph, moon-data, sunrise-sunset, mud-resistant, mineral-glass]
+    image: gpr-h1000-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120000455id_/https://www.casio.com/in/watches/gshock/product.GPR-H1000-1/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0105-gprh1000/'
+  - id: gpr-h1000-9
+    ref: GPR-H1000-9
+    source:
+      { url: 'https://web.archive.org/web/20240202121407id_/https://www.casio.com/my/watches/gshock/product.GPR-H1000-9/', kind: official }
+    case: { height_mm: 60.6, width_mm: 53.2, depth_mm: 20.3, weight_g: 92, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, power-saving, tide-graph, moon-data, sunrise-sunset, mud-resistant, mineral-glass]
+    image: gpr-h1000-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240202121407id_/https://www.casio.com/my/watches/gshock/product.GPR-H1000-9/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0105-gprh1000/'
+  - id: gpr-h1000ry-1a9
+    ref: GPR-H1000RY-1A9
+    source:
+      { url: 'https://web.archive.org/web/20250315073857id_/https://www.casio.com/us/watches/gshock/product.GPR-H1000RY-1A9/', kind: official }
+    case: { height_mm: 60.6, width_mm: 53.2, depth_mm: 20.3, weight_g: 92, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, power-saving, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gpr-h1000ry-1a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250315073857id_/https://www.casio.com/us/watches/gshock/product.GPR-H1000RY-1A9/'

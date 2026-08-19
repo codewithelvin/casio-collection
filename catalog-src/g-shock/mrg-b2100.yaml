@@ -1,0 +1,64 @@
+# MRG-B2100 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mrg-b2100
+  name: MRG-B2100
+  line: g-shock
+
+models:
+  - id: mrg-b2100b-1a
+    ref: MRG-B2100B-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715135443id_/https://www.casio.com/my/watches/gshock/product.MRG-B2100B-1A/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 49.5, width_mm: 44.4, depth_mm: 13.6, weight_g: 122, material: 'Titanium / Cobarion' }
+    water_resistance_m: 200
+    features: [full-auto-calendar, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2100b-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715135443id_/https://www.casio.com/my/watches/gshock/product.MRG-B2100B-1A/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0528-mrgb2100b/'
+  - id: mrg-b2100d-1a
+    ref: MRG-B2100D-1A
+    source:
+      { url: 'https://web.archive.org/web/20241125055129id_/https://www.casio.com/us/watches/gshock/product.MRG-B2100D-1A/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 49.5, width_mm: 44.4, depth_mm: 13.6, weight_g: 122, material: 'Titanium / Cobarion' }
+    water_resistance_m: 200
+    features: [full-auto-calendar, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2100d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241125055129id_/https://www.casio.com/us/watches/gshock/product.MRG-B2100D-1A/'
+  - id: mrg-b2100r-2a
+    ref: MRG-B2100R-2A
+    source:
+      { url: 'https://web.archive.org/web/20250220010019id_/https://www.casio.com/us/watches/gshock/product.MRG-B2100R-2A/', kind: official }
+    display: analog
+    movement: solar-radio
+    case: { height_mm: 49.5, width_mm: 44.4, depth_mm: 13.6, weight_g: 110, material: 'Titanium / Cobarion' }
+    water_resistance_m: 200
+    features: [full-auto-calendar, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    image: mrg-b2100r-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250220010019id_/https://www.casio.com/us/watches/gshock/product.MRG-B2100R-2A/'

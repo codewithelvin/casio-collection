@@ -1,0 +1,144 @@
+# GMD-S5610 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gmd-s5610
+  name: GMD-S5610
+  line: g-shock
+
+models:
+  - id: gmd-s5610bb-1
+    ref: GMD-S5610BB-1
+    source:
+      { url: 'https://web.archive.org/web/20240915200419id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610BB-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gmd-s5610bb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240915200419id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610BB-1/'
+  - id: gmd-s5610it-1
+    ref: GMD-S5610IT-1
+    source:
+      { url: 'https://web.archive.org/web/20250118081707id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gmd-s5610it-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118081707id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-1/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/1003-gmds5610it/'
+  - id: gmd-s5610it-3
+    ref: GMD-S5610IT-3
+    source:
+      { url: 'https://web.archive.org/web/20250122191201id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-3/', kind: official }
+    movement: quartz
+    case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gmd-s5610it-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250122191201id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-3/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/1003-gmds5610it/'
+  - id: gmd-s5610it-4a
+    ref: GMD-S5610IT-4A
+    source:
+      { url: 'https://web.archive.org/web/20250118013516id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gmd-s5610it-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118013516id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-4A/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/1003-gmds5610it/'
+  - id: gmd-s5610it-4b
+    ref: GMD-S5610IT-4B
+    source:
+      { url: 'https://web.archive.org/web/20250118093659id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-4B/', kind: official }
+    movement: quartz
+    case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gmd-s5610it-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118093659id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-4B/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/1003-gmds5610it/'
+  - id: gmd-s5610it-6
+    ref: GMD-S5610IT-6
+    source:
+      { url: 'https://web.archive.org/web/20250117232720id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-6/', kind: official }
+    movement: quartz
+    case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gmd-s5610it-6
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250117232720id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-6/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/1003-gmds5610it/'
+  - id: gmd-s5610pk-4
+    ref: GMD-S5610PK-4
+    source:
+      { url: 'https://web.archive.org/web/20241001180601id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610PK-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gmd-s5610pk-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241001180601id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610PK-4/'
+  - id: gmd-s5610pp-4
+    ref: GMD-S5610PP-4
+    source:
+      { url: 'https://web.archive.org/web/20250413110716id_/https://www.casio.com/fr/watches/gshock/product.GMD-S5610PP-4/', kind: official }
+    features: [super-illuminator]
+    image: gmd-s5610pp-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250413110716id_/https://www.casio.com/fr/watches/gshock/product.GMD-S5610PP-4/'
+  - id: gmd-s5610rs-8
+    ref: GMD-S5610RS-8
+    source:
+      { url: 'https://web.archive.org/web/20241119223607id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5610RS-8/', kind: official }
+    movement: quartz
+    case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gmd-s5610rs-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241119223607id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5610RS-8/'

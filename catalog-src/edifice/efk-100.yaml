@@ -1,0 +1,41 @@
+# EFK-100 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efk-100
+  name: EFK-100
+  line: edifice
+
+models:
+
+# ADDED 2026-08-19: 1 more references, from Casio's own
+# product pages via the archive (D52). The entry above this block predates them
+# and is left exactly as it was — a different source, and a `year` these pages
+# do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: efk-100cd-1a
+    ref: EFK-100CD-1A
+    source:
+      { url: 'https://web.archive.org/web/20250617184501id_/https://www.casio.com/intl/watches/edifice/product.EFK-100CD-1A/', kind: official }
+    case: { height_mm: 43.5, width_mm: 39, depth_mm: 12.5, weight_g: 148, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [magnetic-resistant, sapphire-crystal]
+    image: efk-100cd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250617184501id_/https://www.casio.com/intl/watches/edifice/product.EFK-100CD-1A/'
+    year: 2025
+    year_source: 'https://www.casio.com/intl/news/2025/0616-efk-100/'

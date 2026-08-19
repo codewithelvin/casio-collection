@@ -1,0 +1,72 @@
+# GBD-300 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gbd-300
+  name: GBD-300
+  line: g-shock
+
+models:
+
+# ADDED 2026-08-19: 3 more references, from Casio's own
+# product pages via the archive (D52). The entry above this block predates them
+# and is left exactly as it was — a different source, and a `year` these pages
+# do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: gbd-300-1
+    ref: GBD-300-1
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBD-300-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 47.4, depth_mm: 14.9, weight_g: 60, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-300-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBD-300-1/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0617-gbd300/'
+  - id: gbd-300-7
+    ref: GBD-300-7
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBD-300-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 47.4, depth_mm: 14.9, weight_g: 60, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-300-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBD-300-7/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0617-gbd300/'
+  - id: gbd-300-9
+    ref: GBD-300-9
+    source:
+      { url: 'https://web.archive.org/web/20240824133306id_/https://www.casio.com/in/watches/gshock/product.GBD-300-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 47.4, depth_mm: 14.9, weight_g: 60, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-300-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133306id_/https://www.casio.com/in/watches/gshock/product.GBD-300-9/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0617-gbd300/'

@@ -17,7 +17,7 @@
 // D50 still bites: a page stating fewer than four rows is reported and not
 // seeded. D25 still bites: no `year` is written, because the product page states
 // none — the existing entry's 1991 came from a source that did.
-import { existsSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { ENOUGH_ROWS, archivedFor, imageUrl, isEnglish, page, specRows } from './archive.ts'
@@ -35,12 +35,53 @@ if (!line || !series || !['--crawl', '--dry', '--write'].includes(mode ?? '')) {
 }
 
 const path = join(REPO, 'catalog-src', line, `${series}.yaml`)
-if (!existsSync(path)) {
-  console.error(`No ${path} — this adds to a series that exists. Use seed.ts for a new one.`)
-  process.exit(1)
-}
 
-const original = readFileSync(path, 'utf8')
+/**
+ * A series file that does not exist yet is created, with nothing in it but its
+ * own identity.
+ *
+ * The alternative was `seed.ts`, and it is the wrong tool for the same reason it
+ * was wrong for the photographs: it regenerates **every** series in a line from
+ * the archive, so using it to add one new series would rewrite the reviewed
+ * files beside it. This writes one file, and the entries land through the same
+ * path an existing file's do.
+ *
+ * `family` is deliberately absent (§10.6 guardrail 4a): which watches look like
+ * a square is a human's judgement, proposed and never written by the skill.
+ */
+const HEADER = `# ${series.toUpperCase()} — seeded ${new Date().toISOString().slice(0, 10)} from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# \`source\`.
+#
+# Where an entry carries a \`year\`, it came from a **different** Casio page — the
+# dated news release named in \`year_source\` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * \`family\` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ${series}
+  name: ${series.toUpperCase()}
+  line: ${line}
+
+models:
+`
+
+/**
+ * **The file is created when there is something to put in it, not before.**
+ *
+ * Writing the header up front left `models:` null between the crawl and the
+ * write, and the schema is explicit that "a series file with no models is not a
+ * series" — so a crawl that found nothing, or was interrupted, left the whole
+ * catalogue invalid. `catalog:audit` caught exactly that, mid-run, which is
+ * what an audit is for.
+ */
+const existed = existsSync(path)
+const original = existed ? readFileSync(path, 'utf8') : HEADER
 const present = new Set(
   [...original.matchAll(/^ {4}ref: (\S+)\s*$/gm)].map((m) => m[1].toUpperCase()),
 )
@@ -175,18 +216,27 @@ if (models.length === 0) {
   process.exit(0)
 }
 
+mkdirSync(join(REPO, 'catalog-src', line), { recursive: true })
+if (!existed) console.log(`created catalog-src/${line}/${series}.yaml`)
+
 const lines = original.split('\n')
 while (lines.length > 0 && lines[lines.length - 1].trim() === '') lines.pop()
 
-const note = [
-  ``,
-  `# ADDED ${new Date().toISOString().slice(0, 10)}: ${models.length} more references, from Casio's own`,
-  `# product pages via the archive (D52). The entry above this block predates them`,
-  `# and is left exactly as it was — a different source, and a \`year\` these pages`,
-  `# do not state.`,
-  `#`,
-  `# No \`year\` on any of the entries below: the product page dates nothing (D25).`,
-]
+// A new file's header already explains where its entries came from. The note
+// below is for a file that had entries before this run, and says what it can
+// honestly say about them — that they are older, from a different source, and
+// untouched. On a new file it would be describing an entry that is not there.
+const note = existed
+  ? [
+      ``,
+      `# ADDED ${new Date().toISOString().slice(0, 10)}: ${models.length} more references, from Casio's own`,
+      `# product pages via the archive (D52). The entries above this block predate`,
+      `# them and are left exactly as they were — a different source, and in some`,
+      `# cases a \`year\` these pages do not state.`,
+      `#`,
+      `# No \`year\` on any of the entries below: the product page dates nothing (D25).`,
+    ]
+  : []
 
 writeFileSync(path, [...lines, ...note, models.map(modelYaml).join('\n')].join('\n') + '\n')
 console.log(`added ${models.length} entries to ${path}`)

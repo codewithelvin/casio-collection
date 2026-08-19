@@ -1,0 +1,66 @@
+# GMC-B2100 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gmc-b2100
+  name: GMC-B2100
+  line: g-shock
+
+models:
+  - id: gmc-b2100ad-2a
+    ref: GMC-B2100AD-2A
+    source:
+      { url: 'https://web.archive.org/web/20241126204429id_/https://www.casio.com/us/watches/gshock/product.GMC-B2100AD-2A/', kind: official }
+    display: analog
+    movement: solar
+    case: { height_mm: 51.3, width_mm: 46.3, depth_mm: 12.4, weight_g: 171, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, mineral-glass]
+    image: gmc-b2100ad-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126204429id_/https://www.casio.com/us/watches/gshock/product.GMC-B2100AD-2A/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0930-gmcb2100/'
+  - id: gmc-b2100d-1a
+    ref: GMC-B2100D-1A
+    source:
+      { url: 'https://web.archive.org/web/20241126232853id_/https://www.casio.com/us/watches/gshock/product.GMC-B2100D-1A/', kind: official }
+    display: analog
+    movement: solar
+    case: { height_mm: 51.3, width_mm: 46.3, depth_mm: 12.4, weight_g: 171, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, mineral-glass]
+    image: gmc-b2100d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126232853id_/https://www.casio.com/us/watches/gshock/product.GMC-B2100D-1A/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0930-gmcb2100/'
+  - id: gmc-b2100ze-1a
+    ref: GMC-B2100ZE-1A
+    source:
+      { url: 'https://web.archive.org/web/20250121105018id_/https://www.casio.com/in/watches/gshock/product.GMC-B2100ZE-1A/', kind: official }
+    display: analog
+    movement: solar
+    case: { height_mm: 51.3, width_mm: 46.3, depth_mm: 12.4, weight_g: 171, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, mineral-glass]
+    image: gmc-b2100ze-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121105018id_/https://www.casio.com/in/watches/gshock/product.GMC-B2100ZE-1A/'

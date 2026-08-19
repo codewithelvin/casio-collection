@@ -1,0 +1,55 @@
+# DW-5000 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: dw-5000
+  name: DW-5000
+  line: g-shock
+
+models:
+
+# ADDED 2026-08-19: 2 more references, from Casio's own
+# product pages via the archive (D52). The entry above this block predates them
+# and is left exactly as it was — a different source, and a `year` these pages
+# do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: dw-5000r-1a
+    ref: DW-5000R-1A
+    source:
+      { url: 'https://web.archive.org/web/20241214085539id_/https://www.casio.com/us/watches/gshock/product.DW-5000R-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.3, depth_mm: 13.1, weight_g: 76, material: 'Stainless steel / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5000r-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241214085539id_/https://www.casio.com/us/watches/gshock/product.DW-5000R-1A/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/1128-dw5000r/'
+  - id: dw-5000ss-1
+    ref: DW-5000SS-1
+    source:
+      { url: 'https://web.archive.org/web/20240715064941id_/https://www.casio.com/europe/watches/gshock/product.DW-5000SS-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.5, weight_g: 78, material: 'Stainless steel / Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5000ss-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064941id_/https://www.casio.com/europe/watches/gshock/product.DW-5000SS-1/'

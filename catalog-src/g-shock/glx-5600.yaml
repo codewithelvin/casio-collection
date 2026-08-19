@@ -1,0 +1,68 @@
+# GLX-5600 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: glx-5600
+  name: GLX-5600
+  line: g-shock
+
+models:
+
+# ADDED 2026-08-19: 3 more references, from Casio's own
+# product pages via the archive (D52). The entry above this block predates them
+# and is left exactly as it was — a different source, and a `year` these pages
+# do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: glx-5600kb-1
+    ref: GLX-5600KB-1
+    source:
+      { url: 'https://web.archive.org/web/20241128164645id_/https://www.casio.com/us/watches/gshock/product.GLX-5600KB-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 53, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, afterglow, tide-graph, moon-data, shock-resistant, mineral-glass, flash-alert]
+    image: glx-5600kb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241128164645id_/https://www.casio.com/us/watches/gshock/product.GLX-5600KB-1/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0828-glx5600kb/'
+  - id: glx-5600rt-4
+    ref: GLX-5600RT-4
+    source:
+      { url: 'https://web.archive.org/web/20240715021341id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 53, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, afterglow, tide-graph, moon-data, shock-resistant, mineral-glass, flash-alert]
+    image: glx-5600rt-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021341id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-4/'
+  - id: glx-5600rt-9
+    ref: GLX-5600RT-9
+    source:
+      { url: 'https://web.archive.org/web/20240715021324id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 53, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, afterglow, tide-graph, moon-data, shock-resistant, mineral-glass, flash-alert]
+    image: glx-5600rt-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021324id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-9/'

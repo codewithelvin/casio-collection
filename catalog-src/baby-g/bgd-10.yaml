@@ -1,0 +1,195 @@
+# BGD-10 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: bgd-10
+  name: BGD-10
+  line: baby-g
+
+models:
+
+# ADDED 2026-08-19: 13 more references, from Casio's own
+# product pages via the archive (D52). The entry above this block predates them
+# and is left exactly as it was — a different source, and a `year` these pages
+# do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: bgd-10-1
+    ref: BGD-10-1
+    source:
+      { url: 'https://web.archive.org/web/20240806043849id_/https://www.casio.com/my/watches/babyg/product.BGD-10-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 42.8, width_mm: 39, depth_mm: 14.7, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bgd-10-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240806043849id_/https://www.casio.com/my/watches/babyg/product.BGD-10-1/'
+  - id: bgd-10-3
+    ref: BGD-10-3
+    source:
+      { url: 'https://web.archive.org/web/20250122115302id_/https://www.casio.com/id/watches/babyg/product.BGD-10-3/', kind: official }
+    features: [alarm, stopwatch, super-illuminator]
+    image: bgd-10-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250122115302id_/https://www.casio.com/id/watches/babyg/product.BGD-10-3/'
+  - id: bgd-10k-2
+    ref: BGD-10K-2
+    source:
+      { url: 'https://web.archive.org/web/20240517001743id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 42.8, width_mm: 39, depth_mm: 14.7, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bgd-10k-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240517001743id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-2/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0423-bgd-10k/'
+  - id: bgd-10k-4
+    ref: BGD-10K-4
+    source:
+      { url: 'https://web.archive.org/web/20250118111429id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 42.8, width_mm: 39, depth_mm: 14.7, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bgd-10k-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118111429id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-4/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0423-bgd-10k/'
+  - id: bgd-10k-6
+    ref: BGD-10K-6
+    source:
+      { url: 'https://web.archive.org/web/20250117203930id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-6/', kind: official }
+    movement: quartz
+    case: { height_mm: 42.8, width_mm: 39, depth_mm: 14.7, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bgd-10k-6
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250117203930id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-6/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0423-bgd-10k/'
+  - id: bgd-10k-7
+    ref: BGD-10K-7
+    source:
+      { url: 'https://web.archive.org/web/20250118003525id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 42.8, width_mm: 39, depth_mm: 14.7, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bgd-10k-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118003525id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-7/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0423-bgd-10k/'
+  - id: bgd-10kh-2c
+    ref: BGD-10KH-2C
+    source:
+      { url: 'https://web.archive.org/web/20251202170255id_/https://www.casio.com/nl/watches/babyg/product.BGD-10KH-2C/', kind: official }
+    features: [stopwatch, super-illuminator]
+    image: bgd-10kh-2c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251202170255id_/https://www.casio.com/nl/watches/babyg/product.BGD-10KH-2C/'
+  - id: bgd-10kh-4
+    ref: BGD-10KH-4
+    source:
+      { url: 'https://web.archive.org/web/20251130105418id_/https://www.casio.com/nl/watches/babyg/product.BGD-10KH-4/', kind: official }
+    features: [stopwatch, super-illuminator]
+    image: bgd-10kh-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251130105418id_/https://www.casio.com/nl/watches/babyg/product.BGD-10KH-4/'
+  - id: bgd-10kkm-1
+    ref: BGD-10KKM-1
+    source:
+      { url: 'https://web.archive.org/web/20250118015539id_/https://www.casio.com/us/watches/babyg/product.BGD-10KKM-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 42.8, width_mm: 39, depth_mm: 14.7, weight_g: 34, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bgd-10kkm-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118015539id_/https://www.casio.com/us/watches/babyg/product.BGD-10KKM-1/'
+  - id: bgd-10kpp-7
+    ref: BGD-10KPP-7
+    source:
+      { url: 'https://web.archive.org/web/20240829171606id_/https://www.casio.com/sg/watches/babyg/product.BGD-10KPP-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 42.8, width_mm: 39, depth_mm: 14.7, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bgd-10kpp-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240829171606id_/https://www.casio.com/sg/watches/babyg/product.BGD-10KPP-7/'
+  - id: bgd-10l-2
+    ref: BGD-10L-2
+    source:
+      { url: 'https://web.archive.org/web/20241217201800id_/https://www.casio.com/us/watches/babyg/product.BGD-10L-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 42.8, width_mm: 39, depth_mm: 14.7, weight_g: 34, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bgd-10l-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241217201800id_/https://www.casio.com/us/watches/babyg/product.BGD-10L-2/'
+  - id: bgd-10l-4
+    ref: BGD-10L-4
+    source:
+      { url: 'https://web.archive.org/web/20241213080532id_/https://www.casio.com/us/watches/babyg/product.BGD-10L-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 42.8, width_mm: 39, depth_mm: 14.7, weight_g: 34, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bgd-10l-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241213080532id_/https://www.casio.com/us/watches/babyg/product.BGD-10L-4/'
+  - id: bgd-10l-7
+    ref: BGD-10L-7
+    source:
+      { url: 'https://web.archive.org/web/20241122171026id_/https://www.casio.com/us/watches/babyg/product.BGD-10L-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 42.8, width_mm: 39, depth_mm: 14.7, weight_g: 34, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bgd-10l-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241122171026id_/https://www.casio.com/us/watches/babyg/product.BGD-10L-7/'

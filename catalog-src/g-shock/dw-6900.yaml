@@ -1470,3 +1470,211 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+
+# ADDED 2026-08-19: 15 more references, from Casio's own
+# product pages via the archive (D52). The entry above this block predates them
+# and is left exactly as it was — a different source, and a `year` these pages
+# do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: dw-6900hd-8
+    ref: DW-6900HD-8
+    source:
+      { url: 'https://web.archive.org/web/20240715065725id_/https://www.casio.com/europe/watches/gshock/product.DW-6900HD-8/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900hd-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065725id_/https://www.casio.com/europe/watches/gshock/product.DW-6900HD-8/'
+  - id: dw-6900nnj-1
+    ref: DW-6900NNJ-1
+    source:
+      { url: 'https://web.archive.org/web/20240714221542id_/https://www.casio.com/europe/watches/gshock/product.DW-6900NNJ-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900nnj-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221542id_/https://www.casio.com/europe/watches/gshock/product.DW-6900NNJ-1/'
+  - id: dw-6900rcs-1
+    ref: DW-6900RCS-1
+    source:
+      { url: 'https://web.archive.org/web/20240408193657id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900rcs-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193657id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-1/'
+  - id: dw-6900rcs-4
+    ref: DW-6900RCS-4
+    source:
+      { url: 'https://web.archive.org/web/20240408193253id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900rcs-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193253id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-4/'
+  - id: dw-6900rcs-7
+    ref: DW-6900RCS-7
+    source:
+      { url: 'https://web.archive.org/web/20240408193800id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900rcs-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193800id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-7/'
+  - id: dw-6900rl-1
+    ref: DW-6900RL-1
+    source:
+      { url: 'https://web.archive.org/web/20250122184300id_/https://www.casio.com/us/watches/gshock/product.DW-6900RL-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900rl-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250122184300id_/https://www.casio.com/us/watches/gshock/product.DW-6900RL-1/'
+  - id: dw-6900shb-7
+    ref: DW-6900SHB-7
+    source:
+      { url: 'https://web.archive.org/web/20250121114058id_/https://www.casio.com/in/watches/gshock/product.DW-6900SHB-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900shb-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121114058id_/https://www.casio.com/in/watches/gshock/product.DW-6900SHB-7/'
+  - id: dw-6900tr-1
+    ref: DW-6900TR-1
+    source:
+      { url: 'https://web.archive.org/web/20250309020326id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900tr-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250309020326id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-1/'
+    year: 2025
+    year_source: 'https://www.casio.com/intl/news/2025/0129-dw6900tr/'
+  - id: dw-6900tr-4
+    ref: DW-6900TR-4
+    source:
+      { url: 'https://web.archive.org/web/20250407003625id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900tr-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250407003625id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-4/'
+    year: 2025
+    year_source: 'https://www.casio.com/intl/news/2025/0129-dw6900tr/'
+  - id: dw-6900tr-9
+    ref: DW-6900TR-9
+    source:
+      { url: 'https://web.archive.org/web/20250407051223id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900tr-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250407051223id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-9/'
+    year: 2025
+    year_source: 'https://www.casio.com/intl/news/2025/0129-dw6900tr/'
+  - id: dw-6900tu-1a5
+    ref: DW-6900TU-1A5
+    source:
+      { url: 'https://web.archive.org/web/20240801174735id_/https://www.casio.com/us/watches/gshock/product.DW-6900TU-1A5/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900tu-1a5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240801174735id_/https://www.casio.com/us/watches/gshock/product.DW-6900TU-1A5/'
+  - id: dw-6900u-1
+    ref: DW-6900U-1
+    source:
+      { url: 'https://web.archive.org/web/20240715065322id_/https://www.casio.com/europe/watches/gshock/product.DW-6900U-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900u-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065322id_/https://www.casio.com/europe/watches/gshock/product.DW-6900U-1/'
+  - id: dw-6900ub-9
+    ref: DW-6900UB-9
+    source:
+      { url: 'https://web.archive.org/web/20240225135613id_/https://www.casio.com/intl/watches/gshock/product.DW-6900UB-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900ub-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135613id_/https://www.casio.com/intl/watches/gshock/product.DW-6900UB-9/'
+  - id: dw-6900ums-1
+    ref: DW-6900UMS-1
+    source:
+      { url: 'https://web.archive.org/web/20240307212724id_/https://www.casio.com/in/watches/gshock/product.DW-6900UMS-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900ums-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212724id_/https://www.casio.com/in/watches/gshock/product.DW-6900UMS-1/'
+  - id: dw-6900wd-1
+    ref: DW-6900WD-1
+    source:
+      { url: 'https://web.archive.org/web/20241009172121id_/https://www.casio.com/us/watches/gshock/product.DW-6900WD-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-6900wd-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241009172121id_/https://www.casio.com/us/watches/gshock/product.DW-6900WD-1/'

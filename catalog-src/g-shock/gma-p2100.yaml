@@ -1,0 +1,248 @@
+# GMA-P2100 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gma-p2100
+  name: GMA-P2100
+  line: g-shock
+
+models:
+
+# ADDED 2026-08-19: 17 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: gma-p2100-2a
+    ref: GMA-P2100-2A
+    source:
+      { url: 'https://web.archive.org/web/20240208001112id_/https://www.casio.com/my/watches/gshock/product.GMA-P2100-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240208001112id_/https://www.casio.com/my/watches/gshock/product.GMA-P2100-2A/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0111-gma-p2100/'
+  - id: gma-p2100-4a
+    ref: GMA-P2100-4A
+    source:
+      { url: 'https://web.archive.org/web/20240214084711id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084711id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100-4A/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0111-gma-p2100/'
+  - id: gma-p2100-7a
+    ref: GMA-P2100-7A
+    source:
+      { url: 'https://web.archive.org/web/20240214084710id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084710id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100-7A/'
+    year: 2024
+    year_source: 'https://www.casio.com/intl/news/2024/0111-gma-p2100/'
+  - id: gma-p2100ba-7a
+    ref: GMA-P2100BA-7A
+    source:
+      { url: 'https://web.archive.org/web/20260124015520id_/https://www.casio.com/de/watches/gshock/product.GMA-P2100BA-7A/', kind: official }
+    features: [alarm, super-illuminator]
+    image: gma-p2100ba-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20260124015520id_/https://www.casio.com/de/watches/gshock/product.GMA-P2100BA-7A/'
+  - id: gma-p2100bb-1a
+    ref: GMA-P2100BB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240907031039id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100BB-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100bb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240907031039id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100BB-1A/'
+  - id: gma-p2100it-4a
+    ref: GMA-P2100IT-4A
+    source:
+      { url: 'https://web.archive.org/web/20240406015814id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100IT-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100it-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240406015814id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100IT-4A/'
+  - id: gma-p2100it-7a
+    ref: GMA-P2100IT-7A
+    source:
+      { url: 'https://web.archive.org/web/20240406015803id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100IT-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100it-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240406015803id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100IT-7A/'
+  - id: gma-p2100pp-4a
+    ref: GMA-P2100PP-4A
+    source:
+      { url: 'https://web.archive.org/web/20250331180521id_/https://www.casio.com/fr/watches/gshock/product.GMA-P2100PP-4A/', kind: official }
+    features: [super-illuminator]
+    image: gma-p2100pp-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250331180521id_/https://www.casio.com/fr/watches/gshock/product.GMA-P2100PP-4A/'
+  - id: gma-p2100sg-1a
+    ref: GMA-P2100SG-1A
+    source:
+      { url: 'https://web.archive.org/web/20240406015643id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100sg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240406015643id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-1A/'
+  - id: gma-p2100sg-2a
+    ref: GMA-P2100SG-2A
+    source:
+      { url: 'https://web.archive.org/web/20240406015700id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100sg-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240406015700id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-2A/'
+  - id: gma-p2100sg-4a
+    ref: GMA-P2100SG-4A
+    source:
+      { url: 'https://web.archive.org/web/20240408193754id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100sg-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193754id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-4A/'
+  - id: gma-p2100st-4a
+    ref: GMA-P2100ST-4A
+    source:
+      { url: 'https://web.archive.org/web/20240930192848id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100st-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240930192848id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-4A/'
+  - id: gma-p2100st-7a
+    ref: GMA-P2100ST-7A
+    source:
+      { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100st-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-7A/'
+  - id: gma-p2100st-9a
+    ref: GMA-P2100ST-9A
+    source:
+      { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100st-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-9A/'
+  - id: gma-p2100va-7a
+    ref: GMA-P2100VA-7A
+    source:
+      { url: 'https://web.archive.org/web/20240516180332id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100VA-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100va-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240516180332id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100VA-7A/'
+  - id: gma-p2100w-7a
+    ref: GMA-P2100W-7A
+    source:
+      { url: 'https://web.archive.org/web/20241007212343id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100W-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100w-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241007212343id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100W-7A/'
+  - id: gma-p2100zy-1a
+    ref: GMA-P2100ZY-1A
+    source:
+      { url: 'https://web.archive.org/web/20240405034103id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ZY-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gma-p2100zy-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240405034103id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ZY-1A/'
