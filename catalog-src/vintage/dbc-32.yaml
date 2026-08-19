@@ -30,7 +30,7 @@ models:
       { url: 'https://web.archive.org/web/20240714215918id_/https://www.casio.com/europe/watches/casio/vintage/product.DBC-32-1A/', kind: official }
     movement: quartz
     case: { height_mm: 50.4, width_mm: 37.4, depth_mm: 12, weight_g: 34, material: 'Resin' }
-    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, auto-light, afterglow, calculator]
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, auto-light, afterglow, calculator, telememo]
     image: dbc-32-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -43,7 +43,7 @@ models:
       { url: 'https://web.archive.org/web/20240714215920id_/https://www.casio.com/europe/watches/casio/vintage/product.DBC-32D-1A/', kind: official }
     movement: quartz
     case: { height_mm: 50.4, width_mm: 37.4, depth_mm: 12, weight_g: 62.5, material: 'Resin' }
-    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, auto-light, afterglow, calculator]
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, auto-light, afterglow, calculator, telememo]
     image: dbc-32d-1a
     image_credit:
       author: Casio Computer Co., Ltd.

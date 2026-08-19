@@ -26,7 +26,7 @@ models:
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2000b-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -41,7 +41,7 @@ models:
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2000b-1a1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -56,7 +56,7 @@ models:
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2000b-1a4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -71,7 +71,7 @@ models:
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 163, material: 'Titanium / Cobarion' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2000bs-3a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -86,7 +86,7 @@ models:
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2000d-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -101,7 +101,7 @@ models:
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2000ga-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -116,7 +116,7 @@ models:
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 154, material: 'Titanium' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, magnetic-resistant, screw-lock-crown, sapphire-crystal]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2000js-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -133,7 +133,7 @@ models:
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 138, material: 'Titanium' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2000r-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -160,7 +160,7 @@ models:
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 138, material: 'Titanium' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, magnetic-resistant, screw-lock-crown, sapphire-crystal]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2000sg-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -175,7 +175,7 @@ models:
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2000sh-5a
     image_credit:
       author: Casio Computer Co., Ltd.

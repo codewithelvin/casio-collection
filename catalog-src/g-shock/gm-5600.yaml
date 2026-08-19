@@ -64,7 +64,7 @@ models:
     ref: GM-5600BWD-1
     source:
       { url: 'https://web.archive.org/web/20251212180521id_/https://www.casio.com/nl/watches/gshock/product.GM-5600BWD-1/', kind: official }
-    features: [stopwatch, super-illuminator]
+    features: [alarm, stopwatch, super-illuminator]
     image: gm-5600bwd-1
     image_credit:
       author: Casio Computer Co., Ltd.

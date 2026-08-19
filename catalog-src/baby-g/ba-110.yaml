@@ -32,6 +32,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220308id_/https://www.casio.com/europe/watches/babyg/product.BA-110-1A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110-4a1
     ref: BA-110-4A1
     source:
@@ -46,6 +47,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203232752id_/https://www.casio.com/my/watches/babyg/product.BA-110-4A1/'
     discontinued: false
+    display: ana-digi
   - id: ba-110-4a2
     ref: BA-110-4A2
     source:
@@ -60,6 +62,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203212347id_/https://www.casio.com/my/watches/babyg/product.BA-110-4A2/'
     discontinued: false
+    display: ana-digi
   - id: ba-110-7a1
     ref: BA-110-7A1
     source:
@@ -74,6 +77,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220334id_/https://www.casio.com/europe/watches/babyg/product.BA-110-7A1/'
     discontinued: false
+    display: ana-digi
   - id: ba-110-7a3
     ref: BA-110-7A3
     source:
@@ -88,6 +92,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220314id_/https://www.casio.com/europe/watches/babyg/product.BA-110-7A3/'
     discontinued: false
+    display: ana-digi
   - id: ba-110aq-4a
     ref: BA-110AQ-4A
     source:
@@ -113,6 +118,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203221134id_/https://www.casio.com/my/watches/babyg/product.BA-110BC-1A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110bc-2a
     ref: BA-110BC-2A
     source:
@@ -127,6 +133,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220925151548id_/https://www.casio.com/us/watches/babyg/product.BA-110BC-2A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110bc-9a
     ref: BA-110BC-9A
     source:
@@ -141,6 +148,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220925152030id_/https://www.casio.com/us/watches/babyg/product.BA-110BC-9A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110be-4a
     ref: BA-110BE-4A
     source:
@@ -155,6 +163,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203213028id_/https://www.casio.com/my/watches/babyg/product.BA-110BE-4A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110be-7a
     ref: BA-110BE-7A
     source:
@@ -169,6 +178,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220129013731id_/https://www.casio.com/sg/watches/babyg/product.BA-110BE-7A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110ca-9a
     ref: BA-110CA-9A
     source:
@@ -183,6 +193,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001141155id_/https://www.casio.com/sg/watches/babyg/product.BA-110CA-9A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110ch-7a
     ref: BA-110CH-7A
     source:
@@ -197,6 +208,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220529074612id_/https://www.casio.com/in/watches/babyg/product.BA-110CH-7A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110cp-4a
     ref: BA-110CP-4A
     source:
@@ -211,6 +223,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203233448id_/https://www.casio.com/my/watches/babyg/product.BA-110CP-4A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110cr-2a
     ref: BA-110CR-2A
     source:
@@ -225,6 +238,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220529084626id_/https://www.casio.com/in/watches/babyg/product.BA-110CR-2A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110cr-4a
     ref: BA-110CR-4A
     source:
@@ -239,6 +253,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220520073839id_/https://www.casio.com/in/watches/babyg/product.BA-110CR-4A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110cr-7a
     ref: BA-110CR-7A
     source:
@@ -253,6 +268,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203230104id_/https://www.casio.com/my/watches/babyg/product.BA-110CR-7A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110de-2a2
     ref: BA-110DE-2A2
     source:
@@ -267,6 +283,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628005947id_/https://www.casio.com/in/watches/babyg/product.BA-110DE-2A2/'
     discontinued: true
+    display: ana-digi
   - id: ba-110fh-2a
     ref: BA-110FH-2A
     source:
@@ -281,6 +298,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240307212742id_/https://www.casio.com/intl/watches/babyg/product.BA-110FH-2A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110fh-7a
     ref: BA-110FH-7A
     source:
@@ -295,6 +313,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240225135620id_/https://www.casio.com/intl/watches/babyg/product.BA-110FH-7A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110ga-1a
     ref: BA-110GA-1A
     source:
@@ -309,6 +328,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250118081617id_/https://www.casio.com/us/watches/babyg/product.BA-110GA-1A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110ga-7a1
     ref: BA-110GA-7A1
     source:
@@ -323,6 +343,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250118090154id_/https://www.casio.com/us/watches/babyg/product.BA-110GA-7A1/'
     discontinued: false
+    display: ana-digi
   - id: ba-110ga-8a
     ref: BA-110GA-8A
     source:
@@ -337,6 +358,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628000550id_/https://www.casio.com/in/watches/babyg/product.BA-110GA-8A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110jm-2a
     ref: BA-110JM-2A
     source:
@@ -351,6 +373,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628004841id_/https://www.casio.com/in/watches/babyg/product.BA-110JM-2A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110lsb-4a
     ref: BA-110LSB-4A
     source:
@@ -365,6 +388,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250118011114id_/https://www.casio.com/us/watches/babyg/product.BA-110LSB-4A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110nr-1a
     ref: BA-110NR-1A
     source:
@@ -379,6 +403,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220925152857id_/https://www.casio.com/sg/watches/babyg/product.BA-110NR-1A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110nr-8a
     ref: BA-110NR-8A
     source:
@@ -393,6 +418,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001154534id_/https://www.casio.com/sg/watches/babyg/product.BA-110NR-8A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110pi-2a
     ref: BA-110PI-2A
     source:
@@ -407,6 +433,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210729160332id_/https://www.casio.com/sg/watches/babyg/product.BA-110PI-2A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110pi-4a
     ref: BA-110PI-4A
     source:
@@ -421,6 +448,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210917122744id_/https://www.casio.com/sg/watches/babyg/product.BA-110PI-4A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110pkc-4a
     ref: BA-110PKC-4A
     source:
@@ -435,6 +463,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203221956id_/https://www.casio.com/my/watches/babyg/product.BA-110PKC-4A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110pl-1a
     ref: BA-110PL-1A
     source:
@@ -449,6 +478,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220258id_/https://www.casio.com/europe/watches/babyg/product.BA-110PL-1A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110pl-7a1
     ref: BA-110PL-7A1
     source:
@@ -463,6 +493,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220518191851id_/https://www.casio.com/us/watches/babyg/product.ba-110pl-7a1/'
     discontinued: false
+    display: ana-digi
   - id: ba-110pl-7a2
     ref: BA-110PL-7A2
     source:
@@ -477,6 +508,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221209113603id_/https://www.casio.com/ph/watches/babyg/product.BA-110PL-7A2/'
     discontinued: false
+    display: ana-digi
   - id: ba-110pp-7a2
     ref: BA-110PP-7A2
     source:
@@ -491,6 +523,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628002715id_/https://www.casio.com/in/watches/babyg/product.BA-110PP-7A2/'
     discontinued: true
+    display: ana-digi
   - id: ba-110rg-1a
     ref: BA-110RG-1A
     source:
@@ -505,6 +538,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220256id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-1A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110rg-4a
     ref: BA-110RG-4A
     source:
@@ -519,6 +553,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220300id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-4A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110rg-7a
     ref: BA-110RG-7A
     source:
@@ -533,6 +568,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220250id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-7A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110sc-2a
     ref: BA-110SC-2A
     source:
@@ -547,6 +583,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203214845id_/https://www.casio.com/my/watches/babyg/product.BA-110SC-2A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110sc-4a
     ref: BA-110SC-4A
     source:
@@ -561,6 +598,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220320id_/https://www.casio.com/europe/watches/babyg/product.BA-110SC-4A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110sc-7a
     ref: BA-110SC-7A
     source:
@@ -575,6 +613,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220246id_/https://www.casio.com/europe/watches/babyg/product.BA-110SC-7A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110st-4a
     ref: BA-110ST-4A
     source:
@@ -589,6 +628,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220627232537id_/https://www.casio.com/in/watches/babyg/product.BA-110ST-4A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110st-7a
     ref: BA-110ST-7A
     source:
@@ -603,6 +643,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220521051031id_/https://www.casio.com/in/watches/babyg/product.BA-110ST-7A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110tm-7a
     ref: BA-110TM-7A
     source:
@@ -617,6 +658,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203224954id_/https://www.casio.com/my/watches/babyg/product.BA-110TM-7A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110tx-4a
     ref: BA-110TX-4A
     source:
@@ -631,6 +673,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628005729id_/https://www.casio.com/in/watches/babyg/product.BA-110TX-4A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110tx-7a
     ref: BA-110TX-7A
     source:
@@ -645,6 +688,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220520071611id_/https://www.casio.com/in/watches/babyg/product.BA-110TX-7A/'
     discontinued: true
+    display: ana-digi
   - id: ba-110x-1a
     ref: BA-110X-1A
     source:
@@ -659,6 +703,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250118105525id_/https://www.casio.com/us/watches/babyg/product.BA-110X-1A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110x-7a1
     ref: BA-110X-7A1
     source:
@@ -673,6 +718,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221015122804id_/https://www.casio.com/intl/watches/babyg/product.BA-110X-7A1/'
     discontinued: false
+    display: ana-digi
   - id: ba-110x-7a3
     ref: BA-110X-7A3
     source:
@@ -687,6 +733,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127082521id_/https://www.casio.com/my/watches/babyg/product.BA-110X-7A3/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xbc-1a
     ref: BA-110XBC-1A
     source:
@@ -701,6 +748,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127070229id_/https://www.casio.com/my/watches/babyg/product.BA-110XBC-1A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xbe-7a
     ref: BA-110XBE-7A
     source:
@@ -715,6 +763,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127074834id_/https://www.casio.com/sg/watches/babyg/product.BA-110XBE-7A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xcp-4a
     ref: BA-110XCP-4A
     source:
@@ -729,6 +778,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127090428id_/https://www.casio.com/sg/watches/babyg/product.BA-110XCP-4A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xcr-7a
     ref: BA-110XCR-7A
     source:
@@ -743,6 +793,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127081518id_/https://www.casio.com/my/watches/babyg/product.BA-110XCR-7A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xpm-6a
     ref: BA-110XPM-6A
     source:
@@ -757,6 +808,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221012025657id_/https://www.casio.com/us/watches/babyg/product.BA-110XPM-6A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xrg-1a
     ref: BA-110XRG-1A
     source:
@@ -771,6 +823,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250118002326id_/https://www.casio.com/us/watches/babyg/product.BA-110XRG-1A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xrg-4a
     ref: BA-110XRG-4A
     source:
@@ -785,6 +838,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127074106id_/https://www.casio.com/sg/watches/babyg/product.BA-110XRG-4A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xrg-7a
     ref: BA-110XRG-7A
     source:
@@ -799,6 +853,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127090743id_/https://www.casio.com/sg/watches/babyg/product.BA-110XRG-7A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xslc-9a
     ref: BA-110XSLC-9A
     source:
@@ -824,6 +879,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220316id_/https://www.casio.com/europe/watches/babyg/product.BA-110XSM-2A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xsw-7a
     ref: BA-110XSW-7A
     source:
@@ -838,6 +894,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127072705id_/https://www.casio.com/sg/watches/babyg/product.BA-110XSW-7A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110xws-7a
     ref: BA-110XWS-7A
     source:
@@ -852,6 +909,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193226id_/https://www.casio.com/intl/watches/babyg/product.BA-110XWS-7A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110yk-2a
     ref: BA-110YK-2A
     source:
@@ -866,6 +924,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240922024900id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-2A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110yk-3a
     ref: BA-110YK-3A
     source:
@@ -880,6 +939,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-3A/'
     discontinued: false
+    display: ana-digi
   - id: ba-110yk-4a
     ref: BA-110YK-4A
     source:
@@ -894,3 +954,4 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-4A/'
     discontinued: false
+    display: ana-digi

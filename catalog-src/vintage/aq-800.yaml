@@ -31,6 +31,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220208id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800E-1A/'
     discontinued: false
+    display: ana-digi
   - id: aq-800e-3a
     ref: AQ-800E-3A
     source:
@@ -44,6 +45,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240804172644id_/https://www.casio.com/us/watches/casio/product.AQ-800E-3A/'
     discontinued: false
+    display: ana-digi
   - id: aq-800e-7a
     ref: AQ-800E-7A
     source:
@@ -57,6 +59,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220159id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800E-7A/'
     discontinued: false
+    display: ana-digi
   - id: aq-800e-7a2
     ref: AQ-800E-7A2
     source:
@@ -70,6 +73,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241006014119id_/https://www.casio.com/in/watches/casio/product.AQ-800E-7A2/'
     discontinued: false
+    display: ana-digi
   - id: aq-800eb-2a
     ref: AQ-800EB-2A
     source:
@@ -94,6 +98,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220121id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800EC-2A/'
     discontinued: false
+    display: ana-digi
   - id: aq-800ecgg-4a
     ref: AQ-800ECGG-4A
     source:
@@ -107,6 +112,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715103000id_/https://www.casio.com/europe/watches/casio/product.AQ-800ECGG-4A/'
     discontinued: false
+    display: ana-digi
   - id: aq-800eg-9a
     ref: AQ-800EG-9A
     source:
@@ -120,3 +126,4 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220203id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800EG-9A/'
     discontinued: false
+    display: ana-digi

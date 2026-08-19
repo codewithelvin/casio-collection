@@ -37,6 +37,7 @@ models:
     case: { height_mm: 38.8, width_mm: 29.8, depth_mm: 8.1, weight_g: 45, material: 'Resin' }
     features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
     discontinued: false
+    display: ana-digi
   - id: aq-230gg-2a
     ref: AQ-230GG-2A
     source:
@@ -50,6 +51,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230727184933id_/https://www.casio.com/in/watches/casio/product.AQ-230GG-2A/'
     discontinued: false
+    display: ana-digi
   - id: aq-230gg-9a
     ref: AQ-230GG-9A
     source:
@@ -63,3 +65,4 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.AQ-230GG-9A/'
     discontinued: false
+    display: ana-digi

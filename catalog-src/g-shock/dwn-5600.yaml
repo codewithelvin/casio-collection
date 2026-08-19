@@ -41,3 +41,4 @@ models:
     year: 2025
     year_source: 'https://www.casio.com/intl/news/2025/1021-dwn-5600/'
     discontinued: false
+    display: digital

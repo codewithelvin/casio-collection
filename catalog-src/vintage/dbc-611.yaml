@@ -30,7 +30,7 @@ models:
       { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.DBC-611-1/', kind: official }
     movement: quartz
     case: { height_mm: 46.5, width_mm: 33.1, depth_mm: 8.7, weight_g: 48, material: 'Resin' }
-    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, calculator]
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, calculator, databank]
     image: dbc-611-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -43,7 +43,7 @@ models:
       { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.DBC-611G-1/', kind: official }
     movement: quartz
     case: { height_mm: 46.5, width_mm: 33.1, depth_mm: 8.7, weight_g: 48, material: 'Resin' }
-    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, calculator]
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, calculator, databank]
     image: dbc-611g-1
     image_credit:
       author: Casio Computer Co., Ltd.

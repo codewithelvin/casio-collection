@@ -34,13 +34,14 @@ models:
     movement: solar-radio
     case: { height_mm: 47.5, width_mm: 42.8, depth_mm: 9.5, weight_g: 83, material: 'Titanium' }
     water_resistance_m: 100
-    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    features: [world-time, stopwatch, dual-time, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
     image: ocw-s7000-1a
     image_credit:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241107173840id_/https://www.casio.com/us/watches/oceanus/product.OCW-S7000-1A/'
     discontinued: false
+    display: analog
   - id: ocw-s7000a-2a
     ref: OCW-S7000A-2A
     source:
@@ -48,13 +49,14 @@ models:
     movement: solar-radio
     case: { height_mm: 47.5, width_mm: 42.8, depth_mm: 9.5, weight_g: 83, material: 'Titanium' }
     water_resistance_m: 100
-    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    features: [world-time, stopwatch, dual-time, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
     image: ocw-s7000a-2a
     image_credit:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240728230113id_/https://www.casio.com/us/watches/oceanus/product.OCW-S7000A-2A/'
     discontinued: false
+    display: analog
   - id: ocw-s7000b-2a
     ref: OCW-S7000B-2A
     source:
@@ -62,13 +64,14 @@ models:
     movement: solar-radio
     case: { height_mm: 47.5, width_mm: 42.8, depth_mm: 9.5, weight_g: 83, material: 'Titanium' }
     water_resistance_m: 100
-    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    features: [world-time, stopwatch, dual-time, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
     image: ocw-s7000b-2a
     image_credit:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231014164119id_/https://www.casio.com/us/watches/oceanus/product.OCW-S7000B-2A/'
     discontinued: false
+    display: analog
   - id: ocw-s7000d-7a
     ref: OCW-S7000D-7A
     source:
@@ -76,10 +79,11 @@ models:
     movement: solar-radio
     case: { height_mm: 47.5, width_mm: 42.8, depth_mm: 9.5, weight_g: 84, material: 'Titanium' }
     water_resistance_m: 100
-    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    features: [world-time, stopwatch, dual-time, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
     image: ocw-s7000d-7a
     image_credit:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240406015803id_/https://www.casio.com/us/watches/oceanus/product.OCW-S7000D-7A/'
     discontinued: false
+    display: analog

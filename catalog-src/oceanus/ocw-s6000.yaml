@@ -34,13 +34,14 @@ models:
     movement: solar-radio
     case: { height_mm: 47.1, width_mm: 42.5, depth_mm: 8.7, weight_g: 86, material: 'Titanium' }
     water_resistance_m: 100
-    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    features: [world-time, stopwatch, dual-time, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
     image: ocw-s6000-1a
     image_credit:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220603223109id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000-1A/'
     discontinued: false
+    display: analog
   - id: ocw-s6000bv-1a
     ref: OCW-S6000BV-1A
     source:
@@ -48,13 +49,14 @@ models:
     movement: solar-radio
     case: { height_mm: 47.1, width_mm: 42.5, depth_mm: 9.3, weight_g: 90, material: 'Titanium' }
     water_resistance_m: 100
-    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    features: [world-time, stopwatch, dual-time, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
     image: ocw-s6000bv-1a
     image_credit:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241229110333id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000BV-1A/'
     discontinued: false
+    display: analog
   - id: ocw-s6000jc-2a
     ref: OCW-S6000JC-2A
     source:
@@ -62,13 +64,14 @@ models:
     movement: solar-radio
     case: { height_mm: 47, width_mm: 42.5, depth_mm: 9.2, weight_g: 87, material: 'Titanium' }
     water_resistance_m: 100
-    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    features: [world-time, stopwatch, dual-time, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
     image: ocw-s6000jc-2a
     image_credit:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231226141530id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000JC-2A/'
     discontinued: false
+    display: analog
   - id: ocw-s6000sw-2a
     ref: OCW-S6000SW-2A
     source:
@@ -76,10 +79,11 @@ models:
     movement: solar-radio
     case: { height_mm: 47.1, width_mm: 42.5, depth_mm: 9.2, weight_g: 88, material: 'Titanium' }
     water_resistance_m: 100
-    features: [world-time, stopwatch, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    features: [world-time, stopwatch, dual-time, full-auto-calendar, radio-controlled, bluetooth, tough-solar, power-saving, sapphire-crystal]
     image: ocw-s6000sw-2a
     image_credit:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230825074523id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000SW-2A/'
     discontinued: false
+    display: analog

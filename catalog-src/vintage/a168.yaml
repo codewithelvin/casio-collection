@@ -48,6 +48,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714215853id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WA-1/'
     discontinued: false
+    display: digital
   - id: a168wegb-1b
     ref: A168WEGB-1B
     source:
@@ -61,6 +62,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714215857id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEGB-1B/'
     discontinued: false
+    display: digital
   - id: a168wegc-3
     ref: A168WEGC-3
     source:
@@ -74,6 +76,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715101518id_/https://www.casio.com/europe/watches/casio/product.A168WEGC-3/'
     discontinued: false
+    display: digital
   - id: a168wegg-1b
     ref: A168WEGG-1B
     source:
@@ -87,6 +90,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714215825id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEGG-1B/'
     discontinued: false
+    display: digital
   - id: a168wegm-9
     ref: A168WEGM-9
     source:
@@ -100,6 +104,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715101538id_/https://www.casio.com/europe/watches/casio/product.A168WEGM-9/'
     discontinued: false
+    display: digital
   - id: a168weha-9a
     ref: A168WEHA-9A
     source:
@@ -113,6 +118,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220038id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEHA-9A/'
     discontinued: false
+    display: digital
   - id: a168wehb-1a
     ref: A168WEHB-1A
     source:
@@ -126,6 +132,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220041id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEHB-1A/'
     discontinued: false
+    display: digital
   - id: a168wem-1
     ref: A168WEM-1
     source:
@@ -139,6 +146,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714215833id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-1/'
     discontinued: false
+    display: digital
   - id: a168wem-2
     ref: A168WEM-2
     source:
@@ -152,6 +160,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714215838id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-2/'
     discontinued: false
+    display: digital
   - id: a168wem-2b
     ref: A168WEM-2B
     source:
@@ -165,6 +174,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220126id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-2B/'
     discontinued: false
+    display: digital
   - id: a168wem-7
     ref: A168WEM-7
     source:
@@ -178,6 +188,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714215830id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-7/'
     discontinued: false
+    display: digital
   - id: a168wemb-1b
     ref: A168WEMB-1B
     source:
@@ -191,6 +202,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220110id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEMB-1B/'
     discontinued: false
+    display: digital
   - id: a168wepc-7a
     ref: A168WEPC-7A
     source:
@@ -215,6 +227,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220214id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WER-2A/'
     discontinued: false
+    display: digital
   - id: a168weuc-1a
     ref: A168WEUC-1A
     source:
@@ -228,6 +241,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220232id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEUC-1A/'
     discontinued: false
+    display: digital
   - id: a168wg-9
     ref: A168WG-9
     source:
@@ -241,6 +255,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714215818id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WG-9/'
     discontinued: false
+    display: digital
   - id: a168wg-9w
     ref: A168WG-9W
     source:
@@ -254,6 +269,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230811084202id_/https://www.casio.com/intl/watches/casio/product.A168WG-9W/'
     discontinued: false
+    display: digital
   - id: a168wgg-1a
     ref: A168WGG-1A
     source:
@@ -267,6 +283,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220520225647id_/https://www.casio.com/intl/watches/casio/product.A168WGG-1A/'
     discontinued: false
+    display: digital
   - id: a168wgg-1b
     ref: A168WGG-1B
     source:
@@ -275,6 +292,7 @@ models:
     case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49, material: 'Resin / Black chrome plated' }
     features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
     discontinued: false
+    display: digital
   - id: a168xes-1b
     ref: A168XES-1B
     source:
@@ -288,6 +306,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220116id_/https://www.casio.com/europe/watches/casio/vintage/product.A168XES-1B/'
     discontinued: false
+    display: digital
   - id: a168xesg-9a
     ref: A168XESG-9A
     source:
@@ -301,3 +320,4 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220113id_/https://www.casio.com/europe/watches/casio/vintage/product.A168XESG-9A/'
     discontinued: false
+    display: digital

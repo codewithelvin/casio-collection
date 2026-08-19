@@ -41,6 +41,7 @@ models:
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0111-gma-p2100/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100-4a
     ref: GMA-P2100-4A
     source:
@@ -57,6 +58,7 @@ models:
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0111-gma-p2100/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100-7a
     ref: GMA-P2100-7A
     source:
@@ -73,6 +75,7 @@ models:
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0111-gma-p2100/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100ba-7a
     ref: GMA-P2100BA-7A
     source:
@@ -98,6 +101,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240907031039id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100BB-1A/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100it-4a
     ref: GMA-P2100IT-4A
     source:
@@ -112,6 +116,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240406015814id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100IT-4A/'
     discontinued: true
+    display: ana-digi
   - id: gma-p2100it-7a
     ref: GMA-P2100IT-7A
     source:
@@ -126,6 +131,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240406015803id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100IT-7A/'
     discontinued: true
+    display: ana-digi
   - id: gma-p2100pp-4a
     ref: GMA-P2100PP-4A
     source:
@@ -151,6 +157,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240406015643id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-1A/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100sg-2a
     ref: GMA-P2100SG-2A
     source:
@@ -165,6 +172,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240406015700id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-2A/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100sg-4a
     ref: GMA-P2100SG-4A
     source:
@@ -179,6 +187,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193754id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-4A/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100st-4a
     ref: GMA-P2100ST-4A
     source:
@@ -193,6 +202,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240930192848id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-4A/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100st-7a
     ref: GMA-P2100ST-7A
     source:
@@ -207,6 +217,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-7A/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100st-9a
     ref: GMA-P2100ST-9A
     source:
@@ -221,6 +232,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-9A/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100va-7a
     ref: GMA-P2100VA-7A
     source:
@@ -235,6 +247,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240516180332id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100VA-7A/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100w-7a
     ref: GMA-P2100W-7A
     source:
@@ -249,6 +262,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241007212343id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100W-7A/'
     discontinued: false
+    display: ana-digi
   - id: gma-p2100zy-1a
     ref: GMA-P2100ZY-1A
     source:
@@ -263,3 +277,4 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240405034103id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ZY-1A/'
     discontinued: true
+    display: ana-digi

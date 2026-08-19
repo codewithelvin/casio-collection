@@ -32,6 +32,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230109060722id_/https://www.casio.com/us/watches/gshock/product.GA-700-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700-1b
     ref: GA-700-1B
     source:
@@ -46,6 +47,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065023id_/https://www.casio.com/europe/watches/gshock/product.GA-700-1B/'
     discontinued: false
+    display: ana-digi
   - id: ga-700-2a
     ref: GA-700-2A
     source:
@@ -60,6 +62,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628031116id_/https://www.casio.com/us/watches/gshock/product.GA-700-2A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700-4a
     ref: GA-700-4A
     source:
@@ -74,6 +77,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230130203437id_/https://www.casio.com/my/watches/gshock/product.GA-700-4A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700-7a
     ref: GA-700-7A
     source:
@@ -88,6 +92,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230130203655id_/https://www.casio.com/my/watches/gshock/product.GA-700-7A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700ar-1a
     ref: GA-700AR-1A
     source:
@@ -102,6 +107,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220929200450id_/https://www.casio.com/us/watches/gshock/product.GA-700AR-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700bce-1a
     ref: GA-700BCE-1A
     source:
@@ -116,6 +122,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240130193345id_/https://www.casio.com/us/watches/gshock/product.GA-700BCE-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700bmc-1a
     ref: GA-700BMC-1A
     source:
@@ -130,6 +137,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230130205949id_/https://www.casio.com/my/watches/gshock/product.GA-700BMC-1A/'
     discontinued: true
+    display: ana-digi
   - id: ga-700bnr-1a
     ref: GA-700BNR-1A
     source:
@@ -144,6 +152,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021954id_/https://www.casio.com/europe/watches/gshock/product.GA-700BNR-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700bp-1a
     ref: GA-700BP-1A
     source:
@@ -158,6 +167,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021946id_/https://www.casio.com/europe/watches/gshock/product.GA-700BP-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700bwp-2a
     ref: GA-700BWP-2A
     source:
@@ -172,6 +182,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021943id_/https://www.casio.com/europe/watches/gshock/product.GA-700BWP-2A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700ca-2a
     ref: GA-700CA-2A
     source:
@@ -186,6 +197,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021951id_/https://www.casio.com/europe/watches/gshock/product.GA-700CA-2A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700ca-5a
     ref: GA-700CA-5A
     source:
@@ -200,6 +212,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021949id_/https://www.casio.com/europe/watches/gshock/product.GA-700CA-5A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700cm-2a
     ref: GA-700CM-2A
     source:
@@ -214,6 +227,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221126131448id_/https://www.casio.com/my/watches/gshock/product.GA-700CM-2A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700cm-3a
     ref: GA-700CM-3A
     source:
@@ -228,6 +242,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230128024831id_/https://www.casio.com/my/watches/gshock/product.GA-700CM-3A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700cm-8a
     ref: GA-700CM-8A
     source:
@@ -242,6 +257,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240214084613id_/https://www.casio.com/za/watches/gshock/product.GA-700CM-8A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700ct-1a
     ref: GA-700CT-1A
     source:
@@ -256,6 +272,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230128023541id_/https://www.casio.com/my/watches/gshock/product.GA-700CT-1A/'
     discontinued: true
+    display: ana-digi
   - id: ga-700cy-1a
     ref: GA-700CY-1A
     source:
@@ -270,6 +287,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240227094524id_/https://www.casio.com/my/watches/gshock/product.GA-700CY-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700dbr-4a
     ref: GA-700DBR-4A
     source:
@@ -284,6 +302,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230130222627id_/https://www.casio.com/my/watches/gshock/product.GA-700DBR-4A/'
     discontinued: true
+    display: ana-digi
   - id: ga-700dc-1a
     ref: GA-700DC-1A
     source:
@@ -298,6 +317,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230130202834id_/https://www.casio.com/my/watches/gshock/product.GA-700DC-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700ff-8a
     ref: GA-700FF-8A
     source:
@@ -312,6 +332,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240905220807id_/https://www.casio.com/in/watches/gshock/product.GA-700FF-8A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700hd-8a
     ref: GA-700HD-8A
     source:
@@ -326,6 +347,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193959id_/https://www.casio.com/us/watches/gshock/product.GA-700HD-8A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700mf-1a
     ref: GA-700MF-1A
     source:
@@ -340,6 +362,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240516180340id_/https://www.casio.com/us/watches/gshock/product.GA-700MF-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700mg-1a
     ref: GA-700MG-1A
     source:
@@ -354,6 +377,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022001id_/https://www.casio.com/europe/watches/gshock/product.GA-700MG-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700mmc-1a
     ref: GA-700MMC-1A
     source:
@@ -368,6 +392,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230128024921id_/https://www.casio.com/my/watches/gshock/product.GA-700MMC-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700mt-1a9
     ref: GA-700MT-1A9
     source:
@@ -382,6 +407,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240214084712id_/https://www.casio.com/us/watches/gshock/product.GA-700MT-1A9/'
     discontinued: false
+    display: ana-digi
   - id: ga-700nc-5a
     ref: GA-700NC-5A
     source:
@@ -396,6 +422,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240225135528id_/https://www.casio.com/intl/watches/gshock/product.GA-700NC-5A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700rc-1a
     ref: GA-700RC-1A
     source:
@@ -410,6 +437,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021958id_/https://www.casio.com/europe/watches/gshock/product.GA-700RC-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700rgb-1a
     ref: GA-700RGB-1A
     source:
@@ -424,6 +452,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064717id_/https://www.casio.com/europe/watches/gshock/product.GA-700RGB-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700sc-3a
     ref: GA-700SC-3A
     source:
@@ -438,6 +467,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240518153335id_/https://www.casio.com/us/watches/gshock/product.GA-700SC-3A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700se-1a2
     ref: GA-700SE-1A2
     source:
@@ -452,6 +482,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230128040524id_/https://www.casio.com/my/watches/gshock/product.GA-700SE-1A2/'
     discontinued: true
+    display: ana-digi
   - id: ga-700se-1a4
     ref: GA-700SE-1A4
     source:
@@ -466,6 +497,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230130215224id_/https://www.casio.com/my/watches/gshock/product.GA-700SE-1A4/'
     discontinued: true
+    display: ana-digi
   - id: ga-700sk-1a
     ref: GA-700SK-1A
     source:
@@ -480,6 +512,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064710id_/https://www.casio.com/europe/watches/gshock/product.GA-700SK-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700skc-1a
     ref: GA-700SKC-1A
     source:
@@ -494,6 +527,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064714id_/https://www.casio.com/europe/watches/gshock/product.GA-700SKC-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700ske-7a
     ref: GA-700SKE-7A
     source:
@@ -508,6 +542,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064721id_/https://www.casio.com/europe/watches/gshock/product.GA-700SKE-7A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700uc-3a
     ref: GA-700UC-3A
     source:
@@ -522,6 +557,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220523052329id_/https://www.casio.com/us/watches/gshock/product.GA-700UC-3A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700uc-5a
     ref: GA-700UC-5A
     source:
@@ -536,6 +572,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628030122id_/https://www.casio.com/us/watches/gshock/product.GA-700UC-5A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700uc-8a
     ref: GA-700UC-8A
     source:
@@ -550,6 +587,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220702134012id_/https://www.casio.com/us/watches/gshock/product.GA-700UC-8A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700vb-1a
     ref: GA-700VB-1A
     source:
@@ -564,6 +602,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065444id_/https://www.casio.com/europe/watches/gshock/product.GA-700VB-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700wd-1a
     ref: GA-700WD-1A
     source:
@@ -578,6 +617,7 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241127233855id_/https://www.casio.com/us/watches/gshock/product.GA-700WD-1A/'
     discontinued: false
+    display: ana-digi
   - id: ga-700wm-5a
     ref: GA-700WM-5A
     source:
@@ -592,3 +632,4 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230130211533id_/https://www.casio.com/my/watches/gshock/product.GA-700WM-5A/'
     discontinued: true
+    display: ana-digi

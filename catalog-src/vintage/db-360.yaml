@@ -30,7 +30,7 @@ models:
       { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.DB-360-1A/', kind: official }
     movement: quartz
     case: { height_mm: 43.1, width_mm: 37.7, depth_mm: 10.4, weight_g: 58, material: 'Resin' }
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, calendar, hourly-time-signal, led-light, afterglow, telememo]
     image: db-360-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -43,7 +43,7 @@ models:
       { url: 'https://web.archive.org/web/20220526124328id_/https://www.casio.com/my/watches/casio/product.DB-360G-9A/', kind: official }
     movement: quartz
     case: { height_mm: 43.1, width_mm: 37.7, depth_mm: 10.4, weight_g: 58, material: 'Resin' }
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, calendar, hourly-time-signal, led-light, afterglow, telememo]
     image: db-360g-9a
     image_credit:
       author: Casio Computer Co., Ltd.

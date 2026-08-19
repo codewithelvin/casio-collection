@@ -26,7 +26,7 @@ models:
     movement: solar-radio
     case: { height_mm: 49.5, width_mm: 44.4, depth_mm: 13.6, weight_g: 122, material: 'Titanium / Cobarion' }
     water_resistance_m: 200
-    features: [full-auto-calendar, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [full-auto-calendar, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2100b-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -43,7 +43,7 @@ models:
     movement: solar-radio
     case: { height_mm: 49.5, width_mm: 44.4, depth_mm: 13.6, weight_g: 122, material: 'Titanium / Cobarion' }
     water_resistance_m: 200
-    features: [full-auto-calendar, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [full-auto-calendar, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2100d-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -58,7 +58,7 @@ models:
     movement: solar-radio
     case: { height_mm: 49.5, width_mm: 44.4, depth_mm: 13.6, weight_g: 110, material: 'Titanium / Cobarion' }
     water_resistance_m: 200
-    features: [full-auto-calendar, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [full-auto-calendar, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, magnetic-resistant, screw-lock-crown, sapphire-crystal]
     image: mrg-b2100r-2a
     image_credit:
       author: Casio Computer Co., Ltd.
