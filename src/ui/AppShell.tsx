@@ -131,7 +131,21 @@ export function AppShell() {
             width={SIDER_WIDTH}
             title={t('nav.lines')}
             closable
-            styles={{ body: { padding: 0 } }}
+            /*
+              The body is a flex column so the nav inside it can claim the whole
+              panel. Without this the Menu is as tall as its seven rows — 312 px
+              of an 844 px drawer on a phone — and in dark mode it paints its own
+              `colorBgContainer` (#141414) over the drawer's `colorBgElevated`
+              (#1f1f1f). That drew a darker slab across the top third of the
+              drawer with a hard seam under the last line, which reads as the
+              menu being too dark and stopping short. Both halves are the same
+              fault: the nav was painting a surface it does not own.
+
+              Fixed here rather than by re-colouring the Menu, because the rail
+              renders in two places and only one of them is elevated. LineNav
+              takes its background from whatever it is placed in.
+            */
+            styles={{ body: { padding: 0, display: 'flex', flexDirection: 'column' } }}
           >
             <LineNav onNavigate={() => setDrawerOpen(false)} />
           </Drawer>

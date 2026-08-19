@@ -208,7 +208,17 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
       mode="inline"
       selectedKeys={selectedKeys(pathname)}
       defaultOpenKeys={openKeysFor(pathname)}
-      style={{ borderInlineEnd: 'none' }}
+      /*
+        The rail does not choose its own surface. AntD's Menu paints
+        `colorBgContainer`, which is right inside the sider — that is the sider's
+        colour too — and wrong inside the drawer, which is an elevated surface a
+        shade lighter. Inheriting instead of painting makes the nav correct in
+        both without either container having to know about the other.
+
+        `flex: 1` fills the drawer body, whose column layout AppShell sets up.
+        In the sider the parent is not a flex container, so it is inert there.
+      */
+      style={{ borderInlineEnd: 'none', background: 'transparent', flex: 1 }}
       items={items}
       onClick={({ key }) => {
         const target = routeFor(key)

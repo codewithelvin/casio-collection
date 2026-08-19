@@ -66,6 +66,29 @@ describe('the app shell (§8.1, §8.2)', () => {
     expect(await screen.findByRole('menuitem', { name: /G-SHOCK/ })).toBeInTheDocument()
   })
 
+  it('lets the drawer own the nav surface, and gives the rail the whole panel (§8.2)', async () => {
+    const user = userEvent.setup()
+    useUiStore.setState({ mode: 'dark' })
+    renderApp('/')
+
+    await user.click(await screen.findByRole('button', { name: t('nav.open') }))
+    const item = await screen.findByRole('menuitem', { name: /G-SHOCK/ })
+    const menu = item.closest('.ant-menu-root') as HTMLElement
+    const body = document.querySelector('.ant-drawer-body') as HTMLElement
+
+    // Measured at 390×844 in dark mode before this: the Menu painted its own
+    // colorBgContainer (#141414) over the drawer's colorBgElevated (#1f1f1f)
+    // and stopped at 312 px of an 844 px panel — a darker slab with a hard seam
+    // under the last line. Both halves are one fault, so both are asserted here.
+    //
+    // jsdom has no layout, so height is not measurable; what is measurable is
+    // the two declarations that produce it. The rail declares no colour of its
+    // own, and the body is the column that lets `flex: 1` mean anything.
+    expect(menu.style.background).toBe('transparent')
+    expect(menu.style.flexGrow).toBe('1')
+    expect(body.style.flexDirection).toBe('column')
+  })
+
   it('gives every line in the rail a glyph', async () => {
     const user = userEvent.setup()
     renderApp('/')
