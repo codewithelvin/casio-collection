@@ -20,7 +20,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { ENOUGH_ROWS, archivedFor, imageUrl, isEnglish, page, specRows } from './archive.ts'
+import { ENOUGH_ROWS, archivedFor, imageUrl, isEnglish, lineOfReference, page, specRows } from './archive.ts'
 import { isReference } from './roster.ts'
 import { modelYaml, toModel, type Seeded } from './seed.ts'
 import { seriesOf } from './sitemap.ts'
@@ -103,9 +103,31 @@ const inSeries = [...found].filter(([ref]) => seriesOf(ref) === series)
  * M2b commits rather than invented here.
  */
 const malformed = inSeries.filter(([ref]) => !isReference(ref)).map(([ref]) => ref)
-const mine = inSeries.filter(([ref]) => isReference(ref))
+const shaped = inSeries.filter(([ref]) => isReference(ref))
 if (malformed.length > 0) {
   console.log(`${malformed.length} are not references Casio prints, so they are refused (D47): ${malformed.join(', ')}`)
+}
+
+/**
+ * **The path a page is served from does not settle which line a watch is in.**
+ * Casio's Taiwan site serves Baby-G references under
+ * `casio.com/tw/watches/edifice/`, so crawling the edifice segment offers ten
+ * BSA and ten MSG references. Filing those in Edifice would be wrong in the one
+ * way this catalogue cannot undo: D2 makes an id permanent.
+ *
+ * `lineOfReference` asks the whole cached index instead of this one URL, and a
+ * reference the rest of the archive files elsewhere is refused by name.
+ */
+const foreign = shaped.filter(([ref]) => {
+  const belongs = lineOfReference(ref)
+  return belongs !== null && belongs !== line
+})
+const mine = shaped.filter(([ref]) => !foreign.some(([other]) => other === ref))
+if (foreign.length > 0) {
+  console.log(
+    `${foreign.length} are filed under another line by the rest of the archive and are refused: ` +
+      foreign.map(([ref]) => `${ref} → ${lineOfReference(ref)}`).join(', '),
+  )
 }
 
 const missing = mine.filter(([ref]) => !present.has(ref.toUpperCase()))

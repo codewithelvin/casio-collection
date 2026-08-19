@@ -21,7 +21,7 @@
 // and §10.6's one-page rule holds harder here than anywhere: every field on a
 // model seeded this way, and its photograph, come from the single page named in
 // `source.url`.
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { allowed } from './robots.ts'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
@@ -239,6 +239,59 @@ export async function archivedFor(line: string): Promise<Map<string, Snapshot[]>
     }
   }
   return merged
+}
+
+/** casio.com's URL segment → this catalogue's line id, for the segments we crawl. */
+const LINE_OF_SEGMENT = new Map(
+  Object.entries(SEGMENTS).flatMap(([line, segments]) =>
+    segments.map((segment) => [segment.replace(/\//g, '-'), line] as const),
+  ),
+)
+
+let segmentVotes: Map<string, Map<string, number>> | null = null
+
+/**
+ * Which line the archive as a whole files a reference under.
+ *
+ * **The path a page is served from is not a reliable statement of its line.**
+ * Casio's Taiwan site serves Baby-G references under
+ * `casio.com/tw/watches/edifice/product.BSA-B100-1A/`, so the edifice segment
+ * hands back ten BSA references and ten MSG ones. Seeding those would file
+ * Baby-G watches in Edifice, and under D2 an id is permanent — there is no
+ * tidying that up later.
+ *
+ * So the line is decided by what the *rest* of the index says: every cached CDX
+ * file votes, and the segment with the most captures wins. `BSA-B100-1A` is
+ * under `babyg` in a dozen locales and `edifice` in one, and that is not a close
+ * call. Reads the cache only and never fetches, so a line nobody has indexed
+ * simply does not vote.
+ */
+export function lineOfReference(ref: string): string | null {
+  if (!segmentVotes) {
+    segmentVotes = new Map()
+    for (const file of readdirSync(CACHE)) {
+      const segment = /^cdx-(.+)-[a-z]{2,6}\.json$/.exec(file)?.[1]
+      if (!segment || !LINE_OF_SEGMENT.has(segment)) continue
+      let rows: string[][]
+      try {
+        rows = JSON.parse(readFileSync(join(CACHE, file), 'utf8')).slice(1)
+      } catch {
+        continue
+      }
+      for (const [original] of rows) {
+        const match = /product\.([^/]+)\/?$/.exec(original)
+        if (!match) continue
+        const key = match[1].toUpperCase()
+        if (!segmentVotes.has(key)) segmentVotes.set(key, new Map())
+        const votes = segmentVotes.get(key)!
+        votes.set(segment, (votes.get(segment) ?? 0) + 1)
+      }
+    }
+  }
+  const votes = segmentVotes.get(ref.toUpperCase())
+  if (!votes) return null
+  const [winner] = [...votes].sort((a, b) => b[1] - a[1])
+  return LINE_OF_SEGMENT.get(winner[0]) ?? null
 }
 
 /** A specification table worth the name. Below this the page is reported, not read. */

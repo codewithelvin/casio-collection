@@ -13,7 +13,7 @@
 // fields, names the photograph, and is about the reference rather than a module.
 import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
-import { SEGMENTS, archivedFor } from './archive.ts'
+import { SEGMENTS, archivedFor, lineOfReference } from './archive.ts'
 import { isReference } from './roster.ts'
 import { seriesOf } from './sitemap.ts'
 
@@ -50,6 +50,10 @@ for (const line of lines) {
   for (const ref of found.keys()) {
     // D47 — an archived page is not a reference just because Casio served it.
     if (!isReference(ref)) continue
+    // The path is not the line: Casio serves Baby-G references under
+    // /tw/watches/edifice/. Ask what the rest of the index says.
+    const belongs = lineOfReference(ref)
+    if (belongs !== null && belongs !== line) continue
     const id = seriesOf(ref)
     if (!bySeries.has(id)) bySeries.set(id, { fresh: [], had: 0 })
     const bucket = bySeries.get(id)!
