@@ -169,6 +169,27 @@ describe('the watch route (FR-3)', () => {
     expect(await screen.findByRole('link', { name: /Casio product page/ })).toBeInTheDocument()
   })
 
+  it('says whether Casio still lists the reference (D59)', async () => {
+    renderApp('/watch/dw-5600e-1v')
+    expect(await screen.findByText(t('filter.stillListed'))).toBeInTheDocument()
+    expect(screen.queryByText(t('filter.noLongerListed'))).not.toBeInTheDocument()
+  })
+
+  it('marks a reference Casio has dropped, without calling it a problem (D59)', async () => {
+    renderApp('/watch/f-91w-3')
+    expect(await screen.findByText(t('filter.noLongerListed'))).toBeInTheDocument()
+  })
+
+  it('says nothing at all where availability was never measured (D27, D59)', async () => {
+    // The third state, and the one a boolean invites you to lose: a model nobody
+    // measured must not read as *currently listed*. Unknown renders as itself,
+    // and here itself is nothing.
+    renderApp('/watch/dw-5600bb-1')
+    await screen.findByRole('heading', { name: 'DW-5600BB-1', level: 2 })
+    expect(screen.queryByText(t('filter.stillListed'))).not.toBeInTheDocument()
+    expect(screen.queryByText(t('filter.noLongerListed'))).not.toBeInTheDocument()
+  })
+
   it('does not invent a product link for a model without one', async () => {
     renderApp('/watch/f-91w-1')
     await screen.findByRole('heading', { name: 'F-91W-1', level: 2 })

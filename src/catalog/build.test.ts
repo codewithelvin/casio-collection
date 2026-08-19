@@ -59,6 +59,33 @@ describe('the published artefact (§6.2)', () => {
     expect(serialiseCatalog(stamp(catalog, 'x', '2026-08-16'))).not.toContain('null')
   })
 
+  it('publishes discontinued: false, and only omits it when nobody measured (D59)', () => {
+    // `false` used to be dropped alongside null, which made *still listed by
+    // Casio* and *nobody has looked* the same absent key — and the availability
+    // filter cannot be built on top of that.
+    const catalog = buildCatalog(
+      aSource({
+        series: [
+          aSeries({
+            models: [
+              aModel({ id: 'a-1', ref: 'A-1', discontinued: false }),
+              aModel({ id: 'b-1', ref: 'B-1', discontinued: true }),
+              aModel({ id: 'c-1', ref: 'C-1' }),
+              aModel({ id: 'd-1', ref: 'D-1', discontinued: null }),
+            ],
+          }),
+        ],
+      }),
+    )
+    const byId = new Map(catalog.models.map((entry) => [entry.id, entry]))
+    expect(byId.get('a-1')?.discontinued).toBe(false)
+    expect(byId.get('b-1')?.discontinued).toBe(true)
+    // Absent and an explicit null are the same statement (D27), and neither is a
+    // claim about Casio's catalogue.
+    expect(byId.get('c-1')).not.toHaveProperty('discontinued')
+    expect(byId.get('d-1')).not.toHaveProperty('discontinued')
+  })
+
   it('drops an empty case object rather than publishing an empty one', () => {
     const catalog = buildCatalog(
       aSource({

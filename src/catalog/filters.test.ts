@@ -109,6 +109,55 @@ describe('facet density (D26, FR-1.3a)', () => {
   })
 })
 
+describe('availability (D59)', () => {
+  const listed = model({ id: 'a', ref: 'A-1', discontinued: false })
+  const gone = model({ id: 'b', ref: 'B-1', discontinued: true })
+  const unmeasured = model({ id: 'c', ref: 'C-1' })
+
+  it('counts false as data, not as a missing value', () => {
+    // The whole field turns on this. `false` is Casio's sitemap saying it still
+    // lists the reference; if it read as absent the facet would show one option
+    // and the reader would take *no longer listed* for the only answer there is.
+    const facet = facetsFor([listed, gone]).find((f) => f.field === 'discontinued')
+    expect(facet?.coverage).toBe(1)
+    expect(facet?.options).toEqual([
+      { value: 'false', count: 1 },
+      { value: 'true', count: 1 },
+    ])
+  })
+
+  it('hides the control where nobody measured it', () => {
+    // Every model in this catalogue carried no availability at all until D59 ran,
+    // and the bar has to be honest on the day a new line is seeded and not yet
+    // measured — 0% coverage is not 60%.
+    expect(fieldsOf([unmeasured, model({ id: 'd', ref: 'D-1' })])).not.toContain('discontinued')
+  })
+
+  it('filters to one answer, and excludes the unmeasured from both', () => {
+    const all = [listed, gone, unmeasured]
+    expect(applyFilters(all, filters({ discontinued: ['true'] }))).toEqual([gone])
+    expect(applyFilters(all, filters({ discontinued: ['false'] }))).toEqual([listed])
+    // Selecting both is not the same as selecting neither: it is every model
+    // whose availability is known, which drops the one nobody measured.
+    expect(applyFilters(all, filters({ discontinued: ['true', 'false'] }))).toEqual([listed, gone])
+  })
+
+  it('combines with another facet as AND', () => {
+    const solarAndGone = model({ id: 'e', ref: 'E-1', discontinued: true, movement: 'solar' })
+    const models = [gone, solarAndGone]
+    expect(
+      applyFilters(models, filters({ discontinued: ['true'], movement: ['solar'] })),
+    ).toEqual([solarAndGone])
+  })
+
+  it('round-trips through the URL as the boolean it is', () => {
+    const state = { filters: filters({ discontinued: ['false'] }), sort: DEFAULT_SORT }
+    const params = writeViewState(new URLSearchParams(), state)
+    expect(params.toString()).toBe('discontinued=false')
+    expect(parseViewState(params)).toEqual(state)
+  })
+})
+
 describe('filtering (FR-1.3)', () => {
   const models = [
     model({

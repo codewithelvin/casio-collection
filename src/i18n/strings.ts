@@ -72,6 +72,16 @@ const en = {
   'filter.movement': 'Movement',
   'filter.features': 'Features',
   'filter.unknownYear': 'Unknown year',
+  // D59 — the control is *Availability* rather than *Discontinued*, because a
+  // facet named after one of its two values reads as a checkbox for that value.
+  'filter.discontinued': 'Availability',
+  // **Both options name Casio, and neither says "discontinued" flat.** What was
+  // measured is whether Casio's own catalogue lists the reference today, across
+  // three of its twenty-nine locales — not whether the watch is out of
+  // production, which nobody publishes. The wording is where that distinction
+  // survives contact with a reader; the bare word would overstate it.
+  'filter.stillListed': 'Currently listed by Casio',
+  'filter.noLongerListed': 'No longer listed by Casio',
   'filter.clearAll': 'Clear all',
   // The empty state says the long form. Beside the chips the context is the
   // chips; alone on an empty grid, "Clear all" does not say all of what.
@@ -506,6 +516,7 @@ export function sourceLabel(kind: string): string {
 
 const FACET_LABELS: Record<string, StringKey> = {
   year: 'filter.year',
+  discontinued: 'filter.discontinued',
   display: 'filter.display',
   movement: 'filter.movement',
   features: 'filter.features',
@@ -529,12 +540,25 @@ export const sortLabel = (sort: string): string => {
 }
 
 /**
+ * D59 — the availability of a reference, in words. Used for the facet options,
+ * the removable chip, and the pill on the watch page, so all three say the same
+ * sentence: there is one wording of this claim and it is here.
+ */
+export const availabilityLabel = (discontinued: boolean): string =>
+  discontinued ? t('filter.noLongerListed') : t('filter.stillListed')
+
+/**
  * A facet value as the reader sees it. `unknown` is the one value that is not
  * data at all — it is D5's explicit option, and it is written out in words
  * because "unknown" on its own beside a year reads as a broken row.
+ *
+ * `discontinued` arrives as the string `'true'` or `'false'` — the boolean the
+ * URL carries — and is the one facet whose raw value would be actively
+ * misleading on screen rather than merely terse.
  */
 export function facetValueLabel(field: string, value: string): string {
   if (field === 'year') return value === 'unknown' ? t('filter.unknownYear') : value
+  if (field === 'discontinued') return availabilityLabel(value === 'true')
   if (field === 'display') return displayLabel(value)
   if (field === 'movement') return movementLabel(value)
   return featureLabel(value)

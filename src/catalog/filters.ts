@@ -38,7 +38,13 @@ export const DEFAULT_COLLECTION_SORT: SortKey = 'added'
 
 export type Filters = Record<FacetField, string[]>
 
-export const NO_FILTERS: Filters = { year: [], display: [], movement: [], features: [] }
+export const NO_FILTERS: Filters = {
+  year: [],
+  discontinued: [],
+  display: [],
+  movement: [],
+  features: [],
+}
 
 export interface ViewState {
   filters: Filters
@@ -66,6 +72,12 @@ function carries(model: PublishedModel, field: FacetField): boolean {
   return model[field] !== undefined
 }
 
+/**
+ * `String(value)` is what makes `discontinued` work here without a branch: a
+ * boolean facet's values are the strings `'true'` and `'false'`, which is also
+ * what lands in the URL and what `applyFilters` compares against. The reader
+ * never meets either word — `facetValueLabel` turns them into English.
+ */
 function valuesOf(model: PublishedModel, field: FacetField): string[] {
   if (field === 'features') return model.features ?? []
   const value = model[field]
@@ -277,6 +289,12 @@ export function parseViewState(
   return {
     filters: {
       year: read('year'),
+      // D59 — `?discontinued=true` and `?discontinued=false`. The parameter is
+      // the field name, as every other facet's is, and an unrecognised value is
+      // kept for the same reason a vanished year is: FR-1.5 naming the filter
+      // that emptied the grid is readable, and silently dropping it is a URL
+      // that lied.
+      discontinued: read('discontinued'),
       display: read('display'),
       movement: read('movement'),
       features: read('features'),

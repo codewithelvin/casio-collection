@@ -206,6 +206,19 @@ function watchPage(catalog: Catalog, model: PublishedModel): Page {
     ['Case material', model.case?.material],
     ['Water resistance', model.water_resistance_m ? `${model.water_resistance_m} m` : undefined],
     ['Colourway', model.colorway],
+    // D59 — the same sentence the pill shows, for the reader who has no
+    // JavaScript and the crawler that never runs any. Deliberately NOT expressed
+    // as schema.org `offers.availability`: this site sells nothing, and an
+    // `ItemAvailability` on a page with no price is a commercial claim FR-10.4
+    // does not let the catalogue make.
+    [
+      'Availability',
+      model.discontinued === undefined
+        ? undefined
+        : model.discontinued
+          ? 'no longer listed by Casio'
+          : 'currently listed by Casio',
+    ],
   ]
   const stated = facts.filter((pair): pair is [string, string | number] => pair[1] !== undefined)
 
@@ -230,8 +243,12 @@ function watchPage(catalog: Catalog, model: PublishedModel): Page {
     return `${String(label).toLowerCase()} ${value}`
   }
 
+  // Availability is excluded for a different reason than Line and Series, which
+  // are already in the sentence around it: it has **two values across 1 500
+  // pages**, so in a meta description it is the opposite of distinguishing. It
+  // stays in the <dl>, where a crawler reading the page finds it.
   const summary = stated
-    .filter(([label]) => label !== 'Line' && label !== 'Series')
+    .filter(([label]) => label !== 'Line' && label !== 'Series' && label !== 'Availability')
     .slice(0, 4)
     .map(([label, value]) => phrase(label, value))
     .join(', ')

@@ -64,7 +64,13 @@ function publishModel(model: Model, line: string, series: string): Record<string
     image: model.image,
     image_credit: model.image_credit ? compact(model.image_credit) : undefined,
     official_url: model.official_url,
-    discontinued: model.discontinued === true ? true : undefined,
+    // D59 — **both booleans are published**, and that is the whole of the
+    // field. `false` is not a missing value: it is Casio's own sitemap saying it
+    // still lists this reference. Dropping it the way an unknown is dropped
+    // would leave the artefact unable to tell *still sold* from *nobody
+    // measured*, which is the one distinction the availability filter reads.
+    // `compact` still drops null and undefined, so unmeasured stays absent.
+    discontinued: model.discontinued,
     tombstone: model.tombstone ? compact(model.tombstone) : undefined,
   })
 }

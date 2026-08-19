@@ -22,6 +22,14 @@ import type { Catalog } from '../catalog/schema.ts'
  * were. D51 removed that state from the artefact rather than from the fixture: a
  * line with no models is not published, so a fixture containing one would be
  * testing the screens against a `catalog.json` the build cannot produce.
+ *
+ * D59's availability is on **two of the six models and no more, deliberately**.
+ * All three of its states have to be reachable — still listed, no longer listed,
+ * and never measured — and 2 of 6 is 33%, which is under D26's gate, so the
+ * *Availability* control stays out of the filter bar here. That keeps this
+ * fixture's filter-bar tests about the facets they were written for; the
+ * availability facet is tested against its own dense cohort in `filters.test.ts`,
+ * where the density can be set on purpose.
  */
 export const catalogFixture: Catalog = {
   version: 'testfixture01',
@@ -100,9 +108,12 @@ export const catalogFixture: Catalog = {
         url: 'https://commons.wikimedia.org/wiki/File:Casio_DW-5600E.jpg',
       },
       official_url: 'https://www.casio.com/dw-5600e-1v',
+      discontinued: false,
     },
     {
-      // Only the five required fields of D27 — the empty specification table.
+      // Only the five required fields of D27 — the empty specification table, and
+      // the model whose availability nobody measured. Leave it that way: without
+      // it there is no way to tell "renders no pill" from "renders the wrong one".
       id: 'dw-5600bb-1',
       ref: 'DW-5600BB-1',
       line: 'g-shock',
@@ -146,6 +157,7 @@ export const catalogFixture: Catalog = {
       source: { url: 'https://casiorestore.com/casio-f-91w', kind: 'community' },
       year: 2003,
       colorway: 'Black with dark green accents',
+      discontinued: true,
     },
   ],
   facets: {},

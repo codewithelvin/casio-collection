@@ -41,6 +41,7 @@ import { NoteEditor } from '../../ui/NoteEditor'
 import { useOwnership } from '../../collection/mutations.ts'
 import { LINE_ACCENTS } from '../../theme/tokens'
 import {
+  availabilityLabel,
   displayLabel,
   featureLabel,
   imageLicenceLabel,
@@ -218,6 +219,29 @@ function WatchDetail({
           {model.name ? (
             <Typography.Paragraph type="secondary" style={{ marginBottom: 8 }}>
               {model.name}
+            </Typography.Paragraph>
+          ) : null}
+
+          {/* D59 — availability, beside the reference rather than buried in the
+              specification table. It is the first thing a collector asks of a
+              Casio and the answer changes what they do next: *currently listed*
+              is a shopping decision, *no longer listed* is a hunt.
+
+              A pill and not a spec row because it is not a specification — the
+              case width is a property of the watch, this is a fact about Casio's
+              catalogue on the day it was measured. `undefined` renders nothing
+              at all, which is D27's rule holding for a field the reader would
+              otherwise read a `false` into. */}
+          {model.discontinued !== undefined ? (
+            <Typography.Paragraph style={{ marginBottom: 8 }}>
+              {/* `default` and not an absent `color`: under
+                  exactOptionalPropertyTypes an undefined prop is a type error,
+                  and `default` is the neutral tag rather than a red one. Nothing
+                  here is a warning — most of this catalogue is discontinued and
+                  that is the point of the site, not a problem with the watch. */}
+              <Tag color={model.discontinued ? 'default' : 'green'} style={{ marginInlineEnd: 0 }}>
+                {availabilityLabel(model.discontinued)}
+              </Tag>
             </Typography.Paragraph>
           ) : null}
 

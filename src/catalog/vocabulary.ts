@@ -154,8 +154,16 @@ export type Feature = (typeof FEATURES)[number]
  * density D26 measures. `year` is in the list and is **exempt from the 60%
  * threshold** — it keeps an explicit *Unknown year* option instead (D5, D25),
  * which buys the same honesty a different way.
+ *
+ * `discontinued` is the one boolean here, and it is the only facet whose values
+ * are not drawn from a vocabulary above: `true` and `false` are the whole domain,
+ * and the reader never sees either word (`facetValueLabel` turns them into
+ * *No longer listed by Casio* and *Currently listed*). It is also the only field
+ * nobody reads off a page one watch at a time — D59 measures the whole
+ * catalogue against Casio's sitemap in one pass, which is why its coverage sits
+ * at 100% and it is the one control D26's gate never hides.
  */
-export const FACET_FIELDS = ['year', 'display', 'movement', 'features'] as const
+export const FACET_FIELDS = ['year', 'discontinued', 'display', 'movement', 'features'] as const
 export type FacetField = (typeof FACET_FIELDS)[number]
 
 /**
