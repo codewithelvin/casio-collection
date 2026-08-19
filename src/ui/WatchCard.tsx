@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import type { PublishedModel } from '../catalog/schema.ts'
 import { imageSources } from '../catalog/client.ts'
 import { OwnershipControls } from './OwnershipControls'
+import { prefetchOnIntent } from './prefetch'
 import { LINE_ACCENTS } from '../theme/tokens'
 
 /**
@@ -161,6 +162,11 @@ export function WatchCard({
       <Link
         to={`/watch/${model.id}`}
         aria-label={model.ref}
+        // The watch route is lazily imported and React Router's `lazy` blocks the
+        // navigation with no pending UI, so the first press of a session sat for
+        // ~194 ms fetching the chunk with nothing on screen to say so. Warming it
+        // on hover, touch or focus makes that press free.
+        {...prefetchOnIntent}
         style={{ position: 'absolute', inset: 0, zIndex: 1 }}
       />
 

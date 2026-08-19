@@ -1,7 +1,8 @@
 import { Col, Row } from 'antd'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useMemo } from 'react'
 import type { PublishedModel, PublishedSeries } from '../catalog/schema.ts'
 import { WatchCard } from './WatchCard'
+import { useReveal } from './useReveal'
 
 /**
  * §8.5 — the grid. AntD `Row`/`Col`, `gutter={[16,16]}`, responsive spans
@@ -21,14 +22,12 @@ export const GRID_GUTTER: [number, number] = [16, 16]
  * Enough to fill the tallest first screen and a bit beyond, so the sentinel is
  * below the fold on every breakpoint and nothing appears to load late: six
  * across at `xl` is eight rows.
+ *
+ * Exported because the **line page reveals whole series and has to stop at the
+ * same number of cards** — the cost is cards, not the containers holding them,
+ * and two windows sized differently would be two answers to one question.
  */
-const FIRST = 48
-
-/** Added each time the sentinel comes into view. */
-const MORE = 48
-
-/** How far below the fold the end of the list counts as "near". */
-const MARGIN_PX = 400
+export const WINDOW = 48
 
 /**
  * **The grid renders what has been scrolled to, not the whole line.**
@@ -64,74 +63,18 @@ export function WatchGrid({
   seriesById?: Map<string, PublishedSeries> | undefined
   accent?: string | undefined
 }) {
-  const [shown, setShown] = useState(FIRST)
-  const sentinel = useRef<HTMLDivElement | null>(null)
-  const appending = useRef(false)
+  // The identity of the list, not the array reference: a parent that rebuilds an
+  // equal array on every render would otherwise reset the window forever.
+  const identity = useMemo(
+    () => `${models.length}:${models[0]?.id ?? ''}:${models.at(-1)?.id ?? ''}`,
+    [models],
+  )
+  const { shown, sentinel, done } = useReveal(models.length, identity, {
+    first: WINDOW,
+    more: WINDOW,
+  })
 
-  // The identity of the list, not the array reference: a parent that rebuilds
-  // an equal array on every render would otherwise reset the window forever.
-  const identity = useMemo(() => `${models.length}:${models[0]?.id ?? ''}:${models.at(-1)?.id ?? ''}`, [models])
-  useEffect(() => setShown(FIRST), [identity])
-
-  useEffect(() => {
-    const node = sentinel.current
-    // No IntersectionObserver means no way to know when to reveal more, so
-    // everything renders. Slow beats absent — this is the same direction of
-    // failure the catalogue takes everywhere else.
-    if (!node || typeof IntersectionObserver === 'undefined') {
-      setShown(models.length)
-      return
-    }
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (!entries.some((entry) => entry.isIntersecting)) return
-        /**
-         * **One append per frame, and this is not belt-and-braces.**
-         *
-         * At first paint the cards have not been laid out, so the sentinel sits
-         * a few pixels below a grid of no height and keeps reporting itself as
-         * visible. Every report appends another window before the browser has
-         * had a chance to make the previous one tall, and the measurement was
-         * 384 cards rendered on a page nobody had scrolled — eight windows in
-         * one burst. Waiting a frame lets layout answer the question the
-         * observer is actually asking.
-         */
-        if (appending.current) return
-
-        /**
-         * **Ask the layout, not the report.**
-         *
-         * An `IntersectionObserver` entry describes where the sentinel was when
-         * the observation was taken, and at first paint that is underneath a
-         * grid the browser has not yet given any height to. Trusting it appended
-         * eight windows onto a page nobody had scrolled — 384 cards — and a
-         * once-per-frame guard did not help, because each frame produced another
-         * equally stale report. Measuring here answers the question the observer
-         * was only approximating: *is the end of the list actually near?*
-         */
-        if (node.getBoundingClientRect().top > window.innerHeight + MARGIN_PX) return
-
-        appending.current = true
-        requestAnimationFrame(() => {
-          appending.current = false
-        })
-        setShown((current) => Math.min(current + MORE, models.length))
-      },
-      // A screen's warning, so the next rows are there before the reader
-      // arrives at the gap rather than after it.
-      { rootMargin: `${MARGIN_PX}px` },
-    )
-    observer.observe(node)
-    return () => observer.disconnect()
-    // **`shown` is deliberately not a dependency.** Rebuilding the observer on
-    // every append re-reports a sentinel that is still inside the root margin,
-    // which appends again, and the window runs away from the reader — measured
-    // at 384 cards rendered on a page nobody had scrolled. Observing the node
-    // once is enough: appending pushes the sentinel down, intersection ends,
-    // and the next crossing is the reader actually arriving.
-  }, [models.length])
-
-  const visible = shown >= models.length ? models : models.slice(0, shown)
+  const visible = done ? models : models.slice(0, shown)
 
   return (
     <>
@@ -148,7 +91,7 @@ export function WatchGrid({
       </Row>
       {/* Present only while there is more, so it cannot sit at the end of a
           finished list quietly observing nothing. */}
-      {shown < models.length ? <div ref={sentinel} aria-hidden="true" /> : null}
+      {done ? null : <div ref={sentinel} aria-hidden="true" />}
     </>
   )
 }

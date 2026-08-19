@@ -4,7 +4,8 @@ import { Link, useParams } from 'react-router-dom'
 import { lineBySlug, modelsInSeries, seriesInLine, useCatalog } from '../../catalog/client.ts'
 import { applyViewState, NO_FILTERS } from '../../catalog/filters.ts'
 import type { PublishedSeries } from '../../catalog/schema.ts'
-import { WatchGrid } from '../../ui/WatchGrid'
+import { WatchGrid, WINDOW } from '../../ui/WatchGrid'
+import { sectionsWithin, useReveal } from '../../ui/useReveal'
 import { SkeletonGrid } from '../../ui/SkeletonGrid'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
@@ -62,6 +63,34 @@ export default function LineRoute() {
   )
   const shownCount = shownGroups.reduce((total, group) => total + group.models.length, 0)
 
+  /**
+   * D58 one level up — **the page reveals whole series, and stops at the same
+   * card count one grid stops at.**
+   *
+   * D58 bounded each grid to 48 cards and left the *number* of grids unbounded,
+   * which was invisible while a line held forty-odd references. Vintage went from
+   * 43 series to 68 in one session, `/line/vintage/` went from 82 cards to 228,
+   * and pressing **back** from a watch took **1 082 ms at a 4× CPU throttle with
+   * no network at all** — nothing downloading, the whole page rebuilding from
+   * scratch. That is §8.5's stutter condition again, and D58's own text says
+   * measuring it is what reopens the question.
+   *
+   * The unit is **cards, not sections**, because cards are what cost the time:
+   * G-SHOCK's largest series holds 162 and would blow the budget alone, while
+   * Vintage's first three come to about 48 between them. So sections are taken
+   * until the budget runs out, and **always at least one** — a page revealing
+   * nothing would have no sentinel for the reader to scroll towards, and would
+   * never reveal anything.
+   */
+  const revealed = useReveal(shownCount, `${slug ?? ''}:${shownCount}:${shownGroups.length}`, {
+    first: WINDOW,
+    more: WINDOW,
+  })
+  const visibleGroups = useMemo(
+    () => sectionsWithin(shownGroups, (group) => group.models.length, revealed.shown),
+    [shownGroups, revealed.shown],
+  )
+
   if (isPending) return <SkeletonGrid />
   if (isError || !data) return <ErrorState onRetry={() => void refetch()} />
 
@@ -103,7 +132,7 @@ export default function LineRoute() {
             />
           ) : null}
 
-          {shownGroups.map(({ series, models }) => (
+          {visibleGroups.map(({ series, models }) => (
             <section key={series.id} style={{ marginBottom: 32 }}>
               {/* §8.5's sticky sub-heading. `top` clears the 64 px header, which
                   is itself sticky — without the offset the heading parks itself
@@ -133,6 +162,11 @@ export default function LineRoute() {
               <WatchGrid models={models} accent={accent} />
             </section>
           ))}
+
+          {/* The page's own sentinel, below the last revealed section. Present
+              only while sections remain, so it cannot sit at the end of a
+              finished page observing nothing. */}
+          {revealed.done ? null : <div ref={revealed.sentinel} aria-hidden="true" />}
         </>
       )}
     </div>
