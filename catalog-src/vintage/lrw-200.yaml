@@ -1,0 +1,281 @@
+# LRW-200 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: lrw-200
+  name: LRW-200
+  line: vintage
+
+models:
+  - id: lrw-200h-1bv
+    ref: LRW-200H-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102246id_/https://www.casio.com/europe/watches/casio/product.LRW-200H-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102246id_/https://www.casio.com/europe/watches/casio/product.LRW-200H-1BV/'
+    discontinued: false
+  - id: lrw-200h-2bv
+    ref: LRW-200H-2BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102252id_/https://www.casio.com/europe/watches/casio/product.LRW-200H-2BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-2bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102252id_/https://www.casio.com/europe/watches/casio/product.LRW-200H-2BV/'
+    discontinued: false
+  - id: lrw-200h-2cv
+    ref: LRW-200H-2CV
+    source:
+      { url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-2CV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-2cv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-2CV/'
+    discontinued: false
+  - id: lrw-200h-2e3v
+    ref: LRW-200H-2E3V
+    source:
+      { url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-2E3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-2e3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-2E3V/'
+    discontinued: false
+  - id: lrw-200h-3cv
+    ref: LRW-200H-3CV
+    source:
+      { url: 'https://web.archive.org/web/20221220004913id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-3CV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-3cv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221220004913id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-3CV/'
+    discontinued: false
+  - id: lrw-200h-4b2v
+    ref: LRW-200H-4B2V
+    source:
+      { url: 'https://web.archive.org/web/20220926030157id_/https://www.casio.com/us/watches/casio/product.LRW-200H-4B2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    discontinued: false
+  - id: lrw-200h-4bv
+    ref: LRW-200H-4BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102249id_/https://www.casio.com/europe/watches/casio/product.LRW-200H-4BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-4bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102249id_/https://www.casio.com/europe/watches/casio/product.LRW-200H-4BV/'
+    discontinued: false
+  - id: lrw-200h-4cv
+    ref: LRW-200H-4CV
+    source:
+      { url: 'https://web.archive.org/web/20220526115845id_/https://www.casio.com/sg/watches/casio/product.LRW-200H-4CV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-4cv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115845id_/https://www.casio.com/sg/watches/casio/product.LRW-200H-4CV/'
+    discontinued: false
+  - id: lrw-200h-4e2v
+    ref: LRW-200H-4E2V
+    source:
+      { url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-4E2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-4e2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-4E2V/'
+    discontinued: false
+  - id: lrw-200h-4e3v
+    ref: LRW-200H-4E3V
+    source:
+      { url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-4E3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-4e3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-4E3V/'
+    discontinued: false
+  - id: lrw-200h-4ev
+    ref: LRW-200H-4EV
+    source:
+      { url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-4EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-4ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-4EV/'
+    discontinued: false
+  - id: lrw-200h-7bv
+    ref: LRW-200H-7BV
+    source:
+      { url: 'https://web.archive.org/web/20220526124326id_/https://www.casio.com/sg/watches/casio/product.LRW-200H-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526124326id_/https://www.casio.com/sg/watches/casio/product.LRW-200H-7BV/'
+    discontinued: false
+  - id: lrw-200h-7e1v
+    ref: LRW-200H-7E1V
+    source:
+      { url: 'https://web.archive.org/web/20250307115025id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-7E1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-7e1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250307115025id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-7E1V/'
+    discontinued: false
+  - id: lrw-200h-7e2v
+    ref: LRW-200H-7E2V
+    source:
+      { url: 'https://web.archive.org/web/20240715102209id_/https://www.casio.com/europe/watches/casio/product.LRW-200H-7E2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-7e2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102209id_/https://www.casio.com/europe/watches/casio/product.LRW-200H-7E2V/'
+    discontinued: false
+  - id: lrw-200h-9e2v
+    ref: LRW-200H-9E2V
+    source:
+      { url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-9E2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-9e2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-9E2V/'
+    discontinued: false
+  - id: lrw-200h-9ev
+    ref: LRW-200H-9EV
+    source:
+      { url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-9EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200h-9ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221220004909id_/https://www.casio.com/intl/watches/casio/product.LRW-200H-9EV/'
+    discontinued: false
+  - id: lrw-200hs-2ev
+    ref: LRW-200HS-2EV
+    source:
+      { url: 'https://web.archive.org/web/20240406015738id_/https://www.casio.com/us/watches/casio/product.LRW-200HS-2EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200hs-2ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240406015738id_/https://www.casio.com/us/watches/casio/product.LRW-200HS-2EV/'
+    discontinued: false
+  - id: lrw-200hs-4ev
+    ref: LRW-200HS-4EV
+    source:
+      { url: 'https://web.archive.org/web/20241217205335id_/https://www.casio.com/us/watches/casio/product.LRW-200HS-4EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200hs-4ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241217205335id_/https://www.casio.com/us/watches/casio/product.LRW-200HS-4EV/'
+    discontinued: false
+  - id: lrw-200hs-7ev
+    ref: LRW-200HS-7EV
+    source:
+      { url: 'https://web.archive.org/web/20250118000057id_/https://www.casio.com/us/watches/casio/product.LRW-200HS-7EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 100
+    image: lrw-200hs-7ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118000057id_/https://www.casio.com/us/watches/casio/product.LRW-200HS-7EV/'
+    discontinued: false

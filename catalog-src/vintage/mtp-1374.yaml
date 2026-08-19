@@ -1,0 +1,258 @@
+# MTP-1374 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-1374
+  name: MTP-1374
+  line: vintage
+
+models:
+  - id: mtp-1374d-1a2v
+    ref: MTP-1374D-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20220529112906id_/https://www.casio.com/in/watches/casio/product.MTP-1374D-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 124, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374d-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529112906id_/https://www.casio.com/in/watches/casio/product.MTP-1374D-1A2V/'
+    discontinued: true
+  - id: mtp-1374d-1av
+    ref: MTP-1374D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220529061946id_/https://www.casio.com/in/watches/casio/product.MTP-1374D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 124, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529061946id_/https://www.casio.com/in/watches/casio/product.MTP-1374D-1AV/'
+    discontinued: false
+  - id: mtp-1374d-2a2v
+    ref: MTP-1374D-2A2V
+    source:
+      { url: 'https://web.archive.org/web/20220529105458id_/https://www.casio.com/in/watches/casio/product.MTP-1374D-2A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 124, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374d-2a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529105458id_/https://www.casio.com/in/watches/casio/product.MTP-1374D-2A2V/'
+    discontinued: true
+  - id: mtp-1374d-7av
+    ref: MTP-1374D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220628123512id_/https://www.casio.com/in/watches/casio/product.MTP-1374D-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 124, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628123512id_/https://www.casio.com/in/watches/casio/product.MTP-1374D-7AV/'
+    discontinued: false
+  - id: mtp-1374hd-2av
+    ref: MTP-1374HD-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220816045125id_/https://www.casio.com/in/watches/casio/product.MTP-1374HD-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 124, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374hd-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220816045125id_/https://www.casio.com/in/watches/casio/product.MTP-1374HD-2AV/'
+    discontinued: true
+  - id: mtp-1374hd-9av
+    ref: MTP-1374HD-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220528081731id_/https://www.casio.com/in/watches/casio/product.MTP-1374HD-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 124, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374hd-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220528081731id_/https://www.casio.com/in/watches/casio/product.MTP-1374HD-9AV/'
+    discontinued: true
+  - id: mtp-1374hl-1a2v
+    ref: MTP-1374HL-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20220517105021id_/https://www.casio.com/in/watches/casio/product.MTP-1374HL-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 66, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374hl-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220517105021id_/https://www.casio.com/in/watches/casio/product.MTP-1374HL-1A2V/'
+    discontinued: true
+  - id: mtp-1374hl-2av
+    ref: MTP-1374HL-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220517120816id_/https://www.casio.com/in/watches/casio/product.MTP-1374HL-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 66, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374hl-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220517120816id_/https://www.casio.com/in/watches/casio/product.MTP-1374HL-2AV/'
+    discontinued: true
+  - id: mtp-1374hl-7a1v
+    ref: MTP-1374HL-7A1V
+    source:
+      { url: 'https://web.archive.org/web/20220516183206id_/https://www.casio.com/in/watches/casio/product.MTP-1374HL-7A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 66, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374hl-7a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516183206id_/https://www.casio.com/in/watches/casio/product.MTP-1374HL-7A1V/'
+    discontinued: true
+  - id: mtp-1374hl-9av
+    ref: MTP-1374HL-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220516174424id_/https://www.casio.com/in/watches/casio/product.MTP-1374HL-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 66, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374hl-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516174424id_/https://www.casio.com/in/watches/casio/product.MTP-1374HL-9AV/'
+    discontinued: true
+  - id: mtp-1374hrg-5av
+    ref: MTP-1374HRG-5AV
+    source:
+      { url: 'https://web.archive.org/web/20220516180050id_/https://www.casio.com/in/watches/casio/product.MTP-1374HRG-5AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 124, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374hrg-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516180050id_/https://www.casio.com/in/watches/casio/product.MTP-1374HRG-5AV/'
+    discontinued: true
+  - id: mtp-1374hrg-9av
+    ref: MTP-1374HRG-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220516194639id_/https://www.casio.com/in/watches/casio/product.MTP-1374HRG-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 124, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374hrg-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516194639id_/https://www.casio.com/in/watches/casio/product.MTP-1374HRG-9AV/'
+    discontinued: true
+  - id: mtp-1374hsg-7av
+    ref: MTP-1374HSG-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220516175324id_/https://www.casio.com/in/watches/casio/product.MTP-1374HSG-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 124, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374hsg-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516175324id_/https://www.casio.com/in/watches/casio/product.MTP-1374HSG-7AV/'
+    discontinued: true
+  - id: mtp-1374l-1av
+    ref: MTP-1374L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20241116061548id_/https://www.casio.com/za/watches/casio/product.MTP-1374L-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 66, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241116061548id_/https://www.casio.com/za/watches/casio/product.MTP-1374L-1AV/'
+    discontinued: false
+  - id: mtp-1374l-7av
+    ref: MTP-1374L-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220812125342id_/https://www.casio.com/in/watches/casio/product.MTP-1374L-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 66, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374l-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220812125342id_/https://www.casio.com/in/watches/casio/product.MTP-1374L-7AV/'
+    discontinued: false
+  - id: mtp-1374l-9a2v
+    ref: MTP-1374L-9A2V
+    source:
+      { url: 'https://web.archive.org/web/20220808230036id_/https://www.casio.com/in/watches/casio/product.MTP-1374L-9A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 66, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374l-9a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808230036id_/https://www.casio.com/in/watches/casio/product.MTP-1374L-9A2V/'
+    discontinued: true
+  - id: mtp-1374l-9av
+    ref: MTP-1374L-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220816035300id_/https://www.casio.com/in/watches/casio/product.MTP-1374L-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 10.4, weight_g: 66, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1374l-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220816035300id_/https://www.casio.com/in/watches/casio/product.MTP-1374L-9AV/'
+    discontinued: true

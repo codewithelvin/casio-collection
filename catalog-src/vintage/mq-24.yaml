@@ -1,0 +1,283 @@
+# MQ-24 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mq-24
+  name: MQ-24
+  line: vintage
+
+models:
+  - id: mq-24-1b
+    ref: MQ-24-1B
+    source:
+      { url: 'https://web.archive.org/web/20240715102238id_/https://www.casio.com/europe/watches/casio/product.MQ-24-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102238id_/https://www.casio.com/europe/watches/casio/product.MQ-24-1B/'
+    discontinued: false
+  - id: mq-24-1b2
+    ref: MQ-24-1B2
+    source:
+      { url: 'https://web.archive.org/web/20220808131313id_/https://www.casio.com/us/watches/casio/product.MQ-24-1B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    discontinued: false
+  - id: mq-24-1b3
+    ref: MQ-24-1B3
+    source:
+      { url: 'https://web.archive.org/web/20240715102214id_/https://www.casio.com/europe/watches/casio/product.MQ-24-1B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24-1b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102214id_/https://www.casio.com/europe/watches/casio/product.MQ-24-1B3/'
+    discontinued: false
+  - id: mq-24-1e
+    ref: MQ-24-1E
+    source:
+      { url: 'https://web.archive.org/web/20220907162716id_/https://www.casio.com/us/watches/casio/product.MQ-24-1E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    discontinued: false
+  - id: mq-24-7b2l
+    ref: MQ-24-7B2L
+    source:
+      { url: 'https://web.archive.org/web/20240715102240id_/https://www.casio.com/europe/watches/casio/product.MQ-24-7B2L/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24-7b2l
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102240id_/https://www.casio.com/europe/watches/casio/product.MQ-24-7B2L/'
+    discontinued: false
+  - id: mq-24-8cl
+    ref: MQ-24-8CL
+    source:
+      { url: 'https://web.archive.org/web/20220818080712id_/https://www.casio.com/us/watches/casio/product.MQ-24-8CL/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24-8cl
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220818080712id_/https://www.casio.com/us/watches/casio/product.MQ-24-8CL/'
+    discontinued: false
+  - id: mq-24b-1b
+    ref: MQ-24B-1B
+    source:
+      { url: 'https://web.archive.org/web/20241119154614id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24b-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241119154614id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-1B/'
+    discontinued: false
+  - id: mq-24b-3b
+    ref: MQ-24B-3B
+    source:
+      { url: 'https://web.archive.org/web/20241119154712id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-3B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24b-3b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241119154712id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-3B/'
+    discontinued: false
+  - id: mq-24b-7b
+    ref: MQ-24B-7B
+    source:
+      { url: 'https://web.archive.org/web/20241126200445id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24b-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126200445id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-7B/'
+    discontinued: false
+  - id: mq-24b-8b
+    ref: MQ-24B-8B
+    source:
+      { url: 'https://web.archive.org/web/20241119154522id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-8B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24b-8b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241119154522id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-8B/'
+    discontinued: false
+  - id: mq-24b-9b
+    ref: MQ-24B-9B
+    source:
+      { url: 'https://web.archive.org/web/20241120021631id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-9B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24b-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241120021631id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-9B/'
+    discontinued: false
+  - id: mq-24d-7e
+    ref: MQ-24D-7E
+    source:
+      { url: 'https://web.archive.org/web/20250119142701id_/https://www.casio.com/in/watches/casio/product.MQ-24D-7E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 45, material: 'Resin' }
+    image: mq-24d-7e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119142701id_/https://www.casio.com/in/watches/casio/product.MQ-24D-7E/'
+    discontinued: false
+  - id: mq-24g-9e
+    ref: MQ-24G-9E
+    source:
+      { url: 'https://web.archive.org/web/20250930175144id_/https://www.casio.com/in/watches/casio/product.MQ-24G-9E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 45, material: 'Resin' }
+    image: mq-24g-9e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250930175144id_/https://www.casio.com/in/watches/casio/product.MQ-24G-9E/'
+    discontinued: false
+  - id: mq-24s-2b
+    ref: MQ-24S-2B
+    source:
+      { url: 'https://web.archive.org/web/20240715102902id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-2B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24s-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102902id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-2B/'
+    discontinued: false
+  - id: mq-24s-4b
+    ref: MQ-24S-4B
+    source:
+      { url: 'https://web.archive.org/web/20240715102906id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-4B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24s-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102906id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-4B/'
+    discontinued: false
+  - id: mq-24s-7b
+    ref: MQ-24S-7B
+    source:
+      { url: 'https://web.archive.org/web/20240715102909id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24s-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102909id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-7B/'
+    discontinued: false
+  - id: mq-24s-8b
+    ref: MQ-24S-8B
+    source:
+      { url: 'https://web.archive.org/web/20240715102814id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-8B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24s-8b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102814id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-8B/'
+    discontinued: false
+  - id: mq-24uc-2b
+    ref: MQ-24UC-2B
+    source:
+      { url: 'https://web.archive.org/web/20240715102817id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-2B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24uc-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102817id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-2B/'
+    discontinued: false
+  - id: mq-24uc-3b
+    ref: MQ-24UC-3B
+    source:
+      { url: 'https://web.archive.org/web/20240715102832id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-3B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24uc-3b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102832id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-3B/'
+    discontinued: false
+  - id: mq-24uc-4b
+    ref: MQ-24UC-4B
+    source:
+      { url: 'https://web.archive.org/web/20240715102829id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-4B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24uc-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102829id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-4B/'
+    discontinued: false
+  - id: mq-24uc-8b
+    ref: MQ-24UC-8B
+    source:
+      { url: 'https://web.archive.org/web/20240715102835id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-8B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20, material: 'Resin' }
+    image: mq-24uc-8b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102835id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-8B/'
+    discontinued: false

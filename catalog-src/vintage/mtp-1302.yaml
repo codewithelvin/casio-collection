@@ -1,0 +1,394 @@
+# MTP-1302 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-1302
+  name: MTP-1302
+  line: vintage
+
+models:
+  - id: mtp-1302d-1a1v
+    ref: MTP-1302D-1A1V
+    source:
+      { url: 'https://web.archive.org/web/20240119144202id_/https://www.casio.com/us/watches/casio/product.MTP-1302D-1A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302d-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144202id_/https://www.casio.com/us/watches/casio/product.MTP-1302D-1A1V/'
+    discontinued: false
+  - id: mtp-1302d-2a2v
+    ref: MTP-1302D-2A2V
+    source:
+      { url: 'https://web.archive.org/web/20230114004604id_/https://www.casio.com/us/watches/casio/product.MTP-1302D-2A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302d-2a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230114004604id_/https://www.casio.com/us/watches/casio/product.MTP-1302D-2A2V/'
+    discontinued: true
+  - id: mtp-1302d-2av
+    ref: MTP-1302D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240214084709id_/https://www.casio.com/us/watches/casio/product.MTP-1302D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084709id_/https://www.casio.com/us/watches/casio/product.MTP-1302D-2AV/'
+    discontinued: false
+  - id: mtp-1302d-3av
+    ref: MTP-1302D-3AV
+    source:
+      { url: 'https://web.archive.org/web/20230124040029id_/https://www.casio.com/us/watches/casio/product.MTP-1302D-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302d-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230124040029id_/https://www.casio.com/us/watches/casio/product.MTP-1302D-3AV/'
+    discontinued: false
+  - id: mtp-1302d-7a2v
+    ref: MTP-1302D-7A2V
+    source:
+      { url: 'https://web.archive.org/web/20231116193301id_/https://www.casio.com/in/watches/casio/product.MTP-1302D-7A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302d-7a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231116193301id_/https://www.casio.com/in/watches/casio/product.MTP-1302D-7A2V/'
+    discontinued: false
+  - id: mtp-1302da-7av
+    ref: MTP-1302DA-7AV
+    source:
+      { url: 'https://web.archive.org/web/20251019073905id_/https://www.casio.com/in/watches/casio/product.MTP-1302DA-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.4, weight_g: 104, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302da-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251019073905id_/https://www.casio.com/in/watches/casio/product.MTP-1302DA-7AV/'
+    discontinued: false
+  - id: mtp-1302dd-5av
+    ref: MTP-1302DD-5AV
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302DD-5AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 106, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302dd-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302DD-5AV/'
+    discontinued: false
+  - id: mtp-1302dd-9av
+    ref: MTP-1302DD-9AV
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302DD-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 106, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302dd-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302DD-9AV/'
+    discontinued: false
+  - id: mtp-1302ds-7av
+    ref: MTP-1302DS-7AV
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302DS-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302ds-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302DS-7AV/'
+    discontinued: false
+  - id: mtp-1302pd-1a1v
+    ref: MTP-1302PD-1A1V
+    source:
+      { url: 'https://web.archive.org/web/20240715102445id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-1A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pd-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102445id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-1A1V/'
+    discontinued: false
+  - id: mtp-1302pd-2a2v
+    ref: MTP-1302PD-2A2V
+    source:
+      { url: 'https://web.archive.org/web/20240715102353id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-2A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pd-2a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102353id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-2A2V/'
+    discontinued: false
+  - id: mtp-1302pd-2av
+    ref: MTP-1302PD-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102449id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pd-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102449id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-2AV/'
+    discontinued: false
+  - id: mtp-1302pd-3av
+    ref: MTP-1302PD-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102357id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pd-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102357id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-3AV/'
+    discontinued: false
+  - id: mtp-1302pd-4av
+    ref: MTP-1302PD-4AV
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302PD-4AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pd-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302PD-4AV/'
+    discontinued: false
+  - id: mtp-1302pd-6av
+    ref: MTP-1302PD-6AV
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302PD-6AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pd-6av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302PD-6AV/'
+    discontinued: false
+  - id: mtp-1302pd-7a1v
+    ref: MTP-1302PD-7A1V
+    source:
+      { url: 'https://web.archive.org/web/20240715102452id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-7A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pd-7a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102452id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-7A1V/'
+    discontinued: false
+  - id: mtp-1302pd-7bv
+    ref: MTP-1302PD-7BV
+    source:
+      { url: 'https://web.archive.org/web/20240715070620id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pd-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715070620id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PD-7BV/'
+    discontinued: false
+  - id: mtp-1302pd-9av
+    ref: MTP-1302PD-9AV
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302PD-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pd-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.MTP-1302PD-9AV/'
+    discontinued: false
+  - id: mtp-1302pe-4av
+    ref: MTP-1302PE-4AV
+    source:
+      { url: 'https://web.archive.org/web/20250119191733id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PE-4AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.4, weight_g: 107, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pe-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119191733id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PE-4AV/'
+    discontinued: false
+  - id: mtp-1302pgc-5av
+    ref: MTP-1302PGC-5AV
+    source:
+      { url: 'https://web.archive.org/web/20241127040203id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PGC-5AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.4, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pgc-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241127040203id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PGC-5AV/'
+    discontinued: false
+  - id: mtp-1302pl-1av
+    ref: MTP-1302PL-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102456id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PL-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.4, weight_g: 50, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pl-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102456id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PL-1AV/'
+    discontinued: false
+  - id: mtp-1302pl-7bv
+    ref: MTP-1302PL-7BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102438id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PL-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.4, weight_g: 50, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302pl-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102438id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PL-7BV/'
+    discontinued: false
+  - id: mtp-1302psc-7av
+    ref: MTP-1302PSC-7AV
+    source:
+      { url: 'https://web.archive.org/web/20241212132624id_/https://www.casio.com/us/watches/casio/product.MTP-1302PSC-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.4, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302psc-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241212132624id_/https://www.casio.com/us/watches/casio/product.MTP-1302PSC-7AV/'
+    discontinued: false
+  - id: mtp-1302psg-7av
+    ref: MTP-1302PSG-7AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102441id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PSG-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1302psg-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102441id_/https://www.casio.com/europe/watches/casio/product.MTP-1302PSG-7AV/'
+    discontinued: false
+  - id: mtp-1302sg-7av
+    ref: MTP-1302SG-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220813000005id_/https://www.casio.com/in/watches/casio/product.MTP-1302SG-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1302sg-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220813000005id_/https://www.casio.com/in/watches/casio/product.MTP-1302SG-7AV/'
+    discontinued: true

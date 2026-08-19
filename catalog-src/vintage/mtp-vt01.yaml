@@ -1,0 +1,342 @@
+# MTP-VT01 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-vt01
+  name: MTP-VT01
+  line: vintage
+
+models:
+  - id: mtp-vt01d-1b
+    ref: MTP-VT01D-1B
+    source:
+      { url: 'https://web.archive.org/web/20220129023125id_/https://www.casio.com/my/watches/casio/product.MTP-VT01D-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88 }
+    features: [mineral-glass]
+    image: mtp-vt01d-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220129023125id_/https://www.casio.com/my/watches/casio/product.MTP-VT01D-1B/'
+    discontinued: false
+  - id: mtp-vt01d-1b2
+    ref: MTP-VT01D-1B2
+    source:
+      { url: 'https://web.archive.org/web/20220625131919id_/https://www.casio.com/in/watches/casio/product.MTP-VT01D-1B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88 }
+    features: [mineral-glass]
+    image: mtp-vt01d-1b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625131919id_/https://www.casio.com/in/watches/casio/product.MTP-VT01D-1B2/'
+    discontinued: false
+  - id: mtp-vt01d-2b
+    ref: MTP-VT01D-2B
+    source:
+      { url: 'https://web.archive.org/web/20220625110547id_/https://www.casio.com/in/watches/casio/product.MTP-VT01D-2B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88 }
+    features: [mineral-glass]
+    image: mtp-vt01d-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625110547id_/https://www.casio.com/in/watches/casio/product.MTP-VT01D-2B/'
+    discontinued: false
+  - id: mtp-vt01d-2b2
+    ref: MTP-VT01D-2B2
+    source:
+      { url: 'https://web.archive.org/web/20220526121205id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01D-2B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88 }
+    features: [mineral-glass]
+    image: mtp-vt01d-2b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526121205id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01D-2B2/'
+    discontinued: false
+  - id: mtp-vt01d-7b
+    ref: MTP-VT01D-7B
+    source:
+      { url: 'https://web.archive.org/web/20211203013938id_/https://www.casio.com/my/watches/casio/product.MTP-VT01D-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88 }
+    features: [mineral-glass]
+    image: mtp-vt01d-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211203013938id_/https://www.casio.com/my/watches/casio/product.MTP-VT01D-7B/'
+    discontinued: false
+  - id: mtp-vt01g-1b
+    ref: MTP-VT01G-1B
+    source:
+      { url: 'https://web.archive.org/web/20220628111912id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01g-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628111912id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-1B/'
+    discontinued: false
+  - id: mtp-vt01g-1b2
+    ref: MTP-VT01G-1B2
+    source:
+      { url: 'https://web.archive.org/web/20220522021524id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-1B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01g-1b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220522021524id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-1B2/'
+    discontinued: false
+  - id: mtp-vt01g-2b
+    ref: MTP-VT01G-2B
+    source:
+      { url: 'https://web.archive.org/web/20220529055935id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-2B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01g-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529055935id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-2B/'
+    discontinued: false
+  - id: mtp-vt01g-2b2
+    ref: MTP-VT01G-2B2
+    source:
+      { url: 'https://web.archive.org/web/20220628124655id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-2B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01g-2b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628124655id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-2B2/'
+    discontinued: false
+  - id: mtp-vt01g-5b
+    ref: MTP-VT01G-5B
+    source:
+      { url: 'https://web.archive.org/web/20240315230247id_/https://www.casio.com/ph/watches/casio/product.MTP-VT01G-5B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01g-5b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240315230247id_/https://www.casio.com/ph/watches/casio/product.MTP-VT01G-5B/'
+    discontinued: false
+  - id: mtp-vt01g-7b
+    ref: MTP-VT01G-7B
+    source:
+      { url: 'https://web.archive.org/web/20220526115654id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01G-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01g-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115654id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01G-7B/'
+    discontinued: false
+  - id: mtp-vt01gl-1b2
+    ref: MTP-VT01GL-1B2
+    source:
+      { url: 'https://web.archive.org/web/20211019091018id_/https://www.casio.com/my/watches/casio/product.MTP-VT01GL-1B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01gl-1b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211019091018id_/https://www.casio.com/my/watches/casio/product.MTP-VT01GL-1B2/'
+    discontinued: false
+  - id: mtp-vt01gl-2b
+    ref: MTP-VT01GL-2B
+    source:
+      { url: 'https://web.archive.org/web/20210919103124id_/https://www.casio.com/my/watches/casio/product.MTP-VT01GL-2B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01gl-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210919103124id_/https://www.casio.com/my/watches/casio/product.MTP-VT01GL-2B/'
+    discontinued: false
+  - id: mtp-vt01gl-2b2
+    ref: MTP-VT01GL-2B2
+    source:
+      { url: 'https://web.archive.org/web/20220928095219id_/https://www.casio.com/in/watches/casio/product.MTP-VT01GL-2B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01gl-2b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220928095219id_/https://www.casio.com/in/watches/casio/product.MTP-VT01GL-2B2/'
+    discontinued: false
+  - id: mtp-vt01gl-3b
+    ref: MTP-VT01GL-3B
+    source:
+      { url: 'https://web.archive.org/web/20240316051107id_/https://www.casio.com/ph/watches/casio/product.MTP-VT01GL-3B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01gl-3b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240316051107id_/https://www.casio.com/ph/watches/casio/product.MTP-VT01GL-3B/'
+    discontinued: false
+  - id: mtp-vt01gl-5b
+    ref: MTP-VT01GL-5B
+    source:
+      { url: 'https://web.archive.org/web/20210916194905id_/https://www.casio.com/my/watches/casio/product.MTP-VT01GL-5B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vt01gl-5b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210916194905id_/https://www.casio.com/my/watches/casio/product.MTP-VT01GL-5B/'
+    discontinued: false
+  - id: mtp-vt01l-1b
+    ref: MTP-VT01L-1B
+    source:
+      { url: 'https://web.archive.org/web/20220520071449id_/https://www.casio.com/in/watches/casio/product.MTP-VT01L-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }
+    features: [mineral-glass]
+    image: mtp-vt01l-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220520071449id_/https://www.casio.com/in/watches/casio/product.MTP-VT01L-1B/'
+    discontinued: false
+  - id: mtp-vt01l-1b2
+    ref: MTP-VT01L-1B2
+    source:
+      { url: 'https://web.archive.org/web/20220626200053id_/https://www.casio.com/in/watches/casio/product.MTP-VT01L-1B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }
+    features: [mineral-glass]
+    image: mtp-vt01l-1b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626200053id_/https://www.casio.com/in/watches/casio/product.MTP-VT01L-1B2/'
+    discontinued: false
+  - id: mtp-vt01l-2b
+    ref: MTP-VT01L-2B
+    source:
+      { url: 'https://web.archive.org/web/20220526115655id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01L-2B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }
+    features: [mineral-glass]
+    image: mtp-vt01l-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115655id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01L-2B/'
+    discontinued: false
+  - id: mtp-vt01l-2b2
+    ref: MTP-VT01L-2B2
+    source:
+      { url: 'https://web.archive.org/web/20220626205835id_/https://www.casio.com/in/watches/casio/product.MTP-VT01L-2B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }
+    features: [mineral-glass]
+    image: mtp-vt01l-2b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626205835id_/https://www.casio.com/in/watches/casio/product.MTP-VT01L-2B2/'
+    discontinued: true
+  - id: mtp-vt01l-3b
+    ref: MTP-VT01L-3B
+    source:
+      { url: 'https://web.archive.org/web/20211018192922id_/https://www.casio.com/my/watches/casio/product.MTP-VT01L-3B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }
+    features: [mineral-glass]
+    image: mtp-vt01l-3b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211018192922id_/https://www.casio.com/my/watches/casio/product.MTP-VT01L-3B/'
+    discontinued: false
+  - id: mtp-vt01l-7b1
+    ref: MTP-VT01L-7B1
+    source:
+      { url: 'https://web.archive.org/web/20231119064652id_/https://www.casio.com/intl/watches/casio/product.MTP-VT01L-7B1/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }
+    features: [mineral-glass]
+    image: mtp-vt01l-7b1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231119064652id_/https://www.casio.com/intl/watches/casio/product.MTP-VT01L-7B1/'
+    discontinued: false
+  - id: mtp-vt01l-7b2
+    ref: MTP-VT01L-7B2
+    source:
+      { url: 'https://web.archive.org/web/20220526115659id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01L-7B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }
+    features: [mineral-glass]
+    image: mtp-vt01l-7b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115659id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01L-7B2/'
+    discontinued: false

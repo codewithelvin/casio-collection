@@ -1,0 +1,389 @@
+# MTP-VD01 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-vd01
+  name: MTP-VD01
+  line: vintage
+
+models:
+  - id: mtp-vd01-1ev
+    ref: MTP-VD01-1EV
+    source:
+      { url: 'https://web.archive.org/web/20230202064828id_/https://www.casio.com/us/watches/casio/product.MTP-VD01-1EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 79 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01-1ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230202064828id_/https://www.casio.com/us/watches/casio/product.MTP-VD01-1EV/'
+    discontinued: false
+  - id: mtp-vd01-2ev
+    ref: MTP-VD01-2EV
+    source:
+      { url: 'https://web.archive.org/web/20230124040029id_/https://www.casio.com/us/watches/casio/product.MTP-VD01-2EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 79 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01-2ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230124040029id_/https://www.casio.com/us/watches/casio/product.MTP-VD01-2EV/'
+    discontinued: false
+  - id: mtp-vd01-3ev
+    ref: MTP-VD01-3EV
+    source:
+      { url: 'https://web.archive.org/web/20230124040029id_/https://www.casio.com/us/watches/casio/product.MTP-VD01-3EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 79 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01-3ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230124040029id_/https://www.casio.com/us/watches/casio/product.MTP-VD01-3EV/'
+    discontinued: false
+  - id: mtp-vd01-5ev
+    ref: MTP-VD01-5EV
+    source:
+      { url: 'https://web.archive.org/web/20230202064827id_/https://www.casio.com/us/watches/casio/product.MTP-VD01-5EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 79 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01-5ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230202064827id_/https://www.casio.com/us/watches/casio/product.MTP-VD01-5EV/'
+    discontinued: false
+  - id: mtp-vd01bl-1bv
+    ref: MTP-VD01BL-1BV
+    source:
+      { url: 'https://web.archive.org/web/20230217215005id_/https://www.casio.com/in/watches/casio/product.MTP-VD01BL-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 70 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01bl-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230217215005id_/https://www.casio.com/in/watches/casio/product.MTP-VD01BL-1BV/'
+    discontinued: false
+  - id: mtp-vd01bl-2bv
+    ref: MTP-VD01BL-2BV
+    source:
+      { url: 'https://web.archive.org/web/20220526115810id_/https://www.casio.com/sg/watches/casio/product.MTP-VD01BL-2BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 43 }
+    features: [mineral-glass]
+    image: mtp-vd01bl-2bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115810id_/https://www.casio.com/sg/watches/casio/product.MTP-VD01BL-2BV/'
+    discontinued: false
+  - id: mtp-vd01d-1bv
+    ref: MTP-VD01D-1BV
+    source:
+      { url: 'https://web.archive.org/web/20230527001316id_/https://www.casio.com/intl/watches/casio/product.MTP-VD01D-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01d-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230527001316id_/https://www.casio.com/intl/watches/casio/product.MTP-VD01D-1BV/'
+    discontinued: false
+  - id: mtp-vd01d-1e2v
+    ref: MTP-VD01D-1E2V
+    source:
+      { url: 'https://web.archive.org/web/20220625110253id_/https://www.casio.com/in/watches/casio/product.MTP-VD01D-1E2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01d-1e2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625110253id_/https://www.casio.com/in/watches/casio/product.MTP-VD01D-1E2V/'
+    discontinued: false
+  - id: mtp-vd01d-1ev
+    ref: MTP-VD01D-1EV
+    source:
+      { url: 'https://web.archive.org/web/20220517180012id_/https://www.casio.com/in/watches/casio/product.MTP-VD01D-1EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01d-1ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220517180012id_/https://www.casio.com/in/watches/casio/product.MTP-VD01D-1EV/'
+    discontinued: false
+  - id: mtp-vd01d-2bv
+    ref: MTP-VD01D-2BV
+    source:
+      { url: 'https://web.archive.org/web/20220713062031id_/https://www.casio.com/us/watches/casio/product.MTP-VD01D-2BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    discontinued: false
+  - id: mtp-vd01d-2ev
+    ref: MTP-VD01D-2EV
+    source:
+      { url: 'https://web.archive.org/web/20230728173147id_/https://www.casio.com/intl/watches/casio/product.MTP-VD01D-2EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01d-2ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230728173147id_/https://www.casio.com/intl/watches/casio/product.MTP-VD01D-2EV/'
+    discontinued: false
+  - id: mtp-vd01d-3e2v
+    ref: MTP-VD01D-3E2V
+    source:
+      { url: 'https://web.archive.org/web/20241207064552id_/https://www.casio.com/in/watches/casio/product.MTP-VD01D-3E2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01d-3e2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241207064552id_/https://www.casio.com/in/watches/casio/product.MTP-VD01D-3E2V/'
+    discontinued: false
+  - id: mtp-vd01d-7bv
+    ref: MTP-VD01D-7BV
+    source:
+      { url: 'https://web.archive.org/web/20210916192733id_/https://www.casio.com/my/watches/casio/product.MTP-VD01D-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01d-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210916192733id_/https://www.casio.com/my/watches/casio/product.MTP-VD01D-7BV/'
+    discontinued: false
+  - id: mtp-vd01d-7cv
+    ref: MTP-VD01D-7CV
+    source:
+      { url: 'https://web.archive.org/web/20241104204248id_/https://www.casio.com/intl/watches/casio/product.MTP-VD01D-7CV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01d-7cv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241104204248id_/https://www.casio.com/intl/watches/casio/product.MTP-VD01D-7CV/'
+    discontinued: false
+  - id: mtp-vd01d-7ev
+    ref: MTP-VD01D-7EV
+    source:
+      { url: 'https://web.archive.org/web/20231116030613id_/https://www.casio.com/us/watches/casio/product.MTP-VD01D-7EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01d-7ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231116030613id_/https://www.casio.com/us/watches/casio/product.MTP-VD01D-7EV/'
+    discontinued: false
+  - id: mtp-vd01g-1bv
+    ref: MTP-VD01G-1BV
+    source:
+      { url: 'https://web.archive.org/web/20230106070735id_/https://www.casio.com/us/watches/casio/product.MTP-VD01G-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118, material: 'Gold tone' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01g-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230106070735id_/https://www.casio.com/us/watches/casio/product.MTP-VD01G-1BV/'
+    discontinued: false
+  - id: mtp-vd01g-9ev
+    ref: MTP-VD01G-9EV
+    source:
+      { url: 'https://web.archive.org/web/20220812092716id_/https://www.casio.com/in/watches/casio/product.MTP-VD01G-9EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118, material: 'Gold tone' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01g-9ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220812092716id_/https://www.casio.com/in/watches/casio/product.MTP-VD01G-9EV/'
+    discontinued: false
+  - id: mtp-vd01gl-1ev
+    ref: MTP-VD01GL-1EV
+    source:
+      { url: 'https://web.archive.org/web/20220812120954id_/https://www.casio.com/in/watches/casio/product.MTP-VD01GL-1EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 70, material: 'Gold tone' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01gl-1ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220812120954id_/https://www.casio.com/in/watches/casio/product.MTP-VD01GL-1EV/'
+    discontinued: false
+  - id: mtp-vd01l-1bv
+    ref: MTP-VD01L-1BV
+    source:
+      { url: 'https://web.archive.org/web/20220625103444id_/https://www.casio.com/in/watches/casio/product.MTP-VD01L-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 70 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01l-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625103444id_/https://www.casio.com/in/watches/casio/product.MTP-VD01L-1BV/'
+    discontinued: false
+  - id: mtp-vd01l-1ev
+    ref: MTP-VD01L-1EV
+    source:
+      { url: 'https://web.archive.org/web/20220520225302id_/https://www.casio.com/in/watches/casio/product.MTP-VD01L-1EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 70 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01l-1ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220520225302id_/https://www.casio.com/in/watches/casio/product.MTP-VD01L-1EV/'
+    discontinued: false
+  - id: mtp-vd01l-2bv
+    ref: MTP-VD01L-2BV
+    source:
+      { url: 'https://web.archive.org/web/20220625112820id_/https://www.casio.com/in/watches/casio/product.MTP-VD01L-2BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 70 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01l-2bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625112820id_/https://www.casio.com/in/watches/casio/product.MTP-VD01L-2BV/'
+    discontinued: true
+  - id: mtp-vd01l-3bv
+    ref: MTP-VD01L-3BV
+    source:
+      { url: 'https://web.archive.org/web/20220625104506id_/https://www.casio.com/in/watches/casio/product.MTP-VD01L-3BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 70 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01l-3bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625104506id_/https://www.casio.com/in/watches/casio/product.MTP-VD01L-3BV/'
+    discontinued: true
+  - id: mtp-vd01l-8ev
+    ref: MTP-VD01L-8EV
+    source:
+      { url: 'https://web.archive.org/web/20220524181244id_/https://www.casio.com/in/watches/casio/product.MTP-VD01L-8EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 70 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01l-8ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220524181244id_/https://www.casio.com/in/watches/casio/product.MTP-VD01L-8EV/'
+    discontinued: true
+  - id: mtp-vd01sg-1bv
+    ref: MTP-VD01SG-1BV
+    source:
+      { url: 'https://web.archive.org/web/20220516083816id_/https://www.casio.com/in/watches/casio/product.MTP-VD01SG-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01sg-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516083816id_/https://www.casio.com/in/watches/casio/product.MTP-VD01SG-1BV/'
+    discontinued: false
+  - id: mtp-vd01sg-9bv
+    ref: MTP-VD01SG-9BV
+    source:
+      { url: 'https://web.archive.org/web/20230923082435id_/https://www.casio.com/sg/watches/casio/product.MTP-VD01SG-9BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 10.3, weight_g: 118 }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-vd01sg-9bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230923082435id_/https://www.casio.com/sg/watches/casio/product.MTP-VD01SG-9BV/'
+    discontinued: false
