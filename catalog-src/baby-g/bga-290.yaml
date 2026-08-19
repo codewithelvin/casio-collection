@@ -1,0 +1,278 @@
+# BGA-290 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: bga-290
+  name: BGA-290
+  line: baby-g
+
+models:
+  - id: bga-290-1a
+    ref: BGA-290-1A
+    source:
+      { url: 'https://web.archive.org/web/20230322091706id_/https://www.casio.com/in/watches/babyg/product.BGA-290-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230322091706id_/https://www.casio.com/in/watches/babyg/product.BGA-290-1A/'
+  - id: bga-290-5a
+    ref: BGA-290-5A
+    source:
+      { url: 'https://web.archive.org/web/20230322091954id_/https://www.casio.com/in/watches/babyg/product.BGA-290-5A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230322091954id_/https://www.casio.com/in/watches/babyg/product.BGA-290-5A/'
+  - id: bga-290-8a
+    ref: BGA-290-8A
+    source:
+      { url: 'https://web.archive.org/web/20230322092214id_/https://www.casio.com/in/watches/babyg/product.BGA-290-8A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230322092214id_/https://www.casio.com/in/watches/babyg/product.BGA-290-8A/'
+  - id: bga-290bd-4a
+    ref: BGA-290BD-4A
+    source:
+      { url: 'https://web.archive.org/web/20220127234655id_/https://www.casio.com/sg/watches/babyg/product.BGA-290BD-4A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290bd-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220127234655id_/https://www.casio.com/sg/watches/babyg/product.BGA-290BD-4A/'
+  - id: bga-290bd-6a
+    ref: BGA-290BD-6A
+    source:
+      { url: 'https://web.archive.org/web/20220706035643id_/https://www.casio.com/my/watches/babyg/product.BGA-290BD-6A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290bd-6a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220706035643id_/https://www.casio.com/my/watches/babyg/product.BGA-290BD-6A/'
+  - id: bga-290bd-7a
+    ref: BGA-290BD-7A
+    source:
+      { url: 'https://web.archive.org/web/20220127230804id_/https://www.casio.com/sg/watches/babyg/product.BGA-290BD-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290bd-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220127230804id_/https://www.casio.com/sg/watches/babyg/product.BGA-290BD-7A/'
+  - id: bga-290dr-1a
+    ref: BGA-290DR-1A
+    source:
+      { url: 'https://web.archive.org/web/20221203222039id_/https://www.casio.com/sg/watches/babyg/product.BGA-290DR-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290dr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203222039id_/https://www.casio.com/sg/watches/babyg/product.BGA-290DR-1A/'
+  - id: bga-290dr-7a
+    ref: BGA-290DR-7A
+    source:
+      { url: 'https://web.archive.org/web/20220518002017id_/https://www.casio.com/my/watches/babyg/product.BGA-290DR-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290dr-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518002017id_/https://www.casio.com/my/watches/babyg/product.BGA-290DR-7A/'
+  - id: bga-290ds-4a
+    ref: BGA-290DS-4A
+    source:
+      { url: 'https://web.archive.org/web/20240408193228id_/https://www.casio.com/intl/watches/babyg/product.BGA-290DS-4A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290ds-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193228id_/https://www.casio.com/intl/watches/babyg/product.BGA-290DS-4A/'
+  - id: bga-290ds-7a
+    ref: BGA-290DS-7A
+    source:
+      { url: 'https://web.archive.org/web/20231216203451id_/https://www.casio.com/sg/watches/babyg/product.BGA-290DS-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290ds-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231216203451id_/https://www.casio.com/sg/watches/babyg/product.BGA-290DS-7A/'
+  - id: bga-290pa-4a
+    ref: BGA-290PA-4A
+    source:
+      { url: 'https://web.archive.org/web/20240206101643id_/https://www.casio.com/intl/watches/babyg/product.BGA-290PA-4A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290pa-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240206101643id_/https://www.casio.com/intl/watches/babyg/product.BGA-290PA-4A/'
+  - id: bga-290pa-7a
+    ref: BGA-290PA-7A
+    source:
+      { url: 'https://web.archive.org/web/20240206101644id_/https://www.casio.com/intl/watches/babyg/product.BGA-290PA-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290pa-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240206101644id_/https://www.casio.com/intl/watches/babyg/product.BGA-290PA-7A/'
+  - id: bga-290sa-2a
+    ref: BGA-290SA-2A
+    source:
+      { url: 'https://web.archive.org/web/20240119142315id_/https://www.casio.com/intl/watches/babyg/product.BGA-290SA-2A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290sa-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119142315id_/https://www.casio.com/intl/watches/babyg/product.BGA-290SA-2A/'
+  - id: bga-290sa-4a
+    ref: BGA-290SA-4A
+    source:
+      { url: 'https://web.archive.org/web/20240206101644id_/https://www.casio.com/intl/watches/babyg/product.BGA-290SA-4A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290sa-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240206101644id_/https://www.casio.com/intl/watches/babyg/product.BGA-290SA-4A/'
+  - id: bga-290sw-4a
+    ref: BGA-290SW-4A
+    source:
+      { url: 'https://web.archive.org/web/20230324190224id_/https://www.casio.com/in/watches/babyg/product.BGA-290SW-4A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290sw-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230324190224id_/https://www.casio.com/in/watches/babyg/product.BGA-290SW-4A/'
+  - id: bga-290sw-7a
+    ref: BGA-290SW-7A
+    source:
+      { url: 'https://web.archive.org/web/20230130234556id_/https://www.casio.com/in/watches/babyg/product.BGA-290SW-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290sw-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230130234556id_/https://www.casio.com/in/watches/babyg/product.BGA-290SW-7A/'
+  - id: bga-290us-2a
+    ref: BGA-290US-2A
+    source:
+      { url: 'https://web.archive.org/web/20240722125507id_/https://www.casio.com/id/watches/babyg/product.BGA-290US-2A/', kind: official }
+    features: [alarm, stopwatch, super-illuminator]
+    image: bga-290us-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722125507id_/https://www.casio.com/id/watches/babyg/product.BGA-290US-2A/'
+  - id: bga-290us-4a
+    ref: BGA-290US-4A
+    source:
+      { url: 'https://web.archive.org/web/20240722125510id_/https://www.casio.com/id/watches/babyg/product.BGA-290US-4A/', kind: official }
+    features: [alarm, stopwatch, super-illuminator]
+    image: bga-290us-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722125510id_/https://www.casio.com/id/watches/babyg/product.BGA-290US-4A/'
+  - id: bga-290us-6a
+    ref: BGA-290US-6A
+    source:
+      { url: 'https://web.archive.org/web/20241008181011id_/https://www.casio.com/intl/watches/babyg/product.BGA-290US-6A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.2, width_mm: 41.5, depth_mm: 10.1, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: bga-290us-6a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241008181011id_/https://www.casio.com/intl/watches/babyg/product.BGA-290US-6A/'

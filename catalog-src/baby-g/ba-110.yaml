@@ -1,0 +1,833 @@
+# BA-110 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ba-110
+  name: BA-110
+  line: baby-g
+
+models:
+  - id: ba-110-1a
+    ref: BA-110-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220308id_/https://www.casio.com/europe/watches/babyg/product.BA-110-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220308id_/https://www.casio.com/europe/watches/babyg/product.BA-110-1A/'
+  - id: ba-110-4a1
+    ref: BA-110-4A1
+    source:
+      { url: 'https://web.archive.org/web/20221203232752id_/https://www.casio.com/my/watches/babyg/product.BA-110-4A1/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110-4a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203232752id_/https://www.casio.com/my/watches/babyg/product.BA-110-4A1/'
+  - id: ba-110-4a2
+    ref: BA-110-4A2
+    source:
+      { url: 'https://web.archive.org/web/20221203212347id_/https://www.casio.com/my/watches/babyg/product.BA-110-4A2/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110-4a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203212347id_/https://www.casio.com/my/watches/babyg/product.BA-110-4A2/'
+  - id: ba-110-7a1
+    ref: BA-110-7A1
+    source:
+      { url: 'https://web.archive.org/web/20240714220334id_/https://www.casio.com/europe/watches/babyg/product.BA-110-7A1/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110-7a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220334id_/https://www.casio.com/europe/watches/babyg/product.BA-110-7A1/'
+  - id: ba-110-7a3
+    ref: BA-110-7A3
+    source:
+      { url: 'https://web.archive.org/web/20240714220314id_/https://www.casio.com/europe/watches/babyg/product.BA-110-7A3/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110-7a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220314id_/https://www.casio.com/europe/watches/babyg/product.BA-110-7A3/'
+  - id: ba-110aq-4a
+    ref: BA-110AQ-4A
+    source:
+      { url: 'https://web.archive.org/web/20250122115101id_/https://www.casio.com/id/watches/babyg/product.BA-110AQ-4A/', kind: official }
+    features: [alarm, stopwatch]
+    image: ba-110aq-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250122115101id_/https://www.casio.com/id/watches/babyg/product.BA-110AQ-4A/'
+  - id: ba-110bc-1a
+    ref: BA-110BC-1A
+    source:
+      { url: 'https://web.archive.org/web/20221203221134id_/https://www.casio.com/my/watches/babyg/product.BA-110BC-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 44.9, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110bc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203221134id_/https://www.casio.com/my/watches/babyg/product.BA-110BC-1A/'
+  - id: ba-110bc-2a
+    ref: BA-110BC-2A
+    source:
+      { url: 'https://web.archive.org/web/20220925151548id_/https://www.casio.com/us/watches/babyg/product.BA-110BC-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 44.9, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110bc-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925151548id_/https://www.casio.com/us/watches/babyg/product.BA-110BC-2A/'
+  - id: ba-110bc-9a
+    ref: BA-110BC-9A
+    source:
+      { url: 'https://web.archive.org/web/20220925152030id_/https://www.casio.com/us/watches/babyg/product.BA-110BC-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 44.9, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110bc-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925152030id_/https://www.casio.com/us/watches/babyg/product.BA-110BC-9A/'
+  - id: ba-110be-4a
+    ref: BA-110BE-4A
+    source:
+      { url: 'https://web.archive.org/web/20221203213028id_/https://www.casio.com/my/watches/babyg/product.BA-110BE-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110be-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203213028id_/https://www.casio.com/my/watches/babyg/product.BA-110BE-4A/'
+  - id: ba-110be-7a
+    ref: BA-110BE-7A
+    source:
+      { url: 'https://web.archive.org/web/20220129013731id_/https://www.casio.com/sg/watches/babyg/product.BA-110BE-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110be-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220129013731id_/https://www.casio.com/sg/watches/babyg/product.BA-110BE-7A/'
+  - id: ba-110ca-9a
+    ref: BA-110CA-9A
+    source:
+      { url: 'https://web.archive.org/web/20221001141155id_/https://www.casio.com/sg/watches/babyg/product.BA-110CA-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110ca-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221001141155id_/https://www.casio.com/sg/watches/babyg/product.BA-110CA-9A/'
+  - id: ba-110ch-7a
+    ref: BA-110CH-7A
+    source:
+      { url: 'https://web.archive.org/web/20220529074612id_/https://www.casio.com/in/watches/babyg/product.BA-110CH-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110ch-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529074612id_/https://www.casio.com/in/watches/babyg/product.BA-110CH-7A/'
+  - id: ba-110cp-4a
+    ref: BA-110CP-4A
+    source:
+      { url: 'https://web.archive.org/web/20221203233448id_/https://www.casio.com/my/watches/babyg/product.BA-110CP-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110cp-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203233448id_/https://www.casio.com/my/watches/babyg/product.BA-110CP-4A/'
+  - id: ba-110cr-2a
+    ref: BA-110CR-2A
+    source:
+      { url: 'https://web.archive.org/web/20220529084626id_/https://www.casio.com/in/watches/babyg/product.BA-110CR-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110cr-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529084626id_/https://www.casio.com/in/watches/babyg/product.BA-110CR-2A/'
+  - id: ba-110cr-4a
+    ref: BA-110CR-4A
+    source:
+      { url: 'https://web.archive.org/web/20220520073839id_/https://www.casio.com/in/watches/babyg/product.BA-110CR-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110cr-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220520073839id_/https://www.casio.com/in/watches/babyg/product.BA-110CR-4A/'
+  - id: ba-110cr-7a
+    ref: BA-110CR-7A
+    source:
+      { url: 'https://web.archive.org/web/20221203230104id_/https://www.casio.com/my/watches/babyg/product.BA-110CR-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110cr-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203230104id_/https://www.casio.com/my/watches/babyg/product.BA-110CR-7A/'
+  - id: ba-110de-2a2
+    ref: BA-110DE-2A2
+    source:
+      { url: 'https://web.archive.org/web/20220628005947id_/https://www.casio.com/in/watches/babyg/product.BA-110DE-2A2/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110de-2a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628005947id_/https://www.casio.com/in/watches/babyg/product.BA-110DE-2A2/'
+  - id: ba-110fh-2a
+    ref: BA-110FH-2A
+    source:
+      { url: 'https://web.archive.org/web/20240307212742id_/https://www.casio.com/intl/watches/babyg/product.BA-110FH-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110fh-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212742id_/https://www.casio.com/intl/watches/babyg/product.BA-110FH-2A/'
+  - id: ba-110fh-7a
+    ref: BA-110FH-7A
+    source:
+      { url: 'https://web.archive.org/web/20240225135620id_/https://www.casio.com/intl/watches/babyg/product.BA-110FH-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110fh-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135620id_/https://www.casio.com/intl/watches/babyg/product.BA-110FH-7A/'
+  - id: ba-110ga-1a
+    ref: BA-110GA-1A
+    source:
+      { url: 'https://web.archive.org/web/20250118081617id_/https://www.casio.com/us/watches/babyg/product.BA-110GA-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110ga-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118081617id_/https://www.casio.com/us/watches/babyg/product.BA-110GA-1A/'
+  - id: ba-110ga-7a1
+    ref: BA-110GA-7A1
+    source:
+      { url: 'https://web.archive.org/web/20250118090154id_/https://www.casio.com/us/watches/babyg/product.BA-110GA-7A1/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110ga-7a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118090154id_/https://www.casio.com/us/watches/babyg/product.BA-110GA-7A1/'
+  - id: ba-110ga-8a
+    ref: BA-110GA-8A
+    source:
+      { url: 'https://web.archive.org/web/20220628000550id_/https://www.casio.com/in/watches/babyg/product.BA-110GA-8A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110ga-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628000550id_/https://www.casio.com/in/watches/babyg/product.BA-110GA-8A/'
+  - id: ba-110jm-2a
+    ref: BA-110JM-2A
+    source:
+      { url: 'https://web.archive.org/web/20220628004841id_/https://www.casio.com/in/watches/babyg/product.BA-110JM-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110jm-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628004841id_/https://www.casio.com/in/watches/babyg/product.BA-110JM-2A/'
+  - id: ba-110lsb-4a
+    ref: BA-110LSB-4A
+    source:
+      { url: 'https://web.archive.org/web/20250118011114id_/https://www.casio.com/us/watches/babyg/product.BA-110LSB-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110lsb-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118011114id_/https://www.casio.com/us/watches/babyg/product.BA-110LSB-4A/'
+  - id: ba-110nr-1a
+    ref: BA-110NR-1A
+    source:
+      { url: 'https://web.archive.org/web/20220925152857id_/https://www.casio.com/sg/watches/babyg/product.BA-110NR-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110nr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925152857id_/https://www.casio.com/sg/watches/babyg/product.BA-110NR-1A/'
+  - id: ba-110nr-8a
+    ref: BA-110NR-8A
+    source:
+      { url: 'https://web.archive.org/web/20221001154534id_/https://www.casio.com/sg/watches/babyg/product.BA-110NR-8A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110nr-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221001154534id_/https://www.casio.com/sg/watches/babyg/product.BA-110NR-8A/'
+  - id: ba-110pi-2a
+    ref: BA-110PI-2A
+    source:
+      { url: 'https://web.archive.org/web/20210729160332id_/https://www.casio.com/sg/watches/babyg/product.BA-110PI-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110pi-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210729160332id_/https://www.casio.com/sg/watches/babyg/product.BA-110PI-2A/'
+  - id: ba-110pi-4a
+    ref: BA-110PI-4A
+    source:
+      { url: 'https://web.archive.org/web/20210917122744id_/https://www.casio.com/sg/watches/babyg/product.BA-110PI-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110pi-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210917122744id_/https://www.casio.com/sg/watches/babyg/product.BA-110PI-4A/'
+  - id: ba-110pkc-4a
+    ref: BA-110PKC-4A
+    source:
+      { url: 'https://web.archive.org/web/20221203221956id_/https://www.casio.com/my/watches/babyg/product.BA-110PKC-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110pkc-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203221956id_/https://www.casio.com/my/watches/babyg/product.BA-110PKC-4A/'
+  - id: ba-110pl-1a
+    ref: BA-110PL-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220258id_/https://www.casio.com/europe/watches/babyg/product.BA-110PL-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110pl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220258id_/https://www.casio.com/europe/watches/babyg/product.BA-110PL-1A/'
+  - id: ba-110pl-7a1
+    ref: BA-110PL-7A1
+    source:
+      { url: 'https://web.archive.org/web/20220518191851id_/https://www.casio.com/us/watches/babyg/product.ba-110pl-7a1/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110pl-7a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518191851id_/https://www.casio.com/us/watches/babyg/product.ba-110pl-7a1/'
+  - id: ba-110pl-7a2
+    ref: BA-110PL-7A2
+    source:
+      { url: 'https://web.archive.org/web/20221209113603id_/https://www.casio.com/ph/watches/babyg/product.BA-110PL-7A2/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110pl-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221209113603id_/https://www.casio.com/ph/watches/babyg/product.BA-110PL-7A2/'
+  - id: ba-110pp-7a2
+    ref: BA-110PP-7A2
+    source:
+      { url: 'https://web.archive.org/web/20220628002715id_/https://www.casio.com/in/watches/babyg/product.BA-110PP-7A2/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 43, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110pp-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628002715id_/https://www.casio.com/in/watches/babyg/product.BA-110PP-7A2/'
+  - id: ba-110rg-1a
+    ref: BA-110RG-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220256id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110rg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220256id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-1A/'
+  - id: ba-110rg-4a
+    ref: BA-110RG-4A
+    source:
+      { url: 'https://web.archive.org/web/20240714220300id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110rg-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220300id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-4A/'
+  - id: ba-110rg-7a
+    ref: BA-110RG-7A
+    source:
+      { url: 'https://web.archive.org/web/20240714220250id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110rg-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220250id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-7A/'
+  - id: ba-110sc-2a
+    ref: BA-110SC-2A
+    source:
+      { url: 'https://web.archive.org/web/20221203214845id_/https://www.casio.com/my/watches/babyg/product.BA-110SC-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110sc-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203214845id_/https://www.casio.com/my/watches/babyg/product.BA-110SC-2A/'
+  - id: ba-110sc-4a
+    ref: BA-110SC-4A
+    source:
+      { url: 'https://web.archive.org/web/20240714220320id_/https://www.casio.com/europe/watches/babyg/product.BA-110SC-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110sc-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220320id_/https://www.casio.com/europe/watches/babyg/product.BA-110SC-4A/'
+  - id: ba-110sc-7a
+    ref: BA-110SC-7A
+    source:
+      { url: 'https://web.archive.org/web/20240714220246id_/https://www.casio.com/europe/watches/babyg/product.BA-110SC-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110sc-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220246id_/https://www.casio.com/europe/watches/babyg/product.BA-110SC-7A/'
+  - id: ba-110st-4a
+    ref: BA-110ST-4A
+    source:
+      { url: 'https://web.archive.org/web/20220627232537id_/https://www.casio.com/in/watches/babyg/product.BA-110ST-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110st-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220627232537id_/https://www.casio.com/in/watches/babyg/product.BA-110ST-4A/'
+  - id: ba-110st-7a
+    ref: BA-110ST-7A
+    source:
+      { url: 'https://web.archive.org/web/20220521051031id_/https://www.casio.com/in/watches/babyg/product.BA-110ST-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110st-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220521051031id_/https://www.casio.com/in/watches/babyg/product.BA-110ST-7A/'
+  - id: ba-110tm-7a
+    ref: BA-110TM-7A
+    source:
+      { url: 'https://web.archive.org/web/20221203224954id_/https://www.casio.com/my/watches/babyg/product.BA-110TM-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110tm-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203224954id_/https://www.casio.com/my/watches/babyg/product.BA-110TM-7A/'
+  - id: ba-110tx-4a
+    ref: BA-110TX-4A
+    source:
+      { url: 'https://web.archive.org/web/20220628005729id_/https://www.casio.com/in/watches/babyg/product.BA-110TX-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110tx-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628005729id_/https://www.casio.com/in/watches/babyg/product.BA-110TX-4A/'
+  - id: ba-110tx-7a
+    ref: BA-110TX-7A
+    source:
+      { url: 'https://web.archive.org/web/20220520071611id_/https://www.casio.com/in/watches/babyg/product.BA-110TX-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110tx-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220520071611id_/https://www.casio.com/in/watches/babyg/product.BA-110TX-7A/'
+  - id: ba-110x-1a
+    ref: BA-110X-1A
+    source:
+      { url: 'https://web.archive.org/web/20250118105525id_/https://www.casio.com/us/watches/babyg/product.BA-110X-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110x-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118105525id_/https://www.casio.com/us/watches/babyg/product.BA-110X-1A/'
+  - id: ba-110x-7a1
+    ref: BA-110X-7A1
+    source:
+      { url: 'https://web.archive.org/web/20221015122804id_/https://www.casio.com/intl/watches/babyg/product.BA-110X-7A1/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110x-7a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221015122804id_/https://www.casio.com/intl/watches/babyg/product.BA-110X-7A1/'
+  - id: ba-110x-7a3
+    ref: BA-110X-7A3
+    source:
+      { url: 'https://web.archive.org/web/20230127082521id_/https://www.casio.com/my/watches/babyg/product.BA-110X-7A3/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110x-7a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230127082521id_/https://www.casio.com/my/watches/babyg/product.BA-110X-7A3/'
+  - id: ba-110xbc-1a
+    ref: BA-110XBC-1A
+    source:
+      { url: 'https://web.archive.org/web/20230127070229id_/https://www.casio.com/my/watches/babyg/product.BA-110XBC-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xbc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230127070229id_/https://www.casio.com/my/watches/babyg/product.BA-110XBC-1A/'
+  - id: ba-110xbe-7a
+    ref: BA-110XBE-7A
+    source:
+      { url: 'https://web.archive.org/web/20230127074834id_/https://www.casio.com/sg/watches/babyg/product.BA-110XBE-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xbe-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230127074834id_/https://www.casio.com/sg/watches/babyg/product.BA-110XBE-7A/'
+  - id: ba-110xcp-4a
+    ref: BA-110XCP-4A
+    source:
+      { url: 'https://web.archive.org/web/20230127090428id_/https://www.casio.com/sg/watches/babyg/product.BA-110XCP-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xcp-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230127090428id_/https://www.casio.com/sg/watches/babyg/product.BA-110XCP-4A/'
+  - id: ba-110xcr-7a
+    ref: BA-110XCR-7A
+    source:
+      { url: 'https://web.archive.org/web/20230127081518id_/https://www.casio.com/my/watches/babyg/product.BA-110XCR-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xcr-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230127081518id_/https://www.casio.com/my/watches/babyg/product.BA-110XCR-7A/'
+  - id: ba-110xpm-6a
+    ref: BA-110XPM-6A
+    source:
+      { url: 'https://web.archive.org/web/20221012025657id_/https://www.casio.com/us/watches/babyg/product.BA-110XPM-6A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xpm-6a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221012025657id_/https://www.casio.com/us/watches/babyg/product.BA-110XPM-6A/'
+  - id: ba-110xrg-1a
+    ref: BA-110XRG-1A
+    source:
+      { url: 'https://web.archive.org/web/20250118002326id_/https://www.casio.com/us/watches/babyg/product.BA-110XRG-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xrg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118002326id_/https://www.casio.com/us/watches/babyg/product.BA-110XRG-1A/'
+  - id: ba-110xrg-4a
+    ref: BA-110XRG-4A
+    source:
+      { url: 'https://web.archive.org/web/20230127074106id_/https://www.casio.com/sg/watches/babyg/product.BA-110XRG-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xrg-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230127074106id_/https://www.casio.com/sg/watches/babyg/product.BA-110XRG-4A/'
+  - id: ba-110xrg-7a
+    ref: BA-110XRG-7A
+    source:
+      { url: 'https://web.archive.org/web/20230127090743id_/https://www.casio.com/sg/watches/babyg/product.BA-110XRG-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xrg-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230127090743id_/https://www.casio.com/sg/watches/babyg/product.BA-110XRG-7A/'
+  - id: ba-110xslc-9a
+    ref: BA-110XSLC-9A
+    source:
+      { url: 'https://web.archive.org/web/20240708220237id_/https://www.casio.com/de/watches/babyg/product.BA-110XSLC-9A/', kind: official }
+    features: [alarm]
+    image: ba-110xslc-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240708220237id_/https://www.casio.com/de/watches/babyg/product.BA-110XSLC-9A/'
+  - id: ba-110xsm-2a
+    ref: BA-110XSM-2A
+    source:
+      { url: 'https://web.archive.org/web/20240714220316id_/https://www.casio.com/europe/watches/babyg/product.BA-110XSM-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 44, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xsm-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220316id_/https://www.casio.com/europe/watches/babyg/product.BA-110XSM-2A/'
+  - id: ba-110xsw-7a
+    ref: BA-110XSW-7A
+    source:
+      { url: 'https://web.archive.org/web/20230127072705id_/https://www.casio.com/sg/watches/babyg/product.BA-110XSW-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xsw-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230127072705id_/https://www.casio.com/sg/watches/babyg/product.BA-110XSW-7A/'
+  - id: ba-110xws-7a
+    ref: BA-110XWS-7A
+    source:
+      { url: 'https://web.archive.org/web/20240408193226id_/https://www.casio.com/intl/watches/babyg/product.BA-110XWS-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110xws-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193226id_/https://www.casio.com/intl/watches/babyg/product.BA-110XWS-7A/'
+  - id: ba-110yk-2a
+    ref: BA-110YK-2A
+    source:
+      { url: 'https://web.archive.org/web/20240922024900id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110yk-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024900id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-2A/'
+  - id: ba-110yk-3a
+    ref: BA-110YK-3A
+    source:
+      { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-3A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110yk-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-3A/'
+  - id: ba-110yk-4a
+    ref: BA-110YK-4A
+    source:
+      { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 46.3, width_mm: 43.4, depth_mm: 15.8, weight_g: 45, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, shock-resistant, mineral-glass]
+    image: ba-110yk-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-4A/'

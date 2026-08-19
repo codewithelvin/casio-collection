@@ -1,0 +1,366 @@
+# GMW-B5000 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gmw-b5000
+  name: GMW-B5000
+  line: g-shock
+
+models:
+  - id: gmw-b5000-1
+    ref: GMW-B5000-1
+    source:
+      { url: 'https://web.archive.org/web/20220512200745id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 96, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220512200745id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000-1/'
+  - id: gmw-b5000bpc-1
+    ref: GMW-B5000BPC-1
+    source:
+      { url: 'https://web.archive.org/web/20240715021757id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000BPC-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000bpc-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021757id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000BPC-1/'
+  - id: gmw-b5000cs-1
+    ref: GMW-B5000CS-1
+    source:
+      { url: 'https://web.archive.org/web/20220519042257id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000CS-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000cs-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220519042257id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000CS-1/'
+  - id: gmw-b5000d-1
+    ref: GMW-B5000D-1
+    source:
+      { url: 'https://web.archive.org/web/20240715021411id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000D-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000d-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021411id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000D-1/'
+  - id: gmw-b5000d-1c
+    ref: GMW-B5000D-1C
+    source:
+      { url: 'https://web.archive.org/web/20251007155112id_/https://www.casio.com/in/watches/gshock/product.GMW-B5000D-1C/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000d-1c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251007155112id_/https://www.casio.com/in/watches/gshock/product.GMW-B5000D-1C/'
+  - id: gmw-b5000d-2
+    ref: GMW-B5000D-2
+    source:
+      { url: 'https://web.archive.org/web/20240403221225id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000D-2/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000d-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240403221225id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000D-2/'
+  - id: gmw-b5000d-3
+    ref: GMW-B5000D-3
+    source:
+      { url: 'https://web.archive.org/web/20241001004602id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000D-3/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000d-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241001004602id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000D-3/'
+  - id: gmw-b5000eh-1
+    ref: GMW-B5000EH-1
+    source:
+      { url: 'https://web.archive.org/web/20240715021414id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000EH-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000eh-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021414id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000EH-1/'
+  - id: gmw-b5000g-1
+    ref: GMW-B5000G-1
+    source:
+      { url: 'https://web.archive.org/web/20230321204757id_/https://www.casio.com/in/watches/gshock/product.GMW-B5000G-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 96, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000g-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230321204757id_/https://www.casio.com/in/watches/gshock/product.GMW-B5000G-1/'
+  - id: gmw-b5000g-2
+    ref: GMW-B5000G-2
+    source:
+      { url: 'https://web.archive.org/web/20220129095841id_/https://www.casio.com/sg/watches/gshock/product.GMW-B5000G-2/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 96, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000g-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220129095841id_/https://www.casio.com/sg/watches/gshock/product.GMW-B5000G-2/'
+  - id: gmw-b5000gd-1
+    ref: GMW-B5000GD-1
+    source:
+      { url: 'https://web.archive.org/web/20220602041633id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000GD-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000gd-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220602041633id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000GD-1/'
+  - id: gmw-b5000gd-4
+    ref: GMW-B5000GD-4
+    source:
+      { url: 'https://web.archive.org/web/20240715021406id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000GD-4/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000gd-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021406id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000GD-4/'
+  - id: gmw-b5000gd-9
+    ref: GMW-B5000GD-9
+    source:
+      { url: 'https://web.archive.org/web/20240715064143id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000GD-9/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000gd-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064143id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000GD-9/'
+  - id: gmw-b5000mb-1
+    ref: GMW-B5000MB-1
+    source:
+      { url: 'https://web.archive.org/web/20240715064149id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000MB-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000mb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064149id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000MB-1/'
+  - id: gmw-b5000pb-6
+    ref: GMW-B5000PB-6
+    source:
+      { url: 'https://web.archive.org/web/20240715064134id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000PB-6/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000pb-6
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064134id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000PB-6/'
+  - id: gmw-b5000pc-1
+    ref: GMW-B5000PC-1
+    source:
+      { url: 'https://web.archive.org/web/20231101104408id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000PC-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000pc-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231101104408id_/https://www.casio.com/us/watches/gshock/product.GMW-B5000PC-1/'
+  - id: gmw-b5000pg-9
+    ref: GMW-B5000PG-9
+    source:
+      { url: 'https://web.archive.org/web/20240715064131id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000PG-9/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000pg-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064131id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000PG-9/'
+  - id: gmw-b5000ps-1
+    ref: GMW-B5000PS-1
+    source:
+      { url: 'https://web.archive.org/web/20240408193921id_/https://www.casio.com/in/watches/gshock/product.GMW-B5000PS-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000ps-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193921id_/https://www.casio.com/in/watches/gshock/product.GMW-B5000PS-1/'
+  - id: gmw-b5000rd-4
+    ref: GMW-B5000RD-4
+    source:
+      { url: 'https://web.archive.org/web/20240715064139id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000RD-4/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000rd-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064139id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000RD-4/'
+  - id: gmw-b5000ss-2
+    ref: GMW-B5000SS-2
+    source:
+      { url: 'https://web.archive.org/web/20241209104948id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000SS-2/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gmw-b5000ss-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241209104948id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000SS-2/'
+  - id: gmw-b5000tb-1
+    ref: GMW-B5000TB-1
+    source:
+      { url: 'https://web.archive.org/web/20210912150059id_/https://www.casio.com/sg/watches/gshock/product.GMW-B5000TB-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 110, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, sapphire-crystal]
+    image: gmw-b5000tb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210912150059id_/https://www.casio.com/sg/watches/gshock/product.GMW-B5000TB-1/'
+  - id: gmw-b5000tcc-1
+    ref: GMW-B5000TCC-1
+    source:
+      { url: 'https://web.archive.org/web/20240715064137id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000TCC-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 104, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, sapphire-crystal]
+    image: gmw-b5000tcc-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064137id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000TCC-1/'
+  - id: gmw-b5000tcf-2
+    ref: GMW-B5000TCF-2
+    source:
+      { url: 'https://web.archive.org/web/20220626142636id_/https://www.casio.com/ph/watches/gshock/product.GMW-B5000TCF-2/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 110, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, sapphire-crystal]
+  - id: gmw-b5000tcm-1
+    ref: GMW-B5000TCM-1
+    source:
+      { url: 'https://web.archive.org/web/20220129093117id_/https://www.casio.com/sg/watches/gshock/product.GMW-B5000TCM-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 110, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, sapphire-crystal]
+    image: gmw-b5000tcm-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220129093117id_/https://www.casio.com/sg/watches/gshock/product.GMW-B5000TCM-1/'
+  - id: gmw-b5000tr-9
+    ref: GMW-B5000TR-9
+    source:
+      { url: 'https://web.archive.org/web/20240715021751id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000TR-9/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 104, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, sapphire-crystal]
+    image: gmw-b5000tr-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021751id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000TR-9/'
+  - id: gmw-b5000tva-1
+    ref: GMW-B5000TVA-1
+    source:
+      { url: 'https://web.archive.org/web/20240715021749id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000TVA-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 106, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, sapphire-crystal]
+    image: gmw-b5000tva-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021749id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000TVA-1/'
+  - id: gmw-b5000tvb-1
+    ref: GMW-B5000TVB-1
+    source:
+      { url: 'https://web.archive.org/web/20240715021746id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000TVB-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 106, material: 'Titanium' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, sapphire-crystal]
+    image: gmw-b5000tvb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021746id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000TVB-1/'

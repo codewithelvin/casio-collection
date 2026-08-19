@@ -1690,3 +1690,306 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+
+# ADDED 2026-08-19: 23 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: dw-5600ai-1
+    ref: DW-5600AI-1
+    source:
+      { url: 'https://web.archive.org/web/20240729104718id_/https://www.casio.com/us/watches/gshock/product.DW-5600AI-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600ai-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240729104718id_/https://www.casio.com/us/watches/gshock/product.DW-5600AI-1/'
+  - id: dw-5600bbr-1
+    ref: DW-5600BBR-1
+    source:
+      { url: 'https://web.archive.org/web/20250605231550id_/https://www.casio.com/uk/watches/gshock/product.DW-5600BBR-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600bbr-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250605231550id_/https://www.casio.com/uk/watches/gshock/product.DW-5600BBR-1/'
+  - id: dw-5600bce-1
+    ref: DW-5600BCE-1
+    source:
+      { url: 'https://web.archive.org/web/20240223000515id_/https://www.casio.com/my/watches/gshock/product.DW-5600BCE-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600bce-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240223000515id_/https://www.casio.com/my/watches/gshock/product.DW-5600BCE-1/'
+  - id: dw-5600e-1v
+    ref: DW-5600E-1V
+    source:
+      { url: 'https://web.archive.org/web/20240715022136id_/https://www.casio.com/europe/watches/gshock/product.DW-5600E-1V/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600e-1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022136id_/https://www.casio.com/europe/watches/gshock/product.DW-5600E-1V/'
+  - id: dw-5600ep-2
+    ref: DW-5600EP-2
+    source:
+      { url: 'https://web.archive.org/web/20240815214100id_/https://www.casio.com/us/watches/gshock/product.DW-5600EP-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600ep-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240815214100id_/https://www.casio.com/us/watches/gshock/product.DW-5600EP-2/'
+  - id: dw-5600ep-4
+    ref: DW-5600EP-4
+    source:
+      { url: 'https://web.archive.org/web/20240729113123id_/https://www.casio.com/us/watches/gshock/product.DW-5600EP-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600ep-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240729113123id_/https://www.casio.com/us/watches/gshock/product.DW-5600EP-4/'
+  - id: dw-5600ep-9
+    ref: DW-5600EP-9
+    source:
+      { url: 'https://web.archive.org/web/20240618192055id_/https://www.casio.com/intl/watches/gshock/product.DW-5600EP-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600ep-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240618192055id_/https://www.casio.com/intl/watches/gshock/product.DW-5600EP-9/'
+  - id: dw-5600eu-8a3
+    ref: DW-5600EU-8A3
+    source:
+      { url: 'https://web.archive.org/web/20250114222241id_/https://www.casio.com/intl/watches/gshock/product.DW-5600EU-8A3/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600eu-8a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250114222241id_/https://www.casio.com/intl/watches/gshock/product.DW-5600EU-8A3/'
+  - id: dw-5600ff-8
+    ref: DW-5600FF-8
+    source:
+      { url: 'https://web.archive.org/web/20240408193907id_/https://www.casio.com/in/watches/gshock/product.DW-5600FF-8/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600ff-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193907id_/https://www.casio.com/in/watches/gshock/product.DW-5600FF-8/'
+  - id: dw-5600kh-1
+    ref: DW-5600KH-1
+    source:
+      { url: 'https://web.archive.org/web/20240119142145id_/https://www.casio.com/us/watches/gshock/product.DW-5600KH-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600kh-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119142145id_/https://www.casio.com/us/watches/gshock/product.DW-5600KH-1/'
+  - id: dw-5600nc-5
+    ref: DW-5600NC-5
+    source:
+      { url: 'https://web.archive.org/web/20241127033837id_/https://www.casio.com/intl/watches/gshock/product.DW-5600NC-5/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600nc-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241127033837id_/https://www.casio.com/intl/watches/gshock/product.DW-5600NC-5/'
+  - id: dw-5600nnj-2
+    ref: DW-5600NNJ-2
+    source:
+      { url: 'https://web.archive.org/web/20240216170148id_/https://www.casio.com/my/watches/gshock/product.DW-5600NNJ-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 62, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600nnj-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240216170148id_/https://www.casio.com/my/watches/gshock/product.DW-5600NNJ-2/'
+  - id: dw-5600pk-1
+    ref: DW-5600PK-1
+    source:
+      { url: 'https://web.archive.org/web/20250108130654id_/https://www.casio.com/us/watches/gshock/product.DW-5600PK-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600pk-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250108130654id_/https://www.casio.com/us/watches/gshock/product.DW-5600PK-1/'
+  - id: dw-5600rl-1
+    ref: DW-5600RL-1
+    source:
+      { url: 'https://web.archive.org/web/20250114165622id_/https://www.casio.com/intl/watches/gshock/product.DW-5600RL-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600rl-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250114165622id_/https://www.casio.com/intl/watches/gshock/product.DW-5600RL-1/'
+  - id: dw-5600rs-8
+    ref: DW-5600RS-8
+    source:
+      { url: 'https://web.archive.org/web/20241122174827id_/https://www.casio.com/intl/watches/gshock/product.DW-5600RS-8/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600rs-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241122174827id_/https://www.casio.com/intl/watches/gshock/product.DW-5600RS-8/'
+  - id: dw-5600rw-1
+    ref: DW-5600RW-1
+    source:
+      { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.DW-5600RW-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600rw-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.DW-5600RW-1/'
+  - id: dw-5600shb-1
+    ref: DW-5600SHB-1
+    source:
+      { url: 'https://web.archive.org/web/20250121102917id_/https://www.casio.com/in/watches/gshock/product.DW-5600SHB-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 55, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600shb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121102917id_/https://www.casio.com/in/watches/gshock/product.DW-5600SHB-1/'
+  - id: dw-5600stt-1
+    ref: DW-5600STT-1
+    source:
+      { url: 'https://web.archive.org/web/20251204155509id_/https://www.casio.com/de/watches/gshock/product.DW-5600STT-1/', kind: official }
+    features: [alarm, super-illuminator]
+    image: dw-5600stt-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251204155509id_/https://www.casio.com/de/watches/gshock/product.DW-5600STT-1/'
+  - id: dw-5600tl-7
+    ref: DW-5600TL-7
+    source:
+      { url: 'https://web.archive.org/web/20240729104957id_/https://www.casio.com/us/watches/gshock/product.DW-5600TL-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600tl-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240729104957id_/https://www.casio.com/us/watches/gshock/product.DW-5600TL-7/'
+  - id: dw-5600tls-8
+    ref: DW-5600TLS-8
+    source:
+      { url: 'https://web.archive.org/web/20241126222205id_/https://www.casio.com/intl/watches/gshock/product.DW-5600TLS-8/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600tls-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126222205id_/https://www.casio.com/intl/watches/gshock/product.DW-5600TLS-8/'
+  - id: dw-5600ubb-1
+    ref: DW-5600UBB-1
+    source:
+      { url: 'https://web.archive.org/web/20240729104415id_/https://www.casio.com/my/watches/gshock/product.DW-5600UBB-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600ubb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240729104415id_/https://www.casio.com/my/watches/gshock/product.DW-5600UBB-1/'
+  - id: dw-5600ue-1
+    ref: DW-5600UE-1
+    source:
+      { url: 'https://web.archive.org/web/20240811001606id_/https://www.casio.com/my/watches/gshock/product.DW-5600UE-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600ue-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240811001606id_/https://www.casio.com/my/watches/gshock/product.DW-5600UE-1/'
+  - id: dw-5600uhr-1
+    ref: DW-5600UHR-1
+    source:
+      { url: 'https://web.archive.org/web/20240225135513id_/https://www.casio.com/intl/watches/gshock/product.DW-5600UHR-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: dw-5600uhr-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135513id_/https://www.casio.com/intl/watches/gshock/product.DW-5600UHR-1/'

@@ -1,0 +1,537 @@
+# GA-100 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ga-100
+  name: GA-100
+  line: g-shock
+
+models:
+  - id: ga-100-1a1
+    ref: GA-100-1A1
+    source:
+      { url: 'https://web.archive.org/web/20240715022210id_/https://www.casio.com/europe/watches/gshock/product.GA-100-1A1/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 70, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100-1a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022210id_/https://www.casio.com/europe/watches/gshock/product.GA-100-1A1/'
+  - id: ga-100-1a2
+    ref: GA-100-1A2
+    source:
+      { url: 'https://web.archive.org/web/20240715022213id_/https://www.casio.com/europe/watches/gshock/product.GA-100-1A2/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 70, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022213id_/https://www.casio.com/europe/watches/gshock/product.GA-100-1A2/'
+  - id: ga-100-1a4
+    ref: GA-100-1A4
+    source:
+      { url: 'https://web.archive.org/web/20240715022154id_/https://www.casio.com/europe/watches/gshock/product.GA-100-1A4/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 70, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100-1a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022154id_/https://www.casio.com/europe/watches/gshock/product.GA-100-1A4/'
+  - id: ga-100a-7a
+    ref: GA-100A-7A
+    source:
+      { url: 'https://web.archive.org/web/20240119143940id_/https://www.casio.com/us/watches/gshock/product.GA-100A-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 70, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100a-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119143940id_/https://www.casio.com/us/watches/gshock/product.GA-100A-7A/'
+  - id: ga-100a-9a
+    ref: GA-100A-9A
+    source:
+      { url: 'https://web.archive.org/web/20220627231024id_/https://www.casio.com/in/watches/gshock/product.GA-100A-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 70, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100a-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220627231024id_/https://www.casio.com/in/watches/gshock/product.GA-100A-9A/'
+  - id: ga-100b-4a
+    ref: GA-100B-4A
+    source:
+      { url: 'https://web.archive.org/web/20240518153337id_/https://www.casio.com/europe/watches/gshock/product.GA-100B-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 70, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100b-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240518153337id_/https://www.casio.com/europe/watches/gshock/product.GA-100B-4A/'
+  - id: ga-100b-7a
+    ref: GA-100B-7A
+    source:
+      { url: 'https://web.archive.org/web/20240715022201id_/https://www.casio.com/europe/watches/gshock/product.GA-100B-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 70, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100b-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022201id_/https://www.casio.com/europe/watches/gshock/product.GA-100B-7A/'
+  - id: ga-100bl-1a
+    ref: GA-100BL-1A
+    source:
+      { url: 'https://web.archive.org/web/20221203231148id_/https://www.casio.com/sg/watches/gshock/product.GA-100BL-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100bl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203231148id_/https://www.casio.com/sg/watches/gshock/product.GA-100BL-1A/'
+  - id: ga-100bnr-1a
+    ref: GA-100BNR-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715022156id_/https://www.casio.com/europe/watches/gshock/product.GA-100BNR-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100bnr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022156id_/https://www.casio.com/europe/watches/gshock/product.GA-100BNR-1A/'
+  - id: ga-100bp-1a
+    ref: GA-100BP-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715064647id_/https://www.casio.com/europe/watches/gshock/product.GA-100BP-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100bp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064647id_/https://www.casio.com/europe/watches/gshock/product.GA-100BP-1A/'
+  - id: ga-100bw-1a
+    ref: GA-100BW-1A
+    source:
+      { url: 'https://web.archive.org/web/20220814150441id_/https://www.casio.com/us/watches/gshock/product.GA-100BW-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100bw-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220814150441id_/https://www.casio.com/us/watches/gshock/product.GA-100BW-1A/'
+  - id: ga-100c-8a
+    ref: GA-100C-8A
+    source:
+      { url: 'https://web.archive.org/web/20220702055238id_/https://www.casio.com/us/watches/gshock/product.GA-100C-8A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 70, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100c-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220702055238id_/https://www.casio.com/us/watches/gshock/product.GA-100C-8A/'
+  - id: ga-100cb-1a
+    ref: GA-100CB-1A
+    source:
+      { url: 'https://web.archive.org/web/20221203232820id_/https://www.casio.com/sg/watches/gshock/product.GA-100CB-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100cb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203232820id_/https://www.casio.com/sg/watches/gshock/product.GA-100CB-1A/'
+  - id: ga-100cf-1a
+    ref: GA-100CF-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715064632id_/https://www.casio.com/europe/watches/gshock/product.GA-100CF-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 71, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100cf-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064632id_/https://www.casio.com/europe/watches/gshock/product.GA-100CF-1A/'
+  - id: ga-100cf-1a9
+    ref: GA-100CF-1A9
+    source:
+      { url: 'https://web.archive.org/web/20240715064641id_/https://www.casio.com/europe/watches/gshock/product.GA-100CF-1A9/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 71, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100cf-1a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064641id_/https://www.casio.com/europe/watches/gshock/product.GA-100CF-1A9/'
+  - id: ga-100cf-8a
+    ref: GA-100CF-8A
+    source:
+      { url: 'https://web.archive.org/web/20220928164130id_/https://www.casio.com/sg/watches/gshock/product.GA-100CF-8A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 71, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100cf-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220928164130id_/https://www.casio.com/sg/watches/gshock/product.GA-100CF-8A/'
+  - id: ga-100cm-4a
+    ref: GA-100CM-4A
+    source:
+      { url: 'https://web.archive.org/web/20230328222219id_/https://www.casio.com/us/watches/gshock/product.GA-100CM-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100cm-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230328222219id_/https://www.casio.com/us/watches/gshock/product.GA-100CM-4A/'
+  - id: ga-100cm-5a
+    ref: GA-100CM-5A
+    source:
+      { url: 'https://web.archive.org/web/20240715064629id_/https://www.casio.com/europe/watches/gshock/product.GA-100CM-5A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100cm-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064629id_/https://www.casio.com/europe/watches/gshock/product.GA-100CM-5A/'
+  - id: ga-100cm-8a
+    ref: GA-100CM-8A
+    source:
+      { url: 'https://web.archive.org/web/20221203231427id_/https://www.casio.com/sg/watches/gshock/product.GA-100CM-8A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100cm-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203231427id_/https://www.casio.com/sg/watches/gshock/product.GA-100CM-8A/'
+  - id: ga-100cy-1a
+    ref: GA-100CY-1A
+    source:
+      { url: 'https://web.archive.org/web/20231024140415id_/https://www.casio.com/sg/watches/gshock/product.GA-100CY-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100cy-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231024140415id_/https://www.casio.com/sg/watches/gshock/product.GA-100CY-1A/'
+  - id: ga-100da-4a
+    ref: GA-100DA-4A
+    source:
+      { url: 'https://web.archive.org/web/20221203230128id_/https://www.casio.com/sg/watches/gshock/product.GA-100DA-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100da-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203230128id_/https://www.casio.com/sg/watches/gshock/product.GA-100DA-4A/'
+  - id: ga-100eu-8a2
+    ref: GA-100EU-8A2
+    source:
+      { url: 'https://web.archive.org/web/20240722084934id_/https://www.casio.com/id/watches/gshock/product.GA-100EU-8A2/', kind: official }
+    features: [alarm, stopwatch]
+    image: ga-100eu-8a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722084934id_/https://www.casio.com/id/watches/gshock/product.GA-100EU-8A2/'
+  - id: ga-100fl-1a
+    ref: GA-100FL-1A
+    source:
+      { url: 'https://web.archive.org/web/20250117225642id_/https://www.casio.com/us/watches/gshock/product.GA-100FL-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100fl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250117225642id_/https://www.casio.com/us/watches/gshock/product.GA-100FL-1A/'
+  - id: ga-100fl-8a
+    ref: GA-100FL-8A
+    source:
+      { url: 'https://web.archive.org/web/20250117231404id_/https://www.casio.com/us/watches/gshock/product.GA-100FL-8A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100fl-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250117231404id_/https://www.casio.com/us/watches/gshock/product.GA-100FL-8A/'
+  - id: ga-100gbx-1a4
+    ref: GA-100GBX-1A4
+    source:
+      { url: 'https://web.archive.org/web/20240715064643id_/https://www.casio.com/europe/watches/gshock/product.GA-100GBX-1A4/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100gbx-1a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064643id_/https://www.casio.com/europe/watches/gshock/product.GA-100GBX-1A4/'
+  - id: ga-100gbx-1a9
+    ref: GA-100GBX-1A9
+    source:
+      { url: 'https://web.archive.org/web/20240715064638id_/https://www.casio.com/europe/watches/gshock/product.GA-100GBX-1A9/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100gbx-1a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064638id_/https://www.casio.com/europe/watches/gshock/product.GA-100GBX-1A9/'
+  - id: ga-100jk-4a
+    ref: GA-100JK-4A
+    source:
+      { url: 'https://web.archive.org/web/20211018205123id_/https://www.casio.com/my/watches/gshock/product.GA-100JK-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100jk-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211018205123id_/https://www.casio.com/my/watches/gshock/product.GA-100JK-4A/'
+  - id: ga-100l-2a
+    ref: GA-100L-2A
+    source:
+      { url: 'https://web.archive.org/web/20220808064312id_/https://www.casio.com/us/watches/gshock/product.GA-100L-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100l-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808064312id_/https://www.casio.com/us/watches/gshock/product.GA-100L-2A/'
+  - id: ga-100l-8a
+    ref: GA-100L-8A
+    source:
+      { url: 'https://web.archive.org/web/20220702055034id_/https://www.casio.com/us/watches/gshock/product.GA-100L-8A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100l-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220702055034id_/https://www.casio.com/us/watches/gshock/product.GA-100L-8A/'
+  - id: ga-100mb-1a
+    ref: GA-100MB-1A
+    source:
+      { url: 'https://web.archive.org/web/20220808081526id_/https://www.casio.com/us/watches/gshock/product.GA-100MB-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, magnetic-resistant, mineral-glass]
+    image: ga-100mb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808081526id_/https://www.casio.com/us/watches/gshock/product.GA-100MB-1A/'
+  - id: ga-100mf-1a
+    ref: GA-100MF-1A
+    source:
+      { url: 'https://web.archive.org/web/20240914142114id_/https://www.casio.com/in/watches/gshock/product.GA-100MF-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100mf-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240914142114id_/https://www.casio.com/in/watches/gshock/product.GA-100MF-1A/'
+  - id: ga-100mmc-1a
+    ref: GA-100MMC-1A
+    source:
+      { url: 'https://web.archive.org/web/20220521063012id_/https://www.casio.com/in/watches/gshock/product.GA-100MMC-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100mmc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220521063012id_/https://www.casio.com/in/watches/gshock/product.GA-100MMC-1A/'
+  - id: ga-100mt-1a3
+    ref: GA-100MT-1A3
+    source:
+      { url: 'https://web.archive.org/web/20240214084711id_/https://www.casio.com/us/watches/gshock/product.GA-100MT-1A3/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100mt-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084711id_/https://www.casio.com/us/watches/gshock/product.GA-100MT-1A3/'
+  - id: ga-100pc-7a2
+    ref: GA-100PC-7A2
+    source:
+      { url: 'https://web.archive.org/web/20240119143953id_/https://www.casio.com/us/watches/gshock/product.GA-100PC-7A2/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100pc-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119143953id_/https://www.casio.com/us/watches/gshock/product.GA-100PC-7A2/'
+  - id: ga-100rc-1a
+    ref: GA-100RC-1A
+    source:
+      { url: 'https://web.archive.org/web/20251122145108id_/https://www.casio.com/ph/watches/gshock/product.GA-100RC-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100rc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251122145108id_/https://www.casio.com/ph/watches/gshock/product.GA-100RC-1A/'
+  - id: ga-100rgb-1a
+    ref: GA-100RGB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715064635id_/https://www.casio.com/europe/watches/gshock/product.GA-100RGB-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100rgb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064635id_/https://www.casio.com/europe/watches/gshock/product.GA-100RGB-1A/'
+  - id: ga-100shb-5a
+    ref: GA-100SHB-5A
+    source:
+      { url: 'https://web.archive.org/web/20250121090623id_/https://www.casio.com/in/watches/gshock/product.GA-100SHB-5A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100shb-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121090623id_/https://www.casio.com/in/watches/gshock/product.GA-100SHB-5A/'
+  - id: ga-100skc-1a
+    ref: GA-100SKC-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715065335id_/https://www.casio.com/europe/watches/gshock/product.GA-100SKC-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100skc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065335id_/https://www.casio.com/europe/watches/gshock/product.GA-100SKC-1A/'
+  - id: ga-100tu-1a3
+    ref: GA-100TU-1A3
+    source:
+      { url: 'https://web.archive.org/web/20240907005457id_/https://www.casio.com/us/watches/gshock/product.GA-100TU-1A3/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100tu-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240907005457id_/https://www.casio.com/us/watches/gshock/product.GA-100TU-1A3/'
+  - id: ga-100wd-1a
+    ref: GA-100WD-1A
+    source:
+      { url: 'https://web.archive.org/web/20241126211137id_/https://www.casio.com/us/watches/gshock/product.GA-100WD-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, mineral-glass]
+    image: ga-100wd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126211137id_/https://www.casio.com/us/watches/gshock/product.GA-100WD-1A/'

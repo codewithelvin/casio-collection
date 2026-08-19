@@ -1,0 +1,333 @@
+# GM-5600 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gm-5600
+  name: GM-5600
+  line: g-shock
+
+models:
+  - id: gm-5600-1
+    ref: GM-5600-1
+    source:
+      { url: 'https://web.archive.org/web/20240715064802id_/https://www.casio.com/europe/watches/gshock/product.GM-5600-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064802id_/https://www.casio.com/europe/watches/gshock/product.GM-5600-1/'
+  - id: gm-5600b-1
+    ref: GM-5600B-1
+    source:
+      { url: 'https://web.archive.org/web/20220706032436id_/https://www.casio.com/ph/watches/gshock/product.GM-5600B-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600b-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220706032436id_/https://www.casio.com/ph/watches/gshock/product.GM-5600B-1/'
+  - id: gm-5600b-3
+    ref: GM-5600B-3
+    source:
+      { url: 'https://web.archive.org/web/20240715064807id_/https://www.casio.com/europe/watches/gshock/product.GM-5600B-3/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600b-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064807id_/https://www.casio.com/europe/watches/gshock/product.GM-5600B-3/'
+  - id: gm-5600bwd-1
+    ref: GM-5600BWD-1
+    source:
+      { url: 'https://web.archive.org/web/20251212180521id_/https://www.casio.com/nl/watches/gshock/product.GM-5600BWD-1/', kind: official }
+    features: [stopwatch, super-illuminator]
+    image: gm-5600bwd-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251212180521id_/https://www.casio.com/nl/watches/gshock/product.GM-5600BWD-1/'
+  - id: gm-5600cl-3
+    ref: GM-5600CL-3
+    source:
+      { url: 'https://web.archive.org/web/20240408193857id_/https://www.casio.com/in/watches/gshock/product.GM-5600CL-3/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600cl-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193857id_/https://www.casio.com/in/watches/gshock/product.GM-5600CL-3/'
+  - id: gm-5600cx-4
+    ref: GM-5600CX-4
+    source:
+      { url: 'https://web.archive.org/web/20220817012440id_/https://www.casio.com/ph/watches/gshock/product.GM-5600CX-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600cx-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220817012440id_/https://www.casio.com/ph/watches/gshock/product.GM-5600CX-4/'
+  - id: gm-5600ey-1
+    ref: GM-5600EY-1
+    source:
+      { url: 'https://web.archive.org/web/20240722084013id_/https://www.casio.com/id/watches/gshock/product.GM-5600EY-1/', kind: official }
+    features: [alarm, stopwatch]
+    image: gm-5600ey-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722084013id_/https://www.casio.com/id/watches/gshock/product.GM-5600EY-1/'
+  - id: gm-5600g-9
+    ref: GM-5600G-9
+    source:
+      { url: 'https://web.archive.org/web/20240715064819id_/https://www.casio.com/europe/watches/gshock/product.GM-5600G-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600g-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064819id_/https://www.casio.com/europe/watches/gshock/product.GM-5600G-9/'
+  - id: gm-5600gc-1
+    ref: GM-5600GC-1
+    source:
+      { url: 'https://web.archive.org/web/20240307212726id_/https://www.casio.com/in/watches/gshock/product.GM-5600GC-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600gc-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212726id_/https://www.casio.com/in/watches/gshock/product.GM-5600GC-1/'
+  - id: gm-5600lc-7
+    ref: GM-5600LC-7
+    source:
+      { url: 'https://web.archive.org/web/20240715064815id_/https://www.casio.com/europe/watches/gshock/product.GM-5600LC-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600lc-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064815id_/https://www.casio.com/europe/watches/gshock/product.GM-5600LC-7/'
+  - id: gm-5600ma-7
+    ref: GM-5600MA-7
+    source:
+      { url: 'https://web.archive.org/web/20210828231654id_/https://www.casio.com/sg/watches/gshock/product.GM-5600MA-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600ma-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210828231654id_/https://www.casio.com/sg/watches/gshock/product.GM-5600MA-7/'
+  - id: gm-5600mf-2
+    ref: GM-5600MF-2
+    source:
+      { url: 'https://web.archive.org/web/20240715064117id_/https://www.casio.com/europe/watches/gshock/product.GM-5600MF-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600mf-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064117id_/https://www.casio.com/europe/watches/gshock/product.GM-5600MF-2/'
+  - id: gm-5600rw-1
+    ref: GM-5600RW-1
+    source:
+      { url: 'https://web.archive.org/web/20240922024900id_/https://www.casio.com/us/watches/gshock/product.GM-5600RW-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600rw-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024900id_/https://www.casio.com/us/watches/gshock/product.GM-5600RW-1/'
+  - id: gm-5600scm-1
+    ref: GM-5600SCM-1
+    source:
+      { url: 'https://web.archive.org/web/20240715064113id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SCM-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600scm-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064113id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SCM-1/'
+  - id: gm-5600sg-9
+    ref: GM-5600SG-9
+    source:
+      { url: 'https://web.archive.org/web/20240715064108id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SG-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600sg-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064108id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SG-9/'
+  - id: gm-5600sn-1
+    ref: GM-5600SN-1
+    source:
+      { url: 'https://web.archive.org/web/20240225135511id_/https://www.casio.com/us/watches/gshock/product.GM-5600SN-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600sn-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135511id_/https://www.casio.com/us/watches/gshock/product.GM-5600SN-1/'
+  - id: gm-5600ss-1
+    ref: GM-5600SS-1
+    source:
+      { url: 'https://web.archive.org/web/20240715064101id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SS-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600ss-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064101id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SS-1/'
+  - id: gm-5600u-1
+    ref: GM-5600U-1
+    source:
+      { url: 'https://web.archive.org/web/20250121094901id_/https://www.casio.com/in/watches/gshock/product.GM-5600U-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600u-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121094901id_/https://www.casio.com/in/watches/gshock/product.GM-5600U-1/'
+  - id: gm-5600ub-1
+    ref: GM-5600UB-1
+    source:
+      { url: 'https://web.archive.org/web/20240225135614id_/https://www.casio.com/intl/watches/gshock/product.GM-5600UB-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600ub-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135614id_/https://www.casio.com/intl/watches/gshock/product.GM-5600UB-1/'
+  - id: gm-5600ug-9
+    ref: GM-5600UG-9
+    source:
+      { url: 'https://web.archive.org/web/20240225135514id_/https://www.casio.com/intl/watches/gshock/product.GM-5600UG-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600ug-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135514id_/https://www.casio.com/intl/watches/gshock/product.GM-5600UG-9/'
+  - id: gm-5600ym-8
+    ref: GM-5600YM-8
+    source:
+      { url: 'https://web.archive.org/web/20250220193703id_/https://www.casio.com/us/watches/gshock/product.GM-5600YM-8/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 76, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600ym-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250220193703id_/https://www.casio.com/us/watches/gshock/product.GM-5600YM-8/'
+  - id: gm-5600ym-8a8
+    ref: GM-5600YM-8A8
+    source:
+      { url: 'https://web.archive.org/web/20250217160625id_/https://www.casio.com/sg/watches/gshock/product.GM-5600YM-8A8/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 76, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600ym-8a8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250217160625id_/https://www.casio.com/sg/watches/gshock/product.GM-5600YM-8A8/'
+  - id: gm-5600ymg-9
+    ref: GM-5600YMG-9
+    source:
+      { url: 'https://web.archive.org/web/20250224233208id_/https://www.casio.com/us/watches/gshock/product.GM-5600YMG-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 76, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600ymg-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250224233208id_/https://www.casio.com/us/watches/gshock/product.GM-5600YMG-9/'
+
+# ADDED 2026-08-19: 1 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: gm-5600brw-1
+    ref: GM-5600BRW-1
+    source:
+      { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GM-5600BRW-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-5600brw-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GM-5600BRW-1/'

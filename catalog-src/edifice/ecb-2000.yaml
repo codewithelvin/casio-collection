@@ -1,0 +1,226 @@
+# ECB-2000 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-2000
+  name: ECB-2000
+  line: edifice
+
+models:
+  - id: ecb-2000cb-2a
+    ref: ECB-2000CB-2A
+    source:
+      { url: 'https://web.archive.org/web/20250121113041id_/https://www.casio.com/in/watches/edifice/product.ECB-2000CB-2A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 10.8, weight_g: 125, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2000cb-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121113041id_/https://www.casio.com/in/watches/edifice/product.ECB-2000CB-2A/'
+  - id: ecb-2000d-1a
+    ref: ECB-2000D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221220id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000D-1A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 10.8, weight_g: 125, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2000d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221220id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000D-1A/'
+  - id: ecb-2000dc-1a
+    ref: ECB-2000DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221217id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000DC-1A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 10.8, weight_g: 125, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2000dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221217id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000DC-1A/'
+  - id: ecb-2000dc-1b
+    ref: ECB-2000DC-1B
+    source:
+      { url: 'https://web.archive.org/web/20240307212725id_/https://www.casio.com/in/watches/edifice/product.ECB-2000DC-1B/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 10.8, weight_g: 125, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2000dc-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212725id_/https://www.casio.com/in/watches/edifice/product.ECB-2000DC-1B/'
+  - id: ecb-2000dd-1a
+    ref: ECB-2000DD-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220714id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000DD-1A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 10.8, weight_g: 125, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2000dd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220714id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000DD-1A/'
+  - id: ecb-2000hr-1a
+    ref: ECB-2000HR-1A
+    source:
+      { url: 'https://web.archive.org/web/20241121153927id_/https://www.casio.com/us/watches/edifice/product.ECB-2000HR-1A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 11.3, weight_g: 66, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ecb-2000hr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241121153927id_/https://www.casio.com/us/watches/edifice/product.ECB-2000HR-1A/'
+  - id: ecb-2000mfg-1a
+    ref: ECB-2000MFG-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221214id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000MFG-1A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 11.4, weight_g: 65, material: 'Resin / Stainless steel / Aluminium' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ecb-2000mfg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221214id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000MFG-1A/'
+  - id: ecb-2000nis-1a
+    ref: ECB-2000NIS-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220832id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000NIS-1A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 11.3, weight_g: 75, material: 'Resin / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ecb-2000nis-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220832id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000NIS-1A/'
+  - id: ecb-2000np-1a
+    ref: ECB-2000NP-1A
+    source:
+      { url: 'https://web.archive.org/web/20240307212722id_/https://www.casio.com/in/watches/edifice/product.ECB-2000NP-1A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 10.8, weight_g: 63, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2000np-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212722id_/https://www.casio.com/in/watches/edifice/product.ECB-2000NP-1A/'
+  - id: ecb-2000pb-1a
+    ref: ECB-2000PB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220842id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000PB-1A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 10.8, weight_g: 62, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2000pb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220842id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000PB-1A/'
+  - id: ecb-2000ss-2a
+    ref: ECB-2000SS-2A
+    source:
+      { url: 'https://web.archive.org/web/20240827024517id_/https://www.casio.com/in/watches/edifice/product.ECB-2000SS-2A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 10.8, weight_g: 63, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ecb-2000ss-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240827024517id_/https://www.casio.com/in/watches/edifice/product.ECB-2000SS-2A/'
+  - id: ecb-2000tp-1a
+    ref: ECB-2000TP-1A
+    source:
+      { url: 'https://web.archive.org/web/20240307212745id_/https://www.casio.com/intl/watches/edifice/product.ECB-2000TP-1A/', kind: official }
+    movement: solar
+    case: { height_mm: 51, width_mm: 47.8, depth_mm: 11.3, weight_g: 69, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2000tp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212745id_/https://www.casio.com/intl/watches/edifice/product.ECB-2000TP-1A/'
+  - id: ecb-2000ycb-2a
+    ref: ECB-2000YCB-2A
+    source:
+      { url: 'https://web.archive.org/web/20240910051437id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YCB-2A/', kind: official }
+    features: [bluetooth]
+    image: ecb-2000ycb-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240910051437id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YCB-2A/'
+  - id: ecb-2000yd-1a
+    ref: ECB-2000YD-1A
+    source:
+      { url: 'https://web.archive.org/web/20220718073353id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YD-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-2000yd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220718073353id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YD-1A/'
+  - id: ecb-2000ynp-1a
+    ref: ECB-2000YNP-1A
+    source:
+      { url: 'https://web.archive.org/web/20240523012937id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YNP-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-2000ynp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240523012937id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YNP-1A/'
+  - id: ecb-2000ypb-1a
+    ref: ECB-2000YPB-1A
+    source:
+      { url: 'https://web.archive.org/web/20220714125920id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YPB-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-2000ypb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220714125920id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YPB-1A/'
+  - id: ecb-2000ytp-1a
+    ref: ECB-2000YTP-1A
+    source:
+      { url: 'https://web.archive.org/web/20240522174237id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YTP-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-2000ytp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240522174237id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YTP-1A/'

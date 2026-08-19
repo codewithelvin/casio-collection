@@ -1,0 +1,233 @@
+# ECB-10 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-10
+  name: ECB-10
+  line: edifice
+
+models:
+  - id: ecb-10at-1a
+    ref: ECB-10AT-1A
+    source:
+      { url: 'https://web.archive.org/web/20240408193716id_/https://www.casio.com/us/watches/edifice/product.ECB-10AT-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 110, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, sapphire-crystal]
+    image: ecb-10at-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193716id_/https://www.casio.com/us/watches/edifice/product.ECB-10AT-1A/'
+  - id: ecb-10d-2a
+    ref: ECB-10D-2A
+    source:
+      { url: 'https://web.archive.org/web/20220930115629id_/https://www.casio.com/sg/watches/edifice/product.ECB-10D-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-10d-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930115629id_/https://www.casio.com/sg/watches/edifice/product.ECB-10D-2A/'
+  - id: ecb-10db-1a
+    ref: ECB-10DB-1A
+    source:
+      { url: 'https://web.archive.org/web/20221001154708id_/https://www.casio.com/sg/watches/edifice/product.ECB-10DB-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-10db-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221001154708id_/https://www.casio.com/sg/watches/edifice/product.ECB-10DB-1A/'
+  - id: ecb-10db-1a9
+    ref: ECB-10DB-1A9
+    source:
+      { url: 'https://web.archive.org/web/20240915200747id_/https://www.casio.com/intl/watches/edifice/product.ECB-10DB-1A9/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-10db-1a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240915200747id_/https://www.casio.com/intl/watches/edifice/product.ECB-10DB-1A9/'
+  - id: ecb-10db-1b
+    ref: ECB-10DB-1B
+    source:
+      { url: 'https://web.archive.org/web/20220930115626id_/https://www.casio.com/my/watches/edifice/product.ECB-10DB-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-10db-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930115626id_/https://www.casio.com/my/watches/edifice/product.ECB-10DB-1B/'
+  - id: ecb-10dc-1a
+    ref: ECB-10DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20220925134131id_/https://www.casio.com/sg/watches/edifice/product.ECB-10DC-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-10dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925134131id_/https://www.casio.com/sg/watches/edifice/product.ECB-10DC-1A/'
+  - id: ecb-10dc-1b
+    ref: ECB-10DC-1B
+    source:
+      { url: 'https://web.archive.org/web/20220523043234id_/https://www.casio.com/sg/watches/edifice/product.ECB-10DC-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-10dc-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220523043234id_/https://www.casio.com/sg/watches/edifice/product.ECB-10DC-1B/'
+  - id: ecb-10dc-3a
+    ref: ECB-10DC-3A
+    source:
+      { url: 'https://web.archive.org/web/20220930115648id_/https://www.casio.com/my/watches/edifice/product.ECB-10DC-3A/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 167, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-10dc-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930115648id_/https://www.casio.com/my/watches/edifice/product.ECB-10DC-3A/'
+  - id: ecb-10hr-1a
+    ref: ECB-10HR-1A
+    source:
+      { url: 'https://web.archive.org/web/20210412061736id_/https://www.casio.com/jp/watches/edifice/product.ECB-10HR-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-10hr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210412061736id_/https://www.casio.com/jp/watches/edifice/product.ECB-10HR-1A/'
+  - id: ecb-10p-1a
+    ref: ECB-10P-1A
+    source:
+      { url: 'https://web.archive.org/web/20220925145739id_/https://www.casio.com/sg/watches/edifice/product.ECB-10P-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 101, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-10p-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925145739id_/https://www.casio.com/sg/watches/edifice/product.ECB-10P-1A/'
+  - id: ecb-10pb-1a
+    ref: ECB-10PB-1A
+    source:
+      { url: 'https://web.archive.org/web/20220930115642id_/https://www.casio.com/sg/watches/edifice/product.ECB-10PB-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 101, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-10pb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930115642id_/https://www.casio.com/sg/watches/edifice/product.ECB-10PB-1A/'
+  - id: ecb-10tms-1a
+    ref: ECB-10TMS-1A
+    source:
+      { url: 'https://web.archive.org/web/20210401170834id_/https://www.casio.com/jp/watches/edifice/product.ECB-10TMS-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-10tms-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210401170834id_/https://www.casio.com/jp/watches/edifice/product.ECB-10TMS-1A/'
+  - id: ecb-10tp-1a
+    ref: ECB-10TP-1A
+    source:
+      { url: 'https://web.archive.org/web/20240307212748id_/https://www.casio.com/intl/watches/edifice/product.ECB-10TP-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 51, width_mm: 48.5, depth_mm: 12.5, weight_g: 101, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-10tp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212748id_/https://www.casio.com/intl/watches/edifice/product.ECB-10TP-1A/'
+  - id: ecb-10yd-2a
+    ref: ECB-10YD-2A
+    source:
+      { url: 'https://web.archive.org/web/20210919174503id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YD-2A/', kind: official }
+    features: [bluetooth]
+    image: ecb-10yd-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210919174503id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YD-2A/'
+  - id: ecb-10ydb-1a
+    ref: ECB-10YDB-1A
+    source:
+      { url: 'https://web.archive.org/web/20210919165218id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YDB-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-10ydb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210919165218id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YDB-1A/'
+  - id: ecb-10ydc-1a
+    ref: ECB-10YDC-1A
+    source:
+      { url: 'https://web.archive.org/web/20210919175815id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YDC-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-10ydc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210919175815id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YDC-1A/'
+  - id: ecb-10yp-1a
+    ref: ECB-10YP-1A
+    source:
+      { url: 'https://web.archive.org/web/20210919171221id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YP-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-10yp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210919171221id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YP-1A/'
+  - id: ecb-10ypb-1a
+    ref: ECB-10YPB-1A
+    source:
+      { url: 'https://web.archive.org/web/20210526110021id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YPB-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-10ypb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210526110021id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YPB-1A/'
