@@ -1,0 +1,272 @@
+# LTP-V002 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ltp-v002
+  name: LTP-V002
+  line: vintage
+
+models:
+  - id: ltp-v002d-1b
+    ref: LTP-V002D-1B
+    source:
+      { url: 'https://web.archive.org/web/20220526124250id_/https://www.casio.com/my/watches/casio/product.LTP-V002D-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 53 }
+    features: [mineral-glass]
+    image: ltp-v002d-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526124250id_/https://www.casio.com/my/watches/casio/product.LTP-V002D-1B/'
+    discontinued: false
+  - id: ltp-v002d-1b3
+    ref: LTP-V002D-1B3
+    source:
+      { url: 'https://web.archive.org/web/20220626043601id_/https://www.casio.com/intl/watches/casio/product.LTP-V002D-1B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 53 }
+    features: [mineral-glass]
+    image: ltp-v002d-1b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626043601id_/https://www.casio.com/intl/watches/casio/product.LTP-V002D-1B3/'
+    discontinued: false
+  - id: ltp-v002d-2b
+    ref: LTP-V002D-2B
+    source:
+      { url: 'https://web.archive.org/web/20220626053030id_/https://www.casio.com/intl/watches/casio/product.LTP-V002D-2B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 53 }
+    features: [mineral-glass]
+    image: ltp-v002d-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626053030id_/https://www.casio.com/intl/watches/casio/product.LTP-V002D-2B/'
+    discontinued: false
+  - id: ltp-v002d-2b3
+    ref: LTP-V002D-2B3
+    source:
+      { url: 'https://web.archive.org/web/20220518040158id_/https://www.casio.com/intl/watches/casio/product.LTP-V002D-2B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 53 }
+    features: [mineral-glass]
+    image: ltp-v002d-2b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518040158id_/https://www.casio.com/intl/watches/casio/product.LTP-V002D-2B3/'
+    discontinued: false
+  - id: ltp-v002d-4b
+    ref: LTP-V002D-4B
+    source:
+      { url: 'https://web.archive.org/web/20220526115657id_/https://www.casio.com/sg/watches/casio/product.LTP-V002D-4B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 53 }
+    features: [mineral-glass]
+    image: ltp-v002d-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115657id_/https://www.casio.com/sg/watches/casio/product.LTP-V002D-4B/'
+    discontinued: false
+  - id: ltp-v002d-7b
+    ref: LTP-V002D-7B
+    source:
+      { url: 'https://web.archive.org/web/20220517104820id_/https://www.casio.com/intl/watches/casio/product.LTP-V002D-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 53 }
+    features: [mineral-glass]
+    image: ltp-v002d-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220517104820id_/https://www.casio.com/intl/watches/casio/product.LTP-V002D-7B/'
+    discontinued: false
+  - id: ltp-v002d-7b3
+    ref: LTP-V002D-7B3
+    source:
+      { url: 'https://web.archive.org/web/20220518032904id_/https://www.casio.com/intl/watches/casio/product.LTP-V002D-7B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 53 }
+    features: [mineral-glass]
+    image: ltp-v002d-7b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518032904id_/https://www.casio.com/intl/watches/casio/product.LTP-V002D-7B3/'
+    discontinued: false
+  - id: ltp-v002g-1b
+    ref: LTP-V002G-1B
+    source:
+      { url: 'https://web.archive.org/web/20220819025336id_/https://www.casio.com/intl/watches/casio/product.LTP-V002G-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 53, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-v002g-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220819025336id_/https://www.casio.com/intl/watches/casio/product.LTP-V002G-1B/'
+    discontinued: false
+  - id: ltp-v002g-7b2
+    ref: LTP-V002G-7B2
+    source:
+      { url: 'https://web.archive.org/web/20211129220333id_/https://www.casio.com/my/watches/casio/product.LTP-V002G-7B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 53, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-v002g-7b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211129220333id_/https://www.casio.com/my/watches/casio/product.LTP-V002G-7B2/'
+    discontinued: false
+  - id: ltp-v002g-9b3
+    ref: LTP-V002G-9B3
+    source:
+      { url: 'https://web.archive.org/web/20220517112122id_/https://www.casio.com/intl/watches/casio/product.LTP-V002G-9B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 53, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-v002g-9b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220517112122id_/https://www.casio.com/intl/watches/casio/product.LTP-V002G-9B3/'
+    discontinued: false
+  - id: ltp-v002gl-1b
+    ref: LTP-V002GL-1B
+    source:
+      { url: 'https://web.archive.org/web/20220809133534id_/https://www.casio.com/intl/watches/casio/product.LTP-V002GL-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 24, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-v002gl-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220809133534id_/https://www.casio.com/intl/watches/casio/product.LTP-V002GL-1B/'
+    discontinued: false
+  - id: ltp-v002gl-7b2
+    ref: LTP-V002GL-7B2
+    source:
+      { url: 'https://web.archive.org/web/20220516091507id_/https://www.casio.com/intl/watches/casio/product.LTP-V002GL-7B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 24, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-v002gl-7b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516091507id_/https://www.casio.com/intl/watches/casio/product.LTP-V002GL-7B2/'
+    discontinued: false
+  - id: ltp-v002gl-7b3
+    ref: LTP-V002GL-7B3
+    source:
+      { url: 'https://web.archive.org/web/20220812232514id_/https://www.casio.com/intl/watches/casio/product.LTP-V002GL-7B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 24, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-v002gl-7b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220812232514id_/https://www.casio.com/intl/watches/casio/product.LTP-V002GL-7B3/'
+    discontinued: false
+  - id: ltp-v002l-1b
+    ref: LTP-V002L-1B
+    source:
+      { url: 'https://web.archive.org/web/20220626041243id_/https://www.casio.com/intl/watches/casio/product.LTP-V002L-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 24 }
+    features: [mineral-glass]
+    image: ltp-v002l-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626041243id_/https://www.casio.com/intl/watches/casio/product.LTP-V002L-1B/'
+    discontinued: false
+  - id: ltp-v002l-1b3
+    ref: LTP-V002L-1B3
+    source:
+      { url: 'https://web.archive.org/web/20220526115651id_/https://www.casio.com/sg/watches/casio/product.LTP-V002L-1B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 24 }
+    features: [mineral-glass]
+    image: ltp-v002l-1b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115651id_/https://www.casio.com/sg/watches/casio/product.LTP-V002L-1B3/'
+    discontinued: false
+  - id: ltp-v002l-2b3
+    ref: LTP-V002L-2B3
+    source:
+      { url: 'https://web.archive.org/web/20220517111754id_/https://www.casio.com/intl/watches/casio/product.LTP-V002L-2B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 24 }
+    features: [mineral-glass]
+    image: ltp-v002l-2b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220517111754id_/https://www.casio.com/intl/watches/casio/product.LTP-V002L-2B3/'
+    discontinued: false
+  - id: ltp-v002l-7b2
+    ref: LTP-V002L-7B2
+    source:
+      { url: 'https://web.archive.org/web/20220808095311id_/https://www.casio.com/intl/watches/casio/product.LTP-V002L-7B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 24 }
+    features: [mineral-glass]
+    image: ltp-v002l-7b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808095311id_/https://www.casio.com/intl/watches/casio/product.LTP-V002L-7B2/'
+    discontinued: false
+  - id: ltp-v002l-7b3
+    ref: LTP-V002L-7B3
+    source:
+      { url: 'https://web.archive.org/web/20220522230534id_/https://www.casio.com/intl/watches/casio/product.LTP-V002L-7B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 24 }
+    features: [mineral-glass]
+    image: ltp-v002l-7b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220522230534id_/https://www.casio.com/intl/watches/casio/product.LTP-V002L-7B3/'
+    discontinued: false

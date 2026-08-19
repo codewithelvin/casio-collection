@@ -1,0 +1,244 @@
+# MTP-V300 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-v300
+  name: MTP-V300
+  line: vintage
+
+models:
+  - id: mtp-v300b-1a
+    ref: MTP-V300B-1A
+    source:
+      { url: 'https://web.archive.org/web/20220526121218id_/https://www.casio.com/sg/watches/casio/product.MTP-V300B-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 94 }
+    features: [mineral-glass]
+    image: mtp-v300b-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526121218id_/https://www.casio.com/sg/watches/casio/product.MTP-V300B-1A/'
+    discontinued: false
+  - id: mtp-v300d-7a2
+    ref: MTP-V300D-7A2
+    source:
+      { url: 'https://web.archive.org/web/20220812125016id_/https://www.casio.com/in/watches/casio/product.MTP-V300D-7A2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }
+    features: [mineral-glass]
+    image: mtp-v300d-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220812125016id_/https://www.casio.com/in/watches/casio/product.MTP-V300D-7A2/'
+    discontinued: true
+  - id: mtp-v300gb-1a
+    ref: MTP-V300GB-1A
+    source:
+      { url: 'https://web.archive.org/web/20220526115652id_/https://www.casio.com/sg/watches/casio/product.MTP-V300GB-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-v300gb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115652id_/https://www.casio.com/sg/watches/casio/product.MTP-V300GB-1A/'
+    discontinued: false
+  - id: mtp-v300gl-1a
+    ref: MTP-V300GL-1A
+    source:
+      { url: 'https://web.archive.org/web/20220625105321id_/https://www.casio.com/in/watches/casio/product.MTP-V300GL-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-v300gl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625105321id_/https://www.casio.com/in/watches/casio/product.MTP-V300GL-1A/'
+    discontinued: false
+  - id: mtp-v300gl-9a
+    ref: MTP-V300GL-9A
+    source:
+      { url: 'https://web.archive.org/web/20220529043543id_/https://www.casio.com/in/watches/casio/product.MTP-V300GL-9A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-v300gl-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529043543id_/https://www.casio.com/in/watches/casio/product.MTP-V300GL-9A/'
+    discontinued: true
+  - id: mtp-v300hd-1a
+    ref: MTP-V300HD-1A
+    source:
+      { url: 'https://web.archive.org/web/20220518030506id_/https://www.casio.com/in/watches/casio/product.MTP-V300HD-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }
+    features: [mineral-glass]
+    image: mtp-v300hd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518030506id_/https://www.casio.com/in/watches/casio/product.MTP-V300HD-1A/'
+    discontinued: true
+  - id: mtp-v300hd-1a2
+    ref: MTP-V300HD-1A2
+    source:
+      { url: 'https://web.archive.org/web/20220516180442id_/https://www.casio.com/in/watches/casio/product.MTP-V300HD-1A2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }
+    features: [mineral-glass]
+    image: mtp-v300hd-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516180442id_/https://www.casio.com/in/watches/casio/product.MTP-V300HD-1A2/'
+    discontinued: true
+  - id: mtp-v300hd-2a
+    ref: MTP-V300HD-2A
+    source:
+      { url: 'https://web.archive.org/web/20220518041455id_/https://www.casio.com/in/watches/casio/product.MTP-V300HD-2A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }
+    features: [mineral-glass]
+    image: mtp-v300hd-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518041455id_/https://www.casio.com/in/watches/casio/product.MTP-V300HD-2A/'
+    discontinued: true
+  - id: mtp-v300hd-7a
+    ref: MTP-V300HD-7A
+    source:
+      { url: 'https://web.archive.org/web/20220517114136id_/https://www.casio.com/in/watches/casio/product.MTP-V300HD-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }
+    features: [mineral-glass]
+    image: mtp-v300hd-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220517114136id_/https://www.casio.com/in/watches/casio/product.MTP-V300HD-7A/'
+    discontinued: true
+  - id: mtp-v300l-1a
+    ref: MTP-V300L-1A
+    source:
+      { url: 'https://web.archive.org/web/20220625141314id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 49 }
+    features: [mineral-glass]
+    image: mtp-v300l-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625141314id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-1A/'
+    discontinued: false
+  - id: mtp-v300l-1a2
+    ref: MTP-V300L-1A2
+    source:
+      { url: 'https://web.archive.org/web/20220521004118id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-1A2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 49 }
+    features: [mineral-glass]
+    image: mtp-v300l-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220521004118id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-1A2/'
+    discontinued: true
+  - id: mtp-v300l-1a3
+    ref: MTP-V300L-1A3
+    source:
+      { url: 'https://web.archive.org/web/20220625143330id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-1A3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 49 }
+    features: [mineral-glass]
+    image: mtp-v300l-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625143330id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-1A3/'
+    discontinued: true
+  - id: mtp-v300l-2a
+    ref: MTP-V300L-2A
+    source:
+      { url: 'https://web.archive.org/web/20220625132040id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-2A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 49 }
+    features: [mineral-glass]
+    image: mtp-v300l-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625132040id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-2A/'
+    discontinued: true
+  - id: mtp-v300l-7a
+    ref: MTP-V300L-7A
+    source:
+      { url: 'https://web.archive.org/web/20220520233847id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 49 }
+    features: [mineral-glass]
+    image: mtp-v300l-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220520233847id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-7A/'
+    discontinued: false
+  - id: mtp-v300l-7a2
+    ref: MTP-V300L-7A2
+    source:
+      { url: 'https://web.archive.org/web/20220625131309id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-7A2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 49 }
+    features: [mineral-glass]
+    image: mtp-v300l-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625131309id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-7A2/'
+    discontinued: true
+  - id: mtp-v300l-9a
+    ref: MTP-V300L-9A
+    source:
+      { url: 'https://web.archive.org/web/20220529061654id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-9A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 49 }
+    features: [mineral-glass]
+    image: mtp-v300l-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529061654id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-9A/'
+    discontinued: false

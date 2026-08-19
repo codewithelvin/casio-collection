@@ -1,0 +1,168 @@
+# MRW-200 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mrw-200
+  name: MRW-200
+  line: vintage
+
+models:
+  - id: mrw-200h-1b2v
+    ref: MRW-200H-1B2V
+    source:
+      { url: 'https://web.archive.org/web/20240715101233id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-1B2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    image: mrw-200h-1b2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101233id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-1B2V/'
+    discontinued: false
+  - id: mrw-200h-1b3v
+    ref: MRW-200H-1B3V
+    source:
+      { url: 'https://web.archive.org/web/20220820105326id_/https://www.casio.com/us/watches/casio/product.MRW-200H-1B3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    discontinued: false
+  - id: mrw-200h-1bv
+    ref: MRW-200H-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102235id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    image: mrw-200h-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102235id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-1BV/'
+    discontinued: false
+  - id: mrw-200h-1ev
+    ref: MRW-200H-1EV
+    source:
+      { url: 'https://web.archive.org/web/20231015174440id_/https://www.casio.com/in/watches/casio/product.MRW-200H-1EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    image: mrw-200h-1ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231015174440id_/https://www.casio.com/in/watches/casio/product.MRW-200H-1EV/'
+    discontinued: false
+  - id: mrw-200h-2b2v
+    ref: MRW-200H-2B2V
+    source:
+      { url: 'https://web.archive.org/web/20220926025524id_/https://www.casio.com/us/watches/casio/product.MRW-200H-2B2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    discontinued: false
+  - id: mrw-200h-2bv
+    ref: MRW-200H-2BV
+    source:
+      { url: 'https://web.archive.org/web/20240715101240id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-2BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    image: mrw-200h-2bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101240id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-2BV/'
+    discontinued: false
+  - id: mrw-200h-3bv
+    ref: MRW-200H-3BV
+    source:
+      { url: 'https://web.archive.org/web/20220926040249id_/https://www.casio.com/us/watches/casio/product.MRW-200H-3BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    discontinued: false
+  - id: mrw-200h-4bv
+    ref: MRW-200H-4BV
+    source:
+      { url: 'https://web.archive.org/web/20220813212447id_/https://www.casio.com/us/watches/casio/product.MRW-200H-4BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    discontinued: false
+  - id: mrw-200h-7bv
+    ref: MRW-200H-7BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102258id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    image: mrw-200h-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102258id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-7BV/'
+    discontinued: false
+  - id: mrw-200hc-2bv
+    ref: MRW-200HC-2BV
+    source:
+      { url: 'https://web.archive.org/web/20230125201952id_/https://www.casio.com/ph/watches/casio/product.MRW-200HC-2BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39, material: 'Resin · Timer Bezel' }
+    water_resistance_m: 100
+    image: mrw-200hc-2bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230125201952id_/https://www.casio.com/ph/watches/casio/product.MRW-200HC-2BV/'
+    discontinued: true
+  - id: mrw-200hd-1bv
+    ref: MRW-200HD-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102255id_/https://www.casio.com/europe/watches/casio/product.MRW-200HD-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 92, material: 'Resin · Timer Bezel' }
+    water_resistance_m: 100
+    image: mrw-200hd-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102255id_/https://www.casio.com/europe/watches/casio/product.MRW-200HD-1BV/'
+    discontinued: false
+  - id: mrw-200hd-7bv
+    ref: MRW-200HD-7BV
+    source:
+      { url: 'https://web.archive.org/web/20240715101247id_/https://www.casio.com/europe/watches/casio/product.MRW-200HD-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 92, material: 'Resin · Timer Bezel' }
+    water_resistance_m: 100
+    image: mrw-200hd-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101247id_/https://www.casio.com/europe/watches/casio/product.MRW-200HD-7BV/'
+    discontinued: false

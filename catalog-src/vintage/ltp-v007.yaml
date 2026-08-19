@@ -1,0 +1,258 @@
+# LTP-V007 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ltp-v007
+  name: LTP-V007
+  line: vintage
+
+models:
+  - id: ltp-v007d-1b
+    ref: LTP-V007D-1B
+    source:
+      { url: 'https://web.archive.org/web/20250402032827id_/https://www.casio.com/sg/watches/casio/product.LTP-V007D-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 51, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007d-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250402032827id_/https://www.casio.com/sg/watches/casio/product.LTP-V007D-1B/'
+    discontinued: false
+  - id: ltp-v007d-1e
+    ref: LTP-V007D-1E
+    source:
+      { url: 'https://web.archive.org/web/20220626021305id_/https://www.casio.com/intl/watches/casio/product.LTP-V007D-1E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 51, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007d-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626021305id_/https://www.casio.com/intl/watches/casio/product.LTP-V007D-1E/'
+    discontinued: false
+  - id: ltp-v007d-2e
+    ref: LTP-V007D-2E
+    source:
+      { url: 'https://web.archive.org/web/20220518025417id_/https://www.casio.com/intl/watches/casio/product.LTP-V007D-2E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 51, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007d-2e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518025417id_/https://www.casio.com/intl/watches/casio/product.LTP-V007D-2E/'
+    discontinued: false
+  - id: ltp-v007d-4e
+    ref: LTP-V007D-4E
+    source:
+      { url: 'https://web.archive.org/web/20220522223044id_/https://www.casio.com/intl/watches/casio/product.LTP-V007D-4E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 51, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007d-4e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220522223044id_/https://www.casio.com/intl/watches/casio/product.LTP-V007D-4E/'
+    discontinued: false
+  - id: ltp-v007d-7b
+    ref: LTP-V007D-7B
+    source:
+      { url: 'https://web.archive.org/web/20241209161355id_/https://www.casio.com/in/watches/casio/product.LTP-V007D-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 51, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007d-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241209161355id_/https://www.casio.com/in/watches/casio/product.LTP-V007D-7B/'
+    discontinued: false
+  - id: ltp-v007d-7e
+    ref: LTP-V007D-7E
+    source:
+      { url: 'https://web.archive.org/web/20241202071838id_/https://www.casio.com/in/watches/casio/product.LTP-V007D-7E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 51, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007d-7e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241202071838id_/https://www.casio.com/in/watches/casio/product.LTP-V007D-7E/'
+    discontinued: false
+  - id: ltp-v007g-9b
+    ref: LTP-V007G-9B
+    source:
+      { url: 'https://web.archive.org/web/20241209161336id_/https://www.casio.com/in/watches/casio/product.LTP-V007G-9B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 51, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-v007g-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241209161336id_/https://www.casio.com/in/watches/casio/product.LTP-V007G-9B/'
+    discontinued: false
+  - id: ltp-v007g-9e
+    ref: LTP-V007G-9E
+    source:
+      { url: 'https://web.archive.org/web/20250116013748id_/https://www.casio.com/in/watches/casio/product.LTP-V007G-9E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 51, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-v007g-9e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250116013748id_/https://www.casio.com/in/watches/casio/product.LTP-V007G-9E/'
+    discontinued: false
+  - id: ltp-v007l-1b
+    ref: LTP-V007L-1B
+    source:
+      { url: 'https://web.archive.org/web/20210803181309id_/https://www.casio.com/my/watches/casio/product.LTP-V007L-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 22, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007l-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210803181309id_/https://www.casio.com/my/watches/casio/product.LTP-V007L-1B/'
+    discontinued: false
+  - id: ltp-v007l-7b1
+    ref: LTP-V007L-7B1
+    source:
+      { url: 'https://web.archive.org/web/20250402032941id_/https://www.casio.com/sg/watches/casio/product.LTP-V007L-7B1/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 22, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007l-7b1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250402032941id_/https://www.casio.com/sg/watches/casio/product.LTP-V007L-7B1/'
+    discontinued: false
+  - id: ltp-v007l-7b2
+    ref: LTP-V007L-7B2
+    source:
+      { url: 'https://web.archive.org/web/20220526115814id_/https://www.casio.com/sg/watches/casio/product.LTP-V007L-7B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 22, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007l-7b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115814id_/https://www.casio.com/sg/watches/casio/product.LTP-V007L-7B2/'
+    discontinued: false
+  - id: ltp-v007l-7e1
+    ref: LTP-V007L-7E1
+    source:
+      { url: 'https://web.archive.org/web/20220517104241id_/https://www.casio.com/intl/watches/casio/product.LTP-V007L-7E1/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 22, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007l-7e1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220517104241id_/https://www.casio.com/intl/watches/casio/product.LTP-V007L-7E1/'
+    discontinued: false
+  - id: ltp-v007l-7e2
+    ref: LTP-V007L-7E2
+    source:
+      { url: 'https://web.archive.org/web/20220625071301id_/https://www.casio.com/intl/watches/casio/product.LTP-V007L-7E2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 22, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007l-7e2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625071301id_/https://www.casio.com/intl/watches/casio/product.LTP-V007L-7E2/'
+    discontinued: false
+  - id: ltp-v007l-9b
+    ref: LTP-V007L-9B
+    source:
+      { url: 'https://web.archive.org/web/20250402032841id_/https://www.casio.com/sg/watches/casio/product.LTP-V007L-9B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 22, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007l-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250402032841id_/https://www.casio.com/sg/watches/casio/product.LTP-V007L-9B/'
+    discontinued: false
+  - id: ltp-v007l-9e
+    ref: LTP-V007L-9E
+    source:
+      { url: 'https://web.archive.org/web/20220522234922id_/https://www.casio.com/intl/watches/casio/product.LTP-V007L-9E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 22, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007l-9e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220522234922id_/https://www.casio.com/intl/watches/casio/product.LTP-V007L-9E/'
+    discontinued: false
+  - id: ltp-v007sg-9b
+    ref: LTP-V007SG-9B
+    source:
+      { url: 'https://web.archive.org/web/20250402032821id_/https://www.casio.com/sg/watches/casio/product.LTP-V007SG-9B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 51, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007sg-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250402032821id_/https://www.casio.com/sg/watches/casio/product.LTP-V007SG-9B/'
+    discontinued: false
+  - id: ltp-v007sg-9e
+    ref: LTP-V007SG-9E
+    source:
+      { url: 'https://web.archive.org/web/20220626022902id_/https://www.casio.com/intl/watches/casio/product.LTP-V007SG-9E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 31, width_mm: 22, depth_mm: 7.5, weight_g: 51, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: ltp-v007sg-9e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626022902id_/https://www.casio.com/intl/watches/casio/product.LTP-V007SG-9E/'
+    discontinued: false

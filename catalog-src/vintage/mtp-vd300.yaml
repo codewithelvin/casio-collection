@@ -1,0 +1,202 @@
+# MTP-VD300 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-vd300
+  name: MTP-VD300
+  line: vintage
+
+models:
+  - id: mtp-vd300-1b
+    ref: MTP-VD300-1B
+    source:
+      { url: 'https://web.archive.org/web/20230202064828id_/https://www.casio.com/us/watches/casio/product.MTP-VD300-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 72 }
+    features: [mineral-glass]
+    image: mtp-vd300-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230202064828id_/https://www.casio.com/us/watches/casio/product.MTP-VD300-1B/'
+    discontinued: false
+  - id: mtp-vd300-3b
+    ref: MTP-VD300-3B
+    source:
+      { url: 'https://web.archive.org/web/20230124040029id_/https://www.casio.com/us/watches/casio/product.MTP-VD300-3B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 72 }
+    features: [mineral-glass]
+    image: mtp-vd300-3b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230124040029id_/https://www.casio.com/us/watches/casio/product.MTP-VD300-3B/'
+    discontinued: false
+  - id: mtp-vd300-5b
+    ref: MTP-VD300-5B
+    source:
+      { url: 'https://web.archive.org/web/20230301104511id_/https://www.casio.com/intl/watches/casio/product.MTP-VD300-5B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 72 }
+    features: [mineral-glass]
+    image: mtp-vd300-5b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230301104511id_/https://www.casio.com/intl/watches/casio/product.MTP-VD300-5B/'
+    discontinued: false
+  - id: mtp-vd300-7b
+    ref: MTP-VD300-7B
+    source:
+      { url: 'https://web.archive.org/web/20230218221007id_/https://www.casio.com/us/watches/casio/product.MTP-VD300-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 72 }
+    features: [mineral-glass]
+    image: mtp-vd300-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230218221007id_/https://www.casio.com/us/watches/casio/product.MTP-VD300-7B/'
+    discontinued: false
+  - id: mtp-vd300bl-5e
+    ref: MTP-VD300BL-5E
+    source:
+      { url: 'https://web.archive.org/web/20220526115652id_/https://www.casio.com/sg/watches/casio/product.MTP-VD300BL-5E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 64 }
+    features: [mineral-glass]
+    image: mtp-vd300bl-5e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115652id_/https://www.casio.com/sg/watches/casio/product.MTP-VD300BL-5E/'
+    discontinued: false
+  - id: mtp-vd300d-1e
+    ref: MTP-VD300D-1E
+    source:
+      { url: 'https://web.archive.org/web/20221001041434id_/https://www.casio.com/intl/watches/casio/product.MTP-VD300D-1E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 110 }
+    features: [mineral-glass]
+    image: mtp-vd300d-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221001041434id_/https://www.casio.com/intl/watches/casio/product.MTP-VD300D-1E/'
+    discontinued: false
+  - id: mtp-vd300d-2e
+    ref: MTP-VD300D-2E
+    source:
+      { url: 'https://web.archive.org/web/20221001041457id_/https://www.casio.com/my/watches/casio/product.MTP-VD300D-2E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 110 }
+    features: [mineral-glass]
+    image: mtp-vd300d-2e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221001041457id_/https://www.casio.com/my/watches/casio/product.MTP-VD300D-2E/'
+    discontinued: false
+  - id: mtp-vd300d-7e
+    ref: MTP-VD300D-7E
+    source:
+      { url: 'https://web.archive.org/web/20221001045902id_/https://www.casio.com/my/watches/casio/product.MTP-VD300D-7E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 110 }
+    features: [mineral-glass]
+    image: mtp-vd300d-7e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221001045902id_/https://www.casio.com/my/watches/casio/product.MTP-VD300D-7E/'
+    discontinued: false
+  - id: mtp-vd300g-1e
+    ref: MTP-VD300G-1E
+    source:
+      { url: 'https://web.archive.org/web/20220808221328id_/https://www.casio.com/in/watches/casio/product.MTP-VD300G-1E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 110 }
+    features: [mineral-glass]
+    image: mtp-vd300g-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808221328id_/https://www.casio.com/in/watches/casio/product.MTP-VD300G-1E/'
+    discontinued: false
+  - id: mtp-vd300g-9e
+    ref: MTP-VD300G-9E
+    source:
+      { url: 'https://web.archive.org/web/20220529091716id_/https://www.casio.com/in/watches/casio/product.MTP-VD300G-9E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 110 }
+    features: [mineral-glass]
+    image: mtp-vd300g-9e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529091716id_/https://www.casio.com/in/watches/casio/product.MTP-VD300G-9E/'
+    discontinued: false
+  - id: mtp-vd300gl-1e
+    ref: MTP-VD300GL-1E
+    source:
+      { url: 'https://web.archive.org/web/20220526115653id_/https://www.casio.com/sg/watches/casio/product.MTP-VD300GL-1E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 63 }
+    features: [mineral-glass]
+    image: mtp-vd300gl-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115653id_/https://www.casio.com/sg/watches/casio/product.MTP-VD300GL-1E/'
+    discontinued: false
+  - id: mtp-vd300l-7e
+    ref: MTP-VD300L-7E
+    source:
+      { url: 'https://web.archive.org/web/20220816044710id_/https://www.casio.com/in/watches/casio/product.MTP-VD300L-7E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 63 }
+    features: [mineral-glass]
+    image: mtp-vd300l-7e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220816044710id_/https://www.casio.com/in/watches/casio/product.MTP-VD300L-7E/'
+    discontinued: false
+  - id: mtp-vd300sg-1e
+    ref: MTP-VD300SG-1E
+    source:
+      { url: 'https://web.archive.org/web/20220809102939id_/https://www.casio.com/in/watches/casio/product.MTP-VD300SG-1E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 110 }
+    features: [mineral-glass]
+    image: mtp-vd300sg-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220809102939id_/https://www.casio.com/in/watches/casio/product.MTP-VD300SG-1E/'
+    discontinued: false

@@ -1,0 +1,244 @@
+# MTP-VD03 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-vd03
+  name: MTP-VD03
+  line: vintage
+
+models:
+  - id: mtp-vd03b-1a
+    ref: MTP-VD03B-1A
+    source:
+      { url: 'https://web.archive.org/web/20230202061735id_/https://www.casio.com/us/watches/casio/product.MTP-VD03B-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-vd03b-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230202061735id_/https://www.casio.com/us/watches/casio/product.MTP-VD03B-1A/'
+    discontinued: false
+  - id: mtp-vd03b-2a
+    ref: MTP-VD03B-2A
+    source:
+      { url: 'https://web.archive.org/web/20240225135539id_/https://www.casio.com/in/watches/casio/product.MTP-VD03B-2A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-vd03b-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135539id_/https://www.casio.com/in/watches/casio/product.MTP-VD03B-2A/'
+    discontinued: false
+  - id: mtp-vd03b-3a
+    ref: MTP-VD03B-3A
+    source:
+      { url: 'https://web.archive.org/web/20241205001149id_/https://www.casio.com/intl/watches/casio/product.MTP-VD03B-3A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-vd03b-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241205001149id_/https://www.casio.com/intl/watches/casio/product.MTP-VD03B-3A/'
+    discontinued: false
+  - id: mtp-vd03b-7a
+    ref: MTP-VD03B-7A
+    source:
+      { url: 'https://web.archive.org/web/20220930121147id_/https://www.casio.com/in/watches/casio/product.MTP-VD03B-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-vd03b-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930121147id_/https://www.casio.com/in/watches/casio/product.MTP-VD03B-7A/'
+    discontinued: false
+  - id: mtp-vd03d-1a
+    ref: MTP-VD03D-1A
+    source:
+      { url: 'https://web.archive.org/web/20220930121137id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106 }
+    features: [mineral-glass]
+    image: mtp-vd03d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930121137id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-1A/'
+    discontinued: false
+  - id: mtp-vd03d-2a
+    ref: MTP-VD03D-2A
+    source:
+      { url: 'https://web.archive.org/web/20220930121132id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-2A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106 }
+    features: [mineral-glass]
+    image: mtp-vd03d-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930121132id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-2A/'
+    discontinued: false
+  - id: mtp-vd03d-2a2
+    ref: MTP-VD03D-2A2
+    source:
+      { url: 'https://web.archive.org/web/20240225135538id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-2A2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106 }
+    features: [mineral-glass]
+    image: mtp-vd03d-2a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135538id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-2A2/'
+    discontinued: false
+  - id: mtp-vd03d-2a3
+    ref: MTP-VD03D-2A3
+    source:
+      { url: 'https://web.archive.org/web/20241207064552id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-2A3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106 }
+    features: [mineral-glass]
+    image: mtp-vd03d-2a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241207064552id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-2A3/'
+    discontinued: false
+  - id: mtp-vd03d-3a1
+    ref: MTP-VD03D-3A1
+    source:
+      { url: 'https://web.archive.org/web/20240225135538id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-3A1/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106 }
+    features: [mineral-glass]
+    image: mtp-vd03d-3a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135538id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-3A1/'
+    discontinued: false
+  - id: mtp-vd03d-7a
+    ref: MTP-VD03D-7A
+    source:
+      { url: 'https://web.archive.org/web/20220930120314id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106 }
+    features: [mineral-glass]
+    image: mtp-vd03d-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930120314id_/https://www.casio.com/in/watches/casio/product.MTP-VD03D-7A/'
+    discontinued: false
+  - id: mtp-vd03g-1a
+    ref: MTP-VD03G-1A
+    source:
+      { url: 'https://web.archive.org/web/20220930120331id_/https://www.casio.com/in/watches/casio/product.MTP-VD03G-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vd03g-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930120331id_/https://www.casio.com/in/watches/casio/product.MTP-VD03G-1A/'
+    discontinued: false
+  - id: mtp-vd03g-2a
+    ref: MTP-VD03G-2A
+    source:
+      { url: 'https://web.archive.org/web/20240225135540id_/https://www.casio.com/in/watches/casio/product.MTP-VD03G-2A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vd03g-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135540id_/https://www.casio.com/in/watches/casio/product.MTP-VD03G-2A/'
+    discontinued: false
+  - id: mtp-vd03g-3a
+    ref: MTP-VD03G-3A
+    source:
+      { url: 'https://web.archive.org/web/20240225135540id_/https://www.casio.com/in/watches/casio/product.MTP-VD03G-3A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vd03g-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135540id_/https://www.casio.com/in/watches/casio/product.MTP-VD03G-3A/'
+    discontinued: false
+  - id: mtp-vd03gl-1a
+    ref: MTP-VD03GL-1A
+    source:
+      { url: 'https://web.archive.org/web/20220930115836id_/https://www.casio.com/in/watches/casio/product.MTP-VD03GL-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-vd03gl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930115836id_/https://www.casio.com/in/watches/casio/product.MTP-VD03GL-1A/'
+    discontinued: false
+  - id: mtp-vd03l-1a
+    ref: MTP-VD03L-1A
+    source:
+      { url: 'https://web.archive.org/web/20220930120114id_/https://www.casio.com/in/watches/casio/product.MTP-VD03L-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
+    features: [mineral-glass]
+    image: mtp-vd03l-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930120114id_/https://www.casio.com/in/watches/casio/product.MTP-VD03L-1A/'
+    discontinued: false
+  - id: mtp-vd03l-5a
+    ref: MTP-VD03L-5A
+    source:
+      { url: 'https://web.archive.org/web/20220930120155id_/https://www.casio.com/in/watches/casio/product.MTP-VD03L-5A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
+    features: [mineral-glass]
+    image: mtp-vd03l-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930120155id_/https://www.casio.com/in/watches/casio/product.MTP-VD03L-5A/'
+    discontinued: false

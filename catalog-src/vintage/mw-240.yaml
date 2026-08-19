@@ -1,0 +1,211 @@
+# MW-240 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mw-240
+  name: MW-240
+  line: vintage
+
+models:
+  - id: mw-240-1b2v
+    ref: MW-240-1B2V
+    source:
+      { url: 'https://web.archive.org/web/20230217215005id_/https://www.casio.com/in/watches/casio/product.MW-240-1B2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-1b2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230217215005id_/https://www.casio.com/in/watches/casio/product.MW-240-1B2V/'
+    discontinued: false
+  - id: mw-240-1bv
+    ref: MW-240-1BV
+    source:
+      { url: 'https://web.archive.org/web/20241127234326id_/https://www.casio.com/intl/watches/casio/product.MW-240-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241127234326id_/https://www.casio.com/intl/watches/casio/product.MW-240-1BV/'
+    discontinued: false
+  - id: mw-240-1e2v
+    ref: MW-240-1E2V
+    source:
+      { url: 'https://web.archive.org/web/20240922024907id_/https://www.casio.com/us/watches/casio/product.MW-240-1E2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    discontinued: false
+  - id: mw-240-1e3v
+    ref: MW-240-1E3V
+    source:
+      { url: 'https://web.archive.org/web/20240715071040id_/https://www.casio.com/europe/watches/casio/product.MW-240-1E3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-1e3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715071040id_/https://www.casio.com/europe/watches/casio/product.MW-240-1E3V/'
+    discontinued: false
+  - id: mw-240-1ev
+    ref: MW-240-1EV
+    source:
+      { url: 'https://web.archive.org/web/20240715102420id_/https://www.casio.com/europe/watches/casio/product.MW-240-1EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-1ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102420id_/https://www.casio.com/europe/watches/casio/product.MW-240-1EV/'
+    discontinued: false
+  - id: mw-240-2bv
+    ref: MW-240-2BV
+    source:
+      { url: 'https://web.archive.org/web/20241125034639id_/https://www.casio.com/intl/watches/casio/product.MW-240-2BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-2bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241125034639id_/https://www.casio.com/intl/watches/casio/product.MW-240-2BV/'
+    discontinued: false
+  - id: mw-240-3bv
+    ref: MW-240-3BV
+    source:
+      { url: 'https://web.archive.org/web/20241127044622id_/https://www.casio.com/intl/watches/casio/product.MW-240-3BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-3bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241127044622id_/https://www.casio.com/intl/watches/casio/product.MW-240-3BV/'
+    discontinued: false
+  - id: mw-240-4bv
+    ref: MW-240-4BV
+    source:
+      { url: 'https://web.archive.org/web/20231119103412id_/https://www.casio.com/in/watches/casio/product.MW-240-4BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-4bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231119103412id_/https://www.casio.com/in/watches/casio/product.MW-240-4BV/'
+    discontinued: false
+  - id: mw-240-7bv
+    ref: MW-240-7BV
+    source:
+      { url: 'https://web.archive.org/web/20241127012914id_/https://www.casio.com/intl/watches/casio/product.MW-240-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241127012914id_/https://www.casio.com/intl/watches/casio/product.MW-240-7BV/'
+    discontinued: false
+  - id: mw-240-7e3v
+    ref: MW-240-7E3V
+    source:
+      { url: 'https://web.archive.org/web/20240715071052id_/https://www.casio.com/europe/watches/casio/product.MW-240-7E3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-7e3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715071052id_/https://www.casio.com/europe/watches/casio/product.MW-240-7E3V/'
+    discontinued: false
+  - id: mw-240-7ev
+    ref: MW-240-7EV
+    source:
+      { url: 'https://web.archive.org/web/20240715102428id_/https://www.casio.com/europe/watches/casio/product.MW-240-7EV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-7ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102428id_/https://www.casio.com/europe/watches/casio/product.MW-240-7EV/'
+    discontinued: false
+  - id: mw-240-9e3v
+    ref: MW-240-9E3V
+    source:
+      { url: 'https://web.archive.org/web/20240715071045id_/https://www.casio.com/europe/watches/casio/product.MW-240-9E3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240-9e3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715071045id_/https://www.casio.com/europe/watches/casio/product.MW-240-9E3V/'
+    discontinued: false
+  - id: mw-240b-3bv
+    ref: MW-240B-3BV
+    source:
+      { url: 'https://web.archive.org/web/20240119144158id_/https://www.casio.com/us/watches/casio/product.MW-240B-3BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 30, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240b-3bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144158id_/https://www.casio.com/us/watches/casio/product.MW-240B-3BV/'
+    discontinued: false
+  - id: mw-240b-5bv
+    ref: MW-240B-5BV
+    source:
+      { url: 'https://web.archive.org/web/20231216203435id_/https://www.casio.com/us/watches/casio/product.MW-240B-5BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 30, material: 'Resin' }
+    water_resistance_m: 50
+    image: mw-240b-5bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231216203435id_/https://www.casio.com/us/watches/casio/product.MW-240B-5BV/'
+    discontinued: false
