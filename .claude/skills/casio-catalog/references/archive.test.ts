@@ -2,7 +2,7 @@
 // be wrong is silent — a plausible file under the wrong reference renders
 // perfectly and nothing goes red. These are the four ways it was wrong.
 import { describe, expect, it } from 'vitest'
-import { imageUrl } from './archive.ts'
+import { decideLine, imageUrl } from './archive.ts'
 
 const DAM = '/content/dam/casio/product-info/locales/intl/en/timepiece/product/watch'
 
@@ -54,5 +54,30 @@ describe('imageUrl', () => {
     // it are crops and a photograph of somebody's wrist.
     const html = pageWith('SHE-4554GYM-8AU.png', 'SHE-4554GYM-8A_model-cut.jpg')
     expect(imageUrl(html, 'SHE-4554GYM-8A')).toContain('SHE-4554GYM-8AU.png')
+  })
+})
+
+describe('decideLine — which line the archive files a reference under', () => {
+  it('takes the segment with the most captures', () => {
+    // BSA-B100-1A: babyg in a dozen locales, edifice in one. Not a close call.
+    expect(decideLine(new Map([['babyg', 12], ['edifice', 1]]))).toBe('baby-g')
+  })
+
+  it('refuses the general casio roster a vote', () => {
+    // `casio` is Casio's whole roster — 1955 references across every line — so a
+    // headcount of it beats one of `gshock` on a G-SHOCK. Letting it vote made
+    // the guard refuse DW-5600E-1, the canonical square, as Vintage.
+    expect(decideLine(new Map([['casio', 20], ['gshock', 3]]))).toBe('g-shock')
+  })
+
+  it('still lets casio-vintage vote, because that path is a claim', () => {
+    expect(decideLine(new Map([['casio-vintage', 4], ['casio', 30]]))).toBe('vintage')
+  })
+
+  it('says nothing about a reference nothing has indexed', () => {
+    // Silence, not a guess: an unindexed line simply does not vote, and a
+    // reference with no votes is left alone rather than assigned.
+    expect(decideLine(undefined)).toBeNull()
+    expect(decideLine(new Map([['casio', 9]]))).toBeNull()
   })
 })

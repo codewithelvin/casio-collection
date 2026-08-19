@@ -241,10 +241,25 @@ export async function archivedFor(line: string): Promise<Map<string, Snapshot[]>
   return merged
 }
 
-/** casio.com's URL segment → this catalogue's line id, for the segments we crawl. */
+/**
+ * Segments that name a line, and the one that does not.
+ *
+ * **`casio` on its own is Casio's general roster — 1 955 references spanning
+ * every line — so it is evidence that a watch exists and no evidence at all of
+ * which line it is in.** Letting it vote made the guard refuse `DW-5600E-1`, the
+ * canonical G-SHOCK square, as belonging to Vintage: it appears under `casio` in
+ * more locales than under `gshock`, and a headcount of a roster that contains
+ * everything will always beat one that contains only the right answer.
+ *
+ * `casio/vintage` is a different thing and does vote — that path is a claim.
+ */
+const GENERAL_ROSTER = 'casio'
+
 const LINE_OF_SEGMENT = new Map(
   Object.entries(SEGMENTS).flatMap(([line, segments]) =>
-    segments.map((segment) => [segment.replace(/\//g, '-'), line] as const),
+    segments
+      .filter((segment) => segment !== GENERAL_ROSTER)
+      .map((segment) => [segment.replace(/\//g, '-'), line] as const),
   ),
 )
 
@@ -288,10 +303,24 @@ export function lineOfReference(ref: string): string | null {
       }
     }
   }
-  const votes = segmentVotes.get(ref.toUpperCase())
+  return decideLine(segmentVotes.get(ref.toUpperCase()))
+}
+
+/**
+ * Given how many captures each segment holds for a reference, which line is it?
+ *
+ * Separated from the counting because both bugs this has had were here and
+ * neither was in the counting: the general `casio` roster was allowed to vote
+ * and outvoted `gshock` on the canonical square, and before that the single
+ * `/tw/watches/edifice/` URL was taken at face value. Pure, so both are pinned
+ * by a test rather than by a crawl.
+ */
+export function decideLine(votes: Map<string, number> | undefined): string | null {
   if (!votes) return null
-  const [winner] = [...votes].sort((a, b) => b[1] - a[1])
-  return LINE_OF_SEGMENT.get(winner[0]) ?? null
+  const ranked = [...votes]
+    .filter(([segment]) => LINE_OF_SEGMENT.has(segment))
+    .sort((a, b) => b[1] - a[1])
+  return ranked.length > 0 ? (LINE_OF_SEGMENT.get(ranked[0][0]) ?? null) : null
 }
 
 /** A specification table worth the name. Below this the page is reported, not read. */
