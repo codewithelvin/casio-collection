@@ -38,6 +38,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240806043849id_/https://www.casio.com/my/watches/babyg/product.BGD-10-1/'
+    discontinued: false
   - id: bgd-10-3
     ref: BGD-10-3
     source:
@@ -48,6 +49,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250122115302id_/https://www.casio.com/id/watches/babyg/product.BGD-10-3/'
+    discontinued: false
   - id: bgd-10k-2
     ref: BGD-10K-2
     source:
@@ -63,6 +65,7 @@ models:
       url: 'https://web.archive.org/web/20240517001743id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-2/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0423-bgd-10k/'
+    discontinued: false
   - id: bgd-10k-4
     ref: BGD-10K-4
     source:
@@ -78,6 +81,7 @@ models:
       url: 'https://web.archive.org/web/20250118111429id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-4/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0423-bgd-10k/'
+    discontinued: false
   - id: bgd-10k-6
     ref: BGD-10K-6
     source:
@@ -93,6 +97,7 @@ models:
       url: 'https://web.archive.org/web/20250117203930id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-6/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0423-bgd-10k/'
+    discontinued: false
   - id: bgd-10k-7
     ref: BGD-10K-7
     source:
@@ -108,6 +113,7 @@ models:
       url: 'https://web.archive.org/web/20250118003525id_/https://www.casio.com/us/watches/babyg/product.BGD-10K-7/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0423-bgd-10k/'
+    discontinued: false
   - id: bgd-10kh-2c
     ref: BGD-10KH-2C
     source:
@@ -118,6 +124,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20251202170255id_/https://www.casio.com/nl/watches/babyg/product.BGD-10KH-2C/'
+    discontinued: false
   - id: bgd-10kh-4
     ref: BGD-10KH-4
     source:
@@ -128,6 +135,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20251130105418id_/https://www.casio.com/nl/watches/babyg/product.BGD-10KH-4/'
+    discontinued: false
   - id: bgd-10kkm-1
     ref: BGD-10KKM-1
     source:
@@ -141,6 +149,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250118015539id_/https://www.casio.com/us/watches/babyg/product.BGD-10KKM-1/'
+    discontinued: false
   - id: bgd-10kpp-7
     ref: BGD-10KPP-7
     source:
@@ -154,6 +163,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240829171606id_/https://www.casio.com/sg/watches/babyg/product.BGD-10KPP-7/'
+    discontinued: false
   - id: bgd-10l-2
     ref: BGD-10L-2
     source:
@@ -167,6 +177,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241217201800id_/https://www.casio.com/us/watches/babyg/product.BGD-10L-2/'
+    discontinued: false
   - id: bgd-10l-4
     ref: BGD-10L-4
     source:
@@ -180,6 +191,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241213080532id_/https://www.casio.com/us/watches/babyg/product.BGD-10L-4/'
+    discontinued: false
   - id: bgd-10l-7
     ref: BGD-10L-7
     source:
@@ -193,3 +205,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241122171026id_/https://www.casio.com/us/watches/babyg/product.BGD-10L-7/'
+    discontinued: false

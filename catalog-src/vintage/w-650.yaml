@@ -25,3 +25,4 @@ models:
     water_resistance_m: 100
     features: [multi-alarm, stopwatch, dual-time, countdown-timer]
     image: null
+    discontinued: true

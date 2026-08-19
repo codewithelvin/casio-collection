@@ -76,6 +76,7 @@ models:
     movement: solar-radio
     module: '3445'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-d1000arr-1
     ref: GWF-D1000ARR-1
     source:
@@ -87,6 +88,7 @@ models:
     movement: solar-radio
     module: '3445'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-d1000b-1
     ref: GWF-D1000B-1
     source:
@@ -103,6 +105,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210418033625id_/https://www.casio.com/jp/watches/gshock/product.GWF-D1000B-1/'
+    discontinued: false
   - id: gwf-d1000jcg-9
     ref: GWF-D1000JCG-9
     source:
@@ -114,6 +117,7 @@ models:
     movement: solar-radio
     module: '3445'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-d1000k-7
     ref: GWF-D1000K-7
     source:
@@ -125,6 +129,7 @@ models:
     movement: solar-radio
     module: '3445'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-d1000mb-3
     ref: GWF-D1000MB-3
     source:
@@ -136,6 +141,7 @@ models:
     movement: solar-radio
     module: '3445'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-d1000nv-2
     ref: GWF-D1000NV-2
     source:
@@ -147,3 +153,4 @@ models:
     movement: solar-radio
     module: '3445'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    discontinued: true

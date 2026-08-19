@@ -1,0 +1,59 @@
+# A159 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: a159
+  name: A159
+  line: vintage
+
+models:
+  - id: a159wad-1
+    ref: A159WAD-1
+    source:
+      { url: 'https://web.archive.org/web/20230512210707id_/https://www.casio.com/sg/watches/casio/product.A159WAD-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 36.8, width_mm: 33.2, depth_mm: 9.7, weight_g: 45, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a159wad-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230512210707id_/https://www.casio.com/sg/watches/casio/product.A159WAD-1/'
+    discontinued: true
+  - id: a159wgea-1
+    ref: A159WGEA-1
+    source:
+      { url: 'https://web.archive.org/web/20240714215850id_/https://www.casio.com/europe/watches/casio/vintage/product.A159WGEA-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 36.8, width_mm: 33.2, depth_mm: 8.2, weight_g: 44, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a159wgea-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215850id_/https://www.casio.com/europe/watches/casio/vintage/product.A159WGEA-1/'
+    discontinued: false
+  - id: a159wged-1
+    ref: A159WGED-1
+    source:
+      { url: 'https://web.archive.org/web/20220620020007id_/https://www.casio.com/ph/watches/casio/product.A159WGED-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 36.8, width_mm: 33.2, depth_mm: 9.7, weight_g: 45, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a159wged-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220620020007id_/https://www.casio.com/ph/watches/casio/product.A159WGED-1/'
+    discontinued: true

@@ -76,6 +76,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220625104541id_/https://www.casio.com/us/watches/gshock/product.GWF-1000-1/'
+    discontinued: true
   - id: gwf-1000b-1
     ref: GWF-1000B-1
     source:
@@ -87,6 +88,7 @@ models:
     movement: solar-radio
     module: '3184'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-1000bp-1
     ref: GWF-1000BP-1
     source:
@@ -98,6 +100,7 @@ models:
     movement: solar-radio
     module: '3184'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-1000bs-1
     ref: GWF-1000BS-1
     source:
@@ -109,6 +112,7 @@ models:
     movement: solar-radio
     module: '3184'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-1000g-1
     ref: GWF-1000G-1
     source:
@@ -120,6 +124,7 @@ models:
     movement: solar-radio
     module: '3184'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-1000mm-1
     ref: GWF-1000MM-1
     source:
@@ -131,6 +136,7 @@ models:
     movement: solar-radio
     module: '3184'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-1000nv-2
     ref: GWF-1000NV-2
     source:
@@ -142,6 +148,7 @@ models:
     movement: solar-radio
     module: '3184'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-1000rd-4
     ref: GWF-1000RD-4
     source:
@@ -153,6 +160,7 @@ models:
     movement: solar-radio
     module: '3184'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-1000sr-4
     ref: GWF-1000SR-4
     source:
@@ -164,6 +172,7 @@ models:
     movement: solar-radio
     module: '3184'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gwf-1000tm-4
     ref: GWF-1000TM-4
     source:
@@ -175,3 +184,4 @@ models:
     movement: solar-radio
     module: '3184'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true

@@ -1,0 +1,45 @@
+# B650 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: b650
+  name: B650
+  line: vintage
+
+models:
+  - id: b650wb-1b
+    ref: B650WB-1B
+    source:
+      { url: 'https://web.archive.org/web/20240715101430id_/https://www.casio.com/europe/watches/casio/product.B650WB-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.1, width_mm: 41.2, depth_mm: 10.5, weight_g: 63, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: b650wb-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101430id_/https://www.casio.com/europe/watches/casio/product.B650WB-1B/'
+    discontinued: false
+  - id: b650wc-5a
+    ref: B650WC-5A
+    source:
+      { url: 'https://web.archive.org/web/20240707021035id_/https://www.casio.com/de/watches/casio/vintage/product.B650WC-5A/', kind: official }
+    features: [alarm]
+    image: b650wc-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240707021035id_/https://www.casio.com/de/watches/casio/vintage/product.B650WC-5A/'
+    discontinued: false

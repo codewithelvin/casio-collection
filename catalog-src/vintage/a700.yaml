@@ -1,0 +1,145 @@
+# A700 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: a700
+  name: A700
+  line: vintage
+
+models:
+  - id: a700w-1a
+    ref: A700W-1A
+    source:
+      { url: 'https://web.archive.org/web/20240506111428id_/https://www.casio.com/my/watches/casio/product.A700W-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 50, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
+    image: a700w-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240506111428id_/https://www.casio.com/my/watches/casio/product.A700W-1A/'
+    discontinued: false
+  - id: a700we-1a
+    ref: A700WE-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714215822id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WE-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 50, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
+    image: a700we-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215822id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WE-1A/'
+    discontinued: false
+  - id: a700wem-7a
+    ref: A700WEM-7A
+    source:
+      { url: 'https://web.archive.org/web/20240714215827id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEM-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 53, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
+    image: a700wem-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215827id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEM-7A/'
+    discontinued: false
+  - id: a700wemg-9a
+    ref: A700WEMG-9A
+    source:
+      { url: 'https://web.archive.org/web/20240714215815id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEMG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 53, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
+    image: a700wemg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215815id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEMG-9A/'
+    discontinued: false
+  - id: a700wems-1b
+    ref: A700WEMS-1B
+    source:
+      { url: 'https://web.archive.org/web/20240714220130id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEMS-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 53, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
+    image: a700wems-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220130id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEMS-1B/'
+    discontinued: false
+  - id: a700wev-7a
+    ref: A700WEV-7A
+    source:
+      { url: 'https://web.archive.org/web/20240714220227id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEV-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 50, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
+    image: a700wev-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220227id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEV-7A/'
+    discontinued: false
+  - id: a700wevg-9a
+    ref: A700WEVG-9A
+    source:
+      { url: 'https://web.archive.org/web/20240714220229id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEVG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 50, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
+    image: a700wevg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220229id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEVG-9A/'
+    discontinued: false
+  - id: a700wg-9a
+    ref: A700WG-9A
+    source:
+      { url: 'https://web.archive.org/web/20220812144943id_/https://www.casio.com/intl/watches/casio/product.A700WG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 50, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
+    image: a700wg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220812144943id_/https://www.casio.com/intl/watches/casio/product.A700WG-9A/'
+    discontinued: false
+  - id: a700wm-7a
+    ref: A700WM-7A
+    source:
+      { url: 'https://web.archive.org/web/20250225200419id_/https://www.casio.com/sg/watches/casio/product.A700WM-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 53, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
+    image: a700wm-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250225200419id_/https://www.casio.com/sg/watches/casio/product.A700WM-7A/'
+    discontinued: false
+  - id: a700wmg-9a
+    ref: A700WMG-9A
+    source:
+      { url: 'https://web.archive.org/web/20220526115841id_/https://www.casio.com/us/watches/casio/product.A700WMG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 53, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
+    discontinued: false

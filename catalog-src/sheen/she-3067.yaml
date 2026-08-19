@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220629001400id_/https://www.casio.com/intl/watches/sheen/product.SHE-3067PG-7A/'
+    discontinued: false
   - id: she-3067pgl-7a
     ref: SHE-3067PGL-7A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220625210610id_/https://www.casio.com/intl/watches/sheen/product.SHE-3067PGL-7A/'
+    discontinued: false
   - id: she-3067pgl-7b
     ref: SHE-3067PGL-7B
     source:
@@ -69,3 +71,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220528195515id_/https://www.casio.com/intl/watches/sheen/product.SHE-3067PGL-7B/'
+    discontinued: false

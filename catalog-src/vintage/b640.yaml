@@ -1,0 +1,118 @@
+# B640 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: b640
+  name: B640
+  line: vintage
+
+models:
+  - id: b640wb-1a
+    ref: B640WB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714215926id_/https://www.casio.com/europe/watches/casio/vintage/product.B640WB-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 35, depth_mm: 9.4, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, flash-alert]
+    image: b640wb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215926id_/https://www.casio.com/europe/watches/casio/vintage/product.B640WB-1A/'
+    discontinued: false
+  - id: b640wb-1b
+    ref: B640WB-1B
+    source:
+      { url: 'https://web.archive.org/web/20240714215931id_/https://www.casio.com/europe/watches/casio/vintage/product.B640WB-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 35, depth_mm: 9.4, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, flash-alert]
+    image: b640wb-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215931id_/https://www.casio.com/europe/watches/casio/vintage/product.B640WB-1B/'
+    discontinued: false
+  - id: b640wbg-1b
+    ref: B640WBG-1B
+    source:
+      { url: 'https://web.archive.org/web/20230217215256id_/https://www.casio.com/in/watches/casio/product.B640WBG-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 35, depth_mm: 9.9, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, flash-alert]
+    image: b640wbg-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230217215256id_/https://www.casio.com/in/watches/casio/product.B640WBG-1B/'
+    discontinued: false
+  - id: b640wc-5a
+    ref: B640WC-5A
+    source:
+      { url: 'https://web.archive.org/web/20240714215924id_/https://www.casio.com/europe/watches/casio/vintage/product.B640WC-5A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 35, depth_mm: 9.4, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, flash-alert]
+    image: b640wc-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215924id_/https://www.casio.com/europe/watches/casio/vintage/product.B640WC-5A/'
+    discontinued: false
+  - id: b640wcg-5
+    ref: B640WCG-5
+    source:
+      { url: 'https://web.archive.org/web/20240715070810id_/https://www.casio.com/europe/watches/casio/product.B640WCG-5/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 35, depth_mm: 9.9, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, flash-alert]
+    image: b640wcg-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715070810id_/https://www.casio.com/europe/watches/casio/product.B640WCG-5/'
+    discontinued: false
+  - id: b640wdg-7
+    ref: B640WDG-7
+    source:
+      { url: 'https://web.archive.org/web/20220812130419id_/https://www.casio.com/intl/watches/casio/product.B640WDG-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 35, depth_mm: 9.9, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, flash-alert]
+    image: b640wdg-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220812130419id_/https://www.casio.com/intl/watches/casio/product.B640WDG-7/'
+    discontinued: false
+  - id: b640wgg-9
+    ref: B640WGG-9
+    source:
+      { url: 'https://web.archive.org/web/20220817214059id_/https://www.casio.com/intl/watches/casio/product.B640WGG-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.9, width_mm: 35, depth_mm: 9.9, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, flash-alert]
+    image: b640wgg-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220817214059id_/https://www.casio.com/intl/watches/casio/product.B640WGG-9/'
+    discontinued: false

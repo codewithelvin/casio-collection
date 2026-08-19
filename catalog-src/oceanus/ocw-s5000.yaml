@@ -40,6 +40,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220603223109id_/https://www.casio.com/us/watches/oceanus/product.OCW-S5000APA-2A/'
+    discontinued: false
   - id: ocw-s5000b-1a
     ref: OCW-S5000B-1A
     source:
@@ -53,6 +54,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220603223109id_/https://www.casio.com/us/watches/oceanus/product.OCW-S5000B-1A/'
+    discontinued: false
   - id: ocw-s5000ek-1a
     ref: OCW-S5000EK-1A
     source:
@@ -66,6 +68,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220810112135id_/https://www.casio.com/us/watches/oceanus/product.OCW-S5000EK-1A/'
+    discontinued: false
   - id: ocw-s5000f-2a
     ref: OCW-S5000F-2A
     source:
@@ -79,6 +82,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230117213034id_/https://www.casio.com/us/watches/oceanus/product.OCW-S5000F-2A/'
+    discontinued: false
   - id: ocw-s5000mb-1a
     ref: OCW-S5000MB-1A
     source:
@@ -92,6 +96,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221216024030id_/https://www.casio.com/us/watches/oceanus/product.OCW-S5000MB-1A/'
+    discontinued: false
   - id: ocw-s5000me-1a
     ref: OCW-S5000ME-1A
     source:
@@ -105,3 +110,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220603223109id_/https://www.casio.com/us/watches/oceanus/product.OCW-S5000ME-1A/'
+    discontinued: false

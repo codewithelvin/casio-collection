@@ -31,6 +31,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240915200419id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610BB-1/'
+    discontinued: false
   - id: gmd-s5610it-1
     ref: GMD-S5610IT-1
     source:
@@ -46,6 +47,7 @@ models:
       url: 'https://web.archive.org/web/20250118081707id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-1/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/1003-gmds5610it/'
+    discontinued: true
   - id: gmd-s5610it-3
     ref: GMD-S5610IT-3
     source:
@@ -61,6 +63,7 @@ models:
       url: 'https://web.archive.org/web/20250122191201id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-3/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/1003-gmds5610it/'
+    discontinued: true
   - id: gmd-s5610it-4a
     ref: GMD-S5610IT-4A
     source:
@@ -76,6 +79,7 @@ models:
       url: 'https://web.archive.org/web/20250118013516id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-4A/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/1003-gmds5610it/'
+    discontinued: true
   - id: gmd-s5610it-4b
     ref: GMD-S5610IT-4B
     source:
@@ -91,6 +95,7 @@ models:
       url: 'https://web.archive.org/web/20250118093659id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-4B/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/1003-gmds5610it/'
+    discontinued: true
   - id: gmd-s5610it-6
     ref: GMD-S5610IT-6
     source:
@@ -106,6 +111,7 @@ models:
       url: 'https://web.archive.org/web/20250117232720id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-6/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/1003-gmds5610it/'
+    discontinued: true
   - id: gmd-s5610pk-4
     ref: GMD-S5610PK-4
     source:
@@ -119,6 +125,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241001180601id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610PK-4/'
+    discontinued: false
   - id: gmd-s5610pp-4
     ref: GMD-S5610PP-4
     source:
@@ -129,6 +136,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250413110716id_/https://www.casio.com/fr/watches/gshock/product.GMD-S5610PP-4/'
+    discontinued: false
   - id: gmd-s5610rs-8
     ref: GMD-S5610RS-8
     source:
@@ -142,3 +150,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241119223607id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5610RS-8/'
+    discontinued: true

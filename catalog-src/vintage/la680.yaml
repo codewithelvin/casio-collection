@@ -1,0 +1,258 @@
+# LA680 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: la680
+  name: LA680
+  line: vintage
+
+models:
+  - id: la680wa-1
+    ref: LA680WA-1
+    source:
+      { url: 'https://web.archive.org/web/20220518135828id_/https://www.casio.com/intl/watches/casio/product.LA680WA-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wa-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518135828id_/https://www.casio.com/intl/watches/casio/product.LA680WA-1/'
+    discontinued: false
+  - id: la680wa-1b
+    ref: LA680WA-1B
+    source:
+      { url: 'https://web.archive.org/web/20220626042829id_/https://www.casio.com/intl/watches/casio/product.LA680WA-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wa-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626042829id_/https://www.casio.com/intl/watches/casio/product.LA680WA-1B/'
+    discontinued: false
+  - id: la680wa-2c
+    ref: LA680WA-2C
+    source:
+      { url: 'https://web.archive.org/web/20220520233606id_/https://www.casio.com/intl/watches/casio/product.LA680WA-2C/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wa-2c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220520233606id_/https://www.casio.com/intl/watches/casio/product.LA680WA-2C/'
+    discontinued: false
+  - id: la680wa-4c
+    ref: LA680WA-4C
+    source:
+      { url: 'https://web.archive.org/web/20240312135822id_/https://www.casio.com/in/watches/casio/product.LA680WA-4C/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wa-4c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240312135822id_/https://www.casio.com/in/watches/casio/product.LA680WA-4C/'
+    discontinued: false
+  - id: la680wa-7
+    ref: LA680WA-7
+    source:
+      { url: 'https://web.archive.org/web/20220626050117id_/https://www.casio.com/intl/watches/casio/product.LA680WA-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wa-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626050117id_/https://www.casio.com/intl/watches/casio/product.LA680WA-7/'
+    discontinued: false
+  - id: la680wea-7
+    ref: LA680WEA-7
+    source:
+      { url: 'https://web.archive.org/web/20240714215940id_/https://www.casio.com/europe/watches/casio/vintage/product.LA680WEA-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wea-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215940id_/https://www.casio.com/europe/watches/casio/vintage/product.LA680WEA-7/'
+    discontinued: false
+  - id: la680wega-1
+    ref: LA680WEGA-1
+    source:
+      { url: 'https://web.archive.org/web/20240707021714id_/https://www.casio.com/de/watches/casio/vintage/product.LA680WEGA-1/', kind: official }
+    features: [alarm]
+    image: la680wega-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240707021714id_/https://www.casio.com/de/watches/casio/vintage/product.LA680WEGA-1/'
+    discontinued: false
+  - id: la680wega-9
+    ref: LA680WEGA-9
+    source:
+      { url: 'https://web.archive.org/web/20240714215944id_/https://www.casio.com/europe/watches/casio/vintage/product.LA680WEGA-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wega-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215944id_/https://www.casio.com/europe/watches/casio/vintage/product.LA680WEGA-9/'
+    discontinued: false
+  - id: la680wegb-1a
+    ref: LA680WEGB-1A
+    source:
+      { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.LA680WEGB-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wegb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.LA680WEGB-1A/'
+    discontinued: true
+  - id: la680wegl-5
+    ref: LA680WEGL-5
+    source:
+      { url: 'https://web.archive.org/web/20240715102710id_/https://www.casio.com/europe/watches/casio/product.LA680WEGL-5/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 15, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wegl-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102710id_/https://www.casio.com/europe/watches/casio/product.LA680WEGL-5/'
+    discontinued: false
+  - id: la680wegv-9a
+    ref: LA680WEGV-9A
+    source:
+      { url: 'https://web.archive.org/web/20250407153117id_/https://www.casio.com/de/watches/casio/vintage/product.LA680WEGV-9A/', kind: official }
+    features: [alarm]
+    image: la680wegv-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250407153117id_/https://www.casio.com/de/watches/casio/vintage/product.LA680WEGV-9A/'
+    discontinued: false
+  - id: la680wel-3
+    ref: LA680WEL-3
+    source:
+      { url: 'https://web.archive.org/web/20240714220221id_/https://www.casio.com/europe/watches/casio/vintage/product.LA680WEL-3/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 15, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wel-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220221id_/https://www.casio.com/europe/watches/casio/vintage/product.LA680WEL-3/'
+    discontinued: false
+  - id: la680wel-8
+    ref: LA680WEL-8
+    source:
+      { url: 'https://web.archive.org/web/20240714220224id_/https://www.casio.com/europe/watches/casio/vintage/product.LA680WEL-8/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 15, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wel-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220224id_/https://www.casio.com/europe/watches/casio/vintage/product.LA680WEL-8/'
+    discontinued: false
+  - id: la680wga-1
+    ref: LA680WGA-1
+    source:
+      { url: 'https://web.archive.org/web/20241006163151id_/https://www.casio.com/in/watches/casio/product.LA680WGA-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wga-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241006163151id_/https://www.casio.com/in/watches/casio/product.LA680WGA-1/'
+    discontinued: false
+  - id: la680wga-1b
+    ref: LA680WGA-1B
+    source:
+      { url: 'https://web.archive.org/web/20220528005719id_/https://www.casio.com/intl/watches/casio/product.LA680WGA-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wga-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220528005719id_/https://www.casio.com/intl/watches/casio/product.LA680WGA-1B/'
+    discontinued: false
+  - id: la680wga-4c
+    ref: LA680WGA-4C
+    source:
+      { url: 'https://web.archive.org/web/20220625080058id_/https://www.casio.com/intl/watches/casio/product.LA680WGA-4C/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wga-4c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625080058id_/https://www.casio.com/intl/watches/casio/product.LA680WGA-4C/'
+    discontinued: false
+  - id: la680wga-9
+    ref: LA680WGA-9
+    source:
+      { url: 'https://web.archive.org/web/20221001145511id_/https://www.casio.com/us/watches/casio/product.LA680WGA-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    discontinued: false
+  - id: la680wga-9b
+    ref: LA680WGA-9B
+    source:
+      { url: 'https://web.archive.org/web/20220523123531id_/https://www.casio.com/intl/watches/casio/product.LA680WGA-9B/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wga-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220523123531id_/https://www.casio.com/intl/watches/casio/product.LA680WGA-9B/'
+    discontinued: false
+  - id: la680wga-9c
+    ref: LA680WGA-9C
+    source:
+      { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.LA680WGA-9C/', kind: official }
+    movement: quartz
+    case: { height_mm: 33.5, width_mm: 28.6, depth_mm: 8.6, weight_g: 36, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: la680wga-9c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.LA680WGA-9C/'
+    discontinued: true

@@ -29,3 +29,4 @@ models:
       author: The Digital Watch Library
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-w-60u'
+    discontinued: true

@@ -1,0 +1,65 @@
+# AQ-230 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: aq-230
+  name: AQ-230
+  line: vintage
+
+models:
+  - id: aq-230egg-2a
+    ref: AQ-230EGG-2A
+    source:
+      { url: 'https://web.archive.org/web/20250407152927id_/https://www.casio.com/de/watches/casio/vintage/product.AQ-230EGG-2A/', kind: official }
+    features: [alarm]
+    image: aq-230egg-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250407152927id_/https://www.casio.com/de/watches/casio/vintage/product.AQ-230EGG-2A/'
+    discontinued: false
+  - id: aq-230ga-9
+    ref: AQ-230GA-9
+    source:
+      { url: 'https://web.archive.org/web/20221118184943id_/https://www.casio.com/us/watches/casio/product.AQ-230GA-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 29.8, depth_mm: 8.1, weight_g: 45, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
+    discontinued: false
+  - id: aq-230gg-2a
+    ref: AQ-230GG-2A
+    source:
+      { url: 'https://web.archive.org/web/20230727184933id_/https://www.casio.com/in/watches/casio/product.AQ-230GG-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 29.8, depth_mm: 8.1, weight_g: 47, material: 'Resin / Black chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
+    image: aq-230gg-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230727184933id_/https://www.casio.com/in/watches/casio/product.AQ-230GG-2A/'
+    discontinued: false
+  - id: aq-230gg-9a
+    ref: AQ-230GG-9A
+    source:
+      { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.AQ-230GG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 29.8, depth_mm: 8.1, weight_g: 47, material: 'Resin / Black chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
+    image: aq-230gg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.AQ-230GG-9A/'
+    discontinued: false

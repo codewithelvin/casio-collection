@@ -40,6 +40,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4544BD-1A/'
+    discontinued: false
   - id: she-4544d-7a
     ref: SHE-4544D-7A
     source:
@@ -53,6 +54,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001042358id_/https://www.casio.com/sg/watches/sheen/product.SHE-4544D-7A/'
+    discontinued: false
   - id: she-4544g-9a
     ref: SHE-4544G-9A
     source:
@@ -66,6 +68,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220525204349id_/https://www.casio.com/intl/watches/sheen/product.SHE-4544G-9A/'
+    discontinued: false
   - id: she-4544pg-4a
     ref: SHE-4544PG-4A
     source:
@@ -79,3 +82,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001040923id_/https://www.casio.com/sg/watches/sheen/product.SHE-4544PG-4A/'
+    discontinued: false

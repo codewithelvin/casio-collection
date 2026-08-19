@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001043750id_/https://www.casio.com/sg/watches/sheen/product.SHE-4546PG-3A/'
+    discontinued: false
   - id: she-4546pg-4a
     ref: SHE-4546PG-4A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001043750id_/https://www.casio.com/sg/watches/sheen/product.SHE-4546PG-4A/'
+    discontinued: false
   - id: she-4546pgl-2a
     ref: SHE-4546PGL-2A
     source:
@@ -69,6 +71,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220523105822id_/https://www.casio.com/intl/watches/sheen/product.SHE-4546PGL-2A/'
+    discontinued: false
   - id: she-4546pgl-6a
     ref: SHE-4546PGL-6A
     source:
@@ -83,3 +86,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220528071939id_/https://www.casio.com/intl/watches/sheen/product.SHE-4546PGL-6A/'
+    discontinued: false

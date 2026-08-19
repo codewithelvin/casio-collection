@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220519032157id_/https://www.casio.com/intl/watches/sheen/product.SHE-4059M-4A/'
+    discontinued: false
   - id: she-4059pgm-2a
     ref: SHE-4059PGM-2A
     source:
@@ -55,3 +56,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220525052435id_/https://www.casio.com/intl/watches/sheen/product.SHE-4059PGM-2A/'
+    discontinued: false

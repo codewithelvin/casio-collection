@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001040751id_/https://www.casio.com/sg/watches/sheen/product.SHE-4548D-2A/'
+    discontinued: false
   - id: she-4548g-2a
     ref: SHE-4548G-2A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001043749id_/https://www.casio.com/sg/watches/sheen/product.SHE-4548G-2A/'
+    discontinued: false
   - id: she-4548pg-4a
     ref: SHE-4548PG-4A
     source:
@@ -69,6 +71,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001040812id_/https://www.casio.com/sg/watches/sheen/product.SHE-4548PG-4A/'
+    discontinued: false
   - id: she-4548pgl-4a
     ref: SHE-4548PGL-4A
     source:
@@ -83,3 +86,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220702140755id_/https://www.casio.com/intl/watches/sheen/product.SHE-4548PGL-4A/'
+    discontinued: false

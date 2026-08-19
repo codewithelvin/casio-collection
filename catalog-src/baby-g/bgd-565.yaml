@@ -60,6 +60,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220401id_/https://www.casio.com/europe/watches/babyg/product.BGD-565-1/'
+    discontinued: false
   - id: bgd-565-4
     ref: BGD-565-4
     source:
@@ -76,6 +77,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220408id_/https://www.casio.com/europe/watches/babyg/product.BGD-565-4/'
+    discontinued: false
   - id: bgd-565-7
     ref: BGD-565-7
     source:
@@ -92,6 +94,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220405id_/https://www.casio.com/europe/watches/babyg/product.BGD-565-7/'
+    discontinued: false
   - id: bgd-565cs-7
     ref: BGD-565CS-7
     source:
@@ -108,6 +111,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220310id_/https://www.casio.com/de/watches/babyg/product.BGD-565CS-7/'
+    discontinued: false
   - id: bgd-565gc-2
     ref: BGD-565GC-2
     source:
@@ -119,6 +123,7 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    discontinued: false
   - id: bgd-565gc-4
     ref: BGD-565GC-4
     source:
@@ -130,6 +135,7 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    discontinued: false
   - id: bgd-565gc-7
     ref: BGD-565GC-7
     source:
@@ -141,6 +147,7 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    discontinued: false
   - id: bgd-565gs-1
     ref: BGD-565GS-1
     source:
@@ -157,6 +164,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240219161613id_/https://www.casio.com/intl/watches/babyg/product.BGD-565GS-1/'
+    discontinued: false
   - id: bgd-565gs-6
     ref: BGD-565GS-6
     source:
@@ -173,6 +181,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240219161650id_/https://www.casio.com/intl/watches/babyg/product.BGD-565GS-6/'
+    discontinued: false
   - id: bgd-565gs-9
     ref: BGD-565GS-9
     source:
@@ -189,6 +198,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240219161641id_/https://www.casio.com/intl/watches/babyg/product.BGD-565GS-9/'
+    discontinued: false
   - id: bgd-565krs-7
     ref: BGD-565KRS-7
     source:
@@ -205,6 +215,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240516180416id_/https://www.casio.com/us/watches/babyg/product.BGD-565KRS-7/'
+    discontinued: false
   - id: bgd-565kt-7
     ref: BGD-565KT-7
     source:
@@ -221,6 +232,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240202152246id_/https://www.casio.com/de/watches/babyg/product.BGD-565KT-7/'
+    discontinued: false
   - id: bgd-565rp-2
     ref: BGD-565RP-2
     source:
@@ -237,6 +249,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240206101645id_/https://www.casio.com/intl/watches/babyg/product.BGD-565RP-2/'
+    discontinued: false
   - id: bgd-565rp-4
     ref: BGD-565RP-4
     source:
@@ -253,6 +266,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231103194840id_/https://www.casio.com/intl/watches/babyg/product.BGD-565RP-4/'
+    discontinued: false
   - id: bgd-565rp-7
     ref: BGD-565RP-7
     source:
@@ -269,6 +283,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240206101645id_/https://www.casio.com/intl/watches/babyg/product.BGD-565RP-7/'
+    discontinued: false
   - id: bgd-565s-7
     ref: BGD-565S-7
     source:
@@ -285,6 +300,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220315id_/https://www.casio.com/de/watches/babyg/product.BGD-565S-7/'
+    discontinued: false
   - id: bgd-565sc-1
     ref: BGD-565SC-1
     source:
@@ -296,6 +312,7 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    discontinued: false
   - id: bgd-565sc-2
     ref: BGD-565SC-2
     source:
@@ -312,6 +329,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220303id_/https://www.casio.com/de/watches/babyg/product.BGD-565SC-2/'
+    discontinued: false
   - id: bgd-565sc-2b
     ref: BGD-565SC-2B
     source:
@@ -323,6 +341,7 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    discontinued: false
   - id: bgd-565sc-3
     ref: BGD-565SC-3
     source:
@@ -339,6 +358,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220246id_/https://www.casio.com/de/watches/babyg/product.BGD-565SC-3/'
+    discontinued: false
   - id: bgd-565sc-4
     ref: BGD-565SC-4
     source:
@@ -355,6 +375,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220251id_/https://www.casio.com/de/watches/babyg/product.BGD-565SC-4/'
+    discontinued: false
   - id: bgd-565sc-4b
     ref: BGD-565SC-4B
     source:
@@ -366,6 +387,7 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    discontinued: false
   - id: bgd-565sj-2
     ref: BGD-565SJ-2
     source:
@@ -382,6 +404,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240817234659id_/https://www.casio.com/us/watches/babyg/product.BGD-565SJ-2/'
+    discontinued: false
   - id: bgd-565sj-7
     ref: BGD-565SJ-7
     source:
@@ -398,6 +421,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220357id_/https://www.casio.com/de/watches/babyg/product.BGD-565SJ-7/'
+    discontinued: false
   - id: bgd-565sj-9
     ref: BGD-565SJ-9
     source:
@@ -414,6 +438,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240921100351id_/https://www.casio.com/us/watches/babyg/product.BGD-565SJ-9/'
+    discontinued: false
   - id: bgd-565slc-9
     ref: BGD-565SLC-9
     source:
@@ -430,6 +455,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127170521id_/https://www.casio.com/de/watches/babyg/product.BGD-565SLC-9/'
+    discontinued: false
   - id: bgd-565tw-5
     ref: BGD-565TW-5
     source:
@@ -446,6 +472,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220255id_/https://www.casio.com/de/watches/babyg/product.BGD-565TW-5/'
+    discontinued: false
   - id: bgd-565u-1
     ref: BGD-565U-1
     source:
@@ -462,6 +489,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220344id_/https://www.casio.com/de/watches/babyg/product.BGD-565U-1/'
+    discontinued: false
   - id: bgd-565u-4
     ref: BGD-565U-4
     source:
@@ -478,6 +506,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220347id_/https://www.casio.com/de/watches/babyg/product.BGD-565U-4/'
+    discontinued: false
   - id: bgd-565u-7
     ref: BGD-565U-7
     source:
@@ -494,6 +523,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220352id_/https://www.casio.com/de/watches/babyg/product.BGD-565U-7/'
+    discontinued: false
   - id: bgd-565us-7
     ref: BGD-565US-7
     source:
@@ -510,6 +540,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220349id_/https://www.casio.com/de/watches/babyg/product.BGD-565US-7/'
+    discontinued: false
   - id: bgd-565usw-5
     ref: BGD-565USW-5
     source:
@@ -526,6 +557,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221015122815id_/https://www.casio.com/sg/watches/babyg/product.BGD-565USW-5/'
+    discontinued: false
   - id: bgd-565xg-2
     ref: BGD-565XG-2
     source:
@@ -542,3 +574,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221216022802id_/https://www.casio.com/in/watches/babyg/product.BGD-565XG-2/'
+    discontinued: false

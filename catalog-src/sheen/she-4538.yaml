@@ -40,6 +40,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001042737id_/https://www.casio.com/sg/watches/sheen/product.SHE-4538GL-7A/'
+    discontinued: false
   - id: she-4538gl-7b
     ref: SHE-4538GL-7B
     source:
@@ -53,6 +54,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001040931id_/https://www.casio.com/sg/watches/sheen/product.SHE-4538GL-7B/'
+    discontinued: false
   - id: she-4538pg-4a
     ref: SHE-4538PG-4A
     source:
@@ -66,3 +68,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001042541id_/https://www.casio.com/sg/watches/sheen/product.SHE-4538PG-4A/'
+    discontinued: false

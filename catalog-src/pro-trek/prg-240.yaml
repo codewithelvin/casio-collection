@@ -60,6 +60,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722125706id_/https://www.casio.com/id/watches/protrek/product.PRG-240-1/'
+    discontinued: false
   - id: prg-240-3
     ref: PRG-240-3
     source:
@@ -76,6 +77,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221459id_/https://www.casio.com/europe/watches/protrek/product.PRG-240-3/'
+    discontinued: false
   - id: prg-240-5
     ref: PRG-240-5
     source:
@@ -92,6 +94,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240717155648id_/https://www.casio.com/fr/watches/protrek/product.PRG-240-5/'
+    discontinued: false
   - id: prg-240t-7
     ref: PRG-240T-7
     source:
@@ -108,3 +111,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240717155614id_/https://www.casio.com/fr/watches/protrek/product.PRG-240T-7/'
+    discontinued: false

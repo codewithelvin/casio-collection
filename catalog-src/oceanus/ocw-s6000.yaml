@@ -40,6 +40,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220603223109id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000-1A/'
+    discontinued: false
   - id: ocw-s6000bv-1a
     ref: OCW-S6000BV-1A
     source:
@@ -53,6 +54,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241229110333id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000BV-1A/'
+    discontinued: false
   - id: ocw-s6000jc-2a
     ref: OCW-S6000JC-2A
     source:
@@ -66,6 +68,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231226141530id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000JC-2A/'
+    discontinued: false
   - id: ocw-s6000sw-2a
     ref: OCW-S6000SW-2A
     source:
@@ -79,3 +82,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230825074523id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000SW-2A/'
+    discontinued: false

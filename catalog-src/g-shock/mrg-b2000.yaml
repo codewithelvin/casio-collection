@@ -32,6 +32,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064531id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A/'
+    discontinued: false
   - id: mrg-b2000b-1a1
     ref: MRG-B2000B-1A1
     source:
@@ -46,6 +47,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064509id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A1/'
+    discontinued: false
   - id: mrg-b2000b-1a4
     ref: MRG-B2000B-1A4
     source:
@@ -60,6 +62,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064515id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A4/'
+    discontinued: false
   - id: mrg-b2000bs-3a
     ref: MRG-B2000BS-3A
     source:
@@ -74,6 +77,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064526id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000BS-3A/'
+    discontinued: false
   - id: mrg-b2000d-1a
     ref: MRG-B2000D-1A
     source:
@@ -88,6 +92,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064536id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000D-1A/'
+    discontinued: false
   - id: mrg-b2000ga-1a
     ref: MRG-B2000GA-1A
     source:
@@ -102,6 +107,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064521id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000GA-1A/'
+    discontinued: false
   - id: mrg-b2000js-1a
     ref: MRG-B2000JS-1A
     source:
@@ -118,6 +124,7 @@ models:
       url: 'https://web.archive.org/web/20241127024501id_/https://www.casio.com/us/watches/gshock/product.MRG-B2000JS-1A/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/1024-mrgb2000js/'
+    discontinued: false
   - id: mrg-b2000r-1a
     ref: MRG-B2000R-1A
     source:
@@ -132,6 +139,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220529013156id_/https://www.casio.com/us/watches/gshock/product.mrg-b2000r-1a/'
+    discontinued: false
   - id: mrg-b2000rg-3a
     ref: MRG-B2000RG-3A
     source:
@@ -143,6 +151,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20251114200529id_/https://www.casio.com/de/watches/gshock/product.MRG-B2000RG-3A/'
+    discontinued: false
   - id: mrg-b2000sg-1a
     ref: MRG-B2000SG-1A
     source:
@@ -157,6 +166,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231218233618id_/https://www.casio.com/my/watches/gshock/product.MRG-B2000SG-1A/'
+    discontinued: false
   - id: mrg-b2000sh-5a
     ref: MRG-B2000SH-5A
     source:
@@ -171,3 +181,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211028110113id_/https://www.casio.com/sg/watches/gshock/product.MRG-B2000SH-5A/'
+    discontinued: true

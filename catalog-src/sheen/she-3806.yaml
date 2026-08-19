@@ -40,6 +40,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221330id_/https://www.casio.com/europe/watches/sheen/product.SHE-3806D-7A/'
+    discontinued: false
   - id: she-3806pg-9a
     ref: SHE-3806PG-9A
     source:
@@ -53,3 +54,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221013124406id_/https://www.casio.com/in/watches/sheen/product.SHE-3806PG-9A/'
+    discontinued: true

@@ -54,6 +54,7 @@ models:
       author: Multicherry
       licence: cc-by-sa-4.0
       url: 'https://commons.wikimedia.org/wiki/File:Casio_F-91W_watch_(2023)_(front_closeup_-_time)_(minor_retouch).jpg'
+    discontinued: false
 
   - id: f-91wg-9
     ref: F-91WG-9
@@ -75,6 +76,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: true
 
   - id: f-91w-3
     ref: F-91W-3
@@ -96,6 +98,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: false
 
   # --- WC, the monochrome series ------------------------------------------
   - id: f-91wc-2a
@@ -118,6 +121,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: true
 
   - id: f-91wc-3
     ref: F-91WC-3
@@ -139,6 +143,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: true
 
   - id: f-91wc-4a
     ref: F-91WC-4A
@@ -160,6 +165,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: true
 
   - id: f-91wc-4a2
     ref: F-91WC-4A2
@@ -181,6 +187,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: true
 
   - id: f-91wc-8a
     ref: F-91WC-8A
@@ -202,6 +209,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: true
 
   - id: f-91wc-9a
     ref: F-91WC-9A
@@ -223,6 +231,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: true
 
   # --- WM, the metallic series --------------------------------------------
   - id: f-91wm-1b
@@ -245,6 +254,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: false
 
   - id: f-91wm-2a
     ref: F-91WM-2A
@@ -266,6 +276,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: false
 
   - id: f-91wm-3a
     ref: F-91WM-3A
@@ -287,6 +298,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: false
 
   - id: f-91wm-7a
     ref: F-91WM-7A
@@ -308,6 +320,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: false
 
   - id: f-91wm-9a
     ref: F-91WM-9A
@@ -329,6 +342,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: false
 
   # --- WS, the translucent series -----------------------------------------
   - id: f-91ws-2
@@ -351,6 +365,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: false
 
   - id: f-91ws-4
     ref: F-91WS-4
@@ -372,6 +387,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: false
 
   - id: f-91ws-7
     ref: F-91WS-7
@@ -393,6 +409,7 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: false
 
   - id: f-91ws-8
     ref: F-91WS-8
@@ -414,3 +431,4 @@ models:
       author: Casio Restore
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
+    discontinued: false

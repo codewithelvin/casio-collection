@@ -88,6 +88,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065553id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100-1A/'
+    discontinued: false
   - id: gma-s2100-4a
     ref: GMA-S2100-4A
     source:
@@ -104,6 +105,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065603id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100-4A/'
+    discontinued: false
   - id: gma-s2100-4a2
     ref: GMA-S2100-4A2
     source:
@@ -120,6 +122,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065600id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100-4A2/'
+    discontinued: false
   - id: gma-s2100-7a
     ref: GMA-S2100-7A
     source:
@@ -136,6 +139,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065556id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100-7A/'
+    discontinued: false
   - id: gma-s2100ap-7a
     ref: GMA-S2100AP-7A
     source:
@@ -152,6 +156,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230324191611id_/https://www.casio.com/it/watches/gshock/product.GMA-S2100AP-7A/'
+    discontinued: true
   - id: gma-s2100ba-2a1
     ref: GMA-S2100BA-2A1
     source:
@@ -168,6 +173,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065544id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100BA-2A1/'
+    discontinued: false
   - id: gma-s2100ba-2a2
     ref: GMA-S2100BA-2A2
     source:
@@ -184,6 +190,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065541id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100BA-2A2/'
+    discontinued: false
   - id: gma-s2100ba-3a
     ref: GMA-S2100BA-3A
     source:
@@ -200,6 +207,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065547id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100BA-3A/'
+    discontinued: false
   - id: gma-s2100ba-4a
     ref: GMA-S2100BA-4A
     source:
@@ -216,6 +224,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065551id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100BA-4A/'
+    discontinued: false
   - id: gma-s2100bs-3a
     ref: GMA-S2100BS-3A
     source:
@@ -232,6 +241,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119142416id_/https://www.casio.com/us/watches/gshock/product.GMA-S2100BS-3A/'
+    discontinued: false
   - id: gma-s2100bs-4a
     ref: GMA-S2100BS-4A
     source:
@@ -248,6 +258,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064831id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100BS-4A/'
+    discontinued: false
   - id: gma-s2100bs-7a
     ref: GMA-S2100BS-7A
     source:
@@ -264,6 +275,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064826id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100BS-7A/'
+    discontinued: false
   - id: gma-s2100ga-1a
     ref: GMA-S2100GA-1A
     source:
@@ -280,6 +292,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119144324id_/https://www.casio.com/in/watches/gshock/product.GMA-S2100GA-1A/'
+    discontinued: false
   - id: gma-s2100ga-3a
     ref: GMA-S2100GA-3A
     source:
@@ -296,6 +309,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408194030id_/https://www.casio.com/us/watches/gshock/product.GMA-S2100GA-3A/'
+    discontinued: false
   - id: gma-s2100ga-7a
     ref: GMA-S2100GA-7A
     source:
@@ -312,6 +326,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119144006id_/https://www.casio.com/us/watches/gshock/product.GMA-S2100GA-7A/'
+    discontinued: false
   - id: gma-s2100lk-8a
     ref: GMA-S2100LK-8A
     source:
@@ -323,6 +338,7 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    discontinued: true
   - id: gma-s2100md-1a
     ref: GMA-S2100MD-1A
     source:
@@ -339,6 +355,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231220030602id_/https://www.casio.com/de/watches/gshock/product.GMA-S2100MD-1A/'
+    discontinued: false
   - id: gma-s2100md-4a
     ref: GMA-S2100MD-4A
     source:
@@ -355,6 +372,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231221080026id_/https://www.casio.com/us/watches/gshock/product.GMA-S2100MD-4A/'
+    discontinued: false
   - id: gma-s2100md-7a
     ref: GMA-S2100MD-7A
     source:
@@ -371,6 +389,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231218210838id_/https://www.casio.com/de/watches/gshock/product.GMA-S2100MD-7A/'
+    discontinued: false
   - id: gma-s2100mnch-4a2
     ref: GMA-S2100MNCH-4A2
     source:
@@ -382,6 +401,7 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    discontinued: true
   - id: gma-s2100nc-4a
     ref: GMA-S2100NC-4A
     source:
@@ -398,6 +418,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240921090935id_/https://www.casio.com/us/watches/gshock/product.GMA-S2100NC-4A/'
+    discontinued: false
   - id: gma-s2100nc-4a2
     ref: GMA-S2100NC-4A2
     source:
@@ -414,6 +435,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240516180411id_/https://www.casio.com/us/watches/gshock/product.GMA-S2100NC-4A2/'
+    discontinued: false
   - id: gma-s2100nc-8a
     ref: GMA-S2100NC-8A
     source:
@@ -430,6 +452,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240921090935id_/https://www.casio.com/us/watches/gshock/product.GMA-S2100NC-8A/'
+    discontinued: false
   - id: gma-s2100p-4a
     ref: GMA-S2100P-4A
     source:
@@ -446,6 +469,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231004141421id_/https://www.casio.com/us/watches/gshock/product.GMA-S2100P-4A/'
+    discontinued: false
   - id: gma-s2100rb-1a
     ref: GMA-S2100RB-1A
     source:
@@ -462,6 +486,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231216203435id_/https://www.casio.com/us/watches/gshock/product.GMA-S2100RB-1A/'
+    discontinued: false
   - id: gma-s2100sk-1a
     ref: GMA-S2100SK-1A
     source:
@@ -478,6 +503,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064412id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100SK-1A/'
+    discontinued: false
   - id: gma-s2100sk-2a
     ref: GMA-S2100SK-2A
     source:
@@ -494,6 +520,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064407id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100SK-2A/'
+    discontinued: false
   - id: gma-s2100sk-4a
     ref: GMA-S2100SK-4A
     source:
@@ -510,6 +537,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064415id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100SK-4A/'
+    discontinued: false
   - id: gma-s2100sk-7a
     ref: GMA-S2100SK-7A
     source:
@@ -526,6 +554,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064418id_/https://www.casio.com/europe/watches/gshock/product.GMA-S2100SK-7A/'
+    discontinued: false
   - id: gma-s2100ws-7a
     ref: GMA-S2100WS-7A
     source:
@@ -542,6 +571,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231209080725id_/https://www.casio.com/us/watches/gshock/product.GMA-S2100WS-7A/'
+    discontinued: false
   - id: gma-s2100wt-1a
     ref: GMA-S2100WT-1A
     source:
@@ -558,6 +588,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220522225135id_/https://www.casio.com/intl/watches/gshock/product.GMA-S2100WT-1A/'
+    discontinued: false
   - id: gma-s2100wt-7a1
     ref: GMA-S2100WT-7A1
     source:
@@ -574,6 +605,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220930102259id_/https://www.casio.com/in/watches/gshock/product.GMA-S2100WT-7A1/'
+    discontinued: false
   - id: gma-s2100wt-7a2
     ref: GMA-S2100WT-7A2
     source:
@@ -590,6 +622,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220516183807id_/https://www.casio.com/in/watches/gshock/product.GMA-S2100WT-7A2/'
+    discontinued: false
   - id: gma-s2100yu-7a
     ref: GMA-S2100YU-7A
     source:
@@ -606,3 +639,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220810013013id_/https://www.casio.com/tw/watches/gshock/product.GMA-S2100YU-7A/'
+    discontinued: true

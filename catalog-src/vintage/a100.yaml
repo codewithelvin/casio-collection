@@ -1,0 +1,111 @@
+# A100 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: a100
+  name: A100
+  line: vintage
+
+models:
+  - id: a100we-7b
+    ref: A100WE-7B
+    source:
+      { url: 'https://web.archive.org/web/20240714220219id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WE-7B/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.7, depth_mm: 9.2, weight_g: 53, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a100we-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220219id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WE-7B/'
+    discontinued: false
+  - id: a100wef-1a
+    ref: A100WEF-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715102948id_/https://www.casio.com/europe/watches/casio/product.A100WEF-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.7, depth_mm: 9.2, weight_g: 26, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a100wef-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102948id_/https://www.casio.com/europe/watches/casio/product.A100WEF-1A/'
+    discontinued: false
+  - id: a100wef-3a
+    ref: A100WEF-3A
+    source:
+      { url: 'https://web.archive.org/web/20240714220118id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WEF-3A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.7, depth_mm: 9.2, weight_g: 26, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a100wef-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220118id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WEF-3A/'
+    discontinued: false
+  - id: a100wef-8a
+    ref: A100WEF-8A
+    source:
+      { url: 'https://web.archive.org/web/20240714220211id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WEF-8A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.7, depth_mm: 9.2, weight_g: 26, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a100wef-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220211id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WEF-8A/'
+    discontinued: false
+  - id: a100wefg-9a
+    ref: A100WEFG-9A
+    source:
+      { url: 'https://web.archive.org/web/20231023225541id_/https://www.casio.com/in/watches/casio/product.A100WEFG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.7, depth_mm: 9.2, weight_g: 26, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a100wefg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231023225541id_/https://www.casio.com/in/watches/casio/product.A100WEFG-9A/'
+    discontinued: false
+  - id: a100wel-1a
+    ref: A100WEL-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220216id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WEL-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.7, depth_mm: 9.2, weight_g: 29, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a100wel-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220216id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WEL-1A/'
+    discontinued: false
+  - id: a100wepc-1b
+    ref: A100WEPC-1B
+    source:
+      { url: 'https://web.archive.org/web/20221118184943id_/https://www.casio.com/us/watches/casio/product.A100WEPC-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.7, depth_mm: 9.2, weight_g: 53, material: 'Resin / Black chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a100wepc-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221118184943id_/https://www.casio.com/us/watches/casio/product.A100WEPC-1B/'
+    discontinued: false

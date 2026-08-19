@@ -75,6 +75,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241006230830id_/https://www.casio.com/europe/watches/gshock/product.GM-2110D-2A/'
+    discontinued: false
   - id: gm-2110d-2b
     ref: GM-2110D-2B
     source:
@@ -91,6 +92,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240915200411id_/https://www.casio.com/us/watches/gshock/product.GM-2110D-2B/'
+    discontinued: false
   - id: gm-2110d-3a
     ref: GM-2110D-3A
     source:
@@ -107,6 +109,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GM-2110D-3A/'
+    discontinued: false
   - id: gm-2110d-3a1
     ref: GM-2110D-3A1
     source:
@@ -118,6 +121,7 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    discontinued: false
   - id: gm-2110d-4a
     ref: GM-2110D-4A
     source:
@@ -134,6 +138,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240924204718id_/https://www.casio.com/us/watches/gshock/product.GM-2110D-4A/'
+    discontinued: false
   - id: gm-2110d-7a
     ref: GM-2110D-7A
     source:
@@ -150,6 +155,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240915200605id_/https://www.casio.com/us/watches/gshock/product.GM-2110D-7A/'
+    discontinued: false
   - id: gm-2110d-8a
     ref: GM-2110D-8A
     source:
@@ -161,6 +167,7 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    discontinued: false
   - id: gm-2110sh-2a
     ref: GM-2110SH-2A
     source:
@@ -172,6 +179,7 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    discontinued: false
   - id: gm-2110sh-7a
     ref: GM-2110SH-7A
     source:
@@ -183,3 +191,4 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    discontinued: false

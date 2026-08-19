@@ -1,0 +1,212 @@
+# A1000 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: a1000
+  name: A1000
+  line: vintage
+
+models:
+  - id: a1000acd-7
+    ref: A1000ACD-7
+    source:
+      { url: 'https://web.archive.org/web/20241226182414id_/https://www.casio.com/de/watches/casio/vintage/product.A1000ACD-7/', kind: official }
+    features: [alarm]
+    image: a1000acd-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241226182414id_/https://www.casio.com/de/watches/casio/vintage/product.A1000ACD-7/'
+    discontinued: false
+  - id: a1000acg-9
+    ref: A1000ACG-9
+    source:
+      { url: 'https://web.archive.org/web/20241228110230id_/https://www.casio.com/it/watches/casio/vintage/product.A1000ACG-9/', kind: official }
+    features: [super-illuminator]
+    image: a1000acg-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241228110230id_/https://www.casio.com/it/watches/casio/vintage/product.A1000ACG-9/'
+    discontinued: false
+  - id: a1000bp-2
+    ref: A1000BP-2
+    source:
+      { url: 'https://web.archive.org/web/20240715102715id_/https://www.casio.com/europe/watches/casio/product.A1000BP-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 39.6, width_mm: 38, depth_mm: 7.3, weight_g: 85, material: 'Stainless steel' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, super-illuminator, mineral-glass]
+    image: a1000bp-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102715id_/https://www.casio.com/europe/watches/casio/product.A1000BP-2/'
+    discontinued: false
+  - id: a1000d-7
+    ref: A1000D-7
+    source:
+      { url: 'https://web.archive.org/web/20240714215847id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000D-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 39.6, width_mm: 38, depth_mm: 7.3, weight_g: 82, material: 'Stainless steel' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, super-illuminator, mineral-glass]
+    image: a1000d-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215847id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000D-7/'
+    discontinued: false
+  - id: a1000dn-7
+    ref: A1000DN-7
+    source:
+      { url: 'https://web.archive.org/web/20240826212530id_/https://www.casio.com/de/watches/casio/vintage/product.A1000DN-7/', kind: official }
+    features: [alarm]
+    image: a1000dn-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240826212530id_/https://www.casio.com/de/watches/casio/vintage/product.A1000DN-7/'
+    discontinued: false
+  - id: a1000m-1b
+    ref: A1000M-1B
+    source:
+      { url: 'https://web.archive.org/web/20240714215909id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000M-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 39.6, width_mm: 38, depth_mm: 7.3, weight_g: 73, material: 'Stainless steel' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, super-illuminator, mineral-glass]
+    image: a1000m-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215909id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000M-1B/'
+    discontinued: false
+  - id: a1000ma-7
+    ref: A1000MA-7
+    source:
+      { url: 'https://web.archive.org/web/20240714220107id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000MA-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 39.6, width_mm: 38, depth_mm: 7.3, weight_g: 75, material: 'Stainless steel' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, super-illuminator, mineral-glass]
+    image: a1000ma-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220107id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000MA-7/'
+    discontinued: false
+  - id: a1000mb-1b
+    ref: A1000MB-1B
+    source:
+      { url: 'https://web.archive.org/web/20241006005102id_/https://www.casio.com/in/watches/casio/product.A1000MB-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 39.6, width_mm: 38, depth_mm: 7.3, weight_g: 73, material: 'Stainless steel' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, super-illuminator, mineral-glass]
+    image: a1000mb-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241006005102id_/https://www.casio.com/in/watches/casio/product.A1000MB-1B/'
+    discontinued: false
+  - id: a1000mcg-9
+    ref: A1000MCG-9
+    source:
+      { url: 'https://web.archive.org/web/20240714215900id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000MCG-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 39.6, width_mm: 38, depth_mm: 7.3, weight_g: 73, material: 'Stainless steel' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, super-illuminator, mineral-glass]
+    image: a1000mcg-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215900id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000MCG-9/'
+    discontinued: false
+  - id: a1000mg-9
+    ref: A1000MG-9
+    source:
+      { url: 'https://web.archive.org/web/20230215194608id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000MG-9/', kind: official }
+    features: [super-illuminator]
+    image: a1000mg-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230215194608id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000MG-9/'
+    discontinued: false
+  - id: a1000mga-5
+    ref: A1000MGA-5
+    source:
+      { url: 'https://web.archive.org/web/20240714220105id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000MGA-5/', kind: official }
+    movement: quartz
+    case: { height_mm: 39.6, width_mm: 38, depth_mm: 7.3, weight_g: 75, material: 'Stainless steel' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, super-illuminator, mineral-glass]
+    image: a1000mga-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220105id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000MGA-5/'
+    discontinued: false
+  - id: a1000mgn-9
+    ref: A1000MGN-9
+    source:
+      { url: 'https://web.archive.org/web/20240717185047id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000MGN-9/', kind: official }
+    features: [super-illuminator]
+    image: a1000mgn-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717185047id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000MGN-9/'
+    discontinued: false
+  - id: a1000mpg-9
+    ref: A1000MPG-9
+    source:
+      { url: 'https://web.archive.org/web/20240717185116id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000MPG-9/', kind: official }
+    features: [super-illuminator]
+    image: a1000mpg-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717185116id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000MPG-9/'
+    discontinued: false
+  - id: a1000prw-1
+    ref: A1000PRW-1
+    source:
+      { url: 'https://web.archive.org/web/20240717185052id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000PRW-1/', kind: official }
+    features: [super-illuminator]
+    image: a1000prw-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717185052id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000PRW-1/'
+    discontinued: false
+  - id: a1000rcg-8b
+    ref: A1000RCG-8B
+    source:
+      { url: 'https://web.archive.org/web/20240715102953id_/https://www.casio.com/europe/watches/casio/product.A1000RCG-8B/', kind: official }
+    movement: quartz
+    case: { height_mm: 39.6, width_mm: 38, depth_mm: 7.3, weight_g: 99, material: 'Stainless steel' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, super-illuminator, sapphire-crystal]
+    image: a1000rcg-8b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102953id_/https://www.casio.com/europe/watches/casio/product.A1000RCG-8B/'
+    discontinued: false
+  - id: a1000rg-5
+    ref: A1000RG-5
+    source:
+      { url: 'https://web.archive.org/web/20240717185119id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000RG-5/', kind: official }
+    features: [super-illuminator]
+    image: a1000rg-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717185119id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000RG-5/'
+    discontinued: false

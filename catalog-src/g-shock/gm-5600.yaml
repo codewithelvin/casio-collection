@@ -31,6 +31,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064802id_/https://www.casio.com/europe/watches/gshock/product.GM-5600-1/'
+    discontinued: false
   - id: gm-5600b-1
     ref: GM-5600B-1
     source:
@@ -44,6 +45,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220706032436id_/https://www.casio.com/ph/watches/gshock/product.GM-5600B-1/'
+    discontinued: false
   - id: gm-5600b-3
     ref: GM-5600B-3
     source:
@@ -57,6 +59,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064807id_/https://www.casio.com/europe/watches/gshock/product.GM-5600B-3/'
+    discontinued: false
   - id: gm-5600bwd-1
     ref: GM-5600BWD-1
     source:
@@ -67,6 +70,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20251212180521id_/https://www.casio.com/nl/watches/gshock/product.GM-5600BWD-1/'
+    discontinued: false
   - id: gm-5600cl-3
     ref: GM-5600CL-3
     source:
@@ -80,6 +84,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193857id_/https://www.casio.com/in/watches/gshock/product.GM-5600CL-3/'
+    discontinued: false
   - id: gm-5600cx-4
     ref: GM-5600CX-4
     source:
@@ -93,6 +98,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220817012440id_/https://www.casio.com/ph/watches/gshock/product.GM-5600CX-4/'
+    discontinued: true
   - id: gm-5600ey-1
     ref: GM-5600EY-1
     source:
@@ -103,6 +109,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722084013id_/https://www.casio.com/id/watches/gshock/product.GM-5600EY-1/'
+    discontinued: true
   - id: gm-5600g-9
     ref: GM-5600G-9
     source:
@@ -116,6 +123,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064819id_/https://www.casio.com/europe/watches/gshock/product.GM-5600G-9/'
+    discontinued: false
   - id: gm-5600gc-1
     ref: GM-5600GC-1
     source:
@@ -129,6 +137,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240307212726id_/https://www.casio.com/in/watches/gshock/product.GM-5600GC-1/'
+    discontinued: false
   - id: gm-5600lc-7
     ref: GM-5600LC-7
     source:
@@ -142,6 +151,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064815id_/https://www.casio.com/europe/watches/gshock/product.GM-5600LC-7/'
+    discontinued: false
   - id: gm-5600ma-7
     ref: GM-5600MA-7
     source:
@@ -155,6 +165,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210828231654id_/https://www.casio.com/sg/watches/gshock/product.GM-5600MA-7/'
+    discontinued: true
   - id: gm-5600mf-2
     ref: GM-5600MF-2
     source:
@@ -168,6 +179,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064117id_/https://www.casio.com/europe/watches/gshock/product.GM-5600MF-2/'
+    discontinued: false
   - id: gm-5600rw-1
     ref: GM-5600RW-1
     source:
@@ -181,6 +193,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240922024900id_/https://www.casio.com/us/watches/gshock/product.GM-5600RW-1/'
+    discontinued: false
   - id: gm-5600scm-1
     ref: GM-5600SCM-1
     source:
@@ -194,6 +207,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064113id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SCM-1/'
+    discontinued: false
   - id: gm-5600sg-9
     ref: GM-5600SG-9
     source:
@@ -207,6 +221,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064108id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SG-9/'
+    discontinued: false
   - id: gm-5600sn-1
     ref: GM-5600SN-1
     source:
@@ -220,6 +235,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240225135511id_/https://www.casio.com/us/watches/gshock/product.GM-5600SN-1/'
+    discontinued: false
   - id: gm-5600ss-1
     ref: GM-5600SS-1
     source:
@@ -233,6 +249,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064101id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SS-1/'
+    discontinued: false
   - id: gm-5600u-1
     ref: GM-5600U-1
     source:
@@ -246,6 +263,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250121094901id_/https://www.casio.com/in/watches/gshock/product.GM-5600U-1/'
+    discontinued: false
   - id: gm-5600ub-1
     ref: GM-5600UB-1
     source:
@@ -259,6 +277,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240225135614id_/https://www.casio.com/intl/watches/gshock/product.GM-5600UB-1/'
+    discontinued: false
   - id: gm-5600ug-9
     ref: GM-5600UG-9
     source:
@@ -272,6 +291,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240225135514id_/https://www.casio.com/intl/watches/gshock/product.GM-5600UG-9/'
+    discontinued: false
   - id: gm-5600ym-8
     ref: GM-5600YM-8
     source:
@@ -285,6 +305,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250220193703id_/https://www.casio.com/us/watches/gshock/product.GM-5600YM-8/'
+    discontinued: false
   - id: gm-5600ym-8a8
     ref: GM-5600YM-8A8
     source:
@@ -298,6 +319,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250217160625id_/https://www.casio.com/sg/watches/gshock/product.GM-5600YM-8A8/'
+    discontinued: false
   - id: gm-5600ymg-9
     ref: GM-5600YMG-9
     source:
@@ -311,6 +333,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250224233208id_/https://www.casio.com/us/watches/gshock/product.GM-5600YMG-9/'
+    discontinued: false
 
 # ADDED 2026-08-19: 1 more references, from Casio's own
 # product pages via the archive (D52). The entries above this block predate
@@ -331,3 +354,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GM-5600BRW-1/'
+    discontinued: false

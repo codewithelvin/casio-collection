@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001042455id_/https://www.casio.com/sg/watches/sheen/product.SHE-4051BD-1A/'
+    discontinued: false
   - id: she-4051pg-4a
     ref: SHE-4051PG-4A
     source:
@@ -55,3 +56,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220522010121id_/https://www.casio.com/intl/watches/sheen/product.SHE-4051PG-4A/'
+    discontinued: false

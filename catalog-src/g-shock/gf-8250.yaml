@@ -56,6 +56,7 @@ models:
     movement: solar
     module: '3266'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gf-8250bs-1
     ref: GF-8250BS-1
     source:
@@ -67,6 +68,7 @@ models:
     movement: solar
     module: '3266'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gf-8250cm-2
     ref: GF-8250CM-2
     source:
@@ -78,6 +80,7 @@ models:
     movement: solar
     module: '3266'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gf-8250er-2
     ref: GF-8250ER-2
     source:
@@ -89,6 +92,7 @@ models:
     movement: solar
     module: '3266'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true
   - id: gf-8250k-4
     ref: GF-8250K-4
     source:
@@ -100,3 +104,4 @@ models:
     movement: solar
     module: '3266'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    discontinued: true

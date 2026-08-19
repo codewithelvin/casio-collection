@@ -39,6 +39,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBM-2100-1A/'
+    discontinued: false
   - id: gbm-2100a-1a2
     ref: GBM-2100A-1A2
     source:
@@ -53,6 +54,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBM-2100A-1A2/'
+    discontinued: false
   - id: gbm-2100a-1a3
     ref: GBM-2100A-1A3
     source:
@@ -67,6 +69,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240824133306id_/https://www.casio.com/in/watches/gshock/product.GBM-2100A-1A3/'
+    discontinued: false
   - id: gbm-2100a-4b
     ref: GBM-2100A-4B
     source:
@@ -77,6 +80,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20251010231201id_/https://www.casio.com/jp/watches/gshock/product.GBM-2100A-4B/'
+    discontinued: false
   - id: gbm-2100b-7a
     ref: GBM-2100B-7A
     source:
@@ -91,6 +95,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241002193052id_/https://www.casio.com/europe/watches/gshock/product.GBM-2100B-7A/'
+    discontinued: false
   - id: gbm-2100rh-1a
     ref: GBM-2100RH-1A
     source:
@@ -107,3 +112,4 @@ models:
       url: 'https://web.archive.org/web/20250313114501id_/https://www.casio.com/in/watches/gshock/product.GBM-2100RH-1A/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0821-gbm2100rh/'
+    discontinued: true

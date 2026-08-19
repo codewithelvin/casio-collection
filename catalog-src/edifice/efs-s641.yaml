@@ -40,3 +40,4 @@ models:
       url: 'https://web.archive.org/web/20240724124023id_/https://www.casio.com/us/watches/edifice/product.EFS-S641TMS-1A/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0723-efs-s641/'
+    discontinued: false

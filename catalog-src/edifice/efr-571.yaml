@@ -59,6 +59,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220640id_/https://www.casio.com/europe/watches/edifice/product.EFR-571AT-1A/'
+    discontinued: false
   - id: efr-571d-1av
     ref: EFR-571D-1AV
     source:
@@ -74,6 +75,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221159id_/https://www.casio.com/europe/watches/edifice/product.EFR-571D-1AV/'
+    discontinued: false
   - id: efr-571db-1a1v
     ref: EFR-571DB-1A1V
     source:
@@ -89,6 +91,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220717id_/https://www.casio.com/europe/watches/edifice/product.EFR-571DB-1A1V/'
+    discontinued: false
   - id: efr-571dc-1av
     ref: EFR-571DC-1AV
     source:
@@ -104,6 +107,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220523123322id_/https://www.casio.com/in/watches/edifice/product.EFR-571DC-1AV/'
+    discontinued: false
   - id: efr-571dc-2av
     ref: EFR-571DC-2AV
     source:
@@ -119,6 +123,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628151826id_/https://www.casio.com/in/watches/edifice/product.EFR-571DC-2AV/'
+    discontinued: false
   - id: efr-571md-8av
     ref: EFR-571MD-8AV
     source:
@@ -134,6 +139,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220721id_/https://www.casio.com/europe/watches/edifice/product.EFR-571MD-8AV/'
+    discontinued: false
   - id: efr-571mdc-1av
     ref: EFR-571MDC-1AV
     source:
@@ -149,3 +155,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220711id_/https://www.casio.com/europe/watches/edifice/product.EFR-571MDC-1AV/'
+    discontinued: false

@@ -60,6 +60,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220704094533id_/https://www.casio.com/us/watches/protrek/product.PAG-240-1/'
+    discontinued: false
   - id: pag-240t-7
     ref: PAG-240T-7
     source:
@@ -76,3 +77,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220816011436id_/https://www.casio.com/us/watches/protrek/product.PAG-240T-7/'
+    discontinued: false

@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193243id_/https://www.casio.com/intl/watches/sheen/product.SHE-4562BM-2A/'
+    discontinued: false
   - id: she-4562gm-4a
     ref: SHE-4562GM-4A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240927055530id_/https://www.casio.com/intl/watches/sheen/product.SHE-4562GM-4A/'
+    discontinued: false
   - id: she-4562m-2a
     ref: SHE-4562M-2A
     source:
@@ -69,6 +71,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240926121354id_/https://www.casio.com/intl/watches/sheen/product.SHE-4562M-2A/'
+    discontinued: false
   - id: she-4562m-8a
     ref: SHE-4562M-8A
     source:
@@ -83,6 +86,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193240id_/https://www.casio.com/intl/watches/sheen/product.SHE-4562M-8A/'
+    discontinued: false
   - id: she-4562pgm-5a
     ref: SHE-4562PGM-5A
     source:
@@ -97,3 +101,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193240id_/https://www.casio.com/intl/watches/sheen/product.SHE-4562PGM-5A/'
+    discontinued: false

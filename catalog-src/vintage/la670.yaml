@@ -1,0 +1,254 @@
+# LA670 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: la670
+  name: LA670
+  line: vintage
+
+models:
+  - id: la670wa-1
+    ref: LA670WA-1
+    source:
+      { url: 'https://web.archive.org/web/20221103214521id_/https://www.casio.com/us/watches/casio/product.LA670WA-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 26, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wa-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221103214521id_/https://www.casio.com/us/watches/casio/product.LA670WA-1/'
+    discontinued: false
+  - id: la670wa-2
+    ref: LA670WA-2
+    source:
+      { url: 'https://web.archive.org/web/20220518132218id_/https://www.casio.com/intl/watches/casio/product.LA670WA-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 26, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wa-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518132218id_/https://www.casio.com/intl/watches/casio/product.LA670WA-2/'
+    discontinued: false
+  - id: la670wa-4
+    ref: LA670WA-4
+    source:
+      { url: 'https://web.archive.org/web/20220518120711id_/https://www.casio.com/intl/watches/casio/product.LA670WA-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 26, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wa-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518120711id_/https://www.casio.com/intl/watches/casio/product.LA670WA-4/'
+    discontinued: false
+  - id: la670wa-7
+    ref: LA670WA-7
+    source:
+      { url: 'https://web.archive.org/web/20241006080015id_/https://www.casio.com/in/watches/casio/product.LA670WA-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 26, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wa-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241006080015id_/https://www.casio.com/in/watches/casio/product.LA670WA-7/'
+    discontinued: false
+  - id: la670wd-1
+    ref: LA670WD-1
+    source:
+      { url: 'https://web.archive.org/web/20230812102828id_/https://www.casio.com/in/watches/casio/product.LA670WD-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 27.8, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wd-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230812102828id_/https://www.casio.com/in/watches/casio/product.LA670WD-1/'
+    discontinued: false
+  - id: la670wea-1
+    ref: LA670WEA-1
+    source:
+      { url: 'https://web.archive.org/web/20240714220009id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEA-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 33, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wea-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220009id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEA-1/'
+    discontinued: false
+  - id: la670wea-4a2
+    ref: LA670WEA-4A2
+    source:
+      { url: 'https://web.archive.org/web/20240714220035id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEA-4A2/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 33, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wea-4a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220035id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEA-4A2/'
+    discontinued: false
+  - id: la670wea-7
+    ref: LA670WEA-7
+    source:
+      { url: 'https://web.archive.org/web/20240714220005id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEA-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 33, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wea-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220005id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEA-7/'
+    discontinued: false
+  - id: la670wefl-3
+    ref: LA670WEFL-3
+    source:
+      { url: 'https://web.archive.org/web/20240714215954id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEFL-3/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 10.5, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wefl-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215954id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEFL-3/'
+    discontinued: false
+  - id: la670wefl-4a2
+    ref: LA670WEFL-4A2
+    source:
+      { url: 'https://web.archive.org/web/20240714215956id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEFL-4A2/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 10.5, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wefl-4a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215956id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEFL-4A2/'
+    discontinued: false
+  - id: la670wega-1
+    ref: LA670WEGA-1
+    source:
+      { url: 'https://web.archive.org/web/20240714220000id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEGA-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 33, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wega-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220000id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEGA-1/'
+    discontinued: false
+  - id: la670wega-9
+    ref: LA670WEGA-9
+    source:
+      { url: 'https://web.archive.org/web/20240714215958id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEGA-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 33, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wega-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215958id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEGA-9/'
+    discontinued: false
+  - id: la670wem-7
+    ref: LA670WEM-7
+    source:
+      { url: 'https://web.archive.org/web/20240714215951id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEM-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 30, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wem-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215951id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEM-7/'
+    discontinued: false
+  - id: la670wemb-1
+    ref: LA670WEMB-1
+    source:
+      { url: 'https://web.archive.org/web/20240714215942id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEMB-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 30, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wemb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215942id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEMB-1/'
+    discontinued: false
+  - id: la670wemy-9
+    ref: LA670WEMY-9
+    source:
+      { url: 'https://web.archive.org/web/20240714215948id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEMY-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 30, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wemy-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215948id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WEMY-9/'
+    discontinued: false
+  - id: la670wes-4a
+    ref: LA670WES-4A
+    source:
+      { url: 'https://web.archive.org/web/20240714220128id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WES-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 32, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal, mineral-glass]
+    image: la670wes-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220128id_/https://www.casio.com/europe/watches/casio/vintage/product.LA670WES-4A/'
+    discontinued: false
+  - id: la670wga-1
+    ref: LA670WGA-1
+    source:
+      { url: 'https://web.archive.org/web/20250706051310id_/https://www.casio.com/intl/watches/casio/product.LA670WGA-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 27.8, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wga-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250706051310id_/https://www.casio.com/intl/watches/casio/product.LA670WGA-1/'
+    discontinued: false
+  - id: la670wga-9
+    ref: LA670WGA-9
+    source:
+      { url: 'https://web.archive.org/web/20241006141637id_/https://www.casio.com/in/watches/casio/product.LA670WGA-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 27.8, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la670wga-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241006141637id_/https://www.casio.com/in/watches/casio/product.LA670WGA-9/'
+    discontinued: false

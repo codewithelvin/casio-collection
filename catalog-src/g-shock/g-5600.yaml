@@ -38,6 +38,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240502180318id_/https://www.casio.com/my/watches/gshock/product.G-5600BG-1/'
+    discontinued: false
   - id: g-5600bg-5
     ref: G-5600BG-5
     source:
@@ -51,6 +52,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250427044730id_/https://www.casio.com/intl/watches/gshock/product.G-5600BG-5/'
+    discontinued: false
   - id: g-5600e-1
     ref: G-5600E-1
     source:
@@ -63,6 +65,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210922120449id_/https://www.casio.com/sg/watches/gshock/product.G-5600E-1/'
+    discontinued: false
   - id: g-5600srf-1
     ref: G-5600SRF-1
     source:
@@ -78,6 +81,7 @@ models:
       url: 'https://web.archive.org/web/20240715065952id_/https://www.casio.com/europe/watches/gshock/product.G-5600SRF-1/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0515-g5600srf/'
+    discontinued: false
   - id: g-5600ue-1
     ref: G-5600UE-1
     source:
@@ -91,3 +95,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230816221825id_/https://www.casio.com/ph/watches/gshock/product.G-5600UE-1/'
+    discontinued: false

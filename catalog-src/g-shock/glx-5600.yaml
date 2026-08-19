@@ -40,6 +40,7 @@ models:
       url: 'https://web.archive.org/web/20241128164645id_/https://www.casio.com/us/watches/gshock/product.GLX-5600KB-1/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0828-glx5600kb/'
+    discontinued: false
   - id: glx-5600rt-4
     ref: GLX-5600RT-4
     source:
@@ -53,6 +54,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021341id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-4/'
+    discontinued: false
   - id: glx-5600rt-9
     ref: GLX-5600RT-9
     source:
@@ -66,3 +68,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021324id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-9/'
+    discontinued: false

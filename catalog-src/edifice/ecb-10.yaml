@@ -31,6 +31,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193716id_/https://www.casio.com/us/watches/edifice/product.ECB-10AT-1A/'
+    discontinued: false
   - id: ecb-10d-2a
     ref: ECB-10D-2A
     source:
@@ -44,6 +45,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220930115629id_/https://www.casio.com/sg/watches/edifice/product.ECB-10D-2A/'
+    discontinued: false
   - id: ecb-10db-1a
     ref: ECB-10DB-1A
     source:
@@ -57,6 +59,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001154708id_/https://www.casio.com/sg/watches/edifice/product.ECB-10DB-1A/'
+    discontinued: false
   - id: ecb-10db-1a9
     ref: ECB-10DB-1A9
     source:
@@ -70,6 +73,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240915200747id_/https://www.casio.com/intl/watches/edifice/product.ECB-10DB-1A9/'
+    discontinued: false
   - id: ecb-10db-1b
     ref: ECB-10DB-1B
     source:
@@ -83,6 +87,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220930115626id_/https://www.casio.com/my/watches/edifice/product.ECB-10DB-1B/'
+    discontinued: false
   - id: ecb-10dc-1a
     ref: ECB-10DC-1A
     source:
@@ -96,6 +101,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220925134131id_/https://www.casio.com/sg/watches/edifice/product.ECB-10DC-1A/'
+    discontinued: false
   - id: ecb-10dc-1b
     ref: ECB-10DC-1B
     source:
@@ -109,6 +115,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220523043234id_/https://www.casio.com/sg/watches/edifice/product.ECB-10DC-1B/'
+    discontinued: false
   - id: ecb-10dc-3a
     ref: ECB-10DC-3A
     source:
@@ -122,6 +129,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220930115648id_/https://www.casio.com/my/watches/edifice/product.ECB-10DC-3A/'
+    discontinued: false
   - id: ecb-10hr-1a
     ref: ECB-10HR-1A
     source:
@@ -132,6 +140,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210412061736id_/https://www.casio.com/jp/watches/edifice/product.ECB-10HR-1A/'
+    discontinued: true
   - id: ecb-10p-1a
     ref: ECB-10P-1A
     source:
@@ -145,6 +154,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220925145739id_/https://www.casio.com/sg/watches/edifice/product.ECB-10P-1A/'
+    discontinued: false
   - id: ecb-10pb-1a
     ref: ECB-10PB-1A
     source:
@@ -158,6 +168,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220930115642id_/https://www.casio.com/sg/watches/edifice/product.ECB-10PB-1A/'
+    discontinued: false
   - id: ecb-10tms-1a
     ref: ECB-10TMS-1A
     source:
@@ -168,6 +179,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210401170834id_/https://www.casio.com/jp/watches/edifice/product.ECB-10TMS-1A/'
+    discontinued: true
   - id: ecb-10tp-1a
     ref: ECB-10TP-1A
     source:
@@ -181,6 +193,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240307212748id_/https://www.casio.com/intl/watches/edifice/product.ECB-10TP-1A/'
+    discontinued: false
   - id: ecb-10yd-2a
     ref: ECB-10YD-2A
     source:
@@ -191,6 +204,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210919174503id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YD-2A/'
+    discontinued: true
   - id: ecb-10ydb-1a
     ref: ECB-10YDB-1A
     source:
@@ -201,6 +215,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210919165218id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YDB-1A/'
+    discontinued: true
   - id: ecb-10ydc-1a
     ref: ECB-10YDC-1A
     source:
@@ -211,6 +226,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210919175815id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YDC-1A/'
+    discontinued: true
   - id: ecb-10yp-1a
     ref: ECB-10YP-1A
     source:
@@ -221,6 +237,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210919171221id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YP-1A/'
+    discontinued: true
   - id: ecb-10ypb-1a
     ref: ECB-10YPB-1A
     source:
@@ -231,3 +248,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210526110021id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YPB-1A/'
+    discontinued: true

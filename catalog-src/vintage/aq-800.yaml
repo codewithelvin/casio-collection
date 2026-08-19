@@ -1,0 +1,122 @@
+# AQ-800 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: aq-800
+  name: AQ-800
+  line: vintage
+
+models:
+  - id: aq-800e-1a
+    ref: AQ-800E-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220208id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800E-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.1, depth_mm: 8.7, weight_g: 52, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
+    image: aq-800e-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220208id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800E-1A/'
+    discontinued: false
+  - id: aq-800e-3a
+    ref: AQ-800E-3A
+    source:
+      { url: 'https://web.archive.org/web/20240804172644id_/https://www.casio.com/us/watches/casio/product.AQ-800E-3A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.1, depth_mm: 8.7, weight_g: 52, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
+    image: aq-800e-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240804172644id_/https://www.casio.com/us/watches/casio/product.AQ-800E-3A/'
+    discontinued: false
+  - id: aq-800e-7a
+    ref: AQ-800E-7A
+    source:
+      { url: 'https://web.archive.org/web/20240714220159id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800E-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.1, depth_mm: 8.7, weight_g: 52, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
+    image: aq-800e-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220159id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800E-7A/'
+    discontinued: false
+  - id: aq-800e-7a2
+    ref: AQ-800E-7A2
+    source:
+      { url: 'https://web.archive.org/web/20241006014119id_/https://www.casio.com/in/watches/casio/product.AQ-800E-7A2/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.1, depth_mm: 8.7, weight_g: 52, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
+    image: aq-800e-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241006014119id_/https://www.casio.com/in/watches/casio/product.AQ-800E-7A2/'
+    discontinued: false
+  - id: aq-800eb-2a
+    ref: AQ-800EB-2A
+    source:
+      { url: 'https://web.archive.org/web/20250407152841id_/https://www.casio.com/de/watches/casio/vintage/product.AQ-800EB-2A/', kind: official }
+    features: [alarm]
+    image: aq-800eb-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250407152841id_/https://www.casio.com/de/watches/casio/vintage/product.AQ-800EB-2A/'
+    discontinued: false
+  - id: aq-800ec-2a
+    ref: AQ-800EC-2A
+    source:
+      { url: 'https://web.archive.org/web/20240714220121id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800EC-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.1, depth_mm: 8.7, weight_g: 52, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
+    image: aq-800ec-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220121id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800EC-2A/'
+    discontinued: false
+  - id: aq-800ecgg-4a
+    ref: AQ-800ECGG-4A
+    source:
+      { url: 'https://web.archive.org/web/20240715103000id_/https://www.casio.com/europe/watches/casio/product.AQ-800ECGG-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.1, depth_mm: 8.7, weight_g: 52, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
+    image: aq-800ecgg-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103000id_/https://www.casio.com/europe/watches/casio/product.AQ-800ECGG-4A/'
+    discontinued: false
+  - id: aq-800eg-9a
+    ref: AQ-800EG-9A
+    source:
+      { url: 'https://web.archive.org/web/20240714220203id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800EG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.7, width_mm: 32.1, depth_mm: 8.7, weight_g: 52, material: 'Pd plated / Gold tone' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal]
+    image: aq-800eg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220203id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800EG-9A/'
+    discontinued: false

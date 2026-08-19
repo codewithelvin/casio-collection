@@ -1,0 +1,59 @@
+# A171 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: a171
+  name: A171
+  line: vintage
+
+models:
+  - id: a171we-1a
+    ref: A171WE-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220055id_/https://www.casio.com/europe/watches/casio/vintage/product.A171WE-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 37.7, depth_mm: 9.2, weight_g: 46, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a171we-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220055id_/https://www.casio.com/europe/watches/casio/vintage/product.A171WE-1A/'
+    discontinued: false
+  - id: a171weg-9a
+    ref: A171WEG-9A
+    source:
+      { url: 'https://web.archive.org/web/20240714220101id_/https://www.casio.com/europe/watches/casio/vintage/product.A171WEG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 37.7, depth_mm: 9.2, weight_g: 46, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a171weg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220101id_/https://www.casio.com/europe/watches/casio/vintage/product.A171WEG-9A/'
+    discontinued: false
+  - id: a171wemg-9a
+    ref: A171WEMG-9A
+    source:
+      { url: 'https://web.archive.org/web/20240714220058id_/https://www.casio.com/europe/watches/casio/vintage/product.A171WEMG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.8, width_mm: 37.7, depth_mm: 9.2, weight_g: 50, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a171wemg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220058id_/https://www.casio.com/europe/watches/casio/vintage/product.A171WEMG-9A/'
+    discontinued: false

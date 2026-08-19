@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4535YD-2A/'
+    discontinued: false
   - id: she-4535ygl-9a
     ref: SHE-4535YGL-9A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001040901id_/https://www.casio.com/sg/watches/sheen/product.SHE-4535YGL-9A/'
+    discontinued: false
   - id: she-4535ypg-2a
     ref: SHE-4535YPG-2A
     source:
@@ -69,6 +71,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001044244id_/https://www.casio.com/sg/watches/sheen/product.SHE-4535YPG-2A/'
+    discontinued: false
   - id: she-4535ypg-7a
     ref: SHE-4535YPG-7A
     source:
@@ -83,3 +86,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4535YPG-7A/'
+    discontinued: true

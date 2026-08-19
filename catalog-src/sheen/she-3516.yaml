@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221356id_/https://www.casio.com/europe/watches/sheen/product.SHE-3516D-1A/'
+    discontinued: false
   - id: she-3516d-2a
     ref: SHE-3516D-2A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221403id_/https://www.casio.com/europe/watches/sheen/product.SHE-3516D-2A/'
+    discontinued: false
   - id: she-3516d-4a
     ref: SHE-3516D-4A
     source:
@@ -69,6 +71,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221358id_/https://www.casio.com/europe/watches/sheen/product.SHE-3516D-4A/'
+    discontinued: false
   - id: she-3516d-7a
     ref: SHE-3516D-7A
     source:
@@ -83,6 +86,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221400id_/https://www.casio.com/europe/watches/sheen/product.SHE-3516D-7A/'
+    discontinued: false
   - id: she-3516pg-9a
     ref: SHE-3516PG-9A
     source:
@@ -97,6 +101,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221406id_/https://www.casio.com/europe/watches/sheen/product.SHE-3516PG-9A/'
+    discontinued: false
   - id: she-3516sg-7a
     ref: SHE-3516SG-7A
     source:
@@ -111,3 +116,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221411id_/https://www.casio.com/europe/watches/sheen/product.SHE-3516SG-7A/'
+    discontinued: false

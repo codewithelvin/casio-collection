@@ -85,6 +85,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065242id_/https://www.casio.com/europe/watches/gshock/product.GW-M5610-1/'
+    discontinued: false
   - id: gw-m5610-1b
     ref: GW-M5610-1B
     source:
@@ -101,6 +102,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210414192450id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610-1B/'
+    discontinued: true
   - id: gw-m5610b-1
     ref: GW-M5610B-1
     source:
@@ -112,6 +114,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610ba-1
     ref: GW-M5610BA-1
     source:
@@ -128,6 +131,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210317091451id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610BA-1/'
+    discontinued: true
   - id: gw-m5610bb-1
     ref: GW-M5610BB-1
     source:
@@ -139,6 +143,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610bc-1
     ref: GW-M5610BC-1
     source:
@@ -155,6 +160,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210414201658id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610BC-1/'
+    discontinued: true
   - id: gw-m5610bw-7
     ref: GW-M5610BW-7
     source:
@@ -166,6 +172,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610by-1
     ref: GW-M5610BY-1
     source:
@@ -177,6 +184,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610cc-2
     ref: GW-M5610CC-2
     source:
@@ -188,6 +196,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610cc-3
     ref: GW-M5610CC-3
     source:
@@ -199,6 +208,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610ew-4
     ref: GW-M5610EW-4
     source:
@@ -210,6 +220,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610k-1
     ref: GW-M5610K-1
     source:
@@ -221,6 +232,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610kg-3
     ref: GW-M5610KG-3
     source:
@@ -232,6 +244,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610lg-8
     ref: GW-M5610LG-8
     source:
@@ -243,6 +256,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610ly-1
     ref: GW-M5610LY-1
     source:
@@ -254,6 +268,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610md-2
     ref: GW-M5610MD-2
     source:
@@ -265,6 +280,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610md-7
     ref: GW-M5610MD-7
     source:
@@ -281,6 +297,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210527113020id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610MD-7/'
+    discontinued: true
   - id: gw-m5610md-9
     ref: GW-M5610MD-9
     source:
@@ -292,6 +309,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610mr-4
     ref: GW-M5610MR-4
     source:
@@ -303,6 +321,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610mw-7
     ref: GW-M5610MW-7
     source:
@@ -314,6 +333,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610nv-2
     ref: GW-M5610NV-2
     source:
@@ -330,6 +350,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210929015122id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610NV-2/'
+    discontinued: true
   - id: gw-m5610pc-1
     ref: GW-M5610PC-1
     source:
@@ -341,6 +362,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610r-1
     ref: GW-M5610R-1
     source:
@@ -357,6 +379,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210806193623id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610R-1/'
+    discontinued: true
   - id: gw-m5610rb-4
     ref: GW-M5610RB-4
     source:
@@ -373,6 +396,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211019100031id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610RB-4/'
+    discontinued: true
   - id: gw-m5610sd-8
     ref: GW-M5610SD-8
     source:
@@ -384,6 +408,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610th-1
     ref: GW-M5610TH-1
     source:
@@ -395,6 +420,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true
   - id: gw-m5610tr-7
     ref: GW-M5610TR-7
     source:
@@ -406,3 +432,4 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    discontinued: true

@@ -1,0 +1,70 @@
+# LA700 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: la700
+  name: LA700
+  line: vintage
+
+models:
+  - id: la700we-4a
+    ref: LA700WE-4A
+    source:
+      { url: 'https://web.archive.org/web/20240714220143id_/https://www.casio.com/europe/watches/casio/vintage/product.LA700WE-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.8, width_mm: 26.3, depth_mm: 7.9, weight_g: 32, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la700we-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220143id_/https://www.casio.com/europe/watches/casio/vintage/product.LA700WE-4A/'
+    discontinued: false
+  - id: la700we-7a
+    ref: LA700WE-7A
+    source:
+      { url: 'https://web.archive.org/web/20240714220146id_/https://www.casio.com/europe/watches/casio/vintage/product.LA700WE-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.8, width_mm: 26.3, depth_mm: 7.9, weight_g: 32, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la700we-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220146id_/https://www.casio.com/europe/watches/casio/vintage/product.LA700WE-7A/'
+    discontinued: false
+  - id: la700weg-9a
+    ref: LA700WEG-9A
+    source:
+      { url: 'https://web.archive.org/web/20240714220149id_/https://www.casio.com/europe/watches/casio/vintage/product.LA700WEG-9A/', kind: official }
+    movement: quartz
+    case: { height_mm: 30.8, width_mm: 26.3, depth_mm: 7.9, weight_g: 32, material: 'Resin / Gold tone' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la700weg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220149id_/https://www.casio.com/europe/watches/casio/vintage/product.LA700WEG-9A/'
+    discontinued: false
+  - id: la700wem-4a
+    ref: LA700WEM-4A
+    source:
+      { url: 'https://web.archive.org/web/20240826212529id_/https://www.casio.com/de/watches/casio/vintage/product.LA700WEM-4A/', kind: official }
+    features: [alarm]
+    image: la700wem-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240826212529id_/https://www.casio.com/de/watches/casio/vintage/product.LA700WEM-4A/'
+    discontinued: false

@@ -97,8 +97,11 @@ Three things that are easy to get wrong:
 - **The series id must be a prefix of every `ref` in the file** (check 4a). If a
   reference does not start with it, it belongs in a different file.
 - **`discontinued` and a tombstone are different facts.** Discontinued means
-  Casio stopped selling it, which is true of most of this catalogue.
-  A tombstone means _this catalogue entry_ was retired.
+  Casio's own sitemap no longer lists the reference, which is true of most of
+  this catalogue. A tombstone means _this catalogue entry_ was retired.
+  **Do not write `discontinued` by hand** — it is measured for the whole
+  catalogue at once by `availability.ts` (D59), and a hand-written one is a
+  judgement rather than a measurement. See the command below.
 
 Every object is strict: an unrecognised key fails the parse. That is on purpose —
 `wather_resistance_m` would otherwise publish a watch with no water resistance.
@@ -315,6 +318,33 @@ than a fallback — a blurry picture is a downgrade, not an improvement.
 
 An image that cannot be found honestly is `image: null`, and so is one you could
 not verify. Ten of the sixty-one Vintage references sit that way on purpose.
+
+### `/casio-catalog availability [<line>]`
+
+D59 — whether Casio still lists each reference. **One measurement over the whole
+catalogue, not per-model research**, which is why it is a script and not a
+sourcing session:
+
+```
+node .claude/skills/casio-catalog/references/availability.ts            # report
+node .claude/skills/casio-catalog/references/availability.ts --write    # write it
+node .claude/skills/casio-catalog/references/availability.ts vintage --write
+```
+
+The rule, and all three of its states:
+
+- in Casio's sitemap → `discontinued: false`. Casio listing it is a positive
+  statement, not an inference.
+- not in it → `discontinued: true`. Absence, from a list that is complete by
+  construction — a sitemap is not a selection.
+- **a tombstoned entry → nothing at all.** A tombstone sometimes exists because
+  the reference turned out not to exist, and this would be a claim about a watch.
+
+Two things to say when you report it. It reads **three locales of twenty-nine**,
+so a watch sold only in Japan reads as no longer listed — that is the one
+direction it can be wrong in. And re-running it after Casio refreshes its roster
+is the whole maintenance story: the script is idempotent, and a model whose value
+has not changed is not touched.
 
 ### `/casio-catalog audit`
 

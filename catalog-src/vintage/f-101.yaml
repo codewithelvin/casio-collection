@@ -22,3 +22,4 @@ models:
     module: '695'
     case: { material: resin }
     image: null
+    discontinued: true

@@ -23,3 +23,4 @@ models:
     module: '586'
     case: { material: resin }
     image: null
+    discontinued: true

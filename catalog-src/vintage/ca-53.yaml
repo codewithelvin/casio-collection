@@ -1,0 +1,96 @@
+# CA-53 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ca-53
+  name: CA-53
+  line: vintage
+
+models:
+  - id: ca-53w-1
+    ref: CA-53W-1
+    source:
+      { url: 'https://web.archive.org/web/20240714220052id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53W-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 25, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-53w-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220052id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53W-1/'
+    discontinued: false
+  - id: ca-53wb-1b
+    ref: CA-53WB-1B
+    source:
+      { url: 'https://web.archive.org/web/20241118150759id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WB-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 25, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-53wb-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241118150759id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WB-1B/'
+    discontinued: false
+  - id: ca-53wf-1b
+    ref: CA-53WF-1B
+    source:
+      { url: 'https://web.archive.org/web/20240714215922id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WF-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 25, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-53wf-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215922id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WF-1B/'
+    discontinued: false
+  - id: ca-53wf-2b
+    ref: CA-53WF-2B
+    source:
+      { url: 'https://web.archive.org/web/20240714215934id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WF-2B/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 25, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-53wf-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215934id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WF-2B/'
+    discontinued: false
+  - id: ca-53wf-3b
+    ref: CA-53WF-3B
+    source:
+      { url: 'https://web.archive.org/web/20240714215937id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WF-3B/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 25, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-53wf-3b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215937id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WF-3B/'
+    discontinued: false
+  - id: ca-53wpc-1b
+    ref: CA-53WPC-1B
+    source:
+      { url: 'https://web.archive.org/web/20250407153152id_/https://www.casio.com/de/watches/casio/vintage/product.CA-53WPC-1B/', kind: official }
+    features: [alarm]
+    image: ca-53wpc-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250407153152id_/https://www.casio.com/de/watches/casio/vintage/product.CA-53WPC-1B/'
+    discontinued: false

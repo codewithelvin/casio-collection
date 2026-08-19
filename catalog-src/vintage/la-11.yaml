@@ -1,0 +1,44 @@
+# LA-11 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: la-11
+  name: LA-11
+  line: vintage
+
+models:
+  - id: la-11wb-1z
+    ref: LA-11WB-1Z
+    source:
+      { url: 'https://web.archive.org/web/20221027024630id_/https://www.casio.com/us/watches/casio/product.LA-11WB-1Z/', kind: official }
+    movement: quartz
+    case: { height_mm: 31.4, width_mm: 25.5, depth_mm: 7.6, weight_g: 12, material: 'Resin' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    discontinued: false
+  - id: la-11wl-4a
+    ref: LA-11WL-4A
+    source:
+      { url: 'https://web.archive.org/web/20221012025829id_/https://www.casio.com/us/watches/casio/product.LA-11WL-4A/', kind: official }
+    movement: quartz
+    case: { height_mm: 31.4, width_mm: 25.5, depth_mm: 7.6, weight_g: 10, material: 'Resin' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    discontinued: false
+  - id: la-11wl-7a
+    ref: LA-11WL-7A
+    source:
+      { url: 'https://web.archive.org/web/20220704083720id_/https://www.casio.com/us/watches/casio/product.LA-11WL-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 31.4, width_mm: 25.5, depth_mm: 7.6, weight_g: 10, material: 'Resin' }
+    features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    discontinued: false

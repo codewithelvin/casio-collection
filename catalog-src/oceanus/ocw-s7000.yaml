@@ -40,6 +40,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241107173840id_/https://www.casio.com/us/watches/oceanus/product.OCW-S7000-1A/'
+    discontinued: false
   - id: ocw-s7000a-2a
     ref: OCW-S7000A-2A
     source:
@@ -53,6 +54,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240728230113id_/https://www.casio.com/us/watches/oceanus/product.OCW-S7000A-2A/'
+    discontinued: false
   - id: ocw-s7000b-2a
     ref: OCW-S7000B-2A
     source:
@@ -66,6 +68,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231014164119id_/https://www.casio.com/us/watches/oceanus/product.OCW-S7000B-2A/'
+    discontinued: false
   - id: ocw-s7000d-7a
     ref: OCW-S7000D-7A
     source:
@@ -79,3 +82,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240406015803id_/https://www.casio.com/us/watches/oceanus/product.OCW-S7000D-7A/'
+    discontinued: false

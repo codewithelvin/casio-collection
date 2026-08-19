@@ -1,0 +1,52 @@
+# DBC-32 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# `family: databank` IS written on this series — D49 files the Databank shapes as
+# a family of Vintage rather than as a line of their own, and that vocabulary was
+# the client's decision. What it was waiting for was a **second** series to tag:
+# a family of one does not render as a heading (D32, check 4), it only raises a
+# warning. Tagged 2026-08-19, when there were four.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: dbc-32
+  name: DBC-32
+  line: vintage
+  family: databank
+
+models:
+  - id: dbc-32-1a
+    ref: DBC-32-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714215918id_/https://www.casio.com/europe/watches/casio/vintage/product.DBC-32-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.4, width_mm: 37.4, depth_mm: 12, weight_g: 34, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, auto-light, afterglow, calculator]
+    image: dbc-32-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215918id_/https://www.casio.com/europe/watches/casio/vintage/product.DBC-32-1A/'
+    discontinued: false
+  - id: dbc-32d-1a
+    ref: DBC-32D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714215920id_/https://www.casio.com/europe/watches/casio/vintage/product.DBC-32D-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.4, width_mm: 37.4, depth_mm: 12, weight_g: 62.5, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, auto-light, afterglow, calculator]
+    image: dbc-32d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215920id_/https://www.casio.com/europe/watches/casio/vintage/product.DBC-32D-1A/'
+    discontinued: false

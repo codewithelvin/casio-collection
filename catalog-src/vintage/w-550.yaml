@@ -23,3 +23,4 @@ models:
     water_resistance_m: 100
     features: [alarm, stopwatch]
     image: null
+    discontinued: true

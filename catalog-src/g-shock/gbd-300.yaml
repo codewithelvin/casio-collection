@@ -40,6 +40,7 @@ models:
       url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBD-300-1/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0617-gbd300/'
+    discontinued: false
   - id: gbd-300-7
     ref: GBD-300-7
     source:
@@ -55,6 +56,7 @@ models:
       url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBD-300-7/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0617-gbd300/'
+    discontinued: false
   - id: gbd-300-9
     ref: GBD-300-9
     source:
@@ -70,3 +72,4 @@ models:
       url: 'https://web.archive.org/web/20240824133306id_/https://www.casio.com/in/watches/gshock/product.GBD-300-9/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0617-gbd300/'
+    discontinued: false

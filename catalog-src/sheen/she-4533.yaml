@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4533PGL-1A/'
+    discontinued: true
   - id: she-4533pgl-7b
     ref: SHE-4533PGL-7B
     source:
@@ -55,3 +56,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180601id_/https://www.casio.com/in/watches/sheen/product.SHE-4533PGL-7B/'
+    discontinued: true

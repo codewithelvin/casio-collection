@@ -34,6 +34,7 @@ models:
       url: 'https://web.archive.org/web/20240715135443id_/https://www.casio.com/my/watches/gshock/product.MRG-B2100B-1A/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0528-mrgb2100b/'
+    discontinued: false
   - id: mrg-b2100d-1a
     ref: MRG-B2100D-1A
     source:
@@ -48,6 +49,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241125055129id_/https://www.casio.com/us/watches/gshock/product.MRG-B2100D-1A/'
+    discontinued: false
   - id: mrg-b2100r-2a
     ref: MRG-B2100R-2A
     source:
@@ -62,3 +64,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250220010019id_/https://www.casio.com/us/watches/gshock/product.MRG-B2100R-2A/'
+    discontinued: false

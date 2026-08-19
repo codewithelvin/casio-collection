@@ -30,3 +30,4 @@ models:
       author: Monoklon
       licence: cc-by-sa-4.0
       url: 'https://commons.wikimedia.org/wiki/File:Casio_F-30.jpg'
+    discontinued: true

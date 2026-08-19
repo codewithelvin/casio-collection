@@ -58,6 +58,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220743id_/https://www.casio.com/europe/watches/edifice/product.EFR-S108D-1AV/'
+    discontinued: false
   - id: efr-s108d-2av
     ref: EFR-S108D-2AV
     source:
@@ -72,6 +73,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193733id_/https://www.casio.com/us/watches/edifice/product.EFR-S108D-2AV/'
+    discontinued: false
   - id: efr-s108d-2bv
     ref: EFR-S108D-2BV
     source:
@@ -86,6 +88,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220843id_/https://www.casio.com/de/watches/edifice/product.EFR-S108D-2BV/'
+    discontinued: false
   - id: efr-s108d-3av
     ref: EFR-S108D-3AV
     source:
@@ -100,6 +103,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220845id_/https://www.casio.com/de/watches/edifice/product.EFR-S108D-3AV/'
+    discontinued: false
   - id: efr-s108d-7av
     ref: EFR-S108D-7AV
     source:
@@ -114,6 +118,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220737id_/https://www.casio.com/europe/watches/edifice/product.EFR-S108D-7AV/'
+    discontinued: false
   - id: efr-s108de-2av
     ref: EFR-S108DE-2AV
     source:
@@ -123,6 +128,7 @@ models:
       }
     movement: quartz
     module: '5359'
+    discontinued: false
   - id: efr-s108de-3av
     ref: EFR-S108DE-3AV
     source:
@@ -132,6 +138,7 @@ models:
       }
     movement: quartz
     module: '5359'
+    discontinued: false
   - id: efr-s108de-8av
     ref: EFR-S108DE-8AV
     source:
@@ -141,3 +148,4 @@ models:
       }
     movement: quartz
     module: '5359'
+    discontinued: false

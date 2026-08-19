@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4539CGL-1A/'
+    discontinued: false
   - id: she-4539cgl-7a
     ref: SHE-4539CGL-7A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001042634id_/https://www.casio.com/sg/watches/sheen/product.SHE-4539CGL-7A/'
+    discontinued: false
   - id: she-4539cgm-4a
     ref: SHE-4539CGM-4A
     source:
@@ -69,6 +71,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001042922id_/https://www.casio.com/in/watches/sheen/product.SHE-4539CGM-4A/'
+    discontinued: false
   - id: she-4539fgm-9a
     ref: SHE-4539FGM-9A
     source:
@@ -83,6 +86,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221134259id_/https://www.casio.com/in/watches/sheen/product.SHE-4539FGM-9A/'
+    discontinued: false
   - id: she-4539fm-7a
     ref: SHE-4539FM-7A
     source:
@@ -97,6 +101,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221134259id_/https://www.casio.com/in/watches/sheen/product.SHE-4539FM-7A/'
+    discontinued: false
   - id: she-4539fpl-7a
     ref: SHE-4539FPL-7A
     source:
@@ -111,6 +116,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221134259id_/https://www.casio.com/in/watches/sheen/product.SHE-4539FPL-7A/'
+    discontinued: false
   - id: she-4539fpm-4a
     ref: SHE-4539FPM-4A
     source:
@@ -125,6 +131,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221134300id_/https://www.casio.com/in/watches/sheen/product.SHE-4539FPM-4A/'
+    discontinued: false
   - id: she-4539gm-3a
     ref: SHE-4539GM-3A
     source:
@@ -139,6 +146,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231216203436id_/https://www.casio.com/intl/watches/sheen/product.SHE-4539GM-3A/'
+    discontinued: false
   - id: she-4539m-7a
     ref: SHE-4539M-7A
     source:
@@ -153,6 +161,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001042419id_/https://www.casio.com/sg/watches/sheen/product.SHE-4539M-7A/'
+    discontinued: false
   - id: she-4539pm-2a
     ref: SHE-4539PM-2A
     source:
@@ -167,6 +176,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193246id_/https://www.casio.com/intl/watches/sheen/product.SHE-4539PM-2A/'
+    discontinued: false
   - id: she-4539pm-5a
     ref: SHE-4539PM-5A
     source:
@@ -181,3 +191,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193243id_/https://www.casio.com/intl/watches/sheen/product.SHE-4539PM-5A/'
+    discontinued: false

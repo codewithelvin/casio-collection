@@ -88,6 +88,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230331103539id_/https://www.casio.com/jp/watches/gshock/product.GAE-2100EV-1A/'
+    discontinued: true
   - id: gae-2100gc-7a
     ref: GAE-2100GC-7A
     source:
@@ -104,6 +105,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022004id_/https://www.casio.com/europe/watches/gshock/product.GAE-2100GC-7A/'
+    discontinued: false
   - id: gae-2100rc-1a
     ref: GAE-2100RC-1A
     source:
@@ -120,6 +122,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022019id_/https://www.casio.com/europe/watches/gshock/product.GAE-2100RC-1A/'
+    discontinued: false
   - id: gae-2100we-3a
     ref: GAE-2100WE-3A
     source:
@@ -136,3 +139,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221121192520id_/https://www.casio.com/us/watches/gshock/product.GAE-2100WE-3A/'
+    discontinued: false

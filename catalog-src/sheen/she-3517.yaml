@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221325id_/https://www.casio.com/europe/watches/sheen/product.SHE-3517D-2A/'
+    discontinued: false
   - id: she-3517l-1a
     ref: SHE-3517L-1A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221320id_/https://www.casio.com/europe/watches/sheen/product.SHE-3517L-1A/'
+    discontinued: false
   - id: she-3517pgl-9a
     ref: SHE-3517PGL-9A
     source:
@@ -69,6 +71,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221409id_/https://www.casio.com/europe/watches/sheen/product.SHE-3517PGL-9A/'
+    discontinued: false
   - id: she-3517sg-4a
     ref: SHE-3517SG-4A
     source:
@@ -83,3 +86,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221335id_/https://www.casio.com/europe/watches/sheen/product.SHE-3517SG-4A/'
+    discontinued: false

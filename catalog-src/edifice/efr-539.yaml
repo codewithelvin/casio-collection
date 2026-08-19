@@ -72,6 +72,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220522021638id_/https://www.casio.com/in/watches/edifice/product.EFR-539BK-1A2V/'
+    discontinued: false
   - id: efr-539bk-1av
     ref: EFR-539BK-1AV
     source:
@@ -87,6 +88,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220524184800id_/https://www.casio.com/in/watches/edifice/product.EFR-539BK-1AV/'
+    discontinued: false
   - id: efr-539d-1a2v
     ref: EFR-539D-1A2V
     source:
@@ -102,6 +104,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220500id_/https://www.casio.com/europe/watches/edifice/product.EFR-539D-1A2V/'
+    discontinued: false
   - id: efr-539d-1av
     ref: EFR-539D-1AV
     source:
@@ -117,6 +120,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628160611id_/https://www.casio.com/in/watches/edifice/product.EFR-539D-1AV/'
+    discontinued: false
   - id: efr-539de-2av
     ref: EFR-539DE-2AV
     source:
@@ -127,6 +131,7 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    discontinued: false
   - id: efr-539de-3av
     ref: EFR-539DE-3AV
     source:
@@ -137,6 +142,7 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    discontinued: false
   - id: efr-539de-8av
     ref: EFR-539DE-8AV
     source:
@@ -147,6 +153,7 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    discontinued: false
   - id: efr-539l-1av
     ref: EFR-539L-1AV
     source:
@@ -162,6 +169,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628162659id_/https://www.casio.com/in/watches/edifice/product.EFR-539L-1AV/'
+    discontinued: false
   - id: efr-539l-5av
     ref: EFR-539L-5AV
     source:
@@ -177,6 +185,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220629104920id_/https://www.casio.com/hk/watches/edifice/product.EFR-539L-5AV/'
+    discontinued: false
   - id: efr-539l-7cv
     ref: EFR-539L-7CV
     source:
@@ -192,3 +201,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220629091128id_/https://www.casio.com/hk/watches/edifice/product.EFR-539L-7CV/'
+    discontinued: false

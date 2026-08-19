@@ -72,6 +72,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231007162744id_/https://www.casio.com/za/watches/gshock/product.GG-1000-1A/'
+    discontinued: false
   - id: gg-1000-1a3
     ref: GG-1000-1A3
     source:
@@ -88,6 +89,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220511205228id_/https://www.casio.com/us/watches/gshock/product.GG-1000-1A3/'
+    discontinued: false
   - id: gg-1000-1a5
     ref: GG-1000-1A5
     source:
@@ -104,6 +106,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722073245id_/https://www.casio.com/id/watches/gshock/product.GG-1000-1A5/'
+    discontinued: false
   - id: gg-1000-1a8
     ref: GG-1000-1A8
     source:
@@ -120,6 +123,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220511205228id_/https://www.casio.com/us/watches/gshock/product.GG-1000-1A8/'
+    discontinued: false
   - id: gg-1000btn-1a
     ref: GG-1000BTN-1A
     source:
@@ -131,6 +135,7 @@ models:
     movement: quartz
     module: '5476'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+    discontinued: true
   - id: gg-1000gb-1a
     ref: GG-1000GB-1A
     source:
@@ -142,6 +147,7 @@ models:
     movement: quartz
     module: '5476'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+    discontinued: true
   - id: gg-1000gb-4a
     ref: GG-1000GB-4A
     source:
@@ -153,6 +159,7 @@ models:
     movement: quartz
     module: '5476'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+    discontinued: true
   - id: gg-1000rg-1a
     ref: GG-1000RG-1A
     source:
@@ -164,6 +171,7 @@ models:
     movement: quartz
     module: '5476'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+    discontinued: true
   - id: gg-1000tlc-1a
     ref: GG-1000TLC-1A
     source:
@@ -175,6 +183,7 @@ models:
     movement: quartz
     module: '5476'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+    discontinued: true
   - id: gg-1000wlp-1a
     ref: GG-1000WLP-1A
     source:
@@ -186,3 +195,4 @@ models:
     movement: quartz
     module: '5476'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, thermometer]
+    discontinued: true

@@ -59,6 +59,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220508id_/https://www.casio.com/europe/watches/edifice/product.EFR-526BK-1A1V/'
+    discontinued: false
   - id: efr-526d-1av
     ref: EFR-526D-1AV
     source:
@@ -74,6 +75,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220451id_/https://www.casio.com/europe/watches/edifice/product.EFR-526D-1AV/'
+    discontinued: false
   - id: efr-526d-2av
     ref: EFR-526D-2AV
     source:
@@ -89,6 +91,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220823id_/https://www.casio.com/de/watches/edifice/product.EFR-526D-2AV/'
+    discontinued: false
   - id: efr-526d-3av
     ref: EFR-526D-3AV
     source:
@@ -104,6 +107,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220826id_/https://www.casio.com/de/watches/edifice/product.EFR-526D-3AV/'
+    discontinued: false
   - id: efr-526d-5cv
     ref: EFR-526D-5CV
     source:
@@ -119,6 +123,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127085649id_/https://www.casio.com/in/watches/edifice/product.EFR-526D-5CV/'
+    discontinued: false
   - id: efr-526d-7av
     ref: EFR-526D-7AV
     source:
@@ -134,6 +139,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220456id_/https://www.casio.com/europe/watches/edifice/product.EFR-526D-7AV/'
+    discontinued: false
   - id: efr-526l-1av
     ref: EFR-526L-1AV
     source:
@@ -149,6 +155,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220512id_/https://www.casio.com/europe/watches/edifice/product.EFR-526L-1AV/'
+    discontinued: false
   - id: efr-526l-2av
     ref: EFR-526L-2AV
     source:
@@ -164,6 +171,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628161531id_/https://www.casio.com/in/watches/edifice/product.EFR-526L-2AV/'
+    discontinued: false
   - id: efr-526l-2cv
     ref: EFR-526L-2CV
     source:
@@ -179,6 +187,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220610id_/https://www.casio.com/europe/watches/edifice/product.EFR-526L-2CV/'
+    discontinued: false
   - id: efr-526l-7av
     ref: EFR-526L-7AV
     source:
@@ -194,3 +203,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220522013322id_/https://www.casio.com/in/watches/edifice/product.EFR-526L-7AV/'
+    discontinued: false

@@ -73,6 +73,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221416id_/https://www.casio.com/europe/watches/protrek/product.PRW-35-1A/'
+    discontinued: false
   - id: prw-35-7
     ref: PRW-35-7
     source:
@@ -89,6 +90,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250121085154id_/https://www.casio.com/in/watches/protrek/product.PRW-35-7/'
+    discontinued: false
   - id: prw-35ld-5
     ref: PRW-35LD-5
     source:
@@ -100,6 +102,7 @@ models:
     movement: solar-radio
     module: '3490'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    discontinued: false
   - id: prw-35y-1b
     ref: PRW-35Y-1B
     source:
@@ -116,6 +119,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231119162205id_/https://www.casio.com/de/watches/protrek/product.PRW-35Y-1B/'
+    discontinued: false
   - id: prw-35y-2
     ref: PRW-35Y-2
     source:
@@ -132,6 +136,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240515082145id_/https://www.casio.com/jp/watches/protrek/product.PRW-35Y-2/'
+    discontinued: false
   - id: prw-35y-3
     ref: PRW-35Y-3
     source:
@@ -148,6 +153,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119144259id_/https://www.casio.com/in/watches/protrek/product.PRW-35Y-3/'
+    discontinued: false
   - id: prw-35y-3b
     ref: PRW-35Y-3B
     source:
@@ -164,3 +170,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250121085037id_/https://www.casio.com/in/watches/protrek/product.PRW-35Y-3B/'
+    discontinued: false

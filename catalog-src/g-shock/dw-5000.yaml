@@ -40,6 +40,7 @@ models:
       url: 'https://web.archive.org/web/20241214085539id_/https://www.casio.com/us/watches/gshock/product.DW-5000R-1A/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/1128-dw5000r/'
+    discontinued: false
   - id: dw-5000ss-1
     ref: DW-5000SS-1
     source:
@@ -53,3 +54,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064941id_/https://www.casio.com/europe/watches/gshock/product.DW-5000SS-1/'
+    discontinued: false

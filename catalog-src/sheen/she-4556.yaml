@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230328051657id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PG-2A/'
+    discontinued: false
   - id: she-4556pg-7a
     ref: SHE-4556PG-7A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230328062206id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PG-7A/'
+    discontinued: false
   - id: she-4556pgl-6a
     ref: SHE-4556PGL-6A
     source:
@@ -69,6 +71,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230328045240id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PGL-6A/'
+    discontinued: false
   - id: she-4556pgl-7a
     ref: SHE-4556PGL-7A
     source:
@@ -83,6 +86,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230328055900id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556PGL-7A/'
+    discontinued: false
   - id: she-4556spg-5a
     ref: SHE-4556SPG-5A
     source:
@@ -97,3 +101,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230328055359id_/https://www.casio.com/intl/watches/sheen/product.SHE-4556SPG-5A/'
+    discontinued: false

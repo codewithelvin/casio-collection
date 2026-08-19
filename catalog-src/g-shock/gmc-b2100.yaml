@@ -34,6 +34,7 @@ models:
       url: 'https://web.archive.org/web/20241126204429id_/https://www.casio.com/us/watches/gshock/product.GMC-B2100AD-2A/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0930-gmcb2100/'
+    discontinued: false
   - id: gmc-b2100d-1a
     ref: GMC-B2100D-1A
     source:
@@ -50,6 +51,7 @@ models:
       url: 'https://web.archive.org/web/20241126232853id_/https://www.casio.com/us/watches/gshock/product.GMC-B2100D-1A/'
     year: 2024
     year_source: 'https://www.casio.com/intl/news/2024/0930-gmcb2100/'
+    discontinued: false
   - id: gmc-b2100ze-1a
     ref: GMC-B2100ZE-1A
     source:
@@ -64,3 +66,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250121105018id_/https://www.casio.com/in/watches/gshock/product.GMC-B2100ZE-1A/'
+    discontinued: false

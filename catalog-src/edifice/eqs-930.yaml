@@ -85,6 +85,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001040738id_/https://www.casio.com/sg/watches/edifice/product.EQS-930BL-2AV/'
+    discontinued: false
   - id: eqs-930d-1av
     ref: EQS-930D-1AV
     source:
@@ -100,6 +101,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220813032108id_/https://www.casio.com/intl/watches/edifice/product.EQS-930D-1AV/'
+    discontinued: false
   - id: eqs-930db-1av
     ref: EQS-930DB-1AV
     source:
@@ -115,6 +117,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220813034404id_/https://www.casio.com/intl/watches/edifice/product.EQS-930DB-1AV/'
+    discontinued: false
   - id: eqs-930dc-1av
     ref: EQS-930DC-1AV
     source:
@@ -130,6 +133,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001040726id_/https://www.casio.com/sg/watches/edifice/product.EQS-930DC-1AV/'
+    discontinued: false
   - id: eqs-930hr-1a
     ref: EQS-930HR-1A
     source:
@@ -145,6 +149,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240717185514id_/https://www.casio.com/fr/watches/edifice/product.EQS-930HR-1A/'
+    discontinued: false
   - id: eqs-930md-8av
     ref: EQS-930MD-8AV
     source:
@@ -160,6 +165,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722125941id_/https://www.casio.com/id/watches/edifice/product.EQS-930MD-8AV/'
+    discontinued: false
   - id: eqs-930mdc-1av
     ref: EQS-930MDC-1AV
     source:
@@ -175,6 +181,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722125927id_/https://www.casio.com/id/watches/edifice/product.EQS-930MDC-1AV/'
+    discontinued: false
   - id: eqs-930tl-1av
     ref: EQS-930TL-1AV
     source:
@@ -190,3 +197,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722125754id_/https://www.casio.com/id/watches/edifice/product.EQS-930TL-1AV/'
+    discontinued: false

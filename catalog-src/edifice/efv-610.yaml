@@ -59,6 +59,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628144625id_/https://www.casio.com/in/watches/edifice/product.EFV-610CL-7AV/'
+    discontinued: false
   - id: efv-610d-1av
     ref: EFV-610D-1AV
     source:
@@ -74,6 +75,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220617id_/https://www.casio.com/europe/watches/edifice/product.EFV-610D-1AV/'
+    discontinued: false
   - id: efv-610d-3cv
     ref: EFV-610D-3CV
     source:
@@ -89,6 +91,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193707id_/https://www.casio.com/us/watches/edifice/product.EFV-610D-3CV/'
+    discontinued: false
   - id: efv-610d-5cv
     ref: EFV-610D-5CV
     source:
@@ -104,6 +107,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240708220613id_/https://www.casio.com/de/watches/edifice/product.EFV-610D-5CV/'
+    discontinued: false
   - id: efv-610db-2av
     ref: EFV-610DB-2AV
     source:
@@ -119,6 +123,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220648id_/https://www.casio.com/europe/watches/edifice/product.EFV-610DB-2AV/'
+    discontinued: false
   - id: efv-610dc-1av
     ref: EFV-610DC-1AV
     source:
@@ -134,6 +139,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220642id_/https://www.casio.com/europe/watches/edifice/product.EFV-610DC-1AV/'
+    discontinued: false
   - id: efv-610de-2a
     ref: EFV-610DE-2A
     source:
@@ -144,6 +150,7 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    discontinued: false
   - id: efv-610de-3a
     ref: EFV-610DE-3A
     source:
@@ -154,6 +161,7 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    discontinued: false
   - id: efv-610ecl-1a
     ref: EFV-610ECL-1A
     source:
@@ -164,6 +172,7 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    discontinued: false
   - id: efv-610el-5a
     ref: EFV-610EL-5A
     source:
@@ -174,6 +183,7 @@ models:
     movement: quartz
     module: '5345'
     features: [stopwatch]
+    discontinued: false
   - id: efv-610sg-5av
     ref: EFV-610SG-5AV
     source:
@@ -189,3 +199,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220516185355id_/https://www.casio.com/in/watches/edifice/product.EFV-610SG-5AV/'
+    discontinued: false

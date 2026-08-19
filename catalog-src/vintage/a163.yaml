@@ -1,0 +1,33 @@
+# A163 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: a163
+  name: A163
+  line: vintage
+
+models:
+  - id: a163wa-1q
+    ref: A163WA-1Q
+    source:
+      { url: 'https://web.archive.org/web/20240714215907id_/https://www.casio.com/europe/watches/casio/vintage/product.A163WA-1Q/', kind: official }
+    movement: quartz
+    case: { height_mm: 36.8, width_mm: 33, depth_mm: 9.1, weight_g: 48, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a163wa-1q
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714215907id_/https://www.casio.com/europe/watches/casio/vintage/product.A163WA-1Q/'
+    discontinued: false

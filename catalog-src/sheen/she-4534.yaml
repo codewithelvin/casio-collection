@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180601id_/https://www.casio.com/in/watches/sheen/product.SHE-4534PGL-1A/'
+    discontinued: false
   - id: she-4534pgl-2a
     ref: SHE-4534PGL-2A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220702143020id_/https://www.casio.com/intl/watches/sheen/product.SHE-4534PGL-2A/'
+    discontinued: false
   - id: she-4534pgl-7a
     ref: SHE-4534PGL-7A
     source:
@@ -69,3 +71,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4534PGL-7A/'
+    discontinued: true

@@ -31,6 +31,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250121113041id_/https://www.casio.com/in/watches/edifice/product.ECB-2000CB-2A/'
+    discontinued: false
   - id: ecb-2000d-1a
     ref: ECB-2000D-1A
     source:
@@ -44,6 +45,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221220id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000D-1A/'
+    discontinued: false
   - id: ecb-2000dc-1a
     ref: ECB-2000DC-1A
     source:
@@ -57,6 +59,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221217id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000DC-1A/'
+    discontinued: false
   - id: ecb-2000dc-1b
     ref: ECB-2000DC-1B
     source:
@@ -70,6 +73,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240307212725id_/https://www.casio.com/in/watches/edifice/product.ECB-2000DC-1B/'
+    discontinued: false
   - id: ecb-2000dd-1a
     ref: ECB-2000DD-1A
     source:
@@ -83,6 +87,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220714id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000DD-1A/'
+    discontinued: false
   - id: ecb-2000hr-1a
     ref: ECB-2000HR-1A
     source:
@@ -96,6 +101,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241121153927id_/https://www.casio.com/us/watches/edifice/product.ECB-2000HR-1A/'
+    discontinued: false
   - id: ecb-2000mfg-1a
     ref: ECB-2000MFG-1A
     source:
@@ -109,6 +115,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221214id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000MFG-1A/'
+    discontinued: false
   - id: ecb-2000nis-1a
     ref: ECB-2000NIS-1A
     source:
@@ -122,6 +129,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220832id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000NIS-1A/'
+    discontinued: false
   - id: ecb-2000np-1a
     ref: ECB-2000NP-1A
     source:
@@ -135,6 +143,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240307212722id_/https://www.casio.com/in/watches/edifice/product.ECB-2000NP-1A/'
+    discontinued: false
   - id: ecb-2000pb-1a
     ref: ECB-2000PB-1A
     source:
@@ -148,6 +157,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220842id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000PB-1A/'
+    discontinued: false
   - id: ecb-2000ss-2a
     ref: ECB-2000SS-2A
     source:
@@ -161,6 +171,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240827024517id_/https://www.casio.com/in/watches/edifice/product.ECB-2000SS-2A/'
+    discontinued: false
   - id: ecb-2000tp-1a
     ref: ECB-2000TP-1A
     source:
@@ -174,6 +185,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240307212745id_/https://www.casio.com/intl/watches/edifice/product.ECB-2000TP-1A/'
+    discontinued: false
   - id: ecb-2000ycb-2a
     ref: ECB-2000YCB-2A
     source:
@@ -184,6 +196,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240910051437id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YCB-2A/'
+    discontinued: true
   - id: ecb-2000yd-1a
     ref: ECB-2000YD-1A
     source:
@@ -194,6 +207,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220718073353id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YD-1A/'
+    discontinued: true
   - id: ecb-2000ynp-1a
     ref: ECB-2000YNP-1A
     source:
@@ -204,6 +218,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240523012937id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YNP-1A/'
+    discontinued: true
   - id: ecb-2000ypb-1a
     ref: ECB-2000YPB-1A
     source:
@@ -214,6 +229,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220714125920id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YPB-1A/'
+    discontinued: true
   - id: ecb-2000ytp-1a
     ref: ECB-2000YTP-1A
     source:
@@ -224,3 +240,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240522174237id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YTP-1A/'
+    discontinued: true

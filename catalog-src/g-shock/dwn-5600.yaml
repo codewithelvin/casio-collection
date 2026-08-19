@@ -40,3 +40,4 @@ models:
       url: 'https://web.archive.org/web/20251225211433id_/https://www.casio.com/europe/watches/gshock/product.DWN-5600-1/'
     year: 2025
     year_source: 'https://www.casio.com/intl/news/2025/1021-dwn-5600/'
+    discontinued: false

@@ -1,0 +1,98 @@
+# CA-500 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ca-500
+  name: CA-500
+  line: vintage
+
+models:
+  - id: ca-500we-1a
+    ref: CA-500WE-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220013id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WE-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 53, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-500we-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220013id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WE-1A/'
+    discontinued: false
+  - id: ca-500we-4b
+    ref: CA-500WE-4B
+    source:
+      { url: 'https://web.archive.org/web/20240714220049id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WE-4B/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 53, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-500we-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220049id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WE-4B/'
+    discontinued: false
+  - id: ca-500we-7b
+    ref: CA-500WE-7B
+    source:
+      { url: 'https://web.archive.org/web/20240714220047id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WE-7B/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 53, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-500we-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220047id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WE-7B/'
+    discontinued: false
+  - id: ca-500weg-1a
+    ref: CA-500WEG-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220011id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WEG-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 53, material: 'Resin / Gold tone' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-500weg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220011id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WEG-1A/'
+    discontinued: false
+  - id: ca-500wegg-1b
+    ref: CA-500WEGG-1B
+    source:
+      { url: 'https://web.archive.org/web/20240714220025id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WEGG-1B/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 53, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-500wegg-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220025id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WEGG-1B/'
+    discontinued: false
+  - id: ca-500wegg-9b
+    ref: CA-500WEGG-9B
+    source:
+      { url: 'https://web.archive.org/web/20240429204733id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WEGG-9B/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 34.4, depth_mm: 8.2, weight_g: 53, material: 'Resin / Chrome plated' }
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, calculator]
+    image: ca-500wegg-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240429204733id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WEGG-9B/'
+    discontinued: false

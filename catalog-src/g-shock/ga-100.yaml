@@ -31,6 +31,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022210id_/https://www.casio.com/europe/watches/gshock/product.GA-100-1A1/'
+    discontinued: false
   - id: ga-100-1a2
     ref: GA-100-1A2
     source:
@@ -44,6 +45,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022213id_/https://www.casio.com/europe/watches/gshock/product.GA-100-1A2/'
+    discontinued: false
   - id: ga-100-1a4
     ref: GA-100-1A4
     source:
@@ -57,6 +59,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022154id_/https://www.casio.com/europe/watches/gshock/product.GA-100-1A4/'
+    discontinued: false
   - id: ga-100a-7a
     ref: GA-100A-7A
     source:
@@ -70,6 +73,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119143940id_/https://www.casio.com/us/watches/gshock/product.GA-100A-7A/'
+    discontinued: false
   - id: ga-100a-9a
     ref: GA-100A-9A
     source:
@@ -83,6 +87,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220627231024id_/https://www.casio.com/in/watches/gshock/product.GA-100A-9A/'
+    discontinued: true
   - id: ga-100b-4a
     ref: GA-100B-4A
     source:
@@ -96,6 +101,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240518153337id_/https://www.casio.com/europe/watches/gshock/product.GA-100B-4A/'
+    discontinued: false
   - id: ga-100b-7a
     ref: GA-100B-7A
     source:
@@ -109,6 +115,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022201id_/https://www.casio.com/europe/watches/gshock/product.GA-100B-7A/'
+    discontinued: false
   - id: ga-100bl-1a
     ref: GA-100BL-1A
     source:
@@ -122,6 +129,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203231148id_/https://www.casio.com/sg/watches/gshock/product.GA-100BL-1A/'
+    discontinued: false
   - id: ga-100bnr-1a
     ref: GA-100BNR-1A
     source:
@@ -135,6 +143,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022156id_/https://www.casio.com/europe/watches/gshock/product.GA-100BNR-1A/'
+    discontinued: false
   - id: ga-100bp-1a
     ref: GA-100BP-1A
     source:
@@ -148,6 +157,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064647id_/https://www.casio.com/europe/watches/gshock/product.GA-100BP-1A/'
+    discontinued: false
   - id: ga-100bw-1a
     ref: GA-100BW-1A
     source:
@@ -161,6 +171,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220814150441id_/https://www.casio.com/us/watches/gshock/product.GA-100BW-1A/'
+    discontinued: false
   - id: ga-100c-8a
     ref: GA-100C-8A
     source:
@@ -174,6 +185,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220702055238id_/https://www.casio.com/us/watches/gshock/product.GA-100C-8A/'
+    discontinued: false
   - id: ga-100cb-1a
     ref: GA-100CB-1A
     source:
@@ -187,6 +199,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203232820id_/https://www.casio.com/sg/watches/gshock/product.GA-100CB-1A/'
+    discontinued: false
   - id: ga-100cf-1a
     ref: GA-100CF-1A
     source:
@@ -200,6 +213,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064632id_/https://www.casio.com/europe/watches/gshock/product.GA-100CF-1A/'
+    discontinued: false
   - id: ga-100cf-1a9
     ref: GA-100CF-1A9
     source:
@@ -213,6 +227,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064641id_/https://www.casio.com/europe/watches/gshock/product.GA-100CF-1A9/'
+    discontinued: false
   - id: ga-100cf-8a
     ref: GA-100CF-8A
     source:
@@ -226,6 +241,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220928164130id_/https://www.casio.com/sg/watches/gshock/product.GA-100CF-8A/'
+    discontinued: true
   - id: ga-100cm-4a
     ref: GA-100CM-4A
     source:
@@ -239,6 +255,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230328222219id_/https://www.casio.com/us/watches/gshock/product.GA-100CM-4A/'
+    discontinued: false
   - id: ga-100cm-5a
     ref: GA-100CM-5A
     source:
@@ -252,6 +269,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064629id_/https://www.casio.com/europe/watches/gshock/product.GA-100CM-5A/'
+    discontinued: false
   - id: ga-100cm-8a
     ref: GA-100CM-8A
     source:
@@ -265,6 +283,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203231427id_/https://www.casio.com/sg/watches/gshock/product.GA-100CM-8A/'
+    discontinued: true
   - id: ga-100cy-1a
     ref: GA-100CY-1A
     source:
@@ -278,6 +297,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231024140415id_/https://www.casio.com/sg/watches/gshock/product.GA-100CY-1A/'
+    discontinued: false
   - id: ga-100da-4a
     ref: GA-100DA-4A
     source:
@@ -291,6 +311,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203230128id_/https://www.casio.com/sg/watches/gshock/product.GA-100DA-4A/'
+    discontinued: false
   - id: ga-100eu-8a2
     ref: GA-100EU-8A2
     source:
@@ -301,6 +322,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722084934id_/https://www.casio.com/id/watches/gshock/product.GA-100EU-8A2/'
+    discontinued: false
   - id: ga-100fl-1a
     ref: GA-100FL-1A
     source:
@@ -314,6 +336,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250117225642id_/https://www.casio.com/us/watches/gshock/product.GA-100FL-1A/'
+    discontinued: false
   - id: ga-100fl-8a
     ref: GA-100FL-8A
     source:
@@ -327,6 +350,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250117231404id_/https://www.casio.com/us/watches/gshock/product.GA-100FL-8A/'
+    discontinued: false
   - id: ga-100gbx-1a4
     ref: GA-100GBX-1A4
     source:
@@ -340,6 +364,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064643id_/https://www.casio.com/europe/watches/gshock/product.GA-100GBX-1A4/'
+    discontinued: false
   - id: ga-100gbx-1a9
     ref: GA-100GBX-1A9
     source:
@@ -353,6 +378,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064638id_/https://www.casio.com/europe/watches/gshock/product.GA-100GBX-1A9/'
+    discontinued: false
   - id: ga-100jk-4a
     ref: GA-100JK-4A
     source:
@@ -366,6 +392,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211018205123id_/https://www.casio.com/my/watches/gshock/product.GA-100JK-4A/'
+    discontinued: true
   - id: ga-100l-2a
     ref: GA-100L-2A
     source:
@@ -379,6 +406,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220808064312id_/https://www.casio.com/us/watches/gshock/product.GA-100L-2A/'
+    discontinued: false
   - id: ga-100l-8a
     ref: GA-100L-8A
     source:
@@ -392,6 +420,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220702055034id_/https://www.casio.com/us/watches/gshock/product.GA-100L-8A/'
+    discontinued: false
   - id: ga-100mb-1a
     ref: GA-100MB-1A
     source:
@@ -405,6 +434,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220808081526id_/https://www.casio.com/us/watches/gshock/product.GA-100MB-1A/'
+    discontinued: false
   - id: ga-100mf-1a
     ref: GA-100MF-1A
     source:
@@ -418,6 +448,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240914142114id_/https://www.casio.com/in/watches/gshock/product.GA-100MF-1A/'
+    discontinued: false
   - id: ga-100mmc-1a
     ref: GA-100MMC-1A
     source:
@@ -431,6 +462,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220521063012id_/https://www.casio.com/in/watches/gshock/product.GA-100MMC-1A/'
+    discontinued: true
   - id: ga-100mt-1a3
     ref: GA-100MT-1A3
     source:
@@ -444,6 +476,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240214084711id_/https://www.casio.com/us/watches/gshock/product.GA-100MT-1A3/'
+    discontinued: false
   - id: ga-100pc-7a2
     ref: GA-100PC-7A2
     source:
@@ -457,6 +490,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119143953id_/https://www.casio.com/us/watches/gshock/product.GA-100PC-7A2/'
+    discontinued: false
   - id: ga-100rc-1a
     ref: GA-100RC-1A
     source:
@@ -470,6 +504,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20251122145108id_/https://www.casio.com/ph/watches/gshock/product.GA-100RC-1A/'
+    discontinued: false
   - id: ga-100rgb-1a
     ref: GA-100RGB-1A
     source:
@@ -483,6 +518,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064635id_/https://www.casio.com/europe/watches/gshock/product.GA-100RGB-1A/'
+    discontinued: false
   - id: ga-100shb-5a
     ref: GA-100SHB-5A
     source:
@@ -496,6 +532,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250121090623id_/https://www.casio.com/in/watches/gshock/product.GA-100SHB-5A/'
+    discontinued: false
   - id: ga-100skc-1a
     ref: GA-100SKC-1A
     source:
@@ -509,6 +546,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065335id_/https://www.casio.com/europe/watches/gshock/product.GA-100SKC-1A/'
+    discontinued: false
   - id: ga-100tu-1a3
     ref: GA-100TU-1A3
     source:
@@ -522,6 +560,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240907005457id_/https://www.casio.com/us/watches/gshock/product.GA-100TU-1A3/'
+    discontinued: false
   - id: ga-100wd-1a
     ref: GA-100WD-1A
     source:
@@ -535,3 +574,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241126211137id_/https://www.casio.com/us/watches/gshock/product.GA-100WD-1A/'
+    discontinued: false

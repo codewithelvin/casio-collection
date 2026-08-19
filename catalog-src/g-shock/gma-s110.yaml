@@ -75,6 +75,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250315061709id_/https://www.casio.com/us/watches/gshock/product.GMA-S110BE-4A/'
+    discontinued: true
   - id: gma-s110cc-2a
     ref: GMA-S110CC-2A
     source:
@@ -86,6 +87,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110cc-3a
     ref: GMA-S110CC-3A
     source:
@@ -97,6 +99,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110cc-4a
     ref: GMA-S110CC-4A
     source:
@@ -108,6 +111,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110cm-2a
     ref: GMA-S110CM-2A
     source:
@@ -119,6 +123,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110cm-3a
     ref: GMA-S110CM-3A
     source:
@@ -130,6 +135,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110cm-7a1
     ref: GMA-S110CM-7A1
     source:
@@ -141,6 +147,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110cm-7a2
     ref: GMA-S110CM-7A2
     source:
@@ -152,6 +159,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110cm-8a
     ref: GMA-S110CM-8A
     source:
@@ -163,6 +171,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110cw-7a1
     ref: GMA-S110CW-7A1
     source:
@@ -174,6 +183,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110cw-7a2
     ref: GMA-S110CW-7A2
     source:
@@ -185,6 +195,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110cw-7a3
     ref: GMA-S110CW-7A3
     source:
@@ -196,6 +207,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110f-1a
     ref: GMA-S110F-1A
     source:
@@ -207,6 +219,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110f-2a
     ref: GMA-S110F-2A
     source:
@@ -218,6 +231,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110f-4a
     ref: GMA-S110F-4A
     source:
@@ -229,6 +243,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110f-7a
     ref: GMA-S110F-7A
     source:
@@ -240,6 +255,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110gb-1a
     ref: GMA-S110GB-1A
     source:
@@ -256,6 +272,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021714id_/https://www.casio.com/europe/watches/gshock/product.GMA-S110GB-1A/'
+    discontinued: false
   - id: gma-s110gd-2a
     ref: GMA-S110GD-2A
     source:
@@ -267,6 +284,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110gd-4a1
     ref: GMA-S110GD-4A1
     source:
@@ -278,6 +296,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110gd-4a2
     ref: GMA-S110GD-4A2
     source:
@@ -289,6 +308,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110gs-3a
     ref: GMA-S110GS-3A
     source:
@@ -305,6 +325,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021723id_/https://www.casio.com/europe/watches/gshock/product.GMA-S110GS-3A/'
+    discontinued: false
   - id: gma-s110gs-8a
     ref: GMA-S110GS-8A
     source:
@@ -321,6 +342,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021720id_/https://www.casio.com/europe/watches/gshock/product.GMA-S110GS-8A/'
+    discontinued: false
   - id: gma-s110hc-1a
     ref: GMA-S110HC-1A
     source:
@@ -332,6 +354,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110hc-2a
     ref: GMA-S110HC-2A
     source:
@@ -343,6 +366,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: false
   - id: gma-s110hc-6a
     ref: GMA-S110HC-6A
     source:
@@ -354,6 +378,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110ht-4a
     ref: GMA-S110HT-4A
     source:
@@ -365,6 +390,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110ht-6a
     ref: GMA-S110HT-6A
     source:
@@ -376,6 +402,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110ht-7a
     ref: GMA-S110HT-7A
     source:
@@ -387,6 +414,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110ht-9a
     ref: GMA-S110HT-9A
     source:
@@ -398,6 +426,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110mc-2a
     ref: GMA-S110MC-2A
     source:
@@ -409,6 +438,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110mc-3a
     ref: GMA-S110MC-3A
     source:
@@ -420,6 +450,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: false
   - id: gma-s110mc-6a
     ref: GMA-S110MC-6A
     source:
@@ -431,6 +462,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110mp-4a1
     ref: GMA-S110MP-4A1
     source:
@@ -447,6 +479,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220810080739id_/https://www.casio.com/us/watches/gshock/product.GMA-S110MP-4A1/'
+    discontinued: false
   - id: gma-s110mp-4a2
     ref: GMA-S110MP-4A2
     source:
@@ -458,6 +491,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110mp-4a3
     ref: GMA-S110MP-4A3
     source:
@@ -469,6 +503,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110mp-7a
     ref: GMA-S110MP-7A
     source:
@@ -485,6 +520,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220511205329id_/https://www.casio.com/us/watches/gshock/product.GMA-S110MP-7A/'
+    discontinued: false
   - id: gma-s110np-8a
     ref: GMA-S110NP-8A
     source:
@@ -501,6 +537,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220818224214id_/https://www.casio.com/us/watches/gshock/product.GMA-S110NP-8A/'
+    discontinued: false
   - id: gma-s110sg-7a
     ref: GMA-S110SG-7A
     source:
@@ -517,6 +554,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021717id_/https://www.casio.com/europe/watches/gshock/product.GMA-S110SG-7A/'
+    discontinued: false
   - id: gma-s110sr-7a
     ref: GMA-S110SR-7A
     source:
@@ -533,6 +571,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065116id_/https://www.casio.com/europe/watches/gshock/product.GMA-S110SR-7A/'
+    discontinued: false
   - id: gma-s110st-2a
     ref: GMA-S110ST-2A
     source:
@@ -549,6 +588,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241212095729id_/https://www.casio.com/us/watches/gshock/product.GMA-S110ST-2A/'
+    discontinued: false
   - id: gma-s110st-4a
     ref: GMA-S110ST-4A
     source:
@@ -565,6 +605,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241227192011id_/https://www.casio.com/us/watches/gshock/product.GMA-S110ST-4A/'
+    discontinued: false
   - id: gma-s110st-7a
     ref: GMA-S110ST-7A
     source:
@@ -581,6 +622,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241217195729id_/https://www.casio.com/us/watches/gshock/product.GMA-S110ST-7A/'
+    discontinued: false
   - id: gma-s110tb-8a
     ref: GMA-S110TB-8A
     source:
@@ -597,6 +639,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119144316id_/https://www.casio.com/in/watches/gshock/product.GMA-S110TB-8A/'
+    discontinued: false
   - id: gma-s110vc-2a
     ref: GMA-S110VC-2A
     source:
@@ -608,6 +651,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: false
   - id: gma-s110vc-3a
     ref: GMA-S110VC-3A
     source:
@@ -619,6 +663,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110vc-4a
     ref: GMA-S110VC-4A
     source:
@@ -630,6 +675,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110vc-9a
     ref: GMA-S110VC-9A
     source:
@@ -641,6 +687,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110vk-9a
     ref: GMA-S110VK-9A
     source:
@@ -652,6 +699,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: true
   - id: gma-s110vw-2a
     ref: GMA-S110VW-2A
     source:
@@ -668,6 +716,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408194000id_/https://www.casio.com/us/watches/gshock/product.GMA-S110VW-2A/'
+    discontinued: false
   - id: gma-s110vw-4a
     ref: GMA-S110VW-4A
     source:
@@ -684,6 +733,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193956id_/https://www.casio.com/intl/watches/gshock/product.GMA-S110VW-4A/'
+    discontinued: false
   - id: gma-s110vw-6a
     ref: GMA-S110VW-6A
     source:
@@ -700,6 +750,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240516180413id_/https://www.casio.com/us/watches/gshock/product.GMA-S110VW-6A/'
+    discontinued: false
   - id: gma-s110xg-4a
     ref: GMA-S110XG-4A
     source:
@@ -711,6 +762,7 @@ models:
     movement: quartz
     module: '5425'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    discontinued: false
   - id: gma-s110y-9a
     ref: GMA-S110Y-9A
     source:
@@ -727,3 +779,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230321173437id_/https://www.casio.com/sg/watches/gshock/product.GMA-S110Y-9A/'
+    discontinued: false

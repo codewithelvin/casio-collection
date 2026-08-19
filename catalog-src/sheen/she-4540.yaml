@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220520224714id_/https://www.casio.com/intl/watches/sheen/product.SHE-4540CGL-7A/'
+    discontinued: false
   - id: she-4540cgl-9a
     ref: SHE-4540CGL-9A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001040958id_/https://www.casio.com/sg/watches/sheen/product.SHE-4540CGL-9A/'
+    discontinued: false
   - id: she-4540cgm-4a
     ref: SHE-4540CGM-4A
     source:
@@ -69,6 +71,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4540CGM-4A/'
+    discontinued: false
   - id: she-4540gm-1a
     ref: SHE-4540GM-1A
     source:
@@ -83,6 +86,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240926131428id_/https://www.casio.com/intl/watches/sheen/product.SHE-4540GM-1A/'
+    discontinued: false
   - id: she-4540m-7a
     ref: SHE-4540M-7A
     source:
@@ -97,3 +101,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221001042735id_/https://www.casio.com/sg/watches/sheen/product.SHE-4540M-7A/'
+    discontinued: false

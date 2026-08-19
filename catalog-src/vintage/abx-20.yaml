@@ -8,11 +8,18 @@
 # unless the page describes the dial. The page shows a "light" icon with no
 # type, and the vocabulary has five specific light values and no generic one,
 # so no light feature is claimed. Absent means nobody has found it (D27).
+#
+# `family: databank` added 2026-08-19. This was the only Databank-shaped series
+# in the catalogue for three days, and a family of one does not render as a
+# heading (D32, check 4) — so tagging it then would have bought a warning and
+# nothing else. DB-360, DBC-32 and DBC-611 arrived from Casio's archived product
+# pages, and the family now has four series and a reason to exist.
 
 series:
   id: abx-20
   name: ABX-20
   line: vintage
+  family: databank
   aka: ['TwinCept', 'TwinCept Databank']
 
 models:
@@ -29,3 +36,4 @@ models:
       author: The Digital Watch Library
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-abx-20'
+    discontinued: true

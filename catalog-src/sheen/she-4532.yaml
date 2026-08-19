@@ -41,6 +41,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4532PG-1A/'
+    discontinued: true
   - id: she-4532pgl-4a
     ref: SHE-4532PGL-4A
     source:
@@ -55,6 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4532PGL-4A/'
+    discontinued: true
   - id: she-4532pgl-7a
     ref: SHE-4532PGL-7A
     source:
@@ -69,3 +71,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4532PGL-7A/'
+    discontinued: true
