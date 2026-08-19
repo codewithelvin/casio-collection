@@ -174,6 +174,26 @@ node .claude/skills/casio-catalog/references/backfill-photos.ts g-shock --write
 npm run catalog:build && npm run catalog:validate
 ```
 
+**For a campaign, drive it with `pipeline.ts` rather than by hand**, which overlaps
+the two hosts a campaign actually talks to:
+
+```
+node .claude/skills/casio-catalog/references/pipeline.ts photos g-shock baby-g
+node .claude/skills/casio-catalog/references/pipeline.ts series g-shock:gbd-300 edifice:efk-100
+npm run catalog:images && npm run catalog:build && npm run catalog:validate
+```
+
+The archive serves product pages at one request per five seconds; casio.com
+serves the photograph files those pages name at one every half second. Run them
+in sequence and each host idles while the other works — 160 minutes of crawling
+on 2026-08-19, with every download queued behind a crawl it had nothing to do
+with. The pipeline downloads unit N while the archive crawls unit N+1.
+
+**Only one job ever talks to the archive, and that is the design rather than a
+limitation.** Its limit is per-IP, so two crawls do not go twice as fast — they
+trip the same cooldown and both stall, which is the failure `sources.md` records
+as making a whole line look unarchived. The overlap is strictly across hosts.
+
 `--write` runs **after** `catalog:images` on purpose: its gate is the published
 `.webp`, not the downloaded original. `catalog:images` refuses a source it cannot
 fit inside §10.3's budget and deletes what it half-wrote, so writing `image:` off
