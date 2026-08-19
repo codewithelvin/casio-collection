@@ -1,0 +1,154 @@
+# EQB-1100 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: eqb-1100
+  name: EQB-1100
+  line: edifice
+
+models:
+  - id: eqb-1100at-2a
+    ref: EQB-1100AT-2A
+    source:
+      { url: 'https://web.archive.org/web/20240714221149id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100AT-2A/', kind: official }
+    display: analog
+    movement: solar
+    case: { height_mm: 51.1, width_mm: 44.6, depth_mm: 9.6, weight_g: 137, material: 'Carbon fibre bezel · Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: eqb-1100at-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221149id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100AT-2A/'
+    discontinued: false
+  - id: eqb-1100d-1a
+    ref: EQB-1100D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221151id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100D-1A/', kind: official }
+    display: analog
+    movement: solar
+    case: { height_mm: 51.1, width_mm: 44.6, depth_mm: 8.9, weight_g: 124, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: eqb-1100d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221151id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100D-1A/'
+    discontinued: false
+  - id: eqb-1100dc-1a
+    ref: EQB-1100DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221156id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100DC-1A/', kind: official }
+    display: analog
+    movement: solar
+    case: { height_mm: 51.1, width_mm: 44.6, depth_mm: 8.9, weight_g: 124, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: eqb-1100dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221156id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100DC-1A/'
+    discontinued: false
+  - id: eqb-1100tms-1a
+    ref: EQB-1100TMS-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221153id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100TMS-1A/', kind: official }
+    display: analog
+    movement: solar
+    case: { height_mm: 51.1, width_mm: 44.6, depth_mm: 8.9, weight_g: 130, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: eqb-1100tms-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221153id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100TMS-1A/'
+    discontinued: false
+  - id: eqb-1100xdb-2a
+    ref: EQB-1100XDB-2A
+    source:
+      { url: 'https://web.archive.org/web/20220925140149id_/https://www.casio.com/sg/watches/edifice/product.EQB-1100XDB-2A/', kind: official }
+    display: analog
+    movement: solar
+    case: { height_mm: 51.1, width_mm: 44.6, depth_mm: 8.9, weight_g: 124, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: eqb-1100xdb-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925140149id_/https://www.casio.com/sg/watches/edifice/product.EQB-1100XDB-2A/'
+    discontinued: false
+  - id: eqb-1100xdc-1a
+    ref: EQB-1100XDC-1A
+    source:
+      { url: 'https://web.archive.org/web/20220703122341id_/https://www.casio.com/us/watches/edifice/product.EQB-1100XDC-1A/', kind: official }
+    display: analog
+    movement: solar
+    case: { height_mm: 51.1, width_mm: 44.6, depth_mm: 8.9, weight_g: 124, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: eqb-1100xdc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220703122341id_/https://www.casio.com/us/watches/edifice/product.EQB-1100XDC-1A/'
+    discontinued: false
+  - id: eqb-1100xydb-2a
+    ref: EQB-1100XYDB-2A
+    source:
+      { url: 'https://web.archive.org/web/20210329080113id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100XYDB-2A/', kind: official }
+    features: [bluetooth]
+    image: eqb-1100xydb-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210329080113id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100XYDB-2A/'
+    discontinued: true
+  - id: eqb-1100xydc-1a
+    ref: EQB-1100XYDC-1A
+    source:
+      { url: 'https://web.archive.org/web/20210324100114id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100XYDC-1A/', kind: official }
+    features: [bluetooth]
+    image: eqb-1100xydc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210324100114id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100XYDC-1A/'
+    discontinued: true
+  - id: eqb-1100yd-1a
+    ref: EQB-1100YD-1A
+    source:
+      { url: 'https://web.archive.org/web/20210318105741id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100YD-1A/', kind: official }
+    features: [bluetooth]
+    image: eqb-1100yd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210318105741id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100YD-1A/'
+    discontinued: true
+  - id: eqb-1100ydc-1a
+    ref: EQB-1100YDC-1A
+    source:
+      { url: 'https://web.archive.org/web/20210315122525id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100YDC-1A/', kind: official }
+    features: [bluetooth]
+    image: eqb-1100ydc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210315122525id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100YDC-1A/'
+    discontinued: true

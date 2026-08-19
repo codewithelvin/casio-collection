@@ -198,3 +198,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722125754id_/https://www.casio.com/id/watches/edifice/product.EQS-930TL-1AV/'
     discontinued: false
+
+# ADDED 2026-08-19: 1 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: eqs-930nis-1a
+    ref: EQS-930NIS-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220943id_/https://www.casio.com/europe/watches/edifice/product.EQS-930NIS-1A/', kind: official }
+    display: analog
+    case: { height_mm: 52, width_mm: 47.5, depth_mm: 12.3, weight_g: 98, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: eqs-930nis-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220943id_/https://www.casio.com/europe/watches/edifice/product.EQS-930NIS-1A/'
+    discontinued: true

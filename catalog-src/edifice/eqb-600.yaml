@@ -1,0 +1,34 @@
+# EQB-600 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: eqb-600
+  name: EQB-600
+  line: edifice
+
+models:
+  - id: eqb-600d-1a
+    ref: EQB-600D-1A
+    source:
+      { url: 'https://web.archive.org/web/20221108160000id_/https://www.casio.com/in/watches/edifice/product.EQB-600D-1A/', kind: official }
+    display: analog
+    case: { height_mm: 51.9, width_mm: 47.3, depth_mm: 13.3, weight_g: 170, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [world-time, dual-time, full-auto-calendar, bluetooth, power-saving, screw-lock-crown, mineral-glass]
+    image: eqb-600d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221108160000id_/https://www.casio.com/in/watches/edifice/product.EQB-600D-1A/'
+    discontinued: true

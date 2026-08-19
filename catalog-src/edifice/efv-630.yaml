@@ -1,0 +1,95 @@
+# EFV-630 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efv-630
+  name: EFV-630
+  line: edifice
+
+models:
+  - id: efv-630d-1av
+    ref: EFV-630D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221015122856id_/https://www.casio.com/intl/watches/edifice/product.EFV-630D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 43.9, depth_mm: 10.8, weight_g: 130, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-630d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221015122856id_/https://www.casio.com/intl/watches/edifice/product.EFV-630D-1AV/'
+    discontinued: false
+  - id: efv-630d-2av
+    ref: EFV-630D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220627085306id_/https://www.casio.com/in/watches/edifice/product.EFV-630D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 43.9, depth_mm: 10.8, weight_g: 130, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-630d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220627085306id_/https://www.casio.com/in/watches/edifice/product.EFV-630D-2AV/'
+    discontinued: false
+  - id: efv-630d-3av
+    ref: EFV-630D-3AV
+    source:
+      { url: 'https://web.archive.org/web/20220630014311id_/https://www.casio.com/in/watches/edifice/product.EFV-630D-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 43.9, depth_mm: 10.8, weight_g: 130, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-630d-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630014311id_/https://www.casio.com/in/watches/edifice/product.EFV-630D-3AV/'
+    discontinued: false
+  - id: efv-630l-1av
+    ref: EFV-630L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221001040712id_/https://www.casio.com/sg/watches/edifice/product.EFV-630L-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 43.9, depth_mm: 10.8, weight_g: 68, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-630l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221001040712id_/https://www.casio.com/sg/watches/edifice/product.EFV-630L-1AV/'
+    discontinued: false
+  - id: efv-630l-7av
+    ref: EFV-630L-7AV
+    source:
+      { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-630L-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 43.9, depth_mm: 10.8, weight_g: 68, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-630l-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-630L-7AV/'
+    discontinued: false

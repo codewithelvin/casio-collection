@@ -1,0 +1,95 @@
+# ERA-600 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: era-600
+  name: ERA-600
+  line: edifice
+
+models:
+  - id: era-600d-1a9v
+    ref: ERA-600D-1A9V
+    source:
+      { url: 'https://web.archive.org/web/20220630003813id_/https://www.casio.com/in/watches/edifice/product.ERA-600D-1A9V/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47.1, depth_mm: 13.2, weight_g: 171, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, thermometer, mineral-glass]
+    image: era-600d-1a9v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630003813id_/https://www.casio.com/in/watches/edifice/product.ERA-600D-1A9V/'
+    discontinued: true
+  - id: era-600d-1av
+    ref: ERA-600D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220630011418id_/https://www.casio.com/in/watches/edifice/product.ERA-600D-1AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47.1, depth_mm: 13.2, weight_g: 171, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, thermometer, mineral-glass]
+    image: era-600d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630011418id_/https://www.casio.com/in/watches/edifice/product.ERA-600D-1AV/'
+    discontinued: true
+  - id: era-600db-1av
+    ref: ERA-600DB-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220630020932id_/https://www.casio.com/in/watches/edifice/product.ERA-600DB-1AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47.1, depth_mm: 13.2, weight_g: 171, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, thermometer, mineral-glass]
+    image: era-600db-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630020932id_/https://www.casio.com/in/watches/edifice/product.ERA-600DB-1AV/'
+    discontinued: true
+  - id: era-600gl-2av
+    ref: ERA-600GL-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220630020510id_/https://www.casio.com/in/watches/edifice/product.ERA-600GL-2AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47.1, depth_mm: 13.2, weight_g: 93, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, thermometer, mineral-glass]
+    image: era-600gl-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630020510id_/https://www.casio.com/in/watches/edifice/product.ERA-600GL-2AV/'
+    discontinued: true
+  - id: era-600pb-1av
+    ref: ERA-600PB-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220630014501id_/https://www.casio.com/in/watches/edifice/product.ERA-600PB-1AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47.1, depth_mm: 13.2, weight_g: 100, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, thermometer]
+    image: era-600pb-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630014501id_/https://www.casio.com/in/watches/edifice/product.ERA-600PB-1AV/'
+    discontinued: true

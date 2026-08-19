@@ -1,0 +1,139 @@
+# ECB-20 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-20
+  name: ECB-20
+  line: edifice
+
+models:
+  - id: ecb-20at-2a
+    ref: ECB-20AT-2A
+    source:
+      { url: 'https://web.archive.org/web/20240714220837id_/https://www.casio.com/europe/watches/edifice/product.ECB-20AT-2A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46, depth_mm: 12.5, weight_g: 92, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, sapphire-crystal]
+    image: ecb-20at-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220837id_/https://www.casio.com/europe/watches/edifice/product.ECB-20AT-2A/'
+    discontinued: false
+  - id: ecb-20cl-1a
+    ref: ECB-20CL-1A
+    source:
+      { url: 'https://web.archive.org/web/20220930115624id_/https://www.casio.com/sg/watches/edifice/product.ECB-20CL-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46, depth_mm: 12.5, weight_g: 83, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-20cl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930115624id_/https://www.casio.com/sg/watches/edifice/product.ECB-20CL-1A/'
+    discontinued: false
+  - id: ecb-20d-1a
+    ref: ECB-20D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220533id_/https://www.casio.com/europe/watches/edifice/product.ECB-20D-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46, depth_mm: 12.5, weight_g: 151, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-20d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220533id_/https://www.casio.com/europe/watches/edifice/product.ECB-20D-1A/'
+    discontinued: false
+  - id: ecb-20db-1a
+    ref: ECB-20DB-1A
+    source:
+      { url: 'https://web.archive.org/web/20220925133350id_/https://www.casio.com/sg/watches/edifice/product.ECB-20DB-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46, depth_mm: 12.5, weight_g: 151, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-20db-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925133350id_/https://www.casio.com/sg/watches/edifice/product.ECB-20DB-1A/'
+    discontinued: false
+  - id: ecb-20dc-1a
+    ref: ECB-20DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20220925135141id_/https://www.casio.com/sg/watches/edifice/product.ECB-20DC-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46, depth_mm: 12.5, weight_g: 151, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-20dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925135141id_/https://www.casio.com/sg/watches/edifice/product.ECB-20DC-1A/'
+    discontinued: false
+  - id: ecb-20ycl-1a
+    ref: ECB-20YCL-1A
+    source:
+      { url: 'https://web.archive.org/web/20210714080533id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YCL-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-20ycl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210714080533id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YCL-1A/'
+    discontinued: true
+  - id: ecb-20yd-1a
+    ref: ECB-20YD-1A
+    source:
+      { url: 'https://web.archive.org/web/20221230162850id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YD-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-20yd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221230162850id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YD-1A/'
+    discontinued: true
+  - id: ecb-20ydb-1a
+    ref: ECB-20YDB-1A
+    source:
+      { url: 'https://web.archive.org/web/20210422090027id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YDB-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-20ydb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210422090027id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YDB-1A/'
+    discontinued: true
+  - id: ecb-20ydc-1a
+    ref: ECB-20YDC-1A
+    source:
+      { url: 'https://web.archive.org/web/20210707010113id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YDC-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-20ydc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210707010113id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YDC-1A/'
+    discontinued: true

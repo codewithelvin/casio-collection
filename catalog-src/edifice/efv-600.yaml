@@ -1,0 +1,95 @@
+# EFV-600 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efv-600
+  name: EFV-600
+  line: edifice
+
+models:
+  - id: efv-600cl-3av
+    ref: EFV-600CL-3AV
+    source:
+      { url: 'https://web.archive.org/web/20220628162627id_/https://www.casio.com/in/watches/edifice/product.EFV-600CL-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 43.8, depth_mm: 11.1, weight_g: 75, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-600cl-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628162627id_/https://www.casio.com/in/watches/edifice/product.EFV-600CL-3AV/'
+    discontinued: false
+  - id: efv-600d-2av
+    ref: EFV-600D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221037id_/https://www.casio.com/europe/watches/edifice/product.EFV-600D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 43.8, depth_mm: 11.1, weight_g: 135, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-600d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221037id_/https://www.casio.com/europe/watches/edifice/product.EFV-600D-2AV/'
+    discontinued: false
+  - id: efv-600d-3cv
+    ref: EFV-600D-3CV
+    source:
+      { url: 'https://web.archive.org/web/20230203224534id_/https://www.casio.com/in/watches/edifice/product.EFV-600D-3CV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 43.8, depth_mm: 11.1, weight_g: 135, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-600d-3cv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230203224534id_/https://www.casio.com/in/watches/edifice/product.EFV-600D-3CV/'
+    discontinued: false
+  - id: efv-600d-4av
+    ref: EFV-600D-4AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221042id_/https://www.casio.com/europe/watches/edifice/product.EFV-600D-4AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 43.8, depth_mm: 11.1, weight_g: 135, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-600d-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221042id_/https://www.casio.com/europe/watches/edifice/product.EFV-600D-4AV/'
+    discontinued: false
+  - id: efv-600l-2av
+    ref: EFV-600L-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220628150024id_/https://www.casio.com/in/watches/edifice/product.EFV-600L-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 43.8, depth_mm: 11.1, weight_g: 75, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-600l-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628150024id_/https://www.casio.com/in/watches/edifice/product.EFV-600L-2AV/'
+    discontinued: false

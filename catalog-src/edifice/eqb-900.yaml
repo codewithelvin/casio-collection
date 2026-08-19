@@ -1,0 +1,34 @@
+# EQB-900 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: eqb-900
+  name: EQB-900
+  line: edifice
+
+models:
+  - id: eqb-900db-2a
+    ref: EQB-900DB-2A
+    source:
+      { url: 'https://web.archive.org/web/20220925140909id_/https://www.casio.com/sg/watches/edifice/product.EQB-900DB-2A/', kind: official }
+    display: analog
+    case: { height_mm: 49.2, width_mm: 45.8, depth_mm: 12, weight_g: 148, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, power-saving, screw-lock-crown, mineral-glass]
+    image: eqb-900db-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925140909id_/https://www.casio.com/sg/watches/edifice/product.EQB-900DB-2A/'
+    discontinued: false

@@ -204,3 +204,55 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220522013322id_/https://www.casio.com/in/watches/edifice/product.EFR-526L-7AV/'
     discontinued: false
+
+# ADDED 2026-08-19: 3 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: efr-526bk-1a2v
+    ref: EFR-526BK-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20220628163320id_/https://www.casio.com/in/watches/edifice/product.EFR-526BK-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.5, width_mm: 43.8, depth_mm: 11.6, weight_g: 149, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-526bk-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628163320id_/https://www.casio.com/in/watches/edifice/product.EFR-526BK-1A2V/'
+    discontinued: true
+  - id: efr-526bk-1a9v
+    ref: EFR-526BK-1A9V
+    source:
+      { url: 'https://web.archive.org/web/20220525185712id_/https://www.casio.com/in/watches/edifice/product.EFR-526BK-1A9V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.5, width_mm: 43.8, depth_mm: 11.6, weight_g: 149, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-526bk-1a9v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220525185712id_/https://www.casio.com/in/watches/edifice/product.EFR-526BK-1A9V/'
+    discontinued: true
+  - id: efr-526l-7bv
+    ref: EFR-526L-7BV
+    source:
+      { url: 'https://web.archive.org/web/20220529112502id_/https://www.casio.com/in/watches/edifice/product.EFR-526L-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.5, width_mm: 43.8, depth_mm: 11.6, weight_g: 74, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-526l-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529112502id_/https://www.casio.com/in/watches/edifice/product.EFR-526L-7BV/'
+    discontinued: true

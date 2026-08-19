@@ -1,0 +1,76 @@
+# EFS-S640 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efs-s640
+  name: EFS-S640
+  line: edifice
+
+models:
+  - id: efs-s640d-1av
+    ref: EFS-S640D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220535id_/https://www.casio.com/europe/watches/edifice/product.EFS-S640D-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 50.1, width_mm: 44.5, depth_mm: 13.3, weight_g: 118, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s640d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220535id_/https://www.casio.com/europe/watches/edifice/product.EFS-S640D-1AV/'
+    discontinued: false
+  - id: efs-s640dc-1av
+    ref: EFS-S640DC-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220546id_/https://www.casio.com/europe/watches/edifice/product.EFS-S640DC-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 50.1, width_mm: 44.5, depth_mm: 13.3, weight_g: 118, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s640dc-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220546id_/https://www.casio.com/europe/watches/edifice/product.EFS-S640DC-1AV/'
+    discontinued: false
+  - id: efs-s640pb-1av
+    ref: EFS-S640PB-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220557id_/https://www.casio.com/europe/watches/edifice/product.EFS-S640PB-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 50.1, width_mm: 44.5, depth_mm: 13.3, weight_g: 59, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s640pb-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220557id_/https://www.casio.com/europe/watches/edifice/product.EFS-S640PB-1AV/'
+    discontinued: false
+  - id: efs-s640ze-1a
+    ref: EFS-S640ZE-1A
+    source:
+      { url: 'https://web.archive.org/web/20250121101357id_/https://www.casio.com/in/watches/edifice/product.EFS-S640ZE-1A/', kind: official }
+    display: analog
+    case: { height_mm: 50.1, width_mm: 44.5, depth_mm: 13.8, weight_g: 61, material: 'Carbon / Stainless steel / Aluminum' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s640ze-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121101357id_/https://www.casio.com/in/watches/edifice/product.EFS-S640ZE-1A/'
+    discontinued: false

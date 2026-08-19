@@ -1,0 +1,53 @@
+# ECB-S10 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-s10
+  name: ECB-S10
+  line: edifice
+
+models:
+  - id: ecb-s10d-2a
+    ref: ECB-S10D-2A
+    source:
+      { url: 'https://web.archive.org/web/20250413081812id_/https://www.casio.com/fr/watches/edifice/product.ECB-S10D-2A/', kind: official }
+    features: [super-illuminator, bluetooth]
+    image: ecb-s10d-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250413081812id_/https://www.casio.com/fr/watches/edifice/product.ECB-S10D-2A/'
+    discontinued: false
+  - id: ecb-s10d-8a
+    ref: ECB-S10D-8A
+    source:
+      { url: 'https://web.archive.org/web/20250413081817id_/https://www.casio.com/fr/watches/edifice/product.ECB-S10D-8A/', kind: official }
+    features: [super-illuminator, bluetooth]
+    image: ecb-s10d-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250413081817id_/https://www.casio.com/fr/watches/edifice/product.ECB-S10D-8A/'
+    discontinued: false
+  - id: ecb-s10yd-2a
+    ref: ECB-S10YD-2A
+    source:
+      { url: 'https://web.archive.org/web/20250414011601id_/https://www.casio.com/jp/watches/edifice/product.ECB-S10YD-2A/', kind: official }
+    features: [bluetooth]
+    image: ecb-s10yd-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250414011601id_/https://www.casio.com/jp/watches/edifice/product.ECB-S10YD-2A/'
+    discontinued: true

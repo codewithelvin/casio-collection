@@ -1,0 +1,80 @@
+# EF-539 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ef-539
+  name: EF-539
+  line: edifice
+
+models:
+  - id: ef-539d-1a2v
+    ref: EF-539D-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20220628162044id_/https://www.casio.com/in/watches/edifice/product.EF-539D-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53.5, width_mm: 48.5, depth_mm: 11.5, weight_g: 198, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: ef-539d-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628162044id_/https://www.casio.com/in/watches/edifice/product.EF-539D-1A2V/'
+    discontinued: false
+  - id: ef-539d-1a5v
+    ref: EF-539D-1A5V
+    source:
+      { url: 'https://web.archive.org/web/20220628162911id_/https://www.casio.com/in/watches/edifice/product.EF-539D-1A5V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53.5, width_mm: 48.5, depth_mm: 11.5, weight_g: 198, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: ef-539d-1a5v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628162911id_/https://www.casio.com/in/watches/edifice/product.EF-539D-1A5V/'
+    discontinued: false
+  - id: ef-539d-1av
+    ref: EF-539D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220527id_/https://www.casio.com/europe/watches/edifice/product.EF-539D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53.5, width_mm: 48.5, depth_mm: 11.5, weight_g: 198, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: ef-539d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220527id_/https://www.casio.com/europe/watches/edifice/product.EF-539D-1AV/'
+    discontinued: false
+  - id: ef-539d-7av
+    ref: EF-539D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220519011230id_/https://www.casio.com/in/watches/edifice/product.EF-539D-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53.5, width_mm: 48.5, depth_mm: 11.5, weight_g: 198, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: ef-539d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220519011230id_/https://www.casio.com/in/watches/edifice/product.EF-539D-7AV/'
+    discontinued: true

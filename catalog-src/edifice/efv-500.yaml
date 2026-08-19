@@ -1,0 +1,80 @@
+# EFV-500 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efv-500
+  name: EFV-500
+  line: edifice
+
+models:
+  - id: efv-500bl-1av
+    ref: EFV-500BL-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220630013659id_/https://www.casio.com/in/watches/edifice/product.EFV-500BL-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54, width_mm: 47.2, depth_mm: 12.1, weight_g: 80, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-500bl-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630013659id_/https://www.casio.com/in/watches/edifice/product.EFV-500BL-1AV/'
+    discontinued: true
+  - id: efv-500d-7av
+    ref: EFV-500D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220630005945id_/https://www.casio.com/in/watches/edifice/product.EFV-500D-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54, width_mm: 47.2, depth_mm: 12.1, weight_g: 147, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-500d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630005945id_/https://www.casio.com/in/watches/edifice/product.EFV-500D-7AV/'
+    discontinued: true
+  - id: efv-500gl-2av
+    ref: EFV-500GL-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220516194222id_/https://www.casio.com/in/watches/edifice/product.EFV-500GL-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54, width_mm: 47.2, depth_mm: 12.1, weight_g: 80, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-500gl-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516194222id_/https://www.casio.com/in/watches/edifice/product.EFV-500GL-2AV/'
+    discontinued: true
+  - id: efv-500l-7av
+    ref: EFV-500L-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220630012255id_/https://www.casio.com/in/watches/edifice/product.EFV-500L-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54, width_mm: 47.2, depth_mm: 12.1, weight_g: 80, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-500l-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630012255id_/https://www.casio.com/in/watches/edifice/product.EFV-500L-7AV/'
+    discontinued: true

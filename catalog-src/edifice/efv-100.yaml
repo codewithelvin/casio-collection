@@ -1,0 +1,110 @@
+# EFV-100 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efv-100
+  name: EFV-100
+  line: edifice
+
+models:
+  - id: efv-100d-1av
+    ref: EFV-100D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220638id_/https://www.casio.com/europe/watches/edifice/product.EFV-100D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 42, depth_mm: 10.9, weight_g: 125, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-100d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220638id_/https://www.casio.com/europe/watches/edifice/product.EFV-100D-1AV/'
+    discontinued: false
+  - id: efv-100d-2av
+    ref: EFV-100D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220538id_/https://www.casio.com/europe/watches/edifice/product.EFV-100D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 42, depth_mm: 10.9, weight_g: 125, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-100d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220538id_/https://www.casio.com/europe/watches/edifice/product.EFV-100D-2AV/'
+    discontinued: false
+  - id: efv-100d-7av
+    ref: EFV-100D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20221209060105id_/https://www.casio.com/ph/watches/edifice/product.EFV-100D-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 42, depth_mm: 10.9, weight_g: 125, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-100d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221209060105id_/https://www.casio.com/ph/watches/edifice/product.EFV-100D-7AV/'
+    discontinued: false
+  - id: efv-100d-8av
+    ref: EFV-100D-8AV
+    source:
+      { url: 'https://web.archive.org/web/20241127050649id_/https://www.casio.com/europe/watches/edifice/product.EFV-100D-8AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 42, depth_mm: 10.9, weight_g: 125, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-100d-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241127050649id_/https://www.casio.com/europe/watches/edifice/product.EFV-100D-8AV/'
+    discontinued: false
+  - id: efv-100l-1av
+    ref: EFV-100L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-100L-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 42, depth_mm: 10.9, weight_g: 63, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-100l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-100L-1AV/'
+    discontinued: false
+  - id: efv-100l-7av
+    ref: EFV-100L-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220808045814id_/https://www.casio.com/intl/watches/edifice/product.EFV-100L-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 42, depth_mm: 10.9, weight_g: 63, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-100l-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808045814id_/https://www.casio.com/intl/watches/edifice/product.EFV-100L-7AV/'
+    discontinued: false

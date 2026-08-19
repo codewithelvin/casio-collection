@@ -1,0 +1,80 @@
+# EFV-650 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efv-650
+  name: EFV-650
+  line: edifice
+
+models:
+  - id: efv-650cl-5av
+    ref: EFV-650CL-5AV
+    source:
+      { url: 'https://web.archive.org/web/20250616164001id_/https://www.casio.com/in/watches/edifice/product.EFV-650CL-5AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.6, width_mm: 43.5, depth_mm: 11, weight_g: 67, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-650cl-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250616164001id_/https://www.casio.com/in/watches/edifice/product.EFV-650CL-5AV/'
+    discontinued: false
+  - id: efv-650d-1av
+    ref: EFV-650D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20250121094248id_/https://www.casio.com/in/watches/edifice/product.EFV-650D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.6, width_mm: 43.5, depth_mm: 11, weight_g: 128, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-650d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121094248id_/https://www.casio.com/in/watches/edifice/product.EFV-650D-1AV/'
+    discontinued: false
+  - id: efv-650d-2av
+    ref: EFV-650D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240119142118id_/https://www.casio.com/us/watches/edifice/product.EFV-650D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.6, width_mm: 43.5, depth_mm: 11, weight_g: 128, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-650d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119142118id_/https://www.casio.com/us/watches/edifice/product.EFV-650D-2AV/'
+    discontinued: false
+  - id: efv-650d-3av
+    ref: EFV-650D-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240119142117id_/https://www.casio.com/us/watches/edifice/product.EFV-650D-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.6, width_mm: 43.5, depth_mm: 11, weight_g: 128, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-650d-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119142117id_/https://www.casio.com/us/watches/edifice/product.EFV-650D-3AV/'
+    discontinued: false

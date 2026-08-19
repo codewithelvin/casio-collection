@@ -1,0 +1,80 @@
+# EFR-575 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efr-575
+  name: EFR-575
+  line: edifice
+
+models:
+  - id: efr-575cl-3a
+    ref: EFR-575CL-3A
+    source:
+      { url: 'https://web.archive.org/web/20250217131753id_/https://www.casio.com/intl/watches/edifice/product.EFR-575CL-3A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 40.5, depth_mm: 12.6, weight_g: 65, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-575cl-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250217131753id_/https://www.casio.com/intl/watches/edifice/product.EFR-575CL-3A/'
+    discontinued: false
+  - id: efr-575d-1a
+    ref: EFR-575D-1A
+    source:
+      { url: 'https://web.archive.org/web/20250217131212id_/https://www.casio.com/intl/watches/edifice/product.EFR-575D-1A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 40.5, depth_mm: 12.6, weight_g: 125, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-575d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250217131212id_/https://www.casio.com/intl/watches/edifice/product.EFR-575D-1A/'
+    discontinued: false
+  - id: efr-575d-2a
+    ref: EFR-575D-2A
+    source:
+      { url: 'https://web.archive.org/web/20250217125435id_/https://www.casio.com/intl/watches/edifice/product.EFR-575D-2A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 40.5, depth_mm: 12.6, weight_g: 125, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-575d-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250217125435id_/https://www.casio.com/intl/watches/edifice/product.EFR-575D-2A/'
+    discontinued: false
+  - id: efr-575l-7a
+    ref: EFR-575L-7A
+    source:
+      { url: 'https://web.archive.org/web/20250217130533id_/https://www.casio.com/intl/watches/edifice/product.EFR-575L-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.9, width_mm: 40.5, depth_mm: 12.6, weight_g: 65, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-575l-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250217130533id_/https://www.casio.com/intl/watches/edifice/product.EFR-575L-7A/'
+    discontinued: false

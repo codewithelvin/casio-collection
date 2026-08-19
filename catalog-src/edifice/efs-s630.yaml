@@ -1,0 +1,62 @@
+# EFS-S630 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efs-s630
+  name: EFS-S630
+  line: edifice
+
+models:
+  - id: efs-s630bl-5av
+    ref: EFS-S630BL-5AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221237id_/https://www.casio.com/europe/watches/edifice/product.EFS-S630BL-5AV/', kind: official }
+    display: analog
+    case: { height_mm: 48.4, width_mm: 44, depth_mm: 12.1, weight_g: 77, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s630bl-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221237id_/https://www.casio.com/europe/watches/edifice/product.EFS-S630BL-5AV/'
+    discontinued: false
+  - id: efs-s630d-1av
+    ref: EFS-S630D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221032id_/https://www.casio.com/europe/watches/edifice/product.EFS-S630D-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 48.4, width_mm: 44, depth_mm: 12.1, weight_g: 147, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s630d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221032id_/https://www.casio.com/europe/watches/edifice/product.EFS-S630D-1AV/'
+    discontinued: false
+  - id: efs-s630dc-2av
+    ref: EFS-S630DC-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221035id_/https://www.casio.com/europe/watches/edifice/product.EFS-S630DC-2AV/', kind: official }
+    display: analog
+    case: { height_mm: 48.4, width_mm: 44, depth_mm: 12.1, weight_g: 147, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s630dc-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221035id_/https://www.casio.com/europe/watches/edifice/product.EFS-S630DC-2AV/'
+    discontinued: false

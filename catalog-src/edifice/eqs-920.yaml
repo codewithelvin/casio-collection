@@ -1,0 +1,73 @@
+# EQS-920 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: eqs-920
+  name: EQS-920
+  line: edifice
+
+models:
+  - id: eqs-920db-1av
+    ref: EQS-920DB-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240119144228id_/https://www.casio.com/in/watches/edifice/product.EQS-920DB-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 56.5, width_mm: 47.6, depth_mm: 12.5, weight_g: 170, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: eqs-920db-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144228id_/https://www.casio.com/in/watches/edifice/product.EQS-920DB-1AV/'
+    discontinued: false
+  - id: eqs-920db-1bv
+    ref: EQS-920DB-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240119144222id_/https://www.casio.com/in/watches/edifice/product.EQS-920DB-1BV/', kind: official }
+    display: analog
+    case: { height_mm: 56.5, width_mm: 47.6, depth_mm: 12.5, weight_g: 170, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: eqs-920db-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144222id_/https://www.casio.com/in/watches/edifice/product.EQS-920DB-1BV/'
+    discontinued: false
+  - id: eqs-920db-2av
+    ref: EQS-920DB-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240722130252id_/https://www.casio.com/id/watches/edifice/product.EQS-920DB-2AV/', kind: official }
+    features: [stopwatch]
+    image: eqs-920db-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722130252id_/https://www.casio.com/id/watches/edifice/product.EQS-920DB-2AV/'
+    discontinued: false
+  - id: eqs-920pb-1av
+    ref: EQS-920PB-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240119144225id_/https://www.casio.com/in/watches/edifice/product.EQS-920PB-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 56, width_mm: 47.6, depth_mm: 12.5, weight_g: 104, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: eqs-920pb-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144225id_/https://www.casio.com/in/watches/edifice/product.EQS-920PB-1AV/'
+    discontinued: false

@@ -1,0 +1,125 @@
+# EFV-C110 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efv-c110
+  name: EFV-C110
+  line: edifice
+
+models:
+  - id: efv-c110d-1a3v
+    ref: EFV-C110D-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20240714221124id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110D-1A3V/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 51.3, width_mm: 46.9, depth_mm: 13.7, weight_g: 166, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, mineral-glass, telememo]
+    image: efv-c110d-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221124id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110D-1A3V/'
+    discontinued: false
+  - id: efv-c110d-1a4v
+    ref: EFV-C110D-1A4V
+    source:
+      { url: 'https://web.archive.org/web/20240714221127id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110D-1A4V/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 51.3, width_mm: 46.9, depth_mm: 13.7, weight_g: 166, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, mineral-glass, telememo]
+    image: efv-c110d-1a4v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221127id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110D-1A4V/'
+    discontinued: false
+  - id: efv-c110d-2av
+    ref: EFV-C110D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221103id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110D-2AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 51.3, width_mm: 46.9, depth_mm: 13.7, weight_g: 166, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, mineral-glass, telememo]
+    image: efv-c110d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221103id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110D-2AV/'
+    discontinued: false
+  - id: efv-c110d-2b
+    ref: EFV-C110D-2B
+    source:
+      { url: 'https://web.archive.org/web/20250121091959id_/https://www.casio.com/in/watches/edifice/product.EFV-C110D-2B/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 51.3, width_mm: 46.9, depth_mm: 13.7, weight_g: 166, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, mineral-glass, telememo]
+    image: efv-c110d-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121091959id_/https://www.casio.com/in/watches/edifice/product.EFV-C110D-2B/'
+    discontinued: false
+  - id: efv-c110d-5a
+    ref: EFV-C110D-5A
+    source:
+      { url: 'https://web.archive.org/web/20250121093058id_/https://www.casio.com/in/watches/edifice/product.EFV-C110D-5A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 51.3, width_mm: 46.9, depth_mm: 13.7, weight_g: 166, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, mineral-glass, telememo]
+    image: efv-c110d-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121093058id_/https://www.casio.com/in/watches/edifice/product.EFV-C110D-5A/'
+    discontinued: false
+  - id: efv-c110dc-1a
+    ref: EFV-C110DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20250121011044id_/https://www.casio.com/in/watches/edifice/product.EFV-C110DC-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 51.3, width_mm: 46.9, depth_mm: 13.7, weight_g: 166, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, mineral-glass, telememo]
+    image: efv-c110dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121011044id_/https://www.casio.com/in/watches/edifice/product.EFV-C110DC-1A/'
+    discontinued: false
+  - id: efv-c110l-1av
+    ref: EFV-C110L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221106id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110L-1AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 51.3, width_mm: 46.9, depth_mm: 13.7, weight_g: 95, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, mineral-glass, telememo]
+    image: efv-c110l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221106id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110L-1AV/'
+    discontinued: false

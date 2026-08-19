@@ -1,0 +1,32 @@
+# ECB-2300 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-2300
+  name: ECB-2300
+  line: edifice
+
+models:
+  - id: ecb-2300hr-1a
+    ref: ECB-2300HR-1A
+    source:
+      { url: 'https://web.archive.org/web/20260124130853id_/https://www.casio.com/fr/watches/edifice/product.ECB-2300HR-1A/', kind: official }
+    movement: solar
+    features: [super-illuminator, bluetooth, tough-solar]
+    image: ecb-2300hr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20260124130853id_/https://www.casio.com/fr/watches/edifice/product.ECB-2300HR-1A/'
+    discontinued: false

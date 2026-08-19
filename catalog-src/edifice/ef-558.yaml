@@ -1,0 +1,80 @@
+# EF-558 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ef-558
+  name: EF-558
+  line: edifice
+
+models:
+  - id: ef-558d-1av
+    ref: EF-558D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220521003926id_/https://www.casio.com/in/watches/edifice/product.EF-558D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 51, width_mm: 49.3, depth_mm: 14.1, weight_g: 197, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, screw-lock-crown, mineral-glass]
+    image: ef-558d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220521003926id_/https://www.casio.com/in/watches/edifice/product.EF-558D-1AV/'
+    discontinued: false
+  - id: ef-558d-2av
+    ref: EF-558D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220628150442id_/https://www.casio.com/in/watches/edifice/product.EF-558D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 51, width_mm: 49.3, depth_mm: 14.1, weight_g: 197, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, screw-lock-crown, mineral-glass]
+    image: ef-558d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628150442id_/https://www.casio.com/in/watches/edifice/product.EF-558D-2AV/'
+    discontinued: false
+  - id: ef-558dc-1av
+    ref: EF-558DC-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220523123407id_/https://www.casio.com/in/watches/edifice/product.EF-558DC-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 51, width_mm: 49.3, depth_mm: 14.1, weight_g: 192, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: ef-558dc-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220523123407id_/https://www.casio.com/in/watches/edifice/product.EF-558DC-1AV/'
+    discontinued: false
+  - id: ef-558sg-1av
+    ref: EF-558SG-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220628162443id_/https://www.casio.com/in/watches/edifice/product.EF-558SG-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 51, width_mm: 49.3, depth_mm: 14.1, weight_g: 197, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, screw-lock-crown, mineral-glass]
+    image: ef-558sg-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628162443id_/https://www.casio.com/in/watches/edifice/product.EF-558SG-1AV/'
+    discontinued: false

@@ -1,0 +1,76 @@
+# EFS-S620 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efs-s620
+  name: EFS-S620
+  line: edifice
+
+models:
+  - id: efs-s620bl-1av
+    ref: EFS-S620BL-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221227id_/https://www.casio.com/europe/watches/edifice/product.EFS-S620BL-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 49.5, width_mm: 45.5, depth_mm: 12.2, weight_g: 74, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s620bl-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221227id_/https://www.casio.com/europe/watches/edifice/product.EFS-S620BL-1AV/'
+    discontinued: false
+  - id: efs-s620db-1av
+    ref: EFS-S620DB-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221233id_/https://www.casio.com/europe/watches/edifice/product.EFS-S620DB-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 49.5, width_mm: 45.5, depth_mm: 12.2, weight_g: 132, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s620db-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221233id_/https://www.casio.com/europe/watches/edifice/product.EFS-S620DB-1AV/'
+    discontinued: false
+  - id: efs-s620db-1bv
+    ref: EFS-S620DB-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240714221226id_/https://www.casio.com/europe/watches/edifice/product.EFS-S620DB-1BV/', kind: official }
+    display: analog
+    case: { height_mm: 49.5, width_mm: 45.5, depth_mm: 12.2, weight_g: 132, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s620db-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221226id_/https://www.casio.com/europe/watches/edifice/product.EFS-S620DB-1BV/'
+    discontinued: false
+  - id: efs-s620dc-1av
+    ref: EFS-S620DC-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221230id_/https://www.casio.com/europe/watches/edifice/product.EFS-S620DC-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 49.5, width_mm: 45.5, depth_mm: 12.2, weight_g: 132, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s620dc-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221230id_/https://www.casio.com/europe/watches/edifice/product.EFS-S620DC-1AV/'
+    discontinued: false

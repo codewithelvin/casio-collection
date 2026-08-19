@@ -1,0 +1,86 @@
+# EFS-S510 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efs-s510
+  name: EFS-S510
+  line: edifice
+
+models:
+  - id: efs-s510d-1av
+    ref: EFS-S510D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220812id_/https://www.casio.com/europe/watches/edifice/product.EFS-S510D-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 52, width_mm: 46.1, depth_mm: 11.8, weight_g: 159 }
+    features: [stopwatch]
+    image: efs-s510d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220812id_/https://www.casio.com/europe/watches/edifice/product.EFS-S510D-1AV/'
+    discontinued: false
+  - id: efs-s510d-1bv
+    ref: EFS-S510D-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240714220807id_/https://www.casio.com/europe/watches/edifice/product.EFS-S510D-1BV/', kind: official }
+    display: analog
+    case: { height_mm: 52, width_mm: 46.1, depth_mm: 11.8, weight_g: 159 }
+    features: [stopwatch]
+    image: efs-s510d-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220807id_/https://www.casio.com/europe/watches/edifice/product.EFS-S510D-1BV/'
+    discontinued: false
+  - id: efs-s510d-2av
+    ref: EFS-S510D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221015id_/https://www.casio.com/europe/watches/edifice/product.EFS-S510D-2AV/', kind: official }
+    display: analog
+    case: { height_mm: 52, width_mm: 46.1, depth_mm: 11.8, weight_g: 159 }
+    features: [stopwatch]
+    image: efs-s510d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221015id_/https://www.casio.com/europe/watches/edifice/product.EFS-S510D-2AV/'
+    discontinued: false
+  - id: efs-s510d-7bv
+    ref: EFS-S510D-7BV
+    source:
+      { url: 'https://web.archive.org/web/20240714220800id_/https://www.casio.com/europe/watches/edifice/product.EFS-S510D-7BV/', kind: official }
+    display: analog
+    case: { height_mm: 52, width_mm: 46.1, depth_mm: 11.8, weight_g: 159 }
+    features: [stopwatch]
+    image: efs-s510d-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220800id_/https://www.casio.com/europe/watches/edifice/product.EFS-S510D-7BV/'
+    discontinued: false
+  - id: efs-s510l-7av
+    ref: EFS-S510L-7AV
+    source:
+      { url: 'https://web.archive.org/web/20240101173359id_/https://www.casio.com/in/watches/edifice/product.EFS-S510L-7AV/', kind: official }
+    display: analog
+    case: { height_mm: 52, width_mm: 46.1, depth_mm: 11.8, weight_g: 91, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s510l-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240101173359id_/https://www.casio.com/in/watches/edifice/product.EFS-S510L-7AV/'
+    discontinued: true

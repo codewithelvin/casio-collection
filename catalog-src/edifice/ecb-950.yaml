@@ -1,0 +1,113 @@
+# ECB-950 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-950
+  name: ECB-950
+  line: edifice
+
+models:
+  - id: ecb-950db-1a
+    ref: ECB-950DB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221132id_/https://www.casio.com/europe/watches/edifice/product.ECB-950DB-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.2, width_mm: 48, depth_mm: 13.9, weight_g: 171, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-950db-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221132id_/https://www.casio.com/europe/watches/edifice/product.ECB-950DB-1A/'
+    discontinued: false
+  - id: ecb-950db-2a
+    ref: ECB-950DB-2A
+    source:
+      { url: 'https://web.archive.org/web/20240714220443id_/https://www.casio.com/europe/watches/edifice/product.ECB-950DB-2A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.2, width_mm: 48, depth_mm: 13.9, weight_g: 171, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-950db-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220443id_/https://www.casio.com/europe/watches/edifice/product.ECB-950DB-2A/'
+    discontinued: false
+  - id: ecb-950dc-1a
+    ref: ECB-950DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20250121092944id_/https://www.casio.com/in/watches/edifice/product.ECB-950DC-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.2, width_mm: 48, depth_mm: 13.9, weight_g: 171, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-950dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121092944id_/https://www.casio.com/in/watches/edifice/product.ECB-950DC-1A/'
+    discontinued: false
+  - id: ecb-950mp-1a
+    ref: ECB-950MP-1A
+    source:
+      { url: 'https://web.archive.org/web/20241201074745id_/https://www.casio.com/in/watches/edifice/product.ECB-950MP-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.2, width_mm: 48, depth_mm: 13.9, weight_g: 103, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-950mp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241201074745id_/https://www.casio.com/in/watches/edifice/product.ECB-950MP-1A/'
+    discontinued: false
+  - id: ecb-950ydb-1a
+    ref: ECB-950YDB-1A
+    source:
+      { url: 'https://web.archive.org/web/20230129010051id_/https://www.casio.com/jp/watches/edifice/product.ECB-950YDB-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-950ydb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230129010051id_/https://www.casio.com/jp/watches/edifice/product.ECB-950YDB-1A/'
+    discontinued: true
+  - id: ecb-950ydc-1a
+    ref: ECB-950YDC-1A
+    source:
+      { url: 'https://web.archive.org/web/20230110092550id_/https://www.casio.com/jp/watches/edifice/product.ECB-950YDC-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-950ydc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230110092550id_/https://www.casio.com/jp/watches/edifice/product.ECB-950YDC-1A/'
+    discontinued: true
+  - id: ecb-950ymp-1a
+    ref: ECB-950YMP-1A
+    source:
+      { url: 'https://web.archive.org/web/20230115010056id_/https://www.casio.com/jp/watches/edifice/product.ECB-950YMP-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-950ymp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230115010056id_/https://www.casio.com/jp/watches/edifice/product.ECB-950YMP-1A/'
+    discontinued: true

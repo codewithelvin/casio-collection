@@ -1,0 +1,136 @@
+# EFV-640 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efv-640
+  name: EFV-640
+  line: edifice
+
+models:
+  - id: efv-640d-1av
+    ref: EFV-640D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221116id_/https://www.casio.com/europe/watches/edifice/product.EFV-640D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-640d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221116id_/https://www.casio.com/europe/watches/edifice/product.EFV-640D-1AV/'
+    discontinued: false
+  - id: efv-640d-2av
+    ref: EFV-640D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20250121013440id_/https://www.casio.com/in/watches/edifice/product.EFV-640D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-640d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121013440id_/https://www.casio.com/in/watches/edifice/product.EFV-640D-2AV/'
+    discontinued: false
+  - id: efv-640d-2bv
+    ref: EFV-640D-2BV
+    source:
+      { url: 'https://web.archive.org/web/20250121091004id_/https://www.casio.com/in/watches/edifice/product.EFV-640D-2BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-640d-2bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121091004id_/https://www.casio.com/in/watches/edifice/product.EFV-640D-2BV/'
+    discontinued: false
+  - id: efv-640d-3av
+    ref: EFV-640D-3AV
+    source:
+      { url: 'https://web.archive.org/web/20241126193555id_/https://www.casio.com/europe/watches/edifice/product.EFV-640D-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-640d-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126193555id_/https://www.casio.com/europe/watches/edifice/product.EFV-640D-3AV/'
+    discontinued: false
+  - id: efv-640d-5av
+    ref: EFV-640D-5AV
+    source:
+      { url: 'https://web.archive.org/web/20250121092343id_/https://www.casio.com/in/watches/edifice/product.EFV-640D-5AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-640d-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121092343id_/https://www.casio.com/in/watches/edifice/product.EFV-640D-5AV/'
+    discontinued: false
+  - id: efv-640dc-1av
+    ref: EFV-640DC-1AV
+    source:
+      { url: 'https://web.archive.org/web/20250121010918id_/https://www.casio.com/in/watches/edifice/product.EFV-640DC-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-640dc-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121010918id_/https://www.casio.com/in/watches/edifice/product.EFV-640DC-1AV/'
+    discontinued: false
+  - id: efv-640dc-3av
+    ref: EFV-640DC-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221113id_/https://www.casio.com/europe/watches/edifice/product.EFV-640DC-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-640dc-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221113id_/https://www.casio.com/europe/watches/edifice/product.EFV-640DC-3AV/'
+    discontinued: false
+  - id: efv-640l-2av
+    ref: EFV-640L-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240722130357id_/https://www.casio.com/id/watches/edifice/product.EFV-640L-2AV/', kind: official }
+    features: [stopwatch]
+    image: efv-640l-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722130357id_/https://www.casio.com/id/watches/edifice/product.EFV-640L-2AV/'
+    discontinued: false

@@ -1,0 +1,185 @@
+# EFR-552 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efr-552
+  name: EFR-552
+  line: edifice
+
+models:
+  - id: efr-552d-1a2v
+    ref: EFR-552D-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20240714220518id_/https://www.casio.com/europe/watches/edifice/product.EFR-552D-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 157, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552d-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220518id_/https://www.casio.com/europe/watches/edifice/product.EFR-552D-1A2V/'
+    discontinued: false
+  - id: efr-552d-1a3v
+    ref: EFR-552D-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20220626144440id_/https://www.casio.com/intl/watches/edifice/product.EFR-552D-1A3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 157, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552d-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626144440id_/https://www.casio.com/intl/watches/edifice/product.EFR-552D-1A3V/'
+    discontinued: false
+  - id: efr-552d-1av
+    ref: EFR-552D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220522id_/https://www.casio.com/europe/watches/edifice/product.EFR-552D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 157, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220522id_/https://www.casio.com/europe/watches/edifice/product.EFR-552D-1AV/'
+    discontinued: false
+  - id: efr-552d-2av
+    ref: EFR-552D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240718074851id_/https://www.casio.com/in/watches/edifice/product.EFR-552D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 157, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240718074851id_/https://www.casio.com/in/watches/edifice/product.EFR-552D-2AV/'
+    discontinued: false
+  - id: efr-552gl-2av
+    ref: EFR-552GL-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220630011837id_/https://www.casio.com/in/watches/edifice/product.EFR-552GL-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 93, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552gl-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630011837id_/https://www.casio.com/in/watches/edifice/product.EFR-552GL-2AV/'
+    discontinued: true
+  - id: efr-552gl-7av
+    ref: EFR-552GL-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220627085412id_/https://www.casio.com/in/watches/edifice/product.EFR-552GL-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 93, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552gl-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220627085412id_/https://www.casio.com/in/watches/edifice/product.EFR-552GL-7AV/'
+    discontinued: true
+  - id: efr-552gy-8av
+    ref: EFR-552GY-8AV
+    source:
+      { url: 'https://web.archive.org/web/20220528004505id_/https://www.casio.com/in/watches/edifice/product.EFR-552GY-8AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 157, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552gy-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220528004505id_/https://www.casio.com/in/watches/edifice/product.EFR-552GY-8AV/'
+    discontinued: true
+  - id: efr-552l-2av
+    ref: EFR-552L-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220528021019id_/https://www.casio.com/in/watches/edifice/product.EFR-552L-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 93, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552l-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220528021019id_/https://www.casio.com/in/watches/edifice/product.EFR-552L-2AV/'
+    discontinued: true
+  - id: efr-552l-5av
+    ref: EFR-552L-5AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220904id_/https://www.casio.com/europe/watches/edifice/product.EFR-552L-5AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 93, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552l-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220904id_/https://www.casio.com/europe/watches/edifice/product.EFR-552L-5AV/'
+    discontinued: false
+  - id: efr-552sbk-1av
+    ref: EFR-552SBK-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFR-552SBK-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 157, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552sbk-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFR-552SBK-1AV/'
+    discontinued: true
+  - id: efr-552sg-2av
+    ref: EFR-552SG-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220630012034id_/https://www.casio.com/in/watches/edifice/product.EFR-552SG-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.3, weight_g: 157, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-552sg-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630012034id_/https://www.casio.com/in/watches/edifice/product.EFR-552SG-2AV/'
+    discontinued: true

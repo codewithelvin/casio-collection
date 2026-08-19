@@ -1,0 +1,125 @@
+# ECB-30 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-30
+  name: ECB-30
+  line: edifice
+
+models:
+  - id: ecb-30d-1a
+    ref: ECB-30D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220847id_/https://www.casio.com/europe/watches/edifice/product.ECB-30D-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.3, width_mm: 48.7, depth_mm: 12.9, weight_g: 148, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-30d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220847id_/https://www.casio.com/europe/watches/edifice/product.ECB-30D-1A/'
+    discontinued: false
+  - id: ecb-30d-2a
+    ref: ECB-30D-2A
+    source:
+      { url: 'https://web.archive.org/web/20240714220959id_/https://www.casio.com/europe/watches/edifice/product.ECB-30D-2A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.3, width_mm: 48.7, depth_mm: 12.9, weight_g: 148, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-30d-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220959id_/https://www.casio.com/europe/watches/edifice/product.ECB-30D-2A/'
+    discontinued: false
+  - id: ecb-30db-1a
+    ref: ECB-30DB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240718074853id_/https://www.casio.com/in/watches/edifice/product.ECB-30DB-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.3, width_mm: 48.7, depth_mm: 12.9, weight_g: 148, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-30db-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240718074853id_/https://www.casio.com/in/watches/edifice/product.ECB-30DB-1A/'
+    discontinued: false
+  - id: ecb-30db-1a9
+    ref: ECB-30DB-1A9
+    source:
+      { url: 'https://web.archive.org/web/20240926131116id_/https://www.casio.com/intl/watches/edifice/product.ECB-30DB-1A9/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.3, width_mm: 48.7, depth_mm: 12.9, weight_g: 148, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-30db-1a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240926131116id_/https://www.casio.com/intl/watches/edifice/product.ECB-30DB-1A9/'
+    discontinued: false
+  - id: ecb-30dc-1a
+    ref: ECB-30DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220746id_/https://www.casio.com/europe/watches/edifice/product.ECB-30DC-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.3, width_mm: 48.7, depth_mm: 12.9, weight_g: 148, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-30dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220746id_/https://www.casio.com/europe/watches/edifice/product.ECB-30DC-1A/'
+    discontinued: false
+  - id: ecb-30dc-1b
+    ref: ECB-30DC-1B
+    source:
+      { url: 'https://web.archive.org/web/20240718074852id_/https://www.casio.com/in/watches/edifice/product.ECB-30DC-1B/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.3, width_mm: 48.7, depth_mm: 12.9, weight_g: 148, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-30dc-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240718074852id_/https://www.casio.com/in/watches/edifice/product.ECB-30DC-1B/'
+    discontinued: false
+  - id: ecb-30p-1a
+    ref: ECB-30P-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221006id_/https://www.casio.com/europe/watches/edifice/product.ECB-30P-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.3, width_mm: 48.7, depth_mm: 12.9, weight_g: 89, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-30p-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221006id_/https://www.casio.com/europe/watches/edifice/product.ECB-30P-1A/'
+    discontinued: false

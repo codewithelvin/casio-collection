@@ -1,0 +1,50 @@
+# EF-129 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ef-129
+  name: EF-129
+  line: edifice
+
+models:
+  - id: ef-129d-1av
+    ref: EF-129D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220636id_/https://www.casio.com/europe/watches/edifice/product.EF-129D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 44.8, depth_mm: 10.4, weight_g: 156, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: ef-129d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220636id_/https://www.casio.com/europe/watches/edifice/product.EF-129D-1AV/'
+    discontinued: false
+  - id: ef-129d-2av
+    ref: EF-129D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220707id_/https://www.casio.com/europe/watches/edifice/product.EF-129D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 44.8, depth_mm: 10.4, weight_g: 156, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: ef-129d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220707id_/https://www.casio.com/europe/watches/edifice/product.EF-129D-2AV/'
+    discontinued: false

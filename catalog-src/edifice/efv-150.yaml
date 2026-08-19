@@ -1,0 +1,95 @@
+# EFV-150 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efv-150
+  name: EFV-150
+  line: edifice
+
+models:
+  - id: efv-150cl-2av
+    ref: EFV-150CL-2AV
+    source:
+      { url: 'https://web.archive.org/web/20241126182940id_/https://www.casio.com/in/watches/edifice/product.EFV-150CL-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 42.6, depth_mm: 9, weight_g: 53, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-150cl-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126182940id_/https://www.casio.com/in/watches/edifice/product.EFV-150CL-2AV/'
+    discontinued: false
+  - id: efv-150d-1av
+    ref: EFV-150D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20241127043954id_/https://www.casio.com/in/watches/edifice/product.EFV-150D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 42.6, depth_mm: 9, weight_g: 113, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-150d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241127043954id_/https://www.casio.com/in/watches/edifice/product.EFV-150D-1AV/'
+    discontinued: false
+  - id: efv-150d-2av
+    ref: EFV-150D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240718074858id_/https://www.casio.com/in/watches/edifice/product.EFV-150D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 42.6, depth_mm: 9, weight_g: 113, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-150d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240718074858id_/https://www.casio.com/in/watches/edifice/product.EFV-150D-2AV/'
+    discontinued: false
+  - id: efv-150dc-1av
+    ref: EFV-150DC-1AV
+    source:
+      { url: 'https://web.archive.org/web/20250121173813id_/https://www.casio.com/in/watches/edifice/product.EFV-150DC-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 42.6, depth_mm: 9, weight_g: 113, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-150dc-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121173813id_/https://www.casio.com/in/watches/edifice/product.EFV-150DC-1AV/'
+    discontinued: false
+  - id: efv-150l-1av
+    ref: EFV-150L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221129id_/https://www.casio.com/europe/watches/edifice/product.EFV-150L-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 42.6, depth_mm: 9, weight_g: 53, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: efv-150l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221129id_/https://www.casio.com/europe/watches/edifice/product.EFV-150L-1AV/'
+    discontinued: false

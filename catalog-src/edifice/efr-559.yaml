@@ -1,0 +1,110 @@
+# EFR-559 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efr-559
+  name: EFR-559
+  line: edifice
+
+models:
+  - id: efr-559bgl-1av
+    ref: EFR-559BGL-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220630004735id_/https://www.casio.com/in/watches/edifice/product.EFR-559BGL-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54.5, width_mm: 49.5, depth_mm: 12.8, weight_g: 104, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-559bgl-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630004735id_/https://www.casio.com/in/watches/edifice/product.EFR-559BGL-1AV/'
+    discontinued: true
+  - id: efr-559db-2av
+    ref: EFR-559DB-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220528015752id_/https://www.casio.com/in/watches/edifice/product.EFR-559DB-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54.5, width_mm: 49.5, depth_mm: 12.8, weight_g: 181, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-559db-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220528015752id_/https://www.casio.com/in/watches/edifice/product.EFR-559DB-2AV/'
+    discontinued: true
+  - id: efr-559dc-1av
+    ref: EFR-559DC-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220628143720id_/https://www.casio.com/in/watches/edifice/product.EFR-559DC-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54.5, width_mm: 49.5, depth_mm: 12.8, weight_g: 181, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-559dc-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628143720id_/https://www.casio.com/in/watches/edifice/product.EFR-559DC-1AV/'
+    discontinued: false
+  - id: efr-559dc-1bv
+    ref: EFR-559DC-1BV
+    source:
+      { url: 'https://web.archive.org/web/20220528014555id_/https://www.casio.com/in/watches/edifice/product.EFR-559DC-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54.5, width_mm: 49.5, depth_mm: 12.8, weight_g: 181, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-559dc-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220528014555id_/https://www.casio.com/in/watches/edifice/product.EFR-559DC-1BV/'
+    discontinued: true
+  - id: efr-559gy-1av
+    ref: EFR-559GY-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220529111633id_/https://www.casio.com/in/watches/edifice/product.EFR-559GY-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54.5, width_mm: 49.5, depth_mm: 12.8, weight_g: 181, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-559gy-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529111633id_/https://www.casio.com/in/watches/edifice/product.EFR-559GY-1AV/'
+    discontinued: true
+  - id: efr-559sg-7av
+    ref: EFR-559SG-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220523102123id_/https://www.casio.com/in/watches/edifice/product.EFR-559SG-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54.5, width_mm: 49.5, depth_mm: 12.8, weight_g: 181, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-559sg-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220523102123id_/https://www.casio.com/in/watches/edifice/product.EFR-559SG-7AV/'
+    discontinued: true

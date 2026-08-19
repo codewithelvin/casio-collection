@@ -202,3 +202,70 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220629091128id_/https://www.casio.com/hk/watches/edifice/product.EFR-539L-7CV/'
     discontinued: false
+
+# ADDED 2026-08-19: 4 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: efr-539l-7bv
+    ref: EFR-539L-7BV
+    source:
+      { url: 'https://web.archive.org/web/20220630010025id_/https://www.casio.com/in/watches/edifice/product.EFR-539L-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54.1, width_mm: 49.5, depth_mm: 11.7, weight_g: 97, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-539l-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220630010025id_/https://www.casio.com/in/watches/edifice/product.EFR-539L-7BV/'
+    discontinued: true
+  - id: efr-539sg-1av
+    ref: EFR-539SG-1AV
+    source:
+      { url: 'https://web.archive.org/web/20230321170241id_/https://www.casio.com/in/watches/edifice/product.EFR-539SG-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54.1, width_mm: 49.5, depth_mm: 11.7, weight_g: 185, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-539sg-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230321170241id_/https://www.casio.com/in/watches/edifice/product.EFR-539SG-1AV/'
+    discontinued: true
+  - id: efr-539sg-7a5v
+    ref: EFR-539SG-7A5V
+    source:
+      { url: 'https://web.archive.org/web/20220529112055id_/https://www.casio.com/in/watches/edifice/product.EFR-539SG-7A5V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54.1, width_mm: 49.5, depth_mm: 11.7, weight_g: 185, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-539sg-7a5v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529112055id_/https://www.casio.com/in/watches/edifice/product.EFR-539SG-7A5V/'
+    discontinued: true
+  - id: efr-539sg-7av
+    ref: EFR-539SG-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220521004646id_/https://www.casio.com/in/watches/edifice/product.EFR-539SG-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 54.1, width_mm: 49.5, depth_mm: 11.7, weight_g: 185, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-539sg-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220521004646id_/https://www.casio.com/in/watches/edifice/product.EFR-539SG-7AV/'
+    discontinued: true

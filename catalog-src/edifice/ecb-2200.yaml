@@ -1,0 +1,165 @@
+# ECB-2200 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-2200
+  name: ECB-2200
+  line: edifice
+
+models:
+  - id: ecb-2200cb-2a
+    ref: ECB-2200CB-2A
+    source:
+      { url: 'https://web.archive.org/web/20250121011022id_/https://www.casio.com/in/watches/edifice/product.ECB-2200CB-2A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 47.6, width_mm: 48.2, depth_mm: 11.9, weight_g: 126, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2200cb-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121011022id_/https://www.casio.com/in/watches/edifice/product.ECB-2200CB-2A/'
+    discontinued: false
+  - id: ecb-2200dc-1a
+    ref: ECB-2200DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20250121012053id_/https://www.casio.com/in/watches/edifice/product.ECB-2200DC-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 47.6, width_mm: 48.2, depth_mm: 11.9, weight_g: 126, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2200dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121012053id_/https://www.casio.com/in/watches/edifice/product.ECB-2200DC-1A/'
+    discontinued: false
+  - id: ecb-2200dd-1a
+    ref: ECB-2200DD-1A
+    source:
+      { url: 'https://web.archive.org/web/20240718074845id_/https://www.casio.com/in/watches/edifice/product.ECB-2200DD-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 47.6, width_mm: 48.2, depth_mm: 11.9, weight_g: 126, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2200dd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240718074845id_/https://www.casio.com/in/watches/edifice/product.ECB-2200DD-1A/'
+    discontinued: false
+  - id: ecb-2200htr-1a
+    ref: ECB-2200HTR-1A
+    source:
+      { url: 'https://web.archive.org/web/20231202110447id_/https://www.casio.com/sg/watches/edifice/product.ECB-2200HTR-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 47.6, width_mm: 48.2, depth_mm: 11.9, weight_g: 68, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ecb-2200htr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231202110447id_/https://www.casio.com/sg/watches/edifice/product.ECB-2200HTR-1A/'
+    discontinued: false
+  - id: ecb-2200p-1a
+    ref: ECB-2200P-1A
+    source:
+      { url: 'https://web.archive.org/web/20240408193706id_/https://www.casio.com/us/watches/edifice/product.ECB-2200P-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 47.6, width_mm: 48.2, depth_mm: 11.9, weight_g: 59, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2200p-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193706id_/https://www.casio.com/us/watches/edifice/product.ECB-2200P-1A/'
+    discontinued: false
+  - id: ecb-2200pb-1a
+    ref: ECB-2200PB-1A
+    source:
+      { url: 'https://web.archive.org/web/20250121011223id_/https://www.casio.com/in/watches/edifice/product.ECB-2200PB-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 47.6, width_mm: 48.2, depth_mm: 11.9, weight_g: 60, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-2200pb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121011223id_/https://www.casio.com/in/watches/edifice/product.ECB-2200PB-1A/'
+    discontinued: false
+  - id: ecb-2200ycb-2a
+    ref: ECB-2200YCB-2A
+    source:
+      { url: 'https://web.archive.org/web/20240922052034id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YCB-2A/', kind: official }
+    features: [bluetooth]
+    image: ecb-2200ycb-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922052034id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YCB-2A/'
+    discontinued: true
+  - id: ecb-2200ydc-1a
+    ref: ECB-2200YDC-1A
+    source:
+      { url: 'https://web.archive.org/web/20240119143538id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YDC-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-2200ydc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119143538id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YDC-1A/'
+    discontinued: true
+  - id: ecb-2200yp-1a
+    ref: ECB-2200YP-1A
+    source:
+      { url: 'https://web.archive.org/web/20240502033052id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YP-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-2200yp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240502033052id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YP-1A/'
+    discontinued: true
+  - id: ecb-2200yrc-1a3
+    ref: ECB-2200YRC-1A3
+    source:
+      { url: 'https://web.archive.org/web/20250402095247id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YRC-1A3/', kind: official }
+    features: [bluetooth]
+    image: ecb-2200yrc-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250402095247id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YRC-1A3/'
+    discontinued: true
+  - id: ecb-2200yrc-1a9
+    ref: ECB-2200YRC-1A9
+    source:
+      { url: 'https://web.archive.org/web/20250329062726id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YRC-1A9/', kind: official }
+    features: [bluetooth]
+    image: ecb-2200yrc-1a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250329062726id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YRC-1A9/'
+    discontinued: true

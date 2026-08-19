@@ -1,0 +1,35 @@
+# EFR-527 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efr-527
+  name: EFR-527
+  line: edifice
+
+models:
+  - id: efr-527d-2av
+    ref: EFR-527D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220446id_/https://www.casio.com/europe/watches/edifice/product.EFR-527D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47.4, width_mm: 41, depth_mm: 11.6, weight_g: 136, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efr-527d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220446id_/https://www.casio.com/europe/watches/edifice/product.EFR-527D-2AV/'
+    discontinued: false

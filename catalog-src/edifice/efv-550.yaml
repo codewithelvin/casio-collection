@@ -1,0 +1,140 @@
+# EFV-550 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efv-550
+  name: EFV-550
+  line: edifice
+
+models:
+  - id: efv-550d-1av
+    ref: EFV-550D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220626143836id_/https://www.casio.com/intl/watches/edifice/product.EFV-550D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.1, weight_g: 156, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-550d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626143836id_/https://www.casio.com/intl/watches/edifice/product.EFV-550D-1AV/'
+    discontinued: false
+  - id: efv-550d-2av
+    ref: EFV-550D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220626140428id_/https://www.casio.com/intl/watches/edifice/product.EFV-550D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.1, weight_g: 156, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-550d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626140428id_/https://www.casio.com/intl/watches/edifice/product.EFV-550D-2AV/'
+    discontinued: false
+  - id: efv-550d-7av
+    ref: EFV-550D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-550D-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.1, weight_g: 156, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-550d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-550D-7AV/'
+    discontinued: false
+  - id: efv-550dc-1av
+    ref: EFV-550DC-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-550DC-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.1, weight_g: 156, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-550dc-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-550DC-1AV/'
+    discontinued: true
+  - id: efv-550gy-8av
+    ref: EFV-550GY-8AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220827id_/https://www.casio.com/europe/watches/edifice/product.EFV-550GY-8AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.1, weight_g: 156, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-550gy-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220827id_/https://www.casio.com/europe/watches/edifice/product.EFV-550GY-8AV/'
+    discontinued: false
+  - id: efv-550l-1av
+    ref: EFV-550L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220626134234id_/https://www.casio.com/intl/watches/edifice/product.EFV-550L-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.1, weight_g: 89, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-550l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626134234id_/https://www.casio.com/intl/watches/edifice/product.EFV-550L-1AV/'
+    discontinued: false
+  - id: efv-550l-2av
+    ref: EFV-550L-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220628163444id_/https://www.casio.com/in/watches/edifice/product.EFV-550L-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.1, weight_g: 89, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-550l-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628163444id_/https://www.casio.com/in/watches/edifice/product.EFV-550L-2AV/'
+    discontinued: true
+  - id: efv-550p-1av
+    ref: EFV-550P-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714220606id_/https://www.casio.com/europe/watches/edifice/product.EFV-550P-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 53, width_mm: 47, depth_mm: 12.1, weight_g: 96, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, mineral-glass]
+    image: efv-550p-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220606id_/https://www.casio.com/europe/watches/edifice/product.EFV-550P-1AV/'
+    discontinued: false

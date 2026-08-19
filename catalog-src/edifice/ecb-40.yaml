@@ -1,0 +1,166 @@
+# ECB-40 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-40
+  name: ECB-40
+  line: edifice
+
+models:
+  - id: ecb-40bk-1a
+    ref: ECB-40BK-1A
+    source:
+      { url: 'https://web.archive.org/web/20240307212752id_/https://www.casio.com/intl/watches/edifice/product.ECB-40BK-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.4, width_mm: 48, depth_mm: 12.7, weight_g: 130, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-40bk-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212752id_/https://www.casio.com/intl/watches/edifice/product.ECB-40BK-1A/'
+    discontinued: false
+  - id: ecb-40d-1a
+    ref: ECB-40D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.ECB-40D-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.4, width_mm: 48, depth_mm: 12.7, weight_g: 127, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-40d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.ECB-40D-1A/'
+    discontinued: false
+  - id: ecb-40db-1a
+    ref: ECB-40DB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.ECB-40DB-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.4, width_mm: 48, depth_mm: 12.7, weight_g: 127, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-40db-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.ECB-40DB-1A/'
+    discontinued: false
+  - id: ecb-40dc-1a
+    ref: ECB-40DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221027id_/https://www.casio.com/europe/watches/edifice/product.ECB-40DC-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.4, width_mm: 48, depth_mm: 12.7, weight_g: 128, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-40dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221027id_/https://www.casio.com/europe/watches/edifice/product.ECB-40DC-1A/'
+    discontinued: false
+  - id: ecb-40mp-1a
+    ref: ECB-40MP-1A
+    source:
+      { url: 'https://web.archive.org/web/20250102101152id_/https://www.casio.com/in/watches/edifice/product.ECB-40MP-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.4, width_mm: 48, depth_mm: 12.7, weight_g: 65, material: 'Resin / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-40mp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250102101152id_/https://www.casio.com/in/watches/edifice/product.ECB-40MP-1A/'
+    discontinued: false
+  - id: ecb-40mu-1a
+    ref: ECB-40MU-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221030id_/https://www.casio.com/europe/watches/edifice/product.ECB-40MU-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.4, width_mm: 48, depth_mm: 12.7, weight_g: 65, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, sapphire-crystal]
+    image: ecb-40mu-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221030id_/https://www.casio.com/europe/watches/edifice/product.ECB-40MU-1A/'
+    discontinued: false
+  - id: ecb-40np-1a
+    ref: ECB-40NP-1A
+    source:
+      { url: 'https://web.archive.org/web/20240718074857id_/https://www.casio.com/in/watches/edifice/product.ECB-40NP-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.4, width_mm: 48, depth_mm: 12.7, weight_g: 62, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-40np-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240718074857id_/https://www.casio.com/in/watches/edifice/product.ECB-40NP-1A/'
+    discontinued: false
+  - id: ecb-40p-1a
+    ref: ECB-40P-1A
+    source:
+      { url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.ECB-40P-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.4, width_mm: 48, depth_mm: 12.7, weight_g: 65, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-40p-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.ECB-40P-1A/'
+    discontinued: false
+  - id: ecb-40pb-1a
+    ref: ECB-40PB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220724id_/https://www.casio.com/europe/watches/edifice/product.ECB-40PB-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.4, width_mm: 48, depth_mm: 12.7, weight_g: 62, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, mineral-glass]
+    image: ecb-40pb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220724id_/https://www.casio.com/europe/watches/edifice/product.ECB-40PB-1A/'
+    discontinued: false
+  - id: ecb-40ynp-1a
+    ref: ECB-40YNP-1A
+    source:
+      { url: 'https://web.archive.org/web/20240527122800id_/https://www.casio.com/jp/watches/edifice/product.ECB-40YNP-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-40ynp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240527122800id_/https://www.casio.com/jp/watches/edifice/product.ECB-40YNP-1A/'
+    discontinued: true

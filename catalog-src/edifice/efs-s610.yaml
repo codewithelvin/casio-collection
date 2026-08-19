@@ -1,0 +1,62 @@
+# EFS-S610 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: efs-s610
+  name: EFS-S610
+  line: edifice
+
+models:
+  - id: efs-s610d-1av
+    ref: EFS-S610D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221015122856id_/https://www.casio.com/intl/watches/edifice/product.EFS-S610D-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 50, width_mm: 45.2, depth_mm: 9.7, weight_g: 129, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s610d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221015122856id_/https://www.casio.com/intl/watches/edifice/product.EFS-S610D-1AV/'
+    discontinued: false
+  - id: efs-s610db-1av
+    ref: EFS-S610DB-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221001040743id_/https://www.casio.com/sg/watches/edifice/product.EFS-S610DB-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 50, width_mm: 45.2, depth_mm: 9.7, weight_g: 129, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s610db-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221001040743id_/https://www.casio.com/sg/watches/edifice/product.EFS-S610DB-1AV/'
+    discontinued: false
+  - id: efs-s610hg-1av
+    ref: EFS-S610HG-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240714221010id_/https://www.casio.com/europe/watches/edifice/product.EFS-S610HG-1AV/', kind: official }
+    display: analog
+    case: { height_mm: 50, width_mm: 45.2, depth_mm: 9.7, weight_g: 129, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [stopwatch, sapphire-crystal]
+    image: efs-s610hg-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221010id_/https://www.casio.com/europe/watches/edifice/product.EFS-S610HG-1AV/'
+    discontinued: false

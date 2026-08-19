@@ -1,0 +1,95 @@
+# ECB-S100 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-s100
+  name: ECB-S100
+  line: edifice
+
+models:
+  - id: ecb-s100d-1a
+    ref: ECB-S100D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221144id_/https://www.casio.com/europe/watches/edifice/product.ECB-S100D-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 50, width_mm: 46, depth_mm: 9.8, weight_g: 137, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ecb-s100d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221144id_/https://www.casio.com/europe/watches/edifice/product.ECB-S100D-1A/'
+    discontinued: false
+  - id: ecb-s100d-2a
+    ref: ECB-S100D-2A
+    source:
+      { url: 'https://web.archive.org/web/20240714221139id_/https://www.casio.com/europe/watches/edifice/product.ECB-S100D-2A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 50, width_mm: 46, depth_mm: 9.8, weight_g: 137, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ecb-s100d-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221139id_/https://www.casio.com/europe/watches/edifice/product.ECB-S100D-2A/'
+    discontinued: false
+  - id: ecb-s100dc-2a
+    ref: ECB-S100DC-2A
+    source:
+      { url: 'https://web.archive.org/web/20240714221137id_/https://www.casio.com/europe/watches/edifice/product.ECB-S100DC-2A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 50, width_mm: 46, depth_mm: 9.8, weight_g: 138, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ecb-s100dc-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221137id_/https://www.casio.com/europe/watches/edifice/product.ECB-S100DC-2A/'
+    discontinued: false
+  - id: ecb-s100hg-1a
+    ref: ECB-S100HG-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714220840id_/https://www.casio.com/europe/watches/edifice/product.ECB-S100HG-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 50, width_mm: 46, depth_mm: 9.8, weight_g: 138, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ecb-s100hg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220840id_/https://www.casio.com/europe/watches/edifice/product.ECB-S100HG-1A/'
+    discontinued: false
+  - id: ecb-s100hr-1a
+    ref: ECB-S100HR-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221055id_/https://www.casio.com/europe/watches/edifice/product.ECB-S100HR-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 50, width_mm: 46, depth_mm: 9.8, weight_g: 76, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, sapphire-crystal]
+    image: ecb-s100hr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221055id_/https://www.casio.com/europe/watches/edifice/product.ECB-S100HR-1A/'
+    discontinued: false

@@ -1,0 +1,210 @@
+# ECB-900 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ecb-900
+  name: ECB-900
+  line: edifice
+
+models:
+  - id: ecb-900db-1a
+    ref: ECB-900DB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221017id_/https://www.casio.com/europe/watches/edifice/product.ECB-900DB-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.5, width_mm: 48, depth_mm: 13.9, weight_g: 163, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-900db-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221017id_/https://www.casio.com/europe/watches/edifice/product.ECB-900DB-1A/'
+    discontinued: false
+  - id: ecb-900db-1b
+    ref: ECB-900DB-1B
+    source:
+      { url: 'https://web.archive.org/web/20240714220704id_/https://www.casio.com/europe/watches/edifice/product.ECB-900DB-1B/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.5, width_mm: 48, depth_mm: 13.9, weight_g: 163, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-900db-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714220704id_/https://www.casio.com/europe/watches/edifice/product.ECB-900DB-1B/'
+    discontinued: false
+  - id: ecb-900db-1c
+    ref: ECB-900DB-1C
+    source:
+      { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.ECB-900DB-1C/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.5, width_mm: 48, depth_mm: 13.9, weight_g: 163, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-900db-1c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.ECB-900DB-1C/'
+    discontinued: false
+  - id: ecb-900dc-1a
+    ref: ECB-900DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20220925134642id_/https://www.casio.com/sg/watches/edifice/product.ECB-900DC-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.5, width_mm: 48, depth_mm: 13.9, weight_g: 163, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-900dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925134642id_/https://www.casio.com/sg/watches/edifice/product.ECB-900DC-1A/'
+    discontinued: true
+  - id: ecb-900gl-1a
+    ref: ECB-900GL-1A
+    source:
+      { url: 'https://web.archive.org/web/20220930115632id_/https://www.casio.com/sg/watches/edifice/product.ECB-900GL-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.5, width_mm: 48, depth_mm: 13.9, weight_g: 96, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-900gl-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930115632id_/https://www.casio.com/sg/watches/edifice/product.ECB-900GL-1A/'
+    discontinued: false
+  - id: ecb-900gl-1b
+    ref: ECB-900GL-1B
+    source:
+      { url: 'https://web.archive.org/web/20220925140024id_/https://www.casio.com/sg/watches/edifice/product.ECB-900GL-1B/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.5, width_mm: 48, depth_mm: 13.9, weight_g: 96, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-900gl-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925140024id_/https://www.casio.com/sg/watches/edifice/product.ECB-900GL-1B/'
+    discontinued: false
+  - id: ecb-900mdc-1a
+    ref: ECB-900MDC-1A
+    source:
+      { url: 'https://web.archive.org/web/20220930115607id_/https://www.casio.com/intl/watches/edifice/product.ECB-900MDC-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.5, width_mm: 48, depth_mm: 13.9, weight_g: 164, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-900mdc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220930115607id_/https://www.casio.com/intl/watches/edifice/product.ECB-900MDC-1A/'
+    discontinued: false
+  - id: ecb-900mp-1a
+    ref: ECB-900MP-1A
+    source:
+      { url: 'https://web.archive.org/web/20240714221135id_/https://www.casio.com/europe/watches/edifice/product.ECB-900MP-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.5, width_mm: 48, depth_mm: 13.9, weight_g: 100, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-900mp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221135id_/https://www.casio.com/europe/watches/edifice/product.ECB-900MP-1A/'
+    discontinued: false
+  - id: ecb-900pb-1a
+    ref: ECB-900PB-1A
+    source:
+      { url: 'https://web.archive.org/web/20220925141412id_/https://www.casio.com/sg/watches/edifice/product.ECB-900PB-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 51.5, width_mm: 48, depth_mm: 13.9, weight_g: 100, material: 'Stainless steel' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: ecb-900pb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925141412id_/https://www.casio.com/sg/watches/edifice/product.ECB-900PB-1A/'
+    discontinued: false
+  - id: ecb-900ydb-1a
+    ref: ECB-900YDB-1A
+    source:
+      { url: 'https://web.archive.org/web/20220608235348id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YDB-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-900ydb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220608235348id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YDB-1A/'
+    discontinued: true
+  - id: ecb-900ydb-1b
+    ref: ECB-900YDB-1B
+    source:
+      { url: 'https://web.archive.org/web/20220812121856id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YDB-1B/', kind: official }
+    features: [bluetooth]
+    image: ecb-900ydb-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220812121856id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YDB-1B/'
+    discontinued: true
+  - id: ecb-900ydb-1c
+    ref: ECB-900YDB-1C
+    source:
+      { url: 'https://web.archive.org/web/20210815052222id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YDB-1C/', kind: official }
+    features: [bluetooth]
+    image: ecb-900ydb-1c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210815052222id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YDB-1C/'
+    discontinued: true
+  - id: ecb-900ymp-1a
+    ref: ECB-900YMP-1A
+    source:
+      { url: 'https://web.archive.org/web/20230122010353id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YMP-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-900ymp-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230122010353id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YMP-1A/'
+    discontinued: true
+  - id: ecb-900ypb-1a
+    ref: ECB-900YPB-1A
+    source:
+      { url: 'https://web.archive.org/web/20210625075017id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YPB-1A/', kind: official }
+    features: [bluetooth]
+    image: ecb-900ypb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210625075017id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YPB-1A/'
+    discontinued: true
