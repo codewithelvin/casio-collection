@@ -8,6 +8,16 @@
 # unless the page describes the dial. The page shows a "light" icon with no
 # type, and the vocabulary has five specific light values and no generic one,
 # so no light feature is claimed. Absent means nobody has found it (D27).
+#
+# `year` came from a SECOND page, added 2026-08-21 by /finish-casio 1976-1990.
+# The Digital Watch Library holds two pages for this watch: the one in `source`,
+# `casio_f-98w1`, whose RELEASED field reads UNKNOWN, and `casio_f-98w`, which
+# states 1986. Both title the watch F-98W and both state module 593, which is
+# what makes them the same reference rather than a near-name (`casio-f-98wc` is
+# F-98WC and `casio-f-98we-1bum` is F-98WE-1B — neither was used). The second
+# page is named in `year_source` rather than merged into `source`, which is the
+# shape schema.ts describes for a year read off a page that is not the entry's
+# own; every other field here still comes from the one page in `source`.
 
 series:
   id: f-98w
@@ -26,4 +36,6 @@ models:
       author: The Digital Watch Library
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_f-98w1'
+    year: 1986
+    year_source: 'http://www.digital-watch.com/DWL/1work/casio_f-98w'
     discontinued: true
