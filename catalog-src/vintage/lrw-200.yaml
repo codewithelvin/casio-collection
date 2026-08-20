@@ -279,3 +279,46 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250118000057id_/https://www.casio.com/us/watches/casio/product.LRW-200HS-7EV/'
     discontinued: false
+
+# ADDED 2026-08-20: 3 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: lrw-200h-2e2v
+    ref: LRW-200H-2E2V
+    source:
+      { url: 'https://web.archive.org/web/20240721132308id_/https://www.casio.com/id/watches/casio/product.LRW-200H-2E2V/', kind: official }
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25 }
+    water_resistance_m: 100
+    image: lrw-200h-2e2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721132308id_/https://www.casio.com/id/watches/casio/product.LRW-200H-2E2V/'
+    discontinued: true
+  - id: lrw-200h-2ev
+    ref: LRW-200H-2EV
+    source:
+      { url: 'https://web.archive.org/web/20240721132327id_/https://www.casio.com/id/watches/casio/product.LRW-200H-2EV/', kind: official }
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25 }
+    water_resistance_m: 100
+    image: lrw-200h-2ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721132327id_/https://www.casio.com/id/watches/casio/product.LRW-200H-2EV/'
+    discontinued: true
+  - id: lrw-200h-4e4v
+    ref: LRW-200H-4E4V
+    source:
+      { url: 'https://web.archive.org/web/20240721132606id_/https://www.casio.com/id/watches/casio/product.LRW-200H-4E4V/', kind: official }
+    case: { height_mm: 38.9, width_mm: 34.2, depth_mm: 11.5, weight_g: 25 }
+    water_resistance_m: 100
+    image: lrw-200h-4e4v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721132606id_/https://www.casio.com/id/watches/casio/product.LRW-200H-4E4V/'
+    discontinued: false

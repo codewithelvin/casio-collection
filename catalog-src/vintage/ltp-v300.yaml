@@ -46,3 +46,153 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220525051154id_/https://www.casio.com/in/watches/casio/product.LTP-V300L-2A2/'
     discontinued: true
+
+# ADDED 2026-08-20: 13 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: ltp-v300d-1a
+    ref: LTP-V300D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240721184242id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-1A/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
+    image: ltp-v300d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184242id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-1A/'
+    discontinued: false
+  - id: ltp-v300d-1a2
+    ref: LTP-V300D-1A2
+    source:
+      { url: 'https://web.archive.org/web/20240721184231id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-1A2/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
+    image: ltp-v300d-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184231id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-1A2/'
+    discontinued: false
+  - id: ltp-v300d-2a
+    ref: LTP-V300D-2A
+    source:
+      { url: 'https://web.archive.org/web/20240721184247id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-2A/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
+    image: ltp-v300d-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184247id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-2A/'
+    discontinued: false
+  - id: ltp-v300d-2a2
+    ref: LTP-V300D-2A2
+    source:
+      { url: 'https://web.archive.org/web/20240721184256id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-2A2/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
+    image: ltp-v300d-2a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184256id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-2A2/'
+    discontinued: false
+  - id: ltp-v300d-4a
+    ref: LTP-V300D-4A
+    source:
+      { url: 'https://web.archive.org/web/20240721184152id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-4A/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
+    image: ltp-v300d-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184152id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-4A/'
+    discontinued: false
+  - id: ltp-v300d-7a
+    ref: LTP-V300D-7A
+    source:
+      { url: 'https://web.archive.org/web/20240721184209id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-7A/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
+    image: ltp-v300d-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184209id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-7A/'
+    discontinued: false
+  - id: ltp-v300d-7a2
+    ref: LTP-V300D-7A2
+    source:
+      { url: 'https://web.archive.org/web/20240721184203id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-7A2/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
+    image: ltp-v300d-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184203id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-7A2/'
+    discontinued: false
+  - id: ltp-v300g-1a
+    ref: LTP-V300G-1A
+    source:
+      { url: 'https://web.archive.org/web/20240721184251id_/https://www.casio.com/id/watches/casio/product.LTP-V300G-1A/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
+    image: ltp-v300g-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184251id_/https://www.casio.com/id/watches/casio/product.LTP-V300G-1A/'
+    discontinued: false
+  - id: ltp-v300g-7a
+    ref: LTP-V300G-7A
+    source:
+      { url: 'https://web.archive.org/web/20240721184157id_/https://www.casio.com/id/watches/casio/product.LTP-V300G-7A/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
+    image: ltp-v300g-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184157id_/https://www.casio.com/id/watches/casio/product.LTP-V300G-7A/'
+    discontinued: false
+  - id: ltp-v300l-1a
+    ref: LTP-V300L-1A
+    source:
+      { url: 'https://web.archive.org/web/20240721184213id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-1A/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 30 }
+    image: ltp-v300l-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184213id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-1A/'
+    discontinued: false
+  - id: ltp-v300l-2a
+    ref: LTP-V300L-2A
+    source:
+      { url: 'https://web.archive.org/web/20240721184219id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-2A/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 30 }
+    image: ltp-v300l-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184219id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-2A/'
+    discontinued: false
+  - id: ltp-v300l-4a
+    ref: LTP-V300L-4A
+    source:
+      { url: 'https://web.archive.org/web/20240721184904id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-4A/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 30 }
+    image: ltp-v300l-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184904id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-4A/'
+    discontinued: false
+  - id: ltp-v300l-7a2
+    ref: LTP-V300L-7A2
+    source:
+      { url: 'https://web.archive.org/web/20240721184840id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-7A2/', kind: official }
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 30 }
+    image: ltp-v300l-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184840id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-7A2/'
+    discontinued: false

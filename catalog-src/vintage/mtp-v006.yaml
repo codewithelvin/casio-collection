@@ -1,0 +1,147 @@
+# MTP-V006 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-v006
+  name: MTP-V006
+  line: vintage
+
+models:
+  - id: mtp-v006d-1c
+    ref: MTP-V006D-1C
+    source:
+      { url: 'https://web.archive.org/web/20240722020816id_/https://www.casio.com/id/watches/casio/product.MTP-V006D-1C/', kind: official }
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 93 }
+    image: mtp-v006d-1c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722020816id_/https://www.casio.com/id/watches/casio/product.MTP-V006D-1C/'
+    discontinued: false
+  - id: mtp-v006d-7b
+    ref: MTP-V006D-7B
+    source:
+      { url: 'https://web.archive.org/web/20220516192520id_/https://www.casio.com/in/watches/casio/product.MTP-V006D-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 93, material: 'Chrome plated' }
+    features: [mineral-glass]
+    image: mtp-v006d-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516192520id_/https://www.casio.com/in/watches/casio/product.MTP-V006D-7B/'
+    discontinued: false
+  - id: mtp-v006d-7c
+    ref: MTP-V006D-7C
+    source:
+      { url: 'https://web.archive.org/web/20240722020748id_/https://www.casio.com/id/watches/casio/product.MTP-V006D-7C/', kind: official }
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 93 }
+    image: mtp-v006d-7c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722020748id_/https://www.casio.com/id/watches/casio/product.MTP-V006D-7C/'
+    discontinued: false
+  - id: mtp-v006g-1c
+    ref: MTP-V006G-1C
+    source:
+      { url: 'https://web.archive.org/web/20240722020802id_/https://www.casio.com/id/watches/casio/product.MTP-V006G-1C/', kind: official }
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 93 }
+    image: mtp-v006g-1c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722020802id_/https://www.casio.com/id/watches/casio/product.MTP-V006G-1C/'
+    discontinued: false
+  - id: mtp-v006g-9b
+    ref: MTP-V006G-9B
+    source:
+      { url: 'https://web.archive.org/web/20240704161450id_/https://www.casio.com/br/watches/casio/product.MTP-V006G-9B/', kind: official }
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 93 }
+    image: mtp-v006g-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704161450id_/https://www.casio.com/br/watches/casio/product.MTP-V006G-9B/'
+    discontinued: false
+  - id: mtp-v006gl-7b
+    ref: MTP-V006GL-7B
+    source:
+      { url: 'https://web.archive.org/web/20240704161455id_/https://www.casio.com/br/watches/casio/product.MTP-V006GL-7B/', kind: official }
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46 }
+    image: mtp-v006gl-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704161455id_/https://www.casio.com/br/watches/casio/product.MTP-V006GL-7B/'
+    discontinued: false
+  - id: mtp-v006gl-9b
+    ref: MTP-V006GL-9B
+    source:
+      { url: 'https://web.archive.org/web/20210927140002id_/https://www.casio.com/my/watches/casio/product.MTP-V006GL-9B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-v006gl-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210927140002id_/https://www.casio.com/my/watches/casio/product.MTP-V006GL-9B/'
+    discontinued: false
+  - id: mtp-v006l-1b
+    ref: MTP-V006L-1B
+    source:
+      { url: 'https://web.archive.org/web/20240704161504id_/https://www.casio.com/br/watches/casio/product.MTP-V006L-1B/', kind: official }
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46 }
+    image: mtp-v006l-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704161504id_/https://www.casio.com/br/watches/casio/product.MTP-V006L-1B/'
+    discontinued: false
+  - id: mtp-v006l-1c
+    ref: MTP-V006L-1C
+    source:
+      { url: 'https://web.archive.org/web/20240722020838id_/https://www.casio.com/id/watches/casio/product.MTP-V006L-1C/', kind: official }
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46 }
+    image: mtp-v006l-1c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722020838id_/https://www.casio.com/id/watches/casio/product.MTP-V006L-1C/'
+    discontinued: false
+  - id: mtp-v006l-7b
+    ref: MTP-V006L-7B
+    source:
+      { url: 'https://web.archive.org/web/20240704161515id_/https://www.casio.com/br/watches/casio/product.MTP-V006L-7B/', kind: official }
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46 }
+    image: mtp-v006l-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704161515id_/https://www.casio.com/br/watches/casio/product.MTP-V006L-7B/'
+    discontinued: false
+  - id: mtp-v006l-7c
+    ref: MTP-V006L-7C
+    source:
+      { url: 'https://web.archive.org/web/20240722020810id_/https://www.casio.com/id/watches/casio/product.MTP-V006L-7C/', kind: official }
+    case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46 }
+    image: mtp-v006l-7c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722020810id_/https://www.casio.com/id/watches/casio/product.MTP-V006L-7C/'
+    discontinued: false

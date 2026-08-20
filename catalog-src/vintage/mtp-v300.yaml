@@ -242,3 +242,54 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220529061654id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-9A/'
     discontinued: false
+
+# ADDED 2026-08-20: 4 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mtp-v300bl-5a
+    ref: MTP-V300BL-5A
+    source:
+      { url: 'https://web.archive.org/web/20240721185825id_/https://www.casio.com/id/watches/casio/product.MTP-V300BL-5A/', kind: official }
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 49 }
+    image: mtp-v300bl-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185825id_/https://www.casio.com/id/watches/casio/product.MTP-V300BL-5A/'
+    discontinued: false
+  - id: mtp-v300d-1a
+    ref: MTP-V300D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240721185200id_/https://www.casio.com/id/watches/casio/product.MTP-V300D-1A/', kind: official }
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }
+    image: mtp-v300d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185200id_/https://www.casio.com/id/watches/casio/product.MTP-V300D-1A/'
+    discontinued: false
+  - id: mtp-v300d-7a
+    ref: MTP-V300D-7A
+    source:
+      { url: 'https://web.archive.org/web/20240721185230id_/https://www.casio.com/id/watches/casio/product.MTP-V300D-7A/', kind: official }
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }
+    image: mtp-v300d-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185230id_/https://www.casio.com/id/watches/casio/product.MTP-V300D-7A/'
+    discontinued: false
+  - id: mtp-v300g-7a
+    ref: MTP-V300G-7A
+    source:
+      { url: 'https://web.archive.org/web/20240721185207id_/https://www.casio.com/id/watches/casio/product.MTP-V300G-7A/', kind: official }
+    case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }
+    image: mtp-v300g-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185207id_/https://www.casio.com/id/watches/casio/product.MTP-V300G-7A/'
+    discontinued: false

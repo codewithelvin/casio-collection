@@ -1,0 +1,149 @@
+# MDV-10 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mdv-10
+  name: MDV-10
+  line: vintage
+
+models:
+  - id: mdv-10-1a1v
+    ref: MDV-10-1A1V
+    source:
+      { url: 'https://web.archive.org/web/20240715102849id_/https://www.casio.com/europe/watches/casio/product.MDV-10-1A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 58, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mdv-10-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102849id_/https://www.casio.com/europe/watches/casio/product.MDV-10-1A1V/'
+    discontinued: false
+  - id: mdv-10-1a2v
+    ref: MDV-10-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20240715102859id_/https://www.casio.com/europe/watches/casio/product.MDV-10-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 58, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mdv-10-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102859id_/https://www.casio.com/europe/watches/casio/product.MDV-10-1A2V/'
+    discontinued: false
+  - id: mdv-10c-1a2v
+    ref: MDV-10C-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20240715102847id_/https://www.casio.com/europe/watches/casio/product.MDV-10C-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 56, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mdv-10c-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102847id_/https://www.casio.com/europe/watches/casio/product.MDV-10C-1A2V/'
+    discontinued: false
+  - id: mdv-10d-1a1v
+    ref: MDV-10D-1A1V
+    source:
+      { url: 'https://web.archive.org/web/20240715102852id_/https://www.casio.com/europe/watches/casio/product.MDV-10D-1A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 85, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mdv-10d-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102852id_/https://www.casio.com/europe/watches/casio/product.MDV-10D-1A1V/'
+    discontinued: false
+  - id: mdv-10d-1a2v
+    ref: MDV-10D-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20230809120115id_/https://www.casio.com/intl/watches/casio/product.MDV-10D-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 85, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mdv-10d-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230809120115id_/https://www.casio.com/intl/watches/casio/product.MDV-10D-1A2V/'
+    discontinued: false
+  - id: mdv-10d-1a3v
+    ref: MDV-10D-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20240106004930id_/https://www.casio.com/in/watches/casio/product.MDV-10D-1A3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 85, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mdv-10d-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240106004930id_/https://www.casio.com/in/watches/casio/product.MDV-10D-1A3V/'
+    discontinued: false
+  - id: mdv-10d-2a1v
+    ref: MDV-10D-2A1V
+    source:
+      { url: 'https://web.archive.org/web/20250120041247id_/https://www.casio.com/hk/watches/casio/product.MDV-10D-2A1V/', kind: official }
+    case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 85 }
+    water_resistance_m: 50
+    image: mdv-10d-2a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120041247id_/https://www.casio.com/hk/watches/casio/product.MDV-10D-2A1V/'
+    discontinued: false
+  - id: mdv-10d-4a1v
+    ref: MDV-10D-4A1V
+    source:
+      { url: 'https://web.archive.org/web/20250120041243id_/https://www.casio.com/hk/watches/casio/product.MDV-10D-4A1V/', kind: official }
+    case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 85 }
+    water_resistance_m: 50
+    image: mdv-10d-4a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120041243id_/https://www.casio.com/hk/watches/casio/product.MDV-10D-4A1V/'
+    discontinued: false
+  - id: mdv-10d-4a2v
+    ref: MDV-10D-4A2V
+    source:
+      { url: 'https://web.archive.org/web/20250116054434id_/https://www.casio.com/ph/watches/casio/product.MDV-10D-4A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 85, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mdv-10d-4a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250116054434id_/https://www.casio.com/ph/watches/casio/product.MDV-10D-4A2V/'
+    discontinued: false

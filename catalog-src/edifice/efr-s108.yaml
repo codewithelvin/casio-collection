@@ -149,3 +149,58 @@ models:
     movement: quartz
     module: '5359'
     discontinued: false
+
+# ADDED 2026-08-20: 4 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: efr-s108dj-2a
+    ref: EFR-S108DJ-2A
+    source:
+      { url: 'https://web.archive.org/web/20240523202410id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-2A/', kind: official }
+    case: { height_mm: 44.8, width_mm: 39.9, depth_mm: 7.8, weight_g: 110 }
+    water_resistance_m: 100
+    image: efr-s108dj-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240523202410id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-2A/'
+    discontinued: true
+  - id: efr-s108dj-2b
+    ref: EFR-S108DJ-2B
+    source:
+      { url: 'https://web.archive.org/web/20240903204539id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-2B/', kind: official }
+    case: { height_mm: 44.8, width_mm: 39.9, depth_mm: 7.8, weight_g: 110 }
+    water_resistance_m: 100
+    image: efr-s108dj-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240903204539id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-2B/'
+    discontinued: true
+  - id: efr-s108dj-3a
+    ref: EFR-S108DJ-3A
+    source:
+      { url: 'https://web.archive.org/web/20240523002900id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-3A/', kind: official }
+    case: { height_mm: 44.8, width_mm: 39.9, depth_mm: 7.8, weight_g: 110 }
+    water_resistance_m: 100
+    image: efr-s108dj-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240523002900id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-3A/'
+    discontinued: true
+  - id: efr-s108dj-7a
+    ref: EFR-S108DJ-7A
+    source:
+      { url: 'https://web.archive.org/web/20240307212734id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-7A/', kind: official }
+    case: { height_mm: 44.8, width_mm: 39.9, depth_mm: 7.8, weight_g: 110 }
+    water_resistance_m: 100
+    image: efr-s108dj-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240307212734id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-7A/'
+    discontinued: true

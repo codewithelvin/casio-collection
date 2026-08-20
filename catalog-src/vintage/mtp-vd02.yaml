@@ -102,3 +102,98 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230713004247id_/https://www.casio.com/intl/watches/casio/product.MTP-VD02L-7E/'
     discontinued: false
+
+# ADDED 2026-08-20: 8 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mtp-vd02bl-1e
+    ref: MTP-VD02BL-1E
+    source:
+      { url: 'https://web.archive.org/web/20240721184406id_/https://www.casio.com/id/watches/casio/product.MTP-VD02BL-1E/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
+    image: mtp-vd02bl-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184406id_/https://www.casio.com/id/watches/casio/product.MTP-VD02BL-1E/'
+    discontinued: false
+  - id: mtp-vd02bl-2e
+    ref: MTP-VD02BL-2E
+    source:
+      { url: 'https://web.archive.org/web/20240721184355id_/https://www.casio.com/id/watches/casio/product.MTP-VD02BL-2E/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
+    image: mtp-vd02bl-2e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184355id_/https://www.casio.com/id/watches/casio/product.MTP-VD02BL-2E/'
+    discontinued: false
+  - id: mtp-vd02bl-5e
+    ref: MTP-VD02BL-5E
+    source:
+      { url: 'https://web.archive.org/web/20240721184346id_/https://www.casio.com/id/watches/casio/product.MTP-VD02BL-5E/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
+    image: mtp-vd02bl-5e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184346id_/https://www.casio.com/id/watches/casio/product.MTP-VD02BL-5E/'
+    discontinued: false
+  - id: mtp-vd02d-2e
+    ref: MTP-VD02D-2E
+    source:
+      { url: 'https://web.archive.org/web/20240721184430id_/https://www.casio.com/id/watches/casio/product.MTP-VD02D-2E/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
+    image: mtp-vd02d-2e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184430id_/https://www.casio.com/id/watches/casio/product.MTP-VD02D-2E/'
+    discontinued: false
+  - id: mtp-vd02d-5e
+    ref: MTP-VD02D-5E
+    source:
+      { url: 'https://web.archive.org/web/20240721184326id_/https://www.casio.com/id/watches/casio/product.MTP-VD02D-5E/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
+    image: mtp-vd02d-5e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184326id_/https://www.casio.com/id/watches/casio/product.MTP-VD02D-5E/'
+    discontinued: false
+  - id: mtp-vd02d-7e
+    ref: MTP-VD02D-7E
+    source:
+      { url: 'https://web.archive.org/web/20240721184711id_/https://www.casio.com/id/watches/casio/product.MTP-VD02D-7E/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
+    image: mtp-vd02d-7e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184711id_/https://www.casio.com/id/watches/casio/product.MTP-VD02D-7E/'
+    discontinued: false
+  - id: mtp-vd02g-1e
+    ref: MTP-VD02G-1E
+    source:
+      { url: 'https://web.archive.org/web/20240721184441id_/https://www.casio.com/id/watches/casio/product.MTP-VD02G-1E/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
+    image: mtp-vd02g-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184441id_/https://www.casio.com/id/watches/casio/product.MTP-VD02G-1E/'
+    discontinued: false
+  - id: mtp-vd02l-1e
+    ref: MTP-VD02L-1E
+    source:
+      { url: 'https://web.archive.org/web/20240721184651id_/https://www.casio.com/id/watches/casio/product.MTP-VD02L-1E/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
+    image: mtp-vd02l-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184651id_/https://www.casio.com/id/watches/casio/product.MTP-VD02L-1E/'
+    discontinued: false

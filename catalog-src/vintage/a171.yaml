@@ -57,3 +57,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220058id_/https://www.casio.com/europe/watches/casio/vintage/product.A171WEMG-9A/'
     discontinued: false
+
+# ADDED 2026-08-20: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: a171wegg-1a
+    ref: A171WEGG-1A
+    source:
+      { url: 'https://web.archive.org/web/20240717155910id_/https://www.casio.com/fr/watches/casio/vintage/product.A171WEGG-1A/', kind: official }
+    case: { weight_g: 46 }
+    image: a171wegg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717155910id_/https://www.casio.com/fr/watches/casio/vintage/product.A171WEGG-1A/'
+    discontinued: false
+  - id: a171wemb-1a
+    ref: A171WEMB-1A
+    source:
+      { url: 'https://web.archive.org/web/20220810050339id_/https://www.casio.com/es/watches/casio/vintage/product.A171WEMB-1A/', kind: official }
+    case: { weight_g: 50 }
+    image: a171wemb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220810050339id_/https://www.casio.com/es/watches/casio/vintage/product.A171WEMB-1A/'
+    discontinued: false

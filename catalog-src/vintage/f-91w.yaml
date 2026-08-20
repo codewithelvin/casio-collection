@@ -432,3 +432,98 @@ models:
       licence: rights-reserved
       url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/'
     discontinued: false
+
+  # Seven references moved here from a `f-91.yaml` that batch 4 created, and
+  # that file deleted. `seriesOf('F-91W-1')` derives `f-91` — the prefix rule
+  # stops at the digits — while M1c had already reviewed this series as `f-91w`,
+  # so the crawler wrote a second file for the same watches and check 3 caught 16
+  # duplicate references. This file won because **its eighteen ids are published**
+  # and guardrail 1 does not allow removing one. Every reference below starts with
+  # F-91W, so check 4a is satisfied by the series id that was already here.
+  - id: f-91w-1y
+    ref: F-91W-1Y
+    source:
+      { url: 'https://web.archive.org/web/20230320092743id_/https://www.casio.com/fr/watches/casio/product.F-91W-1Y/', kind: official }
+    case: { weight_g: 21 }
+    image: f-91w-1y
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230320092743id_/https://www.casio.com/fr/watches/casio/product.F-91W-1Y/'
+    discontinued: false
+  - id: f-91wb-1a
+    ref: F-91WB-1A
+    source:
+      { url: 'https://web.archive.org/web/20250131174308id_/https://www.casio.com/europe/watches/casio/product.F-91WB-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.2, width_mm: 35.2, depth_mm: 8.5, weight_g: 21, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: f-91wb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250131174308id_/https://www.casio.com/europe/watches/casio/product.F-91WB-1A/'
+    discontinued: false
+  - id: f-91wb-2a1
+    ref: F-91WB-2A1
+    source:
+      { url: 'https://web.archive.org/web/20240709193637id_/https://www.casio.com/intl/watches/casio/product.F-91WB-2A1/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.2, width_mm: 35.2, depth_mm: 8.5, weight_g: 21, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: f-91wb-2a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240709193637id_/https://www.casio.com/intl/watches/casio/product.F-91WB-2A1/'
+    discontinued: false
+  - id: f-91wb-7a
+    ref: F-91WB-7A
+    source:
+      { url: 'https://web.archive.org/web/20241122231505id_/https://www.casio.com/us/watches/casio/product.F-91WB-7A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.2, width_mm: 35.2, depth_mm: 8.5, weight_g: 21, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: f-91wb-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241122231505id_/https://www.casio.com/us/watches/casio/product.F-91WB-7A/'
+    discontinued: false
+  - id: f-91wb-8a
+    ref: F-91WB-8A
+    source:
+      { url: 'https://web.archive.org/web/20250413163314id_/https://www.casio.com/fr/watches/casio/product.F-91WB-8A/', kind: official }
+    case: { weight_g: 21 }
+    image: f-91wb-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250413163314id_/https://www.casio.com/fr/watches/casio/product.F-91WB-8A/'
+    discontinued: false
+  - id: f-91wg-9q
+    ref: F-91WG-9Q
+    source:
+      { url: 'https://web.archive.org/web/20250121210748id_/https://www.casio.com/intl/watches/casio/product.F-91WG-9Q/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.2, width_mm: 33.2, depth_mm: 8.5, weight_g: 21, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: f-91wg-9q
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121210748id_/https://www.casio.com/intl/watches/casio/product.F-91WG-9Q/'
+    discontinued: false
+  - id: f-91wpc-1a
+    ref: F-91WPC-1A
+    source:
+      { url: 'https://web.archive.org/web/20250117203737id_/https://www.casio.com/us/watches/casio/product.F-91WPC-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.2, width_mm: 35.2, depth_mm: 8.5, weight_g: 21, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: f-91wpc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250117203737id_/https://www.casio.com/us/watches/casio/product.F-91WPC-1A/'
+    discontinued: false

@@ -256,3 +256,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.LA680WGA-9C/'
     discontinued: true
+
+# ADDED 2026-08-20: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: la680wea-1
+    ref: LA680WEA-1
+    source:
+      { url: 'https://web.archive.org/web/20240717160101id_/https://www.casio.com/fr/watches/casio/vintage/product.LA680WEA-1/', kind: official }
+    case: { weight_g: 36 }
+    image: la680wea-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717160101id_/https://www.casio.com/fr/watches/casio/vintage/product.LA680WEA-1/'
+    discontinued: false
+  - id: la680wegl-4
+    ref: LA680WEGL-4
+    source:
+      { url: 'https://web.archive.org/web/20240717160105id_/https://www.casio.com/fr/watches/casio/vintage/product.LA680WEGL-4/', kind: official }
+    case: { weight_g: 15 }
+    image: la680wegl-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717160105id_/https://www.casio.com/fr/watches/casio/vintage/product.LA680WEGL-4/'
+    discontinued: false

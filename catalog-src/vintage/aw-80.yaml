@@ -1,0 +1,123 @@
+# AW-80 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: aw-80
+  name: AW-80
+  line: vintage
+
+models:
+  - id: aw-80-1a
+    ref: AW-80-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715101227id_/https://www.casio.com/europe/watches/casio/product.AW-80-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 34, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, telememo]
+    image: aw-80-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101227id_/https://www.casio.com/europe/watches/casio/product.AW-80-1A/'
+    discontinued: false
+  - id: aw-80-1av
+    ref: AW-80-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715101221id_/https://www.casio.com/europe/watches/casio/product.AW-80-1AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 34, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, telememo]
+    image: aw-80-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101221id_/https://www.casio.com/europe/watches/casio/product.AW-80-1AV/'
+    discontinued: false
+  - id: aw-80-7a
+    ref: AW-80-7A
+    source:
+      { url: 'https://web.archive.org/web/20210416091802id_/https://www.casio.com/jp/watches/casio/product.AW-80-7A/', kind: official }
+    case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 34 }
+    water_resistance_m: 50
+    image: aw-80-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210416091802id_/https://www.casio.com/jp/watches/casio/product.AW-80-7A/'
+    discontinued: true
+  - id: aw-80d-1av
+    ref: AW-80D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20250121105250id_/https://www.casio.com/us/watches/casio/product.AW-80D-1AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 85, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, telememo]
+    discontinued: false
+  - id: aw-80d-7a
+    ref: AW-80D-7A
+    source:
+      { url: 'https://web.archive.org/web/20210618031640id_/https://www.casio.com/jp/watches/casio/product.AW-80D-7A/', kind: official }
+    case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 85 }
+    water_resistance_m: 50
+    image: aw-80d-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210618031640id_/https://www.casio.com/jp/watches/casio/product.AW-80D-7A/'
+    discontinued: true
+  - id: aw-80d-7av
+    ref: AW-80D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20221123112029id_/https://www.casio.com/us/watches/casio/product.AW-80D-7AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 85, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, telememo]
+    discontinued: false
+  - id: aw-80v-3b
+    ref: AW-80V-3B
+    source:
+      { url: 'https://web.archive.org/web/20210618031024id_/https://www.casio.com/jp/watches/casio/product.AW-80V-3B/', kind: official }
+    case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 32 }
+    water_resistance_m: 50
+    image: aw-80v-3b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210618031024id_/https://www.casio.com/jp/watches/casio/product.AW-80V-3B/'
+    discontinued: true
+  - id: aw-80v-5b
+    ref: AW-80V-5B
+    source:
+      { url: 'https://web.archive.org/web/20241128103547id_/https://www.casio.com/jp/watches/casio/product.AW-80V-5B/', kind: official }
+    case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 32 }
+    water_resistance_m: 50
+    image: aw-80v-5b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241128103547id_/https://www.casio.com/jp/watches/casio/product.AW-80V-5B/'
+    discontinued: true
+  - id: aw-80v-5bv
+    ref: AW-80V-5BV
+    source:
+      { url: 'https://web.archive.org/web/20221008093753id_/https://www.casio.com/us/watches/casio/product.AW-80V-5BV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 32, material: 'Resin' }
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, telememo]
+    discontinued: false

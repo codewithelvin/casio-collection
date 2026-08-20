@@ -127,3 +127,32 @@ models:
       url: 'https://web.archive.org/web/20240714220203id_/https://www.casio.com/europe/watches/casio/vintage/product.AQ-800EG-9A/'
     discontinued: false
     display: ana-digi
+
+# ADDED 2026-08-20: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: aq-800ecgg-3a
+    ref: AQ-800ECGG-3A
+    source:
+      { url: 'https://web.archive.org/web/20241007130131id_/https://www.casio.com/pt/watches/casio/vintage/product.AQ-800ECGG-3A/', kind: official }
+    case: { height_mm: 40.7, width_mm: 32.1, depth_mm: 8.7, weight_g: 52 }
+    image: aq-800ecgg-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241007130131id_/https://www.casio.com/pt/watches/casio/vintage/product.AQ-800ECGG-3A/'
+    discontinued: false
+  - id: aq-800est-1a
+    ref: AQ-800EST-1A
+    source:
+      { url: 'https://web.archive.org/web/20251108113511id_/https://www.casio.com/jp/watches/casio/product.AQ-800EST-1A/', kind: official }
+    case: { height_mm: 40.7, width_mm: 32.1, depth_mm: 8.7, weight_g: 52 }
+    image: aq-800est-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251108113511id_/https://www.casio.com/jp/watches/casio/product.AQ-800EST-1A/'
+    discontinued: false

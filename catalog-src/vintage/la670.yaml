@@ -252,3 +252,54 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241006141637id_/https://www.casio.com/in/watches/casio/product.LA670WGA-9/'
     discontinued: false
+
+# ADDED 2026-08-20: 4 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: la670wea-2
+    ref: LA670WEA-2
+    source:
+      { url: 'https://web.archive.org/web/20221230162818id_/https://www.casio.com/jp/watches/casio/product.LA670WEA-2/', kind: official }
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 32.2 }
+    image: la670wea-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221230162818id_/https://www.casio.com/jp/watches/casio/product.LA670WEA-2/'
+    discontinued: true
+  - id: la670wea-8a
+    ref: LA670WEA-8A
+    source:
+      { url: 'https://web.archive.org/web/20240713092139id_/https://www.casio.com/es/watches/casio/vintage/product.LA670WEA-8A/', kind: official }
+    case: { weight_g: 33 }
+    image: la670wea-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240713092139id_/https://www.casio.com/es/watches/casio/vintage/product.LA670WEA-8A/'
+    discontinued: false
+  - id: la670wefl-9
+    ref: LA670WEFL-9
+    source:
+      { url: 'https://web.archive.org/web/20240717155825id_/https://www.casio.com/fr/watches/casio/vintage/product.LA670WEFL-9/', kind: official }
+    case: { weight_g: 10.5 }
+    image: la670wefl-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717155825id_/https://www.casio.com/fr/watches/casio/vintage/product.LA670WEFL-9/'
+    discontinued: false
+  - id: la670wetg-9a
+    ref: LA670WETG-9A
+    source:
+      { url: 'https://web.archive.org/web/20230127141803id_/https://www.casio.com/pt/watches/casio/vintage/product.LA670WETG-9A/', kind: official }
+    case: { height_mm: 30.3, width_mm: 24.6, depth_mm: 7.3, weight_g: 28 }
+    image: la670wetg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230127141803id_/https://www.casio.com/pt/watches/casio/vintage/product.LA670WETG-9A/'
+    discontinued: false

@@ -1,0 +1,148 @@
+# MTP-1381 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-1381
+  name: MTP-1381
+  line: vintage
+
+models:
+  - id: mtp-1381d-1av
+    ref: MTP-1381D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20251001055806id_/https://www.casio.com/intl/watches/casio/product.MTP-1381D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 39.9, depth_mm: 8.9, weight_g: 104, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1381d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251001055806id_/https://www.casio.com/intl/watches/casio/product.MTP-1381D-1AV/'
+    discontinued: false
+  - id: mtp-1381d-3av
+    ref: MTP-1381D-3AV
+    source:
+      { url: 'https://web.archive.org/web/20250722012730id_/https://www.casio.com/intl/watches/casio/product.MTP-1381D-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 39.9, depth_mm: 8.9, weight_g: 104, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-1381d-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250722012730id_/https://www.casio.com/intl/watches/casio/product.MTP-1381D-3AV/'
+    discontinued: false
+  - id: mtp-1381d-7av
+    ref: MTP-1381D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220524192414id_/https://www.casio.com/in/watches/casio/product.MTP-1381D-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 39.9, depth_mm: 8.9, weight_g: 104, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1381d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220524192414id_/https://www.casio.com/in/watches/casio/product.MTP-1381D-7AV/'
+    discontinued: false
+  - id: mtp-1381hd-9av
+    ref: MTP-1381HD-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220820052409id_/https://www.casio.com/in/watches/casio/product.MTP-1381HD-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 39.9, depth_mm: 8.9, weight_g: 104, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1381hd-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220820052409id_/https://www.casio.com/in/watches/casio/product.MTP-1381HD-9AV/'
+    discontinued: true
+  - id: mtp-1381hg-1av
+    ref: MTP-1381HG-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220525202456id_/https://www.casio.com/in/watches/casio/product.MTP-1381HG-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 39.9, depth_mm: 8.9, weight_g: 104, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1381hg-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220525202456id_/https://www.casio.com/in/watches/casio/product.MTP-1381HG-1AV/'
+    discontinued: true
+  - id: mtp-1381hg-9av
+    ref: MTP-1381HG-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220522011338id_/https://www.casio.com/in/watches/casio/product.MTP-1381HG-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 39.9, depth_mm: 8.9, weight_g: 104, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1381hg-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220522011338id_/https://www.casio.com/in/watches/casio/product.MTP-1381HG-9AV/'
+    discontinued: true
+  - id: mtp-1381hrg-9av
+    ref: MTP-1381HRG-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220812211100id_/https://www.casio.com/in/watches/casio/product.MTP-1381HRG-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 39.9, depth_mm: 8.9, weight_g: 104, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1381hrg-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220812211100id_/https://www.casio.com/in/watches/casio/product.MTP-1381HRG-9AV/'
+    discontinued: true
+  - id: mtp-1381l-1av
+    ref: MTP-1381L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20231022230944id_/https://www.casio.com/za/watches/casio/product.MTP-1381L-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 39.9, depth_mm: 8.9, weight_g: 52, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1381l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231022230944id_/https://www.casio.com/za/watches/casio/product.MTP-1381L-1AV/'
+    discontinued: false
+  - id: mtp-1381l-9av
+    ref: MTP-1381L-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220809113010id_/https://www.casio.com/in/watches/casio/product.MTP-1381L-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 39.9, depth_mm: 8.9, weight_g: 52, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: mtp-1381l-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220809113010id_/https://www.casio.com/in/watches/casio/product.MTP-1381L-9AV/'
+    discontinued: true

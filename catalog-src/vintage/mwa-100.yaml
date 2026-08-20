@@ -1,0 +1,157 @@
+# MWA-100 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mwa-100
+  name: MWA-100
+  line: vintage
+
+models:
+  - id: mwa-100h-1a2v
+    ref: MWA-100H-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20240922024729id_/https://www.casio.com/us/watches/casio/product.MWA-100H-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 50.6, width_mm: 49.6, depth_mm: 13.5, weight_g: 53, material: 'Resin / Stainless steel' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: mwa-100h-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024729id_/https://www.casio.com/us/watches/casio/product.MWA-100H-1A2V/'
+    discontinued: false
+  - id: mwa-100h-1av
+    ref: MWA-100H-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240922024907id_/https://www.casio.com/us/watches/casio/product.MWA-100H-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 50.6, width_mm: 49.6, depth_mm: 13.5, weight_g: 53, material: 'Resin / Stainless steel' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: mwa-100h-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024907id_/https://www.casio.com/us/watches/casio/product.MWA-100H-1AV/'
+    discontinued: false
+  - id: mwa-100h-2a
+    ref: MWA-100H-2A
+    source:
+      { url: 'https://web.archive.org/web/20220511123826id_/https://www.casio.com/jp/watches/casio/product.MWA-100H-2A/', kind: official }
+    case: { height_mm: 50.6, width_mm: 50.6, depth_mm: 13.5, weight_g: 53 }
+    water_resistance_m: 100
+    # `image: null` because the file never arrived. The page names an asset and the
+    # download failed, and check 5 is right to refuse an entry claiming a
+    # photograph that is not there — a claimed-but-absent image renders as a broken
+    # picture, which §8.6 rules out. The credit goes with it, because check 5a
+    # refuses a credit for a file this catalogue does not publish (D41).
+    #
+    # The specifications above are real and untouched, read off the `/jp/` capture
+    # this entry cites. A reference with data and no picture is the normal case
+    # here (D29), not a degraded one.
+    image: null
+    discontinued: true
+  - id: mwa-100h-2av
+    ref: MWA-100H-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240715101442id_/https://www.casio.com/europe/watches/casio/product.MWA-100H-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 50.6, width_mm: 49.6, depth_mm: 13.5, weight_g: 53, material: 'Resin / Stainless steel' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: mwa-100h-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101442id_/https://www.casio.com/europe/watches/casio/product.MWA-100H-2AV/'
+    discontinued: false
+  - id: mwa-100h-7av
+    ref: MWA-100H-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220701055554id_/https://www.casio.com/us/watches/casio/product.MWA-100H-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 50.6, width_mm: 49.6, depth_mm: 13.5, weight_g: 53, material: 'Resin / Stainless steel' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: mwa-100h-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220701055554id_/https://www.casio.com/us/watches/casio/product.MWA-100H-7AV/'
+    discontinued: false
+  - id: mwa-100hb-1av
+    ref: MWA-100HB-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102755id_/https://www.casio.com/europe/watches/casio/product.MWA-100HB-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 50.6, width_mm: 49.6, depth_mm: 13.5, weight_g: 53, material: 'Resin / Stainless steel' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: mwa-100hb-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102755id_/https://www.casio.com/europe/watches/casio/product.MWA-100HB-1AV/'
+    discontinued: false
+  - id: mwa-100hd-1av
+    ref: MWA-100HD-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102511id_/https://www.casio.com/europe/watches/casio/product.MWA-100HD-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 50.6, width_mm: 49.6, depth_mm: 13.5, weight_g: 100, material: 'Resin / Stainless steel' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: mwa-100hd-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102511id_/https://www.casio.com/europe/watches/casio/product.MWA-100HD-1AV/'
+    discontinued: false
+  - id: mwa-100hd-2av
+    ref: MWA-100HD-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102800id_/https://www.casio.com/europe/watches/casio/product.MWA-100HD-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 50.6, width_mm: 49.6, depth_mm: 13.5, weight_g: 100, material: 'Resin / Stainless steel' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: mwa-100hd-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102800id_/https://www.casio.com/europe/watches/casio/product.MWA-100HD-2AV/'
+    discontinued: false
+  - id: mwa-100hd-7av
+    ref: MWA-100HD-7AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102808id_/https://www.casio.com/europe/watches/casio/product.MWA-100HD-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 50.6, width_mm: 49.6, depth_mm: 13.5, weight_g: 100, material: 'Resin / Stainless steel' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: mwa-100hd-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102808id_/https://www.casio.com/europe/watches/casio/product.MWA-100HD-7AV/'
+    discontinued: false

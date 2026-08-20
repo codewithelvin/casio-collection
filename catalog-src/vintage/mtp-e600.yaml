@@ -1,0 +1,142 @@
+# MTP-E600 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-e600
+  name: MTP-E600
+  line: vintage
+
+models:
+  - id: mtp-e600b-1b
+    ref: MTP-E600B-1B
+    source:
+      { url: 'https://web.archive.org/web/20220706035637id_/https://www.casio.com/in/watches/casio/product.MTP-E600B-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 41, depth_mm: 8.5, weight_g: 100, material: 'Stainless steel' }
+    features: [mineral-glass]
+    image: mtp-e600b-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220706035637id_/https://www.casio.com/in/watches/casio/product.MTP-E600B-1B/'
+    discontinued: false
+  - id: mtp-e600b-2b
+    ref: MTP-E600B-2B
+    source:
+      { url: 'https://web.archive.org/web/20240721185105id_/https://www.casio.com/id/watches/casio/product.MTP-E600B-2B/', kind: official }
+    case: { height_mm: 49, width_mm: 41, depth_mm: 8.5, weight_g: 100 }
+    image: mtp-e600b-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185105id_/https://www.casio.com/id/watches/casio/product.MTP-E600B-2B/'
+    discontinued: false
+  - id: mtp-e600d-1b
+    ref: MTP-E600D-1B
+    source:
+      { url: 'https://web.archive.org/web/20240721185039id_/https://www.casio.com/id/watches/casio/product.MTP-E600D-1B/', kind: official }
+    case: { height_mm: 49, width_mm: 41, depth_mm: 8.5, weight_g: 100 }
+    image: mtp-e600d-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185039id_/https://www.casio.com/id/watches/casio/product.MTP-E600D-1B/'
+    discontinued: false
+  - id: mtp-e600d-2b
+    ref: MTP-E600D-2B
+    source:
+      { url: 'https://web.archive.org/web/20220706032723id_/https://www.casio.com/in/watches/casio/product.MTP-E600D-2B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 41, depth_mm: 8.5, weight_g: 100, material: 'Stainless steel' }
+    features: [mineral-glass]
+    image: mtp-e600d-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220706032723id_/https://www.casio.com/in/watches/casio/product.MTP-E600D-2B/'
+    discontinued: false
+  - id: mtp-e600g-9b
+    ref: MTP-E600G-9B
+    source:
+      { url: 'https://web.archive.org/web/20240721185027id_/https://www.casio.com/id/watches/casio/product.MTP-E600G-9B/', kind: official }
+    case: { height_mm: 49, width_mm: 41, depth_mm: 8.5, weight_g: 100 }
+    image: mtp-e600g-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185027id_/https://www.casio.com/id/watches/casio/product.MTP-E600G-9B/'
+    discontinued: false
+  - id: mtp-e600l-1b
+    ref: MTP-E600L-1B
+    source:
+      { url: 'https://web.archive.org/web/20240721185128id_/https://www.casio.com/id/watches/casio/product.MTP-E600L-1B/', kind: official }
+    case: { height_mm: 49, width_mm: 41, depth_mm: 8.5, weight_g: 44 }
+    image: mtp-e600l-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185128id_/https://www.casio.com/id/watches/casio/product.MTP-E600L-1B/'
+    discontinued: false
+  - id: mtp-e600l-5b
+    ref: MTP-E600L-5B
+    source:
+      { url: 'https://web.archive.org/web/20240721185000id_/https://www.casio.com/id/watches/casio/product.MTP-E600L-5B/', kind: official }
+    case: { height_mm: 49, width_mm: 41, depth_mm: 8.5, weight_g: 44 }
+    image: mtp-e600l-5b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185000id_/https://www.casio.com/id/watches/casio/product.MTP-E600L-5B/'
+    discontinued: false
+  - id: mtp-e600m-9b
+    ref: MTP-E600M-9B
+    source:
+      { url: 'https://web.archive.org/web/20220706032715id_/https://www.casio.com/in/watches/casio/product.MTP-E600M-9B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 41, depth_mm: 8.5, weight_g: 70, material: 'Stainless steel' }
+    features: [mineral-glass]
+    image: mtp-e600m-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220706032715id_/https://www.casio.com/in/watches/casio/product.MTP-E600M-9B/'
+    discontinued: false
+  - id: mtp-e600mb-4b
+    ref: MTP-E600MB-4B
+    source:
+      { url: 'https://web.archive.org/web/20240721185016id_/https://www.casio.com/id/watches/casio/product.MTP-E600MB-4B/', kind: official }
+    case: { height_mm: 49, width_mm: 41, depth_mm: 8.5, weight_g: 70 }
+    image: mtp-e600mb-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185016id_/https://www.casio.com/id/watches/casio/product.MTP-E600MB-4B/'
+    discontinued: false
+  - id: mtp-e600mg-9b
+    ref: MTP-E600MG-9B
+    source:
+      { url: 'https://web.archive.org/web/20220706033832id_/https://www.casio.com/intl/watches/casio/product.MTP-E600MG-9B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49, width_mm: 41, depth_mm: 8.5, weight_g: 70, material: 'Stainless steel' }
+    features: [mineral-glass]
+    image: mtp-e600mg-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220706033832id_/https://www.casio.com/intl/watches/casio/product.MTP-E600MG-9B/'
+    discontinued: false

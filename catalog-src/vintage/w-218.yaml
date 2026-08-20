@@ -242,3 +242,34 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241001003136id_/https://www.casio.com/us/watches/casio/product.W-218HM-7AV/'
     discontinued: false
+
+# ADDED 2026-08-20: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: w-218h-5b
+    ref: W-218H-5B
+    source:
+      { url: 'https://web.archive.org/web/20250214065934id_/https://www.casio.com/jp/watches/casio/product.W-218H-5B/', kind: official }
+    case: { height_mm: 44.4, width_mm: 43.2, depth_mm: 10.8, weight_g: 37 }
+    water_resistance_m: 50
+    image: w-218h-5b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250214065934id_/https://www.casio.com/jp/watches/casio/product.W-218H-5B/'
+    discontinued: true
+  - id: w-218hc-2a
+    ref: W-218HC-2A
+    source:
+      { url: 'https://web.archive.org/web/20250220062622id_/https://www.casio.com/jp/watches/casio/product.W-218HC-2A/', kind: official }
+    case: { height_mm: 44.4, width_mm: 43.2, depth_mm: 10.8, weight_g: 37 }
+    water_resistance_m: 50
+    image: w-218hc-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250220062622id_/https://www.casio.com/jp/watches/casio/product.W-218HC-2A/'
+    discontinued: true

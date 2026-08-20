@@ -144,3 +144,34 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241114172334id_/https://www.casio.com/us/watches/casio/product.AE-1200WHUB-8AV/'
     discontinued: false
+
+# ADDED 2026-08-20: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: ae-1200wh-1a
+    ref: AE-1200WH-1A
+    source:
+      { url: 'https://web.archive.org/web/20241116181210id_/https://www.casio.com/jp/watches/casio/product.AE-1200WH-1A/', kind: official }
+    case: { height_mm: 45, width_mm: 42.1, depth_mm: 12.5, weight_g: 39 }
+    water_resistance_m: 100
+    image: ae-1200wh-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241116181210id_/https://www.casio.com/jp/watches/casio/product.AE-1200WH-1A/'
+    discontinued: true
+  - id: ae-1200whd-1a
+    ref: AE-1200WHD-1A
+    source:
+      { url: 'https://web.archive.org/web/20241115135214id_/https://www.casio.com/jp/watches/casio/product.AE-1200WHD-1A/', kind: official }
+    case: { height_mm: 45, width_mm: 42.1, depth_mm: 12.5, weight_g: 91 }
+    water_resistance_m: 100
+    image: ae-1200whd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241115135214id_/https://www.casio.com/jp/watches/casio/product.AE-1200WHD-1A/'
+    discontinued: true

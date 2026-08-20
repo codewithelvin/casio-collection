@@ -78,3 +78,22 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628162443id_/https://www.casio.com/in/watches/edifice/product.EF-558SG-1AV/'
     discontinued: false
+
+# ADDED 2026-08-20: 1 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: ef-558d-7av
+    ref: EF-558D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220629103502id_/https://www.casio.com/hk/watches/edifice/product.EF-558D-7AV/', kind: official }
+    case: { height_mm: 51, width_mm: 49.3, depth_mm: 14.1, weight_g: 197 }
+    water_resistance_m: 100
+    image: ef-558d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220629103502id_/https://www.casio.com/hk/watches/edifice/product.EF-558D-7AV/'
+    discontinued: true

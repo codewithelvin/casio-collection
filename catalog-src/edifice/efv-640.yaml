@@ -134,3 +134,34 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722130357id_/https://www.casio.com/id/watches/edifice/product.EFV-640L-2AV/'
     discontinued: false
+
+# ADDED 2026-08-20: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: efv-640dj-2b
+    ref: EFV-640DJ-2B
+    source:
+      { url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/edifice/product.EFV-640DJ-2B/', kind: official }
+    case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136 }
+    water_resistance_m: 100
+    image: efv-640dj-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/edifice/product.EFV-640DJ-2B/'
+    discontinued: true
+  - id: efv-640dj-3a
+    ref: EFV-640DJ-3A
+    source:
+      { url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/edifice/product.EFV-640DJ-3A/', kind: official }
+    case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136 }
+    water_resistance_m: 100
+    image: efv-640dj-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/edifice/product.EFV-640DJ-3A/'
+    discontinued: true

@@ -1,0 +1,164 @@
+# WVA-M630 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: wva-m630
+  name: WVA-M630
+  line: vintage
+
+models:
+  - id: wva-m630b-1a
+    ref: WVA-M630B-1A
+    source:
+      { url: 'https://web.archive.org/web/20210310205545id_/https://www.casio.com/jp/watches/casio/product.WVA-M630B-1A/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 34.7 }
+    water_resistance_m: 50
+    image: wva-m630b-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210310205545id_/https://www.casio.com/jp/watches/casio/product.WVA-M630B-1A/'
+    discontinued: true
+  - id: wva-m630b-3a
+    ref: WVA-M630B-3A
+    source:
+      { url: 'https://web.archive.org/web/20210310205524id_/https://www.casio.com/jp/watches/casio/product.WVA-M630B-3A/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 34.7 }
+    water_resistance_m: 50
+    image: wva-m630b-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210310205524id_/https://www.casio.com/jp/watches/casio/product.WVA-M630B-3A/'
+    discontinued: true
+  - id: wva-m630d-1a
+    ref: WVA-M630D-1A
+    source:
+      { url: 'https://web.archive.org/web/20210505212323id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-1A/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    water_resistance_m: 50
+    image: wva-m630d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210505212323id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-1A/'
+    discontinued: true
+  - id: wva-m630d-1a4
+    ref: WVA-M630D-1A4
+    source:
+      { url: 'https://web.archive.org/web/20210505215508id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-1A4/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    water_resistance_m: 50
+    image: wva-m630d-1a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210505215508id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-1A4/'
+    discontinued: true
+  - id: wva-m630d-2a
+    ref: WVA-M630D-2A
+    source:
+      { url: 'https://web.archive.org/web/20210416073446id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-2A/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    water_resistance_m: 50
+    image: wva-m630d-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210416073446id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-2A/'
+    discontinued: true
+  - id: wva-m630d-7a
+    ref: WVA-M630D-7A
+    source:
+      { url: 'https://web.archive.org/web/20210505220648id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-7A/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    water_resistance_m: 50
+    image: wva-m630d-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210505220648id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-7A/'
+    discontinued: true
+  - id: wva-m630d-7a2
+    ref: WVA-M630D-7A2
+    source:
+      { url: 'https://web.archive.org/web/20210505222508id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-7A2/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    water_resistance_m: 50
+    image: wva-m630d-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210505222508id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-7A2/'
+    discontinued: true
+  - id: wva-m630d-9a
+    ref: WVA-M630D-9A
+    source:
+      { url: 'https://web.archive.org/web/20210416111505id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-9A/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    water_resistance_m: 50
+    image: wva-m630d-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210416111505id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-9A/'
+    discontinued: true
+  - id: wva-m630l-1a2
+    ref: WVA-M630L-1A2
+    source:
+      { url: 'https://web.archive.org/web/20221129010624id_/https://www.casio.com/jp/watches/casio/product.WVA-M630L-1A2/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 33 }
+    water_resistance_m: 50
+    image: wva-m630l-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221129010624id_/https://www.casio.com/jp/watches/casio/product.WVA-M630L-1A2/'
+    discontinued: true
+  - id: wva-m630l-9a
+    ref: WVA-M630L-9A
+    source:
+      { url: 'https://web.archive.org/web/20221208201729id_/https://www.casio.com/jp/watches/casio/product.WVA-M630L-9A/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 33 }
+    water_resistance_m: 50
+    image: wva-m630l-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221208201729id_/https://www.casio.com/jp/watches/casio/product.WVA-M630L-9A/'
+    discontinued: true
+  - id: wva-m630tde-1a
+    ref: WVA-M630TDE-1A
+    source:
+      { url: 'https://web.archive.org/web/20210413041756id_/https://www.casio.com/jp/watches/casio/product.WVA-M630TDE-1A/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11.1, weight_g: 68 }
+    water_resistance_m: 50
+    image: wva-m630tde-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210413041756id_/https://www.casio.com/jp/watches/casio/product.WVA-M630TDE-1A/'
+    discontinued: true
+  - id: wva-m630tde-7a
+    ref: WVA-M630TDE-7A
+    source:
+      { url: 'https://web.archive.org/web/20221129005611id_/https://www.casio.com/jp/watches/casio/product.WVA-M630TDE-7A/', kind: official }
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11.1, weight_g: 68 }
+    water_resistance_m: 50
+    image: wva-m630tde-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221129005611id_/https://www.casio.com/jp/watches/casio/product.WVA-M630TDE-7A/'
+    discontinued: true

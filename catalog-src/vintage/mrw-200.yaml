@@ -166,3 +166,94 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715101247id_/https://www.casio.com/europe/watches/casio/product.MRW-200HD-7BV/'
     discontinued: false
+
+# ADDED 2026-08-20: 7 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mrw-200h-2b3v
+    ref: MRW-200H-2B3V
+    source:
+      { url: 'https://web.archive.org/web/20240721183546id_/https://www.casio.com/id/watches/casio/product.MRW-200H-2B3V/', kind: official }
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39 }
+    water_resistance_m: 100
+    image: mrw-200h-2b3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721183546id_/https://www.casio.com/id/watches/casio/product.MRW-200H-2B3V/'
+    discontinued: false
+  - id: mrw-200h-9bv
+    ref: MRW-200H-9BV
+    source:
+      { url: 'https://web.archive.org/web/20240721183738id_/https://www.casio.com/id/watches/casio/product.MRW-200H-9BV/', kind: official }
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39 }
+    water_resistance_m: 100
+    image: mrw-200h-9bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721183738id_/https://www.casio.com/id/watches/casio/product.MRW-200H-9BV/'
+    discontinued: true
+  - id: mrw-200hc-4bv
+    ref: MRW-200HC-4BV
+    source:
+      { url: 'https://web.archive.org/web/20240721183652id_/https://www.casio.com/id/watches/casio/product.MRW-200HC-4BV/', kind: official }
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39 }
+    water_resistance_m: 100
+    image: mrw-200hc-4bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721183652id_/https://www.casio.com/id/watches/casio/product.MRW-200HC-4BV/'
+    discontinued: true
+  - id: mrw-200hc-7b2v
+    ref: MRW-200HC-7B2V
+    source:
+      { url: 'https://web.archive.org/web/20240721183709id_/https://www.casio.com/id/watches/casio/product.MRW-200HC-7B2V/', kind: official }
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39 }
+    water_resistance_m: 100
+    image: mrw-200hc-7b2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721183709id_/https://www.casio.com/id/watches/casio/product.MRW-200HC-7B2V/'
+    discontinued: true
+  - id: mrw-200hc-7bv
+    ref: MRW-200HC-7BV
+    source:
+      { url: 'https://web.archive.org/web/20240721183514id_/https://www.casio.com/id/watches/casio/product.MRW-200HC-7BV/', kind: official }
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39 }
+    water_resistance_m: 100
+    image: mrw-200hc-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721183514id_/https://www.casio.com/id/watches/casio/product.MRW-200HC-7BV/'
+    discontinued: true
+  - id: mrw-200hj-1b
+    ref: MRW-200HJ-1B
+    source:
+      { url: 'https://web.archive.org/web/20221123112101id_/https://www.casio.com/jp/watches/casio/product.MRW-200HJ-1B/', kind: official }
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39 }
+    water_resistance_m: 100
+    image: mrw-200hj-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221123112101id_/https://www.casio.com/jp/watches/casio/product.MRW-200HJ-1B/'
+    discontinued: true
+  - id: mrw-200hj-7e
+    ref: MRW-200HJ-7E
+    source:
+      { url: 'https://web.archive.org/web/20221202070634id_/https://www.casio.com/jp/watches/casio/product.MRW-200HJ-7E/', kind: official }
+    case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39 }
+    water_resistance_m: 100
+    image: mrw-200hj-7e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221202070634id_/https://www.casio.com/jp/watches/casio/product.MRW-200HJ-7E/'
+    discontinued: true

@@ -392,3 +392,93 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220813000005id_/https://www.casio.com/in/watches/casio/product.MTP-1302SG-7AV/'
     discontinued: true
+
+# ADDED 2026-08-20: 7 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mtp-1302d-1a1
+    ref: MTP-1302D-1A1
+    source:
+      { url: 'https://web.archive.org/web/20241107111655id_/https://www.casio.com/jp/watches/casio/product.MTP-1302D-1A1/', kind: official }
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105 }
+    water_resistance_m: 50
+    image: mtp-1302d-1a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241107111655id_/https://www.casio.com/jp/watches/casio/product.MTP-1302D-1A1/'
+    discontinued: true
+  - id: mtp-1302d-3a
+    ref: MTP-1302D-3A
+    source:
+      { url: 'https://web.archive.org/web/20240910124257id_/https://www.casio.com/jp/watches/casio/product.MTP-1302D-3A/', kind: official }
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105 }
+    water_resistance_m: 50
+    image: mtp-1302d-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240910124257id_/https://www.casio.com/jp/watches/casio/product.MTP-1302D-3A/'
+    discontinued: true
+  - id: mtp-1302d-7a1
+    ref: MTP-1302D-7A1
+    source:
+      { url: 'https://web.archive.org/web/20241107084158id_/https://www.casio.com/jp/watches/casio/product.MTP-1302D-7A1/', kind: official }
+    case: { height_mm: 44.2, width_mm: 38.5, depth_mm: 9.2, weight_g: 105 }
+    water_resistance_m: 50
+    image: mtp-1302d-7a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241107084158id_/https://www.casio.com/jp/watches/casio/product.MTP-1302D-7A1/'
+    discontinued: true
+  - id: mtp-1302d-7a1v
+    ref: MTP-1302D-7A1V
+    source:
+      { url: 'https://web.archive.org/web/20250413163743id_/https://www.casio.com/fr/watches/casio/product.MTP-1302D-7A1V/', kind: official }
+    case: { weight_g: 105 }
+    water_resistance_m: 50
+    image: mtp-1302d-7a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250413163743id_/https://www.casio.com/fr/watches/casio/product.MTP-1302D-7A1V/'
+    discontinued: false
+  - id: mtp-1302pec-2av
+    ref: MTP-1302PEC-2AV
+    source:
+      { url: 'https://web.archive.org/web/20250122154636id_/https://www.casio.com/mx/watches/casio/product.MTP-1302PEC-2AV/', kind: official }
+    case: { weight_g: 106 }
+    image: mtp-1302pec-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250122154636id_/https://www.casio.com/mx/watches/casio/product.MTP-1302PEC-2AV/'
+    discontinued: false
+  - id: mtp-1302pgc-3av
+    ref: MTP-1302PGC-3AV
+    source:
+      { url: 'https://web.archive.org/web/20250413163047id_/https://www.casio.com/fr/watches/casio/product.MTP-1302PGC-3AV/', kind: official }
+    case: { weight_g: 105 }
+    water_resistance_m: 50
+    image: mtp-1302pgc-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250413163047id_/https://www.casio.com/fr/watches/casio/product.MTP-1302PGC-3AV/'
+    discontinued: false
+  - id: mtp-1302pl-5av
+    ref: MTP-1302PL-5AV
+    source:
+      { url: 'https://web.archive.org/web/20250413162930id_/https://www.casio.com/fr/watches/casio/product.MTP-1302PL-5AV/', kind: official }
+    case: { weight_g: 50 }
+    water_resistance_m: 50
+    image: mtp-1302pl-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250413162930id_/https://www.casio.com/fr/watches/casio/product.MTP-1302PL-5AV/'
+    discontinued: false

@@ -242,3 +242,21 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220930120155id_/https://www.casio.com/in/watches/casio/product.MTP-VD03L-5A/'
     discontinued: false
+
+# ADDED 2026-08-20: 1 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mtp-vd03d-3a2
+    ref: MTP-VD03D-3A2
+    source:
+      { url: 'https://web.archive.org/web/20240722020943id_/https://www.casio.com/id/watches/casio/product.MTP-VD03D-3A2/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 106 }
+    image: mtp-vd03d-3a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722020943id_/https://www.casio.com/id/watches/casio/product.MTP-VD03D-3A2/'
+    discontinued: false

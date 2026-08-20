@@ -66,3 +66,27 @@ models:
       url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.AQ-230GG-9A/'
     discontinued: false
     display: ana-digi
+
+# ADDED 2026-08-20: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: aq-230a-7
+    ref: AQ-230A-7
+    source:
+      { url: 'https://web.archive.org/web/20240704113253id_/https://www.casio.com/br/watches/casio/product.AQ-230A-7/', kind: official }
+    case: { height_mm: 38.8, width_mm: 29.8, depth_mm: 8.1, weight_g: 47 }
+    discontinued: true
+  - id: aq-230egg-3a
+    ref: AQ-230EGG-3A
+    source:
+      { url: 'https://web.archive.org/web/20241008103804id_/https://www.casio.com/es/watches/casio/vintage/product.AQ-230EGG-3A/', kind: official }
+    case: { weight_g: 47 }
+    image: aq-230egg-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241008103804id_/https://www.casio.com/es/watches/casio/vintage/product.AQ-230EGG-3A/'
+    discontinued: false

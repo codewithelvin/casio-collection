@@ -1,0 +1,150 @@
+# MDV-106 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mdv-106
+  name: MDV-106
+  line: vintage
+
+models:
+  - id: mdv-106-1av
+    ref: MDV-106-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220625033634id_/https://www.casio.com/us/watches/casio/product.MDV-106-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 92, material: 'Stainless steel / Aluminum · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [screw-lock-crown, mineral-glass]
+    discontinued: false
+  - id: mdv-106b-1a1v
+    ref: MDV-106B-1A1V
+    source:
+      { url: 'https://web.archive.org/web/20221017180101id_/https://www.casio.com/us/watches/casio/product.MDV-106B-1A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46.3, depth_mm: 12.1, weight_g: 92, material: 'Stainless steel / Aluminum · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [screw-lock-crown, mineral-glass]
+    image: mdv-106b-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221017180101id_/https://www.casio.com/us/watches/casio/product.MDV-106B-1A1V/'
+    discontinued: false
+  - id: mdv-106b-1a2v
+    ref: MDV-106B-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20221223202437id_/https://www.casio.com/us/watches/casio/product.MDV-106B-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46.3, depth_mm: 12.1, weight_g: 92, material: 'Stainless steel / Aluminum · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [screw-lock-crown, mineral-glass]
+    image: mdv-106b-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221223202437id_/https://www.casio.com/us/watches/casio/product.MDV-106B-1A2V/'
+    discontinued: false
+  - id: mdv-106b-1a3v
+    ref: MDV-106B-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20221103214141id_/https://www.casio.com/us/watches/casio/product.MDV-106B-1A3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46.3, depth_mm: 12.1, weight_g: 92, material: 'Stainless steel / Aluminum · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [screw-lock-crown, mineral-glass]
+    image: mdv-106b-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221103214141id_/https://www.casio.com/us/watches/casio/product.MDV-106B-1A3V/'
+    discontinued: false
+  - id: mdv-106b-2av
+    ref: MDV-106B-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220612224420id_/https://www.casio.com/us/watches/casio/product.MDV-106B-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46.3, depth_mm: 12.1, weight_g: 92, material: 'Stainless steel / Aluminum · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [screw-lock-crown, mineral-glass]
+    image: mdv-106b-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220612224420id_/https://www.casio.com/us/watches/casio/product.MDV-106B-2AV/'
+    discontinued: false
+  - id: mdv-106dd-1a1v
+    ref: MDV-106DD-1A1V
+    source:
+      { url: 'https://web.archive.org/web/20240922024620id_/https://www.casio.com/us/watches/casio/product.MDV-106DD-1A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 145, material: 'Stainless steel / Aluminum · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [screw-lock-crown, mineral-glass]
+    image: mdv-106dd-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240922024620id_/https://www.casio.com/us/watches/casio/product.MDV-106DD-1A1V/'
+    discontinued: false
+  - id: mdv-106dd-1a2v
+    ref: MDV-106DD-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20240408193744id_/https://www.casio.com/us/watches/casio/product.MDV-106DD-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 145, material: 'Stainless steel / Aluminum · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [screw-lock-crown, mineral-glass]
+    image: mdv-106dd-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193744id_/https://www.casio.com/us/watches/casio/product.MDV-106DD-1A2V/'
+    discontinued: false
+  - id: mdv-106dd-1a3v
+    ref: MDV-106DD-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20240408193744id_/https://www.casio.com/us/watches/casio/product.MDV-106DD-1A3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 145, material: 'Stainless steel / Aluminum · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [screw-lock-crown, mineral-glass]
+    image: mdv-106dd-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193744id_/https://www.casio.com/us/watches/casio/product.MDV-106DD-1A3V/'
+    discontinued: false
+  - id: mdv-106g-1av
+    ref: MDV-106G-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221122063417id_/https://www.casio.com/us/watches/casio/product.MDV-106G-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46.3, depth_mm: 12.1, weight_g: 92, material: 'Stainless steel / Aluminum · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [screw-lock-crown, mineral-glass]
+    image: mdv-106g-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221122063417id_/https://www.casio.com/us/watches/casio/product.MDV-106G-1AV/'
+    discontinued: false

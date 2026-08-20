@@ -42,3 +42,21 @@ models:
     case: { height_mm: 31.4, width_mm: 25.5, depth_mm: 7.6, weight_g: 10, material: 'Resin' }
     features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
     discontinued: false
+
+# ADDED 2026-08-20: 1 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: la-11wr-5a
+    ref: LA-11WR-5A
+    source:
+      { url: 'https://web.archive.org/web/20240717155808id_/https://www.casio.com/fr/watches/casio/vintage/product.LA-11WR-5A/', kind: official }
+    case: { weight_g: 34 }
+    image: la-11wr-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717155808id_/https://www.casio.com/fr/watches/casio/vintage/product.LA-11WR-5A/'
+    discontinued: false

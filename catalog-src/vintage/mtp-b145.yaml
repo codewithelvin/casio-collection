@@ -1,0 +1,180 @@
+# MTP-B145 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-b145
+  name: MTP-B145
+  line: vintage
+
+models:
+  - id: mtp-b145d-2a1v
+    ref: MTP-B145D-2A1V
+    source:
+      { url: 'https://web.archive.org/web/20240715102321id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-2A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b145d-2a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102321id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-2A1V/'
+    discontinued: false
+  - id: mtp-b145d-2a2v
+    ref: MTP-B145D-2A2V
+    source:
+      { url: 'https://web.archive.org/web/20240715102724id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-2A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    discontinued: false
+  - id: mtp-b145d-3av
+    ref: MTP-B145D-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102334id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b145d-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102334id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-3AV/'
+    discontinued: false
+  - id: mtp-b145d-4a2v
+    ref: MTP-B145D-4A2V
+    source:
+      { url: 'https://web.archive.org/web/20240225135539id_/https://www.casio.com/in/watches/casio/product.MTP-B145D-4A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b145d-4a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135539id_/https://www.casio.com/in/watches/casio/product.MTP-B145D-4A2V/'
+    discontinued: false
+  - id: mtp-b145d-4av
+    ref: MTP-B145D-4AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102326id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-4AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b145d-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102326id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-4AV/'
+    discontinued: false
+  - id: mtp-b145d-7bv
+    ref: MTP-B145D-7BV
+    source:
+      { url: 'https://web.archive.org/web/20240715103136id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b145d-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103136id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-7BV/'
+    discontinued: false
+  - id: mtp-b145d-9av
+    ref: MTP-B145D-9AV
+    source:
+      { url: 'https://web.archive.org/web/20240225135538id_/https://www.casio.com/in/watches/casio/product.MTP-B145D-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b145d-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135538id_/https://www.casio.com/in/watches/casio/product.MTP-B145D-9AV/'
+    discontinued: false
+  - id: mtp-b145dc-2a1v
+    ref: MTP-B145DC-2A1V
+    source:
+      { url: 'https://web.archive.org/web/20240214084708id_/https://www.casio.com/us/watches/casio/product.MTP-B145DC-2A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b145dc-2a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084708id_/https://www.casio.com/us/watches/casio/product.MTP-B145DC-2A1V/'
+    discontinued: true
+  - id: mtp-b145dc-2a2v
+    ref: MTP-B145DC-2A2V
+    source:
+      { url: 'https://web.archive.org/web/20240214084708id_/https://www.casio.com/us/watches/casio/product.MTP-B145DC-2A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b145dc-2a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084708id_/https://www.casio.com/us/watches/casio/product.MTP-B145DC-2A2V/'
+    discontinued: false
+  - id: mtp-b145dc-4av
+    ref: MTP-B145DC-4AV
+    source:
+      { url: 'https://web.archive.org/web/20241218042644id_/https://www.casio.com/us/watches/casio/product.MTP-B145DC-4AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b145dc-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241218042644id_/https://www.casio.com/us/watches/casio/product.MTP-B145DC-4AV/'
+    discontinued: false
+  - id: mtp-b145g-9av
+    ref: MTP-B145G-9AV
+    source:
+      { url: 'https://web.archive.org/web/20241224184623id_/https://www.casio.com/my/watches/casio/product.MTP-B145G-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 40, width_mm: 35, depth_mm: 7.4, weight_g: 82, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b145g-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241224184623id_/https://www.casio.com/my/watches/casio/product.MTP-B145G-9AV/'
+    discontinued: false

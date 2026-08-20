@@ -256,3 +256,58 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220816035300id_/https://www.casio.com/in/watches/casio/product.MTP-1374L-9AV/'
     discontinued: true
+
+# ADDED 2026-08-20: 4 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mtp-1374d-1a3v
+    ref: MTP-1374D-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20250119222045id_/https://www.casio.com/hk/watches/casio/product.MTP-1374D-1A3V/', kind: official }
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 11.1, weight_g: 124 }
+    water_resistance_m: 50
+    image: mtp-1374d-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119222045id_/https://www.casio.com/hk/watches/casio/product.MTP-1374D-1A3V/'
+    discontinued: false
+  - id: mtp-1374d-2a3v
+    ref: MTP-1374D-2A3V
+    source:
+      { url: 'https://web.archive.org/web/20250119222052id_/https://www.casio.com/hk/watches/casio/product.MTP-1374D-2A3V/', kind: official }
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 11.1, weight_g: 124 }
+    water_resistance_m: 50
+    image: mtp-1374d-2a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119222052id_/https://www.casio.com/hk/watches/casio/product.MTP-1374D-2A3V/'
+    discontinued: false
+  - id: mtp-1374d-5a2v
+    ref: MTP-1374D-5A2V
+    source:
+      { url: 'https://web.archive.org/web/20250119222048id_/https://www.casio.com/hk/watches/casio/product.MTP-1374D-5A2V/', kind: official }
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 11.1, weight_g: 124 }
+    water_resistance_m: 50
+    image: mtp-1374d-5a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119222048id_/https://www.casio.com/hk/watches/casio/product.MTP-1374D-5A2V/'
+    discontinued: false
+  - id: mtp-1374d-7a2v
+    ref: MTP-1374D-7A2V
+    source:
+      { url: 'https://web.archive.org/web/20250119222035id_/https://www.casio.com/hk/watches/casio/product.MTP-1374D-7A2V/', kind: official }
+    case: { height_mm: 47, width_mm: 43.5, depth_mm: 11.1, weight_g: 124 }
+    water_resistance_m: 50
+    image: mtp-1374d-7a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119222035id_/https://www.casio.com/hk/watches/casio/product.MTP-1374D-7A2V/'
+    discontinued: false

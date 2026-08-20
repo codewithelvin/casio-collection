@@ -1,0 +1,140 @@
+# MTP-M300 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-m300
+  name: MTP-M300
+  line: vintage
+
+models:
+  - id: mtp-m300d-1av
+    ref: MTP-M300D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20230408012641id_/https://www.casio.com/intl/watches/casio/product.MTP-M300D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 40, depth_mm: 9.3, weight_g: 109, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m300d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230408012641id_/https://www.casio.com/intl/watches/casio/product.MTP-M300D-1AV/'
+    discontinued: false
+  - id: mtp-m300d-2av
+    ref: MTP-M300D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20230707034054id_/https://www.casio.com/in/watches/casio/product.MTP-M300D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 40, depth_mm: 9.3, weight_g: 109, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m300d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230707034054id_/https://www.casio.com/in/watches/casio/product.MTP-M300D-2AV/'
+    discontinued: false
+  - id: mtp-m300d-3av
+    ref: MTP-M300D-3AV
+    source:
+      { url: 'https://web.archive.org/web/20230707033457id_/https://www.casio.com/in/watches/casio/product.MTP-M300D-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 40, depth_mm: 9.3, weight_g: 109, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m300d-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230707033457id_/https://www.casio.com/in/watches/casio/product.MTP-M300D-3AV/'
+    discontinued: false
+  - id: mtp-m300d-7av
+    ref: MTP-M300D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20230414015208id_/https://www.casio.com/intl/watches/casio/product.MTP-M300D-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 40, depth_mm: 9.3, weight_g: 109, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m300d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230414015208id_/https://www.casio.com/intl/watches/casio/product.MTP-M300D-7AV/'
+    discontinued: false
+  - id: mtp-m300l-1av
+    ref: MTP-M300L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20241119160440id_/https://www.casio.com/intl/watches/casio/product.MTP-M300L-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 40, depth_mm: 9.3, weight_g: 55, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m300l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241119160440id_/https://www.casio.com/intl/watches/casio/product.MTP-M300L-1AV/'
+    discontinued: false
+  - id: mtp-m300l-7av
+    ref: MTP-M300L-7AV
+    source:
+      { url: 'https://web.archive.org/web/20241115130238id_/https://www.casio.com/in/watches/casio/product.MTP-M300L-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 40, depth_mm: 9.3, weight_g: 55, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m300l-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241115130238id_/https://www.casio.com/in/watches/casio/product.MTP-M300L-7AV/'
+    discontinued: false
+  - id: mtp-m300m-2av
+    ref: MTP-M300M-2AV
+    source:
+      { url: 'https://web.archive.org/web/20230413121818id_/https://www.casio.com/intl/watches/casio/product.MTP-M300M-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 40, depth_mm: 9.3, weight_g: 84, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m300m-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230413121818id_/https://www.casio.com/intl/watches/casio/product.MTP-M300M-2AV/'
+    discontinued: false
+  - id: mtp-m300m-7av
+    ref: MTP-M300M-7AV
+    source:
+      { url: 'https://web.archive.org/web/20230313000812id_/https://www.casio.com/intl/watches/casio/product.MTP-M300M-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.6, width_mm: 40, depth_mm: 9.3, weight_g: 84, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m300m-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230313000812id_/https://www.casio.com/intl/watches/casio/product.MTP-M300M-7AV/'
+    discontinued: false

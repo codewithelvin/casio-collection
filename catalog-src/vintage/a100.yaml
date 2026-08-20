@@ -109,3 +109,54 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221118184943id_/https://www.casio.com/us/watches/casio/product.A100WEPC-1B/'
     discontinued: false
+
+# ADDED 2026-08-20: 4 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: a100we-1a
+    ref: A100WE-1A
+    source:
+      { url: 'https://web.archive.org/web/20220810044823id_/https://www.casio.com/it/watches/casio/vintage/product.A100WE-1A/', kind: official }
+    case: { weight_g: 53 }
+    image: a100we-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220810044823id_/https://www.casio.com/it/watches/casio/vintage/product.A100WE-1A/'
+    discontinued: false
+  - id: a100weg-9a
+    ref: A100WEG-9A
+    source:
+      { url: 'https://web.archive.org/web/20230208022832id_/https://www.casio.com/it/watches/casio/vintage/product.A100WEG-9A/', kind: official }
+    case: { weight_g: 53 }
+    image: a100weg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230208022832id_/https://www.casio.com/it/watches/casio/vintage/product.A100WEG-9A/'
+    discontinued: false
+  - id: a100wegg-1a
+    ref: A100WEGG-1A
+    source:
+      { url: 'https://web.archive.org/web/20240717155916id_/https://www.casio.com/fr/watches/casio/vintage/product.A100WEGG-1A/', kind: official }
+    case: { weight_g: 53 }
+    image: a100wegg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717155916id_/https://www.casio.com/fr/watches/casio/vintage/product.A100WEGG-1A/'
+    discontinued: false
+  - id: a100wegg-1a2
+    ref: A100WEGG-1A2
+    source:
+      { url: 'https://web.archive.org/web/20230215194608id_/https://www.casio.com/fr/watches/casio/vintage/product.A100WEGG-1A2/', kind: official }
+    case: { weight_g: 53 }
+    image: a100wegg-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230215194608id_/https://www.casio.com/fr/watches/casio/vintage/product.A100WEGG-1A2/'
+    discontinued: false

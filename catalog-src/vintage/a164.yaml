@@ -31,3 +31,21 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714215904id_/https://www.casio.com/europe/watches/casio/vintage/product.A164WA-1V/'
     discontinued: false
+
+# ADDED 2026-08-20: 1 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: a164wa-1
+    ref: A164WA-1
+    source:
+      { url: 'https://web.archive.org/web/20210922022136id_/https://www.casio.com/jp/watches/casio/product.A164WA-1/', kind: official }
+    case: { height_mm: 36.8, width_mm: 35, depth_mm: 8.3, weight_g: 51 }
+    image: a164wa-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210922022136id_/https://www.casio.com/jp/watches/casio/product.A164WA-1/'
+    discontinued: true

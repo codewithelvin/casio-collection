@@ -1,0 +1,147 @@
+# AQ-S810 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: aq-s810
+  name: AQ-S810
+  line: vintage
+
+models:
+  - id: aq-s810w-1a2
+    ref: AQ-S810W-1A2
+    source:
+      { url: 'https://web.archive.org/web/20210917124141id_/https://www.casio.com/jp/watches/casio/product.AQ-S810W-1A2/', kind: official }
+    case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 13.8, weight_g: 39.5 }
+    water_resistance_m: 100
+    image: aq-s810w-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210917124141id_/https://www.casio.com/jp/watches/casio/product.AQ-S810W-1A2/'
+    discontinued: true
+  - id: aq-s810w-1a3v
+    ref: AQ-S810W-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20220517021032id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-1A3V/', kind: official }
+    display: ana-digi
+    case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    discontinued: false
+  - id: aq-s810w-1a4v
+    ref: AQ-S810W-1A4V
+    source:
+      { url: 'https://web.archive.org/web/20220628000742id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-1A4V/', kind: official }
+    display: ana-digi
+    case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    discontinued: false
+  - id: aq-s810w-1av
+    ref: AQ-S810W-1AV
+    source:
+      { url: 'https://web.archive.org/web/20250325144549id_/https://www.casio.com/my/watches/casio/product.AQ-S810W-1AV/', kind: official }
+    display: ana-digi
+    case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    image: aq-s810w-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250325144549id_/https://www.casio.com/my/watches/casio/product.AQ-S810W-1AV/'
+    discontinued: false
+  - id: aq-s810w-1bv
+    ref: AQ-S810W-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240721132050id_/https://www.casio.com/id/watches/casio/product.AQ-S810W-1BV/', kind: official }
+    case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40 }
+    water_resistance_m: 100
+    features: [alarm, stopwatch]
+    image: aq-s810w-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721132050id_/https://www.casio.com/id/watches/casio/product.AQ-S810W-1BV/'
+    discontinued: false
+  - id: aq-s810w-2a3v
+    ref: AQ-S810W-2A3V
+    source:
+      { url: 'https://web.archive.org/web/20220628001449id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-2A3V/', kind: official }
+    display: ana-digi
+    case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    image: aq-s810w-2a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628001449id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-2A3V/'
+    discontinued: false
+  - id: aq-s810w-3av
+    ref: AQ-S810W-3AV
+    source:
+      { url: 'https://web.archive.org/web/20220627230733id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-3AV/', kind: official }
+    display: ana-digi
+    case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    image: aq-s810w-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220627230733id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-3AV/'
+    discontinued: false
+  - id: aq-s810w-8a
+    ref: AQ-S810W-8A
+    source:
+      { url: 'https://web.archive.org/web/20211028105144id_/https://www.casio.com/jp/watches/casio/product.AQ-S810W-8A/', kind: official }
+    case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 13.8, weight_g: 39.5 }
+    water_resistance_m: 100
+    image: aq-s810w-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211028105144id_/https://www.casio.com/jp/watches/casio/product.AQ-S810W-8A/'
+    discontinued: true
+  - id: aq-s810wc-4av
+    ref: AQ-S810WC-4AV
+    source:
+      { url: 'https://web.archive.org/web/20230218221146id_/https://www.casio.com/us/watches/casio/product.AQ-S810WC-4AV/', kind: official }
+    display: ana-digi
+    case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    discontinued: false
+  - id: aq-s810wc-7a
+    ref: AQ-S810WC-7A
+    source:
+      { url: 'https://web.archive.org/web/20221202054541id_/https://www.casio.com/jp/watches/casio/product.AQ-S810WC-7A/', kind: official }
+    case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40 }
+    water_resistance_m: 100
+    image: aq-s810wc-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221202054541id_/https://www.casio.com/jp/watches/casio/product.AQ-S810WC-7A/'
+    discontinued: true
+  - id: aq-s810wc-7av
+    ref: AQ-S810WC-7AV
+    source:
+      { url: 'https://web.archive.org/web/20241217052036id_/https://www.casio.com/us/watches/casio/product.AQ-S810WC-7AV/', kind: official }
+    display: ana-digi
+    case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    discontinued: false

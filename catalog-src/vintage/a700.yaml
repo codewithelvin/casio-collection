@@ -143,3 +143,43 @@ models:
     case: { height_mm: 37.4, width_mm: 35.5, depth_mm: 6, weight_g: 53, material: 'Resin' }
     features: [alarm, stopwatch, calendar, hourly-time-signal, led-light, mineral-glass]
     discontinued: false
+
+# ADDED 2026-08-20: 3 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: a700wegl-3a
+    ref: A700WEGL-3A
+    source:
+      { url: 'https://web.archive.org/web/20240717160035id_/https://www.casio.com/fr/watches/casio/vintage/product.A700WEGL-3A/', kind: official }
+    case: { weight_g: 17 }
+    image: a700wegl-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717160035id_/https://www.casio.com/fr/watches/casio/vintage/product.A700WEGL-3A/'
+    discontinued: false
+  - id: a700wegl-5a
+    ref: A700WEGL-5A
+    source:
+      { url: 'https://web.archive.org/web/20240717155848id_/https://www.casio.com/fr/watches/casio/vintage/product.A700WEGL-5A/', kind: official }
+    case: { weight_g: 17 }
+    image: a700wegl-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717155848id_/https://www.casio.com/fr/watches/casio/vintage/product.A700WEGL-5A/'
+    discontinued: false
+  - id: a700wegl-7a
+    ref: A700WEGL-7A
+    source:
+      { url: 'https://web.archive.org/web/20240717155852id_/https://www.casio.com/fr/watches/casio/vintage/product.A700WEGL-7A/', kind: official }
+    case: { weight_g: 17 }
+    image: a700wegl-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717155852id_/https://www.casio.com/fr/watches/casio/vintage/product.A700WEGL-7A/'
+    discontinued: false

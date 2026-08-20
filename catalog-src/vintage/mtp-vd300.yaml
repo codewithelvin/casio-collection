@@ -200,3 +200,76 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220809102939id_/https://www.casio.com/in/watches/casio/product.MTP-VD300SG-1E/'
     discontinued: false
+
+# ADDED 2026-08-20: 6 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mtp-vd300b-1e
+    ref: MTP-VD300B-1E
+    source:
+      { url: 'https://web.archive.org/web/20240721185635id_/https://www.casio.com/id/watches/casio/product.MTP-VD300B-1E/', kind: official }
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 113 }
+    image: mtp-vd300b-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185635id_/https://www.casio.com/id/watches/casio/product.MTP-VD300B-1E/'
+    discontinued: false
+  - id: mtp-vd300b-5e
+    ref: MTP-VD300B-5E
+    source:
+      { url: 'https://web.archive.org/web/20240721185302id_/https://www.casio.com/id/watches/casio/product.MTP-VD300B-5E/', kind: official }
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 113 }
+    image: mtp-vd300b-5e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185302id_/https://www.casio.com/id/watches/casio/product.MTP-VD300B-5E/'
+    discontinued: false
+  - id: mtp-vd300bl-1e
+    ref: MTP-VD300BL-1E
+    source:
+      { url: 'https://web.archive.org/web/20240721185203id_/https://www.casio.com/id/watches/casio/product.MTP-VD300BL-1E/', kind: official }
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 64 }
+    image: mtp-vd300bl-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185203id_/https://www.casio.com/id/watches/casio/product.MTP-VD300BL-1E/'
+    discontinued: false
+  - id: mtp-vd300bl-2e
+    ref: MTP-VD300BL-2E
+    source:
+      { url: 'https://web.archive.org/web/20240721185317id_/https://www.casio.com/id/watches/casio/product.MTP-VD300BL-2E/', kind: official }
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 64 }
+    image: mtp-vd300bl-2e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185317id_/https://www.casio.com/id/watches/casio/product.MTP-VD300BL-2E/'
+    discontinued: false
+  - id: mtp-vd300l-1e
+    ref: MTP-VD300L-1E
+    source:
+      { url: 'https://web.archive.org/web/20240721185602id_/https://www.casio.com/id/watches/casio/product.MTP-VD300L-1E/', kind: official }
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 63 }
+    image: mtp-vd300l-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185602id_/https://www.casio.com/id/watches/casio/product.MTP-VD300L-1E/'
+    discontinued: false
+  - id: mtp-vd300l-2e
+    ref: MTP-VD300L-2E
+    source:
+      { url: 'https://web.archive.org/web/20240721185534id_/https://www.casio.com/id/watches/casio/product.MTP-VD300L-2E/', kind: official }
+    case: { height_mm: 49, width_mm: 45, depth_mm: 8.7, weight_g: 63 }
+    image: mtp-vd300l-2e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185534id_/https://www.casio.com/id/watches/casio/product.MTP-VD300L-2E/'
+    discontinued: false

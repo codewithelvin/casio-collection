@@ -1,0 +1,150 @@
+# AE-1000 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ae-1000
+  name: AE-1000
+  line: vintage
+
+models:
+  - id: ae-1000w-1a3v
+    ref: AE-1000W-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20220926031357id_/https://www.casio.com/us/watches/casio/product.AE-1000W-1A3V/', kind: official }
+    display: digital
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 45, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    discontinued: false
+  - id: ae-1000w-1av
+    ref: AE-1000W-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102056id_/https://www.casio.com/europe/watches/casio/product.AE-1000W-1AV/', kind: official }
+    display: digital
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 45, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ae-1000w-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102056id_/https://www.casio.com/europe/watches/casio/product.AE-1000W-1AV/'
+    discontinued: false
+  - id: ae-1000w-1bv
+    ref: AE-1000W-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102101id_/https://www.casio.com/europe/watches/casio/product.AE-1000W-1BV/', kind: official }
+    display: digital
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 45, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ae-1000w-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102101id_/https://www.casio.com/europe/watches/casio/product.AE-1000W-1BV/'
+    discontinued: false
+  - id: ae-1000w-2av
+    ref: AE-1000W-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240715071004id_/https://www.casio.com/europe/watches/casio/product.AE-1000W-2AV/', kind: official }
+    display: digital
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 45, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ae-1000w-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715071004id_/https://www.casio.com/europe/watches/casio/product.AE-1000W-2AV/'
+    discontinued: false
+  - id: ae-1000w-3av
+    ref: AE-1000W-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102118id_/https://www.casio.com/europe/watches/casio/product.AE-1000W-3AV/', kind: official }
+    display: digital
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 45, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ae-1000w-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102118id_/https://www.casio.com/europe/watches/casio/product.AE-1000W-3AV/'
+    discontinued: false
+  - id: ae-1000w-4av
+    ref: AE-1000W-4AV
+    source:
+      { url: 'https://web.archive.org/web/20220820025050id_/https://www.casio.com/in/watches/casio/product.AE-1000W-4AV/', kind: official }
+    display: digital
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 45, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ae-1000w-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220820025050id_/https://www.casio.com/in/watches/casio/product.AE-1000W-4AV/'
+    discontinued: false
+  - id: ae-1000w-4bv
+    ref: AE-1000W-4BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102129id_/https://www.casio.com/europe/watches/casio/product.AE-1000W-4BV/', kind: official }
+    display: digital
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 45, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ae-1000w-4bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102129id_/https://www.casio.com/europe/watches/casio/product.AE-1000W-4BV/'
+    discontinued: false
+  - id: ae-1000w-7av
+    ref: AE-1000W-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220810081053id_/https://www.casio.com/us/watches/casio/product.AE-1000W-7AV/', kind: official }
+    display: digital
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 45, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ae-1000w-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220810081053id_/https://www.casio.com/us/watches/casio/product.AE-1000W-7AV/'
+    discontinued: false
+  - id: ae-1000wd-1av
+    ref: AE-1000WD-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102108id_/https://www.casio.com/europe/watches/casio/product.AE-1000WD-1AV/', kind: official }
+    display: digital
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 45, depth_mm: 13.8, weight_g: 96, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, mineral-glass]
+    image: ae-1000wd-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102108id_/https://www.casio.com/europe/watches/casio/product.AE-1000WD-1AV/'
+    discontinued: false

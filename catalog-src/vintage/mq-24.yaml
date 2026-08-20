@@ -281,3 +281,60 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715102835id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-8B/'
     discontinued: false
+
+# ADDED 2026-08-20: 5 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mq-24-1el
+    ref: MQ-24-1EL
+    source:
+      { url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/casio/product.MQ-24-1EL/', kind: official }
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20 }
+    image: mq-24-1el
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/casio/product.MQ-24-1EL/'
+    discontinued: false
+  - id: mq-24-9e
+    ref: MQ-24-9E
+    source:
+      { url: 'https://web.archive.org/web/20240721132615id_/https://www.casio.com/id/watches/casio/product.MQ-24-9E/', kind: official }
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20 }
+    discontinued: true
+  - id: mq-24-9el
+    ref: MQ-24-9EL
+    source:
+      { url: 'https://web.archive.org/web/20210528151509id_/https://www.casio.com/jp/watches/casio/product.MQ-24-9EL/', kind: official }
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20 }
+    image: mq-24-9el
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210528151509id_/https://www.casio.com/jp/watches/casio/product.MQ-24-9EL/'
+    discontinued: false
+  - id: mq-24m-1e
+    ref: MQ-24M-1E
+    source:
+      { url: 'https://web.archive.org/web/20210528201957id_/https://www.casio.com/jp/watches/casio/product.MQ-24M-1E/', kind: official }
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 46 }
+    image: mq-24m-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210528201957id_/https://www.casio.com/jp/watches/casio/product.MQ-24M-1E/'
+    discontinued: true
+  - id: mq-24mg-1e
+    ref: MQ-24MG-1E
+    source:
+      { url: 'https://web.archive.org/web/20221129012027id_/https://www.casio.com/jp/watches/casio/product.MQ-24MG-1E/', kind: official }
+    case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 46 }
+    image: mq-24mg-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221129012027id_/https://www.casio.com/jp/watches/casio/product.MQ-24MG-1E/'
+    discontinued: true

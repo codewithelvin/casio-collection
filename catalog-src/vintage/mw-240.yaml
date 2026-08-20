@@ -209,3 +209,66 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231216203435id_/https://www.casio.com/us/watches/casio/product.MW-240B-5BV/'
     discontinued: false
+
+# ADDED 2026-08-20: 5 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mw-240-1b
+    ref: MW-240-1B
+    source:
+      { url: 'https://web.archive.org/web/20221129022413id_/https://www.casio.com/jp/watches/casio/product.MW-240-1B/', kind: official }
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35 }
+    image: mw-240-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221129022413id_/https://www.casio.com/jp/watches/casio/product.MW-240-1B/'
+    discontinued: true
+  - id: mw-240-1b2
+    ref: MW-240-1B2
+    source:
+      { url: 'https://web.archive.org/web/20221204225347id_/https://www.casio.com/jp/watches/casio/product.MW-240-1B2/', kind: official }
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35 }
+    image: mw-240-1b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221204225347id_/https://www.casio.com/jp/watches/casio/product.MW-240-1B2/'
+    discontinued: true
+  - id: mw-240-4b
+    ref: MW-240-4B
+    source:
+      { url: 'https://web.archive.org/web/20221202061903id_/https://www.casio.com/jp/watches/casio/product.MW-240-4B/', kind: official }
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35 }
+    image: mw-240-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221202061903id_/https://www.casio.com/jp/watches/casio/product.MW-240-4B/'
+    discontinued: true
+  - id: mw-240-7b
+    ref: MW-240-7B
+    source:
+      { url: 'https://web.archive.org/web/20221208205207id_/https://www.casio.com/jp/watches/casio/product.MW-240-7B/', kind: official }
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35 }
+    image: mw-240-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221208205207id_/https://www.casio.com/jp/watches/casio/product.MW-240-7B/'
+    discontinued: true
+  - id: mw-240b-3b
+    ref: MW-240B-3B
+    source:
+      { url: 'https://web.archive.org/web/20241107084242id_/https://www.casio.com/jp/watches/casio/product.MW-240B-3B/', kind: official }
+    case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 30 }
+    water_resistance_m: 50
+    image: mw-240b-3b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241107084242id_/https://www.casio.com/jp/watches/casio/product.MW-240B-3B/'
+    discontinued: true

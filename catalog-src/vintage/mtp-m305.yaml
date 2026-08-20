@@ -213,3 +213,46 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250406161746id_/https://www.casio.com/us/watches/casio/product.MTP-M305MC-8AV/'
     discontinued: false
+
+# ADDED 2026-08-20: 3 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mtp-m305d-4av
+    ref: MTP-M305D-4AV
+    source:
+      { url: 'https://web.archive.org/web/20240721131722id_/https://www.casio.com/id/watches/casio/product.MTP-M305D-4AV/', kind: official }
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 116 }
+    water_resistance_m: 50
+    image: mtp-m305d-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721131722id_/https://www.casio.com/id/watches/casio/product.MTP-M305D-4AV/'
+    discontinued: false
+  - id: mtp-m305l-2av
+    ref: MTP-M305L-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240721131819id_/https://www.casio.com/id/watches/casio/product.MTP-M305L-2AV/', kind: official }
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 55 }
+    water_resistance_m: 50
+    image: mtp-m305l-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721131819id_/https://www.casio.com/id/watches/casio/product.MTP-M305L-2AV/'
+    discontinued: false
+  - id: mtp-m305l-7av
+    ref: MTP-M305L-7AV
+    source:
+      { url: 'https://web.archive.org/web/20240722021237id_/https://www.casio.com/id/watches/casio/product.MTP-M305L-7AV/', kind: official }
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 55 }
+    water_resistance_m: 50
+    image: mtp-m305l-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722021237id_/https://www.casio.com/id/watches/casio/product.MTP-M305L-7AV/'
+    discontinued: false

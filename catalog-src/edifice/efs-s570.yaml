@@ -88,3 +88,46 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241207112405id_/https://www.casio.com/in/watches/edifice/product.EFS-S570DC-1A/'
     discontinued: false
+
+# ADDED 2026-08-20: 3 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: efs-s570yd-1a
+    ref: EFS-S570YD-1A
+    source:
+      { url: 'https://web.archive.org/web/20211206064643id_/https://www.casio.com/jp/watches/edifice/product.EFS-S570YD-1A/', kind: official }
+    case: { height_mm: 49, width_mm: 44, depth_mm: 9.7, weight_g: 146 }
+    water_resistance_m: 100
+    image: efs-s570yd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211206064643id_/https://www.casio.com/jp/watches/edifice/product.EFS-S570YD-1A/'
+    discontinued: true
+  - id: efs-s570ydb-2a
+    ref: EFS-S570YDB-2A
+    source:
+      { url: 'https://web.archive.org/web/20230115230042id_/https://www.casio.com/jp/watches/edifice/product.EFS-S570YDB-2A/', kind: official }
+    case: { height_mm: 49, width_mm: 44, depth_mm: 9.7, weight_g: 146 }
+    water_resistance_m: 100
+    image: efs-s570ydb-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230115230042id_/https://www.casio.com/jp/watches/edifice/product.EFS-S570YDB-2A/'
+    discontinued: true
+  - id: efs-s570ydc-1a
+    ref: EFS-S570YDC-1A
+    source:
+      { url: 'https://web.archive.org/web/20210525080014id_/https://www.casio.com/jp/watches/edifice/product.EFS-S570YDC-1A/', kind: official }
+    case: { height_mm: 49, width_mm: 44, depth_mm: 9.7, weight_g: 146 }
+    water_resistance_m: 100
+    image: efs-s570ydc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210525080014id_/https://www.casio.com/jp/watches/edifice/product.EFS-S570YDC-1A/'
+    discontinued: true

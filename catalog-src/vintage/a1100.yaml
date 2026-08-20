@@ -57,3 +57,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220016id_/https://www.casio.com/europe/watches/casio/vintage/product.A1100G-5/'
     discontinued: false
+
+# ADDED 2026-08-20: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: a1100ggv-8
+    ref: A1100GGV-8
+    source:
+      { url: 'https://web.archive.org/web/20250406010854id_/https://www.casio.com/jp/watches/casio/product.A1100GGV-8/', kind: official }
+    case: { height_mm: 40, width_mm: 35, depth_mm: 9.1, weight_g: 90 }
+    image: a1100ggv-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250406010854id_/https://www.casio.com/jp/watches/casio/product.A1100GGV-8/'
+    discontinued: true
+  - id: a1100gv-9
+    ref: A1100GV-9
+    source:
+      { url: 'https://web.archive.org/web/20250406010947id_/https://www.casio.com/jp/watches/casio/product.A1100GV-9/', kind: official }
+    case: { height_mm: 40, width_mm: 35, depth_mm: 9.1, weight_g: 90 }
+    image: a1100gv-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250406010947id_/https://www.casio.com/jp/watches/casio/product.A1100GV-9/'
+    discontinued: true

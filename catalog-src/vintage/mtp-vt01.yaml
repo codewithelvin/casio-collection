@@ -340,3 +340,120 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220526115659id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01L-7B2/'
     discontinued: false
+
+# ADDED 2026-08-20: 10 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mtp-vt01b-1b
+    ref: MTP-VT01B-1B
+    source:
+      { url: 'https://web.archive.org/web/20240721185846id_/https://www.casio.com/id/watches/casio/product.MTP-VT01B-1B/', kind: official }
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 92 }
+    image: mtp-vt01b-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185846id_/https://www.casio.com/id/watches/casio/product.MTP-VT01B-1B/'
+    discontinued: false
+  - id: mtp-vt01b-2b
+    ref: MTP-VT01B-2B
+    source:
+      { url: 'https://web.archive.org/web/20240721185411id_/https://www.casio.com/id/watches/casio/product.MTP-VT01B-2B/', kind: official }
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 92 }
+    image: mtp-vt01b-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185411id_/https://www.casio.com/id/watches/casio/product.MTP-VT01B-2B/'
+    discontinued: false
+  - id: mtp-vt01b-7b
+    ref: MTP-VT01B-7B
+    source:
+      { url: 'https://web.archive.org/web/20240721185358id_/https://www.casio.com/id/watches/casio/product.MTP-VT01B-7B/', kind: official }
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 92 }
+    image: mtp-vt01b-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185358id_/https://www.casio.com/id/watches/casio/product.MTP-VT01B-7B/'
+    discontinued: false
+  - id: mtp-vt01bl-1b
+    ref: MTP-VT01BL-1B
+    source:
+      { url: 'https://web.archive.org/web/20240721185657id_/https://www.casio.com/id/watches/casio/product.MTP-VT01BL-1B/', kind: official }
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 43 }
+    image: mtp-vt01bl-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185657id_/https://www.casio.com/id/watches/casio/product.MTP-VT01BL-1B/'
+    discontinued: false
+  - id: mtp-vt01bl-2b
+    ref: MTP-VT01BL-2B
+    source:
+      { url: 'https://web.archive.org/web/20240721185530id_/https://www.casio.com/id/watches/casio/product.MTP-VT01BL-2B/', kind: official }
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 43 }
+    image: mtp-vt01bl-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185530id_/https://www.casio.com/id/watches/casio/product.MTP-VT01BL-2B/'
+    discontinued: false
+  - id: mtp-vt01bl-5b
+    ref: MTP-VT01BL-5B
+    source:
+      { url: 'https://web.archive.org/web/20240721185216id_/https://www.casio.com/id/watches/casio/product.MTP-VT01BL-5B/', kind: official }
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 43 }
+    image: mtp-vt01bl-5b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185216id_/https://www.casio.com/id/watches/casio/product.MTP-VT01BL-5B/'
+    discontinued: false
+  - id: mtp-vt01dm-1a
+    ref: MTP-VT01DM-1A
+    source:
+      { url: 'https://web.archive.org/web/20250119222058id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01DM-1A/', kind: official }
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88 }
+    image: mtp-vt01dm-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119222058id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01DM-1A/'
+    discontinued: false
+  - id: mtp-vt01dm-7a
+    ref: MTP-VT01DM-7A
+    source:
+      { url: 'https://web.archive.org/web/20250119222040id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01DM-7A/', kind: official }
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88 }
+    image: mtp-vt01dm-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119222040id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01DM-7A/'
+    discontinued: false
+  - id: mtp-vt01lm-1a
+    ref: MTP-VT01LM-1A
+    source:
+      { url: 'https://web.archive.org/web/20250119222101id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01LM-1A/', kind: official }
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }
+    image: mtp-vt01lm-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119222101id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01LM-1A/'
+    discontinued: false
+  - id: mtp-vt01lm-7a
+    ref: MTP-VT01LM-7A
+    source:
+      { url: 'https://web.archive.org/web/20250119222106id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01LM-7A/', kind: official }
+    case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }
+    image: mtp-vt01lm-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119222106id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01LM-7A/'
+    discontinued: false

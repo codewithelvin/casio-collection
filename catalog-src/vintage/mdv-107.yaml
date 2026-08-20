@@ -168,3 +168,53 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241111080104id_/https://www.casio.com/intl/watches/casio/product.MDV-107D-8AV/'
     discontinued: false
+
+# ADDED 2026-08-20: 4 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mdv-107-1a1
+    ref: MDV-107-1A1
+    source:
+      { url: 'https://web.archive.org/web/20220527225959id_/https://www.casio.com/jp/watches/casio/product.MDV-107-1A1/', kind: official }
+    case: { height_mm: 49.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 92 }
+    water_resistance_m: 200
+    image: mdv-107-1a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220527225959id_/https://www.casio.com/jp/watches/casio/product.MDV-107-1A1/'
+    discontinued: true
+  - id: mdv-107-1a2
+    ref: MDV-107-1A2
+    source:
+      { url: 'https://web.archive.org/web/20220501060425id_/https://www.casio.com/jp/watches/casio/product.MDV-107-1A2/', kind: official }
+    case: { height_mm: 49.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 92 }
+    water_resistance_m: 200
+    discontinued: true
+  - id: mdv-107-1a3
+    ref: MDV-107-1A3
+    source:
+      { url: 'https://web.archive.org/web/20221208061430id_/https://www.casio.com/jp/watches/casio/product.MDV-107-1A3/', kind: official }
+    case: { height_mm: 49.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 92 }
+    water_resistance_m: 200
+    image: mdv-107-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221208061430id_/https://www.casio.com/jp/watches/casio/product.MDV-107-1A3/'
+    discontinued: true
+  - id: mdv-107d-3a2v
+    ref: MDV-107D-3A2V
+    source:
+      { url: 'https://web.archive.org/web/20250120041849id_/https://www.casio.com/hk/watches/casio/product.MDV-107D-3A2V/', kind: official }
+    case: { height_mm: 49.5, width_mm: 46.3, depth_mm: 12.1, weight_g: 144 }
+    water_resistance_m: 200
+    image: mdv-107d-3a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120041849id_/https://www.casio.com/hk/watches/casio/product.MDV-107D-3A2V/'
+    discontinued: false

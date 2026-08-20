@@ -37,14 +37,87 @@ const has = (text: string, ...needles: string[]) =>
   needles.some((n) => text.toLowerCase().includes(n.toLowerCase()))
 
 /** `50-meter water resistance` → 50. `10 BAR` and `Water Resistant` state no number. */
+/**
+ * The same rows, in the languages Casio also publishes them in.
+ *
+ * WHY THIS EXISTS. Every page D46 refuses is a capture in a language whose labels
+ * these readers did not know — measured across the cache: 200 uncatalogued
+ * references whose *only* captures are Japanese, Indonesian, Chinese, Portuguese
+ * or French, stating 2 477 specification rows between them. The data was
+ * downloaded and then dropped, and the archive never had to be asked again to get
+ * it back: the page cache is the progress.
+ *
+ * **Only the fields whose values are language-independent are read this way.** A
+ * case size is `40 × 35 × 9.1 mm` in every language and a weight is `90 g`. A
+ * *material* is `ステンレススチール`, and writing that into the catalogue would
+ * either put Japanese in an English table or require this file to translate,
+ * which is inventing a field rather than reading one (§10.6 guardrail 2). So
+ * material, glass and the feature list are deliberately still not read off a
+ * non-English page.
+ */
+const LOCALISED = {
+  /**
+   * Case-size labels, each with **the axis order that label states**, spelled out
+   * rather than parsed.
+   *
+   * The English reader below infers the order from the `[LWHD]` letters in the
+   * label. That cannot be reused here, and the reason is a false friend worth
+   * naming: Indonesian prints `(P× L× T)` — *Panjang, Lebar, Tebal* — where **`L`
+   * is Lebar, the width**, not length. Feeding it to the Latin-letter path would
+   * silently record a watch's width as its height, on 46 references, with nothing
+   * to show it had happened.
+   *
+   * All three happen to run length, width, thickness, which is Casio's own order
+   * everywhere. They are still written out one by one, because the next locale
+   * added might not.
+   */
+  caseSize: [
+    // ja: ケースサイズ（縦×横×厚さ） — 縦 length, 横 width, 厚さ thickness
+    { label: /ケースサイズ/, axes: ['height_mm', 'width_mm', 'depth_mm'] },
+    // zh: 錶殼尺寸（長 × 闊 × 高） — 長 length, 闊 breadth, 高 height
+    { label: /錶殼尺寸|表壳尺寸/, axes: ['height_mm', 'width_mm', 'depth_mm'] },
+    // id: Ukuran casing (P× L× T) — see the note above about `L`.
+    { label: /Ukuran casing/i, axes: ['height_mm', 'width_mm', 'depth_mm'] },
+    // pt: Tamanho da caixa (C× L× A) — Comprimento, Largura, Altura
+    { label: /Tamanho da caixa/i, axes: ['height_mm', 'width_mm', 'depth_mm'] },
+  ] as const,
+  /** ja 質量 / 重量, zh 重量, id Bobot, pt Peso, fr Poids. The unit is always `g`. */
+  weight: /^(?:質量|重量|Bobot|Peso|Poids)$/i,
+  /** ja 防水性, zh 防水, id Ketahanan air, pt Resistência à água. */
+  water: /防水|Ketahanan air|Resist[êe]ncia à água|Étanch/i,
+} as const
+
+/**
+ * Metres of water resistance, from a row that states them in any of the forms
+ * Casio prints.
+ *
+ * `100 meter`, `100 米`, `100m`, `10 BAR` and `10気圧` are all the same claim.
+ * What is **not** a claim is `日常生活用防水` — *daily-life water resistant* —
+ * which names no depth, so it correctly yields nothing rather than a guess.
+ */
 function waterResistance(rows: Map<string, string>): number | undefined {
-  const value = rows.get('Water resistance') ?? rows.get('Water Resistance')
+  let value = rows.get('Water resistance') ?? rows.get('Water Resistance')
+  if (!value) {
+    for (const [label, v] of rows) if (LOCALISED.water.test(label)) { value = v; break }
+  }
   if (!value) return undefined
-  const metres = /(\d+)\s*-?\s*met(?:er|re)/i.exec(value)
+  // Two things are load-bearing in this pattern.
+  //
+  // **`mm` is excluded explicitly**, or a row that mixes a case dimension into the
+  // water cell reads `10.4 mm` as ten metres.
+  //
+  // **The word boundary belongs only to the Latin spellings.** `\b` is defined on
+  // `[A-Za-z0-9_]`, so there is no boundary between `米` and `防` — a trailing
+  // `\b` after the CJK alternatives silently matched nothing, and `100 米防水`
+  // came back undefined while every English page still passed. The unit that
+  // needs a boundary is the bare `m`, which is also the only one that could
+  // otherwise be the first letter of a longer word.
+  const metres = /(\d+)\s*-?\s*(?:met(?:er|re)s?\b|米|メートル|m(?!m)\b)/i.exec(value)
   if (metres) return Number(metres[1])
   // `20 BAR` is a pressure and converts exactly: 1 BAR ≈ 10 m of water. Casio
-  // prints one or the other and means the same thing by both.
-  const bar = /(\d+)\s*BAR/i.exec(value)
+  // prints one or the other and means the same thing by both. `気圧` is the same
+  // unit in Japanese.
+  const bar = /(\d+)\s*(?:BAR|気圧|atm)/i.exec(value)
   return bar ? Number(bar[1]) * 10 : undefined
 }
 
@@ -82,12 +155,28 @@ function caseSize(rows: Map<string, string>): Record<string, number> | undefined
     })
     return Object.keys(out).length > 0 ? out : undefined
   }
+  // The same row in another language, whose axis order is declared rather than
+  // inferred — see the note on LOCALISED.caseSize about Indonesian `L`.
+  for (const [label, value] of rows) {
+    const known = LOCALISED.caseSize.find((entry) => entry.label.test(label))
+    if (!known) continue
+    const numbers = [...value.matchAll(/(\d+(?:\.\d+)?)/g)].map((m) => Number(m[1]))
+    if (numbers.length < 3) continue
+    const out: Record<string, number> = {}
+    known.axes.forEach((key, index) => {
+      if (out[key] === undefined) out[key] = numbers[index]
+    })
+    return Object.keys(out).length > 0 ? out : undefined
+  }
   return undefined
 }
 
-/** `37 g`. */
+/** `37 g`, under that label or its equivalent in the languages Casio prints. */
 function weight(rows: Map<string, string>): number | undefined {
-  const value = rows.get('Weight')
+  let value = rows.get('Weight')
+  if (!value) {
+    for (const [label, v] of rows) if (LOCALISED.weight.test(label.trim())) { value = v; break }
+  }
   const grams = value && /(\d+(?:\.\d+)?)\s*g\b/i.exec(value)
   return grams ? Number(grams[1]) : undefined
 }

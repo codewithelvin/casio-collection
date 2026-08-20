@@ -103,3 +103,46 @@ models:
     water_resistance_m: 100
     features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, telememo]
     discontinued: true
+
+# ADDED 2026-08-20: 3 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: aeq-110w-1a
+    ref: AEQ-110W-1A
+    source:
+      { url: 'https://web.archive.org/web/20210618032425id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-1A/', kind: official }
+    case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 16.6, weight_g: 49 }
+    water_resistance_m: 100
+    image: aeq-110w-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210618032425id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-1A/'
+    discontinued: true
+  - id: aeq-110w-1b
+    ref: AEQ-110W-1B
+    source:
+      { url: 'https://web.archive.org/web/20210618024547id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-1B/', kind: official }
+    case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 16.6, weight_g: 49 }
+    water_resistance_m: 100
+    image: aeq-110w-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210618024547id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-1B/'
+    discontinued: true
+  - id: aeq-110w-2a
+    ref: AEQ-110W-2A
+    source:
+      { url: 'https://web.archive.org/web/20210618030202id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-2A/', kind: official }
+    case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 16.6, weight_g: 49 }
+    water_resistance_m: 100
+    image: aeq-110w-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210618030202id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-2A/'
+    discontinued: true

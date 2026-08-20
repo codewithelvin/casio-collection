@@ -270,3 +270,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220522230534id_/https://www.casio.com/intl/watches/casio/product.LTP-V002L-7B3/'
     discontinued: false
+
+# ADDED 2026-08-20: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: ltp-v002gl-7b
+    ref: LTP-V002GL-7B
+    source:
+      { url: 'https://web.archive.org/web/20240704161644id_/https://www.casio.com/br/watches/casio/product.LTP-V002GL-7B/', kind: official }
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 24 }
+    image: ltp-v002gl-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704161644id_/https://www.casio.com/br/watches/casio/product.LTP-V002GL-7B/'
+    discontinued: true
+  - id: ltp-v002gl-9b
+    ref: LTP-V002GL-9B
+    source:
+      { url: 'https://web.archive.org/web/20240704113935id_/https://www.casio.com/br/watches/casio/product.LTP-V002GL-9B/', kind: official }
+    case: { height_mm: 31, width_mm: 25, depth_mm: 9.2, weight_g: 24 }
+    image: ltp-v002gl-9b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704113935id_/https://www.casio.com/br/watches/casio/product.LTP-V002GL-9B/'
+    discontinued: true

@@ -68,3 +68,21 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240826212529id_/https://www.casio.com/de/watches/casio/vintage/product.LA700WEM-4A/'
     discontinued: false
+
+# ADDED 2026-08-20: 1 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: la700wem-3a
+    ref: LA700WEM-3A
+    source:
+      { url: 'https://web.archive.org/web/20241007114508id_/https://www.casio.com/pt/watches/casio/vintage/product.LA700WEM-3A/', kind: official }
+    case: { height_mm: 30.8, width_mm: 26.3, depth_mm: 7.9, weight_g: 30 }
+    image: la700wem-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241007114508id_/https://www.casio.com/pt/watches/casio/vintage/product.LA700WEM-3A/'
+    discontinued: false

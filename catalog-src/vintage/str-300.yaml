@@ -1,0 +1,146 @@
+# STR-300 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: str-300
+  name: STR-300
+  line: vintage
+
+models:
+  - id: str-300-1c
+    ref: STR-300-1C
+    source:
+      { url: 'https://web.archive.org/web/20220818230304id_/https://www.casio.com/us/watches/casio/product.STR-300-1C/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 35.2, depth_mm: 12.1, weight_g: 30, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, calendar, hourly-time-signal, led-light, auto-light, afterglow]
+    image: str-300-1c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220818230304id_/https://www.casio.com/us/watches/casio/product.STR-300-1C/'
+    discontinued: false
+  - id: str-300-7
+    ref: STR-300-7
+    source:
+      { url: 'https://web.archive.org/web/20240408193724id_/https://www.casio.com/us/watches/casio/product.STR-300-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 35.2, depth_mm: 12.1, weight_g: 30, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, calendar, hourly-time-signal, led-light, auto-light, afterglow]
+    image: str-300-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193724id_/https://www.casio.com/us/watches/casio/product.STR-300-7/'
+    discontinued: false
+  - id: str-300c-1v
+    ref: STR-300C-1V
+    source:
+      { url: 'https://web.archive.org/web/20240625201010id_/https://www.casio.com/us/watches/casio/product.STR-300C-1V/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.2, width_mm: 35.2, depth_mm: 12.1, weight_g: 30, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, calendar, hourly-time-signal, led-light, auto-light, afterglow]
+    image: str-300c-1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240625201010id_/https://www.casio.com/us/watches/casio/product.STR-300C-1V/'
+    discontinued: false
+  - id: str-300cj-1
+    ref: STR-300CJ-1
+    source:
+      { url: 'https://web.archive.org/web/20210413053435id_/https://www.casio.com/jp/watches/casio/product.STR-300CJ-1/', kind: official }
+    case: { height_mm: 48.2, width_mm: 35.2, depth_mm: 12.1, weight_g: 30 }
+    water_resistance_m: 50
+    image: str-300cj-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210413053435id_/https://www.casio.com/jp/watches/casio/product.STR-300CJ-1/'
+    discontinued: true
+  - id: str-300j-1a
+    ref: STR-300J-1A
+    source:
+      { url: 'https://web.archive.org/web/20210413052826id_/https://www.casio.com/jp/watches/casio/product.STR-300J-1A/', kind: official }
+    case: { height_mm: 48.2, width_mm: 35.2, depth_mm: 12.1, weight_g: 30 }
+    water_resistance_m: 50
+    image: str-300j-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210413052826id_/https://www.casio.com/jp/watches/casio/product.STR-300J-1A/'
+    discontinued: true
+  - id: str-300j-1b
+    ref: STR-300J-1B
+    source:
+      { url: 'https://web.archive.org/web/20210413043523id_/https://www.casio.com/jp/watches/casio/product.STR-300J-1B/', kind: official }
+    case: { height_mm: 48.2, width_mm: 35.2, depth_mm: 12.1, weight_g: 30 }
+    water_resistance_m: 50
+    image: str-300j-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210413043523id_/https://www.casio.com/jp/watches/casio/product.STR-300J-1B/'
+    discontinued: true
+  - id: str-300j-1c
+    ref: STR-300J-1C
+    source:
+      { url: 'https://web.archive.org/web/20210410181914id_/https://www.casio.com/jp/watches/casio/product.STR-300J-1C/', kind: official }
+    case: { height_mm: 48.2, width_mm: 35.2, depth_mm: 12.1, weight_g: 30 }
+    water_resistance_m: 50
+    image: str-300j-1c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210410181914id_/https://www.casio.com/jp/watches/casio/product.STR-300J-1C/'
+    discontinued: true
+  - id: str-300j-2a
+    ref: STR-300J-2A
+    source:
+      { url: 'https://web.archive.org/web/20210413045837id_/https://www.casio.com/jp/watches/casio/product.STR-300J-2A/', kind: official }
+    case: { height_mm: 48.2, width_mm: 35.2, depth_mm: 12.1, weight_g: 30 }
+    water_resistance_m: 50
+    image: str-300j-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210413045837id_/https://www.casio.com/jp/watches/casio/product.STR-300J-2A/'
+    discontinued: true
+  - id: str-300j-2c
+    ref: STR-300J-2C
+    source:
+      { url: 'https://web.archive.org/web/20210413052258id_/https://www.casio.com/jp/watches/casio/product.STR-300J-2C/', kind: official }
+    case: { height_mm: 48.2, width_mm: 35.2, depth_mm: 12.1, weight_g: 30 }
+    water_resistance_m: 50
+    image: str-300j-2c
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210413052258id_/https://www.casio.com/jp/watches/casio/product.STR-300J-2C/'
+    discontinued: true
+  - id: str-300j-4
+    ref: STR-300J-4
+    source:
+      { url: 'https://web.archive.org/web/20210413044036id_/https://www.casio.com/jp/watches/casio/product.STR-300J-4/', kind: official }
+    case: { height_mm: 48.2, width_mm: 35.2, depth_mm: 12.1, weight_g: 30 }
+    water_resistance_m: 50
+    image: str-300j-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210413044036id_/https://www.casio.com/jp/watches/casio/product.STR-300J-4/'
+    discontinued: true

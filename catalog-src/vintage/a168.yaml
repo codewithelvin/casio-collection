@@ -321,3 +321,87 @@ models:
       url: 'https://web.archive.org/web/20240714220113id_/https://www.casio.com/europe/watches/casio/vintage/product.A168XESG-9A/'
     discontinued: false
     display: digital
+
+# ADDED 2026-08-20: 7 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: a168wa-3ay
+    ref: A168WA-3AY
+    source:
+      { url: 'https://web.archive.org/web/20240713092430id_/https://www.casio.com/es/watches/casio/vintage/product.A168WA-3AY/', kind: official }
+    case: { weight_g: 50 }
+    image: a168wa-3ay
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240713092430id_/https://www.casio.com/es/watches/casio/vintage/product.A168WA-3AY/'
+    discontinued: false
+  - id: a168wa-5ay
+    ref: A168WA-5AY
+    source:
+      { url: 'https://web.archive.org/web/20240713092142id_/https://www.casio.com/es/watches/casio/vintage/product.A168WA-5AY/', kind: official }
+    case: { weight_g: 50 }
+    image: a168wa-5ay
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240713092142id_/https://www.casio.com/es/watches/casio/vintage/product.A168WA-5AY/'
+    discontinued: false
+  - id: a168wa-8ay
+    ref: A168WA-8AY
+    source:
+      { url: 'https://web.archive.org/web/20240713092145id_/https://www.casio.com/es/watches/casio/vintage/product.A168WA-8AY/', kind: official }
+    case: { weight_g: 50 }
+    image: a168wa-8ay
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240713092145id_/https://www.casio.com/es/watches/casio/vintage/product.A168WA-8AY/'
+    discontinued: false
+  - id: a168weck-7a
+    ref: A168WECK-7A
+    source:
+      { url: 'https://web.archive.org/web/20240713092229id_/https://www.casio.com/es/watches/casio/vintage/product.A168WECK-7A/', kind: official }
+    case: { weight_g: 49 }
+    image: a168weck-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240713092229id_/https://www.casio.com/es/watches/casio/vintage/product.A168WECK-7A/'
+    discontinued: false
+  - id: a168wecm-5
+    ref: A168WECM-5
+    source:
+      { url: 'https://web.archive.org/web/20240704161712id_/https://www.casio.com/br/watches/casio/product.A168WECM-5/', kind: official }
+    case: { height_mm: 38.6, width_mm: 36.3, depth_mm: 9.6, weight_g: 49 }
+    image: a168wecm-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704161712id_/https://www.casio.com/br/watches/casio/product.A168WECM-5/'
+    discontinued: true
+  - id: a168werb-2a
+    ref: A168WERB-2A
+    source:
+      { url: 'https://web.archive.org/web/20240717185107id_/https://www.casio.com/fr/watches/casio/vintage/product.A168WERB-2A/', kind: official }
+    case: { weight_g: 49 }
+    image: a168werb-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717185107id_/https://www.casio.com/fr/watches/casio/vintage/product.A168WERB-2A/'
+    discontinued: false
+  - id: a168werg-2a
+    ref: A168WERG-2A
+    source:
+      { url: 'https://web.archive.org/web/20240717185053id_/https://www.casio.com/fr/watches/casio/vintage/product.A168WERG-2A/', kind: official }
+    case: { weight_g: 49 }
+    image: a168werg-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240717185053id_/https://www.casio.com/fr/watches/casio/vintage/product.A168WERG-2A/'
+    discontinued: false

@@ -78,3 +78,22 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119142117id_/https://www.casio.com/us/watches/edifice/product.EFV-650D-3AV/'
     discontinued: false
+
+# ADDED 2026-08-20: 1 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: efv-650dj-1a
+    ref: EFV-650DJ-1A
+    source:
+      { url: 'https://web.archive.org/web/20240619001840id_/https://www.casio.com/jp/watches/edifice/product.EFV-650DJ-1A/', kind: official }
+    case: { height_mm: 48.6, width_mm: 43.5, depth_mm: 11, weight_g: 129 }
+    water_resistance_m: 100
+    image: efv-650dj-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240619001840id_/https://www.casio.com/jp/watches/edifice/product.EFV-650DJ-1A/'
+    discontinued: true

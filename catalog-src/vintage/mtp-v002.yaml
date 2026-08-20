@@ -158,3 +158,54 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210925001837id_/https://www.casio.com/my/watches/casio/product.MTP-V002L-7B3/'
     discontinued: false
+
+# ADDED 2026-08-20: 4 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: mtp-v002g-1b
+    ref: MTP-V002G-1B
+    source:
+      { url: 'https://web.archive.org/web/20240704161558id_/https://www.casio.com/br/watches/casio/product.MTP-V002G-1B/', kind: official }
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 93 }
+    image: mtp-v002g-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704161558id_/https://www.casio.com/br/watches/casio/product.MTP-V002G-1B/'
+    discontinued: false
+  - id: mtp-v002g-7b2
+    ref: MTP-V002G-7B2
+    source:
+      { url: 'https://web.archive.org/web/20240704161553id_/https://www.casio.com/br/watches/casio/product.MTP-V002G-7B2/', kind: official }
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 93 }
+    image: mtp-v002g-7b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704161553id_/https://www.casio.com/br/watches/casio/product.MTP-V002G-7B2/'
+    discontinued: false
+  - id: mtp-v002gl-1b
+    ref: MTP-V002GL-1B
+    source:
+      { url: 'https://web.archive.org/web/20240704161613id_/https://www.casio.com/br/watches/casio/product.MTP-V002GL-1B/', kind: official }
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 44 }
+    image: mtp-v002gl-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704161613id_/https://www.casio.com/br/watches/casio/product.MTP-V002GL-1B/'
+    discontinued: false
+  - id: mtp-v002l-5b3
+    ref: MTP-V002L-5B3
+    source:
+      { url: 'https://web.archive.org/web/20240721183830id_/https://www.casio.com/id/watches/casio/product.MTP-V002L-5B3/', kind: official }
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 44 }
+    image: mtp-v002l-5b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721183830id_/https://www.casio.com/id/watches/casio/product.MTP-V002L-5B3/'
+    discontinued: false

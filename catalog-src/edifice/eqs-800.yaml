@@ -32,3 +32,34 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EQS-800BCD-2AV/'
     discontinued: true
+
+# ADDED 2026-08-20: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: eqs-800cdb-1av
+    ref: EQS-800CDB-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220129015539id_/https://www.casio.com/tw/watches/edifice/product.EQS-800CDB-1AV/', kind: official }
+    case: { height_mm: 50, width_mm: 47.5, depth_mm: 12.7, weight_g: 170 }
+    water_resistance_m: 100
+    image: eqs-800cdb-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220129015539id_/https://www.casio.com/tw/watches/edifice/product.EQS-800CDB-1AV/'
+    discontinued: true
+  - id: eqs-800cdb-1bv
+    ref: EQS-800CDB-1BV
+    source:
+      { url: 'https://web.archive.org/web/20220129010847id_/https://www.casio.com/tw/watches/edifice/product.EQS-800CDB-1BV/', kind: official }
+    case: { height_mm: 50, width_mm: 47.5, depth_mm: 12.7, weight_g: 170 }
+    water_resistance_m: 100
+    image: eqs-800cdb-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220129010847id_/https://www.casio.com/tw/watches/edifice/product.EQS-800CDB-1BV/'
+    discontinued: true

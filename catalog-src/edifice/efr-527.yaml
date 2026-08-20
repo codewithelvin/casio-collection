@@ -33,3 +33,22 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220446id_/https://www.casio.com/europe/watches/edifice/product.EFR-527D-2AV/'
     discontinued: false
+
+# ADDED 2026-08-20: 1 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: efr-527d-7av
+    ref: EFR-527D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220629102751id_/https://www.casio.com/hk/watches/edifice/product.EFR-527D-7AV/', kind: official }
+    case: { height_mm: 47.4, width_mm: 41, depth_mm: 11.6, weight_g: 136 }
+    water_resistance_m: 100
+    image: efr-527d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220629102751id_/https://www.casio.com/hk/watches/edifice/product.EFR-527D-7AV/'
+    discontinued: true

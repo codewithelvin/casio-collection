@@ -1,0 +1,143 @@
+# MTP-B125 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-b125
+  name: MTP-B125
+  line: vintage
+
+models:
+  - id: mtp-b125b-8av
+    ref: MTP-B125B-8AV
+    source:
+      { url: 'https://web.archive.org/web/20240721184601id_/https://www.casio.com/id/watches/casio/product.MTP-B125B-8AV/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 101 }
+    water_resistance_m: 50
+    image: mtp-b125b-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184601id_/https://www.casio.com/id/watches/casio/product.MTP-B125B-8AV/'
+    discontinued: false
+  - id: mtp-b125d-1av
+    ref: MTP-B125D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715103012id_/https://www.casio.com/europe/watches/casio/product.MTP-B125D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 101, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b125d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103012id_/https://www.casio.com/europe/watches/casio/product.MTP-B125D-1AV/'
+    discontinued: false
+  - id: mtp-b125gl-7av
+    ref: MTP-B125GL-7AV
+    source:
+      { url: 'https://web.archive.org/web/20240721185146id_/https://www.casio.com/id/watches/casio/product.MTP-B125GL-7AV/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 45 }
+    water_resistance_m: 50
+    image: mtp-b125gl-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185146id_/https://www.casio.com/id/watches/casio/product.MTP-B125GL-7AV/'
+    discontinued: false
+  - id: mtp-b125l-1av
+    ref: MTP-B125L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715103015id_/https://www.casio.com/europe/watches/casio/product.MTP-B125L-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 45, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b125l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103015id_/https://www.casio.com/europe/watches/casio/product.MTP-B125L-1AV/'
+    discontinued: false
+  - id: mtp-b125m-2av
+    ref: MTP-B125M-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240715103009id_/https://www.casio.com/europe/watches/casio/product.MTP-B125M-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 75, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b125m-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103009id_/https://www.casio.com/europe/watches/casio/product.MTP-B125M-2AV/'
+    discontinued: false
+  - id: mtp-b125m-7av
+    ref: MTP-B125M-7AV
+    source:
+      { url: 'https://web.archive.org/web/20240715103023id_/https://www.casio.com/europe/watches/casio/product.MTP-B125M-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 75, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b125m-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103023id_/https://www.casio.com/europe/watches/casio/product.MTP-B125M-7AV/'
+    discontinued: false
+  - id: mtp-b125mg-3av
+    ref: MTP-B125MG-3AV
+    source:
+      { url: 'https://web.archive.org/web/20220706032656id_/https://www.casio.com/sg/watches/casio/product.MTP-B125MG-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 75, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b125mg-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220706032656id_/https://www.casio.com/sg/watches/casio/product.MTP-B125MG-3AV/'
+    discontinued: false
+  - id: mtp-b125mr-8av
+    ref: MTP-B125MR-8AV
+    source:
+      { url: 'https://web.archive.org/web/20240721184842id_/https://www.casio.com/id/watches/casio/product.MTP-B125MR-8AV/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 75 }
+    water_resistance_m: 50
+    image: mtp-b125mr-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721184842id_/https://www.casio.com/id/watches/casio/product.MTP-B125MR-8AV/'
+    discontinued: false
+  - id: mtp-b125rl-5av
+    ref: MTP-B125RL-5AV
+    source:
+      { url: 'https://web.archive.org/web/20240721185008id_/https://www.casio.com/id/watches/casio/product.MTP-B125RL-5AV/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 45 }
+    water_resistance_m: 50
+    image: mtp-b125rl-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721185008id_/https://www.casio.com/id/watches/casio/product.MTP-B125RL-5AV/'
+    discontinued: false

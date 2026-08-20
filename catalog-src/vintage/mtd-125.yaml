@@ -1,0 +1,152 @@
+# MTD-125 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtd-125
+  name: MTD-125
+  line: vintage
+
+models:
+  - id: mtd-125-1av
+    ref: MTD-125-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221119111628id_/https://www.casio.com/ph/watches/casio/product.MTD-125-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 45.6, depth_mm: 10.4, weight_g: 69, material: 'Stainless steel / Resin / Aluminum' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: mtd-125-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221119111628id_/https://www.casio.com/ph/watches/casio/product.MTD-125-1AV/'
+    discontinued: false
+  - id: mtd-125-2av
+    ref: MTD-125-2AV
+    source:
+      { url: 'https://web.archive.org/web/20221119111628id_/https://www.casio.com/ph/watches/casio/product.MTD-125-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 45.6, depth_mm: 10.4, weight_g: 69, material: 'Stainless steel / Resin / Aluminum' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: mtd-125-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221119111628id_/https://www.casio.com/ph/watches/casio/product.MTD-125-2AV/'
+    discontinued: false
+  - id: mtd-125-3av
+    ref: MTD-125-3AV
+    source:
+      { url: 'https://web.archive.org/web/20221119111628id_/https://www.casio.com/ph/watches/casio/product.MTD-125-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 45.6, depth_mm: 10.4, weight_g: 69, material: 'Stainless steel / Resin / Aluminum' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: mtd-125-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221119111628id_/https://www.casio.com/ph/watches/casio/product.MTD-125-3AV/'
+    discontinued: false
+  - id: mtd-125d-1a1v
+    ref: MTD-125D-1A1V
+    source:
+      { url: 'https://web.archive.org/web/20221216022802id_/https://www.casio.com/in/watches/casio/product.MTD-125D-1A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 45.6, depth_mm: 10.4, weight_g: 122, material: 'Stainless steel / Resin / Aluminum' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: mtd-125d-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221216022802id_/https://www.casio.com/in/watches/casio/product.MTD-125D-1A1V/'
+    discontinued: false
+  - id: mtd-125d-1a2v
+    ref: MTD-125D-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20221119111628id_/https://www.casio.com/ph/watches/casio/product.MTD-125D-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 45.6, depth_mm: 10.4, weight_g: 122, material: 'Stainless steel / Resin / Aluminum' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: mtd-125d-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221119111628id_/https://www.casio.com/ph/watches/casio/product.MTD-125D-1A2V/'
+    discontinued: false
+  - id: mtd-125d-2a1v
+    ref: MTD-125D-2A1V
+    source:
+      { url: 'https://web.archive.org/web/20240205045702id_/https://www.casio.com/intl/watches/casio/product.MTD-125D-2A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 45.6, depth_mm: 10.4, weight_g: 122, material: 'Stainless steel / Resin / Aluminum' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: mtd-125d-2a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240205045702id_/https://www.casio.com/intl/watches/casio/product.MTD-125D-2A1V/'
+    discontinued: false
+  - id: mtd-125d-2a2v
+    ref: MTD-125D-2A2V
+    source:
+      { url: 'https://web.archive.org/web/20240722021010id_/https://www.casio.com/id/watches/casio/product.MTD-125D-2A2V/', kind: official }
+    case: { height_mm: 46.5, width_mm: 45.6, depth_mm: 10.4, weight_g: 122 }
+    water_resistance_m: 100
+    image: mtd-125d-2a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722021010id_/https://www.casio.com/id/watches/casio/product.MTD-125D-2A2V/'
+    discontinued: false
+  - id: mtd-125d-3av
+    ref: MTD-125D-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240206101642id_/https://www.casio.com/intl/watches/casio/product.MTD-125D-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 45.6, depth_mm: 10.4, weight_g: 122, material: 'Stainless steel / Resin / Aluminum' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: mtd-125d-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240206101642id_/https://www.casio.com/intl/watches/casio/product.MTD-125D-3AV/'
+    discontinued: false
+  - id: mtd-125d-9av
+    ref: MTD-125D-9AV
+    source:
+      { url: 'https://web.archive.org/web/20240205045707id_/https://www.casio.com/intl/watches/casio/product.MTD-125D-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 46.5, width_mm: 45.6, depth_mm: 10.4, weight_g: 122, material: 'Stainless steel / Resin / Aluminum' }
+    water_resistance_m: 100
+    features: [mineral-glass]
+    image: mtd-125d-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240205045707id_/https://www.casio.com/intl/watches/casio/product.MTD-125D-9AV/'
+    discontinued: false

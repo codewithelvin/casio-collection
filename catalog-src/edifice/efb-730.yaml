@@ -63,3 +63,46 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/edifice/product.EFB-730D-7AV/'
     discontinued: false
+
+# ADDED 2026-08-20: 3 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: efb-730dj-1a
+    ref: EFB-730DJ-1A
+    source:
+      { url: 'https://web.archive.org/web/20240913051959id_/https://www.casio.com/jp/watches/edifice/product.EFB-730DJ-1A/', kind: official }
+    case: { height_mm: 47, width_mm: 40, depth_mm: 11, weight_g: 137 }
+    water_resistance_m: 100
+    image: efb-730dj-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240913051959id_/https://www.casio.com/jp/watches/edifice/product.EFB-730DJ-1A/'
+    discontinued: true
+  - id: efb-730dj-2a
+    ref: EFB-730DJ-2A
+    source:
+      { url: 'https://web.archive.org/web/20240919051355id_/https://www.casio.com/jp/watches/edifice/product.EFB-730DJ-2A/', kind: official }
+    case: { height_mm: 47, width_mm: 40, depth_mm: 11, weight_g: 137 }
+    water_resistance_m: 100
+    image: efb-730dj-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240919051355id_/https://www.casio.com/jp/watches/edifice/product.EFB-730DJ-2A/'
+    discontinued: true
+  - id: efb-730dj-7a
+    ref: EFB-730DJ-7A
+    source:
+      { url: 'https://web.archive.org/web/20240923092702id_/https://www.casio.com/jp/watches/edifice/product.EFB-730DJ-7A/', kind: official }
+    case: { height_mm: 47, width_mm: 40, depth_mm: 11, weight_g: 137 }
+    water_resistance_m: 100
+    image: efb-730dj-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240923092702id_/https://www.casio.com/jp/watches/edifice/product.EFB-730DJ-7A/'
+    discontinued: true

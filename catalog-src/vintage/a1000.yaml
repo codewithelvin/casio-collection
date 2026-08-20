@@ -210,3 +210,21 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240717185119id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000RG-5/'
     discontinued: false
+
+# ADDED 2026-08-20: 1 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: a1000rcb-1
+    ref: A1000RCB-1
+    source:
+      { url: 'https://web.archive.org/web/20240713092250id_/https://www.casio.com/es/watches/casio/vintage/product.A1000RCB-1/', kind: official }
+    case: { weight_g: 99 }
+    image: a1000rcb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240713092250id_/https://www.casio.com/es/watches/casio/vintage/product.A1000RCB-1/'
+    discontinued: false

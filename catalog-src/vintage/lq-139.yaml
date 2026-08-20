@@ -39,3 +39,120 @@ models:
     movement: quartz
     case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 11, material: 'Resin' }
     discontinued: false
+
+# ADDED 2026-08-20: 10 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: lq-139amv-1e
+    ref: LQ-139AMV-1E
+    source:
+      { url: 'https://web.archive.org/web/20240721132502id_/https://www.casio.com/id/watches/casio/product.LQ-139AMV-1E/', kind: official }
+    case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 11 }
+    image: lq-139amv-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721132502id_/https://www.casio.com/id/watches/casio/product.LQ-139AMV-1E/'
+    discontinued: false
+  - id: lq-139amv-7b3
+    ref: LQ-139AMV-7B3
+    source:
+      { url: 'https://web.archive.org/web/20240721131756id_/https://www.casio.com/id/watches/casio/product.LQ-139AMV-7B3/', kind: official }
+    case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 11 }
+    image: lq-139amv-7b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721131756id_/https://www.casio.com/id/watches/casio/product.LQ-139AMV-7B3/'
+    discontinued: false
+  - id: lq-139bmv-7el
+    ref: LQ-139BMV-7EL
+    source:
+      { url: 'https://web.archive.org/web/20220724150138id_/https://www.casio.com/jp/watches/casio/product.LQ-139BMV-7EL/', kind: official }
+    case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 11 }
+    image: lq-139bmv-7el
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220724150138id_/https://www.casio.com/jp/watches/casio/product.LQ-139BMV-7EL/'
+    discontinued: true
+  - id: lq-139l-2b
+    ref: LQ-139L-2B
+    source:
+      { url: 'https://web.archive.org/web/20240721132445id_/https://www.casio.com/id/watches/casio/product.LQ-139L-2B/', kind: official }
+    case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 10.5 }
+    image: lq-139l-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721132445id_/https://www.casio.com/id/watches/casio/product.LQ-139L-2B/'
+    discontinued: false
+  - id: lq-139l-4b1
+    ref: LQ-139L-4B1
+    source:
+      { url: 'https://web.archive.org/web/20220724150133id_/https://www.casio.com/jp/watches/casio/product.LQ-139L-4B1/', kind: official }
+    case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 11 }
+    image: lq-139l-4b1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220724150133id_/https://www.casio.com/jp/watches/casio/product.LQ-139L-4B1/'
+    discontinued: false
+  - id: lq-139l-4b2
+    ref: LQ-139L-4B2
+    source:
+      { url: 'https://web.archive.org/web/20211018102132id_/https://www.casio.com/jp/watches/casio/product.LQ-139L-4B2/', kind: official }
+    case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 11 }
+    image: lq-139l-4b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211018102132id_/https://www.casio.com/jp/watches/casio/product.LQ-139L-4B2/'
+    discontinued: false
+  - id: lq-139l-6b
+    ref: LQ-139L-6B
+    source:
+      { url: 'https://web.archive.org/web/20221208204843id_/https://www.casio.com/jp/watches/casio/product.LQ-139L-6B/', kind: official }
+    case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 11 }
+    image: lq-139l-6b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221208204843id_/https://www.casio.com/jp/watches/casio/product.LQ-139L-6B/'
+    discontinued: false
+  - id: lq-139l-7b
+    ref: LQ-139L-7B
+    source:
+      { url: 'https://web.archive.org/web/20220402052218id_/https://www.casio.com/jp/watches/casio/product.LQ-139L-7B/', kind: official }
+    case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 11 }
+    image: lq-139l-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220402052218id_/https://www.casio.com/jp/watches/casio/product.LQ-139L-7B/'
+    discontinued: true
+  - id: lq-139lb-4b
+    ref: LQ-139LB-4B
+    source:
+      { url: 'https://web.archive.org/web/20221204223905id_/https://www.casio.com/jp/watches/casio/product.LQ-139LB-4B/', kind: official }
+    case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 11 }
+    image: lq-139lb-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221204223905id_/https://www.casio.com/jp/watches/casio/product.LQ-139LB-4B/'
+    discontinued: true
+  - id: lq-139lb-7b2
+    ref: LQ-139LB-7B2
+    source:
+      { url: 'https://web.archive.org/web/20220724150133id_/https://www.casio.com/jp/watches/casio/product.LQ-139LB-7B2/', kind: official }
+    case: { height_mm: 31.2, width_mm: 25.2, depth_mm: 7.5, weight_g: 11 }
+    image: lq-139lb-7b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220724150133id_/https://www.casio.com/jp/watches/casio/product.LQ-139LB-7B2/'
+    discontinued: true

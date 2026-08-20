@@ -116,3 +116,98 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715102048id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PSG-7A/'
     discontinued: false
+
+# ADDED 2026-08-20: 8 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: ltp-1234dd-1a
+    ref: LTP-1234DD-1A
+    source:
+      { url: 'https://web.archive.org/web/20250120041135id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-1A/', kind: official }
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 58 }
+    image: ltp-1234dd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120041135id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-1A/'
+    discontinued: false
+  - id: ltp-1234dd-2a
+    ref: LTP-1234DD-2A
+    source:
+      { url: 'https://web.archive.org/web/20250120041114id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-2A/', kind: official }
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 58 }
+    image: ltp-1234dd-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120041114id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-2A/'
+    discontinued: false
+  - id: ltp-1234dd-4a
+    ref: LTP-1234DD-4A
+    source:
+      { url: 'https://web.archive.org/web/20250120041141id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-4A/', kind: official }
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 58 }
+    image: ltp-1234dd-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120041141id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-4A/'
+    discontinued: false
+  - id: ltp-1234dd-5a
+    ref: LTP-1234DD-5A
+    source:
+      { url: 'https://web.archive.org/web/20250120041130id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-5A/', kind: official }
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 58 }
+    image: ltp-1234dd-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120041130id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-5A/'
+    discontinued: false
+  - id: ltp-1234dd-7a
+    ref: LTP-1234DD-7A
+    source:
+      { url: 'https://web.archive.org/web/20250120041110id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-7A/', kind: official }
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 58 }
+    image: ltp-1234dd-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120041110id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-7A/'
+    discontinued: false
+  - id: ltp-1234ds-4a
+    ref: LTP-1234DS-4A
+    source:
+      { url: 'https://web.archive.org/web/20250120040759id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DS-4A/', kind: official }
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 57 }
+    image: ltp-1234ds-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120040759id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DS-4A/'
+    discontinued: false
+  - id: ltp-1234gll-7a
+    ref: LTP-1234GLL-7A
+    source:
+      { url: 'https://web.archive.org/web/20250120041121id_/https://www.casio.com/hk/watches/casio/product.LTP-1234GLL-7A/', kind: official }
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 25 }
+    image: ltp-1234gll-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120041121id_/https://www.casio.com/hk/watches/casio/product.LTP-1234GLL-7A/'
+    discontinued: false
+  - id: ltp-1234ll-7a
+    ref: LTP-1234LL-7A
+    source:
+      { url: 'https://web.archive.org/web/20250120041145id_/https://www.casio.com/hk/watches/casio/product.LTP-1234LL-7A/', kind: official }
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 25 }
+    image: ltp-1234ll-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120041145id_/https://www.casio.com/hk/watches/casio/product.LTP-1234LL-7A/'
+    discontinued: false

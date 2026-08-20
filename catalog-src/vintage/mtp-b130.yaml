@@ -1,0 +1,161 @@
+# MTP-B130 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-b130
+  name: MTP-B130
+  line: vintage
+
+models:
+  - id: mtp-b130d-1av
+    ref: MTP-B130D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20230121092102id_/https://www.casio.com/intl/watches/casio/product.MTP-B130D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 102, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b130d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230121092102id_/https://www.casio.com/intl/watches/casio/product.MTP-B130D-1AV/'
+    discontinued: false
+  - id: mtp-b130d-7av
+    ref: MTP-B130D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20230206084012id_/https://www.casio.com/intl/watches/casio/product.MTP-B130D-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 102, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b130d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230206084012id_/https://www.casio.com/intl/watches/casio/product.MTP-B130D-7AV/'
+    discontinued: false
+  - id: mtp-b130l-1av
+    ref: MTP-B130L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240721183538id_/https://www.casio.com/id/watches/casio/product.MTP-B130L-1AV/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 45 }
+    water_resistance_m: 50
+    image: mtp-b130l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721183538id_/https://www.casio.com/id/watches/casio/product.MTP-B130L-1AV/'
+    discontinued: false
+  - id: mtp-b130l-2av
+    ref: MTP-B130L-2AV
+    source:
+      { url: 'https://web.archive.org/web/20230121092102id_/https://www.casio.com/intl/watches/casio/product.MTP-B130L-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 45, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b130l-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230121092102id_/https://www.casio.com/intl/watches/casio/product.MTP-B130L-2AV/'
+    discontinued: false
+  - id: mtp-b130l-3av
+    ref: MTP-B130L-3AV
+    source:
+      { url: 'https://web.archive.org/web/20230121092102id_/https://www.casio.com/intl/watches/casio/product.MTP-B130L-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 45, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b130l-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230121092102id_/https://www.casio.com/intl/watches/casio/product.MTP-B130L-3AV/'
+    discontinued: false
+  - id: mtp-b130l-7av
+    ref: MTP-B130L-7AV
+    source:
+      { url: 'https://web.archive.org/web/20230121092111id_/https://www.casio.com/intl/watches/casio/product.MTP-B130L-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 45, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b130l-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230121092111id_/https://www.casio.com/intl/watches/casio/product.MTP-B130L-7AV/'
+    discontinued: false
+  - id: mtp-b130m-2av
+    ref: MTP-B130M-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240721183442id_/https://www.casio.com/id/watches/casio/product.MTP-B130M-2AV/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 74 }
+    water_resistance_m: 50
+    image: mtp-b130m-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721183442id_/https://www.casio.com/id/watches/casio/product.MTP-B130M-2AV/'
+    discontinued: false
+  - id: mtp-b130m-3av
+    ref: MTP-B130M-3AV
+    source:
+      { url: 'https://web.archive.org/web/20230206084012id_/https://www.casio.com/intl/watches/casio/product.MTP-B130M-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 74, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b130m-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230206084012id_/https://www.casio.com/intl/watches/casio/product.MTP-B130M-3AV/'
+    discontinued: false
+  - id: mtp-b130m-4av
+    ref: MTP-B130M-4AV
+    source:
+      { url: 'https://web.archive.org/web/20240721183427id_/https://www.casio.com/id/watches/casio/product.MTP-B130M-4AV/', kind: official }
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 74 }
+    water_resistance_m: 50
+    image: mtp-b130m-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721183427id_/https://www.casio.com/id/watches/casio/product.MTP-B130M-4AV/'
+    discontinued: false
+  - id: mtp-b130mg-1av
+    ref: MTP-B130MG-1AV
+    source:
+      { url: 'https://web.archive.org/web/20230121092102id_/https://www.casio.com/intl/watches/casio/product.MTP-B130MG-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 74, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: mtp-b130mg-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230121092102id_/https://www.casio.com/intl/watches/casio/product.MTP-B130MG-1AV/'
+    discontinued: false
