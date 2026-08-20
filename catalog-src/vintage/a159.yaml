@@ -57,3 +57,50 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220620020007id_/https://www.casio.com/ph/watches/casio/product.A159WGED-1/'
     discontinued: true
+
+# ADDED 2026-08-20: the two A159s D47's discovery filter refuses, named by hand.
+#
+# Both are listed in Casio's OWN CURRENT SITEMAP — `casio.com/intl/sitemap.xml`
+# carries `product.A159W-N1/` and `product.A159WA-N1/` — which is Casio stating
+# that the reference exists, and a stronger claim about identity than any shape
+# rule. `roster.ts`'s `CANONICAL_REF` refuses them because their variant block is
+# `N1` rather than digit-first, and its own comment already names `A159WA-N1` as
+# a real reference it knowingly refuses. That filter decides what a CRAWL may
+# turn into a reference unsupervised; it is not a claim that the reference is
+# fake. O13 is the open question about widening it, and widening it is the
+# client's decision — so these two came in by name instead, which needs no
+# decision at all.
+#
+# Every field below still comes from the one archived Casio product page named in
+# its `source`, read by the same reader the rest of this file was seeded with —
+# 17 rows and 13 rows respectively, both English captures. `lines.yaml`'s
+# `ref_pattern` is §10.2 check 3 and a different rule from D47; it accepts both,
+# so neither entry carries a `# ref-exception`.
+#
+# No `year` on either: the product page dates nothing (D25).
+  - id: a159w-n1
+    ref: A159W-N1
+    source:
+      { url: 'https://web.archive.org/web/20250406075538id_/https://www.casio.com/in/watches/casio/product.A159W-N1/', kind: official }
+    movement: quartz
+    case: { height_mm: 36.8, width_mm: 33.2, depth_mm: 8.2, weight_g: 44, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a159w-n1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250406075538id_/https://www.casio.com/in/watches/casio/product.A159W-N1/'
+    discontinued: false
+  - id: a159wa-n1
+    ref: A159WA-N1
+    source:
+      { url: 'https://web.archive.org/web/20250523170640id_/https://www.casio.com/sg/watches/casio/product.A159WA-N1/', kind: official }
+    movement: quartz
+    case: { height_mm: 36.8, width_mm: 33.2, depth_mm: 8.2, weight_g: 44, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a159wa-n1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250523170640id_/https://www.casio.com/sg/watches/casio/product.A159WA-N1/'
+    discontinued: false
