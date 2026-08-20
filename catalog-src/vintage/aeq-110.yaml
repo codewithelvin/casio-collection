@@ -1,0 +1,105 @@
+# AEQ-110 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: aeq-110
+  name: AEQ-110
+  line: vintage
+
+models:
+  - id: aeq-110bw-9av
+    ref: AEQ-110BW-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220808131239id_/https://www.casio.com/us/watches/casio/product.AEQ-110BW-9AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 48.2, depth_mm: 16.7, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, telememo]
+    discontinued: false
+  - id: aeq-110w-1a3v
+    ref: AEQ-110W-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20220926023010id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-1A3V/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 48.2, depth_mm: 16.7, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, telememo]
+    discontinued: false
+  - id: aeq-110w-1av
+    ref: AEQ-110W-1AV
+    source:
+      { url: 'https://web.archive.org/web/20241128042847id_/https://www.casio.com/in/watches/casio/product.AEQ-110W-1AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 48.2, depth_mm: 16.7, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, telememo]
+    image: aeq-110w-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241128042847id_/https://www.casio.com/in/watches/casio/product.AEQ-110W-1AV/'
+    discontinued: false
+  - id: aeq-110w-1bv
+    ref: AEQ-110W-1BV
+    source:
+      { url: 'https://web.archive.org/web/20220926041818id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-1BV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 48.2, depth_mm: 16.7, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, telememo]
+    discontinued: false
+  - id: aeq-110w-2a2v
+    ref: AEQ-110W-2A2V
+    source:
+      { url: 'https://web.archive.org/web/20241217184311id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-2A2V/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 48.2, depth_mm: 16.7, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, telememo]
+    image: aeq-110w-2a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241217184311id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-2A2V/'
+    discontinued: false
+  - id: aeq-110w-2a3v
+    ref: AEQ-110W-2A3V
+    source:
+      { url: 'https://web.archive.org/web/20220926025124id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-2A3V/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 48.2, depth_mm: 16.7, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, telememo]
+    image: aeq-110w-2a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220926025124id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-2A3V/'
+    discontinued: false
+  - id: aeq-110w-2av
+    ref: AEQ-110W-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220810075417id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-2AV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 48.2, depth_mm: 16.7, weight_g: 49, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, telememo]
+    discontinued: true

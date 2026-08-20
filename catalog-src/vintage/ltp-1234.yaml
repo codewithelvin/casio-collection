@@ -1,0 +1,118 @@
+# LTP-1234 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ltp-1234
+  name: LTP-1234
+  line: vintage
+
+models:
+  - id: ltp-1234ds-2a
+    ref: LTP-1234DS-2A
+    source:
+      { url: 'https://web.archive.org/web/20240927000645id_/https://www.casio.com/intl/watches/casio/product.LTP-1234DS-2A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 57, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: ltp-1234ds-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240927000645id_/https://www.casio.com/intl/watches/casio/product.LTP-1234DS-2A/'
+    discontinued: false
+  - id: ltp-1234pd-7b
+    ref: LTP-1234PD-7B
+    source:
+      { url: 'https://web.archive.org/web/20240715102054id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PD-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 57, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: ltp-1234pd-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102054id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PD-7B/'
+    discontinued: false
+  - id: ltp-1234pg-7a
+    ref: LTP-1234PG-7A
+    source:
+      { url: 'https://web.archive.org/web/20240715102111id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PG-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 57, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-1234pg-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102111id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PG-7A/'
+    discontinued: false
+  - id: ltp-1234pgl-7a
+    ref: LTP-1234PGL-7A
+    source:
+      { url: 'https://web.archive.org/web/20240715103059id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PGL-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 23, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-1234pgl-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103059id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PGL-7A/'
+    discontinued: false
+  - id: ltp-1234pgl-7a2
+    ref: LTP-1234PGL-7A2
+    source:
+      { url: 'https://web.archive.org/web/20240715103054id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PGL-7A2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 23, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-1234pgl-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103054id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PGL-7A2/'
+    discontinued: false
+  - id: ltp-1234pl-7a2
+    ref: LTP-1234PL-7A2
+    source:
+      { url: 'https://web.archive.org/web/20240715103057id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PL-7A2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 23, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: ltp-1234pl-7a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103057id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PL-7A2/'
+    discontinued: false
+  - id: ltp-1234psg-7a
+    ref: LTP-1234PSG-7A
+    source:
+      { url: 'https://web.archive.org/web/20240715102048id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PSG-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 57, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: ltp-1234psg-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102048id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PSG-7A/'
+    discontinued: false

@@ -1,0 +1,104 @@
+# MTP-VD02 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-vd02
+  name: MTP-VD02
+  line: vintage
+
+models:
+  - id: mtp-vd02b-1e
+    ref: MTP-VD02B-1E
+    source:
+      { url: 'https://web.archive.org/web/20220516194105id_/https://www.casio.com/in/watches/casio/product.MTP-VD02B-1E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
+    features: [mineral-glass]
+    image: mtp-vd02b-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516194105id_/https://www.casio.com/in/watches/casio/product.MTP-VD02B-1E/'
+    discontinued: false
+  - id: mtp-vd02b-3e
+    ref: MTP-VD02B-3E
+    source:
+      { url: 'https://web.archive.org/web/20220625111157id_/https://www.casio.com/in/watches/casio/product.MTP-VD02B-3E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
+    features: [mineral-glass]
+    image: mtp-vd02b-3e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625111157id_/https://www.casio.com/in/watches/casio/product.MTP-VD02B-3E/'
+    discontinued: false
+  - id: mtp-vd02bl-3e
+    ref: MTP-VD02BL-3E
+    source:
+      { url: 'https://web.archive.org/web/20230203234619id_/https://www.casio.com/intl/watches/casio/product.MTP-VD02BL-3E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
+    features: [mineral-glass]
+    image: mtp-vd02bl-3e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230203234619id_/https://www.casio.com/intl/watches/casio/product.MTP-VD02BL-3E/'
+    discontinued: false
+  - id: mtp-vd02d-1e
+    ref: MTP-VD02D-1E
+    source:
+      { url: 'https://web.archive.org/web/20220526121206id_/https://www.casio.com/sg/watches/casio/product.MTP-VD02D-1E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
+    features: [mineral-glass]
+    image: mtp-vd02d-1e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526121206id_/https://www.casio.com/sg/watches/casio/product.MTP-VD02D-1E/'
+    discontinued: false
+  - id: mtp-vd02g-9e
+    ref: MTP-VD02G-9E
+    source:
+      { url: 'https://web.archive.org/web/20220526121200id_/https://www.casio.com/sg/watches/casio/product.MTP-VD02G-9E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
+    features: [mineral-glass]
+    image: mtp-vd02g-9e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526121200id_/https://www.casio.com/sg/watches/casio/product.MTP-VD02G-9E/'
+    discontinued: false
+  - id: mtp-vd02l-7e
+    ref: MTP-VD02L-7E
+    source:
+      { url: 'https://web.archive.org/web/20230713004247id_/https://www.casio.com/intl/watches/casio/product.MTP-VD02L-7E/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
+    features: [mineral-glass]
+    image: mtp-vd02l-7e
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230713004247id_/https://www.casio.com/intl/watches/casio/product.MTP-VD02L-7E/'
+    discontinued: false

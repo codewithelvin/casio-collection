@@ -1,0 +1,244 @@
+# LTP-1302 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ltp-1302
+  name: LTP-1302
+  line: vintage
+
+models:
+  - id: ltp-1302dd-4a1v
+    ref: LTP-1302DD-4A1V
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.LTP-1302DD-4A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.8, weight_g: 67, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302dd-4a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.LTP-1302DD-4A1V/'
+    discontinued: false
+  - id: ltp-1302dd-4a2v
+    ref: LTP-1302DD-4A2V
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.LTP-1302DD-4A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.8, weight_g: 67, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302dd-4a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.LTP-1302DD-4A2V/'
+    discontinued: false
+  - id: ltp-1302dd-5av
+    ref: LTP-1302DD-5AV
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.LTP-1302DD-5AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.8, weight_g: 67, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302dd-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.LTP-1302DD-5AV/'
+    discontinued: false
+  - id: ltp-1302ds-2av
+    ref: LTP-1302DS-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.LTP-1302DS-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.8, weight_g: 66, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302ds-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/casio/product.LTP-1302DS-2AV/'
+    discontinued: false
+  - id: ltp-1302ds-4av
+    ref: LTP-1302DS-4AV
+    source:
+      { url: 'https://web.archive.org/web/20240824133306id_/https://www.casio.com/in/watches/casio/product.LTP-1302DS-4AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.8, weight_g: 66, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302ds-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240824133306id_/https://www.casio.com/in/watches/casio/product.LTP-1302DS-4AV/'
+    discontinued: false
+  - id: ltp-1302pd-1a1v
+    ref: LTP-1302PD-1A1V
+    source:
+      { url: 'https://web.archive.org/web/20240715102159id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PD-1A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.7, weight_g: 69, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302pd-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102159id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PD-1A1V/'
+    discontinued: false
+  - id: ltp-1302pd-2a2v
+    ref: LTP-1302PD-2A2V
+    source:
+      { url: 'https://web.archive.org/web/20240715103113id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PD-2A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.7, weight_g: 69, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302pd-2a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103113id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PD-2A2V/'
+    discontinued: true
+  - id: ltp-1302pd-7a1v
+    ref: LTP-1302PD-7A1V
+    source:
+      { url: 'https://web.archive.org/web/20240715102132id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PD-7A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.7, weight_g: 69, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302pd-7a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102132id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PD-7A1V/'
+    discontinued: false
+  - id: ltp-1302pd-7bv
+    ref: LTP-1302PD-7BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102205id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PD-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.7, weight_g: 69, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302pd-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102205id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PD-7BV/'
+    discontinued: false
+  - id: ltp-1302pl-7bv
+    ref: LTP-1302PL-7BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102137id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PL-7BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.7, weight_g: 32, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302pl-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102137id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PL-7BV/'
+    discontinued: false
+  - id: ltp-1302prg-2av
+    ref: LTP-1302PRG-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240715103104id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PRG-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.7, weight_g: 69, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302prg-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103104id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PRG-2AV/'
+    discontinued: false
+  - id: ltp-1302prg-3av
+    ref: LTP-1302PRG-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240715103047id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PRG-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.7, weight_g: 69, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302prg-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103047id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PRG-3AV/'
+    discontinued: false
+  - id: ltp-1302prg-7av
+    ref: LTP-1302PRG-7AV
+    source:
+      { url: 'https://web.archive.org/web/20240715103050id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PRG-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.7, weight_g: 69, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302prg-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715103050id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PRG-7AV/'
+    discontinued: false
+  - id: ltp-1302psg-7av
+    ref: LTP-1302PSG-7AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102021id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PSG-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.7, weight_g: 69, material: 'Ion plated' }
+    water_resistance_m: 50
+    features: [mineral-glass]
+    image: ltp-1302psg-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102021id_/https://www.casio.com/europe/watches/casio/product.LTP-1302PSG-7AV/'
+    discontinued: false
+  - id: ltp-1302sg-7av
+    ref: LTP-1302SG-7AV
+    source:
+      { url: 'https://web.archive.org/web/20220816032613id_/https://www.casio.com/in/watches/casio/product.LTP-1302SG-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 34.5, width_mm: 30.2, depth_mm: 8.7, weight_g: 69, material: 'Ion plated' }
+    features: [mineral-glass]
+    image: ltp-1302sg-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220816032613id_/https://www.casio.com/in/watches/casio/product.LTP-1302SG-7AV/'
+    discontinued: false

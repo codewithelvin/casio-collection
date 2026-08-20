@@ -1,0 +1,160 @@
+# MTP-V002 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-v002
+  name: MTP-V002
+  line: vintage
+
+models:
+  - id: mtp-v002d-1b
+    ref: MTP-V002D-1B
+    source:
+      { url: 'https://web.archive.org/web/20250114134450id_/https://www.casio.com/in/watches/casio/product.MTP-V002D-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 93 }
+    features: [mineral-glass]
+    image: mtp-v002d-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250114134450id_/https://www.casio.com/in/watches/casio/product.MTP-V002D-1B/'
+    discontinued: false
+  - id: mtp-v002d-1b3
+    ref: MTP-V002D-1B3
+    source:
+      { url: 'https://web.archive.org/web/20230402081315id_/https://www.casio.com/intl/watches/casio/product.MTP-V002D-1B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 93 }
+    features: [mineral-glass]
+    image: mtp-v002d-1b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230402081315id_/https://www.casio.com/intl/watches/casio/product.MTP-V002D-1B3/'
+    discontinued: false
+  - id: mtp-v002d-2b3
+    ref: MTP-V002D-2B3
+    source:
+      { url: 'https://web.archive.org/web/20230402081522id_/https://www.casio.com/intl/watches/casio/product.MTP-V002D-2B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 93 }
+    features: [mineral-glass]
+    image: mtp-v002d-2b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230402081522id_/https://www.casio.com/intl/watches/casio/product.MTP-V002D-2B3/'
+    discontinued: false
+  - id: mtp-v002d-7b
+    ref: MTP-V002D-7B
+    source:
+      { url: 'https://web.archive.org/web/20220516185804id_/https://www.casio.com/in/watches/casio/product.MTP-V002D-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 93 }
+    features: [mineral-glass]
+    image: mtp-v002d-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516185804id_/https://www.casio.com/in/watches/casio/product.MTP-V002D-7B/'
+    discontinued: false
+  - id: mtp-v002d-7b3
+    ref: MTP-V002D-7B3
+    source:
+      { url: 'https://web.archive.org/web/20230203225040id_/https://www.casio.com/intl/watches/casio/product.MTP-V002D-7B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 93 }
+    features: [mineral-glass]
+    image: mtp-v002d-7b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230203225040id_/https://www.casio.com/intl/watches/casio/product.MTP-V002D-7B3/'
+    discontinued: false
+  - id: mtp-v002gl-7b2
+    ref: MTP-V002GL-7B2
+    source:
+      { url: 'https://web.archive.org/web/20241116182938id_/https://www.casio.com/in/watches/casio/product.MTP-V002GL-7B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 44, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-v002gl-7b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241116182938id_/https://www.casio.com/in/watches/casio/product.MTP-V002GL-7B2/'
+    discontinued: false
+  - id: mtp-v002l-1b3
+    ref: MTP-V002L-1B3
+    source:
+      { url: 'https://web.archive.org/web/20230409235359id_/https://www.casio.com/intl/watches/casio/product.MTP-V002L-1B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 44 }
+    features: [mineral-glass]
+    image: mtp-v002l-1b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230409235359id_/https://www.casio.com/intl/watches/casio/product.MTP-V002L-1B3/'
+    discontinued: false
+  - id: mtp-v002l-2b3
+    ref: MTP-V002L-2B3
+    source:
+      { url: 'https://web.archive.org/web/20210919174757id_/https://www.casio.com/my/watches/casio/product.MTP-V002L-2B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 44 }
+    features: [mineral-glass]
+    image: mtp-v002l-2b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210919174757id_/https://www.casio.com/my/watches/casio/product.MTP-V002L-2B3/'
+    discontinued: false
+  - id: mtp-v002l-7b2
+    ref: MTP-V002L-7B2
+    source:
+      { url: 'https://web.archive.org/web/20230217215005id_/https://www.casio.com/in/watches/casio/product.MTP-V002L-7B2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 44 }
+    features: [mineral-glass]
+    image: mtp-v002l-7b2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230217215005id_/https://www.casio.com/in/watches/casio/product.MTP-V002L-7B2/'
+    discontinued: false
+  - id: mtp-v002l-7b3
+    ref: MTP-V002L-7B3
+    source:
+      { url: 'https://web.archive.org/web/20210925001837id_/https://www.casio.com/my/watches/casio/product.MTP-V002L-7B3/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44, width_mm: 37, depth_mm: 9.6, weight_g: 44 }
+    features: [mineral-glass]
+    image: mtp-v002l-7b3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210925001837id_/https://www.casio.com/my/watches/casio/product.MTP-V002L-7B3/'
+    discontinued: false

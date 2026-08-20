@@ -1,0 +1,170 @@
+# MDV-107 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mdv-107
+  name: MDV-107
+  line: vintage
+
+models:
+  - id: mdv-107-1a1v
+    ref: MDV-107-1A1V
+    source:
+      { url: 'https://web.archive.org/web/20240715101300id_/https://www.casio.com/europe/watches/casio/product.MDV-107-1A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 92, material: 'Stainless steel · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [mineral-glass]
+    image: mdv-107-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101300id_/https://www.casio.com/europe/watches/casio/product.MDV-107-1A1V/'
+    discontinued: false
+  - id: mdv-107-1a2v
+    ref: MDV-107-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20240715101544id_/https://www.casio.com/europe/watches/casio/product.MDV-107-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 92, material: 'Stainless steel · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [mineral-glass]
+    image: mdv-107-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101544id_/https://www.casio.com/europe/watches/casio/product.MDV-107-1A2V/'
+    discontinued: false
+  - id: mdv-107-1a3v
+    ref: MDV-107-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20240715101325id_/https://www.casio.com/europe/watches/casio/product.MDV-107-1A3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 92, material: 'Stainless steel · Anti-reverse Bezel' }
+    water_resistance_m: 200
+    features: [mineral-glass]
+    image: mdv-107-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101325id_/https://www.casio.com/europe/watches/casio/product.MDV-107-1A3V/'
+    discontinued: false
+  - id: mdv-107d-1a1v
+    ref: MDV-107D-1A1V
+    source:
+      { url: 'https://web.archive.org/web/20240715102913id_/https://www.casio.com/europe/watches/casio/product.MDV-107D-1A1V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 144, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 200
+    features: [mineral-glass]
+    image: mdv-107d-1a1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102913id_/https://www.casio.com/europe/watches/casio/product.MDV-107D-1A1V/'
+    discontinued: false
+  - id: mdv-107d-1a2v
+    ref: MDV-107D-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20230728094214id_/https://www.casio.com/in/watches/casio/product.MDV-107D-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 144, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 200
+    features: [mineral-glass]
+    image: mdv-107d-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230728094214id_/https://www.casio.com/in/watches/casio/product.MDV-107D-1A2V/'
+    discontinued: false
+  - id: mdv-107d-1a3v
+    ref: MDV-107D-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20231101150948id_/https://www.casio.com/in/watches/casio/product.MDV-107D-1A3V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 144, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 200
+    features: [mineral-glass]
+    image: mdv-107d-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231101150948id_/https://www.casio.com/in/watches/casio/product.MDV-107D-1A3V/'
+    discontinued: false
+  - id: mdv-107d-3av
+    ref: MDV-107D-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102856id_/https://www.casio.com/europe/watches/casio/product.MDV-107D-3AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 44.2, depth_mm: 12.1, weight_g: 144, material: 'Stainless steel / Aluminium' }
+    water_resistance_m: 200
+    features: [mineral-glass]
+    image: mdv-107d-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102856id_/https://www.casio.com/europe/watches/casio/product.MDV-107D-3AV/'
+    discontinued: false
+  - id: mdv-107d-5av
+    ref: MDV-107D-5AV
+    source:
+      { url: 'https://web.archive.org/web/20241126005202id_/https://www.casio.com/intl/watches/casio/product.MDV-107D-5AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46.3, depth_mm: 12.1, weight_g: 144, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 200
+    features: [mineral-glass]
+    image: mdv-107d-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126005202id_/https://www.casio.com/intl/watches/casio/product.MDV-107D-5AV/'
+    discontinued: false
+  - id: mdv-107d-7av
+    ref: MDV-107D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20241125113917id_/https://www.casio.com/intl/watches/casio/product.MDV-107D-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46.3, depth_mm: 12.1, weight_g: 144, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 200
+    features: [mineral-glass]
+    image: mdv-107d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241125113917id_/https://www.casio.com/intl/watches/casio/product.MDV-107D-7AV/'
+    discontinued: false
+  - id: mdv-107d-8av
+    ref: MDV-107D-8AV
+    source:
+      { url: 'https://web.archive.org/web/20241111080104id_/https://www.casio.com/intl/watches/casio/product.MDV-107D-8AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 49.5, width_mm: 46.3, depth_mm: 12.1, weight_g: 144, material: 'Stainless steel / Aluminum' }
+    water_resistance_m: 200
+    features: [mineral-glass]
+    image: mdv-107d-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241111080104id_/https://www.casio.com/intl/watches/casio/product.MDV-107D-8AV/'
+    discontinued: false

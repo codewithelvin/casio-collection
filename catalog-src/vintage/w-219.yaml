@@ -1,0 +1,185 @@
+# W-219 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: w-219
+  name: W-219
+  line: vintage
+
+models:
+  - id: w-219h-1a2v
+    ref: W-219H-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20240715101737id_/https://www.casio.com/europe/watches/casio/product.W-219H-1A2V/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47.1, depth_mm: 13.9, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219h-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101737id_/https://www.casio.com/europe/watches/casio/product.W-219H-1A2V/'
+    discontinued: false
+  - id: w-219h-1av
+    ref: W-219H-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715101613id_/https://www.casio.com/europe/watches/casio/product.W-219H-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47.1, depth_mm: 13.9, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219h-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101613id_/https://www.casio.com/europe/watches/casio/product.W-219H-1AV/'
+    discontinued: false
+  - id: w-219h-2a2v
+    ref: W-219H-2A2V
+    source:
+      { url: 'https://web.archive.org/web/20250122155300id_/https://www.casio.com/us/watches/casio/product.W-219H-2A2V/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47.1, depth_mm: 13.9, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219h-2a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250122155300id_/https://www.casio.com/us/watches/casio/product.W-219H-2A2V/'
+    discontinued: false
+  - id: w-219h-2av
+    ref: W-219H-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240715101732id_/https://www.casio.com/europe/watches/casio/product.W-219H-2AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47.1, depth_mm: 13.9, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219h-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101732id_/https://www.casio.com/europe/watches/casio/product.W-219H-2AV/'
+    discontinued: false
+  - id: w-219h-4av
+    ref: W-219H-4AV
+    source:
+      { url: 'https://web.archive.org/web/20250122152900id_/https://www.casio.com/us/watches/casio/product.W-219H-4AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47.1, depth_mm: 13.9, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219h-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250122152900id_/https://www.casio.com/us/watches/casio/product.W-219H-4AV/'
+    discontinued: false
+  - id: w-219h-8bv
+    ref: W-219H-8BV
+    source:
+      { url: 'https://web.archive.org/web/20240715101630id_/https://www.casio.com/europe/watches/casio/product.W-219H-8BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47.1, depth_mm: 13.9, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219h-8bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101630id_/https://www.casio.com/europe/watches/casio/product.W-219H-8BV/'
+    discontinued: false
+  - id: w-219hb-3av
+    ref: W-219HB-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240119142120id_/https://www.casio.com/us/watches/casio/product.W-219HB-3AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47.1, depth_mm: 13.9, weight_g: 34, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219hb-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119142120id_/https://www.casio.com/us/watches/casio/product.W-219HB-3AV/'
+    discontinued: false
+  - id: w-219hb-5av
+    ref: W-219HB-5AV
+    source:
+      { url: 'https://web.archive.org/web/20250122192730id_/https://www.casio.com/us/watches/casio/product.W-219HB-5AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47.1, depth_mm: 13.9, weight_g: 34, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219hb-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250122192730id_/https://www.casio.com/us/watches/casio/product.W-219HB-5AV/'
+    discontinued: false
+  - id: w-219hc-2bv
+    ref: W-219HC-2BV
+    source:
+      { url: 'https://web.archive.org/web/20240408193748id_/https://www.casio.com/us/watches/casio/product.W-219HC-2BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47.1, depth_mm: 13.9, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219hc-2bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240408193748id_/https://www.casio.com/us/watches/casio/product.W-219HC-2BV/'
+    discontinued: false
+  - id: w-219hc-3bv
+    ref: W-219HC-3BV
+    source:
+      { url: 'https://web.archive.org/web/20250114231016id_/https://www.casio.com/us/watches/casio/product.W-219HC-3BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47.1, depth_mm: 13.9, weight_g: 40, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219hc-3bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250114231016id_/https://www.casio.com/us/watches/casio/product.W-219HC-3BV/'
+    discontinued: false
+  - id: w-219hc-8bv
+    ref: W-219HC-8BV
+    source:
+      { url: 'https://web.archive.org/web/20240722020717id_/https://www.casio.com/id/watches/casio/product.W-219HC-8BV/', kind: official }
+    features: [alarm, stopwatch]
+    image: w-219hc-8bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722020717id_/https://www.casio.com/id/watches/casio/product.W-219HC-8BV/'
+    discontinued: false
+  - id: w-219hd-1av
+    ref: W-219HD-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102935id_/https://www.casio.com/europe/watches/casio/product.W-219HD-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.1, width_mm: 47, depth_mm: 13.9, weight_g: 89, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-219hd-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102935id_/https://www.casio.com/europe/watches/casio/product.W-219HD-1AV/'
+    discontinued: false

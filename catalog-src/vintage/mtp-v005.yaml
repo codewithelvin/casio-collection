@@ -1,0 +1,230 @@
+# MTP-V005 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-v005
+  name: MTP-V005
+  line: vintage
+
+models:
+  - id: mtp-v005d-1b
+    ref: MTP-V005D-1B
+    source:
+      { url: 'https://web.archive.org/web/20220516193718id_/https://www.casio.com/in/watches/casio/product.MTP-V005D-1B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 90 }
+    features: [mineral-glass]
+    image: mtp-v005d-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516193718id_/https://www.casio.com/in/watches/casio/product.MTP-V005D-1B/'
+    discontinued: false
+  - id: mtp-v005d-1b4
+    ref: MTP-V005D-1B4
+    source:
+      { url: 'https://web.archive.org/web/20230712233837id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-1B4/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 90 }
+    features: [mineral-glass]
+    image: mtp-v005d-1b4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230712233837id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-1B4/'
+    discontinued: false
+  - id: mtp-v005d-1b5
+    ref: MTP-V005D-1B5
+    source:
+      { url: 'https://web.archive.org/web/20241126212112id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-1B5/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 90 }
+    features: [mineral-glass]
+    image: mtp-v005d-1b5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126212112id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-1B5/'
+    discontinued: false
+  - id: mtp-v005d-2b4
+    ref: MTP-V005D-2B4
+    source:
+      { url: 'https://web.archive.org/web/20241122135020id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-2B4/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 90 }
+    features: [mineral-glass]
+    image: mtp-v005d-2b4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241122135020id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-2B4/'
+    discontinued: false
+  - id: mtp-v005d-2b5
+    ref: MTP-V005D-2B5
+    source:
+      { url: 'https://web.archive.org/web/20241124235234id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-2B5/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 90 }
+    features: [mineral-glass]
+    image: mtp-v005d-2b5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241124235234id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-2B5/'
+    discontinued: false
+  - id: mtp-v005d-7b
+    ref: MTP-V005D-7B
+    source:
+      { url: 'https://web.archive.org/web/20220516181101id_/https://www.casio.com/in/watches/casio/product.MTP-V005D-7B/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 90 }
+    features: [mineral-glass]
+    image: mtp-v005d-7b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220516181101id_/https://www.casio.com/in/watches/casio/product.MTP-V005D-7B/'
+    discontinued: false
+  - id: mtp-v005d-7b4
+    ref: MTP-V005D-7B4
+    source:
+      { url: 'https://web.archive.org/web/20231105000343id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-7B4/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 90 }
+    features: [mineral-glass]
+    image: mtp-v005d-7b4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231105000343id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-7B4/'
+    discontinued: false
+  - id: mtp-v005d-7b5
+    ref: MTP-V005D-7B5
+    source:
+      { url: 'https://web.archive.org/web/20241123033712id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-7B5/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 90 }
+    features: [mineral-glass]
+    image: mtp-v005d-7b5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241123033712id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-7B5/'
+    discontinued: false
+  - id: mtp-v005g-7a
+    ref: MTP-V005G-7A
+    source:
+      { url: 'https://web.archive.org/web/20230217215005id_/https://www.casio.com/in/watches/casio/product.MTP-V005G-7A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 90, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: mtp-v005g-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230217215005id_/https://www.casio.com/in/watches/casio/product.MTP-V005G-7A/'
+    discontinued: true
+  - id: mtp-v005l-1b4
+    ref: MTP-V005L-1B4
+    source:
+      { url: 'https://web.archive.org/web/20241119163432id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-1B4/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 46 }
+    features: [mineral-glass]
+    image: mtp-v005l-1b4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241119163432id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-1B4/'
+    discontinued: false
+  - id: mtp-v005l-1b5
+    ref: MTP-V005L-1B5
+    source:
+      { url: 'https://web.archive.org/web/20241120023840id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-1B5/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 46 }
+    features: [mineral-glass]
+    image: mtp-v005l-1b5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241120023840id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-1B5/'
+    discontinued: false
+  - id: mtp-v005l-2b4
+    ref: MTP-V005L-2B4
+    source:
+      { url: 'https://web.archive.org/web/20220526115651id_/https://www.casio.com/sg/watches/casio/product.MTP-V005L-2B4/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 46 }
+    features: [mineral-glass]
+    image: mtp-v005l-2b4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115651id_/https://www.casio.com/sg/watches/casio/product.MTP-V005L-2B4/'
+    discontinued: false
+  - id: mtp-v005l-2b5
+    ref: MTP-V005L-2B5
+    source:
+      { url: 'https://web.archive.org/web/20241126191234id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-2B5/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 46 }
+    features: [mineral-glass]
+    image: mtp-v005l-2b5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241126191234id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-2B5/'
+    discontinued: false
+  - id: mtp-v005l-7b4
+    ref: MTP-V005L-7B4
+    source:
+      { url: 'https://web.archive.org/web/20241122183939id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-7B4/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 46 }
+    features: [mineral-glass]
+    image: mtp-v005l-7b4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241122183939id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-7B4/'
+    discontinued: false
+  - id: mtp-v005l-7b5
+    ref: MTP-V005L-7B5
+    source:
+      { url: 'https://web.archive.org/web/20241122215456id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-7B5/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 47, width_mm: 40, depth_mm: 8.1, weight_g: 46 }
+    features: [mineral-glass]
+    image: mtp-v005l-7b5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241122215456id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-7B5/'
+    discontinued: false

@@ -1,0 +1,48 @@
+# LTP-V300 — seeded 2026-08-20 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ltp-v300
+  name: LTP-V300
+  line: vintage
+
+models:
+  - id: ltp-v300g-9a
+    ref: LTP-V300G-9A
+    source:
+      { url: 'https://web.archive.org/web/20210724174901id_/https://www.casio.com/sg/watches/casio/product.LTP-V300G-9A/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62, material: 'Gold tone' }
+    features: [mineral-glass]
+    image: ltp-v300g-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210724174901id_/https://www.casio.com/sg/watches/casio/product.LTP-V300G-9A/'
+    discontinued: false
+  - id: ltp-v300l-2a2
+    ref: LTP-V300L-2A2
+    source:
+      { url: 'https://web.archive.org/web/20220525051154id_/https://www.casio.com/in/watches/casio/product.LTP-V300L-2A2/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 30 }
+    features: [mineral-glass]
+    image: ltp-v300l-2a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220525051154id_/https://www.casio.com/in/watches/casio/product.LTP-V300L-2A2/'
+    discontinued: true

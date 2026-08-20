@@ -1,0 +1,215 @@
+# MTP-M305 — seeded 2026-08-19 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: mtp-m305
+  name: MTP-M305
+  line: vintage
+
+models:
+  - id: mtp-m305d-1a2v
+    ref: MTP-M305D-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20240623074044id_/https://www.casio.com/intl/watches/casio/product.MTP-M305D-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 116, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305d-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240623074044id_/https://www.casio.com/intl/watches/casio/product.MTP-M305D-1A2V/'
+    discontinued: false
+  - id: mtp-m305d-1av
+    ref: MTP-M305D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20250116204658id_/https://www.casio.com/my/watches/casio/product.MTP-M305D-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 116, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250116204658id_/https://www.casio.com/my/watches/casio/product.MTP-M305D-1AV/'
+    discontinued: false
+  - id: mtp-m305d-2av
+    ref: MTP-M305D-2AV
+    source:
+      { url: 'https://web.archive.org/web/20250120004057id_/https://www.casio.com/intl/watches/casio/product.MTP-M305D-2AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 116, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305d-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250120004057id_/https://www.casio.com/intl/watches/casio/product.MTP-M305D-2AV/'
+    discontinued: false
+  - id: mtp-m305d-6av
+    ref: MTP-M305D-6AV
+    source:
+      { url: 'https://web.archive.org/web/20241002120017id_/https://www.casio.com/intl/watches/casio/product.MTP-M305D-6AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 116, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305d-6av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241002120017id_/https://www.casio.com/intl/watches/casio/product.MTP-M305D-6AV/'
+    discontinued: false
+  - id: mtp-m305d-7a2v
+    ref: MTP-M305D-7A2V
+    source:
+      { url: 'https://web.archive.org/web/20240610142455id_/https://www.casio.com/intl/watches/casio/product.MTP-M305D-7A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 116, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305d-7a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240610142455id_/https://www.casio.com/intl/watches/casio/product.MTP-M305D-7A2V/'
+    discontinued: false
+  - id: mtp-m305d-7av
+    ref: MTP-M305D-7AV
+    source:
+      { url: 'https://web.archive.org/web/20231009013252id_/https://www.casio.com/my/watches/casio/product.MTP-M305D-7AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 116, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305d-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231009013252id_/https://www.casio.com/my/watches/casio/product.MTP-M305D-7AV/'
+    discontinued: false
+  - id: mtp-m305d-9av
+    ref: MTP-M305D-9AV
+    source:
+      { url: 'https://web.archive.org/web/20250119045427id_/https://www.casio.com/intl/watches/casio/product.MTP-M305D-9AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 116, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305d-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119045427id_/https://www.casio.com/intl/watches/casio/product.MTP-M305D-9AV/'
+    discontinued: false
+  - id: mtp-m305l-1a2v
+    ref: MTP-M305L-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20240623074002id_/https://www.casio.com/intl/watches/casio/product.MTP-M305L-1A2V/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 55, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305l-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240623074002id_/https://www.casio.com/intl/watches/casio/product.MTP-M305L-1A2V/'
+    discontinued: false
+  - id: mtp-m305l-1av
+    ref: MTP-M305L-1AV
+    source:
+      { url: 'https://web.archive.org/web/20241201144011id_/https://www.casio.com/in/watches/casio/product.MTP-M305L-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 55, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305l-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241201144011id_/https://www.casio.com/in/watches/casio/product.MTP-M305L-1AV/'
+    discontinued: false
+  - id: mtp-m305m-1av
+    ref: MTP-M305M-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102309id_/https://www.casio.com/europe/watches/casio/product.MTP-M305M-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 80, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305m-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102309id_/https://www.casio.com/europe/watches/casio/product.MTP-M305M-1AV/'
+    discontinued: false
+  - id: mtp-m305m-8av
+    ref: MTP-M305M-8AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102318id_/https://www.casio.com/europe/watches/casio/product.MTP-M305M-8AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.3, weight_g: 80, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305m-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102318id_/https://www.casio.com/europe/watches/casio/product.MTP-M305M-8AV/'
+    discontinued: false
+  - id: mtp-m305mc-1av
+    ref: MTP-M305MC-1AV
+    source:
+      { url: 'https://web.archive.org/web/20250322043128id_/https://www.casio.com/us/watches/casio/product.MTP-M305MC-1AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.4, weight_g: 80, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305mc-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250322043128id_/https://www.casio.com/us/watches/casio/product.MTP-M305MC-1AV/'
+    discontinued: false
+  - id: mtp-m305mc-8av
+    ref: MTP-M305MC-8AV
+    source:
+      { url: 'https://web.archive.org/web/20250406161746id_/https://www.casio.com/us/watches/casio/product.MTP-M305MC-8AV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 44.5, width_mm: 34, depth_mm: 9.4, weight_g: 80, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [moon-data, mineral-glass]
+    image: mtp-m305mc-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250406161746id_/https://www.casio.com/us/watches/casio/product.MTP-M305MC-8AV/'
+    discontinued: false
