@@ -23,8 +23,10 @@
 //   SEEDABLE        an archived product page exists — crawl and seed it (D52)
 //   REFUSED-D47     Casio's own sitemap lists it, `CANONICAL_REF` will not admit
 //                   it. REAL, and the crawler can never find it. Name it by hand
-//                   with seed-refs.ts. This is O13's blast radius, one series at
-//                   a time, and naming a reference Casio lists needs no decision
+//                   with seed-refs.ts. D47 as revised (O13, closed 2026-08-19)
+//                   names the real references it knowingly refuses and calls
+//                   admitting them a separate decision — so this state is not a
+//                   bug report, it is the list D47 already acknowledges
 //   NO-PAGE         in Casio's sitemap, no archived page anywhere. Identity is
 //                   official (D48) and NOTHING states a specification, so it is
 //                   NOT WRITTEN — 0 of 2 812 models carry no field, and an entry

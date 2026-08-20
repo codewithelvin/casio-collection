@@ -5,11 +5,17 @@
 //   node seed-refs.ts <line> <series> --write <REF>...   write them
 //
 // `seed-into.ts` is the right tool for everything a crawl discovers. This is for
-// what it structurally cannot: `roster.ts`'s `CANONICAL_REF` refuses a variant
-// block that is not digit-first, so `A159W-N1` and `A159WA-N1` — the two most
-// recognisable A159s, both in Casio's own current sitemap — are invisible to it.
-// `CANONICAL_REF`'s own comment already names `A159WA-N1` as a real reference it
-// knowingly refuses, and O13 is the open question about widening it.
+// what it structurally cannot: `CANONICAL_REF` requires a suffix that begins with
+// a digit, so `A159W-N1` and `A159WA-N1` — the two most recognisable A159s, both
+// in Casio's own current sitemap — are invisible to it.
+//
+// **That refusal is deliberate and the specification already says so.** D47 was
+// revised by the client on 2026-08-19 (O13, closed) and the revised decision
+// names `A159WA-N1` in its own list of "references that are real, and that is a
+// separate decision rather than an oversight", beside `MQ-24-7BLL` and 37
+// collaborations. D47's words: admitting that class "stays a separate decision".
+// So the argument is settled in this script's favour — the reference is agreed to
+// be real, and what is withheld is a CRAWL's licence to admit its shape.
 //
 // THE ONE GATE THIS DROPS, AND THE ONE IT ADDS. It drops `isReference`, which is
 // a DISCOVERY filter: it decides what a crawl may turn into a permanent id
@@ -214,10 +220,12 @@ const note = [
   `# Each is listed in Casio's OWN CURRENT SITEMAP, which is Casio stating that the`,
   `# reference exists (D48) — a stronger claim about identity than any shape rule,`,
   `# and the only identity \`seed-refs.ts\` accepts. \`roster.ts\`'s \`CANONICAL_REF\``,
-  `# refuses ${models.length === 1 ? 'it' : 'them'} on the shape of the variant block; that filter governs what a`,
-  `# CRAWL may turn into a permanent id unsupervised, and it is not a claim that`,
-  `# the reference is fake. Widening it is O13 and the client's decision, so`,
-  `# ${models.length === 1 ? 'this reference was' : 'these references were'} named instead, which needs no decision at all.`,
+  `# requires a suffix beginning with a digit. That filter governs what a CRAWL may`,
+  `# turn into a permanent id unsupervised, and it is not a claim that the`,
+  `# reference is fake — D47 as revised on 2026-08-19 (O13, closed) names the`,
+  `# references it knowingly refuses, and says admitting them "stays a separate`,
+  `# decision". Naming a reference Casio itself lists needs no decision at all,`,
+  `# so that is what happened here, and \`roster.ts\` is untouched.`,
   `#`,
   `# Every field below comes from the one archived Casio product page named in its`,
   `# \`source\` (D52), read by the same reader as the rest of this file. No \`year\`:`,

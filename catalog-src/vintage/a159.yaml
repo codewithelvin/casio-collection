@@ -63,13 +63,22 @@ models:
 # Both are listed in Casio's OWN CURRENT SITEMAP — `casio.com/intl/sitemap.xml`
 # carries `product.A159W-N1/` and `product.A159WA-N1/` — which is Casio stating
 # that the reference exists, and a stronger claim about identity than any shape
-# rule. `roster.ts`'s `CANONICAL_REF` refuses them because their variant block is
-# `N1` rather than digit-first, and its own comment already names `A159WA-N1` as
-# a real reference it knowingly refuses. That filter decides what a CRAWL may
-# turn into a reference unsupervised; it is not a claim that the reference is
-# fake. O13 is the open question about widening it, and widening it is the
-# client's decision — so these two came in by name instead, which needs no
-# decision at all.
+# rule. `roster.ts`'s `CANONICAL_REF` refuses them because their suffix is `-N1`,
+# which begins with a letter where every admitted suffix begins with a digit.
+#
+# THAT REFUSAL IS DELIBERATE AND ALREADY WRITTEN DOWN. D47 was revised by the
+# client on 2026-08-19 (O13, closed), and the revised decision names
+# `A159WA-N1` in its own list of "references that are real, and that is a
+# separate decision rather than an oversight" — beside `MQ-24-7BLL` and 37
+# collaborations. D47's words: admitting that class "stays a separate decision",
+# and nobody has asked for it.
+#
+# So the specification already agrees these two references are real. What it
+# declines to do is let a CRAWL admit their shape unsupervised, because the
+# looser rule that would admit them also admits the `GSHOCKGIFTBAG` Casio's
+# sitemap lists beside its watches, and D2 makes a gift bag's id permanent.
+# Naming two references Casio itself lists needs no rule change at all, so that
+# is what happened here, and `roster.ts` is untouched.
 #
 # Every field below still comes from the one archived Casio product page named in
 # its `source`, read by the same reader the rest of this file was seeded with —

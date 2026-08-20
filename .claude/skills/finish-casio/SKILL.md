@@ -150,10 +150,18 @@ one the rest of the archive files under another line. Everything else is
 `seed-into.ts`'s behaviour unchanged — fields off the one page named in `source`,
 D50's four-row floor, D46's unreadable report, no `year`, no `discontinued`.
 
-**Do not touch `roster.ts`.** Widening `CANONICAL_REF` is O13, it is the client's
-decision, and D47 says so. The whole point of naming references by hand is that
-it needs no decision: 1 095 references hang on the pattern and two hang on the
-name.
+**Do not touch `roster.ts`.** D47 was already revised once by the client, on
+2026-08-19, closing O13 — and the revised decision **names the real references it
+knowingly refuses**, `A159WA-N1` and `MQ-24-7BLL` and 37 collaborations among
+them, and says admitting that class "stays a separate decision". So the
+specification already agrees these references are real. What it withholds is a
+crawl's licence to admit their shape, because the looser rule that admits them
+also admits the `GSHOCKGIFTBAG` Casio's sitemap lists beside its watches, and D2
+makes a gift bag's id permanent.
+
+That is why naming by hand is the right move rather than a workaround: 1 095
+references hang on the pattern and two hang on the name. Read D47's consequence
+column before proposing a regex change.
 
 **The note it writes into the YAML is the deliverable, not a comment.** A
 reviewer reading `git diff` finds a reference the project's own filter refuses,
