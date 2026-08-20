@@ -8,6 +8,17 @@
 # unless the page describes the dial. The page shows a "light" icon with no
 # type, and the vocabulary has five specific light values and no generic one,
 # so no light feature is claimed. Absent means nobody has found it (D27).
+#
+# `year` came from a SECOND page, added 2026-08-21 by /finish-casio 1976-1990.
+# The Digital Watch Library holds two pages for this watch: the one in `source`,
+# `casio-t-2000`, a blue example whose RELEASED field reads UNKNOWN, and
+# `casio-t-2000-dictionary`, which states 1984. Both title the watch T-2000, both
+# give its AKA as Dictionary, and both state module 219 and band B-332N, which is
+# what makes them the same reference. They DISAGREE on case material — `source`
+# says stainless steel, the second page says chrome plated base-metal — so
+# `case` was left exactly as `source` states it and only the year was taken. That
+# disagreement is reported rather than resolved (§10.6); it is the one thing on
+# this entry a reviewer should look at.
 
 series:
   id: t-2000
@@ -27,4 +38,6 @@ models:
       author: The Digital Watch Library
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-t-2000'
+    year: 1984
+    year_source: 'http://www.digital-watch.com/DWL/1work/casio-t-2000-dictionary'
     discontinued: true
