@@ -24,7 +24,11 @@ export default function HomeRoute() {
         {t('home.lead')}
       </Typography.Paragraph>
 
-      <Typography.Title level={4}>{t('home.linesHeading')}</Typography.Title>
+      {/* level 3, not 4. The page title above is an h2, and a jump to h4 leaves
+          a hole in the outline a screen reader navigates by — axe fails it as
+          `heading-order`. The heading reads one step larger as a result, which
+          is the honest consequence: it is the second level on the page. */}
+      <Typography.Title level={3}>{t('home.linesHeading')}</Typography.Title>
       {isPending ? (
         <LineGridSkeleton count={7} />
       ) : isError || !data ? (

@@ -406,9 +406,17 @@ function render(shell: string, page: Page, hints: string[]): string {
  * anything — the rail carries model counts (FR-1.1) — and a preload moves them
  * to the front of the queue rather than the back of a chain.
  *
- * Only the two weights the first screen actually uses: 400 for body text and
- * mono 400 for a reference code, which is what every card is made of.
- * Preloading all five would compete with the bundle for the same connection.
+ * **Three weights, not two, and the third was found by measuring rather than by
+ * reading this comment.** Sans 400 for body text and mono 400 for a reference
+ * code are what every card is made of. Sans 600 was left out on the argument
+ * that the first screen does not use it — and the first screen is a header
+ * wordmark and a page title, both of which are set in 600. Lighthouse put it at
+ * the end of the longest network chain on the live site, discovered from AntD's
+ * injected CSS at 1 634 ms and costing 767 ms.
+ *
+ * The remaining two weights stay unhinted: preloading all five would compete
+ * with the bundle for the same connection, which is the reason this list is a
+ * filter and not `assets/*.woff2`.
  */
 /* ------------------------------------------------------------------------- *
  * robots.txt
@@ -481,7 +489,10 @@ async function resourceHints(): Promise<string[]> {
   const assets = await readdir(join(dist, 'assets'))
   const critical = assets.filter(
     (name) =>
-      name.endsWith('.woff2') && (/plex-sans-latin-400/.test(name) || /plex-mono-latin-400/.test(name)),
+      name.endsWith('.woff2') &&
+      (/plex-sans-latin-400/.test(name) ||
+        /plex-sans-latin-600/.test(name) ||
+        /plex-mono-latin-400/.test(name)),
   )
 
   return [

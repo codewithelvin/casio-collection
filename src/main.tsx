@@ -4,6 +4,9 @@
 // means the failure shows up in a toast nobody tested and not in CI.
 import '@ant-design/v5-patch-for-react-19'
 
+// S7 — before `./App`, and that ordering is the whole point. See zodJitless.ts.
+import './zodJitless'
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'

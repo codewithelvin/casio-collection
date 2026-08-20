@@ -59,6 +59,21 @@ export function themeConfig(mode: ThemeMode): ThemeConfig {
       fontSize: 16,
       fontSizeSM: 14,
       fontSizeLG: 18,
+
+      // **AntD's secondary text does not pass AA, and the lead paragraph on the
+      // front page is secondary text.** `colorTextDescription` is an alias of
+      // `colorTextTertiary`, `rgba(0, 0, 0, 0.45)` — #8C8C8C once composited on
+      // white, which is 3.4:1 against the 4.5:1 that WCAG AA asks of body text.
+      // 0.55 is #737373 and 4.8:1. Set here rather than per component because
+      // `type="secondary"` is one decision the whole product reads through, and
+      // a page that fixed its own copy would leave the next one to be found by
+      // an audit.
+      //
+      // The dark value is raised with it. It already passed on its own —
+      // rgba(255, 255, 255, 0.45) is 4.5:1 on #141414 — but only just, and
+      // "secondary" meaning two different degrees of quiet in the two themes is
+      // the kind of difference that gets reported as a bug in one of them.
+      colorTextDescription: mode === 'dark' ? 'rgba(255, 255, 255, 0.55)' : 'rgba(0, 0, 0, 0.55)',
     },
     components: {
       Layout: {

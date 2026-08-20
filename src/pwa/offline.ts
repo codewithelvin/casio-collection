@@ -67,8 +67,25 @@ export function registerServiceWorker(): void {
         // The site works; there is nothing to tell anybody.
       })
 
+    // **The first install must not reload, and for four milestones it did.**
+    //
+    // `scripts/sw.ts` calls `clients.claim()` on activate, whose whole purpose is
+    // to take control of this page *without* a reload. On a first visit that
+    // fires `controllerchange` — there was no controller, now there is — and
+    // reloading on it threw away the load that had just finished. Measured
+    // against the live site: Lighthouse reported it as a redirect chain worth
+    // 780 ms on desktop and 3 780 ms on mobile, because the shell, both fonts
+    // and the catalogue were fetched, parsed and validated twice.
+    //
+    // The test is the one the `updatefound` handler above already makes, for the
+    // same reason: `controller` is null until a worker controls the page, so an
+    // update always has one — the old worker — and a first install never does.
+    // It is read here, inside `load` and before registration can activate
+    // anything, because after that it is exactly the value that changed.
+    const hadController = navigator.serviceWorker.controller !== null
     let reloading = false
     navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!hadController) return
       if (reloading) return
       reloading = true
       window.location.reload()

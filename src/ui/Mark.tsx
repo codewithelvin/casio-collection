@@ -134,7 +134,15 @@ export function Lockup({
       <Mark size={markSize} />
       {showWordmark ? (
         <span style={{ display: 'inline-flex', gap: '0.35em', fontSize: 15, whiteSpace: 'nowrap' }}>
-          <span style={{ fontWeight: 600, letterSpacing: '0.08em' }}>{t('app.name.casio')}</span>
+          {/* The `{' '}` is not decorative and must not be tidied away. Without
+              it the two spans are adjacent in the DOM and the element's text is
+              `CASIOVAULT`, which does not match the `aria-label` on the link
+              above — axe reports it as `label-content-name-mismatch`, and a
+              voice-control user asking for "Casio Vault" is asking for a name
+              the page does not have. It changes nothing visually: a
+              whitespace-only run between flex items is not rendered as an item,
+              so the 0.35em gap is still the only space here. */}
+          <span style={{ fontWeight: 600, letterSpacing: '0.08em' }}>{t('app.name.casio')}</span>{' '}
           <span style={{ fontWeight: 400, letterSpacing: '0.08em' }}>{t('app.name.vault')}</span>
         </span>
       ) : null}
