@@ -8,22 +8,60 @@
 # nothing (D25) and a news release states no specifications (D50). Neither page
 # is asked for what the other says.
 #
+# REFRESHED 2026-08-22. All twelve entries gained `movement`, `case.material` and
+# `features` off the pages they already cited. Every capture in this series is
+# Japanese and the reader takes `ケースサイズ` and `防水性` but not
+# `ケース・ベゼル材質`, `時刻修正`, `使用電源` or any of the 時計機能 rows — so
+# twelve entries stated a size and a water resistance and nothing about a watch
+# whose entire point is that it sets itself.
+#
+# THIS IS A WAVE CEPTOR, and unlike most collection names that one is checkable
+# from both directions: Casio's sitemap has `/us/watches/casio/waveceptor/` and
+# `/de/...`, and all twelve of these pages link to `watches/casio/waveceptor/`
+# and print "wave ceptor" in prose. Note that `productSeries` does NOT say it —
+# it says `Solar combination` — so that field is Casio's own taxonomy and not
+# reliably the collection name. It gave `CASIOTRON` and `SPORTS GEAR` elsewhere
+# and `Digital` for HDD-600; here the link is the evidence and the field is not.
+#
+# `movement: solar-radio` rather than `solar`, because each page states both
+# halves: `使用電源・電池寿命 タフソーラー（ソーラー充電システム）` and
+# `時刻修正 電波時計 日本・北米・ヨーロッパ・中国地域対応 MULTIBAND6`. The two
+# also appear as `tough-solar` and `radio-controlled` in `features`, which is the
+# same fact in the two places the schema keeps it.
+#
+# The variants really do differ, and the per-reference values prove the readings
+# are not one page's data repeated: the resin-band B is 34.7 g, the steel-band D
+# is 92 g, the L is 33 g, and the titanium TDE is 68 g and 11.1 mm deep against
+# 11 mm for the rest — the only two entries here whose material is not steel.
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `module` — no row on any of the twelve states one.
+#   * the glass and ネオブライト. Every page states `樹脂ガラス` — resin glass —
+#     and `FEATURES` has `mineral-glass` and `sapphire-crystal` and no term for
+#     resin; Neobrite is a Casio lume with no term either. Both are stated and
+#     neither is writable, which is guardrail 4 working rather than a gap.
+#   * `display`. These are ana-digi combination watches by every photograph, and
+#     no specification row says so, so it stays absent (D25 applies to every
+#     field, not only `year`).
 #   * any field the page does not state. Absent means unknown, never zero (D27).
 
 series:
   id: wva-m630
   name: WVA-M630
   line: vintage
+  # Casio's own collection name, from the sitemap path and from all twelve pages.
+  aka: [Wave Ceptor]
 
 models:
   - id: wva-m630b-1a
     ref: WVA-M630B-1A
     source:
       { url: 'https://web.archive.org/web/20210310205545id_/https://www.casio.com/jp/watches/casio/product.WVA-M630B-1A/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 34.7 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 34.7, material: 'Resin / Stainless steel' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630b-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -34,8 +72,10 @@ models:
     ref: WVA-M630B-3A
     source:
       { url: 'https://web.archive.org/web/20210310205524id_/https://www.casio.com/jp/watches/casio/product.WVA-M630B-3A/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 34.7 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 34.7, material: 'Resin / Stainless steel' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630b-3a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -46,8 +86,10 @@ models:
     ref: WVA-M630D-1A
     source:
       { url: 'https://web.archive.org/web/20210505212323id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-1A/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92, material: 'Resin / Stainless steel' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630d-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -58,8 +100,10 @@ models:
     ref: WVA-M630D-1A4
     source:
       { url: 'https://web.archive.org/web/20210505215508id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-1A4/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92, material: 'Resin / Stainless steel' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630d-1a4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -70,8 +114,10 @@ models:
     ref: WVA-M630D-2A
     source:
       { url: 'https://web.archive.org/web/20210416073446id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-2A/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92, material: 'Resin / Stainless steel' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630d-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -82,8 +128,10 @@ models:
     ref: WVA-M630D-7A
     source:
       { url: 'https://web.archive.org/web/20210505220648id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-7A/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92, material: 'Resin / Stainless steel' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630d-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -94,8 +142,10 @@ models:
     ref: WVA-M630D-7A2
     source:
       { url: 'https://web.archive.org/web/20210505222508id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-7A2/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92, material: 'Resin / Stainless steel' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630d-7a2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -106,8 +156,10 @@ models:
     ref: WVA-M630D-9A
     source:
       { url: 'https://web.archive.org/web/20210416111505id_/https://www.casio.com/jp/watches/casio/product.WVA-M630D-9A/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 92, material: 'Resin / Stainless steel' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630d-9a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -118,8 +170,10 @@ models:
     ref: WVA-M630L-1A2
     source:
       { url: 'https://web.archive.org/web/20221129010624id_/https://www.casio.com/jp/watches/casio/product.WVA-M630L-1A2/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 33 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 33, material: 'Resin / Stainless steel' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630l-1a2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -130,8 +184,10 @@ models:
     ref: WVA-M630L-9A
     source:
       { url: 'https://web.archive.org/web/20221208201729id_/https://www.casio.com/jp/watches/casio/product.WVA-M630L-9A/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 33 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11, weight_g: 33, material: 'Resin / Stainless steel' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630l-9a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -142,8 +198,10 @@ models:
     ref: WVA-M630TDE-1A
     source:
       { url: 'https://web.archive.org/web/20210413041756id_/https://www.casio.com/jp/watches/casio/product.WVA-M630TDE-1A/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11.1, weight_g: 68 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11.1, weight_g: 68, material: 'Resin / Titanium' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630tde-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -154,8 +212,10 @@ models:
     ref: WVA-M630TDE-7A
     source:
       { url: 'https://web.archive.org/web/20221129005611id_/https://www.casio.com/jp/watches/casio/product.WVA-M630TDE-7A/', kind: official }
-    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11.1, weight_g: 68 }
+    movement: solar-radio
+    case: { height_mm: 45.1, width_mm: 42.1, depth_mm: 11.1, weight_g: 68, material: 'Resin / Titanium' }
     water_resistance_m: 50
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving]
     image: wva-m630tde-7a
     image_credit:
       author: Casio Computer Co., Ltd.
