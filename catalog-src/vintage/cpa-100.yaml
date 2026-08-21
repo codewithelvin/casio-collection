@@ -1,0 +1,113 @@
+# CPA-100 — seeded 2026-08-21 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# Casio's Islamic prayer watch — "Alarm Salat" on the Indonesian page. It states
+# the next prayer time for 31 time zones, 70 preset cities and three user cities,
+# sounds a prayer alarm, and carries a Hijri calendar. **None of that is
+# recorded below**, because `FEATURES` in `src/catalog/vocabulary.ts` has no term
+# for prayer times, an azan alarm, Qibla direction or a Hijri calendar, and
+# guardrail 4 forbids adding one as a side effect of a seeding run. So the
+# catalogue currently lists this watch by the features it shares with every
+# other digital Casio and is silent about the only reason it exists. That is a
+# vocabulary decision for the client, and it is the most useful thing on this
+# page.
+#
+# REFRESHED 2026-08-22, and the reason is worth recording. This series has no
+# English capture (`caps=2/0en`); the two captures are Indonesian and Turkish.
+# The seeder reads Indonesian labels and not Turkish ones, so of three entries
+# crawled in one run, the one citing the Indonesian page came back with `case`
+# and `water_resistance_m` and the two citing Turkish pages came back with
+# `features: [alarm]` and nothing else. `Ukuran casing` is understood,
+# `Kasa boyutu` is not. Everything below was read off the page each entry
+# already cites, in the language that page is written in.
+#
+# `discontinued: true` IS THE MEASUREMENT, AND THIS IS THE ONE CASE IT CAN BE
+# WRONG IN. `availability.ts` reads Casio's sitemap for three locales — us, intl
+# and de — and absence from a sitemap is normally decisive because a sitemap is
+# complete by construction. But this watch's market is precisely the locales it
+# does not read: both archived captures are Indonesian and Turkish, and there is
+# no us/intl/de page for a prayer watch to be missing from. So `true` here is
+# "not sold in three Western locales", which is what the script can see, and not
+# necessarily "Casio stopped making it". D59 measures it for the whole catalogue
+# at once and a hand-written value would be a judgement, so it stands as measured
+# — but do not read it as settled. Re-running after a roster refresh, or against
+# `/id/` and `/tr/`, is what would settle it.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `case.material` on the two Turkish-cited entries. Casio's own two pages
+#     disagree: the Indonesian says `Resin`, the Turkish `Silikon`, and calls the
+#     glass `Silikon Cam` where the Indonesian says `Kaca Resin`. "Resin glass"
+#     is a Casio term and "silicone glass" is not, so the Turkish is a bad
+#     localisation rather than a different watch — but the honest field is the
+#     one the cited page states, and citing the other page for it would be the
+#     merge §10.6 forbids. Written only on `cpa-100-9av`, which cites the
+#     Indonesian page.
+#   * `movement` — no row states it. A CR2032 lasting seven years is a power
+#     source, and `quartz` from it would be an inference.
+#   * `display` — no row states it, and `digital` here would come off the
+#     photograph rather than a source.
+#   * `year` — no dated release names any of these references (D25, D54).
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: cpa-100
+  name: CPA-100
+  line: vintage
+  # What the watch is actually called and searched for. Casio's own page title is
+  # "Alarm Salat"; nothing else in the catalogue carries any of these words.
+  aka: [Prayer Watch, Alarm Salat, Islamic Prayer Compass]
+
+models:
+  - id: cpa-100-1av
+    ref: CPA-100-1AV
+    source:
+      { url: 'https://web.archive.org/web/20241231180108id_/https://www.casio.com/tr/watches/casio/product.CPA-100-1AV/', kind: official }
+    module: '3448'
+    case: { height_mm: 57.1, width_mm: 55.5, depth_mm: 15.8, weight_g: 63 }
+    water_resistance_m: 100
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, hourly-time-signal, led-light, moon-data]
+    image: cpa-100-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241231180108id_/https://www.casio.com/tr/watches/casio/product.CPA-100-1AV/'
+    discontinued: true
+  - id: cpa-100-9av
+    ref: CPA-100-9AV
+    source:
+      { url: 'https://web.archive.org/web/20240722020330id_/https://www.casio.com/id/watches/casio/product.CPA-100-9AV/', kind: official }
+    module: '3448'
+    case: { height_mm: 57.1, width_mm: 55.5, depth_mm: 15.8, weight_g: 63, material: 'Resin' }
+    water_resistance_m: 100
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, hourly-time-signal, led-light, moon-data]
+    image: cpa-100-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722020330id_/https://www.casio.com/id/watches/casio/product.CPA-100-9AV/'
+    discontinued: true
+  - id: cpa-100d-1av
+    ref: CPA-100D-1AV
+    source:
+      { url: 'https://web.archive.org/web/20241231180214id_/https://www.casio.com/tr/watches/casio/product.CPA-100D-1AV/', kind: official }
+    module: '3448'
+    # 125 g against 63 g on the other two — the D carries a stainless steel
+    # bracelet where they carry a strap. It is also the proof that these product
+    # blocks are per-reference and not one watch's data served on three pages.
+    case: { height_mm: 57.1, width_mm: 55.5, depth_mm: 15.8, weight_g: 125 }
+    water_resistance_m: 100
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, hourly-time-signal, led-light, moon-data]
+    image: cpa-100d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241231180214id_/https://www.casio.com/tr/watches/casio/product.CPA-100D-1AV/'
+    discontinued: true
