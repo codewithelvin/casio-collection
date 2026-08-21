@@ -28,6 +28,60 @@ export const LINE_ACCENTS: Record<string, string> = {
   oceanus: '#0091C8',
 }
 
+/**
+ * The watch ghosted behind each line card on the front door — the model id of a
+ * photograph already in `public/img/models/`, never a new file.
+ *
+ * **This is an editorial choice and it sits beside the accent because it is the
+ * same kind of choice.** Nothing in the catalogue says which watch *is* a line;
+ * picking the first reference alphabetically would put `A-158WA-1`'s cousin on
+ * Vintage and some `ECB-10` variant on Edifice, and the front door would be
+ * illustrated by whichever colourway happened to sort first. So a human names
+ * one per line, and `lineGrounds.test.ts` proves each one is a file that exists
+ * and a model the catalogue actually publishes.
+ *
+ * All seven are Casio's own product photography on a transparent ground, which
+ * is what makes the treatment work in both themes: what tints the card is the
+ * watch, not a white rectangle around it.
+ */
+export const LINE_GROUNDS: Record<string, string> = {
+  'g-shock': 'dw-5600e-1',
+  vintage: 'f-91w-1',
+  edifice: 'efr-526d-1av',
+  'pro-trek': 'prw-35-1a',
+  'baby-g': 'ba-110-1a',
+  sheen: 'she-3047pg-5a',
+  oceanus: 'ocw-s400-3a',
+}
+
+/**
+ * How faint the ghost is. **Both numbers are ceilings derived from AA, not
+ * values chosen by eye**, and the derivation is why they differ per theme.
+ *
+ * `colorTextDescription` above is set to the darkest quiet grey that still
+ * clears 4.5:1 on a plain card — 4.7:1, so it has almost no headroom, and the
+ * count under every line name is set in it. Tint the ground behind that text
+ * and the ratio falls with it.
+ *
+ * What saves it is that the token is **translucent**: `rgba(0, 0, 0, 0.55)`
+ * composites against whatever is behind it, so darkening the ground darkens the
+ * text too and the ratio decays far more slowly than it would for an opaque
+ * grey. Worked through for the worst case the photograph can produce — a fully
+ * black pixel directly under the count on white — 0.08 lands at 4.55:1 and 0.10
+ * at 4.49:1. Hence 0.08.
+ *
+ * Dark is the mirror image: the danger is a *bright* pixel (a steel bracelet, a
+ * white dial) lifting a #1f1f1f card toward the text rather than away from it,
+ * and that runs out at 0.13. Dark also needs the larger number to show anything
+ * at all — most of these watches are black resin on a nearly black card, so only
+ * their highlights read.
+ *
+ * The card also keeps the photograph out of the left half entirely, so the worst
+ * case above is a bound rather than a description. Raising either number is a
+ * contrast decision, not a taste one.
+ */
+export const LINE_GROUND_OPACITY: Record<ThemeMode, number> = { light: 0.08, dark: 0.12 }
+
 export function themeConfig(mode: ThemeMode): ThemeConfig {
   const accent = mode === 'dark' ? CASIO_BLUE_DARK : CASIO_BLUE_LIGHT
   return {
