@@ -1,0 +1,185 @@
+# LCW-M100 — seeded 2026-08-21 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# LINEAGE AND WAVE CEPTOR ARE BOTH TRUE HERE, AND THEY ARE NOT ALTERNATIVES.
+# Every one of the four Japanese pages names LINEAGE six times AND links twice to
+# `watches/casio/waveceptor/`. LINEAGE is the design collection — thin titanium
+# and steel dress cases — and Wave Ceptor is the radio-control technology inside
+# it, so a watch is both at once. Neither is `productSeries`, which says
+# `Solar combination` on all eight; that field is Casio's internal taxonomy and
+# has now given four different kinds of answer across four series, so it is a
+# hint and not a definition.
+#
+# Only Wave Ceptor is findable from a roster (`/us/watches/casio/waveceptor/` is
+# in Casio's sitemap). LINEAGE is not — no segment, no path — so it has to be
+# read off a page, like PHYS before it.
+#
+# HALF THIS FILE WAS READ SHORTER THAN THE OTHER HALF, and the split is exactly
+# the language of the capture. The four with an English capture came back from
+# the crawl with `display`, `movement`, `case.material` and `features`. The four
+# with only a Japanese one came back with `case` and `water_resistance_m`.
+# Recovered below off the page each already cites: ステンレススチール / チタン,
+# 電波時計 … MULTIBAND6, タフソーラー, 無機ガラス / サファイアガラス, and the
+# 時計機能 rows.
+#
+# `movement: solar-radio` because each page states both halves, and `features`
+# carries `radio-controlled` and `tough-solar` for the same reason — one fact in
+# the two places the schema keeps it.
+#
+# Two asymmetries are left standing rather than smoothed, both being page
+# templates and not watches:
+#   * the four Japanese entries carry `multi-alarm` (時刻アラーム5本) and the
+#     four English ones do not (their template says only "alarm");
+#   * the four English entries carry `display: ana-digi` and the Japanese ones do
+#     not, because no Japanese row states a display type. They are the same
+#     watches; smoothing either way means overruling one of Casio's own pages.
+#
+# The variants differ as the readings say: DE is steel at 98 g with 無機ガラス,
+# DSE steel at 115.5 g, TSE titanium at 73 g with sapphire. TSE-7A read off the
+# Japanese page lands on titanium and sapphire independently, which is the
+# English TSE entries' values arrived at from the other language.
+#
+# `discontinued` SPLITS ALONG THE SAME LINE AS THE LANGUAGE, and that is the
+# measurement's shape rather than the watches'. `availability.ts` reads Casio's
+# sitemap for us, intl and de (D59): the four DSE/TSE references with European
+# pages are in it and read `false`, and the four `DE` references sold in Japan
+# were never going to be and read `true`. Measured, not written by hand — but the
+# split is a fact about which three locales were asked.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `module` — no row on any of the eight states one.
+#   * `display` on the four Japanese entries, per above.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: lcw-m100
+  name: LCW-M100
+  line: vintage
+  # Both of Casio's own names for this watch, off the four Japanese pages.
+  aka: [Lineage, Wave Ceptor]
+
+models:
+  - id: lcw-m100de-1a
+    ref: LCW-M100DE-1A
+    source:
+      { url: 'https://web.archive.org/web/20221129004616id_/https://www.casio.com/jp/watches/casio/product.LCW-M100DE-1A/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 43.8, width_mm: 40, depth_mm: 9.4, weight_g: 98, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [alarm, multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, mineral-glass]
+    image: lcw-m100de-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221129004616id_/https://www.casio.com/jp/watches/casio/product.LCW-M100DE-1A/'
+    discontinued: true
+  - id: lcw-m100de-1a3
+    ref: LCW-M100DE-1A3
+    source:
+      { url: 'https://web.archive.org/web/20221202070823id_/https://www.casio.com/jp/watches/casio/product.LCW-M100DE-1A3/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 43.8, width_mm: 40, depth_mm: 9.4, weight_g: 98, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [alarm, multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, mineral-glass]
+    image: lcw-m100de-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221202070823id_/https://www.casio.com/jp/watches/casio/product.LCW-M100DE-1A3/'
+    discontinued: true
+  - id: lcw-m100de-7a
+    ref: LCW-M100DE-7A
+    source:
+      { url: 'https://web.archive.org/web/20210408125736id_/https://www.casio.com/jp/watches/casio/product.LCW-M100DE-7A/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 43.8, width_mm: 40, depth_mm: 9.4, weight_g: 98, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [alarm, multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, mineral-glass]
+    image: lcw-m100de-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210408125736id_/https://www.casio.com/jp/watches/casio/product.LCW-M100DE-7A/'
+    discontinued: true
+  - id: lcw-m100dse-1a
+    ref: LCW-M100DSE-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715070610id_/https://www.casio.com/europe/watches/casio/product.LCW-M100DSE-1A/', kind: official }
+    display: ana-digi
+    movement: solar-radio
+    case: { height_mm: 43.8, width_mm: 40, depth_mm: 9.4, weight_g: 115.5, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, sapphire-crystal]
+    image: lcw-m100dse-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715070610id_/https://www.casio.com/europe/watches/casio/product.LCW-M100DSE-1A/'
+    discontinued: false
+  - id: lcw-m100dse-2a
+    ref: LCW-M100DSE-2A
+    source:
+      { url: 'https://web.archive.org/web/20240715070800id_/https://www.casio.com/europe/watches/casio/product.LCW-M100DSE-2A/', kind: official }
+    display: ana-digi
+    movement: solar-radio
+    case: { height_mm: 43.8, width_mm: 40, depth_mm: 9.4, weight_g: 115.5, material: 'Stainless steel' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, sapphire-crystal]
+    image: lcw-m100dse-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715070800id_/https://www.casio.com/europe/watches/casio/product.LCW-M100DSE-2A/'
+    discontinued: false
+  - id: lcw-m100tse-1a
+    ref: LCW-M100TSE-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715070659id_/https://www.casio.com/europe/watches/casio/product.LCW-M100TSE-1A/', kind: official }
+    display: ana-digi
+    movement: solar-radio
+    case: { height_mm: 43.8, width_mm: 40, depth_mm: 9.4, weight_g: 73, material: 'Titanium' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, sapphire-crystal]
+    image: lcw-m100tse-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715070659id_/https://www.casio.com/europe/watches/casio/product.LCW-M100TSE-1A/'
+    discontinued: false
+  - id: lcw-m100tse-1a2
+    ref: LCW-M100TSE-1A2
+    source:
+      { url: 'https://web.archive.org/web/20240715070733id_/https://www.casio.com/europe/watches/casio/product.LCW-M100TSE-1A2/', kind: official }
+    display: ana-digi
+    movement: solar-radio
+    case: { height_mm: 43.8, width_mm: 40, depth_mm: 9.4, weight_g: 73, material: 'Titanium' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, sapphire-crystal]
+    image: lcw-m100tse-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715070733id_/https://www.casio.com/europe/watches/casio/product.LCW-M100TSE-1A2/'
+    discontinued: false
+  - id: lcw-m100tse-7a
+    ref: LCW-M100TSE-7A
+    source:
+      { url: 'https://web.archive.org/web/20210315142857id_/https://www.casio.com/jp/watches/casio/product.LCW-M100TSE-7A/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 43.8, width_mm: 40, depth_mm: 9.4, weight_g: 73, material: 'Titanium' }
+    water_resistance_m: 50
+    features: [alarm, multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, sapphire-crystal]
+    image: lcw-m100tse-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210315142857id_/https://www.casio.com/jp/watches/casio/product.LCW-M100TSE-7A/'
+    discontinued: true
