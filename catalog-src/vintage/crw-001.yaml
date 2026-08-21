@@ -8,6 +8,27 @@
 # nothing (D25) and a news release states no specifications (D50). Neither page
 # is asked for what the other says.
 #
+# THE TWO REFERENCES THIS SERIES DOES NOT CONTAIN, AND HOW THAT IS KNOWN.
+# `CRW-001G-9` and `CRW-001JB-9` are in Casio's sitemap and have no archived
+# product page, so nothing states a specification for them and they are not
+# written (D46). The commit that seeded this file said the same thing on the
+# strength of a domain-wide CDX query — but that query was built by stripping the
+# hyphen out of the series id, so it asked for `product.CRW001` while every real
+# URL reads `product.CRW-001G-9`. It matched nothing it could ever have matched,
+# returned `[]`, and `[]` is valid JSON, so the guard that catches the archive's
+# HTML cooldown had nothing to catch. The claim was true and its evidence was not.
+#
+# Re-measured 2026-08-22 with the hyphen, and with `product.A159` interleaved in
+# the same run as a known-positive control:
+#
+#   product.CRW-001   111 rows, 29 are 200 — CRW-001-1 only, 13 captures
+#   product.A159       45 rows, 43 are 200 across five references  (control OK)
+#   product.CRW001      0 rows                                    (the old bug)
+#
+# The control answering proves the run was not a cooldown, so zero for those two
+# is absence and not silence. casio.com answers 403 here and 200 to a person, so
+# somebody with a browser could still settle both.
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * any field the page does not state. Absent means unknown, never zero (D27).
