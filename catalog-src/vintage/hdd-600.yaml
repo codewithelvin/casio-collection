@@ -1,0 +1,67 @@
+# HDD-600 — seeded 2026-08-22 from Casio's own
+# product page, retrieved from the Internet Archive (D52). Every field on the
+# entry below, and its photograph, comes from the one page named in its `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# THE SURVEY CALLED THIS REFERENCE `NO-PAGE`, AND IT WAS WRONG. That state is the
+# one that ends work without doing any — it says nothing anywhere states a
+# specification, so the watch must not be written. Here a page exists, is
+# archived, answers 200, and states seventeen rows in English.
+#
+# It was invisible twice over, both times for the same reason: the only capture's
+# URL carries a tracking parameter.
+#
+#   https://www.casio.com/us/watches/casio/product.HDD-600-1AV/?intaid=recommend_productsdetail
+#
+# The per-segment CDX index did not hold it, and a domain-wide query does return
+# it but the reference-extractor reads `product\.([^/]+)/?$` and that pattern
+# cannot survive a `?`. So the reference read as zero captures from both
+# directions, which is exactly what a genuinely unarchived watch reads as.
+# Proved by a hand query on `product.HDD-600` with `product.SGW-100` interleaved
+# as a control in the same run: the control returned 27 captures across seven
+# references, so the run was healthy and the single HDD row was real.
+#
+# Seeded by hand because no tool can see that capture, not to work around one.
+#
+# NOT A SPORTS GEAR / PHYS WATCH, which is why it sits alone. It was a candidate
+# when the "phys/sport gear" scope was resolved, and Casio's own page settles it
+# against: `productSeries: "Digital"`, where the SGW-100 and SDB-100 pages say
+# `SPORTS GEAR` and link to `/jp/watches/casio/phys/`. Kept because a reference
+# with a page that states its specifications should be catalogued whatever
+# collection it belongs to.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `movement` and `display` — no row states either. The page gives a CR2016
+#     lasting ten years and ±20 seconds a month, which are a power source and an
+#     accuracy, and `quartz` or `digital` from them would be inference (D25).
+#   * the glass. The page states `Resin Glass / Spherical Glass`, and `FEATURES`
+#     has `mineral-glass` and `sapphire-crystal` and no term for resin.
+#   * `full-auto-calendar`. The page says `Auto-calendar (to year 2099)`, not
+#     "full auto", and the vocabulary distinguishes the two.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: hdd-600
+  name: HDD-600
+  line: vintage
+
+models:
+  - id: hdd-600-1av
+    ref: HDD-600-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221223200301id_/https://www.casio.com/us/watches/casio/product.HDD-600-1AV/?intaid=recommend_productsdetail', kind: official }
+    module: '2889'
+    case: { height_mm: 44.1, width_mm: 43, depth_mm: 11.6, weight_g: 30.1, material: 'Resin' }
+    water_resistance_m: 100
+    features: [world-time, dual-time, stopwatch, alarm, hourly-time-signal, calendar, led-light, afterglow]
+    image: hdd-600-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221223200301id_/https://www.casio.com/us/watches/casio/product.HDD-600-1AV/?intaid=recommend_productsdetail'
+    discontinued: false
