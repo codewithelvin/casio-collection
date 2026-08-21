@@ -1,0 +1,124 @@
+# SGW-100 — seeded 2026-08-21 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# SGW IS "SPORTS GEAR", AND CASIO'S OWN PAGES SAY SO. Two of them, in two
+# locales: the Japanese page prints `SPORTS GEAR` above `SGW-100J-1JF`, and the
+# European page carries `productSeries: "SPORTS GEAR"`. Worth recording because
+# the name is not derivable from the reference and appears nowhere in either
+# roster's paths — casio.com has no `sports-gear` segment and no `phys` one
+# either, so a scope named after the collection cannot be resolved by searching
+# for it. It has to be read off a page.
+#
+# THE JAPANESE ENTRY IS READ SHORTER THAN ITS IDENTICAL SIBLINGS, and the reason
+# is the reader and not the watch. Four of these five cite English pages and came
+# back complete. `sgw-100j-1` cites the Japanese one and came back with `case`
+# and `water_resistance_m` only — no `material`, no `features` — because the
+# label is `ケース・ベゼル材質` and not "Case / bezel material". Recovered below
+# off that same page: 樹脂／アルミ, 無機ガラス, フルオートカレンダー and the rest.
+#
+# One real difference survives. The Japanese template states `時刻アラーム5本`
+# — five alarms — where the English template says only "alarm", so
+# `sgw-100j-1` carries `multi-alarm` and its identical siblings do not. That is a
+# difference between two page templates, not between two watches; it is left as
+# each page states it, because the alternative is deciding which of Casio's own
+# pages to disbelieve.
+#
+# `sgw-100j-1` READS `discontinued: true` WHERE ITS SIBLINGS READ `false`, and
+# that is a locale artefact rather than a fact about the watch. `availability.ts`
+# measures Casio's sitemap for us, intl and de (D59); `SGW-100J-1` is the
+# Japanese reference and was never going to be in those three. It stands as
+# measured because a hand-written value would be a judgement, but do not read the
+# difference between these five entries as five different production states.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `movement` on `sgw-100j-1`. The Japanese page states 電池寿命：約3年 and
+#     平均月差：±20秒 — a battery life and an accuracy, which imply quartz
+#     without stating it. The English pages state it and carry it; this one does
+#     not, and D25's discipline about inference applies to every field.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: sgw-100
+  name: SGW-100
+  line: vintage
+  # Casio's own collection name for this reference, from the two pages above.
+  aka: [Sports Gear]
+
+models:
+  - id: sgw-100-1v
+    ref: SGW-100-1V
+    source:
+      { url: 'https://web.archive.org/web/20240715101834id_/https://www.casio.com/europe/watches/casio/product.SGW-100-1V/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.5, width_mm: 47.6, depth_mm: 13.2, weight_g: 55, material: 'Resin / Aluminium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, compass, thermometer, mineral-glass]
+    image: sgw-100-1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101834id_/https://www.casio.com/europe/watches/casio/product.SGW-100-1V/'
+    discontinued: false
+  - id: sgw-100-2b
+    ref: SGW-100-2B
+    source:
+      { url: 'https://web.archive.org/web/20240715101828id_/https://www.casio.com/europe/watches/casio/product.SGW-100-2B/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.5, width_mm: 47.6, depth_mm: 13.2, weight_g: 55, material: 'Resin / Aluminium' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, compass, thermometer, mineral-glass]
+    image: sgw-100-2b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101828id_/https://www.casio.com/europe/watches/casio/product.SGW-100-2B/'
+    discontinued: false
+  - id: sgw-100-3av
+    ref: SGW-100-3AV
+    source:
+      { url: 'https://web.archive.org/web/20220818042235id_/https://www.casio.com/us/watches/casio/product.SGW-100-3AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.5, width_mm: 47.6, depth_mm: 13.2, weight_g: 55, material: 'Resin / Aluminum' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, compass, thermometer, mineral-glass]
+    image: sgw-100-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220818042235id_/https://www.casio.com/us/watches/casio/product.SGW-100-3AV/'
+    discontinued: false
+  - id: sgw-100b-3v
+    ref: SGW-100B-3V
+    source:
+      { url: 'https://web.archive.org/web/20220511180027id_/https://www.casio.com/us/watches/casio/product.SGW-100B-3V/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.5, width_mm: 47.6, depth_mm: 13.2, weight_g: 53, material: 'Resin / Aluminum' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, compass, thermometer, mineral-glass]
+    image: sgw-100b-3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220511180027id_/https://www.casio.com/us/watches/casio/product.SGW-100B-3V/'
+    discontinued: false
+  - id: sgw-100j-1
+    ref: SGW-100J-1
+    source:
+      { url: 'https://web.archive.org/web/20210518034716id_/https://www.casio.com/jp/watches/casio/product.SGW-100J-1/', kind: official }
+    case: { height_mm: 51.5, width_mm: 47.6, depth_mm: 13.2, weight_g: 55, material: 'Resin / Aluminium' }
+    water_resistance_m: 200
+    features: [alarm, multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, compass, thermometer, mineral-glass]
+    image: sgw-100j-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210518034716id_/https://www.casio.com/jp/watches/casio/product.SGW-100J-1/'
+    discontinued: true
