@@ -8,14 +8,40 @@
 # nothing (D25) and a news release states no specifications (D50). Neither page
 # is asked for what the other says.
 #
+# REFRESHED 2026-08-22. The three entries gained `module`, `case` and
+# `water_resistance_m` off the very pages they already cited — the values were
+# there all along and the first pass could not see them. This series has **no
+# English capture** (`survey.ts` reports `caps=4/0en` for TRN-50-2A), and the
+# seeder reads English row labels, so it took the locale-independent taxonomy
+# strings (`movement`, `features`) and dropped every German- and
+# Italian-labelled row. `Wasserdicht bis 5 bar` and `Impermeabile fino a 5 bar`
+# are the same statement as `Water Resistance 5 bar`; only the label differs.
+#
+# The dimensions are a key-for-key copy of each page's own product block, whose
+# `productName` is that entry's own reference — checked, because three pages
+# stating identical numbers is also what one watch's data copied onto three
+# pages looks like.
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — the 50th-anniversary release of 2024-02-15 names `TRN-50` ten
+#     times and never a reference, so it dates the series and not these three
+#     watches. Inferring one from it is what D25 forbids. It states 1974, but
+#     that is the original Casiotron, which is a reference in neither roster.
+#   * `case.material` — both pages label it (`Gehäuse- und Lünettenmaterial`,
+#     `Materiale della cassa e della lunetta`) and the value sits beyond the
+#     label's markup. It needs the row parser, not a hand-read.
 #   * any field the page does not state. Absent means unknown, never zero (D27).
 
 series:
   id: trn-50
   name: TRN-50
   line: vintage
+  # Casio's own name for this collection, from all three product pages
+  # (`productSeries: "CASIOTRON,Casio Watch 50th Anniversary"`) and from the
+  # sitemap path `/watches/casio/casiotron/`. Nothing else in the catalogue
+  # carries the word, so without this no reader searching it arrives (FR-2.1).
+  aka: [Casiotron]
 
 models:
   - id: trn-50-2a
@@ -23,6 +49,9 @@ models:
     source:
       { url: 'https://web.archive.org/web/20240216075104id_/https://www.casio.com/de/watches/casio/vintage/product.TRN-50-2A/', kind: official }
     movement: solar
+    module: '3542'
+    case: { height_mm: 42.7, width_mm: 39.1, depth_mm: 12.3, weight_g: 111 }
+    water_resistance_m: 50
     features: [alarm, super-illuminator, bluetooth, tough-solar]
     image: trn-50-2a
     image_credit:
@@ -35,6 +64,9 @@ models:
     source:
       { url: 'https://web.archive.org/web/20250407152859id_/https://www.casio.com/de/watches/casio/vintage/product.TRN-50SS-2A/', kind: official }
     movement: solar
+    module: '3542'
+    case: { height_mm: 42.7, width_mm: 39.1, depth_mm: 12.3, weight_g: 111 }
+    water_resistance_m: 50
     features: [alarm, super-illuminator, bluetooth, tough-solar]
     image: trn-50ss-2a
     image_credit:
@@ -47,6 +79,9 @@ models:
     source:
       { url: 'https://web.archive.org/web/20241228110309id_/https://www.casio.com/it/watches/casio/vintage/product.TRN-50ZE-1A/', kind: official }
     movement: solar
+    module: '3542'
+    case: { height_mm: 42.7, width_mm: 39.1, depth_mm: 12.3, weight_g: 111 }
+    water_resistance_m: 50
     features: [super-illuminator, bluetooth, tough-solar]
     image: trn-50ze-1a
     image_credit:
