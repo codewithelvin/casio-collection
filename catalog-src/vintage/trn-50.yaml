@@ -17,10 +17,24 @@
 # Italian-labelled row. `Wasserdicht bis 5 bar` and `Impermeabile fino a 5 bar`
 # are the same statement as `Water Resistance 5 bar`; only the label differs.
 #
-# The dimensions are a key-for-key copy of each page's own product block, whose
-# `productName` is that entry's own reference — checked, because three pages
-# stating identical numbers is also what one watch's data copied onto three
-# pages looks like.
+# ALL THREE CARRY THE SAME CASE, MODULE AND WEIGHT, AND THAT IS NOT AN ERROR.
+# Three references with byte-identical measurements is also exactly what one
+# watch's data copied onto three pages looks like, so it was tested rather than
+# assumed: each page's own VISIBLE specification table states them, in two
+# different languages, and each page's product object carries its own reference
+# in `DisplayName`/`productName`.
+#
+#   TRN-50-2A    (de)  Gehäusegröße (L x B x H)  42.7 × 39.1 × 12.3 mm
+#                      Gewicht 111 g   Gehäuse- und Lünettenmaterial Edelstahl
+#   TRN-50SS-2A  (de)  Gehäusegröße (L x B x H)  42.7 × 39.1 × 12.3 mm
+#                      Gewicht 111 g   Gehäuse- und Lünettenmaterial Edelstahl
+#   TRN-50ZE-1A  (it)  Dimensioni della cassa (A x L x P)  42.7 × 39.1 × 12.3 mm
+#                      Peso 111 g      Materiale … acciaio inossidabile
+#
+# They are three editions of one steel case. What actually differs between them
+# is the BAND — `-2A` a three-fold one-touch clasp, `SS-2A` and `ZE-1A` a steel
+# bracelet — and the schema has no band field, so that difference is not
+# recorded anywhere below. It is the honest answer to "why do these look alike".
 #
 # DELIBERATELY NOT WRITTEN:
 #   * `family` — a judgement about how a watch looks, and a human's to make.
@@ -28,9 +42,8 @@
 #     times and never a reference, so it dates the series and not these three
 #     watches. Inferring one from it is what D25 forbids. It states 1974, but
 #     that is the original Casiotron, which is a reference in neither roster.
-#   * `case.material` — both pages label it (`Gehäuse- und Lünettenmaterial`,
-#     `Materiale della cassa e della lunetta`) and the value sits beyond the
-#     label's markup. It needs the row parser, not a hand-read.
+#   * `display` — no specification row states it. Every "Display" on these pages
+#     is prose or CSS, and `digital` here would be read off the photograph.
 #   * any field the page does not state. Absent means unknown, never zero (D27).
 
 series:
@@ -50,7 +63,7 @@ models:
       { url: 'https://web.archive.org/web/20240216075104id_/https://www.casio.com/de/watches/casio/vintage/product.TRN-50-2A/', kind: official }
     movement: solar
     module: '3542'
-    case: { height_mm: 42.7, width_mm: 39.1, depth_mm: 12.3, weight_g: 111 }
+    case: { height_mm: 42.7, width_mm: 39.1, depth_mm: 12.3, weight_g: 111, material: 'Stainless steel' }
     water_resistance_m: 50
     features: [alarm, super-illuminator, bluetooth, tough-solar]
     image: trn-50-2a
@@ -65,7 +78,7 @@ models:
       { url: 'https://web.archive.org/web/20250407152859id_/https://www.casio.com/de/watches/casio/vintage/product.TRN-50SS-2A/', kind: official }
     movement: solar
     module: '3542'
-    case: { height_mm: 42.7, width_mm: 39.1, depth_mm: 12.3, weight_g: 111 }
+    case: { height_mm: 42.7, width_mm: 39.1, depth_mm: 12.3, weight_g: 111, material: 'Stainless steel' }
     water_resistance_m: 50
     features: [alarm, super-illuminator, bluetooth, tough-solar]
     image: trn-50ss-2a
@@ -80,7 +93,7 @@ models:
       { url: 'https://web.archive.org/web/20241228110309id_/https://www.casio.com/it/watches/casio/vintage/product.TRN-50ZE-1A/', kind: official }
     movement: solar
     module: '3542'
-    case: { height_mm: 42.7, width_mm: 39.1, depth_mm: 12.3, weight_g: 111 }
+    case: { height_mm: 42.7, width_mm: 39.1, depth_mm: 12.3, weight_g: 111, material: 'Stainless steel' }
     water_resistance_m: 50
     features: [super-illuminator, bluetooth, tough-solar]
     image: trn-50ze-1a
