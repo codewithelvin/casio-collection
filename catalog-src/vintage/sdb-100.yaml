@@ -1,0 +1,83 @@
+# SDB-100 — seeded 2026-08-21 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# THE LAP-MEMORY RUNNER'S WATCH, AND THE COLLECTION WITH TWO NAMES. Both pages
+# carry `productSeries: "SPORTS GEAR"` and both link to
+# `/jp/watches/casio/phys/` — so Casio calls this one thing by two of its own
+# names, PHYS as the collection you navigate to and SPORTS GEAR as the series
+# field. Neither is visible to this project's rosters: the sitemap reads us,
+# intl and de, and the archive index records only `product.` URLs, so a
+# collection page is not in it. Both links appear on the Japanese pages and
+# **zero** times on the European SGW-100 page, which is the whole explanation —
+# PHYS is Japanese-market branding, and a scope named after it cannot be
+# resolved by searching either roster for it.
+#
+# Both captures are Japanese and the reader takes `case` and
+# `water_resistance_m` from a Japanese page but not `features`, so the eleven
+# below were read off the page each entry already cites: ワールドタイム,
+# デュアルタイム, ストップウオッチ (100時間, ラップ／スプリット, 60本メモリー),
+# タイマー, 時刻アラーム5本・時報, LEDバックライト（オートライト、残照機能付き）,
+# フルオートカレンダー.
+#
+# `discontinued: true` ON BOTH IS D59'S MEASUREMENT AND ALSO ITS BLIND SPOT.
+# `availability.ts` reads Casio's sitemap for us, intl and de; these are `J`
+# references sold in Japan, so absence from those three lists was guaranteed
+# before it looked. It stands as measured — a hand-written value would be a
+# judgement — but it is not evidence that Casio stopped making them.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `case.material`, on both. Each page lists TWO values under
+#     `ケース・ベゼル材質` — 樹脂／アルミ and 樹脂／ステンレススチール — and the
+#     two pages list the same pair as each other, so neither states which one is
+#     its own reference. One of them is presumably the -1A and the other the -1B,
+#     and picking would be a guess dressed as a reading. The dimensions and mass
+#     are single-valued and identical on both pages, so those are written.
+#   * `movement`. 電池寿命：約10年 and 平均月差：±30秒 are a battery life and an
+#     accuracy; `quartz` from them would be an inference (D25's discipline).
+#   * the glass. Both state 樹脂ガラス — resin glass — and `FEATURES` has
+#     `mineral-glass` and `sapphire-crystal` and no term for resin. Writing
+#     `mineral-glass` would be wrong, not approximate.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: sdb-100
+  name: SDB-100
+  line: vintage
+  # Casio's own two names for the collection, both off the cited pages.
+  aka: [Sports Gear, PHYS]
+
+models:
+  - id: sdb-100j-1a
+    ref: SDB-100J-1A
+    source:
+      { url: 'https://web.archive.org/web/20210413051727id_/https://www.casio.com/jp/watches/casio/product.SDB-100J-1A/', kind: official }
+    case: { height_mm: 43.9, width_mm: 35.1, depth_mm: 11.4, weight_g: 28.2 }
+    water_resistance_m: 50
+    features: [alarm, multi-alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow]
+    image: sdb-100j-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210413051727id_/https://www.casio.com/jp/watches/casio/product.SDB-100J-1A/'
+    discontinued: true
+  - id: sdb-100j-1b
+    ref: SDB-100J-1B
+    source:
+      { url: 'https://web.archive.org/web/20210413042623id_/https://www.casio.com/jp/watches/casio/product.SDB-100J-1B/', kind: official }
+    case: { height_mm: 43.9, width_mm: 35.1, depth_mm: 11.4, weight_g: 28.2 }
+    water_resistance_m: 50
+    features: [alarm, multi-alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow]
+    image: sdb-100j-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210413042623id_/https://www.casio.com/jp/watches/casio/product.SDB-100J-1B/'
+    discontinued: true
