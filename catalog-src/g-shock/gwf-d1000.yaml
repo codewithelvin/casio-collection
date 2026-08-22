@@ -62,6 +62,8 @@ series:
   id: gwf-d1000
   name: GWF-D1000
   line: g-shock
+  # D32 — Casio's own name for this watch, off the module guide cited below.
+  family: frogman
   aka: [GWFD1000, Frogman]
 
 models:
