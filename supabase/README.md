@@ -162,6 +162,57 @@ A table arrives with the milestone that uses it, carrying its own policies in
 the same file (D14). A table created early is a table briefly readable by the
 whole internet, because the anon key is public and RLS is the only gate.
 
+## The Edge Function, and where the SMTP details go
+
+`functions/suggest-correction/` — the **Improve this entry** form on a watch page
+posts here, and this is the only server-side code in the project. It exists
+because SMTP cannot be spoken from a browser and an SMTP password must never be
+in a bundle: the anon key beside it is public by design (D14), and a mail
+password is the exact opposite of that.
+
+**Paste the SMTP details here and nowhere else.** Not in `.env`, not in the
+repository, not in a GitHub secret — function secrets live in the Supabase
+project and are readable only by the function.
+
+```
+supabase secrets set \
+  SMTP_HOST=smtp.example.com \
+  SMTP_PORT=587 \
+  SMTP_USERNAME='...' \
+  SMTP_PASSWORD='...' \
+  SMTP_FROM='Casio Vault <noreply@example.com>' \
+  SUGGESTIONS_TO=you@example.com
+
+supabase functions deploy suggest-correction --no-verify-jwt
+```
+
+| Secret | What it is |
+|---|---|
+| `SMTP_HOST` / `SMTP_PORT` | the mail server. **465 is implicit TLS, 587 is STARTTLS** — the function switches on the port number, and getting it backwards is the usual reason a correct password appears not to work |
+| `SMTP_USERNAME` / `SMTP_PASSWORD` | the mailbox credentials |
+| `SMTP_FROM` | the envelope sender. It must be an address the server is allowed to send as, or the provider rejects the message — a reader's own address never becomes the From, it becomes the `Reply-To` |
+| `SUGGESTIONS_TO` | where suggestions land |
+
+`--no-verify-jwt` is the client's decision of 2026-08-22 that **anyone may send a
+suggestion without an account** — the person who knows a case width is usually
+the one holding the watch. That makes this a public endpoint, so the function
+carries its own guards: a honeypot field, a 100 KB body cap, and five sends per
+address per hour. The rate limit is in memory inside one function instance, so it
+stops the ordinary case and not a distributed flood; the real backstop for that
+is the mail provider's own sending limit. The function's header comment says the
+same thing and names the table-backed version as the next step if abuse ever
+actually happens.
+
+Until the secrets are set the function answers **503** and logs why, and the form
+tells the reader to try again — which is honest, because there is nothing they
+can do about it. Until a Supabase project is configured at all (§14.2) the button
+does not render.
+
+**Nothing here writes to the catalogue, by decision.** A suggestion is a lead
+addressed to a person, the same standing D22 gives a missing-reference report: a
+field still needs a page that states it before it can be published (rule 3,
+§10.8). The email says so at the bottom of every message.
+
 ## Keeping it awake
 
 `.github/workflows/keepalive.yml` (D23). The free tier pauses after seven days

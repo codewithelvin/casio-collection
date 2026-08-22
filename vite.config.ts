@@ -222,6 +222,13 @@ export default defineConfig(({ mode }) => {
         // just shows the wrong header to the wrong person.
         'src/auth/session.ts': { lines: 90, functions: 90, statements: 90 },
         'src/auth/config.ts': { lines: 90, functions: 90, statements: 90 },
+        // The suggestion form's pure half (client, 2026-08-22). Same argument as
+        // the rest of this list: a prefill that quietly fails reads as *the
+        // catalogue does not know this* and invites a reader to retype what it
+        // already holds, and a diff that reports an unchanged field sends the
+        // maintainer to look at a watch nobody said anything about. Neither
+        // throws.
+        'src/suggest/**': { lines: 90, functions: 90, statements: 90 },
       },
     },
   },

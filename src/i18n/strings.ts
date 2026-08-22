@@ -353,6 +353,33 @@ const en = {
   'request.failed': 'That did not send. Trying again usually settles it.',
   'request.duplicate': 'You have already reported that one — it is on the list.',
 
+  // Suggesting a correction to a watch that IS catalogued (client, 2026-08-22).
+  //
+  // The sibling of the D22 report above, and the copy has the same job: say what
+  // happens next, and say plainly that it is a person rather than a pipeline.
+  // The difference is who may send one — this needs no account, because the
+  // reader most likely to know a case width is the one who owns the watch and
+  // has no reason to sign in to tell us.
+  'improve.trigger': 'Something missing or wrong?',
+  'improve.title': 'Improve this entry',
+  'improve.lead':
+    'Fill in what you know and leave the rest. A person reads these and checks the page before anything changes here — nothing you type goes into the catalogue on its own.',
+  'improve.link': 'A page that states it',
+  'improve.link.hint':
+    'Nothing enters this catalogue without a page to read it off. A link is not required, and it is the difference between a fact somebody can publish and a lead somebody has to chase.',
+  'improve.note': 'Anything else worth knowing',
+  'improve.email': 'Your email, if a reply would help',
+  'improve.send': 'Send it',
+  'improve.cancel': 'Cancel',
+  'improve.nothing': 'Change something above or write a note — an empty form has nothing to send.',
+  'improve.invalid': 'Those want to be numbers.',
+  'improve.sent.title': 'Thank you — that is with a person now',
+  'improve.sent.body':
+    'Somebody reads these and sources the change from a real page before it appears. That takes as long as it takes, and there is no queue to watch.',
+  'improve.failed': 'That did not send. Trying again usually settles it.',
+  // The Edge Function's own rate limit, said as a rule rather than a fault.
+  'improve.capped': 'That is several suggestions from here in a short while. Give it an hour.',
+
   // Offline (M6b, D33, §3.9)
   //
   // The whole rule in one sentence, said where somebody meets it. D33 refuses

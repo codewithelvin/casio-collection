@@ -32,16 +32,12 @@ import {
   seriesById,
   useCatalog,
 } from '../../catalog/client.ts'
-import type {
-  Catalog,
-  ImageCredit,
-  PublishedModel,
-  PublishedSeries,
-} from '../../catalog/schema.ts'
+import type { Catalog, ImageCredit, PublishedModel, PublishedSeries } from '../../catalog/schema.ts'
 import { IMAGE_LICENCE_URLS, isLicensed } from '../../catalog/vocabulary.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
 import { OwnershipControls } from '../../ui/OwnershipControls'
+import { ImproveEntry } from '../../ui/ImproveEntry'
 import { NoteEditor } from '../../ui/NoteEditor'
 import { useOwnership } from '../../collection/mutations.ts'
 import { LINE_ACCENTS } from '../../theme/tokens'
@@ -322,6 +318,13 @@ function WatchDetail({
               {sourceLabel(model.source.kind)} <ExportOutlined />
             </a>
           </Typography.Paragraph>
+
+          {/* Directly under the source, which is the argument for putting it
+              here: the reader has just been told what this entry was read off
+              and how thin that page was. The offer to improve it belongs in the
+              same breath, and nowhere near the Owned button — one is a fact
+              about the reader's shelf and the other is a fact about the watch. */}
+          <ImproveEntry model={model} />
         </div>
       </div>
 
