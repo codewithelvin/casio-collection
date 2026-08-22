@@ -44,6 +44,26 @@ lines:
       - id: octagonal
         name: Octagonal
 
+      # Casio's own sub-collections inside Master of G, and the two of them that
+      # hold more than one catalogued series. Neither name is inferred from a
+      # reference prefix: both are already in this repo as `aka` values read off
+      # the module guides these series were seeded from — GG-1000 and GWG-1000
+      # say Mudmaster, GWF-1000 and GWF-D1000 say Frogman — and Mudmaster is a
+      # segment in Casio's own sitemap, `gshock/products/mudmaster/gg-b100/`, in
+      # two locales.
+      #
+      # NOT `master-of-g`, which is the collection above these two and does have
+      # a category page of its own (`us/watches/gshock/products/master-of-g/`).
+      # **Nothing states which references are in it.** That page answers 403 to
+      # anything that is not a person and the roster gives it no children, so a
+      # `master-of-g` family would be a guess about five series where these two
+      # are a reading of two. GPR-H1000 is the Rangeman and is the same story
+      # one series smaller: real, named nowhere we can read, and alone.
+      - id: frogman
+        name: Frogman
+      - id: mudmaster
+        name: Mudmaster
+
   # "Casio Collection" is Casio's own name for this line in Europe; "Vintage" is
   # what it is called elsewhere and what collectors say. Both are in the label
   # because a reader arrives with one word or the other.
@@ -71,6 +91,49 @@ lines:
       # arrives, along with that one.
       - id: databank
         name: Databank
+
+      # Casio's own sub-collection inside its Standard range, and the only
+      # family in this file whose membership comes from the **live roster**
+      # rather than from a page: nine `casio/standard/vintage/<series>` paths
+      # name a series this catalogue holds — a130, a158, a159, a168, abl-100,
+      # aq-230, ca-500, la670, la680. The German roster files five of the same
+      # nine under `casio/vintage/brand/`, which is the same claim in the other
+      # locale and nothing new.
+      #
+      # "Casio Vintage" and not plain "Vintage", though Casio's path says the
+      # shorter word. This line is already called Vintage / Casio Collection,
+      # and a family repeating that label would imply the F- and W-series
+      # digitals beside it are somehow not vintage — which is false, and they
+      # are the oldest watches in the catalogue.
+      - id: casio-vintage
+        name: Casio Vintage
+
+      # Read off the pages themselves rather than inferred from anything: all
+      # twelve WVA-M630 pages and all four LCW-M100 ones link to
+      # `watches/casio/waveceptor/`, which is also a segment in Casio's sitemap
+      # (us and de). `productSeries` says `Solar combination` on all twenty and
+      # is **not** the collection name — the link is the evidence and that field
+      # is a hint, which is the finding both files were committed with.
+      #
+      # LCW-M100 is a LINEAGE as well, named six times on each of its pages. A
+      # series carries exactly one family, so the family is the name the two
+      # series share and the other stays in `aka`, where both already are.
+      - id: wave-ceptor
+        name: Wave Ceptor
+
+      # One collection under two of Casio's own names. The SGW-100 pages print
+      # SPORTS GEAR above the reference and carry `productSeries: "SPORTS
+      # GEAR"`; the SDB-100 pages carry the same field and link to
+      # `/jp/watches/casio/phys/`. Both names are in the label because neither
+      # roster has a segment for either — PHYS is Japanese-market branding, and
+      # the sitemap this project reads is us, intl and de — so a reader arrives
+      # with one word or the other and finds nothing under the one we dropped.
+      #
+      # HDD-600 is deliberately **not** in it. It was a candidate when this
+      # collection was resolved and its own page settled it against:
+      # `productSeries: "Digital"`, where these two say SPORTS GEAR.
+      - id: sports-gear
+        name: Sports Gear / PHYS
 
   - id: edifice
     name: Edifice
