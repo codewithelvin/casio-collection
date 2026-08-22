@@ -35,7 +35,6 @@
 # 11 mm for the rest — the only two entries here whose material is not steel.
 #
 # DELIBERATELY NOT WRITTEN:
-#   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * `module` — no row on any of the twelve states one.
 #   * the glass and ネオブライト. Every page states `樹脂ガラス` — resin glass —
 #     and `FEATURES` has `mineral-glass` and `sapphire-crystal` and no term for
@@ -50,6 +49,8 @@ series:
   id: wva-m630
   name: WVA-M630
   line: vintage
+  # D32 — every page cited below links to `watches/casio/waveceptor/`.
+  family: wave-ceptor
   # Casio's own collection name, from the sitemap path and from all twelve pages.
   aka: [Wave Ceptor]
 

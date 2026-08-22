@@ -54,7 +54,6 @@
 # split is a fact about which three locales were asked.
 #
 # DELIBERATELY NOT WRITTEN:
-#   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * `module` — no row on any of the eight states one.
 #   * `display` on the four Japanese entries, per above.
 #   * any field the page does not state. Absent means unknown, never zero (D27).
@@ -63,6 +62,8 @@ series:
   id: lcw-m100
   name: LCW-M100
   line: vintage
+  # D32 — every page cited below links to `watches/casio/waveceptor/`.
+  family: wave-ceptor
   # Both of Casio's own names for this watch, off the four Japanese pages.
   aka: [Lineage, Wave Ceptor]
 
