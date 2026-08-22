@@ -38,7 +38,6 @@
 # difference between these five entries as five different production states.
 #
 # DELIBERATELY NOT WRITTEN:
-#   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * `movement` on `sgw-100j-1`. The Japanese page states 電池寿命：約3年 and
 #     平均月差：±20秒 — a battery life and an accuracy, which imply quartz
 #     without stating it. The English pages state it and carry it; this one does
@@ -49,6 +48,8 @@ series:
   id: sgw-100
   name: SGW-100
   line: vintage
+  # D32 — Casio's own collection name, printed on the pages cited below.
+  family: sports-gear
   # Casio's own collection name for this reference, from the two pages above.
   aka: [Sports Gear]
 

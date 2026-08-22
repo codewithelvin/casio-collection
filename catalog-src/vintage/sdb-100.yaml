@@ -33,7 +33,6 @@
 # judgement — but it is not evidence that Casio stopped making them.
 #
 # DELIBERATELY NOT WRITTEN:
-#   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * `case.material`, on both. Each page lists TWO values under
 #     `ケース・ベゼル材質` — 樹脂／アルミ and 樹脂／ステンレススチール — and the
 #     two pages list the same pair as each other, so neither states which one is
@@ -51,6 +50,8 @@ series:
   id: sdb-100
   name: SDB-100
   line: vintage
+  # D32 — Casio's own collection name, printed on the pages cited below.
+  family: sports-gear
   # Casio's own two names for the collection, both off the cited pages.
   aka: [Sports Gear, PHYS]
 
