@@ -18,6 +18,12 @@ const en = {
   'nav.close': 'Close navigation',
   'nav.lines': 'Lines',
   'nav.skip': 'Skip to content',
+  // §12 — the rail's expander became a control of its own when the Menu went,
+  // so it needs a name of its own. It says which line it opens, because a rail
+  // of seven buttons all called "Expand" is a screen reader reading a list of
+  // seven identical controls.
+  'nav.expand': 'Show series in',
+  'nav.collapse': 'Hide series in',
   'theme.toLight': 'Switch to light theme',
   'theme.toDark': 'Switch to dark theme',
   'search.placeholder': 'Search a reference — GA-2100, F-91W, square',
@@ -598,3 +604,14 @@ export const resultCount = (count: number): string =>
 /** FR-2.3 — *See all 24 results*, the last row of the dropdown. */
 export const seeAllResults = (count: number): string =>
   `${t('search.seeAll')} ${resultCount(count)}`
+
+/**
+ * §8.4 — *Show series in G-SHOCK*, on the rail's expander.
+ *
+ * A function rather than two keys with the line name concatenated at the call
+ * site, for the same reason `seeAllResults` is one: D12 says every user-facing
+ * string goes through this module, and a sentence assembled in a component is a
+ * sentence a second locale cannot reorder.
+ */
+export const expandLine = (name: string, open: boolean): string =>
+  `${open ? t('nav.collapse') : t('nav.expand')} ${name}`

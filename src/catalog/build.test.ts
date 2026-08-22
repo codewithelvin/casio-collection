@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest'
-import { buildCatalog, digestInput, serialiseCatalog, stamp } from './build.ts'
+import {
+  buildCatalog,
+  digestInput,
+  indexOf,
+  serialiseCatalog,
+  serialiseIndex,
+  stamp,
+} from './build.ts'
 import { aModel, aSeries, aSource } from './catalog.fixtures.ts'
 
 describe('the published artefact (§6.2)', () => {
@@ -220,5 +227,43 @@ describe('the stamp', () => {
 
   it('leaves the stamp out of the digest input, so a rebuild of the same data is the same version', () => {
     expect(digestInput(buildCatalog(aSource()))).not.toContain('generatedAt')
+  })
+})
+
+describe('the index artefact (§6.2, the split)', () => {
+  const catalog = stamp(buildCatalog(aSource()), 'a1b2c3d4e5f6', '2026-08-16')
+
+  it('carries the shape of the catalogue and none of its models', () => {
+    const index = indexOf(catalog)
+    expect(index.lines).toEqual(catalog.lines)
+    expect(index.families).toEqual(catalog.families)
+    expect(index.series).toEqual(catalog.series)
+    expect(index.facets).toEqual(catalog.facets)
+    expect('models' in index).toBe(false)
+  })
+
+  it('carries the catalogue’s own version, not one of its own', () => {
+    // This is the property that makes the two files safe to serve separately: an
+    // index stamped `abc` is the index of the catalogue stamped `abc`, so a
+    // mismatch is visible rather than a rail quietly describing last week's
+    // catalogue.
+    const index = indexOf(catalog)
+    expect(index.version).toBe(catalog.version)
+    expect(index.generatedAt).toBe(catalog.generatedAt)
+  })
+
+  it('puts the version and the date first, as the catalogue does', () => {
+    expect(Object.keys(indexOf(catalog)).slice(0, 2)).toEqual(['version', 'generatedAt'])
+  })
+
+  it('is not pretty-printed, because it is fetched before every first paint', () => {
+    const text = serialiseIndex(indexOf(catalog))
+    expect(text).not.toContain('\n  ')
+    expect(text.endsWith('\n')).toBe(true)
+    // And it is smaller than the file it was split out of, which is the only
+    // reason any of this exists. A fixture this small makes the assertion weak
+    // and the direction is what matters; the real numbers are printed by
+    // `catalog:build` on every run.
+    expect(text.length).toBeLessThan(serialiseCatalog(catalog).length)
   })
 })

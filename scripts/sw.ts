@@ -66,6 +66,11 @@ async function main() {
     ...entryScripts,
     ...entryStyles,
     ...fonts,
+    // Both legs of §6.2's split. The index is what the shell waits for and the
+    // catalogue is what FR-11 promises offline, so precaching one without the
+    // other would give an offline visitor either a rail with no watches or a
+    // wait for 105 KB before seeing the rail.
+    '/catalog/catalog-index.json',
     '/catalog/catalog.json',
     '/manifest.webmanifest',
     '/favicon.svg',

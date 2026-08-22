@@ -8,7 +8,8 @@ import { useSessionStore } from './session.ts'
 import { ensureReturnPath } from './pendingIntent.ts'
 import { imageSources } from '../catalog/client.ts'
 import type { PublishedModel } from '../catalog/schema.ts'
-import { LINE_ACCENTS } from '../theme/tokens'
+import { LINE_ACCENTS } from '../theme/palette.ts'
+import AntdRoot from '../ui/AntdRoot'
 import { t } from '../i18n/strings'
 
 /**
@@ -270,4 +271,25 @@ function InboxState({ address }: { address: string }) {
   )
 }
 
-export default SignInModal
+/**
+ * §12 — **the default export brings Ant Design's providers with it, the named one
+ * does not.**
+ *
+ * `AntdRoot` left `App.tsx` so the entry chunk would stop carrying AntD's theme
+ * runtime, which means every AntD island now supplies its own provider. This one
+ * is opened from the shell — `AuthHost` mounts it above every route — so there is
+ * no route wrapper above it to inherit from. Without this the modal would render
+ * in AntD's default theme: AntD's blue instead of Casio's, a 14 px base instead
+ * of §8's 16, and a radius that is not the one the rest of the site uses.
+ *
+ * The named export stays unwrapped because that is what the tests mount, and a
+ * component that can only be rendered inside a provider it supplies itself is a
+ * component whose theming cannot be varied by a test.
+ */
+export default function ThemedSignInModal(props: { methods?: readonly AuthMethod[] }) {
+  return (
+    <AntdRoot>
+      <SignInModal {...props} />
+    </AntdRoot>
+  )
+}

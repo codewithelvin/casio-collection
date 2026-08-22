@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
-import { catalogFixture } from '../test/catalogFixture'
+import { catalogArtefactResponse, catalogFixture } from '../test/catalogFixture'
 import type { Catalog } from '../catalog/schema.ts'
 import { seeAllResults, t } from '../i18n/strings'
 
@@ -78,9 +78,20 @@ describe('the header search (FR-2)', () => {
         source: { url: 'https://example.com/f-91w', kind: 'community' as const },
       })),
     }
+    // Both artefacts from the same twelve-model catalogue (§6.2's split). Serving
+    // it at the index path too would fail the index's parse — `models` is an
+    // unrecognised key there — and leave the rail empty on a test about search.
     vi.stubGlobal(
       'fetch',
-      vi.fn(async () => ({ ok: true, status: 200, json: async () => many })),
+      vi.fn(async (input: RequestInfo | URL) => {
+        return (
+          catalogArtefactResponse(String(input), many) ?? {
+            ok: false,
+            status: 404,
+            json: async () => ({}),
+          }
+        )
+      }),
     )
 
     const user = userEvent.setup()

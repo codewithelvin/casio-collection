@@ -1,4 +1,3 @@
-import { Layout, theme as antdTheme } from 'antd'
 import { t } from '../i18n/strings'
 
 /**
@@ -38,8 +37,6 @@ const REPO_URL = 'https://github.com/codewithelvin/casio-collection'
  * because FR-10.3 says the footer closes with it.
  */
 export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
-  const { token } = antdTheme.useToken()
-
   // A separator glyph rather than a string: it is punctuation between items,
   // it is hidden from assistive technology, and there is nothing in it for a
   // second locale to translate. D12's rule is about user-facing *text*, which is
@@ -51,18 +48,11 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
   )
 
   return (
-    <Layout.Footer
-      style={{
-        borderTop: `1px solid ${token.colorBorderSecondary}`,
-        padding: '10px 16px',
-        background: token.colorBgContainer,
-      }}
-    >
-      <div style={{ maxWidth: 960, margin: '0 auto', display: 'grid', gap: 2 }}>
+    <footer className="cc-footer">
+      <div className="cc-footer-inner">
         <p
           style={{
             margin: 0,
-            fontSize: token.fontSize,
             // Measured before it was changed: at 360 px the footer was 191 px,
             // **24% of the screen**, and principle 5 says the phone is the real
             // device. The size stays — §8.11 requires this sentence in legible
@@ -71,7 +61,6 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
             // leading, which costs nothing legally and 1.5 never earned on a
             // three-line paragraph of small type.
             lineHeight: 1.4,
-            color: token.colorText,
             // No `maxWidth` here, and that was measured too: a 68ch measure reads
             // better in the abstract and wrapped this sentence onto a second line
             // at 1280 px, making the footer *taller* on desktop while saving
@@ -81,15 +70,14 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
           {t('footer.disclaimer')}
         </p>
         <p
+          className="cc-quiet cc-small"
           style={{
             margin: 0,
             display: 'flex',
             flexWrap: 'wrap',
             columnGap: 6,
             rowGap: 0,
-            fontSize: token.fontSizeSM,
             lineHeight: 1.35,
-            color: token.colorTextSecondary,
           }}
         >
           <span>{t('footer.attribution')}</span>
@@ -109,9 +97,11 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
             </>
           ) : null}
           {separator}
-          <span style={{ color: token.colorTextTertiary }}>{t('footer.madeBy')}</span>
+          {/* Quieter still than the metadata beside it, which is the one place
+              this footer has a voice rather than a duty. */}
+          <span style={{ opacity: 0.75 }}>{t('footer.madeBy')}</span>
         </p>
       </div>
-    </Layout.Footer>
+    </footer>
   )
 }

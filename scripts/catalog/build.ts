@@ -7,9 +7,9 @@ import { createHash } from 'node:crypto'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { pathToFileURL } from 'node:url'
 import { gzipSync } from 'node:zlib'
-import { digestInput, serialiseCatalog, stamp } from '../../src/catalog/build.ts'
+import { digestInput, indexOf, serialiseCatalog, serialiseIndex, stamp } from '../../src/catalog/build.ts'
 import { renderSize } from '../../src/catalog/report.ts'
-import { MANIFEST_FILE, OUT_DIR, OUT_FILE } from './load.ts'
+import { INDEX_FILE, MANIFEST_FILE, OUT_DIR, OUT_FILE } from './load.ts'
 import { runValidation } from './validate.ts'
 
 /**
@@ -61,9 +61,21 @@ async function runBuild(): Promise<boolean> {
   console.log(`\n${size.text}`)
   if (!size.ok) return false
 
+  const indexText = serialiseIndex(indexOf(catalog))
+
   await mkdir(OUT_DIR, { recursive: true })
   await writeFile(OUT_FILE, text, 'utf8')
+  await writeFile(INDEX_FILE, indexText, 'utf8')
   console.log(`\nWrote public/catalog/catalog.json at version ${version}`)
+  // Printed rather than merely written, because this is the number that decides
+  // what the front door waits for. If it ever approaches the catalogue's own
+  // size, `models` has stopped being the reason the file is big and the first
+  // leg of §6.2's split has stopped paying for itself.
+  console.log(
+    `Wrote public/catalog/catalog-index.json — ${catalog.series.length} series, ` +
+      `${(Buffer.byteLength(indexText, 'utf8') / 1024).toFixed(1)} KB raw, ` +
+      `${(gzipSync(indexText).length / 1024).toFixed(1)} KB gzipped`,
+  )
 
   const added = await updateManifest(catalog.models.map((model) => model.id))
   if (added > 0) {

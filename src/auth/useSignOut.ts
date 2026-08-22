@@ -13,7 +13,8 @@ import { useSessionStore } from './session.ts'
  * steps one thing that cannot be half-remembered at a call site.
  *
  * **Clearing the whole cache and not just the collection keys is deliberate.**
- * It costs one refetch of `catalog.json` — cached by the browser anyway (§12) —
+ * It costs one refetch of each catalogue artefact — both cached by the browser
+ * anyway (§12), and since §6.2's split the one the next page needs is 5 KB —
  * and it buys the guarantee that nothing a signed-in user read is still sitting
  * in memory for whoever uses the machine next. An allow-list of keys to drop is
  * a list somebody forgets to add to at M6.

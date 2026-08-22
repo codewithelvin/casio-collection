@@ -2,8 +2,12 @@ import { describe, expect, it, vi } from 'vitest'
 import {
   browsable,
   compareByRef,
+  CATALOG_INDEX_PATH,
   CATALOG_PATH,
+  catalogIndexQueryOptions,
+  catalogQueryOptions,
   fetchCatalog,
+  fetchCatalogIndex,
   imageSources,
   lineBySlug,
   lineTree,
@@ -15,7 +19,11 @@ import {
   seriesInLine,
 } from './client.ts'
 import type { Catalog, PublishedModel } from './schema.ts'
-import { catalogFixture, catalogFixtureJson } from '../test/catalogFixture'
+import {
+  catalogFixture,
+  catalogFixtureJson,
+  catalogIndexFixtureJson,
+} from '../test/catalogFixture'
 
 const model = (overrides: Partial<PublishedModel>): PublishedModel => ({
   id: 'x-1',
@@ -76,6 +84,62 @@ describe('fetching the published catalogue', () => {
     await fetchCatalog(controller.signal)
 
     expect(spy).toHaveBeenCalledWith(CATALOG_PATH, { signal: controller.signal })
+  })
+})
+
+describe('fetching the index (§6.2, the split)', () => {
+  it('parses an artefact with no models at all', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => ({ ok: true, status: 200, json: async () => catalogIndexFixtureJson() })),
+    )
+
+    const index = await fetchCatalogIndex()
+    expect(index.version).toBe(catalogFixture.version)
+    expect(index.lines).toHaveLength(catalogFixture.lines.length)
+    expect(index.series).toHaveLength(catalogFixture.series.length)
+    // The point of the file. `strictObject` is what enforces it: a `models` key
+    // arriving here would be rejected rather than quietly doubling the download
+    // the split exists to avoid.
+    expect('models' in index).toBe(false)
+  })
+
+  it('rejects a catalogue served at the index path', async () => {
+    // Which is the failure a stale edge cache or an old service worker produces
+    // — the two artefacts differ by one key, so nothing else would notice.
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => ({ ok: true, status: 200, json: async () => catalogFixtureJson() })),
+    )
+    await expect(fetchCatalogIndex()).rejects.toThrow()
+  })
+
+  it('reads its path from BASE_URL rather than a literal (D13)', () => {
+    expect(CATALOG_INDEX_PATH.endsWith('catalog/catalog-index.json')).toBe(true)
+    expect(CATALOG_INDEX_PATH.startsWith(import.meta.env.BASE_URL)).toBe(true)
+  })
+
+  it('does not contain the catalogue path as a substring', () => {
+    // A test about a string, guarding a real bug: every fetch stub and service
+    // worker rule in this repo matches on the filename, and `catalog.json` is
+    // *not* a substring of `catalog-index.json` — so a matcher written for one
+    // silently misses the other and the rail waits forever on a 404.
+    expect(CATALOG_INDEX_PATH.includes('catalog.json')).toBe(false)
+  })
+
+  it('throws on a non-OK response rather than returning an empty catalogue', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => ({ ok: false, status: 404, json: async () => ({}) })),
+    )
+    await expect(fetchCatalogIndex()).rejects.toThrow(/404/)
+  })
+
+  it('caches under its own key, so neither query can serve the other', () => {
+    // Two keys for one file would be the mistake §7.2 warns about; two keys for
+    // two files is what keeps a screen holding the index from being handed a
+    // document with no models in it.
+    expect(catalogIndexQueryOptions.queryKey).not.toEqual(catalogQueryOptions.queryKey)
   })
 })
 

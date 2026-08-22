@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react'
-import { Typography, theme as antdTheme } from 'antd'
 
 /**
  * FR-1.5 / FR-10.1 — never a blank area.
@@ -9,6 +8,10 @@ import { Typography, theme as antdTheme } from 'antd'
  * that is genuinely one watch, and those are three different messages to three
  * different readers. The caller supplies the sentence; this only makes it look
  * deliberate rather than left over.
+ *
+ * §12 — plain elements, because `RequireSession` renders this and
+ * `RequireSession` is in the router, which is in the first load. Two AntD
+ * imports for a dashed box and two lines of text was 42 KB of the entry chunk.
  */
 export function EmptyState({
   title,
@@ -19,25 +22,25 @@ export function EmptyState({
   body?: string | undefined
   action?: ReactNode
 }) {
-  const { token } = antdTheme.useToken()
-
   return (
     <div
       style={{
         padding: '48px 24px',
         textAlign: 'center',
-        border: `1px dashed ${token.colorBorderSecondary}`,
-        borderRadius: token.borderRadiusLG,
-        background: token.colorBgContainer,
+        // Dashed rather than solid: this box is a statement about absence, and a
+        // solid border would make it look like a card that failed to fill.
+        border: '1px dashed var(--cc-border-secondary)',
+        borderRadius: 10,
+        background: 'var(--cc-bg-container)',
       }}
     >
-      <Typography.Title level={4} style={{ marginTop: 0 }}>
+      <h4 className="cc-h4" style={{ marginTop: 0 }}>
         {title}
-      </Typography.Title>
+      </h4>
       {body ? (
-        <Typography.Paragraph type="secondary" style={{ maxWidth: 520, margin: '0 auto' }}>
+        <p className="cc-quiet" style={{ maxWidth: 520, margin: '0 auto' }}>
           {body}
-        </Typography.Paragraph>
+        </p>
       ) : null}
       {action ? <div style={{ marginTop: 16 }}>{action}</div> : null}
     </div>

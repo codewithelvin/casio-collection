@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
-import { catalogFixtureJson } from '../test/catalogFixture'
+import { catalogArtefactResponse } from '../test/catalogFixture'
 import { t } from '../i18n/strings'
 
 /**
@@ -20,9 +20,10 @@ function stubEndpoint(accept: { ok: boolean; status?: number } = { ok: true }) {
   // is the thing under test, and a one-parameter mock has no index 1 to read.
   const fetchMock = vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
     void init
-    if (String(input).includes('catalog.json')) {
-      return { ok: true, status: 200, json: async () => catalogFixtureJson() }
-    }
+    // Both legs of §6.2's split before the endpoint, because the shell's rail
+    // reads the index on this route as it does on every other.
+    const artefact = catalogArtefactResponse(String(input))
+    if (artefact) return artefact
     return { ok: accept.ok, status: accept.status ?? 200, text: async () => '' }
   })
   vi.stubGlobal('fetch', fetchMock)

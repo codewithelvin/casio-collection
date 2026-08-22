@@ -1,112 +1,10 @@
-import type { ComponentType } from 'react'
-import { Menu, Skeleton, Typography } from 'antd'
-import type { MenuProps } from 'antd'
-import { useLocation, useNavigate } from 'react-router-dom'
-import ThunderboltOutlined from '@ant-design/icons/ThunderboltOutlined'
-import FieldTimeOutlined from '@ant-design/icons/FieldTimeOutlined'
-import DashboardOutlined from '@ant-design/icons/DashboardOutlined'
-import CompassOutlined from '@ant-design/icons/CompassOutlined'
-import HeartOutlined from '@ant-design/icons/HeartOutlined'
-import StarOutlined from '@ant-design/icons/StarOutlined'
-import GlobalOutlined from '@ant-design/icons/GlobalOutlined'
-import { lineTree, useCatalog } from '../catalog/client.ts'
-import { LINE_ACCENTS } from '../theme/tokens'
-import { t } from '../i18n/strings'
-
-/**
- * One glyph per line, each saying what the line is *for* rather than decorating
- * it: the shock that names G-SHOCK, a compass for the outdoor line, a stopwatch
- * face for the vintage one. A rail of identical dots teaches nothing and a rail
- * of arbitrary shapes teaches something false.
- *
- * The calculator went with Databank when D49 made it a family of Vintage rather
- * than a line. A family has no rail row, so it has no glyph.
- *
- * This is presentation and stays in code — an icon component is not something a
- * JSON catalogue can carry. Everything else the rail knows now comes from
- * `catalog.json`, which is why `ui/lines.ts` is gone as of M2.
- *
- * Icons are imported one path at a time; the barrel import pulls the whole set
- * and is most of the difference between meeting D28's budget and not (§12).
- */
-const LINE_ICONS: Record<string, ComponentType> = {
-  'g-shock': ThunderboltOutlined,
-  vintage: FieldTimeOutlined,
-  edifice: DashboardOutlined,
-  'pro-trek': CompassOutlined,
-  'baby-g': HeartOutlined,
-  sheen: StarOutlined,
-  oceanus: GlobalOutlined,
-}
-
-/**
- * A row in the rail: the label on the left, the count hard against the right,
- * exactly as §8.4's diagram draws it.
- *
- * Two details that were wrong the first time and both showed. The count has to
- * be pushed to the end with `justify-content: space-between` rather than left
- * to sit against the label with a margin — an AntD Menu label fills the row, so
- * a margin puts the number in the middle of nowhere. And the digits are
- * `tabular-nums`: a column of proportional numerals makes 4 and 18 and 61 look
- * ragged down the rail, which is the whole reason a count column is a column.
- *
- * The label itself truncates rather than wrapping, because "Vintage / Casio
- * Collection" with a count is wider than 264 px and a rail row that grows to two
- * lines drags every row below it out of alignment.
- */
-function NavRow({
-  label,
-  count,
-  hasArrow,
-  onClick,
-}: {
-  label: string
-  count?: number | undefined
-  hasArrow?: boolean | undefined
-  onClick?: (() => void) | undefined
-}) {
-  return (
-    <span
-      onClick={onClick}
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: 8,
-        // `width: 100%` is load-bearing rather than tidiness. A flex container
-        // with no width shrinks to fit its content, so the label never
-        // truncates, the row grows past the 264 px rail, and the count is drawn
-        // beyond the right edge — which reads as the count colliding with the
-        // expander. It is the row overflowing, and the width is what stops it.
-        width: '100%',
-        minWidth: 0,
-        // A line with series is an AntD SubMenu, and a SubMenu's expander is
-        // positioned absolutely against the right edge of the row: it is not in
-        // this flex flow and reserves no space of its own.
-        paddingInlineEnd: hasArrow ? 18 : 0,
-      }}
-    >
-      <span
-        style={{
-          flex: 1,
-          minWidth: 0,
-          overflow: 'hidden',
-          textOverflow: 'ellipsis',
-          whiteSpace: 'nowrap',
-        }}
-      >
-        {label}
-      </span>
-      {count === undefined ? null : (
-        <Typography.Text
-          type="secondary"
-          style={{ flexShrink: 0, fontVariantNumeric: 'tabular-nums' }}
-        >
-          {String(count)}
-        </Typography.Text>
-      )}
-    </span>
-  )
-}
+import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { lineTree, useCatalogIndex } from '../catalog/client.ts'
+import { RailSkeleton } from './RailSkeleton'
+import { ChevronIcon, LineGlyph } from './icons'
+import { LINE_ACCENTS } from '../theme/palette.ts'
+import { expandLine, t } from '../i18n/strings'
 
 /**
  * §8.4 / FR-1.1 — the line tree.
@@ -121,139 +19,183 @@ function NavRow({
  * A line with no models is rendered as a leaf with no expander rather than as an
  * empty submenu — an arrow that opens onto nothing is a worse answer than no
  * arrow, and two of the seven lines are in that state today.
+ *
+ * **The rail reads the index (§6.2's split), and it is the reason the split was
+ * worth building.** It is in the shell, so it renders on every URL on the site —
+ * which meant every URL on the site waited for 2 832 models to arrive and be
+ * validated before it could draw seven rows and their counts. Nothing here names
+ * a reference.
+ *
+ * **It was an AntD `Menu` and is now a nested list of links (§12).** rc-menu and
+ * antd/menu are 106 KB unminified between them, and this component is in the
+ * shell, so they were in the first load of all 3 000-odd URLs on the site. Three
+ * things came out better rather than merely cheaper:
+ *
+ *   * **A line is an `<a>` now.** It was a Menu item with an `onClick` calling
+ *     `navigate`, because a SubMenu title toggles rather than firing onClick —
+ *     which meant the rail's primary navigation was unavailable to
+ *     middle-click, to *open in new tab*, and to anything reading the page for
+ *     links. The expander is a separate button beside it, which is what it
+ *     always was conceptually.
+ *   * **No `routeFor` string parsing.** The Menu handed back a key and the key
+ *     had to encode the route so a click did not have to search the catalogue;
+ *     with real links the route is in the href and there is nothing to decode.
+ *   * `aria-current="page"` replaces `selectedKeys`, so *you are here* is in the
+ *     markup rather than in a prop.
  */
 export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
-  const navigate = useNavigate()
   const { pathname } = useLocation()
-  const { data, isPending } = useCatalog()
+  const { data, isPending } = useCatalogIndex()
 
-  const navigateToLine = (slug: string) => {
-    navigate(`/line/${slug}`)
-    onNavigate?.()
-  }
+  /**
+   * Which lines are showing their series. §8.4 — a deep link opens with the tree
+   * already showing where you are, so the line containing the current series
+   * starts expanded; everything else starts closed.
+   *
+   * Seeded once from the path rather than derived from it on every render, so
+   * that opening a line and then navigating within it does not collapse what the
+   * reader opened.
+   */
+  const [open, setOpen] = useState<Record<string, boolean>>(() => {
+    const match = /^\/line\/([^/]+)\/[^/]+/.exec(pathname)
+    return match?.[1] ? { [match[1]]: true } : {}
+  })
 
-  // Not memoised: seven lines and their series is a trivial map, and a memo here
-  // would have to close over the navigate handler and list it as a dependency,
-  // which recreates the array every render anyway.
-  const items: MenuProps['items'] = !data
-    ? []
-    : data.lines.map((line) => {
-        const tree = lineTree(data, line.id)
-        const isActive = pathname.startsWith(`/line/${line.slug}`)
-        const Icon = LINE_ICONS[line.id]
+  if (isPending) return <RailSkeleton />
+  if (!data) return null
 
-        const seriesItem = (seriesId: string, name: string, count: number) => ({
-          key: `series:${line.slug}:${seriesId}`,
-          label: <NavRow label={name} count={count} />,
-        })
-
-        const children = [
-          ...tree.families.map((group) => ({
-            key: `family:${line.id}:${group.family.id}`,
-            label: group.family.name,
-            children: group.series.map((series) =>
-              seriesItem(series.id, series.name, series.count),
-            ),
-          })),
-          ...tree.ungrouped.map((series) => seriesItem(series.id, series.name, series.count)),
-        ]
-
-        return {
-          key: `line:${line.slug}`,
-          // A line that has series becomes an AntD SubMenu, and a SubMenu title
-          // toggles rather than firing onClick — so without this handler the line
-          // page would expand the tree and never open, and FR-1.2's "a line
-          // without a series shows every model in the line" would be unreachable
-          // from the rail. Clicking the label navigates *and* expands, which is
-          // both halves of FR-1.1.
-          //
-          // The count is always real, because a line holding none is not
-          // published at all (D51). The branch that used to hide a zero went
-          // with it: a guard against a state the artefact can no longer contain
-          // reads as though that state were still possible.
-          label: (
-            <NavRow
-              label={line.name}
-              count={line.count}
-              hasArrow={children.length > 0}
-              onClick={() => navigateToLine(line.slug)}
-            />
-          ),
-          // §8.3 — the per-line accent *is* the active indicator, so only the
-          // active glyph carries it. Colouring all seven would make the rail a
-          // legend for a code nobody has to learn and would stop the colour
-          // meaning "you are here", which is its one job.
-          icon: Icon ? (
-            <span
-              className="cc-nav-icon"
-              style={isActive ? { color: LINE_ACCENTS[line.id] ?? 'inherit' } : undefined}
-            >
-              <Icon />
-            </span>
-          ) : undefined,
-          ...(children.length > 0 ? { children } : {}),
-        }
-      })
-
-  if (isPending) {
-    return (
-      <div style={{ padding: 16 }} aria-busy aria-label={t('state.loading')}>
-        <Skeleton active title={false} paragraph={{ rows: 8 }} />
-      </div>
-    )
-  }
+  const current = /^\/line\/([^/]+)(?:\/([^/]+))?/.exec(pathname)
+  const currentLine = current?.[1]
+  const currentSeries = current?.[2]
 
   return (
-    <Menu
-      mode="inline"
-      selectedKeys={selectedKeys(pathname)}
-      defaultOpenKeys={openKeysFor(pathname)}
-      /*
-        The rail does not choose its own surface. AntD's Menu paints
-        `colorBgContainer`, which is right inside the sider — that is the sider's
-        colour too — and wrong inside the drawer, which is an elevated surface a
-        shade lighter. Inheriting instead of painting makes the nav correct in
-        both without either container having to know about the other.
+    <nav className="cc-nav" aria-label={t('nav.lines')}>
+      <ul className="cc-nav-list">
+        {data.lines.map((line) => {
+          const tree = lineTree(data, line.id)
+          const isActive = currentLine === line.slug
+          const hasChildren = tree.families.length > 0 || tree.ungrouped.length > 0
+          const isOpen = open[line.slug] === true
 
-        `flex: 1` fills the drawer body, whose column layout AppShell sets up.
-        In the sider the parent is not a flex container, so it is inert there.
-      */
-      style={{ borderInlineEnd: 'none', background: 'transparent', flex: 1 }}
-      items={items}
-      onClick={({ key }) => {
-        const target = routeFor(key)
-        if (!target) return
-        navigate(target)
-        onNavigate?.()
-      }}
-    />
+          return (
+            <li key={line.id}>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <Link
+                  to={`/line/${line.slug}`}
+                  className="cc-nav-row"
+                  // The series pages set this on their own row, so a line whose
+                  // series is open is not also "the page".
+                  {...(isActive && !currentSeries ? { 'aria-current': 'page' as const } : {})}
+                  onClick={onNavigate}
+                >
+                  {/* §8.3 — the per-line accent *is* the active indicator, so
+                      only the active glyph carries it. Colouring all seven would
+                      make the rail a legend for a code nobody has to learn and
+                      would stop the colour meaning "you are here", which is its
+                      one job. */}
+                  <span
+                    className="cc-nav-icon"
+                    style={isActive ? { color: LINE_ACCENTS[line.id] } : undefined}
+                  >
+                    <LineGlyph line={line.id} />
+                  </span>
+                  <span className="cc-nav-label">{line.name}</span>
+                  {/* The count is always real, because a line holding none is
+                      not published at all (D51). */}
+                  <span className="cc-nav-count">{line.count}</span>
+                </Link>
+                {hasChildren ? (
+                  <button
+                    type="button"
+                    className="cc-icon-button cc-nav-expander"
+                    data-open={isOpen}
+                    aria-expanded={isOpen}
+                    aria-label={expandLine(line.name, isOpen)}
+                    onClick={() => setOpen((state) => ({ ...state, [line.slug]: !isOpen }))}
+                  >
+                    <ChevronIcon />
+                  </button>
+                ) : null}
+              </div>
+
+              {hasChildren && isOpen ? (
+                <ul className="cc-nav-list cc-nav-sub">
+                  {tree.families.map((group) => (
+                    <li key={group.family.id}>
+                      {/* A family is a heading and never a link — D32 keeps it
+                          out of the URL, and by construction rather than by
+                          remembering: there is no href to give it. */}
+                      <div className="cc-nav-family">{group.family.name}</div>
+                      <ul className="cc-nav-list">
+                        {group.series.map((series) => (
+                          <SeriesRow
+                            key={series.id}
+                            lineSlug={line.slug}
+                            id={series.id}
+                            name={series.name}
+                            count={series.count}
+                            active={currentSeries === series.id}
+                            onNavigate={onNavigate}
+                          />
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                  {tree.ungrouped.map((series) => (
+                    <SeriesRow
+                      key={series.id}
+                      lineSlug={line.slug}
+                      id={series.id}
+                      name={series.name}
+                      count={series.count}
+                      active={currentSeries === series.id}
+                      onNavigate={onNavigate}
+                    />
+                  ))}
+                </ul>
+              ) : null}
+            </li>
+          )
+        })}
+      </ul>
+    </nav>
+  )
+}
+
+function SeriesRow({
+  lineSlug,
+  id,
+  name,
+  count,
+  active,
+  onNavigate,
+}: {
+  lineSlug: string
+  id: string
+  name: string
+  count: number
+  active: boolean
+  onNavigate?: (() => void) | undefined
+}) {
+  return (
+    <li>
+      <Link
+        to={`/line/${lineSlug}/${id}`}
+        className="cc-nav-row"
+        {...(active ? { 'aria-current': 'page' as const } : {})}
+        onClick={onNavigate}
+      >
+        <span className="cc-nav-label">{name}</span>
+        <span className="cc-nav-count">{count}</span>
+      </Link>
+    </li>
   )
 }
 
 /**
- * The key encodes the route, so clicking never has to search the catalogue for
- * what was clicked. Families are not routes and produce nothing — which is D32
- * enforced by construction rather than by remembering.
+ * A default export beside the named one, so a caller can `lazy()` this module.
+ * The named export stays because that is what the tests and the drawer import,
+ * and because a component that can only be reached through a lazy boundary is a
+ * component that cannot be rendered in a unit test.
  */
-function routeFor(key: string): string | null {
-  const [kind, ...rest] = key.split(':')
-  if (kind === 'line') return `/line/${rest[0]}`
-  if (kind === 'series') return `/line/${rest[0]}/${rest[1]}`
-  return null
-}
-
-function selectedKeys(pathname: string): string[] {
-  const match = /^\/line\/([^/]+)(?:\/([^/]+))?/.exec(pathname)
-  if (!match) return []
-  const [, line, series] = match
-  return series ? [`series:${line}:${series}`] : [`line:${line}`]
-}
-
-/**
- * §8.4 — a deep link opens with the tree already showing where you are, so the
- * line containing the current series starts expanded.
- */
-function openKeysFor(pathname: string): string[] {
-  const match = /^\/line\/([^/]+)\/[^/]+/.exec(pathname)
-  return match ? [`line:${match[1]}`] : []
-}
+export default LineNav

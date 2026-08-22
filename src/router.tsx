@@ -59,6 +59,46 @@ async function fresh<T>(load: () => Promise<T>): Promise<T> {
 }
 
 /**
+ * §12 — **every screen that renders Ant Design says so here, by being wrapped.**
+ *
+ * `AntdRoot` used to be the top of `App.tsx`, which put `ConfigProvider` and
+ * `AntdApp` — and through them AntD's theme runtime, `rc-field-form` and the
+ * message/notification/Modal holders — in the entry chunk of all 3 000-odd URLs
+ * on this site. Wrapping per route instead means the providers land beside the
+ * route chunk that needs them, and the two screens that need none of it (the
+ * front door, and the 404) load none of it.
+ *
+ * It is applied here rather than inside each screen for the same reason
+ * `guarded` is: a rule each new route has to remember to apply is a rule a route
+ * will one day forget. The failure mode is quieter than the auth one but it is
+ * the same shape — an AntD component outside a provider renders in AntD's
+ * default theme, which on this site is the wrong blue at the wrong base size.
+ *
+ * **The import is dynamic and awaited beside the screen, not at the top of this
+ * file.** `router.tsx` is in the entry chunk, so a static `import AntdRoot` here
+ * would put Ant Design straight back into the first load and undo the whole
+ * exercise — which is a mistake worth leaving a comment about, because the file
+ * gives no other hint. `Promise.all` is the other half: awaiting the two in
+ * sequence would make every first navigation to a themed route pay two network
+ * round trips instead of one.
+ */
+async function themed(
+  load: () => Promise<{ default: ComponentType }>,
+): Promise<{ Component: ComponentType }> {
+  const [{ default: Screen }, { default: AntdRoot }] = await Promise.all([
+    fresh(load),
+    import('./ui/AntdRoot'),
+  ])
+  return {
+    Component: () => (
+      <AntdRoot>
+        <Screen />
+      </AntdRoot>
+    ),
+  }
+}
+
+/**
  * §7.3's *Auth* column, made real (M4).
  *
  * It belongs in the route table rather than inside each screen for the same
@@ -73,12 +113,20 @@ async function fresh<T>(load: () => Promise<T>): Promise<T> {
 async function guarded(
   load: () => Promise<{ default: ComponentType }>,
 ): Promise<{ Component: ComponentType }> {
-  const { default: Screen } = await load()
+  const [{ default: Screen }, { default: AntdRoot }] = await Promise.all([
+    load(),
+    import('./ui/AntdRoot'),
+  ])
   return {
+    // The provider goes **outside** the guard, because the guard renders an
+    // `EmptyState` and a sign-in button of its own and those have to be themed
+    // too — a guest who lands on /collection sees the guard, never the screen.
     Component: () => (
-      <RequireSession>
-        <Screen />
-      </RequireSession>
+      <AntdRoot>
+        <RequireSession>
+          <Screen />
+        </RequireSession>
+      </AntdRoot>
     ),
   }
 }
@@ -98,38 +146,25 @@ export const routes: RouteObject[] = [
     path: '/',
     element: <AppShell />,
     children: [
-      { index: true, lazy: async () => ({ Component: (await fresh(() => import('./routes/home'))).default }) },
+      // **The front door is not `themed`, and that is the point of §12.** It
+      // renders a heading, a paragraph and seven cards, all of them plain
+      // elements — so the page Lighthouse loads and most first visits land on
+      // pulls no Ant Design at all.
       {
-        path: 'line/:line',
-        lazy: async () => ({ Component: (await fresh(() => import('./routes/line'))).default }),
+        index: true,
+        lazy: async () => ({ Component: (await fresh(() => import('./routes/home'))).default }),
       },
-      {
-        path: 'line/:line/:series',
-        lazy: async () => ({ Component: (await fresh(() => import('./routes/series'))).default }),
-      },
-      {
-        path: 'watch/:modelId',
-        lazy: async () => ({ Component: (await fresh(() => import('./routes/watch'))).default }),
-      },
-      {
-        path: 'search',
-        lazy: async () => ({ Component: (await fresh(() => import('./routes/search'))).default }),
-      },
-      // The two rows §7.3 marks "required".
+      { path: 'line/:line', lazy: () => themed(() => import('./routes/line')) },
+      { path: 'line/:line/:series', lazy: () => themed(() => import('./routes/series')) },
+      { path: 'watch/:modelId', lazy: () => themed(() => import('./routes/watch')) },
+      { path: 'search', lazy: () => themed(() => import('./routes/search')) },
+      // The two rows §7.3 marks "required". `guarded` supplies the provider
+      // itself, for the reason written above it.
       { path: 'collection', lazy: () => guarded(() => fresh(() => import('./routes/collection'))) },
       { path: 'settings', lazy: () => guarded(() => fresh(() => import('./routes/settings'))) },
-      {
-        path: 'u/:handle',
-        lazy: async () => ({ Component: (await fresh(() => import('./routes/profile'))).default }),
-      },
-      {
-        path: 'auth/callback',
-        lazy: async () => ({ Component: (await fresh(() => import('./routes/auth'))).default }),
-      },
-      {
-        path: '*',
-        lazy: async () => ({ Component: (await fresh(() => import('./routes/notFound'))).default }),
-      },
+      { path: 'u/:handle', lazy: () => themed(() => import('./routes/profile')) },
+      { path: 'auth/callback', lazy: () => themed(() => import('./routes/auth')) },
+      { path: '*', lazy: () => themed(() => import('./routes/notFound')) },
     ],
   },
 ]

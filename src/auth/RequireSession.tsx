@@ -1,5 +1,4 @@
 import { useEffect, type ReactNode } from 'react'
-import { Button } from 'antd'
 import { useSessionStore } from './session.ts'
 import { EmptyState } from '../ui/EmptyState'
 import { t } from '../i18n/strings'
@@ -55,9 +54,13 @@ export function RequireSession({ children }: { children: ReactNode }) {
             body={unavailable ? t('auth.unavailable.body') : t('auth.required.body')}
             action={
               unavailable ? undefined : (
-                <Button type="primary" onClick={() => promptSignIn()}>
+                <button
+                  type="button"
+                  className="cc-button cc-button-primary"
+                  onClick={() => promptSignIn()}
+                >
                   {t('account.signIn')}
-                </Button>
+                </button>
               )
             }
           />

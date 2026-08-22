@@ -1,8 +1,10 @@
 import type { CatalogSource } from './integrity.ts'
 import {
   CATALOG,
+  CATALOG_INDEX,
   CATALOG_PAYLOAD,
   type Catalog,
+  type CatalogIndex,
   type CatalogPayload,
   type FacetSummary,
   type Model,
@@ -221,6 +223,40 @@ export function stamp(payload: CatalogPayload, version: string, generatedAt: str
 /** The exact bytes written to `public/catalog/catalog.json`. */
 export function serialiseCatalog(catalog: Catalog): string {
   return `${JSON.stringify(catalog, null, 2)}\n`
+}
+
+/**
+ * The second artefact: the same catalogue with `models` dropped (§6.2).
+ *
+ * It is **derived from the stamped catalogue rather than assembled beside it**,
+ * which is the only arrangement in which the two cannot disagree. Building it
+ * from the payload would give the version digest two ways to be computed and one
+ * of them would eventually be wrong; taking it from the finished document means
+ * an index carrying version `abc123` is, by construction, the index of the
+ * catalogue carrying version `abc123`.
+ */
+export function indexOf(catalog: Catalog): CatalogIndex {
+  return CATALOG_INDEX.parse({
+    version: catalog.version,
+    generatedAt: catalog.generatedAt,
+    lines: catalog.lines,
+    families: catalog.families,
+    series: catalog.series,
+    facets: catalog.facets,
+  })
+}
+
+/**
+ * The exact bytes written to `public/catalog/catalog-index.json`.
+ *
+ * **Not pretty-printed, unlike the catalogue.** The two-space indent on
+ * `catalog.json` is there so a human can read a diff of it, and the file it is
+ * on is a build artefact nobody diffs — but this one is fetched before the
+ * first paint of every page, and the indent is a third of it. The catalogue
+ * keeps its indent because whoever opens 2.4 MB by hand is doing so to read it.
+ */
+export function serialiseIndex(index: CatalogIndex): string {
+  return `${JSON.stringify(index)}\n`
 }
 
 /** The bytes the version digest is taken over — the payload, without the stamp. */

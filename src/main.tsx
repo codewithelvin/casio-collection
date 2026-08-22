@@ -1,12 +1,20 @@
-// D4 — this import is first and is not optional. Ant Design 5's static
-// message / notification / Modal.confirm APIs still call the React 18 render
-// API; without the patch they throw at runtime rather than at build time, which
-// means the failure shows up in a toast nobody tested and not in CI.
-import '@ant-design/v5-patch-for-react-19'
-
-// S7 — before `./App`, and that ordering is the whole point. See zodJitless.ts.
-import './zodJitless'
-
+/**
+ * §12 — **D4's patch moved to `ui/AntdRoot`, and this comment is here so nobody
+ * puts it back.**
+ *
+ * It was the first import in this file and the comment said it was not optional,
+ * which is still true: Ant Design 5's static `message` / `notification` /
+ * `Modal.confirm` APIs call the React 18 render API, and without the patch they
+ * throw at runtime rather than at build time — a failure that shows up in a toast
+ * nobody tested and not in CI.
+ *
+ * What changed is that `@ant-design/v5-patch-for-react-19` imports from `antd`,
+ * so an import *here* is an import of Ant Design in the entry chunk — the one
+ * thing §12 exists to prevent. It now sits at the top of `AntdRoot`, which is the
+ * module every AntD-rendering screen goes through and which is loaded in that
+ * screen's chunk. The patch still runs before any AntD component renders; it just
+ * no longer runs before the front door paints.
+ */
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'

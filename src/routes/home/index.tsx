@@ -1,5 +1,4 @@
-import { Typography } from 'antd'
-import { useCatalog } from '../../catalog/client.ts'
+import { useCatalogIndex } from '../../catalog/client.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { LineGrid, LineGridSkeleton } from '../../ui/LineGrid'
 import { t } from '../../i18n/strings'
@@ -11,24 +10,38 @@ import { t } from '../../i18n/strings'
  * the one copy of their shared geometry. Two copies of a column span are two
  * things to keep in step, and the symptom of them drifting is a layout jump at
  * exactly the moment the page is supposed to feel settled.
+ *
+ * **It reads the index, not the catalogue.** Seven cards and their counts are
+ * `lines`, and this page named no model even when it was waiting for 2 832 of
+ * them — see `CATALOG_INDEX_PATH` for what that was costing the first paint of
+ * the site's most-visited URL.
+ *
+ * **And it renders no Ant Design (§12), which is why it has no `AntdRoot`.**
+ * Every other screen wraps itself in one; this one is a heading, a paragraph and
+ * seven cards, and it is the page Lighthouse and most first-time visitors
+ * actually load. Keeping AntD off it is the difference between the first load
+ * being 262 KB gzipped and being a third of that.
  */
 export default function HomeRoute() {
-  const { data, isPending, isError, refetch } = useCatalog()
+  const { data, isPending, isError, refetch } = useCatalogIndex()
 
   return (
     <div>
-      <Typography.Title level={2} style={{ marginTop: 0 }}>
+      {/* An h2, matching every other page title on the site — `level={2}` is
+          what the line, series, watch and search screens render, and a front
+          door that promoted itself to h1 would be the only page with a
+          different outline. Kept as it was when this was AntD's Typography;
+          §12 changed what draws the heading, not which heading it is. */}
+      <h2 className="cc-h2" style={{ marginTop: 0 }}>
         {t('app.name')}
-      </Typography.Title>
-      <Typography.Paragraph type="secondary" style={{ maxWidth: 620 }}>
-        {t('home.lead')}
-      </Typography.Paragraph>
+      </h2>
+      <p className="cc-lead">{t('home.lead')}</p>
 
       {/* level 3, not 4. The page title above is an h2, and a jump to h4 leaves
           a hole in the outline a screen reader navigates by — axe fails it as
           `heading-order`. The heading reads one step larger as a result, which
           is the honest consequence: it is the second level on the page. */}
-      <Typography.Title level={3}>{t('home.linesHeading')}</Typography.Title>
+      <h3 className="cc-h3">{t('home.linesHeading')}</h3>
       {isPending ? (
         <LineGridSkeleton count={7} />
       ) : isError || !data ? (

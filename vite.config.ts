@@ -3,6 +3,9 @@ import { defineConfig, type Plugin } from 'vitest/config'
 // from vite itself. Same function, same resolution rules.
 import { loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
+// No `antd` behind this import, which is the whole reason `palette.ts` exists
+// separately from `tokens.ts` — see the header of either file.
+import { HEADING, SHELL_TOKENS } from './src/theme/palette.ts'
 
 // D39 — the site serves from the root of its own domain, casiovault.com. This
 // read `/casio-collection/` until that domain existed, and dropping to `/` is
@@ -55,6 +58,58 @@ function manifestPlugin(): Plugin {
     },
     generateBundle() {
       this.emitFile({ type: 'asset', fileName: 'manifest.webmanifest', source: body })
+    },
+  }
+}
+
+/**
+ * §12 — **the shell's colours, as CSS custom properties, injected rather than
+ * written down twice.**
+ *
+ * The shell stopped rendering with Ant Design so the first load would not have to
+ * evaluate it, which means the header, the rail, the footer and the front door
+ * can no longer ask `theme.useToken()` what colour anything is. They read
+ * `var(--cc-bg-container)` and friends instead — and the values come from
+ * `SHELL_TOKENS`, the same object `palette.test.ts` checks against AntD's own
+ * algorithms. A hand-written copy in `index.css` would be a third place holding
+ * these, and D13's rule about exactly that is the most-cited comment in this
+ * repository.
+ *
+ * It goes in the document head as a `<style>` rather than into a stylesheet
+ * because it has to be there before the first byte of CSS that uses it, and
+ * because `index.css` is hashed and this is content-addressed by the theme rather
+ * than by the file.
+ *
+ * `[data-theme]` is set by `uiStore` as it initialises — at module scope, before
+ * React's first render — so nothing paints in the wrong theme and there is no
+ * blocking inline script to keep in step with the store.
+ */
+function shellThemePlugin(): Plugin {
+  const declarations = (mode: 'light' | 'dark') =>
+    Object.entries(SHELL_TOKENS[mode])
+      // camelCase to kebab: bgContainer -> --cc-bg-container.
+      .map(([key, value]) => `--cc-${key.replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`)}: ${value};`)
+      .join('\n    ')
+
+  const css = `:root {
+    ${declarations('light')}
+    --cc-h2: ${HEADING.h2.size}px;
+    --cc-h2-lh: ${HEADING.h2.lineHeight};
+    --cc-h3: ${HEADING.h3.size}px;
+    --cc-h3-lh: ${HEADING.h3.lineHeight};
+    --cc-h4: ${HEADING.h4.size}px;
+    --cc-h4-lh: ${HEADING.h4.lineHeight};
+  }
+  [data-theme='dark'] {
+    ${declarations('dark')}
+  }`
+
+  return {
+    name: 'cc-shell-theme',
+    transformIndexHtml(html) {
+      const injected = html.replace('</head>', `  <style>${css}</style>\n  </head>`)
+      if (injected === html) throw new Error('shell-theme: no </head> in index.html')
+      return injected
     },
   }
 }
@@ -123,7 +178,12 @@ export default defineConfig(({ mode }) => {
 
   return {
   base: BASE,
-  plugins: [react(), manifestPlugin(), cspPlugin(env['VITE_SUPABASE_URL'] ?? '')],
+  plugins: [
+    react(),
+    manifestPlugin(),
+    shellThemePlugin(),
+    cspPlugin(env['VITE_SUPABASE_URL'] ?? ''),
+  ],
   build: {
     /**
      * D40, closing O10 — **React is pinned to its own chunk and AntD is not.**

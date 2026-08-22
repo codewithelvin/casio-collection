@@ -1,9 +1,6 @@
-import { ConfigProvider, App as AntdApp } from 'antd'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { RouterProvider } from 'react-router-dom'
 import { router } from './router'
-import { themeConfig } from './theme/tokens'
-import { useUiStore } from './ui/uiStore'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -17,19 +14,23 @@ const queryClient = new QueryClient({
   },
 })
 
+/**
+ * §12 — **what is left after Ant Design moved down.**
+ *
+ * This was `ConfigProvider` over `AntdApp` over the query client over the
+ * router, and the top two are now `ui/AntdRoot` — imported by each screen that
+ * renders AntD rather than by the whole application. The reason is measured: at
+ * 232 KB gzipped the entry chunk took 1 469 ms to evaluate on Lighthouse's
+ * mobile profile and nothing appeared until it had, and AntD's theme runtime was
+ * the largest part of it that the shell did not need.
+ *
+ * What remains is the query client — the rail reads the catalogue index through
+ * it on every URL — and the router.
+ */
 export default function App() {
-  const mode = useUiStore((state) => state.mode)
-
   return (
-    <ConfigProvider theme={themeConfig(mode)}>
-      {/* AntD's App wires message/notification/Modal to the theme context.
-          With the React 19 patch imported in main.tsx, the static APIs work
-          too — this is what makes them pick up the current algorithm. */}
-      <AntdApp>
-        <QueryClientProvider client={queryClient}>
-          <RouterProvider router={router} />
-        </QueryClientProvider>
-      </AntdApp>
-    </ConfigProvider>
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   )
 }

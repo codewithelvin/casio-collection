@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
-import { screen, waitFor } from '@testing-library/react'
+import { screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
 import { t } from '../i18n/strings'
@@ -13,8 +13,21 @@ import { t } from '../i18n/strings'
  * appears and the display control does not, from the same data, on the same
  * page.
  */
+/**
+ * **Scoped to `main`, and that scope is load-bearing since §12.**
+ *
+ * The rail used to be an AntD `Menu`, so its rows had role `menuitem` and a
+ * query for a link could only find a card. It is a list of real `<a>` elements
+ * now — which is most of why the rewrite was worth doing — and on
+ * `/line/g-shock/dw-5600` the rail opens the line it is showing, so a bare
+ * `queryAllByRole('link', { name: /^DW-5600/ })` matches the rail's *series* row
+ * as well as the cards. It has no `aria-label`, so it arrived here as a `null`
+ * in the middle of the list and read as a sorting bug.
+ */
 const cardsNamed = (pattern: RegExp) =>
-  screen.queryAllByRole('link', { name: pattern }).map((link) => link.getAttribute('aria-label'))
+  within(screen.getByRole('main'))
+    .queryAllByRole('link', { name: pattern })
+    .map((link) => link.getAttribute('aria-label'))
 
 describe('which facets appear (FR-1.3a, D26)', () => {
   it('offers a facet where the data is dense and hides one where it is not', async () => {

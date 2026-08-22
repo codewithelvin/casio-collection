@@ -1,0 +1,789 @@
+/*
+ * §12 — **the shell, in CSS, because in JavaScript it cost too much.**
+ *
+ * The header, the rail, the drawer, the footer and the front door used to be Ant
+ * Design components. They are now plain elements with these classes, and the
+ * reason is a measurement rather than a preference: at 232 KB gzipped the entry
+ * chunk took 1 469 ms to evaluate on Lighthouse's mobile profile, and nothing
+ * appeared on screen until it had. AntD is CSS-in-JS, so *rendering the header*
+ * meant loading the theme runtime, computing a token set and generating
+ * stylesheets at runtime — 512 ms of style-and-layout on top of the scripting.
+ *
+ * Ant Design has not left the product. Every screen that shows watches still
+ * uses it, wrapped in the `AntdRoot` its own route chunk pulls in. What changed
+ * is that it is no longer in the first load of all 3 000-odd URLs on this site.
+ *
+ * Two rules hold this file together:
+ *
+ *   * **Every colour is a custom property from `SHELL_TOKENS`.** They are
+ *     injected into the document head by `vite.config.ts` and proved equal to
+ *     AntD's own tokens by `palette.test.ts`, so the AntD-free shell and the
+ *     AntD-rendered content inside it cannot drift apart.
+ *   * **Every responsive decision is a media query.** It used to be
+ *     `Grid.useBreakpoint()`, which is JavaScript deciding what exists; §8.2's
+ *     768 px is written once, below, as `--cc-md`. A layout that needs JS to
+ *     choose itself is a layout that cannot be drawn before the JS arrives.
+ */
+
+/* §8.2's breakpoint. Media queries cannot read a custom property, so this is a
+   comment rather than a variable — the number appears below exactly twice and
+   both are marked. If it ever moves, it moves in this file. */
+
+/* ------------------------------------------------------------------------- *
+ * Frame
+ * ------------------------------------------------------------------------- */
+
+.cc-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--cc-bg-layout);
+  color: var(--cc-text);
+}
+
+.cc-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 64px;
+  padding: 0 16px;
+  background: var(--cc-bg-container);
+  border-bottom: 1px solid var(--cc-border-secondary);
+}
+
+/* The two columns under the header: the rail and everything else. */
+.cc-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.cc-main-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.cc-content {
+  flex: 1;
+  padding: 16px;
+}
+
+/* §8.2 — 768 px, the first of the two places this number appears. */
+@media (min-width: 768px) {
+  .cc-content {
+    padding: 24px;
+  }
+}
+
+/* ------------------------------------------------------------------------- *
+ * The rail, and the two ways it exists
+ *
+ * Both are always in the markup and CSS decides which is shown. That is what
+ * replaced `Grid.useBreakpoint()`: the rail no longer waits for JavaScript to
+ * find out whether it is a rail.
+ * ------------------------------------------------------------------------- */
+
+.cc-rail {
+  display: none;
+  flex-shrink: 0;
+  width: 264px;
+  background: var(--cc-bg-container);
+  border-inline-end: 1px solid var(--cc-border-secondary);
+  /* The header is sticky and the rail scrolls independently (§8.1). */
+  position: sticky;
+  top: 64px;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+}
+
+/* §8.2 — 768 px, the second and last. Above it the rail is a rail and the
+   wordmark fits; below it the rail is a drawer, the hamburger exists, and the
+   mark stands alone because at that width the wordmark's 0.08em letterspacing
+   stops reading (§8.11). */
+.cc-wordmark {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cc-rail {
+    display: block;
+  }
+  .cc-drawer-trigger {
+    display: none;
+  }
+  .cc-wordmark {
+    display: inline-flex;
+    gap: 0.35em;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+}
+
+/* ------------------------------------------------------------------------- *
+ * Controls
+ * ------------------------------------------------------------------------- */
+
+/*
+ * §8.2 — every interactive element is at least 44 px tall below 768 px, and
+ * these are 44 px at every width because the header is the same height in both
+ * layouts and a 32 px button in a 64 px bar looks like a mistake.
+ */
+.cc-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--cc-text);
+  font: inherit;
+  cursor: pointer;
+  transition:
+    background var(--cc-quick) var(--cc-ease),
+    color var(--cc-quick) var(--cc-ease);
+}
+
+.cc-icon-button:hover {
+  background: var(--cc-fill-secondary);
+}
+
+.cc-icon-button svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+/* The theme toggle turns as it swaps. The icon is the thing that changed, so
+   the icon is the thing that moves. */
+.cc-theme-toggle svg {
+  transition: transform var(--cc-enter) var(--cc-ease);
+}
+
+.cc-theme-toggle:hover svg {
+  transform: rotate(24deg) scale(1.08);
+}
+
+/*
+ * A text button — *Try again*, *Sign in*, *Clear all filters*. AntD's primary
+ * button, reproduced at its own metrics: 32 px tall at the default size, 8 px
+ * radius from `borderRadius`, and the accent as its ground.
+ */
+.cc-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--cc-border-secondary);
+  border-radius: 8px;
+  background: var(--cc-bg-container);
+  color: var(--cc-text);
+  font: inherit;
+  cursor: pointer;
+  transition:
+    border-color var(--cc-quick) var(--cc-ease),
+    color var(--cc-quick) var(--cc-ease);
+}
+
+.cc-button:hover {
+  border-color: var(--cc-primary);
+  color: var(--cc-primary);
+}
+
+.cc-button-primary {
+  border-color: var(--cc-primary);
+  background: var(--cc-primary);
+  color: #fff;
+}
+
+.cc-button-primary:hover {
+  border-color: var(--cc-primary);
+  color: #fff;
+  opacity: 0.88;
+}
+
+/* ------------------------------------------------------------------------- *
+ * The header's search control (§8.2)
+ *
+ * Below 768 px it is a magnifying glass that becomes a field; above, it is a
+ * field. Both are in the markup and this picks — the header used to get the
+ * answer from `Grid.useBreakpoint()`, which meant it could not be drawn until
+ * the JavaScript had run.
+ * ------------------------------------------------------------------------- */
+
+.cc-search {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 520px;
+  min-width: 0;
+}
+
+.cc-search-field {
+  width: 100%;
+  min-width: 0;
+}
+
+/*
+ * Below 768 px the trigger is §8.2's 44 px icon button and nothing else. The
+ * placeholder text inside it is not rendered, so the button is the glass.
+ */
+.cc-search-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--cc-text);
+  font: inherit;
+  cursor: pointer;
+  transition:
+    background var(--cc-quick) var(--cc-ease),
+    border-color var(--cc-quick) var(--cc-ease);
+}
+
+.cc-search-trigger:hover {
+  background: var(--cc-fill-secondary);
+}
+
+.cc-search-trigger svg {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.cc-search-hint {
+  display: none;
+}
+
+/* Once open, the trigger gives up the row to the real field. */
+.cc-search[data-open='true'] .cc-search-trigger {
+  display: none;
+}
+
+.cc-search-placeholder {
+  /* AntD's Input is 32 px at the default size and 44 px where §8.2 asks for a
+     touch target. Matched to whichever shape the trigger it replaces was, so
+     opening the search moves nothing. */
+  height: 44px;
+  margin: 0;
+}
+
+/* The real field, once its chunk lands. §8.2's touch target below 768 px. */
+.cc-search-input {
+  height: 44px;
+}
+
+@media (min-width: 768px) {
+  /*
+   * Above 768 px the trigger *is* the field — same width, same height, same
+   * border and radius, the glass on the left and the placeholder beside it. It
+   * has to be indistinguishable, because it is what a desktop visitor sees until
+   * they click it, and a control that visibly changes on click reads as a
+   * glitch rather than as a field gaining focus.
+   */
+  .cc-search-trigger {
+    width: 100%;
+    height: 32px;
+    padding: 0 11px;
+    justify-content: flex-start;
+    border: 1px solid var(--cc-border-secondary);
+    color: var(--cc-text-description);
+  }
+  .cc-search-trigger:hover {
+    border-color: var(--cc-primary);
+    background: transparent;
+  }
+  .cc-search-hint {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .cc-search-placeholder,
+  .cc-search-input {
+    height: 32px;
+  }
+}
+
+/* ------------------------------------------------------------------------- *
+ * The account control (§8.1, §8.2)
+ *
+ * An icon on a phone and *Sign in* with words on a desktop — one button either
+ * way, with the word hidden rather than a second component chosen in JavaScript.
+ * ------------------------------------------------------------------------- */
+
+.cc-account-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--cc-text);
+  font: inherit;
+  cursor: pointer;
+  transition:
+    background var(--cc-quick) var(--cc-ease),
+    border-color var(--cc-quick) var(--cc-ease);
+}
+
+.cc-account-button:hover {
+  background: var(--cc-fill-secondary);
+}
+
+.cc-account-button svg {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.cc-account-label {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cc-account-button {
+    width: auto;
+    height: 32px;
+    padding: 0 15px;
+    border: 1px solid var(--cc-border-secondary);
+  }
+  .cc-account-button:hover {
+    border-color: var(--cc-primary);
+    background: transparent;
+    color: var(--cc-primary);
+  }
+  .cc-account-label {
+    display: inline;
+    white-space: nowrap;
+  }
+}
+
+/* ------------------------------------------------------------------------- *
+ * Type
+ *
+ * The three heading sizes AntD derives from `fontSize: 16`, from `HEADING` in
+ * palette.ts and pinned to AntD's own numbers by palette.test.ts — so a heading
+ * rendered by the shell and one rendered by a route are the same heading.
+ * ------------------------------------------------------------------------- */
+
+.cc-h2,
+.cc-h3,
+.cc-h4 {
+  margin: 0 0 0.5em;
+  font-weight: 600;
+  color: var(--cc-text);
+}
+
+.cc-h2 {
+  font-size: var(--cc-h2);
+  line-height: var(--cc-h2-lh);
+}
+
+.cc-h3 {
+  font-size: var(--cc-h3);
+  line-height: var(--cc-h3-lh);
+}
+
+.cc-h4 {
+  font-size: var(--cc-h4);
+  line-height: var(--cc-h4-lh);
+}
+
+.cc-quiet {
+  color: var(--cc-text-description);
+}
+
+.cc-lead {
+  max-width: 620px;
+  margin: 0 0 1em;
+  color: var(--cc-text-description);
+}
+
+.cc-small {
+  font-size: 14px;
+}
+
+/* ------------------------------------------------------------------------- *
+ * Cards and the grids they sit in
+ * ------------------------------------------------------------------------- */
+
+/*
+ * §8.4's grid. AntD's Row/Col at `gutter={[16, 16]}` and `xs=12 md=8 lg=6` is
+ * two, three and four across; this is the same in one declaration, and the
+ * column count is what the gap divides rather than a percentage width that has
+ * to have the gap subtracted from it.
+ */
+.cc-line-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .cc-line-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .cc-line-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.cc-card {
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--cc-border-secondary);
+  /* AntD's `borderRadiusLG`, which is what a Card uses — 10 at borderRadius 8. */
+  border-radius: 10px;
+  background: var(--cc-bg-container);
+  color: inherit;
+  text-decoration: none;
+  transition:
+    border-color var(--cc-quick) var(--cc-ease),
+    box-shadow var(--cc-quick) var(--cc-ease);
+}
+
+/* AntD's `hoverable`: the card lifts rather than changing colour. */
+.cc-card:hover {
+  border-color: transparent;
+  box-shadow:
+    0 1px 2px -2px rgb(0 0 0 / 16%),
+    0 3px 6px 0 rgb(0 0 0 / 12%),
+    0 5px 12px 4px rgb(0 0 0 / 9%);
+}
+
+/*
+ * The card body at its tallest: three line boxes of 24 px — **two reserved for
+ * the name whether it uses them or not**, one for the count — plus 16 px of
+ * padding top and bottom.
+ *
+ * `Vintage / Casio Collection` wraps to two lines in a half-width column at
+ * 360 px and `G-SHOCK` does not, so without the reservation the first row of the
+ * grid on a phone had a 24 px step in it. Reserving the space makes the geometry
+ * a constant instead of a consequence of how long Casio's name for a line
+ * happens to be.
+ *
+ * All three boxes are 24 because 24 is the base 16 px at AntD's 1.5 line height,
+ * and **the count does not get a shorter one**: a 14 px count still sits in a
+ * 24 px box, and reserving 22 for it left the first row 2 px taller than the
+ * rest — the same fault one order of magnitude down.
+ */
+.cc-card-body {
+  position: relative;
+  min-height: 104px;
+  padding: 16px;
+}
+
+.cc-card-accent {
+  border-top: 3px solid var(--cc-accent-line, var(--cc-primary));
+}
+
+.cc-card-name {
+  position: relative;
+  display: block;
+  font-weight: 600;
+}
+
+.cc-card-count {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: var(--cc-text-description);
+}
+
+/* ------------------------------------------------------------------------- *
+ * Skeletons
+ *
+ * AntD's Skeleton is 20 KB for a grey box that pulses. These are the same box.
+ * ------------------------------------------------------------------------- */
+
+@keyframes cc-shimmer {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cc-skeleton-bar {
+  height: 16px;
+  margin: 4px 0;
+  border-radius: 4px;
+  background: var(--cc-fill-secondary);
+  animation: cc-shimmer 1.4s var(--cc-ease) infinite;
+}
+
+/* The rail while it is arriving: eight rows at the height a rail row is. */
+.cc-rail-skeleton {
+  padding: 16px;
+}
+
+.cc-rail-skeleton .cc-skeleton-bar {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cc-skeleton-bar {
+    animation: none;
+  }
+}
+
+/* ------------------------------------------------------------------------- *
+ * The rail's own rows (§8.4)
+ * ------------------------------------------------------------------------- */
+
+.cc-nav {
+  padding: 8px 0;
+}
+
+.cc-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cc-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 16px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  text-decoration: none;
+  cursor: pointer;
+  /* §8.2's touch target, and the row height §8.4's diagram draws. */
+  min-height: 44px;
+  transition: background var(--cc-quick) var(--cc-ease);
+}
+
+.cc-nav-row:hover {
+  background: var(--cc-fill-secondary);
+}
+
+/* §8.3 — the per-line accent *is* the active indicator, so only the active row
+   carries it. Colouring all seven would make the rail a legend for a code
+   nobody has to learn and would stop the colour meaning "you are here". */
+.cc-nav-row[aria-current='page'] {
+  background: var(--cc-fill-secondary);
+  color: var(--cc-primary);
+}
+
+/* The label truncates rather than wrapping: "Vintage / Casio Collection" with a
+   count is wider than 264 px, and a rail row that grows to two lines drags every
+   row below it out of alignment. */
+.cc-nav-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* A column of proportional numerals makes 4 and 18 and 61 look ragged down the
+   rail, which is the whole reason a count column is a column. */
+.cc-nav-count {
+  flex-shrink: 0;
+  color: var(--cc-text-description);
+  font-variant-numeric: tabular-nums;
+}
+
+.cc-nav-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  transition:
+    color var(--cc-quick) var(--cc-ease),
+    transform var(--cc-quick) var(--cc-ease);
+}
+
+.cc-nav-icon svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.cc-nav-row:hover .cc-nav-icon {
+  transform: scale(1.12);
+}
+
+/* A family heading, and the series beneath a line, are indented rather than
+   nested in their own scroll region — §8.4 wants one column of rows. */
+.cc-nav-sub .cc-nav-row {
+  padding-inline-start: 44px;
+  min-height: 40px;
+  font-size: 14px;
+}
+
+.cc-nav-family {
+  padding: 12px 16px 4px;
+  color: var(--cc-text-description);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cc-nav-expander {
+  flex-shrink: 0;
+  width: 18px;
+  color: var(--cc-text-description);
+  transition: transform var(--cc-quick) var(--cc-ease);
+}
+
+.cc-nav-expander[data-open='true'] {
+  transform: rotate(90deg);
+}
+
+/* ------------------------------------------------------------------------- *
+ * The drawer (§8.2, below 768 px)
+ * ------------------------------------------------------------------------- */
+
+.cc-drawer-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgb(0 0 0 / 45%);
+  animation: cc-fade-in var(--cc-quick) var(--cc-ease) both;
+}
+
+@keyframes cc-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cc-slide-in {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.cc-drawer {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-start: 0;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  max-width: 80vw;
+  /* The drawer sits above the page, so it is the elevated surface — a shade
+     lighter than a container in dark mode, and the reason the rail takes its
+     background from whatever it is placed in rather than painting its own. */
+  background: var(--cc-bg-elevated);
+  box-shadow: 6px 0 16px 0 rgb(0 0 0 / 8%);
+  animation: cc-slide-in var(--cc-enter) var(--cc-ease) both;
+}
+
+.cc-drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 8px 8px 16px;
+  border-bottom: 1px solid var(--cc-border-secondary);
+  font-weight: 600;
+}
+
+.cc-drawer-body {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* ------------------------------------------------------------------------- *
+ * The offline bar (FR-11.7) and the error state (FR-10.1)
+ * ------------------------------------------------------------------------- */
+
+.cc-notice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: var(--cc-fill-secondary);
+  color: var(--cc-text);
+  font-size: 14px;
+}
+
+.cc-notice button {
+  margin-inline-start: auto;
+}
+
+.cc-state {
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.cc-state-icon {
+  margin-bottom: 24px;
+  font-size: 72px;
+  line-height: 1;
+}
+
+.cc-state-icon svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+/* ------------------------------------------------------------------------- *
+ * The footer (FR-10.3)
+ * ------------------------------------------------------------------------- */
+
+.cc-footer {
+  padding: 10px 16px;
+  border-top: 1px solid var(--cc-border-secondary);
+  background: var(--cc-bg-container);
+}
+
+.cc-footer-inner {
+  display: grid;
+  gap: 2px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cc-footer a {
+  color: var(--cc-primary);
+}

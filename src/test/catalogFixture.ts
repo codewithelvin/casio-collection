@@ -165,3 +165,48 @@ export const catalogFixture: Catalog = {
 
 /** A JSON round-trip, so a test gets what `fetch` would actually hand back. */
 export const catalogFixtureJson = () => JSON.parse(JSON.stringify(catalogFixture)) as unknown
+
+/**
+ * The same fixture as `catalog-index.json` would serve it (§6.2's split).
+ *
+ * **Derived from the catalogue rather than written beside it**, for the reason
+ * the build derives the real one the same way: two hand-maintained copies of the
+ * seven lines would let a test pass with a rail and a front door that disagree,
+ * which is the one failure mode the split introduces and the only one worth
+ * spending a line of test infrastructure on.
+ */
+export const catalogIndexFixtureJson = (catalog: Catalog = catalogFixture) => {
+  const { models: _models, ...index } = catalog
+  return JSON.parse(JSON.stringify(index)) as unknown
+}
+
+/**
+ * Both legs of the split, served from one catalogue — **and the reason this is a
+ * function rather than an example each test copies.**
+ *
+ * The two artefacts differ by one filename, and `catalog.json` is not a
+ * substring of `catalog-index.json`, so a hand-written matcher for one silently
+ * misses the other. What that looks like is not a failed assertion: the rail
+ * renders its loading skeleton forever, or the front door shows an error state,
+ * on a test that was about something else entirely. There is one matcher, here.
+ *
+ * Returns `null` for anything that is not a catalogue artefact, so a test with
+ * its own endpoints layers them on top rather than reimplementing this.
+ */
+export function catalogArtefactResponse(
+  url: string,
+  catalog: Catalog = catalogFixture,
+): { ok: true; status: 200; json: () => Promise<unknown> } | null {
+  // The index is matched first: see above.
+  if (url.includes('catalog-index.json')) {
+    return { ok: true, status: 200, json: async () => catalogIndexFixtureJson(catalog) }
+  }
+  if (url.includes('catalog.json')) {
+    return {
+      ok: true,
+      status: 200,
+      json: async () => JSON.parse(JSON.stringify(catalog)) as unknown,
+    }
+  }
+  return null
+}

@@ -17,6 +17,8 @@ export const RAW_IMAGE_DIR = join(SRC_DIR, 'images', 'raw')
 export const IMAGE_DIR = join(ROOT, 'public', 'img', 'models')
 export const OUT_DIR = join(ROOT, 'public', 'catalog')
 export const OUT_FILE = join(OUT_DIR, 'catalog.json')
+/** The models-free projection every page's first paint reads instead (§6.2). */
+export const INDEX_FILE = join(OUT_DIR, 'catalog-index.json')
 export const MANIFEST_FILE = join(SRC_DIR, '.published-ids.json')
 
 /** Directories under `catalog-src/` that are not lines. */

@@ -1,7 +1,5 @@
 import { create } from 'zustand'
-import type { ThemeMode } from '../theme/tokens'
-
-const STORAGE_KEY = 'cc.theme'
+import { THEME_STORAGE_KEY, type ThemeMode } from '../theme/palette.ts'
 
 /**
  * §8.3 — seeded from prefers-color-scheme, overridable by the toggle, and the
@@ -10,7 +8,7 @@ const STORAGE_KEY = 'cc.theme'
  */
 function initialMode(): ThemeMode {
   try {
-    const stored = localStorage.getItem(STORAGE_KEY)
+    const stored = localStorage.getItem(THEME_STORAGE_KEY)
     if (stored === 'light' || stored === 'dark') return stored
   } catch {
     // Private mode, or storage disabled. The OS preference is a fine answer.
@@ -19,6 +17,26 @@ function initialMode(): ThemeMode {
     return 'dark'
   }
   return 'light'
+}
+
+/**
+ * §12 — **the shell is painted by CSS custom properties, and this is what picks
+ * which set of them applies.**
+ *
+ * Since the shell stopped rendering with Ant Design it has no access to a token
+ * object; its colours come from `[data-theme]` on the document element, defined
+ * by the `<style>` block `vite.config.ts` injects. Something has to set that
+ * attribute, and *when* is the whole subtlety: an effect runs after the browser
+ * has painted, so a dark-mode visitor would get one frame of white header on
+ * every page load. Called at module scope below — before React's first render —
+ * and again from the toggle, it is set before anything is painted at all.
+ *
+ * Guarded for jsdom and for anything else without a document, so importing the
+ * store in a unit test does not need a DOM.
+ */
+function applyTheme(mode: ThemeMode): void {
+  if (typeof document === 'undefined') return
+  document.documentElement.dataset['theme'] = mode
 }
 
 /** FR-9.3 — an unsent report that survived a sign-in, waiting to be reopened. */
@@ -46,17 +64,23 @@ interface UiState {
   setRequestDraft: (draft: RequestDraft | null) => void
 }
 
+/** The mode the store opens on, resolved once and applied to the document
+ *  before React renders anything. */
+const startingMode = initialMode()
+applyTheme(startingMode)
+
 /** §7.2 — drawer and theme live here. Filters and search do not: they live in the URL. */
 export const useUiStore = create<UiState>((set, get) => ({
-  mode: initialMode(),
+  mode: startingMode,
   drawerOpen: false,
   toggleTheme: () => {
     const next: ThemeMode = get().mode === 'dark' ? 'light' : 'dark'
     try {
-      localStorage.setItem(STORAGE_KEY, next)
+      localStorage.setItem(THEME_STORAGE_KEY, next)
     } catch {
       // Not being able to remember the choice is not a reason to refuse it.
     }
+    applyTheme(next)
     set({ mode: next })
   },
   setDrawerOpen: (drawerOpen) => set({ drawerOpen }),

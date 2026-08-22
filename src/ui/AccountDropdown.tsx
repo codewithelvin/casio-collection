@@ -2,6 +2,7 @@ import { Dropdown, Typography, theme as antdTheme, type MenuProps } from 'antd'
 import { useNavigate } from 'react-router-dom'
 import { useSessionStore } from '../auth/session.ts'
 import { useSignOut } from '../auth/useSignOut.ts'
+import AntdRoot from './AntdRoot'
 import { t } from '../i18n/strings'
 
 /**
@@ -17,7 +18,23 @@ import { t } from '../i18n/strings'
  * session never keeps the URL at all. Initials in the accent colour say the
  * same thing and stay same-origin.
  */
+/**
+ * §12 — the provider comes with the island.
+ *
+ * `AntdRoot` left `App.tsx` so the entry chunk would stop carrying AntD's theme
+ * runtime, and this renders in the header, above every route — so there is no
+ * route wrapper to inherit from. Without it the dropdown would be AntD's default
+ * blue at AntD's default size, in a header that is neither.
+ */
 export default function AccountDropdown() {
+  return (
+    <AntdRoot>
+      <Dropdownable />
+    </AntdRoot>
+  )
+}
+
+function Dropdownable() {
   const { token } = antdTheme.useToken()
   const user = useSessionStore((state) => state.user)
   const navigate = useNavigate()

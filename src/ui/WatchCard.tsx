@@ -4,7 +4,7 @@ import type { PublishedModel } from '../catalog/schema.ts'
 import { imageSources } from '../catalog/client.ts'
 import { OwnershipControls } from './OwnershipControls'
 import { prefetchOnIntent } from './prefetch'
-import { LINE_ACCENTS } from '../theme/tokens'
+import { LINE_ACCENTS } from '../theme/palette.ts'
 
 /**
  * §8.6 — the watch card.

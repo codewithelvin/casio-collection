@@ -1,47 +1,49 @@
-import type { CSSProperties } from 'react'
-import { Button, Drawer, Grid, Layout, theme as antdTheme } from 'antd'
-import MenuOutlined from '@ant-design/icons/MenuOutlined'
-import BulbOutlined from '@ant-design/icons/BulbOutlined'
-import BulbFilled from '@ant-design/icons/BulbFilled'
 import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
 import { Lockup } from './Mark'
 import { LineNav } from './LineNav'
+// Imported eagerly, and that is a reversal worth naming: it was behind `lazy()`
+// an hour ago because it was an AntD Drawer. Now that it is a fixed panel and a
+// mask, the whole module is smaller than the network round trip that fetching it
+// would cost, and a drawer that opens on the second tap is worse than a drawer
+// that costs 2 KB.
+import NavDrawer from './NavDrawer'
 import { Footer } from './Footer'
 import { SearchBox } from './SearchBox'
 import { AccountMenu } from './AccountMenu'
 import { OfflineBar } from './OfflineBar'
 import { AuthHost } from '../auth/AuthHost'
+import { BulbFilledIcon, BulbOutlineIcon, MenuIcon } from './icons'
 import { useUiStore } from './uiStore'
 import { t } from '../i18n/strings'
 
-const HEADER_HEIGHT = 64
-const SIDER_WIDTH = 264
-/** §8.2 — every interactive element is at least this tall below 768 px. */
-const TOUCH_TARGET = 44
-
 /**
- * §8.1 / §8.2 — the shell. A fixed 64 px header, a 264 px rail that becomes an
+ * §8.1 / §8.2 — the shell. A sticky 64 px header, a 264 px rail that becomes an
  * off-canvas drawer below 768 px, and a content region.
  *
- * The breakpoint is read from AntD's own grid rather than a media query in CSS,
- * because the rail and the drawer are different components and something has to
- * decide which one exists. `md` is 768 px, which is the number in §8.2.
+ * **The breakpoint is a media query now, and that is the single most important
+ * change in this file (§12).** It used to be `Grid.useBreakpoint()` — AntD
+ * reading matchMedia and re-rendering — with the comment that "the rail and the
+ * drawer are different components and something has to decide which one exists".
+ * That was true and it was expensive in a way the comment could not see: a layout
+ * that needs JavaScript to choose itself cannot be drawn until the JavaScript
+ * arrives, and on Lighthouse's mobile profile the JavaScript was 1 469 ms of
+ * evaluation. Both the rail and the drawer trigger are in the markup now and
+ * `shell.css` shows one of them, so the shell has a shape before React has an
+ * opinion.
+ *
+ * What is left of Ant Design in the first load is nothing. Every screen that
+ * shows watches still uses it, wrapped in the `AntdRoot` its own route chunk
+ * pulls in.
  */
 export function AppShell() {
-  const { token } = antdTheme.useToken()
-  const screens = Grid.useBreakpoint()
   const { pathname } = useLocation()
   const { mode, toggleTheme, drawerOpen, setDrawerOpen } = useUiStore()
 
-  const isMobile = !screens.md
-
-  const rootStyle = { ['--cc-accent' as string]: token.colorPrimary } as CSSProperties
-
   return (
-    <Layout style={{ ...rootStyle, minHeight: '100vh' }}>
+    <div className="cc-shell">
       {/*
         A browser resets the scroll on every page it loads; a single-page app has
-        to do it itself, and until now this one did not. Opening a watch from the
+        to do it itself, and until M3 this one did not. Opening a watch from the
         eighteenth card of a series left you two thousand pixels down a page that
         is four hundred tall, looking at a footer.
 
@@ -61,55 +63,47 @@ export function AppShell() {
           opened from four places: the header, a guarded route, the Owned button
           from M5, and the missing-reference form from M8. */}
       <AuthHost />
-      <Layout.Header
-        style={{
-          position: 'sticky',
-          top: 0,
-          zIndex: 20,
-          height: HEADER_HEIGHT,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 12,
-          padding: '0 16px',
-          background: token.colorBgContainer,
-          borderBottom: `1px solid ${token.colorBorderSecondary}`,
-        }}
-      >
-        {isMobile ? (
-          <Button
-            type="text"
-            aria-label={t('nav.open')}
-            icon={<MenuOutlined />}
-            onClick={() => setDrawerOpen(true)}
-            style={{ width: TOUCH_TARGET, height: TOUCH_TARGET }}
-          />
-        ) : null}
+
+      <header className="cc-header">
+        {/* Below 768 px only — hidden by `shell.css` above it, where the rail
+            itself is on screen and there is nothing to open. */}
+        <button
+          type="button"
+          className="cc-icon-button cc-drawer-trigger"
+          aria-label={t('nav.open')}
+          aria-expanded={drawerOpen}
+          onClick={() => setDrawerOpen(true)}
+        >
+          <MenuIcon />
+        </button>
 
         <Link to="/" aria-label={t('app.name')} style={{ display: 'inline-flex', flexShrink: 0 }}>
           {/* Below 120 px the wordmark loses its letterspacing, so on a phone
-              the mark stands alone (§8.11). */}
-          <Lockup markSize={32} showWordmark={!isMobile} />
+              the mark stands alone (§8.11). Which is now a CSS decision — see
+              `.cc-wordmark` — rather than a prop, because the shell no longer
+              knows in JavaScript how wide it is. */}
+          <Lockup markSize={32} />
         </Link>
 
         <div style={{ flex: 1, display: 'flex', justifyContent: 'center', minWidth: 0 }}>
-          <SearchBox collapsedToIcon={isMobile} />
+          <SearchBox />
         </div>
 
-        <Button
-          type="text"
-          className="cc-theme-toggle"
+        <button
+          type="button"
+          className="cc-icon-button cc-theme-toggle"
           aria-label={mode === 'dark' ? t('theme.toLight') : t('theme.toDark')}
-          icon={mode === 'dark' ? <BulbFilled /> : <BulbOutlined />}
           onClick={toggleTheme}
-          style={{ width: TOUCH_TARGET, height: TOUCH_TARGET, flexShrink: 0 }}
-        />
+        >
+          {mode === 'dark' ? <BulbFilledIcon /> : <BulbOutlineIcon />}
+        </button>
 
         {/* §8.1's account menu, which from M0 until M4 was this comment saying
             a Sign in button that opens nothing is worse than no button. It
             renders nothing at all until a Supabase project is configured, which
             is the same rule holding rather than a new one. */}
-        <AccountMenu compact={isMobile} />
-      </Layout.Header>
+        <AccountMenu />
+      </header>
 
       {/* Keyboard users reach the content without tabbing the whole rail on
           every navigation. Visible only when focused — a skip link that is
@@ -122,77 +116,30 @@ export function AppShell() {
       {/* FR-11.7 / FR-11.2 — said once, under the header, and nowhere else. */}
       <OfflineBar />
 
-      <Layout>
-        {isMobile ? (
-          <Drawer
-            open={drawerOpen}
-            onClose={() => setDrawerOpen(false)}
-            placement="left"
-            width={SIDER_WIDTH}
-            title={t('nav.lines')}
-            closable
-            /*
-              The body is a flex column so the nav inside it can claim the whole
-              panel. Without this the Menu is as tall as its seven rows — 312 px
-              of an 844 px drawer on a phone — and in dark mode it paints its own
-              `colorBgContainer` (#141414) over the drawer's `colorBgElevated`
-              (#1f1f1f). That drew a darker slab across the top third of the
-              drawer with a hard seam under the last line, which reads as the
-              menu being too dark and stopping short. Both halves are the same
-              fault: the nav was painting a surface it does not own.
+      <div className="cc-body">
+        {/* Above 768 px this is the rail; below it, `shell.css` hides it and the
+            hamburger opens the drawer instead. Both are always in the markup. */}
+        <aside className="cc-rail">
+          <LineNav />
+        </aside>
 
-              Fixed here rather than by re-colouring the Menu, because the rail
-              renders in two places and only one of them is elevated. LineNav
-              takes its background from whatever it is placed in.
-            */
-            styles={{ body: { padding: 0, display: 'flex', flexDirection: 'column' } }}
-          >
-            <LineNav onNavigate={() => setDrawerOpen(false)} />
-          </Drawer>
-        ) : (
-          <Layout.Sider
-            width={SIDER_WIDTH}
-            collapsible
-            // §8.2's two desktop rows, straight from AntD: expanded from 1200
-            // (xl), collapsed to icons between 768 and 1199, and the user can
-            // toggle it in either. Left uncontrolled so the breakpoint and the
-            // toggle are not two sources of truth for one piece of state.
-            breakpoint="xl"
-            theme="light"
-            style={{
-              background: token.colorBgContainer,
-              borderInlineEnd: `1px solid ${token.colorBorderSecondary}`,
-              // The header is sticky and the rail scrolls independently (§8.1).
-              position: 'sticky',
-              top: HEADER_HEIGHT,
-              height: `calc(100vh - ${HEADER_HEIGHT}px)`,
-              overflowY: 'auto',
-            }}
-          >
-            <LineNav />
-          </Layout.Sider>
-        )}
+        {/* Nothing at all until the hamburger has been pressed: a closed drawer
+            renders no panel, and an unopened one costs a phone nothing. */}
+        {drawerOpen ? <NavDrawer onClose={() => setDrawerOpen(false)} /> : null}
 
-        <Layout style={{ background: token.colorBgLayout }}>
-          <Layout.Content style={{ padding: isMobile ? 16 : 24 }}>
-            {/* Keyed on the path so the entrance replays per navigation. The
-                key is deliberately the pathname and not the full location:
-                changing a filter in the query string (FR-1.6) must not
-                re-animate the grid someone is reading. */}
-            {/* The one landmark a screen-reader user navigates by, and the
-                target of the skip link. AntD's Content is a plain div, so
-                without this the whole page is one undifferentiated region. */}
-            <main id="main" key={pathname} className="cc-route">
-              <Outlet />
-            </main>
-          </Layout.Content>
+        <div className="cc-main-column">
+          {/* Keyed on the path so the entrance replays per navigation. The
+              key is deliberately the pathname and not the full location:
+              changing a filter in the query string (FR-1.6) must not
+              re-animate the grid someone is reading. */}
+          {/* The one landmark a screen-reader user navigates by, and the
+              target of the skip link. */}
+          <main id="main" key={pathname} className="cc-content cc-route">
+            <Outlet />
+          </main>
           <Footer />
-        </Layout>
-      </Layout>
-    </Layout>
+        </div>
+      </div>
+    </div>
   )
 }
-
-/* §8.2's collapsing search field moved to SearchBox at M3, where it grew a
-   dropdown, a matcher and a keyboard shortcut. The shell only decides whether
-   it is an icon or a field. */

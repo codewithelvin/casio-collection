@@ -40,7 +40,7 @@ import { OwnershipControls } from '../../ui/OwnershipControls'
 import { ImproveEntry } from '../../ui/ImproveEntry'
 import { NoteEditor } from '../../ui/NoteEditor'
 import { useOwnership } from '../../collection/mutations.ts'
-import { LINE_ACCENTS } from '../../theme/tokens'
+import { LINE_ACCENTS } from '../../theme/palette.ts'
 import {
   availabilityLabel,
   displayLabel,

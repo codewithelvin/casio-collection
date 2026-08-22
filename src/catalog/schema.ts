@@ -287,15 +287,46 @@ export const FACET_SUMMARY = z.strictObject({
 })
 export type FacetSummary = z.infer<typeof FACET_SUMMARY>
 
-/** Everything except the stamp — this is what the version digest is taken over. */
-export const CATALOG_PAYLOAD = z.strictObject({
+/**
+ * Everything the artefact says about the *shape* of the catalogue — the lines,
+ * the families, the series and the facet summary — and nothing it says about an
+ * individual watch.
+ *
+ * **This exists because of what it costs to know a model.** 2 832 of them are
+ * 1.7 MB of the 2.4 MB file, and the front door renders seven cards from
+ * `lines` while the rail renders 328 rows from `series`; before the split both
+ * paid for every specification of every reference to do it. Measured at PSI's
+ * 4× throttle that was most of a second of main thread before anything on the
+ * screen moved.
+ *
+ * It is spelled as a shape spread into both artefacts rather than as a
+ * `.omit({ models: true })` off the whole, because §6.2's rule is that there is
+ * one definition of each of these things and a derived schema is still one
+ * definition. What it is *not* is a second file listing the same fields.
+ */
+export const CATALOG_SHAPE = z.strictObject({
   lines: z.array(PUBLISHED_LINE),
   families: z.array(PUBLISHED_FAMILY),
   series: z.array(PUBLISHED_SERIES),
-  models: z.array(PUBLISHED_MODEL),
   facets: z.record(z.string(), FACET_SUMMARY),
 })
+
+/** Everything except the stamp — this is what the version digest is taken over. */
+export const CATALOG_PAYLOAD = z.strictObject({
+  ...CATALOG_SHAPE.shape,
+  models: z.array(PUBLISHED_MODEL),
+})
 export type CatalogPayload = z.infer<typeof CATALOG_PAYLOAD>
+
+/**
+ * §6.2 — the build stamp, and the cache-busting query. Both artefacts carry it,
+ * and they carry the *same* one: the digest is taken over the whole payload, so
+ * an index whose version matches the catalogue's is an index of that catalogue.
+ */
+const STAMP = {
+  version: z.string().min(1),
+  generatedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+}
 
 /**
  * The stamp is spread in **before** the payload rather than extended on after,
@@ -304,9 +335,22 @@ export type CatalogPayload = z.infer<typeof CATALOG_PAYLOAD>
  * that is where a human opening the artefact looks for them.
  */
 export const CATALOG = z.strictObject({
-  /** §6.2 — the build stamp, and the cache-busting query. */
-  version: z.string().min(1),
-  generatedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  ...STAMP,
   ...CATALOG_PAYLOAD.shape,
 })
 export type Catalog = z.infer<typeof CATALOG>
+
+/**
+ * `catalog-index.json` — the same document with `models` left out.
+ *
+ * Every screen that needs a watch still parses the whole catalogue; what changed
+ * is that the screens which do not — the front door, the rail on every page —
+ * no longer wait for one. `Catalog` is assignable to this by construction, so a
+ * selector typed against it reads either artefact and there is no second set of
+ * accessors to keep in step.
+ */
+export const CATALOG_INDEX = z.strictObject({
+  ...STAMP,
+  ...CATALOG_SHAPE.shape,
+})
+export type CatalogIndex = z.infer<typeof CATALOG_INDEX>

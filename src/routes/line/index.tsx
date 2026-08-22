@@ -11,7 +11,7 @@ import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
 import { FilterBar } from '../../ui/FilterBar'
 import { useViewState } from '../../ui/useViewState'
-import { LINE_ACCENTS } from '../../theme/tokens'
+import { LINE_ACCENTS } from '../../theme/palette.ts'
 import { t } from '../../i18n/strings'
 
 /**

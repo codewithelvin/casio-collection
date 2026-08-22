@@ -1,24 +1,38 @@
 import { Suspense, lazy } from 'react'
-import { Button, theme as antdTheme } from 'antd'
-import UserOutlined from '@ant-design/icons/UserOutlined'
+import { UserIcon } from './icons'
 import { useSessionStore } from '../auth/session.ts'
 import { t } from '../i18n/strings'
 
 /**
- * §8.1 — the account control in the header. From M0 until now this was a
+ * §8.1 — the account control in the header. From M0 until M4 this was a
  * comment saying a **Sign in** button that opens nothing is worse than no
- * button; M4 is the milestone that gives it something to open.
+ * button; M4 is the milestone that gave it something to open.
  *
  * Three of its four states cost nothing: `unavailable` renders nothing at all,
- * `guest` is one Button the shell already imports, and `restoring` is a plain
- * div. Only the signed-in state needs Dropdown, Menu and Avatar, and it loads
- * them when it needs them — the same argument D40 used to settle O10, applied
- * to the least common state rather than the most common one.
+ * `guest` is one button, and `restoring` is a plain div. Only the signed-in
+ * state needs Dropdown, Menu and Avatar, and it loads them when it needs them —
+ * the same argument D40 used to settle O10, applied to the least common state
+ * rather than the most common one.
+ *
+ * §12 — the three cheap states are now cheap in the way that counts. They were
+ * an AntD `Button` and a token read, which put AntD in the entry chunk for the
+ * overwhelmingly common case of a visitor who is not signed in and never
+ * touches this control. `AccountDropdown` is where Ant Design starts, and it
+ * brings its own `AntdRoot`.
  */
 const AccountDropdown = lazy(() => import('./AccountDropdown.tsx'))
 
-export function AccountMenu({ compact = false }: { compact?: boolean }) {
-  const { token } = antdTheme.useToken()
+/**
+ * §8.2's two shapes, and **no `compact` prop any more.**
+ *
+ * The shell used to pass one, computed from `Grid.useBreakpoint()`: an icon on a
+ * phone, *Sign in* with words on a desktop. §12 took that decision out of
+ * JavaScript, so the button now always carries both the glyph and the word and
+ * `.cc-account-label` hides the word below 768 px. The `aria-label` is on it at
+ * every width, which is what keeps the control named "Sign in" to a screen
+ * reader on the layout where the word is not drawn.
+ */
+export function AccountMenu() {
   const status = useSessionStore((state) => state.status)
   const promptSignIn = useSessionStore((state) => state.promptSignIn)
 
@@ -43,25 +57,23 @@ export function AccountMenu({ compact = false }: { compact?: boolean }) {
           height: 32,
           flexShrink: 0,
           borderRadius: '50%',
-          background: token.colorFillSecondary,
+          background: 'var(--cc-fill-secondary)',
         }}
       />
     )
   }
 
   if (status === 'guest') {
-    return compact ? (
-      <Button
-        type="text"
+    return (
+      <button
+        type="button"
+        className="cc-account-button"
         aria-label={t('account.signIn')}
-        icon={<UserOutlined />}
         onClick={() => promptSignIn()}
-        style={{ width: 44, height: 44, flexShrink: 0 }}
-      />
-    ) : (
-      <Button onClick={() => promptSignIn()} style={{ flexShrink: 0 }}>
-        {t('account.signIn')}
-      </Button>
+      >
+        <UserIcon />
+        <span className="cc-account-label">{t('account.signIn')}</span>
+      </button>
     )
   }
 

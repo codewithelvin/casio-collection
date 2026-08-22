@@ -22,7 +22,7 @@
  *
  * Run by `npm run build` after `vite build`, via Node's type stripping (D37).
  */
-import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { CATALOG, type Catalog, type PublishedModel } from '../src/catalog/schema.ts'
@@ -485,31 +485,39 @@ export function robotsTxt(): string {
   ].join('\n')
 }
 
-async function resourceHints(): Promise<string[]> {
-  const assets = await readdir(join(dist, 'assets'))
-  const critical = assets.filter(
-    (name) =>
-      name.endsWith('.woff2') &&
-      (/plex-sans-latin-400/.test(name) ||
-        /plex-sans-latin-600/.test(name) ||
-        /plex-mono-latin-400/.test(name)),
-  )
-
+/**
+ * The hints that go in every page's head — and the argument for each one being
+ * short is the whole of why the list is short.
+ *
+ * **The three font preloads are gone, and that is a measurement rather than a
+ * tidy-up.** Lighthouse's mobile profile simulates 1.6 Mbps, which is about
+ * 200 KB/s: the fonts are 62 KB, so preloading them spent roughly 300 ms of the
+ * critical window — taken directly from the entry script, which is the one file
+ * that *does* gate the first paint. And they were never buying a faster paint to
+ * begin with. `index.css` sets `font-display: swap` on all five faces (NFR-1),
+ * so text renders in the fallback the moment there is text to render and swaps
+ * when Plex lands. What the preloads shortened was the swap, at the cost of
+ * everything arriving later.
+ *
+ * The `@font-face` rules are untouched, so the faces still load — discovered
+ * from a 1 KB stylesheet that is itself in the head, which is early. What
+ * changed is that they no longer outrank the script the page cannot paint
+ * without.
+ */
+function resourceHints(): string[] {
   return [
-    ...critical.map(
-      (name) =>
-        // `crossorigin` is not optional on a font preload even same-origin: a
-        // font is always fetched in CORS mode, so a hint without it downloads
-        // the file a second time instead of matching the request it was for.
-        `<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/${name}" />`,
-    ),
-    `<link rel="preload" as="fetch" crossorigin="anonymous" href="/catalog/catalog.json" />`,
+    // §6.2's index, not the catalogue. The hint is only ever right about the
+    // file the *shell* waits for, and since the split that is this one — the
+    // rail reads it on every URL. Preloading 105 KB of specifications that the
+    // front door never names was spending the whole critical window on a file
+    // most visits never open.
+    `<link rel="preload" as="fetch" crossorigin="anonymous" href="/catalog/catalog-index.json" />`,
   ]
 }
 
 async function main() {
   const shell = await readFile(join(dist, 'index.html'), 'utf8')
-  const hints = await resourceHints()
+  const hints = resourceHints()
   const catalog = CATALOG.parse(JSON.parse(await readFile(join(dist, 'catalog/catalog.json'), 'utf8')))
 
   const pages: Page[] = [homePage(catalog)]

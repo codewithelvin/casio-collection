@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/vitest'
 import { afterEach, beforeEach, vi } from 'vitest'
 import { cleanup, configure } from '@testing-library/react'
-import { catalogFixtureJson } from './catalogFixture'
+import { catalogArtefactResponse } from './catalogFixture'
 
 /**
  * Testing Library's `findBy*` carries its **own** one-second timeout, separate
@@ -80,10 +80,12 @@ beforeEach(() => {
   vi.stubGlobal(
     'fetch',
     vi.fn(async (input: RequestInfo | URL) => {
-      if (String(input).includes('catalog.json')) {
-        return { ok: true, status: 200, json: async () => catalogFixtureJson() }
-      }
-      return { ok: false, status: 404, json: async () => ({}) }
+      // Both legs of §6.2's split, from the one matcher in `catalogFixture` —
+      // since the split, the rail on every screen needs the index and every
+      // screen showing watches needs the catalogue.
+      return (
+        catalogArtefactResponse(String(input)) ?? { ok: false, status: 404, json: async () => ({}) }
+      )
     }),
   )
 })

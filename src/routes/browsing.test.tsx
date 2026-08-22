@@ -7,26 +7,38 @@ import { t } from '../i18n/strings'
 /**
  * M2 — browsing. These drive the real route table through the real shell, so a
  * screen that renders only because a test mounted it in isolation cannot pass.
+ *
+ * **The front-door queries are scoped to `main`, and that scope is load-bearing
+ * since §12.** The rail used to be an AntD `Menu`, so its rows had role
+ * `menuitem` and a query for a link could only find a card. It is a list of real
+ * `<a>` elements now, and it carries the same seven line names the front door
+ * does — so an unscoped `findByRole('link', { name: /G-SHOCK/ })` matches two
+ * elements and throws.
  */
+const front = () => within(screen.getByRole('main'))
 
 describe('the home route', () => {
   it('lists every published line with its real count', async () => {
     renderApp('/')
+    // Awaited once here; the route is lazy, so nothing is in `main` until it
+    // resolves and every `front()` below it is synchronous.
+    await screen.findByRole('heading', { name: t('home.linesHeading') })
 
-    const gShock = await screen.findByRole('link', { name: /G-SHOCK/ })
+    const gShock = await front().findByRole('link', { name: /G-SHOCK/ })
     expect(gShock).toHaveAttribute('href', '/line/g-shock')
-    expect(await screen.findByText(`4 ${t('home.models')}`)).toBeInTheDocument()
+    expect(await front().findByText(`4 ${t('home.models')}`)).toBeInTheDocument()
   })
 
   it('puts no card on the front door that has nothing behind it (D51)', async () => {
     renderApp('/')
-    await screen.findByRole('link', { name: /G-SHOCK/ })
+    await screen.findByRole('heading', { name: t('home.linesHeading') })
+    await front().findByRole('link', { name: /G-SHOCK/ })
 
     // The front door used to carry a "Not catalogued yet" card for each of the
     // five unseeded lines. D51 took that state out of the artefact rather than
     // out of the card, so the assertion is about every card's count rather than
     // about one string — "0 models" is the same empty category wearing a number.
-    const cards = screen.getAllByRole('link', { name: new RegExp(`${t('home.models')}$`) })
+    const cards = front().getAllByRole('link', { name: new RegExp(`${t('home.models')}$`) })
     expect(cards.length).toBeGreaterThan(0)
     for (const card of cards) {
       expect(card.textContent).not.toMatch(new RegExp(`(^|\\D)0 ${t('home.models')}$`))
@@ -41,13 +53,26 @@ describe('the home route', () => {
    * than the `Vintage / Casio Collection` card beside it, and the whole block
    * shrank by 400 px the moment the catalogue arrived.
    */
-  it('passes the column height through the link, so a card cannot sit short of its row', async () => {
+  it('makes the card the grid item itself, so it cannot sit short of its row', async () => {
     renderApp('/')
+    await screen.findByRole('heading', { name: t('home.linesHeading') })
 
-    const link = await screen.findByRole('link', { name: /G-SHOCK/ })
-    // The card asks for `height: 100%`, which is a claim about its parent. This
-    // anchor is that parent.
-    expect(link).toHaveStyle({ height: '100%' })
+    const link = await front().findByRole('link', { name: /G-SHOCK/ })
+
+    // **The mechanism this pins has changed, and the old failure is now
+    // structurally impossible rather than merely fixed.** It used to be an
+    // anchor wrapping an AntD Card, where the card asked for `height: 100%` —
+    // a claim about its parent — and the anchor sat at its content height and
+    // left a gap under itself. The assertion was `toHaveStyle({ height: '100%' })`
+    // on that anchor.
+    //
+    // §12 replaced Row/Col/Card with one CSS grid, and the anchor *is* the grid
+    // item: `align-items: stretch` is the default, so it fills its row without
+    // anyone claiming anything. There is no inner card to be shorter than its
+    // wrapper, so what is asserted is that there is no wrapper — the link is a
+    // direct child of the grid.
+    expect(link.parentElement?.className).toContain('cc-line-grid')
+    expect(link.className).toContain('cc-card')
   })
 
   it('loads through a skeleton of the front door s own shape, not the watch grid s', async () => {
@@ -65,11 +90,14 @@ describe('the home route', () => {
     const main = heading.closest('main')
     expect(main).not.toBeNull()
 
-    expect(main!.querySelectorAll('.ant-card')).toHaveLength(7)
+    expect(main!.querySelectorAll('.cc-card')).toHaveLength(7)
     // A line card has no photograph, so its skeleton has no square tile. The
     // watch grid's skeleton does, and borrowing it here put an image placeholder
     // above every line name and then collapsed it when the catalogue landed.
-    expect(main!.querySelector('.ant-card-cover')).toBeNull()
+    expect(main!.querySelector('img')).toBeNull()
+    // And the skeleton stands in the same grid the cards will, so the seven
+    // boxes do not re-flow into a different number of columns when they fill.
+    expect(main!.querySelector('.cc-line-grid')).not.toBeNull()
   })
 })
 

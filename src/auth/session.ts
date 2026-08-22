@@ -3,7 +3,29 @@ import type { Session, SupabaseClient } from '@supabase/supabase-js'
 import type { PublishedModel } from '../catalog/schema.ts'
 import { authCallbackUrl } from './config.ts'
 import { getSupabase, hasStoredSession, isAuthConfigured } from './supabase.ts'
-import { clearPendingIntent } from './pendingIntent.ts'
+/**
+ * §12 — **imported inside `signOut` rather than at the top of this file, and the
+ * reason is Zod.**
+ *
+ * `pendingIntent.ts` validates the slot it reads with a Zod schema, built at
+ * module scope. This store is reached from `AuthHost`, which is in the shell — so
+ * a static import here put all 174 KB unminified of Zod into the entry chunk of
+ * every URL on the site, to be able to clear a slot on the way *out*. Every other
+ * importer of `pendingIntent` is already behind a lazy boundary.
+ *
+ * Signing out is the one moment where an extra round trip costs nothing: there is
+ * already a request to Supabase in flight above the call site, and the chunk is a
+ * few hundred bytes.
+ *
+ * **Awaited at the call site, and that is not optional.** FR-11.6 says a shared
+ * device must not hold the last person's watches, so `signOut()` resolving before
+ * the slot is actually gone would make the promise a lie — and `session.test.ts`
+ * asserts exactly that, which is how the first version of this was caught.
+ */
+const clearPendingIntent = async () => {
+  const { clearPendingIntent: clear } = await import('./pendingIntent.ts')
+  clear()
+}
 import { purgeCaches } from '../pwa/offline.ts'
 
 /**
@@ -193,7 +215,7 @@ export const useSessionStore = create<SessionState>((set, get) => ({
       // possible outcome on a shared machine.
       // FR-11.6 — a shared device must not hold the last person's watches.
       purgeCaches()
-      clearPendingIntent()
+      await clearPendingIntent()
       set({ status: 'guest', user: null, prompt: { open: false, model: null } })
     }
   },

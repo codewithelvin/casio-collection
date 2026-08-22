@@ -111,15 +111,17 @@ function MarkCompact({ size, className }: MarkVariantProps) {
  * D39 shortened the second word from COLLECTION to VAULT, which the lockup takes
  * without a change: the two weights are what carry the reading, not the length.
  *
- * Below 120 px wide the letterspacing stops reading, so the mark stands alone.
+ * Below 120 px wide the letterspacing stops reading, so on a phone the mark
+ * stands alone.
+ *
+ * **That used to be a `showWordmark` prop the shell computed from
+ * `Grid.useBreakpoint()`, and it is a media query now (§12).** The prop is gone
+ * rather than defaulted, because a prop nobody passes is a prop somebody will
+ * pass wrongly — and the reason it went is the point of the whole change: the
+ * shell no longer asks JavaScript how wide it is, so it can be drawn before the
+ * JavaScript arrives. `.cc-wordmark` in `shell.css` hides it below 768 px.
  */
-export function Lockup({
-  markSize = 32,
-  showWordmark = true,
-}: {
-  markSize?: number
-  showWordmark?: boolean
-}) {
+export function Lockup({ markSize = 32 }: { markSize?: number }) {
   return (
     <span
       style={{
@@ -127,25 +129,23 @@ export function Lockup({
         alignItems: 'center',
         // Clear space around the lockup is the height of the C (§8.11).
         gap: 10,
-        color: 'var(--cc-accent)',
+        color: 'var(--cc-primary)',
         lineHeight: 1,
       }}
     >
       <Mark size={markSize} />
-      {showWordmark ? (
-        <span style={{ display: 'inline-flex', gap: '0.35em', fontSize: 15, whiteSpace: 'nowrap' }}>
-          {/* The `{' '}` is not decorative and must not be tidied away. Without
-              it the two spans are adjacent in the DOM and the element's text is
-              `CASIOVAULT`, which does not match the `aria-label` on the link
-              above — axe reports it as `label-content-name-mismatch`, and a
-              voice-control user asking for "Casio Vault" is asking for a name
-              the page does not have. It changes nothing visually: a
-              whitespace-only run between flex items is not rendered as an item,
-              so the 0.35em gap is still the only space here. */}
-          <span style={{ fontWeight: 600, letterSpacing: '0.08em' }}>{t('app.name.casio')}</span>{' '}
-          <span style={{ fontWeight: 400, letterSpacing: '0.08em' }}>{t('app.name.vault')}</span>
-        </span>
-      ) : null}
+      <span className="cc-wordmark">
+        {/* The `{' '}` is not decorative and must not be tidied away. Without
+            it the two spans are adjacent in the DOM and the element's text is
+            `CASIOVAULT`, which does not match the `aria-label` on the link
+            above — axe reports it as `label-content-name-mismatch`, and a
+            voice-control user asking for "Casio Vault" is asking for a name
+            the page does not have. It changes nothing visually: a
+            whitespace-only run between flex items is not rendered as an item,
+            so the 0.35em gap is still the only space here. */}
+        <span style={{ fontWeight: 600, letterSpacing: '0.08em' }}>{t('app.name.casio')}</span>{' '}
+        <span style={{ fontWeight: 400, letterSpacing: '0.08em' }}>{t('app.name.vault')}</span>
+      </span>
     </span>
   )
 }

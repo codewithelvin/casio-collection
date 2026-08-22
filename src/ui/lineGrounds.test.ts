@@ -3,7 +3,7 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { buildCatalog } from '../catalog/build.ts'
 import { IMAGE_DIR, loadCatalogSource } from '../../scripts/catalog/load.ts'
-import { LINE_GROUNDS, LINE_GROUND_OPACITY } from '../theme/tokens'
+import { LINE_GROUNDS, LINE_GROUND_OPACITY } from '../theme/palette.ts'
 
 /**
  * The watch ghosted behind each line card on the front door.
