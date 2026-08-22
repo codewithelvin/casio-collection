@@ -65,7 +65,7 @@ export function AppShell() {
       <AuthHost />
 
       {/*
-        **Three groups, and the two flanks are what centre the search.**
+        **Three groups, one per column of `.cc-header`'s grid.**
 
         The header used to be five children in a row with the search wrapper on
         `flex: 1`, which centres the field in *the space left over* rather than in
@@ -76,9 +76,11 @@ export function AppShell() {
         last state the field sat some 43 px right of centre, which is exactly far
         enough to read as a mistake and not far enough to look deliberate.
 
-        So the flanks are `flex: 1 1 0` and get equal widths whatever they hold,
-        and the field between them is centred on the page rather than on the
-        remainder. Grouping is the whole fix — see `.cc-header-side`.
+        Grouping is what makes a centred middle expressible at all; `shell.css`
+        holds the sizing, and its comment holds the post-mortem of the flex
+        version of this that shipped broken on every phone. All three divs render
+        unconditionally even when one is empty, because a missing column would
+        move the other two.
       */}
       <header className="cc-header">
         <div className="cc-header-side">

@@ -41,11 +41,63 @@
   color: var(--cc-text);
 }
 
+/*
+ * **A grid of three columns, and it is a grid because the flex version of this
+ * broke the header on every phone.**
+ *
+ * What the header has to do: put the search in the middle *of the page*, not in
+ * the middle of what is left over. The leftover is not symmetrical — the mark
+ * side is about 130 px on a desktop, and the account side is a 44 px toggle plus
+ * a control that is a ~90 px button, a 32 px avatar, or, while §14.2 holds,
+ * nothing at all. Centred in the remainder, the field sat up to 43 px right of
+ * true centre.
+ *
+ * The first attempt at fixing that was flex: two flanks on `flex: 1 1 0` so that
+ * neither one's *content* decided its width, and a `flex: 0 1 520px` middle. It
+ * is worth writing down exactly why that was wrong, because it looked right and
+ * it shipped:
+ *
+ *   A `flex-basis` of 0 makes the flank's *scaled shrink factor* 0, so it never
+ *   gives space back — fine. But the flanks also carried `min-width: 0`, and
+ *   that is not the harmless "let it be small" it reads as: it **removes the
+ *   automatic minimum size**, which is the only thing that was holding the box
+ *   at its content's width. Below 576 px — where the 520 px middle no longer
+ *   fits and the whole row is in shrink mode — the two flanks computed to
+ *   **zero width**, and the hamburger, the mark, the theme toggle and the
+ *   account control spilled out of them across the search field. The comment
+ *   here claimed the fixed-size children prevented that. They do not: a
+ *   non-shrinking child keeps *its own* width and overflows its parent, which is
+ *   precisely the mess that was on screen.
+ *
+ * Grid cannot express that mistake. A `1fr` track is `minmax(auto, 1fr)`, and
+ * that `auto` floors the track at the largest minimum contribution of what is in
+ * it — so the flanks are *never* narrower than their content, at any viewport,
+ * and there is no shrink arithmetic to get wrong. `minmax(0, 520px)` gives the
+ * middle the field's full width when there is room and lets it be the first
+ * thing to give way when there is not.
+ *
+ * Read at three widths:
+ *
+ *   * **1280 px** — the middle takes its 520 px, the two `1fr` tracks split what
+ *     is left equally at 352 px each, and the field is centred on the page. This
+ *     is the case the change was made for.
+ *   * **700 px** — the middle cannot have 520, so the flanks sit at their content
+ *     (88 px and 44 px) and the middle takes the rest. Off centre, because at
+ *     that width honouring the centre would mean crushing the mark.
+ *   * **320 px** — the same, and nothing overflows: 88 + 132 + 44 + 24 of gap is
+ *     exactly the 288 px available, which is what NFR-9 asks for.
+ *
+ * The three columns are always in the markup even when one is visually empty —
+ * `AccountMenu` renders nothing at all until a Supabase project exists, and the
+ * div around it still holds the column open. A conditional child here would
+ * shift the other two.
+ */
 .cc-header {
   position: sticky;
   top: 0;
   z-index: 20;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 520px) 1fr;
   align-items: center;
   gap: 12px;
   height: 64px;
@@ -55,42 +107,40 @@
 }
 
 /*
- * **The two flanks, and they are the reason the search is centred.**
+ * The lockup is a link, so a browser underlines it. §8.11 describes the wordmark
+ * as a mark, two weights and a letterspacing, and nowhere as underlined text —
+ * but nothing in the shell had ever reset it, so `CASIO VAULT` has been sitting
+ * under a default underline on every desktop visit. Found in a screenshot while
+ * measuring the grid above; it is not a consequence of that change.
  *
- * `flex: 1 1 0` is the whole trick: a zero basis means neither flank's *content*
- * decides its width, so the two divide the space around the field equally no
- * matter what they hold — and what they hold is lopsided. The mark side is about
- * 130 px on a desktop; the account side is 44 px of theme toggle plus a control
- * that is a ~90 px button, a 32 px avatar, or nothing at all while §14.2 holds.
- * Sized by content — which is what five loose children on `flex: 1` gave — the
- * field drifted up to 43 px right of the middle of the page.
- *
- * They cannot shrink past their own content: `min-width: 0` permits it but the
- * children inside are all fixed-size and non-shrinking, so on a 320 px phone the
- * flanks take what they need and the centre column takes the rest, which is
- * exactly what happened before this existed.
+ * Scoped to the header rather than to the element, because the footer's
+ * `Source code` link *should* keep its underline: that one is a link in prose and
+ * reads as one. This one is an identity.
+ */
+.cc-header a {
+  text-decoration: none;
+}
+
+/*
+ * The flanks. **No `min-width` and no `flex`** — both belonged to the broken
+ * version above, and the `min-width: 0` was the bug itself: on a grid item it
+ * would zero out the minimum contribution the `1fr` track is floored by, which
+ * is the same collapse by a different route.
  */
 .cc-header-side {
   display: flex;
-  flex: 1 1 0;
   align-items: center;
   gap: 12px;
-  min-width: 0;
 }
 
 .cc-header-side-end {
   justify-content: flex-end;
 }
 
-/*
- * `flex: 0 1 520px` — it asks for the field's full width and is the only column
- * allowed to give any of it back, so on a phone it collapses to whatever the two
- * flanks leave and the 44 px glass still fits. `.cc-search` keeps its own
- * `max-width: 520px`, so the two agree at every width.
- */
+/* `.cc-search` inside this keeps its own `max-width: 520px`, so the column and
+   the control agree at every width. */
 .cc-header-centre {
   display: flex;
-  flex: 0 1 520px;
   justify-content: center;
   min-width: 0;
 }
@@ -154,7 +204,30 @@
   .cc-rail {
     display: block;
   }
-  .cc-drawer-trigger {
+  /*
+   * **`.cc-header` is here to win a specificity tie, and without it this rule
+   * has never once applied.**
+   *
+   * `.cc-drawer-trigger { display: none }` is one class. So is
+   * `.cc-icon-button { display: inline-flex }`, which the trigger also carries —
+   * and that rule is declared in the *Controls* section a few dozen lines below
+   * this one. Equal specificity, so source order decided it, and the later rule
+   * won: the hamburger has been on screen at every width since §12 replaced
+   * `Grid.useBreakpoint()` with these media queries. On a desktop it sat beside
+   * the mark offering to open a drawer listing the lines that were already in the
+   * rail two inches to the left.
+   *
+   * A media query adds no specificity, which is the part that makes this easy to
+   * write and hard to see. `.cc-header .cc-drawer-trigger` is two classes and
+   * therefore beats `.cc-icon-button` wherever either is declared — the fix is
+   * order-independent, unlike moving this block below Controls, which would work
+   * until somebody sorted the file.
+   *
+   * It is also what squares the header's centring: the stray 44 px made the left
+   * flank 210 px against the right's 158, and an asymmetric flank is an
+   * off-centre search (26 px of it between 768 px and about 1100 px).
+   */
+  .cc-header .cc-drawer-trigger {
     display: none;
   }
   .cc-wordmark {
