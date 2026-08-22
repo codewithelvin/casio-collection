@@ -32,7 +32,12 @@ import {
   seriesById,
   useCatalog,
 } from '../../catalog/client.ts'
-import type { Catalog, ImageCredit, PublishedModel } from '../../catalog/schema.ts'
+import type {
+  Catalog,
+  ImageCredit,
+  PublishedModel,
+  PublishedSeries,
+} from '../../catalog/schema.ts'
 import { IMAGE_LICENCE_URLS, isLicensed } from '../../catalog/vocabulary.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
@@ -89,17 +94,18 @@ export default function WatchRoute() {
     return <EmptyState title={t('watch.notFound.title')} body={t('watch.notFound.body')} />
   }
 
-  return <WatchDetail catalog={data} model={model} seriesName={series?.name} />
+  return <WatchDetail catalog={data} model={model} series={series} />
 }
 
 function WatchDetail({
   catalog,
   model,
-  seriesName,
+  series,
 }: {
   catalog: Catalog
   model: PublishedModel
-  seriesName: string | undefined
+  /** Absent only if the artefact carries a model whose series was not published. */
+  series: PublishedSeries | undefined
 }) {
   const { token } = antdTheme.useToken()
   const line = catalog.lines.find((candidate) => candidate.id === model.line)
@@ -116,8 +122,8 @@ function WatchDetail({
         items={[
           { title: <Link to="/">{t('home.linesHeading')}</Link> },
           ...(line ? [{ title: <Link to={`/line/${line.slug}`}>{line.name}</Link> }] : []),
-          ...(line && seriesName
-            ? [{ title: <Link to={`/line/${line.slug}/${model.series}`}>{seriesName}</Link> }]
+          ...(line && series
+            ? [{ title: <Link to={`/line/${line.slug}/${series.id}`}>{series.name}</Link> }]
             : []),
           { title: model.ref },
         ]}
@@ -202,8 +208,8 @@ function WatchDetail({
               >
                 {model.ref}
               </span>
-              {seriesName ? (
-                <span style={{ color: token.colorTextTertiary }}>{seriesName}</span>
+              {series ? (
+                <span style={{ color: token.colorTextTertiary }}>{series.name}</span>
               ) : null}
             </div>
           )}
@@ -221,6 +227,18 @@ function WatchDetail({
               {model.name}
             </Typography.Paragraph>
           ) : null}
+
+          {/* Which series this reference belongs to, and what collectors call it.
+              The breadcrumb already names the series, but a breadcrumb is
+              navigation furniture read as a path back — it does not say *this
+              watch is an F-91W* and it cannot carry the `aka` names at all. Those
+              are the point of showing this here: FR-2.1 makes "F91W" and
+              "Marlin" searchable, and the series page is the only place that
+              currently teaches a reader those words exist. Absent on most
+              series, which is normal, and the whole line disappears with the
+              series record rather than rendering a label with nothing after it
+              (D27). */}
+          {series ? <SeriesLine series={series} lineSlug={line?.slug} /> : null}
 
           {/* D59 — availability, beside the reference rather than buried in the
               specification table. It is the first thing a collector asks of a
@@ -357,6 +375,46 @@ function WatchDetail({
         </>
       ) : null}
     </div>
+  )
+}
+
+/**
+ * The series a reference sits in, linked to the series page, plus the names
+ * collectors use for it where the series carries any.
+ *
+ * Deliberately **not** a row in the specification table. That table is what was
+ * read off `source` — properties of the watch — and D27's empty state depends on
+ * it: five of the models here carry nothing beyond a reference, a module and a
+ * source, and the table being empty is what makes `watch.noSpecs` say *nobody
+ * has looked yet*. A Series row would fill every table on the site and quietly
+ * retire that sentence, which is the one thing on the page that distinguishes an
+ * unsourced watch from a plain one.
+ *
+ * The link is dropped rather than guessed when the line is not published, for
+ * the same reason the breadcrumb drops its segment: `/line/undefined/f-91w` is a
+ * 404 dressed as a link.
+ */
+function SeriesLine({
+  series,
+  lineSlug,
+}: {
+  series: PublishedSeries
+  lineSlug: string | undefined
+}) {
+  const { token } = antdTheme.useToken()
+
+  return (
+    <Typography.Paragraph style={{ marginBottom: 8 }}>
+      <span style={{ color: token.colorTextTertiary, marginInlineEnd: 8 }}>{t('spec.series')}</span>
+      {lineSlug ? <Link to={`/line/${lineSlug}/${series.id}`}>{series.name}</Link> : series.name}
+      {/* FR-2.1's other names for the same watch. Tags, matching the series
+          page, so the two screens teach the same vocabulary the same way. */}
+      {series.aka?.map((alias) => (
+        <Tag key={alias} style={{ marginInlineStart: 8 }}>
+          {alias}
+        </Tag>
+      ))}
+    </Typography.Paragraph>
   )
 }
 

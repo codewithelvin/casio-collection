@@ -90,6 +90,37 @@ describe('the line route (FR-1.2)', () => {
     expect(await screen.findByRole('link', { name: 'GA-2100-1A1' })).toBeInTheDocument()
   })
 
+  it('opens on the families Casio names, and never on a family of one (§8.4)', async () => {
+    renderApp('/line/g-shock')
+
+    // `square` holds DW-5600 and GW-M5610 in the fixture, so it is a heading.
+    const family = await screen.findByRole('heading', { name: 'The square', level: 4 })
+    expect(family).toBeInTheDocument()
+
+    // `octagonal` holds only GA-2100. §8.4 says that is not a heading, and its
+    // series falls through to the ungrouped run below — which is the rule that
+    // lets a family stay out of the URL (D32).
+    expect(screen.queryByRole('heading', { name: 'Octagonal' })).not.toBeInTheDocument()
+    expect(await screen.findByRole('link', { name: 'GA-2100-1A1' })).toBeInTheDocument()
+
+    // The family comes before the series it holds, and before the ungrouped
+    // ones. A heading after its own group would be furniture.
+    const order = (name: string) =>
+      Array.from(document.querySelectorAll('h4, section')).findIndex((node) =>
+        node.textContent?.startsWith(name),
+      )
+    expect(order('The square')).toBeGreaterThanOrEqual(0)
+    expect(order('The square')).toBeLessThan(order('DW-5600'))
+  })
+
+  it('renders no family heading for a line that has none', async () => {
+    // Vintage carries no family in the fixture, and the page must read exactly
+    // as it did before families existed rather than growing an empty level.
+    renderApp('/line/vintage')
+    await screen.findByRole('link', { name: 'F-91W-1' })
+    expect(screen.queryByRole('heading', { level: 4 })).not.toBeInTheDocument()
+  })
+
   it('is not reachable for a line that holds nothing (D51)', async () => {
     // `/line/edifice` used to render a designed "not catalogued yet" page.
     // Edifice is not in the published artefact when it holds no models, so the
@@ -162,6 +193,39 @@ describe('the watch route (FR-3)', () => {
     const strip = heading.nextElementSibling as HTMLElement
     expect(within(strip).getByText('F-91W-3')).toBeInTheDocument()
     expect(within(strip).queryByText('F-91W-1')).not.toBeInTheDocument()
+  })
+
+  it('names the series the reference sits in, and the words collectors use for it', async () => {
+    renderApp('/watch/f-91w-1')
+
+    const series = (await screen.findByText(t('spec.series'))).parentElement as HTMLElement
+    expect(within(series).getByRole('link', { name: 'F-91W' })).toHaveAttribute(
+      'href',
+      '/line/vintage/f-91w',
+    )
+    // FR-2.1's alias, which the breadcrumb cannot carry and which is the reason
+    // this line exists next to a breadcrumb that already names the series.
+    expect(within(series).getByText('F91W')).toBeInTheDocument()
+  })
+
+  it('names no alias for a series that has none, rather than an empty tag (D27)', async () => {
+    renderApp('/watch/dw-5600e-1v')
+
+    const series = (await screen.findByText(t('spec.series'))).parentElement as HTMLElement
+    expect(within(series).getByRole('link', { name: 'DW-5600' })).toBeInTheDocument()
+    expect(series.querySelectorAll('.ant-tag')).toHaveLength(0)
+  })
+
+  it('still names the series where nobody has sourced a specification (D27)', async () => {
+    // The series is not a row in the specification table, and this is the test
+    // that keeps it out of one: a Series row would fill every table on the site
+    // and retire the sentence that distinguishes an unsourced watch from a plain
+    // one. Both have to be on this page at once.
+    renderApp('/watch/dw-5600bb-1')
+
+    expect(await screen.findByText(t('watch.noSpecs'))).toBeInTheDocument()
+    const series = screen.getByText(t('spec.series')).parentElement as HTMLElement
+    expect(within(series).getByRole('link', { name: 'DW-5600' })).toBeInTheDocument()
   })
 
   it('links to the Casio product page only where the entry has one (FR-3.5)', async () => {
