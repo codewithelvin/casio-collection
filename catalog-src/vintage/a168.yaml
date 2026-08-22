@@ -13,6 +13,8 @@ series:
   id: a168
   name: A168
   line: vintage
+  # D32 — Casio's own roster files this series under `casio/standard/vintage/`.
+  family: casio-vintage
 
 models:
   - id: a168

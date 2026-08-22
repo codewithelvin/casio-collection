@@ -9,13 +9,14 @@
 # is asked for what the other says.
 #
 # DELIBERATELY NOT WRITTEN:
-#   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * any field the page does not state. Absent means unknown, never zero (D27).
 
 series:
   id: ca-500
   name: CA-500
   line: vintage
+  # D32 — Casio's own roster files this series under `casio/standard/vintage/`.
+  family: casio-vintage
 
 models:
   - id: ca-500we-1a
