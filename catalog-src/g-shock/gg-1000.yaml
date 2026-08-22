@@ -53,6 +53,8 @@ series:
   id: gg-1000
   name: GG-1000
   line: g-shock
+  # D32 — Casio's own name for this watch, off the module guide cited below.
+  family: mudmaster
   aka: [GG1000, Mudmaster]
 
 models:
