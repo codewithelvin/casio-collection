@@ -79,7 +79,12 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
 
           return (
             <li key={line.id}>
-              <div style={{ display: 'flex', alignItems: 'center' }}>
+              {/* The link and its expander share a row, and the row is a class
+                  now rather than two inline properties: the expander is a 44 px
+                  touch target (§8.2) and the link has to give up the end padding
+                  it would otherwise sit on top of. Both of those are `shell.css`
+                  decisions and neither is expressible here. */}
+              <div className="cc-nav-line">
                 <Link
                   to={`/line/${line.slug}`}
                   className="cc-nav-row"

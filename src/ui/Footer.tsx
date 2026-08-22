@@ -16,25 +16,33 @@ const REPO_URL = 'https://github.com/codewithelvin/casio-collection'
  * FR-10.3 — in this order: the D11 non-affiliation notice, the image
  * attribution, the source link, the catalogue version, and the closing line.
  *
- * §8.11 is explicit that the disclaimer is **legible body text and not small
- * print**, and the reason is worth keeping next to the code: the name starts
- * with theirs, the mark is their bezel (D34) and the colour is their corporate
- * blue. Together those read as an official Casio property, which is precisely
- * what D11 says this is not. This sentence is what pays for the design — so it
- * is set at body size in the normal text colour.
+ * **The whole footer is small print now, and that is a client instruction
+ * overriding §8.11.** The sizes are in `.cc-footer`; the reason they are being
+ * argued with here is that §8.11 asked for the opposite in writing, and the
+ * argument is worth keeping so nobody "fixes" this back:
  *
- * D39 removed one leg of that argument and not the sentence. The old name *was*
- * a Casio product line (D21), and "Vault" is nobody's; but "Casio" is still the
- * first word, on a domain that is now casiovault.com, which if anything reads
- * more like a property than a project path did.
+ *   * §8.11 wanted the disclaimer as **legible body text and not small print**,
+ *     because the name starts with theirs, the mark is their bezel (D34) and the
+ *     colour is their corporate blue. Together those read as an official Casio
+ *     property, which is precisely what D11 says this is not — so the sentence
+ *     that says so was set at body size, paying for the design.
+ *   * D39 removed one leg of that argument and not the sentence. The old name
+ *     *was* a Casio product line (D21) and "Vault" is nobody's; but "Casio" is
+ *     still the first word, on a domain that is now casiovault.com, which if
+ *     anything reads more like a property than a project path did.
  *
- * Everything *else* is one wrapping line of small print, which is the whole
- * shape of this component. Four stacked paragraphs took a screenful on a phone
- * for content that is legally required rather than useful, and principle 5 says
- * the phone is the real device. The requirement is that the **notice** carries
- * weight, not that the footer does: the attribution, the source link and the
- * version are metadata and read as metadata, and the closing line stays last
- * because FR-10.3 says the footer closes with it.
+ * So the notice is now 12 px rather than 16. It is still first, still in the
+ * normal text colour rather than the quiet one, and still a full step larger
+ * than the metadata beneath it — the *hierarchy* §8.11 was reaching for
+ * survives, the absolute size does not. If a lawyer ever asks, the answer is
+ * this paragraph and the client's call, not an oversight.
+ *
+ * Everything *else* is one wrapping line, which is the whole shape of this
+ * component. Four stacked paragraphs took a screenful on a phone for content
+ * that is legally required rather than useful, and principle 5 says the phone is
+ * the real device. The attribution, the source link and the version are metadata
+ * and read as metadata, and the closing line stays last because FR-10.3 says the
+ * footer closes with it.
  */
 export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
   // A separator glyph rather than a string: it is punctuation between items,
@@ -50,36 +58,14 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
   return (
     <footer className="cc-footer">
       <div className="cc-footer-inner">
-        <p
-          style={{
-            margin: 0,
-            // Measured before it was changed: at 360 px the footer was 191 px,
-            // **24% of the screen**, and principle 5 says the phone is the real
-            // device. The size stays — §8.11 requires this sentence in legible
-            // body text and not small print, and it is what pays for a name, a
-            // bezel and a blue that all point at Casio. What comes down is the
-            // leading, which costs nothing legally and 1.5 never earned on a
-            // three-line paragraph of small type.
-            lineHeight: 1.4,
-            // No `maxWidth` here, and that was measured too: a 68ch measure reads
-            // better in the abstract and wrapped this sentence onto a second line
-            // at 1280 px, making the footer *taller* on desktop while saving
-            // nothing on the phone. The 960 container is the only limit it needs.
-          }}
-        >
-          {t('footer.disclaimer')}
-        </p>
-        <p
-          className="cc-quiet cc-small"
-          style={{
-            margin: 0,
-            display: 'flex',
-            flexWrap: 'wrap',
-            columnGap: 6,
-            rowGap: 0,
-            lineHeight: 1.35,
-          }}
-        >
+        {/* Sized by `.cc-footer` in `shell.css` — see the note above about the
+            client's instruction, and the note there about how far down it went.
+            No `maxWidth`, and that was measured: a 68ch measure reads better in
+            the abstract and wrapped this sentence onto a second line at 1280 px,
+            making the footer *taller* on desktop while saving nothing on the
+            phone. The 960 container is the only limit it needs. */}
+        <p className="cc-footer-notice">{t('footer.disclaimer')}</p>
+        <p className="cc-quiet cc-footer-meta">
           <span>{t('footer.attribution')}</span>
           {separator}
           <a href={REPO_URL} rel="noreferrer noopener" target="_blank">

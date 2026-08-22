@@ -54,6 +54,47 @@
   border-bottom: 1px solid var(--cc-border-secondary);
 }
 
+/*
+ * **The two flanks, and they are the reason the search is centred.**
+ *
+ * `flex: 1 1 0` is the whole trick: a zero basis means neither flank's *content*
+ * decides its width, so the two divide the space around the field equally no
+ * matter what they hold — and what they hold is lopsided. The mark side is about
+ * 130 px on a desktop; the account side is 44 px of theme toggle plus a control
+ * that is a ~90 px button, a 32 px avatar, or nothing at all while §14.2 holds.
+ * Sized by content — which is what five loose children on `flex: 1` gave — the
+ * field drifted up to 43 px right of the middle of the page.
+ *
+ * They cannot shrink past their own content: `min-width: 0` permits it but the
+ * children inside are all fixed-size and non-shrinking, so on a 320 px phone the
+ * flanks take what they need and the centre column takes the rest, which is
+ * exactly what happened before this existed.
+ */
+.cc-header-side {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.cc-header-side-end {
+  justify-content: flex-end;
+}
+
+/*
+ * `flex: 0 1 520px` — it asks for the field's full width and is the only column
+ * allowed to give any of it back, so on a phone it collapses to whatever the two
+ * flanks leave and the 44 px glass still fits. `.cc-search` keeps its own
+ * `max-width: 520px`, so the two agree at every width.
+ */
+.cc-header-centre {
+  display: flex;
+  flex: 0 1 520px;
+  justify-content: center;
+  min-width: 0;
+}
+
 /* The two columns under the header: the rail and everything else. */
 .cc-body {
   display: flex;
@@ -132,6 +173,15 @@
  * §8.2 — every interactive element is at least 44 px tall below 768 px, and
  * these are 44 px at every width because the header is the same height in both
  * layouts and a 32 px button in a 64 px bar looks like a mistake.
+ *
+ * `touch-action: manipulation` is on every control in this file for one reason:
+ * a browser that still has double-tap-to-zoom to rule out waits ~300 ms after a
+ * tap before deciding it was a tap. Declaring that this element is not a
+ * double-tap target removes the wait, and the difference between a control that
+ * responds on the tap and one that responds a third of a second later is the
+ * whole difference between "responsive" and "did that work?". It costs nothing —
+ * pinch-zoom on the page is untouched, only the double-tap gesture *on the
+ * control* is given up, and nobody zooms by double-tapping a 44 px button.
  */
 .cc-icon-button {
   display: inline-flex;
@@ -147,6 +197,7 @@
   color: var(--cc-text);
   font: inherit;
   cursor: pointer;
+  touch-action: manipulation;
   transition:
     background var(--cc-quick) var(--cc-ease),
     color var(--cc-quick) var(--cc-ease);
@@ -190,6 +241,7 @@
   color: var(--cc-text);
   font: inherit;
   cursor: pointer;
+  touch-action: manipulation;
   transition:
     border-color var(--cc-quick) var(--cc-ease),
     color var(--cc-quick) var(--cc-ease);
@@ -253,6 +305,7 @@
   color: var(--cc-text);
   font: inherit;
   cursor: pointer;
+  touch-action: manipulation;
   transition:
     background var(--cc-quick) var(--cc-ease),
     border-color var(--cc-quick) var(--cc-ease);
@@ -345,6 +398,7 @@
   color: var(--cc-text);
   font: inherit;
   cursor: pointer;
+  touch-action: manipulation;
   transition:
     background var(--cc-quick) var(--cc-ease),
     border-color var(--cc-quick) var(--cc-ease);
@@ -590,12 +644,14 @@
   text-align: start;
   text-decoration: none;
   cursor: pointer;
+  touch-action: manipulation;
   /* §8.2's touch target, and the row height §8.4's diagram draws. */
   min-height: 44px;
   transition: background var(--cc-quick) var(--cc-ease);
 }
 
-.cc-nav-row:hover {
+.cc-nav-row:hover,
+.cc-nav-row:active {
   background: var(--cc-fill-secondary);
 }
 
@@ -659,15 +715,65 @@
   font-weight: 600;
 }
 
+/*
+ * A line's row: the link, and the expander beside it.
+ *
+ * The end padding moves off the link and onto this, because the two controls are
+ * adjacent and the link's 16 px used to be the only thing between the count and
+ * the chevron. With the chevron at its proper width there is no room to spend
+ * twice.
+ */
+.cc-nav-line {
+  display: flex;
+  align-items: center;
+  padding-inline-end: 4px;
+}
+
+.cc-nav-line .cc-nav-row {
+  padding-inline-end: 8px;
+}
+
+/*
+ * **The expander, at 44 px, which is what it should always have been.**
+ *
+ * It was `width: 18px` overriding `.cc-icon-button`'s 44 — a tap target the width
+ * of the glyph drawn in it. §8.2's rule is stated three times in this file (the
+ * icon buttons, the search trigger, the nav rows) and this control was the one
+ * place that broke it, on the surface where it matters most: the drawer, which
+ * exists only below 768 px and is therefore only ever touched. Missing it puts a
+ * finger on the line's link instead, so the miss is not a no-op — it navigates,
+ * which is the worst possible failure for a control whose whole job is to let you
+ * look without leaving.
+ *
+ * 26 px of the label's width pays for it. `Vintage / Casio Collection` already
+ * truncated at 264 px and truncates a little sooner; a row you can hit is worth
+ * more than two more characters of a name that is ellipsed either way.
+ */
 .cc-nav-expander {
   flex-shrink: 0;
-  width: 18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
   color: var(--cc-text-description);
+}
+
+/* **The glyph turns, not the button.** Rotating the button rotates the hover and
+   press grounds with it, which on a rounded square is a visible corner-swap on
+   every open — and it would put the focus ring on a diamond. */
+.cc-nav-expander svg {
   transition: transform var(--cc-quick) var(--cc-ease);
 }
 
-.cc-nav-expander[data-open='true'] {
+.cc-nav-expander[data-open='true'] svg {
   transform: rotate(90deg);
+}
+
+/* No hover on a touch screen, so the press has to answer for itself. Deliberately
+   stronger than the hover ground: this is feedback for a finger that is covering
+   the control it just pressed. */
+.cc-nav-expander:active {
+  background: var(--cc-fill-secondary);
+  color: var(--cc-text);
 }
 
 /* ------------------------------------------------------------------------- *
@@ -771,10 +877,21 @@
  * The footer (FR-10.3)
  * ------------------------------------------------------------------------- */
 
+/*
+ * **Small print, on the client's instruction, and §8.11 asked for the opposite.**
+ * The argument that lost is written out in `Footer.tsx` rather than here, because
+ * it is about what the sentence is *for*; what is here is the arithmetic.
+ *
+ * 12 px is the floor rather than a round-down. Below it the disclaimer stops
+ * being a sentence someone can read and becomes a grey texture, and a notice
+ * nobody can read is a notice that is not doing the job D11 needs it to do — so
+ * it is set once, on the footer, and inherited by everything in it.
+ */
 .cc-footer {
   padding: 10px 16px;
   border-top: 1px solid var(--cc-border-secondary);
   background: var(--cc-bg-container);
+  font-size: 12px;
 }
 
 .cc-footer-inner {
@@ -782,6 +899,37 @@
   gap: 2px;
   max-width: 960px;
   margin: 0 auto;
+}
+
+/*
+ * The D11 notice. It inherits the 12 px above and keeps everything else §8.11
+ * gave it: first in the order, the normal text colour rather than the quiet one,
+ * and a step larger than the metadata under it. The tight leading was measured
+ * before any of this — at 360 px the footer was 191 px, **24% of the screen**,
+ * and 1.5 never earned its keep on a three-line paragraph.
+ */
+.cc-footer-notice {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/*
+ * Attribution, source, catalogue version, closing line — one wrapping row.
+ *
+ * **11 px is set here rather than by `.cc-small`, and that is not a detail.**
+ * `.cc-small` is 14 px, which was *smaller* than body text and is now larger than
+ * the footer it would sit in — a class that means "quieter than its surroundings"
+ * silently inverting into "louder" is the kind of thing that survives a review.
+ * The two lines need a step between them, so the step is written down.
+ */
+.cc-footer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  column-gap: 6px;
+  row-gap: 0;
+  font-size: 11px;
+  line-height: 1.35;
 }
 
 .cc-footer a {

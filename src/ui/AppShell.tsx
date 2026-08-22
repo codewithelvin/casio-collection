@@ -64,45 +64,66 @@ export function AppShell() {
           from M5, and the missing-reference form from M8. */}
       <AuthHost />
 
+      {/*
+        **Three groups, and the two flanks are what centre the search.**
+
+        The header used to be five children in a row with the search wrapper on
+        `flex: 1`, which centres the field in *the space left over* rather than in
+        the header — and the space left over is not symmetrical. The mark and the
+        wordmark are about 130 px; the right-hand pair is a 44 px toggle plus an
+        account control that is a 90 px button, a 32 px avatar, or — until the
+        client finishes M4's console steps (§14.2) — **nothing at all**. In that
+        last state the field sat some 43 px right of centre, which is exactly far
+        enough to read as a mistake and not far enough to look deliberate.
+
+        So the flanks are `flex: 1 1 0` and get equal widths whatever they hold,
+        and the field between them is centred on the page rather than on the
+        remainder. Grouping is the whole fix — see `.cc-header-side`.
+      */}
       <header className="cc-header">
-        {/* Below 768 px only — hidden by `shell.css` above it, where the rail
-            itself is on screen and there is nothing to open. */}
-        <button
-          type="button"
-          className="cc-icon-button cc-drawer-trigger"
-          aria-label={t('nav.open')}
-          aria-expanded={drawerOpen}
-          onClick={() => setDrawerOpen(true)}
-        >
-          <MenuIcon />
-        </button>
+        <div className="cc-header-side">
+          {/* Below 768 px only — hidden by `shell.css` above it, where the rail
+              itself is on screen and there is nothing to open. */}
+          <button
+            type="button"
+            className="cc-icon-button cc-drawer-trigger"
+            aria-label={t('nav.open')}
+            aria-expanded={drawerOpen}
+            onClick={() => setDrawerOpen(true)}
+          >
+            <MenuIcon />
+          </button>
 
-        <Link to="/" aria-label={t('app.name')} style={{ display: 'inline-flex', flexShrink: 0 }}>
-          {/* Below 120 px the wordmark loses its letterspacing, so on a phone
-              the mark stands alone (§8.11). Which is now a CSS decision — see
-              `.cc-wordmark` — rather than a prop, because the shell no longer
-              knows in JavaScript how wide it is. */}
-          <Lockup markSize={32} />
-        </Link>
+          <Link to="/" aria-label={t('app.name')} style={{ display: 'inline-flex', flexShrink: 0 }}>
+            {/* Below 120 px the wordmark loses its letterspacing, so on a phone
+                the mark stands alone (§8.11). Which is now a CSS decision — see
+                `.cc-wordmark` — rather than a prop, because the shell no longer
+                knows in JavaScript how wide it is. */}
+            <Lockup markSize={32} />
+          </Link>
+        </div>
 
-        <div style={{ flex: 1, display: 'flex', justifyContent: 'center', minWidth: 0 }}>
+        <div className="cc-header-centre">
           <SearchBox />
         </div>
 
-        <button
-          type="button"
-          className="cc-icon-button cc-theme-toggle"
-          aria-label={mode === 'dark' ? t('theme.toLight') : t('theme.toDark')}
-          onClick={toggleTheme}
-        >
-          {mode === 'dark' ? <BulbFilledIcon /> : <BulbOutlineIcon />}
-        </button>
+        <div className="cc-header-side cc-header-side-end">
+          <button
+            type="button"
+            className="cc-icon-button cc-theme-toggle"
+            aria-label={mode === 'dark' ? t('theme.toLight') : t('theme.toDark')}
+            onClick={toggleTheme}
+          >
+            {mode === 'dark' ? <BulbFilledIcon /> : <BulbOutlineIcon />}
+          </button>
 
-        {/* §8.1's account menu, which from M0 until M4 was this comment saying
-            a Sign in button that opens nothing is worse than no button. It
-            renders nothing at all until a Supabase project is configured, which
-            is the same rule holding rather than a new one. */}
-        <AccountMenu />
+          {/* §8.1's account menu, which from M0 until M4 was this comment saying
+              a Sign in button that opens nothing is worse than no button. It
+              renders nothing at all until a Supabase project is configured, which
+              is the same rule holding rather than a new one — and which is the
+              worst case the centring above is measured against. */}
+          <AccountMenu />
+        </div>
       </header>
 
       {/* Keyboard users reach the content without tabbing the whole rail on

@@ -36,15 +36,29 @@ describe('the app shell (§8.1, §8.2)', () => {
     expect(marks.length).toBeGreaterThan(0)
   })
 
-  it('carries the non-affiliation notice at body size, not as small print (FR-10.3, §8.11)', async () => {
+  it('carries the non-affiliation notice above the metadata, not in it (FR-10.3, §8.11)', async () => {
     renderApp('/')
 
     const notice = await screen.findByText(t('footer.disclaimer'))
     expect(notice).toBeInTheDocument()
 
-    // §8.11 is explicit that this is body text. The footer's other line is
-    // `.cc-small` at 14px; what this asserts is that the notice is not on it.
-    expect(notice.className).not.toContain('cc-small')
+    // **This assertion has been weakened deliberately and the reason belongs
+    // here.** It used to say the notice was body text and not small print, which
+    // is what §8.11 asked for; the client has since asked for the whole footer at
+    // small-print sizes, and `Footer.tsx` argues with that request in writing
+    // rather than pretending it was never made.
+    //
+    // What survives is the *hierarchy*: the notice is its own paragraph in the
+    // normal text colour, a step above the metadata line. So this asserts it is
+    // not on the metadata's class and not on the quiet colour — the two things
+    // that would demote it from "the sentence that pays for the design" to one
+    // more item in a list of credits. jsdom applies no stylesheet, so the sizes
+    // themselves are not readable here; the classes are.
+    expect(notice.className).not.toContain('cc-footer-meta')
+    expect(notice.className).not.toContain('cc-quiet')
+
+    const meta = await screen.findByText(t('footer.attribution'))
+    expect(meta.closest('p')?.className).toContain('cc-footer-meta')
   })
 
   it('closes the footer with the required line (FR-10.3)', async () => {

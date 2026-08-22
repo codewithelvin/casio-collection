@@ -100,9 +100,15 @@ body {
 }
 
 /* NFR-8 — keyboard-complete with a visible focus ring. :focus-visible keeps it
-   off mouse clicks, which is what stops people removing it altogether. */
+   off mouse clicks, which is what stops people removing it altogether.
+
+   `--cc-primary`, not `--cc-accent`: the latter is defined nowhere, so this rule
+   was painting the light-theme blue on every ground including #141414 — the same
+   undefined-property fault that made the Owned button unreadable in dark mode,
+   found here while fixing that one. A focus ring is the last control that should
+   be invisible in one of the two themes. */
 :focus-visible {
-  outline: 2px solid var(--cc-accent, #0033a0);
+  outline: 2px solid var(--cc-primary);
   outline-offset: 2px;
 }
 

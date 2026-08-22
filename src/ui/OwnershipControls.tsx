@@ -161,12 +161,27 @@ export function OwnershipControls({
         // reset said the opposite. The marked state keeps its solid fill, so
         // the two are still told apart by fill and by the check, not by hue
         // alone — which matters for anyone who cannot use the hue.
+        //
+        // **`--cc-primary`, and the property name is the whole bug this fixes.**
+        // It read `var(--cc-accent, #0033a0)`, and `--cc-accent` is defined
+        // nowhere — `vite.config.ts` injects the kebab-cased keys of
+        // `SHELL_TOKENS`, which gives `--cc-primary`, `--cc-bg-container` and so
+        // on, and never an `--cc-accent`. So the fallback was not a fallback; it
+        // was the value, at every width and in **both** themes. On the dark
+        // ground that is #0033a0 on #141414 — about 1.6:1, which is the ratio
+        // `palette.ts` names as the reason `CASIO_BLUE_DARK` exists at all. The
+        // one control this product is about was unreadable at night.
+        //
+        // `--cc-primary` is the theme-selected value (#0033a0 light, #4487dc
+        // dark) and it is the same string the AntD-rendered primary button beside
+        // it is painted with, so the marked and unmarked states are one colour
+        // rather than two that nearly match. No fallback: a missing custom
+        // property should show as an unstyled border, not as a hardcoded one that
+        // hides the mistake for another milestone.
         style={{
           flex: 1,
           minWidth: 0,
-          ...(owned
-            ? {}
-            : { borderColor: 'var(--cc-accent, #0033a0)', color: 'var(--cc-accent, #0033a0)' }),
+          ...(owned ? {} : { borderColor: 'var(--cc-primary)', color: 'var(--cc-primary)' }),
         }}
       >
         {owned ? t('owned.marked') : t('owned.mark')}
