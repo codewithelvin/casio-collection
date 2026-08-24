@@ -1,0 +1,98 @@
+# BM-600 — added 2026-08-24 by /finish-casio.
+#
+# NEITHER ROSTER KNOWS THIS WATCH, and that is the finding rather than a failure
+# to look. Casio's current sitemap does not list BM-600, and one domain-wide CDX
+# query over casio.com returned zero captures for `product.BM-600*` — every host,
+# every path, every locale the archive holds. AE-1600's 17 captures were fetched
+# in the same run as a control, so that zero is a measurement and not the
+# archive's cooldown wearing the shape of an answer. A 1995 watch never had a
+# page on the casio.com the archive kept.
+#
+# D44's route was NOT PROVED CLOSED and is not claimed to be. `manual.ts 1284`
+# returned HTTP 404 — but so did `manual.ts 593`, the F-91W's module, which is
+# certainly documented. The control failing makes the measurement void, so
+# whether Casio hosts an operation guide for module 1284 is UNKNOWN and worth one
+# retry on a later day. DWL says of its own manual: "We are missing this manual."
+#
+# So the only source that states anything is The Digital Watch Library, labelled
+# `community`, which is the same route and the same site that seeded A168, F-15
+# and AL-180. Its slug is `casio_bm-6001` — note the trailing 1, which is the
+# site's own quirk and not a second reference. F-15 sits at `casio_f-151` the
+# same way. The slug was found rather than derived.
+#
+# HOW THE PAGE WAS READ. DWL pairs a label GIF with a value div by id — `#water`
+# carries `alt="> WATER RESIST"` and `#water1` carries the value. The mapping was
+# calibrated against FS-12 and F-15, two entries already reviewed in this repo,
+# and reproduced their catalogued module, case and year exactly before it was
+# trusted here. Reading by POSITION instead would have taken `[Resin]` as the
+# case: that row is `> BRACELET NO.`, and the case is the separate `> CASING`
+# row, which is the one this entry uses. Here the two agree; on S-15 they do not.
+#
+# What is absent and why:
+#   display              the page never describes the dial. Its title says
+#                        "Vintage Digital Watch" of every watch on the site, and
+#                        a photograph of an LCD is a thing I inferred rather than
+#                        a thing the page states. Left absent, as on A168.
+#   movement             the page states none.
+#   colorway             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, exactly as on A168 and AL-180. "I
+# have an alarm" is `alarm`, "I have a chronograph" is `stopwatch` and "I have a
+# countdown" is `countdown-timer` — all three mappings are the ones W-22, W-24
+# and AL-180 already use.
+#
+# `barometer` is read off the WORD PRINTED ON THE CASE in the page's own
+# photograph, which prints BAROMETER in orange beneath the display, and off the
+# dial's WATER 100M RESIST which corroborates the stated 100M. That is the class
+# of evidence `vocabulary.ts` explicitly sanctions when it explains why
+# `shock-resistant` is a feature at all — "on a Casio it is a claim printed on
+# the case rather than a measurement".
+#
+# TWO THINGS REPORTED AND DELIBERATELY NOT WRITTEN — both are the reviewer's
+# questions, not settled facts:
+#
+#   `altimeter`   The LCD in the photograph shows an ALTI indicator beside BARO,
+#                 and the watch is sold everywhere as a barometer-altimeter. But
+#                 an LCD SEGMENT IS A MODE I READ OFF A PICTURE, not a claim
+#                 printed on the case, and that is a weaker thing than BAROMETER
+#                 above. One operation guide for module 1284 would settle it.
+#
+#   `databank`    The page shows DWL's `data.gif` icon, "I hold data". This repo
+#                 has exactly one precedent for that icon — ABX-20, which is
+#                 mapped to `databank` — and the icon file is byte-for-byte the
+#                 same one. It is NOT written here, because ABX-20's mapping is
+#                 corroborated by the watch's own name, TwinCept **Databank**,
+#                 and nothing corroborates it on a barometer. `databank` tells a
+#                 reader this is a phone-number watch; on a sensor watch whose
+#                 display graphs PRESSURE and flags MAX, the data it holds is far
+#                 more likely to be measurement memory. A wrong feature is worse
+#                 than an absent one, so the icon is reported instead.
+#
+# ONE MORE THING A REVIEWER WILL SEE IN THE PHOTOGRAPH. The watch is standing on
+# a PRO TREK display stand. That is a collector's stand in a collector's photo
+# and NOT Casio filing the reference: no roster puts BM-600 under `protrek`, the
+# survey's foreign-line test found nothing, and D2 makes a mis-filed id permanent.
+# It stays in `vintage`, which is where a reference neither roster claims goes.
+
+series:
+  id: bm-600
+  name: BM-600
+  line: vintage
+
+models:
+  - id: bm-600
+    ref: BM-600
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_bm-6001', kind: community }
+    year: 1995
+    module: '1284'
+    case: { material: resin }
+    water_resistance_m: 100
+    features: [alarm, stopwatch, countdown-timer, barometer]
+    image: bm-600
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_bm-6001'
+    discontinued: true
