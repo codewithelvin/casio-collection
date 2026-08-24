@@ -1,0 +1,83 @@
+# S-15 — added 2026-08-24 by /finish-casio.
+#
+# NEITHER ROSTER KNOWS THIS WATCH, and that is the finding rather than a failure
+# to look. Casio's current sitemap does not list S-15, and one domain-wide CDX
+# query over casio.com returned zero captures for `product.S-15*` — every host,
+# every path, every locale the archive holds. AE-1600's 17 captures were fetched
+# in the same run as a control, so that zero is a measurement and not the
+# archive's cooldown wearing the shape of an answer. A 1976 watch never had a
+# page on the casio.com the archive kept.
+#
+# D44's route was NOT PROVED CLOSED and is not claimed to be. `manual.ts 18`
+# returned HTTP 404 — but so did `manual.ts 593`, the F-91W's module, which is
+# certainly documented. The control failing makes the measurement void, so
+# whether Casio hosts an operation guide for module 18 is UNKNOWN and worth one
+# retry on a later day. DWL links a manual of its own (`0018.pdf`) which nobody
+# here has read.
+#
+# So the only source that states anything is The Digital Watch Library, labelled
+# `community`, which is the same route and the same site that seeded A168, F-15
+# and AL-180. Its slug is `casio_s-15`; the site is inconsistent about `casio_`
+# versus `casio-` and about trailing digits, so the slug was found rather than
+# derived.
+#
+# HOW THE PAGE WAS READ. DWL pairs a label GIF with a value div by id — `#module`
+# carries `alt="> CALIBRE"` and `#module1` carries the value. The mapping was
+# calibrated against FS-12 and F-15, two entries already reviewed in this
+# repo, and reproduced their catalogued module, case and year exactly before it
+# was trusted here. Reading by POSITION instead would have taken `[SS]` as the
+# case: that row is `> BRACELET NO.`, and the case is the separate `> CASING`
+# row, which is the one this entry uses.
+#
+# What is absent and why:
+#   display              the page never describes the dial. Its title says
+#                        "Vintage Digital Watch" of every watch on the site, and
+#                        a photograph of an LCD is a thing I inferred rather than
+#                        a thing the page states. Left absent, as on A168.
+#   movement             the page states none. It is a 1976 quartz watch and
+#                        saying so would still be an inference (D27).
+#   water_resistance_m   the page's `> WATER RESIST` row reads NONE. That is a
+#                        statement that the watch has none, not a depth, and the
+#                        field is a number — so it stays absent, exactly as on
+#                        F-15 and FS-12, whose rows read NONE too.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, exactly as on A168 and AL-180. "I
+# have a chronograph" is `stopwatch` — the mapping A168, W-22 and AL-180 already
+# use — and the case corroborates it, printing STOP WATCH beside the display.
+#
+# `calendar` is read off the WORDS PRINTED ON THE CASE in the page's own
+# photograph, which prints CALENDAR next to TIME MEMORY and STOP WATCH. That is
+# the class of evidence `vocabulary.ts` explicitly sanctions when it explains why
+# `shock-resistant` is a feature at all — "on a Casio it is a claim printed on
+# the case rather than a measurement". It is the one judgement on this entry and
+# the thing for a reviewer to check.
+#
+# REPORTED, NOT WRITTEN: the case also prints TIME MEMORY, which is not in the
+# vocabulary and is not obviously any value in it. Adding one is a human's
+# decision and never a side effect of a seeding run (§10.6 guardrail 4).
+
+series:
+  id: s-15
+  name: S-15
+  line: vintage
+  # The page's own AKA row. Casiotron is a COLLECTION NAME, not a reference
+  # prefix — TRN-50 carries the same `aka` and is a different watch, the 2024
+  # reissue. This is the 1970s original.
+  aka: [Casiotron]
+
+models:
+  - id: s-15
+    ref: S-15
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_s-15', kind: community }
+    year: 1976
+    module: '18'
+    case: { material: stainless steel }
+    features: [stopwatch, calendar]
+    image: s-15
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_s-15'
+    discontinued: true
