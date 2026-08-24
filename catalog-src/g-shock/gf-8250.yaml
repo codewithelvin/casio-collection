@@ -29,6 +29,15 @@
 # D2 makes an id permanent and the sourcing rule says a model whose sources
 # disagree on the reference itself is not written at all.
 #
+# SOME PHOTOGRAPHS COME FROM A STOCKIST'S LISTING, and each says which (D53).
+# Every *field* above is still read off the module manual named in `source`.
+# Where `image_credit` names a shop rather than Casio, that reference has no
+# archived casio.com product page — it is a collaboration, a regional edition,
+# or too recent to have been captured — so the photograph is read off the
+# listing page the credit points at, never a path derived from the reference.
+# Those files are `rights-reserved` and used under D11: non-commercial,
+# attributed, withdrawn in full on request.
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the module.
@@ -105,3 +114,8 @@ models:
     module: '3266'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
     discontinued: true
+    image: gf-8250k-4
+    image_credit:
+      author: WatchOutz
+      licence: rights-reserved
+      url: 'https://watchoutz.com/products/casio-g-shock-frogman-x-i-c-e-r-c-love-the-sea-and-the-earth-2014-special-edition-pink-gf-8250k-4'
