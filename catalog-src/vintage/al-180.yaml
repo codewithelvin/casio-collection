@@ -1,0 +1,65 @@
+# AL-180 — added 2026-08-24 by /finish-casio.
+#
+# NEITHER ROSTER KNOWS THIS WATCH, and that is the finding rather than a failure
+# to look. Casio's current sitemap does not list AL-180, and one domain-wide CDX
+# query over casio.com returned zero captures for `product.AL-*` — every host,
+# every path, every locale the archive holds. A159's 45 captures were fetched in
+# the same run as a control, so that zero is a measurement and not the archive's
+# cooldown wearing the shape of an answer. A 1986 watch never had a page on the
+# casio.com the archive kept.
+#
+# D44's route is closed too: Casio hosts no operation guide for module 668
+# (qw668_EN.pdf → HTTP 404). So the only source that states anything is The
+# Digital Watch Library, labelled `community`, which is the same route and the
+# same site that seeded A168.
+#
+# DWL HOLDS TWO ENTRIES, both named AL-180, both module 668, both chrome plated
+# base-metal. This one carries more — 1986, five function icons, a manual link.
+# The other (`casio-al-1801`) says 1987, carries bracelet B-738N, shows two icons
+# and prints DWL's own "Do you own this watch? Send us a small summary of its
+# functions", which is the site saying the entry is incomplete. One page per
+# model, so the fuller page is the source; the 1986/1987 disagreement is reported
+# and not averaged.
+#
+# What is absent and why:
+#   display              the page never describes the dial. Its title says
+#                        "Vintage Digital Watch" of every watch on the site, and
+#                        a photograph of an LCD is a thing I inferred rather than
+#                        a thing the page states. Left absent, as on A168.
+#   water_resistance_m   the page's "Water resist" row has no value. The dial
+#                        prints the words, which is not a depth.
+#   image                both candidate photographs are refused below.
+#   discontinued         never written by hand — availability.ts measures it.
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, exactly as on A168. "I have a
+# chronograph" is `stopwatch` — the mapping A168 already uses — and "I run by the
+# sun" is `movement: solar`, which the dial's BATTERYLESS corroborates.
+
+series:
+  id: al-180
+  name: AL-180
+  line: vintage
+
+models:
+  - id: al-180
+    ref: AL-180
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-al-180', kind: community }
+    year: 1986
+    movement: solar
+    module: '668'
+    case: { material: chrome plated base-metal }
+    features: [alarm, stopwatch, dual-time]
+    # Two photographs exist and both are refused, so this is a decision waiting
+    # rather than a search nobody ran.
+    #   _large/508.jpg   this page's own shot, and the only one whose case side
+    #                    reads AL-180 — but 254 x 236, under the 300 px floor.
+    #                    Published, it would render softer than the typographic
+    #                    tile it replaces, and that tile is a designed state.
+    #   _large/1621.jpg  400 x 500 and unmistakably the same watch (ALARM CHRONO,
+    #                    WATER RESIST, BATTERYLESS on the dial) — but it belongs
+    #                    to the OTHER DWL entry, and it is a lit backdrop with a
+    #                    hangtag in frame rather than the plain ground §10.3 asks
+    #                    for.
+    image: null
+    discontinued: true
