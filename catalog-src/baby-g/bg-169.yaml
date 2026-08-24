@@ -27,11 +27,34 @@
 # is served live by casio.com from the `/content/dam/` path that page names —
 # never a path derived from the reference, which is the whole of D41.
 #
-# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
-# The archive holds Casio's product page for some of these references and not
-# others; an entry with no `image` is one whose page was never captured, or
-# whose capture names no asset for it. The typographic card is the state for
-# those, and it is a primary state rather than a fallback (D29).
+# TEN OF THEM CAME FROM SOMEWHERE ELSE, and `image_credit.url` is the only place
+# that can say so, so read it rather than assuming Casio. The archive holds no
+# product page for these references in any of the 29 locales, nor under Casio's
+# general `casio` segment — they are current releases, and the archive has not
+# caught up with them. So:
+#   * BG-169CM-2/-4, BG-169CMB-8, BG-169KB-1/-4/-4B1 — the CASIO Flagship Store
+#     Indonesia listing, Casio's own distributor there, under D11.
+#   * BG-169GD-1/-7 — released in Japan this month; IPPO JAPAN WATCH is the only
+#     stockist that names the reference on the page the photograph sits on.
+#   * BG-169MH-7 — the Madhappy edition, from a press page that credits Casio.
+# BG-169R-4 is not in that list and is worth a note of its own: its photograph
+# was Casio's all along, named as the main visual on Casio's own archived page,
+# and the backfill could not see it because that page files its assets under
+# `us-assets/` where `imageUrl()` matches only `/assets/`.
+#
+# THE WHITE PLATE IS GONE FROM THE ONES THAT HAD IT. Casio published BG-169R-1,
+# -2, -2B, -7A and -8 as JPEGs — no alpha, white baked in — and every locale's
+# copy is the same JPEG, so there was no transparent original to prefer. A card
+# in dark mode showed each of them in a white box. The plate was flood-filled
+# from the border, which removes only white CONNECTED to the edge and therefore
+# stops at the case outline: that is what let BG-169R-7A, a white watch, survive
+# a treatment a colour key would have erased it with. The watch itself is
+# untouched and the frame is trimmed to it.
+#
+# EVERY ENTRY HERE NOW HAS A PHOTOGRAPH. That is worth stating because it was
+# not true before and is not the natural state of this catalogue: the typographic
+# card remains a primary state rather than a fallback (D29), and the next
+# reference Casio adds will not have one.
 #
 # DELIBERATELY NOT WRITTEN:
 #   * `year` — the guide dates the module, never the reference (D25).
@@ -89,6 +112,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169cm-2
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bg-169cm-2dr'
     discontinued: false
   - id: bg-169cm-4
     ref: BG-169CM-4
@@ -101,6 +129,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169cm-4
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bg-169cm-4dr'
     discontinued: false
   - id: bg-169cmb-8
     ref: BG-169CMB-8
@@ -113,6 +146,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169cmb-8
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bg-169cmb-8dr'
     discontinued: false
   - id: bg-169g-1
     ref: BG-169G-1
@@ -193,6 +231,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169gd-1
+    image_credit:
+      author: IPPO JAPAN WATCH
+      licence: rights-reserved
+      url: 'https://www.ippojapanwatch.com/products/casio-bg-169gd-1jf-stylish-grunge-design-shock-resistant-water-resistant-led-light'
     discontinued: false
   - id: bg-169gd-7
     ref: BG-169GD-7
@@ -205,6 +248,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169gd-7
+    image_credit:
+      author: IPPO JAPAN WATCH
+      licence: rights-reserved
+      url: 'https://www.ippojapanwatch.com/products/casio-bg-169gd-7jf-stylish-grunge-design-shock-resistant-water-resistant-led-backlight'
     discontinued: false
   - id: bg-169hrb-7
     ref: BG-169HRB-7
@@ -234,6 +282,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169kb-1
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bg-169kb-1dr'
     discontinued: false
   - id: bg-169kb-4
     ref: BG-169KB-4
@@ -246,6 +299,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169kb-4
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bg-169kb-4dr'
     discontinued: false
   - id: bg-169kb-4b1
     ref: BG-169KB-4B1
@@ -258,6 +316,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169kb-4b1
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bg-169kb-4b1dr'
     discontinued: false
   - id: bg-169m-1
     ref: BG-169M-1
@@ -304,6 +367,15 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169mh-7
+    # The Madhappy edition is the one reference here whose photograph came from
+    # neither Casio nor a stockist. Its caption on the page is "Casio Baby-G x
+    # Madhappy BG169MH-7 watch. Source: Casio" — so the page names the reference
+    # and names Casio as the photographer, which is what the credit repeats.
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://gagadget.com/en/689708-casio-released-a-limited-series-baby-g-in-collaboration-with-madhappy/'
     discontinued: false
   - id: bg-169pb-2
     ref: BG-169PB-2
@@ -469,6 +541,11 @@ models:
     movement: quartz
     module: '3252'
     features: [world-time, multi-alarm, hourly-time-signal, full-auto-calendar]
+    image: bg-169r-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220518200112id_/https://www.casio.com/us/watches/babyg/product.BG-169R-4/'
     discontinued: false
   - id: bg-169r-7a
     ref: BG-169R-7A
