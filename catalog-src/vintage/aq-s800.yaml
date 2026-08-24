@@ -1,0 +1,77 @@
+# AQ-S800 — seeded 2026-08-24 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: aq-s800
+  name: AQ-S800
+  line: vintage
+
+models:
+  - id: aq-s800w-1b
+    ref: AQ-S800W-1B
+    source:
+      { url: 'https://web.archive.org/web/20220427230454id_/https://www.casio.com/jp/watches/casio/product.AQ-S800W-1B/', kind: official }
+    case: { height_mm: 47.6, width_mm: 43.7, depth_mm: 11, weight_g: 33 }
+    water_resistance_m: 100
+    image: aq-s800w-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220427230454id_/https://www.casio.com/jp/watches/casio/product.AQ-S800W-1B/'
+    discontinued: true
+  - id: aq-s800w-1b2v
+    ref: AQ-S800W-1B2V
+    source:
+      { url: 'https://web.archive.org/web/20220628024714id_/https://www.casio.com/us/watches/casio/product.AQ-S800W-1B2V/', kind: official }
+    display: ana-digi
+    case: { height_mm: 47.6, width_mm: 42, depth_mm: 10.6, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    # REFUSED, not overlooked. The one archived capture of this reference's page
+    # names no photograph — `photos.ts` found 3 asset URLs across the 4 entries
+    # here, and this is the one without. The obvious move is to reach for a
+    # sibling's file, because AQ-S800W-1BV is the same watch in the same colour
+    # to a diff: that is exactly how A159WA-N1 came to be byte-identical to
+    # A159W-N1's photograph. Never derive an asset path; only ever fetch a URL a
+    # page named.
+    image: null
+    discontinued: false
+  - id: aq-s800w-1bv
+    ref: AQ-S800W-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102040id_/https://www.casio.com/europe/watches/casio/product.AQ-S800W-1BV/', kind: official }
+    display: ana-digi
+    case: { height_mm: 47.6, width_mm: 42, depth_mm: 10.6, weight_g: 33, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    image: aq-s800w-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102040id_/https://www.casio.com/europe/watches/casio/product.AQ-S800W-1BV/'
+    discontinued: false
+  - id: aq-s800wd-1ev
+    ref: AQ-S800WD-1EV
+    source:
+      { url: 'https://web.archive.org/web/20240715102045id_/https://www.casio.com/europe/watches/casio/product.AQ-S800WD-1EV/', kind: official }
+    display: ana-digi
+    case: { height_mm: 47.6, width_mm: 42, depth_mm: 10.6, weight_g: 89, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    image: aq-s800wd-1ev
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102045id_/https://www.casio.com/europe/watches/casio/product.AQ-S800WD-1EV/'
+    discontinued: false
