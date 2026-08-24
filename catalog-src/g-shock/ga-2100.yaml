@@ -56,6 +56,15 @@
 # whose capture names no asset for it. The typographic card is the state for
 # those, and it is a primary state rather than a fallback (D29).
 #
+# SOME PHOTOGRAPHS COME FROM A STOCKIST'S LISTING, and each says which (D53).
+# Every *field* above is still read off the module manual named in `source`.
+# Where `image_credit` names a shop rather than Casio, that reference has no
+# archived casio.com product page — it is a collaboration, a regional edition,
+# or too recent to have been captured — so the photograph is read off the
+# listing page the credit points at, never a path derived from the reference.
+# Those files are `rights-reserved` and used under D11: non-commercial,
+# attributed, withdrawn in full on request.
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference. Guessing a
 #     release year from a module is exactly what D25 forbids.
@@ -450,6 +459,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: ga-2100cm-5a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/ga-2100cm-5adr'
   - id: ga-2100cm-8a
     ref: GA-2100CM-8A
     source:
@@ -462,6 +476,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: ga-2100cm-8a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/ga-2100cm-8adr'
   - id: ga-2100cmd-8a
     ref: GA-2100CMD-8A
     source:
@@ -474,6 +493,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: ga-2100cmd-8a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/ga-2100cmd-8adr'
   - id: ga-2100dela-1a1
     ref: GA-2100DELA-1A1
     source:
@@ -719,6 +743,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: ga-2100hds-7a1
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/ga-2100hds-7a1dr'
   - id: ga-2100ht-1a
     ref: GA-2100HT-1A
     source:
@@ -765,6 +794,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: ga-2100k-1a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/ga-2100k-1adr'
   - id: ga-2100k-2a
     ref: GA-2100K-2A
     source:
@@ -835,6 +869,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: ga-2100lxb-1a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/ga-2100lxb-1adr'
   - id: ga-2100lxb-1a9
     ref: GA-2100LXB-1A9
     source:
@@ -847,6 +886,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: ga-2100lxb-1a9
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/ga-2100lxb-1a9dr'
   - id: ga-2100mng-2a
     ref: GA-2100MNG-2A
     source:
@@ -1070,6 +1114,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: ga-2100rrb-4a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/ga-2100rrb-4adr'
   - id: ga-2100rw-1a
     ref: GA-2100RW-1A
     source:
