@@ -27,11 +27,30 @@
 # is served live by casio.com from the `/content/dam/` path that page names —
 # never a path derived from the reference, which is the whole of D41.
 #
-# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
-# The archive holds Casio's product page for some of these references and not
-# others; an entry with no `image` is one whose page was never captured, or
-# whose capture names no asset for it. The typographic card is the state for
-# those, and it is a primary state rather than a fallback (D29).
+# SIX OF THEM CAME FROM SOMEWHERE ELSE, and `image_credit.url` is the only place
+# that can say so, so read it rather than assuming Casio. BGD-565GC-2/-4/-7 and
+# BGD-565SC-1/-2B/-4B have no archived product page in any of the 29 locales, nor
+# under Casio's general `casio` segment: the SC trio launched in Japan in March
+# 2026 and the archive has not caught up with either. Their photographs come from
+# the CASIO Flagship Store Indonesia listing — Casio's own distributor there —
+# used under D11. The GC three are transparent 2000 px files; the SC three were
+# on a white plate and were cut out (see below).
+#
+# THE WHITE PLATE IS GONE FROM THE SC THREE, flood-filled from the border so that
+# only white CONNECTED to the edge is removed and the fill stops at the case
+# outline. All three are white watches, which is exactly the case a colour key
+# would have erased.
+#
+# BGD-565KT-7 KEPT ITS WHITE PLATE, deliberately and against the rest of this
+# file. Casio published it as a white-ground PNG with no alpha — identical bytes
+# in the `de`, `us` and `jp` copies — and the asset carries Sanrio's copyright
+# notice along its bottom edge. Cutting the plate out leaves that notice black on
+# a dark card, where it cannot be read. A licence notice that has to be legible
+# outranks a consistent background.
+#
+# EVERY ENTRY HERE NOW HAS A PHOTOGRAPH. That is worth stating because it was not
+# true before and is not the natural state of this catalogue: the typographic card
+# remains a primary state rather than a fallback (D29).
 #
 # DELIBERATELY NOT WRITTEN:
 #   * `year` — the guide dates the module, never the reference (D25).
@@ -123,6 +142,11 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: bgd-565gc-2
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bgd-565gc-2dr'
     discontinued: false
   - id: bgd-565gc-4
     ref: BGD-565GC-4
@@ -135,6 +159,11 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: bgd-565gc-4
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bgd-565gc-4dr'
     discontinued: false
   - id: bgd-565gc-7
     ref: BGD-565GC-7
@@ -147,6 +176,11 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: bgd-565gc-7
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bgd-565gc-7dr'
     discontinued: false
   - id: bgd-565gs-1
     ref: BGD-565GS-1
@@ -312,6 +346,11 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: bgd-565sc-1
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bgd-565sc-1dr'
     discontinued: false
   - id: bgd-565sc-2
     ref: BGD-565SC-2
@@ -341,6 +380,11 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: bgd-565sc-2b
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bgd-565sc-2bdr'
     discontinued: false
   - id: bgd-565sc-3
     ref: BGD-565SC-3
@@ -387,6 +431,11 @@ models:
     movement: quartz
     module: '3489'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    image: bgd-565sc-4b
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/bgd-565sc-4bdr'
     discontinued: false
   - id: bgd-565sj-2
     ref: BGD-565SJ-2
