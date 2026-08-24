@@ -43,6 +43,15 @@
 # whose capture names no asset for it. The typographic card is the state for
 # those, and it is a primary state rather than a fallback (D29).
 #
+# SOME PHOTOGRAPHS COME FROM A STOCKIST'S LISTING, and each says which (D53).
+# Every *field* above is still read off the module manual named in `source`.
+# Where `image_credit` names a shop rather than Casio, that reference has no
+# archived casio.com product page — it is a collaboration, a regional edition,
+# or too recent to have been captured — so the photograph is read off the
+# listing page the credit points at, never a path derived from the reference.
+# Those files are `rights-reserved` and used under D11: non-commercial,
+# attributed, withdrawn in full on request.
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference. Guessing a
 #     release year from a module is exactly what D25 forbids.
@@ -1486,6 +1495,11 @@ models:
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
     discontinued: true
+    image: dw-5600sn-1
+    image_credit:
+      author: WatchOutz
+      licence: rights-reserved
+      url: 'https://watchoutz.com/products/casio-g-shock-dw-5600-series-breezy-color-dw-5600sn-1'
   - id: dw-5600sr-1
     ref: DW-5600SR-1
     source:
