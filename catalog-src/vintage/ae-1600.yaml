@@ -1,0 +1,62 @@
+# AE-1600 — seeded 2026-08-24 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ae-1600
+  name: AE-1600
+  line: vintage
+
+models:
+  - id: ae-1600h-1av
+    ref: AE-1600H-1AV
+    source:
+      { url: 'https://web.archive.org/web/20250119032546id_/https://www.casio.com/intl/watches/casio/product.AE-1600H-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 54.1, width_mm: 49.7, depth_mm: 15.9, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ae-1600h-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250119032546id_/https://www.casio.com/intl/watches/casio/product.AE-1600H-1AV/'
+    discontinued: false
+  - id: ae-1600h-5av
+    ref: AE-1600H-5AV
+    source:
+      { url: 'https://web.archive.org/web/20250115230015id_/https://www.casio.com/za/watches/casio/product.AE-1600H-5AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 54.1, width_mm: 49.7, depth_mm: 15.9, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ae-1600h-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250115230015id_/https://www.casio.com/za/watches/casio/product.AE-1600H-5AV/'
+    discontinued: false
+  - id: ae-1600h-8bv
+    ref: AE-1600H-8BV
+    source:
+      { url: 'https://web.archive.org/web/20250409182506id_/https://www.casio.com/us/watches/casio/product.AE-1600H-8BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 54.1, width_mm: 49.7, depth_mm: 15.9, weight_g: 52, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ae-1600h-8bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250409182506id_/https://www.casio.com/us/watches/casio/product.AE-1600H-8BV/'
+    discontinued: false
