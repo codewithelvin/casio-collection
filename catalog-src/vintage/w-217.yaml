@@ -1,0 +1,132 @@
+# W-217 — seeded 2026-08-24 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: w-217
+  name: W-217
+  line: vintage
+
+models:
+  - id: w-217h-1av
+    ref: W-217H-1AV
+    source:
+      { url: 'https://web.archive.org/web/20221101080043id_/https://www.casio.com/sg/watches/casio/product.W-217H-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.1, width_mm: 41.2, depth_mm: 10.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-217h-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221101080043id_/https://www.casio.com/sg/watches/casio/product.W-217H-1AV/'
+    discontinued: false
+  - id: w-217h-3av
+    ref: W-217H-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240406015703id_/https://www.casio.com/us/watches/casio/product.W-217H-3AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.1, width_mm: 41.2, depth_mm: 10.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-217h-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240406015703id_/https://www.casio.com/us/watches/casio/product.W-217H-3AV/'
+    discontinued: false
+  - id: w-217h-3bv
+    ref: W-217H-3BV
+    source:
+      { url: 'https://web.archive.org/web/20220926022621id_/https://www.casio.com/us/watches/casio/product.W-217H-3BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.1, width_mm: 41.2, depth_mm: 10.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-217h-3bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220926022621id_/https://www.casio.com/us/watches/casio/product.W-217H-3BV/'
+    discontinued: false
+  - id: w-217h-5av
+    ref: W-217H-5AV
+    source:
+      { url: 'https://web.archive.org/web/20240310085630id_/https://www.casio.com/us/watches/casio/product.W-217H-5AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.1, width_mm: 41.2, depth_mm: 10.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-217h-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240310085630id_/https://www.casio.com/us/watches/casio/product.W-217H-5AV/'
+    discontinued: false
+  - id: w-217h-9av
+    ref: W-217H-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220526115651id_/https://www.casio.com/sg/watches/casio/product.W-217H-9AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.1, width_mm: 41.2, depth_mm: 10.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-217h-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220526115651id_/https://www.casio.com/sg/watches/casio/product.W-217H-9AV/'
+    discontinued: false
+  - id: w-217hm-5av
+    ref: W-217HM-5AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102522id_/https://www.casio.com/europe/watches/casio/product.W-217HM-5AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.1, width_mm: 41.2, depth_mm: 10.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-217hm-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102522id_/https://www.casio.com/europe/watches/casio/product.W-217HM-5AV/'
+    discontinued: false
+  - id: w-217hm-7bv
+    ref: W-217HM-7BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102529id_/https://www.casio.com/europe/watches/casio/product.W-217HM-7BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.1, width_mm: 41.2, depth_mm: 10.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-217hm-7bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102529id_/https://www.casio.com/europe/watches/casio/product.W-217HM-7BV/'
+    discontinued: false
+  - id: w-217hm-9av
+    ref: W-217HM-9AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102525id_/https://www.casio.com/europe/watches/casio/product.W-217HM-9AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.1, width_mm: 41.2, depth_mm: 10.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: w-217hm-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102525id_/https://www.casio.com/europe/watches/casio/product.W-217HM-9AV/'
+    discontinued: false
