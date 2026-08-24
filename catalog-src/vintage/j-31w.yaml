@@ -1,0 +1,60 @@
+# J-31W — added 2026-08-25 by /finish-casio.
+#
+# NEITHER MODERN ROSTER KNOWS THIS WATCH. It is not in Casio's current sitemap
+# and not in the archive's per-segment CDX index — checked in one pass over both
+# rosters in which AW-80 returned 9 references and WVA 24, so the zero is a
+# measurement and not a broken reader. A watch this old never had a page on the
+# casio.com the archive kept.
+#
+# So the only source that states anything is The Digital Watch Library, labelled
+# `community`, which is the route that seeded A168, F-15, AL-180 and S-15. DWL
+# HANGS rather than 404s for a slug that does not exist, so this page was proven
+# to exist by a run with `casio-a168` first and `casio-fs-12` last: both answered
+# 200 while twenty-one other slugs timed out, which makes those timeouts absence
+# and not the site being down.
+#
+# HOW THE PAGE WAS READ. DWL pairs a label GIF with a value div by id — `#module`
+# carries `alt="> CALIBRE"` and `#module1` carries the value. The mapping was
+# calibrated against FS-12 and F-15, entries already reviewed in this repo, and
+# reproduced their catalogued module, case and year exactly before it was
+# trusted. Reading by POSITION would take the `> BRACELET NO.` row as the case;
+# the case is the separate `> CASING` row, which is the one used here.
+#
+# `features` drops the page's "I have a light" icon wherever it appears: the
+# vocabulary has five specific light values and no generic one, exactly as on
+# A168 and AL-180. "I have a chronograph" is `stopwatch`, the mapping A168, W-22
+# and W-24 already use.
+#
+# ABSENT AND WHY: `display` — the page never describes the dial, and its title
+# says "Vintage Digital Watch" of every watch on the site, so `digital` would be
+# read off the photograph rather than the page (as on A168). `movement` — the
+# page states none. `discontinued` — never written by hand, availability.ts
+# measures it (D59).
+#
+# The photograph is CREDITED TO A PERSON, not to the site: this page says
+# "Photographs courtesy of JTS931" where most say "Photographs by DWL". The
+# credit follows the page. It is still `rights-reserved` under D11 — courtesy is
+# not a licence, and D41 forbids inventing one where the page states none.
+
+series:
+  id: j-31w
+  name: J-31W
+  line: vintage
+  # The page's own AKA row.
+  aka: ['Jogging']
+
+models:
+  - id: j-31w
+    ref: J-31W
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-j-31w', kind: community }
+    year: 1982
+    module: '179'
+    case: { material: resin }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, countdown-timer]
+    image: j-31w
+    image_credit:
+      author: JTS931
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-j-31w'
+    discontinued: true
