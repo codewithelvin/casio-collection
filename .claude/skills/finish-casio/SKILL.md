@@ -56,8 +56,50 @@ the sitemap; `A159WEVJ-2` is in the sitemap and was never captured.
 | `FOREIGN-LINE` | the rest of the archive files it under another line | nothing. D2 makes a mis-filed id permanent |
 | `NOT-A-REFERENCE` | refused by shape, and not in Casio's roster either | nothing. This is the filter working |
 
-`SEEDABLE` and `REFUSED-D47` are the only two states that mean work. A scope is
-**finished** when neither is left and every catalogued entry's gaps are named.
+`SEEDABLE` and `REFUSED-D47` are the only two states that mean work.
+
+### The definition of done, and the photograph is half of it
+
+A scope is **finished** when both of these are true, not one:
+
+1. **Every reference is catalogued or refused by name.** No `SEEDABLE` and no
+   `REFUSED-D47` left, and everything not catalogued has a written reason.
+2. **Every catalogued entry has a photograph, or a written refusal of one.**
+
+**The second is not a lesser clause, and this is the part that gets skipped.** A
+visitor sees the picture before they read a single field: it is how they know
+they are looking at the right watch, and it is the whole difference between a
+catalogue and a spreadsheet. An entry with seventeen specification rows and no
+image is half an entry. The typographic tile the site renders instead is a
+designed primary state rather than a broken one — which is exactly why it is so
+easy to leave there and call the series done.
+
+So treat a missing picture the way you treat a missing `case` or `module`: as an
+unanswered question about the watch, not as styling. `survey.ts` enforces this —
+a catalogued entry with no `image` reports **`NO PICTURE — nobody has looked`**
+and the scope does not read FINISHED.
+
+**`image: null` is the other half of the rule and it is not a loophole.** It
+means somebody looked, refused what they found, and wrote down why — the same
+named refusal this skill asks for everywhere else. That closes the scope. What
+does not close it is silence. The three honest reasons to write `image: null`,
+all of them already in this catalogue:
+
+- nothing usable exists — a wrist shot, a lifestyle photo or a listing collage
+  is not a product shot,
+- the only candidate is under 300 px, which renders softer than the tile it
+  would replace and is a downgrade rather than an improvement,
+- **you could not prove it is the right watch.** The filename test is the one
+  that works: `Casio-F-91W-1-Black.png` is F-91W-1 and `Casio-F-91WM-1B.png` is
+  not. Where the source names its files `50016.jpg`, the page's own lead image is
+  the best evidence available and is still not proof — look at it, and prefer a
+  dial that prints the model name.
+
+Ten of the sixty-one Vintage references sit at `image: null` on purpose. That is
+a finished scope. Ten with the key absent would not be.
+
+And the order matters: **write `image:` only after `npm run catalog:images` has
+published the `.webp`**, never off the download. See the loop below.
 
 ### Scope shapes
 
@@ -75,14 +117,33 @@ each (rule 9). Do not try to hold a line in one run — the Vintage campaign tha
 did 26 series took 63 minutes of crawling and that was with `pipeline.ts`
 overlapping two hosts.
 
-**A year scope is mostly a question about sources, and the honest answer is
-usually no.** A `year` is only ever written from a dated Casio news release
-(D54), and `casio.com/intl/news/` indexes recent years only — `news.ts` reads
-2024 to 2026. So `/finish-casio 1991` cannot attribute anything to 1991: it
-lists the models that already carry that year, names the series they sit in, and
-says plainly that no dated official source reaches back that far. That is a gap
-in the source, not in the catalogue, and D25 forbids inventing the difference.
-Do not offer to infer a year from a module number or from how a watch looks.
+**A year scope is a question about sources, and there are two routes, not one.**
+This paragraph used to say a `year` comes only from a dated Casio news release,
+which is false against the project's own data and sent two year scopes away
+believing nothing before 2024 could ever be sourced:
+
+| route | how it looks | reach |
+|---|---|---|
+| a dated news release (D54) | `year` **and** `year_source` citing it | `news.ts` reads `casio.com/intl/news/` for 2024–2026 only, so this route genuinely stops there — 32 of 88 years |
+| the entry's own page | `year` alone, off the source the entry already cites | every Vintage year, 1983 onward, read off The Digital Watch Library — 56 of 88 years |
+
+The second is not a shortcut: `schema.ts` sanctions it explicitly ("the Vintage
+entries … are dated by the source they already cite"), and integrity check 6
+forbids only the reverse — a `year_source` with no `year`, a citation for a fact
+that is not there. So `/finish-casio 1991` **can** attribute a year to 1991, from
+a page that states it. What it cannot do is invent one: D25 forbids inferring a
+year from a module number, from a neighbouring reference, or from how a watch
+looks, and the survey counts both routes from the catalogue so the numbers above
+cannot drift wrong again.
+
+**Before reporting a year as unsourceable, distinguish absence from a bad grep.**
+Searching the news corpus for `1975` matched 31 of 32 releases — every hit an SVG
+path coordinate (`13.29574.21213`) or an AEM container id (`container-e1975f25e3`).
+Interleave a year you know is stated as a control, exactly as `--deep` does for
+captures: `1974` returns 10 prose hits in 3 files, which is what a real one looks
+like. And a year in prose is still not a date for a watch — of those three, one is
+the Casiotron release and the others are Hello Kitty's 1974 debut and a racing
+team founded in 1974.
 
 ## Proving `NO-PAGE`, which is the only state that ends work without doing any
 
@@ -100,6 +161,18 @@ returned 45 captures across five references and found `africa-fr` and `at` pages
 the segment cache does not hold — and zero, across all of them, for the three.
 That is the measurement entitled to say no archived page exists.
 
+**A filter that asks nothing answers `[]`, and `[]` is valid JSON.** Until
+2026-08-24 this query stripped the hyphen out of the series id — it asked for
+`product.AE1600` when every real URL says `product.AE-1600H-1AV`. Nothing
+matched, the archive returned **200 with an empty list**, the cooldown guard
+below had no HTML to catch, and every reference was stamped *proven: zero 200s
+in a domain-wide CDX query*. That is the worst failure this tool can have: a
+question nobody asked, recorded as a permanent claim that a watch cannot be
+sourced. It hit every hyphenated series id, which is nearly all of them; `a159`
+and `a168` looked healthy only because theirs have none. Fixed in `survey.ts`,
+and the habit that catches the next one of these is below — **interleave a
+control**, and check the cached `cdx-deep-<series>.json` is not three bytes.
+
 **It distinguishes "no captures" from "did not answer", and so must you.** The
 archive's per-IP cooldown answers **HTTP 200 with an HTML error page**, which
 `JSON.parse` rejects and a careless reader would record as an empty result. A
@@ -114,6 +187,11 @@ the state is `UNPROVEN` and you say so.
    about the *reference*, and it names the photograph.
 2. **A module manual (D44)** — only if some page states the module. Never guess
    a module from a neighbouring reference; a module is a field like any other.
+   **A 404 from `manual.ts` is not evidence until a control 404s differently.**
+   On 2026-08-24 modules 1284 and 18 both returned HTTP 404 — and so did 593,
+   the F-91W's module, which is certainly documented. Three 404s in a row look
+   like proof and were the route being closed to everyone. Ask for a module you
+   know is published before concluding anything about one you do not.
 3. **A community source** — the Digital Watch Library, `kind: community`.
 4. **casio.com live** — it answers **403** to everything that is not a person,
    full browser headers included. The AEM path underneath returns 200 and a
@@ -184,6 +262,12 @@ npm run catalog:build && npm run catalog:validate
 npm run ci:status                                                # D57
 ```
 
+**None of the middle three lines are optional.** `photos.ts` and
+`catalog:images` are where the second half of the definition of done gets met,
+and a run that stops after `--write` has produced a finished-looking file that
+shows the reader a tile. If a photograph cannot be had, that is `image: null`
+with the reason written down — a deliberate line in the YAML, not an omission.
+
 Order matters in two places. `--write` runs **after** `catalog:images`, because
 its gate is the published `.webp` and not the download — `catalog:images` refuses
 a source it cannot fit inside §10.3's budget and deletes what it half-wrote, so
@@ -230,6 +314,11 @@ than printing a zero.
 Report the survey table, then what changed, then — the most useful line —
 **everything refused, by name and with the reason**. A refusal with a name is a
 question the next person can answer. A count is not.
+
+**Report the pictures as their own line, not folded into a field count.** How
+many entries gained a photograph, how many still have none, and for each
+`image: null` the reason it was refused. "5 references, 5 catalogued" is not a
+finished report if two of them show a tile.
 
 Say explicitly whether the scope is now **finished**, and if it is not, which
 state the remainder is in. And if a `NO-PAGE` set is what stopped it, say that

@@ -53,6 +53,13 @@ const CACHE = join(tmpdir(), 'casio-catalog-cache', 'archive')
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
 
+/**
+ * Mirrors `YEARS` in news.ts, copied rather than imported: news.ts is a script
+ * with a top-level `await fetch`, so importing it would run a crawl. If that
+ * file's range changes, this must follow.
+ */
+const NEWS_YEARS = [2024, 2025, 2026]
+
 const argv = process.argv.slice(2)
 const deep = argv.includes('--deep')
 const scopeArg = argv.find((a) => !a.startsWith('--'))
@@ -71,8 +78,23 @@ interface Entry {
   ref: string
   /** Fields beyond `ref` and `source` — an entry with none would state nothing. */
   fields: string[]
+  /**
+   * A PUBLISHED PHOTOGRAPH, not merely the key. `image: null` carries the key
+   * and no picture, so testing `keys.includes('image')` counted 13 entries as
+   * illustrated that show the reader a typographic tile — and let a scope with
+   * no photograph in it report FINISHED.
+   */
   hasImage: boolean
+  /** `image: null` — somebody looked and wrote down that they refused it. */
+  imageRefused: boolean
   hasYear: boolean
+  /** The year itself, where the entry carries one. Most entries do not (D25). */
+  year: number | null
+  /**
+   * D54's citation. Its ABSENCE is not a defect: it means the page the entry
+   * already cites is what dates it, which is how every Vintage year was written.
+   */
+  hasYearSource: boolean
   hasAvailability: boolean
 }
 
@@ -87,13 +109,18 @@ function catalogue(): Entry[] {
         const ref = /^ {4}ref: (\S+)\s*$/m.exec(block)?.[1]
         if (!ref) continue
         const keys = [...block.matchAll(/^ {4}([a-z_]+):/gm)].map((m) => m[1])
+        const year = /^ {4}year: (\d{4})\s*$/m.exec(block)?.[1]
+        const image = /^ {4}image: (\S+)\s*$/m.exec(block)?.[1]
         out.push({
           line: dir.name,
           series: file.replace('.yaml', ''),
           ref: ref.toUpperCase(),
           fields: keys.filter((k) => !['ref', 'source'].includes(k)),
-          hasImage: keys.includes('image'),
+          hasImage: image !== undefined && image !== 'null',
+          imageRefused: image === 'null',
           hasYear: keys.includes('year'),
+          year: year === undefined ? null : Number(year),
+          hasYearSource: keys.includes('year_source'),
           hasAvailability: keys.includes('discontinued'),
         })
       }
@@ -222,6 +249,13 @@ interface Row {
   english: number
   listed: boolean
   note: string
+  /**
+   * What is missing from a catalogued entry, and therefore what stops the scope
+   * being finished. Carried as its own field rather than sniffed back out of
+   * `note` with `note.includes('—')` — that test also matched the em-dash in
+   * every refusal message, which is prose and not a defect.
+   */
+  gaps: string[]
 }
 
 async function classify(line: string, refs: Set<string>, prefix?: string): Promise<Row[]> {
@@ -238,16 +272,28 @@ async function classify(line: string, refs: Set<string>, prefix?: string): Promi
 
     if (known) {
       const gaps: string[] = []
-      if (!known.hasImage) gaps.push('no image')
+      // THE PHOTOGRAPH IS PART OF DONE, not a decoration on top of it. A
+      // reference with seventeen specification rows and no picture is half an
+      // entry: the tile the site renders instead is a designed state, but it is
+      // the state that says nobody has found the watch yet.
+      //
+      // `image: null` is NOT this. It is somebody having looked, refused what
+      // they found, and written down why — a named refusal, which is the thing
+      // this whole skill asks for. So it is reported and does not block.
+      if (!known.hasImage && !known.imageRefused) gaps.push('NO PICTURE — nobody has looked')
       if (!known.hasAvailability) gaps.push('no availability')
       if (known.fields.length === 0) gaps.push('STATES NOTHING')
+      // Reported beside the gaps and counted as neither: the picture question
+      // on this entry has an answer, and it is in the file.
+      const said = known.imageRefused ? ['picture refused (image: null) — reason is in the file'] : []
       rows.push({
         ref,
         state: 'CATALOGUED',
         caps,
         english,
         listed,
-        note: `${known.line}/${known.series}` + (gaps.length ? ` — ${gaps.join(', ')}` : ''),
+        gaps,
+        note: `${known.line}/${known.series}` + [...gaps, ...said].map((g) => ` — ${g}`).join(''),
       })
       continue
     }
@@ -258,6 +304,7 @@ async function classify(line: string, refs: Set<string>, prefix?: string): Promi
         caps,
         english,
         listed,
+        gaps: [],
         note: listed
           ? 'Casio lists it — real, and the crawler can never find it'
           : 'refused by shape, and not in Casio’s roster either',
@@ -266,11 +313,11 @@ async function classify(line: string, refs: Set<string>, prefix?: string): Promi
     }
     const belongs = lineOfReference(ref)
     if (belongs !== null && belongs !== line) {
-      rows.push({ ref, state: 'FOREIGN-LINE', caps, english, listed, note: `the archive files it under ${belongs}` })
+      rows.push({ ref, state: 'FOREIGN-LINE', caps, english, listed, gaps: [], note: `the archive files it under ${belongs}` })
       continue
     }
     if (caps > 0) {
-      rows.push({ ref, state: 'SEEDABLE', caps, english, listed, note: english === 0 ? 'no English capture — expect D46' : '' })
+      rows.push({ ref, state: 'SEEDABLE', caps, english, listed, gaps: [], note: english === 0 ? 'no English capture — expect D46' : '' })
       continue
     }
     if (deep && prefix && deepCounts === null) deepCounts = await deepCaptures(prefix)
@@ -281,6 +328,7 @@ async function classify(line: string, refs: Set<string>, prefix?: string): Promi
       caps: deepCounts?.get(ref) ?? 0,
       english,
       listed,
+      gaps: [],
       note: proven
         ? 'proven: zero 200s in a domain-wide CDX query'
         : deep
@@ -320,9 +368,29 @@ function report(title: string, rows: Row[]): void {
 
 function verdict(rows: Row[], line: string, series: string): void {
   const work = rows.filter((r) => WORK.includes(r.state))
-  const gaps = rows.filter((r) => r.state === 'CATALOGUED' && r.note.includes('—'))
+  const gaps = rows.filter((r) => r.gaps.length > 0)
+  const noPicture = gaps.filter((r) => r.gaps.some((g) => g.startsWith('NO PICTURE')))
   if (work.length === 0 && gaps.length === 0) {
-    console.log(`FINISHED. Every reference is catalogued or has a named reason not to be.`)
+    console.log(
+      `FINISHED. Every reference is catalogued or has a named reason not to be,\n` +
+        `and every catalogued entry has a photograph or a written refusal.`,
+    )
+    return
+  }
+  if (work.length === 0 && noPicture.length === gaps.length) {
+    // Worth saying separately, because it is the one kind of unfinished that a
+    // reader will be tempted to wave through. The references are all found; what
+    // is missing is what the visitor actually looks at first.
+    console.log(`NOT FINISHED — every reference is accounted for, but ${noPicture.length} have no picture:`)
+    for (const g of noPicture) console.log(`    ${g.ref.padEnd(18)} ${g.note}`)
+    console.log(
+      `\n  A photograph is part of done, not decoration on top of it.\n` +
+        `    node ../casio-catalog/references/backfill-photos.ts ${line} --plan\n` +
+        `    node ../casio-catalog/references/photos.ts ${line} ${line}-${series}\n` +
+        `    npm run catalog:images\n` +
+        `  If none can be found honestly, write \`image: null\` WITH THE REASON —\n` +
+        `  that is a named refusal and it closes the scope. An unanswered one does not.`,
+    )
     return
   }
   console.log(`NOT FINISHED. ${work.length} references imply work:`)
@@ -364,7 +432,17 @@ if (scope.kind === 'series' || scope.kind === 'ref') {
     )
     process.exit(0)
   }
-  const rows = await classify(line, refs, series.toUpperCase().replace(/-/g, ''))
+  // THE SERIES ID KEEPS ITS HYPHEN. This used to `.replace(/-/g, '')`, which
+  // asked the archive for `product.AE1600` when every real URL says
+  // `product.AE-1600H-1AV` — so the CDX query matched nothing, answered **200
+  // with `[]`**, sailed past the `startsWith('[')` cooldown guard because `[]`
+  // is valid JSON, and stamped every reference `proven: zero 200s in a
+  // domain-wide CDX query`. A query that asked nothing became a permanent claim
+  // that a watch cannot be sourced. It affected every hyphenated series id,
+  // which is most of them; `a159` and `a168` looked healthy only because theirs
+  // have no hyphen. Measured 2026-08-24: `product.AE-1600` returns 17 × 200
+  // across three references, `product.AE1600` returns zero.
+  const rows = await classify(line, refs, series.toUpperCase())
   report(`${line}:${series}`, rows)
   verdict(rows, line, series)
 } else if (scope.kind === 'line') {
@@ -377,44 +455,77 @@ if (scope.kind === 'series' || scope.kind === 'ref') {
     const s = seriesOf(ref)
     if (entries.some((e) => e.line === line && e.series === s)) allSeries.add(s)
   }
-  const summary: { series: string; work: number; total: number; refused: number; noPage: number }[] = []
+  const summary: { series: string; work: number; total: number; refused: number; noPage: number; noPic: number }[] = []
   for (const series of [...allSeries].sort()) {
     const rows = await classify(line, await universe(line, series))
     summary.push({
       series,
+      noPic: rows.filter((r) => r.gaps.some((g) => g.startsWith('NO PICTURE'))).length,
       total: rows.length,
       work: rows.filter((r) => WORK.includes(r.state)).length,
       refused: rows.filter((r) => r.state === 'REFUSED-D47').length,
       noPage: rows.filter((r) => r.state === 'NO-PAGE').length,
     })
   }
-  const unfinished = summary.filter((s) => s.work > 0).sort((a, b) => b.work - a.work)
+  // A series whose references are all catalogued but whose entries have no
+  // photograph is NOT finished, so it belongs on this list. Ranked by
+  // `work + noPic` for the same reason: both are undone work, and sorting on
+  // `work` alone buried every picture-only series below every other one.
+  const unfinished = summary.filter((s) => s.work > 0 || s.noPic > 0).sort((a, b) => b.work + b.noPic - (a.work + a.noPic))
   console.log(`\n${allSeries.size} series; ${unfinished.length} are not finished\n`)
-  console.log('  series              refs  work  D47  no-page')
+  console.log('  series              refs  work  D47  no-page  no-pic')
   for (const s of unfinished) {
     console.log(
-      `  ${s.series.padEnd(18)} ${String(s.total).padStart(4)}  ${String(s.work).padStart(4)}  ${String(s.refused).padStart(3)}  ${String(s.noPage).padStart(7)}`,
+      `  ${s.series.padEnd(18)} ${String(s.total).padStart(4)}  ${String(s.work).padStart(4)}  ${String(s.refused).padStart(3)}  ${String(s.noPage).padStart(7)}  ${String(s.noPic).padStart(6)}`,
     )
   }
   console.log(`\nFinish one at a time: node survey.ts ${line}:<series>`)
 } else {
   console.log(`scope: year ${scope.year}`)
-  const carrying = entries.filter((e) => {
-    const text = readFileSync(join(REPO, 'catalog-src', e.line, `${e.series}.yaml`), 'utf8')
-    const block = text.split(/^ {2}- id: /m).find((b) => new RegExp(`^ {4}ref: ${e.ref}\\s*$`, 'm').test(b))
-    return block ? new RegExp(`^ {4}year: ${scope.year}\\s*$`, 'm').test(block) : false
-  })
-  console.log(`\n${carrying.length} catalogued models already carry year ${scope.year}:`)
+  const carrying = entries.filter((e) => e.year === scope.year)
+  console.log(`\n${carrying.length} catalogued model${carrying.length === 1 ? '' : 's'} already carry year ${scope.year}:`)
   for (const e of carrying) console.log(`    ${e.ref.padEnd(18)} ${e.line}/${e.series}`)
+
+  // The two routes are COUNTED from the catalogue rather than asserted, because
+  // the claim this message used to make — "a year is only ever written from a
+  // dated news release" — was false against the project's own data and sent two
+  // year scopes away believing nothing pre-2024 could ever be sourced.
+  const dated = entries.filter((e) => e.year !== null)
+  const cited = dated.filter((e) => e.hasYearSource).length
+  const own = dated.length - cited
+  const floor = dated.length > 0 ? Math.min(...dated.map((e) => e.year!)) : null
+  const reachable = NEWS_YEARS.includes(scope.year)
+
   console.log(
-    `\nA year is only ever written from a DATED Casio news release (D54), and\n` +
-      `casio.com/intl/news/ indexes recent years only — news.ts reads 2024-2026.\n` +
-      `For anything earlier there is no dated official source, so no reference can\n` +
-      `be attributed to ${scope.year} from here. That is a gap in the source, not in\n` +
-      `the catalogue, and D25 is explicit that an unknown year stays absent.\n` +
-      `\n  node ../casio-catalog/references/news.ts --list   the releases that exist\n` +
-      `  node ../casio-catalog/references/news.ts --dry    which models would gain one`,
+    `\nTWO ROUTES WRITE A YEAR, and only one of them is limited to recent years.\n` +
+      `\n  a dated news release   year + year_source citing it (D54). news.ts reads\n` +
+      `                         casio.com/intl/news/ for ${NEWS_YEARS[0]}-${NEWS_YEARS[NEWS_YEARS.length - 1]} only, so this route\n` +
+      `                         genuinely cannot reach earlier.  ${String(cited).padStart(3)} of ${dated.length} years.\n` +
+      `\n  the entry's own page   year alone, where the source the entry already cites\n` +
+      `                         states it. This is how every Vintage year was written,\n` +
+      `                         off The Digital Watch Library (kind: community).\n` +
+      `                         schema.ts sanctions it and integrity check 6 forbids\n` +
+      `                         only the reverse — a year_source with no year.\n` +
+      `                         ${String(own).padStart(3)} of ${dated.length} years.\n` +
+      `\nSo a year before ${NEWS_YEARS[0]} is NOT out of reach` +
+      (floor === null ? '' : ` — the catalogue's earliest is ${floor}`) +
+      `.\nIt needs a page that STATES it, cited like any other field. What D25 forbids is\n` +
+      `inventing the difference: never infer a year from a module number, from a\n` +
+      `neighbouring reference, or from how a watch looks.`,
   )
+
+  console.log(
+    reachable
+      ? `\nnews.ts reaches ${scope.year}. Ask it:\n` +
+          `\n  node ../casio-catalog/references/news.ts --dry    which models would gain one\n` +
+          `  node ../casio-catalog/references/news.ts --list   the releases that exist`
+      : `\nnews.ts does not reach ${scope.year}, so no release there will date one — but that\n` +
+          `bounds ONE route, not the question. Before reporting ${scope.year} as unsourceable,\n` +
+          `check that no cited page states it, and beware a bare year-grep: "1975" matched\n` +
+          `31 of 32 releases as SVG path coordinates and an AEM container id. Interleave a\n` +
+          `year you know is stated as a control, the way --deep does for captures.`,
+  )
+
   const series = new Set(carrying.map((e) => `${e.line}:${e.series}`))
   if (series.size > 0) {
     console.log(`\nThe series those models sit in, to finish as series:`)
