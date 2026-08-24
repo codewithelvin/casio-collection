@@ -45,6 +45,15 @@
 # whose capture names no asset for it. The typographic card is the state for
 # those, and it is a primary state rather than a fallback (D29).
 #
+# SOME PHOTOGRAPHS COME FROM A STOCKIST'S LISTING, and each says which (D53).
+# Every *field* above is still read off the module manual named in `source`.
+# Where `image_credit` names a shop rather than Casio, that reference has no
+# archived casio.com product page — it is a collaboration, a regional edition,
+# or too recent to have been captured — so the photograph is read off the
+# listing page the credit points at, never a path derived from the reference.
+# Those files are `rights-reserved` and used under D11: non-commercial,
+# attributed, withdrawn in full on request.
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the module.
@@ -149,6 +158,11 @@ models:
     module: '5463'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
     discontinued: true
+    image: gwg-1000gb-1a
+    image_credit:
+      author: WatchOutz
+      licence: rights-reserved
+      url: 'https://watchoutz.com/products/casio-g-shock-mudmaster-gwg-1000gb-1a'
   - id: gwg-1000gb-4a
     ref: GWG-1000GB-4A
     source:
@@ -161,6 +175,11 @@ models:
     module: '5463'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
     discontinued: true
+    image: gwg-1000gb-4a
+    image_credit:
+      author: WatchOutz
+      licence: rights-reserved
+      url: 'https://watchoutz.com/products/casio-g-shock-mudmaster-gwg-1000gb-4a'
   - id: gwg-1000mh-1a
     ref: GWG-1000MH-1A
     source:
@@ -197,3 +216,8 @@ models:
     module: '5463'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
     discontinued: true
+    image: gwg-1000wlp-1a
+    image_credit:
+      author: WatchOutz
+      licence: rights-reserved
+      url: 'https://watchoutz.com/products/casio-g-shock-mudmaster-triple-sensor-love-the-sea-and-the-earth-gwg-1000wlp-1a'
