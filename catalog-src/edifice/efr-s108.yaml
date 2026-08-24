@@ -33,6 +33,15 @@
 # whose capture names no asset for it. The typographic card is the state for
 # those, and it is a primary state rather than a fallback (D29).
 #
+# SOME PHOTOGRAPHS COME FROM A STOCKIST'S LISTING, and each says which (D53).
+# Every *field* above is still read off the module manual named in `source`.
+# Where `image_credit` names a shop rather than Casio, that reference has no
+# archived casio.com product page — it is a collaboration, a regional edition,
+# or too recent to have been captured — so the photograph is read off the
+# listing page the credit points at, never a path derived from the reference.
+# Those files are `rights-reserved` and used under D11: non-commercial,
+# attributed, withdrawn in full on request.
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `year` — the guide dates the module, never the reference (D25).
 #   * `case`, `water_resistance_m`, `colorway` — the guide is about the module.
@@ -129,6 +138,11 @@ models:
     movement: quartz
     module: '5359'
     discontinued: false
+    image: efr-s108de-2av
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/efr-s108de-2avudf'
   - id: efr-s108de-3av
     ref: EFR-S108DE-3AV
     source:
@@ -156,6 +170,11 @@ models:
 # cases a `year` these pages do not state.
 #
 # No `year` on any of the entries below: the product page dates nothing (D25).
+    image: efr-s108de-8av
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/efr-s108de-8avudf'
   - id: efr-s108dj-2a
     ref: EFR-S108DJ-2A
     source:
