@@ -61,6 +61,90 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220704094533id_/https://www.casio.com/us/watches/protrek/product.PAG-240-1/'
     discontinued: false
+  # PAG-240B-2 — added 2026-08-25 by /finish-casio. IT IS SOURCED DIFFERENTLY
+  # FROM THE TWO ENTRIES AROUND IT, and that is the point rather than an
+  # oversight, so read this before the diff.
+  #
+  # NEITHER MODERN ROSTER KNOWS THIS REFERENCE. It is not in Casio's current
+  # sitemap and not in the archive's `protrek` segment index, while its two
+  # siblings are in both — which is why every survey this repo has ever run
+  # reported PAG-240 finished at two references when Casio sold three.
+  #
+  # It was invisible for a STRUCTURAL reason, not a missing capture. Casio sold
+  # this watch in the US as a PATHFINDER, and those pages never used the
+  # `product.<REF>` URL shape that every reader in this repo matches:
+  #
+  #   pathfinder.casio.com/watches/detail/PAG240B-2          <- `source` below
+  #   casio.com/products/watches/pro-trek/pag240b-2          (2016, thinner)
+  #   casio.com/products/timepiece/pathfinder/<REF>          (2010 template)
+  #
+  # So `archive.ts` cannot see it, `availability.ts` cannot see it, and no crawl
+  # will ever offer it. 49 Pathfinder references are in the same position; this
+  # is the one that sits inside a series the catalogue already has.
+  #
+  # WHY NOT THE MODULE GUIDE, like the two entries around it. The page below
+  # states `Module 3246` about THIS reference, so the module is read and not
+  # borrowed from a neighbour (D25). Having read it there, the one-page rule
+  # makes that page the `source` — and it carries more than the guide can: a
+  # guide describes a module, so it can never state `water_resistance_m` or
+  # `colorway`, which is exactly what this file's header says. That is why this
+  # entry is richer than its siblings rather than differently researched.
+  #
+  # `display: digital` is READ, NOT INFERRED. The photograph plainly shows
+  # hands, so it is worth saying where the value comes from: both Casio pages
+  # describe a "neutral digital face", and the 2016 page's own title is
+  # "PRO TREK, Mens, Digital, Altimeter, Barometer, Compass, Watch" with no
+  # analog in it. The hands are the Triple Sensor pointers.
+  #
+  # `case` is absent: the page states a BAND ("resin/cloth band"), which is not
+  # the case, and nothing states the case material or its dimensions.
+  #
+  # THE PHOTOGRAPH'S CREDIT URL IS THE IMAGE FILE, not a product page as on the
+  # two entries around it (D53). The 2016 page names
+  # `resource/images/products/watches/large/PAG240B-2_large.png` and the archive
+  # never captured it — nor the same file for either sibling, so that is the
+  # archive's coverage and not something about this reference. The file used is
+  # Casio's own `_xlarge.jpg`, which the archive did capture, and it is credited
+  # to where it actually came from. It is 500 px wide, so its 2x is not truly 2x.
+  # It was checked against the sibling photograph rather than assumed distinct —
+  # sha256 90260d39d90d7ae4 against PAG-240T-7's 57aeb6140cef1259.
+  - id: pag-240b-2
+    ref: PAG-240B-2
+    source:
+      {
+        url: 'https://web.archive.org/web/20121202004951id_/http://pathfinder.casio.com/watches/detail/PAG240B-2',
+        kind: official,
+      }
+    display: digital
+    movement: solar
+    module: '3246'
+    water_resistance_m: 100
+    features:
+      [
+        world-time,
+        stopwatch,
+        countdown-timer,
+        multi-alarm,
+        hourly-time-signal,
+        full-auto-calendar,
+        el-backlight,
+        afterglow,
+        auto-light,
+        tough-solar,
+        power-saving,
+        compass,
+        barometer,
+        thermometer,
+        altimeter,
+        sunrise-sunset,
+      ]
+    colorway: Black/Blue
+    image: pag-240b-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20150911111827id_/http://www.casio.com/resource/images/xlarge/pag240b-2_xlarge.jpg'
+    discontinued: true
   - id: pag-240t-7
     ref: PAG-240T-7
     source:
