@@ -70,6 +70,15 @@
 # whose capture names no asset for it. The typographic card is the state for
 # those, and it is a primary state rather than a fallback (D29).
 #
+# SOME PHOTOGRAPHS COME FROM A STOCKIST'S LISTING, and each says which (D53).
+# Every *field* above is still read off the module manual named in `source`.
+# Where `image_credit` names a shop rather than Casio, that reference has no
+# archived casio.com product page — it is a collaboration, a regional edition,
+# or too recent to have been captured — so the photograph is read off the
+# listing page the credit points at, never a path derived from the reference.
+# Those files are `rights-reserved` and used under D11: non-commercial,
+# attributed, withdrawn in full on request.
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the module.
@@ -196,6 +205,11 @@ models:
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
     discontinued: false
+    image: ga-110as-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251123212846id_/https://www.casio.com/us/watches/gshock/product.GA-110AS-2A/'
   - id: ga-110as-5a
     ref: GA-110AS-5A
     source:
@@ -208,6 +222,11 @@ models:
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
     discontinued: false
+    image: ga-110as-5a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/ga-110as-5adr'
   - id: ga-110b-1a2
     ref: GA-110B-1A2
     source:
@@ -1000,6 +1019,11 @@ models:
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
     discontinued: false
+    image: ga-110hds-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251126180621id_/https://www.casio.com/de/watches/gshock/product.GA-110HDS-7A/'
   - id: ga-110hr-1a
     ref: GA-110HR-1A
     source:
@@ -1082,6 +1106,11 @@ models:
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
     discontinued: true
+    image: ga-110jdb-1a4
+    image_credit:
+      author: WatchOutz
+      licence: rights-reserved
+      url: 'https://watchoutz.com/products/casio-g-shock-dragon-ball-z-limited-edition-ga-110jdb-1a4'
   - id: ga-110jop-1a4
     ref: GA-110JOP-1A4
     source:
@@ -1094,6 +1123,11 @@ models:
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
     discontinued: true
+    image: ga-110jop-1a4
+    image_credit:
+      author: WatchOutz
+      licence: rights-reserved
+      url: 'https://watchoutz.com/products/casio-g-shock-x-shounen-jump-one-piece-limited-edition-ga-110jop-1a4'
   - id: ga-110jt-2a
     ref: GA-110JT-2A
     source:
@@ -1759,6 +1793,11 @@ models:
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
     discontinued: false
+    image: ga-110rrb-4a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/ga-110rrb-4adr'
   - id: ga-110sg-4a
     ref: GA-110SG-4A
     source:
