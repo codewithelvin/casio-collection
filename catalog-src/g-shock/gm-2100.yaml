@@ -41,6 +41,15 @@
 # whose capture names no asset for it. The typographic card is the state for
 # those, and it is a primary state rather than a fallback (D29).
 #
+# SOME PHOTOGRAPHS COME FROM A STOCKIST'S LISTING, and each says which (D53).
+# Every *field* above is still read off the module manual named in `source`.
+# Where `image_credit` names a shop rather than Casio, that reference has no
+# archived casio.com product page — it is a collaboration, a regional edition,
+# or too recent to have been captured — so the photograph is read off the
+# listing page the credit points at, never a path derived from the reference.
+# Those files are `rights-reserved` and used under D11: non-commercial,
+# attributed, withdrawn in full on request.
+#
 # DELIBERATELY NOT WRITTEN, and each absence is a real one:
 #   * `year` — the manual dates the module, never the reference (D25).
 #   * `case` and `water_resistance_m` — properties of the watch, not the
@@ -139,6 +148,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: gm-2100bm-1a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/gm-2100bm-1adr'
   - id: gm-2100brw-1a
     ref: GM-2100BRW-1A
     source:
@@ -287,6 +301,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: gm-2100lxb-1a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/gm-2100lxb-1adr'
   - id: gm-2100lxb-1a9
     ref: GM-2100LXB-1A9
     source:
@@ -299,6 +318,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: gm-2100lxb-1a9
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/gm-2100lxb-1a9dr'
   - id: gm-2100m-1a
     ref: GM-2100M-1A
     source:
@@ -311,6 +335,11 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: gm-2100m-1a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/gm-2100m-1adr'
   - id: gm-2100mf-5a
     ref: GM-2100MF-5A
     source:
@@ -510,3 +539,8 @@ models:
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
     discontinued: false
+    image: gm-2100yra-8a
+    image_credit:
+      author: CASIO Flagship Store Indonesia
+      licence: rights-reserved
+      url: 'https://shopcasio.fjbl.co.id/products/gm-2100yra-8adr'
