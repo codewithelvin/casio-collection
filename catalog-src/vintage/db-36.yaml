@@ -1,0 +1,59 @@
+# DB-36 — seeded 2026-08-25 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: db-36
+  name: DB-36
+  line: vintage
+
+models:
+  - id: db-36-1a
+    ref: DB-36-1A
+    source:
+      { url: 'https://web.archive.org/web/20210618020334id_/https://www.casio.com/jp/watches/casio/product.DB-36-1A/', kind: official }
+    case: { height_mm: 43.2, width_mm: 36.6, depth_mm: 10.5, weight_g: 27 }
+    water_resistance_m: 50
+    image: db-36-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210618020334id_/https://www.casio.com/jp/watches/casio/product.DB-36-1A/'
+    discontinued: true
+  - id: db-36-1av
+    ref: DB-36-1AV
+    source:
+      { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.DB-36-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.2, width_mm: 36.6, depth_mm: 10.5, weight_g: 27, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, calendar, hourly-time-signal, led-light, afterglow, telememo]
+    image: db-36-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.DB-36-1AV/'
+    discontinued: false
+  - id: db-36-9av
+    ref: DB-36-9AV
+    source:
+      { url: 'https://web.archive.org/web/20240721132359id_/https://www.casio.com/id/watches/casio/product.DB-36-9AV/', kind: official }
+    case: { height_mm: 43.2, width_mm: 36.6, depth_mm: 10.5, weight_g: 27 }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, telememo]
+    image: db-36-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721132359id_/https://www.casio.com/id/watches/casio/product.DB-36-9AV/'
+    discontinued: false
