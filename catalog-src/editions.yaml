@@ -103,10 +103,35 @@ editions:
         kind: official,
       }
 
-  # The G-SHOCK collaborations, which have no Casio landing page in the archive.
-  # Each source is the stockist listing that names the collaboration and the
-  # reference in the same sentence — the same page the entry's photograph is
-  # already credited to (D53), and marked `retailer` so the watch page says so.
+  # The G-SHOCK collaborations. This used to read "which have no Casio landing
+  # page in the archive", and that was true of the two below and is not true of
+  # the line — Coca-Cola's page was found on 2026-08-25 by asking the CDX index
+  # for a PATH fragment rather than for `product.<REF>`, which is the only query
+  # `survey.ts --deep` makes. A landing page is invisible to a reference search.
+  # Worth repeating for the next G-SHOCK collaboration somebody looks for.
+  - id: coca-cola
+    # As the page titles itself. Casio's own words, not "Casio × Coca-Cola".
+    name: Coca-Cola Collaboration Model
+    # The page names the collaborator in its own title and nowhere names the
+    # legal entity, so this is "Coca-Cola" and not "The Coca-Cola Company" —
+    # the same reading as Dragon Ball Z below, where the partner is the magazine
+    # the page names rather than the licensors printed beside it.
+    partner: Coca-Cola
+    aka: [Coke, CocaCola]
+    # NO `year`. The page's only date is the footer, "2024 CASIO AMERICA, INC.",
+    # which is a copyright line and not a release date — the rule this file
+    # already states at the top. The `23` inside DW-5600CC23-4 is not a source
+    # either; inferring a year from a reference code is exactly what D25 forbids.
+    source:
+      {
+        url: 'https://web.archive.org/web/20241217114649id_/https://gshock.casio.com/us/products/collection/limited/coca-cola/',
+        kind: official,
+      }
+
+  # The two below have no Casio landing page. Each source is the stockist listing
+  # that names the collaboration and the reference in the same sentence — the
+  # same page the entry's photograph is already credited to (D53), and marked
+  # `retailer` so the watch page says so.
   # Both listings are titled "Casio G-Shock X Shounen Jump '<title>' Limited
   # Edition", so the partner is the magazine as the page names it — Shueisha,
   # Toei Animation and Bird Studio appear on the Dragon Ball page as licensors
