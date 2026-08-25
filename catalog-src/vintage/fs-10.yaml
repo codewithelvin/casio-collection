@@ -1,0 +1,40 @@
+# FS-10 — seeded 2026-08-25 from The Digital Watch Library.
+#
+# One model, read off the one page named in `source`. A community source and
+# labelled as one: this watch predates casio.com and is in neither roster
+# `survey.ts` reads. It sits beside `fs-12.yaml`, seeded the same way in M1c.
+#
+# The dial in the page's own photograph prints **FS-10** and *Auto calendar*,
+# so the identity is proven by the watch rather than by the filename.
+#
+# **`casio-fs-01` is NOT a separate reference and this is why the check
+# matters.** That slug answers HTTP 200 and serves *this* page — title, model
+# row and photographs all FS-10. A bulk probe that recorded the status alone
+# would have written an FS-01 that nothing states exists, and D2 would have
+# made its id permanent.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `water_resistance_m` — the page says NONE, a statement and not a depth.
+#   * `features` — the page shows no function icons at all, which is the page
+#     saying nothing rather than the watch doing nothing (D27).
+#   * `family`, `discontinued` — a human's judgement, and a measurement (D59).
+
+series:
+  id: fs-10
+  name: FS-10
+  line: vintage
+
+models:
+  - id: fs-10
+    ref: FS-10
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-fs-10', kind: community }
+    year: 1985
+    display: digital
+    module: '465'
+    case: { material: resin }
+    image: fs-10
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-fs-10'
+    discontinued: true
