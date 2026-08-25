@@ -1,0 +1,42 @@
+# AT-550 — seeded 2026-08-25 from The Digital Watch Library.
+#
+# One model, read off the one page named in `source` (`casio_at-5501` — the
+# trailing 1 is the site's own page numbering, not a second reference; its
+# title and `#makermodel` both say AT-550). A community source, labelled as
+# one: this watch predates casio.com and appears in neither roster
+# `survey.ts` reads.
+#
+# NOT the same series as `at-552.yaml`, which sits beside it. D32 makes the
+# series id the reference prefix mechanically, and AT-550 and AT-552 are
+# different prefixes — so they are different files however alike the watches.
+#
+# `display` is read off the page's own photograph: hands over a textured dial
+# with an LCD window above them.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `water_resistance_m` — the page says NONE, which is a statement and not a
+#     depth, so the field is absent rather than zero (D27).
+#   * `family` — a human's judgement. Databank is tempting on a calculator
+#     watch and this is not one; it is proposed, not written (guardrail 4a).
+#   * `discontinued` — measured for the whole catalogue at once (D59).
+
+series:
+  id: at-550
+  name: AT-550
+  line: vintage
+
+models:
+  - id: at-550
+    ref: AT-550
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_at-5501', kind: community }
+    year: 1984
+    display: ana-digi
+    module: '320'
+    case: { material: chrome plated base-metal }
+    features: [alarm, stopwatch, dual-time, calculator]
+    image: at-550
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_at-5501'
+    discontinued: true
