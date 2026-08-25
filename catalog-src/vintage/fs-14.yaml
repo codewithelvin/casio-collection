@@ -1,0 +1,35 @@
+# FS-14 — seeded 2026-08-25 from The Digital Watch Library.
+#
+# One model, read off the one page named in `source`. A community source and
+# labelled as one: this watch predates casio.com and is in neither roster
+# `survey.ts` reads. Third of the FS series in this catalogue, beside FS-10 and
+# M1c's FS-12.
+#
+# The dial in the page's own photograph prints **FS-14**, so the identity comes
+# from the watch and not from the filename — which here is `DSC_2799.JPG`.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `water_resistance_m` — the page says WATER RESIST, a claim and not a
+#     depth. Absent means nobody has found the number (D27).
+#   * `features` — no function icons on the page.
+#   * `family`, `discontinued` — a human's judgement, and a measurement (D59).
+
+series:
+  id: fs-14
+  name: FS-14
+  line: vintage
+
+models:
+  - id: fs-14
+    ref: FS-14
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_fs-14', kind: community }
+    year: 1982
+    display: digital
+    module: '467'
+    case: { material: resin }
+    image: fs-14
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_fs-14'
+    discontinued: true
