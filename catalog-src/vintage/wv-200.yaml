@@ -1,0 +1,114 @@
+# WV-200 — seeded 2026-08-25 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: wv-200
+  name: WV-200
+  line: vintage
+
+models:
+  - id: wv-200a-1av
+    ref: WV-200A-1AV
+    source:
+      { url: 'https://web.archive.org/web/20230118014324id_/https://www.casio.com/us/watches/casio/product.WV-200A-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 47.7, depth_mm: 15.2, weight_g: 58, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, mineral-glass]
+    image: wv-200a-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230118014324id_/https://www.casio.com/us/watches/casio/product.WV-200A-1AV/'
+    discontinued: false
+  - id: wv-200r-1a
+    ref: WV-200R-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715070909id_/https://www.casio.com/europe/watches/casio/product.WV-200R-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 47.7, depth_mm: 15.2, weight_g: 58, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, mineral-glass]
+    image: wv-200r-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715070909id_/https://www.casio.com/europe/watches/casio/product.WV-200R-1A/'
+    discontinued: false
+  - id: wv-200r-2a
+    ref: WV-200R-2A
+    source:
+      { url: 'https://web.archive.org/web/20221204222425id_/https://www.casio.com/jp/watches/casio/product.WV-200R-2A/', kind: official }
+    case: { height_mm: 52.2, width_mm: 47.7, depth_mm: 15.2, weight_g: 58 }
+    water_resistance_m: 200
+    image: wv-200r-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221204222425id_/https://www.casio.com/jp/watches/casio/product.WV-200R-2A/'
+    discontinued: true
+  - id: wv-200r-3a
+    ref: WV-200R-3A
+    source:
+      { url: 'https://web.archive.org/web/20240715070815id_/https://www.casio.com/europe/watches/casio/product.WV-200R-3A/', kind: official }
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 47.7, depth_mm: 15.2, weight_g: 58, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, mineral-glass]
+    image: wv-200r-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715070815id_/https://www.casio.com/europe/watches/casio/product.WV-200R-3A/'
+    discontinued: false
+  - id: wv-200r-4a
+    ref: WV-200R-4A
+    source:
+      { url: 'https://web.archive.org/web/20221208200519id_/https://www.casio.com/jp/watches/casio/product.WV-200R-4A/', kind: official }
+    case: { height_mm: 52.2, width_mm: 47.7, depth_mm: 15.2, weight_g: 58 }
+    water_resistance_m: 200
+    image: wv-200r-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221208200519id_/https://www.casio.com/jp/watches/casio/product.WV-200R-4A/'
+    discontinued: true
+  - id: wv-200r-5a
+    ref: WV-200R-5A
+    source:
+      { url: 'https://web.archive.org/web/20250115172951id_/https://www.casio.com/us/watches/casio/product.WV-200R-5A/', kind: official }
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 47.7, depth_mm: 15.2, weight_g: 58, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, mineral-glass]
+    image: wv-200r-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250115172951id_/https://www.casio.com/us/watches/casio/product.WV-200R-5A/'
+    discontinued: false
+  - id: wv-200rd-1a
+    ref: WV-200RD-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715070955id_/https://www.casio.com/europe/watches/casio/product.WV-200RD-1A/', kind: official }
+    movement: quartz
+    case: { height_mm: 52.2, width_mm: 47.7, depth_mm: 15.2, weight_g: 114, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, mineral-glass]
+    image: wv-200rd-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715070955id_/https://www.casio.com/europe/watches/casio/product.WV-200RD-1A/'
+    discontinued: false
