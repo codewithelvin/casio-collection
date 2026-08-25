@@ -3,7 +3,7 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { buildCatalog } from '../catalog/build.ts'
 import { IMAGE_DIR, loadCatalogSource } from '../../scripts/catalog/load.ts'
-import { LINE_GROUNDS, LINE_GROUND_OPACITY } from '../theme/palette.ts'
+import { EDITIONS_GROUND, LINE_GROUNDS, LINE_GROUND_OPACITY } from '../theme/palette.ts'
 
 /**
  * The watch ghosted behind each line card on the front door.
@@ -46,6 +46,49 @@ describe('the line card grounds', () => {
         true,
       )
     }
+  })
+})
+
+/**
+ * D62's tile stands eighth in the same grid and carries a watch the same way, so
+ * it is held to the same proofs — and to one more that is the point of it.
+ *
+ * The extra assertion is **edition membership**. Each line ground has to be a
+ * watch of the line it illustrates; the analogue here is not a line at all, it
+ * is that the watch on the card leading to the editions is actually *in* one.
+ * Nothing else catches the failure that matters: `a168wepc-7a` losing its
+ * `edition` in a catalogue refresh leaves a perfectly valid photograph on a tile
+ * now illustrated by an ordinary A168.
+ */
+describe('the editions card ground', () => {
+  const model = () => payload.models.find((candidate) => candidate.image === EDITIONS_GROUND)
+
+  it('names a photograph the catalogue publishes, on a watch that is in an edition', () => {
+    const found = model()
+    expect(found, `no model claims the photograph ${EDITIONS_GROUND}`).toBeDefined()
+    expect(found!.edition, `${EDITIONS_GROUND} is in no edition`).toBeTruthy()
+    // A tombstone is a retired entry (D2), and the front door does not
+    // illustrate anything with a watch the catalogue has withdrawn.
+    expect(found!.tombstone, `${EDITIONS_GROUND} is tombstoned`).toBeUndefined()
+  })
+
+  it('names an edition the build actually published', () => {
+    // The tile links to /editions, and D51 says a category with nothing in it is
+    // not published — so this watch's edition has to be one the build emitted,
+    // not merely a string in a model file.
+    const edition = payload.editions.find((candidate) => candidate.id === model()?.edition)
+    expect(edition, `${model()?.edition} is not a published edition`).toBeDefined()
+  })
+
+  it('names only files that are actually on disk, at both densities', () => {
+    expect(
+      existsSync(join(IMAGE_DIR, `${EDITIONS_GROUND}.webp`)),
+      `${EDITIONS_GROUND}.webp is missing`,
+    ).toBe(true)
+    expect(
+      existsSync(join(IMAGE_DIR, `${EDITIONS_GROUND}@2x.webp`)),
+      `${EDITIONS_GROUND}@2x.webp is missing`,
+    ).toBe(true)
   })
 })
 

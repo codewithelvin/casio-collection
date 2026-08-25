@@ -35,12 +35,19 @@ export function themeConfig(mode: ThemeMode): ThemeConfig {
       // enough to read as deliberate and still far from a pill.
       borderRadius: 8,
 
-      // §5.1 ships no stylesheet, so the typeface is declared here and in the
-      // @font-face block in index.css, and nowhere else. See that file for why
-      // Plex: the catalogue is mostly reference codes, and Plex draws digits,
-      // capitals and hyphens to be read as data.
+      // §5.1 ships no stylesheet, so this is one of the **two** places the
+      // typeface is declared; the other is the `body` rule in index.css, which
+      // covers everything §12's shell draws without Ant Design. They have to
+      // stay in step, and the consequence of them not being in step is on
+      // record in that file — the shell spent §12 rendering in Times because
+      // this token was the only declaration and the shell no longer reads it.
+      //
+      // UI text is the platform font as of 2026-08-25. `fontFamilyCode` below
+      // keeps Plex Mono, which is the half that carries an argument: a reference
+      // code is data, and a monospace column is what makes GA-2100-1A1 and
+      // GW-M5610U-1 differ visibly at a glance.
       fontFamily:
-        "'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+        "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
       fontFamilyCode: "'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace",
 
       // Up from AntD's 14. The phone is the real device (principle 5) and the

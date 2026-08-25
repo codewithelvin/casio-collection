@@ -256,13 +256,26 @@ describe('the editions routes (D62)', () => {
     expect(link).toHaveAttribute('href', '/editions')
   })
 
-  it('offers them from the front door too, without a second grid of cards', async () => {
-    renderApp('/')
+  /**
+   * The front door's offer is a card in the lines grid now, not a bare link
+   * under it — the link was unreadable on the dark theme (see `color-scheme` in
+   * index.css), and D62's rule was never "one link", it was **no second grid**.
+   *
+   * So the assertion checks the thing D62 actually cares about: the editions
+   * card is inside the *same* grid as the seven lines, which is what stops it
+   * becoming a row of its own claiming equal weight. Counting the grids is what
+   * makes that a real test rather than a test that a link exists.
+   */
+  it('offers them from the front door as a card in the lines grid, not a second grid', async () => {
+    const { container } = renderApp('/')
     await screen.findByRole('heading', { name: t('home.linesHeading') })
-    expect(await front().findByRole('link', { name: t('editions.all') })).toHaveAttribute(
-      'href',
-      '/editions',
-    )
+
+    const link = await front().findByRole('link', { name: new RegExp(t('nav.editions')) })
+    expect(link).toHaveAttribute('href', '/editions')
+
+    const grids = container.querySelectorAll('.cc-line-grid')
+    expect(grids).toHaveLength(1)
+    expect(grids[0]).toContainElement(link)
   })
 })
 

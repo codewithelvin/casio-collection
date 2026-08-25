@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom'
 import type { PublishedLine } from '../catalog/schema.ts'
 import { imageSources } from '../catalog/client.ts'
-import { LINE_ACCENTS, LINE_GROUNDS, LINE_GROUND_OPACITY } from '../theme/palette.ts'
+import {
+  EDITIONS_GROUND,
+  LINE_ACCENTS,
+  LINE_GROUNDS,
+  LINE_GROUND_OPACITY,
+} from '../theme/palette.ts'
 import { useUiStore } from './uiStore'
 import { useSettled } from './useSettled'
-import { t } from '../i18n/strings'
+import { editionsTotal, t } from '../i18n/strings'
 
 /**
  * The front door's grid: the seven lines of D15 in editorial order, each with its
@@ -63,7 +68,31 @@ const GROUND_MASK = 'linear-gradient(to left, #000 0%, #000 45%, transparent 92%
  * category. It is the same rule §8.4 already applied to a family of one, and the
  * build applies it at the source rather than each grid hiding it separately.
  */
-export function LineGrid({ lines }: { lines: readonly PublishedLine[] }) {
+export function LineGrid({
+  lines,
+  editions,
+}: {
+  lines: readonly PublishedLine[]
+  /**
+   * D62 — how many editions there are, or nothing where there are none.
+   *
+   * **A prop on this grid rather than a card the front door renders beside it,
+   * and that is the whole point.** This component's own comment says it owns the
+   * one copy of the grid's geometry; a second element in a second wrapper would
+   * be a second copy of `grid-template-columns` at three breakpoints, drifting.
+   *
+   * It also keeps D62's actual argument intact. That decision refused a *second
+   * grid* under the first, on the grounds that a row of edition cards would
+   * claim equal weight with the seven lines. One tile inside the existing grid
+   * is not that: it is the eighth thing in a list of eight, marked as a
+   * different kind of thing by having no accent colour and no photograph.
+   *
+   * The link it replaces was a bare `<a>` under the grid, and on the dark theme
+   * it was unreadable — see `color-scheme` in index.css for why, because the
+   * cause was not this component and would have come back somewhere else.
+   */
+  editions?: number | undefined
+}) {
   // Read rather than derived from a token, because the number this picks is a
   // contrast ceiling and the two themes fail in opposite directions. There is no
   // single opacity that is honest in both.
@@ -79,93 +108,143 @@ export function LineGrid({ lines }: { lines: readonly PublishedLine[] }) {
 
   return (
     <div className="cc-line-grid">
-      {lines.map((line) => {
-        // A line with no ground named for it renders exactly as it did before —
-        // absent is a normal state here for the same reason it is everywhere
-        // else in this catalogue, and a missing photograph is not a broken card.
-        const ground = settled ? imageSources(LINE_GROUNDS[line.id]) : null
-        return (
-          <Link
-            key={line.id}
-            to={`/line/${line.slug}`}
-            className="cc-card cc-card-accent"
-            // The per-line accent as a custom property, so the 3 px stripe is a
-            // class and the colour is data (§8.3).
-            style={{ ['--cc-accent-line' as string]: LINE_ACCENTS[line.id] }}
-          >
-            <div className="cc-card-body">
-              {ground ? (
-                /*
-                  **The tile is a `div` and the photograph is an `img` inside
-                  it, and that is not a wrapper for the sake of one.** An
-                  absolutely positioned *replaced* element does not stretch to
-                  its insets: with all four set and `width: auto`, CSS resolves
-                  `auto` to the intrinsic 400 px and then drops the end inset
-                  as over-constrained. The first build of this looked like a
-                  broken image — a 400 px watch pinned at 54% and clipped to a
-                  thumbnail-sized corner. A `div` is not replaced, so its auto
-                  size does stretch, and `100%` inside it finally means the
-                  tile rather than the card.
-                */
-                <div
-                  aria-hidden="true"
-                  style={{
-                    position: 'absolute',
-                    // Negative by the body's own padding, which is what lets
-                    // the photograph reach the card's edges from inside its
-                    // padding box — and bleed a little past the top and bottom,
-                    // so a strap runs off the card rather than stopping on it.
-                    insetBlock: -16,
-                    insetInlineEnd: -16,
-                    insetInlineStart: GROUND_INSET,
-                    maskImage: GROUND_MASK,
-                    WebkitMaskImage: GROUND_MASK,
-                    // The whole card is one link. Nothing in here is a second
-                    // target, a drag handle, or selectable text.
-                    pointerEvents: 'none',
-                    userSelect: 'none',
-                  }}
-                >
-                  <img
-                    src={ground.src}
-                    // Decorative, so it has no accessible name — the wrapper is
-                    // already `aria-hidden`. The card has exactly one
-                    // accessible name, the link's, and a second would make
-                    // every line read as two things to a screen reader.
-                    alt=""
-                    // Seven of these on the front door is the one place in the
-                    // product where an image is decoration rather than content,
-                    // so it yields to everything: below the fold it is not
-                    // fetched at all, and the ones above it queue last.
-                    loading="lazy"
-                    decoding="async"
-                    fetchPriority="low"
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      // `contain`, not `cover`. Cover would crop a watch case
-                      // down its middle in a narrow column, which reads as a
-                      // damaged image rather than a cropped one — and unlike a
-                      // landscape, a watch has nothing to spare at its edges.
-                      objectFit: 'contain',
-                      objectPosition: 'center',
-                      opacity: LINE_GROUND_OPACITY[mode],
-                    }}
-                  />
-                </div>
-              ) : null}
-              {/* Above the ground, and only because a positioned sibling would
-                  otherwise paint over them — `position: relative` on both, set
-                  by their classes. `z-index` is deliberately not used: the
-                  card's own stretched-link pattern lives in this stacking
-                  context on the watch card, and starting a second numbering
-                  here would be a thing to keep in step for no gain. */}
-              <span className="cc-card-name">{line.name}</span>
-              <span className="cc-card-count">{`${line.count} ${t('home.models')}`}</span>
-            </div>
-          </Link>
-        )
-      })}
+      {lines.map((line) => (
+        <Link
+          key={line.id}
+          to={`/line/${line.slug}`}
+          className="cc-card cc-card-accent"
+          // The per-line accent as a custom property, so the 3 px stripe is a
+          // class and the colour is data (§8.3).
+          style={{ ['--cc-accent-line' as string]: LINE_ACCENTS[line.id] }}
+        >
+          <div className="cc-card-body">
+            <CardGround modelId={LINE_GROUNDS[line.id]} settled={settled} mode={mode} />
+            {/* Above the ground, and only because a positioned sibling would
+                otherwise paint over them — `position: relative` on both, set
+                by their classes. `z-index` is deliberately not used: the
+                card's own stretched-link pattern lives in this stacking
+                context on the watch card, and starting a second numbering
+                here would be a thing to keep in step for no gain. */}
+            <span className="cc-card-name">{line.name}</span>
+            <span className="cc-card-count">{`${line.count} ${t('home.models')}`}</span>
+          </div>
+        </Link>
+      ))}
+
+      {/*
+        D62's tile, last and deliberately quieter than the seven.
+
+        **The accent stripe is kept and only its colour changes**, to
+        `--cc-border-secondary`. Dropping `cc-card-accent` altogether was the
+        first version and it was 3 px shorter than every card beside it, which
+        pushed its name and count out of line along the row — the stripe is
+        structural here, not decoration.
+
+        It carries a faded watch exactly as the seven do — `EDITIONS_GROUND`,
+        through the same `CardGround` — because a tile with an empty right half
+        beside seven that have a watch in it reads as the one that failed to
+        load. The glyph this first used is the rail's, and it stays the rail's: a
+        24 px icon where every neighbour has a photograph is a different
+        treatment, not a quieter one.
+      */}
+      {editions !== undefined && editions > 0 ? (
+        <Link
+          to="/editions"
+          className="cc-card cc-card-accent"
+          style={{ ['--cc-accent-line' as string]: 'var(--cc-border-secondary)' }}
+        >
+          <div className="cc-card-body">
+            <CardGround modelId={EDITIONS_GROUND} settled={settled} mode={mode} />
+            <span className="cc-card-name">{t('nav.editions')}</span>
+            <span className="cc-card-count">{editionsTotal(editions)}</span>
+          </div>
+        </Link>
+      ) : null}
+    </div>
+  )
+}
+
+/**
+ * The faded watch behind a card's text — one copy, used by the seven line tiles
+ * and by D62's editions tile.
+ *
+ * **It was inline in the map and is a component now because there are two
+ * callers**, and every line of it is a decision that would have been copied: the
+ * 54% inset, the mask, the per-theme opacity ceiling and the negative bleed. Two
+ * copies of a contrast ceiling is one copy nobody updates.
+ *
+ * A model with no ground named for it renders nothing at all, and absent is a
+ * normal state here for the same reason it is everywhere else in this catalogue:
+ * a missing photograph is not a broken card.
+ */
+function CardGround({
+  modelId,
+  settled,
+  mode,
+}: {
+  modelId: string | undefined
+  settled: boolean
+  mode: 'light' | 'dark'
+}) {
+  const ground = settled && modelId ? imageSources(modelId) : null
+  if (!ground) return null
+
+  return (
+    /*
+      **The tile is a `div` and the photograph is an `img` inside it, and that is
+      not a wrapper for the sake of one.** An absolutely positioned *replaced*
+      element does not stretch to its insets: with all four set and
+      `width: auto`, CSS resolves `auto` to the intrinsic 400 px and then drops
+      the end inset as over-constrained. The first build of this looked like a
+      broken image — a 400 px watch pinned at 54% and clipped to a
+      thumbnail-sized corner. A `div` is not replaced, so its auto size does
+      stretch, and `100%` inside it finally means the tile rather than the card.
+    */
+    <div
+      aria-hidden="true"
+      style={{
+        position: 'absolute',
+        // Negative by the body's own padding, which is what lets the photograph
+        // reach the card's edges from inside its padding box — and bleed a
+        // little past the top and bottom, so a strap runs off the card rather
+        // than stopping on it.
+        insetBlock: -16,
+        insetInlineEnd: -16,
+        insetInlineStart: GROUND_INSET,
+        maskImage: GROUND_MASK,
+        WebkitMaskImage: GROUND_MASK,
+        // The whole card is one link. Nothing in here is a second target, a drag
+        // handle, or selectable text.
+        pointerEvents: 'none',
+        userSelect: 'none',
+      }}
+    >
+      <img
+        src={ground.src}
+        // Decorative, so it has no accessible name — the wrapper is already
+        // `aria-hidden`. The card has exactly one accessible name, the link's,
+        // and a second would make every line read as two things to a screen
+        // reader.
+        alt=""
+        // Eight of these on the front door is the one place in the product where
+        // an image is decoration rather than content, so it yields to
+        // everything: below the fold it is not fetched at all, and the ones
+        // above it queue last.
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"
+        style={{
+          width: '100%',
+          height: '100%',
+          // `contain`, not `cover`. Cover would crop a watch case down its
+          // middle in a narrow column, which reads as a damaged image rather
+          // than a cropped one — and unlike a landscape, a watch has nothing to
+          // spare at its edges.
+          objectFit: 'contain',
+          objectPosition: 'center',
+          opacity: LINE_GROUND_OPACITY[mode],
+        }}
+      />
     </div>
   )
 }

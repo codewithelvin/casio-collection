@@ -12,47 +12,36 @@
 @import './ui/shell.css';
 
 /*
- * IBM Plex — self-hosted, because S8 allows no font from another origin and the
- * CSP in index.html says font-src 'self'. The files live under src/assets so
+ * THE TYPEFACE, AND THE BUG THAT WAS HIDING IN IT — changed 2026-08-25.
+ *
+ * UI text is the platform's own font now. Reference codes stay IBM Plex Mono,
+ * which is the half that was ever load-bearing: GA-2100-1A1 and GW-M5610U-1
+ * differ by a character or two, persona P2 collects by exact suffix, and a
+ * monospace column makes that difference land where proportional spacing hides
+ * it. Plex Sans carried an argument about digits drawn to be read as data — a
+ * real argument, and one Plex Mono keeps for the text it was actually about.
+ *
+ * **What this fixes is not a preference.** `font-family` was declared in exactly
+ * one place — AntD's `fontFamily` token — and §12 took the shell off Ant Design.
+ * `shell.css` never declared a family, nothing was injected into the head, and
+ * `body` had none either, so the header, the rail, the footer and the whole of
+ * the front door were rendering in the UA default serif: Times New Roman on
+ * Windows. The AntD-rendered routes looked right, which is what kept it
+ * invisible — the site had two typefaces and the wrong one was on the page
+ * Lighthouse loads. That is the `body` rule below, and it is the actual fix.
+ *
+ * The stack is declared TWICE and must stay in step: here, for the shell and
+ * everything §12 draws, and as `fontFamily` in `theme/tokens.ts` for what Ant
+ * Design draws. A single source is not available to both — the token has to be a
+ * real string in JS, and this file has to work before any JS runs.
+ *
+ * Plex Mono is self-hosted, because S8 allows no font from another origin and
+ * the CSP in index.html says font-src 'self'. The files live under src/assets so
  * Vite hashes them and resolves the base path; a url() into public/ with a
- * leading slash is exactly the D13 trap.
- *
- * Plex Sans over the usual Inter for a reason that is about this product: the
- * catalogue is mostly reference codes, and Plex was drawn by a type foundry for
- * an engineering company, so its digits, its capitals and its hyphen are built
- * to be read as data rather than as words. It also sits with the mark — an
- * octagonal bezel with four screws is industrial, and a neutral grotesk beside
- * it says nothing.
- *
- * Plex Mono carries the reference codes themselves (.cc-ref). GA-2100-1A1 and
- * GW-M5610-1 differ by a character or two, and persona P2 collects by exact
- * suffix; a monospace column makes that difference land where proportional
- * spacing hides it.
- *
- * Only the latin subsets are shipped, and only the weights actually used.
- * font-display: swap so text is readable before the font arrives (NFR-1).
+ * leading slash is exactly the D13 trap. Only the latin subsets ship, only the
+ * two weights used, and font-display: swap so text is readable before the font
+ * arrives (NFR-1). The three Plex Sans weights are gone with this change.
  */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('./assets/fonts/ibm-plex-sans-latin-400-normal.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('./assets/fonts/ibm-plex-sans-latin-500-normal.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('./assets/fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2');
-}
 @font-face {
   font-family: 'IBM Plex Mono';
   font-style: normal;
@@ -97,6 +86,37 @@ body {
      grid is the usual cause, and it should be caught here rather than hidden. */
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
+  /* The one declaration that was missing. Everything §12 draws inherits from
+     here; keep it in step with `fontFamily` in theme/tokens.ts. */
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Tell the browser which way round the page is, so the things IT colours match
+ * the things we colour.
+ *
+ * This was missing, and the symptom was a link nobody could read: the front
+ * door renders no Ant Design (§12) and nothing here styles a bare `a`, so
+ * `All editions` fell through to the UA's default link colour — #0000EE, which
+ * on the dark theme's #141414 ground is very nearly invisible. A browser will
+ * pick a light link blue on its own, but only once it has been told the page is
+ * dark, and `[data-theme]` is our attribute rather than something it knows.
+ *
+ * It also fixes the same class of thing wherever we never had an opinion: form
+ * controls, scrollbars, and the default selection colour.
+ *
+ * `color-scheme` and not a global `a { color }` rule, because the anchors that
+ * need a colour of their own already have one — `.cc-header a`, `.cc-footer a`,
+ * `.cc-card`, `.cc-nav-row` — and a blanket element rule would sit underneath
+ * all of them waiting to surprise whoever adds the next component.
+ */
+:root {
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
 }
 
 /* NFR-8 — keyboard-complete with a visible focus ring. :focus-visible keeps it

@@ -647,6 +647,12 @@
   color: var(--cc-text-description);
 }
 
+/* The editions tile briefly had a `.cc-card-glyph` here — a faded tags icon
+   where the other seven cards carry a photograph. It carries `EDITIONS_GROUND`
+   through the same `CardGround` now, so the rule is gone rather than left
+   unused: an icon at 24 px beside seven watches was a different treatment, not
+   a quieter one. */
+
 /* ------------------------------------------------------------------------- *
  * Skeletons
  *

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { lineTree, useCatalogIndex } from '../catalog/client.ts'
 import { RailSkeleton } from './RailSkeleton'
-import { ChevronIcon, LineGlyph } from './icons'
+import { ChevronIcon, EditionsIcon, LineGlyph } from './icons'
 import { LINE_ACCENTS } from '../theme/palette.ts'
 import { expandLine, t } from '../i18n/strings'
 
@@ -193,6 +193,20 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
               {...(editionsActive ? { 'aria-current': 'page' as const } : {})}
               onClick={onNavigate}
             >
+              {/* A glyph, like every other row in the rail. It had none, and a
+                  single iconless row in a column of eight reads as unfinished
+                  rather than as different — the border above it is already what
+                  says this is not a line, and it says it without leaving a hole
+                  in the column the labels line up against.
+
+                  No accent colour on it, unlike a line's: §8.3 gives the accent
+                  the one job of meaning "you are here", and an edition has no
+                  line accent to be. Active state is the row's own background and
+                  `--cc-primary`, which `.cc-nav-row[aria-current]` already
+                  paints and `currentColor` on the glyph follows for free. */}
+              <span className="cc-nav-icon">
+                <EditionsIcon />
+              </span>
               <span className="cc-nav-label">{t('nav.editions')}</span>
               <span className="cc-nav-count">{data.editions.length}</span>
             </Link>

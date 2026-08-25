@@ -63,6 +63,24 @@ export const LINE_GROUNDS: Record<string, string> = {
 }
 
 /**
+ * D62 — the same choice for the editions tile, which stands eighth in the same
+ * grid and therefore needs a watch for the same reason the seven do.
+ *
+ * **The PAC-MAN A168, and it is the one reference this feature was argued
+ * from.** D62's own commit says nobody looks up `A168WEPC-7A`, they look up "the
+ * Pac-Man one" — so the tile that leads to the editions is illustrated by the
+ * watch that made the case for having them. It is also the first edition in
+ * editorial order and the most recognisable object in the set, which is what a
+ * card standing for thirteen of them needs to be.
+ *
+ * Held here rather than read from the catalogue because nothing in the data says
+ * which edition represents the rest — exactly the argument `LINE_GROUNDS` makes
+ * one paragraph up. `lineGrounds.test.ts` holds it to the same two proofs: a
+ * file that exists, and a model the catalogue publishes.
+ */
+export const EDITIONS_GROUND = 'a168wepc-7a'
+
+/**
  * How faint the ghost is. **Both numbers are ceilings derived from AA, not
  * values chosen by eye**, and the derivation is why they differ per theme.
  *

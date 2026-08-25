@@ -90,7 +90,17 @@ const en = {
     'Collaborations and limited releases: watches Casio made with somebody else. An edition cuts across the catalogue, so the references in one usually sit in different series and sometimes in different lines.',
   'editions.count': 'references',
   'editions.countOne': 'reference',
-  'editions.all': 'All editions',
+  // `editions.all` — *All editions* — was the front door's bare link and is gone
+  // with it. The card that replaced it is labelled `nav.editions`, the same word
+  // the rail uses, because they are now the same kind of thing: a named way in
+  // rather than a sentence about one.
+  //
+  // The front door's card counts *editions*, not the references inside them —
+  // it is the eighth tile in a grid of seven lines counting models, and the
+  // number that belongs beside "Editions" is how many there are to look at.
+  // `editions.count` is the other question and stays for the edition cards.
+  'editions.total': 'editions',
+  'editions.totalOne': 'edition',
   'edition.withPartner': 'With',
   'edition.notFound.title': 'No such edition',
   'edition.notFound.body':
@@ -652,6 +662,17 @@ export const resultCount = (count: number): string =>
  */
 export const editionCount = (count: number): string =>
   `${count} ${count === 1 ? t('editions.countOne') : t('editions.count')}`
+
+/**
+ * D62 — *13 editions*, *1 edition*, on the front door's card.
+ *
+ * The other count, one level up. `editionCount` counts the references inside one
+ * edition; this counts the editions themselves, and the front door needs it
+ * because its card sits in a grid where every other tile prints a total of the
+ * things behind it.
+ */
+export const editionsTotal = (count: number): string =>
+  `${count} ${count === 1 ? t('editions.totalOne') : t('editions.total')}`
 
 /** FR-2.3 — *See all 24 results*, the last row of the dropdown. */
 export const seeAllResults = (count: number): string =>

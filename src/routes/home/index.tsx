@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { useCatalogIndex } from '../../catalog/client.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { LineGrid, LineGridSkeleton } from '../../ui/LineGrid'
@@ -48,23 +47,26 @@ export default function HomeRoute() {
       ) : isError || !data ? (
         <ErrorState onRetry={() => void refetch()} />
       ) : (
-        <>
-          <LineGrid lines={data.lines} />
-          {/* D62 — one link, and no second grid. The front door's job is the
-              seven lines; editions are a smaller, cross-cutting way in, and a
-              second row of cards under the first would give them equal weight
-              they have not earned at thirteen references. It is a plain `Link`
-              for the reason nothing on this page imports Ant Design (§12) —
-              this is the URL Lighthouse loads.
+        /* D62 — still no second grid, and now not a bare link either.
 
-              Rendered only where the artefact carries an edition, so the front
-              door can never offer a page that says "no editions yet" (D51). */}
-          {data.editions.length > 0 ? (
-            <p className="cc-lead" style={{ marginBlockStart: 24 }}>
-              <Link to="/editions">{t('editions.all')}</Link>
-            </p>
-          ) : null}
-        </>
+           It was a plain `<Link>` in a paragraph under the grid, and on the dark
+           theme it was very nearly invisible: this page renders no Ant Design
+           (§12) and nothing styled a bare `a`, so it fell through to the UA's
+           default #0000EE on a #141414 ground. The root cause is fixed in
+           index.css with `color-scheme` — the link was the symptom, and leaving
+           only that fixed would have left an unreadable-by-default anchor
+           waiting for the next page that needs one.
+
+           What replaces it is one tile inside the *existing* grid rather than a
+           row of its own, which is the distinction D62 actually drew: it refused
+           editions a second grid claiming equal weight with the seven lines, not
+           a place in the list. Eight tiles also fill the four-across row that
+           seven left a hole in.
+
+           `LineGrid` owns whether it draws, and draws nothing at zero, so the
+           front door still cannot offer a page that says "no editions yet"
+           (D51). */
+        <LineGrid lines={data.lines} editions={data.editions.length} />
       )}
     </div>
   )
