@@ -1,8 +1,9 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { screen } from '@testing-library/react'
+import { screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
 import { SESSION_STORAGE_KEY } from '../auth/config.ts'
+import { AVATAR_STORAGE_KEY } from '../auth/avatar.ts'
 import { resetSupabaseClient } from '../auth/supabase.ts'
 import { resetSessionStore } from '../auth/session.ts'
 import { initials } from './AccountDropdown.tsx'
@@ -104,6 +105,35 @@ describe('the account control (§8.1)', () => {
     expect(screen.getByText('Elvin Huseynov')).toBeInTheDocument()
   })
 
+  /**
+   * S7 / S8 — the profile picture reaches the header as a `data:` URI and never
+   * as a Google URL. Asserting the *scheme* rather than merely that an image
+   * rendered is the point: `img-src 'self' data:` is what makes this legal
+   * without widening the CSP, and a future change that swapped the data URI for
+   * a remote one would still render a picture and would break the policy.
+   */
+  it('shows the cached profile picture, and it is a data URI rather than a URL', async () => {
+    signedIn()
+    localStorage.setItem(AVATAR_STORAGE_KEY, 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUg==')
+    resetSessionStore()
+    renderApp('/')
+
+    const button = await screen.findByRole('button', { name: strings['account.menu'] })
+    const image = within(button).getByRole('presentation', { hidden: true })
+    expect(image.getAttribute('src')).toMatch(/^data:image\/png;base64,/)
+    expect(image.getAttribute('src')).not.toContain('googleusercontent')
+  })
+
+  it('falls back to initials when nothing is cached, which is never wrong', async () => {
+    signedIn()
+    resetSessionStore()
+    renderApp('/')
+
+    const button = await screen.findByRole('button', { name: strings['account.menu'] })
+    expect(button).toHaveTextContent(initials('Elvin Huseynov'))
+    expect(within(button).queryByRole('presentation', { hidden: true })).not.toBeInTheDocument()
+  })
+
   /** §9.5 — clears the store, resets the query cache, returns the user to `/`. */
   it('signs out from a guarded page and lands back on the catalogue', async () => {
     signedIn()
@@ -115,6 +145,23 @@ describe('the account control (§8.1)', () => {
 
     expect(await screen.findByRole('button', { name: strings['account.signIn'] })).toBeInTheDocument()
     expect(router.state.location.pathname).toBe('/')
+  })
+
+  /**
+   * FR-11.6 — a shared device must not hold the last person's watches, and must
+   * not leave their face in the header either.
+   */
+  it('drops the cached picture on sign-out', async () => {
+    signedIn()
+    localStorage.setItem(AVATAR_STORAGE_KEY, 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUg==')
+    resetSessionStore()
+    renderApp('/')
+
+    await userEvent.click(await screen.findByRole('button', { name: strings['account.menu'] }))
+    await userEvent.click(await screen.findByText(strings['account.signOut']))
+
+    await screen.findByRole('button', { name: strings['account.signIn'] })
+    expect(localStorage.getItem(AVATAR_STORAGE_KEY)).toBeNull()
   })
 })
 

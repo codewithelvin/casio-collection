@@ -2,6 +2,10 @@ import { create } from 'zustand'
 import type { Session, SupabaseClient } from '@supabase/supabase-js'
 import type { PublishedModel } from '../catalog/schema.ts'
 import { authCallbackUrl } from './config.ts'
+// Statically imported, unlike `pendingIntent` below: this module has no Zod and
+// no dependency at all — it is a localStorage key, a regex and a fetch — so the
+// reason that one is lazy does not apply.
+import { clearCachedAvatar } from './avatar.ts'
 import { getSupabase, hasStoredSession, isAuthConfigured } from './supabase.ts'
 /**
  * §12 — **imported inside `signOut` rather than at the top of this file, and the
@@ -93,11 +97,17 @@ function initialData(): Pick<SessionState, 'status' | 'user' | 'prompt'> {
  * is optional and absent renders as itself — the account menu falls back to the
  * email address, and then to a generic label.
  *
- * **The picture is deliberately not kept.** Google serves it from
- * `lh3.googleusercontent.com`, which S7's `img-src 'self' data:` forbids and S8
- * forbids more broadly: displaying it would put a request to Google on every
- * page a signed-in user loads. Not storing the URL is stronger than not
- * rendering it — a field that is present is a field somebody renders later.
+ * **The picture is deliberately not kept, and that is still true.** Google
+ * serves it from `lh3.googleusercontent.com`, which S7's `img-src 'self' data:`
+ * forbids and S8 forbids more broadly: displaying it would put a request to
+ * Google on every page a signed-in user loads. Not storing the URL is stronger
+ * than not rendering it — a field that is present is a field somebody renders
+ * later.
+ *
+ * A photograph does now reach the header, and it does not arrive through here.
+ * `avatar.ts` asks an Edge Function, which fetches the bytes server-side and
+ * returns a `data:` URI; the browser never names a Google host and the CSP was
+ * not widened. This field staying absent is part of how that stays true.
  *
  * `full_name` is what Google's OIDC claims map to, and it is also what §6.3's
  * sign-up trigger copies into `profiles.display_name`. The same value in two
@@ -213,8 +223,12 @@ export const useSessionStore = create<SessionState>((set, get) => ({
       // Whatever the network did, this browser is signed out. A sign-out that
       // fails silently and leaves the header showing an account is the worst
       // possible outcome on a shared machine.
-      // FR-11.6 — a shared device must not hold the last person's watches.
+      // FR-11.6 — a shared device must not hold the last person's watches, and
+      // from 2026-08-25 must not hold their face in the header either. This one
+      // is a synchronous localStorage removal with no import behind it, so it
+      // costs nothing to do here rather than lazily like the slot below.
       purgeCaches()
+      clearCachedAvatar()
       await clearPendingIntent()
       set({ status: 'guest', user: null, prompt: { open: false, model: null } })
     }

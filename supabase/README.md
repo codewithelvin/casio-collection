@@ -315,6 +315,43 @@ addressed to a person, the same standing D22 gives a missing-reference report: a
 field still needs a page that states it before it can be published (rule 3,
 §10.8). The email says so at the bottom of every message.
 
+## The avatar function
+
+`functions/avatar/` — added 2026-08-25, because the header showed initials where
+a Google account has a photograph.
+
+```
+supabase functions deploy avatar
+```
+
+**No secrets, and no `--no-verify-jwt`.** It needs neither: `SUPABASE_URL` and
+`SUPABASE_ANON_KEY` are already in every function's environment, and everything
+it does it does *as the caller*, with the caller's own JWT. No service-role key
+is involved, so S2 stays true without anyone having to remember it.
+
+Why a function at all, when the browser already has the URL in its session: S7's
+CSP is `img-src 'self' data:` and S8 forbids third-party assets, so an `<img>`
+pointing at `lh3.googleusercontent.com` is both blocked and, more importantly,
+a request to Google on **every page a signed-in user loads**. This fetches the
+bytes server-side once per sign-in and returns a `data:` URI instead.
+
+**The feature needed no CSP change, and that is the property to preserve.** Two
+alternatives were weighed the same day and both cost one: widening `img-src` to
+Google (reverses S8 for every page view), or fetching in the browser and
+downscaling on a canvas (widens `connect-src`, and still puts the user in front
+of Google once a session).
+
+Three things worth knowing before changing it:
+
+| | |
+|---|---|
+| The avatar URL is read from `/auth/v1/user`, never from the request body | A function that fetches a URL a client hands it is an SSRF proxy with our network position. There is a host allow-list underneath as well |
+| It asks Google for `=s96-c` | Sizing is a URL suffix, so there is no image decoding in the worker — Deno has no `sharp` and shipping a decoder into an edge worker is the sort of boot-time import that broke `suggest-correction` |
+| **Nothing is stored server-side** | No column, no new RLS question, no personal data at rest. The browser caches the data URI under `cc.avatar` and drops it on sign-out (FR-11.6). The cost is that a *public profile page* shows initials to visitors — making other people's faces public is a product decision nobody has taken |
+
+Until it is deployed the call fails quietly and the header shows initials, which
+is exactly what it did before. Nothing else degrades.
+
 ## Keeping it awake
 
 `.github/workflows/keepalive.yml` (D23). The free tier pauses after seven days

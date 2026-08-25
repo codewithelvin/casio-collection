@@ -4,6 +4,7 @@ import { useQueryClient, type QueryClient } from '@tanstack/react-query'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { getSupabase } from '../../auth/supabase.ts'
 import { ensureAuthListener, useSessionStore } from '../../auth/session.ts'
+import { refreshAvatar } from '../../auth/avatar.ts'
 import { takePendingIntent } from '../../auth/pendingIntent.ts'
 import { putCollectionItem, type CollectionStatus } from '../../collection/api.ts'
 import { collectionKey } from '../../collection/mutations.ts'
@@ -69,6 +70,13 @@ export default function AuthCallbackRoute() {
         }
         ensureAuthListener(supabase)
         applySession(data.session)
+
+        // The one moment the profile picture is fetched (S7, S8). Deliberately
+        // NOT awaited: this is the only interaction in the app that must not
+        // fail, and a decoration must never be able to delay it — `refreshAvatar`
+        // swallows every error for the same reason. It lands in localStorage and
+        // the header picks it up on the next render or the next load.
+        void refreshAvatar(supabase)
 
         const intent = takePendingIntent()
         // §9.4 step 4 — apply the press that was interrupted, before leaving.

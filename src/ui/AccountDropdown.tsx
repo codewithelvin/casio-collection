@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import { Dropdown, Typography, theme as antdTheme, type MenuProps } from 'antd'
 import { useNavigate } from 'react-router-dom'
+import { clearCachedAvatar, readCachedAvatar } from '../auth/avatar.ts'
 import { useSessionStore } from '../auth/session.ts'
 import { useSignOut } from '../auth/useSignOut.ts'
 import AntdRoot from './AntdRoot'
@@ -10,13 +12,19 @@ import { t } from '../i18n/strings'
  * Dropdown and Menu are the expensive part and at launch almost nobody is
  * signed in (§8.1, D40's reasoning).
  *
- * **There is no photograph in here, and that is a constraint rather than an
- * omission.** Google hands back an `avatar_url` on `lh3.googleusercontent.com`,
- * and S7's `img-src 'self' data:` forbids it while S8 forbids any third-party
- * asset outright. Rendering it would mean a request to Google on every page a
- * signed-in user loads, which is the tracking S8 exists to prevent — so the
- * session never keeps the URL at all. Initials in the accent colour say the
- * same thing and stay same-origin.
+ * **The photograph here never comes from Google, and the CSP was not widened to
+ * put it here.** Google hands back an `avatar_url` on `lh3.googleusercontent.com`
+ * which S7's `img-src 'self' data:` forbids and S8 forbids more broadly —
+ * rendering it would mean a request to Google on every page a signed-in user
+ * loads, which is the tracking S8 exists to prevent. So the session still never
+ * keeps that URL (see `session.ts`), and what this renders is a `data:` URI the
+ * `avatar` Edge Function fetched server-side, cached in localStorage at sign-in.
+ *
+ * Read synchronously at first render, with no import and no network, which is
+ * the same trick §12 plays to decide whether the header says *Sign in* at all.
+ * **Initials remain the answer whenever there is no picture** — no account
+ * photo, storage disabled, the function not deployed — and they are never wrong,
+ * only plainer.
  */
 /**
  * §12 — the provider comes with the island.
@@ -39,6 +47,12 @@ function Dropdownable() {
   const user = useSessionStore((state) => state.user)
   const navigate = useNavigate()
   const signOut = useSignOut()
+
+  // `useState(readCachedAvatar)` rather than an effect: the value is already on
+  // this machine, so there is no frame in which the header shows initials and
+  // then swaps to a face. An effect would produce exactly that flicker on every
+  // load for every signed-in user.
+  const [avatar, setAvatar] = useState(readCachedAvatar)
 
   const label = user?.displayName ?? user?.email ?? t('account.menu')
 
@@ -93,9 +107,34 @@ function Dropdownable() {
           fontSize: 13,
           fontWeight: 600,
           lineHeight: 1,
+          // The picture fills the button rather than sitting inside it, so the
+          // control keeps exactly the 32 px footprint the header is laid out
+          // around whether or not there is a photograph.
+          padding: 0,
+          overflow: 'hidden',
         }}
       >
-        {initials(label)}
+        {avatar === null ? (
+          initials(label)
+        ) : (
+          <img
+            src={avatar}
+            alt=""
+            width={32}
+            height={32}
+            // Decorative: the button already carries `aria-label` with the
+            // account name, so announcing the picture too would say it twice.
+            aria-hidden
+            style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }}
+            // A cached data URI that will not decode is a broken image icon in
+            // the header until the next sign-in. Falling back to initials costs
+            // one render and cannot look wrong.
+            onError={() => {
+              clearCachedAvatar()
+              setAvatar(null)
+            }}
+          />
+        )}
       </button>
     </Dropdown>
   )
