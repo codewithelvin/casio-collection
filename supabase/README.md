@@ -116,20 +116,25 @@ A redirect URI is compared for an exact match and never followed.
 > Set both rows at **Authentication → URL Configuration**, and set Site URL
 > first — it is the fallback that decides where a mistake lands.
 >
-> Then check it from outside, because the dashboard showing a value and GoTrue
-> using it are two facts:
+> **Read the Site URL from outside, in one request, with no dashboard access.**
+> `/auth/v1/callback` validates and, handed no `state`, bails out to the Site URL
+> carrying the error — so the redirect target *is* the setting:
 >
 > ```
-> curl -si "$VITE_SUPABASE_URL/auth/v1/authorize?provider=google&redirect_to=https%3A%2F%2Fcasiovault.com%2Fauth%2Fcallback" | grep -i '^location:'
+> curl -si "$VITE_SUPABASE_URL/auth/v1/callback?error=probe" | grep -i '^location:'
 > ```
 >
-> **Read the `state`, not the `redirect_to`.** That endpoint echoes `redirect_to`
-> back verbatim whatever you send it — a URL that is certainly not on the
-> allow-list comes back unchanged — so the parameter proves nothing on its own and
-> reading it as confirmation is how a broken allow-list passes an inspection. The
-> validation happens at `/auth/v1/callback`. The measurement that settles it is
-> the one that already failed: sign in on the real site and look at where the
-> browser lands.
+> A correctly configured project answers `303` to
+> `https://casiovault.com?error=invalid_request&…`. On 2026-08-25 it answered
+> `http://localhost:3000?error=invalid_request&error_code=bad_oauth_callback`,
+> which is this bug, stated by the server.
+>
+> **Do NOT try to check this at `/auth/v1/authorize`.** That endpoint echoes
+> whatever `redirect_to` you hand it straight back into the Google URL — measured
+> the same day, a URL certainly not on the allow-list came back unchanged — so
+> the parameter proves nothing and reading it as confirmation is how a broken
+> allow-list passes an inspection. Validation happens at `/callback`, which is
+> why the probe above is the one that works.
 >
 > `www.casiovault.com` is a second origin and matches nothing above, but it is
 > **not** a second cause of this: measured 2026-08-25, its four A records point at
