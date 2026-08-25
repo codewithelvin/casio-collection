@@ -1,0 +1,58 @@
+# AT-552 — added 2026-08-25 by /finish-casio.
+#
+# NEITHER MODERN ROSTER KNOWS THIS WATCH. It is not in Casio's current sitemap
+# and not in the archive's per-segment CDX index — the survey returned no
+# references at all from either. A 1984 watch never had a page on the casio.com
+# the archive kept, which is the same finding W-760, T-1500 and DW-403 carry.
+#
+# THE REFERENCE IS AT-552G, NOT AT-552. The scope asked for AT-552; what is
+# attested is AT-552G, and the plain form appears nowhere in the Digital Watch
+# Library's 853-slug Casio index. The series id is the shared prefix `at-552`
+# (D32, mechanical), which check 4a is satisfied by, and which leaves room for a
+# sibling if one is ever found. The bare AT-552 is NOT written: nothing states
+# it exists, and a reference is a permanent id.
+#
+# HOW THE PAGE WAS READ. DWL pairs a label div with a value div by id —
+# `#module` carries alt="> CALIBRE" and `#module1` carries the value. The reader
+# was calibrated against F-87W, an entry already reviewed in this repo, and
+# reproduced its catalogued year, module and case exactly before it was trusted.
+# Reading by POSITION would take the `> BRACELET NO.` row ([SS]) as the case;
+# the case is the separate `> CASING` row, which is the one used here.
+#
+# `features` takes the page's own function icons: "I have an alarm" -> alarm,
+# "I have a chronograph" -> stopwatch, "I can do sums" -> calculator. That last
+# one is the mapping the vocabulary already sanctions and the reason this watch
+# is catalogable at all.
+#
+# ABSENT AND WHY:
+#   * `display` — THE PHOTOGRAPH SHOWS analog hands AND an LCD strip reading
+#     "CAL 0.", which would make it `ana-digi`. The page does not say that. Its
+#     prose says "Casio's only touch sensor analog calculator", and `analog`
+#     alone would be wrong for a watch with a visible LCD. Writing `ana-digi`
+#     means reading the dial off the picture, which is what W-760 refused to do
+#     and what D27 makes unnecessary — absent is a question somebody can answer.
+#   * `movement` — the dial prints CASIO QUARTZ, and that is again the
+#     photograph rather than the page. The page states no movement.
+#   * `water_resistance_m` — the page's WATER RESIST row says NONE, which is a
+#     statement that it has none, not a measurement of zero (D27).
+#   * `discontinued` — never written by hand; availability.ts measures it (D59).
+
+series:
+  id: at-552
+  name: AT-552
+  line: vintage
+
+models:
+  - id: at-552g
+    ref: AT-552G
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_at-552g', kind: community }
+    year: 1984
+    module: '320'
+    case: { material: gold }
+    features: [alarm, stopwatch, calculator]
+    image: at-552g
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_at-552g'
+    discontinued: true
