@@ -1,0 +1,47 @@
+# AW-600 — seeded 2026-08-25 from The Digital Watch Library.
+#
+# One model, read off the one page named in `source`. That is a community
+# source and is labelled as one: this watch predates casio.com entirely, so it
+# is in neither of the two rosters `survey.ts` reads — not the archive's index
+# of Casio product pages, and not Casio's current sitemap. There is no official
+# page to prefer, and its absence is not evidence about the watch.
+#
+# `display` is read off the page's own photograph, which shows hands over a
+# dial with an LCD window beside them. That is the same class of evidence
+# `vocabulary.ts` sanctions when it explains why `shock-resistant` is a feature
+# — something the page shows rather than something inferred from the reference.
+# NOT from the DWL category in the title: ABX-20 is filed under "WorldTime" and
+# is catalogued `ana-digi`, so the category is not where that field comes from.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `water_resistance_m` where the page says WATER RESIST or NONE — those are
+#     statements, not depths. Here it says 100M, so the field is written.
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `discontinued` — measured for the whole catalogue at once (D59).
+#   * the "I play a tune" and "I have a light" icons — the vocabulary has no
+#     melody value, and it has five specific light values and no generic one.
+
+series:
+  id: aw-600
+  name: AW-600
+  line: vintage
+
+models:
+  - id: aw-600
+    ref: AW-600
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-aw-600', kind: community }
+    year: 1989
+    display: ana-digi
+    module: '373'
+    case: { material: stainless steel }
+    water_resistance_m: 100
+    features: [alarm, stopwatch, dual-time, countdown-timer]
+    image: aw-600
+    image_credit:
+      # The page names its photographer rather than the site — "Photographs
+      # courtesy of felix_77". Courtesy is not a licence (D41), so the basis is
+      # still rights-reserved under D11.
+      author: felix_77
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-aw-600'
+    discontinued: true
