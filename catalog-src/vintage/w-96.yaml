@@ -1,0 +1,117 @@
+# W-96 — seeded 2026-08-25 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: w-96
+  name: W-96
+  line: vintage
+
+models:
+  - id: w-96h-1a
+    ref: W-96H-1A
+    source:
+      { url: 'https://web.archive.org/web/20210416080743id_/https://www.casio.com/jp/watches/casio/product.W-96H-1A/', kind: official }
+    case: { height_mm: 43.9, width_mm: 35.7, depth_mm: 12.5, weight_g: 32 }
+    water_resistance_m: 50
+    image: w-96h-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210416080743id_/https://www.casio.com/jp/watches/casio/product.W-96H-1A/'
+    discontinued: true
+  - id: w-96h-1av
+    ref: W-96H-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715101650id_/https://www.casio.com/europe/watches/casio/product.W-96H-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.9, width_mm: 35.7, depth_mm: 12.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: w-96h-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101650id_/https://www.casio.com/europe/watches/casio/product.W-96H-1AV/'
+    discontinued: false
+  - id: w-96h-1bv
+    ref: W-96H-1BV
+    source:
+      { url: 'https://web.archive.org/web/20220808062347id_/https://www.casio.com/us/watches/casio/product.W-96H-1BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.9, width_mm: 35.7, depth_mm: 12.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    discontinued: false
+    image: w-96h-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220811150514id_/https://www.casio.com/in/watches/casio/product.W-96H-1BV/'
+  - id: w-96h-2av
+    ref: W-96H-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220525071038id_/https://www.casio.com/in/watches/casio/product.w-96h-2av/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.9, width_mm: 35.7, depth_mm: 12.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: w-96h-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220525071038id_/https://www.casio.com/in/watches/casio/product.w-96h-2av/'
+    discontinued: false
+  - id: w-96h-3av
+    ref: W-96H-3AV
+    source:
+      { url: 'https://web.archive.org/web/20220703111058id_/https://www.casio.com/us/watches/casio/product.W-96H-3AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.9, width_mm: 35.7, depth_mm: 12.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    # REFUSED, not overlooked. Every archived capture of this reference was read
+    # — the seeding crawl and `backfill-photos.ts` after it — and none of the
+    # pages names a photograph of W-96H-3AV. The tempting move is a sibling's
+    # file: W-96H-1BV two entries up has one, and the two are the same watch in
+    # a different strap colour. That is precisely how A159WA-N1 came to be
+    # byte-identical to A159W-N1's photograph. Never derive an asset path; only
+    # ever fetch a URL a page named.
+    image: null
+    discontinued: false
+  - id: w-96h-4av
+    ref: W-96H-4AV
+    source:
+      { url: 'https://web.archive.org/web/20220808064237id_/https://www.casio.com/us/watches/casio/product.W-96H-4AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.9, width_mm: 35.7, depth_mm: 12.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    # REFUSED, not overlooked — same as W-96H-3AV above. No archived capture of
+    # this reference names a photograph of it, and a sibling's file is not this
+    # watch however alike the two look in a diff.
+    image: null
+    discontinued: false
