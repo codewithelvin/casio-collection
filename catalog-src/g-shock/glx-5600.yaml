@@ -69,3 +69,64 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021324id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-9/'
     discontinued: false
+
+# ADDED 2026-08-25: 2 more references, from Casio's own
+# product pages via the archive (D52). The entries above this block predate
+# them and are left exactly as they were — a different source, and in some
+# cases a `year` these pages do not state.
+#
+# No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: glx-5600-1
+    ref: GLX-5600-1
+    source:
+      { url: 'https://web.archive.org/web/20210414205554id_/https://www.casio.com/jp/watches/gshock/product.GLX-5600-1/', kind: official }
+    case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 52.5 }
+    water_resistance_m: 200
+    image: glx-5600-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210414205554id_/https://www.casio.com/jp/watches/gshock/product.GLX-5600-1/'
+    discontinued: true
+  - id: glx-5600-7
+    ref: GLX-5600-7
+    source:
+      { url: 'https://web.archive.org/web/20210313071649id_/https://www.casio.com/jp/watches/gshock/product.GLX-5600-7/', kind: official }
+    case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 52.5 }
+    water_resistance_m: 200
+    image: glx-5600-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210313071649id_/https://www.casio.com/jp/watches/gshock/product.GLX-5600-7/'
+    discontinued: true
+
+# ADDED 2026-08-25: 1 reference named by hand, because
+# D47's discovery filter refuses it.
+#
+# Each is listed in Casio's OWN CURRENT SITEMAP, which is Casio stating that the
+# reference exists (D48) — a stronger claim about identity than any shape rule,
+# and the only identity `seed-refs.ts` accepts. `roster.ts`'s `CANONICAL_REF`
+# requires a suffix beginning with a digit. That filter governs what a CRAWL may
+# turn into a permanent id unsupervised, and it is not a claim that the
+# reference is fake — D47 as revised on 2026-08-19 (O13, closed) names the
+# references it knowingly refuses, and says admitting them "stays a separate
+# decision". Naming a reference Casio itself lists needs no decision at all,
+# so that is what happened here, and `roster.ts` is untouched.
+#
+# Every field below comes from the one archived Casio product page named in its
+# `source` (D52), read by the same reader as the rest of this file. No `year`:
+# a product page dates nothing (D25). No `discontinued`: that is measured over
+# the whole catalogue by `availability.ts` (D59), never written by hand.
+  - id: glx-5600whr24-2
+    ref: GLX-5600WHR24-2
+    source:
+      { url: 'https://web.archive.org/web/20250413110648id_/https://www.casio.com/fr/watches/gshock/product.GLX-5600WHR24-2/', kind: official }
+    case: { weight_g: 52.5 }
+    water_resistance_m: 200
+    image: glx-5600whr24-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250413110648id_/https://www.casio.com/fr/watches/gshock/product.GLX-5600WHR24-2/'
+    discontinued: false
