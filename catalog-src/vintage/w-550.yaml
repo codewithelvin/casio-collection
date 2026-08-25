@@ -8,6 +8,20 @@
 # unless the page describes the dial. The page shows a "light" icon with no
 # type, and the vocabulary has five specific light values and no generic one,
 # so no light feature is claimed. Absent means nobody has found it (D27).
+#
+# PHOTOGRAPHED 2026-08-25. The file is the one this same page puts in its own
+# `#main` slot, and the proof it is this watch is the markup rather than the
+# filename: DWL names the file `w5501.jpg` and carries `alt="CASIO-W-550"` on
+# it. That alt was checked against this entry's `ref` before the file was
+# fetched, because a page like this also links a dozen *other* watches and a
+# numeric filename cannot tell them apart.
+#
+# It was then looked at, which is the step the alt cannot replace: front-on,
+# 400 px, the watch head filling the frame — the same framing as the W-22,
+# W-24, W-26 and W-73 photographs already published here.
+#
+# The ground is left alone. It is a photograph rather than a studio sweep, so
+# there is no flat colour to key out without guessing where the watch ends.
 
 series:
   id: w-550
@@ -22,5 +36,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 100
     features: [alarm, stopwatch]
-    image: null
+    image: w-550
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_w-550'
     discontinued: true

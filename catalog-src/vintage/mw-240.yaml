@@ -8,6 +8,19 @@
 # nothing (D25) and a news release states no specifications (D50). Neither page
 # is asked for what the other says.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * any field the page does not state. Absent means unknown, never zero (D27).
@@ -55,6 +68,11 @@ models:
     case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35, material: 'Resin' }
     water_resistance_m: 50
     discontinued: false
+    image: mw-240-1e2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102424id_/https://www.casio.com/europe/watches/casio/product.MW-240-1E2V/'
   - id: mw-240-1e3v
     ref: MW-240-1E3V
     source:

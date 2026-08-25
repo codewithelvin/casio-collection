@@ -63,6 +63,14 @@ models:
     # The specifications above are real and untouched, read off the `/jp/` capture
     # this entry cites. A reference with data and no picture is the normal case
     # here (D29), not a degraded one.
+    #
+    # RETRIED 2026-08-25 and the answer has hardened: the asset the page names,
+    # `.../locales/jp/ja/.../M/MW/mva/mwa-100h-2a/assets/MWA-100H-2A_JF.png`,
+    # now answers **404** rather than failing in transit. So this is no longer
+    # "the download failed" — casio.com has stopped serving that file, and the
+    # only URL any page ever named for this reference is gone. Do not retry it
+    # a third time; a different page naming a different asset is what would
+    # change this, not another fetch of this one.
     image: null
     discontinued: true
   - id: mwa-100h-2av

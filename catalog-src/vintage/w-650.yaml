@@ -24,5 +24,17 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 100
     features: [multi-alarm, stopwatch, dual-time, countdown-timer]
+    # `image: null` REFUSED ON SIGHT, 2026-08-25, not for want of a candidate.
+    # The page names a photograph and it downloads at 800 px, which is the
+    # largest of any Digital Watch Library file taken for this line — and it is
+    # a picture of the **caseback**, lying on a carpet, with the photographer's
+    # thumb in the bottom-right corner. It is excellent evidence that the
+    # reference is real: the engraving reads CASIO W-650 JAPAN. It is not a
+    # picture of the watch anybody is looking for.
+    #
+    # This is the case the skill's "a lifestyle photo is not usable" rule is
+    # about, and the alt text agreed it was W-650 — so the alt check passed and
+    # looking at the file is what caught it. The typographic card is a primary
+    # state (D29) and is the better answer here.
     image: null
     discontinued: true

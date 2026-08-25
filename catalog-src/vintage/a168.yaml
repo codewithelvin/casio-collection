@@ -295,6 +295,11 @@ models:
     features: [alarm, stopwatch, calendar, hourly-time-signal, el-backlight]
     discontinued: false
     display: digital
+    image: a168wgg-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230814194729id_/https://www.casio.com/in/watches/casio/product.A168WGG-1B/'
   - id: a168xes-1b
     ref: A168XES-1B
     source:
