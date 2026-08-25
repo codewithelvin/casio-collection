@@ -1,0 +1,39 @@
+# TC-500 — seeded 2026-08-25 from The Digital Watch Library.
+#
+# One model, read off the one page named in `source`. A community source and
+# labelled as one: this watch predates casio.com and is in neither roster
+# `survey.ts` reads.
+#
+# The identity is as well proven as this catalogue ever gets: the page's own
+# photograph shows a dial printing **TC-500** and **TOUCH SENSOR CAL**, which
+# is the test §10.4 asks for and rarely gets from a source that names its files
+# `3700.jpg`.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `water_resistance_m` — the page says WATER RESIST, which is a claim and
+#     not a depth. Absent means nobody has found the number (D27).
+#   * the original price, $29.95 — the page states it and the schema has no
+#     field for it. A fact with nowhere to go is not written anywhere else.
+#   * `family`, `discontinued` — a human's judgement, and a measurement (D59).
+
+series:
+  id: tc-500
+  name: TC-500
+  line: vintage
+  aka: ['TouchScreen', 'Touch Sensor']
+
+models:
+  - id: tc-500
+    ref: TC-500
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_tc-500', kind: community }
+    year: 1983
+    display: digital
+    module: '119'
+    case: { material: chrome plated resin }
+    features: [alarm, stopwatch, dual-time, countdown-timer, calculator]
+    image: tc-500
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_tc-500'
+    discontinued: true
