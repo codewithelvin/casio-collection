@@ -21,9 +21,9 @@ import { displayLabel, featureLabel, movementLabel, t } from '../i18n/strings'
  * holding the watch and they have no reason to sign in to tell us. And it goes
  * to the maintainer as **email** rather than into a table, because the client
  * asked for it that way — which is why the credentials live in an Edge Function
- * and not here. An SMTP password in a static bundle is a password anyone can
- * read (D14 makes that point about a key that is *safe* to ship; this is the
- * other side of it).
+ * and not here. A mail API key in a static bundle is a key anyone can read, and
+ * one that sends as our own domain (D14 makes that point about a key that is
+ * *safe* to ship; this is the other side of it).
  *
  * What has not changed is the rule underneath: nothing a visitor types enters
  * the catalogue. §10.8 and rule 3 both say a fact needs a page it was read off,

@@ -21,5 +21,10 @@ catalog-src/images/raw
 .env.local
 .env.*.local
 
+# Scratch state written by `supabase link` — the linked project ref, server
+# version stamps and a pooler connection URL. It belongs to whichever machine
+# ran the link, and a connection string is not a thing to commit.
+supabase/.temp
+
 .DS_Store
 *.log

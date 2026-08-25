@@ -2,7 +2,7 @@ import { supabaseConfig } from '../auth/config.ts'
 import type { Suggestion } from './suggestion.ts'
 
 /**
- * Post a suggestion to the Edge Function that holds the SMTP credentials.
+ * Post a suggestion to the Edge Function that holds the mail credentials.
  *
  * **A plain `fetch` and not the Supabase client, deliberately.** §12's rule is
  * that a guest never downloads the auth library, and the client's decision that

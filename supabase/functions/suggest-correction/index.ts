@@ -1,24 +1,49 @@
 // suggest-correction — the only server-side code in this project, and it exists
-// for one reason: **SMTP cannot be spoken from a browser, and an SMTP password
-// must never be in a bundle anyone can read.**
+// for one reason: **a mail credential must never be in a bundle anyone can
+// read.** The anon key beside it is public by design (D14); an API key that can
+// send mail as our domain is the exact opposite of that.
 //
 // The browser posts a suggestion about one watch; this validates it, renders it
-// as an email a person can act on, and sends it through the maintainer's own
-// SMTP server. It writes to no table and touches no catalogue data — the
-// catalogue changes when a human changes it, which is the client's instruction
-// of 2026-08-22 and D22's existing rule for the missing-reference queue.
+// as an email a person can act on, and hands it to Resend over HTTPS. It writes
+// to no table and touches no catalogue data — the catalogue changes when a human
+// changes it, which is the client's instruction of 2026-08-22 and D22's existing
+// rule for the missing-reference queue.
+//
+// WHY HTTP AND NOT SMTP — 2026-08-25.
+//
+// This was written against SMTP through `denomailer`, and on the day it was
+// first deployed it never served a request. The function reached ACTIVE, and
+// every call came back **503 with an empty body from `x-served-by:
+// base/server`** — the gateway's answer when a worker fails to boot, which is
+// not the same shape as this function's own 503 below (that one has a body and
+// CORS headers, and distinguishing the two is what located this). The single
+// piece of boot-time work was `import … denomailer@1.6.0`, whose latest release
+// predates the current Deno runtime here.
+//
+// Resend's REST API removes the whole class of problem rather than pinning
+// around it: no third-party import to boot, no raw TCP from an edge worker, and
+// no 465-versus-587 implicit-TLS trap — which the old code carried a comment
+// about because it is the usual reason a correct password looks broken. One
+// `fetch` to one documented endpoint, and the failure mode is an HTTP status
+// this function can read and log.
 //
 // DEPLOYING IT
 //
 //   supabase secrets set \
-//     SMTP_HOST=smtp.example.com \
-//     SMTP_PORT=587 \
-//     SMTP_USERNAME=... \
-//     SMTP_PASSWORD=... \
-//     SMTP_FROM='Casio Vault <noreply@example.com>' \
+//     RESEND_API_KEY=re_... \
+//     MAIL_FROM='Casio Vault <noreply@casiovault.com>' \
 //     SUGGESTIONS_TO=you@example.com
 //
 //   supabase functions deploy suggest-correction --no-verify-jwt
+//
+// `MAIL_FROM` must be on a domain verified in Resend, or Resend refuses the
+// send. The reader's own address never becomes the From — it becomes
+// `reply_to`, because forging mail from a stranger's domain is not a feature.
+//
+// The old `SMTP_HOST`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD` and
+// `SMTP_FROM` secrets are unused now and should be unset, so that the next
+// person reading the secret list is not told a story about a transport this
+// function no longer speaks.
 //
 // `--no-verify-jwt` is the client's decision that anyone may send a suggestion
 // without an account. It is also what makes the guards below load-bearing
@@ -26,8 +51,8 @@
 // about what it does not stop.
 //
 // Nothing here is imported by the site's build: `tsconfig.app.json` includes
-// only `src`, and this file is Deno rather than browser TypeScript.
-import { SMTPClient } from 'https://deno.land/x/denomailer@1.6.0/mod.ts'
+// only `src`, and this file is Deno rather than browser TypeScript. It now has
+// **no imports at all**, which is the property that fixed it.
 
 interface FieldChange {
   key: string
@@ -67,7 +92,7 @@ const MAX_BODY = 100_000
  * ordinary case — a stuck retry, somebody leaning on the button, a crude script
  * from one address — and it does **not** survive a cold start or apply across
  * instances, so it is not a defence against a distributed flood. The real
- * backstop for that is the SMTP provider's own sending limit, and the reason
+ * backstop for that is Resend's own sending limit, and the reason
  * this is not a database table is that a table would need a migration, a
  * service-role write and its own RLS argument to buy protection the provider
  * already sells. If abuse ever actually happens, that table is the next step
@@ -196,51 +221,60 @@ Deno.serve(async (request: Request) => {
   }
   if (!suggestion) return new Response('nothing to send', { status: 400, headers: CORS })
 
-  const host = Deno.env.get('SMTP_HOST')
-  const port = Number(Deno.env.get('SMTP_PORT') ?? '587')
-  const username = Deno.env.get('SMTP_USERNAME')
-  const password = Deno.env.get('SMTP_PASSWORD')
-  const from = Deno.env.get('SMTP_FROM')
+  const apiKey = Deno.env.get('RESEND_API_KEY')
+  const from = Deno.env.get('MAIL_FROM')
   const to = Deno.env.get('SUGGESTIONS_TO')
 
-  if (!host || !username || !password || !from || !to) {
+  if (!apiKey || !from || !to) {
     // Deployed without its secrets. Says so in the log and not to the reader:
     // a visitor cannot fix this, and the form's own message already tells them
     // to try again.
-    console.error('suggest-correction: SMTP secrets are not set')
+    //
+    // This 503 has a body and CORS headers. The gateway's 503 — a worker that
+    // failed to boot — has neither, and telling them apart is the difference
+    // between "set the secrets" and "the code does not run at all".
+    console.error('suggest-correction: RESEND_API_KEY, MAIL_FROM or SUGGESTIONS_TO is not set')
     return new Response('not configured', { status: 503, headers: CORS })
   }
 
-  const client = new SMTPClient({
-    connection: {
-      hostname: host,
-      port,
-      // 465 is implicit TLS; 587 negotiates STARTTLS, which denomailer does
-      // when `tls` is false. Getting this backwards is the usual reason a
-      // working password appears not to work.
-      tls: port === 465,
-      auth: { username, password },
-    },
-  })
-
   try {
-    await client.send({
-      from,
-      to,
-      // The reference leads, so a mailbox sorted by subject sorts by watch.
-      subject: `Casio Vault — ${header(suggestion.ref)}`,
-      content: render(suggestion),
-      // A reader's address is theirs, not ours: it addresses a reply and is
-      // never the From, which would forge mail from a stranger's domain.
-      ...(suggestion.email ? { replyTo: header(suggestion.email) } : {}),
+    const sent = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        authorization: `Bearer ${apiKey}`,
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify({
+        from,
+        to: [to],
+        // The reference leads, so a mailbox sorted by subject sorts by watch.
+        subject: `Casio Vault — ${header(suggestion.ref)}`,
+        // `text`, not `html`. What `render` produces is a plain-text report
+        // lined up with spaces, and handing it to an HTML mail client would
+        // collapse every one of them.
+        text: render(suggestion),
+        // A reader's address is theirs, not ours: it addresses a reply and is
+        // never the From, which would forge mail from a stranger's domain.
+        // Resend spells this field `reply_to`.
+        ...(suggestion.email ? { reply_to: header(suggestion.email) } : {}),
+      }),
     })
+
+    if (!sent.ok) {
+      // Resend answers with a JSON body naming the reason — an unverified
+      // sending domain, a revoked key, a malformed From. It goes to the log in
+      // full, because the reader is told nothing they could act on and the
+      // maintainer is the only person who can fix any of them.
+      const detail = await sent.text().catch(() => '')
+      console.error(`suggest-correction: Resend answered ${sent.status} ${detail.slice(0, 500)}`)
+      return new Response('send failed', { status: 502, headers: CORS })
+    }
+
     return new Response(JSON.stringify({ ok: true }), {
       headers: { ...CORS, 'content-type': 'application/json' },
     })
   } catch (caught) {
     console.error('suggest-correction: send failed', caught)
     return new Response('send failed', { status: 502, headers: CORS })
-  } finally {
-    await client.close().catch(() => {})
   }
 })
