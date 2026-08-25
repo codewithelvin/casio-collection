@@ -1,0 +1,35 @@
+# W-780 — seeded 2026-08-25 from The Digital Watch Library.
+#
+# One model, read off the one page named in `source`. A community source and
+# labelled as one: this watch predates casio.com and is in neither roster
+# `survey.ts` reads.
+#
+# The page's own photograph prints **WATER RESIST 100M** on the dial, which
+# corroborates the 100M the specification row states — two statements on the
+# same page agreeing, rather than one being derived from the other.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * the original price, $39.95 — stated by the page, no field in the schema.
+#   * `family`, `discontinued` — a human's judgement, and a measurement (D59).
+
+series:
+  id: w-780
+  name: W-780
+  line: vintage
+
+models:
+  - id: w-780
+    ref: W-780
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-w-780', kind: community }
+    year: 1987
+    display: digital
+    module: '549'
+    case: { material: stainless steel }
+    water_resistance_m: 100
+    features: [alarm, stopwatch, dual-time, countdown-timer]
+    image: w-780
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-w-780'
+    discontinued: true
