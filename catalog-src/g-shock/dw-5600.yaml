@@ -2152,3 +2152,46 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240225135513id_/https://www.casio.com/intl/watches/gshock/product.DW-5600UHR-1/'
     discontinued: false
+
+# ADDED 2026-08-25: 1 reference named by hand, because
+# D47's discovery filter refuses it.
+#
+# Each is listed in Casio's OWN CURRENT SITEMAP, which is Casio stating that the
+# reference exists (D48) — a stronger claim about identity than any shape rule,
+# and the only identity `seed-refs.ts` accepts. `roster.ts`'s `CANONICAL_REF`
+# requires a suffix beginning with a digit. That filter governs what a CRAWL may
+# turn into a permanent id unsupervised, and it is not a claim that the
+# reference is fake — D47 as revised on 2026-08-19 (O13, closed) names the
+# references it knowingly refuses, and says admitting them "stays a separate
+# decision". Naming a reference Casio itself lists needs no decision at all,
+# so that is what happened here, and `roster.ts` is untouched.
+#
+# Every field below comes from the one archived Casio product page named in its
+# `source` (D52), read by the same reader as the rest of this file. No `year`:
+# a product page dates nothing (D25). No `discontinued`: that is measured over
+# the whole catalogue by `availability.ts` (D59), never written by hand.
+  - id: dw-5600cc23-4
+    ref: DW-5600CC23-4
+    # D62 — read off Casio's own collaboration landing page, which names this
+    # reference and DW-6900CC23-3 and no others. Not inferred from the `CC` in
+    # the code: `A168WECK-7A` is a Café Kitsuné collaboration and `A168WECM-5` is
+    # a rose-gold colourway, and no pattern tells those two apart.
+    edition: coca-cola
+    source:
+      { url: 'https://web.archive.org/web/20230810142101id_/https://www.casio.com/us/watches/gshock/product.DW-5600CC23-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.9, width_mm: 43.8, depth_mm: 13.5, weight_g: 53, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    # REFUSED, not overlooked. 302 KB of archived page and **zero** DAM assets —
+    # this capture names no photograph of the reference at all.
+    #
+    # The collaboration landing page does carry images, and every one of them is
+    # the wrong thing: `1080x1080-bothwatches-bottle-copy.jpeg` and
+    # `CC_2Watches_CokeBottle_800x800.jpg` show BOTH watches beside a Coke
+    # bottle. That is marketing art, not a product shot, and publishing it here
+    # would put the identical file on DW-5600CC23-4 and DW-6900CC23-3 — two
+    # entries illustrated by one picture of two watches, which tells a reader
+    # nothing about either.
+    image: null
+    discontinued: false
