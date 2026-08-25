@@ -1824,3 +1824,42 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241009172121id_/https://www.casio.com/us/watches/gshock/product.DW-6900WD-1/'
     discontinued: false
+
+# ADDED 2026-08-25: 1 reference named by hand, because
+# D47's discovery filter refuses it.
+#
+# Each is listed in Casio's OWN CURRENT SITEMAP, which is Casio stating that the
+# reference exists (D48) — a stronger claim about identity than any shape rule,
+# and the only identity `seed-refs.ts` accepts. `roster.ts`'s `CANONICAL_REF`
+# requires a suffix beginning with a digit. That filter governs what a CRAWL may
+# turn into a permanent id unsupervised, and it is not a claim that the
+# reference is fake — D47 as revised on 2026-08-19 (O13, closed) names the
+# references it knowingly refuses, and says admitting them "stays a separate
+# decision". Naming a reference Casio itself lists needs no decision at all,
+# so that is what happened here, and `roster.ts` is untouched.
+#
+# Every field below comes from the one archived Casio product page named in its
+# `source` (D52), read by the same reader as the rest of this file. No `year`:
+# a product page dates nothing (D25). No `discontinued`: that is measured over
+# the whole catalogue by `availability.ts` (D59), never written by hand.
+  - id: dw-6900cc23-3
+    ref: DW-6900CC23-3
+    # D62 — read off Casio's own collaboration landing page, the same one that
+    # names DW-5600CC23-4. Never from the `CC` in the reference code.
+    edition: coca-cola
+    source:
+      { url: 'https://web.archive.org/web/20230810142124id_/https://www.casio.com/us/watches/gshock/product.DW-6900CC23-3/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    # REFUSED, not overlooked — and this one is the more instructive of the pair.
+    # The capture names exactly one DAM asset, `Soldier.png`, which is G-SHOCK's
+    # standing brand graphic and appears on pages across the line. A check that
+    # asked "did the page name an image?" would answer yes and publish it as a
+    # photograph of DW-6900CC23-3.
+    #
+    # The collaboration landing page's own art shows both watches together with a
+    # Coke bottle — see the note on DW-5600CC23-4, which it would also illustrate.
+    image: null
+    discontinued: false
