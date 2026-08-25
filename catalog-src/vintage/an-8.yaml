@@ -1,0 +1,68 @@
+# AN-8 — seeded 2026-08-25 from The Digital Watch Library.
+#
+# Two models, each read off its own page. They are two references and not two
+# photographs of one: `casio-an8` says AN-8 and `casio-an-8g` says AN-8G, and
+# the second page's own photograph shows a caseback stamped `104 | AN-8G
+# STAINLESS STEEL BACK`, which is the reference and the module together on the
+# metal. A community source, labelled as one — both predate casio.com and are
+# in neither roster `survey.ts` reads.
+#
+# **`display` is deliberately absent on both, and that is a decision rather
+# than an oversight.** DWL files them under "DigitalHands", whose gloss is "an
+# analogue face represented by LCD segments" — but the photographs show what a
+# reader would call an analogue dial, and only a faint segment arc suggests
+# otherwise. `digital` and `analog` are both defensible readings of the same
+# picture, which is exactly when D27 says the honest value is no value.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `water_resistance_m` — AN-8's page says WATER RESIST and AN-8G's says
+#     NONE. Neither is a depth.
+#   * `family`, `discontinued` — a human's judgement, and a measurement (D59).
+
+series:
+  id: an-8
+  name: AN-8
+  line: vintage
+
+models:
+  - id: an-8
+    # ref-exception: the line's `ref_pattern` wants two to five digits after the
+    # prefix and this reference has one. Casio numbered it AN-8 in 1980; the
+    # pattern is derived from references that exist and is a warning by design,
+    # so the exception is acknowledged here rather than the rule widened for two
+    # entries. The same note applies to AN-8G below.
+    #
+    # The comment sits INSIDE the entry deliberately. `refExceptionsOf` reads
+    # `item.commentBefore`, and a comment above the FIRST item of a sequence is
+    # attached by the parser to the `models:` key instead — so the same words one
+    # line higher are invisible to the check, and only to the check.
+    ref: AN-8
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-an8', kind: community }
+    year: 1980
+    module: '104'
+    case: { material: chrome plated base-metal }
+    features: [alarm, countdown-timer]
+    image: an-8
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-an8'
+    discontinued: true
+  # ref-exception: one digit after the prefix — see the note on AN-8 above.
+  - id: an-8g
+    ref: AN-8G
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-an-8g', kind: community }
+    year: 1980
+    module: '104'
+    case: { material: chrome plated base-metal }
+    # No function icons on this page at all. That is the page saying nothing
+    # about the functions, not the watch having none (D27).
+    image: an-8g
+    image_credit:
+      # The lead photograph on this page is the caseback — proof of identity
+      # and not a product shot — so the picture published is the second one it
+      # names, `an811.jpg`, which is the watch face on.
+      author: Casiophile
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-an-8g'
+    discontinued: true
