@@ -2,6 +2,9 @@ import type { ComponentType } from 'react'
 import { createBrowserRouter, type RouteObject } from 'react-router-dom'
 import { AppShell } from './ui/AppShell'
 import { RequireSession } from './auth/RequireSession'
+// A named function in `config.ts`, not an inline block: it is the counterpart of
+// `authCallbackUrl()` and belongs beside it, and it needs tests of its own.
+import { forwardOAuthReturnAtRoot } from './auth/config.ts'
 
 /**
  * A route chunk that will not load means the deploy moved under this tab.
@@ -174,6 +177,17 @@ export const routes: RouteObject[] = [
     ],
   },
 ]
+
+/**
+ * Before the router reads the address bar, not after.
+ *
+ * `createBrowserRouter` captures `window.location` as it is constructed, so a
+ * `?code=` that arrives at the root has to be moved onto the callback path at
+ * module scope — one statement earlier and the front door has already been
+ * chosen. See `forwardOAuthReturnAtRoot` for what it is a net under; on every
+ * ordinary URL it reads two properties and returns.
+ */
+forwardOAuthReturnAtRoot()
 
 /**
  * `basename` comes from BASE_URL, never a literal. It read `/casio-collection/`

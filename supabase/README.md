@@ -99,6 +99,51 @@ to send the user afterwards travels in the pending-intent slot (§9.4), so the
 redirect URI stays a single fixed string that an allow-list can hold literally.
 A redirect URI is compared for an exact match and never followed.
 
+> [!warning] These two rows had **not** been applied — production sign-in broke on 2026-08-25
+> A real Google sign-in on `casiovault.com` came back to
+> `http://localhost:3000/?code=…`. That is not a bug in the app and no deploy can
+> fix it: `redirectTo` is a *request*, and Supabase compares it against **Redirect
+> URLs** — on no match it discards it and sends the browser to **Site URL**
+> instead, authorisation code and all.
+>
+> `http://localhost:3000` is GoTrue's own default Site URL. Nothing in this
+> repository has ever used port 3000 — Vite serves on 5173 and the row above says
+> so — so that string can only have come from a project whose URL configuration
+> was still at its defaults. **The table above was a record of an intention, not
+> of a setting.** Same shape as the `zzz_probe` note at the top of this file and
+> the dismissed-modal note above it: written down, never executed.
+>
+> Set both rows at **Authentication → URL Configuration**, and set Site URL
+> first — it is the fallback that decides where a mistake lands.
+>
+> Then check it from outside, because the dashboard showing a value and GoTrue
+> using it are two facts:
+>
+> ```
+> curl -si "$VITE_SUPABASE_URL/auth/v1/authorize?provider=google&redirect_to=https%3A%2F%2Fcasiovault.com%2Fauth%2Fcallback" | grep -i '^location:'
+> ```
+>
+> **Read the `state`, not the `redirect_to`.** That endpoint echoes `redirect_to`
+> back verbatim whatever you send it — a URL that is certainly not on the
+> allow-list comes back unchanged — so the parameter proves nothing on its own and
+> reading it as confirmation is how a broken allow-list passes an inspection. The
+> validation happens at `/auth/v1/callback`. The measurement that settles it is
+> the one that already failed: sign in on the real site and look at where the
+> browser lands.
+>
+> `www.casiovault.com` is a second origin and matches nothing above, but it is
+> **not** a second cause of this: measured 2026-08-25, its four A records point at
+> GitHub Pages and the TLS handshake fails with `ERR_TLS_CERT_ALTNAME_INVALID` —
+> `public/CNAME` names the apex, so Pages holds no certificate for `www` and a
+> visitor who types it never reaches the app at all. That is a DNS/Pages job (drop
+> the records, or add `www` as the Pages domain and redirect it), not a Supabase
+> one. Only add a `www` callback entry if that origin is ever made to serve.
+>
+> `src/auth/config.ts` now forwards a code that arrives at our own root onto
+> `/auth/callback`, which covers a Site URL that is right while the callback entry
+> is missing. It cannot cover the case above: that redirect goes to another origin
+> and our code never runs.
+
 ## Google Cloud
 
 One OAuth client, type **Web application**.

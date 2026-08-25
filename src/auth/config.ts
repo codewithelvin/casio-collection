@@ -70,3 +70,52 @@ export function supabaseConfig(): SupabaseConfig | null {
 export function authCallbackUrl(): string {
   return `${window.location.origin}${import.meta.env.BASE_URL}auth/callback`
 }
+
+/**
+ * **The net under the console setting above**, added 2026-08-25 after a real
+ * sign-in failed in production.
+ *
+ * `redirectTo` is a *request*, not an instruction. Supabase compares it against
+ * the project's Redirect URLs and, on no match, silently discards it and sends
+ * the browser to the project's **Site URL** instead — with the authorisation
+ * code still attached. The failure that prompted this landed a production
+ * sign-in on `http://localhost:3000/?code=…`, which is GoTrue's *default* Site
+ * URL: nothing in this repository has ever used port 3000, so that string could
+ * only have come from a project whose URL configuration was never applied.
+ * `supabase/README.md` documents the values; documenting is not applying.
+ *
+ * That particular case is unreachable from here — the browser is sent to
+ * another origin and this code never runs. What is reachable, and is the next
+ * rung of the same ladder, is a Site URL that is correct while the callback
+ * entry is missing or mistyped: the visitor lands on **our** root carrying
+ * `?code=…`, the router renders the front door, the code is dropped unread, and
+ * the site shows them a *Sign in* button as though nothing had happened. A
+ * silent signed-out state is the worst possible report of a configuration
+ * error, because it looks exactly like a person who never pressed the button.
+ *
+ * So a code that arrives at the root is forwarded — **not consumed**. §9.2 gives
+ * the exchange to `/auth/callback` and to nothing else, and this changes only
+ * which URL the router boots on, before it reads one. `detectSessionInUrl` stays
+ * off and the exchange stays in one testable place.
+ *
+ * Deliberately narrow in three ways:
+ *
+ *   * **The root only.** The Site-URL fallback always lands there, so matching
+ *     any deeper path would buy nothing and would put this in the way of any
+ *     future route that wants a `code` of its own.
+ *   * **`replaceState`, not an assignment.** No reload, no second entry in the
+ *     history stack, and the spent URL is gone from the back button.
+ *   * **A provider refusal counts too.** Someone who presses *Cancel* returns
+ *     with `error=access_denied` and no code; forwarding that reaches the
+ *     callback's own failure screen instead of a front door that says nothing.
+ */
+export function forwardOAuthReturnAtRoot(): void {
+  const base = import.meta.env.BASE_URL
+  const { pathname, search } = window.location
+  if (pathname !== base) return
+
+  const params = new URLSearchParams(search)
+  if (!params.has('code') && !params.has('error') && !params.has('error_description')) return
+
+  window.history.replaceState(null, '', `${base}auth/callback${search}`)
+}
