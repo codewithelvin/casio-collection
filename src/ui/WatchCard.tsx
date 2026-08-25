@@ -61,7 +61,19 @@ export function WatchCard({
 
   // Name and year are both optional and absent is normal (D27), so this line
   // renders whatever exists and disappears entirely when neither does.
-  const meta = [model.name, model.year].filter(Boolean).join(' · ')
+  //
+  // **The series joins it only on a photographed card**, and the condition is
+  // the point rather than a special case: the typographic tile already sets the
+  // series under the reference, so adding it here would print it twice on the
+  // same card. On a photographed one there was nowhere for it to go at all —
+  // which was invisible while every cross-series grid (search, the collection,
+  // a profile, an edition) happened to be looking at unphotographed watches, and
+  // is exactly the context those grids exist to supply. `seriesName` is only
+  // passed by callers whose models do not share a series; a line or series grid
+  // passes nothing and this line is unchanged there.
+  const meta = [sources ? seriesName : undefined, model.name, model.year]
+    .filter(Boolean)
+    .join(' · ')
 
   const cover = sources ? (
     <img
@@ -212,7 +224,23 @@ export function WatchCard({
         </Typography.Text>
       ) : null}
       {meta ? (
-        <Typography.Text type="secondary" style={{ fontSize: token.fontSizeSM }}>
+        // Truncated in CSS for the reason the reference above it is, and for a
+        // second one: `CAPTION_HEIGHT` reserves this line once, and a caption
+        // now carrying a series *and* a name *and* a year is long enough to
+        // wrap on a narrow column — which would make one card taller than its
+        // neighbours and stretch the whole grid row, the exact geometry that
+        // constant exists to hold still.
+        <Typography.Text
+          type="secondary"
+          title={meta}
+          style={{
+            fontSize: token.fontSizeSM,
+            display: 'block',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            whiteSpace: 'nowrap',
+          }}
+        >
           {meta}
         </Typography.Text>
       ) : null}

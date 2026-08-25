@@ -69,6 +69,49 @@ export const CASE = z.strictObject({
 })
 
 /**
+ * D62 — an **edition**: a named limited or collaboration release, declared once
+ * in `catalog-src/editions.yaml` and named by the references that belong to it.
+ *
+ * It is the second grouping over the catalogue and it is deliberately not shaped
+ * like the first. A **series** is the reference prefix (D32): it is mechanical,
+ * every model has exactly one, and it never crosses a line. An edition is none of
+ * those things — PAC-MAN is four references spread across four series of the
+ * Vintage line, Café Kitsuné is one, and nothing in a reference code says which
+ * edition it is. `A168WECK-7A` and `A168WECM-5` differ by a letter and only one
+ * of them is a collaboration, which is why this is authored data and not a
+ * pattern.
+ *
+ * **It carries a source, and that is what separates it from a family.** A family
+ * (D32) is a human judgement about how a watch looks and needs no citation. An
+ * edition is a claim about the world — that Casio and Mattel made this watch
+ * together — so §10.6's rule applies to it exactly as it applies to a model: a
+ * page states it, or it is not written down.
+ */
+export const EDITION = z.strictObject({
+  id: idField,
+  /** As the page that announced it writes it — *PAC-MAN Collaboration*. */
+  name: z.string().min(1),
+  /** The other party, where there is one. An anniversary edition has none. */
+  partner: z.string().min(1).nullish(),
+  year: z.number().int().nullish(),
+  /**
+   * What people type. Load-bearing for FR-2.1 rather than decorative: search
+   * normalises to letters and digits, so *Café Kitsuné* indexes as `cafkitsun`
+   * and the word a reader actually types — `cafe kitsune` — matches nothing
+   * without an alias that is spelled in ASCII.
+   */
+  aka: z.array(z.string().min(1)).nullish(),
+  source: SOURCE,
+})
+export type Edition = z.infer<typeof EDITION>
+
+/** `catalog-src/editions.yaml` — the edition vocabulary, in editorial order. */
+export const EDITIONS_FILE = z.strictObject({
+  editions: z.array(EDITION),
+})
+export type EditionsFile = z.infer<typeof EDITIONS_FILE>
+
+/**
  * D2 — a withdrawn model becomes a tombstone, never a deletion. The entry stays
  * in its series file and stays reachable forever (FR-3.6), because somebody's
  * `collection_items` row points at it and nothing in the database can follow a
@@ -100,6 +143,26 @@ export const MODEL = z.strictObject({
   source: SOURCE,
 
   name: z.string().min(1).nullish(),
+  /**
+   * D62 — the edition this reference was released in, by id. Absent on almost
+   * everything, and that is the normal state: the overwhelming majority of Casio
+   * references are ordinary catalogue models, so this is a small, exceptional
+   * fact rather than a field waiting to be filled in.
+   */
+  edition: idField.nullish(),
+  /**
+   * D62 / D54 — the page that puts this reference in that edition, where it is
+   * not the page in `source` and not the edition's own page.
+   *
+   * The usual case needs nothing here: Casio's collaboration page names its
+   * references, so the edition's own `source` establishes the membership of
+   * every model in it. This exists for the reference that page does *not* name —
+   * `A100WEPC-1B` is a PAC-MAN watch from an earlier release than the
+   * collaboration page Casio still publishes, and the page that says so is
+   * neither of the two already cited. Written for the same reason `year_source`
+   * is: one entry citing two pages is honest only when it says which said what.
+   */
+  edition_source: z.url().nullish(),
   // Range checked in integrity.ts rather than here, so the message can name the
   // year and the file instead of reading "invalid input".
   year: z.number().int().nullish(),
@@ -220,6 +283,10 @@ export const PUBLISHED_MODEL = z.strictObject({
   source: SOURCE,
 
   name: z.string().optional(),
+  /** D62 — the edition this reference was released in. Absent on almost all. */
+  edition: z.string().optional(),
+  /** D62 — the page that puts it there, where neither page already cited does. */
+  edition_source: z.url().optional(),
   year: z.number().int().optional(),
   /** D54 — the page that states the year, where it is not the one in `source`. */
   year_source: z.url().optional(),
@@ -256,6 +323,31 @@ export const PUBLISHED_FAMILY = z.strictObject({
   order: z.number().int().nonnegative(),
 })
 export type PublishedFamily = z.infer<typeof PUBLISHED_FAMILY>
+
+/**
+ * D62 — an edition as the artefact carries it.
+ *
+ * `source` is published, unlike anything else describing the *shape* of the
+ * catalogue, and it is published for the same reason a model's is: the edition
+ * screen shows the reader which page this claim was read off. A line, a family
+ * and a series are all descriptions of Casio's own naming; an edition asserts
+ * that two companies made something together, and that assertion has to be
+ * checkable from the page that makes it.
+ */
+export const PUBLISHED_EDITION = z.strictObject({
+  id: z.string(),
+  name: z.string(),
+  /** An edition id is already URL-safe, so the slug is the id — as with series. */
+  slug: z.string(),
+  partner: z.string().optional(),
+  year: z.number().int().optional(),
+  aka: z.array(z.string()).optional(),
+  source: SOURCE,
+  order: z.number().int().nonnegative(),
+  /** Models in the edition, tombstones excluded. Never zero: see `buildCatalog`. */
+  count: z.number().int().nonnegative(),
+})
+export type PublishedEdition = z.infer<typeof PUBLISHED_EDITION>
 
 export const PUBLISHED_SERIES = z.strictObject({
   id: z.string(),
@@ -308,6 +400,13 @@ export const CATALOG_SHAPE = z.strictObject({
   lines: z.array(PUBLISHED_LINE),
   families: z.array(PUBLISHED_FAMILY),
   series: z.array(PUBLISHED_SERIES),
+  /**
+   * D62 — and it belongs in the *shape* rather than beside the models for the
+   * same reason `series` does: the editions index and the rail render names and
+   * counts, and neither names a reference. Twelve objects, so the index leg of
+   * §6.2's split keeps paying for itself.
+   */
+  editions: z.array(PUBLISHED_EDITION),
   facets: z.record(z.string(), FACET_SUMMARY),
 })
 

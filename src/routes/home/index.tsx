@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useCatalogIndex } from '../../catalog/client.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { LineGrid, LineGridSkeleton } from '../../ui/LineGrid'
@@ -47,7 +48,23 @@ export default function HomeRoute() {
       ) : isError || !data ? (
         <ErrorState onRetry={() => void refetch()} />
       ) : (
-        <LineGrid lines={data.lines} />
+        <>
+          <LineGrid lines={data.lines} />
+          {/* D62 — one link, and no second grid. The front door's job is the
+              seven lines; editions are a smaller, cross-cutting way in, and a
+              second row of cards under the first would give them equal weight
+              they have not earned at thirteen references. It is a plain `Link`
+              for the reason nothing on this page imports Ant Design (§12) —
+              this is the URL Lighthouse loads.
+
+              Rendered only where the artefact carries an edition, so the front
+              door can never offer a page that says "no editions yet" (D51). */}
+          {data.editions.length > 0 ? (
+            <p className="cc-lead" style={{ marginBlockStart: 24 }}>
+              <Link to="/editions">{t('editions.all')}</Link>
+            </p>
+          ) : null}
+        </>
       )}
     </div>
   )

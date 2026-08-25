@@ -77,6 +77,29 @@ describe('matching the other five fields (FR-2.1)', () => {
     expect(refs('f91w')).toHaveLength(2)
     expect(refs('f91w 593')).toEqual(['F-91W-1'])
   })
+
+  it('finds an edition by name, across the lines its references sit in (D62)', () => {
+    // The strongest case for indexing a grouping: nobody looks up GA-2100-1A1,
+    // they look up the Pac-Man one — and the two answers are in different lines.
+    const found = refs('pac man')
+    expect(found).toEqual(['F-91W-1', 'GA-2100-1A1'])
+  })
+
+  it('finds an edition by the alias a keyboard can actually type', () => {
+    // `aka: [PACMAN]` on the edition. The name normalises to `pacmancollaboration`,
+    // so `pacman` matches it as a substring either way — but an accented name
+    // like *Café Kitsuné* does not survive normalisation, and the alias is the
+    // whole mechanism that makes those reachable.
+    expect(refs('pacman')).toEqual(['F-91W-1', 'GA-2100-1A1'])
+  })
+
+  it('finds an edition by its partner', () => {
+    expect(refs('mattel')).toEqual(['GW-M5610U-1'])
+  })
+
+  it('leaves a watch in no edition out of an edition search', () => {
+    expect(refs('pacman')).not.toContain('DW-5600E-1V')
+  })
 })
 
 describe('ranking (FR-2.3 shows eight of these)', () => {

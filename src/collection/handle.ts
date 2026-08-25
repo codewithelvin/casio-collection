@@ -39,6 +39,12 @@ export const RESERVED_HANDLES = [
   'api',
   'auth',
   'collection',
+  // D62 — both spellings. `/editions` is the route; `edition` is reserved
+  // alongside it because the singular is the form somebody would guess, and a
+  // handle that only collides with a plausible future URL is still a collision
+  // waiting for the day somebody adds it.
+  'edition',
+  'editions',
   'help',
   'line',
   'login',

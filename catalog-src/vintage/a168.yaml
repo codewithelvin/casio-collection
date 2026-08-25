@@ -207,6 +207,7 @@ models:
     display: digital
   - id: a168wepc-7a
     ref: A168WEPC-7A
+    edition: pac-man
     source:
       { url: 'https://web.archive.org/web/20250407153145id_/https://www.casio.com/de/watches/casio/vintage/product.A168WEPC-7A/', kind: official }
     features: [alarm]
@@ -232,6 +233,7 @@ models:
     display: digital
   - id: a168weuc-1a
     ref: A168WEUC-1A
+    edition: uno
     source:
       { url: 'https://web.archive.org/web/20240714220232id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEUC-1A/', kind: official }
     movement: quartz
@@ -370,6 +372,7 @@ models:
     discontinued: false
   - id: a168weck-7a
     ref: A168WECK-7A
+    edition: cafe-kitsune
     source:
       { url: 'https://web.archive.org/web/20240713092229id_/https://www.casio.com/es/watches/casio/vintage/product.A168WECK-7A/', kind: official }
     case: { weight_g: 49 }

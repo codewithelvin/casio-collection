@@ -26,13 +26,20 @@ import ExperimentOutlined from '@ant-design/icons/ExperimentOutlined'
 import BgColorsOutlined from '@ant-design/icons/BgColorsOutlined'
 import { Link, useParams } from 'react-router-dom'
 import {
+  editionById,
   imageSources,
   modelById,
   otherModelsInSeries,
   seriesById,
   useCatalog,
 } from '../../catalog/client.ts'
-import type { Catalog, ImageCredit, PublishedModel, PublishedSeries } from '../../catalog/schema.ts'
+import type {
+  Catalog,
+  ImageCredit,
+  PublishedEdition,
+  PublishedModel,
+  PublishedSeries,
+} from '../../catalog/schema.ts'
 import { IMAGE_LICENCE_URLS, isLicensed } from '../../catalog/vocabulary.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
@@ -105,6 +112,7 @@ function WatchDetail({
 }) {
   const { token } = antdTheme.useToken()
   const line = catalog.lines.find((candidate) => candidate.id === model.line)
+  const edition = editionById(catalog, model.edition)
   const accent = LINE_ACCENTS[model.line] ?? token.colorPrimary
   const sources = imageSources(model.image)
   const others = otherModelsInSeries(catalog, model)
@@ -235,6 +243,15 @@ function WatchDetail({
               series record rather than rendering a label with nothing after it
               (D27). */}
           {series ? <SeriesLine series={series} lineSlug={line?.slug} /> : null}
+
+          {/* D62 — and it goes directly under the series for the reason the
+              series line is here at all: this is what the watch *is*, not what
+              it measures. On the thirteen references that carry one it is the
+              most interesting fact on the page — nobody looks up A168WEPC-7A,
+              they look up the Pac-Man one — and on every other reference the
+              line is simply absent, which is D27 holding for a field a reader
+              would otherwise read a "no" into. */}
+          {edition ? <EditionLine edition={edition} model={model} /> : null}
 
           {/* D59 — availability, beside the reference rather than buried in the
               specification table. It is the first thing a collector asks of a
@@ -417,6 +434,44 @@ function SeriesLine({
           {alias}
         </Tag>
       ))}
+    </Typography.Paragraph>
+  )
+}
+
+/**
+ * D62 — the edition this reference was released in, linked to its page.
+ *
+ * Not a specification row, for exactly the reason `SeriesLine` gives: that table
+ * is what was read off `source`, and D27's empty state depends on it staying
+ * that way. An edition is not a property of the watch that somebody measured —
+ * it is who made it with whom.
+ *
+ * **`edition_source` renders as a link beside the name**, the way a `year_source`
+ * does under D54 and for the same reason. Every other fact on this page came
+ * from the page in `source`, and a reader is entitled to assume that. Where the
+ * membership was established somewhere else — a Casio capture in a different
+ * locale that carries the licence line this one does not — saying so is what
+ * keeps it a citation rather than a quiet merge of two pages into one entry.
+ */
+function EditionLine({ edition, model }: { edition: PublishedEdition; model: PublishedModel }) {
+  const { token } = antdTheme.useToken()
+
+  return (
+    <Typography.Paragraph style={{ marginBottom: 8 }}>
+      <span style={{ color: token.colorTextTertiary, marginInlineEnd: 8 }}>
+        {t('spec.edition')}
+      </span>
+      <Link to={`/editions/${edition.slug}`}>{edition.name}</Link>
+      {model.edition_source ? (
+        <a
+          href={model.edition_source}
+          target="_blank"
+          rel="noreferrer noopener"
+          style={{ fontSize: '0.875em', marginInlineStart: 8 }}
+        >
+          {t('spec.edition.source')}
+        </a>
+      ) : null}
     </Typography.Paragraph>
   )
 }

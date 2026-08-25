@@ -1,4 +1,11 @@
-import { ID_PATTERN, type LineDef, type LinesFile, type Model, type SeriesFile } from './schema.ts'
+import {
+  ID_PATTERN,
+  type Edition,
+  type LineDef,
+  type LinesFile,
+  type Model,
+  type SeriesFile,
+} from './schema.ts'
 import { EARLIEST_YEAR } from './vocabulary.ts'
 
 /**
@@ -37,6 +44,13 @@ export interface SeriesSource {
 
 export interface CatalogSource {
   lines: LinesFile
+  /**
+   * D62 — the edition vocabulary from `catalog-src/editions.yaml`, in declared
+   * order. Empty where the file does not exist, which is a catalogue with no
+   * editions rather than a broken one; a model naming an edition then fails
+   * check 4b by name, which says more than a missing-file error would.
+   */
+  editions: Edition[]
   series: SeriesSource[]
   /** D2 — the ids of the previous build, from `catalog-src/.published-ids.json`. */
   publishedIds: readonly string[]
@@ -110,6 +124,28 @@ export function checkIntegrity(
       )
     }
   }
+
+  /* ----- check 4b: the edition vocabulary (D62) ----- */
+
+  const editionsById = new Map<string, Edition>()
+  for (const edition of source.editions) {
+    if (editionsById.has(edition.id)) {
+      fail('4b', 'catalog-src/editions.yaml', `edition id "${edition.id}" is declared twice`)
+      continue
+    }
+    editionsById.set(edition.id, edition)
+    if (edition.year != null) {
+      const latest = options.currentYear + 1
+      if (edition.year < EARLIEST_YEAR || edition.year > latest) {
+        fail(
+          '9',
+          'catalog-src/editions.yaml',
+          `edition "${edition.id}" has year ${edition.year}, outside ${EARLIEST_YEAR}–${latest}`,
+        )
+      }
+    }
+  }
+  const editionsUsed = new Set<string>()
 
   /* ----- ids, refs, and the things that must be unique across every file ----- */
 
@@ -246,6 +282,30 @@ export function checkIntegrity(
         )
       }
 
+      /* --- check 4b: a model's edition is one that was declared (D62) --- */
+      if (model.edition) {
+        if (!editionsById.has(model.edition)) {
+          fail(
+            '4b',
+            where,
+            `names the edition "${model.edition}", which is not in catalog-src/editions.yaml. ` +
+              `An edition is declared once, with the page that states it (D62)`,
+          )
+        } else {
+          editionsUsed.add(model.edition)
+        }
+      }
+      if (model.edition_source && !model.edition) {
+        // The mirror of 5a and 6, failing for the same reason they do: a
+        // citation with nothing to cite asserts that somebody established a fact
+        // this entry does not actually state.
+        fail(
+          '4b',
+          where,
+          `edition_source with no edition — a citation for a fact that is not there (D62)`,
+        )
+      }
+
       /* --- check 6: a year read off another page cites it (D54) --- */
       if (model.year_source && model.year == null) {
         // The mirror of 5a, failing for the same reason. A citation with
@@ -273,6 +333,21 @@ export function checkIntegrity(
         '4',
         'lines.yaml',
         `family "${key}" holds only ${used[0]}. A family of one does not render as a heading (D32)`,
+      )
+    }
+  }
+
+  /* --- check 4b, continued: an edition nothing is in is not published --- */
+  for (const edition of source.editions) {
+    if (!editionsUsed.has(edition.id)) {
+      // A warning, not a failure, and for the same reason a family of one is:
+      // the build already declines to publish it, so nothing renders wrong. It
+      // is a collaboration somebody researched before its references were
+      // seeded, which is a normal half-finished state and worth saying out loud.
+      warn(
+        '4b',
+        'catalog-src/editions.yaml',
+        `edition "${edition.id}" is named by no model, so it is not published (D62)`,
       )
     }
   }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { LINES_FILE, MODEL, PUBLISHED_MODEL, SERIES_FILE } from './schema.ts'
+import { EDITIONS_FILE, LINES_FILE, MODEL, PUBLISHED_MODEL, SERIES_FILE } from './schema.ts'
 
 /**
  * §13.1 — acceptance and rejection, one case per §10.2 integrity check that the
@@ -202,6 +202,60 @@ describe('the lines file schema', () => {
 
   it('rejects a lines file with no lines', () => {
     expect(LINES_FILE.safeParse({ lines: [] }).success).toBe(false)
+  })
+})
+
+describe('the editions file schema (D62)', () => {
+  const editionSource = { url: 'https://www.casio.com/pac-man_collaboration/', kind: 'official' }
+
+  it('accepts an edition carrying only an id, a name and a source', () => {
+    const parsed = EDITIONS_FILE.safeParse({
+      editions: [{ id: 'pac-man', name: 'PAC-MAN Collaboration', source: editionSource }],
+    })
+    expect(parsed.success).toBe(true)
+  })
+
+  it('accepts the optional half — partner, year and the aliases search needs', () => {
+    const parsed = EDITIONS_FILE.safeParse({
+      editions: [
+        {
+          id: 'cafe-kitsune',
+          name: 'Café Kitsuné Collaboration',
+          partner: 'Café Kitsuné',
+          year: 2023,
+          aka: ['Cafe Kitsune'],
+          source: editionSource,
+        },
+      ],
+    })
+    expect(parsed.success).toBe(true)
+  })
+
+  it('refuses an edition with no source, because an edition is a claim about the world', () => {
+    const parsed = EDITIONS_FILE.safeParse({
+      editions: [{ id: 'pac-man', name: 'PAC-MAN Collaboration' }],
+    })
+    expect(parsed.success).toBe(false)
+  })
+
+  it('refuses an id that could not be a URL segment forever', () => {
+    const parsed = EDITIONS_FILE.safeParse({
+      editions: [{ id: 'PAC MAN', name: 'PAC-MAN Collaboration', source: editionSource }],
+    })
+    expect(parsed.success).toBe(false)
+  })
+
+  it('refuses an unrecognised key, the way every object in this file does', () => {
+    const parsed = EDITIONS_FILE.safeParse({
+      editions: [
+        { id: 'pac-man', name: 'PAC-MAN', source: editionSource, colaborator: 'Bandai Namco' },
+      ],
+    })
+    expect(parsed.success).toBe(false)
+  })
+
+  it('accepts a file declaring none, which is a catalogue with no editions', () => {
+    expect(EDITIONS_FILE.safeParse({ editions: [] }).success).toBe(true)
   })
 })
 

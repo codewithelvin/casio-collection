@@ -98,6 +98,15 @@ models:
     discontinued: false
   - id: a100wepc-1b
     ref: A100WEPC-1B
+    edition: pac-man
+    # The one edition membership on this site that neither page already cited
+    # establishes. Casio's PAC-MAN collaboration page names four references and
+    # this is not one of them — it is the earlier release — and the US capture
+    # this entry cites for its specifications states nothing about PAC-MAN at
+    # all. The Japanese capture named here carries the licence line
+    # "PAC-MAN(tm) & (c)BANDAI NAMCO Entertainment Inc." on this exact
+    # reference, which is the page that puts it in the edition.
+    edition_source: 'https://web.archive.org/web/20221128035302id_/https://www.casio.com/jp/watches/casio/product.A100WEPC-1B/'
     source:
       { url: 'https://web.archive.org/web/20221118184943id_/https://www.casio.com/us/watches/casio/product.A100WEPC-1B/', kind: official }
     movement: quartz

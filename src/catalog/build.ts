@@ -48,6 +48,11 @@ function publishModel(model: Model, line: string, series: string): Record<string
     series,
     source: model.source,
     name: model.name,
+    // D62 — the edition, and the page that puts this reference in it where
+    // neither page already cited does. They travel together for `year_source`'s
+    // reason: a citation is only useful next to the claim it supports.
+    edition: model.edition,
+    edition_source: model.edition_source,
     year: model.year,
     // D54 — travels with the year, because a year read off a different page
     // than the specifications has to say so on the page that shows it.
@@ -129,6 +134,7 @@ export function buildCatalog(source: CatalogSource): CatalogPayload {
   const series: Record<string, unknown>[] = []
   const modelsPerLine = new Map<string, number>()
   const familiesInUse = new Map<string, Set<string>>()
+  const modelsPerEdition = new Map<string, number>()
 
   for (const entry of entries) {
     const sorted = [...entry.models].sort((a, b) => a.ref.localeCompare(b.ref))
@@ -138,6 +144,11 @@ export function buildCatalog(source: CatalogSource): CatalogPayload {
 
     for (const model of sorted) {
       models.push(publishModel(model, entry.series.line, entry.series.id))
+    }
+
+    for (const model of browsable) {
+      if (!model.edition) continue
+      modelsPerEdition.set(model.edition, (modelsPerEdition.get(model.edition) ?? 0) + 1)
     }
 
     modelsPerLine.set(
@@ -192,7 +203,29 @@ export function buildCatalog(source: CatalogSource): CatalogPayload {
       .map((family, index) => ({ id: family.id, name: family.name, line: line.id, order: index })),
   )
 
-  const payload = CATALOG_PAYLOAD.parse({ lines, families, series, models, facets: {} })
+  // D62 — the same sentence as the line rule and the family rule, a third time:
+  // only editions that actually hold a reference are published. `editions.yaml`
+  // declares what may be named; the artefact describes what exists, and an
+  // edition with nothing in it is a heading over an empty grid.
+  //
+  // `order` is the index in the declared list and is taken **before** the
+  // filter, so the editorial order survives an edition dropping out and coming
+  // back when its references are seeded.
+  const editions = source.editions
+    .map((edition, index) => ({
+      id: edition.id,
+      name: edition.name,
+      slug: edition.id,
+      ...(edition.partner ? { partner: edition.partner } : {}),
+      ...(edition.year != null ? { year: edition.year } : {}),
+      ...(edition.aka && edition.aka.length > 0 ? { aka: edition.aka } : {}),
+      source: edition.source,
+      order: index,
+      count: modelsPerEdition.get(edition.id) ?? 0,
+    }))
+    .filter((edition) => edition.count > 0)
+
+  const payload = CATALOG_PAYLOAD.parse({ lines, families, series, editions, models, facets: {} })
 
   const browsable = payload.models.filter((model) => !model.tombstone)
   const facets: Record<string, FacetSummary> = {}
@@ -242,6 +275,7 @@ export function indexOf(catalog: Catalog): CatalogIndex {
     lines: catalog.lines,
     families: catalog.families,
     series: catalog.series,
+    editions: catalog.editions,
     facets: catalog.facets,
   })
 }

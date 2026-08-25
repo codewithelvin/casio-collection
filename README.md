@@ -105,12 +105,40 @@ this repo and it is `src/catalog/schema.ts`.
 
 ## The catalogue
 
-`catalog-src/` is the authored source: `lines.yaml` for the seven lines, then one
-YAML file per series in a folder named after its line. `catalog:build` turns that
-into `public/catalog/catalog.json` and the models-free `catalog-index.json` beside
+`catalog-src/` is the authored source: `lines.yaml` for the seven lines,
+`editions.yaml` for the collaborations, then one YAML file per series in a folder
+named after its line. `catalog:build` turns that into
+`public/catalog/catalog.json` and the models-free `catalog-index.json` beside
 it — build artefacts, **not** committed files. What gets committed and reviewed is
 the YAML. The index is derived from the finished catalogue rather than assembled
 in parallel with it, so the two cannot carry different versions of the same data.
+
+## Series and editions are two different questions
+
+A **series** is the reference prefix, and it is mechanical: every model has
+exactly one, it never crosses a line, and it is a URL segment
+(`/line/vintage/a168`). An **edition** is a named limited or collaboration
+release, and it is none of those things — PAC-MAN is five references sitting in
+five different series, and `A168WECK-7A` is a Café Kitsuné collaboration while
+`A168WECM-5` is a rose-gold colourway. They differ by one letter, so nothing can
+be inferred from a reference code. Every membership is read off a page, one
+reference at a time, and lives on the model as `edition: <id>`.
+
+Two rules follow, and both are the same rule the catalogue already applies
+elsewhere:
+
+- **An edition carries a `source`, where a family does not.** A family is a
+  judgement about how a watch looks. An edition says two companies made
+  something together, which is a claim about the world — so it needs a page
+  stating it, exactly as a model does.
+- **An edition nothing is in is not published**, the same sentence as the line
+  rule and the family rule. It is declared in `editions.yaml`, warns on the
+  build, and appears nowhere until a reference names it.
+
+Where the edition's own page does not name a reference — Casio's PAC-MAN page
+lists four and there is an earlier fifth — the model carries an `edition_source`
+pointing at the page that does. That is `year_source` again: one entry citing two
+pages is honest only when it says which said what.
 
 Everything deciding whether the catalogue is _correct_ lives in `src/catalog/` as
 pure functions under a 90% coverage floor; `scripts/catalog/` only reads files

@@ -1,5 +1,5 @@
 import type { CatalogSource, SeriesSource } from './integrity.ts'
-import type { LinesFile, Model } from './schema.ts'
+import type { Edition, LinesFile, Model } from './schema.ts'
 
 /**
  * Test data for the pipeline. Excluded from coverage in `vite.config.ts` — it is
@@ -75,9 +75,26 @@ export function aLinesFile(overrides: Partial<LinesFile['lines'][number]> = {}):
   }
 }
 
+export function anEdition(overrides: Partial<Edition> = {}): Edition {
+  return {
+    id: 'pac-man',
+    name: 'PAC-MAN Collaboration',
+    partner: 'Bandai Namco Entertainment Inc.',
+    source: { url: 'https://www.casio.com/pac-man_collaboration/', kind: 'official' },
+    ...overrides,
+  }
+}
+
+/**
+ * The default source declares **no editions and names none**, which keeps it the
+ * clean catalogue this file promises: an edition nothing is in is a warning
+ * (D62), so a fixture carrying one by default would hide the test written for
+ * it. The tests that are about editions pass their own pair.
+ */
 export function aSource(overrides: Partial<CatalogSource> = {}): CatalogSource {
   return {
     lines: aLinesFile(),
+    editions: [],
     series: [
       aSeries(),
       aSeries({

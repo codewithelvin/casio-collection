@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest'
-import { CURRENT_YEAR, aCredit, aLinesFile, aModel, aSeries, aSource } from './catalog.fixtures.ts'
+import {
+  CURRENT_YEAR,
+  aCredit,
+  aLinesFile,
+  aModel,
+  aSeries,
+  aSource,
+  anEdition,
+} from './catalog.fixtures.ts'
 import { checkIntegrity, type CatalogSource, type SeriesSource } from './integrity.ts'
 
 /**
@@ -246,6 +254,73 @@ describe('check 4a — a series id is the prefix its models actually share (D32)
       ],
     })
     expect(run(source).failures).toEqual([])
+  })
+})
+
+describe('check 4b — an edition is declared once, and named by something (D62)', () => {
+  /** The clean fixture, plus one edition and the one model that is in it. */
+  const withEdition = (overrides: Partial<CatalogSource> = {}) =>
+    aSource({
+      editions: [anEdition()],
+      series: [aSeries({ models: [aModel({ edition: 'pac-man' })] }), ...aSource().series.slice(1)],
+      ...overrides,
+    })
+
+  it('accepts a model in a declared edition', () => {
+    const report = run(withEdition())
+    expect(report.failures).toEqual([])
+    expect(report.warnings).toEqual([])
+  })
+
+  it('fails a model naming an edition that was never declared', () => {
+    const source = aSource({
+      series: [aSeries({ models: [aModel({ edition: 'pac-man' })] }), ...aSource().series.slice(1)],
+    })
+    const report = run(source)
+    expect(checks(report.failures)).toContain('4b')
+    expect(report.failures[0]?.message).toMatch(/editions\.yaml/)
+  })
+
+  it('fails an edition id declared twice', () => {
+    const source = withEdition({ editions: [anEdition(), anEdition()] })
+    expect(checks(run(source).failures)).toContain('4b')
+  })
+
+  it('fails an edition_source with no edition, the way check 6 fails a lone year_source', () => {
+    const source = aSource({
+      series: [
+        aSeries({ models: [aModel({ edition_source: 'https://example.com/pac-man' })] }),
+        ...aSource().series.slice(1),
+      ],
+    })
+    const report = run(source)
+    expect(checks(report.failures)).toContain('4b')
+    expect(report.failures[0]?.message).toMatch(/citation for a fact that is not there/)
+  })
+
+  it('accepts an edition_source alongside an edition', () => {
+    const source = withEdition({
+      editions: [anEdition()],
+      series: [
+        aSeries({
+          models: [aModel({ edition: 'pac-man', edition_source: 'https://example.com/jp' })],
+        }),
+        ...aSource().series.slice(1),
+      ],
+    })
+    expect(run(source).failures).toEqual([])
+  })
+
+  it('warns about an edition nothing is in, because the build will not publish it', () => {
+    const source = aSource({ editions: [anEdition()] })
+    const report = run(source)
+    expect(report.failures).toEqual([])
+    expect(checks(report.warnings)).toEqual(['4b'])
+  })
+
+  it('refuses an impossible year on an edition, as check 9 does on a model', () => {
+    const source = withEdition({ editions: [anEdition({ year: 1066 })] })
+    expect(checks(run(source).failures)).toContain('9')
   })
 })
 

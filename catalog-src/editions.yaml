@@ -1,0 +1,149 @@
+# D62 — the editions: named limited and collaboration releases, and the second
+# grouping over this catalogue.
+#
+# ORDER IS EDITORIAL AND IS THE ORDER OF THIS LIST, exactly as in lines.yaml and
+# for the same reason: a number beside a list is a second copy of the same fact,
+# and the two disagree the first time somebody moves an entry without
+# renumbering. Casio's own collaborations first, in the order Casio published
+# them; the ones read off a shop or an enthusiast page after.
+#
+# AN EDITION IS NOT A SERIES AND IS NOT SHAPED LIKE ONE. A series is the
+# reference prefix (D32) — mechanical, one per model, never crossing a line. An
+# edition crosses everything: PAC-MAN is four references in four different
+# series, and nothing in `A168WEPC-7A` says so. `A168WECK-7A` is a Café Kitsuné
+# collaboration and `A168WECM-5` is a rose-gold colourway; they differ by one
+# letter, and no pattern can tell them apart. So every membership here is read
+# off a page, one reference at a time.
+#
+# EVERY EDITION CARRIES A SOURCE, WHICH IS WHAT SEPARATES IT FROM A FAMILY. A
+# family (D32) is a judgement about how a watch looks and needs no citation. An
+# edition says two companies made something together, which is a claim about the
+# world — so §10.6's rule applies to it as it applies to a model: a page states
+# it, or it is not written down.
+#
+# THE SOURCE IS THE PAGE THAT NAMES THE REFERENCES, WHERE ONE EXISTS. Casio
+# publishes a landing page per vintage collaboration and each one lists its own
+# lineup, so that single page establishes both that the edition exists and which
+# references are in it. Where it does not — the two G-SHOCK anime collaborations
+# below — the source is the listing that names one reference, and it is marked
+# `retailer` so the reader is told what kind of page it was (FR-3.2a).
+#
+# WHAT IS DELIBERATELY NOT HERE:
+#   * `kind`. Every edition below is a collaboration, so a field distinguishing
+#     collaborations from anniversaries would carry one value across the whole
+#     catalogue and say nothing. An anniversary edition simply has no `partner`,
+#     which is the same distinction drawn by data that already exists.
+#   * A year on all but PAC-MAN. Casio's collaboration pages date the *brands* —
+#     UNO's cards are from 1979, Café Kitsuné opened in 2013 — and carry a
+#     copyright footer, and neither is a release date. D25 is that the catalogue
+#     reports what a page says and nothing adjacent to it. The PAC-MAN page
+#     states its own year in a sentence, so that one is written.
+
+editions:
+  # Casio's own vintage collaborations. Each `source` is Casio's landing page for
+  # that collaboration, read through the archive because casio.com answers 403
+  # or times out to anything that is not a person (D52).
+  - id: pac-man
+    name: PAC-MAN Collaboration
+    partner: Bandai Namco Entertainment Inc.
+    # The page says it in a sentence rather than in a footer: "Presenting a
+    # lineup of special collaboration watches celebrating 50 years of Casio
+    # watches and the 45th anniversary of PAC-MAN in 2025."
+    year: 2025
+    aka: [Pac-Man, PACMAN]
+    source:
+      {
+        url: 'https://web.archive.org/web/20250119024502id_/https://www.casio.com/intl/watches/casio/standard/vintage/pac-man_collaboration/',
+        kind: official,
+      }
+
+  - id: uno
+    name: UNO Collaboration
+    partner: Mattel
+    aka: [UNO]
+    source:
+      {
+        url: 'https://web.archive.org/web/20250405031922id_/https://www.casio.com/ca-en/watches/casio/vintage/a168weuc/',
+        kind: official,
+      }
+
+  # The accented name is why `aka` exists on this schema at all. Search keeps
+  # only ASCII letters and digits, so "Café Kitsuné" indexes as `cafkitsun` and
+  # the word a keyboard actually produces would match nothing.
+  - id: cafe-kitsune
+    name: Café Kitsuné Collaboration
+    partner: Café Kitsuné
+    aka: [Cafe Kitsune, Kitsune, Maison Kitsune]
+    source:
+      {
+        url: 'https://web.archive.org/web/20231013152706id_/https://www.casio.com/us/watches/casio/classic/a168weck/',
+        kind: official,
+      }
+
+  - id: stranger-things
+    name: Stranger Things Collaboration
+    partner: Netflix
+    aka: [Stranger Things]
+    source:
+      {
+        url: 'https://web.archive.org/web/20230528075635id_/https://www.casio.com/intl/watches/casio/standard/vintage/strangerthings/',
+        kind: official,
+      }
+
+  - id: apc
+    name: A.P.C. Collaboration
+    partner: A.P.C.
+    # "APC" without the stops is what a search field receives; the name itself
+    # normalises to `apc` too, and the alias is here for the reader who types the
+    # brand as it is written on the page.
+    aka: [APC, A.P.C.]
+    source:
+      {
+        url: 'https://web.archive.org/web/20250411001346id_/https://www.casio.com/europe/watches/casio/vintage/brand/apc_collaboration/',
+        kind: official,
+      }
+
+  # The G-SHOCK collaborations, which have no Casio landing page in the archive.
+  # Each source is the stockist listing that names the collaboration and the
+  # reference in the same sentence — the same page the entry's photograph is
+  # already credited to (D53), and marked `retailer` so the watch page says so.
+  # Both listings are titled "Casio G-Shock X Shounen Jump '<title>' Limited
+  # Edition", so the partner is the magazine as the page names it — Shueisha,
+  # Toei Animation and Bird Studio appear on the Dragon Ball page as licensors
+  # rather than as the party Casio worked with, and the difference is exactly
+  # the sort of thing this catalogue does not get to decide on its own.
+  - id: dragon-ball-z
+    name: Dragon Ball Z
+    partner: Shounen Jump
+    # "DBZ" is not a substring of "dragonballz", so the alias is the only way a
+    # reader who types the initials reaches the watch.
+    aka: [DBZ, Shonen Jump]
+    source:
+      {
+        url: 'https://watchoutz.com/products/casio-g-shock-dragon-ball-z-limited-edition-ga-110jdb-1a4',
+        kind: retailer,
+      }
+
+  - id: one-piece
+    name: One Piece
+    partner: Shounen Jump
+    aka: [Shonen Jump]
+    source:
+      {
+        url: 'https://watchoutz.com/products/casio-g-shock-x-shounen-jump-one-piece-limited-edition-ga-110jop-1a4',
+        kind: retailer,
+      }
+
+  # Baby-G, and the one edition here read off an enthusiast report rather than
+  # Casio or a shop. The page names the reference in its own caption — "Casio
+  # Baby-G x Madhappy BG169MH-7 watch" — which is what the entry's photograph is
+  # already credited to.
+  - id: madhappy
+    name: Madhappy
+    partner: Madhappy
+    aka: [Madhappy]
+    source:
+      {
+        url: 'https://gagadget.com/en/689708-casio-released-a-limited-series-baby-g-in-collaboration-with-madhappy/',
+        kind: community,
+      }

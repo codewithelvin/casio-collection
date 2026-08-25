@@ -516,6 +516,7 @@ models:
     discontinued: false
   - id: f-91wpc-1a
     ref: F-91WPC-1A
+    edition: pac-man
     source:
       { url: 'https://web.archive.org/web/20250117203737id_/https://www.casio.com/us/watches/casio/product.F-91WPC-1A/', kind: official }
     movement: quartz

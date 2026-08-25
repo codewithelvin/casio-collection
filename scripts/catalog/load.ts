@@ -8,7 +8,8 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { isMap, isSeq, parseDocument, type Document } from 'yaml'
 import type { CatalogSource, Issue, SeriesSource } from '../../src/catalog/integrity.ts'
-import { LINES_FILE, SERIES_FILE } from '../../src/catalog/schema.ts'
+import { EDITIONS_FILE, LINES_FILE, SERIES_FILE } from '../../src/catalog/schema.ts'
+import type { Edition } from '../../src/catalog/schema.ts'
 import { issuesFromSchema } from '../../src/catalog/report.ts'
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..')
@@ -112,6 +113,27 @@ export async function loadCatalogSource(): Promise<LoadResult> {
     failures.push(...issuesFromSchema('catalog-src/lines.yaml', linesParsed.error.issues, linesRaw))
   }
 
+  /**
+   * D62 — the edition vocabulary. **An absent file is not a failure**, unlike an
+   * absent `lines.yaml`: a catalogue with no editions declared is a coherent
+   * catalogue, and the moment a model names one it fails check 4b against the
+   * edition it named. `lines.yaml` has no such fallback, because every model
+   * sits in a line whether or not anybody wrote one down.
+   */
+  let editions: Edition[] = []
+  const editionsText = await readFile(join(SRC_DIR, 'editions.yaml'), 'utf8').catch(() => null)
+  if (editionsText !== null) {
+    const editionsDoc = parseDocument(editionsText)
+    const editionFailures = yamlErrors('catalog-src/editions.yaml', editionsDoc)
+    failures.push(...editionFailures)
+    if (editionFailures.length === 0) {
+      const raw: unknown = editionsDoc.toJS()
+      const parsed = EDITIONS_FILE.safeParse(raw)
+      if (parsed.success) editions = parsed.data.editions
+      else failures.push(...issuesFromSchema('catalog-src/editions.yaml', parsed.error.issues, raw))
+    }
+  }
+
   const series: SeriesSource[] = []
   for (const entry of await listSeriesFiles()) {
     const text = await readFile(entry.path, 'utf8')
@@ -162,5 +184,5 @@ export async function loadCatalogSource(): Promise<LoadResult> {
   )
 
   if (!linesParsed.success) return { source: null, failures }
-  return { source: { lines: linesParsed.data, series, publishedIds, images }, failures }
+  return { source: { lines: linesParsed.data, editions, series, publishedIds, images }, failures }
 }

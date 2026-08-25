@@ -28,10 +28,12 @@ export async function runValidation(): Promise<ValidationResult> {
   const counts = {
     lines: source.lines.lines.length,
     series: source.series.length,
+    editions: source.editions.length,
     models: source.series.reduce((total, entry) => total + entry.models.length, 0),
   }
   console.log(
-    `catalog-src: ${counts.lines} lines, ${counts.series} series, ${counts.models} models`,
+    `catalog-src: ${counts.lines} lines, ${counts.series} series, ` +
+      `${counts.editions} editions, ${counts.models} models`,
   )
 
   const report = checkIntegrity(source, { currentYear: new Date().getFullYear() })

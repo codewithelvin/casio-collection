@@ -6,6 +6,7 @@ import { useQuery, type UseQueryResult } from '@tanstack/react-query'
 import type {
   Catalog,
   CatalogIndex,
+  PublishedEdition,
   PublishedFamily,
   PublishedLine,
   PublishedModel,
@@ -199,6 +200,27 @@ export function modelsInSeries(catalog: Catalog, seriesId: string): PublishedMod
 
 export function modelsInLine(catalog: Catalog, lineId: string): PublishedModel[] {
   return browsable(catalog.models.filter((model) => model.line === lineId)).sort(compareByRef)
+}
+
+export function editionById(
+  catalog: CatalogIndex,
+  editionId: string | undefined,
+): PublishedEdition | undefined {
+  if (!editionId) return undefined
+  return catalog.editions.find((edition) => edition.id === editionId)
+}
+
+/**
+ * D62 — every reference in an edition, **across every line it reaches**.
+ *
+ * This is the one grid on the site whose models do not share a line, and that is
+ * the point of the screen rather than an accident of it: the PAC-MAN
+ * collaboration is four references in four different series, and there was no
+ * URL on this site that could show them together. Sorted by reference like every
+ * other grid, so a reader arriving from a series page reads the same order.
+ */
+export function modelsInEdition(catalog: Catalog, editionId: string): PublishedModel[] {
+  return browsable(catalog.models.filter((model) => model.edition === editionId)).sort(compareByRef)
 }
 
 /** FR-3.4 — the strip on a watch page, which excludes the watch you are on. */

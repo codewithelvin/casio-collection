@@ -20,6 +20,7 @@ series:
 models:
   - id: a1000acd-7
     ref: A1000ACD-7
+    edition: apc
     source:
       { url: 'https://web.archive.org/web/20241226182414id_/https://www.casio.com/de/watches/casio/vintage/product.A1000ACD-7/', kind: official }
     features: [alarm]
@@ -31,6 +32,7 @@ models:
     discontinued: false
   - id: a1000acg-9
     ref: A1000ACG-9
+    edition: apc
     source:
       { url: 'https://web.archive.org/web/20241228110230id_/https://www.casio.com/it/watches/casio/vintage/product.A1000ACG-9/', kind: official }
     features: [super-illuminator]

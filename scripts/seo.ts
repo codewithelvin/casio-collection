@@ -44,11 +44,7 @@ const DISCLAIMER =
   'An independent, non-commercial project, not affiliated with or endorsed by Casio Computer Co., Ltd.'
 
 const escapeHtml = (value: string): string =>
-  value
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
+  value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
 interface Page {
   /** Path with no leading or trailing slash. Empty string is the home page. */
@@ -94,6 +90,7 @@ function homePage(catalog: Catalog): Page {
           )
           .join('\n        ')}
       </ul>
+      ${catalog.editions.length > 0 ? `<p><a href="/editions/">Collaborations and limited editions</a> — ${catalog.editions.length} of them.</p>` : ''}
       <p>${DISCLAIMER}</p>`,
     jsonLd: [
       {
@@ -149,7 +146,12 @@ function linePage(catalog: Catalog, line: Catalog['lines'][number]): Page {
           .join('\n        ')}
       </ul>
       <p>${DISCLAIMER}</p>`,
-    jsonLd: [breadcrumb([{ name: 'Casio Vault', path: '' }, { name: line.name, path: `line/${line.slug}` }])],
+    jsonLd: [
+      breadcrumb([
+        { name: 'Casio Vault', path: '' },
+        { name: line.name, path: `line/${line.slug}` },
+      ]),
+    ],
   }
 }
 
@@ -187,6 +189,84 @@ function seriesPage(
         { name: 'Casio Vault', path: '' },
         { name: line.name, path: `line/${line.slug}` },
         { name: series.name, path: `line/${line.slug}/${series.id}` },
+      ]),
+    ],
+  }
+}
+
+/**
+ * D62 — the editions index, and one page per edition.
+ *
+ * These are the pages this step exists for more than any others on the site.
+ * "casio pac man watch" is a query somebody types; `A168WEPC-7A` is not, and
+ * until there was an edition there was no page on this site whose title
+ * contained the words a person searching for that watch actually uses. Four
+ * references in four different series had no URL that showed them together
+ * either, so there was nothing for a crawler to rank even if it had run the
+ * JavaScript.
+ */
+function editionsPage(catalog: Catalog): Page {
+  return {
+    path: 'editions',
+    title: 'Casio collaborations and limited editions · Casio Vault',
+    description: `The ${catalog.editions.length} Casio collaborations and limited releases in this catalogue — ${catalog.editions
+      .slice(0, 5)
+      .map((edition) => edition.name)
+      .join(', ')}${catalog.editions.length > 5 ? ' and more' : ''}. ${DISCLAIMER}`,
+    priority: '0.8',
+    body: `
+      <h1>Editions</h1>
+      <p>Collaborations and limited releases: watches Casio made with somebody else.</p>
+      <ul>
+        ${catalog.editions
+          .map(
+            (edition) =>
+              `<li><a href="/editions/${edition.slug}/">${escapeHtml(edition.name)}</a>${
+                edition.partner ? ` — with ${escapeHtml(edition.partner)}` : ''
+              } — ${edition.count} references</li>`,
+          )
+          .join('\n        ')}
+      </ul>
+      <p>${DISCLAIMER}</p>`,
+    jsonLd: [
+      breadcrumb([
+        { name: 'Casio Vault', path: '' },
+        { name: 'Editions', path: 'editions' },
+      ]),
+    ],
+  }
+}
+
+function editionPage(catalog: Catalog, edition: Catalog['editions'][number]): Page {
+  const models = catalog.models.filter((model) => model.edition === edition.id && !model.tombstone)
+
+  return {
+    path: `editions/${edition.slug}`,
+    title: `${edition.name} — ${edition.count} Casio references · Casio Vault`,
+    description: `Every catalogued reference in the ${edition.name}${
+      edition.partner ? `, Casio with ${edition.partner}` : ''
+    }: ${models.map((model) => model.ref).join(', ')}. ${DISCLAIMER}`,
+    priority: '0.7',
+    body: `
+      <h1>${escapeHtml(edition.name)}</h1>
+      ${edition.partner ? `<p>Casio with ${escapeHtml(edition.partner)}${edition.year ? `, ${edition.year}` : ''}.</p>` : ''}
+      <ul>
+        ${models
+          .map(
+            (model) =>
+              `<li><a href="/watch/${model.id}/">${escapeHtml(model.ref)}</a>${
+                model.name ? ` — ${escapeHtml(model.name)}` : ''
+              }</li>`,
+          )
+          .join('\n        ')}
+      </ul>
+      <p>Source: <a href="${escapeHtml(edition.source.url)}" rel="nofollow noopener">${escapeHtml(edition.source.kind)}</a></p>
+      <p>${DISCLAIMER}</p>`,
+    jsonLd: [
+      breadcrumb([
+        { name: 'Casio Vault', path: '' },
+        { name: 'Editions', path: 'editions' },
+        { name: edition.name, path: `editions/${edition.slug}` },
       ]),
     ],
   }
@@ -451,18 +531,54 @@ const DISALLOWED = ['/auth/', '/collection', '/settings', '/u/']
  */
 const NAMED_CRAWLERS = [
   // Search
-  'Googlebot', 'Googlebot-Image', 'Bingbot', 'Slurp', 'DuckDuckBot', 'Baiduspider',
-  'YandexBot', 'Applebot', 'Qwantify', 'SeznamBot', 'Naverbot',
+  'Googlebot',
+  'Googlebot-Image',
+  'Bingbot',
+  'Slurp',
+  'DuckDuckBot',
+  'Baiduspider',
+  'YandexBot',
+  'Applebot',
+  'Qwantify',
+  'SeznamBot',
+  'Naverbot',
   // Assistants and training corpora
-  'GPTBot', 'ChatGPT-User', 'OAI-SearchBot', 'ClaudeBot', 'Claude-User',
-  'Claude-SearchBot', 'anthropic-ai', 'CCBot', 'Google-Extended', 'Applebot-Extended',
-  'PerplexityBot', 'Perplexity-User', 'Bytespider', 'Amazonbot', 'meta-externalagent',
-  'FacebookBot', 'cohere-ai', 'Diffbot', 'ImagesiftBot', 'Omgilibot', 'YouBot',
-  'Timpibot', 'AI2Bot', 'Kangaroo Bot', 'Webzio-Extended',
+  'GPTBot',
+  'ChatGPT-User',
+  'OAI-SearchBot',
+  'ClaudeBot',
+  'Claude-User',
+  'Claude-SearchBot',
+  'anthropic-ai',
+  'CCBot',
+  'Google-Extended',
+  'Applebot-Extended',
+  'PerplexityBot',
+  'Perplexity-User',
+  'Bytespider',
+  'Amazonbot',
+  'meta-externalagent',
+  'FacebookBot',
+  'cohere-ai',
+  'Diffbot',
+  'ImagesiftBot',
+  'Omgilibot',
+  'YouBot',
+  'Timpibot',
+  'AI2Bot',
+  'Kangaroo Bot',
+  'Webzio-Extended',
   // Link previews — these fetch a single page to render a card, and a watch
   // shared into a chat should still show its photograph and its reference.
-  'facebookexternalhit', 'Twitterbot', 'LinkedInBot', 'Slackbot', 'Discordbot',
-  'TelegramBot', 'WhatsApp', 'Mastodon', 'Pinterestbot',
+  'facebookexternalhit',
+  'Twitterbot',
+  'LinkedInBot',
+  'Slackbot',
+  'Discordbot',
+  'TelegramBot',
+  'WhatsApp',
+  'Mastodon',
+  'Pinterestbot',
 ]
 
 export function robotsTxt(): string {
@@ -518,7 +634,9 @@ function resourceHints(): string[] {
 async function main() {
   const shell = await readFile(join(dist, 'index.html'), 'utf8')
   const hints = resourceHints()
-  const catalog = CATALOG.parse(JSON.parse(await readFile(join(dist, 'catalog/catalog.json'), 'utf8')))
+  const catalog = CATALOG.parse(
+    JSON.parse(await readFile(join(dist, 'catalog/catalog.json'), 'utf8')),
+  )
 
   const pages: Page[] = [homePage(catalog)]
 
@@ -527,6 +645,14 @@ async function main() {
     for (const series of catalog.series.filter((entry) => entry.line === line.id)) {
       pages.push(seriesPage(catalog, line, series))
     }
+  }
+
+  // D62 — the index only where the catalogue actually holds an edition. The
+  // build already declines to publish an empty one, so this is the same rule
+  // read one level up: a page listing nothing is not a page.
+  if (catalog.editions.length > 0) {
+    pages.push(editionsPage(catalog))
+    for (const edition of catalog.editions) pages.push(editionPage(catalog, edition))
   }
 
   // A tombstoned model stays reachable forever (FR-3.6) and is not advertised:

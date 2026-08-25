@@ -1096,6 +1096,7 @@ models:
     discontinued: true
   - id: ga-110jdb-1a4
     ref: GA-110JDB-1A4
+    edition: dragon-ball-z
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',
@@ -1113,6 +1114,7 @@ models:
       url: 'https://watchoutz.com/products/casio-g-shock-dragon-ball-z-limited-edition-ga-110jdb-1a4'
   - id: ga-110jop-1a4
     ref: GA-110JOP-1A4
+    edition: one-piece
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/51/5146/qw5146_EN.pdf',

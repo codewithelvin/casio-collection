@@ -156,6 +156,12 @@ export const routes: RouteObject[] = [
       },
       { path: 'line/:line', lazy: () => themed(() => import('./routes/line')) },
       { path: 'line/:line/:series', lazy: () => themed(() => import('./routes/series')) },
+      // D62 — the second way through the catalogue. Nested under one segment
+      // rather than given a singular sibling (`/edition/:id`), because an
+      // edition page's parent genuinely is the list of editions — unlike a
+      // series, whose parent is its line and not "all series".
+      { path: 'editions', lazy: () => themed(() => import('./routes/editions')) },
+      { path: 'editions/:edition', lazy: () => themed(() => import('./routes/edition')) },
       { path: 'watch/:modelId', lazy: () => themed(() => import('./routes/watch')) },
       { path: 'search', lazy: () => themed(() => import('./routes/search')) },
       // The two rows §7.3 marks "required". `guarded` supplies the provider

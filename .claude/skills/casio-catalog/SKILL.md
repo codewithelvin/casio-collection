@@ -81,6 +81,7 @@ models:
     water_resistance_m: 30
     features: [alarm, stopwatch, el-backlight]
     colorway: Black
+    edition: pac-man # D62 — only where a page names this reference in one
     image: f-91w-1 # or null — null is normal and not a failure
     image_credit: # required with an image, refused without one (D41, check 5a)
       author: Multicherry
@@ -105,6 +106,43 @@ Three things that are easy to get wrong:
 
 Every object is strict: an unrecognised key fails the parse. That is on purpose —
 `wather_resistance_m` would otherwise publish a watch with no water resistance.
+
+## Editions (D62)
+
+A collaboration or limited release, declared once in `catalog-src/editions.yaml`
+and named by the models in it. **Nothing about an edition can be inferred from a
+reference code** — `A168WECK-7A` is the Café Kitsuné collaboration and
+`A168WECM-5` is a rose-gold colourway — so every membership is read off a page,
+one reference at a time. `PC`, `CM` and `MH` in a reference are not evidence.
+
+```yaml
+editions:
+  - id: pac-man
+    name: PAC-MAN Collaboration # as the page writes it
+    partner: Bandai Namco Entertainment Inc. # optional; absent on an anniversary
+    year: 2025 # only where the page states it in a sentence (D25)
+    aka: [Pac-Man, PACMAN] # ASCII spellings — search strips accents
+    source: { url: 'https://…', kind: official } # required, unlike a family
+```
+
+Four rules:
+
+- **An edition carries a `source` and a family does not.** A family is a
+  judgement about how a watch looks; an edition says two companies made
+  something together, so a page has to state it.
+- **The usual source is Casio's own collaboration landing page**, which lists
+  its own lineup — so one page establishes both that the edition exists and
+  which references are in it. Casio publishes them under
+  `…/watches/casio/vintage/brand/<name>/` and `…/standard/vintage/<name>/`; most
+  captures of those paths are JS shells, so pick the largest capture from the
+  CDX `length` column before concluding a page says nothing.
+- **Where that page does not name a reference**, put `edition_source` on the
+  model pointing at the page that does. Never assign an edition from a
+  reference-code resemblance.
+- **Declaring an edition is its own confirmed step and its own commit**, like the
+  `families:` block. Adding `edition:` to a model inside a normal seeding run is
+  fine once the edition exists. An edition no model names is a build warning, not
+  a failure, and publishes nothing.
 
 ## Sourcing
 

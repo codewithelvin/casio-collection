@@ -66,6 +66,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: a120west-1a
     ref: A120WEST-1A
+    edition: stranger-things
     source:
       { url: 'https://web.archive.org/web/20230615190748id_/https://www.casio.com/fr/watches/casio/vintage/product.A120WEST-1A/', kind: official }
     case: { weight_g: 25 }

@@ -703,6 +703,17 @@
   list-style: none;
 }
 
+/* D62 — the row below the lines, which is not one. A rule and a little air,
+   because what it separates is two kinds of link rather than two sections of the
+   same kind: above it, the seven lines and their series; below it, the way into
+   the catalogue that cuts across all of them. `border-block-start` and not
+   `border-top`, matching the logical properties used throughout this file. */
+.cc-nav-aside {
+  margin-block-start: 8px;
+  padding-block-start: 8px;
+  border-block-start: 1px solid var(--cc-border-secondary);
+}
+
 .cc-nav-row {
   display: flex;
   align-items: center;

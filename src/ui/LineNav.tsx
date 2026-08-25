@@ -68,6 +68,21 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
   const currentLine = current?.[1]
   const currentSeries = current?.[2]
 
+  /**
+   * D62 — the rail's one row that is not a line, and the reason it is a plain
+   * link with no expander is the same reason it is below the seven rather than
+   * among them: an edition cuts across the lines, so it has no place *inside*
+   * the tree and no series of its own to unfold. It is a different question
+   * about the same catalogue.
+   *
+   * Rendered only when the artefact carries an edition, because an edition
+   * nothing is in is not published — so an empty list here would mean the rail
+   * was offering a page that says "no editions yet", which is a category with
+   * nothing in it (D51's rule, one dimension over).
+   */
+  const showEditions = data.editions.length > 0
+  const editionsActive = pathname === '/editions' || pathname.startsWith('/editions/')
+
   return (
     <nav className="cc-nav" aria-label={t('nav.lines')}>
       <ul className="cc-nav-list">
@@ -162,6 +177,27 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
             </li>
           )
         })}
+
+        {/* Inside the same list and the same landmark, deliberately. A second
+            `<nav>` would be tidier to label and would break the one thing
+            `AppShell` asserts about this component — that the rail is a single
+            `cc-nav` region — and a reader tabbing the rail wants one list of
+            places to go, not two regions to choose between first. The rule is
+            separated by a border rather than a heading because it divides two
+            kinds of link, not two sections of one kind. */}
+        {showEditions ? (
+          <li className="cc-nav-aside">
+            <Link
+              to="/editions"
+              className="cc-nav-row"
+              {...(editionsActive ? { 'aria-current': 'page' as const } : {})}
+              onClick={onNavigate}
+            >
+              <span className="cc-nav-label">{t('nav.editions')}</span>
+              <span className="cc-nav-count">{data.editions.length}</span>
+            </Link>
+          </li>
+        ) : null}
       </ul>
     </nav>
   )

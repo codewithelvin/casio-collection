@@ -50,10 +50,11 @@ export interface SearchEntry {
   /** The normalised reference on its own — the ranking is mostly about this. */
   ref: string
   /**
-   * Reference, name, module, series, series aliases, family and line, each
-   * normalised and joined by a space. The separator is load-bearing: terms are
-   * normalised to letters and digits only, so a space can never be matched by
-   * one, and `F-91W` followed by `Watch` cannot accidentally answer `wwatch`.
+   * Reference, name, module, series, series aliases, family, line, and the
+   * edition with its partner and aliases — each normalised and joined by a
+   * space. The separator is load-bearing: terms are normalised to letters and
+   * digits only, so a space can never be matched by one, and `F-91W` followed by
+   * `Watch` cannot accidentally answer `wwatch`.
    */
   text: string
 }
@@ -68,6 +69,14 @@ export interface SearchIndex {
  * the word collectors use reaching the codes they mean. A series' `aka` does
  * the same job one level down — *CasiOak*, *F91W*, *Marlin*.
  *
+ * **The edition is the same argument a third time, and it is the strongest case
+ * of the three** (D62). Nobody looking for the Pac-Man watch knows it is
+ * `A168WEPC-7A`; *pacman* is the entire query, and before this it matched
+ * nothing at all. The edition's `aka` is what makes it work in practice rather
+ * than in principle: `normalise` keeps only ASCII letters and digits, so *Café
+ * Kitsuné* indexes as `cafkitsun`, and the alias spelled *Cafe Kitsune* is the
+ * only reason typing the name the way a keyboard produces it finds the watch.
+ *
  * **Tombstones are not indexed.** A retired entry is reachable forever by its
  * URL (FR-3.6) and counted nowhere else (§6.2), and search is one of the places
  * "nowhere else" means: a duplicate entry surfacing beside the model that
@@ -79,10 +88,12 @@ export function buildSearchIndex(catalog: Catalog): SearchIndex {
   const lineById = new Map(catalog.lines.map((line) => [line.id, line.name]))
   const familyById = new Map(catalog.families.map((family) => [family.id, family.name]))
   const seriesById = new Map(catalog.series.map((series) => [series.id, series]))
+  const editionById = new Map(catalog.editions.map((edition) => [edition.id, edition]))
 
   const entries = browsable(catalog.models).map((model) => {
     const series = seriesById.get(model.series)
     const family = series?.family ? familyById.get(series.family) : undefined
+    const edition = model.edition ? editionById.get(model.edition) : undefined
 
     const parts = [
       model.ref,
@@ -92,6 +103,9 @@ export function buildSearchIndex(catalog: Catalog): SearchIndex {
       ...(series?.aka ?? []),
       family,
       lineById.get(model.line),
+      edition?.name,
+      edition?.partner,
+      ...(edition?.aka ?? []),
     ]
 
     return {

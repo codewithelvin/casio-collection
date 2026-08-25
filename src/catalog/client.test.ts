@@ -6,9 +6,11 @@ import {
   CATALOG_PATH,
   catalogIndexQueryOptions,
   catalogQueryOptions,
+  editionById,
   fetchCatalog,
   fetchCatalogIndex,
   imageSources,
+  modelsInEdition,
   lineBySlug,
   lineTree,
   modelById,
@@ -19,11 +21,7 @@ import {
   seriesInLine,
 } from './client.ts'
 import type { Catalog, PublishedModel } from './schema.ts'
-import {
-  catalogFixture,
-  catalogFixtureJson,
-  catalogIndexFixtureJson,
-} from '../test/catalogFixture'
+import { catalogFixture, catalogFixtureJson, catalogIndexFixtureJson } from '../test/catalogFixture'
 
 const model = (overrides: Partial<PublishedModel>): PublishedModel => ({
   id: 'x-1',
@@ -196,6 +194,52 @@ describe('selectors over the catalogue', () => {
     expect(current).toBeDefined()
     const others = otherModelsInSeries(catalog, current as PublishedModel)
     expect(others.map((entry) => entry.id)).toEqual(['f-91w-3'])
+  })
+})
+
+describe('editions (D62)', () => {
+  const catalog: Catalog = catalogFixture
+
+  it('finds an edition by id and nothing by an id that is not one', () => {
+    expect(editionById(catalog, 'pac-man')?.name).toBe('PAC-MAN Collaboration')
+    expect(editionById(catalog, 'nope')).toBeUndefined()
+    expect(editionById(catalog, undefined)).toBeUndefined()
+  })
+
+  it('lists an edition’s references across the lines and series they sit in', () => {
+    // The whole reason the screen exists: these two are in different series and
+    // different lines, and no other URL on this site shows them together.
+    const models = modelsInEdition(catalog, 'pac-man')
+    expect(models.map((model) => model.ref)).toEqual(['F-91W-1', 'GA-2100-1A1'])
+    expect(new Set(models.map((model) => model.line)).size).toBe(2)
+  })
+
+  it('leaves a model in no edition out of every edition', () => {
+    expect(modelsInEdition(catalog, 'pac-man').map((model) => model.id)).not.toContain(
+      'dw-5600e-1v',
+    )
+    expect(modelsInEdition(catalog, 'not-an-edition')).toEqual([])
+  })
+
+  it('excludes a tombstoned reference, as every other grid does', () => {
+    const withRetired: Catalog = {
+      ...catalogFixture,
+      models: [
+        ...catalogFixture.models,
+        {
+          id: 'ga-2100-2a1',
+          ref: 'GA-2100-2A1',
+          line: 'g-shock',
+          series: 'ga-2100',
+          source: { url: 'https://example.com/ga-2100-2a1', kind: 'official' },
+          edition: 'pac-man',
+          tombstone: { reason: 'a duplicate' },
+        },
+      ],
+    }
+    expect(modelsInEdition(withRetired, 'pac-man').map((model) => model.id)).not.toContain(
+      'ga-2100-2a1',
+    )
   })
 })
 

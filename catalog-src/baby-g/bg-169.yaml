@@ -358,6 +358,7 @@ models:
     discontinued: false
   - id: bg-169mh-7
     ref: BG-169MH-7
+    edition: madhappy
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',

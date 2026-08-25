@@ -17,6 +17,10 @@ const en = {
   'nav.open': 'Open navigation',
   'nav.close': 'Close navigation',
   'nav.lines': 'Lines',
+  // D62 — the rail's one row that is not a line. It sits below the seven
+  // because it cuts across them: an edition is a different question about the
+  // same catalogue, not an eighth line.
+  'nav.editions': 'Editions',
   'nav.skip': 'Skip to content',
   // §12 — the rail's expander became a control of its own when the Menu went,
   // so it needs a name of its own. It says which line it opens, because a rail
@@ -35,6 +39,8 @@ const en = {
   'route.line.title': 'Line',
   'route.series.title': 'Series',
   'route.watch.title': 'Watch',
+  'route.editions.title': 'Editions',
+  'route.edition.title': 'Edition',
   'route.search.title': 'Search',
   'route.collection.title': 'My Collection',
   'route.settings.title': 'Settings',
@@ -71,6 +77,31 @@ const en = {
   'series.notFound.body': 'That series is not in the catalogue.',
   'series.backToLine': 'All series in this line',
   'grid.empty': 'Nothing to show here yet.',
+
+  // Editions (D62)
+  //
+  // The lead has one job, and it is to say what an edition *is* before a reader
+  // decides whether the page is for them. "Limited" on its own would be a
+  // marketing word; naming the two parties and saying the watches sit in
+  // different series is the fact that makes the page worth having — those
+  // watches have no other URL that shows them together.
+  'editions.heading': 'Editions',
+  'editions.lead':
+    'Collaborations and limited releases: watches Casio made with somebody else. An edition cuts across the catalogue, so the references in one usually sit in different series and sometimes in different lines.',
+  'editions.count': 'references',
+  'editions.countOne': 'reference',
+  'editions.all': 'All editions',
+  'edition.withPartner': 'With',
+  'edition.notFound.title': 'No such edition',
+  'edition.notFound.body':
+    'That edition is not in the catalogue. Only editions with a catalogued reference in them are published.',
+  // FR-3.2a's sentence, one level up. An edition asserts that two companies made
+  // something together, so the page says which page that was read off — the same
+  // promise the watch page makes about a specification.
+  'edition.sourceHeading': 'Where this edition came from',
+  'edition.empty.title': 'No editions yet',
+  'edition.empty.body':
+    'No catalogued reference has been placed in an edition yet. Nothing is grouped here on a guess — an edition is written down only where a page names the collaboration and the reference.',
 
   // Filters and sorting (M3, FR-1.3 to FR-1.5)
   'filter.year': 'Year',
@@ -169,6 +200,15 @@ const en = {
   'spec.colorway': 'Colourway',
   'spec.line': 'Line',
   'spec.series': 'Series',
+  // D62 — beside the series line on the watch page, and for the same reason it
+  // is not a specification row: the table is what was read off `source`, and a
+  // row that filled every table on the site would retire `watch.noSpecs`.
+  'spec.edition': 'Edition',
+  // Shown beside the edition where the page that puts this reference in it is
+  // neither the entry's own source nor the edition's. The word is "named" and
+  // not "announced" — `year_source` can say announced because a news release is
+  // dated; this is a page that simply states the reference is in the edition.
+  'spec.edition.source': 'named',
 
   // Authentication (M4, §8.9, §9)
   //
@@ -600,6 +640,18 @@ export function facetValueLabel(field: string, value: string): string {
 /** *24 results*, *1 result* — the count and its noun, agreeing. */
 export const resultCount = (count: number): string =>
   `${count} ${count === 1 ? t('search.result') : t('search.results')}`
+
+/**
+ * D62 — *4 references*, *1 reference*, on an edition card and its page.
+ *
+ * The noun is *references* and not *models*, which is what every other count on
+ * this site says, and the difference is deliberate. A line or a series counts
+ * watches of one kind; an edition counts specific reference codes that a page
+ * named, and the word is what carries "this is the list somebody read", not a
+ * category total.
+ */
+export const editionCount = (count: number): string =>
+  `${count} ${count === 1 ? t('editions.countOne') : t('editions.count')}`
 
 /** FR-2.3 — *See all 24 results*, the last row of the dropdown. */
 export const seeAllResults = (count: number): string =>

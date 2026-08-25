@@ -50,6 +50,39 @@ export const catalogFixture: Catalog = {
     // Holds exactly one series, so §8.4 must not render it as a heading.
     { id: 'octagonal', name: 'Octagonal', line: 'g-shock', order: 1 },
   ],
+  /**
+   * D62 — **two of them, holding two models and one**, and both numbers matter.
+   * The PAC-MAN edition's two references sit in *different series*, which is the
+   * whole claim the edition page makes and the one thing a single-series edition
+   * could not prove; the second edition holds one model, so "an edition of one"
+   * is a state the screens are exercised against rather than assumed away.
+   *
+   * Unlike a family of one — which §8.4 refuses to render as a heading — an
+   * edition of one is perfectly normal and is published. A collaboration is
+   * often exactly one watch.
+   */
+  editions: [
+    {
+      id: 'pac-man',
+      name: 'PAC-MAN Collaboration',
+      slug: 'pac-man',
+      partner: 'Bandai Namco Entertainment Inc.',
+      year: 2025,
+      aka: ['PACMAN'],
+      source: { url: 'https://www.casio.com/pac-man_collaboration/', kind: 'official' },
+      order: 0,
+      count: 2,
+    },
+    {
+      id: 'uno',
+      name: 'UNO Collaboration',
+      slug: 'uno',
+      partner: 'Mattel',
+      source: { url: 'https://www.casio.com/a168weuc/', kind: 'official' },
+      order: 1,
+      count: 1,
+    },
+  ],
   series: [
     {
       id: 'dw-5600',
@@ -128,6 +161,8 @@ export const catalogFixture: Catalog = {
       source: { url: 'https://example.com/gw-m5610u-1', kind: 'community' },
       year: 2019,
       movement: 'solar-radio',
+      // D62 — an edition of one, which is the common case for a collaboration.
+      edition: 'uno',
     },
     {
       id: 'ga-2100-1a1',
@@ -137,6 +172,11 @@ export const catalogFixture: Catalog = {
       source: { url: 'https://www.casio.com/ga-2100-1a1', kind: 'official' },
       name: 'CasiOak',
       year: 2019,
+      // D62 — the other half of the PAC-MAN edition is `f-91w-1`, in a different
+      // series *and* a different line. Deliberate: the edition grid is the only
+      // one on the site whose models do not share a line, and a fixture where
+      // they did would let that pass by accident.
+      edition: 'pac-man',
     },
     {
       id: 'f-91w-1',
@@ -148,6 +188,11 @@ export const catalogFixture: Catalog = {
       display: 'digital',
       module: '593',
       colorway: 'Black with blue accent ring',
+      edition: 'pac-man',
+      // D62 — the one model here whose edition was established somewhere other
+      // than its own source or the edition's, so the watch page's citation link
+      // is a state a test can reach.
+      edition_source: 'https://www.casio.com/jp/f-91w-1/',
     },
     {
       id: 'f-91w-3',

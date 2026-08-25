@@ -183,6 +183,89 @@ describe('the series route', () => {
   })
 })
 
+describe('the editions routes (D62)', () => {
+  it('lists every published edition with its partner and its count', async () => {
+    renderApp('/editions')
+
+    await screen.findByRole('heading', { name: t('editions.heading'), level: 2 })
+    const pacMan = await screen.findByRole('link', { name: /PAC-MAN Collaboration/ })
+    expect(pacMan).toHaveAttribute('href', '/editions/pac-man')
+    expect(pacMan.textContent).toContain('Bandai Namco Entertainment Inc.')
+    expect(pacMan.textContent).toContain(`2 ${t('editions.count')}`)
+  })
+
+  it('agrees on the noun when an edition holds exactly one reference', async () => {
+    renderApp('/editions')
+    const uno = await screen.findByRole('link', { name: /UNO Collaboration/ })
+    expect(uno.textContent).toContain(`1 ${t('editions.countOne')}`)
+    // …and not the plural, which is the half that proves the agreement rather
+    // than the presence of a number.
+    expect(uno.textContent).not.toContain(`1 ${t('editions.count')}`)
+  })
+
+  it('shows an edition’s references from every line they sit in', async () => {
+    // The claim the whole screen exists to make. These two are in different
+    // series *and* different lines, and no other URL on this site shows them
+    // together — so a grid that only managed one of them would be the feature
+    // silently not working.
+    renderApp('/editions/pac-man')
+
+    await screen.findByRole('heading', { name: 'PAC-MAN Collaboration', level: 2 })
+    expect(await screen.findByRole('link', { name: 'GA-2100-1A1' })).toBeInTheDocument()
+    expect(await screen.findByRole('link', { name: 'F-91W-1' })).toBeInTheDocument()
+  })
+
+  it('names each card’s own series, which the series page never has to', async () => {
+    renderApp('/editions/pac-man')
+    await screen.findByRole('heading', { name: 'PAC-MAN Collaboration', level: 2 })
+    // Which A168 or F-91W this is cannot be inferred on a page holding both.
+    expect(await screen.findAllByText('GA-2100')).not.toHaveLength(0)
+  })
+
+  it('names the series on a photographed card too, not only on a typographic one', async () => {
+    // The series used to live **only** inside the typographic tile, so on every
+    // cross-series grid — search, the collection, a profile, an edition — a
+    // watch that had been photographed lost the one piece of context those
+    // grids exist to supply. Invisible for as long as those grids happened to
+    // hold unphotographed watches. `/search` is used here because it is the
+    // public route whose one photographed fixture model is reachable.
+    renderApp('/search?q=dw5600e')
+    expect(await screen.findByText(/DW-5600 · The square · 1996/)).toBeInTheDocument()
+  })
+
+  it('says which page the collaboration was read off, and what kind (FR-3.2a)', async () => {
+    renderApp('/editions/pac-man')
+
+    await screen.findByRole('heading', { name: t('edition.sourceHeading') })
+    const source = await screen.findByRole('link', {
+      name: new RegExp(t('watch.source.official')),
+    })
+    expect(source).toHaveAttribute('href', 'https://www.casio.com/pac-man_collaboration/')
+    expect(source).toHaveAttribute('rel', expect.stringContaining('noopener'))
+  })
+
+  it('says so when the edition is not one this catalogue carries', async () => {
+    renderApp('/editions/not-an-edition')
+    expect(await screen.findByText(t('edition.notFound.title'))).toBeInTheDocument()
+  })
+
+  it('offers the editions from the rail, below the lines', async () => {
+    renderApp('/')
+    const rail = within(await screen.findByRole('navigation', { name: t('nav.lines') }))
+    const link = await rail.findByRole('link', { name: new RegExp(t('nav.editions')) })
+    expect(link).toHaveAttribute('href', '/editions')
+  })
+
+  it('offers them from the front door too, without a second grid of cards', async () => {
+    renderApp('/')
+    await screen.findByRole('heading', { name: t('home.linesHeading') })
+    expect(await front().findByRole('link', { name: t('editions.all') })).toHaveAttribute(
+      'href',
+      '/editions',
+    )
+  })
+})
+
 describe('the watch route (FR-3)', () => {
   it('renders only the fields the model carries, never an empty row (FR-3.2)', async () => {
     renderApp('/watch/dw-5600e-1v')
@@ -254,6 +337,43 @@ describe('the watch route (FR-3)', () => {
     expect(await screen.findByText(t('watch.noSpecs'))).toBeInTheDocument()
     const series = screen.getByText(t('spec.series')).parentElement as HTMLElement
     expect(within(series).getByRole('link', { name: 'DW-5600' })).toBeInTheDocument()
+  })
+
+  it('names the edition a reference was released in, linked to it (D62)', async () => {
+    renderApp('/watch/ga-2100-1a1')
+
+    const edition = (await screen.findByText(t('spec.edition'))).parentElement as HTMLElement
+    expect(within(edition).getByRole('link', { name: 'PAC-MAN Collaboration' })).toHaveAttribute(
+      'href',
+      '/editions/pac-man',
+    )
+  })
+
+  it('cites the page that put the reference in the edition, where there is one', async () => {
+    // D62's `edition_source`, which is D54's argument applied to a second field:
+    // every other fact on the page came off `source`, so a membership
+    // established elsewhere has to say where.
+    renderApp('/watch/f-91w-1')
+
+    const edition = (await screen.findByText(t('spec.edition'))).parentElement as HTMLElement
+    expect(within(edition).getByRole('link', { name: t('spec.edition.source') })).toHaveAttribute(
+      'href',
+      'https://www.casio.com/jp/f-91w-1/',
+    )
+  })
+
+  it('says nothing at all about editions on a reference that is in none (D27)', async () => {
+    // The line disappears entirely rather than rendering a label with nothing
+    // after it — the state almost every reference in this catalogue is in.
+    renderApp('/watch/dw-5600e-1v')
+    await screen.findByRole('heading', { name: 'DW-5600E-1V', level: 2 })
+    expect(screen.queryByText(t('spec.edition'))).not.toBeInTheDocument()
+  })
+
+  it('renders no citation where the edition’s own page established the membership', async () => {
+    renderApp('/watch/ga-2100-1a1')
+    const edition = (await screen.findByText(t('spec.edition'))).parentElement as HTMLElement
+    expect(within(edition).queryByRole('link', { name: t('spec.edition.source') })).toBeNull()
   })
 
   it('links to the Casio product page only where the entry has one (FR-3.5)', async () => {

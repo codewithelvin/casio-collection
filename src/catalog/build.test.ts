@@ -7,7 +7,7 @@ import {
   serialiseIndex,
   stamp,
 } from './build.ts'
-import { aModel, aSeries, aSource } from './catalog.fixtures.ts'
+import { aModel, aSeries, aSource, anEdition } from './catalog.fixtures.ts'
 
 describe('the published artefact (§6.2)', () => {
   it('keeps the lines in editorial order and counts what is in them', () => {
@@ -166,6 +166,98 @@ describe('the published artefact (§6.2)', () => {
   })
 })
 
+describe('the editions (D62)', () => {
+  /** Two editions declared; only the first is named by a model. */
+  const source = () =>
+    aSource({
+      editions: [
+        anEdition(),
+        anEdition({ id: 'uno', name: 'UNO Collaboration', partner: 'Mattel' }),
+      ],
+      series: [
+        aSeries({ models: [aModel({ edition: 'pac-man' })] }),
+        aSeries({
+          file: 'catalog-src/g-shock/gw-m5610.yaml',
+          series: { id: 'gw-m5610', name: 'GW-M5610', line: 'g-shock', family: 'square' },
+          models: [aModel({ id: 'gw-m5610u-1', ref: 'GW-M5610U-1', edition: 'pac-man' })],
+        }),
+      ],
+    })
+
+  it('publishes an edition with the number of references in it', () => {
+    const catalog = buildCatalog(source())
+    expect(catalog.editions.map((edition) => edition.id)).toEqual(['pac-man'])
+    expect(catalog.editions[0]?.count).toBe(2)
+    expect(catalog.editions[0]?.slug).toBe('pac-man')
+  })
+
+  it('does not publish an edition nothing is in, as it does not publish an empty line', () => {
+    expect(buildCatalog(source()).editions.map((edition) => edition.id)).not.toContain('uno')
+  })
+
+  it('takes an edition’s order from where it is declared, not from what survives', () => {
+    // `pac-man` is declared first and `uno` second. Put both models in `uno`:
+    // it must still publish with order 1, so the editorial order of
+    // editions.yaml survives an edition dropping out and coming back.
+    const catalog = buildCatalog(
+      aSource({
+        editions: [anEdition(), anEdition({ id: 'uno', name: 'UNO Collaboration' })],
+        series: [aSeries({ models: [aModel({ edition: 'uno' })] })],
+      }),
+    )
+    expect(catalog.editions.map((edition) => [edition.id, edition.order])).toEqual([['uno', 1]])
+  })
+
+  it('counts a tombstoned reference nowhere, the way every other count works', () => {
+    const catalog = buildCatalog(
+      aSource({
+        editions: [anEdition()],
+        series: [
+          aSeries({
+            models: [
+              aModel({ edition: 'pac-man' }),
+              aModel({
+                id: 'dw-5600e-2v',
+                ref: 'DW-5600E-2V',
+                edition: 'pac-man',
+                tombstone: { reason: 'a duplicate of DW-5600E-1V' },
+              }),
+            ],
+          }),
+        ],
+      }),
+    )
+    expect(catalog.editions[0]?.count).toBe(1)
+    // Published all the same, because a retired entry stays reachable (FR-3.6).
+    expect(catalog.models.map((model) => model.id)).toContain('dw-5600e-2v')
+  })
+
+  it('writes the edition onto the model, and omits the key where there is none', () => {
+    const catalog = buildCatalog(source())
+    expect(catalog.models[0]?.edition).toBe('pac-man')
+    const plain = buildCatalog(aSource()).models[0]
+    expect(plain).toBeDefined()
+    expect('edition' in plain!).toBe(false)
+    expect('edition_source' in plain!).toBe(false)
+  })
+
+  it('carries the edition’s own source, so the page can cite it', () => {
+    expect(buildCatalog(source()).editions[0]?.source.kind).toBe('official')
+  })
+
+  it('drops an empty alias list rather than publishing one', () => {
+    const catalog = buildCatalog(
+      aSource({
+        editions: [anEdition({ aka: [] })],
+        series: [aSeries({ models: [aModel({ edition: 'pac-man' })] })],
+      }),
+    )
+    const edition = catalog.editions[0]
+    expect(edition).toBeDefined()
+    expect('aka' in edition!).toBe(false)
+  })
+})
+
 describe('the facets (D26)', () => {
   const withData = aSource({
     series: [
@@ -238,6 +330,7 @@ describe('the index artefact (§6.2, the split)', () => {
     expect(index.lines).toEqual(catalog.lines)
     expect(index.families).toEqual(catalog.families)
     expect(index.series).toEqual(catalog.series)
+    expect(index.editions).toEqual(catalog.editions)
     expect(index.facets).toEqual(catalog.facets)
     expect('models' in index).toBe(false)
   })
