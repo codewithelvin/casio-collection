@@ -1,0 +1,41 @@
+# AX-510 — seeded 2026-08-25 from The Digital Watch Library.
+#
+# One model, read off the one page named in `source`. A community source and
+# labelled as one: this watch predates casio.com and is in neither roster
+# `survey.ts` reads.
+#
+# `display: digital` comes from the page's own photograph, which shows one LCD
+# carrying both the digits (12:09, 12:30) and a segment-drawn dial beside them.
+# DWL files it under "DigitalHands", which its own gloss describes as an
+# analogue face represented by LCD segments — the face is drawn, not turned.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * **the melody function.** The page shows an "I play a tune" icon and
+#     `vocabulary.ts` has no value for it. Rule 4 is explicit that a vocabulary
+#     which grows during a seeding run is the same as no vocabulary, so this is
+#     reported and left out. It is a real function of this watch.
+#   * `water_resistance_m` — the page says NONE, a statement and not a depth.
+#   * `colorway` — the slug says `_blue` and the page does not; a slug is not a
+#     statement.
+#   * `family`, `discontinued` — a human's judgement, and a measurement (D59).
+
+series:
+  id: ax-510
+  name: AX-510
+  line: vintage
+
+models:
+  - id: ax-510
+    ref: AX-510
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_ax-510_blue', kind: community }
+    year: 1980
+    display: digital
+    module: '118'
+    case: { material: chrome plated base-metal }
+    features: [alarm, multi-alarm, stopwatch, dual-time, countdown-timer]
+    image: ax-510
+    image_credit:
+      author: Modiphugger
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_ax-510_blue'
+    discontinued: true
