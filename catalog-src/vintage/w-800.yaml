@@ -1,0 +1,117 @@
+# W-800 — seeded 2026-08-25 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: w-800
+  name: W-800
+  line: vintage
+
+models:
+  - id: w-800h-1av
+    ref: W-800H-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715101643id_/https://www.casio.com/europe/watches/casio/product.W-800H-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 36.8, depth_mm: 13.4, weight_g: 37, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: w-800h-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715101643id_/https://www.casio.com/europe/watches/casio/product.W-800H-1AV/'
+    discontinued: false
+  - id: w-800h-1bv
+    ref: W-800H-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102538id_/https://www.casio.com/europe/watches/casio/product.W-800H-1BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 36.8, depth_mm: 13.4, weight_g: 37, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: w-800h-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102538id_/https://www.casio.com/europe/watches/casio/product.W-800H-1BV/'
+    discontinued: false
+  - id: w-800h-2av
+    ref: W-800H-2AV
+    source:
+      { url: 'https://web.archive.org/web/20240119144134id_/https://www.casio.com/us/watches/casio/product.W-800H-2AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 36.8, depth_mm: 13.4, weight_g: 37, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: w-800h-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144134id_/https://www.casio.com/us/watches/casio/product.W-800H-2AV/'
+    discontinued: false
+  - id: w-800h-5av
+    ref: W-800H-5AV
+    source:
+      { url: 'https://web.archive.org/web/20240119144204id_/https://www.casio.com/us/watches/casio/product.W-800H-5AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 36.8, depth_mm: 13.4, weight_g: 37, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: w-800h-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144204id_/https://www.casio.com/us/watches/casio/product.W-800H-5AV/'
+    discontinued: false
+  - id: w-800hg-9av
+    ref: W-800HG-9AV
+    source:
+      { url: 'https://web.archive.org/web/20220810073601id_/https://www.casio.com/us/watches/casio/product.W-800HG-9AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 44.2, width_mm: 36.8, depth_mm: 13.4, weight_g: 37, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light]
+    discontinued: false
+    image: w-800hg-9av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721132130id_/https://www.casio.com/id/watches/casio/product.W-800HG-9AV/'
+  - id: w-800hm-3av
+    ref: W-800HM-3AV
+    source:
+      { url: 'https://web.archive.org/web/20220818074823id_/https://www.casio.com/us/watches/casio/product.W-800HM-3AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 43.9, width_mm: 35.7, depth_mm: 12.5, weight_g: 32, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: w-800hm-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220818074823id_/https://www.casio.com/us/watches/casio/product.W-800HM-3AV/'
+    discontinued: false
