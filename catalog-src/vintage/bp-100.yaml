@@ -1,0 +1,60 @@
+# BP-100 — added 2026-08-25 by /finish-casio.
+#
+# NEITHER MODERN ROSTER KNOWS THIS WATCH. Not in Casio's current sitemap, not in
+# the archive's per-segment CDX index — the survey returned no references at all
+# from either roster. The 1990 blood-pressure watch never had a page on the
+# casio.com the archive kept.
+#
+# THE VOCABULARY CANNOT SAY WHAT THIS WATCH IS FOR, and that is the one thing
+# worth knowing about it. The case prints BLOOD PRESSURE MONITOR, the strap
+# prints PLS EKG, there is a SENSOR pad under the display and the dial is
+# labelled SYSTOLIC and DIASTOLIC. The page's own function icon says "I can
+# check your pulse". `src/catalog/vocabulary.ts` has altimeter, barometer,
+# compass, thermometer, step-counter, tide-graph, moon-data and sunrise-sunset
+# under Sensors, and nothing for a pulse, an ECG or a blood pressure.
+#
+# So `features` below lists only what the vocabulary can express, and this watch
+# is filed beside CPA-100 — catalogued, correct, and unable to state its own
+# purpose. Guardrail 4 is explicit that a vocabulary value is never added as a
+# side effect of a seeding run, so this is REPORTED AND LEFT: it is the client's
+# decision whether the Sensors group gains a pulse value, and if it does, this
+# entry and CPA-100 are the two that want re-reading.
+#
+# HOW THE PAGE WAS READ. DWL pairs a label div with a value div by id; the
+# reader was calibrated against F-87W, already reviewed here, and reproduced its
+# year, module and case exactly first. The case is the `> CASING` row (Resin),
+# not the `> BRACELET NO.` row ([Resin]) that sits next to it.
+#
+# The photograph is the strongest reference proof taken in this line: the strap
+# moulds BP-100 in raised letters. That is the "prefer a dial that prints the
+# model name" test passing outright rather than an alt tag being trusted.
+#
+# ABSENT AND WHY:
+#   * `display` — the page never describes the dial. Its title slot reads
+#     "Digital", but that slot holds "Casiotron" and "Calculator" on the sibling
+#     pages read in this same run, so it is a CATEGORY and not a display type.
+#   * `movement` — the page states none.
+#   * the light icon — the vocabulary has five specific light values and no
+#     generic one, so no light feature is claimed. Same as A168 and AL-180.
+#   * `discontinued` — never written by hand; availability.ts measures it (D59).
+
+series:
+  id: bp-100
+  name: BP-100
+  line: vintage
+
+models:
+  - id: bp-100
+    ref: BP-100
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_bp-100', kind: community }
+    year: 1990
+    module: '900'
+    case: { material: resin }
+    water_resistance_m: 50
+    features: [alarm, stopwatch]
+    image: bp-100
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_bp-100'
+    discontinued: true
