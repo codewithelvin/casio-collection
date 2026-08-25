@@ -1,0 +1,65 @@
+# S-16 — added 2026-08-25 by /finish-casio.
+#
+# NEITHER MODERN ROSTER KNOWS THIS WATCH. Not in Casio's current sitemap, not in
+# the archive's per-segment CDX index — the survey returned no references at all
+# from either. A 1976 watch never had a page on the casio.com the archive kept.
+#
+# THE SIBLING OF S-15, WHICH IS ALREADY HERE. Same module (18), same year
+# (1976), same stainless case, same Casiotron collection — and a separate
+# reference with a separate id, not a colourway of it. The `aka` follows S-15's
+# exactly, and so does its warning: Casiotron is a COLLECTION NAME, not a
+# reference prefix. TRN-50 carries the same `aka` and is the 2024 reissue.
+#
+# THE PAGE SPELLS IT `s-16` IN LOWER CASE, in its slug, its title and its image
+# alt. The reference is written `S-16` here, which is the same normalisation
+# S-15 already carries and is a case fix rather than a new claim — DWL's own
+# index prints CASIO-s-16 beside CASIO-CS-16 and CASIO-GS-16, all lower-cased
+# the same way.
+#
+# HOW THE PAGE WAS READ. DWL pairs a label div with a value div by id; the
+# reader was calibrated against F-87W, already reviewed in this repo, and
+# reproduced its catalogued year, module and case exactly before it was trusted.
+# The case is the `> CASING` row (Stainless steel), not the `> BRACELET NO.` row
+# ([SS]) beside it.
+#
+# ABSENT AND WHY:
+#   * `display` — the page never describes the dial, and its title slot reads
+#     "Casiotron", which is a collection: the sibling pages read in this same
+#     run put "Digital" and "Calculator" in that slot. So it is not a display.
+#   * `movement` — the page states none.
+#   * `water_resistance_m` — the WATER RESIST row says NONE, which is a
+#     statement that it has none rather than a measured zero (D27).
+#   * `calendar` — THE PHOTOGRAPH prints TIME MEMORY, STOP WATCH and CALENDAR on
+#     the dial, and S-15 does carry `calendar`. This page's function icons are
+#     only "I have a light" and "I have a chronograph", so `calendar` here would
+#     be read off the picture rather than the page. S-15's came from S-15's own
+#     page. Left absent deliberately, and it is the obvious thing to re-read if
+#     anybody finds a second source.
+#   * the light icon — the vocabulary has five specific light values and no
+#     generic one, so no light feature is claimed.
+#   * `discontinued` — never written by hand; availability.ts measures it (D59).
+#
+# The page also states an ORIGINAL PRICE of $148.00. There is no price field in
+# the schema, so it is recorded here and nowhere else.
+
+series:
+  id: s-16
+  name: S-16
+  line: vintage
+  # The page's own collection. See the header: a collection name, not a prefix.
+  aka: [Casiotron]
+
+models:
+  - id: s-16
+    ref: S-16
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_s-16', kind: community }
+    year: 1976
+    module: '18'
+    case: { material: stainless steel }
+    features: [stopwatch]
+    image: s-16
+    image_credit:
+      author: The Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_s-16'
+    discontinued: true
