@@ -9,13 +9,21 @@
 # is asked for what the other says.
 #
 # DELIBERATELY NOT WRITTEN:
-#   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * any field the page does not state. Absent means unknown, never zero (D27).
+#
+# `family: wave-ceptor` was proposed by the seeding run and written by the client
+# on 2026-08-25, which is the order guardrail 4a asks for — a family is a human's
+# judgement and never a side effect of a crawl. It is a well-supported one: WV is
+# Casio's own abbreviation for Wave Ceptor, the family already exists in
+# `lines.yaml` holding LCW-M100 and WVA-M630, and **every entry below carries
+# `radio-controlled`**, read off its own product page rather than off the prefix.
+# That last part is what makes it a reading rather than a guess about the name.
 
 series:
   id: wv-200
   name: WV-200
   line: vintage
+  family: wave-ceptor
 
 models:
   - id: wv-200a-1av
