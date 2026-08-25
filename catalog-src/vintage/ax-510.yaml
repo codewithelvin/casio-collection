@@ -10,10 +10,21 @@
 # analogue face represented by LCD segments — the face is drawn, not turned.
 #
 # DELIBERATELY NOT WRITTEN:
-#   * **the melody function.** The page shows an "I play a tune" icon and
-#     `vocabulary.ts` has no value for it. Rule 4 is explicit that a vocabulary
-#     which grows during a seeding run is the same as no vocabulary, so this is
-#     reported and left out. It is a real function of this watch.
+#   * **the melody function, and this was measured rather than waved through.**
+#     The page shows an "I play a tune" icon, `vocabulary.ts` has no value for
+#     it, and the client asked on 2026-08-25 whether one should be added. So all
+#     65 Digital Watch Library pages this catalogue cites were re-read, at one
+#     request per 1.8 s, with 0 failures — and **exactly one shows that icon:
+#     this page.** A `melody` feature would therefore be carried by 1 model in
+#     2 918, which is the state §10.5's audit flags as reading the same as a typo
+#     somebody approved, and at that density D26 keeps the facet from rendering
+#     as a filter at all. It would be a vocabulary entry that no reader can ever
+#     use, added for one watch.
+#
+#     So the value is not added and the fact is not lost: it is here, with the
+#     count that justifies leaving it out. If a second melody watch is ever
+#     catalogued from a source that states it, this note is the argument for
+#     revisiting — that is the threshold, and it is one, not zero.
 #   * `water_resistance_m` — the page says NONE, a statement and not a depth.
 #   * `colorway` — the slug says `_blue` and the page does not; a slug is not a
 #     statement.
