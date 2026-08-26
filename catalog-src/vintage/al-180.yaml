@@ -3,10 +3,36 @@
 # NEITHER ROSTER KNOWS THIS WATCH, and that is the finding rather than a failure
 # to look. Casio's current sitemap does not list AL-180, and one domain-wide CDX
 # query over casio.com returned zero captures for `product.AL-*` — every host,
-# every path, every locale the archive holds. A159's 45 captures were fetched in
-# the same run as a control, so that zero is a measurement and not the archive's
-# cooldown wearing the shape of an answer. A 1986 watch never had a page on the
-# casio.com the archive kept.
+# every path, every locale the archive holds. A 1987 watch never had a page on
+# the casio.com the archive kept.
+#
+# BUT CASIO.COM ITSELF KNOWS IT, on a surface neither roster covers. Both rosters
+# ask about PRODUCT pages — the sitemap lists what is sold, and the CDX filter
+# matches `product.<REF>`. Casio's 50th-anniversary Heritage timeline is neither:
+# `/intl/watches/50th/Heritage/1980s/` names 29 models against the years they
+# launched, AL-180 among them, and it is an official casio.com page. So "no
+# product page" was true and "Casio has nothing on this watch" was not. That page
+# supplied both the year below and the photograph, and it is invisible to
+# survey.ts by construction — a third casio.com surface worth asking about
+# whenever a pre-web model reports NO-PAGE.
+#
+# RE-PROVEN 2026-08-26, because the original measurement asked the wrong
+# question. This entry was committed at 06:21 on 2026-08-24; the fix for
+# `--deep` STRIPPING THE HYPHEN out of the series id landed at 22:23 the same
+# day. So the query behind the paragraph above was `product.AL180`, which no
+# real URL matches, and the A159 control that was supposed to catch exactly this
+# has no hyphen in it either — which is why it answered 45 and proved nothing
+# about the target. Re-measured with hyphenated controls in one run at one pace:
+#
+#   product.F-91W    250 captures  (control — the archive is answering)
+#   product.AE-1600   17 captures  (control — hyphenated filter works)
+#   product.AL-180     0 captures  (target, twice in the same run)
+#   product.AL180      0 captures  (the old bug, for comparison)
+#
+# The zero was right, but it was right by luck. It is now a measurement.
+# Note `survey.ts --deep` cannot re-check this itself: classify() `continue`s on
+# a CATALOGUED reference before it ever reaches the deep query, so a finished
+# series can never issue one. The numbers above came from a standalone probe.
 #
 # D44's route is closed too: Casio hosts no operation guide for module 668
 # (qw668_EN.pdf → HTTP 404). So the only source that states anything is The
@@ -21,6 +47,25 @@
 # model, so the fuller page is the source; the 1986/1987 disagreement is reported
 # and not averaged.
 #
+# Both pages re-read 2026-08-26 with `casio-a168` interleaved as a live control
+# (DWL hangs rather than 404s, so a hang only means absence beside a control that
+# answers). Both 200 in ~3 s, control 200 on both interleaves. Titles differ —
+# "AL-180 - Digital" here, "AL-180 - Solar" there — and the five icon alts on
+# this page are exactly the mapping below: bell "I have an alarm", run "I have a
+# chronograph", dual "I have a dual times", solar "I run by the sun", light "I
+# have a light". Choosing the fuller page is not improvised: SKILL.md's sourcing
+# rules say "whichever page carries more, use that one", and t-2000.yaml is the
+# precedent — two DWL pages disagreeing on case material, resolved by keeping
+# `source`'s value and reporting the conflict.
+#
+# THE GALLERY DOES NOT LIST THIS PAGE. All 48 pages of
+# `/DWL/gallery/Casio/all/` were enumerated on 2026-08-26 (857 anchors, 0
+# failures) and the only AL entry is `casio-al-1801`, the sparser one. So the
+# gallery is one entry per watch and NOT an index of pages: `casio-al-180` is
+# real, answers 200, and is absent from it. Do not read a slug's absence from the
+# gallery as the page not existing. The same enumeration is what rules out
+# variants — no AL-180W, AL-180A or any other AL-18x appears in the 857.
+#
 # What is absent and why:
 #   display              the page never describes the dial. Its title says
 #                        "Vintage Digital Watch" of every watch on the site, and
@@ -28,8 +73,9 @@
 #                        a thing the page states. Left absent, as on A168.
 #   water_resistance_m   the page's "Water resist" row has no value. The dial
 #                        prints the words, which is not a depth.
-#   image                both candidate photographs are refused below.
 #   discontinued         never written by hand — availability.ts measures it.
+#
+# `image` is no longer in that list: see the photograph note on the model.
 #
 # `features` drops the page's "I have a light" icon: the vocabulary has five
 # specific light values and no generic one, exactly as on A168. "I have a
@@ -45,21 +91,45 @@ models:
   - id: al-180
     ref: AL-180
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio-al-180', kind: community }
-    year: 1986
+    # 1986 until 2026-08-27, off the DWL page in `source`. Casio's own Heritage
+    # timeline says 1987, and an official source outranks a community one, so the
+    # disagreement this file used to report is now settled rather than noted.
+    # It is not a bare pairing: the year tag and the title are adjacent nodes
+    # sharing one repo:modifyDate, and Casio's DAM names the asset
+    # `1987_AL-180_SQ.png` — the year and the reference in one filename.
+    # Note this agrees with `casio-al-1801`, the DWL page NOT used as `source`.
+    year: 1987
+    year_source: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
     movement: solar
     module: '668'
     case: { material: chrome plated base-metal }
     features: [alarm, stopwatch, dual-time]
-    # Two photographs exist and both are refused, so this is a decision waiting
-    # rather than a search nobody ran.
-    #   _large/508.jpg   this page's own shot, and the only one whose case side
-    #                    reads AL-180 — but 254 x 236, under the 300 px floor.
-    #                    Published, it would render softer than the typographic
-    #                    tile it replaces, and that tile is a designed state.
-    #   _large/1621.jpg  400 x 500 and unmistakably the same watch (ALARM CHRONO,
-    #                    WATER RESIST, BATTERYLESS on the dial) — but it belongs
-    #                    to the OTHER DWL entry, and it is a lit backdrop with a
-    #                    hangtag in frame rather than the plain ground §10.3 asks
-    #                    for.
-    image: null
+    # PHOTOGRAPHED 2026-08-27 from Casio's own Heritage page, which ends a
+    # refusal this file carried since 2026-08-24. Four DWL candidates were
+    # examined and all four were rightly refused — `508.jpg` is 254 x 236, under
+    # the 300 px floor, and a scratched example with the DIGITAL WATCH watermark
+    # across the dial; `1621.jpg`, `2590.jpg` and `3580.jpg` are 400 x 500 from
+    # one shoot, on a lit teal backdrop with a hangtag in frame and the same
+    # watermark, and all three belong to the OTHER DWL entry. None of the four
+    # could prove the reference: their filenames are numeric and no dial or
+    # caseback in any of them prints AL-180.
+    #
+    # This one does prove it, which is why it is here and they are not. Casio
+    # named the file `1987-al-180-sq.png` (DAM: `1987_AL-180_SQ.png`), so the
+    # filename test — the test §10.3 actually trusts — passes on the reference
+    # itself. 900 x 900, plain white ground, watch filling the frame, no
+    # watermark and no props. The solar cell above the LCD corroborates
+    # `movement: solar` and the dial reads ALARM CHRONO / WATER RESIST /
+    # BATTERYLESS, matching every feature claimed below.
+    #
+    # THE URL IS THE ONE THE PAGE NAMED, not a derived asset path. The page's
+    # `data-cmp-src` carries a `{.width}` placeholder and its `data-asset` is a
+    # DAM path; neither was used. The `<img src>` it actually rendered was taken
+    # verbatim, because deriving a path here is how A159WA-N1 got served
+    # A159W-N1's byte-identical photograph.
+    image: al-180
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
     discontinued: true
