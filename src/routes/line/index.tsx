@@ -42,6 +42,34 @@ export default function LineRoute() {
   const [view, setView] = useViewState()
   const { data, isPending, isError, refetch } = useCatalog()
 
+  /**
+   * **"Switching line feels like nothing happens" is real, and a skeleton here
+   * cannot fix it.** Recorded so the next person does not spend the afternoon
+   * this took.
+   *
+   * `isPending` below is only true for the *first* fetch — the catalogue is one
+   * file and cached after that — so changing line does no I/O and there is
+   * nothing to show a spinner for. The cost is render: this page builds one grid
+   * per series, and `useReveal`'s own measurement puts a rebuild of
+   * `/line/vintage` at **1 082 ms at a 4x CPU throttle**.
+   *
+   * The obvious fix is `useDeferredValue(slug)` plus a skeleton while the two
+   * disagree. It was implemented, and measured in Chromium at a 6x throttle:
+   * **zero frames** had the new heading without the new cards. React Router 7
+   * wraps every navigation in `startTransition` by default, so `slug` and any
+   * value deferred from it move inside the same transition and never disagree
+   * for a paint. The code was dead and is gone.
+   *
+   * That transition is also the *cause* of the complaint rather than incidental:
+   * React deliberately keeps the old screen up until the new one is ready, which
+   * from the reader's side is precisely "nothing happened".
+   *
+   * A real fix has to come from whatever owns the click — `useTransition`'s
+   * `isPending` in the rail, next to the line being navigated to — and that is a
+   * change to `LineNav`, not to this file. Note the constraint before starting:
+   * §12 deliberately made the rail real `<a>` elements, so it must not become
+   * buttons.
+   */
   const line = data ? lineBySlug(data, slug) : undefined
 
   const groups = useMemo(() => {
@@ -223,8 +251,24 @@ export default function LineRoute() {
 
           {/* The page's own sentinel, below the last revealed section. Present
               only while sections remain, so it cannot sit at the end of a
-              finished page observing nothing. */}
-          {revealed.done ? null : <div ref={revealed.sentinel} aria-hidden="true" />}
+              finished page observing nothing.
+
+              **The skeleton above it is the "more is coming" affordance.** The
+              reveal is local — nothing downloads (see `useReveal`) — so there is
+              no loading period to put a spinner in; what the reader needs to
+              know is that the page has not ended, which was previously only
+              discoverable by scrolling into a gap and waiting. It is
+              `aria-hidden` because it says nothing a screen reader wants: the
+              real sections follow, and announcing "Loading" into the middle of a
+              list is noise. */}
+          {revealed.done ? null : (
+            <>
+              <div aria-hidden="true">
+                <SkeletonGrid count={4} />
+              </div>
+              <div ref={revealed.sentinel} aria-hidden="true" />
+            </>
+          )}
         </>
       )}
     </div>

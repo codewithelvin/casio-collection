@@ -1,6 +1,6 @@
 import { Card, Col, Row, Skeleton } from 'antd'
 import { t } from '../i18n/strings'
-import { GRID_GUTTER, GRID_SPANS } from './WatchGrid'
+import { GRID_GUTTER, GRID_SPANS } from './gridSpans'
 
 /**
  * §8.5 — cards render into a skeleton of **the same geometry** while loading, so

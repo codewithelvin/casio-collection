@@ -2,19 +2,20 @@ import { Col, Row } from 'antd'
 import { useMemo } from 'react'
 import type { PublishedModel, PublishedSeries } from '../catalog/schema.ts'
 import { WatchCard } from './WatchCard'
+import { SkeletonGrid } from './SkeletonGrid'
+import { GRID_GUTTER, GRID_SPANS } from './gridSpans'
 import { useReveal } from './useReveal'
 
 /**
  * §8.5 — the grid. AntD `Row`/`Col`, `gutter={[16,16]}`, responsive spans
  * straight out of §8.2's table.
  *
- * The spans are the table read into AntD's 24 columns: 12 → 2 up, 8 → 3 up,
- * 6 → 4 up, 4 → 6 up. `md` is 768 and `xl` is 1200, which are the two numbers
- * §8.2 actually names, so the breakpoints are the specification rather than an
- * approximation of it.
+ * The two constants moved to `./gridSpans` when this file started importing
+ * `SkeletonGrid`, which imports them — see that file for why the cycle matters.
+ * They are re-exported here because `collection` and `profile` build their own
+ * grids from them and there is no reason to churn those imports.
  */
-export const GRID_SPANS = { xs: 12, md: 8, lg: 6, xl: 4 } as const
-export const GRID_GUTTER: [number, number] = [16, 16]
+export { GRID_GUTTER, GRID_SPANS } from './gridSpans'
 
 /**
  * How many cards render before the reader has scrolled anywhere.
@@ -90,8 +91,21 @@ export function WatchGrid({
         ))}
       </Row>
       {/* Present only while there is more, so it cannot sit at the end of a
-          finished list quietly observing nothing. */}
-      {done ? null : <div ref={sentinel} aria-hidden="true" />}
+          finished list quietly observing nothing.
+
+          The skeleton is the affordance that the list continues. D58's reveal is
+          local — no fetch, nothing to wait for — so this is not a spinner over a
+          request; it is the difference between "the grid ended" and "there is
+          more just below". `aria-hidden` for the same reason as the line page's:
+          the rows it stands for are about to be real. */}
+      {done ? null : (
+        <>
+          <div aria-hidden="true">
+            <SkeletonGrid count={4} />
+          </div>
+          <div ref={sentinel} aria-hidden="true" />
+        </>
+      )}
     </>
   )
 }
