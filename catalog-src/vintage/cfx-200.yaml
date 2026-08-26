@@ -1,0 +1,54 @@
+# CFX-200 — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.CFX-200` page — which for a 1983 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# THE TWO SOURCES DISAGREE ON THE YEAR and the disagreement is resolved rather
+# than averaged: DWL says 1985, Casio's Heritage page says 1983, and an
+# official source outranks a community one. `year_source` names the page that
+# states it, which is the shape schema.ts describes for a year read off a page
+# that is not the entry's own.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   water_resistance_m   the page's Water resist row states no depth. Words are
+#                        not a measurement, so nothing is claimed.
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: cfx-200
+  name: CFX-200
+  line: vintage
+  aka: ['Scientific']
+
+models:
+  - id: cfx-200
+    ref: CFX-200
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-cfx-200', kind: community }
+    year: 1983
+    year_source: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    module: '197'
+    case: { material: chrome plated base-metal }
+    features: [alarm, stopwatch, calculator]
+    # The page shows BOTH a calculator icon and a scientific-calculator one.
+    # `calculator` carries the first; the vocabulary has no value for the
+    # refinement, so the entry claims a calculator and not a scientific one.
+    # Casio's own product photograph, named `1983_CFX-200_SQ.png` in its DAM, so
+    # the filename test passes on the reference itself. 900 x 900, plain white
+    # ground. The URL taken is the `<img src>` the page rendered, never the
+    # `data-cmp-src` template or the DAM path.
+    image: cfx-200
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    discontinued: true

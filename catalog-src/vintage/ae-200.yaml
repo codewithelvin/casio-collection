@@ -1,0 +1,52 @@
+# AE-200 — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.AE-200` page — which for a 1986 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# THE TWO SOURCES DISAGREE ON THE YEAR and the disagreement is resolved rather
+# than averaged: DWL says 1985, Casio's Heritage page says 1986, and an
+# official source outranks a community one. `year_source` names the page that
+# states it, which is the shape schema.ts describes for a year read off a page
+# that is not the entry's own.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   water_resistance_m   the page's Water resist row states no depth. Words are
+#                        not a measurement, so nothing is claimed.
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: ae-200
+  name: AE-200
+  line: vintage
+  aka: ['Twin Graph']
+
+models:
+  - id: ae-200
+    ref: AE-200
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-ae-200', kind: community }
+    year: 1986
+    year_source: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    module: '588'
+    case: { material: chrome plated base-metal }
+    features: [alarm, stopwatch, dual-time, countdown-timer]
+    # Casio's asset covers two references
+    # (`1986_AE-20_AE-200_SQ.png`) and it resolves to THIS one: the dial prints
+    # TWIN-GRAPH, which is the AKA DWL gives AE-200, and the chrome case on a
+    # steel bracelet matches what DWL states for AE-200. AE-20 is the other name
+    # on the file and is not what is pictured.
+    image: ae-200
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    discontinued: true

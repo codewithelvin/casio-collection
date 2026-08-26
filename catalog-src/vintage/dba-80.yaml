@@ -1,0 +1,48 @@
+# DBA-80 — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.DBA-80` page — which for a 1987 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# Both sources say 1987, so `year` needs no separate citation — it comes off
+# the page already named in `source`.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   water_resistance_m   the page's Water resist row states no depth. Words are
+#                        not a measurement, so nothing is claimed.
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: dba-80
+  name: DBA-80
+  line: vintage
+  aka: ['Phone Dialer']
+
+models:
+  - id: dba-80
+    ref: DBA-80
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dba-802', kind: community }
+    year: 1987
+    module: '555'
+    case: { material: resin }
+    features: [alarm, stopwatch, countdown-timer]
+    # Casio's asset covers two references
+    # (`1987_DBA-80_DBA-800_SQ.png`) and resolves to THIS one: the watch is a
+    # black resin case on a resin strap, which is what DWL states for DBA-80.
+    # DBA-800 is chrome plated resin on a B-259A steel band, so it is not the one
+    # pictured — see dba-800.yaml, which refuses this same file for that reason.
+    image: dba-80
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    discontinued: true

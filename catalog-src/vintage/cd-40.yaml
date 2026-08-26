@@ -1,0 +1,48 @@
+# CD-40 — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.CD-40` page — which for a 1984 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# THE TWO SOURCES DISAGREE ON THE YEAR and the disagreement is resolved rather
+# than averaged: DWL says 1983, Casio's Heritage page says 1984, and an
+# official source outranks a community one. `year_source` names the page that
+# states it, which is the shape schema.ts describes for a year read off a page
+# that is not the entry's own.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   water_resistance_m   the page's Water resist row states no depth. Words are
+#                        not a measurement, so nothing is claimed.
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: cd-40
+  name: CD-40
+  line: vintage
+
+models:
+  - id: cd-40
+    ref: CD-40
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-cd-40', kind: community }
+    year: 1984
+    year_source: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    module: '246'
+    case: { material: resin }
+    features: [alarm, stopwatch, databank, calculator]
+    # Casio's asset is named `1984_CD-40_CD-401_SQ.png` — ONE
+    # photograph for TWO references — and the watch in it is a steel case on a
+    # steel bracelet. DWL states CD-40 is a **resin** case with a **resin** band,
+    # so the watch pictured is CD-401 and not this reference. Publishing it would
+    # put the other model's photograph on this entry, which is the A159WA-N1
+    # failure with a different filename. Refused on the evidence, not unexamined.
+    image: null
+    discontinued: true

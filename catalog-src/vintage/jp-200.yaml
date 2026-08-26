@@ -1,0 +1,43 @@
+# JP-200W — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.JP-200W` page — which for a 1992 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# Both sources say 1992, so `year` needs no separate citation — it comes off
+# the page already named in `source`.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: jp-200
+  name: JP-200W
+  line: vintage
+
+models:
+  - id: jp-200w
+    ref: JP-200W
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-jp-200w', kind: community }
+    year: 1992
+    module: '1009'
+    case: { material: resin }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, countdown-timer, databank]
+    # Casio photographs this watch on its Heritage page, and the
+    # file was never archived. CDX returns [] for the asset at every timestamp,
+    # measured 2026-08-27 against two 1980s assets in the same run that returned
+    # 200 — so this is an absence and not the archive declining to answer. Nothing
+    # else usable was found: DWL's own shot is the only other candidate and it is
+    # the same page already cited, below the 300 px floor.
+    image: null
+    discontinued: true

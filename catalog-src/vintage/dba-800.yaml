@@ -1,0 +1,44 @@
+# DBA-800 — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.DBA-800` page — which for a 1987 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# Both sources say 1987, so `year` needs no separate citation — it comes off
+# the page already named in `source`.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   water_resistance_m   the page's Water resist row states no depth. Words are
+#                        not a measurement, so nothing is claimed.
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: dba-800
+  name: DBA-800
+  line: vintage
+  aka: ['Phone Dialer']
+
+models:
+  - id: dba-800
+    ref: DBA-800
+    source: { url: 'http://www.digital-watch.com/DWL/1work/dba-800_casio', kind: community }
+    year: 1987
+    module: '555'
+    case: { material: chrome plated resin }
+    features: [alarm, stopwatch, dual-time, countdown-timer]
+    # Casio's only asset for this watch is shared with DBA-80
+    # (`1987_DBA-80_DBA-800_SQ.png`) and the watch in it is a black resin case on
+    # a resin strap. DWL states DBA-800 is **chrome plated resin** on a **B-259A
+    # steel** band, so the file shows DBA-80 and not this reference. Refused for
+    # the same measured reason dba-80.yaml accepts it.
+    image: null
+    discontinued: true

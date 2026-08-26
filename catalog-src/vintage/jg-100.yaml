@@ -1,0 +1,52 @@
+# JG-100 — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.JG-100` page — which for a 1994 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# THE TWO SOURCES DISAGREE ON THE YEAR and the disagreement is resolved rather
+# than averaged: DWL says 1995, Casio's Heritage page says 1994, and an
+# official source outranks a community one. `year_source` names the page that
+# states it, which is the shape schema.ts describes for a year read off a page
+# that is not the entry's own.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   water_resistance_m   the page's Water resist row states no depth. Words are
+#                        not a measurement, so nothing is claimed.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: jg-100
+  name: JG-100
+  line: vintage
+
+models:
+  - id: jg-100
+    ref: JG-100
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_jg-100', kind: community }
+    year: 1994
+    year_source: 'https://web.archive.org/web/20250408044251id_/https://www.casio.com/intl/watches/Heritage/1990s/'
+    movement: solar
+    module: '1268'
+    case: { material: resin }
+    features: [alarm, stopwatch]
+    # The page also shows a game icon ("I have a game"). The vocabulary has no
+    # value for it, and rule 4 forbids adding one inside a seeding run, so the
+    # entry is silent about the feature this watch is actually known for. Reported
+    # as an open question rather than invented.
+    # Casio photographs this watch on its Heritage page, and the
+    # file was never archived. CDX returns [] for the asset at every timestamp,
+    # measured 2026-08-27 against two 1980s assets in the same run that returned
+    # 200 — so this is an absence and not the archive declining to answer. Nothing
+    # else usable was found: DWL's own shot is the only other candidate and it is
+    # the same page already cited, below the 300 px floor.
+    image: null
+    discontinued: true

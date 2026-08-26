@@ -1,0 +1,45 @@
+# TS-1000 — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.TS-1000` page — which for a 1982 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# Both sources say 1982, so `year` needs no separate citation — it comes off
+# the page already named in `source`.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: ts-1000
+  name: TS-1000
+  line: vintage
+
+models:
+  - id: ts-1000
+    ref: TS-1000
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_ts-1000', kind: community }
+    year: 1982
+    module: '215'
+    case: { material: resin }
+    water_resistance_m: 100
+    features: [alarm, stopwatch, countdown-timer]
+    # Casio's own product photograph, named `1982_TS-1000_SQ.png` in its DAM, so
+    # the filename test passes on the reference itself. 900 x 900, plain white
+    # ground. The URL taken is the `<img src>` the page rendered, never the
+    # `data-cmp-src` template or the DAM path.
+    image: ts-1000
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    discontinued: true

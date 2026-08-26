@@ -1,0 +1,50 @@
+# JP-100W — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.JP-100W` page — which for a 1987 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# Both sources say 1987, so `year` needs no separate citation — it comes off
+# the page already named in `source`.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: jp-100
+  name: JP-100W
+  line: vintage
+  aka: ['Pulse Check']
+
+models:
+  - id: jp-100w
+    ref: JP-100W
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-jp-100w', kind: community }
+    year: 1987
+    module: '509'
+    case: { material: resin }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, countdown-timer]
+    # CASIO MISNAMED ITS OWN FILE. The asset is
+    # `1987_JB-100W_SQ.png` — JB, not JP — while the page's own title text for
+    # the block says JP-100W. The photograph settles it: the dial prints
+    # PULSECHECK and WATER RESIST 50M and carries a PULSE button over a sensor,
+    # matching DWL's AKA [Pulse Check], its 50M, and its pulse icon. So the
+    # page's placement and the dial agree, and one filename disagrees. Used, with
+    # the typo recorded rather than tidied away — D2 makes the id permanent and
+    # the id here comes from the two sources that agree.
+    image: jp-100w
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    discontinued: true

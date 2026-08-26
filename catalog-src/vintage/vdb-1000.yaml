@@ -1,0 +1,48 @@
+# VDB-1000 — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.VDB-1000` page — which for a 1991 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# Both sources say 1991, so `year` needs no separate citation — it comes off
+# the page already named in `source`.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   water_resistance_m   the page's Water resist row states no depth. Words are
+#                        not a measurement, so nothing is claimed.
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: vdb-1000
+  name: VDB-1000
+  line: vintage
+  aka: ['Touch Screen']
+
+models:
+  - id: vdb-1000
+    ref: VDB-1000
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_vdb-1000', kind: community }
+    year: 1991
+    module: '658'
+    case: { material: power coated }
+    features: [alarm, stopwatch, dual-time, calculator]
+    # `case.material` is what the page states, "Power coated" — almost
+    # certainly its typo for powder coated. Recorded as read rather than
+    # corrected: rule 2 is that a field comes off the page.
+    # Casio photographs this watch on its Heritage page, and the
+    # file was never archived. CDX returns [] for the asset at every timestamp,
+    # measured 2026-08-27 against two 1980s assets in the same run that returned
+    # 200 — so this is an absence and not the archive declining to answer. Nothing
+    # else usable was found: DWL's own shot is the only other candidate and it is
+    # the same page already cited, below the 300 px floor.
+    image: null
+    discontinued: true

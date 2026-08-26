@@ -1,0 +1,51 @@
+# MAP-100 — added 2026-08-27 by /finish-casio, from the two sources that
+# describe it: The Digital Watch Library states the specification, and Casio's own
+# 50th-anniversary Heritage timeline states the year.
+#
+# Neither `survey.ts` roster knows this watch — no entry in Casio's current
+# sitemap and no archived `product.MAP-100` page — which for a 1989 model is
+# the expected answer rather than a finding. The specification therefore comes
+# from a `community` source, labelled as one, exactly as A168 and AL-180 are.
+#
+# THE TWO SOURCES DISAGREE ON THE YEAR and the disagreement is resolved rather
+# than averaged: DWL says 1990, Casio's Heritage page says 1989, and an
+# official source outranks a community one. `year_source` names the page that
+# states it, which is the shape schema.ts describes for a year read off a page
+# that is not the entry's own.
+#
+# What is absent and why:
+#   display              the page never describes the dial; its title calls every
+#                        watch on the site a "Vintage Digital Watch".
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: map-100
+  name: MAP-100
+  line: vintage
+
+models:
+  - id: map-100
+    ref: MAP-100
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_map-1001', kind: community }
+    year: 1989
+    year_source: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    module: '693'
+    case: { material: resin }
+    water_resistance_m: 50
+    features: [multi-alarm, stopwatch, countdown-timer]
+    # `multi-alarm` rather than `alarm`: this page's icon alt is "I have
+    # multiple alarms", which is its own vocabulary value.
+    # Casio's own product photograph, named `1989_MAP-100_SQ.png` in its DAM, so
+    # the filename test passes on the reference itself. 900 x 900, plain white
+    # ground. The URL taken is the `<img src>` the page rendered, never the
+    # `data-cmp-src` template or the DAM path.
+    image: map-100
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135526id_/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    discontinued: true
