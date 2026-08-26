@@ -1,0 +1,202 @@
+# GA-140 — seeded 2026-08-26 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ga-140
+  name: GA-140
+  line: g-shock
+
+models:
+  - id: ga-140-1a1
+    ref: GA-140-1A1
+    source:
+      { url: 'https://web.archive.org/web/20240714221607id_/https://www.casio.com/europe/watches/gshock/product.GA-140-1A1/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140-1a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221607id_/https://www.casio.com/europe/watches/gshock/product.GA-140-1A1/'
+  - id: ga-140-1a4
+    ref: GA-140-1A4
+    source:
+      { url: 'https://web.archive.org/web/20240714221609id_/https://www.casio.com/europe/watches/gshock/product.GA-140-1A4/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140-1a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221609id_/https://www.casio.com/europe/watches/gshock/product.GA-140-1A4/'
+  - id: ga-140-2a
+    ref: GA-140-2A
+    source:
+      { url: 'https://web.archive.org/web/20240214084611id_/https://www.casio.com/za/watches/gshock/product.GA-140-2A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084611id_/https://www.casio.com/za/watches/gshock/product.GA-140-2A/'
+  - id: ga-140-4a
+    ref: GA-140-4A
+    source:
+      { url: 'https://web.archive.org/web/20240214084620id_/https://www.casio.com/za/watches/gshock/product.GA-140-4A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084620id_/https://www.casio.com/za/watches/gshock/product.GA-140-4A/'
+  - id: ga-140-6a
+    ref: GA-140-6A
+    source:
+      { url: 'https://web.archive.org/web/20240714221604id_/https://www.casio.com/europe/watches/gshock/product.GA-140-6A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140-6a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240714221604id_/https://www.casio.com/europe/watches/gshock/product.GA-140-6A/'
+  - id: ga-140ar-1a
+    ref: GA-140AR-1A
+    source:
+      { url: 'https://web.archive.org/web/20211206062728id_/https://www.casio.com/my/watches/gshock/product.GA-140AR-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140ar-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211206062728id_/https://www.casio.com/my/watches/gshock/product.GA-140AR-1A/'
+  - id: ga-140bmc-1a
+    ref: GA-140BMC-1A
+    source:
+      { url: 'https://web.archive.org/web/20211206054100id_/https://www.casio.com/my/watches/gshock/product.GA-140BMC-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140bmc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211206054100id_/https://www.casio.com/my/watches/gshock/product.GA-140BMC-1A/'
+  - id: ga-140ct-1a
+    ref: GA-140CT-1A
+    source:
+      { url: 'https://web.archive.org/web/20240214084618id_/https://www.casio.com/za/watches/gshock/product.GA-140CT-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140ct-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084618id_/https://www.casio.com/za/watches/gshock/product.GA-140CT-1A/'
+  - id: ga-140dc-1a
+    ref: GA-140DC-1A
+    source:
+      { url: 'https://web.archive.org/web/20211206051048id_/https://www.casio.com/my/watches/gshock/product.GA-140DC-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140dc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211206051048id_/https://www.casio.com/my/watches/gshock/product.GA-140DC-1A/'
+  - id: ga-140gb-1a1
+    ref: GA-140GB-1A1
+    source:
+      { url: 'https://web.archive.org/web/20240403025655id_/https://www.casio.com/ph/watches/gshock/product.GA-140GB-1A1/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140gb-1a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240403025655id_/https://www.casio.com/ph/watches/gshock/product.GA-140GB-1A1/'
+  - id: ga-140gb-1a2
+    ref: GA-140GB-1A2
+    source:
+      { url: 'https://web.archive.org/web/20211206063223id_/https://www.casio.com/my/watches/gshock/product.GA-140GB-1A2/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140gb-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20211206063223id_/https://www.casio.com/my/watches/gshock/product.GA-140GB-1A2/'
+  - id: ga-140gm-1a1
+    ref: GA-140GM-1A1
+    source:
+      { url: 'https://web.archive.org/web/20240106032421id_/https://www.casio.com/us/watches/gshock/product.GA-140GM-1A1/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140gm-1a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240106032421id_/https://www.casio.com/us/watches/gshock/product.GA-140GM-1A1/'
+  - id: ga-140mg-1a
+    ref: GA-140MG-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715021521id_/https://www.casio.com/europe/watches/gshock/product.GA-140MG-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 55, width_mm: 51.2, depth_mm: 16.9, weight_g: 72, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, shock-resistant, magnetic-resistant, mineral-glass]
+    image: ga-140mg-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021521id_/https://www.casio.com/europe/watches/gshock/product.GA-140MG-1A/'
