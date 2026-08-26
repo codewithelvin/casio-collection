@@ -114,3 +114,63 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250523170640id_/https://www.casio.com/sg/watches/casio/product.A159WA-N1/'
     discontinued: false
+
+# ADDED 2026-08-26: A159WEVJ-7, the one reference in this series whose source is
+# NEITHER Casio nor the archive — and the reason is that it is too new, not too
+# obscure.
+#
+# The survey has been calling this NO-PAGE, which was accurate and read as a dead
+# end: Casio's own current sitemap carries `product.A159WEVJ-7/`, and a
+# domain-wide CDX query over casio.com for the whole `A159` prefix returned 46
+# captures across five references and not one of them this. That looks like the
+# shape of a watch nobody can source. It is the opposite. The A159WEVJ pair was
+# released in **April 2026**, four months ago; the archive has no capture because
+# it has not been round yet, and casio.com answers 403 to everything that is not
+# a person — every locale of the product page, the `a159wevj` family page, and
+# the Japanese path, all measured today.
+#
+# So the routes were walked in the order the skill sets out, and the fourth one
+# answered. `casio.com/intl/news/` was read in full (D54): 60-odd dated releases
+# through 2026-07-21, and no A159WEVJ among them, so there is no news release to
+# date this from. The Digital Watch Library hangs on every A159 slug — proven
+# against an interleaved control, `casio-a168`, which answered 200 in 7 s in the
+# same run at the same pace. What is left is a shop, and one that prints a
+# specification table rather than a paragraph.
+#
+# WHAT IS NOT WRITTEN, and each for a stated reason:
+#   * `water_resistance_m` — the page says "Water Resistant" and no figure. A
+#     community write-up says 30 m; that is a different page, and one page per
+#     model is the rule that stops a spec table being assembled out of three
+#     sites. The four entries above carry no figure either.
+#   * `year` — nothing readable states one. April 2026 is well reported, but by
+#     the blogs rather than by this entry's source, and D25 does not care how
+#     confident the inference is.
+#   * `module` — not stated, and never guessed from a neighbour.
+#   * `discontinued` — measured for the whole catalogue by `availability.ts`
+#     (D59), never written by hand.
+#
+# `display: digital` is the one field here its siblings lack, and it is not an
+# inference: "Casio Standard digital" is the source page's own product name. The
+# others were read by a mechanical reader off pages that print no display row.
+#
+# The photograph is Casio's own product render, taken from the same page as every
+# field — `A159WEVJ_7.jpg`, the reference with a boundary after it. It is 600 px
+# wide, so `catalog:images` warns that the 2x file is not really 2x and it is
+# right: the 400 px render is true and the retina one is upscaled. Above the
+# 300 px floor, inside budget, and a larger original is worth taking if one turns
+# up. Credited to the shop under D11, as the WatchOutz entries in the G-SHOCK
+# files are.
+  - id: a159wevj-7
+    ref: A159WEVJ-7
+    source:
+      { url: 'https://www.timekeepershop.com/en/product/193942-202048/a159wevj-7', kind: retailer }
+    display: digital
+    movement: quartz
+    case: { height_mm: 36.8, width_mm: 33.2, depth_mm: 8.5, weight_g: 45, material: 'Resin / Chrome plated' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal, led-light]
+    image: a159wevj-7
+    image_credit:
+      author: Timekeeper Shop
+      licence: rights-reserved
+      url: 'https://www.timekeepershop.com/en/product/193942-202048/a159wevj-7'
+    discontinued: false
