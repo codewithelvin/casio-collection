@@ -1,0 +1,186 @@
+# GA-B001 — seeded 2026-08-26 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ga-b001
+  name: GA-B001
+  line: g-shock
+
+models:
+  - id: ga-b001-1a
+    ref: GA-B001-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715022233id_/https://www.casio.com/europe/watches/gshock/product.GA-B001-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022233id_/https://www.casio.com/europe/watches/gshock/product.GA-B001-1A/'
+  - id: ga-b001-4a
+    ref: GA-B001-4A
+    source:
+      { url: 'https://web.archive.org/web/20240715022236id_/https://www.casio.com/europe/watches/gshock/product.GA-B001-4A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022236id_/https://www.casio.com/europe/watches/gshock/product.GA-B001-4A/'
+  - id: ga-b001ah-6a
+    ref: GA-B001AH-6A
+    source:
+      { url: 'https://web.archive.org/web/20231216203451id_/https://www.casio.com/sg/watches/gshock/product.GA-B001AH-6A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001ah-6a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231216203451id_/https://www.casio.com/sg/watches/gshock/product.GA-B001AH-6A/'
+  - id: ga-b001cbr-1a
+    ref: GA-B001CBR-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715022010id_/https://www.casio.com/europe/watches/gshock/product.GA-B001CBR-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001cbr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022010id_/https://www.casio.com/europe/watches/gshock/product.GA-B001CBR-1A/'
+  - id: ga-b001cbr-2a
+    ref: GA-B001CBR-2A
+    source:
+      { url: 'https://web.archive.org/web/20240715022007id_/https://www.casio.com/europe/watches/gshock/product.GA-B001CBR-2A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001cbr-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022007id_/https://www.casio.com/europe/watches/gshock/product.GA-B001CBR-2A/'
+  - id: ga-b001cbrs-6a
+    ref: GA-B001CBRS-6A
+    source:
+      { url: 'https://web.archive.org/web/20240220183711id_/https://www.casio.com/intl/watches/gshock/product.GA-B001CBRS-6A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001cbrs-6a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240220183711id_/https://www.casio.com/intl/watches/gshock/product.GA-B001CBRS-6A/'
+  - id: ga-b001cy-1a
+    ref: GA-B001CY-1A
+    source:
+      { url: 'https://web.archive.org/web/20240119144348id_/https://www.casio.com/in/watches/gshock/product.GA-B001CY-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001cy-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119144348id_/https://www.casio.com/in/watches/gshock/product.GA-B001CY-1A/'
+  - id: ga-b001fl-4a
+    ref: GA-B001FL-4A
+    source:
+      { url: 'https://web.archive.org/web/20240915201345id_/https://www.casio.com/intl/watches/gshock/product.GA-B001FL-4A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001fl-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240915201345id_/https://www.casio.com/intl/watches/gshock/product.GA-B001FL-4A/'
+  - id: ga-b001g-1a
+    ref: GA-B001G-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715022228id_/https://www.casio.com/europe/watches/gshock/product.GA-B001G-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001g-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022228id_/https://www.casio.com/europe/watches/gshock/product.GA-B001G-1A/'
+  - id: ga-b001g-2a
+    ref: GA-B001G-2A
+    source:
+      { url: 'https://web.archive.org/web/20240715022230id_/https://www.casio.com/europe/watches/gshock/product.GA-B001G-2A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001g-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022230id_/https://www.casio.com/europe/watches/gshock/product.GA-B001G-2A/'
+  - id: ga-b001mw-8a
+    ref: GA-B001MW-8A
+    source:
+      { url: 'https://web.archive.org/web/20241207141552id_/https://www.casio.com/jp/watches/gshock/product.GA-B001MW-8A/', kind: official }
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51 }
+    water_resistance_m: 200
+    features: [bluetooth]
+    image: ga-b001mw-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241207141552id_/https://www.casio.com/jp/watches/gshock/product.GA-B001MW-8A/'
+  - id: ga-b001sf-7a
+    ref: GA-B001SF-7A
+    source:
+      { url: 'https://web.archive.org/web/20240715064738id_/https://www.casio.com/europe/watches/gshock/product.GA-B001SF-7A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 42.5, width_mm: 46, depth_mm: 13.8, weight_g: 51, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, shock-resistant, mineral-glass]
+    image: ga-b001sf-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064738id_/https://www.casio.com/europe/watches/gshock/product.GA-B001SF-7A/'
