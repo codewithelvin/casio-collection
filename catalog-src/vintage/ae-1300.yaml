@@ -65,11 +65,35 @@ models:
     case: { height_mm: 45, width_mm: 42.1, depth_mm: 12.5, weight_g: 40, material: 'Resin' }
     water_resistance_m: 100
     features: [alarm, world-time, stopwatch, full-auto-calendar, hourly-time-signal, led-light, afterglow]
-    # REFUSED, not overlooked. The one archived capture of this reference names
-    # no photograph of it, and `backfill-photos.ts` read the same page again and
-    # found none. The other three AE-1300WH entries here each have their own,
-    # which is what makes reaching for one of them tempting and wrong: they are
-    # different colourways of the same case, and a derived asset path is how one
-    # reference comes to publish another's picture.
-    image: null
+    # PHOTOGRAPH FOUND 2026-08-26, off a retailer rather than off `source`.
+    #
+    # It read `image: null` until today, and that refusal was right rather than
+    # lazy: the one archived capture of this reference names no photograph of it,
+    # and `backfill-photos.ts` read the same page twice and found none. The other
+    # three AE-1300WH entries here each have their own, which is what made
+    # reaching for one of them tempting and wrong — they are different colourways
+    # of the same case, and a derived asset path is how one reference comes to
+    # publish another's picture.
+    #
+    # What was never tried was a page that is not Casio's. This entry is
+    # `discontinued: false` — Casio still lists the reference — so the reason
+    # there is no archived product shot is that the archive never captured a page
+    # that is still live, and casio.com answers 403 to everything that is not a
+    # person. A shop that stocks it has the same photograph.
+    #
+    # `AE-1300WH-8AV_01.png`, 1000x1000, passes the filename test with a boundary
+    # after the reference: it cannot be a longer code caught by a substring. And
+    # it is the right watch on its own evidence — a grey bezel over a black face,
+    # which is what WatchPilot's own specification rows say ("Case Colour: Grey",
+    # "Dial Colour: Black") and what distinguishes this reference from the black,
+    # blue and red ones above it.
+    #
+    # `colorway` is still not written. Those two rows are on the credit's page and
+    # not on this entry's `source`, and one page per model is the rule that keeps
+    # a spec table from being assembled out of three sites.
+    image: ae-1300wh-8av
+    image_credit:
+      author: WatchPilot
+      licence: rights-reserved
+      url: 'https://www.watchpilot.com/products/casio-ae-1300wh-8avdf-black-grey-digital-watch'
     discontinued: false
