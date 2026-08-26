@@ -76,6 +76,10 @@ describe('the header search (FR-2)', () => {
         line: 'vintage',
         series: 'f-91w',
         source: { url: 'https://example.com/f-91w', kind: 'community' as const },
+        // Search reads the browsable set, and a model with no photograph is
+        // withheld from it — without this the twelve colourways this test builds
+        // to reach the cap are all invisible and nothing is capped.
+        image: `f-91w-${i + 10}`,
       })),
     }
     // Both artefacts from the same twelve-model catalogue (§6.2's split). Serving

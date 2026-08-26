@@ -151,6 +151,14 @@ export function auditCatalogue(input: AuditInput): AuditReport {
   // Every count in this report is over browsable models. A tombstone is stock
   // that was withdrawn (§6.2) — auditing it for a missing photograph would be
   // asking somebody to go and find a picture of an entry that is retired.
+  //
+  // **This is deliberately NOT the same test as `browsable` in `client.ts`,
+  // which since 2026-08-26 also withholds a model with no photograph.** The
+  // audit must keep counting those: they are the work list. Section 2 of this
+  // very report is the list of missing photographs, and filtering them out here
+  // would empty the section that exists to name them. So the audit's number is
+  // larger than the site's, on purpose — it counts what is in `catalog-src`,
+  // not what a visitor can browse.
   const browsable = all.filter((model) => !model.tombstone)
 
   const sources = { official: 0, retailer: 0, community: 0 }

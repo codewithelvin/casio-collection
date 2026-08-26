@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { auditCatalogue, renderAudit, type AuditInput } from './audit.ts'
 import { buildCatalog } from './build.ts'
-import { aLinesFile, aModel, aSeries, aSource } from './catalog.fixtures.ts'
+import { aLinesFile, aModel, aSeries, aShownModel, aShownSource } from './catalog.fixtures.ts'
 import type { CatalogSource } from './integrity.ts'
 
 /**
@@ -27,12 +27,12 @@ function auditOf(source: CatalogSource, extra: Partial<AuditInput> = {}) {
 
 describe('1 — unsourced fields', () => {
   it('reports each optional field against the models of its own series', () => {
-    const source = aSource({
+    const source = aShownSource({
       series: [
         aSeries({
           models: [
-            aModel({ id: 'dw-5600e-1v', ref: 'DW-5600E-1V', year: 1996, movement: 'quartz' }),
-            aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', movement: 'quartz' }),
+            aShownModel({ id: 'dw-5600e-1v', ref: 'DW-5600E-1V', year: 1996, movement: 'quartz' }),
+            aShownModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', movement: 'quartz' }),
           ],
         }),
       ],
@@ -48,11 +48,14 @@ describe('1 — unsourced fields', () => {
   })
 
   it('names the models carrying nothing beyond id, ref and source', () => {
-    const source = aSource({
+    const source = aShownSource({
       series: [
         aSeries({
           models: [
-            aModel({ id: 'dw-5600e-1v', year: 1996 }),
+            // One photographed, so the series publishes at all; one genuinely
+            // bare, which is the subject. `aShownModel` would give the bare one
+            // an image and a credit and leave this test with nothing to find.
+            aShownModel({ id: 'dw-5600e-1v', year: 1996 }),
             aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1' }),
           ],
         }),
@@ -63,10 +66,10 @@ describe('1 — unsourced fields', () => {
   })
 
   it('leaves out a series with nothing browsable in it', () => {
-    const source = aSource({
+    const source = aShownSource({
       series: [
         aSeries({
-          models: [aModel({ tombstone: { reason: 'never existed' } })],
+          models: [aShownModel({ tombstone: { reason: 'never existed' } })],
         }),
       ],
     })
@@ -78,12 +81,12 @@ describe('1 — unsourced fields', () => {
   })
 
   it('counts the source kinds, which is the FR-D1 number a reader sees', () => {
-    const source = aSource({
+    const source = aShownSource({
       series: [
         aSeries({
           models: [
-            aModel({ id: 'dw-5600e-1v' }),
-            aModel({
+            aShownModel({ id: 'dw-5600e-1v' }),
+            aShownModel({
               id: 'dw-5600c-1',
               ref: 'DW-5600C-1',
               source: { url: 'https://wiki/x', kind: 'community' },
@@ -99,13 +102,13 @@ describe('1 — unsourced fields', () => {
 
 describe('2 — missing images', () => {
   it('separates a model with no photograph from one whose file is not there', () => {
-    const source = aSource({
+    const source = aShownSource({
       images: new Set(['dw-5600e-1v.webp']),
       series: [
         aSeries({
           models: [
-            aModel({ id: 'dw-5600e-1v', image: 'dw-5600e-1v' }),
-            aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', image: null }),
+            aShownModel({ id: 'dw-5600e-1v', image: 'dw-5600e-1v' }),
+            aShownModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', image: null }),
           ],
         }),
       ],
@@ -117,21 +120,21 @@ describe('2 — missing images', () => {
   })
 
   it('reports a webp no model claims, at either width, once', () => {
-    const source = aSource({
+    const source = aShownSource({
       images: new Set(['ga-2100-1a1.webp', 'ga-2100-1a1@2x.webp']),
-      series: [aSeries({ models: [aModel({ image: null })] })],
+      series: [aSeries({ models: [aShownModel({ image: null })] })],
     })
 
     expect(auditOf(source).images.orphans).toEqual(['ga-2100-1a1'])
   })
 
   it('does not ask anyone to photograph a tombstone', () => {
-    const source = aSource({
+    const source = aShownSource({
       series: [
         aSeries({
           models: [
-            aModel({ id: 'dw-5600e-1v', image: null }),
-            aModel({ id: 'dw-5600-dupe', ref: 'DW-5600-DUPE', tombstone: { reason: 'duplicate' } }),
+            aShownModel({ id: 'dw-5600e-1v', image: null }),
+            aShownModel({ id: 'dw-5600-dupe', ref: 'DW-5600-DUPE', tombstone: { reason: 'duplicate' } }),
           ],
         }),
       ],
@@ -143,7 +146,7 @@ describe('2 — missing images', () => {
 
 describe('3 — out-of-vocabulary facets', () => {
   it('carries through the values the schema refused', () => {
-    const report = auditOf(aSource(), {
+    const report = auditOf(aShownSource(), {
       parseFailures: [
         {
           check: '6',
@@ -159,12 +162,12 @@ describe('3 — out-of-vocabulary facets', () => {
   })
 
   it('names a facet value carried by exactly one model', () => {
-    const source = aSource({
+    const source = aShownSource({
       series: [
         aSeries({
           models: [
-            aModel({ id: 'dw-5600e-1v', movement: 'quartz', features: ['stopwatch'] }),
-            aModel({
+            aShownModel({ id: 'dw-5600e-1v', movement: 'quartz', features: ['stopwatch'] }),
+            aShownModel({
               id: 'dw-5600bb-1',
               ref: 'DW-5600BB-1',
               movement: 'quartz',
@@ -181,8 +184,8 @@ describe('3 — out-of-vocabulary facets', () => {
   })
 
   it('says nothing about a year with one model in it — that is a thin catalogue, not a typo', () => {
-    const source = aSource({
-      series: [aSeries({ models: [aModel({ year: 1996 })] })],
+    const source = aShownSource({
+      series: [aSeries({ models: [aShownModel({ year: 1996 })] })],
     })
 
     expect(auditOf(source).vocabulary.singletons).toEqual([])
@@ -191,29 +194,29 @@ describe('3 — out-of-vocabulary facets', () => {
 
 describe('5 — id drift', () => {
   it('reports a published id that is no longer in the source (D2)', () => {
-    const source = aSource({ publishedIds: ['dw-5600e-1v', 'f-91w-1'] })
+    const source = aShownSource({ publishedIds: ['dw-5600e-1v', 'f-91w-1'] })
 
     expect(auditOf(source).drift.vanished).toEqual(['f-91w-1'])
   })
 
   it('reports the ids the next build makes permanent', () => {
-    const source = aSource({ publishedIds: ['dw-5600e-1v'] })
+    const source = aShownSource({ publishedIds: ['dw-5600e-1v'] })
 
     expect(auditOf(source).drift.pending).toEqual(['gw-m5610u-1'])
   })
 
   it('lists tombstones with and without a successor', () => {
-    const source = aSource({
+    const source = aShownSource({
       series: [
         aSeries({
           models: [
-            aModel({ id: 'dw-5600e-1v' }),
-            aModel({
+            aShownModel({ id: 'dw-5600e-1v' }),
+            aShownModel({
               id: 'dw-5600-dupe',
               ref: 'DW-5600-DUPE',
               tombstone: { reason: 'dup', replaced_by: 'dw-5600e-1v' },
             }),
-            aModel({
+            aShownModel({
               id: 'dw-5600-ghost',
               ref: 'DW-5600-GHOST',
               tombstone: { reason: 'never existed' },
@@ -253,13 +256,14 @@ describe('a catalogue that would not parse', () => {
 
 describe('rendering', () => {
   it('reads as a work list: the field, how many lack it, and which ones', () => {
-    const source = aSource({
+    const source = aShownSource({
       images: new Set<string>(),
       publishedIds: [],
       series: [
         aSeries({
           models: [
-            aModel({ id: 'dw-5600e-1v', year: 1996, features: ['stopwatch'] }),
+            aShownModel({ id: 'dw-5600e-1v', year: 1996, features: ['stopwatch'] }),
+            // Bare on purpose — see the note on the `bare` test above.
             aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1' }),
           ],
         }),
@@ -282,11 +286,11 @@ describe('rendering', () => {
   })
 
   it('says so plainly when there is nothing to report', () => {
-    const source = aSource({
+    const source = aShownSource({
       images: new Set(['dw-5600e-1v.webp', 'dw-5600e-1v@2x.webp']),
       publishedIds: ['dw-5600e-1v'],
       series: [
-        aSeries({ models: [aModel({ image: 'dw-5600e-1v', year: 1996, movement: 'quartz' })] }),
+        aSeries({ models: [aShownModel({ image: 'dw-5600e-1v', year: 1996, movement: 'quartz' })] }),
       ],
     })
 
@@ -299,9 +303,9 @@ describe('rendering', () => {
 
   it('caps a long list of ids rather than printing a screen of them', () => {
     const models = Array.from({ length: 9 }, (_, index) =>
-      aModel({ id: `dw-5600-${index}`, ref: `DW-5600-${index}` }),
+      aShownModel({ id: `dw-5600-${index}`, ref: `DW-5600-${index}` }),
     )
-    const source = aSource({ lines: aLinesFile(), series: [aSeries({ models })] })
+    const source = aShownSource({ lines: aLinesFile(), series: [aSeries({ models })] })
 
     expect(renderAudit(auditOf(source))).toContain('+3 more')
   })
@@ -322,12 +326,12 @@ describe('rendering', () => {
   })
 
   it('prints the one thing a seeding session most wants to see: a series with every field filled', () => {
-    const source = aSource({
+    const source = aShownSource({
       images: new Set(['dw-5600e-1v.webp', 'dw-5600e-1v@2x.webp']),
       series: [
         aSeries({
           models: [
-            aModel({
+            aShownModel({
               image: 'dw-5600e-1v',
               name: 'Origin',
               year: 1996,

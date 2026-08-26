@@ -139,8 +139,14 @@ export function buildCatalog(source: CatalogSource): CatalogPayload {
   for (const entry of entries) {
     const sorted = [...entry.models].sort((a, b) => a.ref.localeCompare(b.ref))
     // A tombstone is reachable forever (FR-3.6) but is not stock: it is
-    // published, and it is counted nowhere.
-    const browsable = sorted.filter((model) => !model.tombstone)
+    // published, and it is counted nowhere. An entry with no photograph is
+    // withheld on the same terms — see `browsable` in `client.ts` for why, and
+    // for why that is a reversal of D29 rather than an application of it.
+    //
+    // Both sides must apply the same test or the counts lie: this one bakes
+    // `series.count` and the facets into catalog.json, and the client filters
+    // the grid. A series reading "20 watches" above five cards is the bug.
+    const browsable = sorted.filter((model) => !model.tombstone && model.image)
 
     for (const model of sorted) {
       models.push(publishModel(model, entry.series.line, entry.series.id))
@@ -162,17 +168,26 @@ export function buildCatalog(source: CatalogSource): CatalogPayload {
       familiesInUse.set(entry.series.line, forLine)
     }
 
-    series.push(
-      compact({
-        id: entry.series.id,
-        name: entry.series.name,
-        slug: entry.series.id,
-        line: entry.series.line,
-        family: entry.series.family,
-        aka: entry.series.aka && entry.series.aka.length > 0 ? entry.series.aka : undefined,
-        count: browsable.length,
-      }),
-    )
+    // The same sentence as the line, family and edition rules, a fourth time:
+    // only a series that actually holds a browsable model is published. This
+    // one only started to matter when photograph-less entries began being
+    // withheld — 11 single-reference series in Vintage and Edifice hold exactly
+    // one model with no picture, and without this they publish a page with a
+    // heading, a count of zero and nothing under it. Their models stay
+    // reachable by their own URL, exactly as a tombstone does.
+    if (browsable.length > 0) {
+      series.push(
+        compact({
+          id: entry.series.id,
+          name: entry.series.name,
+          slug: entry.series.id,
+          line: entry.series.line,
+          family: entry.series.family,
+          aka: entry.series.aka && entry.series.aka.length > 0 ? entry.series.aka : undefined,
+          count: browsable.length,
+        }),
+      )
+    }
   }
 
   // Only lines that actually hold a model are published — D51, and the same
@@ -227,7 +242,9 @@ export function buildCatalog(source: CatalogSource): CatalogPayload {
 
   const payload = CATALOG_PAYLOAD.parse({ lines, families, series, editions, models, facets: {} })
 
-  const browsable = payload.models.filter((model) => !model.tombstone)
+  // Same test as above, for the same reason: a facet counting watches the grid
+  // will not show sends the reader to an empty result.
+  const browsable = payload.models.filter((model) => !model.tombstone && model.image)
   const facets: Record<string, FacetSummary> = {}
   for (const field of FACET_FIELDS) facets[field] = facetOf(browsable, field)
 

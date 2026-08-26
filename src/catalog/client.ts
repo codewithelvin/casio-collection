@@ -154,9 +154,30 @@ export function useCatalogIndex(): UseQueryResult<CatalogIndex, Error> {
  * A retired entry is published and reachable forever (FR-3.6) and counted
  * nowhere. Every grid and every count goes through this; `modelById` does not,
  * which is exactly the asymmetry D2 asks for.
+ *
+ * **An entry with no photograph is withheld on the same terms, and this reverses
+ * D29.** D29 made the typographic tile a primary state, on the reasoning that a
+ * card with no picture is still a real answer to "does this watch exist". The
+ * client's decision on 2026-08-26 is the opposite one: a watch nobody can show
+ * you does not belong in a grid, and it waits there until a photograph is found
+ * rather than being published without one.
+ *
+ * It is withheld, not retired. The two are different facts and only this filter
+ * knows the difference:
+ *
+ *   * the entry keeps every sourced field and its id stays in
+ *     `.published-ids.json`, so D2 holds and no tombstone is invented;
+ *   * `modelById` still resolves it, so a direct URL and a shared link work;
+ *   * `joinCollection` reads `catalog.models` whole and deliberately not this
+ *     function, so a watch somebody already owns never disappears from their
+ *     own collection — the case that comment was written for;
+ *   * the moment `image` is set, it appears. Nothing has to be un-done.
+ *
+ * 347 G-SHOCK references sit here today, every one of them with a written reason
+ * at `image: null` explaining which photograph routes were walked.
  */
 export function browsable(models: readonly PublishedModel[]): PublishedModel[] {
-  return models.filter((model) => !model.tombstone)
+  return models.filter((model) => !model.tombstone && model.image)
 }
 
 /**

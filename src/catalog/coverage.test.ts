@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { buildCatalog } from './build.ts'
-import { aModel, aSeries, aSource } from './catalog.fixtures.ts'
+import { aSeries, aShownModel, aShownSource } from './catalog.fixtures.ts'
 import { coverageOf, coverageTable, renderCoverageTable } from './coverage.ts'
 
 /**
@@ -11,14 +11,14 @@ import { coverageOf, coverageTable, renderCoverageTable } from './coverage.ts'
  */
 
 const catalogue = buildCatalog(
-  aSource({
+  aShownSource({
     series: [
       aSeries({
         models: [
-          aModel({ year: 1996, display: 'digital', features: ['stopwatch'] }),
-          aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', year: 2018, display: 'digital' }),
-          aModel({ id: 'dw-5600c-1', ref: 'DW-5600C-1' }),
-          aModel({ id: 'dw-5600d-1', ref: 'DW-5600D-1' }),
+          aShownModel({ year: 1996, display: 'digital', features: ['stopwatch'] }),
+          aShownModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', year: 2018, display: 'digital' }),
+          aShownModel({ id: 'dw-5600c-1', ref: 'DW-5600C-1' }),
+          aShownModel({ id: 'dw-5600d-1', ref: 'DW-5600D-1' }),
         ],
       }),
     ],
@@ -64,7 +64,7 @@ describe('the coverage table', () => {
 
   it('says the catalogue is unseeded rather than printing a grid of zeroes', () => {
     const empty = buildCatalog(
-      aSource({ series: [aSeries({ models: [aModel({ tombstone: { reason: 'retired' } })] })] }),
+      aShownSource({ series: [aSeries({ models: [aShownModel({ tombstone: { reason: 'retired' } })] })] }),
     )
     const text = renderCoverageTable(
       coverageTable(

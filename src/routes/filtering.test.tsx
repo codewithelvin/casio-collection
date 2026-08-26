@@ -65,9 +65,13 @@ describe('filtering a grid (FR-1.3, FR-1.6)', () => {
   it('reaches an undated watch through Unknown year and nothing else (D5, D25)', async () => {
     renderApp('/line/g-shock?year=unknown')
 
-    // DW-5600BB-1 carries the five required fields and nothing more. Every other
-    // way of filtering this page hides it; this is the option that does not.
-    expect(await screen.findByRole('link', { name: 'DW-5600BB-1' })).toBeInTheDocument()
+    // DW-5600C-1 carries a photograph and no year. Every other way of filtering
+    // this page hides it; this is the option that does not.
+    //
+    // It used to be DW-5600BB-1, which carries the five required fields and
+    // nothing more — including no photograph, which is why it is now withheld
+    // from every grid and cannot be the subject here.
+    expect(await screen.findByRole('link', { name: 'DW-5600C-1' })).toBeInTheDocument()
     expect(cardsNamed(/^GA-2100-1A1$/)).toHaveLength(0)
   })
 
@@ -158,15 +162,19 @@ describe('sorting (FR-1.4)', () => {
     renderApp('/line/g-shock/dw-5600?sort=year-desc')
 
     await screen.findByRole('link', { name: 'DW-5600E-1V' })
-    // DW-5600E-1V is 1996; DW-5600BB-1 has no year at all. Undated first would
+    // DW-5600E-1V is 1996; DW-5600C-1 has no year at all. Undated first would
     // read as an odd order rather than as a fault, which is how it survives.
-    expect(cardsNamed(/^DW-5600/)).toEqual(['DW-5600E-1V', 'DW-5600BB-1'])
+    //
+    // The undated one used to be DW-5600BB-1. It has no photograph, so it is
+    // withheld from the grid and an order over it could not be observed — and
+    // the assertion would have "passed" over a one-element list.
+    expect(cardsNamed(/^DW-5600/)).toEqual(['DW-5600E-1V', 'DW-5600C-1'])
   })
 
   it('defaults to reference A→Z, which puts the same two the other way round', async () => {
     renderApp('/line/g-shock/dw-5600')
 
     await screen.findByRole('link', { name: 'DW-5600E-1V' })
-    expect(cardsNamed(/^DW-5600/)).toEqual(['DW-5600BB-1', 'DW-5600E-1V'])
+    expect(cardsNamed(/^DW-5600/)).toEqual(['DW-5600C-1', 'DW-5600E-1V'])
   })
 })

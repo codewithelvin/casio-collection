@@ -7,11 +7,21 @@ import {
   serialiseIndex,
   stamp,
 } from './build.ts'
-import { aModel, aSeries, aSource, anEdition } from './catalog.fixtures.ts'
+/**
+ * **Almost everything here builds from `aShownSource` / `aShownModel`.** Since
+ * 2026-08-26 a model with no photograph is withheld from every count and its
+ * series is not published at all, so a fixture without pictures makes
+ * `catalog.series` empty and every count zero — which reads as a bug in
+ * `buildCatalog` rather than a fixture with no photographs in it.
+ *
+ * `aModel` is still imported and still used once, by the test that asserts a
+ * published model carries *exactly* the five required fields.
+ */
+import { aModel, aSeries, aShownModel, aShownSource, anEdition } from './catalog.fixtures.ts'
 
 describe('the published artefact (§6.2)', () => {
   it('keeps the lines in editorial order and counts what is in them', () => {
-    const catalog = buildCatalog(aSource())
+    const catalog = buildCatalog(aShownSource())
     expect(catalog.lines.map((line) => line.id)).toEqual(['g-shock'])
     expect(catalog.lines.map((line) => line.order)).toEqual([0])
     expect(catalog.lines.find((line) => line.id === 'g-shock')?.count).toBe(2)
@@ -22,7 +32,7 @@ describe('the published artefact (§6.2)', () => {
     // used to publish with a count of 0, and the front door rendered that as a
     // "Not catalogued yet" card — a category with nothing behind it, which is
     // the thing D51 exists to make impossible rather than merely absent.
-    expect(buildCatalog(aSource()).lines.map((line) => line.id)).not.toContain('vintage')
+    expect(buildCatalog(aShownSource()).lines.map((line) => line.id)).not.toContain('vintage')
   })
 
   it('takes a line’s order from where it is declared, not from what survives', () => {
@@ -31,13 +41,13 @@ describe('the published artefact (§6.2)', () => {
     // the survivors instead would reshuffle the front door every time a line is
     // seeded, which is exactly what lines.yaml's "no order: field" note forbids.
     const catalog = buildCatalog(
-      aSource({
+      aShownSource({
         series: [
           aSeries({
             file: 'catalog-src/vintage/f-91w.yaml',
             folder: 'vintage',
             series: { id: 'f-91w', name: 'F-91W', line: 'vintage' },
-            models: [aModel({ id: 'f-91w-1', ref: 'F-91W-1' })],
+            models: [aShownModel({ id: 'f-91w-1', ref: 'F-91W-1' })],
           }),
         ],
       }),
@@ -47,7 +57,7 @@ describe('the published artefact (§6.2)', () => {
   })
 
   it('writes the line and the series onto every model, because the YAML does not repeat them', () => {
-    const catalog = buildCatalog(aSource())
+    const catalog = buildCatalog(aShownSource())
     for (const model of catalog.models) {
       expect(model.line).toBe('g-shock')
       expect(['dw-5600', 'gw-m5610']).toContain(model.series)
@@ -56,7 +66,11 @@ describe('the published artefact (§6.2)', () => {
 
   it('omits an unknown field instead of publishing a null', () => {
     const catalog = buildCatalog(
-      aSource({
+      aShownSource({
+        // `aModel`, not `aShownModel`: this asserts the published shape is
+        // exactly the five required fields, and a photograph would add two more.
+        // The model is withheld from grids as a result, which does not matter —
+        // `catalog.models` carries it either way, and that is what is read here.
         series: [aSeries({ models: [aModel({ year: null, name: null, features: [] })] })],
       }),
     )
@@ -71,14 +85,14 @@ describe('the published artefact (§6.2)', () => {
     // Casio* and *nobody has looked* the same absent key — and the availability
     // filter cannot be built on top of that.
     const catalog = buildCatalog(
-      aSource({
+      aShownSource({
         series: [
           aSeries({
             models: [
-              aModel({ id: 'a-1', ref: 'A-1', discontinued: false }),
-              aModel({ id: 'b-1', ref: 'B-1', discontinued: true }),
-              aModel({ id: 'c-1', ref: 'C-1' }),
-              aModel({ id: 'd-1', ref: 'D-1', discontinued: null }),
+              aShownModel({ id: 'a-1', ref: 'A-1', discontinued: false }),
+              aShownModel({ id: 'b-1', ref: 'B-1', discontinued: true }),
+              aShownModel({ id: 'c-1', ref: 'C-1' }),
+              aShownModel({ id: 'd-1', ref: 'D-1', discontinued: null }),
             ],
           }),
         ],
@@ -95,8 +109,8 @@ describe('the published artefact (§6.2)', () => {
 
   it('drops an empty case object rather than publishing an empty one', () => {
     const catalog = buildCatalog(
-      aSource({
-        series: [aSeries({ models: [aModel({ case: { material: null, width_mm: null } })] })],
+      aShownSource({
+        series: [aSeries({ models: [aShownModel({ case: { material: null, width_mm: null } })] })],
       }),
     )
     expect(catalog.models[0]?.case).toBeUndefined()
@@ -104,12 +118,12 @@ describe('the published artefact (§6.2)', () => {
 
   it('publishes a tombstone and counts it nowhere (D2, FR-3.6)', () => {
     const catalog = buildCatalog(
-      aSource({
+      aShownSource({
         series: [
           aSeries({
             models: [
-              aModel(),
-              aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', tombstone: { reason: 'duplicate' } }),
+              aShownModel(),
+              aShownModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1', tombstone: { reason: 'duplicate' } }),
             ],
           }),
         ],
@@ -122,13 +136,13 @@ describe('the published artefact (§6.2)', () => {
   })
 
   it('publishes a family only where a series uses it, in vocabulary order (D32)', () => {
-    const withFamily = buildCatalog(aSource())
+    const withFamily = buildCatalog(aShownSource())
     expect(withFamily.families).toEqual([
       { id: 'square', name: 'The square', line: 'g-shock', order: 0 },
     ])
 
     const withoutFamily = buildCatalog(
-      aSource({
+      aShownSource({
         series: [aSeries({ series: { id: 'dw-5600', name: 'DW-5600', line: 'g-shock' } })],
       }),
     )
@@ -136,25 +150,25 @@ describe('the published artefact (§6.2)', () => {
   })
 
   it('gives a series the id as its slug', () => {
-    const catalog = buildCatalog(aSource())
+    const catalog = buildCatalog(aShownSource())
     expect(catalog.series.every((series) => series.slug === series.id)).toBe(true)
   })
 
   it('produces the same bytes from the same source, every time', () => {
     // Guardrail 7, and the reason the version can be a digest of the content.
-    const a = digestInput(buildCatalog(aSource()))
-    const b = digestInput(buildCatalog(aSource()))
+    const a = digestInput(buildCatalog(aShownSource()))
+    const b = digestInput(buildCatalog(aShownSource()))
     expect(a).toBe(b)
   })
 
   it('sorts models by line order, then series, then reference', () => {
     const catalog = buildCatalog(
-      aSource({
+      aShownSource({
         series: [
           aSeries({
-            models: [aModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1' }), aModel()],
+            models: [aShownModel({ id: 'dw-5600bb-1', ref: 'DW-5600BB-1' }), aShownModel()],
           }),
-          ...aSource().series.slice(1),
+          ...aShownSource().series.slice(1),
         ],
       }),
     )
@@ -169,17 +183,17 @@ describe('the published artefact (§6.2)', () => {
 describe('the editions (D62)', () => {
   /** Two editions declared; only the first is named by a model. */
   const source = () =>
-    aSource({
+    aShownSource({
       editions: [
         anEdition(),
         anEdition({ id: 'uno', name: 'UNO Collaboration', partner: 'Mattel' }),
       ],
       series: [
-        aSeries({ models: [aModel({ edition: 'pac-man' })] }),
+        aSeries({ models: [aShownModel({ edition: 'pac-man' })] }),
         aSeries({
           file: 'catalog-src/g-shock/gw-m5610.yaml',
           series: { id: 'gw-m5610', name: 'GW-M5610', line: 'g-shock', family: 'square' },
-          models: [aModel({ id: 'gw-m5610u-1', ref: 'GW-M5610U-1', edition: 'pac-man' })],
+          models: [aShownModel({ id: 'gw-m5610u-1', ref: 'GW-M5610U-1', edition: 'pac-man' })],
         }),
       ],
     })
@@ -200,9 +214,9 @@ describe('the editions (D62)', () => {
     // it must still publish with order 1, so the editorial order of
     // editions.yaml survives an edition dropping out and coming back.
     const catalog = buildCatalog(
-      aSource({
+      aShownSource({
         editions: [anEdition(), anEdition({ id: 'uno', name: 'UNO Collaboration' })],
-        series: [aSeries({ models: [aModel({ edition: 'uno' })] })],
+        series: [aSeries({ models: [aShownModel({ edition: 'uno' })] })],
       }),
     )
     expect(catalog.editions.map((edition) => [edition.id, edition.order])).toEqual([['uno', 1]])
@@ -210,13 +224,13 @@ describe('the editions (D62)', () => {
 
   it('counts a tombstoned reference nowhere, the way every other count works', () => {
     const catalog = buildCatalog(
-      aSource({
+      aShownSource({
         editions: [anEdition()],
         series: [
           aSeries({
             models: [
-              aModel({ edition: 'pac-man' }),
-              aModel({
+              aShownModel({ edition: 'pac-man' }),
+              aShownModel({
                 id: 'dw-5600e-2v',
                 ref: 'DW-5600E-2V',
                 edition: 'pac-man',
@@ -235,7 +249,7 @@ describe('the editions (D62)', () => {
   it('writes the edition onto the model, and omits the key where there is none', () => {
     const catalog = buildCatalog(source())
     expect(catalog.models[0]?.edition).toBe('pac-man')
-    const plain = buildCatalog(aSource()).models[0]
+    const plain = buildCatalog(aShownSource()).models[0]
     expect(plain).toBeDefined()
     expect('edition' in plain!).toBe(false)
     expect('edition_source' in plain!).toBe(false)
@@ -247,9 +261,9 @@ describe('the editions (D62)', () => {
 
   it('drops an empty alias list rather than publishing one', () => {
     const catalog = buildCatalog(
-      aSource({
+      aShownSource({
         editions: [anEdition({ aka: [] })],
-        series: [aSeries({ models: [aModel({ edition: 'pac-man' })] })],
+        series: [aSeries({ models: [aShownModel({ edition: 'pac-man' })] })],
       }),
     )
     const edition = catalog.editions[0]
@@ -259,19 +273,19 @@ describe('the editions (D62)', () => {
 })
 
 describe('the facets (D26)', () => {
-  const withData = aSource({
+  const withData = aShownSource({
     series: [
       aSeries({
         models: [
-          aModel({ year: 1996, display: 'digital', features: ['stopwatch', 'alarm'] }),
-          aModel({
+          aShownModel({ year: 1996, display: 'digital', features: ['stopwatch', 'alarm'] }),
+          aShownModel({
             id: 'dw-5600bb-1',
             ref: 'DW-5600BB-1',
             year: 2018,
             display: 'digital',
             features: ['stopwatch'],
           }),
-          aModel({ id: 'dw-5600c-1', ref: 'DW-5600C-1' }),
+          aShownModel({ id: 'dw-5600c-1', ref: 'DW-5600C-1' }),
         ],
       }),
     ],
@@ -294,7 +308,7 @@ describe('the facets (D26)', () => {
 
   it('reports zero coverage rather than dividing by nothing when a line is empty', () => {
     const { facets } = buildCatalog(
-      aSource({ series: [aSeries({ models: [aModel({ tombstone: { reason: 'retired' } })] })] }),
+      aShownSource({ series: [aSeries({ models: [aShownModel({ tombstone: { reason: 'retired' } })] })] }),
     )
     expect(facets.year?.coverage).toBe(0)
     expect(facets.year?.values).toEqual([])
@@ -303,27 +317,27 @@ describe('the facets (D26)', () => {
 
 describe('the stamp', () => {
   it('puts the version and the date first, where a human opening the file looks', () => {
-    const catalog = stamp(buildCatalog(aSource()), 'a1b2c3d4e5f6', '2026-08-16')
+    const catalog = stamp(buildCatalog(aShownSource()), 'a1b2c3d4e5f6', '2026-08-16')
     expect(Object.keys(catalog).slice(0, 2)).toEqual(['version', 'generatedAt'])
   })
 
   it('refuses a date that is not a date', () => {
-    expect(() => stamp(buildCatalog(aSource()), 'v1', '16 August 2026')).toThrow()
+    expect(() => stamp(buildCatalog(aShownSource()), 'v1', '16 August 2026')).toThrow()
   })
 
   it('ends the file with a newline, so git is happy with it', () => {
     expect(
-      serialiseCatalog(stamp(buildCatalog(aSource()), 'v1', '2026-08-16')).endsWith('\n'),
+      serialiseCatalog(stamp(buildCatalog(aShownSource()), 'v1', '2026-08-16')).endsWith('\n'),
     ).toBe(true)
   })
 
   it('leaves the stamp out of the digest input, so a rebuild of the same data is the same version', () => {
-    expect(digestInput(buildCatalog(aSource()))).not.toContain('generatedAt')
+    expect(digestInput(buildCatalog(aShownSource()))).not.toContain('generatedAt')
   })
 })
 
 describe('the index artefact (§6.2, the split)', () => {
-  const catalog = stamp(buildCatalog(aSource()), 'a1b2c3d4e5f6', '2026-08-16')
+  const catalog = stamp(buildCatalog(aShownSource()), 'a1b2c3d4e5f6', '2026-08-16')
 
   it('carries the shape of the catalogue and none of its models', () => {
     const index = indexOf(catalog)

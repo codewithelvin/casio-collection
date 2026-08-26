@@ -134,6 +134,10 @@ describe('ranking (FR-2.3 shows eight of these)', () => {
           line: 'vintage',
           series: 'f-91w',
           source: { url: 'https://example.com/w-593-1', kind: 'community' },
+          // Search reads the browsable set, which withholds a model with no
+          // photograph — without this the reference being ranked first is not
+          // in the index at all, and the test passes its own point by omission.
+          image: 'w-593-1',
         },
       ],
     }

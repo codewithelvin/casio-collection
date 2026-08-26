@@ -219,7 +219,12 @@ describe('the editions routes (D62)', () => {
     renderApp('/editions/pac-man')
     await screen.findByRole('heading', { name: 'PAC-MAN Collaboration', level: 2 })
     // Which A168 or F-91W this is cannot be inferred on a page holding both.
-    expect(await screen.findAllByText('GA-2100')).not.toHaveLength(0)
+    //
+    // Matched as a prefix rather than exactly: on a **photographed** card the
+    // series joins one caption line with the name and the year — "GA-2100 ·
+    // CasiOak · 2019" — where the typographic tile used to print it in a span of
+    // its own. Both cards name their series; only the markup moved.
+    expect(await screen.findAllByText(/^GA-2100 ·/)).not.toHaveLength(0)
   })
 
   it('names the series on a photographed card too, not only on a typographic one', async () => {
@@ -315,8 +320,16 @@ describe('the watch route (FR-3)', () => {
 
     const heading = await screen.findByRole('heading', { name: t('watch.otherInSeries') })
     const strip = heading.nextElementSibling as HTMLElement
-    expect(within(strip).getByText('F-91W-3')).toBeInTheDocument()
-    expect(within(strip).queryByText('F-91W-1')).not.toBeInTheDocument()
+
+    // **By accessible name, not by text.** `OtherTile` renders the photograph
+    // *instead of* the typographic tile, and the reference was only ever printed
+    // by the tile — so a photographed sibling shows a picture and a colourway
+    // and no visible code, carrying the reference on the link's `aria-label`.
+    // That was invisible while nothing in this fixture was photographed. The
+    // claim here is FR-3.4's — which watches the strip offers — and the link's
+    // name is the right way to ask it either way.
+    expect(within(strip).getByRole('link', { name: 'F-91W-3' })).toBeInTheDocument()
+    expect(within(strip).queryByRole('link', { name: 'F-91W-1' })).not.toBeInTheDocument()
   })
 
   it('names the series the reference sits in, and the words collectors use for it', async () => {
@@ -461,23 +474,35 @@ describe('the card at all three image mixes (§8.6)', () => {
   })
 
   it('renders the typographic tile as a designed state, not a broken image', async () => {
-    renderApp('/line/g-shock/dw-5600')
+    // **On the watch page, which is the only place this mix is still reachable.**
+    // It used to be asserted on the DW-5600 grid. A photograph-less card cannot
+    // appear in a grid any more — the client withheld it on 2026-08-26 — but
+    // `modelById` deliberately does not go through that filter, so a direct URL
+    // still resolves and the tile is still the state it renders. Deleting this
+    // would have left `WatchCard`'s tile branch untested rather than retired.
+    renderApp('/watch/dw-5600bb-1')
 
-    // DW-5600BB-1 has no image. It must produce no <img> at all — a src that
-    // 404s is what §8.6 forbids — and must still say what it is.
-    await screen.findByRole('link', { name: 'DW-5600BB-1' })
+    // No <img> at all: a src that 404s is what §8.6 forbids. And it must still
+    // say what it is — in more than one place on this page (the breadcrumb and
+    // the title both), so this asks for at least one rather than exactly one.
+    expect(await screen.findAllByText('DW-5600BB-1')).not.toHaveLength(0)
     expect(screen.queryByRole('img', { name: 'DW-5600BB-1' })).not.toBeInTheDocument()
-    expect(screen.getByText('DW-5600BB-1')).toBeInTheDocument()
   })
 
-  it('survives a grid with no photographs at all, which is today s catalogue', async () => {
-    // Every one of the sixty-one real models is imageless, so this mix is not a
-    // hypothetical: it is what the live site renders.
-    renderApp('/line/vintage/f-91w')
-    await screen.findByRole('link', { name: 'F-91W-1' })
-    expect(screen.queryAllByRole('img', { name: /F-91W/ })).toHaveLength(0)
-    expect(screen.getByText('F-91W-1')).toBeInTheDocument()
-    expect(screen.getByText('F-91W-3')).toBeInTheDocument()
+  it('withholds a photograph-less reference from the grid and keeps the rest', async () => {
+    // This replaces "survives a grid with no photographs at all, which is
+    // today's catalogue". That mix is no longer reachable and the sentence is no
+    // longer true of the catalogue: 2 702 of 3 101 models carry a photograph,
+    // and the 399 that do not are withheld rather than tiled.
+    //
+    // DW-5600 holds three references in the fixture. Two are photographed and
+    // show; DW-5600BB-1 is not and does not.
+    renderApp('/line/g-shock/dw-5600')
+    await screen.findByRole('link', { name: 'DW-5600E-1V' })
+
+    expect(screen.getByRole('link', { name: 'DW-5600C-1' })).toBeInTheDocument()
+    expect(screen.queryByRole('link', { name: 'DW-5600BB-1' })).not.toBeInTheDocument()
+    expect(screen.queryByText('DW-5600BB-1')).not.toBeInTheDocument()
   })
 })
 

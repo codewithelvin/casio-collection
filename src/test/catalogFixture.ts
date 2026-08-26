@@ -13,8 +13,18 @@ import type { Catalog } from '../catalog/schema.ts'
  *   * a family holding one, which §8.4 says is **not** a heading — its series
  *     falls through to the ungrouped list,
  *   * a series with no family at all, which is the normal case,
- *   * a model with a photograph and models without, so §8.6's three image mixes
- *     are all reachable,
+ *   * a model with no photograph — `dw-5600bb-1`, which is **withheld** from
+ *     every grid and every count as of 2026-08-26. It is still reachable by its
+ *     own URL and still joins a collection, so it is what exercises those two
+ *     paths, and it is why G-SHOCK counts 3 against four models.
+ *
+ *     This replaces what this list used to claim: "a model with a photograph and
+ *     models without, so §8.6's three image mixes are all reachable". **An
+ *     in-grid mix is no longer reachable and that is deliberate** — the client
+ *     withdrew the photograph-less card from browsing, which reverses D29 and
+ *     retires §8.6's mixed-grid case. The typographic tile itself is not dead
+ *     code: the watch page still renders it, and `WatchCard` is still exercised
+ *     against it there.
  *   * a model carrying nothing but the five required fields (D27), which is what
  *     makes the empty specification table a real state rather than a hypothesis.
  *
@@ -35,6 +45,8 @@ export const catalogFixture: Catalog = {
   version: 'testfixture01',
   generatedAt: '2026-08-16',
   lines: [
+    // 4 of the 5 G-SHOCK models here: `dw-5600bb-1` has no photograph and is
+    // withheld from every grid and every count (`browsable` in `client.ts`).
     { id: 'g-shock', name: 'G-SHOCK', slug: 'g-shock', accent: '#F25C05', order: 0, count: 4 },
     {
       id: 'vintage',
@@ -90,6 +102,7 @@ export const catalogFixture: Catalog = {
       slug: 'dw-5600',
       line: 'g-shock',
       family: 'square',
+      // 2 of 3: `dw-5600bb-1` has no photograph and is withheld.
       count: 2,
     },
     {
@@ -154,6 +167,30 @@ export const catalogFixture: Catalog = {
       source: { url: 'https://example.com/dw-5600bb-1', kind: 'retailer' },
     },
     {
+      // **The undated watch, and photographed so it is reachable.**
+      //
+      // `dw-5600bb-1` above used to be both this case and the withheld one. It
+      // cannot be both any more: withholding took it out of every grid, and with
+      // it went the only route to *Unknown year* (D5, D25), the only second
+      // DW-5600 reference an ordering test could sort against, and the density
+      // that makes Year a dense facet and Display a sparse one (FR-1.3a, D26).
+      //
+      // So it is split in two. This one carries a photograph and no year; that
+      // one carries neither and is the withheld case. Keeping G-SHOCK at four
+      // models is deliberate — the rail and the front door count it.
+      id: 'dw-5600c-1',
+      ref: 'DW-5600C-1',
+      line: 'g-shock',
+      series: 'dw-5600',
+      source: { url: 'https://example.com/dw-5600c-1', kind: 'retailer' },
+      image: 'dw-5600c-1',
+      image_credit: {
+        author: 'Multicherry',
+        licence: 'cc-by-sa-4.0',
+        url: 'https://commons.wikimedia.org/wiki/File:Casio_DW-5600C.jpg',
+      },
+    },
+    {
       id: 'gw-m5610u-1',
       ref: 'GW-M5610U-1',
       line: 'g-shock',
@@ -163,6 +200,12 @@ export const catalogFixture: Catalog = {
       movement: 'solar-radio',
       // D62 — an edition of one, which is the common case for a collaboration.
       edition: 'uno',
+      image: 'gw-m5610u-1',
+      image_credit: {
+        author: 'Multicherry',
+        licence: 'cc-by-sa-4.0',
+        url: 'https://commons.wikimedia.org/wiki/File:Casio_GW-M5610.jpg',
+      },
     },
     {
       id: 'ga-2100-1a1',
@@ -177,6 +220,12 @@ export const catalogFixture: Catalog = {
       // one on the site whose models do not share a line, and a fixture where
       // they did would let that pass by accident.
       edition: 'pac-man',
+      image: 'ga-2100-1a1',
+      image_credit: {
+        author: 'Casio Computer Co., Ltd.',
+        licence: 'rights-reserved',
+        url: 'https://www.casio.com/ga-2100-1a1',
+      },
     },
     {
       id: 'f-91w-1',
@@ -193,6 +242,12 @@ export const catalogFixture: Catalog = {
       // than its own source or the edition's, so the watch page's citation link
       // is a state a test can reach.
       edition_source: 'https://www.casio.com/jp/f-91w-1/',
+      image: 'f-91w-1',
+      image_credit: {
+        author: 'Multicherry',
+        licence: 'cc-by-sa-4.0',
+        url: 'https://commons.wikimedia.org/wiki/File:Casio_F-91W.jpg',
+      },
     },
     {
       id: 'f-91w-3',
@@ -203,6 +258,12 @@ export const catalogFixture: Catalog = {
       year: 2003,
       colorway: 'Black with dark green accents',
       discontinued: true,
+      image: 'f-91w-3',
+      image_credit: {
+        author: 'Multicherry',
+        licence: 'cc-by-sa-4.0',
+        url: 'https://commons.wikimedia.org/wiki/File:Casio_F-91W-3.jpg',
+      },
     },
   ],
   facets: {},

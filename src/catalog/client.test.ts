@@ -23,12 +23,20 @@ import {
 import type { Catalog, PublishedModel } from './schema.ts'
 import { catalogFixture, catalogFixtureJson, catalogIndexFixtureJson } from '../test/catalogFixture'
 
+/**
+ * `image` is on by default because `browsable` withholds a model without one
+ * since 2026-08-26. A helper with no photograph would make every selector here
+ * return an empty list, which reads as a broken selector rather than a fixture
+ * with no pictures in it. A test that wants the withheld case passes
+ * `image: null`.
+ */
 const model = (overrides: Partial<PublishedModel>): PublishedModel => ({
   id: 'x-1',
   ref: 'X-1',
   line: 'vintage',
   series: 'x',
   source: { url: 'https://example.com/x-1', kind: 'community' },
+  image: overrides.id ?? 'x-1',
   ...overrides,
 })
 
@@ -183,8 +191,22 @@ describe('selectors over the catalogue', () => {
   })
 
   it('lists the models of a series in reference order', () => {
+    // `f-91w`, not `dw-5600`. The DW-5600 series holds `dw-5600bb-1`, which
+    // carries no photograph and is therefore withheld — so that series can only
+    // return one model and an ordering assertion over it proves nothing. F-91W
+    // holds two photographed references, which is what this test needs.
+    expect(modelsInSeries(catalog, 'f-91w').map((entry) => entry.ref)).toEqual([
+      'F-91W-1',
+      'F-91W-3',
+    ])
+  })
+
+  it('withholds a model with no photograph from a series listing', () => {
+    // The other half of the rule above, asserted rather than implied: DW-5600
+    // holds three references in the fixture and shows the two with pictures.
+    // DW-5600BB-1 carries no photograph and does not appear.
     expect(modelsInSeries(catalog, 'dw-5600').map((entry) => entry.ref)).toEqual([
-      'DW-5600BB-1',
+      'DW-5600C-1',
       'DW-5600E-1V',
     ])
   })
