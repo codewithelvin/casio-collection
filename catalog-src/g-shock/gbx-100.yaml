@@ -1,0 +1,150 @@
+# GBX-100 — seeded 2026-08-26 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gbx-100
+  name: GBX-100
+  line: g-shock
+
+models:
+  - id: gbx-100-1
+    ref: GBX-100-1
+    source:
+      { url: 'https://web.archive.org/web/20240214084617id_/https://www.casio.com/za/watches/gshock/product.GBX-100-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.9, width_mm: 46, depth_mm: 14.7, weight_g: 66, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gbx-100-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084617id_/https://www.casio.com/za/watches/gshock/product.GBX-100-1/'
+  - id: gbx-100-2
+    ref: GBX-100-2
+    source:
+      { url: 'https://web.archive.org/web/20220926094222id_/https://www.casio.com/ph/watches/gshock/product.GBX-100-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.9, width_mm: 46, depth_mm: 14.7, weight_g: 66, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gbx-100-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220926094222id_/https://www.casio.com/ph/watches/gshock/product.GBX-100-2/'
+  - id: gbx-100-2a
+    ref: GBX-100-2A
+    source:
+      { url: 'https://web.archive.org/web/20240715065922id_/https://www.casio.com/europe/watches/gshock/product.GBX-100-2A/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.9, width_mm: 46, depth_mm: 14.7, weight_g: 66, material: 'Resin / Stainless steel / Resin (Bio-based)' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gbx-100-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065922id_/https://www.casio.com/europe/watches/gshock/product.GBX-100-2A/'
+  - id: gbx-100-7
+    ref: GBX-100-7
+    source:
+      { url: 'https://web.archive.org/web/20240214084619id_/https://www.casio.com/za/watches/gshock/product.GBX-100-7/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.9, width_mm: 46, depth_mm: 14.7, weight_g: 66, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gbx-100-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240214084619id_/https://www.casio.com/za/watches/gshock/product.GBX-100-7/'
+  - id: gbx-100-8
+    ref: GBX-100-8
+    source:
+      { url: 'https://web.archive.org/web/20241116213943id_/https://www.casio.com/us/watches/gshock/product.GBX-100-8/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.9, width_mm: 46, depth_mm: 14.7, weight_g: 66, material: 'Resin / Stainless steel / Resin (Bio-based)' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gbx-100-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241116213943id_/https://www.casio.com/us/watches/gshock/product.GBX-100-8/'
+  - id: gbx-100ki-1
+    ref: GBX-100KI-1
+    source:
+      { url: 'https://web.archive.org/web/20240715022033id_/https://www.casio.com/europe/watches/gshock/product.GBX-100KI-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.9, width_mm: 46, depth_mm: 14.7, weight_g: 66, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gbx-100ki-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022033id_/https://www.casio.com/europe/watches/gshock/product.GBX-100KI-1/'
+  - id: gbx-100ns-1
+    ref: GBX-100NS-1
+    source:
+      { url: 'https://web.archive.org/web/20240715022022id_/https://www.casio.com/europe/watches/gshock/product.GBX-100NS-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.9, width_mm: 46, depth_mm: 14.7, weight_g: 66, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gbx-100ns-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022022id_/https://www.casio.com/europe/watches/gshock/product.GBX-100NS-1/'
+  - id: gbx-100ns-4
+    ref: GBX-100NS-4
+    source:
+      { url: 'https://web.archive.org/web/20240715022025id_/https://www.casio.com/europe/watches/gshock/product.GBX-100NS-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.9, width_mm: 46, depth_mm: 14.7, weight_g: 66, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gbx-100ns-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022025id_/https://www.casio.com/europe/watches/gshock/product.GBX-100NS-4/'
+  - id: gbx-100tt-2
+    ref: GBX-100TT-2
+    source:
+      { url: 'https://web.archive.org/web/20230512194011id_/https://www.casio.com/sg/watches/gshock/product.GBX-100TT-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.9, width_mm: 46, depth_mm: 14.7, weight_g: 66, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gbx-100tt-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230512194011id_/https://www.casio.com/sg/watches/gshock/product.GBX-100TT-2/'
+  - id: gbx-100tt-8
+    ref: GBX-100TT-8
+    source:
+      { url: 'https://web.archive.org/web/20240119143717id_/https://www.casio.com/us/watches/gshock/product.GBX-100TT-8/', kind: official }
+    movement: quartz
+    case: { height_mm: 50.9, width_mm: 46, depth_mm: 14.7, weight_g: 66, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, tide-graph, moon-data, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gbx-100tt-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240119143717id_/https://www.casio.com/us/watches/gshock/product.GBX-100TT-8/'
