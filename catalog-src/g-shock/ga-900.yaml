@@ -1,0 +1,300 @@
+# GA-900 — seeded 2026-08-26 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ga-900
+  name: GA-900
+  line: g-shock
+
+models:
+  - id: ga-900-1a
+    ref: GA-900-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715065423id_/https://www.casio.com/europe/watches/gshock/product.GA-900-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065423id_/https://www.casio.com/europe/watches/gshock/product.GA-900-1A/'
+  - id: ga-900-2a
+    ref: GA-900-2A
+    source:
+      { url: 'https://web.archive.org/web/20240715065438id_/https://www.casio.com/europe/watches/gshock/product.GA-900-2A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065438id_/https://www.casio.com/europe/watches/gshock/product.GA-900-2A/'
+  - id: ga-900-4a
+    ref: GA-900-4A
+    source:
+      { url: 'https://web.archive.org/web/20240715065440id_/https://www.casio.com/europe/watches/gshock/product.GA-900-4A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065440id_/https://www.casio.com/europe/watches/gshock/product.GA-900-4A/'
+  - id: ga-900a-1a9
+    ref: GA-900A-1A9
+    source:
+      { url: 'https://web.archive.org/web/20240910175528id_/https://www.casio.com/in/watches/gshock/product.GA-900A-1A9/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900a-1a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240910175528id_/https://www.casio.com/in/watches/gshock/product.GA-900A-1A9/'
+  - id: ga-900ag-1a
+    ref: GA-900AG-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715021256id_/https://www.casio.com/europe/watches/gshock/product.GA-900AG-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900ag-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021256id_/https://www.casio.com/europe/watches/gshock/product.GA-900AG-1A/'
+  - id: ga-900as-1a
+    ref: GA-900AS-1A
+    source:
+      { url: 'https://web.archive.org/web/20220511205254id_/https://www.casio.com/us/watches/gshock/product.GA-900AS-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900as-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220511205254id_/https://www.casio.com/us/watches/gshock/product.GA-900AS-1A/'
+  - id: ga-900as-7a
+    ref: GA-900AS-7A
+    source:
+      { url: 'https://web.archive.org/web/20220818221346id_/https://www.casio.com/us/watches/gshock/product.GA-900AS-7A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900as-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220818221346id_/https://www.casio.com/us/watches/gshock/product.GA-900AS-7A/'
+  - id: ga-900bep-8a
+    ref: GA-900BEP-8A
+    source:
+      { url: 'https://web.archive.org/web/20240715021300id_/https://www.casio.com/europe/watches/gshock/product.GA-900BEP-8A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 71, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900bep-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021300id_/https://www.casio.com/europe/watches/gshock/product.GA-900BEP-8A/'
+  - id: ga-900c-1a4
+    ref: GA-900C-1A4
+    source:
+      { url: 'https://web.archive.org/web/20240715021251id_/https://www.casio.com/europe/watches/gshock/product.GA-900C-1A4/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 63, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900c-1a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021251id_/https://www.casio.com/europe/watches/gshock/product.GA-900C-1A4/'
+  - id: ga-900dbr-3a
+    ref: GA-900DBR-3A
+    source:
+      { url: 'https://web.archive.org/web/20220625133405id_/https://www.casio.com/in/watches/gshock/product.GA-900DBR-3A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900dbr-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625133405id_/https://www.casio.com/in/watches/gshock/product.GA-900DBR-3A/'
+  - id: ga-900e-1a3
+    ref: GA-900E-1A3
+    source:
+      { url: 'https://web.archive.org/web/20240715021254id_/https://www.casio.com/europe/watches/gshock/product.GA-900E-1A3/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900e-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021254id_/https://www.casio.com/europe/watches/gshock/product.GA-900E-1A3/'
+  - id: ga-900gc-7a
+    ref: GA-900GC-7A
+    source:
+      { url: 'https://web.archive.org/web/20240715021623id_/https://www.casio.com/europe/watches/gshock/product.GA-900GC-7A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900gc-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021623id_/https://www.casio.com/europe/watches/gshock/product.GA-900GC-7A/'
+  - id: ga-900hc-3a
+    ref: GA-900HC-3A
+    source:
+      { url: 'https://web.archive.org/web/20220529023625id_/https://www.casio.com/us/watches/gshock/product.ga-900hc-3a/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900hc-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220529023625id_/https://www.casio.com/us/watches/gshock/product.ga-900hc-3a/'
+  - id: ga-900hc-5a
+    ref: GA-900HC-5A
+    source:
+      { url: 'https://web.archive.org/web/20220814093900id_/https://www.casio.com/my/watches/gshock/product.GA-900HC-5A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900hc-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220814093900id_/https://www.casio.com/my/watches/gshock/product.GA-900HC-5A/'
+  - id: ga-900ske-8a
+    ref: GA-900SKE-8A
+    source:
+      { url: 'https://web.archive.org/web/20240715021609id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKE-8A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900ske-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021609id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKE-8A/'
+  - id: ga-900skl-2a
+    ref: GA-900SKL-2A
+    source:
+      { url: 'https://web.archive.org/web/20240715021617id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKL-2A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900skl-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021617id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKL-2A/'
+  - id: ga-900skl-7a
+    ref: GA-900SKL-7A
+    source:
+      { url: 'https://web.archive.org/web/20240715021620id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKL-7A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900skl-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021620id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKL-7A/'
+  - id: ga-900ts-4a
+    ref: GA-900TS-4A
+    source:
+      { url: 'https://web.archive.org/web/20240715021612id_/https://www.casio.com/europe/watches/gshock/product.GA-900TS-4A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 63, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900ts-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021612id_/https://www.casio.com/europe/watches/gshock/product.GA-900TS-4A/'
+  - id: ga-900ts-6a
+    ref: GA-900TS-6A
+    source:
+      { url: 'https://web.archive.org/web/20240715021614id_/https://www.casio.com/europe/watches/gshock/product.GA-900TS-6A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 63, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900ts-6a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021614id_/https://www.casio.com/europe/watches/gshock/product.GA-900TS-6A/'
+  - id: ga-900vb-1a
+    ref: GA-900VB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715021627id_/https://www.casio.com/europe/watches/gshock/product.GA-900VB-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-900vb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021627id_/https://www.casio.com/europe/watches/gshock/product.GA-900VB-1A/'
