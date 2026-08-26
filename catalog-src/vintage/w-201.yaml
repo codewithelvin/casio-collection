@@ -1,0 +1,46 @@
+# W-201 — seeded 2026-08-26 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: w-201
+  name: W-201
+  line: vintage
+
+models:
+  - id: w-201-1av
+    ref: W-201-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220818235102id_/https://www.casio.com/us/watches/casio/product.W-201-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.4, width_mm: 36, depth_mm: 10, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    image: w-201-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220818235102id_/https://www.casio.com/us/watches/casio/product.W-201-1AV/'
+  - id: w-201-1bv
+    ref: W-201-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240917233024id_/https://www.casio.com/us/watches/casio/product.W-201-1BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 40.4, width_mm: 36, depth_mm: 10, weight_g: 25, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    image: w-201-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240917233024id_/https://www.casio.com/us/watches/casio/product.W-201-1BV/'
