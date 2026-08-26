@@ -149,8 +149,28 @@ export default function SettingsRoute() {
           onChange={(event) => setHandle(event.target.value)}
           style={{ marginTop: 4 }}
         />
+        {/*
+          **The colour is the answer, not decoration.** This line said all four
+          of its things in the same grey until the client asked for the free case
+          to be green, and the request exposed a worse bug beside it: a handle
+          somebody else owns put the input into `error` status — a red box — over
+          a grey sentence explaining why. The control and its message disagreed.
+
+          So all three states are stated together: invalid or taken is `danger`,
+          which is what the input already shows; free is `success`; and the
+          resting hint stays `secondary`, because "here is what a handle may
+          contain" is not good news, it is instructions. `checking` deliberately
+          stays quiet too — a colour that changes for half a second while a
+          request is in flight is a flicker, not information.
+        */}
         <Typography.Paragraph
-          type={verdict && !verdict.ok ? 'danger' : 'secondary'}
+          type={
+            (verdict && !verdict.ok) || availability === 'taken'
+              ? 'danger'
+              : availability === 'free'
+                ? 'success'
+                : 'secondary'
+          }
           style={{ fontSize: token.fontSizeSM, marginTop: 4, marginBottom: 0 }}
         >
           {verdict && !verdict.ok

@@ -6,7 +6,7 @@ import { catalogFixture } from '../test/catalogFixture'
 import { NoteEditor } from './NoteEditor'
 import { resetSupabaseClient } from '../auth/supabase.ts'
 import { resetSessionStore, useSessionStore } from '../auth/session.ts'
-import { NOTE_DEBOUNCE_MS } from '../collection/mutations.ts'
+import { NOTE_DEBOUNCE_MS, NOTE_MAX } from '../collection/mutations.ts'
 import { strings } from '../i18n/strings'
 
 /**
@@ -158,6 +158,67 @@ describe('saving a note (FR-5.2)', () => {
     await userEvent.tab()
 
     expect(await screen.findByText(strings['note.failed'])).toBeInTheDocument()
+  })
+})
+
+/**
+ * The client reported this twice in one message: on a phone the count sat across
+ * the "your profile is published" sentence, and on a desktop it collided with
+ * *Saved*. Both were the same cause — AntD's `showCount` draws the number
+ * **absolutely positioned 22 px below the field**, outside the box it belongs to
+ * and on top of whatever the layout put there.
+ *
+ * jsdom applies no stylesheet, so it cannot see an overlap and these tests do not
+ * pretend to. What they can prove is the thing the fix actually turns on: the
+ * positioned element is **gone**, not nudged, and all three items are static
+ * children of one flex row. A fix that deletes the absolutely positioned node
+ * cannot be undone by a viewport width.
+ */
+describe('the row under the note field', () => {
+  it('draws the count itself, with nothing absolutely positioned', async () => {
+    signedIn()
+    const { container } = renderWithProviders(<NoteEditor model={MODEL} />)
+    await field()
+
+    // AntD's own counter. Its presence is the bug: `.ant-input-data-count` is
+    // `position: absolute; bottom: -22px`, which is what reached the row below.
+    expect(container.querySelector('.ant-input-data-count')).toBeNull()
+
+    // And the count is still shown, because §6.3's 2 000 cap has to be visible
+    // before the database refuses a note somebody already typed.
+    expect(screen.getByText(`0 / ${NOTE_MAX}`)).toBeInTheDocument()
+  })
+
+  it('keeps the sentence, the save state and the count in one row', async () => {
+    signedIn()
+    renderWithProviders(<NoteEditor model={MODEL} />)
+    await field()
+
+    const sentence = screen.getByText(strings['note.private'])
+    const count = screen.getByText(`0 / ${NOTE_MAX}`)
+
+    // One common flex parent, reached from both, is what makes the layout
+    // responsible for the spacing between them — the alternative is one of them
+    // being placed relative to something else and landing wherever that lands.
+    const row = sentence.parentElement
+    expect(row).not.toBeNull()
+    expect(row?.contains(count)).toBe(true)
+    expect(row?.style.display).toBe('flex')
+    expect(row?.style.flexWrap).toBe('wrap')
+  })
+
+  it('still has room for the count once Saved appears beside it', async () => {
+    signedIn()
+    renderWithProviders(<NoteEditor model={MODEL} />)
+
+    await userEvent.type(await field(), 'Osaka')
+    await userEvent.tab()
+
+    // The desktop half of the report. Both are on screen at once and neither is
+    // positioned, so they sit side by side rather than on top of each other.
+    const saved = await screen.findByText(strings['note.saved'])
+    const count = screen.getByText(`5 / ${NOTE_MAX}`)
+    expect(saved.closest('span')?.parentElement).toBe(count.parentElement)
   })
 })
 
