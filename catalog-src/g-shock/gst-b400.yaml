@@ -1,0 +1,184 @@
+# GST-B400 — seeded 2026-08-26 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gst-b400
+  name: GST-B400
+  line: g-shock
+
+models:
+  - id: gst-b400-1a
+    ref: GST-B400-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715064446id_/https://www.casio.com/europe/watches/gshock/product.GST-B400-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 80, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gst-b400-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064446id_/https://www.casio.com/europe/watches/gshock/product.GST-B400-1A/'
+  - id: gst-b400ad-1a4
+    ref: GST-B400AD-1A4
+    source:
+      { url: 'https://web.archive.org/web/20220126144511id_/https://www.casio.com/sg/watches/gshock/product.GST-B400AD-1A4/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 46.9, width_mm: 49.6, depth_mm: 12.9, weight_g: 160, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gst-b400ad-1a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220126144511id_/https://www.casio.com/sg/watches/gshock/product.GST-B400AD-1A4/'
+  - id: gst-b400bb-1a
+    ref: GST-B400BB-1A
+    source:
+      { url: 'https://web.archive.org/web/20241011035744id_/https://www.casio.com/us/watches/gshock/product.GST-B400BB-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 80, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gst-b400bb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241011035744id_/https://www.casio.com/us/watches/gshock/product.GST-B400BB-1A/'
+  - id: gst-b400bd-1a2
+    ref: GST-B400BD-1A2
+    source:
+      { url: 'https://web.archive.org/web/20241212200001id_/https://www.casio.com/us/watches/gshock/product.GST-B400BD-1A2/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 46.9, width_mm: 49.6, depth_mm: 12.9, weight_g: 160, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gst-b400bd-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241212200001id_/https://www.casio.com/us/watches/gshock/product.GST-B400BD-1A2/'
+  - id: gst-b400cd-1a3
+    ref: GST-B400CD-1A3
+    source:
+      { url: 'https://web.archive.org/web/20240715064454id_/https://www.casio.com/europe/watches/gshock/product.GST-B400CD-1A3/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 160, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gst-b400cd-1a3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064454id_/https://www.casio.com/europe/watches/gshock/product.GST-B400CD-1A3/'
+  - id: gst-b400cx-1a
+    ref: GST-B400CX-1A
+    source:
+      { url: 'https://web.archive.org/web/20241211115709id_/https://www.casio.com/us/watches/gshock/product.GST-B400CX-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 86, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gst-b400cx-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241211115709id_/https://www.casio.com/us/watches/gshock/product.GST-B400CX-1A/'
+  - id: gst-b400d-1a
+    ref: GST-B400D-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715064501id_/https://www.casio.com/europe/watches/gshock/product.GST-B400D-1A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 160, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gst-b400d-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064501id_/https://www.casio.com/europe/watches/gshock/product.GST-B400D-1A/'
+  - id: gst-b400fp-1a2
+    ref: GST-B400FP-1A2
+    source:
+      { url: 'https://web.archive.org/web/20220215081517id_/https://www.casio.com/jp/watches/gshock/product.GST-B400FP-1A2/', kind: official }
+    case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 80 }
+    water_resistance_m: 200
+    features: [bluetooth]
+    image: gst-b400fp-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220215081517id_/https://www.casio.com/jp/watches/gshock/product.GST-B400FP-1A2/'
+  - id: gst-b400gb-1a9
+    ref: GST-B400GB-1A9
+    source:
+      { url: 'https://web.archive.org/web/20240715064440id_/https://www.casio.com/europe/watches/gshock/product.GST-B400GB-1A9/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 80, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gst-b400gb-1a9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064440id_/https://www.casio.com/europe/watches/gshock/product.GST-B400GB-1A9/'
+  - id: gst-b400mv-5a
+    ref: GST-B400MV-5A
+    source:
+      { url: 'https://web.archive.org/web/20220808074340id_/https://www.casio.com/us/watches/gshock/product.GST-B400MV-5A/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 80, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gst-b400mv-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808074340id_/https://www.casio.com/us/watches/gshock/product.GST-B400MV-5A/'
+  - id: gst-b400x-1a4
+    ref: GST-B400X-1A4
+    source:
+      { url: 'https://web.archive.org/web/20220625113443id_/https://www.casio.com/us/watches/gshock/product.GST-B400X-1A4/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 74, material: 'Carbon / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    image: gst-b400x-1a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220625113443id_/https://www.casio.com/us/watches/gshock/product.GST-B400X-1A4/'
+  - id: gst-b400xd-1a2
+    ref: GST-B400XD-1A2
+    source:
+      { url: 'https://web.archive.org/web/20210917215910id_/https://www.casio.com/jp/watches/gshock/product.GST-B400XD-1A2/', kind: official }
+    case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 154 }
+    water_resistance_m: 200
+    features: [bluetooth]
+    image: gst-b400xd-1a2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210917215910id_/https://www.casio.com/jp/watches/gshock/product.GST-B400XD-1A2/'
