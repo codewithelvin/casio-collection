@@ -509,6 +509,20 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    # REFUSED 2026-08-26, not overlooked. Casio's archived `es` page for this
+    # reference names its assets `1.png` and `2.png` — numbered, so the filename
+    # test proves nothing and both had to be looked at. Both were:
+    #
+    #   * `1.png` is the launch collage — the watch with its box, its sleeve and
+    #     a numbered 1/260 certificate. It prints "MODEL GA-2100DELA" on the
+    #     artwork, so it does settle identity; it is still a listing collage and
+    #     not a product shot.
+    #   * `2.png` is the campaign photograph of Delaossa wearing it, in the
+    #     street, with an inset of the watch. A lifestyle image.
+    #
+    # `3.png` is linked by the page and 404s at casio.com today. So the identity
+    # of this reference is proven and there is no product shot of it to publish.
+    image: null
     discontinued: true
   - id: ga-2100ff-8a
     ref: GA-2100FF-8A
