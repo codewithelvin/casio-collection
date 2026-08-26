@@ -716,6 +716,23 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # REFUSED 2026-08-26, not overlooked. Casio's archived `us` page for this
+    # exact reference names four DAM assets and not one of them is a product shot
+    # of this watch alone:
+    #
+    #   * `assets/LOV-20B-4_DW-5600LH-4_bs1_.jpg` and `…_bs2.png` — the Lover's
+    #     Collection pair, so **both watches are in the frame**. One picture of
+    #     two watches under one reference tells a reader nothing about either,
+    #     and the same file would have to serve LOV-20B-4.
+    #   * `us-assets/DW5600LH-4_BACK.png` and `…_SIDE.png` — the caseback and the
+    #     profile. Real photographs of the right watch, and neither is the shot a
+    #     visitor needs to recognise it.
+    #
+    # Worth knowing for the next reader: these live under `us-assets/`, which
+    # `imageUrl()` cannot see because it matches `/assets/` literally. So this
+    # reference reads as "no page named a photograph" when the truth is that the
+    # page named four and all four are the wrong picture.
+    image: null
     discontinued: false
   - id: dw-5600lj-7w
     ref: DW-5600LJ-7W
