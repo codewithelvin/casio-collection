@@ -31,6 +31,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715070941id_/https://www.casio.com/europe/watches/casio/product.WV-59R-1A/'
+    discontinued: false
   - id: wv-59rd-1a
     ref: WV-59RD-1A
     source:
@@ -44,3 +45,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715070931id_/https://www.casio.com/europe/watches/casio/product.WV-59RD-1A/'
+    discontinued: false

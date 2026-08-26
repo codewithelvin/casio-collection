@@ -31,6 +31,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220818235102id_/https://www.casio.com/us/watches/casio/product.W-201-1AV/'
+    discontinued: false
   - id: w-201-1bv
     ref: W-201-1BV
     source:
@@ -44,3 +45,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240917233024id_/https://www.casio.com/us/watches/casio/product.W-201-1BV/'
+    discontinued: false
