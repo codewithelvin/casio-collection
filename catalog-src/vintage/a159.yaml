@@ -174,3 +174,65 @@ models:
       licence: rights-reserved
       url: 'https://www.timekeepershop.com/en/product/193942-202048/a159wevj-7'
     discontinued: false
+
+# ADDED 2026-08-26: A159WEVJ-2, the indigo half of the pair, and **the thinner of
+# the two entries on purpose.**
+#
+# Same reference class and same reason it was NO-PAGE: released April 2026, zero
+# captures in a domain-wide CDX query, and casio.com 403 at every locale — the
+# UK store the press points at is `casio.co.uk`, which redirects to
+# `casio.com/uk/` and 403s like the rest. So a shop again.
+#
+# **The shop is a different one, and the choice was between two kinds of poorer.**
+# `timekeepershop.com` carries the -7 and does not list this reference at all, so
+# the sibling's page was not an option. Four candidates were read and none of them
+# is as complete as the -7's page:
+#
+#   * IPPO JAPAN WATCH prints Casio's own figures — 36.8x33.2x8.5 mm, 45 g — and
+#     the display type, and it holds the photograph. No material, no functions.
+#   * notebookcheck.net states the material and the whole function list, and no
+#     dimensions or weight at all.
+#   * ormoda.com states dimensions rounded to 33/33/8 with a "lug to lug" of 36,
+#     which is a normalised template rather than Casio's rows, and getting a case
+#     0.8 mm wrong is worse than leaving it unknown.
+#   * sakurawatches.com is the interesting one and was still refused: it prints
+#     `593` as the module, which would be the most valuable field here. Its table
+#     also calls the calendar "Perpetual" and the stopwatch a "Chronograph", and
+#     the A159's calendar is auto-set at 28 days for February and is not
+#     perpetual. A table with a demonstrable error in it is not a source for a
+#     field nothing else states.
+#
+# IPPO won because one page had to carry both the specification and the picture,
+# and it is the only one that does. **The consequence is written down rather than
+# hidden: this entry has no `features`, no `movement` and no `case.material`, and
+# its sibling directly above has all three.** Each of those facts exists on a page
+# named in this comment; none of them is on the page in `source`, and one page per
+# model is what stops a spec table being assembled out of four sites. Anyone with
+# a browser can open the Casio page and close every one of these gaps at once.
+#
+# THE PHOTOGRAPH IS THE ONE JUDGEMENT CALL HERE. IPPO names its files
+# `100000001009800864_10204.jpg`, so the filename test cannot be run and the lead
+# image is evidence rather than proof — which is exactly the case the skill says
+# to look at rather than trust. It is the right watch: a **blue** seigaiha wave
+# dial on a silver bracelet, and the blue wave dial belongs to this reference
+# alone in the whole series — the only other seigaiha is the -7 above, which is
+# grey, and no other A159 has a pattern at all. Same Casio product render as the
+# -7, same 10:58 50, same white ground. 600 px, so the 2x is upscaled again.
+#
+# The `ref` is `A159WEVJ-2` where the source page says `A159WEVJ-2JR`, and that is
+# not a discrepancy: `JR` is the Japanese market code, pure letters after the
+# reference, and Casio's own sitemap carries `product.A159WEVJ-2/`. The same watch
+# is sold as `-2ER` in Europe. Matching on the reference plus a pure-letter code
+# is the rule; a substring match is what would let a `-2B1DR` answer for a `-2`.
+  - id: a159wevj-2
+    ref: A159WEVJ-2
+    source:
+      { url: 'https://www.ippojapanwatch.com/products/casio-a159wevj-2jr-classic-digital-watch-blue-led-display-water-resistant-adjustable-stainless-steel-band', kind: retailer }
+    display: digital
+    case: { height_mm: 36.8, width_mm: 33.2, depth_mm: 8.5, weight_g: 45 }
+    image: a159wevj-2
+    image_credit:
+      author: IPPO JAPAN WATCH
+      licence: rights-reserved
+      url: 'https://www.ippojapanwatch.com/products/casio-a159wevj-2jr-classic-digital-watch-blue-led-display-water-resistant-adjustable-stainless-steel-band'
+    discontinued: false
