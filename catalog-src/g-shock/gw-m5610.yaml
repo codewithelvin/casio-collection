@@ -1,3 +1,29 @@
+# PHOTOGRAPHS REFUSED, 19 of them, and this is the reason for every
+# `image: null` below that does not carry one of its own.
+#
+# These references are discontinued collaborations and regional limited runs.
+# Every route this project knows how to walk was walked, and the measurement is
+# recorded rather than the hope:
+#
+#   * Casio's own archived product pages (D52) — only 7 of 384 G-SHOCK gaps had
+#     an archived page in ANY of 32 locales, and 3 of those named no asset.
+#     Extending the crawl to `mea-en`, `africa-fr` and `at` added 1 833 pages
+#     and zero new references.
+#   * four Shopify rosters dumped in full — shopcasio.fjbl.co.id, watchoutz.com,
+#     ippojapanwatch.com and casio.ge, 5 000+ listings between them.
+#   * `/search/suggest.json?q=<REF>` asked for EVERY one of these references
+#     individually across those shops. Zero hits beyond the roster dumps, so the
+#     route is exhausted rather than untried.
+#   * gshock.casio.com, g-shock.jp and world.g-shock.com in the archive — 14 330+
+#     product URLs, but they are *series* pages and their images are AEM
+#     renditions: banners, 4:3 lifestyle crops and wrist shots. Not card images.
+#
+# So this is D29's typographic tile as a deliberate primary state, not an
+# oversight. What would change it is a source nobody here has: the client's own
+# photography, or a licensed pool. A wrist shot, a lifestyle photo or a listing
+# collage would not — those are refused on quality, not availability.
+#
+# Measured 2026-08-24, re-checked 2026-08-26 against the page cache.
 # GW-M5610 — seeded 2026-08-17 (M2b), the first G-SHOCK series in the catalogue
 # and the first entries anywhere in it sourced from an **official** Casio page.
 #
@@ -114,6 +140,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610ba-1
     ref: GW-M5610BA-1
@@ -143,6 +172,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610bc-1
     ref: GW-M5610BC-1
@@ -172,6 +204,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610by-1
     ref: GW-M5610BY-1
@@ -184,6 +219,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610cc-2
     ref: GW-M5610CC-2
@@ -196,6 +234,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610cc-3
     ref: GW-M5610CC-3
@@ -208,6 +249,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610ew-4
     ref: GW-M5610EW-4
@@ -220,6 +264,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610k-1
     ref: GW-M5610K-1
@@ -232,6 +279,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610kg-3
     ref: GW-M5610KG-3
@@ -244,6 +294,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610lg-8
     ref: GW-M5610LG-8
@@ -256,6 +309,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610ly-1
     ref: GW-M5610LY-1
@@ -268,6 +324,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610md-2
     ref: GW-M5610MD-2
@@ -280,6 +339,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610md-7
     ref: GW-M5610MD-7
@@ -309,6 +371,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610mr-4
     ref: GW-M5610MR-4
@@ -321,6 +386,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610mw-7
     ref: GW-M5610MW-7
@@ -333,6 +401,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610nv-2
     ref: GW-M5610NV-2
@@ -362,6 +433,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610r-1
     ref: GW-M5610R-1
@@ -408,6 +482,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610th-1
     ref: GW-M5610TH-1
@@ -420,6 +497,9 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: gw-m5610tr-7
     ref: GW-M5610TR-7
@@ -432,4 +512,7 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true

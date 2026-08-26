@@ -1,3 +1,29 @@
+# PHOTOGRAPHS REFUSED, 113 of them, and this is the reason for every
+# `image: null` below that does not carry one of its own.
+#
+# These references are discontinued collaborations and regional limited runs.
+# Every route this project knows how to walk was walked, and the measurement is
+# recorded rather than the hope:
+#
+#   * Casio's own archived product pages (D52) — only 7 of 384 G-SHOCK gaps had
+#     an archived page in ANY of 32 locales, and 3 of those named no asset.
+#     Extending the crawl to `mea-en`, `africa-fr` and `at` added 1 833 pages
+#     and zero new references.
+#   * four Shopify rosters dumped in full — shopcasio.fjbl.co.id, watchoutz.com,
+#     ippojapanwatch.com and casio.ge, 5 000+ listings between them.
+#   * `/search/suggest.json?q=<REF>` asked for EVERY one of these references
+#     individually across those shops. Zero hits beyond the roster dumps, so the
+#     route is exhausted rather than untried.
+#   * gshock.casio.com, g-shock.jp and world.g-shock.com in the archive — 14 330+
+#     product URLs, but they are *series* pages and their images are AEM
+#     renditions: banners, 4:3 lifestyle crops and wrist shots. Not card images.
+#
+# So this is D29's typographic tile as a deliberate primary state, not an
+# oversight. What would change it is a source nobody here has: the client's own
+# photography, or a licensed pool. A wrist shot, a lifestyle photo or a listing
+# collage would not — those are refused on quality, not availability.
+#
+# Measured 2026-08-24, re-checked 2026-08-26 against the page cache.
 # GA-110 — seeded 2026-08-17 (M9), from the module 5146 operation guide.
 #
 # THE SOURCE IS THE MODULE MANUAL (D44). casio.com answers 403 to every product
@@ -139,6 +165,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110a-9
     ref: GA-110A-9
@@ -151,6 +180,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ac-4a
     ref: GA-110AC-4A
@@ -180,6 +212,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ape-5a
     ref: GA-110APE-5A
@@ -192,6 +227,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110as-2a
     ref: GA-110AS-2A
@@ -238,6 +276,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110b-1a3
     ref: GA-110B-1A3
@@ -250,6 +291,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110b-2
     ref: GA-110B-2
@@ -262,6 +306,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110b-3
     ref: GA-110B-3
@@ -274,6 +321,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110b-4
     ref: GA-110B-4
@@ -286,6 +336,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110bc-2a
     ref: GA-110BC-2A
@@ -298,6 +351,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: false
   - id: ga-110bc-7a
     ref: GA-110BC-7A
@@ -310,6 +366,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110bc-8a
     ref: GA-110BC-8A
@@ -322,6 +381,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110bc-9a
     ref: GA-110BC-9A
@@ -334,6 +396,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110br-5a
     ref: GA-110BR-5A
@@ -346,6 +411,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110bt-1a
     ref: GA-110BT-1A
@@ -358,6 +426,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110bw-1a
     ref: GA-110BW-1A
@@ -370,6 +441,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110bwp-2a
     ref: GA-110BWP-2A
@@ -399,6 +473,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110c-1a
     ref: GA-110C-1A
@@ -411,6 +488,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110c-7a
     ref: GA-110C-7A
@@ -440,6 +520,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110cb-1a
     ref: GA-110CB-1A
@@ -452,6 +535,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110cc-2a
     ref: GA-110CC-2A
@@ -532,6 +618,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110cm-3a
     ref: GA-110CM-3A
@@ -544,6 +633,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110cm-8a
     ref: GA-110CM-8A
@@ -556,6 +648,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110cm-9a
     ref: GA-110CM-9A
@@ -568,6 +663,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110cr-2a
     ref: GA-110CR-2A
@@ -580,6 +678,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110cr-4a
     ref: GA-110CR-4A
@@ -592,6 +693,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110cr-7a
     ref: GA-110CR-7A
@@ -604,6 +708,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110cs-4a
     ref: GA-110CS-4A
@@ -616,6 +723,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110db-7a
     ref: GA-110DB-7A
@@ -628,6 +738,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110dbr-7a
     ref: GA-110DBR-7A
@@ -657,6 +770,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110dc-2a
     ref: GA-110DC-2A
@@ -669,6 +785,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110dc-2a7
     ref: GA-110DC-2A7
@@ -681,6 +800,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ddr-7a
     ref: GA-110DDR-7A
@@ -693,6 +815,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110dn-4a
     ref: GA-110DN-4A
@@ -705,6 +830,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110dn-6a
     ref: GA-110DN-6A
@@ -717,6 +845,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110dr-1a
     ref: GA-110DR-1A
@@ -729,6 +860,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110eh-8a
     ref: GA-110EH-8A
@@ -741,6 +875,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ev-6a
     ref: GA-110EV-6A
@@ -753,6 +890,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ew-4a
     ref: GA-110EW-4A
@@ -765,6 +905,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110f-2
     ref: GA-110F-2
@@ -777,6 +920,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110fc-1a
     ref: GA-110FC-1A
@@ -789,6 +935,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110fc-2a
     ref: GA-110FC-2A
@@ -801,6 +950,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110frg-7a
     ref: GA-110FRG-7A
@@ -813,6 +965,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110gb-1a
     ref: GA-110GB-1A
@@ -842,6 +997,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110gbpa-1a
     ref: GA-110GBPA-1A
@@ -854,6 +1012,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110gbx-1a
     ref: GA-110GBX-1A
@@ -866,6 +1027,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110gd-9a
     ref: GA-110GD-9A
@@ -878,6 +1042,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110gd-9b
     ref: GA-110GD-9B
@@ -890,6 +1057,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110gd-9b2
     ref: GA-110GD-9B2
@@ -902,6 +1072,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110gdtw-9a
     ref: GA-110GDTW-9A
@@ -914,6 +1087,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110gl-4a
     ref: GA-110GL-4A
@@ -977,6 +1153,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110hc-6a
     ref: GA-110HC-6A
@@ -989,6 +1168,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110hd-8a
     ref: GA-110HD-8A
@@ -1069,6 +1251,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ht-7a
     ref: GA-110HT-7A
@@ -1081,6 +1266,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ht-8a
     ref: GA-110HT-8A
@@ -1093,6 +1281,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110jdb-1a4
     ref: GA-110JDB-1A4
@@ -1158,6 +1349,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110lb-7a
     ref: GA-110LB-7A
@@ -1170,6 +1364,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110lc-7a
     ref: GA-110LC-7A
@@ -1182,6 +1379,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ld-7a
     ref: GA-110LD-7A
@@ -1194,6 +1394,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110le-7a
     ref: GA-110LE-7A
@@ -1206,6 +1409,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110lk-7a
     ref: GA-110LK-7A
@@ -1218,6 +1424,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ll-1a
     ref: GA-110LL-1A
@@ -1247,6 +1456,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ln-1a
     ref: GA-110LN-1A
@@ -1276,6 +1488,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ln-3a
     ref: GA-110LN-3A
@@ -1288,6 +1503,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ln-8a
     ref: GA-110LN-8A
@@ -1300,6 +1518,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110lp-1a
     ref: GA-110LP-1A
@@ -1312,6 +1533,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110lp-3a
     ref: GA-110LP-3A
@@ -1324,6 +1548,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110lp-7a
     ref: GA-110LP-7A
@@ -1336,6 +1563,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110lpa-1a
     ref: GA-110LPA-1A
@@ -1348,6 +1578,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110lpa-4a
     ref: GA-110LPA-4A
@@ -1360,6 +1593,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ls-1a
     ref: GA-110LS-1A
@@ -1406,6 +1642,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ly-1a
     ref: GA-110LY-1A
@@ -1418,6 +1657,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110mb-1a
     ref: GA-110MB-1A
@@ -1447,6 +1689,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110mc-2a
     ref: GA-110MC-2A
@@ -1459,6 +1704,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110mc-4a
     ref: GA-110MC-4A
@@ -1471,6 +1719,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110mc-7a
     ref: GA-110MC-7A
@@ -1483,6 +1734,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110mf-1a
     ref: GA-110MF-1A
@@ -1512,6 +1766,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110mmc-1a
     ref: GA-110MMC-1A
@@ -1541,6 +1798,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: false
   - id: ga-110mw-7a
     ref: GA-110MW-7A
@@ -1570,6 +1830,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110nc-6a
     ref: GA-110NC-6A
@@ -1582,6 +1845,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: false
   - id: ga-110ne-9a
     ref: GA-110NE-9A
@@ -1594,6 +1860,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110nm-2a
     ref: GA-110NM-2A
@@ -1606,6 +1875,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: false
   - id: ga-110nm-3a
     ref: GA-110NM-3A
@@ -1618,6 +1890,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110nm-4a
     ref: GA-110NM-4A
@@ -1630,6 +1905,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110nm-9a
     ref: GA-110NM-9A
@@ -1642,6 +1920,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110pc-1a
     ref: GA-110PC-1A
@@ -1654,6 +1935,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110pkm-7a
     ref: GA-110PKM-7A
@@ -1666,6 +1950,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: false
   - id: ga-110pm-1a
     ref: GA-110PM-1A
@@ -1678,6 +1965,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ps-7a
     ref: GA-110PS-7A
@@ -1690,6 +1980,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110rb-1a
     ref: GA-110RB-1A
@@ -1719,6 +2012,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110rf-9a
     ref: GA-110RF-9A
@@ -1731,6 +2027,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110rg-1a
     ref: GA-110RG-1A
@@ -1811,6 +2110,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110sgg-3a
     ref: GA-110SGG-3A
@@ -1874,6 +2176,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110sl-4a
     ref: GA-110SL-4A
@@ -1886,6 +2191,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110sl-8a
     ref: GA-110SL-8A
@@ -1898,6 +2206,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110sla-1a
     ref: GA-110SLA-1A
@@ -1910,6 +2221,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110slb-7a
     ref: GA-110SLB-7A
@@ -1922,6 +2236,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110slc-9a
     ref: GA-110SLC-9A
@@ -1951,6 +2268,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110sn-3a
     ref: GA-110SN-3A
@@ -1963,6 +2283,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110sn-7a
     ref: GA-110SN-7A
@@ -1975,6 +2298,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110sr-1a
     ref: GA-110SR-1A
@@ -2055,6 +2381,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110tp-7a
     ref: GA-110TP-7A
@@ -2067,6 +2396,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110tr-7a
     ref: GA-110TR-7A
@@ -2079,6 +2411,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ts-1a4
     ref: GA-110TS-1A4
@@ -2091,6 +2426,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ts-8a2
     ref: GA-110TS-8A2
@@ -2103,6 +2441,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ts-8a3
     ref: GA-110TS-8A3
@@ -2115,6 +2456,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110ts-8a4
     ref: GA-110TS-8A4
@@ -2127,6 +2471,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110tu-1a5
     ref: GA-110TU-1A5
@@ -2156,6 +2503,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110tx-2a
     ref: GA-110TX-2A
@@ -2168,6 +2518,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110tx-7a
     ref: GA-110TX-7A
@@ -2180,6 +2533,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110vla-4a
     ref: GA-110VLA-4A
@@ -2192,6 +2548,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110wb-7a
     ref: GA-110WB-7A
@@ -2204,6 +2563,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110wd-1a
     ref: GA-110WD-1A
@@ -2233,6 +2595,9 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-110wlp-7a
     ref: GA-110WLP-7A

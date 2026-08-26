@@ -334,6 +334,12 @@ models:
     case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 110, material: 'Titanium' }
     water_resistance_m: 200
     features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, sapphire-crystal]
+    # REFUSED on §10.3's budget, NOT on sourcing. The photograph is on disk at
+    # 414 852 bytes and encodes to 61.5 KB against a 40.0 KB budget at quality
+    # 66. Cropping made it WORSE, which is worth writing down: a tighter crop
+    # enlarges the subject and packs more detail into the same output width.
+    # The source is also only 360 px, so its 2x was never really 2x.
+    image: null
     discontinued: false
   - id: gmw-b5000tcm-1
     ref: GMW-B5000TCM-1

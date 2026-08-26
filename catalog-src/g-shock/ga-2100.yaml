@@ -1,3 +1,29 @@
+# PHOTOGRAPHS REFUSED, 6 of them, and this is the reason for every
+# `image: null` below that does not carry one of its own.
+#
+# These references are discontinued collaborations and regional limited runs.
+# Every route this project knows how to walk was walked, and the measurement is
+# recorded rather than the hope:
+#
+#   * Casio's own archived product pages (D52) — only 7 of 384 G-SHOCK gaps had
+#     an archived page in ANY of 32 locales, and 3 of those named no asset.
+#     Extending the crawl to `mea-en`, `africa-fr` and `at` added 1 833 pages
+#     and zero new references.
+#   * four Shopify rosters dumped in full — shopcasio.fjbl.co.id, watchoutz.com,
+#     ippojapanwatch.com and casio.ge, 5 000+ listings between them.
+#   * `/search/suggest.json?q=<REF>` asked for EVERY one of these references
+#     individually across those shops. Zero hits beyond the roster dumps, so the
+#     route is exhausted rather than untried.
+#   * gshock.casio.com, g-shock.jp and world.g-shock.com in the archive — 14 330+
+#     product URLs, but they are *series* pages and their images are AEM
+#     renditions: banners, 4:3 lifestyle crops and wrist shots. Not card images.
+#
+# So this is D29's typographic tile as a deliberate primary state, not an
+# oversight. What would change it is a source nobody here has: the client's own
+# photography, or a licensed pool. A wrist shot, a lifestyle photo or a listing
+# collage would not — those are refused on quality, not availability.
+#
+# Measured 2026-08-24, re-checked 2026-08-26 against the page cache.
 # GA-2100 — seeded 2026-08-17 (M2b), the first G-SHOCK series in the catalogue
 # and the first entries anywhere in it sourced from an **official** Casio page.
 #
@@ -315,6 +341,9 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-2100bce-1a
     ref: GA-2100BCE-1A
@@ -446,6 +475,12 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    # REFUSED on §10.3's budget, NOT on sourcing — the distinction matters.
+    # Casio's own page names a photograph and it is on disk at 3 213 793 bytes.
+    # Its @2x encodes to 115.5 KB against a 110.0 KB budget, at D56's quality
+    # floor of 66; the ladder does not go lower on purpose. A dial-busy
+    # Casioak in eight colours is simply expensive to encode.
+    image: null
     discontinued: false
   - id: ga-2100cm-5a
     ref: GA-2100CM-5A
@@ -858,6 +893,9 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-2100ln-7a
     ref: GA-2100LN-7A
@@ -870,6 +908,9 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-2100lxb-1a
     ref: GA-2100LXB-1A
@@ -984,6 +1025,9 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-2100p-1a
     ref: GA-2100P-1A
@@ -1013,6 +1057,9 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-2100pt-2a
     ref: GA-2100PT-2A
@@ -1280,6 +1327,9 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: ga-2100tl-7a
     ref: GA-2100TL-7A

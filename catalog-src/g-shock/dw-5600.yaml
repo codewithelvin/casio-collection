@@ -1,3 +1,29 @@
+# PHOTOGRAPHS REFUSED, 64 of them, and this is the reason for every
+# `image: null` below that does not carry one of its own.
+#
+# These references are discontinued collaborations and regional limited runs.
+# Every route this project knows how to walk was walked, and the measurement is
+# recorded rather than the hope:
+#
+#   * Casio's own archived product pages (D52) — only 7 of 384 G-SHOCK gaps had
+#     an archived page in ANY of 32 locales, and 3 of those named no asset.
+#     Extending the crawl to `mea-en`, `africa-fr` and `at` added 1 833 pages
+#     and zero new references.
+#   * four Shopify rosters dumped in full — shopcasio.fjbl.co.id, watchoutz.com,
+#     ippojapanwatch.com and casio.ge, 5 000+ listings between them.
+#   * `/search/suggest.json?q=<REF>` asked for EVERY one of these references
+#     individually across those shops. Zero hits beyond the roster dumps, so the
+#     route is exhausted rather than untried.
+#   * gshock.casio.com, g-shock.jp and world.g-shock.com in the archive — 14 330+
+#     product URLs, but they are *series* pages and their images are AEM
+#     renditions: banners, 4:3 lifestyle crops and wrist shots. Not card images.
+#
+# So this is D29's typographic tile as a deliberate primary state, not an
+# oversight. What would change it is a source nobody here has: the client's own
+# photography, or a licensed pool. A wrist shot, a lifestyle photo or a listing
+# collage would not — those are refused on quality, not availability.
+#
+# Measured 2026-08-24, re-checked 2026-08-26 against the page cache.
 # DW-5600 — seeded 2026-08-17 (M2b), the first G-SHOCK series in the catalogue
 # and the first entries anywhere in it sourced from an **official** Casio page.
 #
@@ -88,6 +114,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600arc-3
     ref: DW-5600ARC-3
@@ -100,6 +129,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600bb-1
     ref: DW-5600BB-1
@@ -129,6 +161,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600bbm-1
     ref: DW-5600BBM-1
@@ -226,6 +261,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600bud-20
     ref: DW-5600BUD-20
@@ -238,6 +276,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600bwp-2
     ref: DW-5600BWP-2
@@ -318,6 +359,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600cmb-1
     ref: DW-5600CMB-1
@@ -330,6 +374,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600cs-1
     ref: DW-5600CS-1
@@ -342,6 +389,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600cu-7
     ref: DW-5600CU-7
@@ -354,6 +404,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600cu-9
     ref: DW-5600CU-9
@@ -366,6 +419,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600da-4
     ref: DW-5600DA-4
@@ -395,6 +451,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600dc-2
     ref: DW-5600DC-2
@@ -407,6 +466,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600de-2
     ref: DW-5600DE-2
@@ -419,6 +481,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600dn-7
     ref: DW-5600DN-7
@@ -448,6 +513,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600dqm-1
     ref: DW-5600DQM-1
@@ -460,6 +528,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600e-1
     ref: DW-5600E-1
@@ -489,6 +560,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600et-3
     ref: DW-5600ET-3
@@ -535,6 +609,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600ew-7
     ref: DW-5600EW-7
@@ -547,6 +624,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600gc-7
     ref: DW-5600GC-7
@@ -610,6 +690,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600hr-1
     ref: DW-5600HR-1
@@ -639,6 +722,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600ht-1
     ref: DW-5600HT-1
@@ -651,6 +737,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600huf-1
     ref: DW-5600HUF-1
@@ -663,6 +752,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600jk-1
     ref: DW-5600JK-1
@@ -692,6 +784,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600lg-1
     ref: DW-5600LG-1
@@ -704,6 +799,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600lh-4
     ref: DW-5600LH-4
@@ -745,6 +843,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600lp-1
     ref: DW-5600LP-1
@@ -757,6 +858,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600ls-2
     ref: DW-5600LS-2
@@ -803,6 +907,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600lu-8
     ref: DW-5600LU-8
@@ -815,6 +922,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600m-2
     ref: DW-5600M-2
@@ -827,6 +937,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600m-3
     ref: DW-5600M-3
@@ -856,6 +969,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600m-8
     ref: DW-5600M-8
@@ -885,6 +1001,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600mnt-1
     ref: DW-5600MNT-1
@@ -948,6 +1067,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600mw-7
     ref: DW-5600MW-7
@@ -977,6 +1099,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600ne-1
     ref: DW-5600NE-1
@@ -1006,6 +1131,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600nh-7
     ref: DW-5600NH-7
@@ -1018,6 +1146,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600nn-1
     ref: DW-5600NN-1
@@ -1047,6 +1178,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600p-4
     ref: DW-5600P-4
@@ -1059,6 +1193,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600p-9
     ref: DW-5600P-9
@@ -1071,6 +1208,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600pgb-1
     ref: DW-5600PGB-1
@@ -1083,6 +1223,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600pgw-7
     ref: DW-5600PGW-7
@@ -1095,6 +1238,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600pm-1
     ref: DW-5600PM-1
@@ -1107,6 +1253,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600pr-4
     ref: DW-5600PR-4
@@ -1119,6 +1268,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600pt-5
     ref: DW-5600PT-5
@@ -1250,6 +1402,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600sby-4
     ref: DW-5600SBY-4
@@ -1330,6 +1485,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600sk-1
     ref: DW-5600SK-1
@@ -1393,6 +1551,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600sl-1
     ref: DW-5600SL-1
@@ -1405,6 +1566,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600sl-7
     ref: DW-5600SL-7
@@ -1417,6 +1581,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600sla-1
     ref: DW-5600SLA-1
@@ -1429,6 +1596,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600slb-2
     ref: DW-5600SLB-2
@@ -1441,6 +1611,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600slc-9
     ref: DW-5600SLC-9
@@ -1470,6 +1643,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600slv-1
     ref: DW-5600SLV-1
@@ -1482,6 +1658,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600smb-4
     ref: DW-5600SMB-4
@@ -1562,6 +1741,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600tb-1
     ref: DW-5600TB-1
@@ -1574,6 +1756,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600tb-4a
     ref: DW-5600TB-4A
@@ -1586,6 +1771,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600tb-4b
     ref: DW-5600TB-4B
@@ -1598,6 +1786,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600tb-6
     ref: DW-5600TB-6
@@ -1610,6 +1801,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600tcb-1
     ref: DW-5600TCB-1
@@ -1639,6 +1833,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600tga-9
     ref: DW-5600TGA-9
@@ -1719,6 +1916,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600tmn-7
     ref: DW-5600TMN-7
@@ -1731,6 +1931,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600tnt-7
     ref: DW-5600TNT-7
@@ -1743,6 +1946,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: false
   - id: dw-5600wb-7
     ref: DW-5600WB-7
@@ -1755,6 +1961,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600wm-5
     ref: DW-5600WM-5
@@ -1818,6 +2027,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600yg-4
     ref: DW-5600YG-4
@@ -1830,6 +2042,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
   - id: dw-5600yu-7
     ref: DW-5600YU-7
@@ -1842,6 +2057,9 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight, flash-alert]
+    # No product shot exists by any route this project can walk — see the
+    # refusal note at the head of this file.
+    image: null
     discontinued: true
 
 # ADDED 2026-08-19: 23 more references, from Casio's own
