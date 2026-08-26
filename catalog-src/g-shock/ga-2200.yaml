@@ -1,0 +1,242 @@
+# GA-2200 — seeded 2026-08-26 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ga-2200
+  name: GA-2200
+  line: g-shock
+
+models:
+  - id: ga-2200-2a
+    ref: GA-2200-2A
+    source:
+      { url: 'https://web.archive.org/web/20240715021606id_/https://www.casio.com/europe/watches/gshock/product.GA-2200-2A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 12.8, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200-2a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021606id_/https://www.casio.com/europe/watches/gshock/product.GA-2200-2A/'
+  - id: ga-2200bb-1a
+    ref: GA-2200BB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715065408id_/https://www.casio.com/europe/watches/gshock/product.GA-2200BB-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 12.8, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200bb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065408id_/https://www.casio.com/europe/watches/gshock/product.GA-2200BB-1A/'
+  - id: ga-2200bnr-1a
+    ref: GA-2200BNR-1A
+    source:
+      { url: 'https://web.archive.org/web/20221110190703id_/https://www.casio.com/my/watches/gshock/product.GA-2200BNR-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200bnr-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221110190703id_/https://www.casio.com/my/watches/gshock/product.GA-2200BNR-1A/'
+  - id: ga-2200ff-8a
+    ref: GA-2200FF-8A
+    source:
+      { url: 'https://web.archive.org/web/20231015045156id_/https://www.casio.com/sg/watches/gshock/product.GA-2200FF-8A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200ff-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231015045156id_/https://www.casio.com/sg/watches/gshock/product.GA-2200FF-8A/'
+  - id: ga-2200gc-7a
+    ref: GA-2200GC-7A
+    source:
+      { url: 'https://web.archive.org/web/20240715065405id_/https://www.casio.com/europe/watches/gshock/product.GA-2200GC-7A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200gc-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065405id_/https://www.casio.com/europe/watches/gshock/product.GA-2200GC-7A/'
+  - id: ga-2200m-1a
+    ref: GA-2200M-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715065416id_/https://www.casio.com/europe/watches/gshock/product.GA-2200M-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 12.8, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200m-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065416id_/https://www.casio.com/europe/watches/gshock/product.GA-2200M-1A/'
+  - id: ga-2200m-4a
+    ref: GA-2200M-4A
+    source:
+      { url: 'https://web.archive.org/web/20240715065413id_/https://www.casio.com/europe/watches/gshock/product.GA-2200M-4A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 12.8, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200m-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065413id_/https://www.casio.com/europe/watches/gshock/product.GA-2200M-4A/'
+  - id: ga-2200mfr-3a
+    ref: GA-2200MFR-3A
+    source:
+      { url: 'https://web.archive.org/web/20240715065419id_/https://www.casio.com/europe/watches/gshock/product.GA-2200MFR-3A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200mfr-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065419id_/https://www.casio.com/europe/watches/gshock/product.GA-2200MFR-3A/'
+  - id: ga-2200mfr-5a
+    ref: GA-2200MFR-5A
+    source:
+      { url: 'https://web.archive.org/web/20240715065402id_/https://www.casio.com/europe/watches/gshock/product.GA-2200MFR-5A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200mfr-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065402id_/https://www.casio.com/europe/watches/gshock/product.GA-2200MFR-5A/'
+  - id: ga-2200nc-7a
+    ref: GA-2200NC-7A
+    source:
+      { url: 'https://web.archive.org/web/20240722084917id_/https://www.casio.com/id/watches/gshock/product.GA-2200NC-7A/', kind: official }
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57 }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, super-illuminator]
+    image: ga-2200nc-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722084917id_/https://www.casio.com/id/watches/gshock/product.GA-2200NC-7A/'
+  - id: ga-2200nn-1a
+    ref: GA-2200NN-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715065358id_/https://www.casio.com/europe/watches/gshock/product.GA-2200NN-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200nn-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065358id_/https://www.casio.com/europe/watches/gshock/product.GA-2200NN-1A/'
+  - id: ga-2200sby-8a
+    ref: GA-2200SBY-8A
+    source:
+      { url: 'https://web.archive.org/web/20230208174209id_/https://www.casio.com/intl/watches/gshock/product.GA-2200SBY-8A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Carbon / Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200sby-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230208174209id_/https://www.casio.com/intl/watches/gshock/product.GA-2200SBY-8A/'
+  - id: ga-2200skl-4a
+    ref: GA-2200SKL-4A
+    source:
+      { url: 'https://web.archive.org/web/20240715064301id_/https://www.casio.com/europe/watches/gshock/product.GA-2200SKL-4A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200skl-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064301id_/https://www.casio.com/europe/watches/gshock/product.GA-2200SKL-4A/'
+  - id: ga-2200skl-8a
+    ref: GA-2200SKL-8A
+    source:
+      { url: 'https://web.archive.org/web/20240715064304id_/https://www.casio.com/europe/watches/gshock/product.GA-2200SKL-8A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200skl-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064304id_/https://www.casio.com/europe/watches/gshock/product.GA-2200SKL-8A/'
+  - id: ga-2200sl-5a
+    ref: GA-2200SL-5A
+    source:
+      { url: 'https://web.archive.org/web/20220704091954id_/https://www.casio.com/us/watches/gshock/product.GA-2200SL-5A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200sl-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220704091954id_/https://www.casio.com/us/watches/gshock/product.GA-2200SL-5A/'
+  - id: ga-2200sl-8a
+    ref: GA-2200SL-8A
+    source:
+      { url: 'https://web.archive.org/web/20220925151514id_/https://www.casio.com/us/watches/gshock/product.GA-2200SL-8A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: ga-2200sl-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220925151514id_/https://www.casio.com/us/watches/gshock/product.GA-2200SL-8A/'
