@@ -1,0 +1,188 @@
+# GM-S2100 — seeded 2026-08-26 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gm-s2100
+  name: GM-S2100
+  line: g-shock
+
+models:
+  - id: gm-s2100-3a
+    ref: GM-S2100-3A
+    source:
+      { url: 'https://web.archive.org/web/20240715064850id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100-3A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100-3a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064850id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100-3A/'
+  - id: gm-s2100b-8a
+    ref: GM-S2100B-8A
+    source:
+      { url: 'https://web.archive.org/web/20240715064852id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100B-8A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100b-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064852id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100B-8A/'
+  - id: gm-s2100bc-1a
+    ref: GM-S2100BC-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715065619id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100BC-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 46.2, width_mm: 40.5, depth_mm: 11.3, weight_g: 57, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100bc-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065619id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100BC-1A/'
+  - id: gm-s2100br-5a
+    ref: GM-S2100BR-5A
+    source:
+      { url: 'https://web.archive.org/web/20221203224907id_/https://www.casio.com/us/watches/gshock/product.GM-S2100BR-5A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100br-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221203224907id_/https://www.casio.com/us/watches/gshock/product.GM-S2100BR-5A/'
+  - id: gm-s2100cb-5a
+    ref: GM-S2100CB-5A
+    source:
+      { url: 'https://web.archive.org/web/20240921090209id_/https://www.casio.com/intl/watches/gshock/product.GM-S2100CB-5A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100cb-5a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240921090209id_/https://www.casio.com/intl/watches/gshock/product.GM-S2100CB-5A/'
+  - id: gm-s2100ch-1a
+    ref: GM-S2100CH-1A
+    source:
+      { url: 'https://web.archive.org/web/20230301123708id_/https://www.casio.com/my/watches/gshock/product.GM-S2100CH-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100ch-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230301123708id_/https://www.casio.com/my/watches/gshock/product.GM-S2100CH-1A/'
+  - id: gm-s2100cw-7a
+    ref: GM-S2100CW-7A
+    source:
+      { url: 'https://web.archive.org/web/20250121104229id_/https://www.casio.com/in/watches/gshock/product.GM-S2100CW-7A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100cw-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121104229id_/https://www.casio.com/in/watches/gshock/product.GM-S2100CW-7A/'
+  - id: gm-s2100gb-1a
+    ref: GM-S2100GB-1A
+    source:
+      { url: 'https://web.archive.org/web/20240715064847id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100GB-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100gb-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064847id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100GB-1A/'
+  - id: gm-s2100mf-1a
+    ref: GM-S2100MF-1A
+    source:
+      { url: 'https://web.archive.org/web/20220623234205id_/https://www.casio.com/us/watches/gshock/product.GM-S2100MF-1A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100mf-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220623234205id_/https://www.casio.com/us/watches/gshock/product.GM-S2100MF-1A/'
+  - id: gm-s2100pg-1a4
+    ref: GM-S2100PG-1A4
+    source:
+      { url: 'https://web.archive.org/web/20240715064844id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100PG-1A4/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100pg-1a4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064844id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100PG-1A4/'
+  - id: gm-s2100pg-4a
+    ref: GM-S2100PG-4A
+    source:
+      { url: 'https://web.archive.org/web/20231221080024id_/https://www.casio.com/us/watches/gshock/product.GM-S2100PG-4A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100pg-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231221080024id_/https://www.casio.com/us/watches/gshock/product.GM-S2100PG-4A/'
+  - id: gm-s2100ws-7a
+    ref: GM-S2100WS-7A
+    source:
+      { url: 'https://web.archive.org/web/20231209071007id_/https://www.casio.com/us/watches/gshock/product.GM-S2100WS-7A/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    image: gm-s2100ws-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231209071007id_/https://www.casio.com/us/watches/gshock/product.GM-S2100WS-7A/'
