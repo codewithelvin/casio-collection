@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Col, Row, Tabs, Typography, theme as antdTheme } from 'antd'
+import { Col, Row, Typography, theme as antdTheme } from 'antd'
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { useCatalog } from '../../catalog/client.ts'
@@ -33,6 +33,20 @@ import { t } from '../../i18n/strings'
  * asks for `is_public = true` and the `public profile readable` policy admits
  * nothing else, so a private profile is genuinely invisible here rather than
  * fetched and then filtered — which would leak the difference through timing.
+ *
+ * **A published collection is what somebody owns, and nothing else** — the
+ * client's instruction, and it removed the tabs rather than one of them. Two
+ * things follow that are worth naming:
+ *
+ *   * The wishlist is not hidden here, it is not fetched. `fetchPublicCollection`
+ *     asks for `status = 'owned'`, on the same argument as the profile lookup
+ *     above: a list filtered in the browser is a list that was still sent to the
+ *     browser, and "what I am saving up for" is closer to a private note than to
+ *     a shelf. The one place it is answered is the owner's own screen.
+ *   * With one list there is nothing to switch between, so the heading is the
+ *     whole chrome of this page and it is a step smaller than every other
+ *     route's — level 3 rather than 2. A 30 px name over a grid, with no tab bar
+ *     under it to balance the weight, was the client's other note.
  */
 export default function ProfileRoute() {
   const { handle = '' } = useParams<{ handle: string }>()
@@ -85,55 +99,51 @@ export default function ProfileRoute() {
     catalog.data.series.map((series) => [series.id, series]),
   )
 
-  const tab = (status: 'owned' | 'wishlist') => {
-    const shown = sortEntries(entriesWithStatus(entries, status), 'added')
-    if (shown.length === 0) return <EmptyState title={t('profile.empty')} />
-    return (
-      <Row gutter={GRID_GUTTER}>
-        {shown.map((entry) => (
-          <Col key={entry.item.model_id} {...GRID_SPANS}>
-            {entry.model ? (
-              <WatchCard
-                model={entry.model}
-                seriesName={seriesById.get(entry.model.series)?.name}
-                // §8.10 — no ownership controls on somebody else's collection.
-                readOnly
-              />
-            ) : (
-              <UnlistedCard item={entry.item} />
-            )}
-          </Col>
-        ))}
-      </Row>
-    )
-  }
-
-  const owned = entriesWithStatus(entries, 'owned').length
-  const wishlist = entriesWithStatus(entries, 'wishlist').length
+  // Belt and braces over the query's own filter: `entriesWithStatus` is what
+  // keeps a row the database sent for some other reason off this page, and it
+  // costs one pass over a few hundred items.
+  const shown = sortEntries(entriesWithStatus(entries, 'owned'), 'added')
 
   return (
     <div>
-      <Typography.Title level={2} style={{ marginTop: 0, marginBottom: 4 }}>
+      <Typography.Title level={3} style={{ marginTop: 0, marginBottom: 4 }}>
         {owner.display_name ?? `/u/${owner.handle ?? handle}`}
       </Typography.Title>
 
+      {/* The count was in a tab label until the tabs went, and it is the one
+          thing that was worth keeping from them: it says what the grid is —
+          somebody's owned watches — to a visitor who arrived from a link with no
+          other context. Rendered only once the rows are in, because a number
+          beside a skeleton is a number that is about to change. */}
+      {collection.isPending ? null : (
+        <Typography.Paragraph type="secondary" style={{ fontSize: token.fontSizeSM }}>
+          {/* Built as one expression rather than as JSX text: the middle dot is
+              punctuation between two values, not a sentence for D12 to hold. */}
+          {`${t('profile.owned')} · ${shown.length}`}
+        </Typography.Paragraph>
+      )}
+
       {collection.isPending ? (
         <SkeletonGrid />
+      ) : shown.length === 0 ? (
+        <EmptyState title={t('profile.empty')} />
       ) : (
-        <Tabs
-          items={[
-            {
-              key: 'owned',
-              label: `${t('profile.owned')} (${owned})`,
-              children: tab('owned'),
-            },
-            {
-              key: 'wishlist',
-              label: `${t('profile.wishlist')} (${wishlist})`,
-              children: tab('wishlist'),
-            },
-          ]}
-        />
+        <Row gutter={GRID_GUTTER}>
+          {shown.map((entry) => (
+            <Col key={entry.item.model_id} {...GRID_SPANS}>
+              {entry.model ? (
+                <WatchCard
+                  model={entry.model}
+                  seriesName={seriesById.get(entry.model.series)?.name}
+                  // §8.10 — no ownership controls on somebody else's collection.
+                  readOnly
+                />
+              ) : (
+                <UnlistedCard item={entry.item} />
+              )}
+            </Col>
+          ))}
+        </Row>
       )}
 
       {/* §8.10 — "a footer line identifying the site". Somebody arriving here

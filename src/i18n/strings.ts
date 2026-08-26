@@ -377,8 +377,13 @@ const en = {
   'settings.danger.failed': 'The account could not be deleted. Nothing has changed.',
 
   // The public profile (FR-7.4, FR-7.5, §8.10)
+  //
+  // There is no `profile.wishlist` any more, and its absence is the point: the
+  // client's decision is that a published profile is a shelf, so the wishlist is
+  // not a tab that was removed, it is a list this screen cannot name because it
+  // never asks the database for it. The word still exists on the owner's own
+  // screen as `collection.tab.wishlist`.
   'profile.owned': 'Owned',
-  'profile.wishlist': 'Wishlist',
   'profile.footer': 'A collection kept on Casio Vault',
   // FR-7.5 — an unknown handle and a private one render the same page. The copy
   // must not hint that the second exists.
@@ -475,6 +480,10 @@ const en = {
   'footer.source': 'Source code',
   'footer.catalogVersion': 'Catalogue',
   'footer.madeBy': 'Made by Claude for Casio Lovers',
+  // The disclosure that now holds everything above. It names what is behind it
+  // rather than the glyph in front of it — "Information" would tell a screen
+  // reader the shape of the icon and nothing about the button.
+  'footer.about': 'About this site',
 } as const
 
 export type StringKey = keyof typeof en

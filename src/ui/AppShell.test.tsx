@@ -36,17 +36,30 @@ describe('the app shell (§8.1, §8.2)', () => {
     expect(marks.length).toBeGreaterThan(0)
   })
 
-  it('carries the non-affiliation notice above the metadata, not in it (FR-10.3, §8.11)', async () => {
+  it('shows one line in the footer, and the rest behind the disclosure (FR-10.3)', async () => {
+    const user = userEvent.setup()
     renderApp('/')
 
-    const notice = await screen.findByText(t('footer.disclaimer'))
-    expect(notice).toBeInTheDocument()
+    // The client's instruction: the closing line is the footer, everything else
+    // is behind an "i". So the notice is genuinely absent until it is asked for
+    // — `queryBy`, not a hidden-element assertion, because `Footer.tsx` renders
+    // no panel at all when it is shut rather than hiding one with CSS.
+    expect(await screen.findByText(t('footer.madeBy'))).toBeInTheDocument()
+    expect(screen.queryByText(t('footer.disclaimer'))).toBeNull()
 
-    // **This assertion has been weakened deliberately and the reason belongs
-    // here.** It used to say the notice was body text and not small print, which
-    // is what §8.11 asked for; the client has since asked for the whole footer at
-    // small-print sizes, and `Footer.tsx` argues with that request in writing
-    // rather than pretending it was never made.
+    const disclosure = screen.getByRole('button', { name: t('footer.about') })
+    expect(disclosure.getAttribute('aria-expanded')).toBe('false')
+
+    await user.click(disclosure)
+
+    const notice = await screen.findByText(t('footer.disclaimer'))
+
+    // **This assertion has been weakened twice and the reason belongs here.** It
+    // used to say the notice was body text and not small print, which is what
+    // §8.11 asked for; the client asked for the whole footer at small-print
+    // sizes, and then for it behind a press. `Footer.tsx` argues with both
+    // requests in writing rather than pretending they were never made, and names
+    // where the sentence still appears unprompted (the meta description).
     //
     // What survives is the *hierarchy*: the notice is its own paragraph in the
     // normal text colour, a step above the metadata line. So this asserts it is
@@ -61,9 +74,18 @@ describe('the app shell (§8.1, §8.2)', () => {
     expect(meta.closest('p')?.className).toContain('cc-footer-meta')
   })
 
-  it('closes the footer with the required line (FR-10.3)', async () => {
+  it('closes the footer disclosure on Escape', async () => {
+    const user = userEvent.setup()
     renderApp('/')
-    expect(await screen.findByText(t('footer.madeBy'))).toBeInTheDocument()
+
+    await user.click(await screen.findByRole('button', { name: t('footer.about') }))
+    await screen.findByText(t('footer.disclaimer'))
+
+    // The panel holds the only two links in the footer, so a keyboard user who
+    // opens it and changes their mind needs a way out that is not tabbing
+    // through it — the same argument the drawer makes above.
+    await user.keyboard('{Escape}')
+    await waitFor(() => expect(screen.queryByText(t('footer.disclaimer'))).toBeNull())
   })
 
   it('toggles the theme from the header', async () => {

@@ -975,7 +975,13 @@
  * 12 px is the floor rather than a round-down. Below it the disclaimer stops
  * being a sentence someone can read and becomes a grey texture, and a notice
  * nobody can read is a notice that is not doing the job D11 needs it to do — so
- * it is set once, on the footer, and inherited by everything in it.
+ * it is set once, on the footer, and inherited by everything in it, panel
+ * included.
+ *
+ * On screen the footer is now **one line**: the closing sentence and the
+ * disclosure that holds the rest. Measured in Chromium at 390 px, where it
+ * printed four paragraphs and stood 191 px tall — 24% of the screen — it is
+ * 45 px.
  */
 .cc-footer {
   padding: 10px 16px;
@@ -984,19 +990,90 @@
   font-size: 12px;
 }
 
+/* The positioning context for the panel, which is why this is `relative` and why
+   the 960 container is the thing the panel aligns its edge to. */
 .cc-footer-inner {
-  display: grid;
-  gap: 2px;
+  position: relative;
   max-width: 960px;
   margin: 0 auto;
 }
 
+/* The one line that stays: text and its "i", baseline-aligned rather than
+   centred, so the glyph sits on the sentence instead of floating beside it. */
+.cc-footer-made {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cc-footer-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* 24 px is under the 44 px NFR-9 asks of a primary control, and deliberately:
+     this is a disclosure on a footnote, next to 12 px text, and a 44 px target
+     here would be the largest thing in the footer. The padding gives it 24 px of
+     press area around a 13 px glyph, which is the compromise — reachable with a
+     thumb, quiet enough to read as punctuation. */
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  color: var(--cc-text-description);
+  cursor: pointer;
+  transition:
+    background var(--cc-quick) var(--cc-ease),
+    color var(--cc-quick) var(--cc-ease);
+}
+
+.cc-footer-info:hover,
+.cc-footer-info[aria-expanded='true'] {
+  background: var(--cc-fill-secondary);
+  color: var(--cc-text);
+}
+
+.cc-footer-info svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
 /*
- * The D11 notice. It inherits the 12 px above and keeps everything else §8.11
- * gave it: first in the order, the normal text colour rather than the quiet one,
- * and a step larger than the metadata under it. The tight leading was measured
- * before any of this — at 360 px the footer was 191 px, **24% of the screen**,
- * and 1.5 never earned its keep on a three-line paragraph.
+ * The panel. It draws *above* the button — the footer is the last thing on the
+ * page, so a panel opening downwards would open off the bottom of it — and it is
+ * absolutely positioned, so the footer keeps its one-line height whether the
+ * panel is open or shut and nothing below the fold moves when it is pressed.
+ *
+ * `min(360px, ...)` rather than a fixed width: at 360 px the viewport minus the
+ * footer's own 16 px of padding on each side is 328, and a 360 px panel would
+ * put the attribution's second line under the edge of the screen.
+ */
+.cc-footer-panel {
+  position: absolute;
+  inset-inline-start: 0;
+  bottom: calc(100% + 8px);
+  z-index: 90;
+  display: grid;
+  gap: 4px;
+  width: min(360px, calc(100vw - 32px));
+  padding: 12px;
+  border: 1px solid var(--cc-border-secondary);
+  border-radius: 8px;
+  background: var(--cc-bg-elevated);
+  box-shadow: 0 6px 16px 0 rgb(0 0 0 / 8%);
+  animation: cc-fade-in var(--cc-quick) var(--cc-ease) both;
+}
+
+/*
+ * The D11 notice. It inherits the 12 px above and keeps everything §8.11 gave it
+ * that a disclosure can keep: first in the panel, the normal text colour rather
+ * than the quiet one, and a step larger than the metadata under it. The tight
+ * leading was measured before any of this — 1.5 never earned its keep on a
+ * three-line paragraph in small print.
  */
 .cc-footer-notice {
   margin: 0;
@@ -1004,7 +1081,7 @@
 }
 
 /*
- * Attribution, source, catalogue version, closing line — one wrapping row.
+ * Attribution, source, catalogue version — one wrapping row under the notice.
  *
  * **11 px is set here rather than by `.cc-small`, and that is not a detail.**
  * `.cc-small` is 14 px, which was *smaller* than body text and is now larger than

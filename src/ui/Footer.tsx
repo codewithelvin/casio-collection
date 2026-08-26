@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from 'react'
+import { InfoIcon } from './icons'
 import { t } from '../i18n/strings'
 
 /**
@@ -13,38 +15,67 @@ import { t } from '../i18n/strings'
 const REPO_URL = 'https://github.com/codewithelvin/casio-collection'
 
 /**
- * FR-10.3 — in this order: the D11 non-affiliation notice, the image
- * attribution, the source link, the catalogue version, and the closing line.
+ * FR-10.3 — **one line on screen, and everything else behind an "i".**
  *
- * **The whole footer is small print now, and that is a client instruction
- * overriding §8.11.** The sizes are in `.cc-footer`; the reason they are being
- * argued with here is that §8.11 asked for the opposite in writing, and the
- * argument is worth keeping so nobody "fixes" this back:
+ * The footer used to print all of it: the D11 non-affiliation notice, the image
+ * attribution, the source link, the catalogue version, the closing line. The
+ * client has asked for the closing line alone, with the rest in a disclosure —
+ * and that is the second time this footer has been argued down, so the argument
+ * is kept rather than quietly overwritten:
  *
  *   * §8.11 wanted the disclaimer as **legible body text and not small print**,
- *     because the name starts with theirs, the mark is their bezel (D34) and the
- *     colour is their corporate blue. Together those read as an official Casio
- *     property, which is precisely what D11 says this is not — so the sentence
- *     that says so was set at body size, paying for the design.
- *   * D39 removed one leg of that argument and not the sentence. The old name
- *     *was* a Casio product line (D21) and "Vault" is nobody's; but "Casio" is
- *     still the first word, on a domain that is now casiovault.com, which if
- *     anything reads more like a property than a project path did.
+ *     because the name starts with Casio's, the mark is their bezel (D34) and
+ *     the colour is their corporate blue. Together those read as an official
+ *     Casio property, which is precisely what D11 says this is not.
+ *   * The client then asked for the whole footer at small-print sizes, so the
+ *     notice went to 12 px and kept the *hierarchy* §8.11 was reaching for.
+ *   * Now it is behind a press. What is left of §8.11 is that the notice is
+ *     still **first** in the panel, still in the normal text colour rather than
+ *     the quiet one, and still a step larger than the metadata under it.
  *
- * So the notice is now 12 px rather than 16. It is still first, still in the
- * normal text colour rather than the quiet one, and still a full step larger
- * than the metadata beneath it — the *hierarchy* §8.11 was reaching for
- * survives, the absolute size does not. If a lawyer ever asks, the answer is
- * this paragraph and the client's call, not an oversight.
+ * **The sentence has not left the site, and that is the part that matters for
+ * D11.** FR-10.4 puts it in the `<meta name="description">` and the Open Graph
+ * description in `index.html`, so it is what a search result and a pasted link
+ * say about this site before anybody arrives — which is the moment the "is this
+ * official?" question actually gets asked. The footer copy is the second place
+ * it appears, not the only one. If a lawyer ever asks, the answer is this
+ * paragraph, the meta tags, and the client's call — not an oversight.
  *
- * Everything *else* is one wrapping line, which is the whole shape of this
- * component. Four stacked paragraphs took a screenful on a phone for content
- * that is legally required rather than useful, and principle 5 says the phone is
- * the real device. The attribution, the source link and the version are metadata
- * and read as metadata, and the closing line stays last because FR-10.3 says the
- * footer closes with it.
+ * The disclosure is hand-rolled rather than AntD's `Popover` because this
+ * renders in the shell, and §12 took Ant Design out of the shell entirely: a
+ * popover from the library would put the theme runtime back into the first load
+ * of every URL on the site to draw a box that is usually closed. What the
+ * library would do for us is done here explicitly — Escape closes it, a press
+ * outside closes it, and the panel follows the button in the DOM so tabbing
+ * reaches its links without any focus management at all.
  */
 export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
+  const [open, setOpen] = useState(false)
+  const wrapper = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!open) return
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setOpen(false)
+    }
+    // `pointerdown` rather than `click`: a press that lands on the page should
+    // dismiss the panel *before* whatever it landed on reacts, or a link under
+    // an open panel navigates and leaves the panel open on the next page.
+    const onPointerDown = (event: PointerEvent) => {
+      const target = event.target
+      if (target instanceof Node && wrapper.current?.contains(target)) return
+      setOpen(false)
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    window.addEventListener('pointerdown', onPointerDown)
+    return () => {
+      window.removeEventListener('keydown', onKeyDown)
+      window.removeEventListener('pointerdown', onPointerDown)
+    }
+  }, [open])
+
   // A separator glyph rather than a string: it is punctuation between items,
   // it is hidden from assistive technology, and there is nothing in it for a
   // second locale to translate. D12's rule is about user-facing *text*, which is
@@ -57,36 +88,57 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
 
   return (
     <footer className="cc-footer">
-      <div className="cc-footer-inner">
-        {/* Sized by `.cc-footer` in `shell.css` — see the note above about the
-            client's instruction, and the note there about how far down it went.
-            No `maxWidth`, and that was measured: a 68ch measure reads better in
-            the abstract and wrapped this sentence onto a second line at 1280 px,
-            making the footer *taller* on desktop while saving nothing on the
-            phone. The 960 container is the only limit it needs. */}
-        <p className="cc-footer-notice">{t('footer.disclaimer')}</p>
-        <p className="cc-quiet cc-footer-meta">
-          <span>{t('footer.attribution')}</span>
-          {separator}
-          <a href={REPO_URL} rel="noreferrer noopener" target="_blank">
-            {t('footer.source')}
-          </a>
-          {/* The catalogue version renders only once there is one. A zero or an
-              em-dash here would be inventing a fact about data that does not
-              exist yet (principle 4). */}
-          {catalogVersion ? (
-            <>
-              {separator}
-              <span>
-                {t('footer.catalogVersion')} {catalogVersion}
-              </span>
-            </>
-          ) : null}
-          {separator}
-          {/* Quieter still than the metadata beside it, which is the one place
-              this footer has a voice rather than a duty. */}
-          <span style={{ opacity: 0.75 }}>{t('footer.madeBy')}</span>
+      <div ref={wrapper} className="cc-footer-inner">
+        <p className="cc-footer-made">
+          <span>{t('footer.madeBy')}</span>
+          <button
+            type="button"
+            className="cc-footer-info"
+            aria-label={t('footer.about')}
+            aria-expanded={open}
+            onClick={() => setOpen((was) => !was)}
+          >
+            <InfoIcon />
+          </button>
         </p>
+
+        {/* Rendered only while open — a closed panel left in the tree is a set
+            of links in the tab order of every page that nobody can see — and
+            **after the button in the DOM although it draws above it**. The panel
+            is positioned, so its place in the markup costs nothing visually and
+            buys the one thing that cannot be styled in: pressing the button and
+            then tabbing walks straight into the panel's link, rather than out of
+            the footer and backwards. */}
+        {open ? (
+          <div className="cc-footer-panel" role="dialog" aria-label={t('footer.about')}>
+            <p className="cc-footer-notice">{t('footer.disclaimer')}</p>
+            {/* **The attribution is its own paragraph now, and the panel is why.**
+                It used to share the metadata row with the link and the version,
+                separated by middle dots, and that reads correctly across a
+                960 px footer. At 360 px it wraps three times and the dot lands
+                at the *start* of a line, where it stops being punctuation
+                between two items and starts looking like a bullet in front of
+                one. A sentence and a list of links are two different things; the
+                narrow measure is what made that visible. */}
+            <p className="cc-quiet cc-footer-meta">{t('footer.attribution')}</p>
+            <p className="cc-quiet cc-footer-meta">
+              <a href={REPO_URL} rel="noreferrer noopener" target="_blank">
+                {t('footer.source')}
+              </a>
+              {/* The catalogue version renders only once there is one. A zero or
+                  an em-dash here would be inventing a fact about data that does
+                  not exist yet (principle 4). */}
+              {catalogVersion ? (
+                <>
+                  {separator}
+                  <span>
+                    {t('footer.catalogVersion')} {catalogVersion}
+                  </span>
+                </>
+              ) : null}
+            </p>
+          </div>
+        ) : null}
       </div>
     </footer>
   )

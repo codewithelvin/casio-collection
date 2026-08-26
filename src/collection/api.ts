@@ -210,13 +210,23 @@ export async function fetchProfileByHandle(handle: string): Promise<Profile | nu
   return (data ?? null) as Profile | null
 }
 
-/** FR-7.4 — somebody else's published rows. Same shape, different policy. */
+/**
+ * FR-7.4 — somebody else's published rows. Same shape, different policy.
+ *
+ * **Owned only, and the filter is in the query for the same reason
+ * `is_public = true` is.** The client's decision is that a published profile
+ * shows a shelf and not a shopping list; asking for every row and hiding half of
+ * them in the component would still put "what this person is saving up for" into
+ * a stranger's browser, where it is one devtools tab away. The wishlist is
+ * answered on the owner's own screen, by `fetchCollection`, and nowhere else.
+ */
 export async function fetchPublicCollection(userId: string): Promise<CollectionItem[]> {
   const supabase = await getSupabase()
   const { data, error } = await supabase
     .from(TABLE)
     .select(COLUMNS)
     .eq('user_id', userId)
+    .eq('status', 'owned')
     .order('created_at', { ascending: false })
 
   if (error) throw new Error(`collection: ${error.message}`)

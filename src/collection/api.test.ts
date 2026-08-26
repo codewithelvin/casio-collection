@@ -242,11 +242,18 @@ describe('a published profile (FR-7.4, FR-7.5)', () => {
     await expect(fetchProfileByHandle('nobody')).resolves.toBeNull()
   })
 
-  it('reads a published collection by user id', async () => {
+  /**
+   * The second filter is the requirement, on the same argument as the first: a
+   * published profile shows what somebody owns, so the wishlist is not fetched
+   * and hidden, it is never sent. Filtering in the component would leave it in
+   * the response for anyone who opens a network tab.
+   */
+  it('reads a published collection by user id, owned rows only', async () => {
     db.result = { data: [{ model_id: 'f-91w-1' }], error: null }
 
     await expect(fetchPublicCollection('user-2')).resolves.toHaveLength(1)
     expect(db.lastFilters['user_id']).toBe('user-2')
+    expect(db.lastFilters['status']).toBe('owned')
   })
 })
 
