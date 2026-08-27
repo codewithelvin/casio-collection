@@ -1,0 +1,85 @@
+# GW-300J — the first radio-controlled, solar-powered G-SHOCK, added 2026-08-27
+# from Casio's own 50th-anniversary Heritage timeline. Year, specification and
+# photograph all come off that one official page, so there is no second source
+# and no `year_source`.
+#
+# THE SERIES ID IS `gw-300` AND THE REFERENCE IS `GW-300J`, which is the shape
+# DW-5600 and DW-9300 already have here: the id is the mechanical reference prefix
+# (D32) and the trailing J is the market suffix on this particular reference.
+# Check 4a is satisfied because `gw-300` is a prefix of `gw-300j`.
+#
+# THE LINE COMES FROM THE PAGE'S OWN WORDS. The tile carries no line tag — on this
+# page EF-100 and OCW-500 do — but the headline is "First radio-controlled,
+# solar-powered G-SHOCK" and the body opens "This G-SHOCK was the first to
+# incorporate…". A sentence naming the line outranks an absent tag, and the bezel
+# in the photograph moulds G-SHOCK.
+#
+# NEITHER ROSTER KNOWS THE REFERENCE, and that was measured rather than assumed:
+# absent from all 4,615 references in Casio's current sitemap (us, intl, de), and
+# the archive holds no `product.GW-300*` capture under any line path. A G-SHOCK
+# entry sourced from a page rather than a module guide is unusual in this line and
+# is the reason this file exists at all.
+#
+# `movement: solar-radio` BECAUSE THE BEZEL PRINTS BOTH IN ONE STRING —
+# "WAVE CEPTOR / TOUGH SOLAR" — and the prose says the same thing twice over.
+# The two also appear as `radio-controlled` and `tough-solar` in `features`,
+# which is where the schema keeps them for faceting.
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the case is a statement the source makes. This
+# one prints G-SHOCK, CASIO, WAVE CEPTOR / TOUGH SOLAR, TIME MEMO, WR 20BAR,
+# SHOCK RESISTANT, ADJUST, MODE, RECEIVE, SPLIT/RESET, START/STOP, RECEIVING
+# INDICATOR, SAVE · SLEEP · RECOVER and HIGH / MID / LOW. WR 20BAR is where
+# `water_resistance_m: 200` comes from and SPLIT/RESET with START/STOP is where
+# `stopwatch` comes from, which is the same reading `dw-9300` was written on.
+# The AUTO, P and battery glyphs inside the LCD are indicator artwork and are NOT
+# read.
+#
+# TIME MEMO IS PRINTED AND IS NOT WRITTEN. `telememo` is TELEMEMO — a different
+# Casio function with a different name — and no value in the vocabulary means what
+# TIME MEMO means. Reported, not guessed (guardrail 4).
+#
+# THE WAVE CEPTOR FAMILY CANNOT TAKE THIS SERIES even though the bezel names it:
+# `wave-ceptor` is declared under Vintage in `lines.yaml`, and a family belongs to
+# one line. It stays in the comment and in `aka`.
+#
+# ABSENT AND WHY:
+#   case                 no material is named; the picture shows resin, which is
+#                        the picture and not the page.
+#   module               the page states none.
+#   colorway             the picture is black with red accents; the page names no
+#                        colour.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# ONE MORE THING THE PAGE SAYS AND THIS FILE DOES NOT ACT ON: "The debut of the
+# GW-300J introduced a new line — The G". Casio calls The G a line; D15's seven
+# lines are this catalogue's, and adding an eighth is not a seeding decision. It
+# is in `aka`, where a reader who types it will find this watch.
+
+series:
+  id: gw-300
+  name: GW-300
+  line: g-shock
+  # Both names the page and the case give this watch. THE G is the line the prose
+  # says it introduced; WAVE CEPTOR is moulded on the bezel.
+  aka: ['The G', 'Wave Ceptor']
+
+models:
+  - id: gw-300j
+    ref: GW-300J
+    source: { url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/', kind: official }
+    year: 2002
+    display: digital
+    movement: solar-radio
+    water_resistance_m: 200
+    features: [stopwatch, radio-controlled, tough-solar, shock-resistant]
+    # Casio's own product photograph, plain transparent ground, no watermark,
+    # taken from the `<img src>` this page renders and named
+    # `2002-gw-300j-sq.png`, so the §10.3 filename test passes on the full
+    # reference — J included — with a boundary after it.
+    image: gw-300j
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/'
+    discontinued: true

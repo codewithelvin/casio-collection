@@ -1,0 +1,66 @@
+# EF-100 — the first EDIFICE, added 2026-08-27 from Casio's own 50th-anniversary
+# Heritage timeline. Year, specification and photograph all come off that one
+# official page, so there is no second source and no `year_source`.
+#
+# THE LINE IS CASIO'S OWN TAG, not a judgement: the tile is titled "EF-100
+# (EDIFICE)" and the prose says "The very first EDIFICE, the EF-100". This is the
+# oldest entry in `edifice/` by fifteen years and the only one in the line not
+# read off a module guide or a product page.
+#
+# NEITHER ROSTER KNOWS THE REFERENCE, and that was measured rather than assumed:
+# absent from all 4,615 references in Casio's current sitemap (us, intl, de), and
+# the archive holds no `product.EF-100*` capture under any line path.
+#
+# THE PROSE STATES THREE OF THE FOUR FIELDS BELOW IN ONE SENTENCE — "featured an
+# analog design focused on the hour, minute, and seconds hands, as well as
+# 100-meter water resistance" — which is `display: analog` and
+# `water_resistance_m: 100`. The dial independently prints WR 100M.
+#
+# `material: 'Metal'` AND NOT 'Stainless steel'. The tile's own headline is
+# "EDIFICE, a sporty look and metal materials", so metal is the page's word about
+# this reference; which metal is not, and every other `material` value in this
+# catalogue names an actual alloy because a page named it. Guessing steel off a
+# silver-coloured photograph is exactly the plausible-looking invention D27
+# refuses, so the page's own weaker word is what gets written.
+#
+# ABSENT AND WHY:
+#   features             THE DIAL PRINTS ILLUMINATOR and the vocabulary has no
+#                        value for it. `super-illuminator` is a different and
+#                        later Casio name, and `led-light` and `el-backlight` are
+#                        two different claims about which technology lights this
+#                        dial — the page says neither. Reported in the session
+#                        summary rather than guessed (guardrail 4).
+#   movement             not stated. Quartz is near-certain for a 2000 Casio and
+#                        near-certain is not read from a source.
+#   module               the page states none.
+#   colorway             the dial is white and the page names no colour.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# THE REST OF THE TILE'S PROSE IS ABOUT THE LINE, NOT THIS WATCH. Millisecond
+# accuracy, 200-lap memory, smartphone pairing and a target time indicator are
+# introduced by "The EDIFICE line has since established its position…" — a
+# sentence about twenty-five years of successors. None of it is written here.
+
+series:
+  id: ef-100
+  name: EF-100
+  line: edifice
+
+models:
+  - id: ef-100
+    ref: EF-100
+    source: { url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/', kind: official }
+    year: 2000
+    display: analog
+    case: { material: 'Metal' }
+    water_resistance_m: 100
+    # Casio's own product photograph, plain transparent ground, no watermark,
+    # taken from the `<img src>` this page renders and named
+    # `2000-ef-100-sq.png`, so the §10.3 filename test passes on the reference
+    # with a boundary after it.
+    image: ef-100
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/'
+    discontinued: true

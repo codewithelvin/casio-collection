@@ -1,0 +1,61 @@
+# WMP-1 — the Wrist Audio Player, the first wristwatch with an MP3 player in it,
+# added 2026-08-27 from Casio's own 50th-anniversary Heritage timeline. Year,
+# specification and photograph all come off that one official page, so there is
+# no second source and no `year_source`.
+#
+# NEITHER ROSTER KNOWS THE REFERENCE, and that was measured rather than assumed:
+# absent from all 4,615 references in Casio's current sitemap (us, intl, de), and
+# the archive holds no `product.WMP-1*` capture under any line path.
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the case is a statement the source makes. This
+# one prints CASIO, WRIST AUDIO PLAYER, WATER RESISTANT, MP3-32MB, MODE, VOLUME,
+# LIGHT, DATE, SHUFFLE, LOOP, TRACK, MIN and SEC. The 32 MB in MP3-32MB is the
+# same figure the prose gives in a sentence — "Equipped with a 32MB multimedia
+# card, the watch could store up to about one hour of sound (at low quality mode:
+# 64Kbps)" — which is the two halves of the page agreeing.
+#
+# ABSENT AND WHY:
+#   water_resistance_m   WATER RESISTANT is printed with NO DEPTH beside it, and
+#                        the prose gives none.
+#   features             THE VOCABULARY HAS NOTHING FOR WHAT THIS WATCH IS. No
+#                        value for an MP3 player, none for the USB transfer the
+#                        prose describes, and none for SHUFFLE or LOOP. LIGHT is
+#                        printed but names no technology, and `led-light` and
+#                        `el-backlight` are different claims — picking one would
+#                        be a guess. Proposed in the session summary, not written
+#                        here (guardrail 4).
+#   movement, module     the page states neither.
+#   case                 no material is named. The picture shows a metal-faced
+#                        module on a cloth strap with a separate battery or card
+#                        housing at nine o'clock, which is the picture and not the
+#                        page.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: wmp-1
+  name: WMP-1
+  line: vintage
+  # Casio's own name for it, printed around the bezel and used in the prose.
+  aka: [Wrist Audio Player]
+
+models:
+  - id: wmp-1
+    # ref-exception: the line's `ref_pattern` wants two to five digits after the
+    # prefix letters and this reference has one, WMP-1. Casio numbered it that way
+    # in 2000; the pattern is derived from references that exist and is a warning
+    # by design, so the exception is acknowledged here rather than the rule
+    # widened — the same reading AN-8 and PRT-1GPJ already carry.
+    ref: WMP-1
+    source: { url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/', kind: official }
+    year: 2000
+    display: digital
+    # Casio's own product photograph, plain transparent ground, no watermark,
+    # taken from the `<img src>` this page renders and named `2000-wmp-1-sq.png`,
+    # so the §10.3 filename test passes on the reference with a boundary after it.
+    image: wmp-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/'
+    discontinued: true

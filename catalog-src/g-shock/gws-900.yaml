@@ -1,0 +1,71 @@
+# GWS-900 — the G-SHOCK you could buy petrol with, added 2026-08-27 from Casio's
+# own 50th-anniversary Heritage timeline. Year, specification and photograph all
+# come off that one official page, so there is no second source and no
+# `year_source`.
+#
+# THE LINE COMES FROM THE PAGE'S OWN WORDS. The tile carries no line tag — on this
+# page EF-100 and OCW-500 do — but the headline is "G-SHOCK with contactless IC
+# chip" and the body opens "This G-SHOCK employed a contactless IC chip…". A
+# sentence naming the line outranks an absent tag, and the bezel in the
+# photograph moulds G-SHOCK.
+#
+# NEITHER ROSTER KNOWS THE REFERENCE, and that was measured rather than assumed:
+# absent from all 4,615 references in Casio's current sitemap (us, intl, de), and
+# the archive holds no `product.GWS-900*` capture under any line path.
+#
+# `movement: solar` AND NOT `solar-radio`. TOUGH SOLAR is printed on the bezel and
+# nothing on this page or this case mentions a radio signal — which is a real
+# distinction on a page whose two neighbouring tiles are about radio control, and
+# the same reading `dw-9300` was written on.
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the case is a statement the source makes. This
+# one prints G-SHOCK, CASIO, TOUGH SOLAR, Speedpass, WORLD TIME, WATER 20BAR
+# RESIST, FULL AUTO EL LIGHT, SHOCK RESIST, ADJUST, LIGHT, REVERSE, SPLIT/RESET,
+# SELECT, MODE, START/STOP, FORWARD and SAVE. WATER 20BAR RESIST is where
+# `water_resistance_m: 200` comes from; `el-backlight` and `auto-light` are the
+# two halves of FULL AUTO EL LIGHT, both in the vocabulary; SPLIT/RESET with
+# START/STOP is where `stopwatch` comes from. The 2004 and the battery glyph in
+# the LCD are indicator artwork and are NOT read — the year below comes from the
+# tile's own `2004` tag, not from the screen.
+#
+# SPEEDPASS IS THE ONE THING THIS WATCH IS FOR AND IT CANNOT BE SAID. The word is
+# moulded on the dial and the prose spells it out — "Owners of this watch could
+# refuel at self-service gas stations using the Speedpass electronic payment
+# system — simply by holding up the watch to make a cashless payment" — and the
+# vocabulary has no value for a contactless IC chip or for payment. Reported in
+# the session summary rather than invented (guardrail 4). Speedpass is also not an
+# `edition`: it is a payment system this watch talks to, not two companies making
+# a watch together, and D62 needs a page that says otherwise.
+#
+# ABSENT AND WHY:
+#   case                 no material is named; the picture shows resin, which is
+#                        the picture and not the page.
+#   module               the page states none.
+#   colorway             the picture is red and black; the page names no colour.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: gws-900
+  name: GWS-900
+  line: g-shock
+
+models:
+  - id: gws-900
+    ref: GWS-900
+    source: { url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/', kind: official }
+    year: 2004
+    display: digital
+    movement: solar
+    water_resistance_m: 200
+    features: [world-time, stopwatch, el-backlight, auto-light, tough-solar, shock-resistant]
+    # Casio's own product photograph, plain transparent ground, no watermark,
+    # taken from the `<img src>` this page renders and named
+    # `2004-gws-900-sq.png`, so the §10.3 filename test passes on the reference
+    # with a boundary after it.
+    image: gws-900
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/'
+    discontinued: true

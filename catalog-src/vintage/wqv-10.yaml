@@ -1,0 +1,57 @@
+# WQV-10 — the colour Wrist Camera, added 2026-08-27 from Casio's own
+# 50th-anniversary Heritage timeline.
+#
+# THIS REFERENCE IS NAMED IN A SENTENCE RATHER THAN IN A TILE, which is the same
+# footing FKT-200 sits on: the tile is titled WQV-1, and the body text says
+# "Following the WQV-1 with black-and-white photo/display, in 2001, Casio
+# released the WQV-10 with a digital zoom function and color photo/display."
+# That sentence is where both the reference and the year come from, and it is the
+# whole of what the page says about this watch.
+#
+# A SEPARATE FILE FROM `wqv-1` ON PURPOSE. `wqv-1` is a string prefix of
+# `wqv-10`, so check 4a would accept both in one file, but they are two series a
+# year apart with different displays — the same reading that gave FKT-100 and
+# FKT-200 a file each.
+#
+# NEITHER ROSTER KNOWS THE REFERENCE: absent from all 4,615 references in Casio's
+# current sitemap (us, intl, de), and the archive holds no `product.WQV-1*`
+# capture under any line path.
+#
+# NO PHOTOGRAPH, AND THE REASON IS A MEASUREMENT. Casio does picture this watch —
+# it is the smaller one on the right of the tile's shared asset,
+# `2000-wqv-1-wqv-10-sq.png`, with `[2001] WQV-10` set beside it — so unlike
+# DBC-V50 this is not a case of the wrong watch being rendered. It is a case of
+# too few pixels: that watch's own alpha bounds are columns 545-855 by rows
+# 205-792, and the 311 px includes the caption type, leaving the case itself
+# under 300 px wide. §10.3 refuses a photograph narrower than 300 px because it
+# renders softer than the typographic tile it would replace. `wqv-1` took the
+# left half of the same asset, which is 431 px of watch.
+#
+# `display: digital` IS THE ONE FIELD READ OFF THE SENTENCE. "color
+# photo/display" says this reference has a display and that it is a colour one;
+# a colour dot-matrix panel is digital either way, and the picture of it, small
+# as it is, shows a dot-matrix LCD and no hands.
+#
+# ABSENT AND WHY:
+#   water_resistance_m   no depth is stated and no picture of this reference is
+#                        legible enough to read a case marking off.
+#   features             the vocabulary has no value for a camera or for the
+#                        digital zoom this reference added (guardrail 4).
+#   movement, module, case, colorway
+#                        the sentence states none of them.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: wqv-10
+  name: WQV-10
+  line: vintage
+  aka: [Wrist Camera]
+
+models:
+  - id: wqv-10
+    ref: WQV-10
+    source: { url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/', kind: official }
+    year: 2001
+    display: digital
+    image: null
+    discontinued: true

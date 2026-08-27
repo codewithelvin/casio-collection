@@ -1,0 +1,81 @@
+# OCW-500 — the first OCEANUS, added 2026-08-27 from Casio's own 50th-anniversary
+# Heritage timeline. Year, specification and photograph all come off that one
+# official page, so there is no second source and no `year_source`.
+#
+# THE LINE IS CASIO'S OWN TAG, not a judgement: the tile is titled "OCW-500
+# (OCEANUS)" and the prose says "The OCEANUS line… debuted with the OCW-500".
+# This is the oldest entry in `oceanus/` and the only one of the five not read off
+# a product page — the other four are current references whose pages state a case,
+# a depth and a weight, and this one predates that surface entirely.
+#
+# NEITHER ROSTER KNOWS THE REFERENCE, and that was measured rather than assumed:
+# absent from all 4,615 references in Casio's current sitemap (us, intl, de), and
+# the archive holds no `product.OCW-500*` capture under the us or jp oceanus path.
+#
+# THE FIRST SENTENCE CARRIES THREE FIELDS — "the world's first full-metal,
+# solar-powered, radio-controlled chronograph" — which is `material: 'Metal'`,
+# `movement: solar-radio`, and the `stopwatch` that a chronograph is in this
+# vocabulary. `material: 'Metal'` and not 'Stainless steel' or 'Titanium':
+# full-metal is the page's word about this reference, the alloy is not, and every
+# other `material` value in this catalogue names an alloy because a page named it.
+#
+# THE TITANIUM AND SAPPHIRE SENTENCE IS ABOUT THE LINE, NOT THIS WATCH, and it is
+# the trap on this tile. "Made with titanium, sapphire crystal, and other
+# materials — with some watches featuring hand-finishes by master craftspersons —
+# OCEANUS timepieces are known for…" says *some* OCEANUS watches, twenty years of
+# them. `ocw-s400` carries `Titanium` and `sapphire-crystal` because its own
+# product page states them about itself; reading them onto the OCW-500 off this
+# sentence would be reading the line onto the reference. Neither is written here.
+# Nor is the second paragraph — the OCEANUS Manta, Tough Movement, Smart Access,
+# GPS and smartphone connectivity are 2007 and later, and the paragraph says so.
+#
+# `movement: solar-radio` BUT NO `tough-solar`. The page says "solar-powered" and
+# the dial says "wave ceptor"; neither says Tough Solar, and unlike WVA-300 and
+# GW-300J on the same page this tile never names the system. `radio-controlled` is
+# written because the sentence states it plainly.
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the dial is a statement the source makes. This
+# one prints OCEANUS, wave ceptor, CASIO and TACHYMETER, and it settles the
+# display: hands and three sub-dials with a small LCD window at three o'clock is
+# `ana-digi`, not the `analog` a chronograph would otherwise suggest.
+#
+# TACHYMETER IS PRINTED AND IS NOT WRITTEN — the vocabulary has no value for a
+# tachymeter bezel. Reported, not invented (guardrail 4).
+#
+# ABSENT AND WHY:
+#   water_resistance_m   the page states no depth and the case prints none.
+#   module               the page states none.
+#   case dimensions      none are stated; the four current OCEANUS entries have
+#                        them because a product page printed a table.
+#   colorway             the dial is Casio's OCEANUS blue and the page calls the
+#                        line's colour "ocean-inspired blue" — about the line, so
+#                        not written as this reference's colourway.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: ocw-500
+  name: OCW-500
+  line: oceanus
+  # Printed on the dial in the photograph on the page cited below.
+  aka: [Wave Ceptor]
+
+models:
+  - id: ocw-500
+    ref: OCW-500
+    source: { url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/', kind: official }
+    year: 2004
+    display: ana-digi
+    movement: solar-radio
+    case: { material: 'Metal' }
+    features: [stopwatch, radio-controlled]
+    # Casio's own product photograph, plain transparent ground, no watermark,
+    # taken from the `<img src>` this page renders and named
+    # `2004-ocw-500-sq.png`, so the §10.3 filename test passes on the reference
+    # with a boundary after it.
+    image: ocw-500
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/'
+    discontinued: true

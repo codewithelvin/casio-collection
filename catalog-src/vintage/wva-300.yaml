@@ -1,0 +1,66 @@
+# WVA-300 — the first Casio watch to be solar-powered and radio-controlled at
+# once, added 2026-08-27 from Casio's own 50th-anniversary Heritage timeline.
+# Year, specification and photograph all come off that one official page, so
+# there is no second source and no `year_source`.
+#
+# NEITHER ROSTER KNOWS THE REFERENCE, and that was measured rather than assumed:
+# absent from all 4,615 references in Casio's current sitemap (us, intl, de), and
+# the archive holds no `product.WVA-300*` capture under any line path.
+#
+# `movement: solar-radio` BECAUSE THE PAGE STATES BOTH HALVES IN ONE CLAUSE —
+# "Equipped with standard time radio wave reception and Tough Solar
+# functionality, this watch eliminated the trouble of both time setting and
+# battery replacement" — and the dial prints WAVE CEPTOR and SOLAR POWER. The
+# same two facts appear as `radio-controlled` and `tough-solar` in `features`,
+# which is where the schema keeps them for faceting; `tough-solar` is the page's
+# own words rather than an expansion of SOLAR POWER.
+#
+# THE MULTIBAND 6 SENTENCE IS NOT ABOUT THIS REFERENCE. "Later, Multiband 6
+# compatibility expanded radio-signal access to six world regions" is the line's
+# subsequent history, and reading it onto the WVA-300 would give a 2001 watch a
+# feature the same sentence says came later.
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the case is a statement the source makes. This
+# one prints CASIO, WAVE CEPTOR, SOLAR POWER, and CHARGE / LOW / HIGH / RECOVER
+# under the LCD. The dial carries hands AND a digital window, which is where
+# `ana-digi` comes from.
+#
+# A FAMILY IS PROPOSED AND NOT WRITTEN (guardrail 4a). `wave-ceptor` already
+# exists in `lines.yaml` and `wva-m630` and `lcw-m100` already sit in it, so this
+# is a strong candidate — but those two earned it from twelve and four pages that
+# LINK to `watches/casio/waveceptor/`, and the evidence here is two words on a
+# dial. It is in the session summary for a human to settle.
+#
+# ABSENT AND WHY:
+#   water_resistance_m   nothing on the page or the case states a depth.
+#   case                 the picture shows a steel case and bracelet; no material
+#                        is named, and the picture is the picture.
+#   module               the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: wva-300
+  name: WVA-300
+  line: vintage
+  # Printed on the dial in the photograph on the page cited below.
+  aka: [Wave Ceptor]
+
+models:
+  - id: wva-300
+    ref: WVA-300
+    source: { url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/', kind: official }
+    year: 2001
+    display: ana-digi
+    movement: solar-radio
+    features: [radio-controlled, tough-solar]
+    # Casio's own product photograph, plain transparent ground, no watermark,
+    # taken from the `<img src>` this page renders and named
+    # `2001-wva-300-sq.png`, so the §10.3 filename test passes on the reference
+    # with a boundary after it.
+    image: wva-300
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/'
+    discontinued: true

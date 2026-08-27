@@ -1,0 +1,61 @@
+# CHR-100 — the heart-rate running watch, added 2026-08-27 from Casio's own
+# 50th-anniversary Heritage timeline. Year, specification and photograph all come
+# off that one official page, so there is no second source and no `year_source`.
+#
+# NEITHER ROSTER KNOWS THE REFERENCE, and that was measured rather than assumed:
+# absent from all 4,615 references in Casio's current sitemap (us, intl, de), and
+# the archive holds no `product.CHR-100*` capture under any line path.
+#
+# FILED IN VINTAGE BECAUSE THE PAGE GIVES IT NO LINE. Casio tags a watch's line
+# in the tile title where it has one — "EF-100 (EDIFICE)", "OCW-500 (OCEANUS)" on
+# this very page — and this tile is titled plainly "CHR-100". The dial prints
+# CASIO SPORT, which is not one of D15's lines and is not a family this catalogue
+# declares; it is recorded here and acted on nowhere.
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the case is a statement the source makes. This
+# one prints CASIO, CASIO SPORT, HEART RATE, LAP MEMORY 200, WR 5BAR, STOP·RESET,
+# START·LAP, ADJUST, MODE and LIGHT. WR 5BAR is where `water_resistance_m: 50`
+# comes from, and LAP MEMORY 200 is the same figure the prose states in a
+# sentence — "It also included a stopwatch function with 200-lap memory" — which
+# is the two halves of the page agreeing.
+#
+# ABSENT AND WHY:
+#   features             `stopwatch` only, and the omission is the point of this
+#                        watch. THE VOCABULARY HAS NO VALUE FOR A HEART-RATE
+#                        SENSOR, so the one thing the CHR-100 was built to do
+#                        cannot be said about it, and neither can the chest strap
+#                        that transmits to it. That gap has been reported before
+#                        and is reported again in the session summary rather than
+#                        filled in here (guardrail 4). LIGHT is printed but names
+#                        no technology, and `led-light` and `el-backlight` are
+#                        different claims.
+#   movement, module     the page states neither.
+#   case                 no material is named. The picture shows a moulded resin
+#                        case and strap, which is the picture and not the page.
+#   colorway             the picture is navy and grey; the page names no colour.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: chr-100
+  name: CHR-100
+  line: vintage
+
+models:
+  - id: chr-100
+    ref: CHR-100
+    source: { url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/', kind: official }
+    year: 2005
+    display: digital
+    water_resistance_m: 50
+    features: [stopwatch]
+    # Casio's own product photograph, plain transparent ground, no watermark,
+    # taken from the `<img src>` this page renders and named
+    # `2005-chr-100-sq.png`, so the §10.3 filename test passes on the reference
+    # with a boundary after it.
+    image: chr-100
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/'
+    discontinued: true
