@@ -157,9 +157,21 @@ export const FEATURES = [
   'calculator',
   'telememo',
   'databank',
-  // The Wrist Camera, WQV-1 and WQV-10. Two models and one decade, which is thin
-  // — but it is the first camera anybody put on a wrist, and the alternative was
-  // a catalogue that describes it as a digital watch with an alarm.
+  // The Wrist Camera, WQV-1 and WQV-10.
+  //
+  // THE ONLY VALUE HERE ADDED IN THE KNOWLEDGE THAT IT SHIPS AS A SINGLETON, so
+  // the reason is on the record rather than left for `catalog:audit` to raise
+  // against a future reader. Two models carry it and both cite it off their own
+  // source page — but `camera` counts 1 in the published facets, because
+  // `browsable` withholds a watch with no photograph and WQV-10 has none. That
+  // is not an evidence problem and it cannot be fixed: Casio pictures the WQV-10
+  // only inside its sibling's tile asset, 296 px wide against §10.3's 300 px
+  // floor, measured.
+  //
+  // Kept anyway. The alternative is that the first camera anybody put on a wrist
+  // is described as a digital watch with an alarm, permanently, because of a
+  // photograph its sibling could not have. `vibration-alarm` is the other
+  // documented singleton in this list.
   'camera',
   'vibration-alarm',
   'flash-alert',

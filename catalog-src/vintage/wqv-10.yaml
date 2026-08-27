@@ -59,7 +59,14 @@ models:
     year: 2001
     display: digital
     # `camera` since 2026-08-27, when the vocabulary gained it on a headcount of
-    # two — this reference and WQV-1. The sentence in `source` is the whole basis:
+    # two — this reference and WQV-1. WORTH KNOWING: the published facet still
+    # counts 1, because `browsable` withholds a watch with no photograph and this
+    # is that watch, so the value this entry carries does not reach the filter bar
+    # on its behalf. It is tagged regardless — the entry is right whether or not
+    # the facet can use it, and if a publishable picture ever turns up the count
+    # corrects itself with no edit here.
+    #
+    # The sentence in `source` is the whole basis:
     # Casio "released the WQV-10 with a digital zoom function and color
     # photo/display", which is a camera being described. The digital zoom itself
     # has no term and is not smuggled in under this one.
