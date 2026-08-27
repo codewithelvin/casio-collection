@@ -1,0 +1,49 @@
+# ABX-51 — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline, the only surface that carries it. Neither `survey.ts` roster knows
+# it — no sitemap entry, no archived `product.ABX-51` page — and The Digital
+# Watch Library has no page for it, checked against the full gallery enumeration
+# of 853 Casio slugs on 2026-08-27. (DWL does hold ABX-20, which is a different
+# reference and is already catalogued from it.)
+#
+# THE REFERENCE IS PRINTED ON THE DIAL. Casio's own 900 x 900 photograph shows
+# ABX-51 in yellow at six o'clock, with DATA BANK above and TELEMEMO 50 below.
+# That is the "prefer a dial that prints the model name" test passing outright
+# rather than an alt tag being trusted — the same standard BP-100 was held to.
+#
+# `display` IS THE ONE PLACE THIS FILE READS THE PICTURE FOR A FACET, and it is
+# not a close call. The prose says the watch "appeared to be an ordinary analog
+# watch with hour and minute hands" until "this dual display" lit "an LCD panel
+# layered beneath the glass"; the photograph shows gold hands over a dot-matrix
+# field spelling CASIO. Hands and an LCD together is `ana-digi`. The page's
+# closing line — that the watch "pivoted from the conventional designs of
+# digital or digital-analog combination watches" — is about the DESIGN being
+# unlike its contemporaries, not a denial that both displays are there.
+#
+# ABSENT AND WHY:
+#   water_resistance_m   the case prints no depth and the prose states none.
+#   movement, module     the page states neither.
+#   case                 no material is named; the strap in the picture is
+#                        leather, and a strap is not a case.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: abx-51
+  name: ABX-51
+  line: vintage
+
+models:
+  - id: abx-51
+    ref: ABX-51
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1994
+    display: ana-digi
+    features: [databank, telememo]
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered and named `1994-abx-51-sq.png`. The
+    # filename test passes on the reference, and the dial confirms it in print.
+    image: abx-51
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

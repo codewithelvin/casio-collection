@@ -1,0 +1,58 @@
+# DW-520 — the very first BABY-G, added 2026-08-27 from Casio's own
+# 50th-anniversary Heritage timeline. Year, specification and photograph all
+# come off that one official page, so there is no second source and no
+# `year_source`.
+#
+# THE LINE IS CASIO'S OWN TAG. The timeline titles this entry "DW-520 (BABY-G)"
+# and opens "Introducing the BABY-G, a G-SHOCK line especially for women" — the
+# same page tags DPX-500 as PRO TREK and leaves untagged the watches that belong
+# to no line, so the parenthesis is a statement rather than a caption.
+#
+# THE CASE STILL SAYS G-SHOCK, and that is worth knowing rather than tidying
+# away: Casio's photograph shows G-SHOCK moulded across the bottom of the white
+# bezel and PROTECTION across the top, with no BABY-G marking anywhere on it.
+# The first Baby-G wore the parent brand. The entry is filed under Baby-G on the
+# page's word and the marking is recorded here.
+#
+# NEITHER `survey.ts` ROSTER KNOWS IT — nothing in Casio's current sitemap, no
+# archived `product.DW-520` page. The Heritage timeline is a third casio.com
+# surface both rosters are blind to by construction.
+#
+# WHAT THE PHOTOGRAPH STATES. A FULL WORD printed on the case is a statement the
+# cited page makes: this one prints WATER RESIST 10BAR under the display, which
+# is the 100 below. `shock-resistant` comes from the prose — the watch inherited
+# "the brand's original shock-resistant structure" — and from the G-SHOCK
+# marking, which the vocabulary's own note calls "a claim printed on the case".
+# The AL STOP legend and the bell glyph are LCD indicator abbreviations and are
+# NOT read; expanding one is a guess and not a reading.
+#
+# ABSENT AND WHY:
+#   movement, module     the page states neither.
+#   case                 no material is named.
+#   colorway             the page never names the colour of the one pictured,
+#                        and "white with a pink bezel wire" would be this
+#                        catalogue's description rather than Casio's name.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: dw-520
+  name: DW-520
+  line: baby-g
+
+models:
+  - id: dw-520
+    ref: DW-520
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1994
+    display: digital
+    water_resistance_m: 100
+    features: [shock-resistant]
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered and named `1994-dw-520-sq.png`, so
+    # the §10.3 filename test passes on the reference with a boundary after it.
+    image: dw-520
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

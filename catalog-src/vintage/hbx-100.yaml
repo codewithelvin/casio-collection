@@ -1,0 +1,49 @@
+# HBX-100 — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline, the only surface that carries it. Neither `survey.ts` roster knows
+# it — no sitemap entry, no archived `product.HBX-100` page — and The Digital
+# Watch Library has no page for it, checked against the full gallery enumeration
+# of 853 Casio slugs on 2026-08-27.
+#
+# THE VOCABULARY CANNOT SAY WHAT THIS WATCH IS, and the entry is left silent
+# rather than approximated. It "connected with a PC via infrared signals",
+# exchanging schedules, telephone directories and task lists with a desktop PIM,
+# and text files written on the PC "could also be viewed and edited on the
+# wristwatch". `FEATURES` has nothing for infrared, nothing for a PC link, and
+# nothing for a two-way data transfer. The near-miss values were considered and
+# refused: the page never calls it a Data Bank and never says Telememo, and
+# `databank` on the strength of "telephone directories" would be this
+# catalogue's own word rather than Casio's. Reported, not invented — guardrail 4.
+#
+# WHAT THE PHOTOGRAPH SHOWS, none of which the vocabulary can hold either: the
+# dial prints "Link with PC / PCX" and IR TRANSFER, the LCD row reads
+# TEL FAX CALL E-MAIL OTHER, and the clasp is stamped BIZX. The steel case has
+# an infrared window above the display and an ENTER key below it. `display` is
+# read from the same picture — a two-tiered LCD with no hands.
+#
+# ABSENT AND WHY:
+#   features             see above — no vocabulary value fits.
+#   water_resistance_m   the case prints no depth and the prose states none.
+#   movement, module     the page states neither.
+#   case                 no material is named.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: hbx-100
+  name: HBX-100
+  line: vintage
+
+models:
+  - id: hbx-100
+    ref: HBX-100
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1998
+    display: digital
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered and named `1998-hbx-100-sq.png`, so
+    # the filename test passes on the reference with a boundary after it.
+    image: hbx-100
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

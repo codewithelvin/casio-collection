@@ -1,0 +1,55 @@
+# TSR-100 — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline, the only surface that carries it. Neither `survey.ts` roster knows
+# it — no sitemap entry, no archived `product.TSR-100` page — and The Digital
+# Watch Library has no page for it either, checked against the full gallery
+# enumeration of 853 Casio slugs on 2026-08-27.
+#
+# ONE TIMELINE ENTRY NAMES TWO REFERENCES — "TSR-100/TSR-110" — so it is two
+# files, because a series id has to be a prefix of every reference in it (check
+# 4a). TSR-110 is beside this one and carries less, for the reason below.
+#
+# THE PHOTOGRAPH BELONGS TO THIS REFERENCE AND NOT TO TSR-110, and the page
+# settles which: "Two versions were offered: the TSR-100 with a standard resin
+# band, and the TSR-110 with a cloth band." The watch pictured wears a moulded
+# resin strap. Same test that assigned AE-200 and DBA-80 their shared assets —
+# match the pictured band against what the page states, never split the
+# difference. The asset is named `1994-tsr-100-tsr-110-sq.png`, which names both
+# and therefore proves neither on its own.
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the case is a statement the source makes.
+# This one prints THERMO SCANNER, WIDE TEMP RANGE, WATER RESIST 100M,
+# STOPWATCH and TIMER·ALARM·MATERIAL DATA-SET, and carries a RADIANT THERMO
+# SENSOR housing with a SCAN button. `display` is read the same way: an LCD with
+# no hands. LCD indicator abbreviations are never read — expanding one is a
+# guess and not a reading.
+#
+# ABSENT AND WHY:
+#   movement, module     the page states neither.
+#   case                 the resin BAND is stated; a band is not a case, and
+#                        taking the strap for the case is how this goes wrong.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: tsr-100
+  name: TSR-100
+  line: vintage
+  aka: ['Thermo Scanner']
+
+models:
+  - id: tsr-100
+    ref: TSR-100
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1994
+    display: digital
+    water_resistance_m: 100
+    features: [alarm, stopwatch, countdown-timer, thermometer]
+    # `thermometer` is the page's own sentence — a "non-contact temperature
+    # measurement function" reading from −20°C to 200°C — and not an inference
+    # from the sensor housing in the picture.
+    image: tsr-100
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

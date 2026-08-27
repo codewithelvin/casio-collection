@@ -1,0 +1,57 @@
+# ALT-7000 — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline. Year, reference, specification and photograph all come off that one
+# official page, so there is no second source and no `year_source`.
+#
+# NEITHER `survey.ts` ROSTER KNOWS THIS WATCH — not in Casio's current sitemap,
+# no archived `product.ALT-7000` page. The Digital Watch Library has no page for
+# it either: checked against the full gallery enumeration of 853 Casio slugs on
+# 2026-08-27. Casio's Heritage timeline is the only surface that carries it.
+#
+# FILED UNDER VINTAGE AND NOT PRO TREK, deliberately. Casio's page says PRO TREK
+# began with the DPX-500 in 1995; this is a 1992 sensor watch that predates the
+# brand, and ATC-1100 (1994) is already catalogued here on the same reasoning.
+#
+# WHAT THE PAGE STATES, in its own words: "Twin sensors measured altitude,
+# barometric pressure, and temperature" and "The durable metal case delivered
+# 100-meter water resistance". Casio's own product photograph, part of the same
+# page, prints WATER 10BAR RESIST on the dial and TWIN SENSOR and ALTI-THERMO
+# around the bezel — the prose and the object agree, which is why 100 is written
+# as a number. `display` is read the same way: an LCD with no hands.
+# LCD INDICATOR ABBREVIATIONS ARE NEVER READ; expanding one is a guess.
+#
+# THE PHOTOGRAPHED WATCH PRINTS "PRO TREK" ON ITS DIAL, and it is recorded here
+# rather than acted on. The same page says PRO TREK began three years later with
+# the DPX-500, and it tags the watches that belong to a line in their titles —
+# "DW-520 (BABY-G)", "DPX-500 (PRO TREK)" — and gives ALT-7000 no tag at all.
+# So the line below follows Casio's own tagging and the catalogue's existing
+# shape, and the dial marking is left for a human to weigh: the likeliest
+# reading is that the unit photographed is a later PRO TREK-era production of a
+# reference that launched without the brand.
+#
+# ABSENT AND WHY:
+#   movement, module     the page states neither.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: alt-7000
+  name: ALT-7000
+  line: vintage
+
+models:
+  - id: alt-7000
+    ref: ALT-7000
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1992
+    display: digital
+    case: { material: metal }
+    water_resistance_m: 100
+    features: [altimeter, barometer, thermometer]
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered. Named `1992-alt-7000-sq.png`, so
+    # the §10.3 filename test passes on the reference with a boundary after it.
+    image: alt-7000
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

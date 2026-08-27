@@ -1,0 +1,74 @@
+# CMD-10 — added 2026-08-27 from the two sources that describe it: The Digital
+# Watch Library states the specification, and Casio's own 50th-anniversary
+# Heritage timeline supplies the photograph.
+#
+# NEITHER `survey.ts` ROSTER KNOWS THIS WATCH — not in Casio's current sitemap,
+# no archived `product.CMD-10` page — which for a 1993 model is the expected
+# answer rather than a finding. The specification comes from a `community`
+# source, labelled as one.
+#
+# DWL HOLDS TWO PAGES FOR THIS ONE REFERENCE AND THEY DISAGREE ABOUT THE YEAR:
+# `casio-cmd-10` says 1992 and `casio_cmd-10` says 1993. Casio's own Heritage
+# page dates it 1993, and the page cited below is the one that agrees with
+# Casio — so the year is not a third opinion, it is two sources out of three
+# saying the same thing and the official one among them. It is also the page
+# that carries more: four function icons against two. No `year_source` is
+# written, because the year comes off the page already named in `source`.
+#
+# `case.material` is the `> CASING` row, "Resin", and not the `> BRACELET NO.`
+# row beside it that also says [Resin].
+#
+# THE VOCABULARY CANNOT SAY WHAT THIS WATCH IS. It is a wrist remote control —
+# Casio's page: "Users could turn their TV or VCR on or off, change channels,
+# adjust the volume, and more using the watch on their wrist", compatible with
+# the major manufacturers' sets. `FEATURES` has no value for a remote control,
+# so the entry lists only the three functions the vocabulary can express and is
+# silent about the one that made the watch famous. Reported, not invented.
+#
+# ABSENT AND WHY:
+#   display              DWL never describes the dial; its title slot holds a
+#                        CATEGORY ("Digital" here, "Novelty" on the other page
+#                        for the same watch), which is exactly why that slot is
+#                        not read as a display type.
+#   water_resistance_m   the page's WATER RESIST row says NONE. A statement, not
+#                        a depth, so nothing is claimed.
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+#
+# TWO NOTES ON CASIO'S PHOTOGRAPH, published below. It prints WRIST REMOTE
+# CONTROLLER and ALARM CHRONOGRAPH across the dial, four hard buttons reading
+# POWER, TV/VCR, STOP and PLAY, and CH and VOLUME rockers — which is where the
+# `aka` comes from and which corroborates the alarm and the stopwatch. It shows
+# NO numeric keypad, so the source page's calculator icon is that page's claim
+# and is written on its authority alone, not confirmed by the picture. Recorded
+# here so a reviewer can see the gap rather than discover it.
+
+series:
+  id: cmd-10
+  name: CMD-10
+  line: vintage
+  aka: ['Wrist Remote Controller']
+
+models:
+  - id: cmd-10
+    ref: CMD-10
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_cmd-10', kind: community }
+    year: 1993
+    module: '1028'
+    case: { material: resin }
+    features: [alarm, stopwatch, calculator]
+    # Casio's own product photograph rather than the source page's: plain white
+    # ground, no watermark, and it is the manufacturer's. Taken from the
+    # `<img src>` the Heritage page rendered and named `1993-cmd-10-sq.png`, so
+    # the §10.3 filename test passes on the reference with a boundary after it
+    # — `1993-cmd-100-sq.png` would be a different watch and a substring match
+    # is what hands one watch the other's picture.
+    image: cmd-10
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

@@ -1,0 +1,56 @@
+# MRG-100 — the first MR-G, added 2026-08-27 from Casio's own 50th-anniversary
+# Heritage timeline. Year, specification and photograph all come off that one
+# official page, so there is no second source and no `year_source`.
+#
+# NEITHER `survey.ts` ROSTER KNOWS IT — nothing in Casio's current sitemap, no
+# archived `product.MRG-100` page — and it predates every module guide the
+# manual reader can reach. The Heritage timeline is a third casio.com surface
+# both rosters are blind to by construction.
+#
+# WHY IT IS A G-SHOCK AND NOT A LINE OF ITS OWN: the page says so — "the MR-G is
+# the flagship line of the G-SHOCK brand" — and the watch says so too, moulding
+# G-SHOCK on the bracelet and printing MR-G / G-SHOCK on the dial. The two
+# MR-G series already catalogued, MRG-B2000 and MRG-B2100, are in this line.
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the case is a statement the source makes.
+# This one prints MR-G, G-SHOCK, WATER 20BAR RESIST, ADJUST, MODE, LIGHT and
+# 12-24H, and moulds MR-G into the bracelet. `shock-resistant` is the G-SHOCK
+# marking read as what it is — the vocabulary's own note says shock resistance
+# on a Casio is "a claim printed on the case rather than a measurement" — and
+# the prose backs it twice, "full-metal shock-resistant masterpiece" and "no
+# loss in shock resistance". The ALM SIG SPLIT AUTO row above the display is
+# LCD indicator artwork and IS NOT READ; expanding an abbreviation is a guess.
+#
+# ABSENT AND WHY:
+#   movement, module     the page states neither.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: mrg-100
+  name: MRG-100
+  line: g-shock
+  aka: ['MR-G']
+
+models:
+  - id: mrg-100
+    ref: MRG-100
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1996
+    display: digital
+    case: { material: metal }
+    water_resistance_m: 200
+    features: [shock-resistant]
+    # `case.material` is the page's own repeated word: the watch was "developed
+    # to offer a full-metal design", achieved with "a full-metal structure".
+    # Casio does not name the alloy, so neither does this.
+    #
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered and named `1996-mrg-100-sq.png`, so
+    # the §10.3 filename test passes on the reference with a boundary after it.
+    image: mrg-100
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

@@ -1,0 +1,53 @@
+# VCL-100 — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline, the only surface that carries it. Neither `survey.ts` roster knows
+# it — no sitemap entry, no archived `product.VCL-100` page — and The Digital
+# Watch Library has no page for it, checked against the full gallery enumeration
+# of 853 Casio slugs on 2026-08-27.
+#
+# WHAT IT DID: "The VCL-100 sensed signals in the 800 MHz frequency band
+# transmitted by mobile phones to notify users of incoming calls with vibrating
+# alerts." That sentence is where `vibration-alarm` comes from.
+#
+# ONE THING ON THE DIAL IS A TRAP AND IS DELIBERATELY NOT READ AS A DISPLAY
+# TYPE. Casio's photograph prints ANALOG/DIGITAL 800MHz under the LCD: that is
+# the pair of mobile-phone signal formats the watch listens for, not a statement
+# about the watch's own dial. The dial itself is a dot-matrix LCD with no hands,
+# which is what `display: digital` is read from.
+#
+# The rest of `features` is read the same way — full words printed on the case
+# are statements the cited page makes: WORLD TIME across the top of the dial,
+# START/STOP and SPLIT/RESET down its sides, and a VIBRATOR button at ten
+# o'clock. TEL BACKLIGHT is printed too, and no light feature is claimed on it:
+# the vocabulary has five specific light values and no generic one, the same
+# call A168 and AL-180 make.
+#
+# ABSENT AND WHY:
+#   water_resistance_m   the case prints WATER RESISTANT with no depth. Words
+#                        are not a measurement, so nothing is claimed.
+#   movement, module     the page states neither.
+#   case                 no material is named.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: vcl-100
+  name: VCL-100
+  line: vintage
+  aka: ['VIVCEL']
+
+models:
+  - id: vcl-100
+    ref: VCL-100
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1998
+    display: digital
+    features: [world-time, stopwatch, vibration-alarm]
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered and named `1998-vcl-100-sq.png`, so
+    # the filename test passes on the reference with a boundary after it. The
+    # case moulds VIVCEL under the display, which is the `aka` above in print.
+    image: vcl-100
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

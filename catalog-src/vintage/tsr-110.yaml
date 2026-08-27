@@ -1,0 +1,44 @@
+# TSR-110 — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline, which names it in the same entry as TSR-100: "Two versions were
+# offered: the TSR-100 with a standard resin band, and the TSR-110 with a cloth
+# band." Neither `survey.ts` roster knows it, and The Digital Watch Library has
+# no page for it — checked against the full gallery enumeration of 853 Casio
+# slugs on 2026-08-27.
+#
+# ITS OWN FILE RATHER THAN A SECOND ENTRY IN `tsr-100.yaml`: a series id must be
+# a prefix of every reference in the file (check 4a), and `tsr-100` is not a
+# prefix of TSR-110.
+#
+# THIS ENTRY CARRIES LESS THAN ITS TWIN AND THE DIFFERENCE IS DELIBERATE. The
+# timeline entry has ONE photograph and the watch in it wears a resin strap,
+# which is the TSR-100 by the page's own sentence — so `image` is null here and
+# the reference is not given a picture of the other one. Everything that was
+# read off that picture on TSR-100 — the 100 m depth printed on the case, the
+# STOPWATCH and TIMER·ALARM legends, the LCD with no hands — is therefore
+# ABSENT here. What is left is what the prose says about both watches, which is
+# the year and the temperature function.
+#
+# ABSENT AND WHY:
+#   image                see above — the only photograph shows the resin-banded
+#                        version, so publishing it here would be asserting one
+#                        watch with a picture of another.
+#   display, water       read off that photograph, so not available for this
+#                        reference.
+#   movement, module     the page states neither.
+#   case                 the cloth BAND is stated; a band is not a case.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: tsr-110
+  name: TSR-110
+  line: vintage
+  aka: ['Thermo Scanner']
+
+models:
+  - id: tsr-110
+    ref: TSR-110
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1994
+    features: [thermometer]
+    image: null
+    discontinued: true

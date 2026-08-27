@@ -1,0 +1,58 @@
+# DKW-100 — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline, which is where the whole entry comes from: the year, the reference
+# and the photograph are all on one official page, so there is no second source
+# to cite and no `year_source`.
+#
+# NEITHER `survey.ts` ROSTER KNOWS THIS WATCH — no entry in Casio's current
+# sitemap, no archived `product.DKW-100` page — which for a 1991 model is the
+# expected answer rather than a finding. The Digital Watch Library, the third
+# roster and the usual source for a watch this old, has no page for it either:
+# checked against the full gallery enumeration of 853 Casio slugs on
+# 2026-08-27, and DKW-100 is not among them. So this is one of the references
+# that exists **only** on Casio's Heritage timeline.
+#
+# `features` is what the page states in its own words: "This Data Bank watch"
+# and "the Telememo feature, which stored telephone numbers, names, and
+# addresses".
+#
+# WHAT THE VOCABULARY CANNOT SAY, and it is the whole point of this watch: it
+# was "the very first wristwatch to include a dictionary of kanji", 55,000
+# Japanese words, 3,349 characters. `FEATURES` has no value for a dictionary,
+# so the entry is silent about the one thing that made it. Reported, not
+# invented — guardrail 4.
+#
+# HOW THE PHOTOGRAPH IS READ, and the rule is the same on every entry seeded
+# from this page. Casio's 900 x 900 product shot is part of the page cited, so
+# a FULL WORD printed on the case is a statement the source makes: this one
+# prints DATA BANK 漢字 and WRIST NETWORK, and shows an LCD with no hands, which
+# is where `display` comes from. LCD INDICATOR ABBREVIATIONS ARE NEVER READ —
+# expanding ALM or SIG is a guess, not a reading.
+#
+# ABSENT AND WHY:
+#   movement, module     the page states neither.
+#   case, water          neither is described and the case prints no depth.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: dkw-100
+  name: DKW-100
+  line: vintage
+
+models:
+  - id: dkw-100
+    ref: DKW-100
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1991
+    display: digital
+    features: [databank, telememo]
+    # Casio's own product photograph, plain white ground, no watermark. Taken
+    # from the `<img src>` the page rendered — never `data-cmp-src`, which
+    # carries a `{.width}` placeholder, and never the `data-asset` DAM path.
+    # The file is named `1991-dkw-100-sq.png`, so the §10.3 filename test
+    # passes on the reference itself, with a boundary after it.
+    image: dkw-100
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

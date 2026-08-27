@@ -1,0 +1,66 @@
+# DW-9300J — the RAYSMAN, the first solar-powered G-SHOCK, added 2026-08-27 from
+# Casio's own 50th-anniversary Heritage timeline. Year, specification and
+# photograph all come off that one official page, so there is no second source
+# and no `year_source`.
+#
+# THE SERIES ID IS `dw-9300` AND THE REFERENCE IS `DW-9300J`, which is the same
+# shape DW-5600 already has here: the id is the mechanical reference prefix
+# (D32) and the trailing J is the market suffix on this particular reference.
+# Check 4a is satisfied because `dw-9300` is a prefix of `dw-9300j`.
+#
+# NEITHER `survey.ts` ROSTER KNOWS IT — nothing in Casio's current sitemap, no
+# archived `product.DW-9300J` page. The Heritage timeline is a third casio.com
+# surface both rosters are blind to by construction.
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the case is a statement the source makes.
+# This one prints G-SHOCK, TOUGH SOLAR, RAYSMAN, FULL AUTO EL LIGHT, DATA
+# MEMORY, WR 20BAR, SPLIT/RESET and LIGHT/START-STOP. Every feature below is one
+# of those words or the prose's own sentence; the AUTO and battery glyphs inside
+# the LCD are indicator artwork and ARE NOT READ.
+#
+# `movement: solar` AND `tough-solar` TOGETHER, which is not a duplication: the
+# vocabulary keeps `solar` as how the watch is driven and `tough-solar` as the
+# named Casio system, and the page states the system by name — "Incorporating
+# Tough Solar, the original Casio solar-charging system". It is NOT
+# `solar-radio`: nothing on this page mentions a radio signal, and that value is
+# a different claim.
+#
+# `el-backlight` and `auto-light` are the two halves of FULL AUTO EL LIGHT, both
+# in the vocabulary, and the prose spells the second one out — "a full auto-light
+# function, which used a brightness sensor".
+#
+# DATA MEMORY is printed on the dial and is NOT written: `databank` is a
+# different thing and the page never says it.
+#
+# ABSENT AND WHY:
+#   module               the page states none.
+#   case                 no material is named; the picture shows resin, which is
+#                        the picture and not the page.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: dw-9300
+  name: DW-9300
+  line: g-shock
+  aka: ['RAYSMAN']
+
+models:
+  - id: dw-9300j
+    ref: DW-9300J
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1998
+    display: digital
+    movement: solar
+    water_resistance_m: 200
+    features: [stopwatch, el-backlight, auto-light, tough-solar, shock-resistant]
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered and named `1998-dw-9300j-sq.png`,
+    # so the §10.3 filename test passes on the full reference — J included —
+    # with a boundary after it.
+    image: dw-9300j
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

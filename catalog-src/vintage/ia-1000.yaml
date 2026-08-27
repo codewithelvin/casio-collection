@@ -1,0 +1,72 @@
+# IA-1000 — added 2026-08-27 from the two sources that describe it: The Digital
+# Watch Library states the specification, and Casio's own 50th-anniversary
+# Heritage timeline supplies the photograph. Both say 1992, so `year` needs no
+# separate citation — it comes off the page already named in `source`.
+#
+# NEITHER `survey.ts` ROSTER KNOWS THIS WATCH — not in Casio's current sitemap,
+# no archived `product.IA-1000` page — which for a 1992 model is the expected
+# answer rather than a finding. The specification therefore comes from a
+# `community` source, labelled as one.
+#
+# DWL HOLDS TWO PAGES FOR THIS ONE REFERENCE and they are not equal. Both give
+# module 727, the same casing and the same year; `casio-ia-1000` shows three
+# function icons and `casio_ia-1000` shows five. The rule is to take whichever
+# page carries more, so the source is `casio_ia-1000` and `countdown-timer` —
+# which only the other page claims — is deliberately NOT written here. They
+# also disagree about the bracelet ([Leather] against [SS]), which is not a
+# field this catalogue holds and settles nothing either way.
+#
+# `case.material` is the `> CASING` row, "Gold tone base-metal", and not the
+# `> BRACELET NO.` row beside it — taking the bracelet as the case is the way
+# this page shape goes wrong.
+#
+# ABSENT AND WHY:
+#   display              DWL never describes the dial. Casio's Heritage page
+#                        does say the watch flips open from "the analog dial
+#                        with hour, minute, and seconds hands" to "a digital
+#                        display" — but that is the other page, and one entry
+#                        may cite a second page for its year and its photograph
+#                        and nothing else. So no display type is claimed.
+#   water_resistance_m   the page's WATER RESIST row says NONE. That is a
+#                        statement and not a depth, so nothing is written.
+#   movement             the page states none.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# WHAT CASIO'S PHOTOGRAPH SHOWS AND THIS ENTRY STILL DOES NOT SAY. The picture
+# published below is two views of one watch: shut, a Roman-numeral analogue dial
+# printed CASIO DATA BANK and FLIP TOP; flipped open, a keypad and an LCD
+# labelled TELE MEMO 50, SCH MEMO 50, FREE MEMO, CAL and DAILY ALARM. That is
+# `databank` and `telememo` in plain words — but they are printed on the page
+# cited for the PHOTOGRAPH, not the page cited for the SPECIFICATION, and one
+# entry may borrow a second page for its year and its picture and nothing else.
+# So they are not written. The same picture shows a black leather strap, which
+# happens to match the bracelet on the page NOT used as the source.
+#
+# `features` drops the page's "I have a light" icon: the vocabulary has five
+# specific light values and no generic one, the same call A168 and AL-180 make.
+
+series:
+  id: ia-1000
+  name: IA-1000
+  line: vintage
+  aka: ['Flip Top']
+
+models:
+  - id: ia-1000
+    ref: IA-1000
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_ia-1000', kind: community }
+    year: 1992
+    module: '727'
+    case: { material: gold tone base-metal }
+    features: [alarm, stopwatch, dual-time, calculator]
+    # Casio's own product photograph rather than the source page's: plain white
+    # ground, no watermark, and it is the manufacturer's. Taken from the
+    # `<img src>` the Heritage page rendered — never `data-cmp-src`, which
+    # carries a `{.width}` placeholder — and named `1992-ia-1000-sq.png`, so
+    # the §10.3 filename test passes on the reference with a boundary after it.
+    image: ia-1000
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

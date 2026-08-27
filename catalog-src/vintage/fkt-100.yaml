@@ -1,0 +1,54 @@
+# FKT-100 — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline, the only surface that carries it. Neither `survey.ts` roster knows
+# it — no sitemap entry, no archived `product.FKT-100` page — and The Digital
+# Watch Library has no page for it, checked against the full gallery enumeration
+# of 853 Casio slugs on 2026-08-27.
+#
+# THIS IS THE FIRST RADIO-CONTROLLED CASIO, and the page says so: it "performed
+# automatic time correction with precision, using a built-in antenna to receive
+# standard time radio wave signals", and it "debuted in Germany, where the
+# signals were transmitted at the time". Casio's own photograph agrees with that
+# history in a way worth recording — the dial is printed FUNKTION, in German.
+#
+# NOT TAGGED INTO THE `wave-ceptor` FAMILY. Wave Ceptor is a later Casio
+# collection name and nothing on this page attaches it to FKT-100; a family is
+# a human's judgement and is proposed rather than written (guardrail 4a).
+#
+# WHAT THE PHOTOGRAPH STATES. A full word printed on the case is a statement the
+# cited page makes: this one prints DATA BANK 30 on the bezel and WATER 50M
+# RESIST across the dial, and carries a RECEIVE/SEARCH button beside ADJUST.
+# `display` is read the same way and is not a close call — hour and minute hands
+# over a printed dial with an LCD strip beneath them is `ana-digi`. The DST flag
+# is an LCD indicator abbreviation and is NOT read; expanding one is a guess.
+#
+# ABSENT AND WHY:
+#   movement, module     the page states neither.
+#   case                 no material is named. The band in the picture is
+#                        textured cloth or leather, and a band is not a case.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+#
+# The FKT-200 named in the same paragraph is catalogued beside this one, in
+# `fkt-200.yaml`.
+
+series:
+  id: fkt-100
+  name: FKT-100
+  line: vintage
+
+models:
+  - id: fkt-100
+    ref: FKT-100
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1995
+    display: ana-digi
+    water_resistance_m: 50
+    features: [databank, radio-controlled]
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered and named `1995-fkt-100-sq.png`, so
+    # the filename test passes on the reference with a boundary after it.
+    image: fkt-100
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

@@ -1,0 +1,57 @@
+# DPX-500 — the first PRO TREK, added 2026-08-27 from Casio's own
+# 50th-anniversary Heritage timeline. Year, specification and photograph all
+# come off that one official page, so there is no second source and no
+# `year_source`.
+#
+# THE LINE IS CASIO'S OWN TAG, twice over: the timeline titles this entry
+# "DPX-500 (PRO TREK)" and the prose says "with this, PRO TREK was born … the
+# first PRO TREK watch designed to serve as an outdoor tool". It is the oldest
+# reference in this line by a wide margin — PRG-30, PRG-240, PAG-240 and PRW-35
+# are all module-guide seedings of much later watches.
+#
+# NEITHER `survey.ts` ROSTER KNOWS IT — nothing in Casio's current sitemap, no
+# archived `product.DPX-500` page — and it predates every module guide the
+# manual reader can reach. The Heritage timeline is a third casio.com surface
+# both rosters are blind to by construction: they ask about product pages, and
+# this is not one.
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the case is a statement the source makes.
+# This one prints TRIPLE SENSOR, WATER RESIST 10BAR, BEARING SENSOR, BEARING,
+# MEMORY, LIGHT, ADJUST/TUNING, MODE/SELECT and TEMP ADJ, and rings the dial
+# with a compass rose. `display` is read the same way: an LCD with no hands.
+#
+# The four sensor features are the prose's own list — "Triple Sensor for
+# measuring altitude/barometric pressure, direction, and temperature" — which is
+# three sensors and four readings, and the vocabulary has a value for each
+# reading rather than for the sensor count.
+#
+# ABSENT AND WHY:
+#   movement, module     the page states neither.
+#   case                 no material is named. The band in the picture is
+#                        cloth over leather, and a band is not a case.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: dpx-500
+  name: DPX-500
+  line: pro-trek
+  aka: ['Triple Sensor']
+
+models:
+  - id: dpx-500
+    ref: DPX-500
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1995
+    display: digital
+    water_resistance_m: 100
+    features: [altimeter, barometer, compass, thermometer]
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered and named `1995-dpx-500-sq.png`, so
+    # the §10.3 filename test passes on the reference with a boundary after it.
+    image: dpx-500
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

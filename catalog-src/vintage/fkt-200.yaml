@@ -1,0 +1,37 @@
+# FKT-200 — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline. It has NO TIMELINE ENTRY OF ITS OWN: it is named inside the FKT-100
+# paragraph, in one sentence — "In 1997, the FKT-200, a radio-controlled watch
+# for the Japanese market, came out." That sentence is the whole of this file,
+# and it states three things: the reference, the year and the function.
+#
+# WRITTEN DOWN RATHER THAN PASSED OVER, because the alternative is worse. An
+# official Casio page naming a reference against a year is better sourcing than
+# most of the pre-web end of this catalogue has, and a watch that exists and is
+# documented should not be missing because its mention was a clause instead of a
+# heading. What it must NOT do is borrow anything from FKT-100 — a successor is
+# not a colourway, and nothing here is inherited from the entry beside it.
+#
+# NEITHER `survey.ts` ROSTER KNOWS IT and The Digital Watch Library has no page
+# for it, checked against the full gallery enumeration of 853 Casio slugs on
+# 2026-08-27.
+#
+# ABSENT AND WHY:
+#   image                the timeline photographs the FKT-100 and not this one.
+#                        There is no FKT-200 asset on the page at any size.
+#   display, case, water, movement, module
+#                        one sentence states none of them.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: fkt-200
+  name: FKT-200
+  line: vintage
+
+models:
+  - id: fkt-200
+    ref: FKT-200
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1997
+    features: [radio-controlled]
+    image: null
+    discontinued: true

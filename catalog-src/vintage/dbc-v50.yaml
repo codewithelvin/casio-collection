@@ -1,0 +1,54 @@
+# DBC-V50 — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline, the only surface that carries it. Neither `survey.ts` roster knows
+# it — no sitemap entry, no archived `product.DBC-V50` page — and The Digital
+# Watch Library has no page for it, checked against the full gallery enumeration
+# of 853 Casio slugs on 2026-08-27.
+#
+# CASIO PUBLISHES THE WRONG PHOTOGRAPH IN THIS WATCH'S SLOT, and that is why
+# `image` is null on an entry whose page appears to carry a picture. The tile
+# titled DBC-V50 renders `1989-bm-100w-sq.png`, and its authoring attribute is
+# explicit: `data-asset="/content/dam/casio/global/watch/50th/heritage/1980s/
+# 1989_BM-100W_SQ.png"` under `data-title="DBC-V50"`. The file was downloaded
+# and looked at rather than judged on its name, and it settles it: the watch
+# pictured is a black resin barometer watch whose dial prints BARO METER /
+# ALTI METER / DEPTH METER and whose case moulds DIGITAL BAROMETER — a 1989
+# BM-100W, not a 1999 Data Bank with a microphone and a speaker. Publishing it
+# would be the A159WA-N1 failure with a different filename.
+#
+# Every other 1990s tile points at its own `<YEAR>-<REF>-sq.png`; this is the
+# one authoring slip on the page. The only other DBC-V50 asset on it is
+# `1999-dbc-v50.jpeg`, the 1920 x 816 background the tile sits on, which is a
+# hero banner and not a product shot.
+#
+# `features` is what the prose states in its own words: "This Data Bank watch
+# came equipped with an integrated circuit that could record audio, in addition
+# to Telememo and calculator functions", and "The recordings could also be used
+# as alarm tones".
+#
+# THE VOCABULARY CANNOT SAY THE ONE THING THIS WATCH IS FOR. It records five
+# thirty-second audio clips through a microphone in the dial and plays them back
+# through a speaker in the case back. `FEATURES` has no value for a voice
+# recorder, so the entry is silent about it. Reported, not invented.
+#
+# ABSENT AND WHY:
+#   image                see above — Casio's own slot holds another watch.
+#   display              no photograph to read and the prose never names the
+#                        dial type.
+#   movement, module     the page states neither.
+#   case, water          the page describes neither.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: dbc-v50
+  name: DBC-V50
+  line: vintage
+  aka: ['EASY REC']
+
+models:
+  - id: dbc-v50
+    ref: DBC-V50
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1999
+    features: [databank, telememo, calculator, alarm]
+    image: null
+    discontinued: true

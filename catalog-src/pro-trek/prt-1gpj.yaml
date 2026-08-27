@@ -1,0 +1,59 @@
+# PRT-1GPJ — the world's first GPS wristwatch, added 2026-08-27 from Casio's own
+# 50th-anniversary Heritage timeline. Year, reference and photograph all come
+# off that one official page, so there is no second source and no `year_source`.
+#
+# THE LINE IS THE PAGE'S OWN WORD: "This PRO TREK watch was known by the
+# nickname 'Satellite Navi'." Neither `survey.ts` roster knows the reference —
+# nothing in Casio's current sitemap, no archived `product.PRT-1GPJ` page.
+#
+# THE VOCABULARY CANNOT SAY THE ONE THING THIS WATCH IS. Casio's photograph
+# prints GLOBAL POSITIONING SYSTEM across the top of the case and GPS NAVIGATION
+# on the sensor block, the LCD reads POSITION with a latitude and a longitude,
+# and one of the three side buttons is labelled GPS. `FEATURES` has altimeter,
+# barometer, compass, thermometer, step-counter, tide-graph, moon-data and
+# sunrise-sunset under Sensors, and nothing for satellite positioning — so this
+# entry, the first GPS watch anybody made, cannot say that it has GPS. It is
+# filed beside CPA-100, BP-100 and JG-100: catalogued, correct, and silent about
+# its own purpose. A vocabulary value is never added as a side effect of a
+# seeding run (guardrail 4), so this is REPORTED AND LEFT.
+#
+# ABSENT AND WHY:
+#   features             see above — no vocabulary value fits, and the page
+#                        names no other function.
+#   water_resistance_m   the case prints no depth and the prose states none.
+#   movement, module     the page states neither.
+#   case                 no material is named.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: prt-1gpj
+  name: PRT-1GPJ
+  line: pro-trek
+  aka: ['Satellite Navi']
+
+models:
+  - id: prt-1gpj
+    # ref-exception: the line's `ref_pattern` wants two to five digits after the
+    # prefix letters and this reference has one, PRT-1GPJ. Casio numbered it
+    # that way in 1999; the pattern is derived from references that exist and is
+    # a warning by design, so the exception is acknowledged here rather than the
+    # rule widened for one entry — widening it is a decision about a whole line.
+    #
+    # The comment sits INSIDE the entry deliberately. `refExceptionsOf` reads
+    # `item.commentBefore`, and a comment above the FIRST item of a sequence is
+    # attached by the parser to the `models:` key instead, where the check
+    # cannot see it. Same note as AN-8 in the Vintage line.
+    ref: PRT-1GPJ
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1999
+    display: digital
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered and named `1999-prt-1gpj-sq.png`,
+    # so the §10.3 filename test passes on the reference with a boundary after
+    # it.
+    image: prt-1gpj
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

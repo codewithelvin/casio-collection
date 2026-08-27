@@ -1,0 +1,62 @@
+# DW-6300 — the first FROGMAN, added 2026-08-27 from Casio's own
+# 50th-anniversary Heritage timeline. Year, specification and photograph all
+# come off that one official page, so there is no second source and no
+# `year_source`.
+#
+# THIS IS A G-SHOCK ENTRY SOURCED FROM A PAGE, NOT FROM A MODULE GUIDE, which is
+# unusual in this line and is the reason it exists at all. Neither `survey.ts`
+# roster knows the reference — nothing in Casio's current sitemap, no archived
+# `product.DW-6300` page — and it predates every module guide the manual reader
+# can reach. Casio's Heritage timeline is a third surface both rosters are blind
+# to by construction: they ask about product pages, and this is not one.
+#
+# THE LINE COMES FROM THE PAGE'S OWN WORDS: "To start the FROGMAN line off with
+# a proper splash, the DW-6300 was designed for serious diving", and the case in
+# the photograph moulds G-SHOCK across the bezel. FROGMAN is a family this
+# catalogue already declares and GWF-1000 and GWF-D1000 already sit in — but a
+# family is a human's judgement, so it is PROPOSED in the session summary and
+# not written here (guardrail 4a).
+#
+# WHAT THE PHOTOGRAPH STATES. Casio's 900 x 900 product shot is part of the page
+# cited, so a FULL WORD printed on the case is a statement the source makes.
+# This one prints G-SHOCK, PROTECTION, SHOCK RESIST, WATER RESIST, 200M,
+# ALARM CHRONOGRAPH and AUTO REPEAT TIMER, and the prose independently gives the
+# depth as "ISO 200-meter water resistance". LCD indicator abbreviations are
+# never read — expanding one is a guess and not a reading.
+#
+# DIVE TIME DATA and LOG DATA are printed on the dial and are NOT written: the
+# vocabulary has no value for a diving log, which is the same gap GWF-1000
+# already reports from its module guide.
+#
+# ABSENT AND WHY:
+#   case                 THE TWO HALVES OF THE PAGE DISAGREE. The prose says
+#                        "the screw-back metal case"; the photograph shows a
+#                        resin shell with a metal back. `resin` and `metal` are
+#                        both defensible readings of one page, which is exactly
+#                        when D27 says the honest value is no value.
+#   movement, module     the page states neither.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: dw-6300
+  name: DW-6300
+  line: g-shock
+  aka: ['FROGMAN']
+
+models:
+  - id: dw-6300
+    ref: DW-6300
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1993
+    display: digital
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, shock-resistant]
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered and named `1993-dw-6300-sq.png`, so
+    # the §10.3 filename test passes on the reference with a boundary after it.
+    image: dw-6300
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true

@@ -1,0 +1,50 @@
+# FBR-10W — added 2026-08-27 from Casio's own 50th-anniversary Heritage
+# timeline, which is the only surface that carries it. Neither `survey.ts`
+# roster knows it — no sitemap entry, no archived `product.FBR-10W` page — and
+# The Digital Watch Library has no page for it either, checked against the full
+# gallery enumeration of 853 Casio slugs on 2026-08-27.
+#
+# THE VOCABULARY CANNOT SAY WHAT THIS WATCH IS FOR. Casio's page describes a fat
+# burning calculator: the wearer enters weight, age and sex, picks one of ten
+# exercise intensity levels, and the watch displays "current levels of fat and
+# calories burned", refreshed every thirty seconds. `FEATURES` has nothing for a
+# calorie or fat-burn calculation, nothing for fitness at all, so `features` is
+# absent rather than approximated — the same silence CPA-100, BP-100, JP-100W
+# and JG-100 already sit in. Reported, not invented (guardrail 4).
+#
+# WHAT THE PHOTOGRAPH SETTLES. Casio's own 900 x 900 product shot is part of the
+# page cited, so a full word printed on the case is a statement the source makes.
+# This one prints FAT BURNING WR5BAR across the top of the dial and FAT BURNING
+# AND CALORIE along the strap, and shows an LCD with no hands — so
+# `water_resistance_m` is 50 and `display` is digital. The dial also carries
+# WALK · BIKE · SWIM · AEROBICS · JOG around the bezel and ALM SIG above the
+# display; those last two are LCD indicator abbreviations and ARE NOT READ,
+# because expanding an abbreviation is a guess and not a reading.
+#
+# ABSENT AND WHY:
+#   features             see above — no vocabulary value fits.
+#   movement, module     the page states neither.
+#   case                 the page names no case material.
+#   discontinued         never written by hand — availability.ts measures it (D59).
+
+series:
+  id: fbr-10w
+  name: FBR-10W
+  line: vintage
+
+models:
+  - id: fbr-10w
+    ref: FBR-10W
+    source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
+    year: 1993
+    display: digital
+    water_resistance_m: 50
+    # Casio's own product photograph, plain white ground, no watermark, taken
+    # from the `<img src>` the page rendered. Named `1993-fbr-10w-sq.png`, so
+    # the §10.3 filename test passes on the reference with a boundary after it.
+    image: fbr-10w
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
+    discontinued: true
