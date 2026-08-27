@@ -540,6 +540,7 @@ const FEATURE_LABELS: Record<string, string> = {
   afterglow: 'Afterglow',
   'radio-controlled': 'Radio-controlled',
   bluetooth: 'Bluetooth',
+  infrared: 'Infrared',
   'tough-solar': 'Tough Solar',
   'power-saving': 'Power saving',
   altimeter: 'Altimeter',
@@ -547,6 +548,7 @@ const FEATURE_LABELS: Record<string, string> = {
   compass: 'Compass',
   thermometer: 'Thermometer',
   'step-counter': 'Step counter',
+  'pulse-sensor': 'Pulse sensor',
   'tide-graph': 'Tide graph',
   'moon-data': 'Moon data',
   'sunrise-sunset': 'Sunrise and sunset',
@@ -559,6 +561,7 @@ const FEATURE_LABELS: Record<string, string> = {
   calculator: 'Calculator',
   telememo: 'Telememo',
   databank: 'Databank',
+  camera: 'Camera',
   'vibration-alarm': 'Vibration alarm',
   'flash-alert': 'Flash alert',
 }

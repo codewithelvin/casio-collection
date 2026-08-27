@@ -122,6 +122,11 @@ export const FEATURES = [
   // Synchronisation and power
   'radio-controlled',
   'bluetooth',
+  // Beside `bluetooth` because it is the same kind of claim one generation
+  // earlier: how the watch talks to something that is not a wrist. Two models
+  // state it on their own source page — WQV-1's case prints IR BEAM and
+  // HBX-100's says it "connected with a PC via infrared signals".
+  'infrared',
   'tough-solar',
   'power-saving',
   // Sensors
@@ -130,6 +135,14 @@ export const FEATURES = [
   'compass',
   'thermometer',
   'step-counter',
+  // The gap `cpa-100`, `bp-100`, `jp-100`, `jp-200` and `chr-100` have each
+  // reported in turn, now with the headcount this list asks for: four models
+  // across four series, each stating it on its OWN source — BP-100, JP-100W and
+  // JP-200W carry DWL's "I take your pulse" icon and CHR-100's case prints HEART
+  // RATE. Named `pulse-sensor` rather than `heart-rate` because it has to cover
+  // PULSECHECK, "pulse" and HEART RATE, which are three words for one sensor,
+  // and because `step-counter` beside it is named for the instrument too.
+  'pulse-sensor',
   'tide-graph',
   'moon-data',
   'sunrise-sunset',
@@ -144,6 +157,10 @@ export const FEATURES = [
   'calculator',
   'telememo',
   'databank',
+  // The Wrist Camera, WQV-1 and WQV-10. Two models and one decade, which is thin
+  // — but it is the first camera anybody put on a wrist, and the alternative was
+  // a catalogue that describes it as a digital watch with an alarm.
+  'camera',
   'vibration-alarm',
   'flash-alert',
 ] as const
