@@ -31,9 +31,10 @@ import { LINE_ACCENTS } from '../theme/palette.ts'
  * line-height) over a name-and-year line (12 px at 1.667), plus 12 px of
  * padding top and bottom. Every card reserves it whether it fills it or not.
  *
- * M5's controls sit below this and are the same height on every card, so they
- * add a constant rather than a variable — which is the property that matters.
- * The reason this number exists at all is that the *caption* was variable.
+ * This is a *floor*, not the mechanism that lines the controls up — see the
+ * card's flex column below for that. It still earns its place: where a whole
+ * row happens to caption nothing, it keeps the bodies from collapsing to the
+ * height of the buttons alone.
  */
 const CAPTION_HEIGHT = 22 + 20 + 24
 
@@ -150,10 +151,36 @@ export function WatchCard({
       // neighbours stretches the whole grid row and leaves the others with a
       // gap under them. Reserving the caption's height makes the geometry a
       // constant instead of a consequence of which watches got photographed.
-      styles={{ body: { padding: 12, minHeight: CAPTION_HEIGHT } }}
+      //
+      // **The body is a flex column that fills the card**, which is what puts
+      // *Owned One* and the heart on one line across a row. The card already
+      // stretched to the tallest in its row; the body did not, so it sat at its
+      // own content height with the slack left underneath — and the controls
+      // rode up or down by a line depending on whether that watch happened to
+      // have a name or a year. `meta` is absent on most of the catalogue (D27),
+      // so this was not an edge case, it was the usual row.
+      styles={{
+        body: {
+          padding: 12,
+          minHeight: CAPTION_HEIGHT,
+          flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
+        },
+      }}
       // `position: relative` is what the stretched link below is measured
       // against. See the comment on it — this line is half of that mechanism.
-      style={{ height: '100%', borderTop: `3px solid ${lineAccent}`, position: 'relative' }}
+      //
+      // The column here is the other half of the body's `flex: 1`: a percentage
+      // height gives the card a size, but only a flex parent hands the leftover
+      // of it to the body rather than leaving it as slack below.
+      style={{
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        borderTop: `3px solid ${lineAccent}`,
+        position: 'relative',
+      }}
     >
       {/*
         **The whole card is a link, and it is this one absolutely positioned
@@ -249,7 +276,12 @@ export function WatchCard({
           detail page. That is the whole shape of the product: browse a series,
           press the ones you have, never open a page you did not want. */}
       {readOnly ? null : (
-        <div style={{ position: 'relative', zIndex: 2, marginTop: 10 }}>
+        // `marginTop: auto` is the line-up: it eats whatever height the caption
+        // above it did not, so the controls land on the card's bottom edge and
+        // every card in a row puts them at the same y. The padding keeps the
+        // gap under a caption that *does* fill the space, where the auto margin
+        // resolves to nothing and the buttons would otherwise touch the text.
+        <div style={{ position: 'relative', zIndex: 2, marginTop: 'auto', paddingTop: 10 }}>
           <OwnershipControls model={model} size="small" />
         </div>
       )}

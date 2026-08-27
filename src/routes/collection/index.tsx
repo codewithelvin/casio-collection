@@ -1,6 +1,6 @@
-import { useMemo } from 'react'
+import { useCallback, useMemo } from 'react'
 import { Col, Row, Statistic, Tabs, Tag, Typography, theme as antdTheme } from 'antd'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { useCatalog } from '../../catalog/client.ts'
 import {
   COLLECTION_SORTS,
@@ -53,6 +53,7 @@ export default function CollectionRoute() {
   // FR-6.2's fourth order, declared by the screen rather than assumed by the
   // hook — `?sort=added` means nothing on a series page and must not parse there.
   const [state, setState] = useViewState(COLLECTION_SORTS, DEFAULT_COLLECTION_SORT)
+  const [tab, setTab] = useCollectionTab()
 
   const entries = useMemo(
     () =>
@@ -95,6 +96,13 @@ export default function CollectionRoute() {
       <StatsStrip entries={entries} lines={catalog.data.lines} />
 
       <Tabs
+        // §7.2 again — which tab is open is part of what is on screen, so the
+        // URL owns it and the component does not. Uncontrolled, `Tabs` opens on
+        // its first item on every mount, and a route mounts afresh on *Back*:
+        // opening a watch from the wishlist and pressing back landed on Owned,
+        // with the wishlist a click away and no sign it had ever been there.
+        activeKey={tab}
+        onChange={setTab}
         // FR-6.1 — the count is in the label. It counts what is *held*, never
         // what survived the filters: a tab reading "Owned (3)" over a grid of
         // three when eleven are owned would make the filter look like a loss.
@@ -129,6 +137,38 @@ export default function CollectionRoute() {
       />
     </div>
   )
+}
+
+/**
+ * FR-6.1 / §7.2 — **which tab is open lives in the URL**, for the same reason
+ * the filters and the sort do: a view that cannot be reloaded — or returned to —
+ * is not a bug anyone reports, it is a page that quietly opens somewhere else.
+ *
+ * The write is a `replace`, like `useViewState`'s, so flicking between two tabs
+ * does not bury the page a reader arrived from under a history entry each. That
+ * is enough for *Back* to work: the entry the watch page was pushed on top of is
+ * the one carrying `?tab=wishlist`, and returning to it restores the tab.
+ *
+ * `owned` is written as the **absence** of the parameter, so the bare
+ * `/collection` is still the URL anyone pastes and the default is stated in one
+ * place rather than two.
+ */
+function useCollectionTab(): [CollectionStatus, (next: string) => void] {
+  const [params, setParams] = useSearchParams()
+
+  const tab: CollectionStatus = params.get('tab') === 'wishlist' ? 'wishlist' : 'owned'
+
+  const setTab = useCallback(
+    (next: string) => {
+      const search = new URLSearchParams(params)
+      if (next === 'wishlist') search.set('tab', 'wishlist')
+      else search.delete('tab')
+      setParams(search, { replace: true })
+    },
+    [params, setParams],
+  )
+
+  return [tab, setTab]
 }
 
 /**

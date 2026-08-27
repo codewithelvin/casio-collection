@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { screen, waitFor } from '@testing-library/react'
+import { act, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
 import { SESSION_STORAGE_KEY } from '../auth/config.ts'
@@ -118,6 +118,38 @@ describe('/collection (FR-6.1)', () => {
 
     expect(await screen.findByText(strings['collection.empty.title'])).toBeInTheDocument()
     expect(screen.getByText(strings['collection.empty.browse'])).toBeInTheDocument()
+  })
+
+  /**
+   * §7.2 — the tab is part of what is on screen, so *Back* has to restore it.
+   *
+   * Driven as the round trip rather than as two assertions about a query string,
+   * because the mechanism is not what broke: `Tabs` was uncontrolled and a route
+   * remounts on *Back*, so the reader came out of a watch they opened from their
+   * wishlist looking at Owned. Only the whole trip catches that.
+   */
+  it('comes back to the tab the watch was opened from', async () => {
+    signedInWith([
+      item({ model_id: 'ga-2100-1a1', status: 'owned' }),
+      item({ model_id: 'dw-5600e-1v', status: 'wishlist' }),
+    ])
+
+    const { router } = renderApp('/collection')
+
+    await userEvent.click(await screen.findByRole('tab', { name: /Wishlist \(1\)/ }))
+    expect(router.state.location.search).toBe('?tab=wishlist')
+
+    await userEvent.click(await screen.findByRole('link', { name: 'DW-5600E-1V' }))
+    await screen.findByRole('heading', { name: 'DW-5600E-1V', level: 2 })
+
+    await act(async () => {
+      await router.navigate(-1)
+    })
+
+    expect(await screen.findByRole('tab', { name: /Wishlist \(1\)/ })).toHaveAttribute(
+      'aria-selected',
+      'true',
+    )
   })
 
   /**
