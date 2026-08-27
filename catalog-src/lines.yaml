@@ -19,9 +19,27 @@
 #   [A-Z]{1,5}     the prefix letters      GA, DW, GW, PRW, MRG, A, F
 #   -?             the hyphen, if any      A158WA-1 has none
 #   [A-Z]{0,2}     a letter before digits  GW-M5610U, OCW-S400
-#   [0-9]{2,5}     the number              24, 158, 2100, 5610, 1200
+#   [0-9]{1,5}     the number              8, 24, 158, 2100, 5610
 #   [A-Z0-9]*      the variant block       E, WA, WHD, BB
 #   (-[A-Z0-9]+)*  the suffixes            -1A1, -7B, -1AV
+#
+# THE NUMBER WAS `{2,5}` UNTIL 2026-08-27 AND THAT BOUND WAS SIMPLY WRONG. This
+# pattern claims to be derived from references that actually exist, and five that
+# exist have one digit: AN-8 and AN-8G (1980), PRT-1GPJ (1999), WMP-1 and WQV-1
+# (2000). Two earlier sessions met the warning and declined to widen — AN-8's
+# entry said "rather than the rule widened for two entries", PRT-1GPJ's "for one
+# entry" — and both were right at the count they had. At five across two lines
+# the exception is the rule, so the bound is corrected and those
+# `# ref-exception` comments are removed rather than left asserting a rule that
+# no longer exists. Measured either side of the change: of 3,143 references
+# exactly those five failed `{2,5}`, none fails `{1,5}`, and nothing else is
+# newly admitted, so no typo is newly hidden.
+#
+# ONE MECHANICAL NOTE, kept here because it outlived the comments that carried
+# it. `refExceptionsOf` reads `item.commentBefore`, and a comment above the
+# FIRST item of a sequence is attached by the parser to the `models:` key
+# instead — so a `# ref-exception` written one line too high is invisible to the
+# check and to nothing else. Put it INSIDE the entry, under `- id:`.
 #
 # `families` is D32's vocabulary — a display grouping above the series, chosen
 # by a human, never appearing in a URL. It is deliberately almost empty: a
@@ -34,7 +52,7 @@ lines:
     name: G-SHOCK
     slug: g-shock
     accent: '#F25C05'
-    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{2,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
+    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{1,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
     families:
       # D32's own example: DW-5600, GW-M5610 and GWX-5600 are three series and
       # one shape. "Square" is the word collectors use, and FR-2.1 makes search
@@ -75,7 +93,7 @@ lines:
     name: Vintage / Casio Collection
     slug: vintage
     accent: '#B08D57'
-    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{2,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
+    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{1,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
     families:
       # D49 — Databank was one of D15's eight lines and is now a family here,
       # because Casio files it here. There is no `databank` segment anywhere in
@@ -139,28 +157,28 @@ lines:
     name: Edifice
     slug: edifice
     accent: '#1F4E79'
-    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{2,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
+    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{1,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
 
   - id: pro-trek
     name: Pro Trek
     slug: pro-trek
     accent: '#2E7D32'
-    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{2,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
+    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{1,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
 
   - id: baby-g
     name: Baby-G
     slug: baby-g
     accent: '#E5559E'
-    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{2,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
+    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{1,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
 
   - id: sheen
     name: Sheen
     slug: sheen
     accent: '#8E7CC3'
-    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{2,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
+    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{1,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
 
   - id: oceanus
     name: Oceanus
     slug: oceanus
     accent: '#0091C8'
-    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{2,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'
+    ref_pattern: '[A-Z]{1,5}-?[A-Z]{0,2}[0-9]{1,5}[A-Z0-9]*(?:-[A-Z0-9]{1,6})*'

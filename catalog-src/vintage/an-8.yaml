@@ -26,16 +26,11 @@ series:
 
 models:
   - id: an-8
-    # ref-exception: the line's `ref_pattern` wants two to five digits after the
-    # prefix and this reference has one. Casio numbered it AN-8 in 1980; the
-    # pattern is derived from references that exist and is a warning by design,
-    # so the exception is acknowledged here rather than the rule widened for two
-    # entries. The same note applies to AN-8G below.
-    #
-    # The comment sits INSIDE the entry deliberately. `refExceptionsOf` reads
-    # `item.commentBefore`, and a comment above the FIRST item of a sequence is
-    # attached by the parser to the `models:` key instead — so the same words one
-    # line higher are invisible to the check, and only to the check.
+    # The `# ref-exception` that stood here until 2026-08-27 is gone because the
+    # rule it named is gone: this entry's "rather than the rule widened for two
+    # entries" was the right call at two, and at five one-digit references across
+    # two lines `lines.yaml` corrected the bound to `[0-9]{1,5}` instead. AN-8 and
+    # AN-8G now match the pattern outright. Nothing about the watches changed.
     ref: AN-8
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio-an8', kind: community }
     year: 1980
@@ -48,7 +43,6 @@ models:
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-an8'
     discontinued: true
-  # ref-exception: one digit after the prefix — see the note on AN-8 above.
   - id: an-8g
     ref: AN-8G
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio-an-8g', kind: community }
