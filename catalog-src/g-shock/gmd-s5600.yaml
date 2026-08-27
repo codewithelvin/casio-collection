@@ -31,6 +31,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021728id_/https://www.casio.com/europe/watches/gshock/product.GMD-S5600-1/'
+    discontinued: false
   - id: gmd-s5600-2
     ref: GMD-S5600-2
     source:
@@ -44,6 +45,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021740id_/https://www.casio.com/europe/watches/gshock/product.GMD-S5600-2/'
+    discontinued: false
   - id: gmd-s5600-7
     ref: GMD-S5600-7
     source:
@@ -57,6 +59,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021737id_/https://www.casio.com/europe/watches/gshock/product.GMD-S5600-7/'
+    discontinued: false
   - id: gmd-s5600-8
     ref: GMD-S5600-8
     source:
@@ -70,6 +73,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021734id_/https://www.casio.com/europe/watches/gshock/product.GMD-S5600-8/'
+    discontinued: false
   - id: gmd-s5600ba-1
     ref: GMD-S5600BA-1
     source:
@@ -83,6 +87,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231230114435id_/https://www.casio.com/in/watches/gshock/product.GMD-S5600BA-1/'
+    discontinued: false
   - id: gmd-s5600ba-3
     ref: GMD-S5600BA-3
     source:
@@ -96,6 +101,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119144358id_/https://www.casio.com/in/watches/gshock/product.GMD-S5600BA-3/'
+    discontinued: false
   - id: gmd-s5600ba-4
     ref: GMD-S5600BA-4
     source:
@@ -109,6 +115,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240921090138id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5600BA-4/'
+    discontinued: false
   - id: gmd-s5600ba-6
     ref: GMD-S5600BA-6
     source:
@@ -122,6 +129,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193902id_/https://www.casio.com/in/watches/gshock/product.GMD-S5600BA-6/'
+    discontinued: false
   - id: gmd-s5600ba-7
     ref: GMD-S5600BA-7
     source:
@@ -135,6 +143,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240211175411id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5600BA-7/'
+    discontinued: false
   - id: gmd-s5600ct-3
     ref: GMD-S5600CT-3
     source:
@@ -148,6 +157,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240214084710id_/https://www.casio.com/us/watches/gshock/product.GMD-S5600CT-3/'
+    discontinued: false
   - id: gmd-s5600ct-4
     ref: GMD-S5600CT-4
     source:
@@ -161,6 +171,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119142120id_/https://www.casio.com/us/watches/gshock/product.GMD-S5600CT-4/'
+    discontinued: false
   - id: gmd-s5600ep-9
     ref: GMD-S5600EP-9
     source:
@@ -174,6 +185,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240626071309id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5600EP-9/'
+    discontinued: false
   - id: gmd-s5600nc-2
     ref: GMD-S5600NC-2
     source:
@@ -187,6 +199,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119144350id_/https://www.casio.com/in/watches/gshock/product.GMD-S5600NC-2/'
+    discontinued: false
   - id: gmd-s5600nc-9
     ref: GMD-S5600NC-9
     source:
@@ -200,6 +213,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231216203452id_/https://www.casio.com/sg/watches/gshock/product.GMD-S5600NC-9/'
+    discontinued: false
   - id: gmd-s5600rb-4
     ref: GMD-S5600RB-4
     source:
@@ -213,6 +227,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240921090138id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5600RB-4/'
+    discontinued: false
   - id: gmd-s5600sg-7
     ref: GMD-S5600SG-7
     source:
@@ -226,3 +241,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231216203449id_/https://www.casio.com/us/watches/gshock/product.GMD-S5600SG-7/'
+    discontinued: false

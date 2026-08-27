@@ -31,6 +31,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240214084617id_/https://www.casio.com/za/watches/gshock/product.GBX-100-1/'
+    discontinued: false
   - id: gbx-100-2
     ref: GBX-100-2
     source:
@@ -44,6 +45,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220926094222id_/https://www.casio.com/ph/watches/gshock/product.GBX-100-2/'
+    discontinued: false
   - id: gbx-100-2a
     ref: GBX-100-2A
     source:
@@ -57,6 +59,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065922id_/https://www.casio.com/europe/watches/gshock/product.GBX-100-2A/'
+    discontinued: false
   - id: gbx-100-7
     ref: GBX-100-7
     source:
@@ -70,6 +73,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240214084619id_/https://www.casio.com/za/watches/gshock/product.GBX-100-7/'
+    discontinued: false
   - id: gbx-100-8
     ref: GBX-100-8
     source:
@@ -83,6 +87,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241116213943id_/https://www.casio.com/us/watches/gshock/product.GBX-100-8/'
+    discontinued: false
   - id: gbx-100ki-1
     ref: GBX-100KI-1
     source:
@@ -96,6 +101,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022033id_/https://www.casio.com/europe/watches/gshock/product.GBX-100KI-1/'
+    discontinued: false
   - id: gbx-100ns-1
     ref: GBX-100NS-1
     source:
@@ -109,6 +115,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022022id_/https://www.casio.com/europe/watches/gshock/product.GBX-100NS-1/'
+    discontinued: false
   - id: gbx-100ns-4
     ref: GBX-100NS-4
     source:
@@ -122,6 +129,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022025id_/https://www.casio.com/europe/watches/gshock/product.GBX-100NS-4/'
+    discontinued: false
   - id: gbx-100tt-2
     ref: GBX-100TT-2
     source:
@@ -135,6 +143,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230512194011id_/https://www.casio.com/sg/watches/gshock/product.GBX-100TT-2/'
+    discontinued: false
   - id: gbx-100tt-8
     ref: GBX-100TT-8
     source:
@@ -148,3 +157,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119143717id_/https://www.casio.com/us/watches/gshock/product.GBX-100TT-8/'
+    discontinued: false

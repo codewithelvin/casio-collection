@@ -32,6 +32,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022233id_/https://www.casio.com/europe/watches/gshock/product.GA-B001-1A/'
+    discontinued: false
   - id: ga-b001-4a
     ref: GA-B001-4A
     source:
@@ -46,6 +47,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022236id_/https://www.casio.com/europe/watches/gshock/product.GA-B001-4A/'
+    discontinued: false
   - id: ga-b001ah-6a
     ref: GA-B001AH-6A
     source:
@@ -60,6 +62,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231216203451id_/https://www.casio.com/sg/watches/gshock/product.GA-B001AH-6A/'
+    discontinued: false
   - id: ga-b001cbr-1a
     ref: GA-B001CBR-1A
     source:
@@ -74,6 +77,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022010id_/https://www.casio.com/europe/watches/gshock/product.GA-B001CBR-1A/'
+    discontinued: false
   - id: ga-b001cbr-2a
     ref: GA-B001CBR-2A
     source:
@@ -88,6 +92,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022007id_/https://www.casio.com/europe/watches/gshock/product.GA-B001CBR-2A/'
+    discontinued: false
   - id: ga-b001cbrs-6a
     ref: GA-B001CBRS-6A
     source:
@@ -102,6 +107,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240220183711id_/https://www.casio.com/intl/watches/gshock/product.GA-B001CBRS-6A/'
+    discontinued: false
   - id: ga-b001cy-1a
     ref: GA-B001CY-1A
     source:
@@ -116,6 +122,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119144348id_/https://www.casio.com/in/watches/gshock/product.GA-B001CY-1A/'
+    discontinued: false
   - id: ga-b001fl-4a
     ref: GA-B001FL-4A
     source:
@@ -130,6 +137,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240915201345id_/https://www.casio.com/intl/watches/gshock/product.GA-B001FL-4A/'
+    discontinued: false
   - id: ga-b001g-1a
     ref: GA-B001G-1A
     source:
@@ -144,6 +152,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022228id_/https://www.casio.com/europe/watches/gshock/product.GA-B001G-1A/'
+    discontinued: false
   - id: ga-b001g-2a
     ref: GA-B001G-2A
     source:
@@ -158,6 +167,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715022230id_/https://www.casio.com/europe/watches/gshock/product.GA-B001G-2A/'
+    discontinued: false
   - id: ga-b001mw-8a
     ref: GA-B001MW-8A
     source:
@@ -170,6 +180,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241207141552id_/https://www.casio.com/jp/watches/gshock/product.GA-B001MW-8A/'
+    discontinued: false
   - id: ga-b001sf-7a
     ref: GA-B001SF-7A
     source:
@@ -184,3 +195,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064738id_/https://www.casio.com/europe/watches/gshock/product.GA-B001SF-7A/'
+    discontinued: false

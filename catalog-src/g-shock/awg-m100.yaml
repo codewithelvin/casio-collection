@@ -32,6 +32,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230327103214id_/https://www.casio.com/us/watches/gshock/product.AWG-M100-1A/'
+    discontinued: false
   - id: awg-m100a-1a
     ref: AWG-M100A-1A
     source:
@@ -46,6 +47,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119143922id_/https://www.casio.com/us/watches/gshock/product.AWG-M100A-1A/'
+    discontinued: false
   - id: awg-m100b-1a
     ref: AWG-M100B-1A
     source:
@@ -60,6 +62,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021839id_/https://www.casio.com/europe/watches/gshock/product.AWG-M100B-1A/'
+    discontinued: false
   - id: awg-m100bc-2a
     ref: AWG-M100BC-2A
     source:
@@ -71,6 +74,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211006100435id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100BC-2A/'
+    discontinued: true
   - id: awg-m100fp-1a2
     ref: AWG-M100FP-1A2
     source:
@@ -82,6 +86,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250406050619id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100FP-1A2/'
+    discontinued: false
   - id: awg-m100fp-1a4
     ref: AWG-M100FP-1A4
     source:
@@ -93,6 +98,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240225135603id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100FP-1A4/'
+    discontinued: true
   - id: awg-m100rc-1a
     ref: AWG-M100RC-1A
     source:
@@ -104,6 +110,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230530180036id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100RC-1A/'
+    discontinued: true
   - id: awg-m100s-7a
     ref: AWG-M100S-7A
     source:
@@ -115,6 +122,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210413043739id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100S-7A/'
+    discontinued: true
   - id: awg-m100sb-2a
     ref: AWG-M100SB-2A
     source:
@@ -129,6 +137,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021837id_/https://www.casio.com/europe/watches/gshock/product.AWG-M100SB-2A/'
+    discontinued: false
   - id: awg-m100sbb-1a
     ref: AWG-M100SBB-1A
     source:
@@ -140,6 +149,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210919175254id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SBB-1A/'
+    discontinued: true
   - id: awg-m100sbc-1a
     ref: AWG-M100SBC-1A
     source:
@@ -151,6 +161,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210724180947id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SBC-1A/'
+    discontinued: true
   - id: awg-m100sbg-1a
     ref: AWG-M100SBG-1A
     source:
@@ -165,6 +176,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119143920id_/https://www.casio.com/us/watches/gshock/product.AWG-M100SBG-1A/'
+    discontinued: false
   - id: awg-m100sbp-1a
     ref: AWG-M100SBP-1A
     source:
@@ -176,6 +188,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220406030614id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SBP-1A/'
+    discontinued: true
   - id: awg-m100sct-1a
     ref: AWG-M100SCT-1A
     source:
@@ -187,6 +200,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210919172649id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SCT-1A/'
+    discontinued: true
   - id: awg-m100sdc-1a
     ref: AWG-M100SDC-1A
     source:
@@ -198,6 +212,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210805153554id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SDC-1A/'
+    discontinued: true
   - id: awg-m100sf-1a2
     ref: AWG-M100SF-1A2
     source:
@@ -209,6 +224,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210419001804id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A2/'
+    discontinued: true
   - id: awg-m100sf-1a5
     ref: AWG-M100SF-1A5
     source:
@@ -220,6 +236,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220216081414id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A5/'
+    discontinued: true
   - id: awg-m100sf-1a6
     ref: AWG-M100SF-1A6
     source:
@@ -231,6 +248,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230511074203id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A6/'
+    discontinued: true
   - id: awg-m100smg-1a
     ref: AWG-M100SMG-1A
     source:
@@ -242,6 +260,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210415080058id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SMG-1A/'
+    discontinued: true
   - id: awg-m100svb-1a
     ref: AWG-M100SVB-1A
     source:
@@ -253,3 +272,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211203080231id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SVB-1A/'
+    discontinued: true

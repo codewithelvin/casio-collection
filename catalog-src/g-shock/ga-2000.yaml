@@ -32,6 +32,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064235id_/https://www.casio.com/europe/watches/gshock/product.GA-2000-1A2/'
+    discontinued: false
   - id: ga-2000-1a9
     ref: GA-2000-1A9
     source:
@@ -46,6 +47,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064245id_/https://www.casio.com/europe/watches/gshock/product.GA-2000-1A9/'
+    discontinued: false
   - id: ga-2000-2a
     ref: GA-2000-2A
     source:
@@ -60,6 +62,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220817043616id_/https://www.casio.com/us/watches/gshock/product.GA-2000-2A/'
+    discontinued: false
   - id: ga-2000-3a
     ref: GA-2000-3A
     source:
@@ -74,6 +77,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221126124804id_/https://www.casio.com/my/watches/gshock/product.GA-2000-3A/'
+    discontinued: false
   - id: ga-2000-5a
     ref: GA-2000-5A
     source:
@@ -88,6 +92,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210920025909id_/https://www.casio.com/sg/watches/gshock/product.GA-2000-5A/'
+    discontinued: false
   - id: ga-2000hc-3a
     ref: GA-2000HC-3A
     source:
@@ -102,6 +107,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210920023257id_/https://www.casio.com/sg/watches/gshock/product.GA-2000HC-3A/'
+    discontinued: false
   - id: ga-2000hc-7a
     ref: GA-2000HC-7A
     source:
@@ -116,6 +122,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210920030128id_/https://www.casio.com/sg/watches/gshock/product.GA-2000HC-7A/'
+    discontinued: false
   - id: ga-2000hd-8a
     ref: GA-2000HD-8A
     source:
@@ -130,6 +137,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240225135524id_/https://www.casio.com/intl/watches/gshock/product.GA-2000HD-8A/'
+    discontinued: false
   - id: ga-2000s-1a
     ref: GA-2000S-1A
     source:
@@ -144,6 +152,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064241id_/https://www.casio.com/europe/watches/gshock/product.GA-2000S-1A/'
+    discontinued: false
   - id: ga-2000s-7a
     ref: GA-2000S-7A
     source:
@@ -158,6 +167,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221003205621id_/https://www.casio.com/in/watches/gshock/product.GA-2000S-7A/'
+    discontinued: false
   - id: ga-2000ske-8a
     ref: GA-2000SKE-8A
     source:
@@ -172,6 +182,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064238id_/https://www.casio.com/europe/watches/gshock/product.GA-2000SKE-8A/'
+    discontinued: false
   - id: ga-2000su-1a
     ref: GA-2000SU-1A
     source:
@@ -186,6 +197,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230109060113id_/https://www.casio.com/us/watches/gshock/product.GA-2000SU-1A/'
+    discontinued: false
   - id: ga-2000su-2a
     ref: GA-2000SU-2A
     source:
@@ -200,6 +212,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220817034631id_/https://www.casio.com/us/watches/gshock/product.GA-2000SU-2A/'
+    discontinued: false
   - id: ga-2000wm-1a
     ref: GA-2000WM-1A
     source:
@@ -214,3 +227,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210929005636id_/https://www.casio.com/sg/watches/gshock/product.GA-2000WM-1A/'
+    discontinued: false

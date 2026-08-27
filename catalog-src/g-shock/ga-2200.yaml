@@ -32,6 +32,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021606id_/https://www.casio.com/europe/watches/gshock/product.GA-2200-2A/'
+    discontinued: false
   - id: ga-2200bb-1a
     ref: GA-2200BB-1A
     source:
@@ -46,6 +47,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065408id_/https://www.casio.com/europe/watches/gshock/product.GA-2200BB-1A/'
+    discontinued: false
   - id: ga-2200bnr-1a
     ref: GA-2200BNR-1A
     source:
@@ -60,6 +62,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221110190703id_/https://www.casio.com/my/watches/gshock/product.GA-2200BNR-1A/'
+    discontinued: false
   - id: ga-2200ff-8a
     ref: GA-2200FF-8A
     source:
@@ -74,6 +77,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231015045156id_/https://www.casio.com/sg/watches/gshock/product.GA-2200FF-8A/'
+    discontinued: false
   - id: ga-2200gc-7a
     ref: GA-2200GC-7A
     source:
@@ -88,6 +92,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065405id_/https://www.casio.com/europe/watches/gshock/product.GA-2200GC-7A/'
+    discontinued: false
   - id: ga-2200m-1a
     ref: GA-2200M-1A
     source:
@@ -102,6 +107,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065416id_/https://www.casio.com/europe/watches/gshock/product.GA-2200M-1A/'
+    discontinued: false
   - id: ga-2200m-4a
     ref: GA-2200M-4A
     source:
@@ -116,6 +122,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065413id_/https://www.casio.com/europe/watches/gshock/product.GA-2200M-4A/'
+    discontinued: false
   - id: ga-2200mfr-3a
     ref: GA-2200MFR-3A
     source:
@@ -130,6 +137,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065419id_/https://www.casio.com/europe/watches/gshock/product.GA-2200MFR-3A/'
+    discontinued: false
   - id: ga-2200mfr-5a
     ref: GA-2200MFR-5A
     source:
@@ -144,6 +152,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065402id_/https://www.casio.com/europe/watches/gshock/product.GA-2200MFR-5A/'
+    discontinued: false
   - id: ga-2200nc-7a
     ref: GA-2200NC-7A
     source:
@@ -156,6 +165,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722084917id_/https://www.casio.com/id/watches/gshock/product.GA-2200NC-7A/'
+    discontinued: false
   - id: ga-2200nn-1a
     ref: GA-2200NN-1A
     source:
@@ -170,6 +180,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065358id_/https://www.casio.com/europe/watches/gshock/product.GA-2200NN-1A/'
+    discontinued: false
   - id: ga-2200sby-8a
     ref: GA-2200SBY-8A
     source:
@@ -184,6 +195,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230208174209id_/https://www.casio.com/intl/watches/gshock/product.GA-2200SBY-8A/'
+    discontinued: false
   - id: ga-2200skl-4a
     ref: GA-2200SKL-4A
     source:
@@ -198,6 +210,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064301id_/https://www.casio.com/europe/watches/gshock/product.GA-2200SKL-4A/'
+    discontinued: false
   - id: ga-2200skl-8a
     ref: GA-2200SKL-8A
     source:
@@ -212,6 +225,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064304id_/https://www.casio.com/europe/watches/gshock/product.GA-2200SKL-8A/'
+    discontinued: false
   - id: ga-2200sl-5a
     ref: GA-2200SL-5A
     source:
@@ -226,6 +240,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220704091954id_/https://www.casio.com/us/watches/gshock/product.GA-2200SL-5A/'
+    discontinued: false
   - id: ga-2200sl-8a
     ref: GA-2200SL-8A
     source:
@@ -240,3 +255,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220925151514id_/https://www.casio.com/us/watches/gshock/product.GA-2200SL-8A/'
+    discontinued: false

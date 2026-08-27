@@ -32,6 +32,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231026020353id_/https://www.casio.com/sg/watches/gshock/product.MTG-B3000-1A/'
+    discontinued: false
   - id: mtg-b3000b-1a
     ref: MTG-B3000B-1A
     source:
@@ -46,6 +47,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064208id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000B-1A/'
+    discontinued: false
   - id: mtg-b3000bd-1a
     ref: MTG-B3000BD-1A
     source:
@@ -60,6 +62,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064159id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000BD-1A/'
+    discontinued: false
   - id: mtg-b3000bd-1a2
     ref: MTG-B3000BD-1A2
     source:
@@ -74,6 +77,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715064202id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000BD-1A2/'
+    discontinued: false
   - id: mtg-b3000bde-1a
     ref: MTG-B3000BDE-1A
     source:
@@ -88,6 +92,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221216024030id_/https://www.casio.com/us/watches/gshock/product.MTG-B3000BDE-1A/'
+    discontinued: false
   - id: mtg-b3000cx-9a
     ref: MTG-B3000CX-9A
     source:
@@ -102,6 +107,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021825id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000CX-9A/'
+    discontinued: false
   - id: mtg-b3000cxd-9a
     ref: MTG-B3000CXD-9A
     source:
@@ -116,6 +122,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231219150619id_/https://www.casio.com/us/watches/gshock/product.MTG-B3000CXD-9A/'
+    discontinued: false
   - id: mtg-b3000d-1a
     ref: MTG-B3000D-1A
     source:
@@ -130,6 +137,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021822id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000D-1A/'
+    discontinued: false
   - id: mtg-b3000d-1a9
     ref: MTG-B3000D-1A9
     source:
@@ -144,6 +152,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193806id_/https://www.casio.com/us/watches/gshock/product.MTG-B3000D-1A9/'
+    discontinued: false
   - id: mtg-b3000dn-1a
     ref: MTG-B3000DN-1A
     source:
@@ -158,6 +167,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240515214037id_/https://www.casio.com/ph/watches/gshock/product.MTG-B3000DN-1A/'
+    discontinued: false
   - id: mtg-b3000fr-1a
     ref: MTG-B3000FR-1A
     source:
@@ -172,6 +182,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021818id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000FR-1A/'
+    discontinued: false
   - id: mtg-b3000prb-1a
     ref: MTG-B3000PRB-1A
     source:
@@ -186,3 +197,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715065250id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000PRB-1A/'
+    discontinued: false

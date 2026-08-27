@@ -31,6 +31,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021434id_/https://www.casio.com/europe/watches/gshock/product.GW-B5600-2/'
+    discontinued: false
   - id: gw-b5600ar-1
     ref: GW-B5600AR-1
     source:
@@ -44,6 +45,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210922121719id_/https://www.casio.com/sg/watches/gshock/product.GW-B5600AR-1/'
+    discontinued: true
   - id: gw-b5600bc-1
     ref: GW-B5600BC-1
     source:
@@ -57,6 +59,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021439id_/https://www.casio.com/europe/watches/gshock/product.GW-B5600BC-1/'
+    discontinued: true
   - id: gw-b5600bc-1b
     ref: GW-B5600BC-1B
     source:
@@ -70,6 +73,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240426213637id_/https://www.casio.com/europe/watches/gshock/product.GW-B5600BC-1B/'
+    discontinued: false
   - id: gw-b5600bl-1
     ref: GW-B5600BL-1
     source:
@@ -83,6 +87,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220817015755id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600BL-1/'
+    discontinued: false
   - id: gw-b5600bp-1
     ref: GW-B5600BP-1
     source:
@@ -96,6 +101,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240314121256id_/https://www.casio.com/in/watches/gshock/product.GW-B5600BP-1/'
+    discontinued: false
   - id: gw-b5600cd-1a2
     ref: GW-B5600CD-1A2
     source:
@@ -109,6 +115,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119144201id_/https://www.casio.com/us/watches/gshock/product.GW-B5600CD-1A2/'
+    discontinued: false
   - id: gw-b5600cd-1a3
     ref: GW-B5600CD-1A3
     source:
@@ -122,6 +129,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250720205001id_/https://www.casio.com/sg/watches/gshock/product.GW-B5600CD-1A3/'
+    discontinued: false
   - id: gw-b5600cd-9
     ref: GW-B5600CD-9
     source:
@@ -135,6 +143,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119144159id_/https://www.casio.com/us/watches/gshock/product.GW-B5600CD-9/'
+    discontinued: false
   - id: gw-b5600ct-1
     ref: GW-B5600CT-1
     source:
@@ -148,6 +157,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220706033853id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600CT-1/'
+    discontinued: false
   - id: gw-b5600cy-1
     ref: GW-B5600CY-1
     source:
@@ -161,6 +171,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240314121114id_/https://www.casio.com/in/watches/gshock/product.GW-B5600CY-1/'
+    discontinued: false
   - id: gw-b5600dc-1
     ref: GW-B5600DC-1
     source:
@@ -174,6 +185,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220812021527id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600DC-1/'
+    discontinued: true
   - id: gw-b5600gz-1
     ref: GW-B5600GZ-1
     source:
@@ -187,6 +199,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220523103929id_/https://www.casio.com/in/watches/gshock/product.GW-B5600GZ-1/'
+    discontinued: true
   - id: gw-b5600hr-1
     ref: GW-B5600HR-1
     source:
@@ -200,6 +213,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240911093513id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600HR-1/'
+    discontinued: false
   - id: gw-b5600mg-1
     ref: GW-B5600MG-1
     source:
@@ -213,6 +227,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021422id_/https://www.casio.com/europe/watches/gshock/product.GW-B5600MG-1/'
+    discontinued: false
   - id: gw-b5600sgm-1
     ref: GW-B5600SGM-1
     source:
@@ -226,6 +241,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220812030744id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600SGM-1/'
+    discontinued: true
   - id: gw-b5600sgz-7
     ref: GW-B5600SGZ-7
     source:
@@ -239,6 +255,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220817015842id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600SGZ-7/'
+    discontinued: true
   - id: gw-b5600sl-4
     ref: GW-B5600SL-4
     source:
@@ -252,6 +269,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220808194602id_/https://www.casio.com/us/watches/gshock/product.GW-B5600SL-4/'
+    discontinued: false
   - id: gw-b5600sl-5
     ref: GW-B5600SL-5
     source:
@@ -265,3 +283,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220808194811id_/https://www.casio.com/us/watches/gshock/product.GW-B5600SL-5/'
+    discontinued: false
