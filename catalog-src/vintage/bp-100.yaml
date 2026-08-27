@@ -10,17 +10,21 @@
 # THE VOCABULARY CANNOT SAY WHAT THIS WATCH IS FOR, and that is the one thing
 # worth knowing about it. The case prints BLOOD PRESSURE MONITOR, the strap
 # prints PLS EKG, there is a SENSOR pad under the display and the dial is
-# labelled SYSTOLIC and DIASTOLIC. The page's own function icon says "I can
-# check your pulse". `src/catalog/vocabulary.ts` has altimeter, barometer,
-# compass, thermometer, step-counter, tide-graph, moon-data and sunrise-sunset
-# under Sensors, and nothing for a pulse, an ECG or a blood pressure.
+# labelled SYSTOLIC and DIASTOLIC. The page's own function icon says "I take
+# your pulse". `src/catalog/vocabulary.ts` had altimeter, barometer, compass,
+# thermometer, step-counter, tide-graph, moon-data and sunrise-sunset under
+# Sensors, and nothing for a pulse, an ECG or a blood pressure.
 #
-# So `features` below lists only what the vocabulary can express, and this watch
-# is filed beside CPA-100 — catalogued, correct, and unable to state its own
-# purpose. Guardrail 4 is explicit that a vocabulary value is never added as a
-# side effect of a seeding run, so this is REPORTED AND LEFT: it is the client's
-# decision whether the Sensors group gains a pulse value, and if it does, this
-# entry and CPA-100 are the two that want re-reading.
+# HALF OF THAT WAS ANSWERED ON 2026-08-27. The client closed the decision this
+# note asked for and the Sensors group gained `pulse-sensor`, so the entry below
+# now carries it, on a headcount of four: this file, JP-100W and JP-200W each
+# carry DWL's pulse icon, and CHR-100's case prints HEART RATE. CPA-100 is NOT
+# one of them — it was named beside this entry as the other watch silent about
+# its own purpose, and its gap is prayer times, still open.
+#
+# WHAT IS STILL UNSAYABLE HERE is the rest of what makes this watch odd: there is
+# no value for a BLOOD PRESSURE MONITOR and none for an EKG, so the case prints
+# two claims the catalogue cannot repeat. Reported, not invented.
 #
 # HOW THE PAGE WAS READ. DWL pairs a label div with a value div by id; the
 # reader was calibrated against F-87W, already reviewed here, and reproduced its
@@ -62,7 +66,11 @@ models:
     module: '900'
     case: { material: resin }
     water_resistance_m: 50
-    features: [alarm, stopwatch]
+    # `pulse-sensor` added 2026-08-27 — see the header. It comes off the page
+    # already named in `source`: DWL's function icon reads "I take your pulse".
+    # The BLOOD PRESSURE MONITOR and PLS EKG the case prints are STILL unsayable,
+    # so this entry is only partly un-silenced.
+    features: [alarm, stopwatch, pulse-sensor]
     image: bp-100
     image_credit:
       author: The Digital Watch Library

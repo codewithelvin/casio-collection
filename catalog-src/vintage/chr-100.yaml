@@ -21,15 +21,17 @@
 # is the two halves of the page agreeing.
 #
 # ABSENT AND WHY:
-#   features             `stopwatch` only, and the omission is the point of this
-#                        watch. THE VOCABULARY HAS NO VALUE FOR A HEART-RATE
-#                        SENSOR, so the one thing the CHR-100 was built to do
-#                        cannot be said about it, and neither can the chest strap
-#                        that transmits to it. That gap has been reported before
-#                        and is reported again in the session summary rather than
-#                        filled in here (guardrail 4). LIGHT is printed but names
-#                        no technology, and `led-light` and `el-backlight` are
-#                        different claims.
+#   features             LIGHT is printed but names no technology, and
+#                        `led-light` and `el-backlight` are different claims, so
+#                        neither is written.
+#
+# `pulse-sensor` WAS THE GAP THIS FILE WAS FIRST COMMITTED WITH and it was closed
+# on 2026-08-27: the vocabulary gained the value, on the headcount this watch
+# completed — BP-100, JP-100W and JP-200W carry a pulse icon on their own source
+# pages and this case prints HEART RATE, which is four models across four series.
+# It is named `pulse-sensor` rather than `heart-rate` because it has to cover
+# PULSECHECK, "pulse" and HEART RATE, three words for one sensor. The chest strap
+# itself is still unsayable and is not worth a value of its own.
 #   movement, module     the page states neither.
 #   case                 no material is named. The picture shows a moulded resin
 #                        case and strap, which is the picture and not the page.
@@ -48,7 +50,7 @@ models:
     year: 2005
     display: digital
     water_resistance_m: 50
-    features: [stopwatch]
+    features: [stopwatch, pulse-sensor]
     # Casio's own product photograph, plain transparent ground, no watermark,
     # taken from the `<img src>` this page renders and named
     # `2005-chr-100-sq.png`, so the §10.3 filename test passes on the reference

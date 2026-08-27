@@ -29,14 +29,23 @@
 # the LCD are indicator artwork and are NOT read — the year below comes from the
 # tile's own `2004` tag, not from the screen.
 #
-# SPEEDPASS IS THE ONE THING THIS WATCH IS FOR AND IT CANNOT BE SAID. The word is
-# moulded on the dial and the prose spells it out — "Owners of this watch could
-# refuel at self-service gas stations using the Speedpass electronic payment
+# SPEEDPASS IS THE ONE THING THIS WATCH IS FOR AND IT STILL CANNOT BE SAID. The
+# word is moulded on the dial and the prose spells it out — "Owners of this watch
+# could refuel at self-service gas stations using the Speedpass electronic payment
 # system — simply by holding up the watch to make a cashless payment" — and the
-# vocabulary has no value for a contactless IC chip or for payment. Reported in
-# the session summary rather than invented (guardrail 4). Speedpass is also not an
-# `edition`: it is a payment system this watch talks to, not two companies making
-# a watch together, and D62 needs a page that says otherwise.
+# vocabulary has no value for a contactless IC chip or for payment.
+#
+# THAT WAS DECIDED ON 2026-08-27 RATHER THAN DEFERRED AGAIN. A `contactless-
+# payment` value would be carried by this model and no other — nothing else in the
+# catalogue or in either roster has an IC chip in it — and §10.2 check 6 treats a
+# one-model facet as indistinguishable from an approved typo. So it was HELD,
+# where `camera`, `infrared` and `pulse-sensor` were added the same day on
+# headcounts of two, two and four. If a second FeliCa or Speedpass Casio is ever
+# catalogued, this entry is the one to re-read.
+#
+# Speedpass is also not an `edition`: it is a payment system this watch talks to,
+# not two companies making a watch together, and D62 needs a page that says
+# otherwise.
 #
 # ABSENT AND WHY:
 #   case                 no material is named; the picture shows resin, which is

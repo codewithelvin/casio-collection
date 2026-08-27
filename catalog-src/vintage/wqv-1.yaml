@@ -26,9 +26,25 @@
 # and color photo/display". The watch published here has a monochrome LCD; the
 # captioned one's is in colour.
 #
-# THE CROP IS 748 px WIDE, so `catalog:images` will say the 2x file is not really
-# 2x. That is true and is the price of the only picture of this watch Casio
-# publishes. It clears §10.3's 300 px floor comfortably.
+# THE CROP IS 748 px WIDE, so `catalog:images` says the 2x file is not really 2x.
+# That is true and is the price of the only picture of this watch Casio publishes.
+# It clears §10.3's 300 px floor comfortably.
+#
+# BOTH WAYS OUT OF THE CROP WERE TRIED ON 2026-08-27 AND BOTH ARE CLOSED. Written
+# down so nobody spends the afternoon again:
+#   * A BIGGER ORIGINAL. Casio's renderer takes a width in the path — the markup
+#     ships `image.casiocoreimg{.width}.png` — but `.1200`, `.1600` and `.2048`
+#     all answer 404 on this asset. 900 x 900 is the only rendition, so 431 px of
+#     watch is the hard ceiling.
+#   * A NATIVE PHOTOGRAPH. Wikimedia Commons has one, `File:Casio WQV-1 Camera
+#     Watch.JPG` by Jorfer, public domain, 819 x 3072 — and it is refused twice
+#     over. It is a dim overhead shot of the watch lying on a wooden table, which
+#     is the lifestyle photograph §10.3 will not take, and the watch in it wears a
+#     BLACK RESIN STRAP where Casio's own picture of WQV-1 wears a steel bracelet.
+#     A file whose strap disagrees with the manufacturer's is not proof of this
+#     reference whatever its filename says (§10.3's identity test).
+# So the choice was Casio's own studio shot, cropped, or no picture of the first
+# camera watch ever made. Cropping is the remedy §10.3 names in as many words.
 #
 # WHAT THE PHOTOGRAPH STATES. Casio's product shot is part of the page cited, so
 # a FULL WORD printed on the case is a statement the source makes. This one
@@ -38,13 +54,6 @@
 # ABSENT AND WHY:
 #   water_resistance_m   WATER RESIST is printed with NO DEPTH beside it, and the
 #                        prose gives none. A number here would be invented.
-#   features             THE VOCABULARY HAS NOTHING FOR EITHER OF THIS WATCH'S
-#                        TWO REASONS TO EXIST. There is no value for a camera —
-#                        the whole point of the model — and none for the infrared
-#                        link SHUTTER/IR BEAM names, which is the second time
-#                        that gap has been reported (HBX-100, 1997). Both are
-#                        proposed in the session summary, not written here
-#                        (guardrail 4).
 #   movement, module     the page states neither.
 #   case                 the picture shows a steel case and bracelet; no material
 #                        is named on the page, and the picture is the picture.
@@ -59,15 +68,19 @@ series:
 
 models:
   - id: wqv-1
-    # ref-exception: the line's `ref_pattern` wants two to five digits after the
-    # prefix letters and this reference has one, WQV-1. Casio numbered it that way
-    # in 2000; the pattern is derived from references that exist and is a warning
-    # by design, so the exception is acknowledged here rather than the rule
-    # widened — the same reading AN-8 and PRT-1GPJ already carry.
     ref: WQV-1
     source: { url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/', kind: official }
     year: 2000
     display: digital
+    # BOTH OF THIS WATCH'S REASONS TO EXIST, sayable since 2026-08-27. The file
+    # was first committed with a note that the vocabulary had no word for either;
+    # the client closed that decision and it gained `camera` and `infrared`.
+    # `camera` is the tile's title and Casio's prose — "a wristwatch equipped with
+    # a digital camera" — and the case prints Wrist Camera. `infrared` is the
+    # IR BEAM printed beside SHUTTER on the same case. Both off the one page in
+    # `source`. The CMOS sensor and the full-screen LCD preview the prose also
+    # describes have no term and are not approximated with these two.
+    features: [camera, infrared]
     # Cut from the `<img src>` this page renders, which live casio.com still
     # serves at 900 x 900 even though the page itself answers 403. See the note
     # above for why this one is a crop.

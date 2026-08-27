@@ -41,7 +41,14 @@
 # `ana-digi`, not the `analog` a chronograph would otherwise suggest.
 #
 # TACHYMETER IS PRINTED AND IS NOT WRITTEN — the vocabulary has no value for a
-# tachymeter bezel. Reported, not invented (guardrail 4).
+# tachymeter bezel, and on 2026-08-27 that was decided rather than deferred. This
+# is the only model in the catalogue whose source states one, so a `tachymeter`
+# value would select exactly one watch, which §10.2 check 6 cannot tell apart from
+# an approved typo. It is the candidate most likely to change: Edifice holds 518
+# references here, many of them chronographs that probably print it, but their
+# pages were read for other fields and NOBODY HAS COUNTED. Until someone does,
+# HELD — where `camera`, `infrared` and `pulse-sensor` were added the same day
+# because their models had been counted.
 #
 # ABSENT AND WHY:
 #   water_resistance_m   the page states no depth and the case prints none.

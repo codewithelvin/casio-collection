@@ -17,15 +17,22 @@
 # current sitemap (us, intl, de), and the archive holds no `product.WQV-1*`
 # capture under any line path.
 #
-# NO PHOTOGRAPH, AND THE REASON IS A MEASUREMENT. Casio does picture this watch —
-# it is the smaller one on the right of the tile's shared asset,
-# `2000-wqv-1-wqv-10-sq.png`, with `[2001] WQV-10` set beside it — so unlike
-# DBC-V50 this is not a case of the wrong watch being rendered. It is a case of
-# too few pixels: that watch's own alpha bounds are columns 545-855 by rows
-# 205-792, and the 311 px includes the caption type, leaving the case itself
-# under 300 px wide. §10.3 refuses a photograph narrower than 300 px because it
-# renders softer than the typographic tile it would replace. `wqv-1` took the
-# left half of the same asset, which is 431 px of watch.
+# NO PHOTOGRAPH, AND THE REASON IS A MEASUREMENT — 296 px, and it misses by four.
+# Casio does picture this watch: it is the smaller one on the right of the tile's
+# shared asset, `2000-wqv-1-wqv-10-sq.png`, with `[2001] WQV-10` set beside it, so
+# unlike DBC-V50 this is not a case of the wrong watch being rendered. It is a
+# case of too few pixels. Measured on the alpha channel with the caption rows
+# excluded — the caption is wider than the watch and flattered the first
+# measurement, which said 311 — THE WATCH ITSELF IS 296 x 496, columns 560-855 by
+# rows 205-700. §10.3 refuses a photograph narrower than 300 px because it renders
+# softer than the typographic tile it would replace, and a 296 px watch upscaled
+# to a 400 px tile is exactly that. `wqv-1` took the left half of the same asset,
+# which is 431 px of watch and passes.
+#
+# NOTHING ELSE EXISTS TO USE. Casio's renderer answers 404 to every wider
+# rendition of this asset (`.1200`, `.1600`, `.2048`), and the one freely licensed
+# WQV photograph on Wikimedia Commons is of the WQV-1 — see that file's header for
+# why it is refused there too.
 #
 # `display: digital` IS THE ONE FIELD READ OFF THE SENTENCE. "color
 # photo/display" says this reference has a display and that it is a colour one;
@@ -35,8 +42,6 @@
 # ABSENT AND WHY:
 #   water_resistance_m   no depth is stated and no picture of this reference is
 #                        legible enough to read a case marking off.
-#   features             the vocabulary has no value for a camera or for the
-#                        digital zoom this reference added (guardrail 4).
 #   movement, module, case, colorway
 #                        the sentence states none of them.
 #   discontinued         never written by hand — availability.ts measures it (D59).
@@ -53,5 +58,11 @@ models:
     source: { url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/', kind: official }
     year: 2001
     display: digital
+    # `camera` since 2026-08-27, when the vocabulary gained it on a headcount of
+    # two — this reference and WQV-1. The sentence in `source` is the whole basis:
+    # Casio "released the WQV-10 with a digital zoom function and color
+    # photo/display", which is a camera being described. The digital zoom itself
+    # has no term and is not smuggled in under this one.
+    features: [camera]
     image: null
     discontinued: true

@@ -32,7 +32,10 @@ models:
     module: '1009'
     case: { material: resin }
     water_resistance_m: 50
-    features: [alarm, stopwatch, countdown-timer, databank]
+    # `pulse-sensor` added 2026-08-27, when the vocabulary gained the value. It
+    # comes off the page already named in `source` — DWL's own function icon reads
+    # "I take your pulse" — so no second citation is needed.
+    features: [alarm, stopwatch, countdown-timer, databank, pulse-sensor]
     # THE EARLIER NOTE HERE WAS WRONG AND IS REPLACED RATHER THAN SOFTENED. It
     # said CDX returned [] for this asset at every timestamp and concluded the
     # photograph had never been archived. The query had been built from the

@@ -40,8 +40,18 @@ models:
     features: [alarm, stopwatch]
     # The page also shows a game icon ("I have a game"). The vocabulary has no
     # value for it, and rule 4 forbids adding one inside a seeding run, so the
-    # entry is silent about the feature this watch is actually known for. Reported
-    # as an open question rather than invented.
+    # entry is silent about the feature this watch is actually known for. On
+    # 2026-08-27 that was decided rather than deferred: JG-100 is the only game
+    # watch in the catalogue, and a one-model facet is what §10.2 check 6 cannot
+    # tell apart from an approved typo, so `game` was HELD. This is also the only
+    # gap here that IS citable from `source` — DWL's own icon says it — so it is
+    # the first to add if a second game Casio ever arrives.
+    #
+    # `infrared` and `remote-control` are a different problem and are recorded on
+    # CMD-10, which has it too: the REMOTE CONTROLLER and IR BEAM below are read
+    # off CASIO's photograph, and `source` here is DWL, whose icons say neither.
+    # The one-page rule means this entry cannot carry either value even though
+    # `infrared` now exists. Not an oversight.
     # THE EARLIER NOTE HERE WAS WRONG AND IS REPLACED RATHER THAN SOFTENED. It
     # said CDX returned [] for this asset at every timestamp and concluded the
     # photograph had never been archived. The query had been built from the

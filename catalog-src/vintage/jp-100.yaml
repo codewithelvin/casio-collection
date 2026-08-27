@@ -33,7 +33,11 @@ models:
     module: '509'
     case: { material: resin }
     water_resistance_m: 50
-    features: [alarm, stopwatch, countdown-timer]
+    # `pulse-sensor` added 2026-08-27, when the vocabulary gained the value this
+    # entry had been waiting on. It comes off the page already named in `source`:
+    # DWL's own function icon reads "I take your pulse", and the photograph below
+    # prints PULSECHECK with a PULSE button over the sensor.
+    features: [alarm, stopwatch, countdown-timer, pulse-sensor]
     # CASIO MISNAMED ITS OWN FILE. The asset is
     # `1987_JB-100W_SQ.png` — JB, not JP — while the page's own title text for
     # the block says JP-100W. The photograph settles it: the dial prints

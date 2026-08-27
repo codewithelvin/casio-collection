@@ -4,15 +4,21 @@
 # Watch Library has no page for it, checked against the full gallery enumeration
 # of 853 Casio slugs on 2026-08-27.
 #
-# THE VOCABULARY CANNOT SAY WHAT THIS WATCH IS, and the entry is left silent
-# rather than approximated. It "connected with a PC via infrared signals",
-# exchanging schedules, telephone directories and task lists with a desktop PIM,
-# and text files written on the PC "could also be viewed and edited on the
-# wristwatch". `FEATURES` has nothing for infrared, nothing for a PC link, and
-# nothing for a two-way data transfer. The near-miss values were considered and
-# refused: the page never calls it a Data Bank and never says Telememo, and
-# `databank` on the strength of "telephone directories" would be this
-# catalogue's own word rather than Casio's. Reported, not invented — guardrail 4.
+# THE VOCABULARY COULD NOT SAY WHAT THIS WATCH IS, AND NOW HALF-CAN. It
+# "connected with a PC via infrared signals", exchanging schedules, telephone
+# directories and task lists with a desktop PIM, and text files written on the PC
+# "could also be viewed and edited on the wristwatch". `FEATURES` had nothing for
+# infrared, nothing for a PC link and nothing for a two-way data transfer; on
+# 2026-08-27 it gained `infrared`, sitting beside `bluetooth` as the same kind of
+# claim one generation earlier, and this entry is one of the two models that
+# earned it — the words "via infrared signals" are the page's own, in the `source`
+# named below. WQV-1 is the other.
+#
+# STILL UNSAYABLE: the PC link itself and the two-way transfer. The near-miss
+# values were considered and refused again — the page never calls it a Data Bank
+# and never says Telememo, and `databank` on the strength of "telephone
+# directories" would be this catalogue's word rather than Casio's. Reported, not
+# invented — guardrail 4.
 #
 # WHAT THE PHOTOGRAPH SHOWS, none of which the vocabulary can hold either: the
 # dial prints "Link with PC / PCX" and IR TRANSFER, the LCD row reads
@@ -21,7 +27,6 @@
 # read from the same picture — a two-tiered LCD with no hands.
 #
 # ABSENT AND WHY:
-#   features             see above — no vocabulary value fits.
 #   water_resistance_m   the case prints no depth and the prose states none.
 #   movement, module     the page states neither.
 #   case                 no material is named.
@@ -38,6 +43,11 @@ models:
     source: { url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/', kind: official }
     year: 1998
     display: digital
+    # One value, added 2026-08-27, and it is the first thing this entry has ever
+    # been able to say about itself. The page's own words are "connected with a PC
+    # via infrared signals"; the picture backs them with an IR TRANSFER legend and
+    # an infrared window. Everything else the watch does still has no term.
+    features: [infrared]
     # Casio's own product photograph, plain white ground, no watermark, taken
     # from the `<img src>` the page rendered and named `1998-hbx-100-sq.png`, so
     # the filename test passes on the reference with a boundary after it.

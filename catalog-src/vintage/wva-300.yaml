@@ -26,11 +26,22 @@
 # under the LCD. The dial carries hands AND a digital window, which is where
 # `ana-digi` comes from.
 #
-# A FAMILY IS PROPOSED AND NOT WRITTEN (guardrail 4a). `wave-ceptor` already
-# exists in `lines.yaml` and `wva-m630` and `lcw-m100` already sit in it, so this
-# is a strong candidate — but those two earned it from twelve and four pages that
-# LINK to `watches/casio/waveceptor/`, and the evidence here is two words on a
-# dial. It is in the session summary for a human to settle.
+# `family: wave-ceptor` — PROPOSED WHEN THIS FILE WAS WRITTEN, SETTLED 2026-08-27,
+# and on weaker evidence than its two siblings, which is worth stating plainly.
+# `wva-m630` and `lcw-m100` earned the family from sixteen pages that LINK to
+# `watches/casio/waveceptor/`. No such page exists for a 2001 reference: there is
+# no archived `product.WVA-300`, and `waveceptor` is not even a segment of Casio's
+# sitemap today. What there is instead:
+#   * CASIO'S OWN BRANDING ON THE PRODUCT. The dial in the official photograph
+#     below prints WAVE CEPTOR, which is the manufacturer naming the collection on
+#     the watch rather than a website's navigation naming it in a menu.
+#   * THE PAGE'S OWN ARGUMENT. This tile exists to say the WVA-300 "blazed the
+#     trail to a new frontier: solar-powered, radio-controlled timekeeping" — it
+#     is the first Wave Ceptor, and a Wave Ceptor grouping that holds the 2007 and
+#     2010 models but not the origin is the failure D32 families exist to avoid.
+# Wikipedia's Wave Ceptor article was checked and does NOT name this reference, so
+# it is not cited. A family carries no `source` because it is a judgement (D32);
+# this is the judgement, and the evidence above is what to reverse it against.
 #
 # ABSENT AND WHY:
 #   water_resistance_m   nothing on the page or the case states a depth.
@@ -43,6 +54,9 @@ series:
   id: wva-300
   name: WVA-300
   line: vintage
+  # D32 — see the header. Read off Casio's own dial rather than off a collection
+  # link, which is a weaker basis than `wva-m630` and `lcw-m100` had.
+  family: wave-ceptor
   # Printed on the dial in the photograph on the page cited below.
   aka: [Wave Ceptor]
 
