@@ -33,11 +33,20 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, stopwatch, countdown-timer, databank]
-    # Casio photographs this watch on its Heritage page, and the
-    # file was never archived. CDX returns [] for the asset at every timestamp,
-    # measured 2026-08-27 against two 1980s assets in the same run that returned
-    # 200 — so this is an absence and not the archive declining to answer. Nothing
-    # else usable was found: DWL's own shot is the only other candidate and it is
-    # the same page already cited, below the 300 px floor.
-    image: null
+    # THE EARLIER NOTE HERE WAS WRONG AND IS REPLACED RATHER THAN SOFTENED. It
+    # said CDX returned [] for this asset at every timestamp and concluded the
+    # photograph had never been archived. The query had been built from the
+    # page's `data-asset` DAM path, which is the one thing the Heritage reader is
+    # told never to use. The path the page actually RENDERS —
+    # `…/image.casiocoreimg.png/1707872062951/1992-jp-200w-sq.png` — answers 200
+    # at 20241028215448, as does every other tile on that page. Corrected
+    # 2026-08-27.
+    #
+    # So this is Casio's own product photograph after all: 900 x 900, plain white
+    # ground, no watermark, named for the reference with a boundary after it.
+    image: jp-200w
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
     discontinued: true

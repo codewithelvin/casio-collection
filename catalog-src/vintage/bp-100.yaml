@@ -2,8 +2,10 @@
 #
 # NEITHER MODERN ROSTER KNOWS THIS WATCH. Not in Casio's current sitemap, not in
 # the archive's per-segment CDX index — the survey returned no references at all
-# from either roster. The 1990 blood-pressure watch never had a page on the
-# casio.com the archive kept.
+# from either roster. The blood-pressure watch never had a PRODUCT page on the
+# casio.com the archive kept, which is the only thing those rosters ask about.
+# Casio does publish it on a third surface, its 50th-anniversary Heritage
+# timeline, and that page is what the year below now comes from.
 #
 # THE VOCABULARY CANNOT SAY WHAT THIS WATCH IS FOR, and that is the one thing
 # worth knowing about it. The case prints BLOOD PRESSURE MONITOR, the strap
@@ -29,6 +31,14 @@
 # moulds BP-100 in raised letters. That is the "prefer a dial that prints the
 # model name" test passing outright rather than an alt tag being trusted.
 #
+# THE YEAR MOVED 1990 -> 1992 ON 2026-08-27, and it is an overwrite rather than
+# a fill, so it is written down. DWL, the page in `source`, says 1990. Casio's
+# own 50th-anniversary Heritage timeline dates it 1992 and describes this exact
+# watch — "No wristwatch had ever incorporated a blood pressure monitor before …
+# it also stored up to 30 datapoints in memory, including pulse". An official
+# source outranks a community one, so `year_source` now names the page that
+# states it, which is the same call AL-180 and MAP-100 already carry.
+#
 # ABSENT AND WHY:
 #   * `display` — the page never describes the dial. Its title slot reads
 #     "Digital", but that slot holds "Casiotron" and "Calculator" on the sibling
@@ -47,7 +57,8 @@ models:
   - id: bp-100
     ref: BP-100
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio_bp-100', kind: community }
-    year: 1990
+    year: 1992
+    year_source: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
     module: '900'
     case: { material: resin }
     water_resistance_m: 50
