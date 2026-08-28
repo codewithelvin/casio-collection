@@ -191,6 +191,7 @@ models:
     discontinued: true
   - id: gwf-1000nv-2
     ref: GWF-1000NV-2
+    edition: men-in-navy-blue
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
@@ -208,6 +209,7 @@ models:
       url: 'https://watchoutz.com/products/casio-g-shock-frogman-men-in-navy-gwf-1000nv-2jf'
   - id: gwf-1000rd-4
     ref: GWF-1000RD-4
+    edition: men-in-burning-red
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',

@@ -82,12 +82,12 @@ const en = {
   //
   // The lead has one job, and it is to say what an edition *is* before a reader
   // decides whether the page is for them. "Limited" on its own would be a
-  // marketing word; naming the two parties and saying the watches sit in
+  // marketing word; naming what Casio called it and saying the watches sit in
   // different series is the fact that makes the page worth having — those
   // watches have no other URL that shows them together.
   'editions.heading': 'Editions',
   'editions.lead':
-    'Collaborations and limited releases: watches Casio made with somebody else. An edition cuts across the catalogue, so the references in one usually sit in different series and sometimes in different lines.',
+    'Watches Casio gave a name to and released under it — collaborations, dedications, anniversaries, seasonal collections. An edition cuts across the catalogue, so the references in one usually sit in different series and sometimes in different lines.',
   'editions.count': 'references',
   'editions.countOne': 'reference',
   // `editions.all` — *All editions* — was the front door's bare link and is gone
@@ -105,13 +105,13 @@ const en = {
   'edition.notFound.title': 'No such edition',
   'edition.notFound.body':
     'That edition is not in the catalogue. Only editions with a catalogued reference in them are published.',
-  // FR-3.2a's sentence, one level up. An edition asserts that two companies made
-  // something together, so the page says which page that was read off — the same
+  // FR-3.2a's sentence, one level up. An edition asserts Casio released this
+  // watch under this name, so the page says which page that was read off — the same
   // promise the watch page makes about a specification.
   'edition.sourceHeading': 'Where this edition came from',
   'edition.empty.title': 'No editions yet',
   'edition.empty.body':
-    'No catalogued reference has been placed in an edition yet. Nothing is grouped here on a guess — an edition is written down only where a page names the collaboration and the reference.',
+    'No catalogued reference has been placed in an edition yet. Nothing is grouped here on a guess — an edition is written down only where a page names the release and the reference.',
 
   // Filters and sorting (M3, FR-1.3 to FR-1.5)
   'filter.year': 'Year',

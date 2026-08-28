@@ -189,6 +189,9 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/gm-2110d-8adr'
   - id: gm-2110sh-2a
     ref: GM-2110SH-2A
+    # The edition's own `source` is this reference's page, so no
+    # `edition_source` — unlike its sibling below, which needs one.
+    edition: precious-heart-selection-2025
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -206,6 +209,11 @@ models:
       url: 'https://ippojapanwatch.com/products/casio-g-shock-gm-2110sh-2ajf-precious-heart-selection-2025-analog-digital-watch-2025-11-8-release'
   - id: gm-2110sh-7a
     ref: GM-2110SH-7A
+    # The edition is sourced to its sibling's page (GM-2110SH-2A), which does not
+    # name this reference. This is the page that does — `year_source` again: one
+    # entry citing two pages is honest only when it says which said what.
+    edition: precious-heart-selection-2025
+    edition_source: 'https://ippojapanwatch.com/products/casio-g-shock-gm-2110sh-7aj-precious-heart-selection-2025-analog-digital-f-watch-2025-11-8-release'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',

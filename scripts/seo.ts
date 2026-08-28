@@ -208,15 +208,15 @@ function seriesPage(
 function editionsPage(catalog: Catalog): Page {
   return {
     path: 'editions',
-    title: 'Casio collaborations and limited editions · Casio Vault',
-    description: `The ${catalog.editions.length} Casio collaborations and limited releases in this catalogue — ${catalog.editions
+    title: 'Casio limited editions and collaborations · Casio Vault',
+    description: `The ${catalog.editions.length} named Casio releases in this catalogue — collaborations, dedications and limited runs, among them ${catalog.editions
       .slice(0, 5)
       .map((edition) => edition.name)
       .join(', ')}${catalog.editions.length > 5 ? ' and more' : ''}. ${DISCLAIMER}`,
     priority: '0.8',
     body: `
       <h1>Editions</h1>
-      <p>Collaborations and limited releases: watches Casio made with somebody else.</p>
+      <p>Watches Casio gave a name to and released under it — collaborations, dedications, anniversaries and seasonal collections.</p>
       <ul>
         ${catalog.editions
           .map(

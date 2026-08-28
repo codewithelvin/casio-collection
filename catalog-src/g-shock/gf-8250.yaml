@@ -142,6 +142,14 @@ models:
     discontinued: true
   - id: gf-8250k-4
     ref: GF-8250K-4
+    # D62 — the naming page was already cited on this entry as the photograph's
+    # credit; it just was not being read as an edition claim.
+    #
+    # NO `edition_source`, deliberately. That field is for the reference the
+    # edition's own page does not name, and this edition's source IS the page
+    # that names this reference — the same URL, in `image_credit` below. A second
+    # copy of it here would be a citation for a fact the edition already carries.
+    edition: love-the-sea-2014
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',

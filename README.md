@@ -106,7 +106,7 @@ this repo and it is `src/catalog/schema.ts`.
 ## The catalogue
 
 `catalog-src/` is the authored source: `lines.yaml` for the seven lines,
-`editions.yaml` for the collaborations, then one YAML file per series in a folder
+`editions.yaml` for the named releases, then one YAML file per series in a folder
 named after its line. `catalog:build` turns that into
 `public/catalog/catalog.json` and the models-free `catalog-index.json` beside
 it — build artefacts, **not** committed files. What gets committed and reviewed is
@@ -128,9 +128,15 @@ Two rules follow, and both are the same rule the catalogue already applies
 elsewhere:
 
 - **An edition carries a `source`, where a family does not.** A family is a
-  judgement about how a watch looks. An edition says two companies made
-  something together, which is a claim about the world — so it needs a page
-  stating it, exactly as a model does.
+  judgement about how a watch looks. An edition says Casio released this watch
+  under this name, which is a claim about the world — so it needs a page stating
+  it, exactly as a model does.
+- **An edition is not only a collaboration.** It is any named release: a
+  collaboration, a dedication, an anniversary, a seasonal collection, a themed
+  run. Five of them have no `partner` at all. The line that matters is between a
+  named _release_ and a named _colourway_ — "Breezy Color" is a colour name
+  inside the standard lineup, in WatchOutz's own words, and is not written down
+  as an edition however much it sounds like one.
 - **An edition nothing is in is not published**, the same sentence as the line
   rule and the family rule. It is declared in `editions.yaml`, warns on the
   build, and appears nowhere until a reference names it.
