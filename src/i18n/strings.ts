@@ -21,6 +21,12 @@ const en = {
   // because it cuts across them: an edition is a different question about the
   // same catalogue, not an eighth line.
   'nav.editions': 'Editions',
+  // The glossary. Like `nav.editions` it is a different question about the same
+  // catalogue rather than an eighth line — but unlike editions it is not a way
+  // *into* the catalogue at all, which is why it is in the footer rather than in
+  // the rail: it answers a question you have while holding a watch, not while
+  // browsing for one.
+  'nav.symbols': 'Display symbols',
   'nav.skip': 'Skip to content',
   // §12 — the rail's expander became a control of its own when the Menu went,
   // so it needs a name of its own. It says which line it opens, because a rail
@@ -41,6 +47,7 @@ const en = {
   'route.watch.title': 'Watch',
   'route.editions.title': 'Editions',
   'route.edition.title': 'Edition',
+  'route.symbols.title': 'Display symbols',
   'route.search.title': 'Search',
   'route.collection.title': 'My Collection',
   'route.settings.title': 'Settings',
@@ -112,6 +119,45 @@ const en = {
   'edition.empty.title': 'No editions yet',
   'edition.empty.body':
     'No catalogued reference has been placed in an edition yet. Nothing is grouped here on a guess — an edition is written down only where a page names the release and the reference.',
+
+  // The display-symbol glossary.
+  //
+  // ONLY THE CHROME IS HERE. The forty glossary entries live in
+  // `routes/symbols/symbols.ts`, and the comment at the top of that file is the
+  // argument for why: this module is imported by `AppShell`, which is in the
+  // entry graph, so every string added here is downloaded by every visitor on
+  // every URL — including the ones who never open the glossary.
+  //
+  // The lead's job is to say what the page is *for* before anybody scrolls.
+  // "Symbols" alone would sound like a design reference; naming the situation —
+  // a watch on the wrist showing something unexplained — is the fact that makes
+  // the page worth having.
+  'symbols.heading': 'What the symbols on a Casio display mean',
+  'symbols.lead':
+    'Digital Casios say a lot in very few letters. Here is every indicator these watches put on screen, what each one is telling you, and the Casio manual it is defined in.',
+  'symbols.jump': 'Jump to a section',
+  'symbols.group.time': 'Reading the time',
+  'symbols.group.alarm': 'Alarms and the hour',
+  'symbols.group.timing': 'Stopwatch and timer',
+  'symbols.group.power': 'Power and the battery',
+  'symbols.group.radio': 'Radio-controlled timekeeping',
+  'symbols.group.light': 'Light',
+  'symbols.group.sensor': 'Sensors',
+  'symbols.group.sea': 'Tide and moon',
+  'symbols.group.other': 'Hands and other states',
+  // FR-3.2a's sentence again, one level down from the watch page: this row says
+  // which Operation Guide defines the indicator, and the module numbers are
+  // links to the PDF rather than decoration.
+  'symbols.definedIn': 'Defined in Casio Operation Guide',
+  // The limit on everything above it. A glossary that implied it was exhaustive
+  // would be making a claim nobody can source (D25) — so the page says what it
+  // was read from and what that leaves out, in its own words.
+  'symbols.note.scope':
+    'This glossary is read from the twenty Casio Operation Guides this catalogue already cites for specifications. It is not every symbol Casio has ever printed on an LCD — no such list exists to read from, and inventing one is the thing this project does not do.',
+  'symbols.note.variance':
+    'Your watch may differ. Casio changes indicators between modules, and the same three letters can be positioned differently on two watches that share them. The module number is printed on the caseback; its own guide is the answer for your watch, and every row here links to one.',
+  'symbols.note.affiliation':
+    'The drawings are schematics, not Casio artwork. Where an indicator is a picture rather than a word, it is redrawn here to be recognisable beside the sentence that explains it.',
 
   // Filters and sorting (M3, FR-1.3 to FR-1.5)
   'filter.year': 'Year',

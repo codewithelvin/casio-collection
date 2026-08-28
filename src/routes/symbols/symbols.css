@@ -1,0 +1,200 @@
+/*
+ * The symbols page, in its own stylesheet.
+ *
+ * **Not in `shell.css`, and that is the whole point of the file existing.**
+ * `shell.css` is loaded by the entry chunk and paints every URL on this site;
+ * ninety lines describing a glossary nobody has opened would be ninety lines in
+ * the critical CSS of the front door. Imported from the route module instead, so
+ * Vite emits it as that route's own stylesheet and it arrives with the page that
+ * uses it.
+ *
+ * Every colour is a custom property from `SHELL_TOKENS`, the same rule
+ * `shell.css` states about itself: the page renders no Ant Design (§12), so
+ * there is nothing else here to inherit a theme from, and a literal hex would be
+ * a value that is right in one theme and wrong in the other.
+ */
+
+.cc-sym-lead {
+  max-width: 62ch;
+}
+
+/* --- the jump list -------------------------------------------------------- *
+ * Forty rows is a page you scroll past, not a page you read top to bottom, so
+ * the groups are links before they are headings. It is a nav landmark rather
+ * than a row of buttons because that is what it is: a list of links into this
+ * document, and a screen reader should be able to skip it in one press.        */
+
+.cc-sym-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.cc-sym-jump a {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid var(--cc-border-secondary);
+  border-radius: 999px;
+  background: var(--cc-bg-container);
+  color: var(--cc-text);
+  font-size: 14px;
+  text-decoration: none;
+  transition: border-color var(--cc-quick) var(--cc-ease);
+}
+
+.cc-sym-jump a:hover {
+  border-color: var(--cc-primary);
+  color: var(--cc-primary);
+}
+
+/* --- a group -------------------------------------------------------------- */
+
+.cc-sym-group {
+  margin-top: 40px;
+}
+
+/* `scroll-margin-top` and not a spacer element: the jump links land on these
+   headings, and the sticky header would otherwise sit on top of the one you
+   just asked for. 80px is the header's height plus a little air. */
+.cc-sym-group > h3 {
+  scroll-margin-top: 80px;
+}
+
+.cc-sym-list {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--cc-border-secondary);
+}
+
+.cc-sym-row {
+  display: grid;
+  /* One column on a phone: the chip sits above the text rather than squeezing
+     a 62-character measure into what is left of 320px beside it. */
+  grid-template-columns: 1fr;
+  gap: 4px 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--cc-border-secondary);
+}
+
+/* §8.2's breakpoint, the same 768px `shell.css` uses, written as a media query
+   for the same reason: a layout that needs JavaScript to choose itself cannot
+   be drawn before the JavaScript arrives. */
+@media (min-width: 768px) {
+  .cc-sym-row {
+    grid-template-columns: 108px 1fr;
+    gap: 4px 24px;
+  }
+}
+
+/* --- the display chip ----------------------------------------------------- *
+ * What the watch actually shows, set apart from the prose about it. IBM Plex
+ * Mono is already loaded for `.cc-ref` (the catalogue's reference codes), so
+ * this costs no extra font — and it is the right face for the job twice over:
+ * it is the one on this site that already means "this is printed on the watch". */
+
+.cc-sym-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  min-height: 34px;
+  padding: 4px 10px;
+  border: 1px solid var(--cc-border-secondary);
+  border-radius: 4px;
+  background: var(--cc-fill-secondary);
+  color: var(--cc-text);
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-feature-settings: 'zero' 1;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.cc-sym-glyph {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  color: var(--cc-text);
+}
+
+.cc-sym-glyph svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- the prose ------------------------------------------------------------ */
+
+.cc-sym-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cc-text);
+}
+
+.cc-sym-meaning {
+  margin: 4px 0 0;
+  max-width: 68ch;
+  color: var(--cc-text);
+  line-height: 1.6;
+}
+
+.cc-sym-detail {
+  margin: 8px 0 0;
+  max-width: 68ch;
+  padding-left: 12px;
+  border-left: 2px solid var(--cc-border-secondary);
+  color: var(--cc-text-description);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* --- the citation --------------------------------------------------------- *
+ * FR-3.2a one level down: a watch page says which page a specification was read
+ * off, and a glossary row says which Operation Guide defines the indicator. A
+ * claim nobody can check is decoration.                                        */
+
+.cc-sym-source {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: var(--cc-text-description);
+}
+
+.cc-sym-source a {
+  color: var(--cc-text-description);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-feature-settings: 'zero' 1;
+}
+
+.cc-sym-source a:hover {
+  color: var(--cc-primary);
+}
+
+/* The note that closes the page: what this glossary covers and what it does
+   not. Bordered rather than quiet, because it is a limit on everything above
+   it and a reader who misses it will over-read the page. */
+.cc-sym-note {
+  margin-top: 40px;
+  padding: 16px;
+  max-width: 72ch;
+  border: 1px solid var(--cc-border-secondary);
+  border-radius: 8px;
+  background: var(--cc-bg-container);
+  color: var(--cc-text-description);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.cc-sym-note p {
+  margin: 0 0 8px;
+}
+
+.cc-sym-note p:last-child {
+  margin-bottom: 0;
+}

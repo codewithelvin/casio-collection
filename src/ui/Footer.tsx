@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { InfoIcon } from './icons'
 import { t } from '../i18n/strings'
 
@@ -121,6 +122,22 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
                 one. A sentence and a list of links are two different things; the
                 narrow measure is what made that visible. */}
             <p className="cc-quiet cc-footer-meta">{t('footer.attribution')}</p>
+            {/* The one link in this panel that goes somewhere on this site, so
+                it gets a line of its own rather than a place in the metadata row
+                below — that row is a source link and a version number, which are
+                facts about the build rather than somewhere to go.
+
+                **It closes the panel on the way out.** The dismiss handler is a
+                `pointerdown` listener that ignores presses inside the wrapper,
+                and this link is inside it — so without this the reader lands on
+                the glossary with the footer disclosure still hanging open behind
+                them. The external link below has the same shape and does not
+                need it: it opens a new tab and leaves this page as it was. */}
+            <p className="cc-quiet cc-footer-meta">
+              <Link to="/symbols" onClick={() => setOpen(false)}>
+                {t('nav.symbols')}
+              </Link>
+            </p>
             <p className="cc-quiet cc-footer-meta">
               <a href={REPO_URL} rel="noreferrer noopener" target="_blank">
                 {t('footer.source')}
