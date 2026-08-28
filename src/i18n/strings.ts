@@ -122,7 +122,7 @@ const en = {
 
   // The display-symbol glossary.
   //
-  // ONLY THE CHROME IS HERE. The forty glossary entries live in
+  // ONLY THE CHROME IS HERE. The glossary entries themselves live in
   // `routes/symbols/symbols.ts`, and the comment at the top of that file is the
   // argument for why: this module is imported by `AppShell`, which is in the
   // entry graph, so every string added here is downloaded by every visitor on

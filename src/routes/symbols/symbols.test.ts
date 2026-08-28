@@ -19,6 +19,26 @@ describe('the display-symbol glossary', () => {
   })
 
   /**
+   * **Two rows must not claim the same Casio name.** This is the check the
+   * hourly-signal mix-up needed: `SIG` was published as the "Hourly Time Signal
+   * on indicator" while the bell — which is what Casio gives that name to — was
+   * published as the alarm's. Both rows rendered, both looked sourced, and the
+   * reader with the bell on their wrist was sent to the wrong sentence.
+   *
+   * A duplicate name is also what makes `page.test.tsx` throw rather than fail
+   * usefully: it looks its rows up by name, and `getByText` on two matches is an
+   * error about the query instead of about the glossary.
+   */
+  it('gives every symbol a distinct name', () => {
+    const names = ALL_SYMBOLS.map((symbol) => symbol.name)
+    const seen = new Set<string>()
+    for (const name of names) {
+      expect(seen, `${name} is used by two symbols`).not.toContain(name)
+      seen.add(name)
+    }
+  })
+
+  /**
    * A token **or** a drawing, never both and never neither. Both is two answers
    * to "what does this look like" in one cell; neither is a row with an empty
    * chip where the whole point of the page should be.

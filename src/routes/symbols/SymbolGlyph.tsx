@@ -41,11 +41,24 @@ function Draw({ children }: { children: React.ReactNode }) {
 }
 
 const GLYPHS: Record<SymbolIcon, React.ReactNode> = {
-  // An alarm bell.
+  // A bell — and it is the HOURLY TIME SIGNAL, not the alarm. Casio's own
+  // labelling, drawn in guides 3229/3421/3489 and 3230/3232 with both
+  // indicators on one display: the bell is the signal and the sound-wave glyph
+  // below is the alarm. It reads backwards, so the two are kept adjacent here.
   bell: (
     <>
       <path d="M6 16V10.5a6 6 0 0 1 12 0V16l1.5 2.5h-15L6 16Z" />
       <path d="M10 21h4" />
+    </>
+  ),
+  // The alarm: sound leaving the watch, which is how Casio draws it on the
+  // displays that draw rather than print. A solid emitter and three arcs.
+  'alarm-waves': (
+    <>
+      <path d="M4 7 10 12l-6 5V7Z" fill="currentColor" stroke="none" />
+      <path d="M12.5 8.5a5 5 0 0 1 0 7" />
+      <path d="M16 6a9 9 0 0 1 0 12" />
+      <path d="M19.5 4a13 13 0 0 1 0 16" />
     </>
   ),
   // The countdown timer starting itself again: a loop closing on an arrowhead.

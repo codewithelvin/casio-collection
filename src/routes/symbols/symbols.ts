@@ -22,6 +22,16 @@
  * `catalog-src` already cites for specifications, so this page rests on sources
  * the repository had already accepted rather than on a new class of them.
  *
+ * **One indicator can have two forms, and the chip shows only one of them.**
+ * Casio draws some indicators on some displays and prints them as words on
+ * others — the alarm is a sound-wave glyph or `ALM`, the Hourly Time Signal is a
+ * bell or `SIG`, and guides 3229 and 3230 show both variants of the pair in a
+ * single diagram. `token` and `icon` are mutually exclusive by design (a chip
+ * with two answers in it reads as two rows), so where both forms exist the row
+ * carries one in the chip and **names the other in its prose**. A row that shows
+ * one form while claiming to be the other is not a cosmetic slip: it sends a
+ * reader looking for the wrong thing on their own watch.
+ *
  * **What this page does NOT claim.** It is not "every symbol Casio has ever
  * printed on an LCD" — nobody can source that, and D25 is that the catalogue
  * reports what a page says and nothing adjacent to it. It is every indicator
@@ -70,6 +80,7 @@ export const manualUrl = (module: string) =>
  */
 export type SymbolIcon =
   | 'bell'
+  | 'alarm-waves'
   | 'repeat'
   | 'aerial'
   | 'aerial-receiving'
@@ -176,11 +187,39 @@ export const SYMBOL_GROUPS: SymbolGroup[] = [
     symbols: [
       {
         id: 'alarm-on',
-        icon: 'bell',
+        icon: 'alarm-waves',
         name: 'Alarm on indicator',
         meaning:
           'At least one daily alarm is switched on. It stays on the display in every mode, so the watch can tell you it will go off without being asked.',
-        modules: ['3159', '3229', '3246', '3266', '3490', '5146', '5463', '5611'],
+        detail:
+          'A display that prints words shows ALM for this instead. The drawn form is sound leaving the watch, not a bell: the bell next to it is the Hourly Time Signal, and that is the pair people get the wrong way round.',
+        modules: ['3159', '3229', '3230', '3246', '3252', '3266', '3490', '5146', '5463', '5611'],
+      },
+      /**
+       * **This row is here because the obvious reading of the bell is wrong.**
+       * Guide 3229/3421/3489 draws both indicators on one display and labels
+       * them — E-10 with two leader stubs, E-13 with the word-printing variant
+       * beside it — and the bell is the *hourly signal*, with the alarm being
+       * the sound-wave glyph. 3230/3232 draws the same pair the same way, and
+       * 3252 puts a bell in its own sentence. It reads backwards to anybody who
+       * expects a bell to mean an alarm, which is exactly why it needs saying.
+       *
+       * It is also the indicator most likely to be the reason somebody opens
+       * this page. Casio's own render of the A159 — `catalog-src/images/raw/
+       * a159w-n1.png`, 2000 px, so the LCD is legible — shows both glyphs and
+       * neither word, and `A159WAD-1` is catalogued with `hourly-time-signal`
+       * in its features. Until this row existed, a reader looking up the bell on
+       * that watch found the alarm's row and left with the wrong answer.
+       */
+      {
+        id: 'signal-on',
+        icon: 'bell',
+        name: 'Hourly Time Signal on indicator',
+        meaning:
+          'The Hourly Time Signal is switched on: the watch beeps twice on the hour, every hour. It is shown in all modes while that is true.',
+        detail:
+          'The bell is the hourly signal, not the alarm — that is Casio’s own labelling of the two, and the alarm beside it is the glyph of sound leaving the watch. A display that prints words shows SIG here instead, and where there is no word for it the screen it is switched on from is shown as :00.',
+        modules: ['3159', '3229', '3230', '3252', '3266', '5611'],
       },
       {
         id: 'alarm-number',
@@ -199,14 +238,39 @@ export const SYMBOL_GROUPS: SymbolGroup[] = [
         detail: 'One of the alarms is the snooze alarm; the rest are one-time alarms.',
         modules: ['3159', '3184', '3266', '3445', '3490', '3499', '5146', '5476'],
       },
+      /**
+       * SIG and the bell above are one indicator in two forms, which is why
+       * both rows exist and each names the other. Splitting them is not
+       * pedantry: "what does SIG mean on a Casio" is a question typed into a
+       * search box, and SIG carries a second job the bell does not.
+       *
+       * The citations are every sourced guide that prints the token, checked
+       * against the extracted text rather than assumed. 3229 was cited here
+       * before and does not contain SIG anywhere — it is one of the guides that
+       * draws the indicator instead — so the reader who followed that link got
+       * a manual with no answer in it.
+       */
       {
         id: 'signal',
         token: 'SIG',
-        name: 'Hourly Time Signal on indicator',
-        meaning: 'The watch beeps on the hour, every hour.',
+        name: 'SIG indicator',
+        meaning:
+          'The same Hourly Time Signal, on a display that prints words rather than drawing them. While SIG is shown the watch beeps twice on the hour, every hour.',
         detail:
-          'It is set on the same screens as the alarms — on many modules the Hourly Time Signal is the screen after the last alarm, shown as :00.',
-        modules: ['3159', '3229', '3246', '3266', '3499', '5146', '5476', '5611'],
+          'It has a second job in the Alarm Mode, where it names a screen: SIG appears where the alarm names AL1 to AL5 otherwise sit, and that screen is the Hourly Time Signal rather than an alarm. There is no time to set on it — it is on or off.',
+        modules: [
+          '3159',
+          '3184',
+          '3246',
+          '3266',
+          '3445',
+          '3490',
+          '3499',
+          '5146',
+          '5463',
+          '5476',
+          '5611',
+        ],
       },
       {
         id: 'mute',
