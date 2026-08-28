@@ -180,6 +180,13 @@ Two rules worth knowing before editing any of it:
 - **Build every path from `import.meta.env.BASE_URL`.** The base is `/` now that
   the site has its own domain, so a hard-coded path happens to work — which is
   exactly why this rule needs writing down rather than noticing.
+- **Every `import()` goes through `fresh()`** (`src/chunkReload.ts`), not only
+  the ones in the route table. Chunk filenames are content-hashed and a deploy
+  replaces every one of them, so a tab that was open across a deploy asks for a
+  file that no longer exists and gets *Failed to fetch dynamically imported
+  module*. Nothing in that tab can recover it; reloading once is the whole fix.
+  Three imports skip the rule on purpose and each says so where it is: the two
+  speculative prefetches, and the slot clear in `signOut`.
 - **`catalog-index.json` is not a substring match for `catalog.json`.** Every
   fetch stub and service-worker rule matches on the filename, so a matcher
   written for one silently misses the other — and the symptom is not a failure,

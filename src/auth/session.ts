@@ -25,6 +25,16 @@ import { getSupabase, hasStoredSession, isAuthConfigured } from './supabase.ts'
  * device must not hold the last person's watches, so `signOut()` resolving before
  * the slot is actually gone would make the promise a lie — and `session.test.ts`
  * asserts exactly that, which is how the first version of this was caught.
+ *
+ * **Not wrapped in `fresh`.** Three `import()`s in the app skip that rule and
+ * this is the only one that skips it for being load-bearing rather than
+ * speculative: `fresh` answers a missing chunk by reloading the tab, and a
+ * reload here would abandon the one statement this function exists to run. The
+ * slot would survive into the next page load, where the next person to sign in
+ * on a shared device inherits the last one's pending press — and FR-11.6 is
+ * worth more than the reload. A failure throws out of `signOut` instead, which
+ * is loud and, given the order in the `finally` below, no longer takes the
+ * sign-out itself down with it.
  */
 const clearPendingIntent = async () => {
   const { clearPendingIntent: clear } = await import('./pendingIntent.ts')
@@ -229,8 +239,16 @@ export const useSessionStore = create<SessionState>((set, get) => ({
       // costs nothing to do here rather than lazily like the slot below.
       purgeCaches()
       clearCachedAvatar()
-      await clearPendingIntent()
+      // **Before the await, not after it.** `useSignOut` says "the store clears
+      // this browser's session in its own finally, whatever the network did",
+      // and with this line last that was not quite true: `clearPendingIntent`
+      // is a dynamic import, so a deploy that replaced its chunk left the
+      // rejection to skip this `set` — signing somebody out of Supabase and
+      // leaving the header showing their account. The order costs nothing;
+      // `signOut()` still does not resolve until the slot is gone, which is the
+      // property `session.test.ts` pins.
       set({ status: 'guest', user: null, prompt: { open: false, model: null } })
+      await clearPendingIntent()
     }
   },
 }))

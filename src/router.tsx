@@ -5,61 +5,15 @@ import { RequireSession } from './auth/RequireSession'
 // A named function in `config.ts`, not an inline block: it is the counterpart of
 // `authCallbackUrl()` and belongs beside it, and it needs tests of its own.
 import { forwardOAuthReturnAtRoot } from './auth/config.ts'
-
-/**
- * A route chunk that will not load means the deploy moved under this tab.
- *
- * Every route here is a dynamic import against a hashed filename, and a deploy
- * replaces those files. A tab that was open across one — or a shell served from
- * a stale cache — asks for `index-D3YP7KGv.js`, gets a 404, and React Router
- * shows *Unexpected Application Error! Failed to fetch dynamically imported
- * module*. That is what a visitor reported, and it is not recoverable by
- * clicking anything: the page in memory only knows about files that are gone.
- *
- * Reloading is the fix, because the reload fetches the current `index.html` and
- * with it the current hashes. Two guards keep that honest:
- *
- *   * **Once per session.** A reload that fails the same way must surface the
- *     real error rather than spin. The flag is cleared on the next success, so
- *     a later deploy is still handled.
- *   * **Only when online.** Offline, a missing chunk is D33's territory — the
- *     app browses what it cached and says so — and reloading would throw away a
- *     working page to fetch something unreachable.
- */
-const RELOADED = 'cc:chunk-reload'
-
-const remember = (key: string, value: string | null) => {
-  // Private modes throw on sessionStorage. A browser that will not remember the
-  // attempt gets the plain error rather than a reload loop.
-  try {
-    if (value === null) sessionStorage.removeItem(key)
-    else sessionStorage.setItem(key, value)
-    return true
-  } catch {
-    return false
-  }
-}
-
-const alreadyReloaded = () => {
-  try {
-    return sessionStorage.getItem(RELOADED) !== null
-  } catch {
-    return true
-  }
-}
-
-async function fresh<T>(load: () => Promise<T>): Promise<T> {
-  try {
-    const module = await load()
-    remember(RELOADED, null)
-    return module
-  } catch (error) {
-    if (alreadyReloaded() || !navigator.onLine || !remember(RELOADED, '1')) throw error
-    location.reload()
-    // The page is going away; never resolve, so nothing renders an error first.
-    return new Promise<T>(() => {})
-  }
-}
+// A route chunk that will not load means the deploy moved under this tab, and
+// the tab has to reload to learn the new hashes. The function was written here,
+// for the route table; it moved to a module of its own once it became clear the
+// route table is not where the reports were coming from. See its header.
+import { fresh } from './chunkReload.ts'
+// Statically imported, and that is the one thing this import cannot be. It is
+// what renders when a chunk fails to load, so fetching it at that moment is
+// asking the network for the apology as well as the thing it apologises for.
+import { RouteError } from './ui/RouteError'
 
 /**
  * §12 — **every screen that renders Ant Design says so here, by being wrapped.**
@@ -84,13 +38,18 @@ async function fresh<T>(load: () => Promise<T>): Promise<T> {
  * gives no other hint. `Promise.all` is the other half: awaiting the two in
  * sequence would make every first navigation to a themed route pay two network
  * round trips instead of one.
+ *
+ * **Both sides are wrapped.** `AntdRoot` is a hashed chunk like any other and a
+ * deploy 404s it exactly as readily as the screen beside it; wrapping only the
+ * screen meant a stale tab reloaded for nine routes and threw for the same nine
+ * whenever the provider happened to lose the race.
  */
 async function themed(
   load: () => Promise<{ default: ComponentType }>,
 ): Promise<{ Component: ComponentType }> {
   const [{ default: Screen }, { default: AntdRoot }] = await Promise.all([
     fresh(load),
-    import('./ui/AntdRoot'),
+    fresh(() => import('./ui/AntdRoot')),
   ])
   return {
     Component: () => (
@@ -117,8 +76,8 @@ async function guarded(
   load: () => Promise<{ default: ComponentType }>,
 ): Promise<{ Component: ComponentType }> {
   const [{ default: Screen }, { default: AntdRoot }] = await Promise.all([
-    load(),
-    import('./ui/AntdRoot'),
+    fresh(load),
+    fresh(() => import('./ui/AntdRoot')),
   ])
   return {
     // The provider goes **outside** the guard, because the guard renders an
@@ -148,6 +107,25 @@ export const routes: RouteObject[] = [
   {
     path: '/',
     element: <AppShell />,
+    /**
+     * FR-10.1 — **the last resort, and until now there was none.**
+     *
+     * With no `errorElement` anywhere, React Router renders its own developer
+     * page: *Unexpected Application Error!* over a stack trace, under a 💿 and
+     * the words "Hey developer 👋 — you can provide a way better UX than this".
+     * A visitor was shown that, which is both the worst version of the failure
+     * and an invitation addressed to the wrong person.
+     *
+     * It goes on the **root** route rather than on each child because the error
+     * that prompted it was not thrown by a child: the account control is in the
+     * header, so it throws from inside `AppShell` itself and a child's boundary
+     * would never see it. A route's own `errorElement` does catch its element,
+     * which is why this one is here and covers everything below it too.
+     *
+     * What it can offer is a reload — see `chunkReload.ts` for why that is the
+     * right and usually the only useful action.
+     */
+    errorElement: <RouteError />,
     children: [
       // **The front door is not `themed`, and that is the point of §12.** It
       // renders a heading, a paragraph and seven cards, all of them plain
@@ -178,8 +156,11 @@ export const routes: RouteObject[] = [
       { path: 'search', lazy: () => themed(() => import('./routes/search')) },
       // The two rows §7.3 marks "required". `guarded` supplies the provider
       // itself, for the reason written above it.
-      { path: 'collection', lazy: () => guarded(() => fresh(() => import('./routes/collection'))) },
-      { path: 'settings', lazy: () => guarded(() => fresh(() => import('./routes/settings'))) },
+      // No `fresh` at these two call sites any more; `guarded` applies it, as
+      // `themed` always did. Two routes remembering by hand a rule the other
+      // eleven get from their wrapper is how the rule stops being true.
+      { path: 'collection', lazy: () => guarded(() => import('./routes/collection')) },
+      { path: 'settings', lazy: () => guarded(() => import('./routes/settings')) },
       { path: 'u/:handle', lazy: () => themed(() => import('./routes/profile')) },
       { path: 'auth/callback', lazy: () => themed(() => import('./routes/auth')) },
       { path: '*', lazy: () => themed(() => import('./routes/notFound')) },

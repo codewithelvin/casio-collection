@@ -12,6 +12,7 @@ import type {
   PublishedModel,
   PublishedSeries,
 } from './schema.ts'
+import { fresh } from '../chunkReload.ts'
 
 /**
  * §7.1 — fetch, parse and cache the published artefact, plus the pure selectors
@@ -62,9 +63,16 @@ export async function fetchCatalog(signal?: AbortSignal): Promise<Catalog> {
   // The schemas and the document are fetched concurrently, which is what makes
   // the dynamic import cost nothing: 2.4 MB of JSON is always slower to arrive
   // than the chunk that validates it.
+  //
+  // `fresh` on the import and not on the fetch, and the difference is the whole
+  // point of the distinction. The catalogue is a versioned file that can fail
+  // transiently, and FR-10.1 answers that with *try again* — a retry that can
+  // work. `parse.ts` is a hashed chunk, so a 404 on it is a deploy rather than a
+  // blip: the same retry asks for the same missing file for as long as the tab
+  // is open, and the reader is offered a button that cannot help them.
   const [response, { parseCatalog }] = await Promise.all([
     fetch(CATALOG_PATH, signal ? { signal } : undefined),
-    import('./parse.ts'),
+    fresh(() => import('./parse.ts')),
   ])
   if (!response.ok) {
     throw new Error(`catalog: HTTP ${response.status} from ${CATALOG_PATH}`)
@@ -89,7 +97,7 @@ export async function fetchCatalogIndex(): Promise<CatalogIndex> {
   // import first would put a second round trip in front of the first paint.
   const [response, { parseCatalogIndex }] = await Promise.all([
     fetch(CATALOG_INDEX_PATH),
-    import('./parse.ts'),
+    fresh(() => import('./parse.ts')),
   ])
   if (!response.ok) {
     throw new Error(`catalog: HTTP ${response.status} from ${CATALOG_INDEX_PATH}`)

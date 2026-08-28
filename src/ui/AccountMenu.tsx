@@ -1,6 +1,7 @@
 import { Suspense, lazy } from 'react'
 import { UserIcon } from './icons'
 import { useSessionStore } from '../auth/session.ts'
+import { fresh } from '../chunkReload.ts'
 import { t } from '../i18n/strings'
 
 /**
@@ -19,8 +20,17 @@ import { t } from '../i18n/strings'
  * overwhelmingly common case of a visitor who is not signed in and never
  * touches this control. `AccountDropdown` is where Ant Design starts, and it
  * brings its own `AntdRoot`.
+ *
+ * **Wrapped in `fresh`, and this is the import that proved why that has to be a
+ * shared rule rather than the route table's private one.** The header renders on
+ * every URL, so for a signed-in reader with a tab open across a deploy this is
+ * the *first* stale chunk asked for — before any navigation, on whatever page
+ * they were already looking at. Unwrapped, it threw straight past the route
+ * table's guard and out to the router: "Failed to fetch dynamically imported
+ * module: /assets/AccountDropdown-_NJEQ997.js", reported from the live site.
+ * A `lazy()` boundary is not a route, but it is exactly as hashed as one.
  */
-const AccountDropdown = lazy(() => import('./AccountDropdown.tsx'))
+const AccountDropdown = lazy(() => fresh(() => import('./AccountDropdown.tsx')))
 
 /**
  * §8.2's two shapes, and **no `compact` prop any more.**

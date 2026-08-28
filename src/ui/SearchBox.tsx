@@ -2,6 +2,7 @@ import { Suspense, lazy, useEffect, useRef, useState } from 'react'
 import { useQueryClient } from '@tanstack/react-query'
 import { catalogQueryOptions } from '../catalog/client.ts'
 import { SearchIcon } from './icons'
+import { fresh } from '../chunkReload.ts'
 import { t } from '../i18n/strings'
 
 /**
@@ -26,7 +27,7 @@ import { t } from '../i18n/strings'
  * below is *the phone's* state; on a desktop the field is on screen either way
  * and the flag only decides whether to focus it.
  */
-const SearchField = lazy(() => import('./SearchField.tsx'))
+const SearchField = lazy(() => fresh(() => import('./SearchField.tsx')))
 
 export function SearchBox() {
   const queryClient = useQueryClient()
@@ -89,8 +90,12 @@ export function SearchBox() {
    * tap completes, and a tab stop before a keystroke — so by the time there is a
    * term to match, both are usually already here.
    *
-   * Failure is silent. This is an optimisation; the field asks for the catalogue
-   * itself once it is engaged, and that path surfaces a real problem.
+   * Failure is silent, and deliberately **not** `fresh` — the same exception
+   * `prefetch.ts` makes, for the same reason. Everything here is speculative: it
+   * runs when a pointer crosses the control, so reloading the page on a failure
+   * would throw away whatever somebody was reading because they moved the mouse
+   * near the search box. If the chunk really is gone, the `lazy()` above is
+   * wrapped and handles it at the moment it is genuinely wanted.
    */
   const warm = () => {
     void import('./SearchField.tsx').catch(() => undefined)

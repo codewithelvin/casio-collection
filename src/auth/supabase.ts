@@ -1,5 +1,6 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { SESSION_STORAGE_KEY, supabaseConfig } from './config.ts'
+import { fresh } from '../chunkReload.ts'
 
 /**
  * §12 — **the Supabase client is imported lazily and a guest never downloads
@@ -23,7 +24,14 @@ async function createSupabase(): Promise<SupabaseClient> {
     )
   }
 
-  const { createClient } = await import('@supabase/supabase-js')
+  /**
+   * `fresh` matters more here than at any `lazy()` boundary, because of what
+   * `getSupabase` does below: it memoises the **promise**, so a rejection is
+   * kept and every later caller gets the same rejection. A vendor chunk taken
+   * away by a deploy would therefore break sign-in, sign-out, the collection and
+   * the session restore for the whole life of the tab, from one failed fetch.
+   */
+  const { createClient } = await fresh(() => import('@supabase/supabase-js'))
 
   return createClient(config.url, config.anonKey, {
     auth: {

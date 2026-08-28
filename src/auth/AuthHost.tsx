@@ -1,5 +1,6 @@
 import { Suspense, lazy, useEffect, useState } from 'react'
 import { useSessionStore } from './session.ts'
+import { fresh } from '../chunkReload.ts'
 
 /**
  * The sign-in modal is imported **only once someone asks for it**.
@@ -13,8 +14,13 @@ import { useSessionStore } from './session.ts'
  * It stays mounted once it has been opened, so closing it fades out rather than
  * vanishing. Unmounting on close would also throw away the modal's own state
  * mid-animation, which reads as a flicker.
+ *
+ * `fresh` for the reason `chunkReload.ts` gives, and the failure here is the
+ * least forgiving of the set: this modal is only ever reached by somebody who
+ * has just pressed **Sign in**, so a chunk a deploy took away turns a deliberate
+ * action into an error page.
  */
-const SignInModal = lazy(() => import('./SignInModal.tsx'))
+const SignInModal = lazy(() => fresh(() => import('./SignInModal.tsx')))
 
 export function AuthHost() {
   const status = useSessionStore((state) => state.status)
