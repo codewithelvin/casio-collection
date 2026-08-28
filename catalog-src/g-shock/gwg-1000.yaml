@@ -244,6 +244,10 @@ models:
     discontinued: true
   - id: gwg-1000wlp-1a
     ref: GWG-1000WLP-1A
+    # WLP is WILDLIFE PROMISING, and the reference code says so — which is
+    # exactly the inference D62 forbids making, so the citation below is the
+    # page that states it rather than the letters that hint at it.
+    edition: love-the-sea-2019
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',

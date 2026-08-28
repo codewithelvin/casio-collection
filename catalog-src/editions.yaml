@@ -25,14 +25,34 @@
 # publishes a landing page per vintage collaboration and each one lists its own
 # lineup, so that single page establishes both that the edition exists and which
 # references are in it. Where it does not — the two G-SHOCK anime collaborations
-# below — the source is the listing that names one reference, and it is marked
-# `retailer` so the reader is told what kind of page it was (FR-3.2a).
+# and the three environmental ones below — the source is the listing that names
+# one reference, and it is marked `retailer` so the reader is told what kind of
+# page it was (FR-3.2a).
+#
+# AN EDITION IS A NAMED RELEASE. IT IS NOT ONLY A COLLABORATION. It is also a
+# dedication, an anniversary, a seasonal collection, a themed run — anything
+# Casio gave a name to and released under it. This file used to reason as though
+# the two words were interchangeable, and that was wrong twice over: it is not
+# what D62 says (README: "a named limited **or** collaboration release"), and it
+# was actively keeping real editions out. Five entries below have no `partner` at
+# all, and they belong here exactly as much as PAC-MAN does.
+#
+# THE LINE THAT IS ACTUALLY DRAWN is between a named *release* and a named
+# *colourway*. Both have names; only one is an edition. The page itself is what
+# settles it, as ever — WatchOutz calls "Breezy Color" (DW-5600SN-1) and
+# "Geometric Design" (DW-6900DS-1) part of the standard lineup, in those words,
+# so neither is written here however much the name sounds like one. If a page
+# later calls either a special edition, that page is the reason to add it.
 #
 # WHAT IS DELIBERATELY NOT HERE:
-#   * `kind`. Every edition below is a collaboration, so a field distinguishing
-#     collaborations from anniversaries would carry one value across the whole
-#     catalogue and say nothing. An anniversary edition simply has no `partner`,
-#     which is the same distinction drawn by data that already exists.
+#   * `kind`. Not for the reason this file used to give — "every edition below is
+#     a collaboration" stopped being true on 2026-08-28 — but for a better one:
+#     the taxonomy would be OURS. Casio does not publish a consistent word for
+#     the difference between a dedication, an anniversary, a seasonal selection
+#     and a themed colour run, so a `kind` field would be this catalogue
+#     inventing a classification and then asserting it, which is the one thing
+#     D62 says it does not get to do. `partner` still draws the only distinction
+#     a page actually states: somebody else was involved, or nobody was.
 #   * A year on all but PAC-MAN. Casio's collaboration pages date the *brands* —
 #     UNO's cards are from 1979, Café Kitsuné opened in 2013 — and carry a
 #     copyright footer, and neither is a release date. D25 is that the catalogue
@@ -156,6 +176,133 @@ editions:
     source:
       {
         url: 'https://watchoutz.com/products/casio-g-shock-x-shounen-jump-one-piece-limited-edition-ga-110jop-1a4',
+        kind: retailer,
+      }
+
+  # The environmental collaborations, found 2026-08-28 by asking a different
+  # question: not "which references are in a declared edition" but "which
+  # catalogued models cite a page that names an edition". Three did, and none of
+  # them was declared here — which is the gap a reader reported after noticing a
+  # special-edition watch that appeared in no listing.
+  #
+  # WHY THEY WERE INVISIBLE. Every earlier edition was found from its landing
+  # page downwards: read the page, take the lineup, write the references. These
+  # were already in the catalogue with the naming page already cited — as the
+  # `image_credit` on the entry, not as anything the edition vocabulary could
+  # see. Nothing was missing from the entries; what was missing was the question.
+  # The audit that asks it is worth keeping.
+  #
+  # LOVE THE SEA AND THE EARTH IS A CAMPAIGN, NOT AN EDITION, AND THAT IS WHY
+  # THERE ARE TWO OF THEM BELOW. G-SHOCK has run it since 1994 with a different
+  # environmental organisation each time, so the two references this catalogue
+  # holds are two different collaborations that share a slogan — different
+  # partner, different year, six years apart. Collapsing them into one edition
+  # would assert that ICERC and WILDLIFE PROMISING are the same body. The year is
+  # in each `name` because it is the only thing that tells the two cards apart at
+  # a glance, and both pages state their own year in their own title.
+  - id: love-the-sea-2014
+    name: Love The Sea And The Earth 2014
+    # As the page writes it. The stops are dropped here and kept in `aka`,
+    # because the page's own title uses both forms in one sentence.
+    partner: ICERC Japan
+    year: 2014
+    aka: [ICERC, I.C.E.R.C., Love The Sea And The Earth, Love the Sea]
+    source:
+      {
+        url: 'https://watchoutz.com/products/casio-g-shock-frogman-x-i-c-e-r-c-love-the-sea-and-the-earth-2014-special-edition-pink-gf-8250k-4',
+        kind: retailer,
+      }
+
+  - id: love-the-sea-2019
+    name: Love The Sea And The Earth 2019
+    # "an Authorized Nonprofit Corporation (NPO) that works towards coexistence
+    # between wildlife and humans in Africa", as the page introduces it. The
+    # partner is the name, not the description.
+    partner: WILDLIFE PROMISING
+    year: 2019
+    aka: [Wildlife Promising, WLP, Love The Sea And The Earth, Love the Sea]
+    source:
+      {
+        url: 'https://watchoutz.com/products/casio-g-shock-mudmaster-triple-sensor-love-the-sea-and-the-earth-gwg-1000wlp-1a',
+        kind: retailer,
+      }
+
+  # The Coca-Cola reading a third time: the partner is what the page's own title
+  # names as the other party — "Casio G-Shock X Antarctic Research Rov" — and not
+  # the institution named further down the page as having developed the vehicle.
+  # The difference is exactly the sort of thing this catalogue does not get to
+  # decide on its own.
+  #
+  # NOTE THE URL. Its slug says `gwf-1000-1jf` and the page it serves is titled
+  # for GWF-D1000ARR-1, which is the reference this catalogue holds. The slug is
+  # the shop's, and it is wrong; the title is the page's, and it is right. Worth
+  # writing down, because the mismatch reads as a miscredited photograph until
+  # somebody opens it.
+  - id: antarctic-research-rov
+    name: Antarctic Research ROV Special Edition
+    partner: Antarctic Research ROV
+    aka: [Antarctic, ARR, ROV]
+    source:
+      {
+        url: 'https://watchoutz.com/products/casio-g-shock-frogman-x-antarctic-research-rov-gwf-1000-1jf',
+        kind: retailer,
+      }
+
+  # THE EDITIONS WITH NO PARTNER. Casio named each of these and released it under
+  # the name; nobody outside Casio was involved. They were held back on
+  # 2026-08-28 on the reading that an edition meant a collaboration, and added
+  # the same day when that reading was corrected — the note at the top of this
+  # file is the argument, and these five entries are what it was keeping out.
+  #
+  # "MEN IN ..." AND "MASTER IN ..." ARE CAMPAIGNS, SO EACH RELEASE IS ITS OWN
+  # ENTRY — the same shape as Love The Sea And The Earth above, and for the same
+  # reason. G-SHOCK has run "Men In" repeatedly with a different colourway and a
+  # different year each time; the name of the thing is "Men In Burning Red", not
+  # "Men In". Collapsing them would assert they were one release.
+  - id: men-in-navy-blue
+    # "Men In Navy Blue", as the page quotes it — NOT "Men in Navy", which is
+    # what the shop's own URL slug says. The slug drops a word. Where the two
+    # disagree the title wins, which is the third time that has come up here.
+    name: Men In Navy Blue
+    aka: [Men In Navy, Men In]
+    source:
+      {
+        url: 'https://watchoutz.com/products/casio-g-shock-frogman-men-in-navy-gwf-1000nv-2jf',
+        kind: retailer,
+      }
+
+  - id: men-in-burning-red
+    name: Men In Burning Red
+    # The one in this group the page calls a special edition in as many words.
+    aka: [Men In Red, Burning Red, Men In]
+    source:
+      {
+        url: 'https://watchoutz.com/products/casio-g-shock-frogman-men-in-burning-red-gwf-1000rd-4jf',
+        kind: retailer,
+      }
+
+  - id: master-in-marine-blue
+    name: Master In Marine Blue
+    aka: [Marine Blue, Master In]
+    source:
+      {
+        url: 'https://watchoutz.com/products/casio-g-shock-frogman-multi-band-6-solar-master-in-marine-blue-gwf-d1000mb-3',
+        kind: retailer,
+      }
+
+  # The seasonal one, and the only edition in this file holding two references
+  # that were read off two different pages — one per watch, each naming the
+  # collection and its own reference. Neither page names the other's watch, which
+  # is what `edition_source` exists for and why both entries carry one.
+  - id: precious-heart-selection-2025
+    name: Precious Heart Selection 2025
+    # A release DATE, not a copyright footer: "2025.11.8 release", stated on both
+    # pages. That clears the bar this file sets at the top for writing a year.
+    year: 2025
+    aka: [Precious Heart, Heart Selection]
+    source:
+      {
+        url: 'https://ippojapanwatch.com/products/casio-g-shock-gm-2110sh-2ajf-precious-heart-selection-2025-analog-digital-watch-2025-11-8-release',
         kind: retailer,
       }
 

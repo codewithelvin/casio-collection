@@ -119,6 +119,9 @@ models:
     discontinued: true
   - id: gwf-d1000arr-1
     ref: GWF-D1000ARR-1
+    # The edition's own source is this reference's naming page — the same URL
+    # `image_credit` below already carries — so no `edition_source` is needed.
+    edition: antarctic-research-rov
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
@@ -183,6 +186,7 @@ models:
     discontinued: true
   - id: gwf-d1000mb-3
     ref: GWF-D1000MB-3
+    edition: master-in-marine-blue
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',

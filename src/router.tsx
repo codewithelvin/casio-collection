@@ -166,6 +166,15 @@ export const routes: RouteObject[] = [
       { path: 'editions', lazy: () => themed(() => import('./routes/editions')) },
       { path: 'editions/:edition', lazy: () => themed(() => import('./routes/edition')) },
       { path: 'watch/:modelId', lazy: () => themed(() => import('./routes/watch')) },
+      // **Not `themed`, for the same reason the front door is not.** The symbol
+      // glossary is a heading, a jump list and forty rows of text over
+      // `symbols.css`; it renders no Ant Design and reads no catalogue, so
+      // wrapping it would put the theme runtime behind a document that is
+      // finished the moment its chunk lands.
+      {
+        path: 'symbols',
+        lazy: async () => ({ Component: (await fresh(() => import('./routes/symbols'))).default }),
+      },
       { path: 'search', lazy: () => themed(() => import('./routes/search')) },
       // The two rows §7.3 marks "required". `guarded` supplies the provider
       // itself, for the reason written above it.

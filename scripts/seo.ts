@@ -26,6 +26,12 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { CATALOG, type Catalog, type PublishedModel } from '../src/catalog/schema.ts'
+// The glossary is pure data with no imports of its own, so this script can read
+// the same list the route renders. A second copy of the definitions would be a
+// second thing to keep in step, and the one that would drift is the one nobody
+// looks at — the crawler's.
+import { ALL_SYMBOLS, SYMBOL_GROUPS, manualUrl } from '../src/routes/symbols/symbols.ts'
+import { t } from '../src/i18n/strings.ts'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const dist = join(root, 'dist')
@@ -208,15 +214,15 @@ function seriesPage(
 function editionsPage(catalog: Catalog): Page {
   return {
     path: 'editions',
-    title: 'Casio collaborations and limited editions · Casio Vault',
-    description: `The ${catalog.editions.length} Casio collaborations and limited releases in this catalogue — ${catalog.editions
+    title: 'Casio limited editions and collaborations · Casio Vault',
+    description: `The ${catalog.editions.length} named Casio releases in this catalogue — collaborations, dedications and limited runs, among them ${catalog.editions
       .slice(0, 5)
       .map((edition) => edition.name)
       .join(', ')}${catalog.editions.length > 5 ? ' and more' : ''}. ${DISCLAIMER}`,
     priority: '0.8',
     body: `
       <h1>Editions</h1>
-      <p>Collaborations and limited releases: watches Casio made with somebody else.</p>
+      <p>Watches Casio gave a name to and released under it — collaborations, dedications, anniversaries and seasonal collections.</p>
       <ul>
         ${catalog.editions
           .map(
@@ -233,6 +239,70 @@ function editionsPage(catalog: Catalog): Page {
         { name: 'Casio Vault', path: '' },
         { name: 'Editions', path: 'editions' },
       ]),
+    ],
+  }
+}
+
+/**
+ * The display-symbol glossary — and like the editions index, this is a page the
+ * prerender step exists for rather than one it merely covers.
+ *
+ * *"What does SIG mean on a Casio"* is a question people type into a search box
+ * every day. `GW-M5610-1` is not. Until this page there was nothing on this site
+ * whose title contained the words somebody with a watch on their wrist and a
+ * question about it would actually use — and the answer, unlike everything else
+ * here, does not depend on the catalogue at all.
+ *
+ * **`DefinedTermSet` rather than `FAQPage`.** A glossary is what it is, and
+ * schema.org has the type for it; dressing a glossary up as questions to
+ * chase a rich result would be describing the page as something it is not. The
+ * `body` is the whole glossary in plain HTML, so a crawler that runs no
+ * JavaScript still gets every definition rather than a heading and a promise.
+ */
+function symbolsPage(): Page {
+  const groups = SYMBOL_GROUPS.map((group) => {
+    const rows = group.symbols
+      .map((symbol) => {
+        const label = symbol.token ? `<strong>${escapeHtml(symbol.token)}</strong> — ` : ''
+        return `<dt>${label}${escapeHtml(symbol.name)}</dt>\n          <dd>${escapeHtml(symbol.meaning)}</dd>`
+      })
+      .join('\n          ')
+    return `<h2>${escapeHtml(t(`symbols.group.${group.id}`))}</h2>\n        <dl>\n          ${rows}\n        </dl>`
+  }).join('\n        ')
+
+  return {
+    path: 'symbols',
+    title: 'Casio digital watch symbols explained — what every indicator means · Casio Vault',
+    description: `What the indicators on a Casio digital display mean — ${ALL_SYMBOLS.slice(0, 8)
+      .map((symbol) => symbol.token ?? symbol.name)
+      .join(', ')} and ${ALL_SYMBOLS.length - 8} more, each with the Casio manual that defines it. ${DISCLAIMER}`,
+    priority: '0.8',
+    body: `
+      <h1>${escapeHtml(t('symbols.heading'))}</h1>
+      <p>${escapeHtml(t('symbols.lead'))}</p>
+        ${groups}
+      <p>${escapeHtml(t('symbols.note.scope'))}</p>
+      <p>${DISCLAIMER}</p>`,
+    jsonLd: [
+      breadcrumb([
+        { name: 'Casio Vault', path: '' },
+        { name: 'Display symbols', path: 'symbols' },
+      ]),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'DefinedTermSet',
+        name: 'Casio digital watch display symbols',
+        url: canonical('symbols'),
+        hasDefinedTerm: ALL_SYMBOLS.map((symbol) => ({
+          '@type': 'DefinedTerm',
+          name: symbol.token ?? symbol.name,
+          description: symbol.meaning,
+          inDefinedTermSet: canonical('symbols'),
+          // The manual is the citation the page shows the reader; giving it to a
+          // crawler as well is the same promise made twice rather than a new one.
+          sameAs: manualUrl(symbol.modules[0]),
+        })),
+      },
     ],
   }
 }
@@ -638,7 +708,10 @@ async function main() {
     JSON.parse(await readFile(join(dist, 'catalog/catalog.json'), 'utf8')),
   )
 
-  const pages: Page[] = [homePage(catalog)]
+  // The glossary depends on no catalogue data, so it is pushed unconditionally
+  // and early — it is the one page here that would still be worth serving if
+  // `catalog.json` were empty.
+  const pages: Page[] = [homePage(catalog), symbolsPage()]
 
   for (const line of catalog.lines) {
     pages.push(linePage(catalog, line))
