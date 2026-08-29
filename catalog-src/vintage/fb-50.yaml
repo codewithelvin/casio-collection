@@ -1,0 +1,46 @@
+# FB-50 Ã¢â‚¬â€ seeded 2026-08-29 from the Digital Watch Library.
+#
+# This reference is in NEITHER of the two rosters this project normally
+# asks: it has no archived casio.com product page and casio.com does not
+# list it today. That is what being a pre-web Casio looks like, not
+# evidence that it is not real Ã¢â‚¬â€ DWL is the third roster, and it is a
+# community source, labelled as one (D27/FR-D1).
+#
+# Every field below is read off the one page named in `source`, BY DIV ID.
+# Reading that page by position takes the bracelet as the case: the value
+# list ends `Ã¢â‚¬Â¦ [Resin], 1981` and the bracelet is the tempting last one.
+#
+# NO `water_resistance_m`: the page states no depth. A "WATER RESIST" label
+# with no figure is a statement, not a measurement.
+#
+# The photograph is the page's own `_large` file, `fb501.jpg` Ã¢â‚¬â€ filename names the reference.
+# A derived path was NOT used: on A159 that route served a file
+# byte-identical to a different reference's photograph.
+#
+# `discontinued` is NOT written by hand here (D59). It was hand-written in the
+# first pass of this file and the value happened to be right, which is exactly
+# the failure D59 describes — a field that reads as measured and was not. It was
+# removed and `availability.ts` wrote it back after measuring against Casio's
+# live roster, which is the only thing entitled to state it.
+# `light` icons are dropped throughout: the vocabulary has five specific
+# light values and no generic one, so an untyped light icon states nothing.
+
+series:
+  id: fb-50
+  name: FB-50
+  line: vintage
+  aka: ['Batteryless']
+
+models:
+  - id: fb-50
+    ref: FB-50
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_fb-50', kind: community }
+    year: 1981
+    module: '520'
+    case: { material: resin }
+    image: fb-50
+    image_credit:
+      author: 'Casiophile'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_fb-50'
+    discontinued: true

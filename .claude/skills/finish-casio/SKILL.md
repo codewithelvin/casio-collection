@@ -58,6 +58,31 @@ the sitemap; `A159WEVJ-2` is in the sitemap and was never captured.
 
 `SEEDABLE` and `REFUSED-D47` are the only two states that mean work.
 
+### The seventh state the survey cannot print: NOT IN EITHER ROSTER
+
+A series the survey answers with **"No references. Both rosters were asked"** is
+not a finished scope and it is not `NOT-A-REFERENCE`. It is the survey saying it
+has nothing to say. Both rosters it asks are *web* rosters — the archive holds
+what casio.com published a page for, and the sitemap holds what casio.com sells
+now — so a Casio that predates casio.com is invisible to both **by
+construction**. That is the normal condition for anything before about 1998, not
+a finding.
+
+**Go to the Digital Watch Library. It is the third roster and it is not
+optional.** On 2026-08-29 a 57-series scope reported 36 series as "in neither
+roster" and stopped; walking DWL found **14 of them**, 13 with a photograph, a
+module, a year and a case — full entries, from one page each. The report was
+true and the stopping point was wrong, which is the more dangerous combination
+because nothing in it looks like an error.
+
+Write it as `NOT-IN-EITHER-ROSTER → DWL` in the report, never as "could not
+find". The reader of a work list needs to know which of the three rosters were
+actually asked; "not found" tells them nothing and invites the same walk again.
+Only after DWL has been walked **and** the canonical slug forms probed with a
+control may a reference be called unsourceable — and even then say "not in any
+of the three rosters", which is a statement about the rosters rather than about
+the watch.
+
 ### The definition of done, and the photograph is half of it
 
 A scope is **finished** when both of these are true, not one:
@@ -116,6 +141,21 @@ ranked by how many references imply work; finish them one at a time, one commit
 each (rule 9). Do not try to hold a line in one run — the Vintage campaign that
 did 26 series took 63 minutes of crawling and that was with `pipeline.ts`
 overlapping two hosts.
+
+**A line scope is a work list for ARCHIVED series, and it is not a census.**
+`survey.ts:454-457` only admits a sitemap-roster series into the line's table if
+that line **already has a catalogue entry for it**. So a series that is real, in
+Casio's current sitemap, and completely uncatalogued never appears in the line
+survey at all — and its absence from the table is indistinguishable from being
+finished. Measured 2026-08-29: `mtp-b195` (7 refs), `mtp-e740` (5), `w-221` (3),
+`efk-110` (3) and `gw-bx5600` (3) were all missing from their line surveys while
+being uncatalogued and real; a per-series run closed each one.
+
+So a line scope alone can never say a line is finished. Take the sitemap roster
+separately — `node ../casio-catalog/references/sitemap.ts <segment>` prints every
+series it holds — and run the per-series survey on anything the line table did
+not mention. Segments are `SEGMENTS` in `archive.ts`; `vintage` covers the
+general `casio` roster and is the broadest single ask.
 
 **A year scope is a question about sources, and there are two routes, not one.**
 This paragraph used to say a `year` comes only from a dated Casio news release,
@@ -192,7 +232,8 @@ the state is `UNPROVEN` and you say so.
    the F-91W's module, which is certainly documented. Three 404s in a row look
    like proof and were the route being closed to everyone. Ask for a module you
    know is published before concluding anything about one you do not.
-3. **A community source** — the Digital Watch Library, `kind: community`.
+3. **The Digital Watch Library** — `kind: community`. The route is written out
+   in full below, because guessing at it produces valid-looking wrong answers.
 4. **casio.com live** — it answers **403** to everything that is not a person,
    full browser headers included. The AEM path underneath returns 200 and a
    location picker, which is a 200 that means no.
@@ -207,6 +248,81 @@ five sessions lost to re-walking walls for exactly this reason.
 
 **Never compare a measurement taken here against one taken there.** Two probes in
 two runs are two experiments. Re-measure the same way twice.
+
+## Walking the Digital Watch Library, which is the third roster
+
+**Enumerate, never guess a slug.** The one route that paginates:
+
+```
+http://www.digital-watch.com/DWL/gallery/Casio/all/          page 1
+http://www.digital-watch.com/DWL/gallery/Casio/all/P18       +18 per page
+...                                                          last is P846
+```
+
+48 pages, **853 Casio entries**, each an anchor to `/DWL/1work/<slug>` with the
+watch name in the `alt`. Re-derive the last offset from page one's own nav
+rather than trusting a loop bound. 1.5 s between pages walks it with 0 failures.
+
+**Three URLs that answer 200 and are not this one.** Every one of them was tried
+on 2026-08-29 before the recorded route was checked, and each returned a
+well-formed page that simply was not the index:
+
+| asked | answered | reads as |
+|---|---|---|
+| `/DWL/brand/casio/page/2` | 200, page one again | "the library holds 12 Casios" |
+| `/DWL/brand/casio/P18` | 200, **byte-identical to P0** | a dry page, so the walk stops |
+| `/DWL/gallery/Casio/all/18` | 200, page one again | "18 Casios exist" |
+
+The `P` is load-bearing and its absence is silent. A walk that ends with far
+fewer entries than 853 has found a wrong URL, not a small library — **treat the
+count as the assertion**: if it is not ~853, stop and fix the route before
+concluding anything about any watch.
+
+**The gallery lists watches, not pages, so absence from it is not absence of a
+page.** `casio-al-180` is the cited source of a cataloged entry, answers 200,
+and appears on none of the 48 pages. Use the gallery to enumerate and to rule
+out *variants*; confirm a specific slug by fetching it. Probe `casio-<ref>`,
+`casio_<ref>` and both with hyphens stripped before reporting a miss, and say
+**"not at any canonical slug form"** rather than "does not exist".
+
+**Reading a page: by div id, never by position.** Full mapping in
+`dwl-page-field-mapping`. The short version, and the two that bite:
+
+- `#case1` is the case; `#bracelet1` is **not**. Read in order the values come
+  out `Resin, 475, NONE, N/A, [Resin], 1985` and the trailing `[Resin]` is the
+  bracelet. On FS-12 the two agree so the bug is invisible; on S-15 the case is
+  steel and the bracelet `[SS]`.
+- `#makermodel` reads `CASIO | ARW-320- AKA [Alti Depth]` — **the AKA form
+  leaves a trailing hyphen on the reference.** A title-match check that does not
+  strip it rejects seven real pages in a row, which looks exactly like the site
+  refusing you.
+
+**Calibrate before trusting the extractor**: run it over `casio_fs-12` and
+`casio_f-151` first — both are reviewed entries in this repo — and require it to
+reproduce their catalogued `module`, `case` and `year` exactly. Note that
+`casio_f-151` serves the **F-15** page: a 200 can serve a different watch
+(`casio-fs-01` serves FS-10), so parse `<title>` and require the reference in it.
+
+**The photograph is on the page**: `…/images/watchlibrary24/_large/<file>`. Where
+the filename names the reference (`FS-12-A.jpg`, `fb501.jpg`) that is the proof.
+Where it does not (`DSC_3751.JPG`, `951.jpg`, `1-676-3.jpg` — that last one
+carries the *module*, which is corroboration and not identity), the page's lead
+image is the best evidence available and is **still not proof: look at it**, and
+say in the YAML that you did. `image_credit.author` is per page — read
+`#photography`; most say "Photographs by DWL" but DW-340 says "courtesy of
+fujitime-traveller" and FB-50 "courtesy of Casiophile". Still `rights-reserved`;
+courtesy is not a licence (D41).
+
+**Icons by their `alt`, not their filename**: `bell` "I have an alarm" → `alarm`,
+`multiple` "I have multiple alarms" → `multi-alarm`, `run` "I have a chronograph"
+→ `stopwatch`, `countdown` → `countdown-timer`, `dual` → `dual-time`,
+`calculator` → `calculator`. `data` "I hold data" → `databank` **only where the
+page corroborates it** (EDB-600 is filed under Databank and named DATA MEMORY
+350; ARW-320 is a Sensor whose data store holds altimeter readings, and it was
+refused there for the same reason it was refused on BM-600's barometer).
+`light` is **always dropped** — the vocabulary has five specific light values and
+no generic one. `RELEASED | UNKNOWN` is no `year`; a case of `Misc.` is no
+material; a `water1` div echoing its own label is no depth.
 
 ## Naming a reference by hand
 
@@ -253,9 +369,9 @@ run resumes rather than restarts.
 
 ```
 node references/seed-refs.ts <line> <series> --crawl <REF>...     # or seed-into.ts
-node references/seed-refs.ts <line> <series> --write <REF>...
 node ../casio-catalog/references/photos.ts   <line> <line>-<series>
 npm run catalog:images
+node references/seed-refs.ts <line> <series> --write <REF>...    # AFTER images
 node ../casio-catalog/references/availability.ts <line> --write   # D59
 node ../casio-catalog/references/news.ts --dry                    # D54, usually nothing
 npm run catalog:build && npm run catalog:validate
@@ -267,6 +383,12 @@ npm run ci:status                                                # D57
 and a run that stops after `--write` has produced a finished-looking file that
 shows the reader a tile. If a photograph cannot be had, that is `image: null`
 with the reason written down — a deliberate line in the YAML, not an omission.
+
+The block above used to list `--write` *before* `photos.ts`, contradicting the
+paragraph under it. Follow the block as it now stands. `seed-refs.ts` will also
+refuse to run at all until the series file exists, so a `REFUSED-D47` reference
+in a brand-new series needs `seed-into.ts --write` to create the file first —
+that ordering is not obvious and costs a full crawl to discover.
 
 Order matters in two places. `--write` runs **after** `catalog:images`, because
 its gate is the published `.webp` and not the download — `catalog:images` refuses
@@ -309,6 +431,16 @@ than printing a zero.
 **A field is measured or it is not written.** Never write `discontinued` by hand
 (D59) and never write a `year` that no dated page states (D25, D54).
 
+**Check your own notes before you crawl a site you have crawled before.** The
+DWL walk on 2026-08-29 burned three wrong URLs — `/brand/casio/page/2`,
+`/brand/casio/P18`, and the categorylisting — each returning a well-formed 200,
+before the recorded route was read. The correct URL, the page count, the delay
+and the last offset were all already written down. Two of those wrong answers
+were **quantitatively plausible** (12 slugs, then 17) and neither looked like an
+error; only knowing the expected count of ~853 exposed them. Where a route has a
+known magnitude, assert it: a walk that returns an order of magnitude less has
+found a different question, not a smaller answer.
+
 ## What to report
 
 Report the survey table, then what changed, then — the most useful line —
@@ -324,3 +456,21 @@ Say explicitly whether the scope is now **finished**, and if it is not, which
 state the remainder is in. And if a `NO-PAGE` set is what stopped it, say that
 somebody with a browser could still settle it: casio.com answers 403 here and
 200 to a person.
+
+**Never write "could not find", and never end a report at "in neither roster".**
+Both are claims about the world made from a measurement of two web indexes, and
+the watches in question are usually real — they are shared, photographed and
+documented by collectors, and the Casio community knows them well. Say which
+rosters were asked and what each answered:
+
+> ✗ "36 series could not be found."
+> ✓ "36 series are in neither the archive index nor Casio's sitemap. DWL holds
+>    14 of them — catalogued below. The remaining 22 are not at any canonical
+>    slug form either, with both controls answering 200 in the same run."
+
+The difference is not politeness. The first sentence closes a question that is
+still open and tells the next person nothing about where to look; the second is
+a measurement, names the route already walked, and leaves the door open where it
+should be. A reference absent from all three rosters is **still probably real** —
+it means the sources this project can reach do not describe it, which is a fact
+about the sources.

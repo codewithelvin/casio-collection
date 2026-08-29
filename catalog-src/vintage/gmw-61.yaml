@@ -1,0 +1,48 @@
+# GMW-61 Ã¢â‚¬â€ seeded 2026-08-29 from the Digital Watch Library.
+#
+# This reference is in NEITHER of the two rosters this project normally
+# asks: it has no archived casio.com product page and casio.com does not
+# list it today. That is what being a pre-web Casio looks like, not
+# evidence that it is not real Ã¢â‚¬â€ DWL is the third roster, and it is a
+# community source, labelled as one (D27/FR-D1).
+#
+# Every field below is read off the one page named in `source`, BY DIV ID.
+# Reading that page by position takes the bracelet as the case: the value
+# list ends `Ã¢â‚¬Â¦ [Resin], 1990` and the bracelet is the tempting last one.
+#
+# The photograph is the page's own `_large` file, `611.jpg` Ã¢â‚¬â€ lead image only Ã¢â‚¬â€ must be looked at.
+# The filename is not proof of identity, so the image was LOOKED AT before
+# it was published, and the watch in it is consistent with every field
+# this page states.
+# A derived path was NOT used: on A159 that route served a file
+# byte-identical to a different reference's photograph.
+#
+# `discontinued` is NOT written by hand here (D59). It was hand-written in the
+# first pass of this file and the value happened to be right, which is exactly
+# the failure D59 describes — a field that reads as measured and was not. It was
+# removed and `availability.ts` wrote it back after measuring against Casio's
+# live roster, which is the only thing entitled to state it.
+# `light` icons are dropped throughout: the vocabulary has five specific
+# light values and no generic one, so an untyped light icon states nothing.
+
+series:
+  id: gmw-61
+  name: GMW-61
+  line: vintage
+  aka: ['Moon Graph']
+
+models:
+  - id: gmw-61
+    ref: GMW-61
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-gmw-61', kind: community }
+    year: 1990
+    module: '832'
+    case: { material: stainless steel }
+    water_resistance_m: 50
+    features: [alarm, stopwatch, moon-data]
+    image: gmw-61
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-gmw-61'
+    discontinued: true
