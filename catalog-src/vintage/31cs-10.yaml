@@ -1,0 +1,64 @@
+# 31CS-10 — a 1976 Casiotron, seeded 2026-08-29 from the Digital Watch Library.
+#
+# This one was nearly missed twice, and both misses are instructive.
+#
+# It is in NEITHER of the two rosters this project normally asks — no archived
+# casio.com product page, not in casio.com's sitemap today. For a watch from
+# 1976 that is the expected condition and not a finding: both of those rosters
+# only know what casio.com published or sells. DWL is the third roster.
+#
+# It was then missed AGAIN by a slug probe, because the reference asked for was
+# `31CS-10B-5` and DWL's page is the base `31CS-10`. A probe for a variant does
+# not answer for the reference it is a variant of. What is written below is what
+# this page states — 31CS-10 — and not the suffixed string that prompted it.
+#
+# CASIOTRON IS NOT A REFERENCE PREFIX. It is the collection name Casio put on
+# the dial, and `trn-50` elsewhere in this catalogue is a different, later thing
+# under the same name. DWL holds 25 Casiotron entries and their references are
+# bare codes like this one: 31CS-10, 49CGS-25, 26CGL-36, 76CS-41. `seriesOf()`
+# cannot parse a reference that opens with digits, so it falls through to the
+# whole string, and `31cs-10` is this series id under D2 — permanent.
+#
+# Every field is read off the one page named in `source`, BY DIV ID. The value
+# list ends `… [SS], 1976` and the tempting `[SS]` is the BRACELET; the case is
+# read from `#case1` and is the same material here, which is exactly why reading
+# by position is a bug that hides itself.
+#
+# `light` is dropped: the page shows an untyped light icon and the vocabulary
+# has five specific light values and no generic one (D27).
+#
+# `calendar` is written because the dial PRINTS it — `START · STOP · CALENDAR`
+# in the page's own photograph. `vocabulary.ts` sanctions that class where it
+# explains `shock-resistant` as "a claim printed on the case rather than a
+# measurement". `stopwatch` has the same two witnesses: DWL's `run` icon
+# ("I have a chronograph") and the printed START · STOP.
+#
+# The photograph is the page's own `_large` file, `1473.jpg`. That filename
+# names neither the reference nor the module, so it proves nothing and the image
+# was LOOKED AT before it was published: the dial reads CASIOTRON, the case and
+# bracelet are steel, and it is consistent with every field here. A derived path
+# was NOT used — on A159 that route served one reference's photograph for
+# another's.
+#
+# `discontinued` is not written here: `availability.ts` measured it (D59).
+
+series:
+  id: 31cs-10
+  name: 31CS-10
+  line: vintage
+  aka: ['Casiotron']
+
+models:
+  - id: 31cs-10
+    ref: 31CS-10
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-31cs-10', kind: community }
+    year: 1976
+    module: '31'
+    case: { material: stainless steel }
+    features: [stopwatch, calendar]
+    image: 31cs-10
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-31cs-10'
+    discontinued: true

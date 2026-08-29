@@ -285,6 +285,21 @@ out *variants*; confirm a specific slug by fetching it. Probe `casio-<ref>`,
 `casio_<ref>` and both with hyphens stripped before reporting a miss, and say
 **"not at any canonical slug form"** rather than "does not exist".
 
+**Probe the BASE reference, not only the string you were handed.** A scope asked
+for `31CS-10B-5`; DWL's page is `casio-31cs-10`, and every slug form of the
+suffixed string missed. A probe for a variant does not answer for the reference
+it is a variant of. Strip trailing variant blocks and ask again before reporting
+absence — and when the base answers, catalogue what that page states, not the
+string that prompted the search.
+
+**Casiotron references open with digits.** DWL holds 25 of them and they look
+like `31CS-10`, `49CGS-25`, `26CGL-36`, `76CS-41` — bare codes, no letter prefix.
+`seriesOf()` cannot parse those, so it falls through to the whole string and the
+series id is the reference itself. `ID_PATTERN` allows a leading digit, so this
+is legal; it is also permanent under D2, so get it right the first time. Note
+that `trn-50` in this catalogue is *also* called Casiotron and is a different,
+later thing — the name is a collection, never a reference prefix.
+
 **Reading a page: by div id, never by position.** Full mapping in
 `dwl-page-field-mapping`. The short version, and the two that bite:
 
