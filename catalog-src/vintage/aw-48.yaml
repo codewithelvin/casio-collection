@@ -1,0 +1,31 @@
+# AW-48 — seeded 2026-08-29 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: aw-48
+  name: AW-48
+  line: vintage
+
+models:
+  - id: aw-48he-1av
+    ref: AW-48HE-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240704161230id_/https://www.casio.com/br/watches/casio/product.AW-48HE-1AV/', kind: official }
+    case: { height_mm: 38.4, width_mm: 31.1, depth_mm: 9, weight_g: 22 }
+    image: aw-48he-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240704161230id_/https://www.casio.com/br/watches/casio/product.AW-48HE-1AV/'
+    discontinued: true

@@ -1,0 +1,31 @@
+# AQ-240 — seeded 2026-08-29 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: aq-240
+  name: AQ-240
+  line: vintage
+
+models:
+  - id: aq-240eg-9a
+    ref: AQ-240EG-9A
+    source:
+      { url: 'https://web.archive.org/web/20251003045715id_/https://www.casio.com/jp/watches/casio/product.AQ-240EG-9A/', kind: official }
+    case: { height_mm: 40.9, width_mm: 35.8, depth_mm: 8.1, weight_g: 51 }
+    image: aq-240eg-9a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251003045715id_/https://www.casio.com/jp/watches/casio/product.AQ-240EG-9A/'
+    discontinued: false

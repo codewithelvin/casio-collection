@@ -1,0 +1,65 @@
+# FT-500 — seeded 2026-08-29 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ft-500
+  name: FT-500
+  line: vintage
+
+models:
+  - id: ft-500wc-1bv
+    ref: FT-500WC-1BV
+    source:
+      { url: 'https://web.archive.org/web/20230218221007id_/https://www.casio.com/us/watches/casio/product.FT-500WC-1BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 43.9, width_mm: 41.5, depth_mm: 12.6, weight_g: 31, material: 'Resin' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: ft-500wc-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230218221007id_/https://www.casio.com/us/watches/casio/product.FT-500WC-1BV/'
+    discontinued: false
+  - id: ft-500wc-3bv
+    ref: FT-500WC-3BV
+    source:
+      { url: 'https://web.archive.org/web/20221012025804id_/https://www.casio.com/us/watches/casio/product.FT-500WC-3BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 43.9, width_mm: 41.5, depth_mm: 12.6, weight_g: 31, material: 'Resin' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: ft-500wc-3bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221012025804id_/https://www.casio.com/us/watches/casio/product.FT-500WC-3BV/'
+    discontinued: false
+  - id: ft-500wc-5bv
+    ref: FT-500WC-5BV
+    source:
+      { url: 'https://web.archive.org/web/20221012025804id_/https://www.casio.com/us/watches/casio/product.FT-500WC-5BV/', kind: official }
+    display: analog
+    movement: quartz
+    case: { height_mm: 43.9, width_mm: 41.5, depth_mm: 12.6, weight_g: 31, material: 'Resin' }
+    water_resistance_m: 100
+    features: [led-light, afterglow]
+    image: ft-500wc-5bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221012025804id_/https://www.casio.com/us/watches/casio/product.FT-500WC-5BV/'
+    discontinued: false

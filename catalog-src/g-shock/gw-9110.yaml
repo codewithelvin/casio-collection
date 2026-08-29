@@ -1,0 +1,32 @@
+# GW-9110 — seeded 2026-08-29 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gw-9110
+  name: GW-9110
+  line: g-shock
+
+models:
+  - id: gw-9110-1
+    ref: GW-9110-1
+    source:
+      { url: 'https://web.archive.org/web/20210624211503id_/https://www.casio.com/jp/watches/gshock/product.GW-9110-1/', kind: official }
+    case: { height_mm: 51, width_mm: 46.1, depth_mm: 16.4, weight_g: 57 }
+    water_resistance_m: 200
+    image: gw-9110-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210624211503id_/https://www.casio.com/jp/watches/gshock/product.GW-9110-1/'
+    discontinued: true

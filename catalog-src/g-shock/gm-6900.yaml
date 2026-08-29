@@ -1,0 +1,183 @@
+# GM-6900 — seeded 2026-08-29 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gm-6900
+  name: GM-6900
+  line: g-shock
+
+models:
+  - id: gm-6900-1
+    ref: GM-6900-1
+    source:
+      { url: 'https://web.archive.org/web/20240715064358id_/https://www.casio.com/europe/watches/gshock/product.GM-6900-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.9, width_mm: 49.7, depth_mm: 18.6, weight_g: 96, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-6900-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064358id_/https://www.casio.com/europe/watches/gshock/product.GM-6900-1/'
+    discontinued: false
+  - id: gm-6900b-4
+    ref: GM-6900B-4
+    source:
+      { url: 'https://web.archive.org/web/20220814161451id_/https://www.casio.com/ph/watches/gshock/product.GM-6900B-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.9, width_mm: 49.7, depth_mm: 18.6, weight_g: 96, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-6900b-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220814161451id_/https://www.casio.com/ph/watches/gshock/product.GM-6900B-4/'
+    discontinued: false
+  - id: gm-6900bape-1
+    ref: GM-6900BAPE-1
+    source:
+      { url: 'https://web.archive.org/web/20231028153618id_/https://www.casio.com/us/watches/gshock/product.GM-6900BAPE-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.9, width_mm: 49.7, depth_mm: 18.6, weight_g: 96, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-6900bape-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231028153618id_/https://www.casio.com/us/watches/gshock/product.GM-6900BAPE-1/'
+    discontinued: false
+  - id: gm-6900cx-4
+    ref: GM-6900CX-4
+    source:
+      { url: 'https://web.archive.org/web/20220808040358id_/https://www.casio.com/ph/watches/gshock/product.GM-6900CX-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.9, width_mm: 49.7, depth_mm: 18.6, weight_g: 106, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-6900cx-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808040358id_/https://www.casio.com/ph/watches/gshock/product.GM-6900CX-4/'
+    discontinued: true
+  - id: gm-6900g-9
+    ref: GM-6900G-9
+    source:
+      { url: 'https://web.archive.org/web/20240715064355id_/https://www.casio.com/europe/watches/gshock/product.GM-6900G-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.9, width_mm: 49.7, depth_mm: 18.6, weight_g: 96, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-6900g-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064355id_/https://www.casio.com/europe/watches/gshock/product.GM-6900G-9/'
+    discontinued: false
+  - id: gm-6900gda-9
+    ref: GM-6900GDA-9
+    source:
+      { url: 'https://web.archive.org/web/20240715064351id_/https://www.casio.com/europe/watches/gshock/product.GM-6900GDA-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.9, width_mm: 49.7, depth_mm: 18.6, weight_g: 96, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-6900gda-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064351id_/https://www.casio.com/europe/watches/gshock/product.GM-6900GDA-9/'
+    discontinued: false
+  - id: gm-6900scm-1
+    ref: GM-6900SCM-1
+    source:
+      { url: 'https://web.archive.org/web/20240715064400id_/https://www.casio.com/europe/watches/gshock/product.GM-6900SCM-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.9, width_mm: 49.7, depth_mm: 18.6, weight_g: 96, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-6900scm-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064400id_/https://www.casio.com/europe/watches/gshock/product.GM-6900SCM-1/'
+    discontinued: false
+  - id: gm-6900sg-9
+    ref: GM-6900SG-9
+    source:
+      { url: 'https://web.archive.org/web/20240715064348id_/https://www.casio.com/europe/watches/gshock/product.GM-6900SG-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.9, width_mm: 49.7, depth_mm: 18.6, weight_g: 96, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-6900sg-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715064348id_/https://www.casio.com/europe/watches/gshock/product.GM-6900SG-9/'
+    discontinued: false
+  - id: gm-6900u-1
+    ref: GM-6900U-1
+    source:
+      { url: 'https://web.archive.org/web/20240225135613id_/https://www.casio.com/intl/watches/gshock/product.GM-6900U-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.9, width_mm: 49.7, depth_mm: 18.6, weight_g: 96, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, flash-alert]
+    image: gm-6900u-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240225135613id_/https://www.casio.com/intl/watches/gshock/product.GM-6900U-1/'
+    discontinued: false
+
+# ADDED 2026-08-29: 1 reference named by hand, because
+# D47's discovery filter refuses it.
+#
+# Each is listed in Casio's OWN CURRENT SITEMAP, which is Casio stating that the
+# reference exists (D48) — a stronger claim about identity than any shape rule,
+# and the only identity `seed-refs.ts` accepts. `roster.ts`'s `CANONICAL_REF`
+# requires a suffix beginning with a digit. That filter governs what a CRAWL may
+# turn into a permanent id unsupervised, and it is not a claim that the
+# reference is fake — D47 as revised on 2026-08-19 (O13, closed) names the
+# references it knowingly refuses, and says admitting them "stays a separate
+# decision". Naming a reference Casio itself lists needs no decision at all,
+# so that is what happened here, and `roster.ts` is untouched.
+#
+# Every field below comes from the one archived Casio product page named in its
+# `source` (D52), read by the same reader as the rest of this file. No `year`:
+# a product page dates nothing (D25). No `discontinued`: that is measured over
+# the whole catalogue by `availability.ts` (D59), never written by hand.
+  - id: gm-6900wtc22-9
+    ref: GM-6900WTC22-9
+    source:
+      { url: 'https://web.archive.org/web/20230223195533id_/https://www.casio.com/us/watches/gshock/product.GM-6900WTC22-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 53.9, width_mm: 49.7, depth_mm: 18.6, weight_g: 96, material: 'Resin / Stainless steel' }
+    water_resistance_m: 200
+    features: [alarm, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, shock-resistant, mineral-glass, flash-alert]
+    discontinued: false
+    # NO PHOTOGRAPH, AND SOMEBODY LOOKED. The one archived capture of this page
+    # names no image of this reference at all — `backfill-photos.ts g-shock
+    # --crawl` re-read it on 2026-08-29 and reported "the page names no
+    # photograph of this reference", the only such page in the whole g-shock
+    # line. Deriving `GM-6900WTC22-9.png` from the DAM is exactly the trap the
+    # skill names: on A159 that route served a file byte-identical to a
+    # different reference's, and no diff review would have caught it. The `World
+    # Tour Collection` sibling shots on the page are of other references and
+    # naming one here would claim a watch this is not.
+    image: null

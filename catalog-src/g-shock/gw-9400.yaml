@@ -1,0 +1,112 @@
+# GW-9400 — seeded 2026-08-29 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: gw-9400
+  name: GW-9400
+  line: g-shock
+
+models:
+  - id: gw-9400-1
+    ref: GW-9400-1
+    source:
+      { url: 'https://web.archive.org/web/20240715065658id_/https://www.casio.com/europe/watches/gshock/product.GW-9400-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gw-9400-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715065658id_/https://www.casio.com/europe/watches/gshock/product.GW-9400-1/'
+    discontinued: false
+  - id: gw-9400-1b
+    ref: GW-9400-1B
+    source:
+      { url: 'https://web.archive.org/web/20221126114204id_/https://www.casio.com/sg/watches/gshock/product.GW-9400-1B/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gw-9400-1b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221126114204id_/https://www.casio.com/sg/watches/gshock/product.GW-9400-1B/'
+    discontinued: false
+  - id: gw-9400-3
+    ref: GW-9400-3
+    source:
+      { url: 'https://web.archive.org/web/20220928165811id_/https://www.casio.com/sg/watches/gshock/product.GW-9400-3/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gw-9400-3
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220928165811id_/https://www.casio.com/sg/watches/gshock/product.GW-9400-3/'
+    discontinued: false
+  - id: gw-9400bj-1
+    ref: GW-9400BJ-1
+    source:
+      { url: 'https://web.archive.org/web/20210410145521id_/https://www.casio.com/jp/watches/gshock/product.GW-9400BJ-1/', kind: official }
+    case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93 }
+    water_resistance_m: 200
+    image: gw-9400bj-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210410145521id_/https://www.casio.com/jp/watches/gshock/product.GW-9400BJ-1/'
+    discontinued: true
+  - id: gw-9400j-1
+    ref: GW-9400J-1
+    source:
+      { url: 'https://web.archive.org/web/20210418235810id_/https://www.casio.com/jp/watches/gshock/product.GW-9400J-1/', kind: official }
+    case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93 }
+    water_resistance_m: 200
+    image: gw-9400j-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210418235810id_/https://www.casio.com/jp/watches/gshock/product.GW-9400J-1/'
+    discontinued: true
+  - id: gw-9400y-1
+    ref: GW-9400Y-1
+    source:
+      { url: 'https://web.archive.org/web/20240715022125id_/https://www.casio.com/europe/watches/gshock/product.GW-9400Y-1/', kind: official }
+    movement: solar-radio
+    case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, sunrise-sunset, shock-resistant, mineral-glass]
+    image: gw-9400y-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022125id_/https://www.casio.com/europe/watches/gshock/product.GW-9400Y-1/'
+    discontinued: false
+  - id: gw-9400yj-1
+    ref: GW-9400YJ-1
+    source:
+      { url: 'https://web.archive.org/web/20230101111833id_/https://www.casio.com/jp/watches/gshock/product.GW-9400YJ-1/', kind: official }
+    case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93 }
+    water_resistance_m: 200
+    image: gw-9400yj-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230101111833id_/https://www.casio.com/jp/watches/gshock/product.GW-9400YJ-1/'
+    discontinued: true

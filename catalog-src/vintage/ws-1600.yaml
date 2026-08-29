@@ -1,0 +1,62 @@
+# WS-1600 — seeded 2026-08-29 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ws-1600
+  name: WS-1600
+  line: vintage
+
+models:
+  - id: ws-1600h-1av
+    ref: WS-1600H-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102737id_/https://www.casio.com/europe/watches/casio/product.WS-1600H-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 45, width_mm: 42.1, depth_mm: 12.5, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ws-1600h-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102737id_/https://www.casio.com/europe/watches/casio/product.WS-1600H-1AV/'
+    discontinued: false
+  - id: ws-1600h-2av
+    ref: WS-1600H-2AV
+    source:
+      { url: 'https://web.archive.org/web/20230514043815id_/https://www.casio.com/us/watches/casio/product.WS-1600H-2AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 45, width_mm: 42.1, depth_mm: 12.5, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ws-1600h-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230514043815id_/https://www.casio.com/us/watches/casio/product.WS-1600H-2AV/'
+    discontinued: false
+  - id: ws-1600h-8av
+    ref: WS-1600H-8AV
+    source:
+      { url: 'https://web.archive.org/web/20250117235841id_/https://www.casio.com/in/watches/casio/product.WS-1600H-8AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 45, width_mm: 42.1, depth_mm: 12.5, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ws-1600h-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250117235841id_/https://www.casio.com/in/watches/casio/product.WS-1600H-8AV/'
+    discontinued: false

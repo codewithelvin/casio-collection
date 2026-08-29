@@ -1,0 +1,61 @@
+# AEQ-100 — seeded 2026-08-29 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: aeq-100
+  name: AEQ-100
+  line: vintage
+
+models:
+  - id: aeq-100w-1av
+    ref: AEQ-100W-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240721131958id_/https://www.casio.com/id/watches/casio/product.AEQ-100W-1AV/', kind: official }
+    case: { height_mm: 52.5, width_mm: 47.7, depth_mm: 15.3, weight_g: 50 }
+    water_resistance_m: 100
+    features: [alarm, stopwatch, telememo]
+    image: aeq-100w-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721131958id_/https://www.casio.com/id/watches/casio/product.AEQ-100W-1AV/'
+    discontinued: false
+  - id: aeq-100w-1bv
+    ref: AEQ-100W-1BV
+    source:
+      { url: 'https://web.archive.org/web/20230218221146id_/https://www.casio.com/us/watches/casio/product.AEQ-100W-1BV/', kind: official }
+    display: ana-digi
+    movement: quartz
+    case: { height_mm: 52.5, width_mm: 47.7, depth_mm: 15.3, weight_g: 50, material: 'Resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, telememo]
+    discontinued: false
+    image: aeq-100w-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240721131952id_/https://www.casio.com/id/watches/casio/product.AEQ-100W-1BV/'

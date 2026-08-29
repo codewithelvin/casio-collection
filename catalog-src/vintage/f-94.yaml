@@ -1,0 +1,46 @@
+# F-94 — seeded 2026-08-29 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: f-94
+  name: F-94
+  line: vintage
+
+models:
+  - id: f-94wa-8
+    ref: F-94WA-8
+    source:
+      { url: 'https://web.archive.org/web/20240812053507id_/https://www.casio.com/in/watches/casio/product.F-94WA-8/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.2, width_mm: 33.2, depth_mm: 8.5, weight_g: 21, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal]
+    image: f-94wa-8
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240812053507id_/https://www.casio.com/in/watches/casio/product.F-94WA-8/'
+    discontinued: false
+  - id: f-94wa-9
+    ref: F-94WA-9
+    source:
+      { url: 'https://web.archive.org/web/20220528201029id_/https://www.casio.com/in/watches/casio/product.F-94WA-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 38.2, width_mm: 33.2, depth_mm: 8.5, weight_g: 21, material: 'Resin' }
+    features: [alarm, stopwatch, calendar, hourly-time-signal]
+    image: f-94wa-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220528201029id_/https://www.casio.com/in/watches/casio/product.F-94WA-9/'
+    discontinued: false
