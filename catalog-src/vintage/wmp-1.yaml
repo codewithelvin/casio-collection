@@ -69,3 +69,4 @@ models:
     ref: WMP-1UV
     source: { url: 'https://www.casiold.com/products/casio-wmp-1uv-mp3-wrist-watch', kind: retailer }
     image: null
+    discontinued: true

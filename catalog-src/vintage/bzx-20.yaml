@@ -38,3 +38,4 @@ models:
     ref: BZX-20
     source: { url: 'https://www.casiold.com/products/1998-casio-bzx-20-brand-new', kind: retailer }
     image: null
+    discontinued: true

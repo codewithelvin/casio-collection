@@ -40,3 +40,4 @@ models:
       author: Casiold
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1992-casio-aw-44'
+    discontinued: true

@@ -40,3 +40,4 @@ models:
       author: Casiold
       licence: rights-reserved
       url: 'https://www.casiold.com/products/casio-ptm-14-japan'
+    discontinued: true

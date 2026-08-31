@@ -1,28 +1,27 @@
-# AQ-307 -- seeded 2026-08-31 from Casiold (casiold.com), a UK dealer in
-# vintage Casio. That is a `retailer` source and is labelled as one (FR-D1).
+# AQ-307 -- the reference and the photograph come from Casiold
+# (casiold.com); every SPECIFICATION below was read from the Digital Watch
+# Library on 2026-08-31, which is where this entry now points.
 #
-# The Digital Watch Library's Casio gallery names this watch, so the
-# reference is corroborated independently of the dealer. That page was NOT
-# read, and no field below comes from it -- reading it is a separate pass.
+# TWO PAGES, AND THE ENTRY SAYS WHICH SAID WHAT. `source` is the DWL page
+# because every field comes from it. The photograph is still the dealer's and
+# its `image_credit` still names the dealer -- the credit travels with the
+# file (D41), which is how one entry cites two pages without merging them.
 #
-# ONLY THE REFERENCE IS WRITTEN DOWN, and each absence is deliberate:
-#   * no `year`. casiold's titles are dated -- "1984 Casio AE-10" -- and the
-#     date is the dealer's own. Against the 17 references this catalogue
-#     already held where casiold also has a listing, it disagrees on 5, and on
-#     DBC-610 it is out by six years: casiold says 1991 where the Digital Watch
-#     Library page this catalogue cites states RELEASED | 1985. A dealer dates
-#     the example in front of him. D25 and D54 want a page that states the
-#     year, and a listing title is not one.
-#   * no specifications. The listing body is condition prose -- "all works
-#     great ... has got a bleed to the screen" -- and not a table, so D50's
-#     four-row floor is not met.
-#   * no `discontinued`. Never written by hand (D59); availability.ts measures it.
+# THE DEALER'S DATE WAS WRONG, which is why the first pass took no year
+# from it: casiold titles this watch "1994 Casio AQ-307" and this
+# page states RELEASED | 1982.
 #
-# See the casiold section of
-# .claude/skills/casio-catalog/references/sources.md for the whole finding.
+# Read BY DIV ID, never by position. Stripping this page's tags and taking
+# the values in order puts the BRACELET row last before the year, and it
+# looks exactly like a casing material -- the casing above came from
+# #case1 and nothing here was read off the end of a list.
 #
-# The photograph is the listing's own, chosen from the 8 it carries by
-# looking at them, and credited to the dealer as `rights-reserved` (D41).
+# DELIBERATELY ABSENT: `display` -- no row states it, and reading it off the
+# photograph is what D27 forbids.
+# `movement` -- no row and no icon states how it is driven.
+# `water_resistance_m` -- the row says 'NONE', which is a statement
+#   and not a depth.
+# `discontinued` is not written by hand (D59); availability.ts measures it.
 
 series:
   id: aq-307
@@ -32,9 +31,14 @@ series:
 models:
   - id: aq-307
     ref: AQ-307
-    source: { url: 'https://www.casiold.com/products/1994-casio-aq-307', kind: retailer }
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-aq-307', kind: community }
+    year: 1982
+    module: '306'
+    case: { material: gold tone base-metal }
+    features: [alarm, stopwatch, dual-time]
     image: aq-307
     image_credit:
       author: Casiold
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1994-casio-aq-307'
+    discontinued: true

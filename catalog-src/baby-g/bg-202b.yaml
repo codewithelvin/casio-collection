@@ -38,3 +38,4 @@ models:
     ref: BG-202B
     source: { url: 'https://www.casiold.com/products/casio-baby-g-bg-202b-vt-brand-ew-old-stock', kind: retailer }
     image: null
+    discontinued: true

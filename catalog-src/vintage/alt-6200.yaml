@@ -40,3 +40,4 @@ models:
       author: Casiold
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1991-casio-alt-6200'
+    discontinued: true
