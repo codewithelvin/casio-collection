@@ -50,3 +50,17 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.DBC-611G-1/'
     discontinued: false
+
+  # DBC-611E added 2026-08-31 from Casiold (casiold.com), a `retailer`
+  # source: the reference and the photograph come from the one listing named below.
+  # No year -- casiold's title dates disagree with this catalogue's own
+  # sourced years on 5 of 17 overlapping references -- and no
+  # specifications, because the listing states none. See sources.md.
+  - id: dbc-611e
+    ref: DBC-611E
+    source: { url: 'https://www.casiold.com/products/casio-dbc-611e-1', kind: retailer }
+    image: dbc-611e
+    image_credit:
+      author: Casiold
+      licence: rights-reserved
+      url: 'https://www.casiold.com/products/casio-dbc-611e-1'

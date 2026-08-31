@@ -8,6 +8,14 @@
 # unless the page describes the dial. The page shows a "light" icon with no
 # type, and the vocabulary has five specific light values and no generic one,
 # so no light feature is claimed. Absent means nobody has found it (D27).
+#
+# PHOTOGRAPH ADDED 2026-08-31, and it comes from a different page than every
+# field above: Casiold (casiold.com), a UK dealer, listing this reference
+# new-old-stock. The credit travels with the file (D41), which is what lets
+# one entry cite two pages honestly -- the specifications are still the DWL
+# page in `source` and nothing was re-read from the dealer. The listing
+# photographs the watch beside Casio's own hang tag, and the tag prints
+# F-87, so the photograph identifies itself.
 
 series:
   id: f-87
@@ -22,5 +30,9 @@ models:
     module: '415'
     case: { material: resin }
     features: [alarm, stopwatch]
-    image: null
+    image: f-87
+    image_credit:
+      author: Casiold
+      licence: rights-reserved
+      url: 'https://www.casiold.com/products/1984-casio-f-87-new-old-stock'
     discontinued: true

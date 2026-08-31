@@ -295,3 +295,17 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241008181011id_/https://www.casio.com/intl/watches/babyg/product.BGA-290US-6A/'
     discontinued: false
+
+  # BGA-290SW added 2026-08-31 from Casiold (casiold.com), a `retailer`
+  # source: the reference and the photograph come from the one listing named below.
+  # No year -- casiold's title dates disagree with this catalogue's own
+  # sourced years on 5 of 17 overlapping references -- and no
+  # specifications, because the listing states none. See sources.md.
+  - id: bga-290sw
+    ref: BGA-290SW
+    source: { url: 'https://www.casiold.com/products/casio-baby-g-bga-290sw', kind: retailer }
+    image: bga-290sw
+    image_credit:
+      author: Casiold
+      licence: rights-reserved
+      url: 'https://www.casiold.com/products/casio-baby-g-bga-290sw'

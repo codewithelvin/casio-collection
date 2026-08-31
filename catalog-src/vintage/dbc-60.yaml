@@ -1,0 +1,40 @@
+# DBC-60 -- seeded 2026-08-31 from Casiold (casiold.com), a UK dealer in
+# vintage Casio. That is a `retailer` source and is labelled as one (FR-D1).
+#
+# The Digital Watch Library's Casio gallery names this watch, so the
+# reference is corroborated independently of the dealer. That page was NOT
+# read, and no field below comes from it -- reading it is a separate pass.
+#
+# ONLY THE REFERENCE IS WRITTEN DOWN, and each absence is deliberate:
+#   * no `year`. casiold's titles are dated -- "1984 Casio AE-10" -- and the
+#     date is the dealer's own. Against the 17 references this catalogue
+#     already held where casiold also has a listing, it disagrees on 5, and on
+#     DBC-610 it is out by six years: casiold says 1991 where the Digital Watch
+#     Library page this catalogue cites states RELEASED | 1985. A dealer dates
+#     the example in front of him. D25 and D54 want a page that states the
+#     year, and a listing title is not one.
+#   * no specifications. The listing body is condition prose -- "all works
+#     great ... has got a bleed to the screen" -- and not a table, so D50's
+#     four-row floor is not met.
+#   * no `discontinued`. Never written by hand (D59); availability.ts measures it.
+#
+# See the casiold section of
+# .claude/skills/casio-catalog/references/sources.md for the whole finding.
+#
+# The photograph is the listing's own, chosen from the 11 it carries by
+# looking at them, and credited to the dealer as `rights-reserved` (D41).
+
+series:
+  id: dbc-60
+  name: DBC-60
+  line: vintage
+
+models:
+  - id: dbc-60
+    ref: DBC-60
+    source: { url: 'https://www.casiold.com/products/1985-casio-dbc-60-new-old-stock', kind: retailer }
+    image: dbc-60
+    image_credit:
+      author: Casiold
+      licence: rights-reserved
+      url: 'https://www.casiold.com/products/1985-casio-dbc-60-new-old-stock'

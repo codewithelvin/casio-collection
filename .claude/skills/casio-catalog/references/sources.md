@@ -221,10 +221,62 @@ source and the roster describe different decades"**. Anything more than those si
 references needs a source that names the module of a *current* Sheen or Oceanus,
 which is what casio.com's own product page would say if it answered.
 
+## casiold.com — a dealer's roster, read 2026-08-31
+
+`casiold.com` is a UK dealer in vintage Casio, on Shopify, so
+`/collections/all/products.json?limit=250&page=N` dumps the whole stock in one
+page: **239 listings**, of which 208 are Casio watches. It is a `retailer`
+source and it seeded 136 new series and 4 references into existing ones.
+
+**What makes it worth having** is the decade it covers. Its titles are
+`1983 Casio AE-8W`, `1986 Casio SDB-300`, `1992 Casio PNM-502 POSEIDON` — the
+pre-web references that casio.com never had a page for. 103 of the 140
+references written from it appear in **neither** roster *and* in none of the 853
+entries of the Digital Watch Library's Casio gallery. Every listing carries
+8–22 photographs of the actual watch, shot in one consistent house style, and
+some are photographed beside Casio's own hang tag, which prints the reference.
+
+**Its dates are not usable and this is the important finding.** The title year
+is the dealer's own dating of the example in front of him. Against the 17
+references this catalogue already held where casiold also has a listing, it
+disagrees on **5**, and on DBC-610 it is out by six years — casiold says 1991
+where the DWL page this catalogue cites states `RELEASED | 1985`. So no `year`
+is written from it, ever. D25 and D54 want a page that states the year and a
+listing title is not one.
+
+Four more traps, all met on 2026-08-31:
+
+- **The title and the handle disagree about the reference more often than you
+  would expect** — `1982 Casio M-10 Melody` has the handle `…-w-10-…`, and there
+  are six more (`TRW-20`/`trw-10`, `DBC-30`/`dbc-31`, `SW-200`/`sw-201`,
+  `DW-291`/`dw-293`, `DW-291`/`dw-295`, `DBC-611`/`dbc-612`). Two sources
+  disagreeing about the reference means not writing the model (§10.6). Compare
+  the two and hold the mismatches.
+- **A bare title is often the SERIES, not a reference.** `Casio DBC-32 - Rare
+  model` and `90s classic Casio G-Shock DW-6900` name series this catalogue
+  already holds with many variants; writing `DBC-32` as a model would invent a
+  reference. Hold any title whose reference equals an existing series id. For a
+  1980s watch the bare form usually *is* the whole reference (`F-87`, `A300U`),
+  which is why this is a check against the catalogue and not a rule about shape.
+- **It stocks other makers and non-watches** — Timex, Seiko, Alba, Citizen,
+  Orient, Lorus, two LCD handheld games, a flip-top calculator and a mug.
+- **The lead photograph is often the box**, or the watch sealed in its blister
+  pack. Look at every one before publishing it; three of 140 had no image
+  showing the watch at all and were written `image: null`. Images are `.heic`,
+  and the Shopify CDN converts on request: append `&width=1000&format=jpg`.
+
+Five needed a **centre crop to 78% of the short side** to meet §10.3 — the full
+frame encodes to 40.8–136.9 KB against the 40 KB budget at 400 px. Cropping
+helped here because it removes desk and background; it is the opposite result
+from `gmw-b5000tcf-2`, where a tighter crop on a busy dial made the file bigger.
+
+Robots: `Allow: /`, with only cart, checkout, admin and account disallowed.
+
 ### The rest of what has been checked
 
 | Source | Covers | Gives |
 | --- | --- | --- |
+| `casiold.com` | pre-web vintage; 239 listings | references + photographs; **never a year** |
 | ShockBase | G-SHOCK only | references + module ✓ |
 | WatchBase (`watchbase.com/casio/caliber/<module>`) | G-SHOCK-centric; no Edifice, Pro Trek, Oceanus, Sheen, Databank | some references |
 | `casiofanmag.com/getmanuals/<line>/` | **every line** | **series → module, not reference → module** |

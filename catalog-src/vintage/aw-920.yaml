@@ -1,0 +1,43 @@
+# AW-920 -- seeded 2026-08-31 from Casiold (casiold.com), a UK dealer in
+# vintage Casio. That is a `retailer` source and is labelled as one (FR-D1).
+#
+# In neither of the two rosters this project normally asks, and in none of
+# the 853 entries of the Digital Watch Library's Casio gallery either. That
+# is what a pre-web Casio looks like -- too old for casio.com, not yet
+# written up by DWL -- and not evidence that it is not real. The evidence
+# is the dealer's own photograph of the watch.
+#
+# ONLY THE REFERENCE IS WRITTEN DOWN, and each absence is deliberate:
+#   * no `year`. casiold's titles are dated -- "1984 Casio AE-10" -- and the
+#     date is the dealer's own. Against the 17 references this catalogue
+#     already held where casiold also has a listing, it disagrees on 5, and on
+#     DBC-610 it is out by six years: casiold says 1991 where the Digital Watch
+#     Library page this catalogue cites states RELEASED | 1985. A dealer dates
+#     the example in front of him. D25 and D54 want a page that states the
+#     year, and a listing title is not one.
+#   * no specifications. The listing body is condition prose -- "all works
+#     great ... has got a bleed to the screen" -- and not a table, so D50's
+#     four-row floor is not met.
+#   * no `discontinued`. Never written by hand (D59); availability.ts measures it.
+#
+# See the casiold section of
+# .claude/skills/casio-catalog/references/sources.md for the whole finding.
+#
+# The photograph is the listing's own, chosen from the 8 it carries by
+# looking at them, and credited to the dealer as `rights-reserved` (D41).
+
+series:
+  id: aw-920
+  name: AW-920
+  line: vintage
+  aka: ['Overland']
+
+models:
+  - id: aw-920
+    ref: AW-920
+    source: { url: 'https://www.casiold.com/products/1996-aw-920-overland', kind: retailer }
+    image: aw-920
+    image_credit:
+      author: Casiold
+      licence: rights-reserved
+      url: 'https://www.casiold.com/products/1996-aw-920-overland'

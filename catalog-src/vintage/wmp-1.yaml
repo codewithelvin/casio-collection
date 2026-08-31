@@ -59,3 +59,13 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/'
     discontinued: true
+
+  # WMP-1UV added 2026-08-31 from Casiold (casiold.com), a `retailer`
+  # source: the reference comes from the one listing named below.
+  # No year -- casiold's title dates disagree with this catalogue's own
+  # sourced years on 5 of 17 overlapping references -- and no
+  # specifications, because the listing states none. See sources.md.
+  - id: wmp-1uv
+    ref: WMP-1UV
+    source: { url: 'https://www.casiold.com/products/casio-wmp-1uv-mp3-wrist-watch', kind: retailer }
+    image: null

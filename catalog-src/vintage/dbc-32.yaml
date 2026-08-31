@@ -50,3 +50,17 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714215920id_/https://www.casio.com/europe/watches/casio/vintage/product.DBC-32D-1A/'
     discontinued: false
+
+  # DBC-32D added 2026-08-31 from Casiold (casiold.com), a `retailer`
+  # source: the reference and the photograph come from the one listing named below.
+  # No year -- casiold's title dates disagree with this catalogue's own
+  # sourced years on 5 of 17 overlapping references -- and no
+  # specifications, because the listing states none. See sources.md.
+  - id: dbc-32d
+    ref: DBC-32D
+    source: { url: 'https://www.casiold.com/products/casio-dbc-32d', kind: retailer }
+    image: dbc-32d
+    image_credit:
+      author: Casiold
+      licence: rights-reserved
+      url: 'https://www.casiold.com/products/casio-dbc-32d'
