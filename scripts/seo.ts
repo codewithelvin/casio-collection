@@ -69,20 +69,63 @@ interface Page {
 
 const canonical = (path: string) => `${ORIGIN}/${path}${path === '' ? '' : '/'}`
 
+/**
+ * The same test as `browsable` in `src/catalog/client.ts`, and it has to be the
+ * same one — **this file is the crawler's copy of the grid.**
+ *
+ * A tombstone was already withheld here. A model with no photograph was not, and
+ * that is what a crawl came back and called an orphan: 389 `/watch/…/` URLs
+ * advertised in sitemap.xml that no rendered page on the site links to, because
+ * the client's 2026-08-26 reversal of D29 withholds a watch nobody can show you
+ * from every grid, every facet, every search result and every series count. The
+ * sitemap was the only thing still pointing at them, which is the definition of
+ * the finding.
+ *
+ * So the rule is applied on both sides of the same page instead of one:
+ *
+ *   * the page is still WRITTEN, so a direct link and a shared link keep
+ *     working and `modelById` keeps resolving — withheld is not retired, and
+ *     FR-3.6 is about reachability, not about being advertised;
+ *   * it carries `noindex, follow`, and is therefore out of the sitemap;
+ *   * no line, series or edition listing links to it, so the `<noscript>` body
+ *     lists what the React page lists rather than a longer set;
+ *   * the counts in those titles and descriptions are the counts the reader
+ *     sees. "146 references" over a page showing 80 was the same divergence
+ *     read out loud.
+ *
+ * The moment `image` is set the page rejoins the sitemap on the next build.
+ * Nothing has to be un-done, which is the property `browsable` was written for.
+ */
+const listed = (model: PublishedModel): boolean => !model.tombstone && Boolean(model.image)
+
 /* ------------------------------------------------------------------------- *
  * The pages.
  * ------------------------------------------------------------------------- */
 
+/**
+ * The front door — and the one place the glossary is linked from for a crawler
+ * that runs no JavaScript.
+ *
+ * `/symbols` is in the footer of every route, so a rendering crawler finds it
+ * everywhere and it needs no help. A `<noscript>` body carries no footer, which
+ * left the one page here written for a search query rather than a reference code
+ * reachable only from sitemap.xml — an orphan by the same test that started this,
+ * and the only one left in the artefact once the withheld watches are out.
+ */
 function homePage(catalog: Catalog): Page {
   // This filtered out the unseeded lines so the JSON-LD would not offer a reader
   // a category with nothing in it. D51 moved that decision into the build, where
   // it holds for the rail and the front door too, so the filter here would now
   // only be hiding a state the artefact cannot contain.
   const lines = catalog.lines
+  // The count the site shows, not the count the file holds: `line.count` beneath
+  // is already the browsable one, and a front door claiming 3 335 references over
+  // a rail adding up to 2 943 is the same divergence the withheld pages were.
+  const models = catalog.models.filter(listed)
   return {
     path: '',
     title: 'Casio Vault — the Casio watch catalogue, and the ones you own',
-    description: `Browse ${catalog.models.length} Casio references across ${catalog.series.length} series. Search by reference, filter by year and feature, and mark what you own. ${DISCLAIMER}`,
+    description: `Browse ${models.length} Casio references across ${catalog.series.length} series. Search by reference, filter by year and feature, and mark what you own. ${DISCLAIMER}`,
     priority: '1.0',
     body: `
       <h1>Casio Vault</h1>
@@ -97,6 +140,7 @@ function homePage(catalog: Catalog): Page {
           .join('\n        ')}
       </ul>
       ${catalog.editions.length > 0 ? `<p><a href="/editions/">Collaborations and limited editions</a> — ${catalog.editions.length} of them.</p>` : ''}
+      <p><a href="/symbols/">What the symbols on a Casio display mean</a> — every indicator, with the manual that defines it.</p>
       <p>${DISCLAIMER}</p>`,
     jsonLd: [
       {
@@ -132,7 +176,7 @@ function homePage(catalog: Catalog): Page {
 
 function linePage(catalog: Catalog, line: Catalog['lines'][number]): Page {
   const series = catalog.series.filter((entry) => entry.line === line.id)
-  const models = catalog.models.filter((model) => model.line === line.id && !model.tombstone)
+  const models = catalog.models.filter((model) => model.line === line.id && listed(model))
 
   return {
     path: `line/${line.slug}`,
@@ -166,7 +210,7 @@ function seriesPage(
   line: Catalog['lines'][number],
   series: Catalog['series'][number],
 ): Page {
-  const models = catalog.models.filter((model) => model.series === series.id && !model.tombstone)
+  const models = catalog.models.filter((model) => model.series === series.id && listed(model))
 
   return {
     path: `line/${line.slug}/${series.id}`,
@@ -308,7 +352,7 @@ function symbolsPage(): Page {
 }
 
 function editionPage(catalog: Catalog, edition: Catalog['editions'][number]): Page {
-  const models = catalog.models.filter((model) => model.edition === edition.id && !model.tombstone)
+  const models = catalog.models.filter((model) => model.edition === edition.id && listed(model))
 
   return {
     path: `editions/${edition.slug}`,
@@ -728,11 +772,13 @@ async function main() {
     for (const edition of catalog.editions) pages.push(editionPage(catalog, edition))
   }
 
-  // A tombstoned model stays reachable forever (FR-3.6) and is not advertised:
-  // it is in the sitemap's absence and marked noindex, so a shared old link
-  // still works and a search engine stops offering a retired entry.
+  // A model the site itself will not show stays reachable forever (FR-3.6) and
+  // is not advertised: written to disk, marked noindex, absent from the sitemap.
+  // A shared old link still works, and a search engine stops being offered a
+  // page no page here links to. `listed` carries both halves of that rule and
+  // says which watches fall under it, and why each one does.
   for (const model of catalog.models) {
-    pages.push({ ...watchPage(catalog, model), noindex: model.tombstone !== undefined })
+    pages.push({ ...watchPage(catalog, model), noindex: !listed(model) })
   }
 
   for (const page of pages) {
@@ -758,7 +804,8 @@ async function main() {
   await writeFile(join(dist, 'robots.txt'), robotsTxt(), 'utf8')
 
   console.log(
-    `seo: ${pages.length} pages written (${indexed.length} in the sitemap), robots.txt, sitemap.xml`,
+    `seo: ${pages.length} pages written (${indexed.length} in the sitemap, ` +
+      `${pages.length - indexed.length} noindex), robots.txt, sitemap.xml`,
   )
 }
 
