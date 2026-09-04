@@ -1102,3 +1102,130 @@
 .cc-footer a {
   color: var(--cc-primary);
 }
+
+/*
+ * D68 — the analytics consent banner.
+ *
+ * Fixed to the bottom rather than placed in the flow, and that is the whole
+ * layout decision: in the flow it would push the footer down on first paint and
+ * then let it spring back the moment somebody answered, which is a layout shift
+ * on the one interaction guaranteed to happen before anything else. Fixed, it
+ * occupies no space in the document and its arrival and departure cost nothing.
+ *
+ * `padding-bottom: env(safe-area-inset-bottom)` because index.html sets
+ * `viewport-fit=cover`, so on a phone with a home indicator the bar would
+ * otherwise put its buttons under it.
+ */
+.cc-consent {
+  position: fixed;
+  z-index: 20;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid var(--cc-border-secondary);
+  background: var(--cc-bg-elevated);
+  box-shadow: 0 -6px 16px 0 rgb(0 0 0 / 8%);
+  animation: cc-fade-in var(--cc-quick) var(--cc-ease) both;
+}
+
+.cc-consent-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px calc(12px + env(safe-area-inset-bottom));
+}
+
+.cc-consent-copy {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.cc-consent-title {
+  margin: 0 0 2px;
+  font-weight: 600;
+}
+
+.cc-consent-body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/*
+ * The two answers, and they are deliberately identical.
+ *
+ * Neither is `--cc-primary`. A blue Accept beside a grey Decline is the pattern
+ * that reads as "the site would like you to press this one", and a consent whose
+ * two answers are not equally easy to give is not a consent — so the emphasis
+ * that would normally mark a primary action is spent on nothing here.
+ */
+.cc-consent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cc-consent-button {
+  padding: 6px 20px;
+  border: 1px solid var(--cc-border-secondary);
+  border-radius: 6px;
+  background: var(--cc-bg-container);
+  color: var(--cc-text);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cc-consent-button:hover {
+  border-color: var(--cc-primary);
+  color: var(--cc-primary);
+}
+
+.cc-consent-close {
+  padding: 6px 12px;
+  border: 0;
+  background: none;
+  color: var(--cc-text-description);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .cc-consent-inner {
+    padding-inline: 16px;
+  }
+
+  /* The buttons take the full row on a phone, so neither is the one that
+     happens to be under the thumb. */
+  .cc-consent-actions {
+    flex: 1 1 100%;
+  }
+
+  .cc-consent-button {
+    flex: 1 1 0;
+  }
+}
+
+/*
+ * D68 — the footer's analytics control. A `button` because it opens something
+ * rather than going somewhere, and a link to look at because in a row of links
+ * a button chrome would be the loudest thing in the quietest part of the page.
+ * The colour comes from `.cc-footer a` so the two cannot drift apart.
+ */
+.cc-footer-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--cc-primary);
+  font: inherit;
+  cursor: pointer;
+}
+
+.cc-footer-link:hover {
+  text-decoration: underline;
+}

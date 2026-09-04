@@ -530,6 +530,39 @@ const en = {
   // rather than the glyph in front of it — "Information" would tell a screen
   // reader the shape of the icon and nothing about the button.
   'footer.about': 'About this site',
+
+  // D68 — the analytics consent banner.
+  //
+  // The body says three things and each one is there because it is true and
+  // checkable, not because it softens the ask: who the data goes to, what it is
+  // for, and that refusing means nothing is sent at all. That last clause is
+  // only sayable because the gate is a gate — gtag.js is never fetched without
+  // consent — and it would be a lie under Google's own Consent Mode, which
+  // loads the tag and pings regardless. See `analytics/consent.ts`.
+  //
+  // The published-collections sentence is D45's promise restated where somebody
+  // can actually read it: a profile is reported as `/u/:handle` and the handle
+  // never leaves the browser.
+  'consent.label': 'Analytics consent',
+  'consent.title': 'Count this visit?',
+  'consent.body':
+    'Casio Vault uses Google Analytics to see how many people visit and which watches they look for. It sets cookies. Decline and nothing is sent to Google at all — the tag is never loaded.',
+  'consent.privacy': 'A published collection is only ever counted, never named.',
+  // Two verbs, equal weight. "Accept" beside a quiet "manage preferences" is the
+  // pattern that makes refusing expensive, and consent that is easier to give
+  // than to refuse is not consent.
+  'consent.accept': 'Accept',
+  'consent.decline': 'Decline',
+  // The footer control that reopens the question. Withdrawing has to be as easy
+  // as granting was, and /settings is behind a session — a signed-out reader
+  // would have had no way back to this at all.
+  'consent.change': 'Analytics',
+  'consent.state.granted': 'Analytics is on',
+  'consent.state.denied': 'Analytics is off',
+  // Only ever rendered when the question has been *reopened* from the footer, so
+  // it means "leave my answer as it is" rather than being a third answer to a
+  // question that has two.
+  'consent.close': 'Keep as is',
 } as const
 
 export type StringKey = keyof typeof en

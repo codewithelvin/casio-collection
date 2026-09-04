@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { THEME_STORAGE_KEY, type ThemeMode } from '../theme/palette.ts'
+import { readConsent, writeConsent, type Consent } from '../analytics/consent.ts'
 
 /**
  * §8.3 — seeded from prefers-color-scheme, overridable by the toggle, and the
@@ -59,9 +60,27 @@ interface UiState {
    * that two mechanisms for one problem is how the second one rots.
    */
   requestDraft: RequestDraft | null
+  /**
+   * D68 — the analytics choice, seeded from storage before the first render so
+   * the banner does not appear for a frame to somebody who answered it months
+   * ago. `null` is *not yet asked*.
+   */
+  consent: Consent
+  /**
+   * Whether to show the banner to somebody who **has** already answered — the
+   * footer's *Analytics* control sets it, and it is what makes withdrawing a
+   * consent as easy as giving it was. Deliberately separate from `consent`
+   * itself: reopening the question must not first erase the answer, or a reader
+   * who opens it out of curiosity and navigates away has silently been reset to
+   * unasked.
+   */
+  consentPromptOpen: boolean
   toggleTheme: () => void
   setDrawerOpen: (open: boolean) => void
   setRequestDraft: (draft: RequestDraft | null) => void
+  setConsent: (value: Exclude<Consent, null>) => void
+  openConsentPrompt: () => void
+  closeConsentPrompt: () => void
 }
 
 /** The mode the store opens on, resolved once and applied to the document
@@ -86,4 +105,18 @@ export const useUiStore = create<UiState>((set, get) => ({
   setDrawerOpen: (drawerOpen) => set({ drawerOpen }),
   requestDraft: null,
   setRequestDraft: (requestDraft) => set({ requestDraft }),
+
+  // D68. Read once at store creation, for the same reason the theme is: a
+  // banner that appears and then vanishes is worse than one that never appeared.
+  consent: readConsent(),
+  consentPromptOpen: false,
+  setConsent: (value) => {
+    // The write may fail — private mode, storage disabled — and the choice still
+    // holds for this page load. What is lost is only remembering it next time,
+    // which is not a reason to refuse the answer now.
+    writeConsent(value)
+    set({ consent: value, consentPromptOpen: false })
+  },
+  openConsentPrompt: () => set({ consentPromptOpen: true }),
+  closeConsentPrompt: () => set({ consentPromptOpen: false }),
 }))

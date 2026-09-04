@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { InfoIcon } from './icons'
 import { t } from '../i18n/strings'
+import { useUiStore } from './uiStore'
 
 /**
  * D39 renames the repository to `casio-vault` and this line was written against
@@ -53,6 +54,8 @@ const REPO_URL = 'https://github.com/codewithelvin/casio-collection'
 export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
   const [open, setOpen] = useState(false)
   const wrapper = useRef<HTMLDivElement>(null)
+  const consent = useUiStore((state) => state.consent)
+  const openConsentPrompt = useUiStore((state) => state.openConsentPrompt)
 
   useEffect(() => {
     if (!open) return
@@ -137,6 +140,27 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
               <Link to="/symbols" onClick={() => setOpen(false)}>
                 {t('nav.symbols')}
               </Link>
+            </p>
+            {/* D68 — the way back to the analytics question, and the reason it
+                is *here* rather than in /settings is that /settings needs a
+                session: a signed-out reader who accepted would have had no way
+                to change their mind at all, and a consent that is harder to
+                withdraw than it was to give is not one. It states the current
+                answer rather than just offering the control, so the panel says
+                what is happening without anybody having to press anything. */}
+            <p className="cc-quiet cc-footer-meta">
+              <button
+                type="button"
+                className="cc-footer-link"
+                onClick={() => {
+                  setOpen(false)
+                  openConsentPrompt()
+                }}
+              >
+                {t('consent.change')}
+              </button>
+              {separator}
+              <span>{consent === 'granted' ? t('consent.state.granted') : t('consent.state.denied')}</span>
             </p>
             <p className="cc-quiet cc-footer-meta">
               <a href={REPO_URL} rel="noreferrer noopener" target="_blank">

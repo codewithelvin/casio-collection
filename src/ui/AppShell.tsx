@@ -19,6 +19,7 @@ import { t } from '../i18n/strings'
 // reason `guarded` is in the route table: a rule every new screen must remember
 // is a rule a screen will forget, and this one fails silently.
 import { usePageViews } from '../analytics/usePageViews'
+import { ConsentBanner } from './ConsentBanner'
 
 /**
  * §8.1 / §8.2 — the shell. A sticky 64 px header, a 264 px rail that becomes an
@@ -168,6 +169,10 @@ export function AppShell() {
           <Footer />
         </div>
       </div>
+      {/* D68 — outside the scrolling column and fixed to the viewport, so it
+          never moves the footer and never rides up the page. It renders nothing
+          at all once the question has been answered. */}
+      <ConsentBanner />
     </div>
   )
 }
