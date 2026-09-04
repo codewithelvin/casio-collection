@@ -20,6 +20,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App'
 import './index.css'
 import { registerServiceWorker } from './pwa/offline'
+import { startAnalytics } from './analytics/gtag'
 
 const container = document.getElementById('root')
 if (!container) throw new Error('Root element #root is missing from index.html')
@@ -31,3 +32,16 @@ createRoot(container).render(
 )
 // FR-11.1 / D33 — after render, and only in a production build. See offline.ts.
 registerServiceWorker()
+
+/**
+ * D68 — after render, like the worker above, and for the same reason: nothing
+ * here may sit between the reader and the first paint. The tag itself is
+ * `async`, so it competes for bandwidth and never for the main thread.
+ *
+ * It no-ops entirely when `VITE_GA_ID` is unset, which is every dev server and
+ * every build that has not been given the ID — so a local session cannot post
+ * page views into the production property. The `<meta>` CSP is widened by the
+ * same variable in `vite.config.ts`, so the grant and the script arrive
+ * together or neither does.
+ */
+startAnalytics()

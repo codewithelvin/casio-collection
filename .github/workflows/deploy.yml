@@ -76,6 +76,12 @@ jobs:
         env:
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+          # D68 — a repository **variable**, not a secret: the measurement ID
+          # ships in the bundle and identifies a property rather than
+          # authorising anything, and marking it secret would only hide from the
+          # next maintainer that it is public. Unset means no analytics and no
+          # CSP grant, which is the correct state for a fork.
+          VITE_GA_ID: ${{ vars.VITE_GA_ID }}
 
       # NFR-3 / D28 — 380 KB gzipped. `npm run build` has already copied
       # index.html to 404.html (D13); this reads the entry graph out of it.

@@ -137,7 +137,37 @@ function shellThemePlugin(): Plugin {
  * An absent variable is not an error. It is the state the site is in until the
  * Supabase project exists, and it produces the policy M3 shipped.
  */
-function cspPlugin(supabaseUrl: string): Plugin {
+/**
+ * D68 — the three hosts Google Analytics needs, and **not `'unsafe-inline'`.**
+ *
+ * The snippet Google hands you is an inline `<script>`, and pasting it into
+ * index.html means granting `script-src 'unsafe-inline'` — which re-enables
+ * every inline script on a site that renders user-authored display names and
+ * notes, and is the exact class of injection S7 exists to refuse. So the init
+ * lives in `src/analytics/gtag.ts`, inside our own bundle, served from `'self'`
+ * and already allowed. What is granted here is a host to fetch the tag from and
+ * two to report to.
+ *
+ * `img-src` is in the list because gtag falls back to a pixel where `fetch` and
+ * `sendBeacon` are unavailable, and a policy that permits the measurement only
+ * on the happy path is a policy that reports fewer users than the site has for
+ * reasons nobody will connect to this file.
+ *
+ * Wildcards because GA4 collects regionally — `region1.google-analytics.com`
+ * and friends are chosen by Google, not by us. `https://*.google-analytics.com`
+ * does not match the bare apex, which is correct: GA4 does not use it.
+ */
+const ANALYTICS_HOSTS = {
+  script: ['https://www.googletagmanager.com'],
+  connect: [
+    'https://*.google-analytics.com',
+    'https://*.analytics.google.com',
+    'https://www.googletagmanager.com',
+  ],
+  img: ['https://*.google-analytics.com', 'https://www.googletagmanager.com'],
+}
+
+function cspPlugin(supabaseUrl: string, gaId: string): Plugin {
   let origin = ''
   if (supabaseUrl.trim() !== '') {
     let parsed: URL
@@ -152,19 +182,37 @@ function cspPlugin(supabaseUrl: string): Plugin {
     origin = parsed.origin
   }
 
+  const analytics = gaId.trim() !== ''
+  if (analytics && !/^G-[A-Z0-9]+$/i.test(gaId.trim())) {
+    // The same argument as the Supabase URL above: a malformed value must fail
+    // the build rather than produce a policy that is quietly wrong.
+    throw new Error(`csp: VITE_GA_ID is not a GA4 measurement ID: ${gaId}`)
+  }
+
+  /** Each directive as it is written in index.html, and what to append to it. */
+  const widenings: [string, string[]][] = [
+    // Supabase speaks HTTP for auth and PostgREST and WebSocket for realtime.
+    // Realtime is unused (D1 puts the catalogue in a file and §17 rules out
+    // anything social), so only the HTTP origin is granted. If realtime is
+    // ever wanted, that is a deliberate second entry here.
+    ["connect-src 'self'", [...(origin ? [origin] : []), ...(analytics ? ANALYTICS_HOSTS.connect : [])]],
+    ["script-src 'self'", analytics ? ANALYTICS_HOSTS.script : []],
+    ["img-src 'self' data:", analytics ? ANALYTICS_HOSTS.img : []],
+  ]
+
   return {
     name: 'cc-csp',
     transformIndexHtml(html) {
-      if (origin === '') return html
-      // Supabase speaks HTTP for auth and PostgREST and WebSocket for realtime.
-      // Realtime is unused (D1 puts the catalogue in a file and §17 rules out
-      // anything social), so only the HTTP origin is granted. If realtime is
-      // ever wanted, that is a deliberate second entry here.
-      const widened = html.replace("connect-src 'self'", `connect-src 'self' ${origin}`)
-      if (widened === html) {
-        throw new Error("csp: could not find \"connect-src 'self'\" in index.html")
+      let out = html
+      for (const [directive, sources] of widenings) {
+        if (sources.length === 0) continue
+        const widened = out.replace(directive, `${directive} ${sources.join(' ')}`)
+        if (widened === out) {
+          throw new Error(`csp: could not find "${directive}" in index.html`)
+        }
+        out = widened
       }
-      return widened
+      return out
     },
   }
 }
@@ -210,7 +258,7 @@ export default defineConfig(({ mode }) => {
     react(),
     manifestPlugin(),
     shellThemePlugin(),
-    cspPlugin(env['VITE_SUPABASE_URL'] ?? ''),
+    cspPlugin(env['VITE_SUPABASE_URL'] ?? '', env['VITE_GA_ID'] ?? ''),
     // Last in the list as well as `order: 'post'`, so the file reads in the
     // order the hooks run.
     stripHtmlCommentsPlugin(),
