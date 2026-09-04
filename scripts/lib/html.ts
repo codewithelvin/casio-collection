@@ -61,21 +61,25 @@ const TOKEN = /<!--[\s\S]*?-->|<(script|style|pre|textarea)\b[^>]*>[\s\S]*?<\/\1
  */
 const BLANK_RUN = /\n(?:[ \t]*\n){2,}/g
 
-/**
- * A protected block, parked while the whitespace pass runs.
- *
- * That pass has to see across the gap a removed comment leaves — two comments
- * on their own lines leave *one* run of newlines between them, not two — so it
- * runs over the whole document rather than chunk by chunk. Standing the
- * protected blocks aside as placeholders is what lets it do that without ever
- * reaching inside a `<pre>`. NUL is not valid in an HTML document, so the
- * placeholder cannot collide with anything the input legitimately contains.
- */
-const PARK = '\u0000'
-const PARKED = /\u0000(\d+)\u0000/g
+const tidy = (text: string): string => text.replace(BLANK_RUN, '\n\n').replace(/[ \t]+$/gm, '')
 
 /**
  * Remove every HTML comment that is not inside a script, style, pre or textarea.
+ *
+ * **The text between two protected blocks is tidied as one piece, not as
+ * several.** Two comments on their own lines leave a *single* run of newlines
+ * between them once they are gone, and a pass that stopped at each removal
+ * would see two short runs and collapse neither. So the text accumulates across
+ * removed comments and is flushed — tidied — only when a block that must
+ * survive intact is reached. A run of blank lines that genuinely spans a
+ * `<script>` is not a run of blank lines; there is a script in the middle of it.
+ *
+ * An earlier version did this by standing the blocks aside as NUL-delimited
+ * placeholders and tidying the whole document in one pass. It worked, and it
+ * put a control character inside a regular expression to do it — which is a
+ * thing there is a lint rule about, and the rule is right. Accumulating needs
+ * no sentinel at all, so there is nothing to collide with and nothing to
+ * disable.
  *
  * Deliberately *not* a general HTML minifier. Collapsing attribute whitespace
  * or dropping optional closing tags would save a few hundred bytes and put a
@@ -84,13 +88,21 @@ const PARKED = /\u0000(\d+)\u0000/g
  * simple enough to hold in your head.
  */
 export function stripHtmlComments(html: string): string {
-  const parked: string[] = []
+  let out = ''
+  let pending = ''
+  let index = 0
 
-  const withoutComments = html.replace(TOKEN, (match, tag: string | undefined) =>
-    tag === undefined ? '' : `${PARK}${parked.push(match) - 1}${PARK}`,
-  )
+  for (const match of html.matchAll(TOKEN)) {
+    pending += html.slice(index, match.index)
+    index = match.index + match[0].length
 
-  const tidied = withoutComments.replace(BLANK_RUN, '\n\n').replace(/[ \t]+$/gm, '')
+    // Group 1 is the tag name, and it is undefined exactly when the comment
+    // alternative matched — which is the branch that drops what it matched.
+    if (match[1] !== undefined) {
+      out += tidy(pending) + match[0]
+      pending = ''
+    }
+  }
 
-  return tidied.replace(PARKED, (_, index: string) => parked[Number(index)] ?? '')
+  return out + tidy(pending + html.slice(index))
 }
