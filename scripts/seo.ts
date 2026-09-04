@@ -627,87 +627,129 @@ function render(shell: string, page: Page, hints: string[]): string {
  *
  * `/collection` and `/settings` need a session and would only ever render the
  * sign-in panel to a crawler. `/auth/` is a redirect target and never a page.
+ *
+ * `/assets/` is the build's own output directory and contains no page at all —
+ * 56 hashed JavaScript chunks, two stylesheets and two fonts. Nothing in it is
+ * addressable, quotable or worth a search result, so the directory is closed to
+ * anything walking it looking for content. It is closed *by extension* rather
+ * than outright: see `RENDER_CRITICAL`, because a plain `Disallow: /assets/`
+ * would close the site.
  */
-const DISALLOWED = ['/auth/', '/collection', '/settings', '/u/']
+const DISALLOWED = ['/assets/', '/auth/', '/collection', '/settings', '/u/']
 
 /**
- * Crawlers named individually, all of them given exactly the rules above.
+ * The three things inside `/assets/` that every crawler must still be allowed to
+ * fetch, and why this list has to exist at all.
  *
- * **Nothing here is blocked that `*` does not already block**, and that is the
- * client's decision: the catalogue is public Casio reference data and being read
- * is the point (D45 exists to make it findable). What the named groups buy is
- * the private paths — a crawler that reads its own group and ignores `*` still
- * sees that `/u/` is closed, and `/u/` is the one place this site holds anything
- * belonging to a person.
+ * **Every word of a watch page lives in the JavaScript bundle.** The `<noscript>`
+ * body written further down sits inside `#root` and carries the reference, the
+ * specification table and the photograph — which is the right place for a
+ * crawler that runs no JavaScript, and the wrong place for every crawler that
+ * does. Googlebot renders with Chrome: the `<noscript>` is hidden from it and
+ * what it indexes is whatever React put in `#root`. Disallow `/assets/*.js` and
+ * Googlebot fetches the HTML, hides the fallback, cannot fetch the bundle, and
+ * indexes an empty `<div>` — the exact opposite of asking for the pages to be
+ * crawled. The stylesheet is the same argument one step removed: the
+ * mobile-friendly assessment is made from the rendered layout, not the markup.
  *
- * Consecutive `User-agent` lines share the rules that follow them, which is how
- * the standard says to address a set of agents with one block.
+ * So the folder is shut and the render path is reopened over the top of it.
+ * Google, Bing and Yandex settle a conflict with the longest matching rule, and
+ * `/assets/*.css` is longer than `/assets/`, so the allow wins for the files
+ * named here while the disallow still holds for whatever else lands in there
+ * later — a source map, a stray JSON chunk, a file some plugin adds.
+ *
+ * These are patterns and not paths because Vite content-hashes the filenames.
+ * A `*` inside a rule path is not in the 1994 standard, which matters less than
+ * it sounds: RFC 9309 §2.2.2 standardised it, and the crawlers that render a
+ * page — the ones for whom this list exists at all — are exactly the ones that
+ * implement it. A fetcher old enough to miss the wildcard is a fetcher reading
+ * the `<head>` for a preview card, and it never asks for a bundle.
+ *
+ * **The trailing `$` is the whole rule, not decoration.** A robots path matches
+ * as a *prefix*, so the unanchored `/assets/*.js` reopens two things nobody
+ * meant to reopen: `index-BIW8vKB1.js.map`, because the pattern stops matching
+ * before `.map` and does not care what follows; and any `.json` at all, because
+ * `.json` begins with the four characters `.js`. Both were written here
+ * unanchored first and both were caught by evaluating the generated file
+ * against RFC 9309 rather than by reading it. `$` ends the match, which is what
+ * makes these three extensions and not three prefixes.
+ *
+ * The cost of anchoring is that a request carrying a query string — a
+ * cache-buster on the end of a bundle URL — no longer matches and falls to the
+ * directory `Disallow`. Nothing on this site emits one: the filename hash *is*
+ * the cache-buster, which is the reason the query string was never needed.
  */
-const NAMED_CRAWLERS = [
-  // Search
-  'Googlebot',
-  'Googlebot-Image',
-  'Bingbot',
-  'Slurp',
-  'DuckDuckBot',
-  'Baiduspider',
-  'YandexBot',
-  'Applebot',
-  'Qwantify',
-  'SeznamBot',
-  'Naverbot',
-  // Assistants and training corpora
-  'GPTBot',
-  'ChatGPT-User',
-  'OAI-SearchBot',
-  'ClaudeBot',
-  'Claude-User',
-  'Claude-SearchBot',
-  'anthropic-ai',
-  'CCBot',
-  'Google-Extended',
-  'Applebot-Extended',
-  'PerplexityBot',
-  'Perplexity-User',
-  'Bytespider',
-  'Amazonbot',
-  'meta-externalagent',
-  'FacebookBot',
-  'cohere-ai',
-  'Diffbot',
-  'ImagesiftBot',
-  'Omgilibot',
-  'YouBot',
-  'Timpibot',
-  'AI2Bot',
-  'Kangaroo Bot',
-  'Webzio-Extended',
-  // Link previews — these fetch a single page to render a card, and a watch
-  // shared into a chat should still show its photograph and its reference.
-  'facebookexternalhit',
-  'Twitterbot',
-  'LinkedInBot',
-  'Slackbot',
-  'Discordbot',
-  'TelegramBot',
-  'WhatsApp',
-  'Mastodon',
-  'Pinterestbot',
-]
+const RENDER_CRITICAL = ['/assets/*.css$', '/assets/*.js$', '/assets/*.woff2$']
 
+/**
+ * The watch photographs, stated rather than left implied.
+ *
+ * `Allow: /` already covers `/img/models/`, so this rule changes nothing today.
+ * It is written down because the photograph is half of what a reference page is
+ * for — an image crawler that indexes nothing else here should still index those
+ * — and because the next person to reach for a directory-wide `Disallow` should
+ * have to read a sentence about it first.
+ */
+const ALLOWED = ['/img/']
+
+/**
+ * **There is one group, and it is `*`.**
+ *
+ * This file used to name 48 crawlers individually — the search engines, the
+ * assistant and training-corpus bots, the link-preview fetchers — and give every
+ * one of them a group byte-identical to `*`. The stated reason was that a
+ * crawler reading only its own group would still see `/u/` closed. That reason
+ * does not hold. RFC 9309 §2.2.1 has a crawler select the *single* most specific
+ * group matching its token and fall back to `*` when nothing matches, so a named
+ * bot read its own copy of the rules and an unnamed one read `*`, and both got
+ * the same answer. The rationale described a parser that hunts for its own name
+ * and ignores `*` altogether — and a parser broken in that particular way is not
+ * honouring `Disallow: /u/` from any group.
+ *
+ * So the list bought nothing, and it cost: 48 names to keep current in a field
+ * that ships a new crawler every few months, a ruleset emitted twice so the two
+ * copies could drift apart, and the false authority of a roster that is stale
+ * the moment it is written. `*` covers a crawler nobody has heard of yet, which
+ * is the only kind this file will actually meet.
+ *
+ * **`Google-Extended` and `Applebot-Extended` went with them, and they were the
+ * interesting case.** Neither is a crawler token — they control whether the
+ * content may be used for AI *training*, not whether it may be fetched, and they
+ * are opt-out-only: absence means allowed. Writing `Allow: /` for them stated a
+ * real policy rather than a redundant one. It is still the policy; D45 makes
+ * being read the point, and this catalogue is public Casio reference data. It is
+ * now expressed the way the standard expresses it, by not objecting.
+ *
+ * **Rule order: specific allows, then the disallows, then the blanket allow.**
+ * It is irrelevant to a crawler that implements longest-match — RFC 9309 does,
+ * and so does every parser derived from Google's — and it is the entire answer
+ * for a simple one that obeys the first rule that matches. That is why
+ * `Allow: /` sits at the bottom rather than the top, where it used to: read
+ * first-match, a leading `Allow: /` answers every question before
+ * `Disallow: /u/` is ever reached, and `/u/` is the one rule in this file that
+ * protects a person rather than a crawl budget.
+ */
 export function robotsTxt(): string {
-  const rules = ['Allow: /', ...DISALLOWED.map((path) => `Disallow: ${path}`)]
+  const rules = [
+    ...ALLOWED.map((path) => `Allow: ${path}`),
+    ...RENDER_CRITICAL.map((path) => `Allow: ${path}`),
+    ...DISALLOWED.map((path) => `Disallow: ${path}`),
+    'Allow: /',
+  ]
   return [
     '# casiovault.com — an independent, non-commercial Casio catalogue.',
     '# Not affiliated with or endorsed by Casio Computer Co., Ltd.',
     '',
-    'User-agent: *',
-    ...rules,
+    '# Every crawler is welcome on every page, and on the watch photographs under',
+    '# /img/. What is closed is /assets/ — the build output, which holds no page.',
+    '# The three extensions allowed back out of it are the ones a page needs to',
+    '# render: block those and a rendering crawler indexes an empty document.',
     '',
-    '# Every crawler below gets the same answer as *. Named individually so that',
-    '# one reading only its own group still sees that /u/ is closed: a member',
-    '# published a page for people with the link, not for an index.',
-    ...NAMED_CRAWLERS.map((agent) => `User-agent: ${agent}`),
+    '# One group, deliberately. Search, assistants, training corpora and link',
+    '# previews are all welcome on the same terms, and a crawler that does not',
+    '# exist yet inherits them without this file being edited.',
+    '',
+    'User-agent: *',
     ...rules,
     '',
     `Sitemap: ${ORIGIN}/sitemap.xml`,
