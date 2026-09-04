@@ -6,6 +6,9 @@ import react from '@vitejs/plugin-react'
 // No `antd` behind this import, which is the whole reason `palette.ts` exists
 // separately from `tokens.ts` — see the header of either file.
 import { HEADING, SHELL_TOKENS } from './src/theme/palette.ts'
+// Build-only, and tested on its own — see the header of that file for why the
+// comments come out of the artefact and stay in the repository.
+import { stripHtmlComments } from './scripts/lib/html.ts'
 
 // D39 — the site serves from the root of its own domain, casiovault.com. This
 // read `/casio-collection/` until that domain existed, and dropping to `/` is
@@ -166,6 +169,31 @@ function cspPlugin(supabaseUrl: string): Plugin {
   }
 }
 
+/**
+ * The comments come out of the served HTML — **and this runs last, deliberately.**
+ *
+ * `order: 'post'` puts it after Vite's own script and stylesheet injection and
+ * after every other plugin in this file, so it strips what the shell was
+ * written with *and* anything a plugin adds later. The prerender step then
+ * copies whatever comes out of here into 3 500-odd files (`scripts/seo.ts`), so
+ * this one hook is the difference between the CSP rationale shipping once and
+ * shipping three and a half thousand times.
+ *
+ * `apply: 'build'` leaves the dev server alone. Reading the served document
+ * while working on it is the one case where the comments are worth having, and
+ * dev is not the artefact.
+ */
+function stripHtmlCommentsPlugin(): Plugin {
+  return {
+    name: 'cc-strip-html-comments',
+    apply: 'build',
+    transformIndexHtml: {
+      order: 'post',
+      handler: (html) => stripHtmlComments(html),
+    },
+  }
+}
+
 // D13: the project base path. Every asset and every fetch must be built from
 // import.meta.env.BASE_URL — a hard-coded '/catalog/catalog.json' works in dev
 // and 404s in production. Closing O1 (the domain) changes this line, the OAuth
@@ -183,7 +211,23 @@ export default defineConfig(({ mode }) => {
     manifestPlugin(),
     shellThemePlugin(),
     cspPlugin(env['VITE_SUPABASE_URL'] ?? ''),
+    // Last in the list as well as `order: 'post'`, so the file reads in the
+    // order the hooks run.
+    stripHtmlCommentsPlugin(),
   ],
+  /**
+   * **No legal comments in the bundle either.**
+   *
+   * esbuild strips ordinary comments as it minifies and *keeps* `/*!` and
+   * `@license` banners by default — that is the right default for a library and
+   * the wrong one for an application that vendors nothing requiring attribution
+   * in the artefact. Nothing in the current dependency set emits one, which is
+   * exactly why this is worth setting now: the day a transitive dependency adds
+   * a banner, it arrives in every visitor's first 380 KB without a diff to
+   * review. Licences are honoured in `package.json` and `LICENSE`, not by
+   * shipping a paragraph to a phone.
+   */
+  esbuild: { legalComments: 'none' },
   build: {
     /**
      * D40, closing O10 — **React is pinned to its own chunk and AntD is not.**

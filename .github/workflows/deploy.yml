@@ -25,7 +25,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # The whole history, not the default single commit — the sitemap's
+      # <lastmod> for each of 3 500 URLs is the commit date of the catalogue
+      # file behind it (scripts/lib/lastmod.ts). On a shallow clone git reports
+      # the one fetched commit as the last change to every file in the
+      # repository, so the step detects that and emits no dates at all rather
+      # than telling every crawler that the entire site changed this morning.
+      # A green deploy with a dateless sitemap is the failure mode this avoids,
+      # and it is invisible without this line.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       # No actions/configure-pages step. It was tried with enablement:true to
       # save a manual setting and it fails: the default GITHUB_TOKEN cannot
@@ -74,6 +84,20 @@ jobs:
 
       - name: Verify the SPA fallback exists (D13)
         run: test -f dist/404.html
+
+      # The gate the prerender step never had: crawl the artefact the way a
+      # search engine crawls the site — resolving paths the way GitHub Pages
+      # does, obeying the generated robots.txt, following links out of the
+      # served HTML — and fail on anything that loses a page. A link to nothing,
+      # a sitemap URL nothing links to, a page that is noindex and advertised
+      # anyway, a page with no title.
+      #
+      # Every check here exists because the artefact could satisfy every other
+      # step in this job and still not be crawlable: 389 orphaned sitemap URLs
+      # shipped once with the whole suite green, and were found by somebody
+      # crawling the live site months later.
+      - name: Crawl the artefact
+        run: npm run crawl
 
       - uses: actions/upload-pages-artifact@v3
         with:

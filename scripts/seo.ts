@@ -32,6 +32,10 @@ import { CATALOG, type Catalog, type PublishedModel } from '../src/catalog/schem
 // looks at — the crawler's.
 import { ALL_SYMBOLS, SYMBOL_GROUPS, manualUrl } from '../src/routes/symbols/symbols.ts'
 import { t } from '../src/i18n/strings.ts'
+// `<lastmod>` is taken from the commit that last touched the file a page is
+// generated from, or omitted. The header of that module is the argument for why
+// those are the only two options.
+import { fileDates, newest } from './lib/lastmod.ts'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const dist = join(root, 'dist')
@@ -60,14 +64,79 @@ interface Page {
   /** Rendered inside <noscript>, and the only content a JS-less crawler sees. */
   body: string
   jsonLd?: object[]
+  /** An absolute URL. Absent means the page previews with the site card. */
   image?: string | undefined
+  /** Describes `image` for a reader whose preview card is read aloud. */
+  imageAlt?: string | undefined
   /** Excluded from the sitemap and marked noindex. */
   noindex?: boolean
+  /** Served at more than one URL, so it may not claim any of them. See `notFoundPage`. */
+  noCanonical?: boolean
   /** Sitemap hint. Lines change when the catalogue does; models rarely. */
   priority: string
+  /**
+   * The repository-relative files this page is generated from, newest of which
+   * becomes its `<lastmod>`. A watch and its series have one; a line page has
+   * every series file in the line, because adding a series to a line changes
+   * the line page. Absent means the page is left out of the dating entirely.
+   */
+  sources?: string[]
 }
 
+/**
+ * Where a series is written down. Line ids and line directory names are the
+ * same string, and `catalog:build` is what enforces that — a line with no
+ * directory publishes no series and never reaches this file.
+ */
+const seriesFile = (line: Catalog['lines'][number], seriesId: string) =>
+  `catalog-src/${line.id}/${seriesId}.yaml`
+
 const canonical = (path: string) => `${ORIGIN}/${path}${path === '' ? '' : '/'}`
+
+/**
+ * The link-preview card for every page that is not a watch.
+ *
+ * A page with no `og:image` previews as a grey rectangle with a URL in it, and
+ * that is what the front door, all seven line pages, 566 series pages and the
+ * glossary have looked like in every chat window and every social post since
+ * the site went up — the ones most likely to be shared by somebody describing
+ * the project rather than linking a single reference. It is a committed file
+ * rather than a generated one for the same reason the PWA icons are (see
+ * `scripts/gen-icons.mjs`): it changes roughly never, and a preview card that
+ * silently disappears because a build step was reordered is a bad trade.
+ *
+ * A watch page overrides it with the photograph, which is a better card than any
+ * generic one — see `page.image`.
+ */
+const SOCIAL_CARD = `${ORIGIN}/og.png`
+
+/**
+ * **What a crawler may do with a page it has decided to index.**
+ *
+ * `index, follow` is the default, so on its own this tag would say nothing.
+ * The other three are the reason it is written at all, and two of them are
+ * worth real traffic to a catalogue like this one:
+ *
+ *   * `max-image-preview:large` lets Google show the watch photograph at full
+ *     size in a result and in Discover. The default is a thumbnail, and for a
+ *     site whose subject is what a watch looks like, the thumbnail is the
+ *     product being shown badly. This is opt-in — there is no way to get it
+ *     other than by asking.
+ *   * `max-snippet:-1` removes the length cap on the text snippet, so a
+ *     specification line is allowed to appear in full rather than being cut at
+ *     Google's default.
+ *   * `max-video-preview:-1` is stated for completeness. There is no video on
+ *     this site; the directive costs nine bytes and means the answer does not
+ *     change on the day there is one.
+ *
+ * These are the same directives the EU Copyright Directive made necessary for
+ * publishers in the EEA — without them a crawler is entitled to assume the
+ * conservative default, which is exactly what it did.
+ */
+const INDEXABLE = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
+
+/** Reachable and crawlable, and deliberately not listed. See `listed`. */
+const WITHHELD = 'noindex, follow'
 
 /**
  * The same test as `browsable` in `src/catalog/client.ts`, and it has to be the
@@ -127,6 +196,16 @@ function homePage(catalog: Catalog): Page {
     title: 'Casio Vault — the Casio watch catalogue, and the ones you own',
     description: `Browse ${models.length} Casio references across ${catalog.series.length} series. Search by reference, filter by year and feature, and mark what you own. ${DISCLAIMER}`,
     priority: '1.0',
+    // The front door carries the counts and the line list, so anything that
+    // changes the catalogue changes this page.
+    sources: [
+      'catalog-src/lines.yaml',
+      'catalog-src/editions.yaml',
+      ...catalog.series.map((entry) => {
+        const line = catalog.lines.find((candidate) => candidate.id === entry.line)
+        return line ? seriesFile(line, entry.id) : ''
+      }),
+    ].filter(Boolean),
     body: `
       <h1>Casio Vault</h1>
       <p>Browse the Casio watch catalogue by line and series, and keep track of the ones you own.</p>
@@ -183,6 +262,8 @@ function linePage(catalog: Catalog, line: Catalog['lines'][number]): Page {
     title: `${line.name} — every reference in the catalogue · Casio Vault`,
     description: `${models.length} Casio ${line.name} references in ${series.length} series, with the specification each one is actually sourced for. ${DISCLAIMER}`,
     priority: '0.8',
+    // Every series in the line, because the page is the list of them.
+    sources: ['catalog-src/lines.yaml', ...series.map((entry) => seriesFile(line, entry.id))],
     body: `
       <h1>${escapeHtml(line.name)}</h1>
       <p>${models.length} references in ${series.length} series.</p>
@@ -220,6 +301,7 @@ function seriesPage(
       .map((model) => model.ref)
       .join(', ')}${models.length > 6 ? ' and more' : ''}. ${DISCLAIMER}`,
     priority: '0.7',
+    sources: [seriesFile(line, series.id)],
     body: `
       <h1>${escapeHtml(series.name)}</h1>
       <p>Part of <a href="/line/${line.slug}/">${escapeHtml(line.name)}</a>.</p>
@@ -264,6 +346,7 @@ function editionsPage(catalog: Catalog): Page {
       .map((edition) => edition.name)
       .join(', ')}${catalog.editions.length > 5 ? ' and more' : ''}. ${DISCLAIMER}`,
     priority: '0.8',
+    sources: ['catalog-src/editions.yaml'],
     body: `
       <h1>Editions</h1>
       <p>Watches Casio gave a name to and released under it — collaborations, dedications, anniversaries and seasonal collections.</p>
@@ -321,6 +404,8 @@ function symbolsPage(): Page {
       .map((symbol) => symbol.token ?? symbol.name)
       .join(', ')} and ${ALL_SYMBOLS.length - 8} more, each with the Casio manual that defines it. ${DISCLAIMER}`,
     priority: '0.8',
+    // The one page here whose source is code rather than catalogue.
+    sources: ['src/routes/symbols/symbols.ts'],
     body: `
       <h1>${escapeHtml(t('symbols.heading'))}</h1>
       <p>${escapeHtml(t('symbols.lead'))}</p>
@@ -361,6 +446,10 @@ function editionPage(catalog: Catalog, edition: Catalog['editions'][number]): Pa
       edition.partner ? `, Casio with ${edition.partner}` : ''
     }: ${models.map((model) => model.ref).join(', ')}. ${DISCLAIMER}`,
     priority: '0.7',
+    // The edition is defined in one file; the references it names live in their
+    // own series files, and a specification changing there does not change what
+    // this page says.
+    sources: ['catalog-src/editions.yaml'],
     body: `
       <h1>${escapeHtml(edition.name)}</h1>
       ${edition.partner ? `<p>Casio with ${escapeHtml(edition.partner)}${edition.year ? `, ${edition.year}` : ''}.</p>` : ''}
@@ -455,12 +544,23 @@ function watchPage(catalog: Catalog, model: PublishedModel): Page {
     }. Sourced from a real page and credited. ${DISCLAIMER}`,
     priority: '0.6',
     image,
+    // What the photograph shows, in the words a person would use. It is the
+    // alt text of the card, and on a watch page it is the one string that
+    // describes the picture rather than the record.
+    imageAlt: image ? `Casio ${[model.ref, model.name].filter(Boolean).join(', ')}` : undefined,
+    sources: line ? [seriesFile(line, model.series)] : undefined,
     body: `
       <h1>${escapeHtml(model.ref)}</h1>
       ${model.name ? `<p>${escapeHtml(model.name)}</p>` : ''}
       ${
+        // `width` without `height`, and the pair was wrong. The normalised
+        // photographs are not all square — `31cs-10.webp` is 400×500 — so a
+        // fixed `height="400"` squashed every portrait watch on the site for
+        // the one reader who sees this markup. Declaring only the width lets
+        // the browser use the file's own aspect ratio, which is the fact that
+        // was being asserted incorrectly rather than one worth asserting.
         image
-          ? `<img src="/img/models/${model.image}.webp" width="400" height="400" alt="${escapeHtml(model.ref)}" />`
+          ? `<img src="/img/models/${model.image}.webp" width="400" alt="${escapeHtml(`Casio ${model.ref}`)}" />`
           : ''
       }
       <dl>
@@ -528,9 +628,12 @@ function render(shell: string, page: Page, hints: string[]): string {
   /**
    * **The shell's own og:/twitter: tags have to come out before ours go in.**
    *
-   * index.html ships a generic set so that any page this step does not write —
-   * 404.html, and /search — still previews as something. Left in place they
-   * would be *duplicates*, and a crawler reading duplicated Open Graph tags
+   * index.html ships a generic set so that a page this step does not write
+   * still previews as something. Since 404.html is written here too, the only
+   * URL left in that category is `/search`, which has no file and is served by
+   * the fallback — but the tags stay in the shell regardless, because they are
+   * also what the dev server serves. Left in place *here* they would be
+   * duplicates, and a crawler reading duplicated Open Graph tags
    * takes the first: every watch on the site would have shared as "Casio
    * Vault". That is the whole feature failing while every page looks correct in
    * a browser, which is why it is stripped here rather than removed from the
@@ -541,28 +644,32 @@ function render(shell: string, page: Page, hints: string[]): string {
     '',
   )
 
+  // A photograph is a better card than any generic one, so a watch page uses
+  // its own and everything else falls back to the site card. Nothing is left
+  // without one: a preview with no image is the version of this page a reader
+  // is least likely to click.
+  const image = page.image ?? SOCIAL_CARD
+
   const head: string[] = [
     ...hints,
-    `<link rel="canonical" href="${canonical(page.path)}" />`,
+    ...(page.noCanonical
+      ? []
+      : [
+          `<link rel="canonical" href="${canonical(page.path)}" />`,
+          `<meta property="og:url" content="${canonical(page.path)}" />`,
+        ]),
+    `<meta name="robots" content="${page.noindex ? WITHHELD : INDEXABLE}" />`,
     `<meta property="og:type" content="website" />`,
-    `<meta name="twitter:card" content="${page.image ? 'summary_large_image' : 'summary'}" />`,
-    `<meta property="og:url" content="${canonical(page.path)}" />`,
+    `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta property="og:title" content="${escapeHtml(page.title)}" />`,
     `<meta property="og:description" content="${escapeHtml(page.description)}" />`,
     `<meta property="og:site_name" content="Casio Vault" />`,
+    `<meta property="og:image" content="${image}" />`,
+    `<meta property="og:image:alt" content="${escapeHtml(page.imageAlt ?? 'Casio Vault')}" />`,
     `<meta name="twitter:title" content="${escapeHtml(page.title)}" />`,
     `<meta name="twitter:description" content="${escapeHtml(page.description)}" />`,
+    `<meta name="twitter:image" content="${image}" />`,
   ]
-
-  if (page.image) {
-    // A photograph is worth a large card; §8.6's typographic tile is not, and a
-    // model with no image gets `summary` above — a large card would be a wide
-    // empty rectangle with a reference code in the corner.
-    head.push(`<meta property="og:image" content="${page.image}" />`)
-    head.push(`<meta name="twitter:image" content="${page.image}" />`)
-  }
-
-  if (page.noindex) head.push('<meta name="robots" content="noindex, follow" />')
 
   if (page.jsonLd) {
     for (const block of page.jsonLd) {
@@ -627,70 +734,47 @@ function render(shell: string, page: Page, hints: string[]): string {
  *
  * `/collection` and `/settings` need a session and would only ever render the
  * sign-in panel to a crawler. `/auth/` is a redirect target and never a page.
+ * Neither is linked from anywhere a signed-out reader can see, so no crawler
+ * reaches them by following links; these three rules are what closes the door
+ * on a URL that arrives from somewhere else entirely — a referrer log, a pasted
+ * link, somebody's browser history sync.
  *
- * `/assets/` is the build's own output directory and contains no page at all —
- * 56 hashed JavaScript chunks, two stylesheets and two fonts. Nothing in it is
- * addressable, quotable or worth a search result, so the directory is closed to
- * anything walking it looking for content. It is closed *by extension* rather
- * than outright: see `RENDER_CRITICAL`, because a plain `Disallow: /assets/`
- * would close the site.
+ * **`/assets/` came off this list, and removing it is the single most important
+ * line in the file.** The build output was closed here on the reasoning that it
+ * holds no page, with `/assets/*.css$`, `/assets/*.js$` and `/assets/*.woff2$`
+ * allowed back out over the top so that a rendering crawler could still fetch
+ * what a page needs to render. That construction is correct — and it is correct
+ * *only* for a parser that implements RFC 9309's wildcards and end-of-match
+ * anchor. A parser that does not implement them reads the three `Allow` rules
+ * as paths that literally begin `/assets/*`, matches none of them, falls
+ * through to `Disallow: /assets/`, and declines to fetch the bundle. Every word
+ * of every watch page on this site is in that bundle: the `<noscript>` body
+ * below is hidden from anything that runs JavaScript, so what such a crawler
+ * indexes is an empty `<div id="root">`.
+ *
+ * Weigh the two sides. The upside of closing the directory was crawl budget on
+ * sixty hashed files that no page links to as a destination and that no crawler
+ * walks looking for content — which is to say, nothing measurable. The downside
+ * is a whole site indexed blank by any fetcher whose robots parser is simpler
+ * than Google's. There are no source maps in the artefact (`build.sourcemap` is
+ * off) and nothing else in there is private, so there is not even a secondary
+ * reason to keep it. When a rule's best case is zero and its worst case is the
+ * site, the rule goes.
  */
-const DISALLOWED = ['/assets/', '/auth/', '/collection', '/settings', '/u/']
+const DISALLOWED = ['/auth/', '/collection', '/settings', '/u/']
 
 /**
- * The three things inside `/assets/` that every crawler must still be allowed to
- * fetch, and why this list has to exist at all.
+ * Stated rather than left implied — both of these are already covered by
+ * `Allow: /`.
  *
- * **Every word of a watch page lives in the JavaScript bundle.** The `<noscript>`
- * body written further down sits inside `#root` and carries the reference, the
- * specification table and the photograph — which is the right place for a
- * crawler that runs no JavaScript, and the wrong place for every crawler that
- * does. Googlebot renders with Chrome: the `<noscript>` is hidden from it and
- * what it indexes is whatever React put in `#root`. Disallow `/assets/*.js` and
- * Googlebot fetches the HTML, hides the fallback, cannot fetch the bundle, and
- * indexes an empty `<div>` — the exact opposite of asking for the pages to be
- * crawled. The stylesheet is the same argument one step removed: the
- * mobile-friendly assessment is made from the rendered layout, not the markup.
- *
- * So the folder is shut and the render path is reopened over the top of it.
- * Google, Bing and Yandex settle a conflict with the longest matching rule, and
- * `/assets/*.css` is longer than `/assets/`, so the allow wins for the files
- * named here while the disallow still holds for whatever else lands in there
- * later — a source map, a stray JSON chunk, a file some plugin adds.
- *
- * These are patterns and not paths because Vite content-hashes the filenames.
- * A `*` inside a rule path is not in the 1994 standard, which matters less than
- * it sounds: RFC 9309 §2.2.2 standardised it, and the crawlers that render a
- * page — the ones for whom this list exists at all — are exactly the ones that
- * implement it. A fetcher old enough to miss the wildcard is a fetcher reading
- * the `<head>` for a preview card, and it never asks for a bundle.
- *
- * **The trailing `$` is the whole rule, not decoration.** A robots path matches
- * as a *prefix*, so the unanchored `/assets/*.js` reopens two things nobody
- * meant to reopen: `index-BIW8vKB1.js.map`, because the pattern stops matching
- * before `.map` and does not care what follows; and any `.json` at all, because
- * `.json` begins with the four characters `.js`. Both were written here
- * unanchored first and both were caught by evaluating the generated file
- * against RFC 9309 rather than by reading it. `$` ends the match, which is what
- * makes these three extensions and not three prefixes.
- *
- * The cost of anchoring is that a request carrying a query string — a
- * cache-buster on the end of a bundle URL — no longer matches and falls to the
- * directory `Disallow`. Nothing on this site emits one: the filename hash *is*
- * the cache-buster, which is the reason the query string was never needed.
+ * `/img/` is here because the photograph is half of what a reference page is
+ * for: an image crawler that indexes nothing else here should still index those,
+ * and the next person to reach for a directory-wide `Disallow` should have to
+ * read a sentence about it first. `/assets/` is here for the same reason one
+ * step further on — it is where the argument above lives, and a bare absence
+ * would read as an oversight to be tidied up rather than as the decision it is.
  */
-const RENDER_CRITICAL = ['/assets/*.css$', '/assets/*.js$', '/assets/*.woff2$']
-
-/**
- * The watch photographs, stated rather than left implied.
- *
- * `Allow: /` already covers `/img/models/`, so this rule changes nothing today.
- * It is written down because the photograph is half of what a reference page is
- * for — an image crawler that indexes nothing else here should still index those
- * — and because the next person to reach for a directory-wide `Disallow` should
- * have to read a sentence about it first.
- */
-const ALLOWED = ['/img/']
+const ALLOWED = ['/img/', '/assets/']
 
 /**
  * **There is one group, and it is `*`.**
@@ -732,7 +816,6 @@ const ALLOWED = ['/img/']
 export function robotsTxt(): string {
   const rules = [
     ...ALLOWED.map((path) => `Allow: ${path}`),
-    ...RENDER_CRITICAL.map((path) => `Allow: ${path}`),
     ...DISALLOWED.map((path) => `Disallow: ${path}`),
     'Allow: /',
   ]
@@ -740,14 +823,20 @@ export function robotsTxt(): string {
     '# casiovault.com — an independent, non-commercial Casio catalogue.',
     '# Not affiliated with or endorsed by Casio Computer Co., Ltd.',
     '',
-    '# Every crawler is welcome on every page, and on the watch photographs under',
-    '# /img/. What is closed is /assets/ — the build output, which holds no page.',
-    '# The three extensions allowed back out of it are the ones a page needs to',
-    '# render: block those and a rendering crawler indexes an empty document.',
+    '# Every crawler is welcome on every page, on the watch photographs under',
+    '# /img/, and on the JavaScript and CSS under /assets/ that a page needs in',
+    '# order to render. Blocking the last of those is how a rendering crawler',
+    '# ends up indexing an empty document, so nothing here blocks it.',
+    '',
+    '# What is closed needs a session or belongs to a person: the four paths',
+    '# below are a sign-in wall, a redirect target, and somebody’s collection.',
     '',
     '# One group, deliberately. Search, assistants, training corpora and link',
     '# previews are all welcome on the same terms, and a crawler that does not',
     '# exist yet inherits them without this file being edited.',
+    '',
+    '# No Crawl-delay: it is not in RFC 9309, Google ignores it, and the site is',
+    '# 3 500 static files on a CDN — there is nothing here to be gentle with.',
     '',
     'User-agent: *',
     ...rules,
@@ -787,8 +876,81 @@ function resourceHints(): string[] {
   ]
 }
 
+/**
+ * **D13's fallback, written rather than copied — and the reason is one tag.**
+ *
+ * `spa-fallback.mjs` copies the built shell to 404.html so a deep link survives
+ * a refresh, and GitHub Pages serves that file, with an HTTP 404, for every URL
+ * this step does not write: `/search`, `/collection`, `/settings`, `/u/alice`,
+ * and every mistyped path anyone ever follows. The copy carried the home page's
+ * generic title and description and no directive at all, which left the whole
+ * of that set looking to a crawler like an ordinary page that happens to be
+ * about "Casio Vault".
+ *
+ * `noindex, follow` is the honest description of all of them at once. The 404
+ * status already keeps a well-behaved crawler from indexing the URL; the tag is
+ * what covers the ones that read the body anyway, and — this is the part the
+ * status code cannot do — it covers `/u/`, where the page is real, the status
+ * is a GitHub Pages artefact, and D45's promise is that a published collection
+ * is shareable without being *listed*.
+ *
+ * **No canonical, deliberately.** Every other page here points at itself, which
+ * is only meaningful because every other page is served at exactly one URL.
+ * This file is served at thousands. A self-referencing canonical would tell a
+ * crawler that `/u/alice` is really `/404/` — a wrong statement about somebody
+ * else's page, made by a file that has no address of its own.
+ */
+function notFoundPage(catalog: Catalog): Page {
+  return {
+    path: '404',
+    noCanonical: true,
+    noindex: true,
+    priority: '0.0',
+    title: 'Page not found · Casio Vault',
+    description: `This page does not exist. Browse the Casio catalogue by line and series instead. ${DISCLAIMER}`,
+    body: `
+      <h1>Page not found</h1>
+      <p>There is no page at this address. The catalogue is here:</p>
+      <ul>
+        ${catalog.lines
+          .map(
+            (line) =>
+              `<li><a href="/line/${line.slug}/">${escapeHtml(line.name)}</a> — ${line.count} references</li>`,
+          )
+          .join('\n        ')}
+      </ul>
+      <p><a href="/">Casio Vault</a> — ${DISCLAIMER}</p>`,
+  }
+}
+
 async function main() {
   const shell = await readFile(join(dist, 'index.html'), 'utf8')
+
+  /**
+   * **This step writes its own input, so running it twice compounds.**
+   *
+   * The home page's path is `''`, which means it is written to
+   * `dist/index.html` — the very file read as the shell three lines up. Within
+   * one run that is harmless, because the shell is read once and held. Across
+   * two runs it is not: the second run takes the *rendered* home page as its
+   * shell and injects a second canonical, a second Open Graph set and a second
+   * copy of every JSON-LD block into all 3 500 pages. The artefact in this
+   * working tree had four of each when this was found, from re-running the step
+   * against a build that was a few days old.
+   *
+   * Nothing in CI does that — `npm run build` rebuilds the shell first — which
+   * is exactly why it is worth failing loudly here. A malformed artefact that
+   * only ever appears on somebody's laptop is one that gets debugged as a
+   * mystery rather than read as a message.
+   */
+  if (shell.includes('rel="canonical"')) {
+    throw new Error(
+      'seo: dist/index.html has already been rendered by this step. It reads the shell it ' +
+        'overwrites, so a second run injects a duplicate head into every page. Run ' +
+        '`npm run build`, which rebuilds the shell from index.html first.',
+    )
+  }
+
   const hints = resourceHints()
   const catalog = CATALOG.parse(
     JSON.parse(await readFile(join(dist, 'catalog/catalog.json'), 'utf8')),
@@ -829,25 +991,75 @@ async function main() {
     await writeFile(join(dir, 'index.html'), render(shell, page, hints), 'utf8')
   }
 
+  // The SPA fallback, over the top of the plain copy `spa-fallback.mjs` made.
+  // That copy runs first and stays: it is what guarantees a fallback exists
+  // even if this step fails, and §14.3's deploy gate checks for the file.
+  await writeFile(join(dist, '404.html'), render(shell, notFoundPage(catalog), hints), 'utf8')
+
+  /**
+   * `<lastmod>`, or nothing at all.
+   *
+   * `fileDates` returns null when the history is shallow or absent, and null
+   * means every URL below goes out without a date rather than with a guessed
+   * one — see that file for why a wrong `lastmod` is worse than no `lastmod`.
+   * The count is logged either way, because "the sitemap has no dates" is not
+   * something anybody would notice from a green build.
+   */
+  const dates = await fileDates(root, ['catalog-src', 'src/routes/symbols/symbols.ts'])
+  const lastmod = (page: Page): string | undefined =>
+    dates && page.sources ? newest(page.sources.map((file) => dates.get(file))) : undefined
+
   const indexed = pages.filter((page) => !page.noindex)
+  let dated = 0
+  let illustrated = 0
+
   const urls = indexed
-    .map(
-      (page) =>
-        `  <url><loc>${canonical(page.path)}</loc><changefreq>monthly</changefreq><priority>${page.priority}</priority></url>`,
-    )
+    .map((page) => {
+      const modified = lastmod(page)
+      if (modified) dated += 1
+      if (page.image) illustrated += 1
+
+      return (
+        `  <url><loc>${canonical(page.path)}</loc>` +
+        // `<changefreq>monthly</changefreq>` used to sit here and was removed
+        // with the dates going in. It is a claim about the future that nothing
+        // in this build verifies, Google has said for years that it ignores it,
+        // and it was 116 KB of this file. `<priority>` stays: it is a statement
+        // about this site's own shape rather than about time, and it is the
+        // only way the sitemap says a line page matters more than one of the
+        // 2 900 references under it.
+        (modified ? `<lastmod>${modified}</lastmod>` : '') +
+        `<priority>${page.priority}</priority>` +
+        // The watch photographs, offered to Google Images as photographs rather
+        // than left to be discovered as an `<img>` inside a rendered page. For
+        // a catalogue whose subject is what a watch looks like, image search is
+        // not a secondary channel — and `<image:loc>` is the only way to say
+        // that a URL has a picture on it without the crawler running the app.
+        (page.image ? `<image:image><image:loc>${page.image}</image:loc></image:image>` : '') +
+        `</url>`
+      )
+    })
     .join('\n')
 
   await writeFile(
     join(dist, 'sitemap.xml'),
-    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`,
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+      `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n` +
+      `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n` +
+      `${urls}\n</urlset>\n`,
     'utf8',
   )
 
   await writeFile(join(dist, 'robots.txt'), robotsTxt(), 'utf8')
 
   console.log(
-    `seo: ${pages.length} pages written (${indexed.length} in the sitemap, ` +
+    `seo: ${pages.length} pages written + 404.html (${indexed.length} in the sitemap, ` +
       `${pages.length - indexed.length} noindex), robots.txt, sitemap.xml`,
+  )
+  console.log(
+    dates
+      ? `seo: ${dated} of ${indexed.length} URLs dated from git, ${illustrated} with a photograph`
+      : `seo: NO <lastmod> — git history is shallow or unavailable, so no date could be trusted`,
   )
 }
 

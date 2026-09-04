@@ -15,6 +15,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "budget": "node scripts/bundle-budget.mjs",
+    "crawl": "node scripts/crawl.ts",
     "catalog:validate": "node scripts/catalog/validate.ts",
     "catalog:build": "node scripts/catalog/build.ts",
     "catalog:images": "node scripts/catalog/images.ts",

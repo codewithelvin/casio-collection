@@ -17,6 +17,10 @@ import { readFile, readdir, writeFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+// Vite's own esbuild, through the public re-export rather than by importing
+// esbuild directly — it is a transitive dependency here, not a declared one,
+// and §5.3 keeps that distinction meaningful.
+import { transformWithEsbuild } from 'vite'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const dist = join(root, 'dist')
@@ -186,8 +190,38 @@ self.addEventListener('fetch', (event) => {
 })
 `
 
-  await writeFile(join(dist, 'sw.js'), sw, 'utf8')
-  console.log(`sw: dist/sw.js at ${version}, ${precache.length} files precached`)
+  /**
+   * **The worker ships minified, and the argument above it does not ship at all.**
+   *
+   * Everything down to here is written as one long template literal, comments
+   * and all, because this file *is* the source — there is nowhere else the
+   * reasoning about network-first navigation or the missing `skipWaiting` could
+   * live. What that meant in practice is that the four paragraphs explaining
+   * those decisions were served to every visitor: 4.7 KB of file, well over
+   * half of it prose, fetched on the first visit and again on every deploy.
+   *
+   * esbuild rather than a regex, because stripping comments from JavaScript by
+   * pattern is the classic way to eat a `//` inside a URL or a `/*` inside a
+   * regex literal — and this file contains both. It is also the same tool Vite
+   * minifies the bundle with, so the worker and the app are treated alike.
+   *
+   * `target: 'es2020'` is below anything that can register a service worker at
+   * all, so nothing is transpiled that did not need to be; the option is there
+   * to stop esbuild's `esnext` default from emitting syntax newer than the
+   * browsers this actually runs in.
+   */
+  const minified = await transformWithEsbuild(sw, 'sw.js', {
+    minify: true,
+    legalComments: 'none',
+    target: 'es2020',
+    sourcemap: false,
+  })
+
+  await writeFile(join(dist, 'sw.js'), minified.code, 'utf8')
+  console.log(
+    `sw: dist/sw.js at ${version}, ${precache.length} files precached ` +
+      `(${sw.length} → ${minified.code.length} bytes)`,
+  )
 }
 
 await main()

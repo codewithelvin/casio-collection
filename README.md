@@ -76,6 +76,44 @@ boundary. Ant Design 5's static `message` / `notification` / `Modal.confirm` API
 still call the React 18 render API; without the patch they fail at runtime rather
 than at build time.
 
+## Every URL is a real page
+
+This is a single-page app on a static host, which by default means every URL
+serves the same empty `<div id="root">` and every deep link returns HTTP 404. For
+a catalogue — a site whose whole value is being found when somebody searches a
+reference code — that is the difference between existing and not. So after Vite
+builds, `scripts/seo.ts` writes a real HTML file for the front door, every line,
+every series, every edition, the glossary and all 3 900-odd models: the built
+shell, its head rewritten for that page, and a `<noscript>` body carrying the
+same facts the React page will. The SPA still boots and takes over.
+
+Two crawlers see two different documents and both have to be right. One runs no
+JavaScript and reads the `<noscript>` body; the other renders with Chrome, never
+sees that body, and indexes whatever React put in `#root`. That is why nothing in
+`robots.txt` blocks `/assets/` — block the bundle and the second crawler indexes
+an empty document.
+
+`npm run crawl` is the check. It walks `dist/` the way a search engine walks the
+site: resolving paths the way GitHub Pages does (including the 301 on a missing
+trailing slash and the `404.html` fallback), obeying the generated `robots.txt`
+under RFC 9309 matching, and following links out of the served HTML. It fails the
+build on anything that loses a page — a link to nothing, a sitemap URL nothing
+links to, a `noindex` page advertised in the sitemap, a page with no title, an
+HTML comment that survived into the artefact. `--render` additionally opens a
+sample in Chromium and checks what the rendering crawler gets.
+
+Two things worth knowing because neither is visible in a diff:
+
+- **`<lastmod>` comes from git.** Each URL's date is the commit that last touched
+  the YAML behind it (`scripts/lib/lastmod.ts`). On a shallow clone git reports
+  the one fetched commit as the last change to every file, so the step detects
+  that and emits **no** dates rather than wrong ones — which is why the deploy
+  checks out with `fetch-depth: 0`.
+- **Comments do not ship.** `index.html` is full of them and none reaches the
+  artefact: a Vite plugin strips HTML comments at build time, `sw.js` is minified
+  through esbuild, and `legalComments: 'none'` keeps dependency banners out of the
+  bundle. The reasoning stays in the repository, where it is read.
+
 ## Commands
 
 ```bash
@@ -87,6 +125,7 @@ npm run test:coverage
 npm run lint
 npm run typecheck
 npm run budget       # initial JS against the 380 KB gzipped budget
+npm run crawl        # crawl dist/ the way a search engine would; --render adds Chromium
 
 npm run catalog:validate   # parse catalog-src and run every integrity check
 npm run catalog:build      # validate, then emit both catalogue artefacts
