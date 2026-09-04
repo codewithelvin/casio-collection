@@ -35,8 +35,34 @@ interface AnalyticsWindow extends Window {
   gtag?: (...args: unknown[]) => void
 }
 
-/** The measurement ID, or '' when analytics is not configured for this build. */
-export const MEASUREMENT_ID: string = import.meta.env.VITE_GA_ID ?? ''
+/**
+ * The measurement ID, or '' when analytics is not configured for this build.
+ *
+ * A function rather than a constant, and the reason is a bug this shipped with:
+ * read once at module scope it cannot be stubbed in a test, so the consent
+ * banner could not be tested against a build that has no ID — which is exactly
+ * the state that was live. Vite still inlines the value at build time, so this
+ * costs nothing in the artefact.
+ */
+export function measurementId(): string {
+  return import.meta.env.VITE_GA_ID ?? ''
+}
+
+/**
+ * **Whether there is anything to consent to** — and asking this is the whole
+ * fix for a defect that reached production.
+ *
+ * The banner gated on *has this reader answered?* and never on *is analytics
+ * configured?*, so the deploy that shipped with `VITE_GA_ID` unset asked every
+ * visitor to agree to a Google Analytics that was never going to load. Verified
+ * against the live site: banner present, no gtag script, no dataLayer. A
+ * consent request for something that is not happening is not a small cosmetic
+ * problem — it is the site asking a question it does not mean, which is the
+ * opposite of what the banner is for.
+ */
+export function analyticsConfigured(): boolean {
+  return measurementId() !== ''
+}
 
 /**
  * `/u/<handle>` is reported as `/u/:handle`, and this is a decision rather than
@@ -69,10 +95,10 @@ export function reportablePath(pathname: string): string {
  * asserting against jsdom's global one.
  */
 export function startAnalytics(
-  measurementId: string = MEASUREMENT_ID,
+  id: string = measurementId(),
   doc: Document = document,
 ): boolean {
-  if (measurementId === '') return false
+  if (id === '') return false
 
   const scope = window as AnalyticsWindow
   // `dataLayer` is the flag as well as the queue: if it exists, either this ran
@@ -97,11 +123,11 @@ export function startAnalytics(
 
   scope.gtag = gtag
   gtag('js', new Date())
-  gtag('config', measurementId, { send_page_view: false })
+  gtag('config', id, { send_page_view: false })
 
   const script = doc.createElement('script')
   script.async = true
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`
   doc.head.appendChild(script)
 
   return true

@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import { InfoIcon } from './icons'
 import { t } from '../i18n/strings'
 import { useUiStore } from './uiStore'
+// A build with no measurement ID has no analytics and therefore no choice to
+// offer — see the banner for the defect that taught this.
+import { analyticsConfigured } from '../analytics/gtag'
 
 /**
  * D39 renames the repository to `casio-vault` and this line was written against
@@ -148,20 +151,24 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
                 withdraw than it was to give is not one. It states the current
                 answer rather than just offering the control, so the panel says
                 what is happening without anybody having to press anything. */}
-            <p className="cc-quiet cc-footer-meta">
-              <button
-                type="button"
-                className="cc-footer-link"
-                onClick={() => {
-                  setOpen(false)
-                  openConsentPrompt()
-                }}
-              >
-                {t('consent.change')}
-              </button>
-              {separator}
-              <span>{consent === 'granted' ? t('consent.state.granted') : t('consent.state.denied')}</span>
-            </p>
+            {analyticsConfigured() ? (
+              <p className="cc-quiet cc-footer-meta">
+                <button
+                  type="button"
+                  className="cc-footer-link"
+                  onClick={() => {
+                    setOpen(false)
+                    openConsentPrompt()
+                  }}
+                >
+                  {t('consent.change')}
+                </button>
+                {separator}
+                <span>
+                  {consent === 'granted' ? t('consent.state.granted') : t('consent.state.denied')}
+                </span>
+              </p>
+            ) : null}
             <p className="cc-quiet cc-footer-meta">
               <a href={REPO_URL} rel="noreferrer noopener" target="_blank">
                 {t('footer.source')}

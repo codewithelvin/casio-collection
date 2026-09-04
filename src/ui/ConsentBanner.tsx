@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import { t } from '../i18n/strings'
 import { useUiStore } from './uiStore'
-import { sendPageView, startAnalytics } from '../analytics/gtag'
+import { analyticsConfigured, sendPageView, startAnalytics } from '../analytics/gtag'
 
 /**
  * D68 — the analytics consent banner.
@@ -30,6 +30,20 @@ export function ConsentBanner() {
   const promptOpen = useUiStore((state) => state.consentPromptOpen)
   const setConsent = useUiStore((state) => state.setConsent)
   const closePrompt = useUiStore((state) => state.closeConsentPrompt)
+
+  /**
+   * **Nothing to consent to, so nothing is asked** — and this was missing when
+   * consent first shipped, which put a live banner in front of every visitor
+   * asking them to agree to a Google Analytics that was not configured and
+   * never loaded. Verified against the live site rather than reasoned about:
+   * banner present, no gtag script, no dataLayer.
+   *
+   * The gate below answers *has this reader decided?* and cannot answer *is
+   * there a decision to make?* — a fork of this repository, a preview build and
+   * every local `npm run build` are all in that state, and each of them would
+   * have shown the same meaningless question.
+   */
+  if (!analyticsConfigured()) return null
 
   // Unasked, or asked again from the footer. Note that a reader who has already
   // answered sees nothing here, on any page, ever — the banner is not a fixture.

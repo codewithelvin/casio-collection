@@ -1,9 +1,23 @@
-import { afterEach, describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
 import { CONSENT_STORAGE_KEY } from '../analytics/consent'
 import { useUiStore } from './uiStore'
+
+/**
+ * **Every test in this file needs a measurement ID, and that is the point.**
+ *
+ * These tests originally ran with `VITE_GA_ID` unset — the state the site was
+ * actually deployed in — and passed, because the banner rendered regardless of
+ * whether analytics existed. That was the bug: a live consent request for a
+ * Google Analytics that was never loaded. Stubbing the ID makes the suite
+ * describe a build where consent means something, and the last test below
+ * covers the build where it does not.
+ */
+beforeEach(() => {
+  vi.stubEnv('VITE_GA_ID', 'G-ZPV33WSDLL')
+})
 
 interface AnalyticsWindow extends Window {
   dataLayer?: unknown[]
@@ -18,6 +32,7 @@ afterEach(() => {
   delete scope.gtag
   document.head.querySelectorAll('script[src*="googletagmanager"]').forEach((n) => n.remove())
   useUiStore.setState({ consent: null, consentPromptOpen: false })
+  vi.unstubAllEnvs()
 })
 
 describe('the consent banner (D68)', () => {
@@ -100,6 +115,28 @@ describe('the consent banner (D68)', () => {
     await user.click(await screen.findByRole('button', { name: 'Keep as is' }))
     expect(localStorage.getItem(CONSENT_STORAGE_KEY)).toBe('granted')
     expect(screen.queryByRole('region', { name: /analytics consent/i })).not.toBeInTheDocument()
+  })
+
+  /**
+   * The one that was missing, and it shipped. A build with no `VITE_GA_ID` has
+   * no analytics — no tag, no cookie, no beacon — so asking anybody to agree to
+   * it is asking a question the site does not mean. This was live on
+   * casiovault.com and confirmed in a browser: banner present, no gtag script,
+   * no dataLayer. It covers a fork, a preview build and every local build too.
+   */
+  it('asks nothing at all when analytics is not configured', async () => {
+    vi.stubEnv('VITE_GA_ID', '')
+    renderApp('/')
+    await screen.findByRole('main')
+    expect(screen.queryByRole('region', { name: /analytics consent/i })).not.toBeInTheDocument()
+  })
+
+  it('offers no analytics control in the footer when there is nothing to control', async () => {
+    const user = userEvent.setup()
+    vi.stubEnv('VITE_GA_ID', '')
+    renderApp('/')
+    await user.click(await screen.findByRole('button', { name: /about this site/i }))
+    expect(screen.queryByRole('button', { name: 'Analytics' })).not.toBeInTheDocument()
   })
 
   it('turns analytics off for the next load when a grant is withdrawn', async () => {
