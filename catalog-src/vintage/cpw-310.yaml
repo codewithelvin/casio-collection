@@ -39,7 +39,7 @@ models:
     features: [alarm, compass, countdown-timer, dual-time, stopwatch]
     image: cpw-310
     image_credit:
-      author: 'of Achmed'
+      author: 'Achmed'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_cpw-310'
     discontinued: true

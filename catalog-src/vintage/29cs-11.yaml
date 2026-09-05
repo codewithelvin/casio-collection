@@ -38,7 +38,7 @@ models:
     case: { material: stainless steel }
     image: 29cs-11
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_29cs-11'
     discontinued: true

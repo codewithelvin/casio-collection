@@ -38,7 +38,7 @@ models:
     features: [alarm, calculator, countdown-timer, dual-time, multi-alarm, stopwatch]
     image: db-1000
     image_credit:
-      author: 'of Casionerd'
+      author: 'Casionerd'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_db-10001'
     discontinued: true

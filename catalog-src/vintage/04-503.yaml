@@ -37,7 +37,7 @@ models:
     case: { material: stainless steel }
     image: 04-503
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_casiotron_04-503'
     discontinued: true

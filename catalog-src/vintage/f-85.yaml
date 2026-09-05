@@ -52,7 +52,7 @@ models:
     case: { material: resin }
     image: f-85p
     image_credit:
-      author: 'of Gonçalo'
+      author: 'Gonçalo'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-f-85p-megaforce'
     discontinued: true

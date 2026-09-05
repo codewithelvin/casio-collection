@@ -38,7 +38,7 @@ models:
     features: [alarm, calculator, stopwatch]
     image: tc-50
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_tc-501'
     discontinued: true

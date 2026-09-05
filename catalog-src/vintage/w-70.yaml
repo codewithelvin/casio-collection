@@ -38,7 +38,7 @@ models:
     features: [alarm, stopwatch]
     image: w-70
     image_credit:
-      author: 'of felix_77'
+      author: 'felix_77'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-w-70'
     discontinued: true

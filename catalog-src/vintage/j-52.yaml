@@ -39,7 +39,7 @@ models:
     features: [alarm, countdown-timer, stopwatch]
     image: j-52w
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-j-52w'
     discontinued: true

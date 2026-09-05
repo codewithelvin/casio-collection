@@ -37,7 +37,7 @@ models:
     features: [alarm, stopwatch]
     image: f-98wc
     image_credit:
-      author: 'of Gonçalo'
+      author: 'Gonçalo'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-f-98wc'
     discontinued: true
@@ -50,7 +50,7 @@ models:
     features: [alarm]
     image: f-98we-1bum
     image_credit:
-      author: 'of Gonçalo'
+      author: 'Gonçalo'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-f-98we-1bum'
     discontinued: true

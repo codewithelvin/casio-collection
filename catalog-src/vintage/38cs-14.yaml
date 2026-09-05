@@ -38,7 +38,7 @@ models:
     features: [stopwatch]
     image: 38cs-14
     image_credit:
-      author: 'of Simone Fiore'
+      author: 'Simone Fiore'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-casiotron-38cs-14'
     discontinued: true

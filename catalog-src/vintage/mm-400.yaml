@@ -38,7 +38,7 @@ models:
     features: [countdown-timer, stopwatch]
     image: mm-400
     image_credit:
-      author: 'of Pascal S'
+      author: 'Pascal S'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_mm-400'
     discontinued: true

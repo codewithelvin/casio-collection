@@ -37,7 +37,7 @@ models:
     features: [alarm, countdown-timer, dual-time, multi-alarm, stopwatch]
     image: m-321
     image_credit:
-      author: 'of modhiphugger'
+      author: 'modhiphugger'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-m-321'
     discontinued: true

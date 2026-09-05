@@ -37,7 +37,7 @@ models:
     features: [alarm, countdown-timer, dual-time, stopwatch]
     image: a202
     image_credit:
-      author: 'of silverchristian'
+      author: 'silverchristian'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_a202'
     discontinued: true
@@ -50,7 +50,7 @@ models:
     features: [alarm, countdown-timer, dual-time, stopwatch]
     image: a202g
     image_credit:
-      author: 'of Modhiphugger'
+      author: 'Modhiphugger'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_a202g'
     discontinued: true

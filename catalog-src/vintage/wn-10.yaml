@@ -37,7 +37,7 @@ models:
     features: [alarm, stopwatch]
     image: wn-10
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_wn-10'
     discontinued: true

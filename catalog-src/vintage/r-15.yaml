@@ -37,7 +37,7 @@ models:
     case: { material: stainless steel }
     image: r-15
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-r-153'
     discontinued: true

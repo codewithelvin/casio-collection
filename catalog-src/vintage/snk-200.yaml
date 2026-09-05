@@ -36,7 +36,7 @@ models:
     features: [alarm, stopwatch]
     image: snk-200
     image_credit:
-      author: 'of Toni Travesa'
+      author: 'Toni Travesa'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-snk-200'
     discontinued: true

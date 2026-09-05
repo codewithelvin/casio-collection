@@ -38,7 +38,7 @@ models:
     features: [alarm, countdown-timer, stopwatch]
     image: h101
     image_credit:
-      author: 'of Dave Storr'
+      author: 'Dave Storr'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-h101-marlin'
     discontinued: true

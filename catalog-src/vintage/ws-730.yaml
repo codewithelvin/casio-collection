@@ -38,7 +38,7 @@ models:
     features: [alarm, dual-time, stopwatch]
     image: ws-730
     image_credit:
-      author: 'of AchmedAchmed'
+      author: 'AchmedAchmed'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_ws-730'
     discontinued: true

@@ -37,7 +37,7 @@ models:
     features: [countdown-timer, dual-time, stopwatch]
     image: s220
     image_credit:
-      author: 'of Wharman872'
+      author: 'Wharman872'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_s220'
     discontinued: true

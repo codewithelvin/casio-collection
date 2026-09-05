@@ -38,7 +38,7 @@ models:
     features: [alarm, countdown-timer, dual-time, stopwatch]
     image: aw-20
     image_credit:
-      author: 'of kriiiitto'
+      author: 'kriiiitto'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-aw-20'
     discontinued: true

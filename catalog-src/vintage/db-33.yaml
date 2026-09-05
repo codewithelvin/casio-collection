@@ -38,7 +38,7 @@ models:
     features: [countdown-timer, dual-time, multi-alarm, stopwatch]
     image: db-33w
     image_credit:
-      author: 'of jirkavenecek'
+      author: 'jirkavenecek'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_db-33w'
     discontinued: true

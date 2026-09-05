@@ -37,7 +37,7 @@ models:
     features: [alarm, countdown-timer, dual-time, stopwatch]
     image: ae-80
     image_credit:
-      author: 'of Wharman872'
+      author: 'Wharman872'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_ae-801'
     discontinued: true

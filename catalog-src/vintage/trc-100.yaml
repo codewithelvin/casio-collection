@@ -38,7 +38,7 @@ models:
     features: [alarm, countdown-timer, stopwatch]
     image: trc-100
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_trc-100'
     discontinued: true

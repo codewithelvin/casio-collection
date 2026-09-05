@@ -39,7 +39,7 @@ models:
     features: [alarm, multi-alarm, stopwatch]
     image: dw-200
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_dw-2001'
     discontinued: true

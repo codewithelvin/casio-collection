@@ -38,7 +38,7 @@ models:
     features: [alarm, countdown-timer, stopwatch]
     image: dw-2500
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_dw-2500'
     discontinued: true

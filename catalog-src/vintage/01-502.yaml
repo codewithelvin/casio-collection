@@ -37,7 +37,7 @@ models:
     case: { material: stainless steel }
     image: 01-502
     image_credit:
-      author: 'of Mark Pemberton'
+      author: 'Mark Pemberton'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-casiotron-01-502'
     discontinued: true

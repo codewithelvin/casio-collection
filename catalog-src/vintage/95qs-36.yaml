@@ -38,7 +38,7 @@ models:
     features: [dual-time, stopwatch]
     image: 95qs-36
     image_credit:
-      author: 'of Folkert Jan Koolstra'
+      author: 'Folkert Jan Koolstra'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-95qs-361'
     discontinued: true

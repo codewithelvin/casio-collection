@@ -39,7 +39,7 @@ models:
     features: [alarm, countdown-timer, stopwatch]
     image: w-200
     image_credit:
-      author: 'of zhangdayong'
+      author: 'zhangdayong'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_w-2001'
     discontinued: true

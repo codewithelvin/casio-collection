@@ -37,7 +37,7 @@ models:
     features: [stopwatch]
     image: f-300
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_f-3001'
     discontinued: true
@@ -50,7 +50,7 @@ models:
     features: [stopwatch]
     image: f-300g
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_f-300g'
     discontinued: true

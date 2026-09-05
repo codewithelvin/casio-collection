@@ -39,7 +39,7 @@ models:
     features: [alarm, countdown-timer, stopwatch]
     image: exw-50
     image_credit:
-      author: 'of fujitime-traveller'
+      author: 'fujitime-traveller'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_exw-501'
     discontinued: true

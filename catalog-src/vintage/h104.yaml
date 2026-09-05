@@ -38,7 +38,7 @@ models:
     features: [alarm, multi-alarm, stopwatch]
     image: h104
     image_credit:
-      author: 'of various3110'
+      author: 'various3110'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-h104'
     discontinued: true

@@ -37,7 +37,7 @@ models:
     features: [alarm, calculator, stopwatch]
     image: c-80
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_c-80_brown'
     discontinued: true

@@ -37,7 +37,7 @@ models:
     features: [dual-time]
     image: gr-14
     image_credit:
-      author: 'of fico.lee'
+      author: 'fico.lee'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-casiotron-gr-14'
     discontinued: true

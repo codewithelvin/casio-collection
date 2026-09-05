@@ -37,7 +37,7 @@ models:
     features: [alarm, pulse-sensor, stopwatch]
     image: bp-300
     image_credit:
-      author: 'of fujitime-traveller'
+      author: 'fujitime-traveller'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_bp-300'
     discontinued: true

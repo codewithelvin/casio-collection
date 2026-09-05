@@ -37,7 +37,7 @@ models:
     features: [alarm, countdown-timer, dual-time, stopwatch]
     image: ts-2000
     image_credit:
-      author: 'of wharman872'
+      author: 'wharman872'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_ts-2000'
     discontinued: true

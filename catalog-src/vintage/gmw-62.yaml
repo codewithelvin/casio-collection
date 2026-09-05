@@ -39,7 +39,7 @@ models:
     features: [alarm, stopwatch]
     image: gmw-62
     image_credit:
-      author: 'of Daotai'
+      author: 'Daotai'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-gmw-62-moon-phase-909'
     discontinued: true

@@ -37,7 +37,7 @@ models:
     features: [alarm, countdown-timer, stopwatch]
     image: tsx-1200
     image_credit:
-      author: 'of fujitime-traveller'
+      author: 'fujitime-traveller'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-tsx-1200'
     discontinued: true

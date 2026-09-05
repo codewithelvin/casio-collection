@@ -38,7 +38,7 @@ models:
     features: [alarm, countdown-timer, stopwatch]
     image: dbg-500g
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_dbg-500g'
     discontinued: true

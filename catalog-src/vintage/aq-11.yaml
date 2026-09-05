@@ -36,7 +36,7 @@ models:
     features: [alarm, dual-time, stopwatch]
     image: aq-11
     image_credit:
-      author: 'of modhiphugger'
+      author: 'modhiphugger'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_aq-11'
     discontinued: true

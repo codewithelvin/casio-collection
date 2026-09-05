@@ -38,7 +38,7 @@ models:
     features: [alarm, dual-time, stopwatch]
     image: ts-3000
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_ts-3000'
     discontinued: true

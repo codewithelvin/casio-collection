@@ -38,7 +38,7 @@ models:
     features: [alarm, countdown-timer, stopwatch]
     image: w-920
     image_credit:
-      author: 'of Casiophile'
+      author: 'Casiophile'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_w-920'
     discontinued: true

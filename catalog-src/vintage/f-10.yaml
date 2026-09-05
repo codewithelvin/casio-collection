@@ -51,7 +51,7 @@ models:
     case: { material: resin }
     image: f-10pm
     image_credit:
-      author: 'of Gonçalo'
+      author: 'Gonçalo'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-f-10pm-megaforce'
     discontinued: true

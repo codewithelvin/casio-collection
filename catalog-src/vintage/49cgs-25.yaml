@@ -38,7 +38,7 @@ models:
     case: { material: gold tone base-metal }
     image: 49cgs-25
     image_credit:
-      author: 'of Folkert Jan Koolstra'
+      author: 'Folkert Jan Koolstra'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-casiotron-49cgs-25'
     discontinued: true

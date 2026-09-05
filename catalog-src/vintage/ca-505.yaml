@@ -36,7 +36,7 @@ models:
     features: [alarm, calculator, stopwatch]
     image: ca-505
     image_credit:
-      author: 'of Denis'
+      author: 'Denis'
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_ca-5051'
     discontinued: true
