@@ -183,3 +183,27 @@ jobs:
           done
           echo "The deep link did not return the app shell — the 404.html SPA fallback is broken (D13)."
           exit 1
+
+      # Tell Bing and Yandex what moved, rather than waiting to be crawled.
+      #
+      # It runs HERE, after deploy-pages and after the smoke test, because the
+      # script reads the sitemap off the live site: submitting URLs that are not
+      # yet served would be a hint pointing at the previous deploy, and reading
+      # the sitemap back is a second free proof that this one landed.
+      #
+      # `continue-on-error` is the whole policy. The site is already published by
+      # the time this step runs, so a search engine declining a hint cannot make
+      # a good deploy bad — and a red X here would say otherwise every time
+      # api.indexnow.org has a bad afternoon.
+      # The checkout is only for this script and deliberately shallow — nothing
+      # here reads git history, unlike the build job, whose fetch-depth: 0 is
+      # what gives the sitemap its dates.
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Tell IndexNow what changed
+        continue-on-error: true
+        # No `npm ci`: the script imports nothing but node builtins, and Node 24
+        # runs the TypeScript directly (D37).
+        run: node scripts/indexnow.ts
