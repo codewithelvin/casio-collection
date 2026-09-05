@@ -1,5 +1,6 @@
 import type { Catalog, PublishedModel } from './schema.ts'
 import { browsable, compareByRef } from './client.ts'
+import { normalise, searchTextBuilder } from './searchText.ts'
 
 /**
  * §7.1 / FR-2 — normalisation and the in-memory matcher.
@@ -25,9 +26,11 @@ import { browsable, compareByRef } from './client.ts'
  * `GA2100` are the same watch; `GA-2100` and `GA-2110` are not, and no amount
  * of edit distance knows the difference.
  */
-export function normalise(value: string): string {
-  return value.toLowerCase().replace(/[^a-z0-9]+/g, '')
-}
+// Re-exported rather than moved away, because it is half of FR-2.2 and every
+// caller and test in this repo asks `search.ts` for it. The definition and the
+// paragraph above it now live in `searchText.ts`, beside the one other thing
+// that has to spell a watch the same way.
+export { normalise } from './searchText.ts'
 
 /**
  * The query, split on whitespace and normalised term by term. Every term has to
@@ -85,38 +88,15 @@ export interface SearchIndex {
  * typed.
  */
 export function buildSearchIndex(catalog: Catalog): SearchIndex {
-  const lineById = new Map(catalog.lines.map((line) => [line.id, line.name]))
-  const familyById = new Map(catalog.families.map((family) => [family.id, family.name]))
-  const seriesById = new Map(catalog.series.map((series) => [series.id, series]))
-  const editionById = new Map(catalog.editions.map((edition) => [edition.id, edition]))
-
-  const entries = browsable(catalog.models).map((model) => {
-    const series = seriesById.get(model.series)
-    const family = series?.family ? familyById.get(series.family) : undefined
-    const edition = model.edition ? editionById.get(model.edition) : undefined
-
-    const parts = [
-      model.ref,
-      model.name,
-      model.module,
-      series?.name,
-      ...(series?.aka ?? []),
-      family,
-      lineById.get(model.line),
-      edition?.name,
-      edition?.partner,
-      ...(edition?.aka ?? []),
-    ]
-
-    return {
-      model,
-      ref: normalise(model.ref),
-      text: parts
-        .filter((part): part is string => Boolean(part))
-        .map(normalise)
-        .join(' '),
-    }
-  })
+  // The field list itself now lives in `searchText.ts`, so that the build can
+  // compute the same string for §6.2's slim index without importing this module
+  // — which reaches `client.ts` and `import.meta.env`, and would throw in Node.
+  const textOf = searchTextBuilder(catalog)
+  const entries = browsable(catalog.models).map((model) => ({
+    model,
+    ref: normalise(model.ref),
+    text: textOf(model),
+  }))
 
   return { entries }
 }

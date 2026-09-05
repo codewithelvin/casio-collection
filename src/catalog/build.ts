@@ -3,13 +3,26 @@ import {
   CATALOG,
   CATALOG_INDEX,
   CATALOG_PAYLOAD,
+  EDITION_MODELS,
+  LINE_MODELS,
+  MODEL_DOCUMENT,
+  SEARCH_INDEX_FILE,
+  SERIES_MODELS,
   type Catalog,
   type CatalogIndex,
   type CatalogPayload,
+  type EditionModels,
   type FacetSummary,
+  type LineModels,
   type Model,
+  type ModelDocument,
   type PublishedModel,
+  type SearchIndexFile,
+  type SeriesModels,
 } from './schema.ts'
+// Not `client.ts`: this module runs in Node under `catalog:build`, and the
+// client reads `import.meta.env.BASE_URL` at module scope.
+import { searchTextBuilder } from './searchText.ts'
 import { FACET_FIELDS } from './vocabulary.ts'
 
 /**
@@ -308,6 +321,168 @@ export function indexOf(catalog: Catalog): CatalogIndex {
  */
 export function serialiseIndex(index: CatalogIndex): string {
   return `${JSON.stringify(index)}\n`
+}
+
+/* ------------------------------------------------------------------------- *
+ * §6.2's split, legs two and three.
+ *
+ * Every function here follows `indexOf`'s rule and takes the **stamped
+ * catalogue**, never the payload: the stamp is then carried rather than
+ * recomputed, so a series file claiming version `abc123` is by construction a
+ * slice of the catalogue carrying `abc123`. A reader holding two artefacts can
+ * compare their versions and know whether they agree.
+ * ------------------------------------------------------------------------- */
+
+/** One watch, for `catalog/model/<id>.json`. */
+export function modelDocumentsOf(catalog: Catalog): Map<string, ModelDocument> {
+  const { version, generatedAt } = catalog
+  return new Map(
+    catalog.models.map((model) => [model.id, MODEL_DOCUMENT.parse({ version, generatedAt, model })]),
+  )
+}
+
+/**
+ * The models of each series, keyed by series id, for `catalog/series/<id>.json`.
+ *
+ * **Every series in the index gets a file, including one whose models are all
+ * withheld.** An empty array is a different answer from a 404, and only the
+ * first one is true: the series exists, it is in the index the rail renders, and
+ * the page for it should say "nothing to show" rather than fail to load. A 404
+ * would reach the client as an error state and read as a broken link.
+ */
+export function seriesModelsOf(catalog: Catalog): Map<string, SeriesModels> {
+  return new Map(
+    [...groupBy(catalog, (model) => model.series, catalog.series.map((series) => series.id))].map(
+      ([series, models]) => [
+        series,
+        SERIES_MODELS.parse({
+          version: catalog.version,
+          generatedAt: catalog.generatedAt,
+          series,
+          models,
+        }),
+      ],
+    ),
+  )
+}
+
+/** The models of each line, for `catalog/line/<id>.json`. Same emptiness rule. */
+export function lineModelsOf(catalog: Catalog): Map<string, LineModels> {
+  return new Map(
+    [...groupBy(catalog, (model) => model.line, catalog.lines.map((line) => line.id))].map(
+      ([line, models]) => [
+        line,
+        LINE_MODELS.parse({
+          version: catalog.version,
+          generatedAt: catalog.generatedAt,
+          line,
+          models,
+        }),
+      ],
+    ),
+  )
+}
+
+/**
+ * Group every model by a key, **starting from the published keys and adding any
+ * the models name that are not among them.**
+ *
+ * Both halves are load-bearing and the second one was found by a thrown error
+ * rather than by reasoning, so it is written down here.
+ *
+ * *Starting from the published list* is what gives an empty series or line a
+ * file. An empty array and a 404 are different answers and only the first is
+ * true — the series is in the index the rail renders, and its page should say
+ * there is nothing to show rather than fail to load.
+ *
+ * *Adding the ones that are missing* is D51 meeting the 2026-08-26 rule. A
+ * series is only published if it holds a model with a photograph, so DW-500 —
+ * three references, none photographed — is in `models` and not in `series`.
+ * Requiring the key to be published would throw on it (it did), and dropping it
+ * silently would be worse: `modelById` still has to resolve those models for
+ * FR-3.6, and the watch page reads the series file to find them.
+ */
+function groupBy(
+  catalog: Catalog,
+  keyOf: (model: PublishedModel) => string,
+  published: readonly string[],
+): Map<string, PublishedModel[]> {
+  const grouped = new Map<string, PublishedModel[]>(published.map((key) => [key, []]))
+  for (const model of catalog.models) {
+    const key = keyOf(model)
+    const bucket = grouped.get(key)
+    if (bucket) bucket.push(model)
+    else grouped.set(key, [model])
+  }
+  return grouped
+}
+
+/**
+ * The models of each edition, for `catalog/edition/<id>.json`.
+ *
+ * Unlike series and line, a model here is found by a field that is **absent on
+ * almost every model**, so this walks the editions rather than the models and an
+ * edition nothing names gets an empty file — which is exactly what the build
+ * already warns about rather than failing on.
+ */
+export function editionModelsOf(catalog: Catalog): Map<string, EditionModels> {
+  const { version, generatedAt } = catalog
+  return new Map(
+    catalog.editions.map((edition) => [
+      edition.id,
+      EDITION_MODELS.parse({
+        version,
+        generatedAt,
+        edition: edition.id,
+        models: catalog.models.filter((model) => model.edition === edition.id),
+      }),
+    ]),
+  )
+}
+
+/**
+ * The slim search index (§6.2's third leg).
+ *
+ * **The text is normalised here, once, instead of in every browser.** It reuses
+ * `searchTextOf` from `search.ts` rather than reimplementing the field list,
+ * because a second copy of "what search can see" is a second thing to keep in
+ * step and the one that would drift is the one nobody looks at — FR-2.1's
+ * family and edition matching would quietly stop working.
+ *
+ * `browsable` is applied, matching what the in-browser index always did: a
+ * tombstoned entry is reachable by URL forever and counted nowhere else, and a
+ * model with no photograph is withheld (2026-08-26).
+ */
+export function searchIndexOf(catalog: Catalog): SearchIndexFile {
+  const textOf = searchTextBuilder(catalog)
+  // The same test `client.ts` and `seo.ts` apply, spelled here for the third
+  // time rather than imported from the client for the reason in the imports.
+  const browsable = catalog.models.filter((model) => !model.tombstone && model.image)
+  const entries = browsable.map((model) => ({
+    id: model.id,
+    ref: model.ref,
+    line: model.line,
+    series: model.series,
+    ...(model.name === undefined ? {} : { name: model.name }),
+    ...(model.year === undefined ? {} : { year: model.year }),
+    ...(model.image === undefined ? {} : { image: model.image }),
+    text: textOf(model),
+  }))
+  return SEARCH_INDEX_FILE.parse({
+    version: catalog.version,
+    generatedAt: catalog.generatedAt,
+    entries,
+  })
+}
+
+/**
+ * The bytes of any of the split artefacts.
+ *
+ * **Not pretty-printed**, for `serialiseIndex`'s reason and more strongly: these
+ * are fetched by the browser and nothing else, and there are 4 600 of them.
+ */
+export function serialiseSplit(document: object): string {
+  return `${JSON.stringify(document)}\n`
 }
 
 /** The bytes the version digest is taken over — the payload, without the stamp. */

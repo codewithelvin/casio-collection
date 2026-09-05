@@ -453,3 +453,126 @@ export const CATALOG_INDEX = z.strictObject({
   ...CATALOG_SHAPE.shape,
 })
 export type CatalogIndex = z.infer<typeof CATALOG_INDEX>
+
+/* ------------------------------------------------------------------------- *
+ * §6.2's split, legs two and three.
+ *
+ * The index leg landed when the catalogue passed 2 500 models. These land
+ * because it reached the other wall: 149.6 KB of NFR-4's 150 KB, with ~480
+ * bytes of headroom, twelve reader-reported references waiting to be written and
+ * a G-SHOCK roster of 6 600 against the 983 catalogued. §6.2's own answer to
+ * this moment is written down — "split into a lightweight index, per-series
+ * files and a slim search index. A larger number is not one of the options."
+ *
+ * **Every one of these is a slice of the same `PublishedModel`, never a second
+ * definition of a watch.** That is the rule the whole file is built on, and it
+ * is what makes four artefacts safe: a screen reading a series file and a screen
+ * reading a line file are looking at the same objects, and `browsable()`,
+ * `compareByRef` and the filters work on all of them unchanged.
+ *
+ * A model appears in more than one file — its own, its series', its line's, its
+ * edition's. That is duplication on disk and not on the wire, which is the
+ * trade the split is: a static host is bytes-per-request cheap and file-count
+ * free, and the site already writes 3 827 HTML files for the same reason.
+ * ------------------------------------------------------------------------- */
+
+/**
+ * `catalog/model/<id>.json` — one watch.
+ *
+ * The watch page's URL carries an id and nothing else, so this is the file that
+ * makes a deep link cost one request instead of a lookup in something bigger.
+ * The strip of other references in the series comes from the series file beside
+ * it, which is a second request the page can make in parallel.
+ */
+export const MODEL_DOCUMENT = z.strictObject({
+  ...STAMP,
+  model: PUBLISHED_MODEL,
+})
+export type ModelDocument = z.infer<typeof MODEL_DOCUMENT>
+
+/**
+ * `catalog/series/<id>.json` — every model in one series, in file order.
+ *
+ * Not filtered by `browsable()` and not sorted here, deliberately. Both are
+ * client decisions that have changed once already (D29 was reversed on
+ * 2026-08-26) and baking either into the artefact would mean a rebuild to change
+ * a rendering rule — and would hide a withheld model from `modelById`, which
+ * has to keep resolving it for FR-3.6.
+ */
+export const SERIES_MODELS = z.strictObject({
+  ...STAMP,
+  series: z.string(),
+  models: z.array(PUBLISHED_MODEL),
+})
+export type SeriesModels = z.infer<typeof SERIES_MODELS>
+
+/**
+ * `catalog/line/<id>.json` — every model in one line.
+ *
+ * The line page renders every reference in the line grouped by series, so it
+ * genuinely needs all of them; fetching its series files one by one would be 778
+ * requests for Vintage. This is the largest artefact and the one to watch: it is
+ * what the per-file budget in `report.ts` is really about.
+ */
+export const LINE_MODELS = z.strictObject({
+  ...STAMP,
+  line: z.string(),
+  models: z.array(PUBLISHED_MODEL),
+})
+export type LineModels = z.infer<typeof LINE_MODELS>
+
+/**
+ * `catalog/edition/<id>.json` — D62, and the one artefact that crosses lines.
+ *
+ * That is the whole point of the screen rather than an accident of it: the
+ * PAC-MAN collaboration is four references in four series, and no line or series
+ * file can hold them together.
+ */
+export const EDITION_MODELS = z.strictObject({
+  ...STAMP,
+  edition: z.string(),
+  models: z.array(PUBLISHED_MODEL),
+})
+export type EditionModels = z.infer<typeof EDITION_MODELS>
+
+/**
+ * `catalog/search-index.json` — §6.2's third leg.
+ *
+ * **The matchable text is computed here, at build time, rather than in the
+ * browser.** `buildSearchIndex` used to run over the whole catalogue on the
+ * first keystroke of a session; what it produces per model is one normalised
+ * string, and that string is small — the reference, the series and its aka, the
+ * family, the line, the edition and its aka, all stripped to ASCII and
+ * lowercased. Shipping the string instead of the eleven fields it was derived
+ * from is what makes searching cost a fraction of the catalogue.
+ *
+ * The entries carry only what the dropdown row draws: the reference, the
+ * photograph, the line for its accent, and the name and year for the second
+ * line. Pressing a result navigates to `/watch/<id>`, which fetches the model
+ * file — so nothing here needs a specification.
+ *
+ * **The results page is a different question and does not read this file for
+ * its models.** It renders a full `WatchGrid` under a `FilterBar`, which filters
+ * on `display`, `movement`, `features` and `year`; those are not here and must
+ * not be, or this stops being slim. It matches against these entries and then
+ * reads the line files the hits belong to — usually one or two, and already
+ * cached if the reader came from a line page.
+ */
+export const SEARCH_ENTRY = z.strictObject({
+  id: z.string(),
+  ref: z.string(),
+  line: z.string(),
+  series: z.string(),
+  name: z.string().optional(),
+  year: z.number().int().optional(),
+  image: z.string().optional(),
+  /** Normalised at build time by `search.ts`'s own `normalise`. */
+  text: z.string(),
+})
+export type SearchEntryDocument = z.infer<typeof SEARCH_ENTRY>
+
+export const SEARCH_INDEX_FILE = z.strictObject({
+  ...STAMP,
+  entries: z.array(SEARCH_ENTRY),
+})
+export type SearchIndexFile = z.infer<typeof SEARCH_INDEX_FILE>

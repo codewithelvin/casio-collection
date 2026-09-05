@@ -2,9 +2,15 @@ import { describe, expect, it } from 'vitest'
 import {
   buildCatalog,
   digestInput,
+  editionModelsOf,
   indexOf,
+  lineModelsOf,
+  modelDocumentsOf,
+  searchIndexOf,
   serialiseCatalog,
   serialiseIndex,
+  serialiseSplit,
+  seriesModelsOf,
   stamp,
 } from './build.ts'
 /**
@@ -372,5 +378,99 @@ describe('the index artefact (§6.2, the split)', () => {
     // and the direction is what matters; the real numbers are printed by
     // `catalog:build` on every run.
     expect(text.length).toBeLessThan(serialiseCatalog(catalog).length)
+  })
+})
+
+describe('the split artefacts (§6.2, legs two and three)', () => {
+  /**
+   * A catalogue with one series that is published and one that is not.
+   *
+   * DW-500 here holds a model with no photograph, so §6.2's D51 rule keeps the
+   * series out of `catalog.series` while the model stays in `catalog.models` —
+   * withheld from browsing, still reachable by URL (FR-3.6). That asymmetry is
+   * the whole reason these tests exist: the first version of `seriesModelsOf`
+   * assumed every model's series was published and threw on the real catalogue.
+   */
+  const source = () =>
+    aShownSource({
+      series: [
+        aSeries({ models: [aShownModel()] }),
+        aSeries({
+          file: 'catalog-src/g-shock/dw-500.yaml',
+          series: { id: 'dw-500', name: 'DW-500', line: 'g-shock' },
+          models: [aModel({ id: 'dw-500c-1a', ref: 'DW-500C-1A' })],
+        }),
+      ],
+    })
+  const catalog = stamp(buildCatalog(source()), 'a1b2c3d4e5f6', '2026-08-16')
+
+  it('writes one document per model, stamped with the catalogue’s own version', () => {
+    const documents = modelDocumentsOf(catalog)
+    expect(documents.size).toBe(catalog.models.length)
+    const one = documents.get('dw-5600e-1v')
+    expect(one?.model.ref).toBe('DW-5600E-1V')
+    expect(one?.version).toBe(catalog.version)
+  })
+
+  it('gives a series a file even when D51 kept it out of the index', () => {
+    // The regression. `dw-500` is not in `catalog.series` because none of its
+    // models has a photograph, but its model is in `catalog.models` and the
+    // watch page has to be able to find it.
+    expect(catalog.series.map((series) => series.id)).not.toContain('dw-500')
+    const files = seriesModelsOf(catalog)
+    expect(files.get('dw-500')?.models.map((model) => model.id)).toEqual(['dw-500c-1a'])
+  })
+
+  it('does not filter or sort — both are the client’s to change', () => {
+    // Baking `browsable` in would hide the withheld model from `modelById`,
+    // which FR-3.6 requires to keep resolving. The rule was reversed once
+    // already (D29, 2026-08-26); a rebuild should not be needed to reverse it
+    // again.
+    const all = seriesModelsOf(catalog)
+    expect(all.get('dw-500')?.models[0]?.image).toBeUndefined()
+  })
+
+  it('gives every line a file, and puts each model in exactly one', () => {
+    const files = lineModelsOf(catalog)
+    expect([...files.keys()]).toEqual(['g-shock'])
+    expect(files.get('g-shock')?.models.length).toBe(catalog.models.length)
+  })
+
+  it('gives an edition its own file, because it is the one grid that crosses lines', () => {
+    const withEdition = stamp(
+      buildCatalog(
+        aShownSource({
+          editions: [anEdition()],
+          series: [aSeries({ models: [aShownModel({ edition: 'pac-man' })] })],
+        }),
+      ),
+      'a1b2c3d4e5f6',
+      '2026-08-16',
+    )
+    const files = editionModelsOf(withEdition)
+    expect(files.get('pac-man')?.models.map((model) => model.id)).toEqual(['dw-5600e-1v'])
+  })
+
+  it('builds a search index that carries the matchable text and no specifications', () => {
+    const index = searchIndexOf(catalog)
+    const entry = index.entries.find((candidate) => candidate.id === 'dw-5600e-1v')
+    // The text is normalised at build time so no browser has to do it.
+    expect(entry?.text).toContain('dw5600e1v')
+    // …and it reaches the family, which is what makes `square` find this watch.
+    expect(entry?.text).toContain('square')
+    // Slim means slim: a specification here would defeat the point.
+    expect(entry && 'module' in entry).toBe(false)
+    expect(entry && 'features' in entry).toBe(false)
+  })
+
+  it('leaves a withheld model out of search, as the in-browser index always did', () => {
+    const index = searchIndexOf(catalog)
+    expect(index.entries.map((entry) => entry.id)).not.toContain('dw-500c-1a')
+  })
+
+  it('serialises without the indent, because only a browser reads these', () => {
+    const text = serialiseSplit(seriesModelsOf(catalog).get('dw-5600'))
+    expect(text).not.toContain('\n  ')
+    expect(text.endsWith('\n')).toBe(true)
   })
 })
