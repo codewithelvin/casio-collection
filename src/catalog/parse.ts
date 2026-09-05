@@ -2,7 +2,22 @@
 // this file is load-bearing: a schema constructed before that config runs fires a
 // CSP violation the browser records in its Issues panel.
 import '../zodJitless'
-import { CATALOG, CATALOG_INDEX, type Catalog, type CatalogIndex } from './schema.ts'
+import {
+  CATALOG,
+  CATALOG_INDEX,
+  EDITION_MODELS,
+  LINE_MODELS,
+  MODEL_DOCUMENT,
+  SEARCH_INDEX_FILE,
+  SERIES_MODELS,
+  type Catalog,
+  type CatalogIndex,
+  type EditionModels,
+  type LineModels,
+  type ModelDocument,
+  type SearchIndexFile,
+  type SeriesModels,
+} from './schema.ts'
 
 /**
  * §12 — **the seam that keeps Zod out of the first load.**
@@ -34,4 +49,31 @@ export function parseCatalog(document: unknown): Catalog {
 
 export function parseCatalogIndex(document: unknown): CatalogIndex {
   return CATALOG_INDEX.parse(document)
+}
+
+/**
+ * §6.2's split, legs two and three. They live here for the same reason the two
+ * above do — `client.ts` must not import `schema.ts` — and they are worth the
+ * parse for a reason the big files are not quite so exposed to: there are 4 880
+ * of these, they are fetched one at a time as a reader moves around, and a
+ * service worker holding a stale one serves it for as long as its cache lasts.
+ */
+export function parseModelDocument(document: unknown): ModelDocument {
+  return MODEL_DOCUMENT.parse(document)
+}
+
+export function parseSeriesModels(document: unknown): SeriesModels {
+  return SERIES_MODELS.parse(document)
+}
+
+export function parseLineModels(document: unknown): LineModels {
+  return LINE_MODELS.parse(document)
+}
+
+export function parseEditionModels(document: unknown): EditionModels {
+  return EDITION_MODELS.parse(document)
+}
+
+export function parseSearchIndex(document: unknown): SearchIndexFile {
+  return SEARCH_INDEX_FILE.parse(document)
 }

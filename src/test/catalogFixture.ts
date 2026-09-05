@@ -1,4 +1,13 @@
 import type { Catalog } from '../catalog/schema.ts'
+// The build's own emitters, so the fixture cannot serve a shape the build does
+// not produce. Safe to import here: `build.ts` reads no `import.meta.env`.
+import {
+  editionModelsOf,
+  lineModelsOf,
+  modelDocumentsOf,
+  searchIndexOf,
+  seriesModelsOf,
+} from '../catalog/build.ts'
 
 /**
  * A published `catalog.json` for the browsing tests.
@@ -302,11 +311,48 @@ export const catalogIndexFixtureJson = (catalog: Catalog = catalogFixture) => {
 export function catalogArtefactResponse(
   url: string,
   catalog: Catalog = catalogFixture,
-): { ok: true; status: 200; json: () => Promise<unknown> } | null {
+): { ok: boolean; status: number; json: () => Promise<unknown> } | null {
   // The index is matched first: see above.
   if (url.includes('catalog-index.json')) {
     return { ok: true, status: 200, json: async () => catalogIndexFixtureJson(catalog) }
   }
+  if (url.includes('search-index.json')) {
+    return { ok: true, status: 200, json: async () => roundTrip(searchIndexOf(catalog)) }
+  }
+
+  /**
+   * §6.2's split, legs two and three — **served from the real build functions,
+   * not from hand-written examples.**
+   *
+   * This is the same argument `catalogIndexFixtureJson` makes one level up and
+   * it matters more here, because there are four artefacts and a screen reads
+   * whichever one it needs. A fixture that hand-rolled `{ models: [...] }` for a
+   * series would let a test pass against a shape the build does not emit — and
+   * the failure would land on the live site, where the Zod parse rejects the
+   * real file and the screen shows an error state that no test ever saw.
+   *
+   * **A miss is a 404 and not a null**, which is what makes the not-found paths
+   * testable: `/watch/does-not-exist` has to reach FR-10.2's designed screen,
+   * and the client turns exactly a 404 into that. Returning null here would fall
+   * through to the caller's own fallback and test the wrong branch.
+   */
+  const split = /\/catalog\/(model|series|line|edition)\/([^/?]+)\.json/.exec(url)
+  if (split) {
+    const [, kind, id] = split
+    const documents =
+      kind === 'model'
+        ? modelDocumentsOf(catalog)
+        : kind === 'series'
+          ? seriesModelsOf(catalog)
+          : kind === 'line'
+            ? lineModelsOf(catalog)
+            : editionModelsOf(catalog)
+    const document = documents.get(decodeURIComponent(id ?? ''))
+    return document
+      ? { ok: true, status: 200, json: async () => roundTrip(document) }
+      : { ok: false, status: 404, json: async () => ({}) }
+  }
+
   if (url.includes('catalog.json')) {
     return {
       ok: true,
@@ -316,3 +362,6 @@ export function catalogArtefactResponse(
   }
   return null
 }
+
+/** What `fetch` would hand back: a value that has been through JSON. */
+const roundTrip = (value: unknown) => JSON.parse(JSON.stringify(value)) as unknown

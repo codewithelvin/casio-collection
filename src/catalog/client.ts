@@ -6,11 +6,16 @@ import { useQuery, type UseQueryResult } from '@tanstack/react-query'
 import type {
   Catalog,
   CatalogIndex,
+  EditionModels,
+  LineModels,
+  ModelDocument,
   PublishedEdition,
   PublishedFamily,
   PublishedLine,
   PublishedModel,
   PublishedSeries,
+  SearchIndexFile,
+  SeriesModels,
 } from './schema.ts'
 import { fresh } from '../chunkReload.ts'
 
@@ -58,6 +63,80 @@ export const CATALOG_PATH = `${import.meta.env.BASE_URL}catalog/catalog.json`
  * loads the whole catalogue, off the critical path.
  */
 export const CATALOG_INDEX_PATH = `${import.meta.env.BASE_URL}catalog/catalog-index.json`
+
+/**
+ * §6.2's split, legs two and three — the files a screen reads when it needs
+ * watches rather than the shape of the catalogue.
+ *
+ * `catalog.json` is still built and still served; what changes is that nothing
+ * here has to download all of it to render one series. Measured on the artefact
+ * these paths point at: a watch page went from 149.6 KB to 4.6 KB, a series page
+ * to 4.0 KB, and the largest line — Vintage, 2 700 references — to 61.0 KB.
+ *
+ * There is no `?v=` on any of them, for `CATALOG_PATH`'s reason: the version
+ * lives inside the file, so a query string could only be appended after the
+ * fetch that needed it.
+ */
+const splitPath = (kind: string, id: string) =>
+  `${import.meta.env.BASE_URL}catalog/${kind}/${encodeURIComponent(id)}.json`
+
+export const SEARCH_INDEX_PATH = `${import.meta.env.BASE_URL}catalog/search-index.json`
+
+/**
+ * One fetch-and-parse for all four per-id artefacts.
+ *
+ * The parse is not ceremony here either — see this module's header. These files
+ * are on the same CDN as the catalogue and an older service worker can serve any
+ * of them long after their shape has moved on.
+ *
+ * **A 404 is turned into a null rather than an error**, and that distinction is
+ * the whole reason this is one function. A missing model file means the URL
+ * names a watch that does not exist, which is FR-10.2's designed not-found
+ * screen; a 500 or a network failure means the site is broken, which is
+ * FR-10.1's retry. Collapsing the two would show a reader "try again" for a
+ * typo, forever.
+ */
+async function fetchSplit<T>(
+  path: string,
+  parse: (value: unknown) => Promise<T>,
+  signal?: AbortSignal,
+): Promise<T | null> {
+  const response = await fetch(path, signal ? { signal } : undefined)
+  if (response.status === 404) return null
+  if (!response.ok) throw new Error(`catalog: HTTP ${response.status} from ${path}`)
+  return parse(await response.json())
+}
+
+export async function fetchModel(id: string, signal?: AbortSignal): Promise<ModelDocument | null> {
+  const { parseModelDocument } = await fresh(() => import('./parse.ts'))
+  return fetchSplit(splitPath('model', id), async (value) => parseModelDocument(value), signal)
+}
+
+export async function fetchSeriesModels(id: string): Promise<SeriesModels | null> {
+  const { parseSeriesModels } = await fresh(() => import('./parse.ts'))
+  return fetchSplit(splitPath('series', id), async (value) => parseSeriesModels(value))
+}
+
+export async function fetchLineModels(id: string): Promise<LineModels | null> {
+  const { parseLineModels } = await fresh(() => import('./parse.ts'))
+  return fetchSplit(splitPath('line', id), async (value) => parseLineModels(value))
+}
+
+export async function fetchEditionModels(id: string): Promise<EditionModels | null> {
+  const { parseEditionModels } = await fresh(() => import('./parse.ts'))
+  return fetchSplit(splitPath('edition', id), async (value) => parseEditionModels(value))
+}
+
+export async function fetchSearchIndex(): Promise<SearchIndexFile> {
+  const [response, { parseSearchIndex }] = await Promise.all([
+    fetch(SEARCH_INDEX_PATH),
+    fresh(() => import('./parse.ts')),
+  ])
+  if (!response.ok) {
+    throw new Error(`catalog: HTTP ${response.status} from ${SEARCH_INDEX_PATH}`)
+  }
+  return parseSearchIndex(await response.json())
+}
 
 export async function fetchCatalog(signal?: AbortSignal): Promise<Catalog> {
   // The schemas and the document are fetched concurrently, which is what makes
@@ -150,6 +229,72 @@ export function useCatalogIndex(): UseQueryResult<CatalogIndex, Error> {
 }
 
 /* ------------------------------------------------------------------------- *
+ * §6.2's split — one query per artefact.
+ *
+ * **A key per id, not one key holding a map.** Two screens showing two series
+ * hold two cache entries and neither refetches the other's, which is the whole
+ * behaviour the split is for; a single key would make the cache as coarse as the
+ * file it replaced.
+ *
+ * Every one of these inherits `staleTime: Infinity` from the QueryClient, as the
+ * catalogue queries do. Within a session nothing is fetched twice, so walking a
+ * line, opening a watch, going back and opening another is two series fetches at
+ * most — and the second watch's model file, which is 600 bytes.
+ * ------------------------------------------------------------------------- */
+
+export const modelQueryOptions = (id: string) => ({
+  queryKey: ['catalog', 'model', id] as const,
+  queryFn: ({ signal }: { signal?: AbortSignal }) => fetchModel(id, signal),
+})
+
+/** M5 awaits this outside a hook, which is why the options are separate. */
+export function useModel(id: string | undefined): UseQueryResult<ModelDocument | null, Error> {
+  return useQuery({ ...modelQueryOptions(id ?? ''), enabled: Boolean(id) })
+}
+
+export function useSeriesModels(id: string | undefined): UseQueryResult<SeriesModels | null, Error> {
+  return useQuery({
+    queryKey: ['catalog', 'series', id ?? ''] as const,
+    queryFn: () => fetchSeriesModels(id ?? ''),
+    enabled: Boolean(id),
+  })
+}
+
+export function useLineModels(id: string | undefined): UseQueryResult<LineModels | null, Error> {
+  return useQuery({
+    queryKey: ['catalog', 'line', id ?? ''] as const,
+    queryFn: () => fetchLineModels(id ?? ''),
+    enabled: Boolean(id),
+  })
+}
+
+export function useEditionModels(
+  id: string | undefined,
+): UseQueryResult<EditionModels | null, Error> {
+  return useQuery({
+    queryKey: ['catalog', 'edition', id ?? ''] as const,
+    queryFn: () => fetchEditionModels(id ?? ''),
+    enabled: Boolean(id),
+  })
+}
+
+/**
+ * `enabled` here is `SearchField`'s, exactly as it is on `useCatalog`: the field
+ * is mounted in the shell on every URL and needs the index only once somebody
+ * touches it. 53.7 KB is small next to the catalogue and still not something to
+ * fetch on a page nobody searched from.
+ */
+export function useSearchIndex(options?: {
+  enabled?: boolean
+}): UseQueryResult<SearchIndexFile, Error> {
+  return useQuery({
+    queryKey: ['catalog', 'search-index'] as const,
+    queryFn: () => fetchSearchIndex(),
+    enabled: options?.enabled ?? true,
+  })
+}
+
+/* ------------------------------------------------------------------------- *
  * Selectors. Pure, so they are tested against a fixture rather than a render.
  *
  * Everything that reads only lines, families or series is typed against
@@ -225,6 +370,20 @@ export function seriesInLine(catalog: CatalogIndex, lineId: string): PublishedSe
 
 export function modelsInSeries(catalog: Catalog, seriesId: string): PublishedModel[] {
   return browsable(catalog.models.filter((model) => model.series === seriesId)).sort(compareByRef)
+}
+
+/**
+ * The same two rules — withhold, then order — for a screen holding one of §6.2's
+ * split files instead of the whole catalogue.
+ *
+ * It exists so that moving a screen onto a series or line file cannot quietly
+ * drop either rule. `modelsInSeries` above does the filtering *and* the sorting
+ * in one expression, and a caller that had already narrowed the models would
+ * naturally write `browsable(file.models)` and forget the sort — which reads
+ * fine on screen until a series has an F-103 and an F-15 in it.
+ */
+export function browsableSorted(models: readonly PublishedModel[]): PublishedModel[] {
+  return browsable(models).sort(compareByRef)
 }
 
 export function modelsInLine(catalog: Catalog, lineId: string): PublishedModel[] {
