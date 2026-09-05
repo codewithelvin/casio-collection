@@ -35,5 +35,17 @@ models:
     module: '133'
     case: { material: resin }
     features: [alarm, calculator, stopwatch]
+    # NO PHOTOGRAPH, and this is the written refusal rather than silence.
+    # The page in `source` — casio-c-60-1 — carries no `_large` image at all;
+    # the five `_small` files on it are the variant navigation strip that every
+    # DWL page shows, not a picture of this watch. The bare slug forms
+    # (casio-c-60, casio_c-60, casio-c60, casio_c60) all time out while
+    # casio-a168 answered 200 in the same run at the same pace, so the hang is
+    # the absence and not a rate limit.
+    #
+    # A file does sit at catalog-src/images/raw/c-60.jpg from the seeding run.
+    # It is NOT published: nothing records where it came from and it matches no
+    # photograph on any C-60 page found here, so a credit for it would be
+    # invented. Somebody with a browser could still settle this.
     image: null
     discontinued: true

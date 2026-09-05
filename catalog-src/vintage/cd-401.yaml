@@ -35,5 +35,20 @@ models:
     module: '246'
     case: { material: chrome plated base-metal }
     features: [alarm, calculator, stopwatch]
-    image: null
+    # DWL holds TWO pages for this reference and the photograph comes from the
+    # other one, so the credit points there rather than at `source`.
+    # `casio_cd-401` — the page every field was read from — names one image,
+    # `1-246.jpg`, at 218x243. That is below the 300 px floor: it would render
+    # softer than the typographic tile it replaced, which is a downgrade rather
+    # than an improvement. `casio-cd-401` is titled CD-401 too and carries the
+    # same watch at 400x500.
+    #
+    # `1-246` is the MODULE, which this entry also records as 246 — corroboration
+    # and not identity, so the picture was looked at: a steel calculator watch
+    # with DATA BANK on the dial, which is what a CD-401 is.
+    image: cd-401
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-cd-401'
     discontinued: true
