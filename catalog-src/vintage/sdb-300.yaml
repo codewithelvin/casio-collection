@@ -41,3 +41,12 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1986-casio-sdb-300'
     discontinued: true
+  - id: sdb-300w
+    ref: SDB-300W
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_sdb-300w', kind: community }
+    year: 1986
+    module: '503'
+    case: { material: resin }
+    features: [alarm, stopwatch]
+    image: null
+    discontinued: true

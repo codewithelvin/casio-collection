@@ -43,3 +43,15 @@ models:
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_f-10'
     discontinued: true
+  - id: f-10pm
+    ref: F-10PM
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-f-10pm-megaforce', kind: community }
+    year: 1980
+    module: '155'
+    case: { material: resin }
+    image: f-10pm
+    image_credit:
+      author: 'of Gonçalo'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-f-10pm-megaforce'
+    discontinued: true

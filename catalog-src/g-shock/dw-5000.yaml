@@ -25,6 +25,26 @@ models:
 # do not state.
 #
 # No `year` on any of the entries below: the product page dates nothing (D25).
+  - id: dw-5000c-1a
+    ref: DW-5000C-1A
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5000c-1b1', kind: community }
+    year: 1983
+    module: '240'
+    case: { material: resin }
+    water_resistance_m: 200
+    features: [alarm, countdown-timer]
+    image: null
+    discontinued: true
+  - id: dw-5000c-1b
+    ref: DW-5000C-1B
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5000c-1b', kind: community }
+    year: 1983
+    module: '240'
+    case: { material: resin }
+    water_resistance_m: 200
+    features: [alarm, countdown-timer]
+    image: null
+    discontinued: true
   - id: dw-5000r-1a
     ref: DW-5000R-1A
     source:

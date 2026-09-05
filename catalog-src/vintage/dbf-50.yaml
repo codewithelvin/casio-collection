@@ -41,3 +41,13 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1992-casio-dbf-50-japan'
     discontinued: true
+  - id: dbf-50w-1av
+    ref: DBF-50W-1AV
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dbf-50w', kind: community }
+    year: 1991
+    module: '1010'
+    case: { material: resin }
+    water_resistance_m: 50
+    features: [alarm, countdown-timer, stopwatch]
+    image: null
+    discontinued: true

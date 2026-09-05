@@ -53,3 +53,13 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722022557id_/https://www.casio.com/intl/watches/50th/Heritage/1990s/'
     discontinued: true
+  - id: jp-200w-4v
+    ref: JP-200W-4V
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-jp-200w2', kind: community }
+    year: 1992
+    module: '1009'
+    case: { material: resin }
+    water_resistance_m: 50
+    features: [alarm, countdown-timer, pulse-sensor, stopwatch]
+    image: null
+    discontinued: true

@@ -1,0 +1,40 @@
+# Seeded 2026-09-05 from The Digital Watch Library, walking all 48
+# pages of its Casio gallery and writing down every watch this catalogue did not
+# already hold.
+#
+# DWL is the third roster. Neither of the two this project normally asks — the
+# archive's index of casio.com product pages, and Casio's sitemap today — knows
+# these references, which for a watch this old is the expected condition and not
+# a finding: there was never a casio.com page to archive.
+#
+# Every field below is read off the one page named in `source`, BY DIV ID. The
+# stripped value list ends `… [SS], 1976` and the tempting `[SS]` is the
+# BRACELET, not the case; `case` comes from `#case1`. Where the two agree the
+# error is invisible, which is why the rule is mechanical rather than a check.
+#
+# Deliberately absent (D27 — absent means nobody has found it):
+#   * `display` and `movement`, which these pages do not state;
+#   * a light feature, where the page shows an untyped light icon and the
+#     vocabulary has five specific light values and no generic one;
+#   * `water_resistance_m` where the page says NONE, which is a statement about
+#     the watch and not a depth.
+#
+# `discontinued` is not written by hand — D59 measures it for the whole
+# catalogue at once, against Casio's own sitemap.
+
+series:
+  id: 60q-22
+  name: '60Q-22'
+  line: vintage
+
+models:
+  - id: 60q-22
+    # ref-exception: a Casio reference that opens with digits, which no `[A-Z]{1,5}` prefix can match.
+    ref: 60Q-22
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_60qr-221', kind: community }
+    year: 1977
+    module: '60'
+    case: { material: stainless steel }
+    features: [stopwatch]
+    image: null
+    discontinued: true

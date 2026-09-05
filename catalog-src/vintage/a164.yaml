@@ -18,6 +18,15 @@ series:
   line: vintage
 
 models:
+  - id: a164w
+    ref: A164W
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-a164w', kind: community }
+    year: 1987
+    module: '593'
+    case: { material: chrome plated resin }
+    features: [alarm, stopwatch]
+    image: null
+    discontinued: true
   - id: a164wa-1v
     ref: A164WA-1V
     source:

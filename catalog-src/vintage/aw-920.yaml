@@ -42,3 +42,12 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1996-aw-920-overland'
     discontinued: true
+  - id: aw-920c-1avt
+    ref: AW-920C-1AVT
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_aw-920c-1avt', kind: community }
+    module: '798'
+    case: { material: resin }
+    water_resistance_m: 100
+    features: [alarm, dual-time, stopwatch]
+    image: null
+    discontinued: true

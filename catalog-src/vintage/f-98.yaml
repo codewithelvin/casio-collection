@@ -1,0 +1,56 @@
+# Seeded 2026-09-05 from The Digital Watch Library, walking all 48
+# pages of its Casio gallery and writing down every watch this catalogue did not
+# already hold.
+#
+# DWL is the third roster. Neither of the two this project normally asks — the
+# archive's index of casio.com product pages, and Casio's sitemap today — knows
+# these references, which for a watch this old is the expected condition and not
+# a finding: there was never a casio.com page to archive.
+#
+# Every field below is read off the one page named in `source`, BY DIV ID. The
+# stripped value list ends `… [SS], 1976` and the tempting `[SS]` is the
+# BRACELET, not the case; `case` comes from `#case1`. Where the two agree the
+# error is invisible, which is why the rule is mechanical rather than a check.
+#
+# Deliberately absent (D27 — absent means nobody has found it):
+#   * `display` and `movement`, which these pages do not state;
+#   * a light feature, where the page shows an untyped light icon and the
+#     vocabulary has five specific light values and no generic one;
+#   * `water_resistance_m` where the page says NONE, which is a statement about
+#     the watch and not a depth.
+#
+# `discontinued` is not written by hand — D59 measures it for the whole
+# catalogue at once, against Casio's own sitemap.
+
+series:
+  id: f-98
+  name: F-98
+  line: vintage
+
+models:
+  - id: f-98wc
+    ref: F-98WC
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-f-98wc', kind: community }
+    year: 1993
+    module: '593'
+    case: { material: resin }
+    features: [alarm, stopwatch]
+    image: f-98wc
+    image_credit:
+      author: 'of Gonçalo'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-f-98wc'
+    discontinued: true
+  - id: f-98we-1bum
+    ref: F-98WE-1BUM
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-f-98we-1bum', kind: community }
+    year: 1993
+    module: '593'
+    case: { material: resin }
+    features: [alarm]
+    image: f-98we-1bum
+    image_credit:
+      author: 'of Gonçalo'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-f-98we-1bum'
+    discontinued: true

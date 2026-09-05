@@ -41,3 +41,13 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1982-casio-casio-j-30'
     discontinued: true
+  - id: j-30w
+    ref: J-30W
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-j-30w', kind: community }
+    year: 1982
+    module: '179'
+    case: { material: resin }
+    water_resistance_m: 50
+    features: [alarm, countdown-timer, stopwatch]
+    image: null
+    discontinued: true

@@ -31,6 +31,15 @@ series:
   line: vintage
 
 models:
+  - id: f-200
+    ref: F-200
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-f-200', kind: community }
+    year: 1978
+    module: '55'
+    case: { material: resin }
+    features: [stopwatch]
+    image: null
+    discontinued: true
   - id: f-200w-1a
     ref: F-200W-1A
     source:

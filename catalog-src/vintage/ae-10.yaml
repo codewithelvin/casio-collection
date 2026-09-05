@@ -41,3 +41,12 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1984-casio-ae-10-in-excellent-condition'
     discontinued: true
+  - id: ae-10w
+    ref: AE-10W
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-ae-10w', kind: community }
+    year: 1985
+    module: '287'
+    case: { material: resin }
+    features: [alarm, countdown-timer, dual-time, stopwatch]
+    image: null
+    discontinued: true

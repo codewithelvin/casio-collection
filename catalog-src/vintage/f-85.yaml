@@ -44,3 +44,15 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1981-casio-f-85'
     discontinued: true
+  - id: f-85p
+    ref: F-85P
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-f-85p-megaforce', kind: community }
+    year: 1980
+    module: '160'
+    case: { material: resin }
+    image: f-85p
+    image_credit:
+      author: 'of Gonçalo'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-f-85p-megaforce'
+    discontinued: true

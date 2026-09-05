@@ -36,3 +36,13 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1984-casio-f-87-new-old-stock'
     discontinued: true
+  - id: f-87fw-1
+    ref: F-87FW-1
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-f-87fw-1', kind: community }
+    year: 1984
+    module: '415'
+    case: { material: resin }
+    water_resistance_m: 30
+    features: [alarm, stopwatch]
+    image: null
+    discontinued: true

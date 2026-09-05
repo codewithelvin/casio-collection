@@ -48,3 +48,17 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1988-casio-ae-21-brand-new-1'
     discontinued: true
+  - id: ae-21w
+    ref: AE-21W
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-ae-21w', kind: community }
+    year: 1988
+    module: '809'
+    case: { material: resin }
+    water_resistance_m: 50
+    features: [alarm, countdown-timer, dual-time, stopwatch]
+    image: ae-21w
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ae-21w'
+    discontinued: true

@@ -18,6 +18,15 @@ series:
   line: vintage
 
 models:
+  - id: ca-53
+    ref: CA-53
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_ca-53', kind: community }
+    year: 1984
+    module: '437'
+    case: { material: resin }
+    features: [alarm, calculator, stopwatch]
+    image: null
+    discontinued: true
   - id: ca-53w-1
     ref: CA-53W-1
     source:

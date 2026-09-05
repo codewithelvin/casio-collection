@@ -18,6 +18,15 @@ series:
   line: vintage
 
 models:
+  - id: la-11w
+    ref: LA-11W
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_la-11w', kind: community }
+    year: 1982
+    module: '506'
+    case: { material: resin }
+    features: [alarm, countdown-timer, stopwatch]
+    image: null
+    discontinued: true
   - id: la-11wb-1z
     ref: LA-11WB-1Z
     source:

@@ -42,3 +42,12 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1984-casio-w-500'
     discontinued: true
+  - id: w-500-1
+    ref: W-500-1
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-w-500-1', kind: community }
+    year: 1985
+    module: '211'
+    case: { material: resin }
+    water_resistance_m: 100
+    image: null
+    discontinued: true

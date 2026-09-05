@@ -1,0 +1,55 @@
+# Seeded 2026-09-05 from The Digital Watch Library, walking all 48
+# pages of its Casio gallery and writing down every watch this catalogue did not
+# already hold.
+#
+# DWL is the third roster. Neither of the two this project normally asks — the
+# archive's index of casio.com product pages, and Casio's sitemap today — knows
+# these references, which for a watch this old is the expected condition and not
+# a finding: there was never a casio.com page to archive.
+#
+# Every field below is read off the one page named in `source`, BY DIV ID. The
+# stripped value list ends `… [SS], 1976` and the tempting `[SS]` is the
+# BRACELET, not the case; `case` comes from `#case1`. Where the two agree the
+# error is invisible, which is why the rule is mechanical rather than a check.
+#
+# Deliberately absent (D27 — absent means nobody has found it):
+#   * `display` and `movement`, which these pages do not state;
+#   * a light feature, where the page shows an untyped light icon and the
+#     vocabulary has five specific light values and no generic one;
+#   * `water_resistance_m` where the page says NONE, which is a statement about
+#     the watch and not a depth.
+#
+# `discontinued` is not written by hand — D59 measures it for the whole
+# catalogue at once, against Casio's own sitemap.
+
+series:
+  id: skx-1000
+  name: SKX-1000
+  line: vintage
+  aka: ['1', '1000 second']
+
+models:
+  - id: skx-1000
+    ref: SKX-1000
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-skx-1000', kind: community }
+    year: 1992
+    module: '969'
+    case: { material: resin }
+    water_resistance_m: 100
+    features: [alarm, countdown-timer, stopwatch]
+    image: null
+    discontinued: true
+  - id: skx-1000c-9
+    ref: SKX-1000C-9
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_skx-1000c-9', kind: community }
+    year: 1992
+    module: '969'
+    case: { material: resin }
+    water_resistance_m: 100
+    features: [alarm, countdown-timer, stopwatch]
+    image: skx-1000c-9
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_skx-1000c-9'
+    discontinued: true

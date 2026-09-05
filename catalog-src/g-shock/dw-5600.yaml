@@ -297,6 +297,48 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714221534id_/https://www.casio.com/europe/watches/gshock/product.DW-5600BWP-2/'
     discontinued: false
+  - id: dw-5600c
+    ref: DW-5600C
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-dw-5600c', kind: community }
+    year: 1987
+    module: '901'
+    case: { material: resin }
+    water_resistance_m: 200
+    features: [alarm, countdown-timer, stopwatch]
+    image: dw-5600c
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dw-5600c'
+    discontinued: true
+  - id: dw-5600c-9b
+    ref: DW-5600C-9B
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5600c-9b', kind: community }
+    year: 1988
+    module: '691'
+    case: { material: resin }
+    water_resistance_m: 200
+    features: [alarm, countdown-timer, stopwatch]
+    image: dw-5600c-9b
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5600c-9b'
+    discontinued: true
+  - id: dw-5600c-9v
+    ref: DW-5600C-9V
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5600c-9v', kind: community }
+    year: 1987
+    module: '901'
+    case: { material: resin }
+    water_resistance_m: 200
+    features: [alarm, countdown-timer, stopwatch]
+    image: dw-5600c-9v
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5600c-9v'
+    discontinued: true
   - id: dw-5600ca-2
     ref: DW-5600CA-2
     source:

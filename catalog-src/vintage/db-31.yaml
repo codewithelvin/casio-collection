@@ -44,3 +44,12 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1987-casio-db-31-new-old-stock'
     discontinued: true
+  - id: db-31-1z
+    ref: DB-31-1Z
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_db-31-1z', kind: community }
+    year: 1987
+    module: '871'
+    case: { material: resin }
+    features: [countdown-timer, multi-alarm]
+    image: null
+    discontinued: true

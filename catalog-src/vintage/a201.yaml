@@ -43,3 +43,16 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1982-casio-a201'
     discontinued: true
+  - id: a201g
+    ref: A201G
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio_a201g', kind: community }
+    year: 1981
+    module: '103'
+    case: { material: gold tone base-metal }
+    features: [alarm, countdown-timer, dual-time, stopwatch]
+    image: a201g
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_a201g'
+    discontinued: true

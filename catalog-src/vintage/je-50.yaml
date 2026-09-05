@@ -41,3 +41,13 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1986-casio-je-50-japan'
     discontinued: true
+  - id: je-50w-1v
+    ref: JE-50W-1V
+    source: { url: 'http://www.digital-watch.com/DWL/1work/casio-je-50w-1v', kind: community }
+    year: 1986
+    module: '471'
+    case: { material: resin }
+    water_resistance_m: 50
+    features: [alarm, stopwatch]
+    image: null
+    discontinued: true
