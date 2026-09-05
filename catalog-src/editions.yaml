@@ -319,3 +319,40 @@ editions:
         url: 'https://gagadget.com/en/689708-casio-released-a-limited-series-baby-g-in-collaboration-with-madhappy/',
         kind: community,
       }
+
+  # PRO TREK'S FIRST EDITION IN THIS FILE, and the first with THREE parties: a
+  # conservation charity and a character brand, both named beside Casio.
+  #
+  # `partner` HOLDS ONE OF TWO AND THAT IS A KNOWN LOSS. The field is singular
+  # and the page names The Nature Conservation Society of Japan and Pickles the
+  # Frog as separate parties; the society is written here because it is the one
+  # that makes this a collaboration rather than a licensed character colourway,
+  # and the `name` carries both so nothing a reader sees is missing. Widening
+  # `partner` to a list would be a schema change and a decision for the client —
+  # this is the first entry that has ever wanted it, and it is worth saying so
+  # rather than quietly picking a favourite.
+  #
+  # THE SOURCE IS THE STOCKIST LISTING, exactly the shape Dragon Ball Z and One
+  # Piece use above: its own `<h1>` names the collaboration and the reference in
+  # one line — "Casio Pro Trek PRJ-B001NJ-3JR The Nature Conservation Society of
+  # Japan x Pickles the Frog (JDM)" — so one page establishes both that the
+  # edition exists and which reference is in it. Casio's own page for it does
+  # exist, at `casio.com/jp/watches/protrek/product.PRJ-B001NJ-3/`, and answers
+  # 403 to everything that is not a person.
+  #
+  # NO `year`, and it is not for want of knowing: the watch ships March 2026 and
+  # the model entry says so off the page that states it. This page states no
+  # date in a sentence, and the rule at the top of this file is that the edition
+  # is dated by the edition's own source or not at all.
+  - id: pickles-the-frog
+    name: The Nature Conservation Society of Japan x Pickles the Frog
+    partner: The Nature Conservation Society of Japan
+    # `NACS-J` is how the society abbreviates itself and is what somebody who
+    # knows the charity would type; neither it nor "Pickles" is a substring of
+    # the name as search normalises it.
+    aka: [Pickles the Frog, Pickles, NACS-J, Nature Conservation Society of Japan]
+    source:
+      {
+        url: 'https://www.jamtangan.com/p/casio-pro-trek-prjb001nj3jr-the-nature-conservation-society-of-japan-x-pickles-the-frog-jdm-740541',
+        kind: retailer,
+      }
