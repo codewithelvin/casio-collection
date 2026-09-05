@@ -1,11 +1,19 @@
-# PRT-40 -- the reference and the photograph come from Casiold
-# (casiold.com); every SPECIFICATION below was read from the Digital Watch
-# Library on 2026-08-31, which is where this entry now points.
+# PRT-40 -- the reference came from Casiold (casiold.com); every
+# SPECIFICATION below was read from the Digital Watch Library on 2026-08-31,
+# which is where this entry points.
 #
-# TWO PAGES, AND THE ENTRY SAYS WHICH SAID WHAT. `source` is the DWL page
-# because every field comes from it. The photograph is still the dealer's and
-# its `image_credit` still names the dealer -- the credit travels with the
-# file (D41), which is how one entry cites two pages without merging them.
+# THE DEALER'S PHOTOGRAPH WAS OF A DIFFERENT WATCH, and it was published here
+# for six days. A reader reported it on 2026-09-05: casiold.com/products/
+# casio-prt-40 is titled "Casio PRT-40" and every one of its fourteen photos
+# shows an ana-digi Pro Trek with hands over the LCD, a rotating compass bezel
+# and an orange LIGHT button at 6 -- the PRG-40 shape. The PRT-40 is module
+# 1470 and has no hands at all, which this entry said in the line above the
+# image it contradicted. The photograph is now the DWL page's own, so the
+# picture and every field come from one page and the entry cites one source.
+#
+# THE LESSON IS ABOUT THE TEST, NOT THE DEALER. A listing title is not proof
+# of what is in the photograph, and 138 entries here took a Casiold picture on
+# that basis. This one was caught by a human who knew the watch.
 #
 # NO YEAR. The page's RELEASED row says '>1995', which is the
 # page hedging rather than stating, so nothing is written (D25).
@@ -38,7 +46,7 @@ models:
     features: [alarm, stopwatch, compass]
     image: prt-40
     image_credit:
-      author: Casiold
+      author: 'The Digital Watch Library'
       licence: rights-reserved
-      url: 'https://www.casiold.com/products/casio-prt-40'
+      url: 'http://www.digital-watch.com/DWL/1work/casio-prt-40'
     discontinued: true
