@@ -25,7 +25,9 @@ describe('the home route', () => {
     await screen.findByRole('heading', { name: t('home.linesHeading') })
 
     const gShock = await front().findByRole('link', { name: /G-SHOCK/ })
-    expect(gShock).toHaveAttribute('href', '/line/g-shock')
+    // Trailing slash: the served form, and the only one the sitemap and the
+    // canonical tag have ever named. See `paths.ts`.
+    expect(gShock).toHaveAttribute('href', '/line/g-shock/')
     expect(await front().findByText(`4 ${t('home.models')}`)).toBeInTheDocument()
   })
 
@@ -189,7 +191,7 @@ describe('the editions routes (D62)', () => {
 
     await screen.findByRole('heading', { name: t('editions.heading'), level: 2 })
     const pacMan = await screen.findByRole('link', { name: /PAC-MAN Collaboration/ })
-    expect(pacMan).toHaveAttribute('href', '/editions/pac-man')
+    expect(pacMan).toHaveAttribute('href', '/editions/pac-man/')
     expect(pacMan.textContent).toContain('Bandai Namco Entertainment Inc.')
     expect(pacMan.textContent).toContain(`2 ${t('editions.count')}`)
   })
@@ -258,7 +260,7 @@ describe('the editions routes (D62)', () => {
     renderApp('/')
     const rail = within(await screen.findByRole('navigation', { name: t('nav.lines') }))
     const link = await rail.findByRole('link', { name: new RegExp(t('nav.editions')) })
-    expect(link).toHaveAttribute('href', '/editions')
+    expect(link).toHaveAttribute('href', '/editions/')
   })
 
   /**
@@ -276,7 +278,7 @@ describe('the editions routes (D62)', () => {
     await screen.findByRole('heading', { name: t('home.linesHeading') })
 
     const link = await front().findByRole('link', { name: new RegExp(t('nav.editions')) })
-    expect(link).toHaveAttribute('href', '/editions')
+    expect(link).toHaveAttribute('href', '/editions/')
 
     const grids = container.querySelectorAll('.cc-line-grid')
     expect(grids).toHaveLength(1)
@@ -338,7 +340,7 @@ describe('the watch route (FR-3)', () => {
     const series = (await screen.findByText(t('spec.series'))).parentElement as HTMLElement
     expect(within(series).getByRole('link', { name: 'F-91W' })).toHaveAttribute(
       'href',
-      '/line/vintage/f-91w',
+      '/line/vintage/f-91w/',
     )
     // FR-2.1's alias, which the breadcrumb cannot carry and which is the reason
     // this line exists next to a breadcrumb that already names the series.
@@ -371,7 +373,7 @@ describe('the watch route (FR-3)', () => {
     const edition = (await screen.findByText(t('spec.edition'))).parentElement as HTMLElement
     expect(within(edition).getByRole('link', { name: 'PAC-MAN Collaboration' })).toHaveAttribute(
       'href',
-      '/editions/pac-man',
+      '/editions/pac-man/',
     )
   })
 

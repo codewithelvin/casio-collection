@@ -48,6 +48,7 @@ import { ImproveEntry } from '../../ui/ImproveEntry'
 import { NoteEditor } from '../../ui/NoteEditor'
 import { useOwnership } from '../../collection/mutations.ts'
 import { LINE_ACCENTS } from '../../theme/palette.ts'
+import { editionPath, linePath, seriesPath, watchPath } from '../../paths.ts'
 import {
   availabilityLabel,
   displayLabel,
@@ -125,9 +126,9 @@ function WatchDetail({
         style={{ marginBottom: 8 }}
         items={[
           { title: <Link to="/">{t('home.linesHeading')}</Link> },
-          ...(line ? [{ title: <Link to={`/line/${line.slug}`}>{line.name}</Link> }] : []),
+          ...(line ? [{ title: <Link to={linePath(line.slug)}>{line.name}</Link> }] : []),
           ...(line && series
-            ? [{ title: <Link to={`/line/${line.slug}/${series.id}`}>{series.name}</Link> }]
+            ? [{ title: <Link to={seriesPath(line.slug, series.id)}>{series.name}</Link> }]
             : []),
           { title: model.ref },
         ]}
@@ -144,7 +145,7 @@ function WatchDetail({
             <>
               <div>{model.tombstone.reason}</div>
               {model.tombstone.replaced_by ? (
-                <Link to={`/watch/${model.tombstone.replaced_by}`}>
+                <Link to={watchPath(model.tombstone.replaced_by)}>
                   {t('watch.tombstone.replacedBy')}
                 </Link>
               ) : null}
@@ -364,7 +365,7 @@ function WatchDetail({
             }}
           >
             {others.map((other) => (
-              <Link key={other.id} to={`/watch/${other.id}`} aria-label={other.ref}>
+              <Link key={other.id} to={watchPath(other.id)} aria-label={other.ref}>
                 <Card
                   hoverable
                   size="small"
@@ -426,7 +427,7 @@ function SeriesLine({
   return (
     <Typography.Paragraph style={{ marginBottom: 8 }}>
       <span style={{ color: token.colorTextTertiary, marginInlineEnd: 8 }}>{t('spec.series')}</span>
-      {lineSlug ? <Link to={`/line/${lineSlug}/${series.id}`}>{series.name}</Link> : series.name}
+      {lineSlug ? <Link to={seriesPath(lineSlug, series.id)}>{series.name}</Link> : series.name}
       {/* FR-2.1's other names for the same watch. Tags, matching the series
           page, so the two screens teach the same vocabulary the same way. */}
       {series.aka?.map((alias) => (
@@ -461,7 +462,7 @@ function EditionLine({ edition, model }: { edition: PublishedEdition; model: Pub
       <span style={{ color: token.colorTextTertiary, marginInlineEnd: 8 }}>
         {t('spec.edition')}
       </span>
-      <Link to={`/editions/${edition.slug}`}>{edition.name}</Link>
+      <Link to={editionPath(edition.slug)}>{edition.name}</Link>
       {model.edition_source ? (
         <a
           href={model.edition_source}

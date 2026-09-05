@@ -9,6 +9,7 @@ import { EmptyState } from '../../ui/EmptyState'
 import { FilterBar } from '../../ui/FilterBar'
 import { useViewState } from '../../ui/useViewState'
 import { LINE_ACCENTS } from '../../theme/palette.ts'
+import { linePath } from '../../paths.ts'
 import { t } from '../../i18n/strings'
 
 /** FR-1.2 — a responsive grid of every model in the series. */
@@ -41,7 +42,7 @@ export default function SeriesRoute() {
         style={{ marginBottom: 8 }}
         items={[
           { title: <Link to="/">{t('home.linesHeading')}</Link> },
-          { title: <Link to={`/line/${line.slug}`}>{line.name}</Link> },
+          { title: <Link to={linePath(line.slug)}>{line.name}</Link> },
           { title: series.name },
         ]}
       />

@@ -95,7 +95,7 @@ describe('the display-symbol page', () => {
     await user.click(await screen.findByRole('button', { name: t('footer.about') }))
 
     const link = screen.getByRole('link', { name: t('nav.symbols') })
-    expect(link).toHaveAttribute('href', '/symbols')
+    expect(link).toHaveAttribute('href', '/symbols/')
 
     await user.click(link)
     expect(

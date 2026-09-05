@@ -5,6 +5,7 @@ import { imageSources } from '../catalog/client.ts'
 import { OwnershipControls } from './OwnershipControls'
 import { prefetchOnIntent } from './prefetch'
 import { LINE_ACCENTS } from '../theme/palette.ts'
+import { watchPath } from '../paths.ts'
 
 /**
  * §8.6 — the watch card.
@@ -199,7 +200,7 @@ export function WatchCard({
         therefore clickable as "open this watch".
       */}
       <Link
-        to={`/watch/${model.id}`}
+        to={watchPath(model.id)}
         aria-label={model.ref}
         // The watch route is lazily imported and React Router's `lazy` blocks the
         // navigation with no pending UI, so the first press of a session sat for

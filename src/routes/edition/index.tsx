@@ -9,6 +9,7 @@ import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
 import { FilterBar } from '../../ui/FilterBar'
 import { useViewState } from '../../ui/useViewState'
+import { EDITIONS } from '../../paths.ts'
 import { editionCount, sourceLabel, t } from '../../i18n/strings'
 
 /**
@@ -51,7 +52,7 @@ export default function EditionRoute() {
         style={{ marginBottom: 8 }}
         items={[
           { title: <Link to="/">{t('home.linesHeading')}</Link> },
-          { title: <Link to="/editions">{t('editions.heading')}</Link> },
+          { title: <Link to={EDITIONS}>{t('editions.heading')}</Link> },
           { title: edition.name },
         ]}
       />

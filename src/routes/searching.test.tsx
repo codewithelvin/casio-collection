@@ -37,7 +37,7 @@ describe('the header search (FR-2)', () => {
     await user.type(await openSearch(user), 'casioak')
     await user.click(await screen.findByText('GA-2100-1A1'))
 
-    await waitFor(() => expect(router.state.location.pathname).toBe('/watch/ga-2100-1a1'))
+    await waitFor(() => expect(router.state.location.pathname).toBe('/watch/ga-2100-1a1/'))
   })
 
   it('carries the term to the results page on Enter (FR-1.6)', async () => {

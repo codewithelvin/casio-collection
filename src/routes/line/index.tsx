@@ -12,6 +12,7 @@ import { EmptyState } from '../../ui/EmptyState'
 import { FilterBar } from '../../ui/FilterBar'
 import { useViewState } from '../../ui/useViewState'
 import { LINE_ACCENTS } from '../../theme/palette.ts'
+import { seriesPath } from '../../paths.ts'
 import { t } from '../../i18n/strings'
 
 /**
@@ -233,7 +234,7 @@ export default function LineRoute() {
                     borderBottom: `1px solid ${token.colorBorderSecondary}`,
                   }}
                 >
-                  <Link to={`/line/${line.slug}/${series.id}`} style={{ color: 'inherit' }}>
+                  <Link to={seriesPath(line.slug, series.id)} style={{ color: 'inherit' }}>
                     <Typography.Text strong>{series.name}</Typography.Text>
                   </Link>
                   <Typography.Text

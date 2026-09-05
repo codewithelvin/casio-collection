@@ -9,6 +9,7 @@ import {
 } from '../theme/palette.ts'
 import { useUiStore } from './uiStore'
 import { useSettled } from './useSettled'
+import { EDITIONS, linePath } from '../paths.ts'
 import { editionsTotal, t } from '../i18n/strings'
 
 /**
@@ -111,7 +112,7 @@ export function LineGrid({
       {lines.map((line) => (
         <Link
           key={line.id}
-          to={`/line/${line.slug}`}
+          to={linePath(line.slug)}
           className="cc-card cc-card-accent"
           // The per-line accent as a custom property, so the 3 px stripe is a
           // class and the colour is data (§8.3).
@@ -149,7 +150,7 @@ export function LineGrid({
       */}
       {editions !== undefined && editions > 0 ? (
         <Link
-          to="/editions"
+          to={EDITIONS}
           className="cc-card cc-card-accent"
           style={{ ['--cc-accent-line' as string]: 'var(--cc-border-secondary)' }}
         >

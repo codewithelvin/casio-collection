@@ -4,6 +4,7 @@ import { lineTree, useCatalogIndex } from '../catalog/client.ts'
 import { RailSkeleton } from './RailSkeleton'
 import { ChevronIcon, EditionsIcon, LineGlyph } from './icons'
 import { LINE_ACCENTS } from '../theme/palette.ts'
+import { EDITIONS, linePath, seriesPath } from '../paths.ts'
 import { expandLine, t } from '../i18n/strings'
 
 /**
@@ -101,7 +102,7 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
                   decisions and neither is expressible here. */}
               <div className="cc-nav-line">
                 <Link
-                  to={`/line/${line.slug}`}
+                  to={linePath(line.slug)}
                   className="cc-nav-row"
                   // The series pages set this on their own row, so a line whose
                   // series is open is not also "the page".
@@ -188,7 +189,7 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
         {showEditions ? (
           <li className="cc-nav-aside">
             <Link
-              to="/editions"
+              to={EDITIONS}
               className="cc-nav-row"
               {...(editionsActive ? { 'aria-current': 'page' as const } : {})}
               onClick={onNavigate}
@@ -235,7 +236,7 @@ function SeriesRow({
   return (
     <li>
       <Link
-        to={`/line/${lineSlug}/${id}`}
+        to={seriesPath(lineSlug, id)}
         className="cc-nav-row"
         {...(active ? { 'aria-current': 'page' as const } : {})}
         onClick={onNavigate}

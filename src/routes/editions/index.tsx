@@ -4,6 +4,7 @@ import { useCatalogIndex } from '../../catalog/client.ts'
 import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
 import { LineGridSkeleton } from '../../ui/LineGrid'
+import { editionPath } from '../../paths.ts'
 import { editionCount, t } from '../../i18n/strings'
 
 /**
@@ -50,7 +51,7 @@ export default function EditionsRoute() {
           }}
         >
           {data.editions.map((edition) => (
-            <Link key={edition.id} to={`/editions/${edition.slug}`}>
+            <Link key={edition.id} to={editionPath(edition.slug)}>
               <Card hoverable size="small" style={{ height: '100%' }}>
                 <Typography.Title level={5} style={{ marginTop: 0, marginBottom: 4 }}>
                   {edition.name}

@@ -187,7 +187,7 @@ describe('the app shell (§8.1, §8.2)', () => {
     // middle-clicked, opened in a new tab, or read as a link by anything. The
     // href is the point of the rewrite, so it is the thing asserted.
     const row = await nav.findByRole('link', { name: /G-SHOCK/ })
-    expect(row.getAttribute('href')).toBe('/line/g-shock')
+    expect(row.getAttribute('href')).toBe('/line/g-shock/')
   })
 
   it('carries the model count beside every line in the rail (FR-1.1)', async () => {

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { InfoIcon } from './icons'
+import { SYMBOLS } from '../paths.ts'
 import { t } from '../i18n/strings'
 import { useUiStore } from './uiStore'
 // A build with no measurement ID has no analytics and therefore no choice to
@@ -140,7 +141,7 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
                 them. The external link below has the same shape and does not
                 need it: it opens a new tab and leaves this page as it was. */}
             <p className="cc-quiet cc-footer-meta">
-              <Link to="/symbols" onClick={() => setOpen(false)}>
+              <Link to={SYMBOLS} onClick={() => setOpen(false)}>
                 {t('nav.symbols')}
               </Link>
             </p>

@@ -7,6 +7,7 @@ import { imageSources, useCatalog } from '../catalog/client.ts'
 import { buildSearchIndex, searchCatalog } from '../catalog/search.ts'
 import type { PublishedModel } from '../catalog/schema.ts'
 import { LINE_ACCENTS } from '../theme/palette.ts'
+import { watchPath } from '../paths.ts'
 import AntdRoot from './AntdRoot'
 import { seeAllResults, t } from '../i18n/strings'
 
@@ -163,7 +164,7 @@ function Field({ autoFocus, focusNonce, onBlur, onStay, onClose }: SearchFieldPr
         setTerm('')
         setDebounced('')
         onClose()
-        navigate(`/watch/${value}`)
+        navigate(watchPath(value))
       }}
       // The dropdown is not a filter over a fixed list, so AntD's own filtering
       // would be a second, worse matcher running after FR-2.2's.
