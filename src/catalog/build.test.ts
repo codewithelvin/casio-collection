@@ -469,7 +469,9 @@ describe('the split artefacts (§6.2, legs two and three)', () => {
   })
 
   it('serialises without the indent, because only a browser reads these', () => {
-    const text = serialiseSplit(seriesModelsOf(catalog).get('dw-5600'))
+    const file = seriesModelsOf(catalog).get('dw-5600')
+    expect(file).toBeDefined()
+    const text = serialiseSplit(file as object)
     expect(text).not.toContain('\n  ')
     expect(text.endsWith('\n')).toBe(true)
   })
