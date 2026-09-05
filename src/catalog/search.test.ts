@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { buildSearchIndex, normalise, queryTerms, searchCatalog } from './search.ts'
 import { catalogFixture } from '../test/catalogFixture'
-import type { Catalog } from './schema.ts'
+import type { FullCatalog } from './schema.ts'
 
 const index = buildSearchIndex(catalogFixture)
 const refs = (query: string, limit?: number) =>
@@ -104,7 +104,7 @@ describe('matching the other five fields (FR-2.1)', () => {
 
 describe('ranking (FR-2.3 shows eight of these)', () => {
   it('puts an exact reference first, ahead of everything that merely contains it', () => {
-    const catalog: Catalog = {
+    const catalog: FullCatalog = {
       ...catalogFixture,
       models: [
         ...catalogFixture.models,
@@ -124,7 +124,7 @@ describe('ranking (FR-2.3 shows eight of these)', () => {
   it('puts a reference match above a watch that merely has that module number', () => {
     // Type 593 and you mean the reference W-593-1, not the F-91W whose module
     // happens to be 593. Both are honest matches; only one is what was typed.
-    const catalog: Catalog = {
+    const catalog: FullCatalog = {
       ...catalogFixture,
       models: [
         ...catalogFixture.models,
@@ -153,7 +153,7 @@ describe('ranking (FR-2.3 shows eight of these)', () => {
 
 describe('what search refuses to show', () => {
   it('never returns a tombstoned entry (D2, §6.2)', () => {
-    const catalog: Catalog = {
+    const catalog: FullCatalog = {
       ...catalogFixture,
       models: [
         ...catalogFixture.models,

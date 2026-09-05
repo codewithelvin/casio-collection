@@ -1,17 +1,17 @@
 import { screen } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import { renderWithProviders } from '../test/renderWithProviders'
 import { WatchGrid } from './WatchGrid'
 
-const aModel = (n: number): PublishedModel =>
+const aModel = (n: number): BrowseModel =>
   ({
     id: `dw-5600e-${n}`,
     ref: `DW-5600E-${n}`,
     line: 'g-shock',
     series: 'dw-5600',
     source: { url: 'https://www.casio.com/intl/watches/gshock/product.DW-5600E-1/', kind: 'official' },
-  }) as PublishedModel
+  }) as BrowseModel
 
 const many = (count: number) => Array.from({ length: count }, (_, i) => aModel(i + 1))
 

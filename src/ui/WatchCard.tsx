@@ -1,6 +1,6 @@
 import { Card, Typography, theme as antdTheme } from 'antd'
 import { Link } from 'react-router-dom'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import { imageSources } from '../catalog/client.ts'
 import { OwnershipControls } from './OwnershipControls'
 import { prefetchOnIntent } from './prefetch'
@@ -52,7 +52,7 @@ export function WatchCard({
    */
   readOnly = false,
 }: {
-  model: PublishedModel
+  model: BrowseModel
   seriesName?: string | undefined
   accent?: string | undefined
   readOnly?: boolean

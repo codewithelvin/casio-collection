@@ -28,7 +28,7 @@ import {
   seriesById,
   seriesInLine,
 } from './client.ts'
-import type { Catalog, PublishedModel } from './schema.ts'
+import type { BrowseModel, Catalog, FullCatalog } from './schema.ts'
 import {
   catalogArtefactResponse,
   catalogFixture,
@@ -43,12 +43,11 @@ import {
  * with no pictures in it. A test that wants the withheld case passes
  * `image: null`.
  */
-const model = (overrides: Partial<PublishedModel>): PublishedModel => ({
+const model = (overrides: Partial<BrowseModel>): BrowseModel => ({
   id: 'x-1',
   ref: 'X-1',
   line: 'vintage',
   series: 'x',
-  source: { url: 'https://example.com/x-1', kind: 'community' },
   image: overrides.id ?? 'x-1',
   ...overrides,
 })
@@ -227,7 +226,7 @@ describe('selectors over the catalogue', () => {
   it('excludes the current model from the rest of its series (FR-3.4)', () => {
     const current = modelById(catalog, 'f-91w-1')
     expect(current).toBeDefined()
-    const others = otherModelsInSeries(catalog, current as PublishedModel)
+    const others = otherModelsInSeries(catalog, current as BrowseModel)
     expect(others.map((entry) => entry.id)).toEqual(['f-91w-3'])
   })
 })
@@ -257,7 +256,7 @@ describe('editions (D62)', () => {
   })
 
   it('excludes a tombstoned reference, as every other grid does', () => {
-    const withRetired: Catalog = {
+    const withRetired: FullCatalog = {
       ...catalogFixture,
       models: [
         ...catalogFixture.models,

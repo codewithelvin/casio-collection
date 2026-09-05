@@ -21,7 +21,7 @@ import {
   seriesModelsOf,
   stamp,
 } from '../../src/catalog/build.ts'
-import type { Catalog } from '../../src/catalog/schema.ts'
+import type { FullCatalog } from '../../src/catalog/schema.ts'
 import { renderSize } from '../../src/catalog/report.ts'
 import { INDEX_FILE, MANIFEST_FILE, OUT_DIR, OUT_FILE } from './load.ts'
 import { runValidation } from './validate.ts'
@@ -73,7 +73,7 @@ async function updateManifest(ids: string[]): Promise<number> {
  * exists; it is not served from there, and `npm run crawl` reads the sitemap
  * rather than the directory.
  */
-async function writeSplit(catalog: Catalog): Promise<void> {
+async function writeSplit(catalog: FullCatalog): Promise<void> {
   const groups: [string, Map<string, object>][] = [
     ['model', modelDocumentsOf(catalog)],
     ['series', seriesModelsOf(catalog)],

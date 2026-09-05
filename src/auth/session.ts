@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import type { Session, SupabaseClient } from '@supabase/supabase-js'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import { authCallbackUrl } from './config.ts'
 // Statically imported, unlike `pendingIntent` below: this module has no Zod and
 // no dependency at all — it is a localStorage key, a regex and a fetch — so the
@@ -76,7 +76,7 @@ export interface AccountUser {
 interface SignInPrompt {
   open: boolean
   /** §8.9 — the watch that triggered the modal, shown as a thumbnail. */
-  model: PublishedModel | null
+  model: BrowseModel | null
 }
 
 interface SessionState {
@@ -86,7 +86,7 @@ interface SessionState {
 
   hydrate: () => Promise<void>
   applySession: (session: Session | null) => void
-  promptSignIn: (model?: PublishedModel | null) => void
+  promptSignIn: (model?: BrowseModel | null) => void
   dismissSignIn: () => void
   signInWithGoogle: () => Promise<void>
   signInWithEmail: (email: string) => Promise<void>

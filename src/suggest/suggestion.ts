@@ -1,5 +1,5 @@
 import { DISPLAYS, FEATURES, MOVEMENTS } from '../catalog/vocabulary.ts'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import { t, type StringKey } from '../i18n/strings'
 
 /**
@@ -111,7 +111,7 @@ export interface Suggestion {
 }
 
 /** The model's own value for a field, as the string an input would hold. */
-export function currentValue(model: PublishedModel, key: string): string {
+export function currentValue(model: BrowseModel, key: string): string {
   if (key === 'features') return (model.features ?? []).join(', ')
   const [head, tail] = key.split('.')
   const value = tail
@@ -127,7 +127,7 @@ export function currentValue(model: PublishedModel, key: string): string {
  * starts empty — which makes the form a picture of what D27 left unknown. The
  * gaps are the ask.
  */
-export function draftFromModel(model: PublishedModel): SuggestionDraft {
+export function draftFromModel(model: BrowseModel): SuggestionDraft {
   const values: Record<string, string> = {}
   for (const field of SUGGESTION_FIELDS) {
     if (field.kind === 'multi') continue
@@ -160,7 +160,7 @@ export function invalidFields(draft: SuggestionDraft): string[] {
 }
 
 /** Only what the reader touched, each with what the catalogue says today. */
-export function changedFields(model: PublishedModel, draft: SuggestionDraft): FieldChange[] {
+export function changedFields(model: BrowseModel, draft: SuggestionDraft): FieldChange[] {
   const changes: FieldChange[] = []
   for (const field of SUGGESTION_FIELDS) {
     const from = currentValue(model, field.key)
@@ -183,13 +183,13 @@ export function changedFields(model: PublishedModel, draft: SuggestionDraft): Fi
  * and a Send that posts one would put an email in front of the maintainer that
  * says nothing at all — the D46 argument, applied to somebody's inbox.
  */
-export function isSendable(model: PublishedModel, draft: SuggestionDraft): boolean {
+export function isSendable(model: BrowseModel, draft: SuggestionDraft): boolean {
   if (invalidFields(draft).length > 0) return false
   return changedFields(model, draft).length > 0 || draft.note.trim() !== ''
 }
 
 export function buildSuggestion(
-  model: PublishedModel,
+  model: BrowseModel,
   draft: SuggestionDraft,
   url: string,
 ): Suggestion {

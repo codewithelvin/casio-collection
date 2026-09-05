@@ -3,7 +3,7 @@ import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
 import { catalogArtefactResponse, catalogFixture } from '../test/catalogFixture'
-import type { Catalog } from '../catalog/schema.ts'
+import type { FullCatalog } from '../catalog/schema.ts'
 import { seeAllResults, t } from '../i18n/strings'
 
 /**
@@ -68,7 +68,7 @@ describe('the header search (FR-2)', () => {
     // The fixture holds six models, so the cap needs a catalogue big enough to
     // reach it. Twelve colourways of one reference is not a contrivance — F-91W
     // has eighteen in the real catalogue.
-    const many: Catalog = {
+    const many: FullCatalog = {
       ...catalogFixture,
       models: Array.from({ length: 12 }, (_, i) => ({
         id: `f-91w-${i + 10}`,

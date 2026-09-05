@@ -1,4 +1,4 @@
-import type { Catalog, PublishedModel } from './schema.ts'
+import type { Catalog, BrowseModel } from './schema.ts'
 import { browsable, compareByRef } from './client.ts'
 import { normalise, searchTextBuilder } from './searchText.ts'
 
@@ -49,7 +49,7 @@ export function queryTerms(query: string): string[] {
 }
 
 export interface SearchEntry {
-  model: PublishedModel
+  model: BrowseModel
   /** The normalised reference on its own — the ranking is mostly about this. */
   ref: string
   /**
@@ -128,7 +128,7 @@ function rank(entry: SearchEntry, compact: string): number {
  * "Everything" is what the grid already shows, and a search field that answers
  * `-` with the whole catalogue reads as broken.
  */
-export function searchCatalog(index: SearchIndex, query: string, limit?: number): PublishedModel[] {
+export function searchCatalog(index: SearchIndex, query: string, limit?: number): BrowseModel[] {
   const terms = queryTerms(query)
   if (terms.length === 0) return []
 

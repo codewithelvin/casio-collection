@@ -305,6 +305,31 @@ export const PUBLISHED_MODEL = z.strictObject({
 })
 export type PublishedModel = z.infer<typeof PUBLISHED_MODEL>
 
+/**
+ * §6.2 — a model as `catalog.json` carries it: **everything except its two
+ * citations**.
+ *
+ * `source` and `image_credit` are the most expensive fields in the artefact and
+ * the only two no browsing screen reads. Each is a URL, and on most models the
+ * two URLs are the same long archive link written twice — 3 828 of those cost
+ * **59 KB gzipped of NFR-4's 150**, which is 40% of the budget spent on text
+ * that only ever renders on one page.
+ *
+ * That page is the watch page, and since §6.2's split it has `catalog/model/
+ * <id>.json` to read — a file that carries the whole model, citations included.
+ * So this is not the catalogue withholding provenance: it is the provenance
+ * travelling with the one screen that shows it, which is what the split is for.
+ * FR-D1 is unchanged, `PUBLISHED_MODEL` is unchanged, and every split artefact
+ * still carries both fields.
+ *
+ * Spelled as an `.omit()` off the full model on purpose. §6.2 asks for one
+ * definition of a model and a derived schema is still one definition — the
+ * failure this avoids is a second literal field list that drifts from the first
+ * the next time a field is added.
+ */
+export const BROWSE_MODEL = PUBLISHED_MODEL.omit({ source: true, image_credit: true })
+export type BrowseModel = z.infer<typeof BROWSE_MODEL>
+
 export const PUBLISHED_LINE = z.strictObject({
   id: z.string(),
   name: z.string(),
@@ -428,14 +453,35 @@ const STAMP = {
 }
 
 /**
+ * The stamped catalogue as **the build holds it in memory** — every field of
+ * every model, because this is what the split artefacts are cut from.
+ *
  * The stamp is spread in **before** the payload rather than extended on after,
  * because Zod rebuilds an object in the order of its shape and that order is
  * what lands in the file. §6.2 shows `version` and `generatedAt` at the top and
  * that is where a human opening the artefact looks for them.
  */
-export const CATALOG = z.strictObject({
+export const FULL_CATALOG = z.strictObject({
   ...STAMP,
   ...CATALOG_PAYLOAD.shape,
+})
+export type FullCatalog = z.infer<typeof FULL_CATALOG>
+
+/**
+ * `catalog.json` — the same document with every model's two citations dropped.
+ *
+ * **This is the browser's type and it keeps the plain name**, because it is what
+ * every browsing screen and every selector actually holds; `FullCatalog` is a
+ * build-time intermediate that never leaves the build. `PublishedModel` is
+ * assignable to `BrowseModel` by construction, so a component typed against the
+ * narrower one renders a model out of either artefact and there is no second set
+ * of accessors to keep in step — the same arrangement `CatalogIndex` already has
+ * with this type.
+ */
+export const CATALOG = z.strictObject({
+  ...STAMP,
+  ...CATALOG_SHAPE.shape,
+  models: z.array(BROWSE_MODEL),
 })
 export type Catalog = z.infer<typeof CATALOG>
 

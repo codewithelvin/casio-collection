@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd'
 import { useMemo } from 'react'
-import type { PublishedModel, PublishedSeries } from '../catalog/schema.ts'
+import type { BrowseModel, PublishedSeries } from '../catalog/schema.ts'
 import { WatchCard } from './WatchCard'
 import { SkeletonGrid } from './SkeletonGrid'
 import { GRID_GUTTER, GRID_SPANS } from './gridSpans'
@@ -60,7 +60,7 @@ export function WatchGrid({
   seriesById,
   accent,
 }: {
-  models: readonly PublishedModel[]
+  models: readonly BrowseModel[]
   seriesById?: Map<string, PublishedSeries> | undefined
   accent?: string | undefined
 }) {

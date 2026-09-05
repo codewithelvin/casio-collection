@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event'
 import { SignInModal } from './SignInModal.tsx'
 import { resetSessionStore, useSessionStore } from './session.ts'
 import { readPendingIntent, writePendingIntent } from './pendingIntent.ts'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import { strings } from '../i18n/strings'
 
 /**
@@ -21,7 +21,7 @@ const MODEL = {
   ref: 'F-91W-1',
   line: 'vintage',
   series: 'f-91w',
-} as PublishedModel
+} as BrowseModel
 
 function renderModal(methods?: readonly ('google' | 'email')[]) {
   return render(
@@ -49,7 +49,7 @@ beforeEach(() => {
   useSessionStore.setState({ signInWithGoogle, signInWithEmail })
 })
 
-function open(model: PublishedModel | null = MODEL) {
+function open(model: BrowseModel | null = MODEL) {
   useSessionStore.setState({ prompt: { open: true, model } })
 }
 

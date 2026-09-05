@@ -1,6 +1,7 @@
 import type { CatalogSource } from './integrity.ts'
 import {
   CATALOG,
+  FULL_CATALOG,
   CATALOG_INDEX,
   CATALOG_PAYLOAD,
   EDITION_MODELS,
@@ -9,6 +10,7 @@ import {
   SEARCH_INDEX_FILE,
   SERIES_MODELS,
   type Catalog,
+  type FullCatalog,
   type CatalogIndex,
   type CatalogPayload,
   type EditionModels,
@@ -279,13 +281,39 @@ export function buildCatalog(source: CatalogSource): CatalogPayload {
  * get the same answer. The date is still in the file, as `generatedAt`, which is
  * what the footer prints (FR-10.3).
  */
-export function stamp(payload: CatalogPayload, version: string, generatedAt: string): Catalog {
-  return CATALOG.parse({ version, generatedAt, ...payload })
+export function stamp(
+  payload: CatalogPayload,
+  version: string,
+  generatedAt: string,
+): FullCatalog {
+  return FULL_CATALOG.parse({ version, generatedAt, ...payload })
+}
+
+/**
+ * §6.2 — the stamped catalogue as `catalog.json` carries it: every model with
+ * its two citations dropped.
+ *
+ * **The drop happens here and not in `buildCatalog`**, and that ordering is the
+ * whole of it. Every split artefact is cut from the stamped catalogue — see the
+ * note above `modelDocumentsOf` — so a payload that had already lost `source`
+ * would hand `catalog/model/<id>.json` a watch with no provenance, which is the
+ * one thing FR-D1 does not allow. The full model reaches the split files; the
+ * browse projection reaches only the file nothing reads them from.
+ *
+ * The digest is still taken over the **full** payload, so changing a source URL
+ * still changes the version and still busts the cache on the artefact that
+ * carries it.
+ */
+export function browseCatalog(catalog: FullCatalog): Catalog {
+  return CATALOG.parse({
+    ...catalog,
+    models: catalog.models.map(({ source: _source, image_credit: _credit, ...rest }) => rest),
+  })
 }
 
 /** The exact bytes written to `public/catalog/catalog.json`. */
-export function serialiseCatalog(catalog: Catalog): string {
-  return `${JSON.stringify(catalog, null, 2)}\n`
+export function serialiseCatalog(catalog: FullCatalog): string {
+  return `${JSON.stringify(browseCatalog(catalog), null, 2)}\n`
 }
 
 /**
@@ -298,7 +326,7 @@ export function serialiseCatalog(catalog: Catalog): string {
  * an index carrying version `abc123` is, by construction, the index of the
  * catalogue carrying version `abc123`.
  */
-export function indexOf(catalog: Catalog): CatalogIndex {
+export function indexOf(catalog: FullCatalog): CatalogIndex {
   return CATALOG_INDEX.parse({
     version: catalog.version,
     generatedAt: catalog.generatedAt,
@@ -334,7 +362,7 @@ export function serialiseIndex(index: CatalogIndex): string {
  * ------------------------------------------------------------------------- */
 
 /** One watch, for `catalog/model/<id>.json`. */
-export function modelDocumentsOf(catalog: Catalog): Map<string, ModelDocument> {
+export function modelDocumentsOf(catalog: FullCatalog): Map<string, ModelDocument> {
   const { version, generatedAt } = catalog
   return new Map(
     catalog.models.map((model) => [model.id, MODEL_DOCUMENT.parse({ version, generatedAt, model })]),
@@ -350,7 +378,7 @@ export function modelDocumentsOf(catalog: Catalog): Map<string, ModelDocument> {
  * the page for it should say "nothing to show" rather than fail to load. A 404
  * would reach the client as an error state and read as a broken link.
  */
-export function seriesModelsOf(catalog: Catalog): Map<string, SeriesModels> {
+export function seriesModelsOf(catalog: FullCatalog): Map<string, SeriesModels> {
   return new Map(
     [...groupBy(catalog, (model) => model.series, catalog.series.map((series) => series.id))].map(
       ([series, models]) => [
@@ -367,7 +395,7 @@ export function seriesModelsOf(catalog: Catalog): Map<string, SeriesModels> {
 }
 
 /** The models of each line, for `catalog/line/<id>.json`. Same emptiness rule. */
-export function lineModelsOf(catalog: Catalog): Map<string, LineModels> {
+export function lineModelsOf(catalog: FullCatalog): Map<string, LineModels> {
   return new Map(
     [...groupBy(catalog, (model) => model.line, catalog.lines.map((line) => line.id))].map(
       ([line, models]) => [
@@ -403,7 +431,7 @@ export function lineModelsOf(catalog: Catalog): Map<string, LineModels> {
  * FR-3.6, and the watch page reads the series file to find them.
  */
 function groupBy(
-  catalog: Catalog,
+  catalog: FullCatalog,
   keyOf: (model: PublishedModel) => string,
   published: readonly string[],
 ): Map<string, PublishedModel[]> {
@@ -425,7 +453,7 @@ function groupBy(
  * edition nothing names gets an empty file — which is exactly what the build
  * already warns about rather than failing on.
  */
-export function editionModelsOf(catalog: Catalog): Map<string, EditionModels> {
+export function editionModelsOf(catalog: FullCatalog): Map<string, EditionModels> {
   const { version, generatedAt } = catalog
   return new Map(
     catalog.editions.map((edition) => [
@@ -453,7 +481,7 @@ export function editionModelsOf(catalog: Catalog): Map<string, EditionModels> {
  * tombstoned entry is reachable by URL forever and counted nowhere else, and a
  * model with no photograph is withheld (2026-08-26).
  */
-export function searchIndexOf(catalog: Catalog): SearchIndexFile {
+export function searchIndexOf(catalog: FullCatalog): SearchIndexFile {
   const textOf = searchTextBuilder(catalog)
   // The same test `client.ts` and `seo.ts` apply, spelled here for the third
   // time rather than imported from the client for the reason in the imports.

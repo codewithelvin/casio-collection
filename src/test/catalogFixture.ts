@@ -1,4 +1,4 @@
-import type { Catalog } from '../catalog/schema.ts'
+import type { FullCatalog } from '../catalog/schema.ts'
 
 /**
  * A published `catalog.json` for the browsing tests.
@@ -41,7 +41,7 @@ import type { Catalog } from '../catalog/schema.ts'
  * availability facet is tested against its own dense cohort in `filters.test.ts`,
  * where the density can be set on purpose.
  */
-export const catalogFixture: Catalog = {
+export const catalogFixture: FullCatalog = {
   version: 'testfixture01',
   generatedAt: '2026-08-16',
   lines: [
@@ -269,8 +269,22 @@ export const catalogFixture: Catalog = {
   facets: {},
 }
 
-/** A JSON round-trip, so a test gets what `fetch` would actually hand back. */
-export const catalogFixtureJson = () => JSON.parse(JSON.stringify(catalogFixture)) as unknown
+/**
+ * A JSON round-trip, so a test gets what `fetch` would actually hand back.
+ *
+ * **Through `browseCatalog`, because that is what `catalog.json` now is**: the
+ * catalogue with every model's `source` and `image_credit` dropped (§6.2). The
+ * fixture holds full models — the split artefacts are cut from it and they carry
+ * both fields — so serving it raw here would hand every test two fields the real
+ * file does not have, and a screen reading one would pass in the suite and fail
+ * on the site. Async and lazily imported for `catalogArtefactResponse`'s reason:
+ * `setup.ts` loads this module in all 57 test files, and a top-level import of
+ * `build.ts` pulls Zod into every one of them.
+ */
+export const catalogFixtureJson = async () => {
+  const { browseCatalog } = await import('../catalog/build.ts')
+  return roundTrip(browseCatalog(catalogFixture))
+}
 
 /**
  * The same fixture as `catalog-index.json` would serve it (§6.2's split).
@@ -281,7 +295,7 @@ export const catalogFixtureJson = () => JSON.parse(JSON.stringify(catalogFixture
  * which is the one failure mode the split introduces and the only one worth
  * spending a line of test infrastructure on.
  */
-export const catalogIndexFixtureJson = (catalog: Catalog = catalogFixture) => {
+export const catalogIndexFixtureJson = (catalog: FullCatalog = catalogFixture) => {
   const { models: _models, ...index } = catalog
   return JSON.parse(JSON.stringify(index)) as unknown
 }
@@ -301,7 +315,7 @@ export const catalogIndexFixtureJson = (catalog: Catalog = catalogFixture) => {
  */
 export function catalogArtefactResponse(
   url: string,
-  catalog: Catalog = catalogFixture,
+  catalog: FullCatalog = catalogFixture,
 ): { ok: boolean; status: number; json: () => Promise<unknown> } | null {
   // The index is matched first: see above.
   if (url.includes('catalog-index.json')) {
@@ -371,7 +385,8 @@ export function catalogArtefactResponse(
     return {
       ok: true,
       status: 200,
-      json: async () => JSON.parse(JSON.stringify(catalog)) as unknown,
+      // Through the build's own projection, for `catalogFixtureJson`'s reason.
+      json: async () => roundTrip((await import('../catalog/build.ts')).browseCatalog(catalog)),
     }
   }
   return null
@@ -389,7 +404,7 @@ const roundTrip = (value: unknown) => JSON.parse(JSON.stringify(value)) as unkno
  * has somewhere for the watch page to look.
  */
 function splitExists(
-  catalog: Catalog,
+  catalog: FullCatalog,
   kind: 'model' | 'series' | 'line' | 'edition',
   id: string,
 ): boolean {

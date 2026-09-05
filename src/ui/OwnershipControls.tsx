@@ -3,7 +3,7 @@ import { App, Button, Tooltip } from 'antd'
 import CheckOutlined from '@ant-design/icons/CheckOutlined'
 import HeartOutlined from '@ant-design/icons/HeartOutlined'
 import HeartFilled from '@ant-design/icons/HeartFilled'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import { needsRemovalConfirmation, useOwnership } from '../collection/mutations.ts'
 import { useSessionStore } from '../auth/session.ts'
 import { t } from '../i18n/strings'
@@ -25,7 +25,7 @@ export function OwnershipControls({
   model,
   size = 'middle',
 }: {
-  model: PublishedModel
+  model: BrowseModel
   size?: 'small' | 'middle' | 'large'
 }) {
   const { message, notification, modal } = App.useApp()

@@ -1,4 +1,4 @@
-import type { CatalogIndex, PublishedModel } from './schema.ts'
+import type { CatalogIndex, BrowseModel } from './schema.ts'
 
 /**
  * **What search can see about a watch, and how it is spelled — in one place, on
@@ -64,7 +64,7 @@ export function normalise(value: string): string {
  * editions — millions of comparisons on every build, for a string join.
  * The maps are built once and closed over.
  */
-export function searchTextBuilder(shape: CatalogIndex): (model: PublishedModel) => string {
+export function searchTextBuilder(shape: CatalogIndex): (model: BrowseModel) => string {
   const lineById = new Map(shape.lines.map((line) => [line.id, line.name]))
   const familyById = new Map(shape.families.map((family) => [family.id, family.name]))
   const seriesById = new Map(shape.series.map((series) => [series.id, series]))

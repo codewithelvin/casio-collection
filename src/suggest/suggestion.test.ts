@@ -9,9 +9,9 @@ import {
   isSendable,
 } from './suggestion.ts'
 import { catalogFixture } from '../test/catalogFixture.ts'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 
-const model = (id: string): PublishedModel =>
+const model = (id: string): BrowseModel =>
   catalogFixture.models.find((candidate) => candidate.id === id)!
 
 /** The fixture's fullest entry: year, display, movement, module, case, WR, features. */

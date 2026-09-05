@@ -1,4 +1,4 @@
-import type { PublishedModel } from './schema.ts'
+import type { BrowseModel } from './schema.ts'
 import {
   COVERAGE_FIELDS,
   DENSITY_THRESHOLD,
@@ -36,7 +36,7 @@ export interface CoverageColumn {
   rows: CoverageRow[]
 }
 
-function carries(model: PublishedModel, field: CoverageField): boolean {
+function carries(model: BrowseModel, field: CoverageField): boolean {
   const value = model[field]
   if (value === undefined || value === null) return false
   if (Array.isArray(value)) return value.length > 0
@@ -44,7 +44,7 @@ function carries(model: PublishedModel, field: CoverageField): boolean {
   return true
 }
 
-export function coverageOf(models: readonly PublishedModel[]): CoverageRow[] {
+export function coverageOf(models: readonly BrowseModel[]): CoverageRow[] {
   return COVERAGE_FIELDS.map((field) => {
     const present = models.filter((model) => carries(model, field)).length
     return {
@@ -62,7 +62,7 @@ export function coverageOf(models: readonly PublishedModel[]): CoverageRow[] {
  * not seeded, which the model count already said.
  */
 export function coverageTable(
-  models: readonly PublishedModel[],
+  models: readonly BrowseModel[],
   lines: readonly { id: string; name: string }[],
 ): CoverageColumn[] {
   const columns: CoverageColumn[] = []

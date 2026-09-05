@@ -7,7 +7,7 @@ import { AUTH_METHODS, type AuthMethod } from './config.ts'
 import { useSessionStore } from './session.ts'
 import { ensureReturnPath } from './pendingIntent.ts'
 import { imageSources } from '../catalog/client.ts'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import { LINE_ACCENTS } from '../theme/palette.ts'
 import AntdRoot from '../ui/AntdRoot'
 import { t } from '../i18n/strings'
@@ -196,7 +196,7 @@ export function SignInModal({ methods = AUTH_METHODS }: { methods?: readonly Aut
  * not, exactly as §8.6 does at full size — 84% of the catalogue is photographed
  * (D41) and the rest never will be, so both are normal here too.
  */
-function TriggeringWatch({ model }: { model: PublishedModel }) {
+function TriggeringWatch({ model }: { model: BrowseModel }) {
   const { token } = antdTheme.useToken()
   const sources = imageSources(model.image)
   const accent = LINE_ACCENTS[model.line] ?? token.colorPrimary

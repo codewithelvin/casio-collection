@@ -25,7 +25,13 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { CATALOG, type Catalog, type PublishedModel } from '../src/catalog/schema.ts'
+import {
+  CATALOG,
+  LINE_MODELS,
+  type BrowseModel,
+  type Catalog,
+  type PublishedModel,
+} from '../src/catalog/schema.ts'
 // The glossary is pure data with no imports of its own, so this script can read
 // the same list the route renders. A second copy of the definitions would be a
 // second thing to keep in step, and the one that would drift is the one nobody
@@ -165,7 +171,7 @@ const WITHHELD = 'noindex, follow'
  * The moment `image` is set the page rejoins the sitemap on the next build.
  * Nothing has to be un-done, which is the property `browsable` was written for.
  */
-const listed = (model: PublishedModel): boolean => !model.tombstone && Boolean(model.image)
+const listed = (model: BrowseModel): boolean => !model.tombstone && Boolean(model.image)
 
 /* ------------------------------------------------------------------------- *
  * The pages.
@@ -956,6 +962,19 @@ async function main() {
     JSON.parse(await readFile(join(dist, 'catalog/catalog.json'), 'utf8')),
   )
 
+  // §6.2 — `catalog.json` no longer carries `source` or `image_credit`, and the
+  // watch page prints the source. The citations live in the split artefacts, so
+  // they are read back from **the seven line files** rather than the 3 828 model
+  // files: same models, same shape, 7 reads instead of 3 828, and each one is
+  // already on disk because `catalog:build` wrote it a step earlier.
+  const cited = new Map<string, PublishedModel>()
+  for (const line of catalog.lines) {
+    const file = LINE_MODELS.parse(
+      JSON.parse(await readFile(join(dist, `catalog/line/${line.id}.json`), 'utf8')),
+    )
+    for (const model of file.models) cited.set(model.id, model)
+  }
+
   // The glossary depends on no catalogue data, so it is pushed unconditionally
   // and early — it is the one page here that would still be worth serving if
   // `catalog.json` were empty.
@@ -982,7 +1001,12 @@ async function main() {
   // page no page here links to. `listed` carries both halves of that rule and
   // says which watches fall under it, and why each one does.
   for (const model of catalog.models) {
-    pages.push({ ...watchPage(catalog, model), noindex: !listed(model) })
+    // `cited` is built from the line artefacts of this same build, so a model in
+    // the catalogue is in it by construction; the throw is here because a silent
+    // skip would drop a watch page and nothing would say so.
+    const full = cited.get(model.id)
+    if (!full) throw new Error(`seo: ${model.id} is in catalog.json but in no line artefact`)
+    pages.push({ ...watchPage(catalog, full), noindex: !listed(model) })
   }
 
   for (const page of pages) {

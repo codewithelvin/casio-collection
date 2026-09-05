@@ -1,4 +1,4 @@
-import type { Catalog, PublishedModel } from '../catalog/schema.ts'
+import type { Catalog, BrowseModel } from '../catalog/schema.ts'
 import {
   applyFilters,
   facetsFor,
@@ -30,7 +30,7 @@ export interface CollectionEntry {
    * joins normally and carries its own notice (FR-3.6). This is the data error —
    * or a catalogue rolled back past a reference somebody had already marked.
    */
-  model: PublishedModel | undefined
+  model: BrowseModel | undefined
 }
 
 /**
@@ -58,7 +58,7 @@ export function entriesWithStatus(
 }
 
 /** The models behind the entries, for anything that reads a catalogue view. */
-export function modelsOf(entries: readonly CollectionEntry[]): PublishedModel[] {
+export function modelsOf(entries: readonly CollectionEntry[]): BrowseModel[] {
   return entries.flatMap((entry) => (entry.model ? [entry.model] : []))
 }
 

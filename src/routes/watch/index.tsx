@@ -28,12 +28,13 @@ import { Link, useParams } from 'react-router-dom'
 import {
   editionById,
   imageSources,
-  modelById,
   otherModelsInSeries,
   seriesById,
   useCatalog,
+  useModel,
 } from '../../catalog/client.ts'
 import type {
+  BrowseModel,
   Catalog,
   ImageCredit,
   PublishedEdition,
@@ -73,8 +74,19 @@ import {
 export default function WatchRoute() {
   const { modelId } = useParams<{ modelId: string }>()
   const { data, isPending, isError, refetch } = useCatalog()
+  // §6.2 — **the watch itself comes from `catalog/model/<id>.json`, not from the
+  // catalogue**, because `catalog.json` no longer carries `source` or
+  // `image_credit` and this is the one page that renders both. The catalogue is
+  // still read beside it for the things around the watch: its line's accent, its
+  // edition, and the other references in its series.
+  //
+  // The two queries are deliberately not chained, for the reason the series page
+  // gives: taking the id straight from the URL puts both requests in flight at
+  // once, and a URL naming a watch that does not exist costs one wasted 404
+  // rather than making every real watch wait for a round trip it did not need.
+  const modelDoc = useModel(modelId)
 
-  const model = data ? modelById(data, modelId) : undefined
+  const model = modelDoc.data?.model
   const series = data && model ? seriesById(data, model.series) : undefined
 
   // FR-3.7 — the title and the card tags, so a pasted link previews as the
@@ -91,9 +103,21 @@ export default function WatchRoute() {
     }
   }, [model])
 
-  if (isPending) return <WatchSkeleton />
-  if (isError || !data) return <ErrorState onRetry={() => void refetch()} />
+  if (isPending || modelDoc.isPending) return <WatchSkeleton />
+  if (isError || !data || modelDoc.isError) {
+    return (
+      <ErrorState
+        onRetry={() => {
+          void refetch()
+          void modelDoc.refetch()
+        }}
+      />
+    )
+  }
 
+  // `modelDoc.data` is null for a 404, which is a URL naming a watch that is not
+  // here — FR-10.2's designed screen, and a different thing from the fetch
+  // failing. `fetchModel` is what keeps the two apart.
   if (!model) {
     return <EmptyState title={t('watch.notFound.title')} body={t('watch.notFound.body')} />
   }
@@ -643,7 +667,7 @@ function SectionHeading({ icon, text }: { icon: ReactNode; text: string }) {
 /** Loading geometry that matches the detail layout, not a generic spinner. */
 /** FR-3.4's tile: the photograph at 148 px where there is one, the reference set
  *  in the mono face where there is not. Same rule as the card, same geometry. */
-function OtherTile({ model, accent }: { model: PublishedModel; accent: string }) {
+function OtherTile({ model, accent }: { model: BrowseModel; accent: string }) {
   const { token } = antdTheme.useToken()
   const sources = imageSources(model.image)
 

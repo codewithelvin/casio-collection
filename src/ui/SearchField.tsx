@@ -5,7 +5,7 @@ import SearchOutlined from '@ant-design/icons/SearchOutlined'
 import { useNavigate } from 'react-router-dom'
 import { imageSources, useCatalog } from '../catalog/client.ts'
 import { buildSearchIndex, searchCatalog } from '../catalog/search.ts'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import { LINE_ACCENTS } from '../theme/palette.ts'
 import { watchPath } from '../paths.ts'
 import AntdRoot from './AntdRoot'
@@ -218,7 +218,7 @@ function Field({ autoFocus, focusNonce, onBlur, onStay, onClose }: SearchFieldPr
  * list is mostly made of; §8.6 makes that a designed state rather than a hole,
  * and it has to stay designed at 32 px as well as at 400.
  */
-function ResultRow({ model }: { model: PublishedModel }) {
+function ResultRow({ model }: { model: BrowseModel }) {
   const { token } = antdTheme.useToken()
   const accent = LINE_ACCENTS[model.line] ?? token.colorPrimary
   const meta = [model.name, model.year].filter(Boolean).join(' · ')

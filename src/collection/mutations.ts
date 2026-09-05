@@ -14,7 +14,7 @@ import {
 import { useSessionStore } from '../auth/session.ts'
 import { writePendingIntent } from '../auth/pendingIntent.ts'
 import { recallCollection, rememberCollection, useOnline } from '../pwa/offline.ts'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 
 /**
  * §7.1 — the optimistic upsert and delete (FR-4.3), and the four pure functions
@@ -188,7 +188,7 @@ export interface Ownership {
  * reason the modal writes with `ensure` and this writes with `write` — a press
  * is a richer intent than a return path and must win.
  */
-export function useOwnership(model: PublishedModel, handlers: OwnershipHandlers = {}): Ownership {
+export function useOwnership(model: BrowseModel, handlers: OwnershipHandlers = {}): Ownership {
   const queryClient = useQueryClient()
   const location = useLocation()
   const sessionStatus = useSessionStore((state) => state.status)
@@ -343,7 +343,7 @@ export interface NoteEditor {
  * refetch — the query refetches when the tab regains focus — overwrite a
  * half-typed sentence with what the server still had.
  */
-export function useNote(model: PublishedModel): NoteEditor {
+export function useNote(model: BrowseModel): NoteEditor {
   const queryClient = useQueryClient()
   const userId = useSessionStore((state) => state.user?.id ?? null)
   const { data: items } = useCollection()

@@ -1,5 +1,5 @@
 import { Input, Typography, theme as antdTheme } from 'antd'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import { NOTE_MAX, useNote } from '../collection/mutations.ts'
 import { t } from '../i18n/strings'
 
@@ -16,7 +16,7 @@ import { t } from '../i18n/strings'
  * long as nobody reaches for `dangerouslySetInnerHTML` — which S4 forbids and
  * the lint rule enforces.
  */
-export function NoteEditor({ model }: { model: PublishedModel }) {
+export function NoteEditor({ model }: { model: BrowseModel }) {
   const { token } = antdTheme.useToken()
   const note = useNote(model)
 

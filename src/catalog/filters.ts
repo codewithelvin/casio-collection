@@ -1,4 +1,4 @@
-import type { PublishedModel } from './schema.ts'
+import type { BrowseModel } from './schema.ts'
 import { compareByRef } from './client.ts'
 import { DENSITY_THRESHOLD, FACET_FIELDS, type FacetField } from './vocabulary.ts'
 
@@ -67,7 +67,7 @@ export interface Facet {
  * `features` is a list, so "carries this field" means *carries at least one*.
  * An empty array is the same as an absent key: nobody sourced a feature list.
  */
-function carries(model: PublishedModel, field: FacetField): boolean {
+function carries(model: BrowseModel, field: FacetField): boolean {
   if (field === 'features') return (model.features?.length ?? 0) > 0
   return model[field] !== undefined
 }
@@ -78,7 +78,7 @@ function carries(model: PublishedModel, field: FacetField): boolean {
  * what lands in the URL and what `applyFilters` compares against. The reader
  * never meets either word — `facetValueLabel` turns them into English.
  */
-function valuesOf(model: PublishedModel, field: FacetField): string[] {
+function valuesOf(model: BrowseModel, field: FacetField): string[] {
   if (field === 'features') return model.features ?? []
   const value = model[field]
   return value === undefined ? [] : [String(value)]
@@ -109,7 +109,7 @@ function valuesOf(model: PublishedModel, field: FacetField): string[] {
  * you press one, and then there is no way back to the other years without
  * finding the *Clear all* — the control removing the state it just created.
  */
-export function facetsFor(models: readonly PublishedModel[]): Facet[] {
+export function facetsFor(models: readonly BrowseModel[]): Facet[] {
   const total = models.length
   if (total === 0) return []
 
@@ -164,9 +164,9 @@ export function facetsFor(models: readonly PublishedModel[]): Facet[] {
  * not working; each additional chip is a narrowing intent.
  */
 export function applyFilters(
-  models: readonly PublishedModel[],
+  models: readonly BrowseModel[],
   filters: Filters,
-): PublishedModel[] {
+): BrowseModel[] {
   return models.filter((model) => {
     for (const field of FACET_FIELDS) {
       const selected = filters[field]
@@ -202,7 +202,7 @@ export function applyFilters(
  * open on the watches nobody has dated. It reads as an odd order rather than as
  * a fault, which is exactly how it survives a click-through.
  */
-export function sortModels(models: readonly PublishedModel[], sort: SortKey): PublishedModel[] {
+export function sortModels(models: readonly BrowseModel[], sort: SortKey): BrowseModel[] {
   const sorted = [...models]
 
   // A bare model carries no date added — that lives on the collection row. The
@@ -222,9 +222,9 @@ export function sortModels(models: readonly PublishedModel[], sort: SortKey): Pu
 
 /** The grid, filtered and ordered — the one call every browsing screen makes. */
 export function applyViewState(
-  models: readonly PublishedModel[],
+  models: readonly BrowseModel[],
   state: ViewState,
-): PublishedModel[] {
+): BrowseModel[] {
   return sortModels(applyFilters(models, state.filters), state.sort)
 }
 

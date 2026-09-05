@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Input, Modal, Select, Typography, theme as antdTheme } from 'antd'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import {
   SUGGESTION_FIELDS,
   buildSuggestion,
@@ -29,7 +29,7 @@ import { displayLabel, featureLabel, movementLabel, t } from '../i18n/strings'
  * the catalogue. §10.8 and rule 3 both say a fact needs a page it was read off,
  * and a form cannot supply one — so this collects a lead, addressed to a person.
  */
-export function ImproveEntry({ model }: { model: PublishedModel }) {
+export function ImproveEntry({ model }: { model: BrowseModel }) {
   const [open, setOpen] = useState(false)
 
   // §14.2 — the endpoint is a Supabase function, so with no project configured
@@ -53,7 +53,7 @@ export function ImproveEntry({ model }: { model: PublishedModel }) {
   )
 }
 
-function ImproveDialog({ model, onClose }: { model: PublishedModel; onClose: () => void }) {
+function ImproveDialog({ model, onClose }: { model: BrowseModel; onClose: () => void }) {
   const { token } = antdTheme.useToken()
   const [draft, setDraft] = useState<SuggestionDraft>(() => draftFromModel(model))
   /**

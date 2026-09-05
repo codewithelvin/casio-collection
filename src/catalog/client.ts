@@ -12,7 +12,7 @@ import type {
   PublishedEdition,
   PublishedFamily,
   PublishedLine,
-  PublishedModel,
+  BrowseModel,
   PublishedSeries,
   SearchIndexFile,
   SeriesModels,
@@ -256,11 +256,31 @@ export function useSeriesModels(id: string | undefined): UseQueryResult<SeriesMo
 }
 
 /**
+ * One watch, with its citations.
+ *
+ * **This is the only way to read `source` or `image_credit` in the browser**,
+ * and that is deliberate rather than incidental: `catalog.json` stopped carrying
+ * either field, because 3 828 pairs of URLs were 59 KB gzipped of NFR-4's 150
+ * and no browsing screen renders them. See `BROWSE_MODEL` in `schema.ts`.
+ *
+ * It shares `modelQueryOptions`' key, so a screen that prefetched a watch and a
+ * screen that opens it hit the same cache entry.
+ */
+export function useModel(id: string | undefined): UseQueryResult<ModelDocument | null, Error> {
+  return useQuery({
+    ...modelQueryOptions(id ?? ''),
+    enabled: Boolean(id),
+  })
+}
+
+/**
  * **The hooks for the other three artefacts land with the screens that use
  * them, and that is a rule this file learned the hard way.**
  *
  * `useModel`, `useLineModels`, `useEditionModels` and `useSearchIndex` were
- * written here in one go, ahead of the screens. Every one of them was a function
+ * written here in one go, ahead of the screens — `useModel` is above because the
+ * watch page now reads it, and the other two are still waiting for theirs.
+ * Every one of them was, at the time, a function
  * nothing called, and `src/catalog/**` carries a 90% function floor (D31): the
  * group fell to 86.59% and the deploy stopped at the coverage gate — correctly,
  * because an artefact hook nothing has ever run is exactly the thing that ships
@@ -306,7 +326,7 @@ export function useSeriesModels(id: string | undefined): UseQueryResult<SeriesMo
  * 347 G-SHOCK references sit here today, every one of them with a written reason
  * at `image: null` explaining which photograph routes were walked.
  */
-export function browsable(models: readonly PublishedModel[]): PublishedModel[] {
+export function browsable(models: readonly BrowseModel[]): BrowseModel[] {
   return models.filter((model) => !model.tombstone && model.image)
 }
 
@@ -316,7 +336,7 @@ export function browsable(models: readonly PublishedModel[]): PublishedModel[] {
  * "0" against "5" and stops there. A collector reading down a series column
  * notices that immediately.
  */
-export function compareByRef(a: PublishedModel, b: PublishedModel): number {
+export function compareByRef(a: BrowseModel, b: BrowseModel): number {
   return a.ref.localeCompare(b.ref, 'en', { numeric: true, sensitivity: 'base' })
 }
 
@@ -336,7 +356,7 @@ export function seriesById(
   return catalog.series.find((series) => series.id === seriesId)
 }
 
-export function modelById(catalog: Catalog, id: string | undefined): PublishedModel | undefined {
+export function modelById(catalog: Catalog, id: string | undefined): BrowseModel | undefined {
   if (!id) return undefined
   return catalog.models.find((model) => model.id === id)
 }
@@ -345,7 +365,7 @@ export function seriesInLine(catalog: CatalogIndex, lineId: string): PublishedSe
   return catalog.series.filter((series) => series.line === lineId)
 }
 
-export function modelsInSeries(catalog: Catalog, seriesId: string): PublishedModel[] {
+export function modelsInSeries(catalog: Catalog, seriesId: string): BrowseModel[] {
   return browsable(catalog.models.filter((model) => model.series === seriesId)).sort(compareByRef)
 }
 
@@ -359,11 +379,11 @@ export function modelsInSeries(catalog: Catalog, seriesId: string): PublishedMod
  * naturally write `browsable(file.models)` and forget the sort — which reads
  * fine on screen until a series has an F-103 and an F-15 in it.
  */
-export function browsableSorted(models: readonly PublishedModel[]): PublishedModel[] {
+export function browsableSorted(models: readonly BrowseModel[]): BrowseModel[] {
   return browsable(models).sort(compareByRef)
 }
 
-export function modelsInLine(catalog: Catalog, lineId: string): PublishedModel[] {
+export function modelsInLine(catalog: Catalog, lineId: string): BrowseModel[] {
   return browsable(catalog.models.filter((model) => model.line === lineId)).sort(compareByRef)
 }
 
@@ -384,12 +404,12 @@ export function editionById(
  * URL on this site that could show them together. Sorted by reference like every
  * other grid, so a reader arriving from a series page reads the same order.
  */
-export function modelsInEdition(catalog: Catalog, editionId: string): PublishedModel[] {
+export function modelsInEdition(catalog: Catalog, editionId: string): BrowseModel[] {
   return browsable(catalog.models.filter((model) => model.edition === editionId)).sort(compareByRef)
 }
 
 /** FR-3.4 — the strip on a watch page, which excludes the watch you are on. */
-export function otherModelsInSeries(catalog: Catalog, model: PublishedModel): PublishedModel[] {
+export function otherModelsInSeries(catalog: Catalog, model: BrowseModel): BrowseModel[] {
   return modelsInSeries(catalog, model.series).filter((other) => other.id !== model.id)
 }
 

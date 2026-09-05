@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { Button, Checkbox, Grid, Popover, Select, Tag, Typography, theme as antdTheme } from 'antd'
 import DownOutlined from '@ant-design/icons/DownOutlined'
 import CloseOutlined from '@ant-design/icons/CloseOutlined'
-import type { PublishedModel } from '../catalog/schema.ts'
+import type { BrowseModel } from '../catalog/schema.ts'
 import {
   activeFilters,
   facetsFor,
@@ -41,7 +41,7 @@ export function FilterBar({
    */
   sorts = SORTS,
 }: {
-  models: readonly PublishedModel[]
+  models: readonly BrowseModel[]
   state: ViewState
   onChange: (next: ViewState) => void
   sorts?: readonly SortKey[]
