@@ -163,7 +163,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220608235348id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YDB-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-900ydb-1b
     ref: ECB-900YDB-1B
     source:
@@ -174,7 +174,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220812121856id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YDB-1B/'
-    discontinued: true
+    discontinued: false
   - id: ecb-900ydb-1c
     ref: ECB-900YDB-1C
     source:
@@ -185,7 +185,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210815052222id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YDB-1C/'
-    discontinued: true
+    discontinued: false
   - id: ecb-900ymp-1a
     ref: ECB-900YMP-1A
     source:
@@ -196,7 +196,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230122010353id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YMP-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-900ypb-1a
     ref: ECB-900YPB-1A
     source:
@@ -207,4 +207,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210625075017id_/https://www.casio.com/jp/watches/edifice/product.ECB-900YPB-1A/'
-    discontinued: true
+    discontinued: false

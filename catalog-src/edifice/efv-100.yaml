@@ -149,7 +149,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241102015703id_/https://www.casio.com/jp/watches/edifice/product.EFV-100DJ-2B/'
-    discontinued: true
+    discontinued: false
   - id: efv-100dj-9a
     ref: EFV-100DJ-9A
     source:
@@ -161,4 +161,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241111231250id_/https://www.casio.com/jp/watches/edifice/product.EFV-100DJ-9A/'
-    discontinued: true
+    discontinued: false

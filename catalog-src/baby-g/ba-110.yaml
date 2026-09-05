@@ -432,7 +432,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210729160332id_/https://www.casio.com/sg/watches/babyg/product.BA-110PI-2A/'
-    discontinued: true
+    discontinued: false
     display: ana-digi
   - id: ba-110pi-4a
     ref: BA-110PI-4A
@@ -447,7 +447,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210917122744id_/https://www.casio.com/sg/watches/babyg/product.BA-110PI-4A/'
-    discontinued: true
+    discontinued: false
     display: ana-digi
   - id: ba-110pkc-4a
     ref: BA-110PKC-4A
@@ -462,7 +462,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203221956id_/https://www.casio.com/my/watches/babyg/product.BA-110PKC-4A/'
-    discontinued: true
+    discontinued: false
     display: ana-digi
   - id: ba-110pl-1a
     ref: BA-110PL-1A
@@ -582,7 +582,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203214845id_/https://www.casio.com/my/watches/babyg/product.BA-110SC-2A/'
-    discontinued: true
+    discontinued: false
     display: ana-digi
   - id: ba-110sc-4a
     ref: BA-110SC-4A
@@ -657,7 +657,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221203224954id_/https://www.casio.com/my/watches/babyg/product.BA-110TM-7A/'
-    discontinued: true
+    discontinued: false
     display: ana-digi
   - id: ba-110tx-4a
     ref: BA-110TX-4A

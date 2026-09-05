@@ -70,7 +70,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210416091802id_/https://www.casio.com/jp/watches/casio/product.AW-80-7A/'
-    discontinued: true
+    discontinued: false
   - id: aw-80d-1av
     ref: AW-80D-1AV
     source:
@@ -96,7 +96,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210618031640id_/https://www.casio.com/jp/watches/casio/product.AW-80D-7A/'
-    discontinued: true
+    discontinued: false
   - id: aw-80d-7av
     ref: AW-80D-7AV
     source:
@@ -117,7 +117,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210618031024id_/https://www.casio.com/jp/watches/casio/product.AW-80V-3B/'
-    discontinued: true
+    discontinued: false
   - id: aw-80v-5b
     ref: AW-80V-5B
     source:
@@ -129,7 +129,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241128103547id_/https://www.casio.com/jp/watches/casio/product.AW-80V-5B/'
-    discontinued: true
+    discontinued: false
   - id: aw-80v-5bv
     ref: AW-80V-5BV
     source:

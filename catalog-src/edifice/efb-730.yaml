@@ -81,7 +81,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240913051959id_/https://www.casio.com/jp/watches/edifice/product.EFB-730DJ-1A/'
-    discontinued: true
+    discontinued: false
   - id: efb-730dj-2a
     ref: EFB-730DJ-2A
     source:
@@ -93,7 +93,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240919051355id_/https://www.casio.com/jp/watches/edifice/product.EFB-730DJ-2A/'
-    discontinued: true
+    discontinued: false
   - id: efb-730dj-7a
     ref: EFB-730DJ-7A
     source:
@@ -105,4 +105,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240923092702id_/https://www.casio.com/jp/watches/edifice/product.EFB-730DJ-7A/'
-    discontinued: true
+    discontinued: false

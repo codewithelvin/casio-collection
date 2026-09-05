@@ -277,7 +277,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221123112101id_/https://www.casio.com/jp/watches/casio/product.MRW-200HJ-1B/'
-    discontinued: true
+    discontinued: false
   - id: mrw-200hj-7e
     ref: MRW-200HJ-7E
     source:
@@ -289,4 +289,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221202070634id_/https://www.casio.com/jp/watches/casio/product.MRW-200HJ-7E/'
-    discontinued: true
+    discontinued: false

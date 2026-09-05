@@ -149,7 +149,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210618032425id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-1A/'
-    discontinued: true
+    discontinued: false
   - id: aeq-110w-1b
     ref: AEQ-110W-1B
     source:
@@ -161,7 +161,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210618024547id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-1B/'
-    discontinued: true
+    discontinued: false
   - id: aeq-110w-2a
     ref: AEQ-110W-2A
     source:
@@ -173,4 +173,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210618030202id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-2A/'
-    discontinued: true
+    discontinued: false

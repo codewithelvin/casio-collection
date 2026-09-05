@@ -39,4 +39,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210623055626id_/https://www.casio.com/jp/watches/edifice/product.ECB-800DC-1A/'
-    discontinued: true
+    discontinued: false

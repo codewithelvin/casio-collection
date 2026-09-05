@@ -163,4 +163,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240527122800id_/https://www.casio.com/jp/watches/edifice/product.ECB-40YNP-1A/'
-    discontinued: true
+    discontinued: false

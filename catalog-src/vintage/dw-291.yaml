@@ -42,7 +42,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210925002825id_/https://www.casio.com/jp/watches/casio/product.DW-291H-1A/'
-    discontinued: true
+    discontinued: false
   - id: dw-291h-1av
     ref: DW-291H-1AV
     source:

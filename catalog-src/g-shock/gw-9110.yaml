@@ -29,4 +29,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210624211503id_/https://www.casio.com/jp/watches/gshock/product.GW-9110-1/'
-    discontinued: true
+    discontinued: false

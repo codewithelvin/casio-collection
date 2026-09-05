@@ -148,7 +148,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210412061736id_/https://www.casio.com/jp/watches/edifice/product.ECB-10HR-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-10p-1a
     ref: ECB-10P-1A
     source:
@@ -189,7 +189,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210401170834id_/https://www.casio.com/jp/watches/edifice/product.ECB-10TMS-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-10tp-1a
     ref: ECB-10TP-1A
     source:
@@ -215,7 +215,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210919174503id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YD-2A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-10ydb-1a
     ref: ECB-10YDB-1A
     source:
@@ -226,7 +226,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210919165218id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YDB-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-10ydc-1a
     ref: ECB-10YDC-1A
     source:
@@ -237,7 +237,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210919175815id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YDC-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-10yp-1a
     ref: ECB-10YP-1A
     source:
@@ -248,7 +248,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210919171221id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YP-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-10ypb-1a
     ref: ECB-10YPB-1A
     source:
@@ -259,4 +259,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210526110021id_/https://www.casio.com/jp/watches/edifice/product.ECB-10YPB-1A/'
-    discontinued: true
+    discontinued: false

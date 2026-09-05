@@ -50,4 +50,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250414011601id_/https://www.casio.com/jp/watches/edifice/product.ECB-S10YD-2A/'
-    discontinued: true
+    discontinued: false

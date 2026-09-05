@@ -260,7 +260,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250214065934id_/https://www.casio.com/jp/watches/casio/product.W-218H-5B/'
-    discontinued: true
+    discontinued: false
   - id: w-218hc-2a
     ref: W-218HC-2A
     source:
@@ -272,4 +272,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250220062622id_/https://www.casio.com/jp/watches/casio/product.W-218HC-2A/'
-    discontinued: true
+    discontinued: false

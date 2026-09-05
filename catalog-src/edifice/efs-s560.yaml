@@ -76,7 +76,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221230162850id_/https://www.casio.com/jp/watches/edifice/product.EFS-S560YD-1A/'
-    discontinued: true
+    discontinued: false
   - id: efs-s560ydb-1a
     ref: EFS-S560YDB-1A
     source:
@@ -88,7 +88,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220220080610id_/https://www.casio.com/jp/watches/edifice/product.EFS-S560YDB-1A/'
-    discontinued: true
+    discontinued: false
   - id: efs-s560ydc-1a
     ref: EFS-S560YDC-1A
     source:
@@ -100,4 +100,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220208000926id_/https://www.casio.com/jp/watches/edifice/product.EFS-S560YDC-1A/'
-    discontinued: true
+    discontinued: false

@@ -410,7 +410,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241107111655id_/https://www.casio.com/jp/watches/casio/product.MTP-1302D-1A1/'
-    discontinued: true
+    discontinued: false
   - id: mtp-1302d-3a
     ref: MTP-1302D-3A
     source:
@@ -422,7 +422,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240910124257id_/https://www.casio.com/jp/watches/casio/product.MTP-1302D-3A/'
-    discontinued: true
+    discontinued: false
   - id: mtp-1302d-7a1
     ref: MTP-1302D-7A1
     source:
@@ -434,7 +434,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241107084158id_/https://www.casio.com/jp/watches/casio/product.MTP-1302D-7A1/'
-    discontinued: true
+    discontinued: false
   - id: mtp-1302d-7a1v
     ref: MTP-1302D-7A1V
     source:

@@ -120,13 +120,16 @@ models:
   # both rosters are the reason rather than an excuse.
   #
   # Casio lists it — `casio.com/jp/sitemap/watches.xml` carries
-  # `.../protrek/product.PRW-35TLD-7/` — but `sitemap.ts` reads three locales of
-  # twenty-nine (us, intl, de) and this is a Japan-only release, so the roster
-  # this project asks has never seen it. The archive has never captured it
-  # either: zero rows of any status in a domain-wide CDX query over casio.com
-  # filtered to `product.PRW-35*`, taken 2026-09-05, in which PRW-35-1A and
-  # PRW-35Y-1B each returned 26. It passes `CANONICAL_REF`, so this is not a
-  # D47 refusal — it is a reference nothing in the toolchain can currently see.
+  # `.../protrek/product.PRW-35TLD-7/` — and until 2026-09-05 `sitemap.ts` read
+  # three locales of twenty-nine, none of them Japan, so the roster this project
+  # asks had never seen this reference. **`jp` is in `LOCALES` now**, which is
+  # why `discontinued` below is measured rather than absent; finding this watch
+  # is what found the other 1 337 the same blind spot was hiding.
+  #
+  # The archive has still never captured it: zero rows of any status in a
+  # domain-wide CDX query over casio.com filtered to `product.PRW-35*`, taken
+  # 2026-09-05, in which PRW-35-1A and PRW-35Y-1B each returned 26. It passes
+  # `CANONICAL_REF`, so this was never a D47 refusal.
   #
   # THE FIELDS ARE THEREFORE READ OFF G-CENTRAL, an enthusiast site, which is
   # the page that states the most about this reference of any this project can
@@ -161,6 +164,7 @@ models:
       author: G-Central
       licence: rights-reserved
       url: 'https://www.g-central.com/pro-trek-prw-35ld-5-and-prw-35tld-7-are-the-first-casio-watches-with-a-phosphorescent-digital-lcd-display-for-light-free-viewing-in-the-dark/'
+    discontinued: false
   - id: prw-35y-1b
     ref: PRW-35Y-1B
     source:

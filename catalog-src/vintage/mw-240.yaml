@@ -244,7 +244,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221129022413id_/https://www.casio.com/jp/watches/casio/product.MW-240-1B/'
-    discontinued: true
+    discontinued: false
   - id: mw-240-1b2
     ref: MW-240-1B2
     source:
@@ -255,7 +255,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221204225347id_/https://www.casio.com/jp/watches/casio/product.MW-240-1B2/'
-    discontinued: true
+    discontinued: false
   - id: mw-240-4b
     ref: MW-240-4B
     source:
@@ -266,7 +266,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221202061903id_/https://www.casio.com/jp/watches/casio/product.MW-240-4B/'
-    discontinued: true
+    discontinued: false
   - id: mw-240-7b
     ref: MW-240-7B
     source:
@@ -277,7 +277,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221208205207id_/https://www.casio.com/jp/watches/casio/product.MW-240-7B/'
-    discontinued: true
+    discontinued: false
   - id: mw-240b-3b
     ref: MW-240B-3B
     source:
@@ -289,4 +289,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241107084242id_/https://www.casio.com/jp/watches/casio/product.MW-240B-3B/'
-    discontinued: true
+    discontinued: false

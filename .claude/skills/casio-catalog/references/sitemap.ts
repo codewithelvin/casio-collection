@@ -22,19 +22,54 @@ mkdirSync(CACHE, { recursive: true })
 
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
-const LOCALES = ['us', 'intl', 'de']
+/**
+ * **`jp` is here because three locales is not a roster, it is a market.**
+ *
+ * Measured 2026-09-05 by fetching all 29: Casio's Japanese sitemap lists 3 088
+ * watch references and **1 338 of them are in none of `us`, `intl` or `de`** —
+ * 418 general `casio`, 211 G-SHOCK, 194 Baby-G, 91 Edifice, 88 Oceanus, 61
+ * Sheen, 52 Pro Trek. Every one was invisible to `survey.ts` (which asks this
+ * function what exists) and would have been written `discontinued: true` by
+ * `availability.ts` — a watch Casio is selling, recorded as withdrawn.
+ *
+ * The reference that found it was PRW-35TLD-7, a May 2025 Pro Trek: real, in
+ * Casio's own sitemap, in no roster this project asked, and never captured by
+ * the archive either. It did not read as missing. It read as finished.
+ *
+ * The other 25 locales are not added because they are subsets: the same sweep
+ * found no PRW-35 reference in any of them that `intl` or `jp` did not already
+ * list. `jp` is the one market with its own catalogue.
+ */
+export const LOCALES = ['us', 'intl', 'de', 'jp']
+
+/**
+ * **`jp` is the only locale served as a sitemap INDEX rather than a flat file**,
+ * and its watches live at `/jp/sitemap/watches.xml`. That path 404s on all 28
+ * others, and `/jp/sitemap.xml` is an index of thirteen files that names no
+ * product — so a fetch written either way for all four returns a well-formed
+ * answer with no references in it, for exactly one locale, silently.
+ */
+const sitemapUrl = (loc: string) =>
+  loc === 'jp'
+    ? 'https://www.casio.com/jp/sitemap/watches.xml'
+    : `https://www.casio.com/${loc}/sitemap.xml`
 
 export async function refresh(): Promise<void> {
   for (const loc of LOCALES) {
     const f = join(CACHE, `sm-${loc}.xml`)
     if (existsSync(f)) continue
-    const url = `https://www.casio.com/${loc}/sitemap.xml`
+    const url = sitemapUrl(loc)
     if (!(await allowed(url))) throw new Error(`${loc} → robots.txt disallows ${url}`)
     const res = await fetch(url, {
       headers: { 'user-agent': UA },
     })
     if (!res.ok) throw new Error(`${loc} → HTTP ${res.status}`)
-    writeFileSync(f, await res.text())
+    const body = await res.text()
+    // A sitemap that answers 200 and names no product is the failure above
+    // wearing the shape of an answer. Every one of these files holds thousands
+    // of product URLs; zero means the path is wrong, not that Casio sells none.
+    if (!body.includes('/product.')) throw new Error(`${loc} → 200 with no product URL: ${url}`)
+    writeFileSync(f, body)
   }
 }
 

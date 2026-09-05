@@ -56,7 +56,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211023015630id_/https://www.casio.com/jp/watches/edifice/product.EQB-501DC-1A/'
-    discontinued: true
+    discontinued: false
   - id: eqb-501xbl-2a
     ref: EQB-501XBL-2A
     source:

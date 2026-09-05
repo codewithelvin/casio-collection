@@ -271,7 +271,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230128023541id_/https://www.casio.com/my/watches/gshock/product.GA-700CT-1A/'
-    discontinued: true
+    discontinued: false
     display: ana-digi
   - id: ga-700cy-1a
     ref: GA-700CY-1A
@@ -631,5 +631,5 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230130211533id_/https://www.casio.com/my/watches/gshock/product.GA-700WM-5A/'
-    discontinued: true
+    discontinued: false
     display: ana-digi

@@ -135,7 +135,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220215081517id_/https://www.casio.com/jp/watches/gshock/product.GST-B400FP-1A2/'
-    discontinued: true
+    discontinued: false
   - id: gst-b400gb-1a9
     ref: GST-B400GB-1A9
     source:
@@ -193,4 +193,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210917215910id_/https://www.casio.com/jp/watches/gshock/product.GST-B400XD-1A2/'
-    discontinued: true
+    discontinued: false

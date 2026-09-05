@@ -200,7 +200,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211129235152id_/https://www.casio.com/jp/watches/gshock/product.GA-110AC-4A/'
-    discontinued: true
+    discontinued: false
   - id: ga-110ac-7a
     ref: GA-110AC-7A
     source:
@@ -508,7 +508,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211129232646id_/https://www.casio.com/jp/watches/gshock/product.GA-110C-7A/'
-    discontinued: true
+    discontinued: false
   - id: ga-110carp-4
     ref: GA-110CARP-4
     source:
@@ -1124,7 +1124,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722072242id_/https://www.casio.com/id/watches/gshock/product.GA-110GW-7A/'
-    discontinued: true
+    discontinued: false
   - id: ga-110hc-1a
     ref: GA-110HC-1A
     source:
@@ -1141,7 +1141,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211130000447id_/https://www.casio.com/jp/watches/gshock/product.GA-110HC-1A/'
-    discontinued: true
+    discontinued: false
   - id: ga-110hc-2a
     ref: GA-110HC-2A
     source:
@@ -1630,7 +1630,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220521183017id_/https://www.casio.com/sg/watches/gshock/product.GA-110LS-7A/'
-    discontinued: true
+    discontinued: false
   - id: ga-110lt-1a
     ref: GA-110LT-1A
     source:
@@ -2130,7 +2130,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722072230id_/https://www.casio.com/id/watches/gshock/product.GA-110SGG-3A/'
-    discontinued: true
+    discontinued: false
   - id: ga-110sgh-4a
     ref: GA-110SGH-4A
     source:
@@ -2147,7 +2147,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722072220id_/https://www.casio.com/id/watches/gshock/product.GA-110SGH-4A/'
-    discontinued: true
+    discontinued: false
   - id: ga-110ske-8a
     ref: GA-110SKE-8A
     source:

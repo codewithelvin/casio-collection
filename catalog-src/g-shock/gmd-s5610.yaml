@@ -150,4 +150,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241119223607id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5610RS-8/'
-    discontinued: true
+    discontinued: false

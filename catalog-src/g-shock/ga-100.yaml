@@ -417,7 +417,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211018205123id_/https://www.casio.com/my/watches/gshock/product.GA-100JK-4A/'
-    discontinued: true
+    discontinued: false
     display: ana-digi
   - id: ga-100l-2a
     ref: GA-100L-2A

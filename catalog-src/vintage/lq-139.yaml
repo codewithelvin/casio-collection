@@ -96,7 +96,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220724150138id_/https://www.casio.com/jp/watches/casio/product.LQ-139BMV-7EL/'
-    discontinued: true
+    discontinued: false
   - id: lq-139l-2b
     ref: LQ-139L-2B
     source:
@@ -151,7 +151,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220402052218id_/https://www.casio.com/jp/watches/casio/product.LQ-139L-7B/'
-    discontinued: true
+    discontinued: false
   - id: lq-139lb-4b
     ref: LQ-139LB-4B
     source:
@@ -162,7 +162,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221204223905id_/https://www.casio.com/jp/watches/casio/product.LQ-139LB-4B/'
-    discontinued: true
+    discontinued: false
   - id: lq-139lb-7b2
     ref: LQ-139LB-7B2
     source:
@@ -173,4 +173,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220724150133id_/https://www.casio.com/jp/watches/casio/product.LQ-139LB-7B2/'
-    discontinued: true
+    discontinued: false

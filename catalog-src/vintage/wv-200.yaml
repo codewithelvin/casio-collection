@@ -65,7 +65,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221204222425id_/https://www.casio.com/jp/watches/casio/product.WV-200R-2A/'
-    discontinued: true
+    discontinued: false
   - id: wv-200r-3a
     ref: WV-200R-3A
     source:
@@ -91,7 +91,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221208200519id_/https://www.casio.com/jp/watches/casio/product.WV-200R-4A/'
-    discontinued: true
+    discontinued: false
   - id: wv-200r-5a
     ref: WV-200R-5A
     source:

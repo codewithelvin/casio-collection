@@ -29,7 +29,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210917124141id_/https://www.casio.com/jp/watches/casio/product.AQ-S810W-1A2/'
-    discontinued: true
+    discontinued: false
   - id: aq-s810w-1a3v
     ref: AQ-S810W-1A3V
     source:
@@ -114,7 +114,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211028105144id_/https://www.casio.com/jp/watches/casio/product.AQ-S810W-8A/'
-    discontinued: true
+    discontinued: false
   - id: aq-s810wc-4av
     ref: AQ-S810WC-4AV
     source:
@@ -135,7 +135,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221202054541id_/https://www.casio.com/jp/watches/casio/product.AQ-S810WC-7A/'
-    discontinued: true
+    discontinued: false
   - id: aq-s810wc-7av
     ref: AQ-S810WC-7AV
     source:

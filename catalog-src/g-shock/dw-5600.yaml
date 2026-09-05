@@ -181,7 +181,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220928093408id_/https://www.casio.com/in/watches/gshock/product.DW-5600BBM-1/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600bbm-2
     ref: DW-5600BBM-2
     source:
@@ -198,7 +198,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230217205555id_/https://www.casio.com/in/watches/gshock/product.DW-5600BBM-2/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600bbma-1
     ref: DW-5600BBMA-1
     source:
@@ -590,7 +590,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210406135638id_/https://www.casio.com/jp/watches/gshock/product.DW-5600E-1/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600eg-9
     ref: DW-5600EG-9
     source:
@@ -639,7 +639,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210421020845id_/https://www.casio.com/jp/watches/gshock/product.DW-5600ET-5/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600eva-02
     ref: DW-5600EVA-02
     source:
@@ -814,7 +814,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210724180631id_/https://www.casio.com/sg/watches/gshock/product.DW-5600JK-1/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600lcu-1
     ref: DW-5600LCU-1
     source:
@@ -999,7 +999,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210513220953id_/https://www.casio.com/jp/watches/gshock/product.DW-5600M-3/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600m-4
     ref: DW-5600M-4
     source:
@@ -1031,7 +1031,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210513211937id_/https://www.casio.com/jp/watches/gshock/product.DW-5600M-8/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600mco-1
     ref: DW-5600MCO-1
     source:
@@ -1481,7 +1481,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210922120827id_/https://www.casio.com/sg/watches/gshock/product.DW-5600SC-2/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600sc-4
     ref: DW-5600SC-4
     source:
@@ -1498,7 +1498,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210922122015id_/https://www.casio.com/sg/watches/gshock/product.DW-5600SC-4/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600sc-8
     ref: DW-5600SC-8
     source:
@@ -1515,7 +1515,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210922104342id_/https://www.casio.com/sg/watches/gshock/product.DW-5600SC-8/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600sg-7
     ref: DW-5600SG-7
     source:
@@ -1863,7 +1863,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210414210811id_/https://www.casio.com/jp/watches/gshock/product.DW-5600TCB-1/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600tg-9
     ref: DW-5600TG-9
     source:
@@ -1946,7 +1946,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220517182836id_/https://www.casio.com/in/watches/gshock/product.DW-5600THS-1/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600tmn-1
     ref: DW-5600TMN-1
     source:
@@ -2319,7 +2319,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241122174827id_/https://www.casio.com/intl/watches/gshock/product.DW-5600RS-8/'
-    discontinued: true
+    discontinued: false
   - id: dw-5600rw-1
     ref: DW-5600RW-1
     source:

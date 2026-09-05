@@ -349,7 +349,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210528201957id_/https://www.casio.com/jp/watches/casio/product.MQ-24M-1E/'
-    discontinued: true
+    discontinued: false
   - id: mq-24mg-1e
     ref: MQ-24MG-1E
     source:
@@ -360,4 +360,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221129012027id_/https://www.casio.com/jp/watches/casio/product.MQ-24MG-1E/'
-    discontinued: true
+    discontinued: false

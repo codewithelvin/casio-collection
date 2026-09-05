@@ -29,4 +29,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20260627062310id_/https://www.casio.com/jp/watches/casio/product.W-738H-1A/'
-    discontinued: true
+    discontinued: false

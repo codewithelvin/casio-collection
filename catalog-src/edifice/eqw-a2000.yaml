@@ -51,7 +51,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220628115255id_/https://www.casio.com/jp/watches/edifice/product.EQW-A2000CL-2A/'
-    discontinued: true
+    discontinued: false
   - id: eqw-a2000db-1a
     ref: EQW-A2000DB-1A
     source:
@@ -63,7 +63,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220512132609id_/https://www.casio.com/jp/watches/edifice/product.EQW-A2000DB-1A/'
-    discontinued: true
+    discontinued: false
   - id: eqw-a2000dc-1a
     ref: EQW-A2000DC-1A
     source:
@@ -75,4 +75,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210410153158id_/https://www.casio.com/jp/watches/edifice/product.EQW-A2000DC-1A/'
-    discontinued: true
+    discontinued: false

@@ -152,7 +152,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/edifice/product.EFV-640DJ-2B/'
-    discontinued: true
+    discontinued: false
   - id: efv-640dj-3a
     ref: EFV-640DJ-3A
     source:
@@ -164,4 +164,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/edifice/product.EFV-640DJ-3A/'
-    discontinued: true
+    discontinued: false

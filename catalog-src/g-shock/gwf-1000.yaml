@@ -113,7 +113,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220625104541id_/https://www.casio.com/us/watches/gshock/product.GWF-1000-1/'
-    discontinued: true
+    discontinued: false
   - id: gwf-1000b-1
     ref: GWF-1000B-1
     source:

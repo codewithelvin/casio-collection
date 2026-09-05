@@ -106,7 +106,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211206064643id_/https://www.casio.com/jp/watches/edifice/product.EFS-S570YD-1A/'
-    discontinued: true
+    discontinued: false
   - id: efs-s570ydb-2a
     ref: EFS-S570YDB-2A
     source:
@@ -118,7 +118,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230115230042id_/https://www.casio.com/jp/watches/edifice/product.EFS-S570YDB-2A/'
-    discontinued: true
+    discontinued: false
   - id: efs-s570ydc-1a
     ref: EFS-S570YDC-1A
     source:
@@ -130,4 +130,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210525080014id_/https://www.casio.com/jp/watches/edifice/product.EFS-S570YDC-1A/'
-    discontinued: true
+    discontinued: false

@@ -162,7 +162,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241116181210id_/https://www.casio.com/jp/watches/casio/product.AE-1200WH-1A/'
-    discontinued: true
+    discontinued: false
   - id: ae-1200whd-1a
     ref: AE-1200WHD-1A
     source:
@@ -174,4 +174,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241115135214id_/https://www.casio.com/jp/watches/casio/product.AE-1200WHD-1A/'
-    discontinued: true
+    discontinued: false

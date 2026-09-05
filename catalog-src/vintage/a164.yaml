@@ -57,4 +57,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210922022136id_/https://www.casio.com/jp/watches/casio/product.A164WA-1/'
-    discontinued: true
+    discontinued: false

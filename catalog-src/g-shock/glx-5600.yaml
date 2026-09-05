@@ -87,7 +87,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210414205554id_/https://www.casio.com/jp/watches/gshock/product.GLX-5600-1/'
-    discontinued: true
+    discontinued: false
   - id: glx-5600-7
     ref: GLX-5600-7
     source:
@@ -99,7 +99,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210313071649id_/https://www.casio.com/jp/watches/gshock/product.GLX-5600-7/'
-    discontinued: true
+    discontinued: false
 
 # ADDED 2026-08-25: 1 reference named by hand, because
 # D47's discovery filter refuses it.

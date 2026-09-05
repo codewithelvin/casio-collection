@@ -118,7 +118,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240922052034id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YCB-2A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-2200ydc-1a
     ref: ECB-2200YDC-1A
     source:
@@ -129,7 +129,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119143538id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YDC-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-2200yp-1a
     ref: ECB-2200YP-1A
     source:
@@ -140,7 +140,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240502033052id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YP-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-2200yrc-1a3
     ref: ECB-2200YRC-1A3
     source:
@@ -151,7 +151,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250402095247id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YRC-1A3/'
-    discontinued: true
+    discontinued: false
   - id: ecb-2200yrc-1a9
     ref: ECB-2200YRC-1A9
     source:
@@ -162,4 +162,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250329062726id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YRC-1A9/'
-    discontinued: true
+    discontinued: false

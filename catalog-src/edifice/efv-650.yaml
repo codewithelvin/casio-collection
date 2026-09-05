@@ -96,4 +96,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240619001840id_/https://www.casio.com/jp/watches/edifice/product.EFV-650DJ-1A/'
-    discontinued: true
+    discontinued: false

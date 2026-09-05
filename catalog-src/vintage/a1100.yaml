@@ -74,7 +74,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250406010854id_/https://www.casio.com/jp/watches/casio/product.A1100GGV-8/'
-    discontinued: true
+    discontinued: false
   - id: a1100gv-9
     ref: A1100GV-9
     source:
@@ -85,4 +85,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250406010947id_/https://www.casio.com/jp/watches/casio/product.A1100GV-9/'
-    discontinued: true
+    discontinued: false

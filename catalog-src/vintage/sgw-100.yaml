@@ -122,4 +122,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210518034716id_/https://www.casio.com/jp/watches/casio/product.SGW-100J-1/'
-    discontinued: true
+    discontinued: false

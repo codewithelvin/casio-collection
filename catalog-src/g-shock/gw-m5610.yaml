@@ -128,7 +128,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210414192450id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610-1B/'
-    discontinued: true
+    discontinued: false
   - id: gw-m5610b-1
     ref: GW-M5610B-1
     source:
@@ -160,7 +160,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210317091451id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610BA-1/'
-    discontinued: true
+    discontinued: false
   - id: gw-m5610bb-1
     ref: GW-M5610BB-1
     source:
@@ -192,7 +192,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210414201658id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610BC-1/'
-    discontinued: true
+    discontinued: false
   - id: gw-m5610bw-7
     ref: GW-M5610BW-7
     source:
@@ -359,7 +359,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210527113020id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610MD-7/'
-    discontinued: true
+    discontinued: false
   - id: gw-m5610md-9
     ref: GW-M5610MD-9
     source:
@@ -421,7 +421,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210929015122id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610NV-2/'
-    discontinued: true
+    discontinued: false
   - id: gw-m5610pc-1
     ref: GW-M5610PC-1
     source:
@@ -453,7 +453,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210806193623id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610R-1/'
-    discontinued: true
+    discontinued: false
   - id: gw-m5610rb-4
     ref: GW-M5610RB-4
     source:
@@ -470,7 +470,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211019100031id_/https://www.casio.com/jp/watches/gshock/product.GW-M5610RB-4/'
-    discontinued: true
+    discontinued: false
   - id: gw-m5610sd-8
     ref: GW-M5610SD-8
     source:

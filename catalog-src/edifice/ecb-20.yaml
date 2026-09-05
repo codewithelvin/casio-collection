@@ -103,7 +103,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210714080533id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YCL-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-20yd-1a
     ref: ECB-20YD-1A
     source:
@@ -114,7 +114,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221230162850id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YD-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-20ydb-1a
     ref: ECB-20YDB-1A
     source:
@@ -125,7 +125,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210422090027id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YDB-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-20ydc-1a
     ref: ECB-20YDC-1A
     source:
@@ -136,4 +136,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210707010113id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YDC-1A/'
-    discontinued: true
+    discontinued: false

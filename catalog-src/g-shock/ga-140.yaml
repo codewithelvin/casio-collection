@@ -137,7 +137,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240214084618id_/https://www.casio.com/za/watches/gshock/product.GA-140CT-1A/'
-    discontinued: true
+    discontinued: false
   - id: ga-140dc-1a
     ref: GA-140DC-1A
     source:
@@ -152,7 +152,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211206051048id_/https://www.casio.com/my/watches/gshock/product.GA-140DC-1A/'
-    discontinued: true
+    discontinued: false
   - id: ga-140gb-1a1
     ref: GA-140GB-1A1
     source:

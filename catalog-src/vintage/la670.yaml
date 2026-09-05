@@ -270,7 +270,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221230162818id_/https://www.casio.com/jp/watches/casio/product.LA670WEA-2/'
-    discontinued: true
+    discontinued: false
   - id: la670wea-8a
     ref: LA670WEA-8A
     source:

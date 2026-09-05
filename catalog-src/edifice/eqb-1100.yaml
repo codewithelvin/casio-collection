@@ -118,7 +118,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210329080113id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100XYDB-2A/'
-    discontinued: true
+    discontinued: false
   - id: eqb-1100xydc-1a
     ref: EQB-1100XYDC-1A
     source:
@@ -129,7 +129,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210324100114id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100XYDC-1A/'
-    discontinued: true
+    discontinued: false
   - id: eqb-1100yd-1a
     ref: EQB-1100YD-1A
     source:
@@ -140,7 +140,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210318105741id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100YD-1A/'
-    discontinued: true
+    discontinued: false
   - id: eqb-1100ydc-1a
     ref: EQB-1100YDC-1A
     source:
@@ -151,4 +151,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210315122525id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100YDC-1A/'
-    discontinued: true
+    discontinued: false

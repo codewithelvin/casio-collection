@@ -186,7 +186,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240523202410id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-2A/'
-    discontinued: true
+    discontinued: false
   - id: efr-s108dj-2b
     ref: EFR-S108DJ-2B
     source:
@@ -198,7 +198,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240903204539id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-2B/'
-    discontinued: true
+    discontinued: false
   - id: efr-s108dj-3a
     ref: EFR-S108DJ-3A
     source:
@@ -210,7 +210,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240523002900id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-3A/'
-    discontinued: true
+    discontinued: false
   - id: efr-s108dj-7a
     ref: EFR-S108DJ-7A
     source:
@@ -222,4 +222,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240307212734id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-7A/'
-    discontinued: true
+    discontinued: false

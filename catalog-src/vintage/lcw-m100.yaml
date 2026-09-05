@@ -81,7 +81,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221129004616id_/https://www.casio.com/jp/watches/casio/product.LCW-M100DE-1A/'
-    discontinued: true
+    discontinued: false
   - id: lcw-m100de-1a3
     ref: LCW-M100DE-1A3
     source:
@@ -95,7 +95,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221202070823id_/https://www.casio.com/jp/watches/casio/product.LCW-M100DE-1A3/'
-    discontinued: true
+    discontinued: false
   - id: lcw-m100de-7a
     ref: LCW-M100DE-7A
     source:
@@ -109,7 +109,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210408125736id_/https://www.casio.com/jp/watches/casio/product.LCW-M100DE-7A/'
-    discontinued: true
+    discontinued: false
   - id: lcw-m100dse-1a
     ref: LCW-M100DSE-1A
     source:
@@ -183,4 +183,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210315142857id_/https://www.casio.com/jp/watches/casio/product.LCW-M100TSE-7A/'
-    discontinued: true
+    discontinued: false

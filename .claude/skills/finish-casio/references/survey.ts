@@ -46,7 +46,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { archivedFor, isEnglish, lineOfReference } from '../../casio-catalog/references/archive.ts'
 import { isReference } from '../../casio-catalog/references/roster.ts'
-import { refresh, roster, seriesOf } from '../../casio-catalog/references/sitemap.ts'
+import { LOCALES, refresh, roster, seriesOf } from '../../casio-catalog/references/sitemap.ts'
 
 const REPO = join(import.meta.dirname, '..', '..', '..', '..')
 const CACHE = join(tmpdir(), 'casio-catalog-cache', 'archive')
@@ -185,7 +185,7 @@ await refresh()
 const live = new Set<string>()
 const liveUrl = new Map<string, string>()
 for (const [, refs] of roster()) for (const r of refs) live.add(r.toUpperCase())
-for (const loc of ['us', 'intl', 'de']) {
+for (const loc of LOCALES) {
   const f = join(tmpdir(), 'casio-catalog-cache', `sm-${loc}.xml`)
   if (!existsSync(f)) continue
   for (const [, url] of readFileSync(f, 'utf8').matchAll(/<loc>([^<]*)<\/loc>/g)) {

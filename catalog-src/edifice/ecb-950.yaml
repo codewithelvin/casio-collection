@@ -88,7 +88,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230129010051id_/https://www.casio.com/jp/watches/edifice/product.ECB-950YDB-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-950ydc-1a
     ref: ECB-950YDC-1A
     source:
@@ -99,7 +99,7 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230110092550id_/https://www.casio.com/jp/watches/edifice/product.ECB-950YDC-1A/'
-    discontinued: true
+    discontinued: false
   - id: ecb-950ymp-1a
     ref: ECB-950YMP-1A
     source:
@@ -110,4 +110,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230115010056id_/https://www.casio.com/jp/watches/edifice/product.ECB-950YMP-1A/'
-    discontinued: true
+    discontinued: false

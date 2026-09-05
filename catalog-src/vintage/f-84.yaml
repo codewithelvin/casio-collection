@@ -28,4 +28,4 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210805132619id_/https://www.casio.com/jp/watches/casio/product.F-84W-1/'
-    discontinued: true
+    discontinued: false

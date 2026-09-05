@@ -38,7 +38,7 @@
 // one added.
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { refresh, roster } from './sitemap.ts'
+import { LOCALES, refresh, roster } from './sitemap.ts'
 
 const REPO = join(import.meta.dirname, '..', '..', '..', '..')
 
@@ -57,7 +57,7 @@ const onlyLine = args.find((a) => !a.startsWith('--'))
 await refresh()
 const listed = new Set<string>()
 for (const refs of roster().values()) for (const ref of refs) listed.add(ref.toUpperCase())
-console.log(`Casio lists ${listed.size} references across ${roster().size} segments (us, intl, de)`)
+console.log(`Casio lists ${listed.size} references across ${roster().size} segments (${LOCALES.join(', ')})`)
 
 interface Change {
   path: string
