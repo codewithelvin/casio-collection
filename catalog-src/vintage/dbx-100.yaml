@@ -35,5 +35,9 @@ models:
     module: '261'
     case: { material: chrome plated base-metal }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: dbx-100
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_dbx-100'
     discontinued: true

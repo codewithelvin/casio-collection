@@ -36,5 +36,9 @@ models:
     module: '567'
     case: { material: resin }
     features: [alarm, stopwatch]
-    image: null
+    image: mn-201a
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-mn-210a'
     discontinued: true

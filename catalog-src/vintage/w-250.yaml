@@ -37,5 +37,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 100
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: w-250
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-w-250'
     discontinued: true

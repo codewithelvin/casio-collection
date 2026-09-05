@@ -35,5 +35,9 @@ models:
     module: '437'
     case: { material: gold tone base-metal }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: ca-501g
+    image_credit:
+      author: 'Natalie del Carpio'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ca-501g'
     discontinued: true

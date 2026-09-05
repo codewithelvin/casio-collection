@@ -37,5 +37,9 @@ models:
     module: '79'
     case: { material: chrome plated base-metal }
     features: [alarm, stopwatch]
-    image: null
+    image: 79qs-39
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-79qs-391'
     discontinued: true

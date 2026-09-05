@@ -37,5 +37,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 50
     features: [multi-alarm, stopwatch]
-    image: null
+    image: w-56
+    image_credit:
+      author: 'Steve Boyland'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-w-56'
     discontinued: true

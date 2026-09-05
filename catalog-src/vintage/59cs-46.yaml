@@ -37,5 +37,9 @@ models:
     module: '59'
     case: { material: stainless steel }
     features: [alarm]
-    image: null
+    image: 59cs-46
+    image_credit:
+      author: 'Ocean-Phoenix'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-59cs-46'
     discontinued: true

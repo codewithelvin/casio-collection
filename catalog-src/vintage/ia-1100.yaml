@@ -37,5 +37,9 @@ models:
     case: { material: gold tone base-metal }
     water_resistance_m: 50
     features: [alarm, dual-time]
-    image: null
+    image: ia-1100
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ia-1100'
     discontinued: true

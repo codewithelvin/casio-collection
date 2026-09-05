@@ -36,5 +36,9 @@ models:
     module: '118'
     case: { material: stainless steel }
     features: [alarm, countdown-timer, dual-time, multi-alarm, stopwatch]
-    image: null
+    image: ax-250
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ax-2501'
     discontinued: true

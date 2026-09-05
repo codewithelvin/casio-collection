@@ -35,5 +35,9 @@ models:
     module: '1670'
     case: { material: stainless steel }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: trn-02-5t
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-trn-02-5t'
     discontinued: true

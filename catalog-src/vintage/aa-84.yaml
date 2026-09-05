@@ -35,5 +35,9 @@ models:
     module: '103'
     case: { material: chrome plated base-metal }
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    image: aa-84
+    image_credit:
+      author: 'Georgi Georgiev'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-aa-84'
     discontinued: true

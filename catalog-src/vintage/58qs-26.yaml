@@ -36,5 +36,9 @@ models:
     year: 1978
     module: '58'
     case: { material: stainless steel }
-    image: null
+    image: 58qs-26
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-58qs-26'
     discontinued: true

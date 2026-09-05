@@ -36,5 +36,9 @@ models:
     module: '81'
     case: { material: stainless steel }
     features: [alarm, stopwatch]
-    image: null
+    image: 81cs-36
+    image_credit:
+      author: 'Casio Collector'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-81cs-36'
     discontinued: true

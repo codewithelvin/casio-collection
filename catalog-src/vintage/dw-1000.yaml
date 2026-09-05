@@ -37,7 +37,11 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 200
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: dw-1000-1
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dw-1000-1'
     discontinued: true
   - id: dw-1000c
     ref: DW-1000C
@@ -47,5 +51,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 200
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: dw-1000c
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/vintage-casio-digital-lcd-dw-1000-snorkler-watch'
     discontinued: true

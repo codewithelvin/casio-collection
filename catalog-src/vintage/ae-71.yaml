@@ -35,5 +35,9 @@ models:
     module: '188'
     case: { material: gold tone base-metal }
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    image: ae-71g
+    image_credit:
+      author: 'plankatolippi'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ae-71g'
     discontinued: true

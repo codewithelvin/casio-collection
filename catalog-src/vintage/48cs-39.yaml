@@ -37,5 +37,9 @@ models:
     module: '48'
     case: { material: stainless steel }
     features: [alarm]
-    image: null
+    image: 48cs-39
+    image_credit:
+      author: 'Casio-collector'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-48cs-39'
     discontinued: true

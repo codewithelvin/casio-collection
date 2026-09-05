@@ -36,5 +36,9 @@ models:
     module: '1070'
     case: { material: chrome plated resin }
     water_resistance_m: 50
-    image: null
+    image: b-614w
+    image_credit:
+      author: 'Mathieu Bletzacker'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-b-614w'
     discontinued: true

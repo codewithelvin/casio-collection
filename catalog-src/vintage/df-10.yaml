@@ -35,5 +35,9 @@ models:
     year: 1983
     module: '192'
     case: { material: resin }
-    image: null
+    image: df-10
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-df-10'
     discontinued: true

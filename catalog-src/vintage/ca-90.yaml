@@ -35,5 +35,9 @@ models:
     module: '134'
     case: { material: resin }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: ca-90
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ca-90'
     discontinued: true

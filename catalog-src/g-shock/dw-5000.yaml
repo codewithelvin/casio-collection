@@ -33,7 +33,11 @@ models:
     case: { material: resin }
     water_resistance_m: 200
     features: [alarm, countdown-timer]
-    image: null
+    image: dw-5000c-1a
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5000c-1b1'
     discontinued: true
   - id: dw-5000c-1b
     ref: DW-5000C-1B
@@ -43,7 +47,11 @@ models:
     case: { material: resin }
     water_resistance_m: 200
     features: [alarm, countdown-timer]
-    image: null
+    image: dw-5000c-1b
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5000c-1b'
     discontinued: true
   - id: dw-5000r-1a
     ref: DW-5000R-1A

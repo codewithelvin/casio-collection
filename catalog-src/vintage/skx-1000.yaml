@@ -37,7 +37,11 @@ models:
     case: { material: resin }
     water_resistance_m: 100
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: skx-1000
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-skx-1000'
     discontinued: true
   - id: skx-1000c-9
     ref: SKX-1000C-9

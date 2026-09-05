@@ -36,5 +36,9 @@ models:
     module: '481'
     case: { material: stainless steel }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: ca-602
+    image_credit:
+      author: 'Felix_77'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ca-6021'
     discontinued: true

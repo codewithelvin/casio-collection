@@ -35,5 +35,9 @@ models:
     year: 1977
     module: '86'
     case: { material: stainless steel }
-    image: null
+    image: 86ql-10
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-86ql-10'
     discontinued: true

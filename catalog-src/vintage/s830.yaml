@@ -35,5 +35,9 @@ models:
     module: '140'
     case: { material: stainless steel }
     features: [stopwatch]
-    image: null
+    image: s830
+    image_credit:
+      author: 'Gorgios'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-s830'
     discontinued: true

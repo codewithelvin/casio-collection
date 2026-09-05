@@ -34,5 +34,9 @@ models:
     year: 1984
     module: '192'
     case: { material: gold tone base-metal }
-    image: null
+    image: lb320g
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-b320g'
     discontinued: true

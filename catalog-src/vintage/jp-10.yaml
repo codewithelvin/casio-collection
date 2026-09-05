@@ -36,5 +36,9 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, pulse-sensor, stopwatch]
-    image: null
+    image: jp-10
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_jp-10'
     discontinued: true

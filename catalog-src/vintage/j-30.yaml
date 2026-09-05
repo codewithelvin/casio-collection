@@ -49,5 +49,9 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: j-30w
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-j-30w'
     discontinued: true

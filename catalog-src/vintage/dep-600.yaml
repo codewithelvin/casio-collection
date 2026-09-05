@@ -35,5 +35,9 @@ models:
     module: '970'
     case: { material: stainless steel }
     water_resistance_m: 200
-    image: null
+    image: dep-600c-1
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dep-600c-1'
     discontinued: true

@@ -37,5 +37,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 200
     features: [alarm, stopwatch]
-    image: null
+    image: ww-5100
+    image_credit:
+      author: 'Tiberiu'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ww-5100'
     discontinued: true

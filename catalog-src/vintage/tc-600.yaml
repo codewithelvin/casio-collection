@@ -36,5 +36,9 @@ models:
     module: '119'
     case: { material: chrome plated base-metal }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: tc-600
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-tc-600'
     discontinued: true

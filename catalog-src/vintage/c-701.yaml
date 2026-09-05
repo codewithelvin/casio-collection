@@ -35,5 +35,9 @@ models:
     module: '133'
     case: { material: chrome plated base-metal }
     features: [calculator, stopwatch]
-    image: null
+    image: c-701
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-c-701-blue'
     discontinued: true

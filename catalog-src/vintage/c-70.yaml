@@ -35,5 +35,9 @@ models:
     module: '133'
     case: { material: resin }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: c-70
+    image_credit:
+      author: 'Richard Oesterheld'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-c-70'
     discontinued: true

@@ -36,5 +36,9 @@ models:
     case: { material: resin }
     water_resistance_m: 100
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: trw-110
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-trw-110'
     discontinued: true

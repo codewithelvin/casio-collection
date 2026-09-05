@@ -36,5 +36,9 @@ models:
     module: '178'
     case: { material: chrome plated resin }
     features: [alarm, stopwatch]
-    image: null
+    image: te-2500
+    image_credit:
+      author: 'Anthony Villa'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-te-2500'
     discontinued: true

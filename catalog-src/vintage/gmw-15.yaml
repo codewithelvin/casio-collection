@@ -37,5 +37,9 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, stopwatch]
-    image: null
+    image: gmw-15
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_gmw-15'
     discontinued: true

@@ -36,5 +36,9 @@ models:
     module: '209'
     case: { material: resin }
     features: [alarm]
-    image: null
+    image: gf-1
+    image_credit:
+      author: 'Guilherme Pinto'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-gf-1'
     discontinued: true

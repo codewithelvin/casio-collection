@@ -35,5 +35,9 @@ models:
     year: 1978
     module: '26'
     case: { material: gold tone base-metal }
-    image: null
+    image: 26cgl-36
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-26cgl-36-casiotron'
     discontinued: true

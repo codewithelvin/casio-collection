@@ -35,7 +35,11 @@ models:
     module: '1670'
     case: { material: stainless steel }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: trn-120as-9t
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-trn-1201'
     discontinued: true
   - id: trn-120b-8t
     ref: TRN-120B-8T
@@ -44,5 +48,9 @@ models:
     module: '1670'
     case: { material: stainless steel }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: trn-120b-8t
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-trn-120'
     discontinued: true

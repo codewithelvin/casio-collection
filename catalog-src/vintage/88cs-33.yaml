@@ -36,5 +36,9 @@ models:
     module: '88'
     case: { material: stainless steel }
     features: [stopwatch]
-    image: null
+    image: 88cs-33
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-casiotron-88cs-33'
     discontinued: true

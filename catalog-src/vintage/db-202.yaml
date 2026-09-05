@@ -36,5 +36,9 @@ models:
     module: '669'
     case: { material: chrome plated resin }
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    image: db-202
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-db-202'
     discontinued: true

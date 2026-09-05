@@ -36,7 +36,11 @@ models:
     module: '145'
     case: { material: chrome plated base-metal }
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    image: sa-53
+    image_credit:
+      author: 'Simone Fiore'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-sa-53'
     discontinued: true
   - id: sa-53g
     ref: SA-53G

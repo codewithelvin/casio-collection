@@ -36,5 +36,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 50
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    image: ae-60w
+    image_credit:
+      author: 'modhiphugger'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_ae-60w'
     discontinued: true

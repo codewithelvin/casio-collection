@@ -36,5 +36,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 200
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: dw-6800
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dw-6800'
     discontinued: true

@@ -35,5 +35,9 @@ models:
     year: 1976
     module: '27'
     case: { material: chrome plated base-metal }
-    image: null
+    image: 27cl-11
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-casiotron-27cl-11'
     discontinued: true

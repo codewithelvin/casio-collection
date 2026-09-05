@@ -36,5 +36,9 @@ models:
     module: '433'
     case: { material: resin }
     features: [alarm, stopwatch]
-    image: null
+    image: ca-51
+    image_credit:
+      author: 'David Ellerker'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ca-51'
     discontinued: true

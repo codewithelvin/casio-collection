@@ -48,5 +48,9 @@ models:
     module: '287'
     case: { material: resin }
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    image: ae-10w
+    image_credit:
+      author: 'Julio C. Domínguez'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ae-10w'
     discontinued: true

@@ -37,5 +37,9 @@ models:
     case: { material: resin }
     water_resistance_m: 300
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: dw-300
+    image_credit:
+      author: 'Engecampos'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dw-300'
     discontinued: true

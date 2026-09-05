@@ -37,5 +37,9 @@ models:
     case: { material: chrome plated resin }
     water_resistance_m: 50
     features: [alarm, stopwatch]
-    image: null
+    image: db-560
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-db-5601'
     discontinued: true

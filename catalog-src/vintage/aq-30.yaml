@@ -36,5 +36,9 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, dual-time, stopwatch]
-    image: null
+    image: aq-30w
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-aq-30w'
     discontinued: true

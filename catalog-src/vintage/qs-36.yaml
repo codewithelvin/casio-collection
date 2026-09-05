@@ -35,5 +35,9 @@ models:
     module: '95'
     case: { material: stainless steel }
     features: [dual-time, stopwatch]
-    image: null
+    image: qs-36
+    image_credit:
+      author: 'Tom'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-95qs-36'
     discontinued: true

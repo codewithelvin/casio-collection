@@ -34,5 +34,9 @@ models:
     year: 1982
     module: '210'
     case: { material: chrome plated base-metal }
-    image: null
+    image: lf-14
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_lf-14'
     discontinued: true

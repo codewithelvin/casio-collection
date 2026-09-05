@@ -36,5 +36,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 50
     features: [alarm, stopwatch]
-    image: null
+    image: w-51
+    image_credit:
+      author: 'Sardik Kaya'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-w-51'
     discontinued: true

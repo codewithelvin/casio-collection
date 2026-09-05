@@ -36,5 +36,9 @@ models:
     module: '677'
     case: { material: resin }
     features: [alarm, dual-time, stopwatch]
-    image: null
+    image: m-14
+    image_credit:
+      author: 'Jiri Venecek'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-m-14'
     discontinued: true

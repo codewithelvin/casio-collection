@@ -36,5 +36,9 @@ models:
     module: '31'
     case: { material: stainless steel }
     features: [stopwatch]
-    image: null
+    image: 31qs-11
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-31qs-11'
     discontinued: true

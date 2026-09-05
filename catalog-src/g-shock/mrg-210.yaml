@@ -37,5 +37,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 200
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    image: mrg-210
+    image_credit:
+      author: 'rkny'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-mrg-210'
     discontinued: true

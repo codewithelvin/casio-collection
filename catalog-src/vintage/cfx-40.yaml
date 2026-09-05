@@ -35,5 +35,9 @@ models:
     module: '463'
     case: { material: resin }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: cfx-40
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-cfx-400'
     discontinued: true

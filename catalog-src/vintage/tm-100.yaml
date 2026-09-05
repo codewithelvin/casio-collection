@@ -36,5 +36,9 @@ models:
     module: '661'
     case: { material: resin }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: tm-100
+    image_credit:
+      author: 'Guilherme Pinto'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-tm-1001'
     discontinued: true

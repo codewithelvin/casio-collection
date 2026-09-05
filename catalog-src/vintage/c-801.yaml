@@ -35,5 +35,9 @@ models:
     module: '133'
     case: { material: chrome plated base-metal }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: c-801
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-c-8011'
     discontinued: true

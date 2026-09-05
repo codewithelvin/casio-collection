@@ -36,5 +36,9 @@ models:
     module: '183'
     case: { material: resin }
     features: [alarm, calculator, countdown-timer, stopwatch]
-    image: null
+    image: j-100
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_j-1002'
     discontinued: true

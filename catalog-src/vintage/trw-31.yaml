@@ -37,5 +37,9 @@ models:
     case: { material: resin }
     water_resistance_m: 100
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: trw-31
+    image_credit:
+      author: 'Cameron Robson'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-trw-31'
     discontinued: true

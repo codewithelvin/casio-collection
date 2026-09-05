@@ -36,5 +36,9 @@ models:
     module: '35'
     case: { material: stainless steel }
     features: [stopwatch]
-    image: null
+    image: 35qr-23
+    image_credit:
+      author: 'Georgios'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-35qr-23'
     discontinued: true

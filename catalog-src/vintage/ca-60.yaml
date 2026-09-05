@@ -36,5 +36,9 @@ models:
     module: '481'
     case: { material: resin }
     features: [alarm, calculator, dual-time, stopwatch]
-    image: null
+    image: ca-60
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ca-60'
     discontinued: true

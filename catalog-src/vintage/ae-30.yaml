@@ -36,5 +36,9 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, countdown-timer, dual-time, multi-alarm, stopwatch]
-    image: null
+    image: ae-30w
+    image_credit:
+      author: 'Casiophile'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ae-30'
     discontinued: true

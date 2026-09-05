@@ -36,5 +36,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 50
     features: [alarm, stopwatch]
-    image: null
+    image: w-38
+    image_credit:
+      author: '5intioga'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-w-381'
     discontinued: true

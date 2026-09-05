@@ -37,5 +37,9 @@ models:
     case: { material: titanium }
     water_resistance_m: 100
     features: [alarm, stopwatch]
-    image: null
+    image: tw-7000
+    image_credit:
+      author: 'Simone Fiore'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/caio-tw-7000'
     discontinued: true

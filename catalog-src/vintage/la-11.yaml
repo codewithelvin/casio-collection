@@ -25,7 +25,11 @@ models:
     module: '506'
     case: { material: resin }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: la-11w
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_la-11w'
     discontinued: true
   - id: la-11wb-1z
     ref: LA-11WB-1Z

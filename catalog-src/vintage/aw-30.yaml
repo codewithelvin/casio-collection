@@ -37,5 +37,9 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, dual-time]
-    image: null
+    image: aw-30
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-aw-30'
     discontinued: true

@@ -36,5 +36,9 @@ models:
     module: '472'
     case: { material: resin }
     features: [alarm, multi-alarm, stopwatch]
-    image: null
+    image: m-30
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-m-30'
     discontinued: true

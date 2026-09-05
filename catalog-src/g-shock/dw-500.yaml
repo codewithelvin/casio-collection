@@ -36,5 +36,9 @@ models:
     case: { material: resin }
     water_resistance_m: 100
     features: [alarm, stopwatch]
-    image: null
+    image: dw-500
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_dw-500'
     discontinued: true

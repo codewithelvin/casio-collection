@@ -35,5 +35,9 @@ models:
     module: '160'
     case: { material: stainless steel }
     features: [alarm, dual-time, stopwatch]
-    image: null
+    image: a659
+    image_credit:
+      author: 'beejoo'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-a659'
     discontinued: true

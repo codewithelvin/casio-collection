@@ -36,5 +36,9 @@ models:
     module: '1286'
     case: { material: resin }
     features: [alarm, compass, countdown-timer, stopwatch]
-    image: null
+    image: cpw-220
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-cpw-220'
     discontinued: true

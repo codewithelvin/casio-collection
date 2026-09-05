@@ -34,5 +34,9 @@ models:
     year: 1985
     module: '826'
     case: { material: resin }
-    image: null
+    image: l-45w
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-l-45w'
     discontinued: true

@@ -36,5 +36,9 @@ models:
     year: 1978
     module: '29'
     case: { material: stainless steel }
-    image: null
+    image: 29cs-49
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-cs-49'
     discontinued: true

@@ -35,5 +35,9 @@ models:
     module: '108'
     case: { material: resin }
     features: [alarm, stopwatch]
-    image: null
+    image: f-82
+    image_credit:
+      author: 'Casiophile'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_f-82'
     discontinued: true

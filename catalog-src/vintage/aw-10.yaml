@@ -35,5 +35,9 @@ models:
     module: '378'
     case: { material: resin }
     features: [countdown-timer, dual-time, stopwatch]
-    image: null
+    image: aw-10
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_aw-10'
     discontinued: true

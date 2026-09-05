@@ -35,7 +35,11 @@ models:
     module: '1670'
     case: { material: stainless steel }
     features: [alarm, stopwatch]
-    image: null
+    image: trn-110as-1t
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-trn-110as-1t'
     discontinued: true
   - id: trn-110as-4t
     ref: TRN-110AS-4T
@@ -44,7 +48,11 @@ models:
     module: '1670'
     case: { material: stainless steel }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: trn-110as-4t
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-trn-110as-4t'
     discontinued: true
   - id: trn-110bt-8t
     ref: TRN-110BT-8T
@@ -53,5 +61,9 @@ models:
     module: '1670'
     case: { material: titanium }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: trn-110bt-8t
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-trn-110bt-8t'
     discontinued: true

@@ -36,5 +36,9 @@ models:
     module: '31'
     case: { material: gold tone base-metal }
     features: [stopwatch]
-    image: null
+    image: 31qgr-20b-1
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-31qgr-20b-1'
     discontinued: true

@@ -36,5 +36,9 @@ models:
     module: '668'
     case: { material: titanium }
     features: [alarm, stopwatch]
-    image: null
+    image: lin-155
+    image_credit:
+      author: 'Julio César Domínguez'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-lin-155'
     discontinued: true

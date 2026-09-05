@@ -35,5 +35,9 @@ models:
     year: 1977
     module: '51'
     case: { material: stainless steel }
-    image: null
+    image: 51qr-19
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-51qr-19'
     discontinued: true

@@ -36,5 +36,9 @@ models:
     module: '157'
     case: { material: stainless steel }
     water_resistance_m: 50
-    image: null
+    image: lw-302
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-lw-302'
     discontinued: true

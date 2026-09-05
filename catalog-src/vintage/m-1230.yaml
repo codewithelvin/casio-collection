@@ -35,5 +35,9 @@ models:
     module: '82'
     case: { material: stainless steel }
     features: [stopwatch]
-    image: null
+    image: m-1230
+    image_credit:
+      author: 'Earth_36'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-m-1230'
     discontinued: true

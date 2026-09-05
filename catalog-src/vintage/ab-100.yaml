@@ -36,5 +36,9 @@ models:
     module: '344'
     case: { material: resin }
     features: [alarm, dual-time, stopwatch]
-    image: null
+    image: ab-100
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ab-1001'
     discontinued: true

@@ -34,5 +34,9 @@ models:
     year: 1984
     module: '244'
     case: { material: chrome plated base-metal }
-    image: null
+    image: b-820
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-b-820'
     discontinued: true

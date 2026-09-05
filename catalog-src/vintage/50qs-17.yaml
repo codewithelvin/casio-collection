@@ -36,5 +36,9 @@ models:
     module: '50'
     case: { material: stainless steel }
     features: [stopwatch]
-    image: null
+    image: 50qs-17
+    image_credit:
+      author: 'Clement'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-50qs-17'
     discontinued: true

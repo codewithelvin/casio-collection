@@ -36,5 +36,9 @@ models:
     module: '1498'
     case: { material: chrome plated base-metal }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: db-2000
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-db-2000'
     discontinued: true

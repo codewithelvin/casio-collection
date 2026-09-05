@@ -36,5 +36,9 @@ models:
     module: '243'
     case: { material: resin }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: cl-30
+    image_credit:
+      author: 'Julio Dominguez'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-cl-30'
     discontinued: true

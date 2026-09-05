@@ -44,5 +44,12 @@ models:
     module: '145'
     case: { material: stainless steel }
     features: [alarm, countdown-timer, dual-time, stopwatch]
+    # image: null — SOMEBODY LOOKED, 2026-09-05. A 400x500 file carrying the
+    # DIGITAL WATCH watermark reached this repo for this id, and it is NOT the
+    # photograph this page names: the page's own `_large` image is
+    # 3-145-6.jpg, and the two differ by sha256. The page's small
+    # strip shows OTHER references, so a file taken from there could be any of
+    # them. It may well be the right watch; it cannot be shown to be, and the
+    # third honest reason for `image: null` is exactly that (D29, D41).
     image: null
     discontinued: true

@@ -36,5 +36,9 @@ models:
     module: '76'
     case: { material: stainless steel }
     features: [stopwatch]
-    image: null
+    image: 76cs-41
+    image_credit:
+      author: 'bellagio70'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casi-casiotron-76cs-41'
     discontinued: true

@@ -36,5 +36,9 @@ models:
     module: '502'
     case: { material: stainless steel }
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    image: db-200
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-db-2001'
     discontinued: true

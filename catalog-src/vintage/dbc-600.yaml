@@ -36,7 +36,11 @@ models:
     module: '563'
     case: { material: chrome plated resin }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: dbc-600
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dbc-6001'
     discontinued: true
   - id: dbc-600g
     ref: DBC-600G
@@ -45,5 +49,9 @@ models:
     module: '563'
     case: { material: gold tone base-metal }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: dbc-600g
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dbc-600g1'
     discontinued: true

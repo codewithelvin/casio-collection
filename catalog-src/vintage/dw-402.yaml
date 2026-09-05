@@ -37,5 +37,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 200
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: dw-402
+    image_credit:
+      author: 'Rogelio'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dw-402'
     discontinued: true

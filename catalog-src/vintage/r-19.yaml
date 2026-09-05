@@ -34,5 +34,9 @@ models:
     year: 1976
     module: '15'
     case: { material: stainless steel }
-    image: null
+    image: r-19
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-casiotron-r-19'
     discontinued: true

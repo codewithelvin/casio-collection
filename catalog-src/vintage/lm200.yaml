@@ -34,5 +34,9 @@ models:
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio-lm200', kind: community }
     module: '143'
     case: { material: chrome plated base-metal }
-    image: null
+    image: lm200
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-lm200'
     discontinued: true

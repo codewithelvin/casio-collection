@@ -35,7 +35,11 @@ models:
     module: '1670'
     case: { material: stainless steel }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: trn-03-4t
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-trn-03'
     discontinued: true
   - id: trn-03m-3t
     ref: TRN-03M-3T
@@ -44,5 +48,9 @@ models:
     module: '1670'
     case: { material: stainless steel }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: trn-03m-3t
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-trn-03m-3t'
     discontinued: true

@@ -35,5 +35,9 @@ models:
     year: 1981
     module: '164'
     case: { material: resin }
-    image: null
+    image: ag-10
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ag-10'
     discontinued: true

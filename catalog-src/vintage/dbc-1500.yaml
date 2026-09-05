@@ -36,5 +36,9 @@ models:
     module: '1477'
     case: { material: chrome plated resin }
     features: [alarm, calculator, countdown-timer, stopwatch]
-    image: null
+    image: dbc-1500
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dbc-1500'
     discontinued: true

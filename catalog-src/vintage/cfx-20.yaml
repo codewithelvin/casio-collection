@@ -36,5 +36,9 @@ models:
     module: '197'
     case: { material: resin }
     features: [alarm, calculator, stopwatch]
-    image: null
+    image: cfx-20
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-cfx-201'
     discontinued: true

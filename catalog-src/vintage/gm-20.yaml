@@ -36,5 +36,9 @@ models:
     module: '165'
     case: { material: stainless steel }
     features: [alarm, stopwatch]
-    image: null
+    image: gm-20
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_game_gm-20'
     discontinued: true

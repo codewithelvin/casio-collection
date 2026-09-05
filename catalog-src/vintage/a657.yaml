@@ -35,5 +35,9 @@ models:
     module: '160'
     case: { material: gold tone base-metal }
     features: [alarm, stopwatch]
-    image: null
+    image: a657g
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-a657g'
     discontinued: true

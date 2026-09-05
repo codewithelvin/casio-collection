@@ -35,5 +35,9 @@ models:
     year: 1975
     module: '01'
     case: { material: stainless steel }
-    image: null
+    image: 01-503
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-01-503'
     discontinued: true

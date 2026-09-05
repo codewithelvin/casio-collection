@@ -36,5 +36,9 @@ models:
     module: '677'
     case: { material: resin }
     features: [stopwatch]
-    image: null
+    image: m-15
+    image_credit:
+      author: 'Hellmuth'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-m-15'
     discontinued: true

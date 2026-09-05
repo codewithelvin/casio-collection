@@ -37,5 +37,9 @@ models:
     case: { material: stainless steel }
     water_resistance_m: 200
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: str-2000
+    image_credit:
+      author: 'Triplepod'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-str-2000'
     discontinued: true

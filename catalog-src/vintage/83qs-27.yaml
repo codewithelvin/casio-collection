@@ -37,5 +37,9 @@ models:
     module: '83'
     case: { material: chrome plated base-metal }
     features: [alarm, stopwatch]
-    image: null
+    image: 83qs-27
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-83qs-27'
     discontinued: true

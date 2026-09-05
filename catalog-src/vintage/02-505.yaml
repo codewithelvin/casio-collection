@@ -35,5 +35,9 @@ models:
     year: 1976
     module: '02'
     case: { material: gold tone base-metal }
-    image: null
+    image: 02-505
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-02-505'
     discontinued: true

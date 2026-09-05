@@ -37,5 +37,9 @@ models:
     case: { material: resin }
     water_resistance_m: 200
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    image: dw-260
+    image_credit:
+      author: 'californiancoolvintage'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dw-260'
     discontinued: true

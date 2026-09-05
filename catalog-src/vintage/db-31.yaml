@@ -51,5 +51,9 @@ models:
     module: '871'
     case: { material: resin }
     features: [countdown-timer, multi-alarm]
-    image: null
+    image: db-31-1z
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_db-31-1z'
     discontinued: true

@@ -36,5 +36,9 @@ models:
     module: '827'
     case: { material: stainless steel }
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    image: tgw-100
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-tgw-100'
     discontinued: true

@@ -35,5 +35,9 @@ models:
     module: '108'
     case: { material: resin }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: f-81
+    image_credit:
+      author: 'Simone Fiore'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-f-81'
     discontinued: true

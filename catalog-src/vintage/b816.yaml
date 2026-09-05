@@ -34,5 +34,9 @@ models:
     year: 1980
     module: '155'
     case: { material: gold tone resin }
-    image: null
+    image: b816g
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-b816g'
     discontinued: true

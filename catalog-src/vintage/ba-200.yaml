@@ -36,5 +36,9 @@ models:
     module: '452'
     case: { material: gold tone base-metal }
     features: [multi-alarm, stopwatch]
-    image: null
+    image: ba-200g
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ba-200g'
     discontinued: true

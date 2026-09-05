@@ -37,5 +37,9 @@ models:
     module: '56'
     case: { material: stainless steel }
     features: [countdown-timer, stopwatch]
-    image: null
+    image: 56cs-50
+    image_credit:
+      author: 'modhiphugger'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-56cs-50'
     discontinued: true

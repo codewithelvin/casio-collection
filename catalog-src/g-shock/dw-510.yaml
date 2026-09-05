@@ -34,5 +34,11 @@ models:
     module: '540'
     case: { material: resin }
     features: [alarm, stopwatch]
+    # image: null — SOMEBODY LOOKED, 2026-09-05. A 400x500 file carrying the
+    # DIGITAL WATCH watermark reached this repo for this id, but **this page
+    # names no large photograph at all** — only a strip of small thumbnails,
+    # and those show other references. So there is nothing here to check it
+    # against and nothing that ties the picture to this reference. Not a
+    # missing photograph: an unprovable one (D29, D41).
     image: null
     discontinued: true

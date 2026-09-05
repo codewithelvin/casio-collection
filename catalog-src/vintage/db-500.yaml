@@ -36,5 +36,9 @@ models:
     module: '262'
     case: { material: chrome plated resin }
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    image: db-500
+    image_credit:
+      author: 'Rewolf'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-db-500'
     discontinued: true

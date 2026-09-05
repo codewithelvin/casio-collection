@@ -35,5 +35,9 @@ models:
     module: '478'
     case: { material: resin }
     features: [alarm]
-    image: null
+    image: gs-12
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-gs-121'
     discontinued: true

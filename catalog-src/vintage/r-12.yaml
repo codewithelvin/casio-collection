@@ -33,5 +33,9 @@ models:
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio-r-12', kind: community }
     module: '15'
     case: { material: stainless steel }
-    image: null
+    image: r-12
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-r-12'
     discontinued: true
