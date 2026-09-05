@@ -20,33 +20,27 @@
 # written. A reader clicking `source` lands on the page every field came from,
 # which is what §10.6's one-page rule is for.
 #
-# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
-# Every *field* above is still read off the module manual named in `source`;
-# the photograph is read off Casio's own archived product page for that exact
-# reference (D52), which is what `image_credit.url` points at. The file itself
-# is served live by casio.com from the `/content/dam/` path that page names —
-# never a path derived from the reference, which is the whole of D41.
+# THE PHOTOGRAPHS COME FROM A DIFFERENT PAGE, and each one says so (D53).
+# For the six manual-sourced entries that is Casio's own archived product page
+# for that exact reference (D52), which is what `image_credit.url` points at,
+# and the file is served live by casio.com from the `/content/dam/` path that
+# page names — never a path derived from the reference, which is the whole of
+# D41. For the two 2025 references it is G-Central, because the archive has
+# never captured either of them and there is no Casio page to take one off.
 #
-# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
-# The archive holds Casio's product page for some of these references and not
-# others; an entry with no `image` is one whose page was never captured, or
-# whose capture names no asset for it. The typographic card is the state for
-# those, and it is a primary state rather than a fallback (D29).
+# EVERY ENTRY HERE NOW HAS ONE, as of 2026-09-05. That was not true before:
+# PRW-35LD-5 had gone unphotographed since M9 because the archive holds no
+# capture of it, which reads like an entry nobody got to rather than one whose
+# page does not exist. The typographic card is a primary state and not a
+# fallback (D29) — it is just not the right state for a watch a shop is
+# photographing today.
 #
-# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
-# Every *field* above is still read off the module manual named in `source`;
-# the photograph is read off Casio's own archived product page for that exact
-# reference (D52), which is what `image_credit.url` points at. The file itself
-# is served live by casio.com from the `/content/dam/` path that page names —
-# never a path derived from the reference, which is the whole of D41.
+# TWO ENTRIES ARE NOT SOURCED FROM A GUIDE AT ALL and say why on themselves:
+# PRW-35LD-5, re-sourced because the guide it cited was the wrong guide, and
+# PRW-35TLD-7, a Japan-only reference no manual route reaches. Both carry
+# `year`, `case` and `water_resistance_m`, which the six below cannot:
 #
-# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
-# The archive holds Casio's product page for some of these references and not
-# others; an entry with no `image` is one whose page was never captured, or
-# whose capture names no asset for it. The typographic card is the state for
-# those, and it is a primary state rather than a fallback (D29).
-#
-# DELIBERATELY NOT WRITTEN:
+# DELIBERATELY NOT WRITTEN, ON THE SIX MANUAL-SOURCED ENTRIES:
 #   * `year` — the guide dates the module, never the reference (D25).
 #   * `case`, `water_resistance_m`, `colorway` — the guide is about the module.
 
@@ -91,20 +85,45 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250121085154id_/https://www.casio.com/in/watches/protrek/product.PRW-35-7/'
     discontinued: false
+  # PRW-35LD-5 WAS RE-SOURCED ON 2026-09-05, off the module guide and onto the
+  # page that describes this watch. It is the only entry here not read from a
+  # Casio manual, and the reason is that the manual was the wrong manual.
+  #
+  # It cited module 3490's guide, and **that guide contains the string "luminous"
+  # zero times** while module 3582's describes a display that "can be read in the
+  # dark for approximately one hour". This watch is sold for that display. Three
+  # things point the same way: 3582 was published 4/2025, one month before the
+  # two luminous references shipped; 3490's guide is the 2023 PRW-35's; and
+  # casiofanmag's PRW-35 page — the series→module table this file's header says
+  # supplied the link — does not list PRW-35LD at all. A series table cannot
+  # answer for a reference it has never heard of.
+  #
+  # SO `module` IS GONE RATHER THAN CHANGED TO 3582. Nothing states that this
+  # reference runs 3582 either; the evidence is three facts converging, which is
+  # a good lead and not a reading. An absent field is a question the next person
+  # can answer — a plausible one is a lie the site repeats for years.
+  #
+  # The five timekeeping features went with it for the same reason: `world-time`,
+  # `stopwatch`, `countdown-timer`, `multi-alarm` and `hourly-time-signal` were
+  # read off 3490's specification table, which is not this watch's. The source
+  # below states the rest, and `case` and `water_resistance_m` are new — the
+  # guide never had them, because a guide is about a module and not a watch.
   - id: prw-35ld-5
     ref: PRW-35LD-5
     source:
       {
-        url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3490/qw3490_EN.pdf',
-        kind: official,
+        url: 'https://www.g-central.com/pro-trek-prw-35ld-5-and-prw-35tld-7-are-the-first-casio-watches-with-a-phosphorescent-digital-lcd-display-for-light-free-viewing-in-the-dark/',
+        kind: community,
       }
+    year: 2025
     display: digital
     movement: solar-radio
-    module: '3490'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, compass, barometer, thermometer, altimeter, sunrise-sunset]
-    # The one PHOTOGRAPH here that is not off a Casio page, because there is no
-    # Casio page to take one off: PRW-35LD-5 is a May 2025 release and the
-    # archive holds no capture of it under any host, path or locale (one
+    case: { width_mm: 44.6, height_mm: 51.2, depth_mm: 13, weight_g: 45 }
+    water_resistance_m: 100
+    features: [compass, barometer, thermometer, altimeter, sunrise-sunset, radio-controlled, tough-solar, luminous-lcd]
+    # THE PHOTOGRAPH IS OFF THE SAME PAGE, which it was before the entry was:
+    # there is no Casio page to take one off. PRW-35LD-5 is a May 2025 release
+    # and the archive holds no capture of it under any host, path or locale (one
     # domain-wide CDX query, 2026-09-05; PRW-35-1A and PRW-35Y-1B answered 26
     # captures each in the same query, so the query was asked). The file is
     # Casio's own press shot as G-Central republishes it, named for the
@@ -136,16 +155,28 @@ models:
   # reach. Casio's own page answers 403 to everything that is not a person, and
   # `casio.com/intl/news/` names no Pro Trek release in 2024-2026.
   #
-  # `module` is ABSENT ON PURPOSE and is the one field worth chasing. The other
-  # seven entries here run module 3490 off its guide; nothing states that this
-  # one does, and a module read off a neighbouring reference is a guess wearing
-  # a field's clothes. `year` is written because the source states it in a
-  # sentence — "will be released in May 2025", on a page dated 2025-05-01 —
-  # which is the same route the Vintage entries are dated by (D25, D54).
+  # `module` IS ABSENT AND THE CHASE IS WRITTEN DOWN, so nobody walks it twice.
+  # Asked on 2026-09-05 and none of these states a module for this reference:
+  # Casio's support redirector (`support.casio.com/global/en/wat/manual/`, whose
+  # getURL() reads `modelname` and then ignores it — it resolves module→manual
+  # only), casiofanmag's PRW-35 page (names PRW-35-1A, -7, Y-1B and Y-3 and no
+  # TLD), everywatch ("Movement : Solar", no calibre), kakaku, IPPO JAPAN WATCH
+  # and three Japanese shops. casio.com's own page answers 403.
   #
-  # ALSO STATED AND NOT WRITABLE: the phosphorescent LCD, which Casio calls the
-  # first of its kind, and low-temperature resistance. The vocabulary has no
-  # value for either, and adding one is its own confirmed step (rule 4).
+  # **Module 3582 is the strong lead and is deliberately not written.** Its
+  # official guide is published 4/2025, one month before this watch shipped, and
+  # its function list is this watch's exactly — Luminous LCD, World Time, Alarm,
+  # Digital Compass, Altitude, Barometric Pressure and Temperature, Sunrise and
+  # Sunset Times, Stopwatch, Timer. That is three facts converging, which is a
+  # good lead and not a reading, and D44 wants the module read off a page that
+  # states it. Somebody with a browser can settle it in one request.
+  #
+  # `year` is written because the source states it in a sentence — "will be
+  # released in May 2025", on a page dated 2025-05-01 — which is the same route
+  # the Vintage entries are dated by (D25, D54).
+  #
+  # STATED AND STILL NOT WRITABLE: low-temperature resistance. The vocabulary has
+  # no value for it and adding one is its own confirmed step (rule 4).
   - id: prw-35tld-7
     ref: PRW-35TLD-7
     source:
@@ -158,7 +189,7 @@ models:
     movement: solar-radio
     case: { width_mm: 44.6, height_mm: 51.2, depth_mm: 13, weight_g: 81 }
     water_resistance_m: 100
-    features: [compass, barometer, thermometer, altimeter, sunrise-sunset, radio-controlled, tough-solar, sapphire-crystal]
+    features: [compass, barometer, thermometer, altimeter, sunrise-sunset, radio-controlled, tough-solar, sapphire-crystal, luminous-lcd]
     image: prw-35tld-7
     image_credit:
       author: G-Central
