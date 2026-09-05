@@ -37,7 +37,16 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    # Byte-for-byte `_large/1270.jpg` from the page in `source`, which is titled
+    # AE-20W. The two variants have a page each and both pages show both
+    # thumbnails, so the shared `_small` pair is variant navigation and not a
+    # lead image — taking it by position would hand this one the -7's picture.
+    # Looked at: a black TWIN-GRAPH, matching the series aka.
+    image: ae-20w
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ae-20w1'
     discontinued: true
   - id: ae-20w-7
     ref: AE-20W-7
@@ -47,5 +56,12 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    # Byte-for-byte `_large/1614.jpg` from the page in `source`, titled AE-20W-7.
+    # Looked at: the same TWIN-GRAPH in cream with blue pushers, which is the
+    # colourway the -7 suffix names.
+    image: ae-20w-7
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ae-20w2'
     discontinued: true
