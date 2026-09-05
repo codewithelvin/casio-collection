@@ -617,6 +617,7 @@ const FEATURE_LABELS: Record<string, string> = {
   'super-illuminator': 'Super Illuminator',
   'auto-light': 'Auto light',
   afterglow: 'Afterglow',
+  'luminous-lcd': 'Luminous LCD',
   'radio-controlled': 'Radio-controlled',
   bluetooth: 'Bluetooth',
   infrared: 'Infrared',

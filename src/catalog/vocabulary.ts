@@ -119,6 +119,18 @@ export const FEATURES = [
   'super-illuminator',
   'auto-light',
   'afterglow',
+  // **Casio's own heading, not a paraphrase**: "Luminous LCD" is the section
+  // title in the module 3582 operation guide, which describes a display that
+  // "can be read in the dark for approximately one hour" after being lit. It is
+  // not a backlight and it is not `afterglow` — nothing is powered. A
+  // phosphorescent layer under the LCD stores light from a headlamp or a room
+  // and gives it back, which is why Casio sells it as the first of its kind.
+  //
+  // TWO MODELS, both browsable, both citing it from their own source: the
+  // PRW-35LD-5 and PRW-35TLD-7 of May 2025. The count is two rather than one
+  // because PRW-35LD-5 was re-sourced in the same campaign — it had cited module
+  // 3490's guide, which contains the string "luminous" zero times.
+  'luminous-lcd',
   // Synchronisation and power
   'radio-controlled',
   'bluetooth',
