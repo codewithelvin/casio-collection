@@ -35,5 +35,11 @@ models:
     case: { material: resin }
     water_resistance_m: 200
     features: [alarm, countdown-timer, stopwatch]
-    image: null
+    # Provenance proven after the fact, not assumed — the file is byte-for-byte
+    # _large/2901.jpg from the page in `source`. See ae-9w.yaml for why.
+    image: dw-290
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-dw-290'
     discontinued: true

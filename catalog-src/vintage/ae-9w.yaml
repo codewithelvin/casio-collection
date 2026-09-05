@@ -37,5 +37,14 @@ models:
     case: { material: resin }
     water_resistance_m: 50
     features: [alarm, countdown-timer, dual-time, stopwatch]
-    image: null
+    # The photograph was downloaded with the seeding run and left unclaimed, so
+    # its provenance was not recorded anywhere. Proven after the fact rather than
+    # assumed: the file on disk is byte-for-byte _large/344.jpg from the page in
+    # `source` — 36 773 bytes, md5 equal. A credit written from memory would be
+    # the invention D41 exists to refuse.
+    image: ae-9w
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-ae-9w'
     discontinued: true
