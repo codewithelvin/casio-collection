@@ -102,7 +102,65 @@ models:
     movement: solar-radio
     module: '3490'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, compass, barometer, thermometer, altimeter, sunrise-sunset]
+    # The one PHOTOGRAPH here that is not off a Casio page, because there is no
+    # Casio page to take one off: PRW-35LD-5 is a May 2025 release and the
+    # archive holds no capture of it under any host, path or locale (one
+    # domain-wide CDX query, 2026-09-05; PRW-35-1A and PRW-35Y-1B answered 26
+    # captures each in the same query, so the query was asked). The file is
+    # Casio's own press shot as G-Central republishes it, named for the
+    # reference with a boundary after it, and credited to the site it was taken
+    # from under D11 — never to Casio, who granted nothing.
+    image: prw-35ld-5
+    image_credit:
+      author: G-Central
+      licence: rights-reserved
+      url: 'https://www.g-central.com/pro-trek-prw-35ld-5-and-prw-35tld-7-are-the-first-casio-watches-with-a-phosphorescent-digital-lcd-display-for-light-free-viewing-in-the-dark/'
     discontinued: false
+  # PRW-35TLD-7 IS THE ONE ENTRY IN THIS FILE WITH NO CASIO SOURCE AT ALL, and
+  # both rosters are the reason rather than an excuse.
+  #
+  # Casio lists it — `casio.com/jp/sitemap/watches.xml` carries
+  # `.../protrek/product.PRW-35TLD-7/` — but `sitemap.ts` reads three locales of
+  # twenty-nine (us, intl, de) and this is a Japan-only release, so the roster
+  # this project asks has never seen it. The archive has never captured it
+  # either: zero rows of any status in a domain-wide CDX query over casio.com
+  # filtered to `product.PRW-35*`, taken 2026-09-05, in which PRW-35-1A and
+  # PRW-35Y-1B each returned 26. It passes `CANONICAL_REF`, so this is not a
+  # D47 refusal — it is a reference nothing in the toolchain can currently see.
+  #
+  # THE FIELDS ARE THEREFORE READ OFF G-CENTRAL, an enthusiast site, which is
+  # the page that states the most about this reference of any this project can
+  # reach. Casio's own page answers 403 to everything that is not a person, and
+  # `casio.com/intl/news/` names no Pro Trek release in 2024-2026.
+  #
+  # `module` is ABSENT ON PURPOSE and is the one field worth chasing. The other
+  # seven entries here run module 3490 off its guide; nothing states that this
+  # one does, and a module read off a neighbouring reference is a guess wearing
+  # a field's clothes. `year` is written because the source states it in a
+  # sentence — "will be released in May 2025", on a page dated 2025-05-01 —
+  # which is the same route the Vintage entries are dated by (D25, D54).
+  #
+  # ALSO STATED AND NOT WRITABLE: the phosphorescent LCD, which Casio calls the
+  # first of its kind, and low-temperature resistance. The vocabulary has no
+  # value for either, and adding one is its own confirmed step (rule 4).
+  - id: prw-35tld-7
+    ref: PRW-35TLD-7
+    source:
+      {
+        url: 'https://www.g-central.com/pro-trek-prw-35ld-5-and-prw-35tld-7-are-the-first-casio-watches-with-a-phosphorescent-digital-lcd-display-for-light-free-viewing-in-the-dark/',
+        kind: community,
+      }
+    year: 2025
+    display: digital
+    movement: solar-radio
+    case: { width_mm: 44.6, height_mm: 51.2, depth_mm: 13, weight_g: 81 }
+    water_resistance_m: 100
+    features: [compass, barometer, thermometer, altimeter, sunrise-sunset, radio-controlled, tough-solar, sapphire-crystal]
+    image: prw-35tld-7
+    image_credit:
+      author: G-Central
+      licence: rights-reserved
+      url: 'https://www.g-central.com/pro-trek-prw-35ld-5-and-prw-35tld-7-are-the-first-casio-watches-with-a-phosphorescent-digital-lcd-display-for-light-free-viewing-in-the-dark/'
   - id: prw-35y-1b
     ref: PRW-35Y-1B
     source:
