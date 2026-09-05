@@ -1,13 +1,4 @@
 import type { Catalog } from '../catalog/schema.ts'
-// The build's own emitters, so the fixture cannot serve a shape the build does
-// not produce. Safe to import here: `build.ts` reads no `import.meta.env`.
-import {
-  editionModelsOf,
-  lineModelsOf,
-  modelDocumentsOf,
-  searchIndexOf,
-  seriesModelsOf,
-} from '../catalog/build.ts'
 
 /**
  * A published `catalog.json` for the browsing tests.
@@ -317,40 +308,63 @@ export function catalogArtefactResponse(
     return { ok: true, status: 200, json: async () => catalogIndexFixtureJson(catalog) }
   }
   if (url.includes('search-index.json')) {
-    return { ok: true, status: 200, json: async () => roundTrip(searchIndexOf(catalog)) }
+    return {
+      ok: true,
+      status: 200,
+      json: async () => roundTrip((await import('../catalog/build.ts')).searchIndexOf(catalog)),
+    }
   }
 
   /**
    * §6.2's split, legs two and three — **served from the real build functions,
-   * not from hand-written examples.**
+   * not from hand-written examples, and imported only when one is asked for.**
    *
-   * This is the same argument `catalogIndexFixtureJson` makes one level up and
-   * it matters more here, because there are four artefacts and a screen reads
-   * whichever one it needs. A fixture that hand-rolled `{ models: [...] }` for a
-   * series would let a test pass against a shape the build does not emit — and
-   * the failure would land on the live site, where the Zod parse rejects the
-   * real file and the screen shows an error state that no test ever saw.
+   * Deriving the body from the build is the same argument `catalogIndexFixtureJson`
+   * makes one level up and it matters more here: there are four artefacts and a
+   * screen reads whichever it needs, so a hand-rolled `{ models: [...] }` would
+   * let a test pass against a shape the build does not emit — and that failure
+   * lands on the live site, where Zod rejects the real file and the screen shows
+   * an error state no test ever saw.
+   *
+   * **The import is inside `json()` and that is not a style choice.** `setup.ts`
+   * imports this module, so every one of the 57 test files loads it before it
+   * runs; a top-level `import … from '../catalog/build.ts'` therefore pulls Zod
+   * and the whole schema into the startup of every file, whether or not it ever
+   * fetches a split artefact. It was written that way first, and the suite's
+   * setup went to 130 s and its collection to 617 s — enough for a worker to
+   * miss an RPC deadline and take the run down with an unhandled error while
+   * every test passed. Here the cost is paid by the tests that actually ask.
    *
    * **A miss is a 404 and not a null**, which is what makes the not-found paths
    * testable: `/watch/does-not-exist` has to reach FR-10.2's designed screen,
    * and the client turns exactly a 404 into that. Returning null here would fall
-   * through to the caller's own fallback and test the wrong branch.
+   * through to the caller's own fallback and test the wrong branch. Whether the
+   * document exists is decided from the fixture directly, so the 404 costs no
+   * import either.
    */
   const split = /\/catalog\/(model|series|line|edition)\/([^/?]+)\.json/.exec(url)
   if (split) {
-    const [, kind, id] = split
-    const documents =
-      kind === 'model'
-        ? modelDocumentsOf(catalog)
-        : kind === 'series'
-          ? seriesModelsOf(catalog)
-          : kind === 'line'
-            ? lineModelsOf(catalog)
-            : editionModelsOf(catalog)
-    const document = documents.get(decodeURIComponent(id ?? ''))
-    return document
-      ? { ok: true, status: 200, json: async () => roundTrip(document) }
-      : { ok: false, status: 404, json: async () => ({}) }
+    const kind = split[1] as 'model' | 'series' | 'line' | 'edition'
+    const id = decodeURIComponent(split[2] ?? '')
+    if (!splitExists(catalog, kind, id)) {
+      return { ok: false, status: 404, json: async () => ({}) }
+    }
+    return {
+      ok: true,
+      status: 200,
+      json: async () => {
+        const build = await import('../catalog/build.ts')
+        const documents =
+          kind === 'model'
+            ? build.modelDocumentsOf(catalog)
+            : kind === 'series'
+              ? build.seriesModelsOf(catalog)
+              : kind === 'line'
+                ? build.lineModelsOf(catalog)
+                : build.editionModelsOf(catalog)
+        return roundTrip(documents.get(id))
+      },
+    }
   }
 
   if (url.includes('catalog.json')) {
@@ -365,3 +379,27 @@ export function catalogArtefactResponse(
 
 /** What `fetch` would hand back: a value that has been through JSON. */
 const roundTrip = (value: unknown) => JSON.parse(JSON.stringify(value)) as unknown
+
+/**
+ * Whether the build would emit this file, decided from the fixture alone.
+ *
+ * It deliberately mirrors the emptiness rule in `build.ts` rather than calling
+ * it: a series or line gets a file if it is published **or** if any model names
+ * it, which is how a series D51 withheld — every model unphotographed — still
+ * has somewhere for the watch page to look.
+ */
+function splitExists(
+  catalog: Catalog,
+  kind: 'model' | 'series' | 'line' | 'edition',
+  id: string,
+): boolean {
+  if (kind === 'model') return catalog.models.some((model) => model.id === id)
+  if (kind === 'edition') return catalog.editions.some((edition) => edition.id === id)
+  if (kind === 'series') {
+    return (
+      catalog.series.some((series) => series.id === id) ||
+      catalog.models.some((model) => model.series === id)
+    )
+  }
+  return catalog.lines.some((line) => line.id === id) || catalog.models.some((m) => m.line === id)
+}

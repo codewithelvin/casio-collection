@@ -1,15 +1,23 @@
 import { describe, expect, it, vi } from 'vitest'
 import {
   browsable,
+  browsableSorted,
   compareByRef,
   CATALOG_INDEX_PATH,
   CATALOG_PATH,
+  SEARCH_INDEX_PATH,
   catalogIndexQueryOptions,
   catalogQueryOptions,
   editionById,
   fetchCatalog,
   fetchCatalogIndex,
+  fetchEditionModels,
+  fetchLineModels,
+  fetchModel,
+  fetchSearchIndex,
+  fetchSeriesModels,
   imageSources,
+  modelQueryOptions,
   modelsInEdition,
   lineBySlug,
   lineTree,
@@ -21,7 +29,12 @@ import {
   seriesInLine,
 } from './client.ts'
 import type { Catalog, PublishedModel } from './schema.ts'
-import { catalogFixture, catalogFixtureJson, catalogIndexFixtureJson } from '../test/catalogFixture'
+import {
+  catalogArtefactResponse,
+  catalogFixture,
+  catalogFixtureJson,
+  catalogIndexFixtureJson,
+} from '../test/catalogFixture'
 
 /**
  * `image` is on by default because `browsable` withholds a model without one
@@ -309,5 +322,121 @@ describe('image sources (§8.6, NFR-7)', () => {
     const sources = imageSources('f-91w-1')
     expect(sources?.src).toBe(`${import.meta.env.BASE_URL}img/models/f-91w-1.webp`)
     expect(sources?.srcSet).toContain('@2x.webp 2x')
+  })
+})
+
+/**
+ * §6.2's split, legs two and three.
+ *
+ * These are tested directly rather than through the screens because the screens
+ * move onto them one at a time: between the first and the last, most of this
+ * module is code nothing calls, and `src/catalog/**` carries a 90% floor (D31).
+ * That floor is not bureaucracy here — an artefact fetcher that nothing has
+ * exercised is exactly the kind of thing that ships with a wrong path and is
+ * discovered by a visitor.
+ */
+describe('fetching one of the split artefacts (§6.2)', () => {
+  // The parameter is declared even though the body ignores it: the path
+  // assertion below reads `mock.calls[0][0]`, and a `vi.fn` taking no arguments
+  // is typed as never having been called with any.
+  const served = (body: unknown, status = 200) =>
+    vi.fn(async (_input: RequestInfo | URL) => ({
+      ok: status < 400,
+      status,
+      json: async () => body,
+    }))
+
+  const splitOf = (kind: 'model' | 'series' | 'line' | 'edition', id: string) => {
+    const url = `${import.meta.env.BASE_URL}catalog/${kind}/${id}.json`
+    return catalogArtefactResponse(url)
+  }
+
+  it('fetches and parses a model document', async () => {
+    vi.stubGlobal('fetch', served(await splitOf('model', 'f-91w-1')?.json()))
+    const document = await fetchModel('f-91w-1')
+    expect(document?.model.ref).toBe('F-91W-1')
+    // The stamp travels with every slice, which is what lets a reader holding
+    // two artefacts tell whether they describe the same catalogue.
+    expect(document?.version).toBe(catalogFixture.version)
+  })
+
+  it('fetches the models of a series, unfiltered and unsorted', async () => {
+    vi.stubGlobal('fetch', served(await splitOf('series', 'dw-5600')?.json()))
+    const file = await fetchSeriesModels('dw-5600')
+    // Three, not two: `dw-5600bb-1` has no photograph and is withheld by the
+    // client rather than by the build, so it has to be in the file.
+    expect(file?.models).toHaveLength(3)
+  })
+
+  it('fetches the models of a line and of an edition', async () => {
+    vi.stubGlobal('fetch', served(await splitOf('line', 'vintage')?.json()))
+    expect((await fetchLineModels('vintage'))?.models).toHaveLength(2)
+
+    vi.stubGlobal('fetch', served(await splitOf('edition', 'pac-man')?.json()))
+    const edition = await fetchEditionModels('pac-man')
+    // D62's whole claim: the two references are in different lines.
+    expect(new Set(edition?.models.map((entry) => entry.line))).toEqual(
+      new Set(['g-shock', 'vintage']),
+    )
+  })
+
+  /**
+   * The distinction the shared fetcher exists for. A 404 means the URL names
+   * something this catalogue does not have — FR-10.2's designed screen — and
+   * anything else means the site is broken, which is FR-10.1's retry. A screen
+   * cannot tell them apart if the client collapses them, and the reader gets
+   * offered "try again" for a typo.
+   */
+  it('returns null for a 404 and throws for anything else', async () => {
+    vi.stubGlobal('fetch', served({}, 404))
+    expect(await fetchModel('does-not-exist')).toBeNull()
+    expect(await fetchSeriesModels('does-not-exist')).toBeNull()
+    expect(await fetchLineModels('does-not-exist')).toBeNull()
+    expect(await fetchEditionModels('does-not-exist')).toBeNull()
+
+    vi.stubGlobal('fetch', served({}, 500))
+    await expect(fetchModel('f-91w-1')).rejects.toThrow('HTTP 500')
+  })
+
+  it('builds every path from BASE_URL rather than a literal (D13)', async () => {
+    const spy = served({}, 404)
+    vi.stubGlobal('fetch', spy)
+    await fetchModel('f-91w-1')
+    expect(spy.mock.calls[0]?.[0]).toBe(`${import.meta.env.BASE_URL}catalog/model/f-91w-1.json`)
+    expect(SEARCH_INDEX_PATH.startsWith(import.meta.env.BASE_URL)).toBe(true)
+  })
+
+  it('fetches the search index, with the matchable text already normalised', async () => {
+    const url = `${import.meta.env.BASE_URL}catalog/search-index.json`
+    vi.stubGlobal('fetch', served(await catalogArtefactResponse(url)?.json()))
+    const index = await fetchSearchIndex()
+    const entry = index.entries.find((candidate) => candidate.id === 'ga-2100-1a1')
+    expect(entry?.text).toContain('casioak')
+    // Slim: the specifications stayed behind in the model file.
+    expect(entry && 'module' in entry).toBe(false)
+  })
+
+  it('throws when the search index cannot be fetched, rather than searching nothing', async () => {
+    vi.stubGlobal('fetch', served({}, 500))
+    await expect(fetchSearchIndex()).rejects.toThrow('HTTP 500')
+  })
+
+  it('gives each artefact its own query key, so one does not evict another', () => {
+    expect(modelQueryOptions('f-91w-1').queryKey).toEqual(['catalog', 'model', 'f-91w-1'])
+    expect(modelQueryOptions('f-91w-3').queryKey).not.toEqual(modelQueryOptions('f-91w-1').queryKey)
+  })
+})
+
+describe('browsableSorted', () => {
+  it('withholds and orders in one call, which is the pair that gets separated', () => {
+    const models = [
+      model({ id: 'f-103', ref: 'F-103' }),
+      model({ id: 'no-photo', ref: 'F-14', image: undefined }),
+      model({ id: 'f-15', ref: 'F-15' }),
+    ]
+    // F-15 before F-103 is the numeric collation; the photograph-less F-14 is
+    // gone. A caller that wrote `browsable(...)` alone would pass the second
+    // half of this and fail the first.
+    expect(browsableSorted(models).map((entry) => entry.ref)).toEqual(['F-15', 'F-103'])
   })
 })

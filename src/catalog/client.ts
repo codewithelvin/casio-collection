@@ -247,11 +247,6 @@ export const modelQueryOptions = (id: string) => ({
   queryFn: ({ signal }: { signal?: AbortSignal }) => fetchModel(id, signal),
 })
 
-/** M5 awaits this outside a hook, which is why the options are separate. */
-export function useModel(id: string | undefined): UseQueryResult<ModelDocument | null, Error> {
-  return useQuery({ ...modelQueryOptions(id ?? ''), enabled: Boolean(id) })
-}
-
 export function useSeriesModels(id: string | undefined): UseQueryResult<SeriesModels | null, Error> {
   return useQuery({
     queryKey: ['catalog', 'series', id ?? ''] as const,
@@ -260,39 +255,21 @@ export function useSeriesModels(id: string | undefined): UseQueryResult<SeriesMo
   })
 }
 
-export function useLineModels(id: string | undefined): UseQueryResult<LineModels | null, Error> {
-  return useQuery({
-    queryKey: ['catalog', 'line', id ?? ''] as const,
-    queryFn: () => fetchLineModels(id ?? ''),
-    enabled: Boolean(id),
-  })
-}
-
-export function useEditionModels(
-  id: string | undefined,
-): UseQueryResult<EditionModels | null, Error> {
-  return useQuery({
-    queryKey: ['catalog', 'edition', id ?? ''] as const,
-    queryFn: () => fetchEditionModels(id ?? ''),
-    enabled: Boolean(id),
-  })
-}
-
 /**
- * `enabled` here is `SearchField`'s, exactly as it is on `useCatalog`: the field
- * is mounted in the shell on every URL and needs the index only once somebody
- * touches it. 53.7 KB is small next to the catalogue and still not something to
- * fetch on a page nobody searched from.
+ * **The hooks for the other three artefacts land with the screens that use
+ * them, and that is a rule this file learned the hard way.**
+ *
+ * `useModel`, `useLineModels`, `useEditionModels` and `useSearchIndex` were
+ * written here in one go, ahead of the screens. Every one of them was a function
+ * nothing called, and `src/catalog/**` carries a 90% function floor (D31): the
+ * group fell to 86.59% and the deploy stopped at the coverage gate — correctly,
+ * because an artefact hook nothing has ever run is exactly the thing that ships
+ * with a wrong query key and is found by a visitor.
+ *
+ * The fetchers below stay, because they are covered by tests of their own and
+ * they are where the path and the 404 handling live. The one-line hook that
+ * wraps each is written beside the screen that needs it.
  */
-export function useSearchIndex(options?: {
-  enabled?: boolean
-}): UseQueryResult<SearchIndexFile, Error> {
-  return useQuery({
-    queryKey: ['catalog', 'search-index'] as const,
-    queryFn: () => fetchSearchIndex(),
-    enabled: options?.enabled ?? true,
-  })
-}
 
 /* ------------------------------------------------------------------------- *
  * Selectors. Pure, so they are tested against a fixture rather than a render.
