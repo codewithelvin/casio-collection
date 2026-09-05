@@ -1,0 +1,166 @@
+# PRJ-B001 — seeded 2026-09-05 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: prj-b001
+  name: PRJ-B001
+  line: pro-trek
+
+models:
+  - id: prj-b001-1
+    ref: PRJ-B001-1
+    source:
+      { url: 'https://web.archive.org/web/20241001231104id_/https://www.casio.com/europe/watches/protrek/product.PRJ-B001-1/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 50.3, width_mm: 46, depth_mm: 13.6, weight_g: 44, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: prj-b001-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241001231104id_/https://www.casio.com/europe/watches/protrek/product.PRJ-B001-1/'
+    discontinued: false
+  - id: prj-b001-5
+    ref: PRJ-B001-5
+    source:
+      { url: 'https://web.archive.org/web/20250121091726id_/https://www.casio.com/in/watches/protrek/product.PRJ-B001-5/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 50.3, width_mm: 46, depth_mm: 13.6, weight_g: 44, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: prj-b001-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250121091726id_/https://www.casio.com/in/watches/protrek/product.PRJ-B001-5/'
+    discontinued: false
+  - id: prj-b001-7
+    ref: PRJ-B001-7
+    source:
+      { url: 'https://web.archive.org/web/20240710134431id_/https://www.casio.com/intl/watches/protrek/product.PRJ-B001-7/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 50.3, width_mm: 46, depth_mm: 13.6, weight_g: 44, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: prj-b001-7
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240710134431id_/https://www.casio.com/intl/watches/protrek/product.PRJ-B001-7/'
+    discontinued: false
+  - id: prj-b001b-2
+    ref: PRJ-B001B-2
+    source:
+      { url: 'https://web.archive.org/web/20240915200536id_/https://www.casio.com/us/watches/protrek/product.PRJ-B001B-2/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 50.3, width_mm: 46, depth_mm: 13.6, weight_g: 37, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: prj-b001b-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240915200536id_/https://www.casio.com/us/watches/protrek/product.PRJ-B001B-2/'
+    discontinued: false
+  - id: prj-b001b-5
+    ref: PRJ-B001B-5
+    source:
+      { url: 'https://web.archive.org/web/20241125040435id_/https://www.casio.com/jp/watches/protrek/product.PRJ-B001B-5/', kind: official }
+    case: { height_mm: 50.3, width_mm: 46, depth_mm: 13.6, weight_g: 37 }
+    water_resistance_m: 100
+    features: [bluetooth]
+    image: prj-b001b-5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241125040435id_/https://www.casio.com/jp/watches/protrek/product.PRJ-B001B-5/'
+    discontinued: false
+  # THE TWO ENTRIES BELOW ARE NOT OFF A CASIO PAGE, because the archive has none
+  # for either: one domain-wide CDX query over casio.com filtered to
+  # `product.PRJ-B001*` on 2026-09-05 returned 97 rows across the SEVEN other
+  # references and zero of any status for these two. Casio's own sitemap lists
+  # both, and casio.com answers 403 to everything that is not a person, so the
+  # shop that stocks them is the best page that exists. Same rule as everywhere
+  # else: one page per model, and every field below is on it.
+  - id: prj-b001ex-1
+    ref: PRJ-B001EX-1
+    source:
+      {
+        url: 'https://ippojapanwatch.com/products/casio-prj-b001ex-1jr-protrek-hiker-line-gps-navigation-altimeter-barometer-thermometer',
+        kind: retailer,
+      }
+    movement: solar
+    water_resistance_m: 100
+    features: [bluetooth, tough-solar, stopwatch, countdown-timer, alarm, led-light]
+    # `image: null` IS A REFUSAL SOMEBODY MADE, not a gap (D29). Both photographs
+    # this page carries show the watch fastened inside its own coin-case band
+    # with the coins visible — a feature demonstration rather than a product
+    # shot. The watch is perhaps a fifth of the frame, black on black, at 600 px.
+    # The typographic tile is the better picture of this watch until a real one
+    # exists, which is the whole reason the tile is a primary state.
+    image: null
+    discontinued: false
+  # PRJ-B001NJ-3 IS A COLLABORATION and this entry does not say so, deliberately.
+  # The shop titles it "Japan Nature Conservation Society x Pickles the Frog",
+  # which is D62's territory — and D62 makes declaring an edition its own
+  # confirmed step and its own commit, never a side effect of a seeding run. So
+  # the watch is catalogued and the edition is proposed in the report.
+  #
+  # It has an archived capture, and that capture is why it is here rather than
+  # seeded: 2 596 bytes of consent shell that states nothing about any watch.
+  # `seed-into.ts` reported it as "0 rows" and refused it under D50, which was
+  # right — but "the only capture is an empty JS shell" and "this reference has
+  # no page" are different facts and only the first one is true.
+  - id: prj-b001nj-3
+    ref: PRJ-B001NJ-3
+    source:
+      {
+        url: 'https://ippojapanwatch.com/products/casio-prj-b001nj-3jr-quartz-x-japan-nature-conservation-society-x-pickles-the-frog-2026-2-release',
+        kind: retailer,
+      }
+    year: 2026
+    case: { weight_g: 44 }
+    water_resistance_m: 100
+    features: [bluetooth, world-time, led-light, mineral-glass]
+    # 2000 px, plain white ground, and the filename is `PRJ-B001NJ-3JR1.jpg` —
+    # the reference with a boundary after it, which is the test that works. The
+    # dial prints PRO TREK and CASIO, and the olive case matches what the page
+    # describes. Credited to the shop under D11: it is Casio's photograph, but
+    # Casio granted nothing and the shop is where it was taken from (D41).
+    image: prj-b001nj-3
+    image_credit:
+      author: IPPO JAPAN WATCH
+      licence: rights-reserved
+      url: 'https://ippojapanwatch.com/products/casio-prj-b001nj-3jr-quartz-x-japan-nature-conservation-society-x-pickles-the-frog-2026-2-release'
+    discontinued: false
+  - id: prj-b001wm-1
+    ref: PRJ-B001WM-1
+    source:
+      { url: 'https://web.archive.org/web/20250118012659id_/https://www.casio.com/us/watches/protrek/product.PRJ-B001WM-1/', kind: official }
+    display: ana-digi
+    movement: solar
+    case: { height_mm: 50.3, width_mm: 46, depth_mm: 13.6, weight_g: 47, material: 'Resin / Bio-based resin' }
+    water_resistance_m: 100
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, bluetooth, tough-solar, power-saving, mineral-glass]
+    image: prj-b001wm-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250118012659id_/https://www.casio.com/us/watches/protrek/product.PRJ-B001WM-1/'
+    discontinued: false
