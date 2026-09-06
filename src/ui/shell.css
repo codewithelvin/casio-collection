@@ -709,14 +709,47 @@
   list-style: none;
 }
 
-/* D62 — the row below the lines, which is not one. A rule and a little air,
-   because what it separates is two kinds of link rather than two sections of the
-   same kind: above it, the seven lines and their series; below it, the way into
-   the catalogue that cuts across all of them. `border-block-start` and not
-   `border-top`, matching the logical properties used throughout this file. */
-.cc-nav-aside {
+/*
+ * The rail's group headings — the client's call, 2026-09-06.
+ *
+ * ~~D62's `.cc-nav-aside` did this job with a rule and a little air, because
+ * what it separates is two kinds of link rather than two sections of the same
+ * kind.~~ That held while one row sat below the border. Three do now, and the
+ * report was that they could not be found: **a hairline says something changed
+ * here, it does not say what**, and it says even less by the third row down.
+ *
+ * Deliberately quieter and smaller than `.cc-nav-family`, which labels families
+ * *inside* a line. These sit one level above that, so if the two competed the
+ * tree would read inside-out. Uppercase and letter-spacing carry the weight
+ * instead of size — the same trick the wordmark uses (§8.11). `border-block-start`
+ * and not `border-top`, matching the logical properties used throughout.
+ */
+.cc-nav-group {
+  margin-block: 16px 4px;
+  padding-inline: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cc-text-tertiary);
+}
+
+/* The first heading opens the rail where the list used to begin, so it keeps
+   that spacing rather than the gap that separates one group from the next. */
+.cc-nav-group:first-child {
   margin-block-start: 8px;
-  padding-block-start: 8px;
+}
+
+/* The rule stays, moved from the row to the heading that replaced it: the
+   heading is what names the group, and the border is what stops the two lists
+   reading as one long column at a glance. */
+.cc-nav-group + .cc-nav-list {
+  border-block-start: none;
+}
+
+.cc-nav-group:not(:first-child) {
+  padding-block-start: 16px;
   border-block-start: 1px solid var(--cc-border-secondary);
 }
 

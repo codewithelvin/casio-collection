@@ -27,6 +27,13 @@ const en = {
   // the rail: it answers a question you have while holding a watch, not while
   // browsing for one.
   'nav.symbols': 'Display symbols',
+  // The rail's second group heading (2026-09-06). One label over three rows
+  // rather than three headings over one row each — D32's rule about a heading
+  // with a single entry beneath it, applied a level up. What those three share
+  // is not a subject; it is that none of them is a line, and "More" is the
+  // honest word for that. Anything narrower would claim a kinship they do not
+  // have.
+  'nav.more': 'More',
   'nav.skip': 'Skip to content',
   // §12 — the rail's expander became a control of its own when the Menu went,
   // so it needs a name of its own. It says which line it opens, because a rail
@@ -439,6 +446,15 @@ const en = {
   'settings.picture.hint':
     'Off shows your initials instead. There is nothing to upload — the only picture this site can use is the one on your Google account.',
   'settings.picture.none': 'There is no picture on that Google account, so your initials stay.',
+  // Each of these names a different thing that happened, because a switch that
+  // will not move and says "something went wrong" sends the problem to the wrong
+  // person — which is exactly what it did on 2026-09-06, when the Edge Function
+  // behind it had never been deployed.
+  'settings.picture.tooLarge':
+    'That picture is too large to publish, so your initials stay. A smaller one on your Google account would work.',
+  'settings.picture.notStored': 'The picture was fetched but could not be saved. Nothing changed.',
+  'settings.picture.unavailable':
+    'The picture service is not answering, so nothing changed. This one is ours to fix, not yours.',
   'settings.copy': 'Copy',
   'settings.copied': 'Copied',
   'settings.save': 'Save',

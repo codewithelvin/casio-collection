@@ -86,15 +86,21 @@ describe('the display-symbol page', () => {
   })
 
   /**
-   * The footer disclosure is the page's only way in, so the link working is not
-   * a detail — without it the glossary is reachable only by typing the URL.
+   * **It moved out of the footer disclosure on 2026-09-06**, and the old comment
+   * here is why: this was the page's only way in, and it was two presses deep
+   * behind an "i" that reads as *about this site* rather than as *places to go*.
+   * The client could not find it. A page written for a question — which is what
+   * D65 says this one is — that nobody can reach is a page written for nobody.
+   *
+   * So the assertion is the same and the surface is not: it is a row in the
+   * rail, under the *More* heading, visible without pressing anything.
    */
-  it('is reachable from the footer disclosure', async () => {
+  it('is reachable from the rail', async () => {
     const user = userEvent.setup()
     renderApp('/')
-    await user.click(await screen.findByRole('button', { name: t('footer.about') }))
 
-    const link = screen.getByRole('link', { name: t('nav.symbols') })
+    const rail = within(await screen.findByRole('navigation', { name: t('nav.lines') }))
+    const link = rail.getByRole('link', { name: t('nav.symbols') })
     expect(link).toHaveAttribute('href', '/symbols/')
 
     await user.click(link)

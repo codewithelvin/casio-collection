@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { lineTree, useCatalogIndex } from '../catalog/client.ts'
 import { RailSkeleton } from './RailSkeleton'
-import { ChevronIcon, EditionsIcon, LineGlyph } from './icons'
+import { ChevronIcon, CollectorsIcon, EditionsIcon, LineGlyph, SymbolsIcon } from './icons'
 import { LINE_ACCENTS } from '../theme/palette.ts'
-import { EDITIONS, linePath, seriesPath } from '../paths.ts'
+import { COLLECTORS, EDITIONS, SYMBOLS, linePath, seriesPath } from '../paths.ts'
 import { expandLine, t } from '../i18n/strings'
 
 /**
@@ -86,7 +86,27 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
 
   return (
     <nav className="cc-nav" aria-label={t('nav.lines')}>
-      <ul className="cc-nav-list">
+      {/*
+        **The rail has headings now, and this replaces a rule rather than adding
+        to one.** It used to separate the lines from everything else with a
+        border and a comment saying a heading was wrong here because it "divides
+        two kinds of link, not two sections of one kind".
+
+        The client's answer, 2026-09-06: a border is not a separation anybody
+        reads. Three destinations now sit below the lines rather than one, and an
+        unlabelled run of three under a hairline is a list that looks like it
+        overflowed rather than one that was grouped.
+
+        **Two groups and not four**, which is D32's rule about family headings
+        applied one level up: a heading over a single entry is noise. Editions,
+        the directory and the glossary are three different kinds of thing, and
+        the honest label for the set is that they are the ways in that are not a
+        line — so they get one heading between them rather than one each.
+      */}
+      <h2 className="cc-nav-group" id="cc-nav-group-lines">
+        {t('nav.lines')}
+      </h2>
+      <ul className="cc-nav-list" aria-labelledby="cc-nav-group-lines">
         {data.lines.map((line) => {
           const tree = lineTree(data, line.id)
           const isActive = currentLine === line.slug
@@ -179,15 +199,17 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
           )
         })}
 
-        {/* Inside the same list and the same landmark, deliberately. A second
-            `<nav>` would be tidier to label and would break the one thing
-            `AppShell` asserts about this component — that the rail is a single
-            `cc-nav` region — and a reader tabbing the rail wants one list of
-            places to go, not two regions to choose between first. The rule is
-            separated by a border rather than a heading because it divides two
-            kinds of link, not two sections of one kind. */}
+      </ul>
+
+      {/* Still one landmark and still one `cc-nav` region — a second `<ul>` is
+          not a second `<nav>`, and that is the constraint `AppShell` actually
+          asserts. What changes is that each list now says what it is. */}
+      <h2 className="cc-nav-group" id="cc-nav-group-more">
+        {t('nav.more')}
+      </h2>
+      <ul className="cc-nav-list" aria-labelledby="cc-nav-group-more">
         {showEditions ? (
-          <li className="cc-nav-aside">
+          <li>
             <Link
               to={EDITIONS}
               className="cc-nav-row"
@@ -213,6 +235,50 @@ export function LineNav({ onNavigate }: { onNavigate?: () => void }) {
             </Link>
           </li>
         ) : null}
+
+        {/*
+          D69 — the collector directory, moved here from the footer disclosure
+          on 2026-09-06 because the client could not find it there, which is a
+          fair report: it was two presses deep behind an "i" that reads as
+          *about this site* rather than as *places to go*.
+
+          **No count**, unlike every other row in this rail. The other counts are
+          facts about a file that is already in memory (D1); this one is a
+          Supabase read, and putting it here would mean the rail could not draw
+          itself until the network answered — on every page, for every visitor,
+          including the ones who are never going to press it.
+        */}
+        <li>
+          <Link
+            to={COLLECTORS}
+            className="cc-nav-row"
+            {...(pathname.startsWith('/collectors') ? { 'aria-current': 'page' as const } : {})}
+            onClick={onNavigate}
+          >
+            <span className="cc-nav-icon">
+              <CollectorsIcon />
+            </span>
+            <span className="cc-nav-label">{t('route.collectors.title')}</span>
+          </Link>
+        </li>
+
+        {/* D65 — the glossary. It was the *only* way in for this page and it was
+            in the footer panel, which is what made §10's own note about it true:
+            a page written for a question nobody can find is a page written for
+            nobody. */}
+        <li>
+          <Link
+            to={SYMBOLS}
+            className="cc-nav-row"
+            {...(pathname.startsWith('/symbols') ? { 'aria-current': 'page' as const } : {})}
+            onClick={onNavigate}
+          >
+            <span className="cc-nav-icon">
+              <SymbolsIcon />
+            </span>
+            <span className="cc-nav-label">{t('nav.symbols')}</span>
+          </Link>
+        </li>
       </ul>
     </nav>
   )

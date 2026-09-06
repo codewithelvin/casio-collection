@@ -504,7 +504,11 @@ describe('publishing the profile picture (D71)', () => {
   it('asks the Edge Function to store, and sends no image', async () => {
     db.invokeResult = { data: { avatar: 'data:image/jpeg;base64,AAAA', stored: true }, error: null }
 
-    await expect(setAvatarPublished(true)).resolves.toBe('data:image/jpeg;base64,AAAA')
+    await expect(setAvatarPublished(true)).resolves.toEqual({
+      avatar: 'data:image/jpeg;base64,AAAA',
+      stored: true,
+      reason: null,
+    })
 
     expect(db.lastInvoke).toEqual({
       name: 'avatar',
@@ -515,7 +519,7 @@ describe('publishing the profile picture (D71)', () => {
   it('withdraws it with the same call and the opposite flag', async () => {
     db.invokeResult = { data: { avatar: null, stored: false }, error: null }
 
-    await expect(setAvatarPublished(false)).resolves.toBeNull()
+    await expect(setAvatarPublished(false)).resolves.toMatchObject({ avatar: null })
     expect((db.lastInvoke?.options as { body: unknown }).body).toEqual({ store: false })
   })
 
@@ -524,10 +528,35 @@ describe('publishing the profile picture (D71)', () => {
    * no body. That is not a failure and must not be reported as one: the switch
    * simply stays off, because the column is still null.
    */
-  it('reads "there is no picture" as null rather than as an error', async () => {
+  it('reads "there is no picture" as an answer rather than as an error', async () => {
     db.invokeResult = { data: null, error: null }
 
-    await expect(setAvatarPublished(true)).resolves.toBeNull()
+    await expect(setAvatarPublished(true)).resolves.toEqual({
+      avatar: null,
+      stored: false,
+      reason: null,
+    })
+  })
+
+  /**
+   * **The three outcomes this keeps apart are the point** (2026-09-06). The
+   * switch used to collapse them into "something went wrong", which is what it
+   * said when the function had never been deployed — a sentence that sent the
+   * problem to the wrong person. A picture that came back but was refused for
+   * being too big is a different fact from no picture at all, and both are
+   * different from the function not answering.
+   */
+  it('carries the reason back when a picture was fetched and not stored', async () => {
+    db.invokeResult = {
+      data: { avatar: 'data:image/png;base64,AAAA', stored: false, reason: 'too-large' },
+      error: null,
+    }
+
+    await expect(setAvatarPublished(true)).resolves.toEqual({
+      avatar: 'data:image/png;base64,AAAA',
+      stored: false,
+      reason: 'too-large',
+    })
   })
 
   it('throws when the function itself failed', async () => {

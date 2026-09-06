@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { InfoIcon } from './icons'
-import { COLLECTORS, SYMBOLS } from '../paths.ts'
 import { t } from '../i18n/strings'
 import { useUiStore } from './uiStore'
 // A build with no measurement ID has no analytics and therefore no choice to
@@ -129,32 +127,18 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
                 one. A sentence and a list of links are two different things; the
                 narrow measure is what made that visible. */}
             <p className="cc-quiet cc-footer-meta">{t('footer.attribution')}</p>
-            {/* The one link in this panel that goes somewhere on this site, so
-                it gets a line of its own rather than a place in the metadata row
-                below — that row is a source link and a version number, which are
-                facts about the build rather than somewhere to go.
+            {/*
+              **The two destinations that used to live here are in the rail now**
+              (2026-09-06). The glossary sat behind this disclosure from D65, and
+              the collector directory joined it for one sitting; the client
+              reported not being able to find either, which is a fair report of a
+              link two presses deep behind an "i".
 
-                **It closes the panel on the way out.** The dismiss handler is a
-                `pointerdown` listener that ignores presses inside the wrapper,
-                and this link is inside it — so without this the reader lands on
-                the glossary with the footer disclosure still hanging open behind
-                them. The external link below has the same shape and does not
-                need it: it opens a new tab and leaves this page as it was. */}
-            <p className="cc-quiet cc-footer-meta">
-              <Link to={SYMBOLS} onClick={() => setOpen(false)}>
-                {t('nav.symbols')}
-              </Link>
-            </p>
-            {/* D69 — the directory, here rather than in the rail for the same
-                reason the glossary is: the rail is ways into the catalogue, and
-                this is a way to people. It is also the one destination on this
-                site that can be empty, so a quiet place is the right place until
-                there is somebody in it (FR-12.5). */}
-            <p className="cc-quiet cc-footer-meta">
-              <Link to={COLLECTORS} onClick={() => setOpen(false)}>
-                {t('route.collectors.title')}
-              </Link>
-            </p>
+              What is left is the right shape for this panel and always was: a
+              legal notice, an attribution, a consent control and two facts about
+              the build. **None of them is somewhere to go**, which is exactly
+              why a page you might want to visit did badly in here.
+            */}
             {/* D68 — the way back to the analytics question, and the reason it
                 is *here* rather than in /settings is that /settings needs a
                 session: a signed-out reader who accepted would have had no way

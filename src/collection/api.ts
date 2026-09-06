@@ -387,15 +387,39 @@ export async function replaceOwnLinks(userId: string, links: ProfileLink[]): Pro
  * Returns the data URI when there is one, so the caller can update the header
  * cache in the same round trip.
  */
-export async function setAvatarPublished(published: boolean): Promise<string | null> {
+export interface AvatarResult {
+  /** The data URI, or null when the account has no picture to publish. */
+  avatar: string | null
+  /** Whether it reached `profiles.avatar`. `false` is an answer, not a failure. */
+  stored: boolean
+  /** Why it did not, where the function can say. */
+  reason: string | null
+}
+
+export async function setAvatarPublished(published: boolean): Promise<AvatarResult> {
   const supabase = await getSupabase()
-  const { data, error } = await supabase.functions.invoke<{ avatar?: unknown; stored?: unknown }>(
-    'avatar',
-    { method: 'POST', body: { store: published } },
-  )
+  const { data, error } = await supabase.functions.invoke<{
+    avatar?: unknown
+    stored?: unknown
+    reason?: unknown
+  }>('avatar', { method: 'POST', body: { store: published } })
+
   if (error) throw new Error(`avatar: ${error.message}`)
+
+  /**
+   * **Three outcomes, not two, and collapsing them cost a diagnostic round trip
+   * on 2026-09-06.** The switch reported *something went wrong* when the
+   * `avatar` function had simply never been deployed — a 404 arriving here like
+   * any other error. Neither the reader nor the person who wrote the message
+   * could act on it. So what comes back now is *what happened*: a picture that
+   * was stored, no picture on the account at all, or a stated reason.
+   */
   const value = data?.avatar
-  return typeof value === 'string' ? value : null
+  return {
+    avatar: typeof value === 'string' ? value : null,
+    stored: data?.stored === true,
+    reason: typeof data?.reason === 'string' ? data.reason : null,
+  }
 }
 
 /**

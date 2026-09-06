@@ -539,15 +539,29 @@ function PictureCard() {
     if (!user) return
     setBusy(true)
     try {
-      const uri = await setAvatarPublished(next)
+      const result = await setAvatarPublished(next)
       await queryClient.invalidateQueries({ queryKey: ['profile', user.id] })
-      // Publishing found no picture at Google: the switch stays off because the
-      // profile row is still null, and saying so is better than a switch that
-      // silently springs back.
-      if (next && uri === null) void message.info(t('settings.picture.none'))
+
+      /**
+       * **Four outcomes, each named**, and this is the fix for a real incident
+       * rather than a nicety. On 2026-09-06 this switch said *something went
+       * wrong* because the Edge Function had never been deployed — a message
+       * nobody could act on, which sent the problem to whoever held a Management
+       * API token instead of to the person pressing the switch.
+       *
+       * A switch that will not move has to say which of these it is: there is no
+       * picture on the account, there is one and it is too big, the write was
+       * refused, or the service is not answering at all.
+       */
+      if (!next) void message.success(t('settings.saved'))
+      else if (result.reason === 'too-large') void message.warning(t('settings.picture.tooLarge'))
+      else if (result.avatar === null) void message.info(t('settings.picture.none'))
+      else if (!result.stored) void message.error(t('settings.picture.notStored'))
       else void message.success(t('settings.saved'))
     } catch {
-      void message.error(t('state.error.title'))
+      // The one failure the reader genuinely cannot fix, so it says so rather
+      // than implying they did something wrong.
+      void message.error(t('settings.picture.unavailable'))
     } finally {
       setBusy(false)
     }
