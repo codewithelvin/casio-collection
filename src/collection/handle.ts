@@ -39,6 +39,16 @@ export const RESERVED_HANDLES = [
   'api',
   'auth',
   'collection',
+  // D69 — the directory, both spellings, on exactly the argument the comment
+  // below makes about editions. `/u/collectors` beside `/collectors` is a
+  // confusion, and a handle claimed under a route that arrives later is
+  // unrecoverable.
+  'collector',
+  'collectors',
+  // D65's glossary, which had been a route for a week before anybody noticed it
+  // was missing from this list.
+  'symbol',
+  'symbols',
   // D62 — both spellings. `/editions` is the route; `edition` is reserved
   // alongside it because the singular is the form somebody would guess, and a
   // handle that only collides with a plausible future URL is still a collision

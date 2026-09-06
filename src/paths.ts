@@ -45,6 +45,32 @@ export const EDITIONS = '/editions/'
 /** The symbol glossary. */
 export const SYMBOLS = '/symbols/'
 
+/**
+ * D69 — the collector directory. **Slashed, and it belongs in this file rather
+ * than with the unwritten paths above**, because unlike `/collection` and
+ * `/settings` it has a real file: `scripts/seo.ts` writes a `noindex` shell at
+ * `dist/collectors/index.html` so D66's crawl gate finds a titled page at the end
+ * of the footer's link instead of the 404 fallback. A written page is a directory
+ * on Pages, so the unslashed spelling is a 301 — exactly the two-URLs-for-one-page
+ * split this module exists after.
+ *
+ * `?owns=` hangs off it (FR-12.8), so the filtered form is a function. The query
+ * follows the slash; putting it on the unslashed path would redirect and lose it
+ * on some clients.
+ */
+export const COLLECTORS = '/collectors/'
+
+export const collectorsOwningPath = (modelId: string): string =>
+  `${COLLECTORS}?owns=${encodeURIComponent(modelId)}`
+
+/**
+ * One published profile: `/u/elvin`, **unslashed**, because no file is written
+ * at that path in either spelling (D45 keeps `/u/` out of the sitemap and out of
+ * the prerender). It is here rather than inline so the directory, the owner strip
+ * and the profile header cannot spell it three ways.
+ */
+export const profilePath = (handle: string): string => `/u/${handle}`
+
 /** One line: `/line/g-shock/`. `slug`, not `id` — the URL has always used it. */
 export const linePath = (lineSlug: string): string => `/line/${lineSlug}/`
 

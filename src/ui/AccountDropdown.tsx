@@ -5,6 +5,7 @@ import { clearCachedAvatar, readCachedAvatar } from '../auth/avatar.ts'
 import { useSessionStore } from '../auth/session.ts'
 import { useSignOut } from '../auth/useSignOut.ts'
 import AntdRoot from './AntdRoot'
+import { initials } from './initials'
 import { t } from '../i18n/strings'
 
 /**
@@ -141,18 +142,15 @@ function Dropdownable() {
 }
 
 /**
- * Two letters from a name, one from an email address. Exported so the fallback
- * chain is tested rather than assumed — a display name is optional on every
- * provider and absent is the normal case for magic link (§9.2).
+ * Two letters from a name, one from an email address. **Moved to `initials.ts`
+ * by D71** and re-exported here so every existing import site is unchanged: the
+ * function grew a second caller in `CollectorAvatar`, and importing it from this
+ * module would have pulled the account dropdown — `Dropdown`, `Menu`, `Avatar`
+ * and the avatar cache — into the directory, the owner strip and the public
+ * profile, all of which §12 keeps it out of.
+ *
+ * Exported at all so the fallback chain is tested rather than assumed: a display
+ * name is optional on every provider and absent is the normal case for magic
+ * link (§9.2).
  */
-export function initials(label: string): string {
-  const words = label.trim().split(/\s+/).filter(Boolean)
-  if (words.length === 0) return '?'
-  if (words.length === 1) {
-    // An email address: the local part's first character, never the '@'.
-    return (words[0] ?? '').charAt(0).toUpperCase() || '?'
-  }
-  const first = (words[0] ?? '').charAt(0)
-  const last = (words[words.length - 1] ?? '').charAt(0)
-  return `${first}${last}`.toUpperCase()
-}
+export { initials }

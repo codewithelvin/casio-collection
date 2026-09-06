@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { InfoIcon } from './icons'
-import { SYMBOLS } from '../paths.ts'
+import { COLLECTORS, SYMBOLS } from '../paths.ts'
 import { t } from '../i18n/strings'
 import { useUiStore } from './uiStore'
 // A build with no measurement ID has no analytics and therefore no choice to
@@ -143,6 +143,16 @@ export function Footer({ catalogVersion }: { catalogVersion?: string | null }) {
             <p className="cc-quiet cc-footer-meta">
               <Link to={SYMBOLS} onClick={() => setOpen(false)}>
                 {t('nav.symbols')}
+              </Link>
+            </p>
+            {/* D69 — the directory, here rather than in the rail for the same
+                reason the glossary is: the rail is ways into the catalogue, and
+                this is a way to people. It is also the one destination on this
+                site that can be empty, so a quiet place is the right place until
+                there is somebody in it (FR-12.5). */}
+            <p className="cc-quiet cc-footer-meta">
+              <Link to={COLLECTORS} onClick={() => setOpen(false)}>
+                {t('route.collectors.title')}
               </Link>
             </p>
             {/* D68 — the way back to the analytics question, and the reason it

@@ -1229,3 +1229,48 @@
 .cc-footer-link:hover {
   text-decoration: underline;
 }
+
+/*
+ * D69 / §8.12 — the collectors directory and the owner strip.
+ *
+ * `cc-truncate` is a class rather than AntD's `ellipsis` prop, and D58 is the
+ * reason it is worth a rule of its own: that prop appends an <em>, reads two
+ * rects and removes it once per element inside React's commit, and a CPU profile
+ * put it at 23% of all samples on a grid of this size. Three properties do the
+ * same job for nothing, and a directory page renders four of them per card.
+ */
+.cc-truncate {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cc-collector-card:hover {
+  border-color: var(--cc-primary);
+}
+
+/*
+ * FR-3.9 / NFR-7 — the owner strip occupies its height whether or not an answer
+ * arrives. The counts are decoration and are allowed to fail to nothing, but a
+ * block that appears a second after the page settles pushes the specification
+ * table down under the reader's eye, and a layout shift is not decoration.
+ */
+.cc-owner-strip {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cc-owner-strip a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+}
+
+.cc-owner-strip a:hover {
+  color: var(--cc-primary);
+}

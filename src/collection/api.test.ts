@@ -2,12 +2,18 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import {
   deleteOwnAccount,
   fetchCollection,
+  fetchCollectors,
+  fetchListedOwners,
+  fetchModelOwnerCounts,
+  fetchOwnLinks,
   fetchProfile,
   fetchProfileByHandle,
   fetchPublicCollection,
   isHandleAvailable,
   putCollectionItem,
   removeCollectionItem,
+  replaceOwnLinks,
+  setAvatarPublished,
   setCollectionNote,
   submitCatalogRequest,
   updateProfile,
@@ -37,6 +43,9 @@ const { db, createClient } = vi.hoisted(() => {
     lastPayload: null as unknown,
     lastOnConflict: undefined as string | undefined,
     lastRpc: null as { name: string; args: unknown } | null,
+    lastNot: null as { column: string; operator: string; value: unknown } | null,
+    lastInvoke: null as { name: string; options: unknown } | null,
+    invokeResult: { data: null as unknown, error: null as { message: string } | null },
   }
 
   const from = vi.fn((table: string) => {
@@ -69,6 +78,13 @@ const { db, createClient } = vi.hoisted(() => {
     })
 
     chain['delete'] = vi.fn(() => chain)
+    // D70's link set is replaced rather than diffed, and the delete half names
+    // the platforms to keep with `not in`. Recorded so the test can assert that
+    // a save does not wipe the rows it is about to write back.
+    chain['not'] = vi.fn((column: string, operator: string, value: unknown) => {
+      db.lastNot = { column, operator, value }
+      return chain
+    })
     return chain
   })
 
@@ -77,7 +93,14 @@ const { db, createClient } = vi.hoisted(() => {
     return Promise.resolve(db.result)
   })
 
-  return { db, createClient: vi.fn(() => ({ auth: {}, from, rpc })) }
+  const functions = {
+    invoke: vi.fn((name: string, options?: unknown) => {
+      db.lastInvoke = { name, options }
+      return Promise.resolve(db.invokeResult)
+    }),
+  }
+
+  return { db, createClient: vi.fn(() => ({ auth: {}, from, rpc, functions })) }
 })
 
 vi.mock('@supabase/supabase-js', () => ({ createClient }))
@@ -92,6 +115,9 @@ beforeEach(() => {
   db.lastRpc = null
   db.lastPayload = null
   db.lastOnConflict = undefined
+  db.lastNot = null
+  db.lastInvoke = null
+  db.invokeResult = { data: null, error: null }
   resetSupabaseClient()
 })
 
@@ -224,17 +250,24 @@ describe('the profile (M8)', () => {
 
 describe('a published profile (FR-7.4, FR-7.5)', () => {
   /**
-   * The filter is the requirement. Asking for `is_public = true` means a
-   * private profile is invisible to the *query*, rather than fetched and then
-   * filtered here — where a timing difference could still tell a stranger that
-   * the handle exists and has been withdrawn.
+   * **This is an RPC and not a select, and D73 is the reason.**
+   *
+   * The filter used to be the requirement — `is_public = true` in the query, so
+   * a private profile was invisible to the *statement* rather than fetched and
+   * filtered here. That is still true and is now the function's job, because the
+   * policy the filter leaned on admitted every published row to every caller:
+   * one unfiltered request returned the whole directory whether or not its
+   * members had asked to be in one, which made `is_listed` unenforceable.
+   *
+   * Asserting the call shape rather than a filter is therefore the point. If
+   * this ever goes back to `.from('profiles')`, this test is what says no.
    */
-  it('asks only for published profiles', async () => {
+  it('reads a published profile through profile_by_handle, not through a select', async () => {
     db.result = { data: null, error: null }
 
     await fetchProfileByHandle('elvin')
 
-    expect(db.lastFilters).toEqual({ handle: 'elvin', is_public: true })
+    expect(db.lastRpc).toEqual({ name: 'profile_by_handle', args: { p_handle: 'elvin' } })
   })
 
   it('answers null for a handle that is unknown or private, alike', async () => {
@@ -311,5 +344,195 @@ describe('removing a mark', () => {
     db.result = { data: null, error: { message: 'permission denied' } }
 
     await expect(removeCollectionItem('user-1', 'ga-2100-1a1')).rejects.toThrow('permission denied')
+  })
+})
+
+/**
+ * M11 — D69 through D73.
+ *
+ * Every read below is an **RPC**, and the tests assert the call rather than a
+ * filter for a reason that is the whole of D73: a select against `profiles` used
+ * to work and used to be wrong, because the policy behind it handed every
+ * published row to every caller. If any of these ever goes back to `.from(…)`,
+ * these are the tests that say no.
+ *
+ * The arguments are asserted verbatim too. A misspelled parameter name is not an
+ * error in PostgREST — it is a call to a function that does not exist with that
+ * signature, or worse, a default silently taken. Both look like "no collectors
+ * yet" on screen.
+ */
+describe('the collector directory (D69)', () => {
+  it('reads through the collectors function, never through a select', async () => {
+    db.result = { data: [], error: null }
+
+    await fetchCollectors({ search: 'elvin', sort: 'new', owns: 'ga-2100-1a1', limit: 24, offset: 48 })
+
+    expect(db.lastRpc).toEqual({
+      name: 'collectors',
+      args: {
+        p_search: 'elvin',
+        p_sort: 'new',
+        p_owns: 'ga-2100-1a1',
+        p_limit: 24,
+        p_offset: 48,
+      },
+    })
+  })
+
+  /**
+   * An empty search box must not become a search for the empty string. It
+   * happens to be harmless in `collectors()` — the SQL tests for both — and it
+   * is sent as null anyway, because a filter that is always satisfied is a
+   * filter the planner still has to consider.
+   */
+  it('sends no search rather than an empty one', async () => {
+    await fetchCollectors({ search: '   ' })
+
+    expect((db.lastRpc?.args as { p_search: unknown }).p_search).toBeNull()
+  })
+
+  it('defaults the page to the first twenty-four', async () => {
+    await fetchCollectors()
+
+    expect(db.lastRpc?.args).toMatchObject({ p_sort: 'watches', p_limit: 24, p_offset: 0 })
+  })
+
+  it('throws rather than reporting an empty directory when the read failed', async () => {
+    db.result = { data: null, error: { message: 'function does not exist' } }
+
+    await expect(fetchCollectors()).rejects.toThrow('function does not exist')
+  })
+})
+
+describe('who owns a watch (FR-3.8, D72)', () => {
+  it('asks for the named owners by model', async () => {
+    await fetchListedOwners('ga-2100-1a1')
+
+    expect(db.lastRpc).toEqual({
+      name: 'listed_owners',
+      args: { p_model_id: 'ga-2100-1a1', p_limit: 8 },
+    })
+  })
+
+  it('asks for counts in a batch, so a grid could ever be one request', async () => {
+    await fetchModelOwnerCounts(['ga-2100-1a1', 'f-91w-1'])
+
+    expect(db.lastRpc).toEqual({
+      name: 'model_owner_counts',
+      args: { p_model_ids: ['ga-2100-1a1', 'f-91w-1'] },
+    })
+  })
+
+  /**
+   * **The floor arrives as `null`, not as a zero**, and this pins the shape
+   * rather than the number: the function returns the row with a null count when
+   * fewer than five people own the watch, and the strip renders nothing at all.
+   * A zero here would render "0 collectors own this", which is a claim.
+   */
+  it('passes a floored count through as null', async () => {
+    db.result = {
+      data: [{ model_id: 'ga-2100-1a1', owned_count: null, wishlist_count: null }],
+      error: null,
+    }
+
+    await expect(fetchModelOwnerCounts(['ga-2100-1a1'])).resolves.toEqual([
+      { model_id: 'ga-2100-1a1', owned_count: null, wishlist_count: null },
+    ])
+  })
+
+  it('throws when the count cannot be read', async () => {
+    db.result = { data: null, error: { message: 'permission denied' } }
+
+    await expect(fetchListedOwners('ga-2100-1a1')).rejects.toThrow('permission denied')
+  })
+})
+
+describe('the profile links (D70)', () => {
+  it('deletes only the platforms that are gone', async () => {
+    await replaceOwnLinks('user-1', [
+      { platform: 'github', handle: 'someone' },
+      { platform: 'website', handle: 'https://example.com' },
+    ])
+
+    expect(db.lastNot).toEqual({
+      column: 'platform',
+      operator: 'in',
+      value: '(github,website)',
+    })
+    expect(db.lastPayload).toEqual([
+      { user_id: 'user-1', platform: 'github', handle: 'someone' },
+      { user_id: 'user-1', platform: 'website', handle: 'https://example.com' },
+    ])
+  })
+
+  /**
+   * Clearing every link is the case the `not in` clause cannot express — an
+   * empty list would build `not in ()`, which is a syntax error in one dialect
+   * and "delete nothing" in another. The delete runs unqualified instead.
+   */
+  it('clears them all when the last one is removed', async () => {
+    await replaceOwnLinks('user-1', [])
+
+    expect(db.lastNot).toBeNull()
+    expect(db.lastFilters).toEqual({ user_id: 'user-1' })
+  })
+
+  it('throws when the delete half fails, rather than writing over half a set', async () => {
+    db.result = { data: null, error: { message: 'permission denied' } }
+
+    await expect(
+      replaceOwnLinks('user-1', [{ platform: 'github', handle: 'someone' }]),
+    ).rejects.toThrow('permission denied')
+  })
+
+  it('reads its own links by user', async () => {
+    db.result = { data: [{ platform: 'github', handle: 'someone' }], error: null }
+
+    await expect(fetchOwnLinks('user-1')).resolves.toHaveLength(1)
+    expect(db.lastTable).toBe('profile_links')
+    expect(db.lastFilters).toEqual({ user_id: 'user-1' })
+  })
+})
+
+describe('publishing the profile picture (D71)', () => {
+  /**
+   * **The browser never sends an image**, and that is the assertion. It sends a
+   * boolean to a function that fetches the bytes itself from a named Google host
+   * and writes them with the service-role key — which is why `profiles.avatar`
+   * is absent from the update grant and why this site has no upload path (S10).
+   */
+  it('asks the Edge Function to store, and sends no image', async () => {
+    db.invokeResult = { data: { avatar: 'data:image/jpeg;base64,AAAA', stored: true }, error: null }
+
+    await expect(setAvatarPublished(true)).resolves.toBe('data:image/jpeg;base64,AAAA')
+
+    expect(db.lastInvoke).toEqual({
+      name: 'avatar',
+      options: { method: 'POST', body: { store: true } },
+    })
+  })
+
+  it('withdraws it with the same call and the opposite flag', async () => {
+    db.invokeResult = { data: { avatar: null, stored: false }, error: null }
+
+    await expect(setAvatarPublished(false)).resolves.toBeNull()
+    expect((db.lastInvoke?.options as { body: unknown }).body).toEqual({ store: false })
+  })
+
+  /**
+   * A Google account with no picture answers 204, which arrives as no error and
+   * no body. That is not a failure and must not be reported as one: the switch
+   * simply stays off, because the column is still null.
+   */
+  it('reads "there is no picture" as null rather than as an error', async () => {
+    db.invokeResult = { data: null, error: null }
+
+    await expect(setAvatarPublished(true)).resolves.toBeNull()
+  })
+
+  it('throws when the function itself failed', async () => {
+    db.invokeResult = { data: null, error: { message: 'not configured' } }
+
+    await expect(setAvatarPublished(true)).rejects.toThrow('not configured')
   })
 })

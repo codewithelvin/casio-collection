@@ -442,6 +442,45 @@ function symbolsPage(): Page {
   }
 }
 
+/**
+ * D69 — `/collectors`, and it is the odd one out in this file: **a real page
+ * with no content in it.**
+ *
+ * Every other page here is generated from the catalogue, which is a file this
+ * script can read. The directory is generated from Supabase, which it cannot and
+ * must not — so what gets written is the shell, a heading and a sentence saying
+ * what the page is. Three properties, and each one is load-bearing:
+ *
+ *   * **It exists**, because the footer links to it on every route and D66's
+ *     crawl gate fails a deploy on a link to nothing. A client-only route on
+ *     GitHub Pages resolves to `404.html`, which is exactly that.
+ *   * **It is `noindex`, and therefore out of the sitemap**, because a crawlable
+ *     directory would hand Google in one page the list of profiles D45
+ *     deliberately refused it. `/u/` stays `Disallow`ed, so even a renderer that
+ *     gets here cannot follow anybody home.
+ *   * **It is not `Disallow`ed itself**, which looks like the inconsistency and
+ *     is the opposite of one: a blocked page is never fetched, so its `noindex`
+ *     is never read, and the URL can end up listed with nothing behind it. Let
+ *     the crawler in to be told to leave.
+ */
+function collectorsPage(): Page {
+  return {
+    path: 'collectors',
+    title: `${t('route.collectors.title')} · Casio Vault`,
+    description: `${t('route.collectors.body')} ${DISCLAIMER}`,
+    // Required by the type and never read: `priority` is a sitemap field, and a
+    // noindex page is not in the sitemap. Stated rather than defaulted so the
+    // next reader does not go looking for where this one ranks.
+    priority: '0.0',
+    noindex: true,
+    sources: ['src/routes/collectors/index.tsx'],
+    body: `
+      <h1>${escapeHtml(t('route.collectors.title'))}</h1>
+      <p>${escapeHtml(t('route.collectors.body'))}</p>
+      <p>${DISCLAIMER}</p>`,
+  }
+}
+
 function editionPage(catalog: Catalog, edition: Catalog['editions'][number]): Page {
   const models = catalog.models.filter((model) => model.edition === edition.id && listed(model))
 
@@ -978,7 +1017,7 @@ async function main() {
   // The glossary depends on no catalogue data, so it is pushed unconditionally
   // and early — it is the one page here that would still be worth serving if
   // `catalog.json` were empty.
-  const pages: Page[] = [homePage(catalog), symbolsPage()]
+  const pages: Page[] = [homePage(catalog), symbolsPage(), collectorsPage()]
 
   for (const line of catalog.lines) {
     pages.push(linePage(catalog, line))

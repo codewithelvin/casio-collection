@@ -227,6 +227,24 @@ says so; M7 does not close on a skip.
 | `0002_collection_items.sql` | M5 | `collection_status`, `collection_items`, `is_profile_public`, RLS |
 | `0003_catalog_requests.sql` | M8 | `catalog_requests` and its insert-only policy (D22), `open_request_count`, `handle_available`, `delete_own_account` |
 | `0004_close_the_privilege_gate.sql` | M8 | the `revoke`s the three above needed and did not have |
+| `0005_collectors.sql` | M11 | D69–D73: the directory, the profile fields, the picture column, the counters and their backfill, and the read path that replaces `public profile readable` |
+
+**0005 is not yet applied anywhere.** Two things about it need saying before
+somebody runs it:
+
+* **It drops a policy.** `public profile readable` goes, and `profile_by_handle`
+  and `collectors` replace it (D73). Between the drop and the functions existing,
+  a published profile is unreadable — which is why they are in the same file and
+  why this must not be applied statement by statement out of order.
+* **It calls `recount_all()` at the end, and that call is the migration.** A
+  counter created without its backfill starts wrong and nothing later can tell
+  which rows were missed (D72). If the statement is skipped, run
+  `select public.recount_all();` before anybody looks at a number.
+
+After it is applied, `profiles?select=id` as anon returns `[]` rather than rows.
+That is correct and the keep-alive below still works — it is a successful round
+trip against a table where no policy matches. **Do not "fix" it by adding a
+select policy back**: that policy is what made `is_listed` unenforceable.
 
 0001–0003 were applied to production for the first time on **2026-08-25**, and
 0004 exists because of what probing the result revealed: **a `grant` only ever

@@ -11,6 +11,7 @@ import { WatchCard } from '../../ui/WatchCard'
 import { UnlistedCard } from '../../ui/UnlistedCard'
 import { GRID_GUTTER, GRID_SPANS } from '../../ui/WatchGrid'
 import { EmptyState } from '../../ui/EmptyState'
+import { ProfileHeader } from '../../ui/ProfileHeader'
 import { SkeletonGrid } from '../../ui/SkeletonGrid'
 import { t } from '../../i18n/strings'
 
@@ -29,10 +30,17 @@ import { t } from '../../i18n/strings'
  * has chosen not to be public, which is precisely the fact the setting was
  * turned off to keep.
  *
- * The database does the work rather than this component: `fetchProfileByHandle`
- * asks for `is_public = true` and the `public profile readable` policy admits
- * nothing else, so a private profile is genuinely invisible here rather than
- * fetched and then filtered — which would leak the difference through timing.
+ * The database does the work rather than this component, and **since D73 it does
+ * it in a function rather than a policy**: `profile_by_handle` returns `null` for
+ * a private profile and for a handle nobody has, so the two are indistinguishable
+ * at the only place that could tell them apart. The policy this used to lean on
+ * — `public profile readable`, matching every published row — is gone, because it
+ * also meant one unfiltered request returned the whole directory whether or not
+ * its members had asked to be in one.
+ *
+ * **A published profile is reachable here whether or not it is listed** (D69).
+ * The two consents are different: `is_public` is what makes this URL work, and
+ * `is_listed` is only about being found without it.
  *
  * **A published collection is what somebody owns, and nothing else** — the
  * client's instruction, and it removed the tabs rather than one of them. Two
@@ -106,9 +114,20 @@ export default function ProfileRoute() {
 
   return (
     <div>
-      <Typography.Title level={3} style={{ marginTop: 0, marginBottom: 4 }}>
-        {owner.display_name ?? `/u/${owner.handle ?? handle}`}
-      </Typography.Title>
+      {/* M11 — the heading became a header (§8.10). Everything in it is optional
+          and everything absent renders as absent: a profile that filled nothing
+          in looks exactly like this page did before D70. */}
+      <ProfileHeader
+        handle={owner.handle ?? handle}
+        displayName={owner.display_name}
+        avatar={owner.avatar}
+        about={owner.about}
+        location={owner.location}
+        birthYear={owner.birth_year}
+        ownedCount={owner.owned_count}
+        links={owner.links ?? []}
+        isListed={owner.is_listed}
+      />
 
       {/* The count was in a tab label until the tabs went, and it is the one
           thing that was worth keeping from them: it says what the grid is —

@@ -1,4 +1,5 @@
 import { getSupabase } from '../auth/supabase.ts'
+import type { ProfileLink } from './profileFields.ts'
 
 /**
  * §7.1 — the Supabase reads and writes for `collection_items`, and nothing else.
@@ -143,13 +144,30 @@ export interface Profile {
   handle: string | null
   display_name: string | null
   is_public: boolean
+  /** D69 — the second consent. Meaningless without `is_public`; 0005 enforces the pair. */
+  is_listed: boolean
+  about: string | null
+  location: string | null
+  birth_year: number | null
+  /** D71 — a data: URI, or null for initials. Written only by the Edge Function. */
+  avatar: string | null
+  owned_count: number
+  wishlist_count: number
 }
+
+/**
+ * The columns a client may *read* of its own row. `is_hidden` is deliberately
+ * absent: it is the lever against the account, and a field that is present is a
+ * field somebody renders later.
+ */
+const PROFILE_COLUMNS =
+  'id, handle, display_name, is_public, is_listed, about, location, birth_year, avatar, owned_count, wishlist_count'
 
 export async function fetchProfile(userId: string): Promise<Profile | null> {
   const supabase = await getSupabase()
   const { data, error } = await supabase
     .from('profiles')
-    .select('id, handle, display_name, is_public')
+    .select(PROFILE_COLUMNS)
     .eq('id', userId)
     .maybeSingle()
 
@@ -157,11 +175,22 @@ export async function fetchProfile(userId: string): Promise<Profile | null> {
   return (data ?? null) as Profile | null
 }
 
-/** FR-7.1 / FR-7.3 — the only fields a client may change on its own profile. */
+/**
+ * FR-7.1 / FR-7.3 / FR-7.8 — the only fields a client may change on its own
+ * profile, and **this list is the same list as 0005's column grant.**
+ *
+ * If the two ever disagree the database wins and the save fails, which is the
+ * right way round: `avatar` is missing from both on purpose (D71), and adding it
+ * here would produce a PATCH the database refuses rather than a picture.
+ */
 export interface ProfileUpdate {
   handle?: string | null
   display_name?: string | null
   is_public?: boolean
+  is_listed?: boolean
+  about?: string | null
+  location?: string | null
+  birth_year?: number | null
 }
 
 export async function updateProfile(userId: string, patch: ProfileUpdate): Promise<void> {
@@ -197,17 +226,176 @@ export async function isHandleAvailable(handle: string): Promise<boolean> {
  * here rather than filtered out afterwards where a timing difference could
  * still leak it.
  */
-export async function fetchProfileByHandle(handle: string): Promise<Profile | null> {
+/**
+ * **This is an RPC and not a select, and D73 is why.**
+ *
+ * The `public profile readable` policy this used to lean on admitted every
+ * published row to every caller — so one unfiltered PostgREST request returned
+ * the whole directory, listed or not, with a key that is public by design (D14).
+ * `is_listed` would then have been a filter the caller could decline to apply.
+ * The policy is dropped; `profile_by_handle` is the only way in, and it decides
+ * what leaves.
+ *
+ * `null` still covers both "no such handle" and "handle exists but is private",
+ * and the caller still cannot tell them apart (FR-7.5) — the function returns
+ * `null` for both rather than the component filtering afterwards, where a timing
+ * difference could leak the distinction.
+ */
+export interface PublicProfile extends Profile {
+  links: ProfileLink[]
+  created_at: string
+}
+
+export async function fetchProfileByHandle(handle: string): Promise<PublicProfile | null> {
+  const supabase = await getSupabase()
+  const { data, error } = await supabase.rpc('profile_by_handle', { p_handle: handle })
+  if (error) throw new Error(`profile: ${error.message}`)
+  return (data ?? null) as PublicProfile | null
+}
+
+/**
+ * FR-12.1 — the directory (D69).
+ *
+ * Every argument is clamped inside the function rather than here (S11): a limit
+ * sent from a browser is a suggestion, and 0004's lesson was that an
+ * unauthenticated function with an unbounded parameter is an enumeration tool.
+ * What this end passes is what the UI wants; what it gets is what the database
+ * allows.
+ */
+export interface Collector {
+  handle: string
+  display_name: string | null
+  avatar: string | null
+  owned_count: number
+  created_at: string
+}
+
+export type CollectorSort = 'watches' | 'new'
+
+export interface CollectorQuery {
+  search?: string | undefined
+  sort?: CollectorSort | undefined
+  owns?: string | undefined
+  limit?: number | undefined
+  offset?: number | undefined
+}
+
+export async function fetchCollectors(query: CollectorQuery = {}): Promise<Collector[]> {
+  const supabase = await getSupabase()
+  const { data, error } = await supabase.rpc('collectors', {
+    p_search: query.search?.trim() || null,
+    p_sort: query.sort ?? 'watches',
+    p_owns: query.owns ?? null,
+    p_limit: query.limit ?? 24,
+    p_offset: query.offset ?? 0,
+  })
+  if (error) throw new Error(`collectors: ${error.message}`)
+  return (data ?? []) as Collector[]
+}
+
+/**
+ * FR-3.8 — the collectors who own one watch and asked to be findable.
+ *
+ * No floor: each of them turned on two switches to be here and the fact is one
+ * they published (D72). The floor belongs to the aggregate below, which counts
+ * people who published nothing.
+ */
+export interface ListedOwner {
+  handle: string
+  display_name: string | null
+  avatar: string | null
+}
+
+export async function fetchListedOwners(modelId: string, limit = 8): Promise<ListedOwner[]> {
+  const supabase = await getSupabase()
+  const { data, error } = await supabase.rpc('listed_owners', {
+    p_model_id: modelId,
+    p_limit: limit,
+  })
+  if (error) throw new Error(`owners: ${error.message}`)
+  return (data ?? []) as ListedOwner[]
+}
+
+/**
+ * FR-3.8 / D72 — how many, across every collection, from five upward.
+ *
+ * **Both counts come back `null` below the floor and the row is absent entirely
+ * when neither passes it.** That is the shape to preserve: an absent count is
+ * rendered as nothing at all, and a zero would be rendered as a fact.
+ */
+export interface ModelOwnerCount {
+  model_id: string
+  owned_count: number | null
+  wishlist_count: number | null
+}
+
+export async function fetchModelOwnerCounts(modelIds: string[]): Promise<ModelOwnerCount[]> {
+  const supabase = await getSupabase()
+  const { data, error } = await supabase.rpc('model_owner_counts', { p_model_ids: modelIds })
+  if (error) throw new Error(`counts: ${error.message}`)
+  return (data ?? []) as ModelOwnerCount[]
+}
+
+/**
+ * D70 — the links, read and written as a set rather than row by row.
+ *
+ * A person edits all of them on one screen and presses save once, so the write
+ * is "these are my links now": delete what is gone, upsert what is there. Two
+ * statements rather than a diff, because a diff computed in the browser against
+ * a stale read is how a link nobody touched disappears.
+ */
+export async function fetchOwnLinks(userId: string): Promise<ProfileLink[]> {
   const supabase = await getSupabase()
   const { data, error } = await supabase
-    .from('profiles')
-    .select('id, handle, display_name, is_public')
-    .eq('handle', handle)
-    .eq('is_public', true)
-    .maybeSingle()
+    .from('profile_links')
+    .select('platform, handle')
+    .eq('user_id', userId)
+  if (error) throw new Error(`links: ${error.message}`)
+  return (data ?? []) as ProfileLink[]
+}
 
-  if (error) throw new Error(`profile: ${error.message}`)
-  return (data ?? null) as Profile | null
+export async function replaceOwnLinks(userId: string, links: ProfileLink[]): Promise<void> {
+  const supabase = await getSupabase()
+  const keep = links.map((link) => link.platform)
+
+  // Delete first. The reverse order would leave a removed platform in place for
+  // as long as the upsert takes, and a failure between the two would leave it
+  // there for good — whereas a failure after the delete loses a link the person
+  // can retype, which is the cheaper of the two wrong states.
+  const remove = supabase.from('profile_links').delete().eq('user_id', userId)
+  const { error: deleteError } = await (keep.length > 0
+    ? remove.not('platform', 'in', `(${keep.join(',')})`)
+    : remove)
+  if (deleteError) throw new Error(`links: ${deleteError.message}`)
+
+  if (links.length === 0) return
+  const { error } = await supabase
+    .from('profile_links')
+    .upsert(
+      links.map((link) => ({ user_id: userId, platform: link.platform, handle: link.handle })),
+      { onConflict: 'user_id,platform' },
+    )
+  if (error) throw new Error(`links: ${error.message}`)
+}
+
+/**
+ * FR-7.9 / D71 — publish or withdraw the profile picture.
+ *
+ * The browser never sends an image. It asks the Edge Function to do it, and the
+ * function is the only writer of that column — `authenticated` has no update
+ * privilege on it, which is what stops this being an upload endpoint (S10).
+ * Returns the data URI when there is one, so the caller can update the header
+ * cache in the same round trip.
+ */
+export async function setAvatarPublished(published: boolean): Promise<string | null> {
+  const supabase = await getSupabase()
+  const { data, error } = await supabase.functions.invoke<{ avatar?: unknown; stored?: unknown }>(
+    'avatar',
+    { method: 'POST', body: { store: published } },
+  )
+  if (error) throw new Error(`avatar: ${error.message}`)
+  const value = data?.avatar
+  return typeof value === 'string' ? value : null
 }
 
 /**

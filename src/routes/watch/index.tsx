@@ -46,6 +46,7 @@ import { ErrorState } from '../../ui/ErrorState'
 import { EmptyState } from '../../ui/EmptyState'
 import { OwnershipControls } from '../../ui/OwnershipControls'
 import { ImproveEntry } from '../../ui/ImproveEntry'
+import { OwnerStrip } from '../../ui/OwnerStrip'
 import { NoteEditor } from '../../ui/NoteEditor'
 import { useOwnership } from '../../collection/mutations.ts'
 import { LINE_ACCENTS } from '../../theme/palette.ts'
@@ -369,6 +370,19 @@ function WatchDetail({
           <ImproveEntry model={model} />
         </div>
       </div>
+
+      {/*
+        FR-3.8 — who owns it, then how many (D72).
+
+        **Below the specification table and above the rest of the series**, which
+        is where §8.12 puts it and the order is the argument: the table is what
+        the watch is, the strip is what the site knows about it, and the series
+        strip is where to go next. It is also the only block on this page whose
+        content comes from Supabase, so it sits after everything that renders
+        from a file — a reader whose network is gone loses the last thing on the
+        page rather than a hole in the middle of it.
+      */}
+      <OwnerStrip modelId={model.id} />
 
       {/* FR-3.4 — the rest of the series, excluding this model.
           FR-3.4 originally specified a horizontally scrollable strip. The client

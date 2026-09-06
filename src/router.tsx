@@ -162,6 +162,11 @@ export const routes: RouteObject[] = [
       { path: 'collection', lazy: () => guarded(() => import('./routes/collection')) },
       { path: 'settings', lazy: () => guarded(() => import('./routes/settings')) },
       { path: 'u/:handle', lazy: () => themed(() => import('./routes/profile')) },
+      // D69 — public, and public is the point: a directory behind a sign-in is
+      // not a directory. It is the **only** route here whose content needs the
+      // network at all (D1 makes every other page a file), so it is also the
+      // only one with a real error state rather than a fallback.
+      { path: 'collectors', lazy: () => themed(() => import('./routes/collectors')) },
       { path: 'auth/callback', lazy: () => themed(() => import('./routes/auth')) },
       { path: '*', lazy: () => themed(() => import('./routes/notFound')) },
     ],

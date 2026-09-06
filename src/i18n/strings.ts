@@ -403,6 +403,42 @@ const en = {
     'Publishing puts your watches, whether each one is owned or on your wishlist, your notes and your display name on a public page. Anyone with the link can read it. Turning it off takes effect immediately.',
   'settings.sharing.needsHandle': 'Choose a handle first — a published profile needs an address.',
   'settings.sharing.url': 'Your public page',
+
+  // FR-7.7 / D69 — the second consent, and the copy is the decision.
+  //
+  // Neither sentence describes the other setting, and neither says "also".
+  // Sharing is about a link; listing is about being found without one. If a
+  // reader has to hold both in mind to understand either, the pair has failed
+  // and one boolean would have been more honest.
+  'settings.listing.toggle': 'List me in the collectors directory',
+  'settings.listing.explains':
+    'Your name, picture and how many watches you own appear on a page anyone can browse, and other collectors can find you from a watch you own. Off means your page still works for anyone you send the link to.',
+
+  // FR-7.8 / D70 — the optional fields. Every hint says what a reader will see,
+  // not what the database will hold.
+  'settings.about': 'About you',
+  'settings.about.public':
+    'All optional, and all of it appears on your public page if you publish one. Leave anything blank and it is simply not shown.',
+  'settings.about.label': 'About',
+  'settings.location.label': 'Location',
+  'settings.birthYear.label': 'Birth year',
+  // The year is stored and the age is derived (D70), so this says what shows up.
+  'settings.birthYear.hint': 'Your page shows an age, not the year.',
+  'settings.birthYear.invalid': 'A year between 1900 and now.',
+  'settings.links.label': 'Links',
+  // S10 — the rule, stated as a convenience because that is also what it is.
+  'settings.links.hint':
+    'Just the username — the address is built for you. A forum or anything else goes under Website.',
+  'settings.links.websitePlaceholder': 'https://',
+
+  // FR-7.9 / D71 — the picture.
+  'settings.picture': 'Profile picture',
+  'settings.picture.explains':
+    'Your Google profile picture, shown on your public page and in the directory. It is fetched by this site rather than by the browsers of people looking at your page, so nobody reading your profile is sending a request to Google.',
+  'settings.picture.toggle': 'Show my Google picture on my public page',
+  'settings.picture.hint':
+    'Off shows your initials instead. There is nothing to upload — the only picture this site can use is the one on your Google account.',
+  'settings.picture.none': 'There is no picture on that Google account, so your initials stay.',
   'settings.copy': 'Copy',
   'settings.copied': 'Copied',
   'settings.save': 'Save',
@@ -431,6 +467,49 @@ const en = {
   // screen as `collection.tab.wishlist`.
   'profile.owned': 'Owned',
   'profile.footer': 'A collection kept on Casio Vault',
+  // FR-7.10 — the one nudge, on /collection, dismissible for good. It says what
+  // is on offer rather than that something is incomplete: a profile with nothing
+  // in it is a finished profile.
+  'collection.nudge':
+    'You can add a few words about yourself, where you are and your links — and publish your collection as a page you can share.',
+  'collection.nudge.action': 'Set it up',
+  'profile.age': 'Age',
+  'profile.browseCollectors': 'Browse other collectors',
+
+  // D69 / FR-12 — the directory.
+  'route.collectors.title': 'Collectors',
+  'route.collectors.body':
+    'People who have published their collection and asked to be listed here. Everyone on this page chose to be on it.',
+  'collectors.watches': 'watches',
+  'collectors.search.placeholder': 'Search a name or handle',
+  'collectors.search.label': 'Search collectors',
+  'collectors.sort.watches': 'Most watches',
+  'collectors.sort.new': 'Recently joined',
+  'collectors.previous': 'Previous',
+  'collectors.next': 'Next',
+  'collectors.owns': 'Collectors who own',
+  'collectors.owns.unknown': 'Collectors who own this watch',
+  'collectors.owns.clear': 'Show everyone',
+  // FR-12.5 — a designed empty state, and it invites rather than apologises.
+  'collectors.empty.title': 'Nobody is listed yet',
+  'collectors.empty.body':
+    'Publishing a collection is optional and so is appearing here. If you have marked some watches, you could be the first.',
+  'collectors.end.title': 'That is everyone',
+
+  // FR-3.8 — the owner strip on a watch page.
+  'owners.count': 'collectors own this',
+  'owners.more': 'See who else',
+
+  // D70's platforms. The label is the platform's own name, which is also the
+  // accessible name of the field that takes its handle.
+  'platform.instagram': 'Instagram',
+  'platform.x': 'X',
+  'platform.reddit': 'Reddit',
+  'platform.youtube': 'YouTube',
+  'platform.tiktok': 'TikTok',
+  'platform.facebook': 'Facebook',
+  'platform.github': 'GitHub',
+  'platform.website': 'Website',
   // FR-7.5 — an unknown handle and a private one render the same page. The copy
   // must not hint that the second exists.
   'profile.notFound.title': 'No collection here',

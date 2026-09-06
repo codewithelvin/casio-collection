@@ -1,5 +1,5 @@
-import { useCallback, useMemo } from 'react'
-import { Col, Row, Statistic, Tabs, Tag, Typography, theme as antdTheme } from 'antd'
+import { useCallback, useMemo, useState } from 'react'
+import { Alert, Col, Row, Statistic, Tabs, Tag, Typography, theme as antdTheme } from 'antd'
 import { Link, useSearchParams } from 'react-router-dom'
 import { useCatalog } from '../../catalog/client.ts'
 import {
@@ -9,7 +9,7 @@ import {
   type ViewState,
 } from '../../catalog/filters.ts'
 import type { Catalog, PublishedSeries } from '../../catalog/schema.ts'
-import { useCollection } from '../../collection/mutations.ts'
+import { useCollection, useProfile } from '../../collection/mutations.ts'
 import type { CollectionItem, CollectionStatus } from '../../collection/api.ts'
 import {
   entriesWithStatus,
@@ -95,6 +95,9 @@ export default function CollectionRoute() {
       {/* FR-6.3 / §8.8 — three tiles: owned, wishlist, lines represented. M10. */}
       <StatsStrip entries={entries} lines={catalog.data.lines} />
 
+      <ProfileNudge />
+
+
       <Tabs
         // §7.2 again — which tab is open is part of what is on screen, so the
         // URL owns it and the component does not. Uncontrolled, `Tabs` opens on
@@ -173,6 +176,58 @@ function useCollectionTab(): [CollectionStatus, (next: string) => void] {
 
 /**
  * FR-6.3 / §8.8 — "total owned, total on wishlist, and a breakdown by line",
+ * FR-7.10 / D70 — **the only place this site ever mentions the profile fields
+ * to somebody who has not gone looking for them.**
+ *
+ * There is deliberately no wizard after sign-up and no completeness meter. The
+ * screen immediately after a sign-in belongs to FR-4.2, which is applying the
+ * watch somebody pressed before they had an account — putting a profile form on
+ * top of that interrupts the one interaction this product exists for.
+ *
+ * So it is one line, here, where somebody is already looking at what they own,
+ * and it is dismissible for good. It appears only once there is something worth
+ * publishing: a collection of nothing has no page worth a link.
+ */
+function ProfileNudge() {
+  const { data: profile } = useProfile()
+  const [dismissed, setDismissed] = useState(() => {
+    try {
+      return localStorage.getItem(NUDGE_KEY) === '1'
+    } catch {
+      // Storage disabled. Showing it every visit is the wrong failure, so treat
+      // an unreadable store as "already dismissed" — a line nobody asked for is
+      // worse than a line nobody sees.
+      return true
+    }
+  })
+
+  // Nothing to say to somebody who has already published, and nothing to say
+  // before there is a profile row to read.
+  if (dismissed || !profile || profile.is_public) return null
+
+  return (
+    <Alert
+      type="info"
+      showIcon
+      closable
+      style={{ marginBottom: 16 }}
+      message={t('collection.nudge')}
+      action={<Link to="/settings">{t('collection.nudge.action')}</Link>}
+      onClose={() => {
+        setDismissed(true)
+        try {
+          localStorage.setItem(NUDGE_KEY, '1')
+        } catch {
+          // Dismissed for this page load either way.
+        }
+      }}
+    />
+  )
+}
+
+const NUDGE_KEY = 'cc.nudge.profile'
+
+/**
  * as three `Statistic` tiles.
  *
  * The third tile is **lines represented** rather than a total, because a total

@@ -45,7 +45,18 @@ const { db, createClient } = vi.hoisted(() => {
     onAuthStateChange: vi.fn(() => ({ data: { subscription: { unsubscribe: vi.fn() } } })),
   }
 
-  return { db, createClient: vi.fn(() => ({ auth, from })) }
+  /**
+   * D73 — a published profile is read through `profile_by_handle` rather than
+   * through a select, because the policy that select leaned on handed every
+   * published row to every caller and made `is_listed` unenforceable. The mock
+   * answers the RPC with the same fixture the table used to serve, so what this
+   * file tests is unchanged: FR-7.5's one page for *unknown* and *private* alike.
+   */
+  const rpc = vi.fn((name: string) =>
+    Promise.resolve({ data: name === 'profile_by_handle' ? db.profile : [], error: null }),
+  )
+
+  return { db, createClient: vi.fn(() => ({ auth, from, rpc })) }
 })
 
 vi.mock('@supabase/supabase-js', () => ({ createClient }))

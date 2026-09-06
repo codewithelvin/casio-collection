@@ -200,12 +200,162 @@ async function main() {
   const hiddenAgain = await b.supabase.from('collection_items').select('model_id').eq('user_id', a.id)
   check("B cannot read A's rows once sharing is off", (hiddenAgain.data ?? []).length === 0)
 
+  await collectorsAssertions(a, b, anon, handle)
+
   // Leave the project tidy for the rows we can reach. The users stay; only the
   // service role can remove those, and S2 keeps that key out of CI.
   await a.supabase.from('collection_items').delete().eq('user_id', a.id)
 
   console.log(`\n${failures === 0 ? 'All §13.3 assertions hold.' : `${failures} FAILED.`}`)
   if (failures > 0) process.exit(1)
+}
+
+/**
+ * M11 — D69 through D73, and **the reason this script now creates six users
+ * rather than two.**
+ *
+ * D72's floor is five. A floor is only proved by crossing it: five owners must
+ * produce no number and the sixth must produce one, in that order, in the same
+ * run. Everything else here could be done with A and B; this one cannot be done
+ * with fewer than six accounts, and the CI project has sign-up enabled precisely
+ * so that the script can make its own (D42).
+ */
+async function collectorsAssertions(
+  a: { supabase: SupabaseClient; id: string },
+  b: { supabase: SupabaseClient; id: string },
+  anon: SupabaseClient,
+  handle: string,
+) {
+  console.log('\nD73 — the blanket profile policy is gone')
+
+  /**
+   * **The single assertion that proves 0005 was actually applied**, and the one
+   * that will fail loudly the day somebody restores the convenient policy
+   * because a read was easier that way. With `public profile readable` in place
+   * this returns every published profile in the project.
+   */
+  const dump = await anon.from('profiles').select('id')
+  check('anon reading profiles directly gets nothing', (dump.data ?? []).length === 0)
+
+  const dumpAsUser = await b.supabase.from('profiles').select('id')
+  check(
+    'a signed-in caller reading profiles gets only their own row',
+    (dumpAsUser.data ?? []).length <= 1 &&
+      !(dumpAsUser.data ?? []).some((row: { id: string }) => row.id === a.id),
+  )
+
+  console.log('\nD69 — published is not the same as listed')
+  await a.supabase.from('profiles').update({ is_public: true }).eq('id', a.id)
+
+  const byHandle = await anon.rpc('profile_by_handle', { p_handle: handle })
+  check('a published profile resolves by handle', byHandle.data !== null, byHandle.error?.message)
+
+  const unlisted = await anon.rpc('collectors', {})
+  check(
+    'a published but UNLISTED profile is not in the directory',
+    !(unlisted.data ?? []).some((row: { handle: string }) => row.handle === handle),
+  )
+
+  await a.supabase.from('profiles').update({ is_listed: true }).eq('id', a.id)
+  const listed = await anon.rpc('collectors', {})
+  check(
+    'it appears once listing is on',
+    (listed.data ?? []).some((row: { handle: string }) => row.handle === handle),
+  )
+
+  // The constraint, from the direction a client would meet it: withdrawing the
+  // wider consent must not leave the narrower one standing.
+  const contradiction = await a.supabase.from('profiles').update({ is_public: false }).eq('id', a.id)
+  check(
+    'listing cannot outlive publishing',
+    contradiction.error !== null,
+    'the check constraint should refuse is_public=false while is_listed=true',
+  )
+  await a.supabase.from('profiles').update({ is_public: false, is_listed: false }).eq('id', a.id)
+  const gone = await anon.rpc('collectors', {})
+  check(
+    'unpublishing removes them from the directory',
+    !(gone.data ?? []).some((row: { handle: string }) => row.handle === handle),
+  )
+
+  console.log('\nS9 — the counters are not writable by the account they describe')
+  await a.supabase.from('profiles').update({ owned_count: 9999 }).eq('id', a.id)
+  const counted = await a.supabase.from('profiles').select('owned_count').eq('id', a.id).single()
+  check(
+    'A cannot inflate their own owned_count',
+    counted.data?.owned_count !== 9999,
+    `got ${String(counted.data?.owned_count)}`,
+  )
+
+  await a.supabase.from('profiles').update({ is_hidden: true }).eq('id', a.id)
+  const hiddenFlag = await a.supabase.from('profiles').select('is_hidden').eq('id', a.id)
+  check(
+    'A cannot hide or unhide themselves',
+    // The column is not readable by a client either, so PostgREST answers with
+    // an error rather than a row — both directions of "not yours" at once.
+    hiddenFlag.error !== null || (hiddenFlag.data ?? []).length === 0,
+  )
+
+  console.log('\nS10 / D71 — avatar is not a client-writable column')
+  const forgedAvatar = await a.supabase
+    .from('profiles')
+    .update({ avatar: 'data:image/png;base64,AAAA' })
+    .eq('id', a.id)
+  check('A cannot write their own avatar column', forgedAvatar.error !== null)
+
+  console.log('\nD70 — links belong to their owner')
+  await a.supabase
+    .from('profile_links')
+    .upsert({ user_id: a.id, platform: 'github', handle: 'a-person' })
+  const foreign = await b.supabase.from('profile_links').select('handle').eq('user_id', a.id)
+  check("B cannot read A's links", (foreign.data ?? []).length === 0)
+  const anonLinks = await anon.from('profile_links').select('handle')
+  check('anon cannot read links at all', anonLinks.error !== null || (anonLinks.data ?? []).length === 0)
+
+  const badLink = await a.supabase
+    .from('profile_links')
+    .upsert({ user_id: a.id, platform: 'website', handle: 'javascript:alert(1)' })
+  check('the database refuses a javascript: website', badLink.error !== null)
+
+  console.log('\nD72 — the floor of five, crossed in both directions')
+
+  /**
+   * The one assertion that needs a crowd. Five accounts own the watch and the
+   * count must be absent; the sixth arrives and it must appear. Doing this with
+   * fewer would be asserting the floor exists, not that it is five.
+   */
+  const FLOOR_WATCH = 'f-91w-1'
+  const crowd: { supabase: SupabaseClient; id: string }[] = []
+  for (let index = 0; index < 6; index += 1) {
+    const person = index === 0 ? a : await signUp(`floor${index}`)
+    if (index > 0) crowd.push(person)
+    await person.supabase
+      .from('collection_items')
+      .upsert({ user_id: person.id, model_id: FLOOR_WATCH, status: 'owned' })
+
+    const counts = await anon.rpc('model_owner_counts', { p_model_ids: [FLOOR_WATCH] })
+    const row = (counts.data ?? [])[0] as { owned_count: number | null } | undefined
+    const owners = index + 1
+    if (owners < 5) {
+      check(`with ${owners} owners the count is absent`, row === undefined || row.owned_count === null)
+    } else {
+      check(`with ${owners} owners the count is ${owners}`, row?.owned_count === owners,
+        `got ${String(row?.owned_count)}`)
+    }
+  }
+
+  const rawCounts = await anon.from('model_counts').select('model_id')
+  check(
+    'model_counts itself is unreadable, so the floor cannot be read around',
+    rawCounts.error !== null || (rawCounts.data ?? []).length === 0,
+  )
+
+  // Tidy: the five extra accounts leave their rows behind otherwise, and the
+  // next run's floor would start above it.
+  for (const person of crowd) {
+    await person.supabase.from('collection_items').delete().eq('user_id', person.id)
+  }
+  await a.supabase.from('profile_links').delete().eq('user_id', a.id)
 }
 
 main().catch((error: unknown) => {
