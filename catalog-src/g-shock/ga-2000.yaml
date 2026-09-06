@@ -22,6 +22,10 @@ models:
     ref: GA-2000-1A2
     source:
       { url: 'https://web.archive.org/web/20240715064235id_/https://www.casio.com/europe/watches/gshock/product.GA-2000-1A2/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000-1A2&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Blue
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 47, depth_mm: 14.1, weight_g: 64, material: 'Carbon / Resin' }
@@ -37,6 +41,10 @@ models:
     ref: GA-2000-1A9
     source:
       { url: 'https://web.archive.org/web/20240715064245id_/https://www.casio.com/europe/watches/gshock/product.GA-2000-1A9/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000-1A9&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Yellow
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 47, depth_mm: 14.1, weight_g: 64, material: 'Carbon / Resin' }
@@ -52,6 +60,10 @@ models:
     ref: GA-2000-2A
     source:
       { url: 'https://web.archive.org/web/20220817043616id_/https://www.casio.com/us/watches/gshock/product.GA-2000-2A/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000-2A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Blue
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 47, depth_mm: 14.1, weight_g: 64, material: 'Carbon / Resin' }
@@ -67,6 +79,10 @@ models:
     ref: GA-2000-3A
     source:
       { url: 'https://web.archive.org/web/20221126124804id_/https://www.casio.com/my/watches/gshock/product.GA-2000-3A/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000-3A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Olive
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 47, depth_mm: 14.1, weight_g: 64, material: 'Carbon / Resin' }
@@ -82,6 +98,10 @@ models:
     ref: GA-2000-5A
     source:
       { url: 'https://web.archive.org/web/20210920025909id_/https://www.casio.com/sg/watches/gshock/product.GA-2000-5A/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000-5A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Beige
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 48.7, depth_mm: 14.1, weight_g: 64, material: 'Carbon / Resin' }
@@ -97,6 +117,10 @@ models:
     ref: GA-2000HC-3A
     source:
       { url: 'https://web.archive.org/web/20210920023257id_/https://www.casio.com/sg/watches/gshock/product.GA-2000HC-3A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000HC-3A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Orange
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 48, depth_mm: 14.1, weight_g: 63, material: 'Resin' }
@@ -112,6 +136,10 @@ models:
     ref: GA-2000HC-7A
     source:
       { url: 'https://web.archive.org/web/20210920030128id_/https://www.casio.com/sg/watches/gshock/product.GA-2000HC-7A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000HC-7A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Transparent
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 48, depth_mm: 14.1, weight_g: 63, material: 'Resin' }
@@ -127,6 +155,10 @@ models:
     ref: GA-2000HD-8A
     source:
       { url: 'https://web.archive.org/web/20240225135524id_/https://www.casio.com/intl/watches/gshock/product.GA-2000HD-8A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000HD-8A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Grey
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 47, depth_mm: 14.1, weight_g: 63, material: 'Carbon / Resin' }
@@ -142,6 +174,10 @@ models:
     ref: GA-2000S-1A
     source:
       { url: 'https://web.archive.org/web/20240715064241id_/https://www.casio.com/europe/watches/gshock/product.GA-2000S-1A/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000S-1A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 47, depth_mm: 14.1, weight_g: 64, material: 'Carbon / Resin' }
@@ -157,6 +193,10 @@ models:
     ref: GA-2000S-7A
     source:
       { url: 'https://web.archive.org/web/20221003205621id_/https://www.casio.com/in/watches/gshock/product.GA-2000S-7A/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000S-7A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: White
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 47, depth_mm: 14.1, weight_g: 64, material: 'Carbon / Resin' }
@@ -172,6 +212,10 @@ models:
     ref: GA-2000SKE-8A
     source:
       { url: 'https://web.archive.org/web/20240715064238id_/https://www.casio.com/europe/watches/gshock/product.GA-2000SKE-8A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000SKE-8A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Transparent
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 47, depth_mm: 14.1, weight_g: 63, material: 'Carbon / Resin' }
@@ -187,6 +231,10 @@ models:
     ref: GA-2000SU-1A
     source:
       { url: 'https://web.archive.org/web/20230109060113id_/https://www.casio.com/us/watches/gshock/product.GA-2000SU-1A/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000SU-1A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 47, depth_mm: 14.1, weight_g: 64, material: 'Carbon / Resin' }
@@ -202,6 +250,10 @@ models:
     ref: GA-2000SU-2A
     source:
       { url: 'https://web.archive.org/web/20220817034631id_/https://www.casio.com/us/watches/gshock/product.GA-2000SU-2A/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000SU-2A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Blue
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 47, depth_mm: 14.1, weight_g: 64, material: 'Carbon / Resin' }
@@ -217,6 +269,10 @@ models:
     ref: GA-2000WM-1A
     source:
       { url: 'https://web.archive.org/web/20210929005636id_/https://www.casio.com/sg/watches/gshock/product.GA-2000WM-1A/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2000WM-1A&subseries=GA-2000&series=2000'
+    module: '5590'
+    colorway: Multi
     display: ana-digi
     movement: quartz
     case: { height_mm: 51.2, width_mm: 48.7, depth_mm: 14.1, weight_g: 64, material: 'Carbon / Resin' }

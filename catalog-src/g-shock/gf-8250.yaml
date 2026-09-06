@@ -87,6 +87,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',
         kind: official,
       }
+    year: 2010
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GF-8250-9&subseries=GF-8250&series=8250'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 52
+      width_mm: 50.3
+      depth_mm: 18
+      weight_g: 112
     display: digital
     movement: solar
     module: '3266'
@@ -102,6 +112,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GF-8250BS-1&subseries=GF-8250&series=8250'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 52
+      width_mm: 50.3
+      depth_mm: 18
+      weight_g: 112
     display: digital
     movement: solar
     module: '3266'
@@ -117,6 +137,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GF-8250CM-2&subseries=GF-8250&series=8250'
+    colorway: Camouflage
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 52
+      width_mm: 50.3
+      depth_mm: 18
+      weight_g: 112
     display: digital
     movement: solar
     module: '3266'
@@ -132,6 +162,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GF-8250ER-2&subseries=GF-8250&series=8250'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 52
+      width_mm: 50.3
+      depth_mm: 18
+      weight_g: 112
     display: digital
     movement: solar
     module: '3266'
@@ -155,6 +195,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3266/qw3266_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GF-8250K-4&subseries=GF-8250&series=8250'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 52
+      width_mm: 50.3
+      depth_mm: 18
+      weight_g: 112
     display: digital
     movement: solar
     module: '3266'

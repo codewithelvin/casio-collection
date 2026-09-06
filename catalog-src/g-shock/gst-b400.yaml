@@ -22,6 +22,10 @@ models:
     ref: GST-B400-1A
     source:
       { url: 'https://web.archive.org/web/20240715064446id_/https://www.casio.com/europe/watches/gshock/product.GST-B400-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400-1A&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Silver
     display: ana-digi
     movement: solar
     case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 80, material: 'Resin / Stainless steel' }
@@ -37,6 +41,10 @@ models:
     ref: GST-B400AD-1A4
     source:
       { url: 'https://web.archive.org/web/20220126144511id_/https://www.casio.com/sg/watches/gshock/product.GST-B400AD-1A4/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400AD-1A4&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Black
     display: ana-digi
     movement: solar
     case: { height_mm: 46.9, width_mm: 49.6, depth_mm: 12.9, weight_g: 160, material: 'Resin / Stainless steel' }
@@ -52,6 +60,10 @@ models:
     ref: GST-B400BB-1A
     source:
       { url: 'https://web.archive.org/web/20241011035744id_/https://www.casio.com/us/watches/gshock/product.GST-B400BB-1A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400BB-1A&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Black
     display: ana-digi
     movement: solar
     case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 80, material: 'Resin / Stainless steel' }
@@ -67,6 +79,10 @@ models:
     ref: GST-B400BD-1A2
     source:
       { url: 'https://web.archive.org/web/20241212200001id_/https://www.casio.com/us/watches/gshock/product.GST-B400BD-1A2/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400BD-1A2&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Black
     display: ana-digi
     movement: solar
     case: { height_mm: 46.9, width_mm: 49.6, depth_mm: 12.9, weight_g: 160, material: 'Resin / Stainless steel' }
@@ -82,6 +98,10 @@ models:
     ref: GST-B400CD-1A3
     source:
       { url: 'https://web.archive.org/web/20240715064454id_/https://www.casio.com/europe/watches/gshock/product.GST-B400CD-1A3/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400CD-1A3&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Green
     display: ana-digi
     movement: solar
     case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 160, material: 'Resin / Stainless steel' }
@@ -97,6 +117,10 @@ models:
     ref: GST-B400CX-1A
     source:
       { url: 'https://web.archive.org/web/20241211115709id_/https://www.casio.com/us/watches/gshock/product.GST-B400CX-1A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400CX-1A&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Silver
     display: ana-digi
     movement: solar
     case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 86, material: 'Carbon / Stainless steel' }
@@ -112,6 +136,10 @@ models:
     ref: GST-B400D-1A
     source:
       { url: 'https://web.archive.org/web/20240715064501id_/https://www.casio.com/europe/watches/gshock/product.GST-B400D-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400D-1A&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Silver
     display: ana-digi
     movement: solar
     case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 160, material: 'Resin / Stainless steel' }
@@ -127,6 +155,12 @@ models:
     ref: GST-B400FP-1A2
     source:
       { url: 'https://web.archive.org/web/20220215081517id_/https://www.casio.com/jp/watches/gshock/product.GST-B400FP-1A2/', kind: official }
+    movement: solar
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400FP-1A2&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 80 }
     water_resistance_m: 200
     features: [bluetooth]
@@ -140,6 +174,10 @@ models:
     ref: GST-B400GB-1A9
     source:
       { url: 'https://web.archive.org/web/20240715064440id_/https://www.casio.com/europe/watches/gshock/product.GST-B400GB-1A9/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400GB-1A9&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Multi
     display: ana-digi
     movement: solar
     case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 80, material: 'Resin / Stainless steel' }
@@ -155,6 +193,10 @@ models:
     ref: GST-B400MV-5A
     source:
       { url: 'https://web.archive.org/web/20220808074340id_/https://www.casio.com/us/watches/gshock/product.GST-B400MV-5A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400MV-5A&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Gold
     display: ana-digi
     movement: solar
     case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 80, material: 'Resin / Stainless steel' }
@@ -170,6 +212,10 @@ models:
     ref: GST-B400X-1A4
     source:
       { url: 'https://web.archive.org/web/20220625113443id_/https://www.casio.com/us/watches/gshock/product.GST-B400X-1A4/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400X-1A4&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Black
     display: ana-digi
     movement: solar
     case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 74, material: 'Carbon / Stainless steel' }
@@ -185,6 +231,12 @@ models:
     ref: GST-B400XD-1A2
     source:
       { url: 'https://web.archive.org/web/20210917215910id_/https://www.casio.com/jp/watches/gshock/product.GST-B400XD-1A2/', kind: official }
+    movement: solar
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GST-B400XD-1A2&subseries=GST-B400&series=400'
+    module: '5657'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 46.6, width_mm: 49.6, depth_mm: 12.9, weight_g: 154 }
     water_resistance_m: 200
     features: [bluetooth]

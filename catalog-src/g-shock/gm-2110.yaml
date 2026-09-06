@@ -75,6 +75,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-2110D-2A&subseries=GM-2110&series=2100'
+    colorway: Silver
+    water_resistance_m: 200
+    case:
+      material: Metal
+      height_mm: 49.3
+      width_mm: 44.4
+      depth_mm: 11.8
+      weight_g: 146
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -92,6 +102,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-2110D-2B&subseries=GM-2110&series=2100'
+    colorway: Silver
+    water_resistance_m: 200
+    case:
+      material: Metal
+      height_mm: 49.3
+      width_mm: 44.4
+      depth_mm: 11.8
+      weight_g: 146
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -109,6 +129,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-2110D-3A&subseries=GM-2110&series=2100'
+    colorway: Silver
+    water_resistance_m: 200
+    case:
+      material: Metal
+      height_mm: 49.3
+      width_mm: 44.4
+      depth_mm: 11.8
+      weight_g: 146
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -126,6 +156,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-2110D-3A1&subseries=GM-2110&series=2100'
+    colorway: Silver
+    water_resistance_m: 200
+    case:
+      material: Metal
+      height_mm: 49.3
+      width_mm: 44.4
+      depth_mm: 11.8
+      weight_g: 146
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -143,6 +183,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-2110D-4A&subseries=GM-2110&series=2100'
+    colorway: Silver
+    water_resistance_m: 200
+    case:
+      material: Metal
+      height_mm: 49.3
+      width_mm: 44.4
+      depth_mm: 11.8
+      weight_g: 146
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -160,6 +210,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-2110D-7A&subseries=GM-2110&series=2100'
+    colorway: Silver
+    water_resistance_m: 200
+    case:
+      material: Metal
+      height_mm: 49.3
+      width_mm: 44.4
+      depth_mm: 11.8
+      weight_g: 146
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -177,6 +237,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-2110D-8A&subseries=GM-2110&series=2100'
+    colorway: Silver
+    water_resistance_m: 200
+    case:
+      material: Metal
+      height_mm: 49.3
+      width_mm: 44.4
+      depth_mm: 11.8
+      weight_g: 146
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -197,6 +267,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-2110SH-2A&subseries=GM-2110&series=2100'
+    colorway: Silver
+    water_resistance_m: 200
+    case:
+      material: Metal / Resin
+      height_mm: 49.3
+      width_mm: 44.4
+      depth_mm: 11.8
+      weight_g: 76
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -219,6 +299,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-2110SH-7A&subseries=GM-2110&series=2100'
+    colorway: Silver
+    water_resistance_m: 200
+    case:
+      material: Metal / Resin
+      height_mm: 49.3
+      width_mm: 44.4
+      depth_mm: 11.8
+      weight_g: 76
     display: ana-digi
     movement: quartz
     module: '5611'

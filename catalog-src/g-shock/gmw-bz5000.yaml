@@ -22,6 +22,9 @@ models:
     ref: GMW-BZ5000GD-9
     source:
       { url: 'https://web.archive.org/web/20251107232106id_/https://www.casio.com/uk/watches/gshock/product.GMW-BZ5000GD-9/', kind: official }
+    module: '3575'
+    colorway: Gold
+    display: digital
     movement: solar-radio
     case: { height_mm: 49.3, width_mm: 43.6, depth_mm: 13, weight_g: 172, material: 'Stainless steel' }
     water_resistance_m: 200

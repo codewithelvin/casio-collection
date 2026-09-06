@@ -22,6 +22,10 @@ models:
     ref: GA-700-1A
     source:
       { url: 'https://web.archive.org/web/20230109060722id_/https://www.casio.com/us/watches/gshock/product.GA-700-1A/', kind: official }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -37,6 +41,10 @@ models:
     ref: GA-700-1B
     source:
       { url: 'https://web.archive.org/web/20240715065023id_/https://www.casio.com/europe/watches/gshock/product.GA-700-1B/', kind: official }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700-1B&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -52,6 +60,10 @@ models:
     ref: GA-700-2A
     source:
       { url: 'https://web.archive.org/web/20220628031116id_/https://www.casio.com/us/watches/gshock/product.GA-700-2A/', kind: official }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700-2A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Blue
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -67,6 +79,10 @@ models:
     ref: GA-700-4A
     source:
       { url: 'https://web.archive.org/web/20230130203437id_/https://www.casio.com/my/watches/gshock/product.GA-700-4A/', kind: official }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700-4A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Red
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -82,6 +98,10 @@ models:
     ref: GA-700-7A
     source:
       { url: 'https://web.archive.org/web/20230130203655id_/https://www.casio.com/my/watches/gshock/product.GA-700-7A/', kind: official }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700-7A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: White
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -97,6 +117,10 @@ models:
     ref: GA-700AR-1A
     source:
       { url: 'https://web.archive.org/web/20220929200450id_/https://www.casio.com/us/watches/gshock/product.GA-700AR-1A/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700AR-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -112,6 +136,10 @@ models:
     ref: GA-700BCE-1A
     source:
       { url: 'https://web.archive.org/web/20240130193345id_/https://www.casio.com/us/watches/gshock/product.GA-700BCE-1A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700BCE-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 76, material: 'Resin' }
     water_resistance_m: 200
@@ -127,6 +155,10 @@ models:
     ref: GA-700BMC-1A
     source:
       { url: 'https://web.archive.org/web/20230130205949id_/https://www.casio.com/my/watches/gshock/product.GA-700BMC-1A/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700BMC-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -142,6 +174,10 @@ models:
     ref: GA-700BNR-1A
     source:
       { url: 'https://web.archive.org/web/20240715021954id_/https://www.casio.com/europe/watches/gshock/product.GA-700BNR-1A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700BNR-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -157,6 +193,10 @@ models:
     ref: GA-700BP-1A
     source:
       { url: 'https://web.archive.org/web/20240715021946id_/https://www.casio.com/europe/watches/gshock/product.GA-700BP-1A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700BP-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -172,6 +212,10 @@ models:
     ref: GA-700BWP-2A
     source:
       { url: 'https://web.archive.org/web/20240715021943id_/https://www.casio.com/europe/watches/gshock/product.GA-700BWP-2A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700BWP-2A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Blue
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 75, material: 'Resin' }
     water_resistance_m: 200
@@ -187,6 +231,10 @@ models:
     ref: GA-700CA-2A
     source:
       { url: 'https://web.archive.org/web/20240715021951id_/https://www.casio.com/europe/watches/gshock/product.GA-700CA-2A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700CA-2A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Blue
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -202,6 +250,10 @@ models:
     ref: GA-700CA-5A
     source:
       { url: 'https://web.archive.org/web/20240715021949id_/https://www.casio.com/europe/watches/gshock/product.GA-700CA-5A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700CA-5A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Beige
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -217,6 +269,10 @@ models:
     ref: GA-700CM-2A
     source:
       { url: 'https://web.archive.org/web/20221126131448id_/https://www.casio.com/my/watches/gshock/product.GA-700CM-2A/', kind: official }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700CM-2A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Camouflage
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -232,6 +288,10 @@ models:
     ref: GA-700CM-3A
     source:
       { url: 'https://web.archive.org/web/20230128024831id_/https://www.casio.com/my/watches/gshock/product.GA-700CM-3A/', kind: official }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700CM-3A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Camouflage
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -247,6 +307,10 @@ models:
     ref: GA-700CM-8A
     source:
       { url: 'https://web.archive.org/web/20240214084613id_/https://www.casio.com/za/watches/gshock/product.GA-700CM-8A/', kind: official }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700CM-8A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Camouflage
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -262,6 +326,10 @@ models:
     ref: GA-700CT-1A
     source:
       { url: 'https://web.archive.org/web/20230128023541id_/https://www.casio.com/my/watches/gshock/product.GA-700CT-1A/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700CT-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -277,6 +345,10 @@ models:
     ref: GA-700CY-1A
     source:
       { url: 'https://web.archive.org/web/20240227094524id_/https://www.casio.com/my/watches/gshock/product.GA-700CY-1A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700CY-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -292,6 +364,10 @@ models:
     ref: GA-700DBR-4A
     source:
       { url: 'https://web.archive.org/web/20230130222627id_/https://www.casio.com/my/watches/gshock/product.GA-700DBR-4A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700DBR-4A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Red
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 75, material: 'Resin' }
     water_resistance_m: 200
@@ -307,6 +383,10 @@ models:
     ref: GA-700DC-1A
     source:
       { url: 'https://web.archive.org/web/20230130202834id_/https://www.casio.com/my/watches/gshock/product.GA-700DC-1A/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700DC-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -322,6 +402,10 @@ models:
     ref: GA-700FF-8A
     source:
       { url: 'https://web.archive.org/web/20240905220807id_/https://www.casio.com/in/watches/gshock/product.GA-700FF-8A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700FF-8A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Silver
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -337,6 +421,10 @@ models:
     ref: GA-700HD-8A
     source:
       { url: 'https://web.archive.org/web/20240408193959id_/https://www.casio.com/us/watches/gshock/product.GA-700HD-8A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700HD-8A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Grey
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 75, material: 'Resin' }
     water_resistance_m: 200
@@ -352,6 +440,10 @@ models:
     ref: GA-700MF-1A
     source:
       { url: 'https://web.archive.org/web/20240516180340id_/https://www.casio.com/us/watches/gshock/product.GA-700MF-1A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700MF-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 75, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -367,6 +459,10 @@ models:
     ref: GA-700MG-1A
     source:
       { url: 'https://web.archive.org/web/20240715022001id_/https://www.casio.com/europe/watches/gshock/product.GA-700MG-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700MG-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -382,6 +478,10 @@ models:
     ref: GA-700MMC-1A
     source:
       { url: 'https://web.archive.org/web/20230128024921id_/https://www.casio.com/my/watches/gshock/product.GA-700MMC-1A/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700MMC-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -397,6 +497,10 @@ models:
     ref: GA-700MT-1A9
     source:
       { url: 'https://web.archive.org/web/20240214084712id_/https://www.casio.com/us/watches/gshock/product.GA-700MT-1A9/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700MT-1A9&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Multi
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -412,6 +516,10 @@ models:
     ref: GA-700NC-5A
     source:
       { url: 'https://web.archive.org/web/20240225135528id_/https://www.casio.com/intl/watches/gshock/product.GA-700NC-5A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700NC-5A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Brown
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -427,6 +535,10 @@ models:
     ref: GA-700RC-1A
     source:
       { url: 'https://web.archive.org/web/20240715021958id_/https://www.casio.com/europe/watches/gshock/product.GA-700RC-1A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700RC-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -442,6 +554,10 @@ models:
     ref: GA-700RGB-1A
     source:
       { url: 'https://web.archive.org/web/20240715064717id_/https://www.casio.com/europe/watches/gshock/product.GA-700RGB-1A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700RGB-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -457,6 +573,10 @@ models:
     ref: GA-700SC-3A
     source:
       { url: 'https://web.archive.org/web/20240518153335id_/https://www.casio.com/us/watches/gshock/product.GA-700SC-3A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700SC-3A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Green
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -472,6 +592,10 @@ models:
     ref: GA-700SE-1A2
     source:
       { url: 'https://web.archive.org/web/20230128040524id_/https://www.casio.com/my/watches/gshock/product.GA-700SE-1A2/', kind: official }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700SE-1A2&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -487,6 +611,10 @@ models:
     ref: GA-700SE-1A4
     source:
       { url: 'https://web.archive.org/web/20230130215224id_/https://www.casio.com/my/watches/gshock/product.GA-700SE-1A4/', kind: official }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700SE-1A4&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -502,6 +630,10 @@ models:
     ref: GA-700SK-1A
     source:
       { url: 'https://web.archive.org/web/20240715064710id_/https://www.casio.com/europe/watches/gshock/product.GA-700SK-1A/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700SK-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Transparent
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -517,6 +649,10 @@ models:
     ref: GA-700SKC-1A
     source:
       { url: 'https://web.archive.org/web/20240715064714id_/https://www.casio.com/europe/watches/gshock/product.GA-700SKC-1A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700SKC-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Transparent
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -532,6 +668,10 @@ models:
     ref: GA-700SKE-7A
     source:
       { url: 'https://web.archive.org/web/20240715064721id_/https://www.casio.com/europe/watches/gshock/product.GA-700SKE-7A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700SKE-7A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Transparent
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -547,6 +687,10 @@ models:
     ref: GA-700UC-3A
     source:
       { url: 'https://web.archive.org/web/20220523052329id_/https://www.casio.com/us/watches/gshock/product.GA-700UC-3A/', kind: official }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700UC-3A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Olive
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -562,6 +706,10 @@ models:
     ref: GA-700UC-5A
     source:
       { url: 'https://web.archive.org/web/20220628030122id_/https://www.casio.com/us/watches/gshock/product.GA-700UC-5A/', kind: official }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700UC-5A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Beige
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -577,6 +725,10 @@ models:
     ref: GA-700UC-8A
     source:
       { url: 'https://web.archive.org/web/20220702134012id_/https://www.casio.com/us/watches/gshock/product.GA-700UC-8A/', kind: official }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700UC-8A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Grey
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -592,6 +744,10 @@ models:
     ref: GA-700VB-1A
     source:
       { url: 'https://web.archive.org/web/20240715065444id_/https://www.casio.com/europe/watches/gshock/product.GA-700VB-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700VB-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200
@@ -607,6 +763,10 @@ models:
     ref: GA-700WD-1A
     source:
       { url: 'https://web.archive.org/web/20241127233855id_/https://www.casio.com/us/watches/gshock/product.GA-700WD-1A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700WD-1A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Black
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.5, weight_g: 72, material: 'Resin' }
     water_resistance_m: 200
@@ -622,6 +782,10 @@ models:
     ref: GA-700WM-5A
     source:
       { url: 'https://web.archive.org/web/20230130211533id_/https://www.casio.com/my/watches/gshock/product.GA-700WM-5A/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-700WM-5A&subseries=GA-700&series=700'
+    module: '5522'
+    colorway: Multi
     movement: quartz
     case: { height_mm: 57.5, width_mm: 53.4, depth_mm: 18.4, weight_g: 69, material: 'Resin' }
     water_resistance_m: 200

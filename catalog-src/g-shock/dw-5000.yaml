@@ -28,6 +28,9 @@ models:
   - id: dw-5000c-1a
     ref: DW-5000C-1A
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5000c-1b1', kind: community }
+    movement: quartz
+    colorway: Black
+    display: digital
     year: 1983
     module: '240'
     case: { material: resin }
@@ -42,6 +45,9 @@ models:
   - id: dw-5000c-1b
     ref: DW-5000C-1B
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5000c-1b', kind: community }
+    movement: quartz
+    colorway: Black
+    display: digital
     year: 1983
     module: '240'
     case: { material: resin }
@@ -57,6 +63,9 @@ models:
     ref: DW-5000R-1A
     source:
       { url: 'https://web.archive.org/web/20241214085539id_/https://www.casio.com/us/watches/gshock/product.DW-5000R-1A/', kind: official }
+    module: '3576'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.3, depth_mm: 13.1, weight_g: 76, material: 'Stainless steel / Bio-based resin' }
     water_resistance_m: 200
@@ -73,6 +82,11 @@ models:
     ref: DW-5000SS-1
     source:
       { url: 'https://web.archive.org/web/20240715064941id_/https://www.casio.com/europe/watches/gshock/product.DW-5000SS-1/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5000SS-1&subseries=DW-5000&series=5000'
+    module: '3421'
+    colorway: Multi
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.5, weight_g: 78, material: 'Stainless steel / Resin' }
     water_resistance_m: 200

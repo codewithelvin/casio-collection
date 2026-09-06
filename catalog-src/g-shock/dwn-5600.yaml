@@ -29,6 +29,8 @@ models:
     ref: DWN-5600-1
     source:
       { url: 'https://web.archive.org/web/20251225211433id_/https://www.casio.com/europe/watches/gshock/product.DWN-5600-1/', kind: official }
+    module: '3592'
+    colorway: Black
     movement: quartz
     case: { height_mm: 23.4, width_mm: 20, depth_mm: 7.5, weight_g: 6, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200

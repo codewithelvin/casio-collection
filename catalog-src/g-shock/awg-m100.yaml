@@ -22,6 +22,10 @@ models:
     ref: AWG-M100-1A
     source:
       { url: 'https://web.archive.org/web/20230327103214id_/https://www.casio.com/us/watches/gshock/product.AWG-M100-1A/', kind: official }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
     display: ana-digi
     movement: solar-radio
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56.4, material: 'Resin / Stainless steel' }
@@ -37,6 +41,10 @@ models:
     ref: AWG-M100A-1A
     source:
       { url: 'https://web.archive.org/web/20240119143922id_/https://www.casio.com/us/watches/gshock/product.AWG-M100A-1A/', kind: official }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100A-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
     display: ana-digi
     movement: solar-radio
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56.4, material: 'Resin / Stainless steel' }
@@ -52,6 +60,10 @@ models:
     ref: AWG-M100B-1A
     source:
       { url: 'https://web.archive.org/web/20240715021839id_/https://www.casio.com/europe/watches/gshock/product.AWG-M100B-1A/', kind: official }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100B-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
     display: ana-digi
     movement: solar-radio
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56.4, material: 'Resin / Stainless steel' }
@@ -67,6 +79,12 @@ models:
     ref: AWG-M100BC-2A
     source:
       { url: 'https://web.archive.org/web/20211006100435id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100BC-2A/', kind: official }
+    movement: solar-radio
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100BC-2A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 103.3 }
     water_resistance_m: 200
     image: awg-m100bc-2a
@@ -79,6 +97,12 @@ models:
     ref: AWG-M100FP-1A2
     source:
       { url: 'https://web.archive.org/web/20250406050619id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100FP-1A2/', kind: official }
+    movement: solar-radio
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100FP-1A2&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Silver
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100fp-1a2
@@ -91,6 +115,12 @@ models:
     ref: AWG-M100FP-1A4
     source:
       { url: 'https://web.archive.org/web/20240225135603id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100FP-1A4/', kind: official }
+    movement: solar-radio
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100FP-1A4&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100fp-1a4
@@ -103,6 +133,12 @@ models:
     ref: AWG-M100RC-1A
     source:
       { url: 'https://web.archive.org/web/20230530180036id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100RC-1A/', kind: official }
+    movement: solar-radio
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100RC-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100rc-1a
@@ -115,6 +151,12 @@ models:
     ref: AWG-M100S-7A
     source:
       { url: 'https://web.archive.org/web/20210413043739id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100S-7A/', kind: official }
+    movement: solar-radio
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100S-7A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100s-7a
@@ -127,6 +169,10 @@ models:
     ref: AWG-M100SB-2A
     source:
       { url: 'https://web.archive.org/web/20240715021837id_/https://www.casio.com/europe/watches/gshock/product.AWG-M100SB-2A/', kind: official }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SB-2A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
     display: ana-digi
     movement: solar-radio
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56, material: 'Resin / Stainless steel' }
@@ -142,6 +188,12 @@ models:
     ref: AWG-M100SBB-1A
     source:
       { url: 'https://web.archive.org/web/20210919175254id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SBB-1A/', kind: official }
+    movement: solar-radio
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SBB-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100sbb-1a
@@ -154,6 +206,12 @@ models:
     ref: AWG-M100SBC-1A
     source:
       { url: 'https://web.archive.org/web/20210724180947id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SBC-1A/', kind: official }
+    movement: solar-radio
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SBC-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 104 }
     water_resistance_m: 200
     image: awg-m100sbc-1a
@@ -166,6 +224,10 @@ models:
     ref: AWG-M100SBG-1A
     source:
       { url: 'https://web.archive.org/web/20240119143920id_/https://www.casio.com/us/watches/gshock/product.AWG-M100SBG-1A/', kind: official }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SBG-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
     display: ana-digi
     movement: solar-radio
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56, material: 'Resin / Stainless steel' }
@@ -181,6 +243,12 @@ models:
     ref: AWG-M100SBP-1A
     source:
       { url: 'https://web.archive.org/web/20220406030614id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SBP-1A/', kind: official }
+    movement: solar-radio
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SBP-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100sbp-1a
@@ -193,6 +261,12 @@ models:
     ref: AWG-M100SCT-1A
     source:
       { url: 'https://web.archive.org/web/20210919172649id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SCT-1A/', kind: official }
+    movement: solar-radio
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SCT-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100sct-1a
@@ -205,6 +279,12 @@ models:
     ref: AWG-M100SDC-1A
     source:
       { url: 'https://web.archive.org/web/20210805153554id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SDC-1A/', kind: official }
+    movement: solar-radio
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SDC-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100sdc-1a
@@ -217,6 +297,12 @@ models:
     ref: AWG-M100SF-1A2
     source:
       { url: 'https://web.archive.org/web/20210419001804id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A2/', kind: official }
+    movement: solar-radio
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SF-1A2&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100sf-1a2
@@ -229,6 +315,12 @@ models:
     ref: AWG-M100SF-1A5
     source:
       { url: 'https://web.archive.org/web/20220216081414id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A5/', kind: official }
+    movement: solar-radio
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SF-1A5&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Multi
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100sf-1a5
@@ -241,6 +333,12 @@ models:
     ref: AWG-M100SF-1A6
     source:
       { url: 'https://web.archive.org/web/20230511074203id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A6/', kind: official }
+    movement: solar-radio
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SF-1A6&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Multi
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100sf-1a6
@@ -253,6 +351,12 @@ models:
     ref: AWG-M100SMG-1A
     source:
       { url: 'https://web.archive.org/web/20210415080058id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SMG-1A/', kind: official }
+    movement: solar-radio
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SMG-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Black
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100smg-1a
@@ -265,6 +369,12 @@ models:
     ref: AWG-M100SVB-1A
     source:
       { url: 'https://web.archive.org/web/20211203080231id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SVB-1A/', kind: official }
+    movement: solar-radio
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=AWG-M100SVB-1A&subseries=AWG-M100&series=100'
+    module: '5230'
+    colorway: Blue
+    display: ana-digi
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56 }
     water_resistance_m: 200
     image: awg-m100svb-1a

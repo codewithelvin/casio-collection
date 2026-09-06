@@ -29,6 +29,10 @@ models:
     ref: GBM-2100-1A
     source:
       { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBM-2100-1A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GBM-2100-1A&subseries=GBM-2100&series=2100'
+    module: '5729'
+    colorway: Silver
     display: analog
     movement: solar
     case: { height_mm: 49.3, width_mm: 44.4, depth_mm: 11.9, weight_g: 72, material: 'Resin (Bio-based) / Stainless steel' }
@@ -44,6 +48,10 @@ models:
     ref: GBM-2100A-1A2
     source:
       { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBM-2100A-1A2/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GBM-2100A-1A2&subseries=GBM-2100&series=2100'
+    module: '5729'
+    colorway: Silver
     display: analog
     movement: solar
     case: { height_mm: 49.3, width_mm: 44.4, depth_mm: 11.9, weight_g: 72, material: 'Resin (Bio-based) / Stainless steel' }
@@ -59,6 +67,10 @@ models:
     ref: GBM-2100A-1A3
     source:
       { url: 'https://web.archive.org/web/20240824133306id_/https://www.casio.com/in/watches/gshock/product.GBM-2100A-1A3/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GBM-2100A-1A3&subseries=GBM-2100&series=2100'
+    module: '5729'
+    colorway: Silver
     display: analog
     movement: solar
     case: { height_mm: 49.3, width_mm: 44.4, depth_mm: 11.9, weight_g: 72, material: 'Resin (Bio-based) / Stainless steel' }
@@ -74,6 +86,19 @@ models:
     ref: GBM-2100A-4B
     source:
       { url: 'https://web.archive.org/web/20251010231201id_/https://www.casio.com/jp/watches/gshock/product.GBM-2100A-4B/', kind: official }
+    movement: solar
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GBM-2100A-4B&subseries=GBM-2100&series=2100'
+    module: '5729'
+    colorway: Silver
+    water_resistance_m: 200
+    case:
+      material: Metal / Resin
+      height_mm: 49.3
+      width_mm: 44.4
+      depth_mm: 11.9
+      weight_g: 72
+    display: ana-digi
     features: [bluetooth]
     image: gbm-2100a-4b
     image_credit:
@@ -85,6 +110,10 @@ models:
     ref: GBM-2100B-7A
     source:
       { url: 'https://web.archive.org/web/20241002193052id_/https://www.casio.com/europe/watches/gshock/product.GBM-2100B-7A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GBM-2100B-7A&subseries=GBM-2100&series=2100'
+    module: '5729'
+    colorway: Black
     display: analog
     movement: solar
     case: { height_mm: 49.3, width_mm: 44.4, depth_mm: 11.9, weight_g: 72, material: 'Bio-based Resin / Stainless steel' }
@@ -100,6 +129,8 @@ models:
     ref: GBM-2100RH-1A
     source:
       { url: 'https://web.archive.org/web/20250313114501id_/https://www.casio.com/in/watches/gshock/product.GBM-2100RH-1A/', kind: official }
+    module: '5729'
+    colorway: Black
     display: analog
     movement: solar
     case: { height_mm: 49.3, width_mm: 44.4, depth_mm: 11.9, weight_g: 78, material: 'Resin (Bio-based) / Stainless steel' }

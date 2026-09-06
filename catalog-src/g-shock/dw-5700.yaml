@@ -45,6 +45,9 @@ models:
   - id: dw-5700c-1v
     ref: DW-5700C-1V
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5700c1', kind: community }
+    movement: quartz
+    colorway: Black
+    display: digital
     year: 1985
     module: '691'
     case: { material: resin }
@@ -59,6 +62,9 @@ models:
   - id: dw-5700c-9v
     ref: DW-5700C-9V
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5700c-9v', kind: community }
+    movement: quartz
+    colorway: Black
+    display: digital
     year: 1987
     module: '901'
     case: { material: stainless steel }

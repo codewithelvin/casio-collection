@@ -28,3 +28,7 @@ supabase/.temp
 
 .DS_Store
 *.log
+
+# Crawl page caches — the cache IS the progress for the seeding tools,
+# so it must survive between runs and must never be committed.
+.cache/

@@ -101,6 +101,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110BE-4A&subseries=GMA-S110&series=110'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -118,6 +128,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CC-2A&subseries=GMA-S110&series=110'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -133,6 +153,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CC-3A&subseries=GMA-S110&series=110'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -148,6 +178,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CC-4A&subseries=GMA-S110&series=110'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -163,6 +203,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CM-2A&subseries=GMA-S110&series=110'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -178,6 +228,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CM-3A&subseries=GMA-S110&series=110'
+    colorway: Olive
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -193,6 +253,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CM-7A1&subseries=GMA-S110&series=110'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -208,6 +278,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CM-7A2&subseries=GMA-S110&series=110'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -223,6 +303,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CM-8A&subseries=GMA-S110&series=110'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -238,6 +328,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CW-7A1&subseries=GMA-S110&series=110'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -253,6 +353,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CW-7A2&subseries=GMA-S110&series=110'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -268,6 +378,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110CW-7A3&subseries=GMA-S110&series=110'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -283,6 +403,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110F-1A&subseries=GMA-S110&series=110'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -298,6 +428,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110F-2A&subseries=GMA-S110&series=110'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -313,6 +453,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110F-4A&subseries=GMA-S110&series=110'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -328,6 +478,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110F-7A&subseries=GMA-S110&series=110'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -343,6 +503,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110GB-1A&subseries=GMA-S110&series=110'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -360,6 +530,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110GD-2A&subseries=GMA-S110&series=110'
+    colorway: Gold
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -375,6 +555,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110GD-4A1&subseries=GMA-S110&series=110'
+    colorway: Gold
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -390,6 +580,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110GD-4A2&subseries=GMA-S110&series=110'
+    colorway: Gold
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -405,6 +605,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110GS-3A&subseries=GMA-S110&series=110'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -422,6 +632,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110GS-8A&subseries=GMA-S110&series=110'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -439,6 +659,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110HC-1A&subseries=GMA-S110&series=110'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -454,6 +684,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110HC-2A&subseries=GMA-S110&series=110'
+    colorway: Purple
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -469,6 +709,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110HC-6A&subseries=GMA-S110&series=110'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -484,6 +734,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110HT-4A&subseries=GMA-S110&series=110'
+    colorway: Orange
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -499,6 +759,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110HT-6A&subseries=GMA-S110&series=110'
+    colorway: Purple
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -514,6 +784,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110HT-7A&subseries=GMA-S110&series=110'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -529,6 +809,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110HT-9A&subseries=GMA-S110&series=110'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -544,6 +834,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110MC-2A&subseries=GMA-S110&series=110'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -559,6 +859,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110MC-3A&subseries=GMA-S110&series=110'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -574,6 +884,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110MC-6A&subseries=GMA-S110&series=110'
+    colorway: Purple
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -589,6 +909,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110MP-4A1&subseries=GMA-S110&series=110'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -606,6 +936,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110MP-4A2&subseries=GMA-S110&series=110'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -621,6 +961,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110MP-4A3&subseries=GMA-S110&series=110'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -636,6 +986,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110MP-7A&subseries=GMA-S110&series=110'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -653,6 +1013,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110NP-8A&subseries=GMA-S110&series=110'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -670,6 +1039,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110SG-7A&subseries=GMA-S110&series=110'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -687,6 +1066,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110SR-7A&subseries=GMA-S110&series=110'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -704,6 +1093,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110ST-2A&subseries=GMA-S110&series=110'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -721,6 +1120,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110ST-4A&subseries=GMA-S110&series=110'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -738,6 +1147,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110ST-7A&subseries=GMA-S110&series=110'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -755,6 +1174,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110TB-8A&subseries=GMA-S110&series=110'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -772,6 +1201,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110VC-2A&subseries=GMA-S110&series=110'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -787,6 +1225,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110VC-3A&subseries=GMA-S110&series=110'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -802,6 +1249,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110VC-4A&subseries=GMA-S110&series=110'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -817,6 +1274,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110VC-9A&subseries=GMA-S110&series=110'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -832,6 +1298,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110VK-9A&subseries=GMA-S110&series=110'
+    colorway: Gold
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -847,6 +1323,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110VW-2A&subseries=GMA-S110&series=110'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -864,6 +1350,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110VW-4A&subseries=GMA-S110&series=110'
+    colorway: Purple
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -881,6 +1377,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110VW-6A&subseries=GMA-S110&series=110'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -898,6 +1404,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2026
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110XG-4A&subseries=GMA-S110&series=110'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'
@@ -915,6 +1431,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-S110Y-9A&subseries=GMA-S110&series=110'
+    colorway: Grey
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 49
+      width_mm: 45.9
+      depth_mm: 15.8
+      weight_g: 56
     display: ana-digi
     movement: quartz
     module: '5425'

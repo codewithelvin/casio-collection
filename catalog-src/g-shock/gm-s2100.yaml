@@ -22,6 +22,10 @@ models:
     ref: GM-S2100-3A
     source:
       { url: 'https://web.archive.org/web/20240715064850id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100-3A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100-3A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Silver
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
@@ -37,6 +41,10 @@ models:
     ref: GM-S2100B-8A
     source:
       { url: 'https://web.archive.org/web/20240715064852id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100B-8A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100B-8A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
@@ -52,6 +60,10 @@ models:
     ref: GM-S2100BC-1A
     source:
       { url: 'https://web.archive.org/web/20240715065619id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100BC-1A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100BC-1A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Gold
     display: ana-digi
     movement: quartz
     case: { height_mm: 46.2, width_mm: 40.5, depth_mm: 11.3, weight_g: 57, material: 'Resin / Stainless steel' }
@@ -67,6 +79,10 @@ models:
     ref: GM-S2100BR-5A
     source:
       { url: 'https://web.archive.org/web/20221203224907id_/https://www.casio.com/us/watches/gshock/product.GM-S2100BR-5A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100BR-5A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Gold
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
@@ -82,6 +98,10 @@ models:
     ref: GM-S2100CB-5A
     source:
       { url: 'https://web.archive.org/web/20240921090209id_/https://www.casio.com/intl/watches/gshock/product.GM-S2100CB-5A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100CB-5A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Gold
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
@@ -97,6 +117,10 @@ models:
     ref: GM-S2100CH-1A
     source:
       { url: 'https://web.archive.org/web/20230301123708id_/https://www.casio.com/my/watches/gshock/product.GM-S2100CH-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100CH-1A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Grey
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
@@ -112,6 +136,10 @@ models:
     ref: GM-S2100CW-7A
     source:
       { url: 'https://web.archive.org/web/20250121104229id_/https://www.casio.com/in/watches/gshock/product.GM-S2100CW-7A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100CW-7A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Gold
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
@@ -127,6 +155,10 @@ models:
     ref: GM-S2100GB-1A
     source:
       { url: 'https://web.archive.org/web/20240715064847id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100GB-1A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100GB-1A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Gold
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
@@ -142,6 +174,10 @@ models:
     ref: GM-S2100MF-1A
     source:
       { url: 'https://web.archive.org/web/20220623234205id_/https://www.casio.com/us/watches/gshock/product.GM-S2100MF-1A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100MF-1A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
@@ -157,6 +193,10 @@ models:
     ref: GM-S2100PG-1A4
     source:
       { url: 'https://web.archive.org/web/20240715064844id_/https://www.casio.com/europe/watches/gshock/product.GM-S2100PG-1A4/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100PG-1A4&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Gold
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
@@ -172,6 +212,10 @@ models:
     ref: GM-S2100PG-4A
     source:
       { url: 'https://web.archive.org/web/20231221080024id_/https://www.casio.com/us/watches/gshock/product.GM-S2100PG-4A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100PG-4A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Pink
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }
@@ -187,6 +231,10 @@ models:
     ref: GM-S2100WS-7A
     source:
       { url: 'https://web.archive.org/web/20231209071007id_/https://www.casio.com/us/watches/gshock/product.GM-S2100WS-7A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-S2100WS-7A&subseries=GM-S2100&series=2100'
+    module: '5663'
+    colorway: Grey
     display: ana-digi
     movement: quartz
     case: { height_mm: 45.9, width_mm: 40.4, depth_mm: 11, weight_g: 55, material: 'Resin / Stainless steel' }

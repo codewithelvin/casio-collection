@@ -29,6 +29,9 @@ models:
     ref: GLX-5600KB-1
     source:
       { url: 'https://web.archive.org/web/20241128164645id_/https://www.casio.com/us/watches/gshock/product.GLX-5600KB-1/', kind: official }
+    module: '3151'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 53, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -45,6 +48,11 @@ models:
     ref: GLX-5600RT-4
     source:
       { url: 'https://web.archive.org/web/20240715021341id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-4/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GLX-5600RT-4&subseries=GLX-5600&series=5600'
+    module: '3151'
+    colorway: Orange
+    display: digital
     movement: quartz
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
@@ -59,6 +67,11 @@ models:
     ref: GLX-5600RT-9
     source:
       { url: 'https://web.archive.org/web/20240715021324id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-9/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GLX-5600RT-9&subseries=GLX-5600&series=5600'
+    module: '3151'
+    colorway: Yellow
+    display: digital
     movement: quartz
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
@@ -80,6 +93,12 @@ models:
     ref: GLX-5600-1
     source:
       { url: 'https://web.archive.org/web/20210414205554id_/https://www.casio.com/jp/watches/gshock/product.GLX-5600-1/', kind: official }
+    movement: quartz
+    year: 2008
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GLX-5600-1&subseries=GLX-5600&series=5600'
+    module: '3151'
+    colorway: Black
+    display: digital
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 52.5 }
     water_resistance_m: 200
     image: glx-5600-1
@@ -92,6 +111,12 @@ models:
     ref: GLX-5600-7
     source:
       { url: 'https://web.archive.org/web/20210313071649id_/https://www.casio.com/jp/watches/gshock/product.GLX-5600-7/', kind: official }
+    movement: quartz
+    year: 2008
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GLX-5600-7&subseries=GLX-5600&series=5600'
+    module: '3151'
+    colorway: White
+    display: digital
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 52.5 }
     water_resistance_m: 200
     image: glx-5600-7

@@ -22,6 +22,10 @@ models:
     ref: GA-2200-2A
     source:
       { url: 'https://web.archive.org/web/20240715021606id_/https://www.casio.com/europe/watches/gshock/product.GA-2200-2A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200-2A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Blue
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 12.8, weight_g: 57, material: 'Resin' }
@@ -37,6 +41,10 @@ models:
     ref: GA-2200BB-1A
     source:
       { url: 'https://web.archive.org/web/20240715065408id_/https://www.casio.com/europe/watches/gshock/product.GA-2200BB-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200BB-1A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 12.8, weight_g: 57, material: 'Resin' }
@@ -52,6 +60,10 @@ models:
     ref: GA-2200BNR-1A
     source:
       { url: 'https://web.archive.org/web/20221110190703id_/https://www.casio.com/my/watches/gshock/product.GA-2200BNR-1A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200BNR-1A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Carbon / Resin' }
@@ -67,6 +79,10 @@ models:
     ref: GA-2200FF-8A
     source:
       { url: 'https://web.archive.org/web/20231015045156id_/https://www.casio.com/sg/watches/gshock/product.GA-2200FF-8A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200FF-8A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Silver
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Carbon / Resin' }
@@ -82,6 +98,10 @@ models:
     ref: GA-2200GC-7A
     source:
       { url: 'https://web.archive.org/web/20240715065405id_/https://www.casio.com/europe/watches/gshock/product.GA-2200GC-7A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200GC-7A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Multi
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
@@ -97,6 +117,10 @@ models:
     ref: GA-2200M-1A
     source:
       { url: 'https://web.archive.org/web/20240715065416id_/https://www.casio.com/europe/watches/gshock/product.GA-2200M-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200M-1A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 12.8, weight_g: 57, material: 'Resin' }
@@ -112,6 +136,10 @@ models:
     ref: GA-2200M-4A
     source:
       { url: 'https://web.archive.org/web/20240715065413id_/https://www.casio.com/europe/watches/gshock/product.GA-2200M-4A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200M-4A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Orange
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 12.8, weight_g: 57, material: 'Resin' }
@@ -127,6 +155,10 @@ models:
     ref: GA-2200MFR-3A
     source:
       { url: 'https://web.archive.org/web/20240715065419id_/https://www.casio.com/europe/watches/gshock/product.GA-2200MFR-3A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200MFR-3A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Multi
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
@@ -142,6 +174,10 @@ models:
     ref: GA-2200MFR-5A
     source:
       { url: 'https://web.archive.org/web/20240715065402id_/https://www.casio.com/europe/watches/gshock/product.GA-2200MFR-5A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200MFR-5A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Multi
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
@@ -157,6 +193,12 @@ models:
     ref: GA-2200NC-7A
     source:
       { url: 'https://web.archive.org/web/20240722084917id_/https://www.casio.com/id/watches/gshock/product.GA-2200NC-7A/', kind: official }
+    movement: quartz
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200NC-7A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Beige
+    display: ana-digi
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57 }
     water_resistance_m: 200
     features: [alarm, stopwatch, super-illuminator]
@@ -170,6 +212,10 @@ models:
     ref: GA-2200NN-1A
     source:
       { url: 'https://web.archive.org/web/20240715065358id_/https://www.casio.com/europe/watches/gshock/product.GA-2200NN-1A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200NN-1A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Multi
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
@@ -185,6 +231,10 @@ models:
     ref: GA-2200SBY-8A
     source:
       { url: 'https://web.archive.org/web/20230208174209id_/https://www.casio.com/intl/watches/gshock/product.GA-2200SBY-8A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200SBY-8A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Multi
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Carbon / Resin' }
@@ -200,6 +250,10 @@ models:
     ref: GA-2200SKL-4A
     source:
       { url: 'https://web.archive.org/web/20240715064301id_/https://www.casio.com/europe/watches/gshock/product.GA-2200SKL-4A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200SKL-4A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Red
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
@@ -215,6 +269,10 @@ models:
     ref: GA-2200SKL-8A
     source:
       { url: 'https://web.archive.org/web/20240715064304id_/https://www.casio.com/europe/watches/gshock/product.GA-2200SKL-8A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200SKL-8A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Grey
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
@@ -230,6 +288,10 @@ models:
     ref: GA-2200SL-5A
     source:
       { url: 'https://web.archive.org/web/20220704091954id_/https://www.casio.com/us/watches/gshock/product.GA-2200SL-5A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200SL-5A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Multi
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }
@@ -245,6 +307,10 @@ models:
     ref: GA-2200SL-8A
     source:
       { url: 'https://web.archive.org/web/20220925151514id_/https://www.casio.com/us/watches/gshock/product.GA-2200SL-8A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-2200SL-8A&subseries=GA-2200&series=2200'
+    module: '5674'
+    colorway: Multi
     display: ana-digi
     movement: quartz
     case: { height_mm: 50.8, width_mm: 47.1, depth_mm: 13.1, weight_g: 57, material: 'Resin' }

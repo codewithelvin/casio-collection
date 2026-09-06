@@ -29,6 +29,11 @@ models:
     ref: G-5600BG-1
     source:
       { url: 'https://web.archive.org/web/20240502180318id_/https://www.casio.com/my/watches/gshock/product.G-5600BG-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=G-5600BG-1&subseries=G-5600&series=5600'
+    module: '3496'
+    colorway: Multi
+    display: digital
     movement: solar
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 47, material: 'Resin' }
     water_resistance_m: 200
@@ -43,6 +48,11 @@ models:
     ref: G-5600BG-5
     source:
       { url: 'https://web.archive.org/web/20250427044730id_/https://www.casio.com/intl/watches/gshock/product.G-5600BG-5/', kind: official }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=G-5600BG-5&subseries=G-5600&series=5600'
+    module: '3496'
+    colorway: White
+    display: digital
     movement: solar
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 47, material: 'Resin' }
     water_resistance_m: 200
@@ -57,6 +67,12 @@ models:
     ref: G-5600E-1
     source:
       { url: 'https://web.archive.org/web/20210922120449id_/https://www.casio.com/sg/watches/gshock/product.G-5600E-1/', kind: official }
+    movement: solar
+    year: 2009
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=G-5600E-1&subseries=G-5600&series=5600'
+    module: '3160'
+    colorway: Black
+    display: digital
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 50.5, material: 'Resin' }
     water_resistance_m: 200
     features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, power-saving, shock-resistant, mineral-glass]
@@ -70,6 +86,9 @@ models:
     ref: G-5600SRF-1
     source:
       { url: 'https://web.archive.org/web/20240715065952id_/https://www.casio.com/europe/watches/gshock/product.G-5600SRF-1/', kind: official }
+    module: '3496'
+    colorway: Black
+    display: digital
     movement: solar
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 47, material: 'Resin' }
     water_resistance_m: 200
@@ -86,6 +105,11 @@ models:
     ref: G-5600UE-1
     source:
       { url: 'https://web.archive.org/web/20230816221825id_/https://www.casio.com/ph/watches/gshock/product.G-5600UE-1/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=G-5600UE-1&subseries=G-5600&series=5600'
+    module: '3496'
+    colorway: Black
+    display: digital
     movement: solar
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 51, material: 'Resin' }
     water_resistance_m: 200

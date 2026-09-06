@@ -22,6 +22,10 @@ models:
     ref: GA-900-1A
     source:
       { url: 'https://web.archive.org/web/20240715065423id_/https://www.casio.com/europe/watches/gshock/product.GA-900-1A/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900-1A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -37,6 +41,10 @@ models:
     ref: GA-900-2A
     source:
       { url: 'https://web.archive.org/web/20240715065438id_/https://www.casio.com/europe/watches/gshock/product.GA-900-2A/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900-2A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Blue
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -52,6 +60,10 @@ models:
     ref: GA-900-4A
     source:
       { url: 'https://web.archive.org/web/20240715065440id_/https://www.casio.com/europe/watches/gshock/product.GA-900-4A/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900-4A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Red
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -67,6 +79,10 @@ models:
     ref: GA-900A-1A9
     source:
       { url: 'https://web.archive.org/web/20240910175528id_/https://www.casio.com/in/watches/gshock/product.GA-900A-1A9/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900A-1A9&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Yellow
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -82,6 +98,10 @@ models:
     ref: GA-900AG-1A
     source:
       { url: 'https://web.archive.org/web/20240715021256id_/https://www.casio.com/europe/watches/gshock/product.GA-900AG-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900AG-1A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -97,6 +117,10 @@ models:
     ref: GA-900AS-1A
     source:
       { url: 'https://web.archive.org/web/20220511205254id_/https://www.casio.com/us/watches/gshock/product.GA-900AS-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900AS-1A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -112,6 +136,10 @@ models:
     ref: GA-900AS-7A
     source:
       { url: 'https://web.archive.org/web/20220818221346id_/https://www.casio.com/us/watches/gshock/product.GA-900AS-7A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900AS-7A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: White
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -127,6 +155,10 @@ models:
     ref: GA-900BEP-8A
     source:
       { url: 'https://web.archive.org/web/20240715021300id_/https://www.casio.com/europe/watches/gshock/product.GA-900BEP-8A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900BEP-8A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Grey
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 71, material: 'Resin' }
@@ -142,6 +174,10 @@ models:
     ref: GA-900C-1A4
     source:
       { url: 'https://web.archive.org/web/20240715021251id_/https://www.casio.com/europe/watches/gshock/product.GA-900C-1A4/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900C-1A4&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Orange
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 63, material: 'Resin' }
@@ -157,6 +193,10 @@ models:
     ref: GA-900DBR-3A
     source:
       { url: 'https://web.archive.org/web/20220625133405id_/https://www.casio.com/in/watches/gshock/product.GA-900DBR-3A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900DBR-3A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Blue
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -172,6 +212,10 @@ models:
     ref: GA-900E-1A3
     source:
       { url: 'https://web.archive.org/web/20240715021254id_/https://www.casio.com/europe/watches/gshock/product.GA-900E-1A3/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900E-1A3&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -187,6 +231,10 @@ models:
     ref: GA-900GC-7A
     source:
       { url: 'https://web.archive.org/web/20240715021623id_/https://www.casio.com/europe/watches/gshock/product.GA-900GC-7A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900GC-7A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Multi
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -202,6 +250,10 @@ models:
     ref: GA-900HC-3A
     source:
       { url: 'https://web.archive.org/web/20220529023625id_/https://www.casio.com/us/watches/gshock/product.ga-900hc-3a/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900HC-3A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Green
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -217,6 +269,10 @@ models:
     ref: GA-900HC-5A
     source:
       { url: 'https://web.archive.org/web/20220814093900id_/https://www.casio.com/my/watches/gshock/product.GA-900HC-5A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900HC-5A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Grey
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -232,6 +288,10 @@ models:
     ref: GA-900SKE-8A
     source:
       { url: 'https://web.archive.org/web/20240715021609id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKE-8A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900SKE-8A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Transparent
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -247,6 +307,10 @@ models:
     ref: GA-900SKL-2A
     source:
       { url: 'https://web.archive.org/web/20240715021617id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKL-2A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900SKL-2A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Blue
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -262,6 +326,10 @@ models:
     ref: GA-900SKL-7A
     source:
       { url: 'https://web.archive.org/web/20240715021620id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKL-7A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900SKL-7A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Transparent
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }
@@ -277,6 +345,10 @@ models:
     ref: GA-900TS-4A
     source:
       { url: 'https://web.archive.org/web/20240715021612id_/https://www.casio.com/europe/watches/gshock/product.GA-900TS-4A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900TS-4A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Transparent
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 63, material: 'Resin' }
@@ -292,6 +364,10 @@ models:
     ref: GA-900TS-6A
     source:
       { url: 'https://web.archive.org/web/20240715021614id_/https://www.casio.com/europe/watches/gshock/product.GA-900TS-6A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900TS-6A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Purple
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 63, material: 'Resin' }
@@ -307,6 +383,10 @@ models:
     ref: GA-900VB-1A
     source:
       { url: 'https://web.archive.org/web/20240715021627id_/https://www.casio.com/europe/watches/gshock/product.GA-900VB-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GA-900VB-1A&subseries=GA-900&series=900'
+    module: '5637'
+    colorway: Black
     display: ana-digi
     movement: quartz
     case: { height_mm: 52.8, width_mm: 49.5, depth_mm: 16.9, weight_g: 65, material: 'Resin' }

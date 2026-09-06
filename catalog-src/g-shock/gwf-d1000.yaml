@@ -109,6 +109,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-D1000-1&subseries=GWF-D1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin / Resin / Carbon
+      height_mm: 59.2
+      width_mm: 53.3
+      depth_mm: 18
+      weight_g: 141
     display: digital
     movement: solar-radio
     module: '3445'
@@ -127,6 +137,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-D1000ARR-1&subseries=GWF-D1000&series=1000'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin / Resin / Carbon
+      height_mm: 59.2
+      width_mm: 53.3
+      depth_mm: 18
+      weight_g: 141
     display: digital
     movement: solar-radio
     module: '3445'
@@ -144,6 +164,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-D1000B-1&subseries=GWF-D1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin / Resin / Carbon
+      height_mm: 59.2
+      width_mm: 53.3
+      depth_mm: 18
+      weight_g: 141
     display: digital
     movement: solar-radio
     module: '3445'
@@ -161,6 +191,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-D1000JCG-9&subseries=GWF-D1000&series=1000'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin / Resin / Carbon
+      height_mm: 59.2
+      width_mm: 53.3
+      depth_mm: 18
+      weight_g: 141
     display: digital
     movement: solar-radio
     module: '3445'
@@ -176,6 +216,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-D1000K-7&subseries=GWF-D1000&series=1000'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin / Resin / Carbon
+      height_mm: 59.2
+      width_mm: 53.3
+      depth_mm: 18
+      weight_g: 141
     display: digital
     movement: solar-radio
     module: '3445'
@@ -192,6 +242,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-D1000MB-3&subseries=GWF-D1000&series=1000'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin / Resin / Carbon
+      height_mm: 59.2
+      width_mm: 53.3
+      depth_mm: 18
+      weight_g: 141
     display: digital
     movement: solar-radio
     module: '3445'
@@ -209,6 +269,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-D1000NV-2&subseries=GWF-D1000&series=1000'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin / Resin / Carbon
+      height_mm: 59.2
+      width_mm: 53.3
+      depth_mm: 18
+      weight_g: 141
     display: digital
     movement: solar-radio
     module: '3445'

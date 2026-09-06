@@ -22,6 +22,11 @@ models:
     ref: GM-5600-1
     source:
       { url: 'https://web.archive.org/web/20240715064802id_/https://www.casio.com/europe/watches/gshock/product.GM-5600-1/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600-1&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -36,6 +41,11 @@ models:
     ref: GM-5600B-1
     source:
       { url: 'https://web.archive.org/web/20220706032436id_/https://www.casio.com/ph/watches/gshock/product.GM-5600B-1/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600B-1&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -50,6 +60,11 @@ models:
     ref: GM-5600B-3
     source:
       { url: 'https://web.archive.org/web/20240715064807id_/https://www.casio.com/europe/watches/gshock/product.GM-5600B-3/', kind: official }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600B-3&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Green
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -64,6 +79,19 @@ models:
     ref: GM-5600BWD-1
     source:
       { url: 'https://web.archive.org/web/20251212180521id_/https://www.casio.com/nl/watches/gshock/product.GM-5600BWD-1/', kind: official }
+    movement: quartz
+    year: 2026
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600BWD-1&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Metal / Resin
+      height_mm: 49.6
+      width_mm: 43.2
+      depth_mm: 12.9
+      weight_g: 73
+    display: digital
     features: [alarm, stopwatch, super-illuminator]
     image: gm-5600bwd-1
     image_credit:
@@ -75,6 +103,11 @@ models:
     ref: GM-5600CL-3
     source:
       { url: 'https://web.archive.org/web/20240408193857id_/https://www.casio.com/in/watches/gshock/product.GM-5600CL-3/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600CL-3&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Gold
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -89,6 +122,11 @@ models:
     ref: GM-5600CX-4
     source:
       { url: 'https://web.archive.org/web/20220817012440id_/https://www.casio.com/ph/watches/gshock/product.GM-5600CX-4/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600CX-4&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Red
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -103,6 +141,18 @@ models:
     ref: GM-5600EY-1
     source:
       { url: 'https://web.archive.org/web/20240722084013id_/https://www.casio.com/id/watches/gshock/product.GM-5600EY-1/', kind: official }
+    movement: quartz
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600EY-1&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Metal / Nylon
+      height_mm: 49.6
+      width_mm: 43.2
+      depth_mm: 12.9
+    display: digital
     features: [alarm, stopwatch]
     image: gm-5600ey-1
     image_credit:
@@ -114,6 +164,11 @@ models:
     ref: GM-5600G-9
     source:
       { url: 'https://web.archive.org/web/20240715064819id_/https://www.casio.com/europe/watches/gshock/product.GM-5600G-9/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600G-9&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Gold
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -128,6 +183,11 @@ models:
     ref: GM-5600GC-1
     source:
       { url: 'https://web.archive.org/web/20240307212726id_/https://www.casio.com/in/watches/gshock/product.GM-5600GC-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600GC-1&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Camouflage
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -142,6 +202,11 @@ models:
     ref: GM-5600LC-7
     source:
       { url: 'https://web.archive.org/web/20240715064815id_/https://www.casio.com/europe/watches/gshock/product.GM-5600LC-7/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600LC-7&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Grey
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -156,6 +221,11 @@ models:
     ref: GM-5600MA-7
     source:
       { url: 'https://web.archive.org/web/20210828231654id_/https://www.casio.com/sg/watches/gshock/product.GM-5600MA-7/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600MA-7&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Silver
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -170,6 +240,11 @@ models:
     ref: GM-5600MF-2
     source:
       { url: 'https://web.archive.org/web/20240715064117id_/https://www.casio.com/europe/watches/gshock/product.GM-5600MF-2/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600MF-2&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Blue
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -184,6 +259,11 @@ models:
     ref: GM-5600RW-1
     source:
       { url: 'https://web.archive.org/web/20240922024900id_/https://www.casio.com/us/watches/gshock/product.GM-5600RW-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600RW-1&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Silver
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -198,6 +278,11 @@ models:
     ref: GM-5600SCM-1
     source:
       { url: 'https://web.archive.org/web/20240715064113id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SCM-1/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600SCM-1&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Camouflage
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -212,6 +297,11 @@ models:
     ref: GM-5600SG-9
     source:
       { url: 'https://web.archive.org/web/20240715064108id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SG-9/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600SG-9&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Gold
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -226,6 +316,11 @@ models:
     ref: GM-5600SN-1
     source:
       { url: 'https://web.archive.org/web/20240225135511id_/https://www.casio.com/us/watches/gshock/product.GM-5600SN-1/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600SN-1&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Multi
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -240,6 +335,11 @@ models:
     ref: GM-5600SS-1
     source:
       { url: 'https://web.archive.org/web/20240715064101id_/https://www.casio.com/europe/watches/gshock/product.GM-5600SS-1/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600SS-1&subseries=GM-5600&series=5600'
+    module: '3229'
+    colorway: Multi
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -254,6 +354,11 @@ models:
     ref: GM-5600U-1
     source:
       { url: 'https://web.archive.org/web/20250121094901id_/https://www.casio.com/in/watches/gshock/product.GM-5600U-1/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600U-1&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Silver
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -268,6 +373,11 @@ models:
     ref: GM-5600UB-1
     source:
       { url: 'https://web.archive.org/web/20240225135614id_/https://www.casio.com/intl/watches/gshock/product.GM-5600UB-1/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600UB-1&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -282,6 +392,11 @@ models:
     ref: GM-5600UG-9
     source:
       { url: 'https://web.archive.org/web/20240225135514id_/https://www.casio.com/intl/watches/gshock/product.GM-5600UG-9/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600UG-9&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Gold
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -296,6 +411,11 @@ models:
     ref: GM-5600YM-8
     source:
       { url: 'https://web.archive.org/web/20250220193703id_/https://www.casio.com/us/watches/gshock/product.GM-5600YM-8/', kind: official }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600YM-8&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Silver
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 76, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -310,6 +430,11 @@ models:
     ref: GM-5600YM-8A8
     source:
       { url: 'https://web.archive.org/web/20250217160625id_/https://www.casio.com/sg/watches/gshock/product.GM-5600YM-8A8/', kind: official }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600YM-8A8&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Silver
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 76, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -324,6 +449,11 @@ models:
     ref: GM-5600YMG-9
     source:
       { url: 'https://web.archive.org/web/20250224233208id_/https://www.casio.com/us/watches/gshock/product.GM-5600YMG-9/', kind: official }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600YMG-9&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Gold
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 76, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
@@ -345,6 +475,11 @@ models:
     ref: GM-5600BRW-1
     source:
       { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GM-5600BRW-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GM-5600BRW-1&subseries=GM-5600&series=5600'
+    module: '3525'
+    colorway: Silver
+    display: digital
     movement: quartz
     case: { height_mm: 49.6, width_mm: 43.2, depth_mm: 12.9, weight_g: 73, material: 'Resin / Stainless steel' }
     water_resistance_m: 200

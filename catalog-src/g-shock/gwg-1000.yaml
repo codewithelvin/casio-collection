@@ -104,6 +104,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWG-1000-1A&subseries=GWG-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 59.5
+      width_mm: 56.1
+      depth_mm: 18
+      weight_g: 119
     display: ana-digi
     movement: solar-radio
     module: '5463'
@@ -121,6 +131,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWG-1000-1A1&subseries=GWG-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 59.5
+      width_mm: 56.1
+      depth_mm: 18
+      weight_g: 119
     display: ana-digi
     movement: solar-radio
     module: '5463'
@@ -138,6 +158,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWG-1000-1A3&subseries=GWG-1000&series=1000'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 59.5
+      width_mm: 56.1
+      depth_mm: 18
+      weight_g: 119
     display: ana-digi
     movement: solar-radio
     module: '5463'
@@ -155,6 +185,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWG-1000-1A9&subseries=GWG-1000&series=1000'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 59.5
+      width_mm: 56.1
+      depth_mm: 18
+      weight_g: 119
     display: ana-digi
     movement: solar-radio
     module: '5463'
@@ -170,6 +210,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWG-1000DC-1A5&subseries=GWG-1000&series=1000'
+    colorway: Camouflage
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 59.5
+      width_mm: 56.1
+      depth_mm: 18
+      weight_g: 119
     display: ana-digi
     movement: solar-radio
     module: '5463'
@@ -185,6 +235,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWG-1000GB-1A&subseries=GWG-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 59.5
+      width_mm: 56.1
+      depth_mm: 18
+      weight_g: 119
     display: ana-digi
     movement: solar-radio
     module: '5463'
@@ -202,6 +262,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWG-1000GB-4A&subseries=GWG-1000&series=1000'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 59.5
+      width_mm: 56.1
+      depth_mm: 18
+      weight_g: 119
     display: ana-digi
     movement: solar-radio
     module: '5463'
@@ -219,6 +289,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWG-1000MH-1A&subseries=GWG-1000&series=1000'
+    colorway: Camouflage
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 59.5
+      width_mm: 56.1
+      depth_mm: 18
+      weight_g: 119
     display: ana-digi
     movement: solar-radio
     module: '5463'
@@ -234,6 +314,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWG-1000RD-4A&subseries=GWG-1000&series=1000'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 59.5
+      width_mm: 56.1
+      depth_mm: 18
+      weight_g: 119
     display: ana-digi
     movement: solar-radio
     module: '5463'
@@ -253,6 +343,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWG-1000WLP-1A&subseries=GWG-1000&series=1000'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 59.5
+      width_mm: 56.1
+      depth_mm: 18
+      weight_g: 119
     display: ana-digi
     movement: solar-radio
     module: '5463'

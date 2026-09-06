@@ -135,6 +135,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900-1V&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 68
     display: digital
     movement: quartz
     module: '3230'
@@ -152,6 +162,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900AC-2&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -167,6 +187,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900BB-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -184,6 +214,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900BBA-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -201,6 +241,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900BBN-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin / Nylon
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 74
     display: digital
     movement: quartz
     module: '3230'
@@ -216,6 +266,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900BMC-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 60
     display: digital
     movement: quartz
     module: '3230'
@@ -233,6 +293,13 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -248,6 +315,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900BR-5&subseries=DW-6900&series=6900'
+    colorway: Brown
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -263,6 +340,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900BTG-7&subseries=DW-6900&series=6900'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -278,6 +364,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900BW-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -293,6 +389,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900BWD-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -402,6 +508,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900CL-4&subseries=DW-6900&series=6900'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -417,6 +533,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900CR-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -432,6 +558,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900CR-3&subseries=DW-6900&series=6900'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -447,6 +583,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900CR-7&subseries=DW-6900&series=6900'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -507,6 +653,13 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -522,6 +675,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900DA-4&subseries=DW-6900&series=6900'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -539,6 +702,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900DS-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -571,6 +744,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900EW-7&subseries=DW-6900&series=6900'
+    colorway: Beige
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -586,6 +769,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900FG-8&subseries=DW-6900&series=6900'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -616,6 +809,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900FSMP-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -646,6 +848,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900GD-9&subseries=DW-6900&series=6900'
+    colorway: Gold
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -663,6 +875,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900GDA-9&subseries=DW-6900&series=6900'
+    colorway: Gold
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -680,6 +902,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900GL-4&subseries=DW-6900&series=6900'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -697,6 +929,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900HM-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -712,6 +954,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900HM-2&subseries=DW-6900&series=6900'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -727,6 +979,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900JK-4&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -744,6 +1006,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900KTH-7&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -759,6 +1030,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900LA-1W&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -774,6 +1055,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900LD-7&subseries=DW-6900&series=6900'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin / Nylon
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 73
     display: digital
     movement: quartz
     module: '3230'
@@ -789,6 +1080,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900LS-1&subseries=DW-6900&series=6900'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -806,6 +1107,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900LS-2&subseries=DW-6900&series=6900'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -823,6 +1134,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900LU-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -838,6 +1159,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900LU-3&subseries=DW-6900&series=6900'
+    colorway: Olive
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -853,6 +1184,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900LU-8&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -868,6 +1209,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900MF-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -885,6 +1236,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900MF-2&subseries=DW-6900&series=6900'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -900,6 +1261,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900MF-4&subseries=DW-6900&series=6900'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -945,6 +1316,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900MMA-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 66
     display: digital
     movement: quartz
     module: '3230'
@@ -960,6 +1341,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900MMA-2&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 66
     display: digital
     movement: quartz
     module: '3230'
@@ -977,6 +1368,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900MR-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -992,6 +1393,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900MR-7&subseries=DW-6900&series=6900'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1024,6 +1435,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900MT-7&subseries=DW-6900&series=6900'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1103,6 +1524,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900NC-7&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1118,6 +1549,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900NS-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -1133,6 +1573,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900NS-7&subseries=DW-6900&series=6900'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -1148,6 +1597,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900NS-9&subseries=DW-6900&series=6900'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -1163,6 +1621,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2006
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900NY-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 68
     display: digital
     movement: quartz
     module: '3230'
@@ -1178,6 +1646,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900PF-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin / Nylon
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -1193,6 +1670,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900PL-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1208,6 +1695,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900PL-4&subseries=DW-6900&series=6900'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1223,6 +1720,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900PL-7&subseries=DW-6900&series=6900'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1238,6 +1745,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900PL-9&subseries=DW-6900&series=6900'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1253,6 +1770,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900RGB-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1270,6 +1797,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900RH-2&subseries=DW-6900&series=6900'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1287,6 +1824,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900RMUS-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -1362,6 +1908,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SBY-2&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1379,6 +1935,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SC-1&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1394,6 +1960,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SC-4&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1409,6 +1985,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SC-7&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1424,6 +2010,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SC-8&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1439,6 +2035,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SD-8&subseries=DW-6900&series=6900'
+    colorway: Beige
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1454,6 +2060,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SF-1D&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -1469,6 +2084,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SG-2&subseries=DW-6900&series=6900'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1484,6 +2109,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SK-1&subseries=DW-6900&series=6900'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1501,6 +2136,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SLG-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1516,6 +2161,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SN-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1531,6 +2186,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SN-3&subseries=DW-6900&series=6900'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1546,6 +2211,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SN-4&subseries=DW-6900&series=6900'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1561,6 +2236,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SN-7&subseries=DW-6900&series=6900'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1576,6 +2261,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SP-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1593,6 +2288,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SP-7&subseries=DW-6900&series=6900'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1610,6 +2315,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900STF-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -1625,6 +2339,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2009
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SW-6&subseries=DW-6900&series=6900'
+    colorway: Purple
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1640,6 +2364,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900TAL-4&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1655,6 +2389,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900TCB-4&subseries=DW-6900&series=6900'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1670,6 +2414,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900TD-4&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1687,6 +2441,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900TF-4&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -1702,6 +2465,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900TG-9&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -1717,6 +2489,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900TGA-9&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1734,6 +2516,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900WS-1&subseries=DW-6900&series=6900'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1751,6 +2543,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900WS-2&subseries=DW-6900&series=6900'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1768,6 +2570,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900WW-7S&subseries=DW-6900&series=6900'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1783,6 +2595,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900Y-9&subseries=DW-6900&series=6900'
+    colorway: Grey
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1800,6 +2622,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900YG-1&subseries=DW-6900&series=6900'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
     display: digital
     movement: quartz
     module: '3230'
@@ -1815,6 +2646,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900ZB-2&subseries=DW-6900&series=6900'
+    colorway: Camouflage
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1830,6 +2671,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900ZB-3&subseries=DW-6900&series=6900'
+    colorway: Camouflage
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1845,6 +2696,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900ZB-8&subseries=DW-6900&series=6900'
+    colorway: Camouflage
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1862,6 +2723,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900ZB-9&subseries=DW-6900&series=6900'
+    colorway: Camouflage
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 53.2
+      width_mm: 50
+      depth_mm: 18.7
+      weight_g: 67
     display: digital
     movement: quartz
     module: '3230'
@@ -1881,6 +2752,11 @@ models:
     ref: DW-6900HD-8
     source:
       { url: 'https://web.archive.org/web/20240715065725id_/https://www.casio.com/europe/watches/gshock/product.DW-6900HD-8/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900HD-8&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: Grey
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin' }
     water_resistance_m: 200
@@ -1895,6 +2771,11 @@ models:
     ref: DW-6900NNJ-1
     source:
       { url: 'https://web.archive.org/web/20240714221542id_/https://www.casio.com/europe/watches/gshock/product.DW-6900NNJ-1/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900NNJ-1&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin' }
     water_resistance_m: 200
@@ -1909,6 +2790,11 @@ models:
     ref: DW-6900RCS-1
     source:
       { url: 'https://web.archive.org/web/20240408193657id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900RCS-1&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -1923,6 +2809,11 @@ models:
     ref: DW-6900RCS-4
     source:
       { url: 'https://web.archive.org/web/20240408193253id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-4/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900RCS-4&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: Pink
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -1937,6 +2828,11 @@ models:
     ref: DW-6900RCS-7
     source:
       { url: 'https://web.archive.org/web/20240408193800id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-7/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900RCS-7&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: White
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -1951,6 +2847,11 @@ models:
     ref: DW-6900RL-1
     source:
       { url: 'https://web.archive.org/web/20250122184300id_/https://www.casio.com/us/watches/gshock/product.DW-6900RL-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900RL-1&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -1965,6 +2866,11 @@ models:
     ref: DW-6900SHB-7
     source:
       { url: 'https://web.archive.org/web/20250121114058id_/https://www.casio.com/in/watches/gshock/product.DW-6900SHB-7/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900SHB-7&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: White
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
     water_resistance_m: 200
@@ -1979,6 +2885,9 @@ models:
     ref: DW-6900TR-1
     source:
       { url: 'https://web.archive.org/web/20250309020326id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-1/', kind: official }
+    module: '3529'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -1995,6 +2904,9 @@ models:
     ref: DW-6900TR-4
     source:
       { url: 'https://web.archive.org/web/20250407003625id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-4/', kind: official }
+    module: '3529'
+    colorway: Red
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -2011,6 +2923,9 @@ models:
     ref: DW-6900TR-9
     source:
       { url: 'https://web.archive.org/web/20250407051223id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-9/', kind: official }
+    module: '3529'
+    colorway: Yellow
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -2027,6 +2942,11 @@ models:
     ref: DW-6900TU-1A5
     source:
       { url: 'https://web.archive.org/web/20240801174735id_/https://www.casio.com/us/watches/gshock/product.DW-6900TU-1A5/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900TU-1A5&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 72, material: 'Resin' }
     water_resistance_m: 200
@@ -2041,6 +2961,11 @@ models:
     ref: DW-6900U-1
     source:
       { url: 'https://web.archive.org/web/20240715065322id_/https://www.casio.com/europe/watches/gshock/product.DW-6900U-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900U-1&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
     water_resistance_m: 200
@@ -2055,6 +2980,11 @@ models:
     ref: DW-6900UB-9
     source:
       { url: 'https://web.archive.org/web/20240225135613id_/https://www.casio.com/intl/watches/gshock/product.DW-6900UB-9/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900UB-9&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
     water_resistance_m: 200
@@ -2069,6 +2999,11 @@ models:
     ref: DW-6900UMS-1
     source:
       { url: 'https://web.archive.org/web/20240307212724id_/https://www.casio.com/in/watches/gshock/product.DW-6900UMS-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900UMS-1&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
     water_resistance_m: 200
@@ -2083,6 +3018,11 @@ models:
     ref: DW-6900WD-1
     source:
       { url: 'https://web.archive.org/web/20241009172121id_/https://www.casio.com/us/watches/gshock/product.DW-6900WD-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-6900WD-1&subseries=DW-6900&series=6900'
+    module: '3529'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 53.2, width_mm: 50, depth_mm: 18.7, weight_g: 67, material: 'Resin' }
     water_resistance_m: 200

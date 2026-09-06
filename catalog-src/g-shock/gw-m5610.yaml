@@ -102,6 +102,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610-1&subseries=GW-M5610&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 51.7
     display: digital
     movement: solar-radio
     module: '3159'
@@ -119,6 +129,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610-1B&subseries=GW-M5610&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 51.7
     display: digital
     movement: solar-radio
     module: '3159'
@@ -136,6 +156,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2010
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610B-1&subseries=GW-M5610&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 51.7
     display: digital
     movement: solar-radio
     module: '3159'
@@ -151,6 +181,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610BA-1&subseries=GW-M5610&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -168,6 +208,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610BB-1&subseries=GW-M5610&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -183,6 +233,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610BC-1&subseries=GW-M5610&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin / Metal / Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 101.3
     display: digital
     movement: solar-radio
     module: '3159'
@@ -200,6 +260,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610BW-7&subseries=GW-M5610&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -215,6 +285,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610BY-1&subseries=GW-M5610&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -230,6 +310,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2010
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610CC-2&subseries=GW-M5610&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 51.7
     display: digital
     movement: solar-radio
     module: '3159'
@@ -245,6 +335,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2010
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610CC-3&subseries=GW-M5610&series=5600'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 51.7
     display: digital
     movement: solar-radio
     module: '3159'
@@ -260,6 +360,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610EW-4&subseries=GW-M5610&series=5600'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -275,6 +385,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610K-1&subseries=GW-M5610&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -290,6 +410,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610KG-3&subseries=GW-M5610&series=5600'
+    colorway: Olive
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 51.7
     display: digital
     movement: solar-radio
     module: '3159'
@@ -305,6 +435,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610LG-8&subseries=GW-M5610&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -320,6 +460,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610LY-1&subseries=GW-M5610&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -335,6 +485,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610MD-2&subseries=GW-M5610&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -350,6 +510,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610MD-7&subseries=GW-M5610&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -367,6 +537,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610MD-9&subseries=GW-M5610&series=5600'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -382,6 +562,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610MR-4&subseries=GW-M5610&series=5600'
+    colorway: Orange
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -397,6 +587,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610MW-7&subseries=GW-M5610&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -412,6 +612,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610NV-2&subseries=GW-M5610&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -429,6 +639,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610PC-1&subseries=GW-M5610&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -444,6 +664,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610R-1&subseries=GW-M5610&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 51.7
     display: digital
     movement: solar-radio
     module: '3159'
@@ -461,6 +691,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610RB-4&subseries=GW-M5610&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'
@@ -478,6 +718,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610SD-8&subseries=GW-M5610&series=5600'
+    colorway: Beige
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 51.7
     display: digital
     movement: solar-radio
     module: '3159'
@@ -493,6 +743,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610TH-1&subseries=GW-M5610&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 51.7
     display: digital
     movement: solar-radio
     module: '3159'
@@ -508,6 +768,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-M5610TR-7&subseries=GW-M5610&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46.7
+      width_mm: 43.2
+      depth_mm: 12.7
+      weight_g: 52
     display: digital
     movement: solar-radio
     module: '3159'

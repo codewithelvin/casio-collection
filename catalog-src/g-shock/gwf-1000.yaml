@@ -104,6 +104,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
         kind: official,
       }
+    year: 2009
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-1000-1&subseries=GWF-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 58.3
+      width_mm: 52.8
+      depth_mm: 18
+      weight_g: 115
     display: digital
     movement: solar-radio
     module: '3184'
@@ -121,6 +131,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
         kind: official,
       }
+    year: 2009
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-1000B-1&subseries=GWF-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 58.3
+      width_mm: 52.8
+      depth_mm: 18
+      weight_g: 115
     display: digital
     movement: solar-radio
     module: '3184'
@@ -136,6 +156,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-1000BP-1&subseries=GWF-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 58.3
+      width_mm: 52.8
+      depth_mm: 18
+      weight_g: 115
     display: digital
     movement: solar-radio
     module: '3184'
@@ -151,6 +181,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-1000BS-1&subseries=GWF-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 58.3
+      width_mm: 52.8
+      depth_mm: 18
+      weight_g: 115
     display: digital
     movement: solar-radio
     module: '3184'
@@ -166,6 +206,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
         kind: official,
       }
+    year: 2010
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-1000G-1&subseries=GWF-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 58.3
+      width_mm: 52.8
+      depth_mm: 18
+      weight_g: 115
     display: digital
     movement: solar-radio
     module: '3184'
@@ -181,6 +231,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
         kind: official,
       }
+    year: 2010
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-1000MM-1&subseries=GWF-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 58.3
+      width_mm: 52.8
+      depth_mm: 18
     display: digital
     movement: solar-radio
     module: '3184'
@@ -197,6 +256,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-1000NV-2&subseries=GWF-1000&series=1000'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 58.3
+      width_mm: 52.8
+      depth_mm: 18
+      weight_g: 115
     display: digital
     movement: solar-radio
     module: '3184'
@@ -215,6 +284,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
         kind: official,
       }
+    year: 2010
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-1000RD-4&subseries=GWF-1000&series=1000'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 58.3
+      width_mm: 52.8
+      depth_mm: 18
+      weight_g: 115
     display: digital
     movement: solar-radio
     module: '3184'
@@ -232,6 +311,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-1000SR-4&subseries=GWF-1000&series=1000'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 58.3
+      width_mm: 52.8
+      depth_mm: 18
+      weight_g: 115
     display: digital
     movement: solar-radio
     module: '3184'
@@ -247,6 +336,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
         kind: official,
       }
+    year: 2010
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GWF-1000TM-4&subseries=GWF-1000&series=1000'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 58.3
+      width_mm: 52.8
+      depth_mm: 18
+      weight_g: 115
     display: digital
     movement: solar-radio
     module: '3184'

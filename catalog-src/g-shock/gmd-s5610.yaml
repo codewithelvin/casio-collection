@@ -22,6 +22,11 @@ models:
     ref: GMD-S5610BB-1
     source:
       { url: 'https://web.archive.org/web/20240915200419id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610BB-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMD-S5610BB-1&subseries=GMD-S5610&series=5600'
+    module: '3523'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -36,6 +41,9 @@ models:
     ref: GMD-S5610IT-1
     source:
       { url: 'https://web.archive.org/web/20250118081707id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-1/', kind: official }
+    module: '3523'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -52,6 +60,9 @@ models:
     ref: GMD-S5610IT-3
     source:
       { url: 'https://web.archive.org/web/20250122191201id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-3/', kind: official }
+    module: '3523'
+    colorway: Green
+    display: digital
     movement: quartz
     case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -68,6 +79,9 @@ models:
     ref: GMD-S5610IT-4A
     source:
       { url: 'https://web.archive.org/web/20250118013516id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-4A/', kind: official }
+    module: '3523'
+    colorway: Pink
+    display: digital
     movement: quartz
     case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -84,6 +98,9 @@ models:
     ref: GMD-S5610IT-4B
     source:
       { url: 'https://web.archive.org/web/20250118093659id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-4B/', kind: official }
+    module: '3523'
+    colorway: Pink
+    display: digital
     movement: quartz
     case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -100,6 +117,9 @@ models:
     ref: GMD-S5610IT-6
     source:
       { url: 'https://web.archive.org/web/20250117232720id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610IT-6/', kind: official }
+    module: '3523'
+    colorway: Purple
+    display: digital
     movement: quartz
     case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -116,6 +136,11 @@ models:
     ref: GMD-S5610PK-4
     source:
       { url: 'https://web.archive.org/web/20241001180601id_/https://www.casio.com/us/watches/gshock/product.GMD-S5610PK-4/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMD-S5610PK-4&subseries=GMD-S5610&series=5600'
+    module: '3523'
+    colorway: Pink
+    display: digital
     movement: quartz
     case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -130,6 +155,19 @@ models:
     ref: GMD-S5610PP-4
     source:
       { url: 'https://web.archive.org/web/20250413110716id_/https://www.casio.com/fr/watches/gshock/product.GMD-S5610PP-4/', kind: official }
+    movement: quartz
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMD-S5610PP-4&subseries=GMD-S5610&series=5600'
+    module: '3523'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 45.7
+      width_mm: 40.5
+      depth_mm: 11.9
+      weight_g: 42
+    display: digital
     features: [super-illuminator]
     image: gmd-s5610pp-4
     image_credit:
@@ -141,6 +179,11 @@ models:
     ref: GMD-S5610RS-8
     source:
       { url: 'https://web.archive.org/web/20241119223607id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5610RS-8/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMD-S5610RS-8&subseries=GMD-S5610&series=5600'
+    module: '3523'
+    colorway: Green
+    display: digital
     movement: quartz
     case: { height_mm: 45.7, width_mm: 40.5, depth_mm: 11.9, weight_g: 42, material: 'Resin' }
     water_resistance_m: 200

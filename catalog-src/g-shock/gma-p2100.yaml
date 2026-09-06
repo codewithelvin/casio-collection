@@ -29,6 +29,8 @@ models:
     ref: GMA-P2100-2A
     source:
       { url: 'https://web.archive.org/web/20240208001112id_/https://www.casio.com/my/watches/gshock/product.GMA-P2100-2A/', kind: official }
+    module: '5730'
+    colorway: Green
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -46,6 +48,8 @@ models:
     ref: GMA-P2100-4A
     source:
       { url: 'https://web.archive.org/web/20240214084711id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100-4A/', kind: official }
+    module: '5730'
+    colorway: Red
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -63,6 +67,8 @@ models:
     ref: GMA-P2100-7A
     source:
       { url: 'https://web.archive.org/web/20240214084710id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100-7A/', kind: official }
+    module: '5730'
+    colorway: White
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -80,6 +86,19 @@ models:
     ref: GMA-P2100BA-7A
     source:
       { url: 'https://web.archive.org/web/20260124015520id_/https://www.casio.com/de/watches/gshock/product.GMA-P2100BA-7A/', kind: official }
+    movement: quartz
+    year: 2026
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100BA-7A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46
+      width_mm: 40
+      depth_mm: 11.2
+      weight_g: 40
+    display: ana-digi
     features: [alarm, super-illuminator]
     image: gma-p2100ba-7a
     image_credit:
@@ -91,6 +110,10 @@ models:
     ref: GMA-P2100BB-1A
     source:
       { url: 'https://web.archive.org/web/20240907031039id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100BB-1A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100BB-1A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: Black
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -106,6 +129,10 @@ models:
     ref: GMA-P2100IT-4A
     source:
       { url: 'https://web.archive.org/web/20240406015814id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100IT-4A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100IT-4A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: Pink
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -121,6 +148,10 @@ models:
     ref: GMA-P2100IT-7A
     source:
       { url: 'https://web.archive.org/web/20240406015803id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100IT-7A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100IT-7A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: White
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -136,6 +167,19 @@ models:
     ref: GMA-P2100PP-4A
     source:
       { url: 'https://web.archive.org/web/20250331180521id_/https://www.casio.com/fr/watches/gshock/product.GMA-P2100PP-4A/', kind: official }
+    movement: quartz
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100PP-4A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 46
+      width_mm: 40
+      depth_mm: 11.2
+      weight_g: 40
+    display: ana-digi
     features: [super-illuminator]
     image: gma-p2100pp-4a
     image_credit:
@@ -147,6 +191,10 @@ models:
     ref: GMA-P2100SG-1A
     source:
       { url: 'https://web.archive.org/web/20240406015643id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-1A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100SG-1A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: Black
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -162,6 +210,10 @@ models:
     ref: GMA-P2100SG-2A
     source:
       { url: 'https://web.archive.org/web/20240406015700id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-2A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100SG-2A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: Blue
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -177,6 +229,10 @@ models:
     ref: GMA-P2100SG-4A
     source:
       { url: 'https://web.archive.org/web/20240408193754id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-4A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100SG-4A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: Red
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -192,6 +248,10 @@ models:
     ref: GMA-P2100ST-4A
     source:
       { url: 'https://web.archive.org/web/20240930192848id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-4A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100ST-4A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: Pink
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -207,6 +267,10 @@ models:
     ref: GMA-P2100ST-7A
     source:
       { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-7A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100ST-7A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: White
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -222,6 +286,10 @@ models:
     ref: GMA-P2100ST-9A
     source:
       { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-9A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100ST-9A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: Yellow
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -237,6 +305,10 @@ models:
     ref: GMA-P2100VA-7A
     source:
       { url: 'https://web.archive.org/web/20240516180332id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100VA-7A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100VA-7A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: White
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -252,6 +324,10 @@ models:
     ref: GMA-P2100W-7A
     source:
       { url: 'https://web.archive.org/web/20241007212343id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100W-7A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100W-7A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: White
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -267,6 +343,10 @@ models:
     ref: GMA-P2100ZY-1A
     source:
       { url: 'https://web.archive.org/web/20240405034103id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ZY-1A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GMA-P2100ZY-1A&subseries=GMA-P2100&series=2100'
+    module: '5730'
+    colorway: Transparent
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin' }
     water_resistance_m: 200

@@ -22,6 +22,11 @@ models:
     ref: GW-9400-1
     source:
       { url: 'https://web.archive.org/web/20240715065658id_/https://www.casio.com/europe/watches/gshock/product.GW-9400-1/', kind: official }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-9400-1&subseries=GW-9400&series=9400'
+    module: '3410'
+    colorway: Black
+    display: digital
     movement: solar-radio
     case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93, material: 'Resin' }
     water_resistance_m: 200
@@ -36,6 +41,11 @@ models:
     ref: GW-9400-1B
     source:
       { url: 'https://web.archive.org/web/20221126114204id_/https://www.casio.com/sg/watches/gshock/product.GW-9400-1B/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-9400-1B&subseries=GW-9400&series=9400'
+    module: '3410'
+    colorway: Black
+    display: digital
     movement: solar-radio
     case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93, material: 'Resin' }
     water_resistance_m: 200
@@ -50,6 +60,11 @@ models:
     ref: GW-9400-3
     source:
       { url: 'https://web.archive.org/web/20220928165811id_/https://www.casio.com/sg/watches/gshock/product.GW-9400-3/', kind: official }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-9400-3&subseries=GW-9400&series=9400'
+    module: '3410'
+    colorway: Olive
+    display: digital
     movement: solar-radio
     case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93, material: 'Resin' }
     water_resistance_m: 200
@@ -64,6 +79,12 @@ models:
     ref: GW-9400BJ-1
     source:
       { url: 'https://web.archive.org/web/20210410145521id_/https://www.casio.com/jp/watches/gshock/product.GW-9400BJ-1/', kind: official }
+    movement: solar-radio
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-9400BJ-1&subseries=GW-9400&series=9400'
+    module: '3410'
+    colorway: Black
+    display: digital
     case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93 }
     water_resistance_m: 200
     image: gw-9400bj-1
@@ -76,6 +97,12 @@ models:
     ref: GW-9400J-1
     source:
       { url: 'https://web.archive.org/web/20210418235810id_/https://www.casio.com/jp/watches/gshock/product.GW-9400J-1/', kind: official }
+    movement: solar-radio
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-9400J-1&subseries=GW-9400&series=9400'
+    module: '3410'
+    colorway: Black
+    display: digital
     case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93 }
     water_resistance_m: 200
     image: gw-9400j-1
@@ -88,6 +115,11 @@ models:
     ref: GW-9400Y-1
     source:
       { url: 'https://web.archive.org/web/20240715022125id_/https://www.casio.com/europe/watches/gshock/product.GW-9400Y-1/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-9400Y-1&subseries=GW-9400&series=9400'
+    module: '3410'
+    colorway: Black
+    display: digital
     movement: solar-radio
     case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93, material: 'Resin' }
     water_resistance_m: 200
@@ -102,6 +134,12 @@ models:
     ref: GW-9400YJ-1
     source:
       { url: 'https://web.archive.org/web/20230101111833id_/https://www.casio.com/jp/watches/gshock/product.GW-9400YJ-1/', kind: official }
+    movement: solar-radio
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GW-9400YJ-1&subseries=GW-9400&series=9400'
+    module: '3410'
+    colorway: Black
+    display: digital
     case: { height_mm: 55.2, width_mm: 53.5, depth_mm: 18.2, weight_g: 93 }
     water_resistance_m: 200
     image: gw-9400yj-1

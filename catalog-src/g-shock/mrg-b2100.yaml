@@ -22,6 +22,8 @@ models:
     ref: MRG-B2100B-1A
     source:
       { url: 'https://web.archive.org/web/20240715135443id_/https://www.casio.com/my/watches/gshock/product.MRG-B2100B-1A/', kind: official }
+    module: '5718'
+    colorway: Black
     display: analog
     movement: solar-radio
     case: { height_mm: 49.5, width_mm: 44.4, depth_mm: 13.6, weight_g: 122, material: 'Titanium / Cobarion' }
@@ -39,6 +41,10 @@ models:
     ref: MRG-B2100D-1A
     source:
       { url: 'https://web.archive.org/web/20241125055129id_/https://www.casio.com/us/watches/gshock/product.MRG-B2100D-1A/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2100D-1A&subseries=MRG-B2100&series=2100'
+    module: '5718'
+    colorway: Silver
     display: analog
     movement: solar-radio
     case: { height_mm: 49.5, width_mm: 44.4, depth_mm: 13.6, weight_g: 122, material: 'Titanium / Cobarion' }
@@ -54,6 +60,10 @@ models:
     ref: MRG-B2100R-2A
     source:
       { url: 'https://web.archive.org/web/20250220010019id_/https://www.casio.com/us/watches/gshock/product.MRG-B2100R-2A/', kind: official }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2100R-2A&subseries=MRG-B2100&series=2100'
+    module: '5718'
+    colorway: Black
     display: analog
     movement: solar-radio
     case: { height_mm: 49.5, width_mm: 44.4, depth_mm: 13.6, weight_g: 110, material: 'Titanium / Cobarion' }

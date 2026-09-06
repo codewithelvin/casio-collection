@@ -79,6 +79,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GAE-2100EV-1A&subseries=GAE-2100&series=2100'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.5
+      width_mm: 45.4
+      depth_mm: 11.8
+      weight_g: 51
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -96,6 +106,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GAE-2100GC-7A&subseries=GAE-2100&series=2100'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.5
+      width_mm: 45.4
+      depth_mm: 11.8
+      weight_g: 51
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -113,6 +133,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GAE-2100RC-1A&subseries=GAE-2100&series=2100'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.5
+      width_mm: 45.4
+      depth_mm: 11.8
+      weight_g: 52
     display: ana-digi
     movement: quartz
     module: '5611'
@@ -130,6 +160,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GAE-2100WE-3A&subseries=GAE-2100&series=2100'
+    colorway: Camouflage
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.5
+      width_mm: 45.4
+      depth_mm: 11.8
+      weight_g: 51
     display: ana-digi
     movement: quartz
     module: '5611'

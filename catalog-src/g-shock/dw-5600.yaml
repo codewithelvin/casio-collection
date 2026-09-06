@@ -110,6 +110,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600ADER-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 60
     display: digital
     movement: quartz
     module: '3229'
@@ -125,6 +135,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600ARC-3&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -140,6 +159,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BB-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -157,6 +186,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BB-1G&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 60
     display: digital
     movement: quartz
     module: '3229'
@@ -172,6 +211,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BBM-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -189,6 +238,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BBM-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -206,6 +265,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BBMA-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -223,6 +292,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BBMB-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -240,6 +319,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BBN-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin / Nylon
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 61
     display: digital
     movement: quartz
     module: '3229'
@@ -257,6 +346,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BBTL-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 60
     display: digital
     movement: quartz
     module: '3229'
@@ -272,6 +371,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BUD-20&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -287,6 +395,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BWP-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -314,6 +432,9 @@ models:
   - id: dw-5600c-9b
     ref: DW-5600C-9B
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5600c-9b', kind: community }
+    movement: quartz
+    colorway: Yellow
+    display: digital
     year: 1988
     module: '691'
     case: { material: resin }
@@ -328,6 +449,9 @@ models:
   - id: dw-5600c-9v
     ref: DW-5600C-9V
     source: { url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5600c-9v', kind: community }
+    movement: quartz
+    colorway: Black
+    display: digital
     year: 1987
     module: '901'
     case: { material: resin }
@@ -346,6 +470,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600CA-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -363,6 +497,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600CA-8&subseries=DW-5600&series=5600'
+    colorway: Beige
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -380,6 +524,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600CC-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 57
     display: digital
     movement: quartz
     module: '3229'
@@ -397,6 +551,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600CMA-9&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -412,6 +576,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600CMB-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -442,6 +616,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600CU-7&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 56
     display: digital
     movement: quartz
     module: '3229'
@@ -457,6 +641,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600CU-9&subseries=DW-5600&series=5600'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 56
     display: digital
     movement: quartz
     module: '3229'
@@ -472,6 +666,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600DA-4&subseries=DW-5600&series=5600'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -489,6 +693,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600DC-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -504,6 +718,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600DC-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -519,6 +743,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600DE-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -534,6 +768,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600DN-7&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -551,6 +795,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600DP-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -566,6 +819,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600DQM-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -613,6 +876,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600ET-3&subseries=DW-5600&series=5600'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -630,6 +903,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600ET-5&subseries=DW-5600&series=5600'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -647,6 +930,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600EVA-02&subseries=DW-5600&series=5600'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -662,6 +955,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600EW-7&subseries=DW-5600&series=5600'
+    colorway: Beige
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -677,6 +980,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600GC-7&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -694,6 +1007,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600GL-9&subseries=DW-5600&series=5600'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -711,6 +1034,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600GU-7&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 56
     display: digital
     movement: quartz
     module: '3229'
@@ -728,6 +1061,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600HDR-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -743,6 +1086,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600HR-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -760,6 +1113,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600HS-4&subseries=DW-5600&series=5600'
+    colorway: Beige
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -775,6 +1137,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600HT-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -790,6 +1162,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600HUF-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -805,6 +1186,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600JK-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -822,6 +1213,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600LCU-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 57
     display: digital
     movement: quartz
     module: '3229'
@@ -837,6 +1238,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600LG-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -852,6 +1263,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600LH-4&subseries=DW-5600&series=5600'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -881,6 +1302,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600LJ-7W&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -896,6 +1326,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600LP-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 60
     display: digital
     movement: quartz
     module: '3229'
@@ -911,6 +1351,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600LS-2&subseries=DW-5600&series=5600'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -928,6 +1378,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600LS-7&subseries=DW-5600&series=5600'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -945,6 +1405,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600LU-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 68
     display: digital
     movement: quartz
     module: '3229'
@@ -960,6 +1430,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600LU-8&subseries=DW-5600&series=5600'
+    colorway: Beige
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 68
     display: digital
     movement: quartz
     module: '3229'
@@ -975,6 +1455,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600M-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -990,6 +1480,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600M-3&subseries=DW-5600&series=5600'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1007,6 +1507,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600M-4&subseries=DW-5600&series=5600'
+    colorway: Orange
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1022,6 +1532,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600M-8&subseries=DW-5600&series=5600'
+    colorway: Grey
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1039,6 +1559,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600MCO-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1054,6 +1583,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600MNT-1&subseries=DW-5600&series=5600'
+    colorway: Grey
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1071,6 +1610,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600MNT-8&subseries=DW-5600&series=5600'
+    colorway: Grey
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1105,6 +1654,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600MT-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1120,6 +1678,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600MW-7&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1137,6 +1705,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600MWCT-7&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1152,6 +1729,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600NE-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1169,6 +1756,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600NH-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1184,6 +1780,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600NH-7&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1199,6 +1804,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600NN-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1216,6 +1830,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600P-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1231,6 +1855,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600P-4&subseries=DW-5600&series=5600'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1246,6 +1880,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2014
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600P-9&subseries=DW-5600&series=5600'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1261,6 +1905,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600PGB-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1276,6 +1930,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600PGW-7&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1291,6 +1955,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600PM-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1306,6 +1980,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2011
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600PR-4&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 60
     display: digital
     movement: quartz
     module: '3229'
@@ -1321,6 +2005,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600PT-5&subseries=DW-5600&series=5600'
+    colorway: Beige
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 55
     display: digital
     movement: quartz
     module: '3229'
@@ -1338,6 +2032,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600RB-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1355,6 +2058,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600RB-3&subseries=DW-5600&series=5600'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1372,6 +2084,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600REC-9&subseries=DW-5600&series=5600'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1389,6 +2111,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SB-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1406,6 +2138,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SB-3&subseries=DW-5600&series=5600'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1423,6 +2165,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SB-4&subseries=DW-5600&series=5600'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1440,6 +2192,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SBTG-3&subseries=DW-5600&series=5600'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1455,6 +2216,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SBY-4&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1472,6 +2243,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SC-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1489,6 +2270,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SC-4&subseries=DW-5600&series=5600'
+    colorway: Pink
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1506,6 +2297,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SC-8&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1523,6 +2324,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2013
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SG-7&subseries=DW-5600&series=5600'
+    colorway: Grey
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 52.6
     display: digital
     movement: quartz
     module: '3229'
@@ -1538,6 +2349,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SK-1&subseries=DW-5600&series=5600'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1555,6 +2376,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SKC-1&subseries=DW-5600&series=5600'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1572,6 +2403,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SKE-7&subseries=DW-5600&series=5600'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1589,6 +2430,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SKGT-6&subseries=DW-5600&series=5600'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1604,6 +2454,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SL-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1619,6 +2479,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2015
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SL-7&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1634,6 +2504,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SLA-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1649,6 +2529,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SLB-2&subseries=DW-5600&series=5600'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1664,6 +2554,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SLC-9&subseries=DW-5600&series=5600'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1681,6 +2581,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SLG-7&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1696,6 +2606,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SLV-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1711,6 +2631,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SMB-4&subseries=DW-5600&series=5600'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1728,6 +2658,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2012
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SN-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 60
     display: digital
     movement: quartz
     module: '3229'
@@ -1745,6 +2685,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SR-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1762,6 +2712,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SRS-7&subseries=DW-5600&series=5600'
+    colorway: Transparent
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1779,6 +2739,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TAL-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1794,6 +2764,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TB-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1809,6 +2789,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TB-4A&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1824,6 +2814,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TB-4B&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1839,6 +2839,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TB-6&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1854,6 +2864,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TCB-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1871,6 +2891,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TG-9&subseries=DW-5600&series=5600'
+    colorway: Yellow
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -1886,6 +2915,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TGA-9&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1903,6 +2942,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600THB-7&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1920,6 +2969,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600THC-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1937,6 +2996,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600THS-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1954,6 +3023,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TMN-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1969,6 +3048,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TMN-7&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1984,6 +3073,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TNT-7&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -1999,6 +3098,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600WB-7&subseries=DW-5600&series=5600'
+    colorway: White
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -2014,6 +3123,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600WM-5&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -2031,6 +3150,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600WS-1&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -2048,6 +3177,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600WS-4&subseries=DW-5600&series=5600'
+    colorway: Orange
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -2065,6 +3204,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600YG-1&subseries=DW-5600&series=5600'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -2080,6 +3228,15 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600YG-4&subseries=DW-5600&series=5600'
+    colorway: Orange
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
     display: digital
     movement: quartz
     module: '3229'
@@ -2095,6 +3252,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3229/qw3229_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600YU-7&subseries=DW-5600&series=5600'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 53
     display: digital
     movement: quartz
     module: '3229'
@@ -2114,6 +3281,11 @@ models:
     ref: DW-5600AI-1
     source:
       { url: 'https://web.archive.org/web/20240729104718id_/https://www.casio.com/us/watches/gshock/product.DW-5600AI-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600AI-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -2128,6 +3300,11 @@ models:
     ref: DW-5600BBR-1
     source:
       { url: 'https://web.archive.org/web/20250605231550id_/https://www.casio.com/uk/watches/gshock/product.DW-5600BBR-1/', kind: official }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BBR-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -2142,6 +3319,11 @@ models:
     ref: DW-5600BCE-1
     source:
       { url: 'https://web.archive.org/web/20240223000515id_/https://www.casio.com/my/watches/gshock/product.DW-5600BCE-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600BCE-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 57, material: 'Resin' }
     water_resistance_m: 200
@@ -2170,6 +3352,11 @@ models:
     ref: DW-5600EP-2
     source:
       { url: 'https://web.archive.org/web/20240815214100id_/https://www.casio.com/us/watches/gshock/product.DW-5600EP-2/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600EP-2&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Blue
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
     water_resistance_m: 200
@@ -2184,6 +3371,11 @@ models:
     ref: DW-5600EP-4
     source:
       { url: 'https://web.archive.org/web/20240729113123id_/https://www.casio.com/us/watches/gshock/product.DW-5600EP-4/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600EP-4&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Red
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
     water_resistance_m: 200
@@ -2198,6 +3390,11 @@ models:
     ref: DW-5600EP-9
     source:
       { url: 'https://web.archive.org/web/20240618192055id_/https://www.casio.com/intl/watches/gshock/product.DW-5600EP-9/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600EP-9&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Yellow
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -2212,6 +3409,11 @@ models:
     ref: DW-5600EU-8A3
     source:
       { url: 'https://web.archive.org/web/20250114222241id_/https://www.casio.com/intl/watches/gshock/product.DW-5600EU-8A3/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600EU-8A3&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Silver
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
     water_resistance_m: 200
@@ -2226,6 +3428,11 @@ models:
     ref: DW-5600FF-8
     source:
       { url: 'https://web.archive.org/web/20240408193907id_/https://www.casio.com/in/watches/gshock/product.DW-5600FF-8/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600FF-8&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Silver
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
     water_resistance_m: 200
@@ -2240,6 +3447,11 @@ models:
     ref: DW-5600KH-1
     source:
       { url: 'https://web.archive.org/web/20240119142145id_/https://www.casio.com/us/watches/gshock/product.DW-5600KH-1/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600KH-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
     water_resistance_m: 200
@@ -2254,6 +3466,11 @@ models:
     ref: DW-5600NC-5
     source:
       { url: 'https://web.archive.org/web/20241127033837id_/https://www.casio.com/intl/watches/gshock/product.DW-5600NC-5/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600NC-5&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Red
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
     water_resistance_m: 200
@@ -2268,6 +3485,11 @@ models:
     ref: DW-5600NNJ-2
     source:
       { url: 'https://web.archive.org/web/20240216170148id_/https://www.casio.com/my/watches/gshock/product.DW-5600NNJ-2/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600NNJ-2&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 62, material: 'Resin' }
     water_resistance_m: 200
@@ -2282,6 +3504,11 @@ models:
     ref: DW-5600PK-1
     source:
       { url: 'https://web.archive.org/web/20250108130654id_/https://www.casio.com/us/watches/gshock/product.DW-5600PK-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600PK-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -2296,6 +3523,11 @@ models:
     ref: DW-5600RL-1
     source:
       { url: 'https://web.archive.org/web/20250114165622id_/https://www.casio.com/intl/watches/gshock/product.DW-5600RL-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600RL-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -2310,6 +3542,11 @@ models:
     ref: DW-5600RS-8
     source:
       { url: 'https://web.archive.org/web/20241122174827id_/https://www.casio.com/intl/watches/gshock/product.DW-5600RS-8/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600RS-8&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Blue
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
     water_resistance_m: 200
@@ -2324,6 +3561,11 @@ models:
     ref: DW-5600RW-1
     source:
       { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.DW-5600RW-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600RW-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -2338,6 +3580,11 @@ models:
     ref: DW-5600SHB-1
     source:
       { url: 'https://web.archive.org/web/20250121102917id_/https://www.casio.com/in/watches/gshock/product.DW-5600SHB-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600SHB-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 55, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -2352,6 +3599,19 @@ models:
     ref: DW-5600STT-1
     source:
       { url: 'https://web.archive.org/web/20251204155509id_/https://www.casio.com/de/watches/gshock/product.DW-5600STT-1/', kind: official }
+    movement: quartz
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600STT-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 48.9
+      width_mm: 42.8
+      depth_mm: 13.4
+      weight_g: 52
+    display: digital
     features: [alarm, super-illuminator]
     image: dw-5600stt-1
     image_credit:
@@ -2363,6 +3623,11 @@ models:
     ref: DW-5600TL-7
     source:
       { url: 'https://web.archive.org/web/20240729104957id_/https://www.casio.com/us/watches/gshock/product.DW-5600TL-7/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TL-7&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: White
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -2377,6 +3642,11 @@ models:
     ref: DW-5600TLS-8
     source:
       { url: 'https://web.archive.org/web/20241126222205id_/https://www.casio.com/intl/watches/gshock/product.DW-5600TLS-8/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600TLS-8&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Transparent
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
     water_resistance_m: 200
@@ -2391,6 +3661,11 @@ models:
     ref: DW-5600UBB-1
     source:
       { url: 'https://web.archive.org/web/20240729104415id_/https://www.casio.com/my/watches/gshock/product.DW-5600UBB-1/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600UBB-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
@@ -2405,6 +3680,11 @@ models:
     ref: DW-5600UE-1
     source:
       { url: 'https://web.archive.org/web/20240811001606id_/https://www.casio.com/my/watches/gshock/product.DW-5600UE-1/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600UE-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 52, material: 'Resin' }
     water_resistance_m: 200
@@ -2419,6 +3699,11 @@ models:
     ref: DW-5600UHR-1
     source:
       { url: 'https://web.archive.org/web/20240225135513id_/https://www.casio.com/intl/watches/gshock/product.DW-5600UHR-1/', kind: official }
+    year: 2024
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=DW-5600UHR-1&subseries=DW-5600&series=5600'
+    module: '3525'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200

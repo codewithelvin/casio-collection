@@ -22,6 +22,10 @@ models:
     ref: MRG-B2000B-1A
     source:
       { url: 'https://web.archive.org/web/20240715064531id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2000B-1A&subseries=MRG-B2000&series=2000'
+    module: '5625'
+    colorway: Black
     display: analog
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
@@ -37,6 +41,10 @@ models:
     ref: MRG-B2000B-1A1
     source:
       { url: 'https://web.archive.org/web/20240715064509id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A1/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2000B-1A1&subseries=MRG-B2000&series=2000'
+    module: '5625'
+    colorway: Black
     display: analog
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
@@ -52,6 +60,10 @@ models:
     ref: MRG-B2000B-1A4
     source:
       { url: 'https://web.archive.org/web/20240715064515id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000B-1A4/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2000B-1A4&subseries=MRG-B2000&series=2000'
+    module: '5625'
+    colorway: Black
     display: analog
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
@@ -67,6 +79,10 @@ models:
     ref: MRG-B2000BS-3A
     source:
       { url: 'https://web.archive.org/web/20240715064526id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000BS-3A/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2000BS-3A&subseries=MRG-B2000&series=2000'
+    module: '5625'
+    colorway: Multi
     display: analog
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 163, material: 'Titanium / Cobarion' }
@@ -82,6 +98,10 @@ models:
     ref: MRG-B2000D-1A
     source:
       { url: 'https://web.archive.org/web/20240715064536id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000D-1A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2000D-1A&subseries=MRG-B2000&series=2000'
+    module: '5625'
+    colorway: Black
     display: analog
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
@@ -97,6 +117,10 @@ models:
     ref: MRG-B2000GA-1A
     source:
       { url: 'https://web.archive.org/web/20240715064521id_/https://www.casio.com/europe/watches/gshock/product.MRG-B2000GA-1A/', kind: official }
+    year: 2022
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2000GA-1A&subseries=MRG-B2000&series=2000'
+    module: '5625'
+    colorway: Grey
     display: analog
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }
@@ -112,6 +136,8 @@ models:
     ref: MRG-B2000JS-1A
     source:
       { url: 'https://web.archive.org/web/20241127024501id_/https://www.casio.com/us/watches/gshock/product.MRG-B2000JS-1A/', kind: official }
+    module: '5625'
+    colorway: Black
     display: analog
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 154, material: 'Titanium' }
@@ -129,6 +155,10 @@ models:
     ref: MRG-B2000R-1A
     source:
       { url: 'https://web.archive.org/web/20220529013156id_/https://www.casio.com/us/watches/gshock/product.mrg-b2000r-1a/', kind: official }
+    year: 2021
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2000R-1A&subseries=MRG-B2000&series=2000'
+    module: '5625'
+    colorway: Black
     display: analog
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 138, material: 'Titanium' }
@@ -144,6 +174,18 @@ models:
     ref: MRG-B2000RG-3A
     source:
       { url: 'https://web.archive.org/web/20251114200529id_/https://www.casio.com/de/watches/gshock/product.MRG-B2000RG-3A/', kind: official }
+    year: 2025
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2000RG-3A&subseries=MRG-B2000&series=2000'
+    module: '5625'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Titanium / Dura Soft Fluoro
+      height_mm: 55.1
+      width_mm: 51
+      depth_mm: 15.9
+      weight_g: 138
+    display: analog
     movement: solar
     features: [alarm, super-illuminator, bluetooth, tough-solar]
     image: mrg-b2000rg-3a
@@ -156,6 +198,10 @@ models:
     ref: MRG-B2000SG-1A
     source:
       { url: 'https://web.archive.org/web/20231218233618id_/https://www.casio.com/my/watches/gshock/product.MRG-B2000SG-1A/', kind: official }
+    year: 2023
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2000SG-1A&subseries=MRG-B2000&series=2000'
+    module: '5625'
+    colorway: Silver
     display: analog
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 138, material: 'Titanium' }
@@ -171,6 +217,10 @@ models:
     ref: MRG-B2000SH-5A
     source:
       { url: 'https://web.archive.org/web/20211028110113id_/https://www.casio.com/sg/watches/gshock/product.MRG-B2000SH-5A/', kind: official }
+    year: 2020
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=MRG-B2000SH-5A&subseries=MRG-B2000&series=2000'
+    module: '5625'
+    colorway: Multi
     display: analog
     movement: solar-radio
     case: { height_mm: 54.7, width_mm: 49.8, depth_mm: 16.9, weight_g: 150, material: 'Titanium' }

@@ -91,6 +91,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GG-1000-1A&subseries=GG-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 56.2
+      width_mm: 55.3
+      depth_mm: 17.3
+      weight_g: 94
     display: ana-digi
     movement: quartz
     module: '5476'
@@ -108,6 +118,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GG-1000-1A3&subseries=GG-1000&series=1000'
+    colorway: Green
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 56.2
+      width_mm: 55.3
+      depth_mm: 17.3
+      weight_g: 94
     display: ana-digi
     movement: quartz
     module: '5476'
@@ -125,6 +145,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GG-1000-1A5&subseries=GG-1000&series=1000'
+    colorway: Beige
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 56.2
+      width_mm: 55.3
+      depth_mm: 17.3
+      weight_g: 94
     display: ana-digi
     movement: quartz
     module: '5476'
@@ -142,6 +172,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GG-1000-1A8&subseries=GG-1000&series=1000'
+    colorway: Grey
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 56.2
+      width_mm: 55.3
+      depth_mm: 17.3
+      weight_g: 94
     display: ana-digi
     movement: quartz
     module: '5476'
@@ -159,6 +199,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GG-1000BTN-1A&subseries=GG-1000&series=1000'
+    colorway: Camouflage
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 56.2
+      width_mm: 55.3
+      depth_mm: 17.3
+      weight_g: 94
     display: ana-digi
     movement: quartz
     module: '5476'
@@ -174,6 +224,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GG-1000GB-1A&subseries=GG-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 56.2
+      width_mm: 55.3
+      depth_mm: 17.3
+      weight_g: 94
     display: ana-digi
     movement: quartz
     module: '5476'
@@ -189,6 +249,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
         kind: official,
       }
+    year: 2017
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GG-1000GB-4A&subseries=GG-1000&series=1000'
+    colorway: Red
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 56.2
+      width_mm: 55.3
+      depth_mm: 17.3
+      weight_g: 94
     display: ana-digi
     movement: quartz
     module: '5476'
@@ -204,6 +274,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
         kind: official,
       }
+    year: 2016
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GG-1000RG-1A&subseries=GG-1000&series=1000'
+    colorway: Black
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 56.2
+      width_mm: 55.3
+      depth_mm: 17.3
+      weight_g: 94
     display: ana-digi
     movement: quartz
     module: '5476'
@@ -219,6 +299,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
         kind: official,
       }
+    year: 2018
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GG-1000TLC-1A&subseries=GG-1000&series=1000'
+    colorway: Blue
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 56.2
+      width_mm: 55.3
+      depth_mm: 17.3
+      weight_g: 94
     display: ana-digi
     movement: quartz
     module: '5476'
@@ -234,6 +324,16 @@ models:
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5476/qw5476_EN.pdf',
         kind: official,
       }
+    year: 2019
+    year_source: 'https://shockbase.org/watches/watch_dyn.php?model=GG-1000WLP-1A&subseries=GG-1000&series=1000'
+    colorway: Multi
+    water_resistance_m: 200
+    case:
+      material: Resin
+      height_mm: 56.2
+      width_mm: 55.3
+      depth_mm: 17.3
+      weight_g: 94
     display: ana-digi
     movement: quartz
     module: '5476'

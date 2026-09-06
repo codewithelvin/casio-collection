@@ -29,6 +29,9 @@ models:
     ref: GBD-300-1
     source:
       { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBD-300-1/', kind: official }
+    module: '3568'
+    colorway: Black
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 47.4, depth_mm: 14.9, weight_g: 60, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -45,6 +48,9 @@ models:
     ref: GBD-300-7
     source:
       { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBD-300-7/', kind: official }
+    module: '3568'
+    colorway: White
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 47.4, depth_mm: 14.9, weight_g: 60, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
@@ -61,6 +67,9 @@ models:
     ref: GBD-300-9
     source:
       { url: 'https://web.archive.org/web/20240824133306id_/https://www.casio.com/in/watches/gshock/product.GBD-300-9/', kind: official }
+    module: '3568'
+    colorway: Yellow
+    display: digital
     movement: quartz
     case: { height_mm: 48.9, width_mm: 47.4, depth_mm: 14.9, weight_g: 60, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
