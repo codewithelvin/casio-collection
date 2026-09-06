@@ -138,6 +138,17 @@ const LIGHT_FEATURES: ReadonlyArray<readonly [RegExp, Feature]> = [
  * HTML reading
  * -------------------------------------------------------------------------- */
 
+/**
+ * A capture group, or an empty string.
+ *
+ * `noUncheckedIndexedAccess` is on in `tsconfig.app.json`, so `match[1]` is
+ * `string | undefined` even where the pattern guarantees the group — and the
+ * project typechecks with `tsc -b`, which uses that config. Bare
+ * `tsc --noEmit` reads the looser root config and reports none of this, which
+ * is how eleven errors reached CI green-looking. Run `npm run typecheck`.
+ */
+const group = (match: RegExpMatchArray | RegExpExecArray, index: number): string => match[index] ?? ''
+
 const stripTags = (html: string): string =>
   html
     .replace(/<[^>]*>/g, ' ')
@@ -181,7 +192,7 @@ export const labelledValues = (html: string, label: string): string[] => {
     from = at + label.length
     const cell = /<td[^>]*>([\s\S]*?)<\/td>/i.exec(html.slice(from))
     if (!cell) break
-    const text = stripTags(cell[1])
+    const text = stripTags(group(cell, 1))
     if (text.length > 0) values.push(text)
   }
   return values
@@ -193,9 +204,9 @@ export const readFunctions = (html: string): { active: string[]; inactive: strin
   const inactive: string[] = []
   const cell = /<td\s+class="(cellactive|cellinactive)"[^>]*>([\s\S]*?)<\/td>/gi
   for (const match of html.matchAll(cell)) {
-    const key = /function=([a-z_]+)/i.exec(match[2])?.[1]
+    const key = /function=([a-z_]+)/i.exec(group(match, 2))?.[1]
     if (!key) continue
-    ;(match[1].toLowerCase() === 'cellactive' ? active : inactive).push(key)
+    ;(group(match, 1).toLowerCase() === 'cellactive' ? active : inactive).push(key)
   }
   return { active: [...new Set(active)], inactive: [...new Set(inactive)] }
 }
@@ -209,7 +220,7 @@ export const readFunctions = (html: string): { active: string[]; inactive: strin
 export const readBareToggle = (html: string, label: RegExp): boolean | undefined => {
   const cell = /<td\s+class="(cellactive|cellinactive)"[^>]*>([\s\S]*?)<\/td>/gi
   for (const match of html.matchAll(cell)) {
-    if (label.test(stripTags(match[2]))) return match[1].toLowerCase() === 'cellactive'
+    if (label.test(stripTags(group(match, 2)))) return group(match, 1).toLowerCase() === 'cellactive'
   }
   return undefined
 }
@@ -231,9 +242,9 @@ export const readFunctionState = (html: string, ...keys: string[]): boolean | un
   const cell = /<td\s+class="(cellactive|cellinactive)"[^>]*>([\s\S]*?)<\/td>/gi
   let seen: boolean | undefined
   for (const match of html.matchAll(cell)) {
-    const key = /function=([a-z_]+)/i.exec(match[2])?.[1]
+    const key = /function=([a-z_]+)/i.exec(group(match, 2))?.[1]
     if (!key || !keys.includes(key)) continue
-    if (match[1].toLowerCase() === 'cellactive') return true
+    if (group(match, 1).toLowerCase() === 'cellactive') return true
     seen = false
   }
   return seen
@@ -271,13 +282,16 @@ export const readYear = (html: string): number | undefined => {
 /** `48.5 x 45.4 x 11.8 mm` — height, width, thickness, in that order. */
 export const readSize = (
   html: string,
-): { height_mm?: number; width_mm?: number; depth_mm?: number } => {
+): { height_mm?: number | undefined; width_mm?: number | undefined; depth_mm?: number | undefined } => {
   const value = labelledValue(html, 'Size (HxWxT)')
   if (!value) return {}
   const size = /([\d.]+)\s*x\s*([\d.]+)\s*x\s*([\d.]+)/.exec(value)
   if (!size) return {}
-  const [height_mm, width_mm, depth_mm] = size.slice(1, 4).map(Number)
-  // A zero or a stray parse is not a measurement; §6.1 wants positives or nothing.
+  const height_mm = Number(group(size, 1))
+  const width_mm = Number(group(size, 2))
+  const depth_mm = Number(group(size, 3))
+  // A zero, a NaN or a stray parse is not a measurement; §6.1 wants positives
+  // or nothing. `> 0` is false for NaN, so the one comparison covers both.
   return {
     ...(height_mm > 0 ? { height_mm } : {}),
     ...(width_mm > 0 ? { width_mm } : {}),
@@ -295,10 +309,10 @@ export const readWaterResistance = (html: string): number | undefined => {
   // The cell reads "Water Resistance:<br>200m" and is only meaningful when active.
   const cell = /<td\s+class="cellactive"[^>]*>([\s\S]*?)<\/td>/gi
   for (const match of html.matchAll(cell)) {
-    const text = stripTags(match[1])
+    const text = stripTags(group(match, 1))
     if (!/water\s*resistance/i.test(text)) continue
     const metres = /(\d+)\s*m\b/i.exec(text)
-    if (metres) return Number(metres[1])
+    if (metres) return Number(group(metres, 1))
   }
   return undefined
 }
