@@ -20,6 +20,7 @@ series:
 models:
   - id: efs-s540db-1a
     ref: EFS-S540DB-1A
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFS-S540DB-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220953id_/https://www.casio.com/europe/watches/edifice/product.EFS-S540DB-1A/', kind: official }
     display: analog

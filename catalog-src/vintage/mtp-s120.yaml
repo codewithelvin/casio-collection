@@ -20,6 +20,7 @@ series:
 models:
   - id: mtp-s120l-1av
     ref: MTP-S120L-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MTP-S120L-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220604013708id_/https://www.casio.com/us/watches/casio/product.MTP-S120L-1AV/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: mtp-s120l-3av
     ref: MTP-S120L-3AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MTP-S120L-3AV/'
     source:
       { url: 'https://web.archive.org/web/20220629034343id_/https://www.casio.com/us/watches/casio/product.MTP-S120L-3AV/', kind: official }
     display: analog

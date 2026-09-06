@@ -20,6 +20,7 @@ series:
 models:
   - id: ws-1600h-1av
     ref: WS-1600H-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.WS-1600H-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102737id_/https://www.casio.com/europe/watches/casio/product.WS-1600H-1AV/', kind: official }
     movement: quartz
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: ws-1600h-2av
     ref: WS-1600H-2AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.WS-1600H-2AV/'
     source:
       { url: 'https://web.archive.org/web/20230514043815id_/https://www.casio.com/us/watches/casio/product.WS-1600H-2AV/', kind: official }
     movement: quartz
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: ws-1600h-8av
     ref: WS-1600H-8AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.WS-1600H-8AV/'
     source:
       { url: 'https://web.archive.org/web/20250117235841id_/https://www.casio.com/in/watches/casio/product.WS-1600H-8AV/', kind: official }
     movement: quartz

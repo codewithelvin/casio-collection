@@ -65,6 +65,7 @@ series:
 models:
   - id: bgd-565-1
     ref: BGD-565-1
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -82,6 +83,7 @@ models:
     discontinued: false
   - id: bgd-565-4
     ref: BGD-565-4
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -99,6 +101,7 @@ models:
     discontinued: false
   - id: bgd-565-7
     ref: BGD-565-7
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -116,6 +119,7 @@ models:
     discontinued: false
   - id: bgd-565cs-7
     ref: BGD-565CS-7
+    official_url: 'https://www.casio.com/de/watches/babyg/product.BGD-565CS-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -133,6 +137,7 @@ models:
     discontinued: false
   - id: bgd-565gc-2
     ref: BGD-565GC-2
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565GC-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -150,6 +155,7 @@ models:
     discontinued: false
   - id: bgd-565gc-4
     ref: BGD-565GC-4
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565GC-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -167,6 +173,7 @@ models:
     discontinued: false
   - id: bgd-565gc-7
     ref: BGD-565GC-7
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565GC-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -184,6 +191,7 @@ models:
     discontinued: false
   - id: bgd-565gs-1
     ref: BGD-565GS-1
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565GS-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -201,6 +209,7 @@ models:
     discontinued: false
   - id: bgd-565gs-6
     ref: BGD-565GS-6
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565GS-6/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -218,6 +227,7 @@ models:
     discontinued: false
   - id: bgd-565gs-9
     ref: BGD-565GS-9
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565GS-9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -235,6 +245,7 @@ models:
     discontinued: false
   - id: bgd-565krs-7
     ref: BGD-565KRS-7
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565KRS-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -252,6 +263,7 @@ models:
     discontinued: false
   - id: bgd-565kt-7
     ref: BGD-565KT-7
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565KT-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -269,6 +281,7 @@ models:
     discontinued: false
   - id: bgd-565rp-2
     ref: BGD-565RP-2
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565RP-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -286,6 +299,7 @@ models:
     discontinued: false
   - id: bgd-565rp-4
     ref: BGD-565RP-4
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565RP-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -303,6 +317,7 @@ models:
     discontinued: false
   - id: bgd-565rp-7
     ref: BGD-565RP-7
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565RP-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -320,6 +335,7 @@ models:
     discontinued: false
   - id: bgd-565s-7
     ref: BGD-565S-7
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565S-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -337,6 +353,7 @@ models:
     discontinued: false
   - id: bgd-565sc-1
     ref: BGD-565SC-1
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565SC-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -354,6 +371,7 @@ models:
     discontinued: false
   - id: bgd-565sc-2
     ref: BGD-565SC-2
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565SC-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -371,6 +389,7 @@ models:
     discontinued: false
   - id: bgd-565sc-2b
     ref: BGD-565SC-2B
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565SC-2B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -388,6 +407,7 @@ models:
     discontinued: false
   - id: bgd-565sc-3
     ref: BGD-565SC-3
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565SC-3/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -405,6 +425,7 @@ models:
     discontinued: false
   - id: bgd-565sc-4
     ref: BGD-565SC-4
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565SC-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -422,6 +443,7 @@ models:
     discontinued: false
   - id: bgd-565sc-4b
     ref: BGD-565SC-4B
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565SC-4B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -439,6 +461,7 @@ models:
     discontinued: false
   - id: bgd-565sj-2
     ref: BGD-565SJ-2
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565SJ-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -456,6 +479,7 @@ models:
     discontinued: false
   - id: bgd-565sj-7
     ref: BGD-565SJ-7
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565SJ-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -473,6 +497,7 @@ models:
     discontinued: false
   - id: bgd-565sj-9
     ref: BGD-565SJ-9
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565SJ-9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -490,6 +515,7 @@ models:
     discontinued: false
   - id: bgd-565slc-9
     ref: BGD-565SLC-9
+    official_url: 'https://www.casio.com/de/watches/babyg/product.BGD-565SLC-9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -507,6 +533,7 @@ models:
     discontinued: false
   - id: bgd-565tw-5
     ref: BGD-565TW-5
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BGD-565TW-5/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -524,6 +551,7 @@ models:
     discontinued: false
   - id: bgd-565u-1
     ref: BGD-565U-1
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565U-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -541,6 +569,7 @@ models:
     discontinued: false
   - id: bgd-565u-4
     ref: BGD-565U-4
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565U-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -558,6 +587,7 @@ models:
     discontinued: false
   - id: bgd-565u-7
     ref: BGD-565U-7
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565U-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -575,6 +605,7 @@ models:
     discontinued: false
   - id: bgd-565us-7
     ref: BGD-565US-7
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565US-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -592,6 +623,7 @@ models:
     discontinued: false
   - id: bgd-565usw-5
     ref: BGD-565USW-5
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565USW-5/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',
@@ -609,6 +641,7 @@ models:
     discontinued: false
   - id: bgd-565xg-2
     ref: BGD-565XG-2
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGD-565XG-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3489/qw3489_EN.pdf',

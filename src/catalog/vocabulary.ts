@@ -165,6 +165,16 @@ export const FEATURES = [
   'screw-lock-crown',
   'sapphire-crystal',
   'mineral-glass',
+  // Casio's own name for the case construction, not a paraphrase: a resin case
+  // reinforced with carbon fibre, which Casio markets as Carbon Core Guard and
+  // a buyer searches for by that name.
+  //
+  // ADDED 2026-09-07 ON THE CLIENT'S DECISION, with the headcount this list asks
+  // for: **198 G-SHOCK models** state it, measured off ShockBase before the
+  // value existed. It spent one run in `KNOWN_UNMAPPED` being reported rather
+  // than written, which is the process working — an active fact with no word
+  // for it is a question for a human, and this is the human's answer.
+  'carbon-core-guard',
   // The odd ones Casio is actually known for
   'calculator',
   'telememo',

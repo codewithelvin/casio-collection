@@ -27,6 +27,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: gbm-2100-1a
     ref: GBM-2100-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GBM-2100-1A/'
     source:
       { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBM-2100-1A/', kind: official }
     year: 2024
@@ -46,6 +47,7 @@ models:
     discontinued: false
   - id: gbm-2100a-1a2
     ref: GBM-2100A-1A2
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GBM-2100A-1A2/'
     source:
       { url: 'https://web.archive.org/web/20240824133305id_/https://www.casio.com/in/watches/gshock/product.GBM-2100A-1A2/', kind: official }
     year: 2024
@@ -65,6 +67,7 @@ models:
     discontinued: false
   - id: gbm-2100a-1a3
     ref: GBM-2100A-1A3
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GBM-2100A-1A3/'
     source:
       { url: 'https://web.archive.org/web/20240824133306id_/https://www.casio.com/in/watches/gshock/product.GBM-2100A-1A3/', kind: official }
     year: 2024
@@ -84,6 +87,7 @@ models:
     discontinued: false
   - id: gbm-2100a-4b
     ref: GBM-2100A-4B
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GBM-2100A-4B/'
     source:
       { url: 'https://web.archive.org/web/20251010231201id_/https://www.casio.com/jp/watches/gshock/product.GBM-2100A-4B/', kind: official }
     movement: solar
@@ -99,7 +103,7 @@ models:
       depth_mm: 11.9
       weight_g: 72
     display: ana-digi
-    features: [bluetooth]
+    features: [world-time, multi-alarm, super-illuminator, bluetooth, tough-solar, mineral-glass]
     image: gbm-2100a-4b
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -108,6 +112,7 @@ models:
     discontinued: false
   - id: gbm-2100b-7a
     ref: GBM-2100B-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GBM-2100B-7A/'
     source:
       { url: 'https://web.archive.org/web/20241002193052id_/https://www.casio.com/europe/watches/gshock/product.GBM-2100B-7A/', kind: official }
     year: 2024

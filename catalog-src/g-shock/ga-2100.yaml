@@ -111,6 +111,7 @@ series:
 models:
   - id: ga-2100-1a
     ref: GA-2100-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -129,7 +130,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -138,6 +139,7 @@ models:
     discontinued: false
   - id: ga-2100-1a1
     ref: GA-2100-1A1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100-1A1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -156,7 +158,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-1a1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -165,6 +167,7 @@ models:
     discontinued: false
   - id: ga-2100-1a2
     ref: GA-2100-1A2
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100-1A2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -183,7 +186,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-1a2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -192,6 +195,7 @@ models:
     discontinued: false
   - id: ga-2100-1a3
     ref: GA-2100-1A3
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100-1A3/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -210,7 +214,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-1a3
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -219,6 +223,7 @@ models:
     discontinued: false
   - id: ga-2100-1a4
     ref: GA-2100-1A4
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100-1A4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -237,7 +242,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-1a4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -246,6 +251,7 @@ models:
     discontinued: false
   - id: ga-2100-2a
     ref: GA-2100-2A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-2100-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -264,7 +270,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -273,6 +279,7 @@ models:
     discontinued: false
   - id: ga-2100-2a2
     ref: GA-2100-2A2
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100-2A2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -291,7 +298,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-2a2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -300,6 +307,7 @@ models:
     discontinued: false
   - id: ga-2100-4a
     ref: GA-2100-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100-4A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -318,7 +326,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -327,6 +335,7 @@ models:
     discontinued: false
   - id: ga-2100-5a
     ref: GA-2100-5A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-2100-5A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -345,7 +354,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-5a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -354,6 +363,7 @@ models:
     discontinued: false
   - id: ga-2100-7a
     ref: GA-2100-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -372,7 +382,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -381,6 +391,7 @@ models:
     discontinued: false
   - id: ga-2100-7a7
     ref: GA-2100-7A7
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100-7A7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -399,7 +410,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-7a7
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -408,6 +419,7 @@ models:
     discontinued: false
   - id: ga-2100-9a9
     ref: GA-2100-9A9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100-9A9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -426,7 +438,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100-9a9
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -435,6 +447,7 @@ models:
     discontinued: false
   - id: ga-2100ah-6a
     ref: GA-2100AH-6A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100AH-6A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -453,7 +466,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100ah-6a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -479,13 +492,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: ga-2100bce-1a
     ref: GA-2100BCE-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100BCE-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -504,7 +518,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100bce-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -513,6 +527,7 @@ models:
     discontinued: false
   - id: ga-2100bm-7a2
     ref: GA-2100BM-7A2
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100BM-7A2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -531,7 +546,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100bm-7a2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -540,6 +555,7 @@ models:
     discontinued: false
   - id: ga-2100bm-7a5
     ref: GA-2100BM-7A5
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100BM-7A5/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -558,7 +574,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100bm-7a5
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -567,6 +583,7 @@ models:
     discontinued: false
   - id: ga-2100bm-7a8
     ref: GA-2100BM-7A8
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100BM-7A8/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -585,7 +602,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100bm-7a8
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -594,6 +611,7 @@ models:
     discontinued: false
   - id: ga-2100bp-1a
     ref: GA-2100BP-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100BP-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -612,7 +630,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100bp-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -621,6 +639,7 @@ models:
     discontinued: false
   - id: ga-2100bwp-2a
     ref: GA-2100BWP-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100BWP-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -639,7 +658,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100bwp-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -648,6 +667,7 @@ models:
     discontinued: false
   - id: ga-2100ca-8a
     ref: GA-2100CA-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100CA-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -666,7 +686,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100ca-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -675,6 +695,7 @@ models:
     discontinued: false
   - id: ga-2100cc-3a
     ref: GA-2100CC-3A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100CC-3A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -693,7 +714,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     # REFUSED on §10.3's budget, NOT on sourcing — the distinction matters.
     # Casio's own page names a photograph and it is on disk at 3 213 793 bytes.
     # Its @2x encodes to 115.5 KB against a 110.0 KB budget, at D56's quality
@@ -703,6 +724,7 @@ models:
     discontinued: false
   - id: ga-2100cm-5a
     ref: GA-2100CM-5A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100CM-5A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -721,7 +743,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     discontinued: false
     image: ga-2100cm-5a
     image_credit:
@@ -730,6 +752,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/ga-2100cm-5adr'
   - id: ga-2100cm-8a
     ref: GA-2100CM-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100CM-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -748,7 +771,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     discontinued: false
     image: ga-2100cm-8a
     image_credit:
@@ -757,6 +780,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/ga-2100cm-8adr'
   - id: ga-2100cmd-8a
     ref: GA-2100CMD-8A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-2100CMD-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -775,7 +799,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     discontinued: false
     image: ga-2100cmd-8a
     image_credit:
@@ -802,7 +826,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     # REFUSED 2026-08-26, not overlooked. Casio's archived `es` page for this
     # reference names its assets `1.png` and `2.png` — numbered, so the filename
     # test proves nothing and both had to be looked at. Both were:
@@ -820,6 +844,7 @@ models:
     discontinued: true
   - id: ga-2100ff-8a
     ref: GA-2100FF-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100FF-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -838,7 +863,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100ff-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -847,6 +872,7 @@ models:
     discontinued: false
   - id: ga-2100fl-1a
     ref: GA-2100FL-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100FL-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -865,7 +891,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100fl-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -874,6 +900,7 @@ models:
     discontinued: false
   - id: ga-2100fl-8a
     ref: GA-2100FL-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100FL-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -892,7 +919,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100fl-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -901,6 +928,7 @@ models:
     discontinued: false
   - id: ga-2100fls-8a2
     ref: GA-2100FLS-8A2
+    official_url: 'https://www.casio.com/de/watches/gshock/product.GA-2100FLS-8A2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -919,7 +947,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100fls-8a2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -928,6 +956,7 @@ models:
     discontinued: false
   - id: ga-2100fls-8a4
     ref: GA-2100FLS-8A4
+    official_url: 'https://www.casio.com/de/watches/gshock/product.GA-2100FLS-8A4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -946,7 +975,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100fls-8a4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -955,6 +984,7 @@ models:
     discontinued: false
   - id: ga-2100fr-3a
     ref: GA-2100FR-3A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100FR-3A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -973,7 +1003,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100fr-3a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -982,6 +1012,7 @@ models:
     discontinued: false
   - id: ga-2100fr-5a
     ref: GA-2100FR-5A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100FR-5A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1000,7 +1031,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100fr-5a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1009,6 +1040,7 @@ models:
     discontinued: false
   - id: ga-2100ft-8a
     ref: GA-2100FT-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100FT-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1027,7 +1059,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100ft-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1036,6 +1068,7 @@ models:
     discontinued: false
   - id: ga-2100gb-1a
     ref: GA-2100GB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100GB-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1054,7 +1087,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100gb-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1063,6 +1096,7 @@ models:
     discontinued: false
   - id: ga-2100hc-2a
     ref: GA-2100HC-2A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-2100HC-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1081,7 +1115,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100hc-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1090,6 +1124,7 @@ models:
     discontinued: false
   - id: ga-2100hc-4a
     ref: GA-2100HC-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100HC-4A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1108,7 +1143,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100hc-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1117,6 +1152,7 @@ models:
     discontinued: false
   - id: ga-2100hd-8a
     ref: GA-2100HD-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100HD-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1135,7 +1171,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100hd-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1144,6 +1180,7 @@ models:
     discontinued: false
   - id: ga-2100hds-7a
     ref: GA-2100HDS-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100HDS-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1162,7 +1199,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100hds-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1171,6 +1208,7 @@ models:
     discontinued: false
   - id: ga-2100hds-7a1
     ref: GA-2100HDS-7A1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100HDS-7A1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1189,7 +1227,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     discontinued: false
     image: ga-2100hds-7a1
     image_credit:
@@ -1198,6 +1236,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/ga-2100hds-7a1dr'
   - id: ga-2100ht-1a
     ref: GA-2100HT-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100HT-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1216,7 +1255,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100ht-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1225,6 +1264,7 @@ models:
     discontinued: false
   - id: ga-2100huf-5a
     ref: GA-2100HUF-5A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100HUF-5A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1243,7 +1283,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100huf-5a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1252,6 +1292,7 @@ models:
     discontinued: false
   - id: ga-2100k-1a
     ref: GA-2100K-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100K-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1270,7 +1311,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     discontinued: false
     image: ga-2100k-1a
     image_credit:
@@ -1279,6 +1320,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/ga-2100k-1adr'
   - id: ga-2100k-2a
     ref: GA-2100K-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100K-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1297,7 +1339,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100k-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1306,6 +1348,7 @@ models:
     discontinued: false
   - id: ga-2100k-5a
     ref: GA-2100K-5A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100K-5A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1324,7 +1367,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100k-5a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1351,7 +1394,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1376,13 +1419,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: ga-2100lxb-1a
     ref: GA-2100LXB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100LXB-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1401,7 +1445,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     discontinued: false
     image: ga-2100lxb-1a
     image_credit:
@@ -1410,6 +1454,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/ga-2100lxb-1adr'
   - id: ga-2100lxb-1a9
     ref: GA-2100LXB-1A9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100LXB-1A9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1428,7 +1473,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     discontinued: false
     image: ga-2100lxb-1a9
     image_credit:
@@ -1437,6 +1482,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/ga-2100lxb-1a9dr'
   - id: ga-2100mng-2a
     ref: GA-2100MNG-2A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-2100MNG-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1455,7 +1501,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100mng-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1464,6 +1510,7 @@ models:
     discontinued: false
   - id: ga-2100mng-7a
     ref: GA-2100MNG-7A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-2100MNG-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1482,7 +1529,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100mng-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1491,6 +1538,7 @@ models:
     discontinued: false
   - id: ga-2100nc-3a
     ref: GA-2100NC-3A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-2100NC-3A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1509,7 +1557,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100nc-3a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1518,6 +1566,7 @@ models:
     discontinued: false
   - id: ga-2100nn-1a
     ref: GA-2100NN-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100NN-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1536,7 +1585,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100nn-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1562,13 +1611,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: ga-2100p-1a
     ref: GA-2100P-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100P-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1587,7 +1637,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100p-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1613,13 +1663,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: ga-2100pt-2a
     ref: GA-2100PT-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100PT-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1638,7 +1689,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100pt-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1647,6 +1698,7 @@ models:
     discontinued: false
   - id: ga-2100pts-8a
     ref: GA-2100PTS-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100PTS-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1665,7 +1717,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100pts-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1674,6 +1726,7 @@ models:
     discontinued: false
   - id: ga-2100rb-3a
     ref: GA-2100RB-3A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-2100RB-3A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1692,7 +1745,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100rb-3a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1701,6 +1754,7 @@ models:
     discontinued: false
   - id: ga-2100rc-1a
     ref: GA-2100RC-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100RC-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1719,7 +1773,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100rc-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1728,6 +1782,7 @@ models:
     discontinued: false
   - id: ga-2100rgb-1a
     ref: GA-2100RGB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100RGB-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1746,7 +1801,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100rgb-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1755,6 +1810,7 @@ models:
     discontinued: false
   - id: ga-2100rl-1a
     ref: GA-2100RL-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100RL-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1773,7 +1829,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100rl-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1782,6 +1838,7 @@ models:
     discontinued: false
   - id: ga-2100rrb-4a
     ref: GA-2100RRB-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100RRB-4A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1800,7 +1857,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     discontinued: false
     image: ga-2100rrb-4a
     image_credit:
@@ -1809,6 +1866,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/ga-2100rrb-4adr'
   - id: ga-2100rw-1a
     ref: GA-2100RW-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100RW-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1827,7 +1885,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100rw-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1836,6 +1894,7 @@ models:
     discontinued: false
   - id: ga-2100sb-1a
     ref: GA-2100SB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100SB-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1854,7 +1913,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100sb-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1863,6 +1922,7 @@ models:
     discontinued: false
   - id: ga-2100ske-7a
     ref: GA-2100SKE-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100SKE-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1881,7 +1941,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100ske-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1890,6 +1950,7 @@ models:
     discontinued: false
   - id: ga-2100sr-1a
     ref: GA-2100SR-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100SR-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1908,7 +1969,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100sr-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1917,6 +1978,7 @@ models:
     discontinued: false
   - id: ga-2100srs-7a
     ref: GA-2100SRS-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100SRS-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1935,7 +1997,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100srs-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1944,6 +2006,7 @@ models:
     discontinued: false
   - id: ga-2100su-1a
     ref: GA-2100SU-1A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-2100SU-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -1962,7 +2025,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100su-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1989,7 +2052,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100th-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2016,7 +2079,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100thb-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2043,13 +2106,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: ga-2100tl-7a
     ref: GA-2100TL-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100TL-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -2068,7 +2132,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100tl-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2077,6 +2141,7 @@ models:
     discontinued: false
   - id: ga-2100tls-8a
     ref: GA-2100TLS-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100TLS-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -2095,7 +2160,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100tls-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2104,6 +2169,7 @@ models:
     discontinued: false
   - id: ga-2100vb-1a
     ref: GA-2100VB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100VB-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -2122,7 +2188,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100vb-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2131,6 +2197,7 @@ models:
     discontinued: false
   - id: ga-2100wd-1a
     ref: GA-2100WD-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100WD-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -2149,7 +2216,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100wd-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2158,6 +2225,7 @@ models:
     discontinued: false
   - id: ga-2100ws-7a
     ref: GA-2100WS-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-2100WS-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -2176,7 +2244,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
     image: ga-2100ws-7a
     image_credit:
       author: Casio Computer Co., Ltd.

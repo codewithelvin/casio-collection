@@ -20,6 +20,7 @@ series:
 models:
   - id: f-105w-1a
     ref: F-105W-1A
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-105W-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715102151id_/https://www.casio.com/europe/watches/casio/product.F-105W-1A/', kind: official }
     display: digital

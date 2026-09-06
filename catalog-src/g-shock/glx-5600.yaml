@@ -27,6 +27,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: glx-5600kb-1
     ref: GLX-5600KB-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GLX-5600KB-1/'
     source:
       { url: 'https://web.archive.org/web/20241128164645id_/https://www.casio.com/us/watches/gshock/product.GLX-5600KB-1/', kind: official }
     module: '3151'
@@ -35,7 +36,7 @@ models:
     movement: quartz
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 53, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, afterglow, tide-graph, moon-data, shock-resistant, mineral-glass, flash-alert]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, afterglow, tide-graph, moon-data, shock-resistant, mineral-glass, flash-alert]
     image: glx-5600kb-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -46,6 +47,7 @@ models:
     discontinued: false
   - id: glx-5600rt-4
     ref: GLX-5600RT-4
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GLX-5600RT-4/'
     source:
       { url: 'https://web.archive.org/web/20240715021341id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-4/', kind: official }
     year: 2022
@@ -56,7 +58,7 @@ models:
     movement: quartz
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, afterglow, tide-graph, moon-data, shock-resistant, mineral-glass, flash-alert]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, afterglow, tide-graph, moon-data, shock-resistant, mineral-glass, flash-alert]
     image: glx-5600rt-4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -65,6 +67,7 @@ models:
     discontinued: false
   - id: glx-5600rt-9
     ref: GLX-5600RT-9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GLX-5600RT-9/'
     source:
       { url: 'https://web.archive.org/web/20240715021324id_/https://www.casio.com/europe/watches/gshock/product.GLX-5600RT-9/', kind: official }
     year: 2022
@@ -75,7 +78,7 @@ models:
     movement: quartz
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, afterglow, tide-graph, moon-data, shock-resistant, mineral-glass, flash-alert]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, afterglow, tide-graph, moon-data, shock-resistant, mineral-glass, flash-alert]
     image: glx-5600rt-9
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -91,6 +94,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: glx-5600-1
     ref: GLX-5600-1
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GLX-5600-1/'
     source:
       { url: 'https://web.archive.org/web/20210414205554id_/https://www.casio.com/jp/watches/gshock/product.GLX-5600-1/', kind: official }
     movement: quartz
@@ -109,6 +113,7 @@ models:
     discontinued: false
   - id: glx-5600-7
     ref: GLX-5600-7
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GLX-5600-7/'
     source:
       { url: 'https://web.archive.org/web/20210313071649id_/https://www.casio.com/jp/watches/gshock/product.GLX-5600-7/', kind: official }
     movement: quartz
@@ -145,6 +150,7 @@ models:
 # the whole catalogue by `availability.ts` (D59), never written by hand.
   - id: glx-5600whr24-2
     ref: GLX-5600WHR24-2
+    official_url: 'https://www.casio.com/de/watches/gshock/product.GLX-5600WHR24-2/'
     source:
       { url: 'https://web.archive.org/web/20250413110648id_/https://www.casio.com/fr/watches/gshock/product.GLX-5600WHR24-2/', kind: official }
     case: { weight_g: 52.5 }

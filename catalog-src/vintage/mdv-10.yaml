@@ -20,6 +20,7 @@ series:
 models:
   - id: mdv-10-1a1v
     ref: MDV-10-1A1V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MDV-10-1A1V/'
     source:
       { url: 'https://web.archive.org/web/20240715102849id_/https://www.casio.com/europe/watches/casio/product.MDV-10-1A1V/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: mdv-10-1a2v
     ref: MDV-10-1A2V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MDV-10-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20240715102859id_/https://www.casio.com/europe/watches/casio/product.MDV-10-1A2V/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: mdv-10c-1a2v
     ref: MDV-10C-1A2V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MDV-10C-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20240715102847id_/https://www.casio.com/europe/watches/casio/product.MDV-10C-1A2V/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: mdv-10d-1a1v
     ref: MDV-10D-1A1V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MDV-10D-1A1V/'
     source:
       { url: 'https://web.archive.org/web/20240715102852id_/https://www.casio.com/europe/watches/casio/product.MDV-10D-1A1V/', kind: official }
     display: analog
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: mdv-10d-1a2v
     ref: MDV-10D-1A2V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MDV-10D-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20230809120115id_/https://www.casio.com/intl/watches/casio/product.MDV-10D-1A2V/', kind: official }
     display: analog
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: mdv-10d-1a3v
     ref: MDV-10D-1A3V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MDV-10D-1A3V/'
     source:
       { url: 'https://web.archive.org/web/20240106004930id_/https://www.casio.com/in/watches/casio/product.MDV-10D-1A3V/', kind: official }
     display: analog
@@ -110,6 +116,7 @@ models:
     discontinued: false
   - id: mdv-10d-2a1v
     ref: MDV-10D-2A1V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MDV-10D-2A1V/'
     source:
       { url: 'https://web.archive.org/web/20250120041247id_/https://www.casio.com/hk/watches/casio/product.MDV-10D-2A1V/', kind: official }
     case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 85 }
@@ -122,6 +129,7 @@ models:
     discontinued: false
   - id: mdv-10d-4a1v
     ref: MDV-10D-4A1V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MDV-10D-4A1V/'
     source:
       { url: 'https://web.archive.org/web/20250120041243id_/https://www.casio.com/hk/watches/casio/product.MDV-10D-4A1V/', kind: official }
     case: { height_mm: 42, width_mm: 38.5, depth_mm: 10.4, weight_g: 85 }
@@ -134,6 +142,7 @@ models:
     discontinued: false
   - id: mdv-10d-4a2v
     ref: MDV-10D-4A2V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MDV-10D-4A2V/'
     source:
       { url: 'https://web.archive.org/web/20250116054434id_/https://www.casio.com/ph/watches/casio/product.MDV-10D-4A2V/', kind: official }
     display: analog

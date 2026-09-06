@@ -29,6 +29,7 @@ series:
 models:
   - id: ocw-s400-3a
     ref: OCW-S400-3A
+    official_url: 'https://www.casio.com/us/watches/oceanus/product.OCW-S400-3A/'
     source:
       { url: 'https://web.archive.org/web/20241119112822id_/https://www.casio.com/us/watches/oceanus/product.OCW-S400-3A/', kind: official }
     movement: solar-radio

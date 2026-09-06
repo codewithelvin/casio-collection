@@ -20,6 +20,7 @@ series:
 models:
   - id: ef-558d-1av
     ref: EF-558D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EF-558D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220521003926id_/https://www.casio.com/in/watches/edifice/product.EF-558D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: ef-558d-2av
     ref: EF-558D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EF-558D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20220628150442id_/https://www.casio.com/in/watches/edifice/product.EF-558D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: ef-558dc-1av
     ref: EF-558DC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EF-558DC-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220523123407id_/https://www.casio.com/in/watches/edifice/product.EF-558DC-1AV/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: ef-558sg-1av
     ref: EF-558SG-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EF-558SG-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220628162443id_/https://www.casio.com/in/watches/edifice/product.EF-558SG-1AV/', kind: official }
     display: analog

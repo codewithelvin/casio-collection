@@ -20,6 +20,7 @@ series:
 models:
   - id: efr-s567d-1av
     ref: EFR-S567D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-S567D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220748id_/https://www.casio.com/europe/watches/edifice/product.EFR-S567D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efr-s567d-2av
     ref: EFR-S567D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-S567D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220732id_/https://www.casio.com/europe/watches/edifice/product.EFR-S567D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efr-s567dc-1av
     ref: EFR-S567DC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-S567DC-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220626053752id_/https://www.casio.com/intl/watches/edifice/product.EFR-S567DC-1AV/', kind: official }
     display: analog

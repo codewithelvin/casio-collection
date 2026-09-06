@@ -20,6 +20,7 @@ series:
 models:
   - id: ef-125d-1av
     ref: EF-125D-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EF-125D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220625id_/https://www.casio.com/europe/watches/edifice/product.EF-125D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: ef-125d-2av
     ref: EF-125D-2AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EF-125D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220645id_/https://www.casio.com/europe/watches/edifice/product.EF-125D-2AV/', kind: official }
     display: analog

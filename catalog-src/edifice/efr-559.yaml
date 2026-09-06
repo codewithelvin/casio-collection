@@ -50,6 +50,7 @@ models:
     discontinued: true
   - id: efr-559dc-1av
     ref: EFR-559DC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-559DC-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220628143720id_/https://www.casio.com/in/watches/edifice/product.EFR-559DC-1AV/', kind: official }
     display: analog

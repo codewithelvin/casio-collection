@@ -33,6 +33,7 @@ series:
 models:
   - id: aeq-110bw-9av
     ref: AEQ-110BW-9AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AEQ-110BW-9AV/'
     source:
       { url: 'https://web.archive.org/web/20220808131239id_/https://www.casio.com/us/watches/casio/product.AEQ-110BW-9AV/', kind: official }
     display: ana-digi
@@ -48,6 +49,7 @@ models:
       url: 'https://web.archive.org/web/20240721132005id_/https://www.casio.com/id/watches/casio/product.AEQ-110BW-9AV/'
   - id: aeq-110w-1a3v
     ref: AEQ-110W-1A3V
+    official_url: 'https://www.casio.com/us/watches/casio/product.AEQ-110W-1A3V/'
     source:
       { url: 'https://web.archive.org/web/20220926023010id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-1A3V/', kind: official }
     display: ana-digi
@@ -58,6 +60,7 @@ models:
     discontinued: false
   - id: aeq-110w-1av
     ref: AEQ-110W-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AEQ-110W-1AV/'
     source:
       { url: 'https://web.archive.org/web/20241128042847id_/https://www.casio.com/in/watches/casio/product.AEQ-110W-1AV/', kind: official }
     display: ana-digi
@@ -73,6 +76,7 @@ models:
     discontinued: false
   - id: aeq-110w-1bv
     ref: AEQ-110W-1BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AEQ-110W-1BV/'
     source:
       { url: 'https://web.archive.org/web/20220926041818id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-1BV/', kind: official }
     display: ana-digi
@@ -88,6 +92,7 @@ models:
       url: 'https://web.archive.org/web/20240721132055id_/https://www.casio.com/id/watches/casio/product.AEQ-110W-1BV/'
   - id: aeq-110w-2a2v
     ref: AEQ-110W-2A2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.AEQ-110W-2A2V/'
     source:
       { url: 'https://web.archive.org/web/20241217184311id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-2A2V/', kind: official }
     display: ana-digi
@@ -103,6 +108,7 @@ models:
     discontinued: false
   - id: aeq-110w-2a3v
     ref: AEQ-110W-2A3V
+    official_url: 'https://www.casio.com/us/watches/casio/product.AEQ-110W-2A3V/'
     source:
       { url: 'https://web.archive.org/web/20220926025124id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-2A3V/', kind: official }
     display: ana-digi
@@ -140,6 +146,7 @@ models:
       url: 'https://web.archive.org/web/20240704161218id_/https://www.casio.com/br/watches/casio/product.AEQ-110W-2AV/'
   - id: aeq-110w-1a
     ref: AEQ-110W-1A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AEQ-110W-1A/'
     source:
       { url: 'https://web.archive.org/web/20210618032425id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-1A/', kind: official }
     case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 16.6, weight_g: 49 }
@@ -152,6 +159,7 @@ models:
     discontinued: false
   - id: aeq-110w-1b
     ref: AEQ-110W-1B
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AEQ-110W-1B/'
     source:
       { url: 'https://web.archive.org/web/20210618024547id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-1B/', kind: official }
     case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 16.6, weight_g: 49 }
@@ -164,6 +172,7 @@ models:
     discontinued: false
   - id: aeq-110w-2a
     ref: AEQ-110W-2A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AEQ-110W-2A/'
     source:
       { url: 'https://web.archive.org/web/20210618030202id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-2A/', kind: official }
     case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 16.6, weight_g: 49 }

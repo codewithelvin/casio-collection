@@ -130,6 +130,7 @@ series:
 models:
   - id: dw-6900-1v
     ref: DW-6900-1V
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900-1V/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -148,7 +149,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900-1v
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -175,13 +176,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900bb-1
     ref: DW-6900BB-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900BB-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -200,7 +202,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900bb-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -209,6 +211,7 @@ models:
     discontinued: false
   - id: dw-6900bba-1
     ref: DW-6900BBA-1
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.DW-6900BBA-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -227,7 +230,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900bba-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -254,13 +257,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900bmc-1
     ref: DW-6900BMC-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900BMC-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -279,7 +283,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900bmc-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -303,7 +307,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -328,7 +332,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -352,7 +356,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -377,13 +381,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900bwd-1
     ref: DW-6900BWD-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900BWD-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -402,7 +407,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900bwd-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -411,6 +416,7 @@ models:
     discontinued: false
   - id: dw-6900cb-1
     ref: DW-6900CB-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900CB-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -521,7 +527,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -546,7 +552,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -571,7 +577,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -596,7 +602,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -663,7 +669,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -688,7 +694,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900da-4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -697,6 +703,7 @@ models:
     discontinued: true
   - id: dw-6900ds-1
     ref: DW-6900DS-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900DS-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -715,7 +722,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     discontinued: false
     image: dw-6900ds-1
     image_credit:
@@ -757,7 +764,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -782,7 +789,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -821,7 +828,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -843,6 +850,7 @@ models:
     discontinued: true
   - id: dw-6900gd-9
     ref: DW-6900GD-9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900GD-9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -861,7 +869,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900gd-9
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -870,6 +878,7 @@ models:
     discontinued: false
   - id: dw-6900gda-9
     ref: DW-6900GDA-9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900GDA-9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -888,7 +897,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900gda-9
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -897,6 +906,7 @@ models:
     discontinued: false
   - id: dw-6900gl-4
     ref: DW-6900GL-4
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900GL-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -915,7 +925,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900gl-4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -942,7 +952,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -967,13 +977,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900jk-4
     ref: DW-6900JK-4
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.DW-6900JK-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -992,7 +1003,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900jk-4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1018,7 +1029,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1043,7 +1054,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1068,13 +1079,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900ls-1
     ref: DW-6900LS-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900LS-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -1093,7 +1105,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900ls-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1102,6 +1114,7 @@ models:
     discontinued: false
   - id: dw-6900ls-2
     ref: DW-6900LS-2
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900LS-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -1120,7 +1133,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900ls-2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1147,7 +1160,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1172,7 +1185,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1197,7 +1210,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1222,7 +1235,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     discontinued: true
     image: dw-6900mf-1
     image_credit:
@@ -1249,7 +1262,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1274,7 +1287,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1329,7 +1342,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1354,7 +1367,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900mma-2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1381,7 +1394,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1406,13 +1419,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900ms-1
     ref: DW-6900MS-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900MS-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -1448,13 +1462,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900nb-1
     ref: DW-6900NB-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900NB-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -1502,6 +1517,7 @@ models:
     discontinued: true
   - id: dw-6900nb-7
     ref: DW-6900NB-7
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900NB-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -1537,7 +1553,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1561,7 +1577,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1585,7 +1601,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1609,7 +1625,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1634,7 +1650,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1658,7 +1674,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1683,7 +1699,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1708,7 +1724,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1733,7 +1749,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1758,13 +1774,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900rgb-1
     ref: DW-6900RGB-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900RGB-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -1783,7 +1800,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900rgb-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1810,7 +1827,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900rh-2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1836,7 +1853,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1903,6 +1920,7 @@ models:
     discontinued: true
   - id: dw-6900sby-2
     ref: DW-6900SBY-2
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900SBY-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -1921,7 +1939,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900sby-2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1948,7 +1966,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1973,7 +1991,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1998,7 +2016,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2023,7 +2041,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2048,7 +2066,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2072,7 +2090,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2097,13 +2115,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900sk-1
     ref: DW-6900SK-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900SK-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -2122,7 +2141,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900sk-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2149,7 +2168,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2174,7 +2193,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2199,7 +2218,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2224,7 +2243,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2249,13 +2268,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900sp-1
     ref: DW-6900SP-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900SP-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -2274,7 +2294,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900sp-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2283,6 +2303,7 @@ models:
     discontinued: false
   - id: dw-6900sp-7
     ref: DW-6900SP-7
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900SP-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -2301,7 +2322,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900sp-7
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2327,7 +2348,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2352,7 +2373,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2377,7 +2398,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2402,13 +2423,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900td-4
     ref: DW-6900TD-4
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900TD-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -2427,7 +2449,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900td-4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2453,7 +2475,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2477,7 +2499,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2502,7 +2524,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900tga-9
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2511,6 +2533,7 @@ models:
     discontinued: true
   - id: dw-6900ws-1
     ref: DW-6900WS-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900WS-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -2529,7 +2552,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900ws-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2538,6 +2561,7 @@ models:
     discontinued: false
   - id: dw-6900ws-2
     ref: DW-6900WS-2
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900WS-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -2556,7 +2580,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900ws-2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2583,13 +2607,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900y-9
     ref: DW-6900Y-9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900Y-9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -2608,7 +2633,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900y-9
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2634,7 +2659,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2659,7 +2684,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2684,13 +2709,14 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: dw-6900zb-8
     ref: DW-6900ZB-8
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900ZB-8/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3230/qw3230_EN.pdf',
@@ -2709,7 +2735,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     image: dw-6900zb-8
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -2736,7 +2762,7 @@ models:
     display: digital
     movement: quartz
     module: '3230'
-    features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
+    features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -2750,6 +2776,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: dw-6900hd-8
     ref: DW-6900HD-8
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900HD-8/'
     source:
       { url: 'https://web.archive.org/web/20240715065725id_/https://www.casio.com/europe/watches/gshock/product.DW-6900HD-8/', kind: official }
     year: 2024
@@ -2769,6 +2796,7 @@ models:
     discontinued: false
   - id: dw-6900nnj-1
     ref: DW-6900NNJ-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900NNJ-1/'
     source:
       { url: 'https://web.archive.org/web/20240714221542id_/https://www.casio.com/europe/watches/gshock/product.DW-6900NNJ-1/', kind: official }
     year: 2023
@@ -2788,6 +2816,7 @@ models:
     discontinued: false
   - id: dw-6900rcs-1
     ref: DW-6900RCS-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900RCS-1/'
     source:
       { url: 'https://web.archive.org/web/20240408193657id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-1/', kind: official }
     year: 2024
@@ -2807,6 +2836,7 @@ models:
     discontinued: false
   - id: dw-6900rcs-4
     ref: DW-6900RCS-4
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900RCS-4/'
     source:
       { url: 'https://web.archive.org/web/20240408193253id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-4/', kind: official }
     year: 2024
@@ -2826,6 +2856,7 @@ models:
     discontinued: false
   - id: dw-6900rcs-7
     ref: DW-6900RCS-7
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900RCS-7/'
     source:
       { url: 'https://web.archive.org/web/20240408193800id_/https://www.casio.com/us/watches/gshock/product.DW-6900RCS-7/', kind: official }
     year: 2024
@@ -2845,6 +2876,7 @@ models:
     discontinued: false
   - id: dw-6900rl-1
     ref: DW-6900RL-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900RL-1/'
     source:
       { url: 'https://web.archive.org/web/20250122184300id_/https://www.casio.com/us/watches/gshock/product.DW-6900RL-1/', kind: official }
     year: 2024
@@ -2864,6 +2896,7 @@ models:
     discontinued: false
   - id: dw-6900shb-7
     ref: DW-6900SHB-7
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900SHB-7/'
     source:
       { url: 'https://web.archive.org/web/20250121114058id_/https://www.casio.com/in/watches/gshock/product.DW-6900SHB-7/', kind: official }
     year: 2024
@@ -2883,6 +2916,7 @@ models:
     discontinued: false
   - id: dw-6900tr-1
     ref: DW-6900TR-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900TR-1/'
     source:
       { url: 'https://web.archive.org/web/20250309020326id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-1/', kind: official }
     module: '3529'
@@ -2902,6 +2936,7 @@ models:
     discontinued: false
   - id: dw-6900tr-4
     ref: DW-6900TR-4
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900TR-4/'
     source:
       { url: 'https://web.archive.org/web/20250407003625id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-4/', kind: official }
     module: '3529'
@@ -2921,6 +2956,7 @@ models:
     discontinued: false
   - id: dw-6900tr-9
     ref: DW-6900TR-9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900TR-9/'
     source:
       { url: 'https://web.archive.org/web/20250407051223id_/https://www.casio.com/us/watches/gshock/product.DW-6900TR-9/', kind: official }
     module: '3529'
@@ -2940,6 +2976,7 @@ models:
     discontinued: false
   - id: dw-6900tu-1a5
     ref: DW-6900TU-1A5
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900TU-1A5/'
     source:
       { url: 'https://web.archive.org/web/20240801174735id_/https://www.casio.com/us/watches/gshock/product.DW-6900TU-1A5/', kind: official }
     year: 2024
@@ -2959,6 +2996,7 @@ models:
     discontinued: false
   - id: dw-6900u-1
     ref: DW-6900U-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900U-1/'
     source:
       { url: 'https://web.archive.org/web/20240715065322id_/https://www.casio.com/europe/watches/gshock/product.DW-6900U-1/', kind: official }
     year: 2024
@@ -2978,6 +3016,7 @@ models:
     discontinued: false
   - id: dw-6900ub-9
     ref: DW-6900UB-9
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900UB-9/'
     source:
       { url: 'https://web.archive.org/web/20240225135613id_/https://www.casio.com/intl/watches/gshock/product.DW-6900UB-9/', kind: official }
     year: 2023
@@ -2997,6 +3036,7 @@ models:
     discontinued: false
   - id: dw-6900ums-1
     ref: DW-6900UMS-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.DW-6900UMS-1/'
     source:
       { url: 'https://web.archive.org/web/20240307212724id_/https://www.casio.com/in/watches/gshock/product.DW-6900UMS-1/', kind: official }
     year: 2024
@@ -3016,6 +3056,7 @@ models:
     discontinued: false
   - id: dw-6900wd-1
     ref: DW-6900WD-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900WD-1/'
     source:
       { url: 'https://web.archive.org/web/20241009172121id_/https://www.casio.com/us/watches/gshock/product.DW-6900WD-1/', kind: official }
     year: 2024
@@ -3053,6 +3094,7 @@ models:
 # the whole catalogue by `availability.ts` (D59), never written by hand.
   - id: dw-6900cc23-3
     ref: DW-6900CC23-3
+    official_url: 'https://www.casio.com/us/watches/gshock/product.DW-6900CC23-3/'
     # D62 — read off Casio's own collaboration landing page, the same one that
     # names DW-5600CC23-4. Never from the `CC` in the reference code.
     edition: coca-cola

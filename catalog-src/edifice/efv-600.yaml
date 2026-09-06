@@ -20,6 +20,7 @@ series:
 models:
   - id: efv-600cl-3av
     ref: EFV-600CL-3AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-600CL-3AV/'
     source:
       { url: 'https://web.archive.org/web/20220628162627id_/https://www.casio.com/in/watches/edifice/product.EFV-600CL-3AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efv-600d-2av
     ref: EFV-600D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-600D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714221037id_/https://www.casio.com/europe/watches/edifice/product.EFV-600D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efv-600d-3cv
     ref: EFV-600D-3CV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-600D-3CV/'
     source:
       { url: 'https://web.archive.org/web/20230203224534id_/https://www.casio.com/in/watches/edifice/product.EFV-600D-3CV/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: efv-600d-4av
     ref: EFV-600D-4AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFV-600D-4AV/'
     source:
       { url: 'https://web.archive.org/web/20240714221042id_/https://www.casio.com/europe/watches/edifice/product.EFV-600D-4AV/', kind: official }
     display: analog
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: efv-600l-2av
     ref: EFV-600L-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-600L-2AV/'
     source:
       { url: 'https://web.archive.org/web/20220628150024id_/https://www.casio.com/in/watches/edifice/product.EFV-600L-2AV/', kind: official }
     display: analog

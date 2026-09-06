@@ -100,7 +100,7 @@ models:
     display: digital
     movement: solar
     module: '3266'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -125,7 +125,7 @@ models:
     display: digital
     movement: solar
     module: '3266'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -150,7 +150,7 @@ models:
     display: digital
     movement: solar
     module: '3266'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -175,7 +175,7 @@ models:
     display: digital
     movement: solar
     module: '3266'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -208,7 +208,7 @@ models:
     display: digital
     movement: solar
     module: '3266'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     discontinued: true
     image: gf-8250k-4
     image_credit:

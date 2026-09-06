@@ -99,6 +99,7 @@ series:
 models:
   - id: gwg-1000-1a
     ref: GWG-1000-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GWG-1000-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
@@ -117,7 +118,7 @@ models:
     display: ana-digi
     movement: solar-radio
     module: '5463'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, mud-resistant, sapphire-crystal]
     image: gwg-1000-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -126,6 +127,7 @@ models:
     discontinued: false
   - id: gwg-1000-1a1
     ref: GWG-1000-1A1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GWG-1000-1A1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
@@ -144,7 +146,7 @@ models:
     display: ana-digi
     movement: solar-radio
     module: '5463'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, mud-resistant, sapphire-crystal]
     image: gwg-1000-1a1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -153,6 +155,7 @@ models:
     discontinued: false
   - id: gwg-1000-1a3
     ref: GWG-1000-1A3
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GWG-1000-1A3/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5463/qw5463_EN.pdf',
@@ -171,7 +174,7 @@ models:
     display: ana-digi
     movement: solar-radio
     module: '5463'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, mud-resistant, sapphire-crystal]
     image: gwg-1000-1a3
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -198,7 +201,7 @@ models:
     display: ana-digi
     movement: solar-radio
     module: '5463'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, mud-resistant, sapphire-crystal]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -223,7 +226,7 @@ models:
     display: ana-digi
     movement: solar-radio
     module: '5463'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, mud-resistant, sapphire-crystal]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -248,7 +251,7 @@ models:
     display: ana-digi
     movement: solar-radio
     module: '5463'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, mud-resistant, sapphire-crystal]
     discontinued: true
     image: gwg-1000gb-1a
     image_credit:
@@ -275,7 +278,7 @@ models:
     display: ana-digi
     movement: solar-radio
     module: '5463'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, mud-resistant, sapphire-crystal]
     discontinued: true
     image: gwg-1000gb-4a
     image_credit:
@@ -302,7 +305,7 @@ models:
     display: ana-digi
     movement: solar-radio
     module: '5463'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, mud-resistant, sapphire-crystal]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -327,7 +330,7 @@ models:
     display: ana-digi
     movement: solar-radio
     module: '5463'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, mud-resistant, sapphire-crystal]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -356,7 +359,7 @@ models:
     display: ana-digi
     movement: solar-radio
     module: '5463'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light, auto-light, compass, altimeter, barometer, thermometer, power-saving]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, power-saving, altimeter, barometer, compass, thermometer, mud-resistant, sapphire-crystal]
     discontinued: true
     image: gwg-1000wlp-1a
     image_credit:

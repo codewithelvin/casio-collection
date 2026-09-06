@@ -20,6 +20,7 @@ series:
 models:
   - id: efv-100d-1av
     ref: EFV-100D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-100D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220638id_/https://www.casio.com/europe/watches/edifice/product.EFV-100D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efv-100d-2av
     ref: EFV-100D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-100D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220538id_/https://www.casio.com/europe/watches/edifice/product.EFV-100D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efv-100d-7av
     ref: EFV-100D-7AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-100D-7AV/'
     source:
       { url: 'https://web.archive.org/web/20221209060105id_/https://www.casio.com/ph/watches/edifice/product.EFV-100D-7AV/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: efv-100d-8av
     ref: EFV-100D-8AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFV-100D-8AV/'
     source:
       { url: 'https://web.archive.org/web/20241127050649id_/https://www.casio.com/europe/watches/edifice/product.EFV-100D-8AV/', kind: official }
     display: analog
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: efv-100l-1av
     ref: EFV-100L-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-100L-1AV/'
     source:
       { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-100L-1AV/', kind: official }
     display: analog
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: efv-100l-7av
     ref: EFV-100L-7AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-100L-7AV/'
     source:
       { url: 'https://web.archive.org/web/20220808045814id_/https://www.casio.com/intl/watches/edifice/product.EFV-100L-7AV/', kind: official }
     display: analog
@@ -117,6 +123,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: efv-100d-2bv
     ref: EFV-100D-2BV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFV-100D-2BV/'
     source:
       { url: 'https://web.archive.org/web/20240826110250id_/https://www.casio.com/pt/watches/edifice/product.EFV-100D-2BV/', kind: official }
     case: { height_mm: 48, width_mm: 42, depth_mm: 10.9, weight_g: 125 }
@@ -128,6 +135,7 @@ models:
     discontinued: false
   - id: efv-100d-9av
     ref: EFV-100D-9AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFV-100D-9AV/'
     source:
       { url: 'https://web.archive.org/web/20250413081428id_/https://www.casio.com/fr/watches/edifice/product.EFV-100D-9AV/', kind: official }
     case: { weight_g: 125 }
@@ -140,6 +148,7 @@ models:
     discontinued: false
   - id: efv-100dj-2b
     ref: EFV-100DJ-2B
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFV-100DJ-2B/'
     source:
       { url: 'https://web.archive.org/web/20241102015703id_/https://www.casio.com/jp/watches/edifice/product.EFV-100DJ-2B/', kind: official }
     case: { height_mm: 48, width_mm: 42, depth_mm: 10.9, weight_g: 121 }
@@ -152,6 +161,7 @@ models:
     discontinued: false
   - id: efv-100dj-9a
     ref: EFV-100DJ-9A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFV-100DJ-9A/'
     source:
       { url: 'https://web.archive.org/web/20241111231250id_/https://www.casio.com/jp/watches/edifice/product.EFV-100DJ-9A/', kind: official }
     case: { height_mm: 48, width_mm: 42, depth_mm: 10.9, weight_g: 121 }

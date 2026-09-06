@@ -38,6 +38,17 @@ import {
 // looks at — the crawler's.
 import { ALL_SYMBOLS, SYMBOL_GROUPS, manualUrl } from '../src/routes/symbols/symbols.ts'
 import { t } from '../src/i18n/strings.ts'
+import {
+  collectorsTitle,
+  editionTitle,
+  editionsTitle,
+  homeTitle,
+  lineTitle,
+  notFoundTitle,
+  seriesTitle,
+  symbolsTitle,
+  watchTitle,
+} from '../src/seo/titles.ts'
 // `<lastmod>` is taken from the commit that last touched the file a page is
 // generated from, or omitted. The header of that module is the argument for why
 // those are the only two options.
@@ -199,7 +210,7 @@ function homePage(catalog: Catalog): Page {
   const models = catalog.models.filter(listed)
   return {
     path: '',
-    title: 'Casio Vault — the Casio watch catalogue, and the ones you own',
+    title: homeTitle(),
     description: `Browse ${models.length} Casio references across ${catalog.series.length} series. Search by reference, filter by year and feature, and mark what you own. ${DISCLAIMER}`,
     priority: '1.0',
     // The front door carries the counts and the line list, so anything that
@@ -265,7 +276,7 @@ function linePage(catalog: Catalog, line: Catalog['lines'][number]): Page {
 
   return {
     path: `line/${line.slug}`,
-    title: `${line.name} — every reference in the catalogue · Casio Vault`,
+    title: lineTitle(line.name),
     description: `${models.length} Casio ${line.name} references in ${series.length} series, with the specification each one is actually sourced for. ${DISCLAIMER}`,
     priority: '0.8',
     // Every series in the line, because the page is the list of them.
@@ -301,7 +312,7 @@ function seriesPage(
 
   return {
     path: `line/${line.slug}/${series.id}`,
-    title: `${series.name} — ${models.length} references · Casio Vault`,
+    title: seriesTitle(series.name, models.length),
     description: `Every catalogued ${series.name} reference: ${models
       .slice(0, 6)
       .map((model) => model.ref)
@@ -346,7 +357,7 @@ function seriesPage(
 function editionsPage(catalog: Catalog): Page {
   return {
     path: 'editions',
-    title: 'Casio limited editions and collaborations · Casio Vault',
+    title: editionsTitle(),
     description: `The ${catalog.editions.length} named Casio releases in this catalogue — collaborations, dedications and limited runs, among them ${catalog.editions
       .slice(0, 5)
       .map((edition) => edition.name)
@@ -405,7 +416,7 @@ function symbolsPage(): Page {
 
   return {
     path: 'symbols',
-    title: 'Casio digital watch symbols explained — what every indicator means · Casio Vault',
+    title: symbolsTitle(),
     description: `What the indicators on a Casio digital display mean — ${ALL_SYMBOLS.slice(0, 8)
       .map((symbol) => symbol.token ?? symbol.name)
       .join(', ')} and ${ALL_SYMBOLS.length - 8} more, each with the Casio manual that defines it. ${DISCLAIMER}`,
@@ -466,7 +477,7 @@ function symbolsPage(): Page {
 function collectorsPage(): Page {
   return {
     path: 'collectors',
-    title: `${t('route.collectors.title')} · Casio Vault`,
+    title: collectorsTitle(),
     description: `${t('route.collectors.body')} ${DISCLAIMER}`,
     // Required by the type and never read: `priority` is a sitemap field, and a
     // noindex page is not in the sitemap. Stated rather than defaulted so the
@@ -486,7 +497,7 @@ function editionPage(catalog: Catalog, edition: Catalog['editions'][number]): Pa
 
   return {
     path: `editions/${edition.slug}`,
-    title: `${edition.name} — ${edition.count} Casio references · Casio Vault`,
+    title: editionTitle(edition.name, edition.count),
     description: `Every catalogued reference in the ${edition.name}${
       edition.partner ? `, Casio with ${edition.partner}` : ''
     }: ${models.map((model) => model.ref).join(', ')}. ${DISCLAIMER}`,
@@ -583,7 +594,7 @@ function watchPage(catalog: Catalog, model: PublishedModel): Page {
 
   return {
     path: `watch/${model.id}`,
-    title: `${name} — specification · Casio Vault`,
+    title: watchTitle(name),
     description: `Casio ${model.ref}${line ? ` (${line.name})` : ''}${
       summary ? `: ${summary}` : ''
     }. Sourced from a real page and credited. ${DISCLAIMER}`,
@@ -951,7 +962,7 @@ function notFoundPage(catalog: Catalog): Page {
     noCanonical: true,
     noindex: true,
     priority: '0.0',
-    title: 'Page not found · Casio Vault',
+    title: notFoundTitle(),
     description: `This page does not exist. Browse the Casio catalogue by line and series instead. ${DISCLAIMER}`,
     body: `
       <h1>Page not found</h1>

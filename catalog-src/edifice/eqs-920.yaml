@@ -20,6 +20,7 @@ series:
 models:
   - id: eqs-920db-1av
     ref: EQS-920DB-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQS-920DB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240119144228id_/https://www.casio.com/in/watches/edifice/product.EQS-920DB-1AV/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: eqs-920db-1bv
     ref: EQS-920DB-1BV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQS-920DB-1BV/'
     source:
       { url: 'https://web.archive.org/web/20240119144222id_/https://www.casio.com/in/watches/edifice/product.EQS-920DB-1BV/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: eqs-920db-2av
     ref: EQS-920DB-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-920DB-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240722130252id_/https://www.casio.com/id/watches/edifice/product.EQS-920DB-2AV/', kind: official }
     features: [stopwatch]
@@ -59,6 +62,7 @@ models:
     discontinued: false
   - id: eqs-920pb-1av
     ref: EQS-920PB-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQS-920PB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240119144225id_/https://www.casio.com/in/watches/edifice/product.EQS-920PB-1AV/', kind: official }
     display: analog

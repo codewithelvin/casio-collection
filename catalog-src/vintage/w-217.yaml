@@ -20,6 +20,7 @@ series:
 models:
   - id: w-217h-1av
     ref: W-217H-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-217H-1AV/'
     source:
       { url: 'https://web.archive.org/web/20221101080043id_/https://www.casio.com/sg/watches/casio/product.W-217H-1AV/', kind: official }
     movement: quartz
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: w-217h-3av
     ref: W-217H-3AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-217H-3AV/'
     source:
       { url: 'https://web.archive.org/web/20240406015703id_/https://www.casio.com/us/watches/casio/product.W-217H-3AV/', kind: official }
     movement: quartz
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: w-217h-3bv
     ref: W-217H-3BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-217H-3BV/'
     source:
       { url: 'https://web.archive.org/web/20220926022621id_/https://www.casio.com/us/watches/casio/product.W-217H-3BV/', kind: official }
     movement: quartz
@@ -62,6 +65,7 @@ models:
     discontinued: false
   - id: w-217h-5av
     ref: W-217H-5AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-217H-5AV/'
     source:
       { url: 'https://web.archive.org/web/20240310085630id_/https://www.casio.com/us/watches/casio/product.W-217H-5AV/', kind: official }
     movement: quartz
@@ -76,6 +80,7 @@ models:
     discontinued: false
   - id: w-217h-9av
     ref: W-217H-9AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-217H-9AV/'
     source:
       { url: 'https://web.archive.org/web/20220526115651id_/https://www.casio.com/sg/watches/casio/product.W-217H-9AV/', kind: official }
     movement: quartz
@@ -90,6 +95,7 @@ models:
     discontinued: false
   - id: w-217hm-5av
     ref: W-217HM-5AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-217HM-5AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102522id_/https://www.casio.com/europe/watches/casio/product.W-217HM-5AV/', kind: official }
     movement: quartz
@@ -104,6 +110,7 @@ models:
     discontinued: false
   - id: w-217hm-7bv
     ref: W-217HM-7BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.W-217HM-7BV/'
     source:
       { url: 'https://web.archive.org/web/20240715102529id_/https://www.casio.com/europe/watches/casio/product.W-217HM-7BV/', kind: official }
     movement: quartz
@@ -118,6 +125,7 @@ models:
     discontinued: false
   - id: w-217hm-9av
     ref: W-217HM-9AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-217HM-9AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102525id_/https://www.casio.com/europe/watches/casio/product.W-217HM-9AV/', kind: official }
     movement: quartz

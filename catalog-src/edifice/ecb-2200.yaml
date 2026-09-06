@@ -20,6 +20,7 @@ series:
 models:
   - id: ecb-2200cb-2a
     ref: ECB-2200CB-2A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2200CB-2A/'
     source:
       { url: 'https://web.archive.org/web/20250121011022id_/https://www.casio.com/in/watches/edifice/product.ECB-2200CB-2A/', kind: official }
     display: ana-digi
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: ecb-2200dc-1a
     ref: ECB-2200DC-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-2200DC-1A/'
     source:
       { url: 'https://web.archive.org/web/20250121012053id_/https://www.casio.com/in/watches/edifice/product.ECB-2200DC-1A/', kind: official }
     display: ana-digi
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: ecb-2200dd-1a
     ref: ECB-2200DD-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2200DD-1A/'
     source:
       { url: 'https://web.archive.org/web/20240718074845id_/https://www.casio.com/in/watches/edifice/product.ECB-2200DD-1A/', kind: official }
     display: ana-digi
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: ecb-2200htr-1a
     ref: ECB-2200HTR-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-2200HTR-1A/'
     source:
       { url: 'https://web.archive.org/web/20231202110447id_/https://www.casio.com/sg/watches/edifice/product.ECB-2200HTR-1A/', kind: official }
     display: ana-digi
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: ecb-2200p-1a
     ref: ECB-2200P-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-2200P-1A/'
     source:
       { url: 'https://web.archive.org/web/20240408193706id_/https://www.casio.com/us/watches/edifice/product.ECB-2200P-1A/', kind: official }
     display: ana-digi
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: ecb-2200pb-1a
     ref: ECB-2200PB-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2200PB-1A/'
     source:
       { url: 'https://web.archive.org/web/20250121011223id_/https://www.casio.com/in/watches/edifice/product.ECB-2200PB-1A/', kind: official }
     display: ana-digi
@@ -110,6 +116,7 @@ models:
     discontinued: false
   - id: ecb-2200ycb-2a
     ref: ECB-2200YCB-2A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-2200YCB-2A/'
     source:
       { url: 'https://web.archive.org/web/20240922052034id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YCB-2A/', kind: official }
     features: [bluetooth]
@@ -121,6 +128,7 @@ models:
     discontinued: false
   - id: ecb-2200ydc-1a
     ref: ECB-2200YDC-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-2200YDC-1A/'
     source:
       { url: 'https://web.archive.org/web/20240119143538id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YDC-1A/', kind: official }
     features: [bluetooth]
@@ -132,6 +140,7 @@ models:
     discontinued: false
   - id: ecb-2200yp-1a
     ref: ECB-2200YP-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-2200YP-1A/'
     source:
       { url: 'https://web.archive.org/web/20240502033052id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YP-1A/', kind: official }
     features: [bluetooth]
@@ -143,6 +152,7 @@ models:
     discontinued: false
   - id: ecb-2200yrc-1a3
     ref: ECB-2200YRC-1A3
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-2200YRC-1A3/'
     source:
       { url: 'https://web.archive.org/web/20250402095247id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YRC-1A3/', kind: official }
     features: [bluetooth]
@@ -154,6 +164,7 @@ models:
     discontinued: false
   - id: ecb-2200yrc-1a9
     ref: ECB-2200YRC-1A9
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-2200YRC-1A9/'
     source:
       { url: 'https://web.archive.org/web/20250329062726id_/https://www.casio.com/jp/watches/edifice/product.ECB-2200YRC-1A9/', kind: official }
     features: [bluetooth]

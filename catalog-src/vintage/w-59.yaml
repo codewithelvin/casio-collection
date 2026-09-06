@@ -20,6 +20,7 @@ series:
 models:
   - id: w-59-1vq
     ref: W-59-1VQ
+    official_url: 'https://www.casio.com/intl/watches/casio/product.W-59-1VQ/'
     source:
       { url: 'https://web.archive.org/web/20260107083140id_/https://www.casio.com/intl/watches/casio/product.W-59-1VQ/', kind: official }
     movement: quartz

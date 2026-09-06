@@ -21,6 +21,7 @@ series:
 models:
   - id: aq-230egg-2a
     ref: AQ-230EGG-2A
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.AQ-230EGG-2A/'
     source:
       { url: 'https://web.archive.org/web/20250407152927id_/https://www.casio.com/de/watches/casio/vintage/product.AQ-230EGG-2A/', kind: official }
     features: [alarm]
@@ -32,6 +33,7 @@ models:
     discontinued: false
   - id: aq-230ga-9
     ref: AQ-230GA-9
+    official_url: 'https://www.casio.com/us/watches/casio/product.AQ-230GA-9/'
     source:
       { url: 'https://web.archive.org/web/20221118184943id_/https://www.casio.com/us/watches/casio/product.AQ-230GA-9/', kind: official }
     movement: quartz
@@ -41,6 +43,7 @@ models:
     display: ana-digi
   - id: aq-230gg-2a
     ref: AQ-230GG-2A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.AQ-230GG-2A/'
     source:
       { url: 'https://web.archive.org/web/20230727184933id_/https://www.casio.com/in/watches/casio/product.AQ-230GG-2A/', kind: official }
     movement: quartz
@@ -55,6 +58,7 @@ models:
     display: ana-digi
   - id: aq-230gg-9a
     ref: AQ-230GG-9A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.AQ-230GG-9A/'
     source:
       { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.AQ-230GG-9A/', kind: official }
     movement: quartz
@@ -82,6 +86,7 @@ models:
     discontinued: true
   - id: aq-230egg-3a
     ref: AQ-230EGG-3A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.AQ-230EGG-3A/'
     source:
       { url: 'https://web.archive.org/web/20241008103804id_/https://www.casio.com/es/watches/casio/vintage/product.AQ-230EGG-3A/', kind: official }
     case: { weight_g: 47 }

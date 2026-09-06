@@ -20,6 +20,7 @@ series:
 models:
   - id: ecb-800db-1a
     ref: ECB-800DB-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-800DB-1A/'
     source:
       { url: 'https://web.archive.org/web/20210623055318id_/https://www.casio.com/jp/watches/edifice/product.ECB-800DB-1A/', kind: official }
     features: [bluetooth]
@@ -31,6 +32,7 @@ models:
     discontinued: false
   - id: ecb-800dc-1a
     ref: ECB-800DC-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-800DC-1A/'
     source:
       { url: 'https://web.archive.org/web/20210623055626id_/https://www.casio.com/jp/watches/edifice/product.ECB-800DC-1A/', kind: official }
     features: [bluetooth]

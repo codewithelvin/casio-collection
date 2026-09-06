@@ -29,6 +29,7 @@ series:
 models:
   - id: she-3048pgl-7b
     ref: SHE-3048PGL-7B
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-3048PGL-7B/'
     source:
       { url: 'https://web.archive.org/web/20220529082448id_/https://www.casio.com/intl/watches/sheen/product.SHE-3048PGL-7B/', kind: official }
     display: analog

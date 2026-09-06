@@ -20,6 +20,7 @@ series:
 models:
   - id: eqb-500d-1a
     ref: EQB-500D-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQB-500D-1A/'
     source:
       { url: 'https://web.archive.org/web/20220817013912id_/https://www.casio.com/us/watches/edifice/product.EQB-500D-1A/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: eqb-500db-2a
     ref: EQB-500DB-2A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQB-500DB-2A/'
     source:
       { url: 'https://web.archive.org/web/20220817005952id_/https://www.casio.com/us/watches/edifice/product.EQB-500DB-2A/', kind: official }
     display: analog

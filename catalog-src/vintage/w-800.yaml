@@ -33,6 +33,7 @@ series:
 models:
   - id: w-800h-1av
     ref: W-800H-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-800H-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715101643id_/https://www.casio.com/europe/watches/casio/product.W-800H-1AV/', kind: official }
     movement: quartz
@@ -47,6 +48,7 @@ models:
     discontinued: false
   - id: w-800h-1bv
     ref: W-800H-1BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-800H-1BV/'
     source:
       { url: 'https://web.archive.org/web/20240715102538id_/https://www.casio.com/europe/watches/casio/product.W-800H-1BV/', kind: official }
     movement: quartz
@@ -61,6 +63,7 @@ models:
     discontinued: false
   - id: w-800h-2av
     ref: W-800H-2AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-800H-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240119144134id_/https://www.casio.com/us/watches/casio/product.W-800H-2AV/', kind: official }
     movement: quartz
@@ -75,6 +78,7 @@ models:
     discontinued: false
   - id: w-800h-5av
     ref: W-800H-5AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-800H-5AV/'
     source:
       { url: 'https://web.archive.org/web/20240119144204id_/https://www.casio.com/us/watches/casio/product.W-800H-5AV/', kind: official }
     movement: quartz
@@ -89,6 +93,7 @@ models:
     discontinued: false
   - id: w-800hg-9av
     ref: W-800HG-9AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-800HG-9AV/'
     source:
       { url: 'https://web.archive.org/web/20220810073601id_/https://www.casio.com/us/watches/casio/product.W-800HG-9AV/', kind: official }
     movement: quartz
@@ -103,6 +108,7 @@ models:
       url: 'https://web.archive.org/web/20240721132130id_/https://www.casio.com/id/watches/casio/product.W-800HG-9AV/'
   - id: w-800hm-3av
     ref: W-800HM-3AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-800HM-3AV/'
     source:
       { url: 'https://web.archive.org/web/20220818074823id_/https://www.casio.com/us/watches/casio/product.W-800HM-3AV/', kind: official }
     movement: quartz

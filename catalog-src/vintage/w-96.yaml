@@ -33,6 +33,7 @@ series:
 models:
   - id: w-96h-1a
     ref: W-96H-1A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.W-96H-1A/'
     source:
       { url: 'https://web.archive.org/web/20210416080743id_/https://www.casio.com/jp/watches/casio/product.W-96H-1A/', kind: official }
     case: { height_mm: 43.9, width_mm: 35.7, depth_mm: 12.5, weight_g: 32 }
@@ -45,6 +46,7 @@ models:
     discontinued: false
   - id: w-96h-1av
     ref: W-96H-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-96H-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715101650id_/https://www.casio.com/europe/watches/casio/product.W-96H-1AV/', kind: official }
     movement: quartz
@@ -59,6 +61,7 @@ models:
     discontinued: false
   - id: w-96h-1bv
     ref: W-96H-1BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-96H-1BV/'
     source:
       { url: 'https://web.archive.org/web/20220808062347id_/https://www.casio.com/us/watches/casio/product.W-96H-1BV/', kind: official }
     movement: quartz
@@ -73,6 +76,7 @@ models:
       url: 'https://web.archive.org/web/20220811150514id_/https://www.casio.com/in/watches/casio/product.W-96H-1BV/'
   - id: w-96h-2av
     ref: W-96H-2AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.W-96H-2AV/'
     source:
       { url: 'https://web.archive.org/web/20220525071038id_/https://www.casio.com/in/watches/casio/product.w-96h-2av/', kind: official }
     movement: quartz
@@ -87,6 +91,7 @@ models:
     discontinued: false
   - id: w-96h-3av
     ref: W-96H-3AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-96H-3AV/'
     source:
       { url: 'https://web.archive.org/web/20220703111058id_/https://www.casio.com/us/watches/casio/product.W-96H-3AV/', kind: official }
     movement: quartz
@@ -104,6 +109,7 @@ models:
     discontinued: false
   - id: w-96h-4av
     ref: W-96H-4AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-96H-4AV/'
     source:
       { url: 'https://web.archive.org/web/20220808064237id_/https://www.casio.com/us/watches/casio/product.W-96H-4AV/', kind: official }
     movement: quartz

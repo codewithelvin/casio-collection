@@ -29,6 +29,7 @@ series:
 models:
   - id: she-4535yd-2a
     ref: SHE-4535YD-2A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4535YD-2A/'
     source:
       { url: 'https://web.archive.org/web/20221221180516id_/https://www.casio.com/in/watches/sheen/product.SHE-4535YD-2A/', kind: official }
     display: analog
@@ -44,6 +45,7 @@ models:
     discontinued: false
   - id: she-4535ygl-9a
     ref: SHE-4535YGL-9A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4535YGL-9A/'
     source:
       { url: 'https://web.archive.org/web/20221001040901id_/https://www.casio.com/sg/watches/sheen/product.SHE-4535YGL-9A/', kind: official }
     display: analog
@@ -59,6 +61,7 @@ models:
     discontinued: false
   - id: she-4535ypg-2a
     ref: SHE-4535YPG-2A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4535YPG-2A/'
     source:
       { url: 'https://web.archive.org/web/20221001044244id_/https://www.casio.com/sg/watches/sheen/product.SHE-4535YPG-2A/', kind: official }
     display: analog

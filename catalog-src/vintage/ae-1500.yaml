@@ -20,6 +20,7 @@ series:
 models:
   - id: ae-1500wh-1a
     ref: AE-1500WH-1A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AE-1500WH-1A/'
     source:
       { url: 'https://web.archive.org/web/20230123003023id_/https://www.casio.com/jp/watches/casio/product.AE-1500WH-1A/', kind: official }
     case: { height_mm: 54.4, width_mm: 51.2, depth_mm: 15.7, weight_g: 57 }
@@ -32,6 +33,7 @@ models:
     discontinued: false
   - id: ae-1500wh-1av
     ref: AE-1500WH-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1500WH-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715070803id_/https://www.casio.com/europe/watches/casio/product.AE-1500WH-1AV/', kind: official }
     movement: quartz
@@ -46,6 +48,7 @@ models:
     discontinued: false
   - id: ae-1500wh-2av
     ref: AE-1500WH-2AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1500WH-2AV/'
     source:
       { url: 'https://web.archive.org/web/20230522111853id_/https://www.casio.com/us/watches/casio/product.AE-1500WH-2AV/', kind: official }
     movement: quartz
@@ -60,6 +63,7 @@ models:
     discontinued: false
   - id: ae-1500wh-5av
     ref: AE-1500WH-5AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1500WH-5AV/'
     source:
       { url: 'https://web.archive.org/web/20240715101414id_/https://www.casio.com/europe/watches/casio/product.AE-1500WH-5AV/', kind: official }
     movement: quartz
@@ -74,6 +78,7 @@ models:
     discontinued: false
   - id: ae-1500wh-8b
     ref: AE-1500WH-8B
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AE-1500WH-8B/'
     source:
       { url: 'https://web.archive.org/web/20240410191301id_/https://www.casio.com/jp/watches/casio/product.AE-1500WH-8B/', kind: official }
     case: { height_mm: 54.4, width_mm: 51.2, depth_mm: 15.7, weight_g: 57 }
@@ -86,6 +91,7 @@ models:
     discontinued: false
   - id: ae-1500wh-8b2v
     ref: AE-1500WH-8B2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1500WH-8B2V/'
     source:
       { url: 'https://web.archive.org/web/20240721132116id_/https://www.casio.com/id/watches/casio/product.AE-1500WH-8B2V/', kind: official }
     case: { height_mm: 54.4, width_mm: 51.2, depth_mm: 15.7, weight_g: 57 }
@@ -99,6 +105,7 @@ models:
     discontinued: false
   - id: ae-1500wh-8bv
     ref: AE-1500WH-8BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1500WH-8BV/'
     source:
       { url: 'https://web.archive.org/web/20240715070756id_/https://www.casio.com/europe/watches/casio/product.AE-1500WH-8BV/', kind: official }
     movement: quartz
@@ -113,6 +120,7 @@ models:
     discontinued: false
   - id: ae-1500whx-1av
     ref: AE-1500WHX-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1500WHX-1AV/'
     source:
       { url: 'https://web.archive.org/web/20231021025328id_/https://www.casio.com/in/watches/casio/product.AE-1500WHX-1AV/', kind: official }
     movement: quartz
@@ -127,6 +135,7 @@ models:
     discontinued: false
   - id: ae-1500whx-3av
     ref: AE-1500WHX-3AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1500WHX-3AV/'
     source:
       { url: 'https://web.archive.org/web/20220706032713id_/https://www.casio.com/us/watches/casio/product.AE-1500WHX-3AV/', kind: official }
     movement: quartz

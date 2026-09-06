@@ -20,6 +20,7 @@ series:
 models:
   - id: f-94wa-8
     ref: F-94WA-8
+    official_url: 'https://www.casio.com/intl/watches/casio/product.F-94WA-8/'
     source:
       { url: 'https://web.archive.org/web/20240812053507id_/https://www.casio.com/in/watches/casio/product.F-94WA-8/', kind: official }
     movement: quartz
@@ -33,6 +34,7 @@ models:
     discontinued: false
   - id: f-94wa-9
     ref: F-94WA-9
+    official_url: 'https://www.casio.com/intl/watches/casio/product.F-94WA-9/'
     source:
       { url: 'https://web.archive.org/web/20220528201029id_/https://www.casio.com/in/watches/casio/product.F-94WA-9/', kind: official }
     movement: quartz

@@ -20,6 +20,7 @@ series:
 models:
   - id: efr-574d-1av
     ref: EFR-574D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-574D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240718074854id_/https://www.casio.com/in/watches/edifice/product.EFR-574D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efr-574d-2av
     ref: EFR-574D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-574D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240718074849id_/https://www.casio.com/in/watches/edifice/product.EFR-574D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efr-574db-3av
     ref: EFR-574DB-3AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-574DB-3AV/'
     source:
       { url: 'https://web.archive.org/web/20231231224421id_/https://www.casio.com/my/watches/edifice/product.EFR-574DB-3AV/', kind: official }
     display: analog

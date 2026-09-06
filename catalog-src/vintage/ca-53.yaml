@@ -29,6 +29,7 @@ models:
     discontinued: true
   - id: ca-53w-1
     ref: CA-53W-1
+    official_url: 'https://www.casio.com/us/watches/casio/product.CA-53W-1/'
     source:
       { url: 'https://web.archive.org/web/20240714220052id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53W-1/', kind: official }
     movement: quartz
@@ -42,6 +43,7 @@ models:
     discontinued: false
   - id: ca-53wb-1b
     ref: CA-53WB-1B
+    official_url: 'https://www.casio.com/us/watches/casio/product.CA-53WB-1B/'
     source:
       { url: 'https://web.archive.org/web/20241118150759id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WB-1B/', kind: official }
     movement: quartz
@@ -55,6 +57,7 @@ models:
     discontinued: false
   - id: ca-53wf-1b
     ref: CA-53WF-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.CA-53WF-1B/'
     source:
       { url: 'https://web.archive.org/web/20240714215922id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WF-1B/', kind: official }
     movement: quartz
@@ -68,6 +71,7 @@ models:
     discontinued: false
   - id: ca-53wf-2b
     ref: CA-53WF-2B
+    official_url: 'https://www.casio.com/us/watches/casio/product.CA-53WF-2B/'
     source:
       { url: 'https://web.archive.org/web/20240714215934id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WF-2B/', kind: official }
     movement: quartz
@@ -81,6 +85,7 @@ models:
     discontinued: false
   - id: ca-53wf-3b
     ref: CA-53WF-3B
+    official_url: 'https://www.casio.com/us/watches/casio/product.CA-53WF-3B/'
     source:
       { url: 'https://web.archive.org/web/20240714215937id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-53WF-3B/', kind: official }
     movement: quartz
@@ -94,6 +99,7 @@ models:
     discontinued: false
   - id: ca-53wpc-1b
     ref: CA-53WPC-1B
+    official_url: 'https://www.casio.com/us/watches/casio/product.CA-53WPC-1B/'
     edition: pac-man
     source:
       { url: 'https://web.archive.org/web/20250407153152id_/https://www.casio.com/de/watches/casio/vintage/product.CA-53WPC-1B/', kind: official }
@@ -113,6 +119,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: ca-53wb-3b
     ref: CA-53WB-3B
+    official_url: 'https://www.casio.com/us/watches/casio/product.CA-53WB-3B/'
     source:
       { url: 'https://web.archive.org/web/20250409223729id_/https://www.casio.com/es/watches/casio/vintage/product.CA-53WB-3B/', kind: official }
     case: { weight_g: 25 }
@@ -124,6 +131,7 @@ models:
     discontinued: false
   - id: ca-53wb-8b
     ref: CA-53WB-8B
+    official_url: 'https://www.casio.com/us/watches/casio/product.CA-53WB-8B/'
     source:
       { url: 'https://web.archive.org/web/20241228110243id_/https://www.casio.com/it/watches/casio/vintage/product.CA-53WB-8B/', kind: official }
     case: { weight_g: 25 }
@@ -135,6 +143,7 @@ models:
     discontinued: false
   - id: ca-53wf-4b
     ref: CA-53WF-4B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.CA-53WF-4B/'
     source:
       { url: 'https://web.archive.org/web/20240717155957id_/https://www.casio.com/fr/watches/casio/vintage/product.CA-53WF-4B/', kind: official }
     case: { weight_g: 25 }
@@ -146,6 +155,7 @@ models:
     discontinued: false
   - id: ca-53wf-8b
     ref: CA-53WF-8B
+    official_url: 'https://www.casio.com/us/watches/casio/product.CA-53WF-8B/'
     source:
       { url: 'https://web.archive.org/web/20240717155954id_/https://www.casio.com/fr/watches/casio/vintage/product.CA-53WF-8B/', kind: official }
     case: { weight_g: 25 }

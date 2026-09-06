@@ -20,6 +20,7 @@ series:
 models:
   - id: ltp-v001d-1b
     ref: LTP-V001D-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V001D-1B/'
     source:
       { url: 'https://web.archive.org/web/20220809141758id_/https://www.casio.com/intl/watches/casio/product.LTP-V001D-1B/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: ltp-v001d-7b
     ref: LTP-V001D-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V001D-7B/'
     source:
       { url: 'https://web.archive.org/web/20220809104618id_/https://www.casio.com/intl/watches/casio/product.LTP-V001D-7B/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: ltp-v001g-9b
     ref: LTP-V001G-9B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V001G-9B/'
     source:
       { url: 'https://web.archive.org/web/20220819020256id_/https://www.casio.com/intl/watches/casio/product.LTP-V001G-9B/', kind: official }
     display: analog
@@ -62,6 +65,7 @@ models:
     discontinued: false
   - id: ltp-v001gl-1b
     ref: LTP-V001GL-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V001GL-1B/'
     source:
       { url: 'https://web.archive.org/web/20220809133037id_/https://www.casio.com/intl/watches/casio/product.LTP-V001GL-1B/', kind: official }
     display: analog
@@ -76,6 +80,7 @@ models:
     discontinued: false
   - id: ltp-v001gl-7b
     ref: LTP-V001GL-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V001GL-7B/'
     source:
       { url: 'https://web.archive.org/web/20230329155431id_/https://www.casio.com/intl/watches/casio/product.LTP-V001GL-7B/', kind: official }
     display: analog
@@ -90,6 +95,7 @@ models:
     discontinued: false
   - id: ltp-v001gl-9b
     ref: LTP-V001GL-9B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V001GL-9B/'
     source:
       { url: 'https://web.archive.org/web/20220813024854id_/https://www.casio.com/intl/watches/casio/product.LTP-V001GL-9B/', kind: official }
     display: analog
@@ -104,6 +110,7 @@ models:
     discontinued: false
   - id: ltp-v001l-1b
     ref: LTP-V001L-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V001L-1B/'
     source:
       { url: 'https://web.archive.org/web/20220813032326id_/https://www.casio.com/intl/watches/casio/product.LTP-V001L-1B/', kind: official }
     display: analog
@@ -118,6 +125,7 @@ models:
     discontinued: false
   - id: ltp-v001l-7b
     ref: LTP-V001L-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V001L-7B/'
     source:
       { url: 'https://web.archive.org/web/20211203105829id_/https://www.casio.com/my/watches/casio/product.LTP-V001L-7B/', kind: official }
     display: analog
@@ -132,6 +140,7 @@ models:
     discontinued: false
   - id: ltp-v001sg-9b
     ref: LTP-V001SG-9B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V001SG-9B/'
     source:
       { url: 'https://web.archive.org/web/20240721184129id_/https://www.casio.com/id/watches/casio/product.LTP-V001SG-9B/', kind: official }
     case: { height_mm: 31, width_mm: 25, depth_mm: 7.6, weight_g: 54 }

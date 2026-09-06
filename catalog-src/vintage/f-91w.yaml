@@ -32,6 +32,7 @@ models:
   # --- The classic black versions -----------------------------------------
   - id: f-91w-1
     ref: F-91W-1
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91W-1/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -80,6 +81,7 @@ models:
 
   - id: f-91w-3
     ref: F-91W-3
+    official_url: 'https://www.casio.com/intl/watches/casio/product.F-91W-3/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -236,6 +238,7 @@ models:
   # --- WM, the metallic series --------------------------------------------
   - id: f-91wm-1b
     ref: F-91WM-1B
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WM-1B/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -258,6 +261,7 @@ models:
 
   - id: f-91wm-2a
     ref: F-91WM-2A
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WM-2A/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -280,6 +284,7 @@ models:
 
   - id: f-91wm-3a
     ref: F-91WM-3A
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WM-3A/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -302,6 +307,7 @@ models:
 
   - id: f-91wm-7a
     ref: F-91WM-7A
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WM-7A/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -324,6 +330,7 @@ models:
 
   - id: f-91wm-9a
     ref: F-91WM-9A
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WM-9A/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -347,6 +354,7 @@ models:
   # --- WS, the translucent series -----------------------------------------
   - id: f-91ws-2
     ref: F-91WS-2
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WS-2/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -369,6 +377,7 @@ models:
 
   - id: f-91ws-4
     ref: F-91WS-4
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WS-4/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -391,6 +400,7 @@ models:
 
   - id: f-91ws-7
     ref: F-91WS-7
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WS-7/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -413,6 +423,7 @@ models:
 
   - id: f-91ws-8
     ref: F-91WS-8
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WS-8/'
     source:
       {
         url: 'https://casiorestore.com/casio-f-91w-technical-data-model-information/',
@@ -442,6 +453,7 @@ models:
   # F-91W, so check 4a is satisfied by the series id that was already here.
   - id: f-91w-1y
     ref: F-91W-1Y
+    official_url: 'https://www.casio.com/de/watches/casio/product.F-91W-1Y/'
     source:
       { url: 'https://web.archive.org/web/20230320092743id_/https://www.casio.com/fr/watches/casio/product.F-91W-1Y/', kind: official }
     case: { weight_g: 21 }
@@ -453,6 +465,7 @@ models:
     discontinued: false
   - id: f-91wb-1a
     ref: F-91WB-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.F-91WB-1A/'
     source:
       { url: 'https://web.archive.org/web/20250131174308id_/https://www.casio.com/europe/watches/casio/product.F-91WB-1A/', kind: official }
     movement: quartz
@@ -466,6 +479,7 @@ models:
     discontinued: false
   - id: f-91wb-2a1
     ref: F-91WB-2A1
+    official_url: 'https://www.casio.com/intl/watches/casio/product.F-91WB-2A1/'
     source:
       { url: 'https://web.archive.org/web/20240709193637id_/https://www.casio.com/intl/watches/casio/product.F-91WB-2A1/', kind: official }
     movement: quartz
@@ -479,6 +493,7 @@ models:
     discontinued: false
   - id: f-91wb-7a
     ref: F-91WB-7A
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WB-7A/'
     source:
       { url: 'https://web.archive.org/web/20241122231505id_/https://www.casio.com/us/watches/casio/product.F-91WB-7A/', kind: official }
     movement: quartz
@@ -492,6 +507,7 @@ models:
     discontinued: false
   - id: f-91wb-8a
     ref: F-91WB-8A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.F-91WB-8A/'
     source:
       { url: 'https://web.archive.org/web/20250413163314id_/https://www.casio.com/fr/watches/casio/product.F-91WB-8A/', kind: official }
     case: { weight_g: 21 }
@@ -503,6 +519,7 @@ models:
     discontinued: false
   - id: f-91wg-9q
     ref: F-91WG-9Q
+    official_url: 'https://www.casio.com/intl/watches/casio/product.F-91WG-9Q/'
     source:
       { url: 'https://web.archive.org/web/20250121210748id_/https://www.casio.com/intl/watches/casio/product.F-91WG-9Q/', kind: official }
     movement: quartz
@@ -516,6 +533,7 @@ models:
     discontinued: false
   - id: f-91wpc-1a
     ref: F-91WPC-1A
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-91WPC-1A/'
     edition: pac-man
     source:
       { url: 'https://web.archive.org/web/20250117203737id_/https://www.casio.com/us/watches/casio/product.F-91WPC-1A/', kind: official }

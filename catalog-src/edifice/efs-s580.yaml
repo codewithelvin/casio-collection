@@ -20,6 +20,7 @@ series:
 models:
   - id: efs-s580at-1a
     ref: EFS-S580AT-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFS-S580AT-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714221252id_/https://www.casio.com/europe/watches/edifice/product.EFS-S580AT-1A/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: efs-s580d-1av
     ref: EFS-S580D-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFS-S580D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220957id_/https://www.casio.com/europe/watches/edifice/product.EFS-S580D-1AV/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: efs-s580db-1av
     ref: EFS-S580DB-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFS-S580DB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714221019id_/https://www.casio.com/europe/watches/edifice/product.EFS-S580DB-1AV/', kind: official }
     display: analog

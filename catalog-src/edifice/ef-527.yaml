@@ -20,6 +20,7 @@ series:
 models:
   - id: ef-527d-1av
     ref: EF-527D-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EF-527D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220730id_/https://www.casio.com/europe/watches/edifice/product.EF-527D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: ef-527d-2av
     ref: EF-527D-2AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EF-527D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220740id_/https://www.casio.com/europe/watches/edifice/product.EF-527D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: ef-527d-3av
     ref: EF-527D-3AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EF-527D-3AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220719id_/https://www.casio.com/europe/watches/edifice/product.EF-527D-3AV/', kind: official }
     display: analog

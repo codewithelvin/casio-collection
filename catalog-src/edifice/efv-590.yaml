@@ -20,6 +20,7 @@ series:
 models:
   - id: efv-590d-1av
     ref: EFV-590D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-590D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220600id_/https://www.casio.com/europe/watches/edifice/product.EFV-590D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efv-590d-2av
     ref: EFV-590D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-590D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220555id_/https://www.casio.com/europe/watches/edifice/product.EFV-590D-2AV/', kind: official }
     display: analog

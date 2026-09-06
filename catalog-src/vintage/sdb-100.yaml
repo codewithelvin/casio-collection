@@ -58,6 +58,7 @@ series:
 models:
   - id: sdb-100j-1a
     ref: SDB-100J-1A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.SDB-100J-1A/'
     source:
       { url: 'https://web.archive.org/web/20210413051727id_/https://www.casio.com/jp/watches/casio/product.SDB-100J-1A/', kind: official }
     case: { height_mm: 43.9, width_mm: 35.1, depth_mm: 11.4, weight_g: 28.2 }
@@ -71,6 +72,7 @@ models:
     discontinued: false
   - id: sdb-100j-1b
     ref: SDB-100J-1B
+    official_url: 'https://www.casio.com/jp/watches/casio/product.SDB-100J-1B/'
     source:
       { url: 'https://web.archive.org/web/20210413042623id_/https://www.casio.com/jp/watches/casio/product.SDB-100J-1B/', kind: official }
     case: { height_mm: 43.9, width_mm: 35.1, depth_mm: 11.4, weight_g: 28.2 }

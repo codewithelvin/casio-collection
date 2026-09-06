@@ -52,7 +52,7 @@ models:
     module: '691'
     case: { material: resin }
     water_resistance_m: 200
-    features: [alarm, countdown-timer, stopwatch]
+    features: [stopwatch, countdown-timer, alarm, mineral-glass]
     image: dw-5700c-1v
     image_credit:
       author: 'The Digital Watch Library'
@@ -69,7 +69,7 @@ models:
     module: '901'
     case: { material: stainless steel }
     water_resistance_m: 200
-    features: [alarm, countdown-timer, stopwatch]
+    features: [stopwatch, countdown-timer, alarm, mineral-glass]
     image: dw-5700c-9v
     image_credit:
       author: 'The Digital Watch Library'

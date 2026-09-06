@@ -20,6 +20,7 @@ series:
 models:
   - id: eqw-a2000hr-1a
     ref: EQW-A2000HR-1A
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EQW-A2000HR-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220753id_/https://www.casio.com/europe/watches/edifice/product.EQW-A2000HR-1A/', kind: official }
     display: analog
@@ -42,6 +43,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: eqw-a2000cl-2a
     ref: EQW-A2000CL-2A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EQW-A2000CL-2A/'
     source:
       { url: 'https://web.archive.org/web/20220628115255id_/https://www.casio.com/jp/watches/edifice/product.EQW-A2000CL-2A/', kind: official }
     case: { height_mm: 48, width_mm: 43.8, depth_mm: 10.8, weight_g: 67 }
@@ -54,6 +56,7 @@ models:
     discontinued: false
   - id: eqw-a2000db-1a
     ref: EQW-A2000DB-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EQW-A2000DB-1A/'
     source:
       { url: 'https://web.archive.org/web/20220512132609id_/https://www.casio.com/jp/watches/edifice/product.EQW-A2000DB-1A/', kind: official }
     case: { height_mm: 48, width_mm: 43.8, depth_mm: 10.8, weight_g: 144 }
@@ -66,6 +69,7 @@ models:
     discontinued: false
   - id: eqw-a2000dc-1a
     ref: EQW-A2000DC-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EQW-A2000DC-1A/'
     source:
       { url: 'https://web.archive.org/web/20210410153158id_/https://www.casio.com/jp/watches/edifice/product.EQW-A2000DC-1A/', kind: official }
     case: { height_mm: 48, width_mm: 43.8, depth_mm: 10.8, weight_g: 144 }

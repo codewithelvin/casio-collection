@@ -20,6 +20,7 @@ series:
 models:
   - id: a163wa-1q
     ref: A163WA-1Q
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A163WA-1Q/'
     source:
       { url: 'https://web.archive.org/web/20240714215907id_/https://www.casio.com/europe/watches/casio/vintage/product.A163WA-1Q/', kind: official }
     movement: quartz

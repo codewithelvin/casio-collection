@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { watchTitle } from '../../seo/titles.ts'
 import { useEffect } from 'react'
 import {
   Alert,
@@ -97,7 +98,9 @@ export default function WatchRoute() {
     if (!model) return
     const previous = document.title
     const name = [model.ref, model.name].filter(Boolean).join(' — ')
-    document.title = `${name} · ${t('app.name')}`
+    // Must match the prerendered title: this OVERWRITES it and Googlebot
+    // renders. One builder, so the two cannot drift apart again.
+    document.title = watchTitle(name)
     setMeta('og:title', name)
     return () => {
       document.title = previous

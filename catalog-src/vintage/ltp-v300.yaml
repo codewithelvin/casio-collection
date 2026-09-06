@@ -20,6 +20,7 @@ series:
 models:
   - id: ltp-v300g-9a
     ref: LTP-V300G-9A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300G-9A/'
     source:
       { url: 'https://web.archive.org/web/20210724174901id_/https://www.casio.com/sg/watches/casio/product.LTP-V300G-9A/', kind: official }
     display: analog
@@ -55,6 +56,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: ltp-v300d-1a
     ref: LTP-V300D-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300D-1A/'
     source:
       { url: 'https://web.archive.org/web/20240721184242id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-1A/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
@@ -66,6 +68,7 @@ models:
     discontinued: false
   - id: ltp-v300d-1a2
     ref: LTP-V300D-1A2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300D-1A2/'
     source:
       { url: 'https://web.archive.org/web/20240721184231id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-1A2/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
@@ -77,6 +80,7 @@ models:
     discontinued: false
   - id: ltp-v300d-2a
     ref: LTP-V300D-2A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300D-2A/'
     source:
       { url: 'https://web.archive.org/web/20240721184247id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-2A/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
@@ -88,6 +92,7 @@ models:
     discontinued: false
   - id: ltp-v300d-2a2
     ref: LTP-V300D-2A2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300D-2A2/'
     source:
       { url: 'https://web.archive.org/web/20240721184256id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-2A2/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
@@ -99,6 +104,7 @@ models:
     discontinued: false
   - id: ltp-v300d-4a
     ref: LTP-V300D-4A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300D-4A/'
     source:
       { url: 'https://web.archive.org/web/20240721184152id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-4A/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
@@ -110,6 +116,7 @@ models:
     discontinued: false
   - id: ltp-v300d-7a
     ref: LTP-V300D-7A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300D-7A/'
     source:
       { url: 'https://web.archive.org/web/20240721184209id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-7A/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
@@ -121,6 +128,7 @@ models:
     discontinued: false
   - id: ltp-v300d-7a2
     ref: LTP-V300D-7A2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300D-7A2/'
     source:
       { url: 'https://web.archive.org/web/20240721184203id_/https://www.casio.com/id/watches/casio/product.LTP-V300D-7A2/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
@@ -132,6 +140,7 @@ models:
     discontinued: false
   - id: ltp-v300g-1a
     ref: LTP-V300G-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300G-1A/'
     source:
       { url: 'https://web.archive.org/web/20240721184251id_/https://www.casio.com/id/watches/casio/product.LTP-V300G-1A/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
@@ -143,6 +152,7 @@ models:
     discontinued: false
   - id: ltp-v300g-7a
     ref: LTP-V300G-7A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300G-7A/'
     source:
       { url: 'https://web.archive.org/web/20240721184157id_/https://www.casio.com/id/watches/casio/product.LTP-V300G-7A/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 62 }
@@ -154,6 +164,7 @@ models:
     discontinued: false
   - id: ltp-v300l-1a
     ref: LTP-V300L-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300L-1A/'
     source:
       { url: 'https://web.archive.org/web/20240721184213id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-1A/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 30 }
@@ -165,6 +176,7 @@ models:
     discontinued: false
   - id: ltp-v300l-2a
     ref: LTP-V300L-2A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300L-2A/'
     source:
       { url: 'https://web.archive.org/web/20240721184219id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-2A/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 30 }
@@ -176,6 +188,7 @@ models:
     discontinued: false
   - id: ltp-v300l-4a
     ref: LTP-V300L-4A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300L-4A/'
     source:
       { url: 'https://web.archive.org/web/20240721184904id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-4A/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 30 }
@@ -187,6 +200,7 @@ models:
     discontinued: false
   - id: ltp-v300l-7a2
     ref: LTP-V300L-7A2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-V300L-7A2/'
     source:
       { url: 'https://web.archive.org/web/20240721184840id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-7A2/', kind: official }
     case: { height_mm: 38, width_mm: 33.2, depth_mm: 8.2, weight_g: 30 }

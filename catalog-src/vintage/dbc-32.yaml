@@ -26,6 +26,7 @@ series:
 models:
   - id: dbc-32-1a
     ref: DBC-32-1A
+    official_url: 'https://www.casio.com/us/watches/casio/product.DBC-32-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714215918id_/https://www.casio.com/europe/watches/casio/vintage/product.DBC-32-1A/', kind: official }
     movement: quartz
@@ -39,6 +40,7 @@ models:
     discontinued: false
   - id: dbc-32d-1a
     ref: DBC-32D-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.DBC-32D-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714215920id_/https://www.casio.com/europe/watches/casio/vintage/product.DBC-32D-1A/', kind: official }
     movement: quartz

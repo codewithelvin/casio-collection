@@ -20,6 +20,7 @@ series:
 models:
   - id: aq-240eg-9a
     ref: AQ-240EG-9A
+    official_url: 'https://www.casio.com/us/watches/casio/product.AQ-240EG-9A/'
     source:
       { url: 'https://web.archive.org/web/20251003045715id_/https://www.casio.com/jp/watches/casio/product.AQ-240EG-9A/', kind: official }
     case: { height_mm: 40.9, width_mm: 35.8, depth_mm: 8.1, weight_g: 51 }

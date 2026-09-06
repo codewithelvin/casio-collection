@@ -34,6 +34,7 @@ models:
     discontinued: true
   - id: eqs-900db-1av
     ref: EQS-900DB-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQS-900DB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20231218185244id_/https://www.casio.com/us/watches/edifice/product.EQS-900DB-1AV/', kind: official }
     display: analog
@@ -48,6 +49,7 @@ models:
     discontinued: false
   - id: eqs-900db-2av
     ref: EQS-900DB-2AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQS-900DB-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240408193631id_/https://www.casio.com/us/watches/edifice/product.EQS-900DB-2AV/', kind: official }
     display: analog

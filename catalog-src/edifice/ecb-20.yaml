@@ -20,6 +20,7 @@ series:
 models:
   - id: ecb-20at-2a
     ref: ECB-20AT-2A
+    official_url: 'https://www.casio.com/de/watches/edifice/product.ECB-20AT-2A/'
     source:
       { url: 'https://web.archive.org/web/20240714220837id_/https://www.casio.com/europe/watches/edifice/product.ECB-20AT-2A/', kind: official }
     display: ana-digi
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: ecb-20cl-1a
     ref: ECB-20CL-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-20CL-1A/'
     source:
       { url: 'https://web.archive.org/web/20220930115624id_/https://www.casio.com/sg/watches/edifice/product.ECB-20CL-1A/', kind: official }
     display: ana-digi
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: ecb-20d-1a
     ref: ECB-20D-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-20D-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220533id_/https://www.casio.com/europe/watches/edifice/product.ECB-20D-1A/', kind: official }
     display: ana-digi
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: ecb-20db-1a
     ref: ECB-20DB-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-20DB-1A/'
     source:
       { url: 'https://web.archive.org/web/20220925133350id_/https://www.casio.com/sg/watches/edifice/product.ECB-20DB-1A/', kind: official }
     display: ana-digi
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: ecb-20dc-1a
     ref: ECB-20DC-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-20DC-1A/'
     source:
       { url: 'https://web.archive.org/web/20220925135141id_/https://www.casio.com/sg/watches/edifice/product.ECB-20DC-1A/', kind: official }
     display: ana-digi
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: ecb-20ycl-1a
     ref: ECB-20YCL-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-20YCL-1A/'
     source:
       { url: 'https://web.archive.org/web/20210714080533id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YCL-1A/', kind: official }
     features: [bluetooth]
@@ -106,6 +112,7 @@ models:
     discontinued: false
   - id: ecb-20yd-1a
     ref: ECB-20YD-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-20YD-1A/'
     source:
       { url: 'https://web.archive.org/web/20221230162850id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YD-1A/', kind: official }
     features: [bluetooth]
@@ -117,6 +124,7 @@ models:
     discontinued: false
   - id: ecb-20ydb-1a
     ref: ECB-20YDB-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-20YDB-1A/'
     source:
       { url: 'https://web.archive.org/web/20210422090027id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YDB-1A/', kind: official }
     features: [bluetooth]
@@ -128,6 +136,7 @@ models:
     discontinued: false
   - id: ecb-20ydc-1a
     ref: ECB-20YDC-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-20YDC-1A/'
     source:
       { url: 'https://web.archive.org/web/20210707010113id_/https://www.casio.com/jp/watches/edifice/product.ECB-20YDC-1A/', kind: official }
     features: [bluetooth]

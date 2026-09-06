@@ -53,6 +53,7 @@ series:
 models:
   - id: hdd-600-1av
     ref: HDD-600-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.HDD-600-1AV/'
     source:
       { url: 'https://web.archive.org/web/20221223200301id_/https://www.casio.com/us/watches/casio/product.HDD-600-1AV/?intaid=recommend_productsdetail', kind: official }
     module: '2889'

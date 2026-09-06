@@ -69,6 +69,7 @@ series:
 models:
   - id: bg-169ch-4
     ref: BG-169CH-4
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169CH-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -86,6 +87,7 @@ models:
     discontinued: false
   - id: bg-169ch-9
     ref: BG-169CH-9
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169CH-9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -103,6 +105,7 @@ models:
     discontinued: false
   - id: bg-169cm-2
     ref: BG-169CM-2
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169CM-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -120,6 +123,7 @@ models:
     discontinued: false
   - id: bg-169cm-4
     ref: BG-169CM-4
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169CM-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -137,6 +141,7 @@ models:
     discontinued: false
   - id: bg-169cmb-8
     ref: BG-169CMB-8
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169CMB-8/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -154,6 +159,7 @@ models:
     discontinued: false
   - id: bg-169g-1
     ref: BG-169G-1
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169G-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -171,6 +177,7 @@ models:
     discontinued: false
   - id: bg-169g-4
     ref: BG-169G-4
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169G-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -188,6 +195,7 @@ models:
     discontinued: false
   - id: bg-169g-4b
     ref: BG-169G-4B
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169G-4B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -205,6 +213,7 @@ models:
     discontinued: false
   - id: bg-169g-7b
     ref: BG-169G-7B
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169G-7B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -222,6 +231,7 @@ models:
     discontinued: false
   - id: bg-169gd-1
     ref: BG-169GD-1
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169GD-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -239,6 +249,7 @@ models:
     discontinued: false
   - id: bg-169gd-7
     ref: BG-169GD-7
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169GD-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -256,6 +267,7 @@ models:
     discontinued: false
   - id: bg-169hrb-7
     ref: BG-169HRB-7
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169HRB-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -273,6 +285,7 @@ models:
     discontinued: false
   - id: bg-169kb-1
     ref: BG-169KB-1
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169KB-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -290,6 +303,7 @@ models:
     discontinued: false
   - id: bg-169kb-4
     ref: BG-169KB-4
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169KB-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -307,6 +321,7 @@ models:
     discontinued: false
   - id: bg-169kb-4b1
     ref: BG-169KB-4B1
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169KB-4B1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -324,6 +339,7 @@ models:
     discontinued: false
   - id: bg-169m-1
     ref: BG-169M-1
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169M-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -341,6 +357,7 @@ models:
     discontinued: false
   - id: bg-169m-4
     ref: BG-169M-4
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169M-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -358,6 +375,7 @@ models:
     discontinued: false
   - id: bg-169mh-7
     ref: BG-169MH-7
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169MH-7/'
     edition: madhappy
     source:
       {
@@ -380,6 +398,7 @@ models:
     discontinued: false
   - id: bg-169pb-2
     ref: BG-169PB-2
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169PB-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -397,6 +416,7 @@ models:
     discontinued: false
   - id: bg-169pb-4
     ref: BG-169PB-4
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169PB-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -414,6 +434,7 @@ models:
     discontinued: false
   - id: bg-169pb-7
     ref: BG-169PB-7
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169PB-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -431,6 +452,7 @@ models:
     discontinued: false
   - id: bg-169r-1
     ref: BG-169R-1
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169R-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -448,6 +470,7 @@ models:
     discontinued: false
   - id: bg-169r-1b
     ref: BG-169R-1B
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169R-1B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -465,6 +488,7 @@ models:
     discontinued: false
   - id: bg-169r-2
     ref: BG-169R-2
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169R-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -482,6 +506,7 @@ models:
     discontinued: false
   - id: bg-169r-2b
     ref: BG-169R-2B
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169R-2B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -499,6 +524,7 @@ models:
     discontinued: false
   - id: bg-169r-2c
     ref: BG-169R-2C
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169R-2C/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -516,6 +542,7 @@ models:
     discontinued: false
   - id: bg-169r-3
     ref: BG-169R-3
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169R-3/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -533,6 +560,7 @@ models:
     discontinued: false
   - id: bg-169r-4
     ref: BG-169R-4
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169R-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -550,6 +578,7 @@ models:
     discontinued: false
   - id: bg-169r-7a
     ref: BG-169R-7A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169R-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -567,6 +596,7 @@ models:
     discontinued: false
   - id: bg-169r-7e
     ref: BG-169R-7E
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169R-7E/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -584,6 +614,7 @@ models:
     discontinued: false
   - id: bg-169r-8
     ref: BG-169R-8
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169R-8/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -601,6 +632,7 @@ models:
     discontinued: false
   - id: bg-169r-8b
     ref: BG-169R-8B
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BG-169R-8B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -618,6 +650,7 @@ models:
     discontinued: false
   - id: bg-169u-1c
     ref: BG-169U-1C
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169U-1C/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -635,6 +668,7 @@ models:
     discontinued: false
   - id: bg-169u-3
     ref: BG-169U-3
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169U-3/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -652,6 +686,7 @@ models:
     discontinued: false
   - id: bg-169u-4b
     ref: BG-169U-4B
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169U-4B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',
@@ -669,6 +704,7 @@ models:
     discontinued: false
   - id: bg-169u-8b
     ref: BG-169U-8B
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BG-169U-8B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3252/qw3252_EN.pdf',

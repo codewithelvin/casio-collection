@@ -20,6 +20,7 @@ series:
 models:
   - id: efs-s560d-1av
     ref: EFS-S560D-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFS-S560D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220758id_/https://www.casio.com/europe/watches/edifice/product.EFS-S560D-1AV/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: efs-s560db-1av
     ref: EFS-S560DB-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFS-S560DB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714221241id_/https://www.casio.com/europe/watches/edifice/product.EFS-S560DB-1AV/', kind: official }
     display: analog
@@ -55,6 +57,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: efs-s560dc-1av
     ref: EFS-S560DC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFS-S560DC-1AV/'
     source:
       { url: 'https://web.archive.org/web/20210921142915id_/https://www.casio.com/tw/watches/edifice/product.EFS-S560DC-1AV/', kind: official }
     case: { height_mm: 50.2, width_mm: 45.4, depth_mm: 9.9, weight_g: 141 }
@@ -67,6 +70,7 @@ models:
     discontinued: false
   - id: efs-s560yd-1a
     ref: EFS-S560YD-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFS-S560YD-1A/'
     source:
       { url: 'https://web.archive.org/web/20221230162850id_/https://www.casio.com/jp/watches/edifice/product.EFS-S560YD-1A/', kind: official }
     case: { height_mm: 50.2, width_mm: 45.4, depth_mm: 9.9, weight_g: 147 }
@@ -79,6 +83,7 @@ models:
     discontinued: false
   - id: efs-s560ydb-1a
     ref: EFS-S560YDB-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFS-S560YDB-1A/'
     source:
       { url: 'https://web.archive.org/web/20220220080610id_/https://www.casio.com/jp/watches/edifice/product.EFS-S560YDB-1A/', kind: official }
     case: { height_mm: 50.2, width_mm: 45.4, depth_mm: 9.9, weight_g: 147 }
@@ -91,6 +96,7 @@ models:
     discontinued: false
   - id: efs-s560ydc-1a
     ref: EFS-S560YDC-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFS-S560YDC-1A/'
     source:
       { url: 'https://web.archive.org/web/20220208000926id_/https://www.casio.com/jp/watches/edifice/product.EFS-S560YDC-1A/', kind: official }
     case: { height_mm: 50.2, width_mm: 45.4, depth_mm: 9.9, weight_g: 147 }

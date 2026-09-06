@@ -27,6 +27,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: efs-s641tms-1a
     ref: EFS-S641TMS-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFS-S641TMS-1A/'
     source:
       { url: 'https://web.archive.org/web/20240724124023id_/https://www.casio.com/us/watches/edifice/product.EFS-S641TMS-1A/', kind: official }
     display: analog

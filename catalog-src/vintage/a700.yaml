@@ -33,6 +33,7 @@ series:
 models:
   - id: a700w-1a
     ref: A700W-1A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A700W-1A/'
     source:
       { url: 'https://web.archive.org/web/20240506111428id_/https://www.casio.com/my/watches/casio/product.A700W-1A/', kind: official }
     movement: quartz
@@ -46,6 +47,7 @@ models:
     discontinued: false
   - id: a700we-1a
     ref: A700WE-1A
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A700WE-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714215822id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WE-1A/', kind: official }
     movement: quartz
@@ -59,6 +61,7 @@ models:
     discontinued: false
   - id: a700wem-7a
     ref: A700WEM-7A
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A700WEM-7A/'
     source:
       { url: 'https://web.archive.org/web/20240714215827id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEM-7A/', kind: official }
     movement: quartz
@@ -72,6 +75,7 @@ models:
     discontinued: false
   - id: a700wemg-9a
     ref: A700WEMG-9A
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A700WEMG-9A/'
     source:
       { url: 'https://web.archive.org/web/20240714215815id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEMG-9A/', kind: official }
     movement: quartz
@@ -85,6 +89,7 @@ models:
     discontinued: false
   - id: a700wems-1b
     ref: A700WEMS-1B
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A700WEMS-1B/'
     source:
       { url: 'https://web.archive.org/web/20240714220130id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEMS-1B/', kind: official }
     movement: quartz
@@ -98,6 +103,7 @@ models:
     discontinued: false
   - id: a700wev-7a
     ref: A700WEV-7A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A700WEV-7A/'
     source:
       { url: 'https://web.archive.org/web/20240714220227id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEV-7A/', kind: official }
     movement: quartz
@@ -111,6 +117,7 @@ models:
     discontinued: false
   - id: a700wevg-9a
     ref: A700WEVG-9A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A700WEVG-9A/'
     source:
       { url: 'https://web.archive.org/web/20240714220229id_/https://www.casio.com/europe/watches/casio/vintage/product.A700WEVG-9A/', kind: official }
     movement: quartz
@@ -124,6 +131,7 @@ models:
     discontinued: false
   - id: a700wg-9a
     ref: A700WG-9A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A700WG-9A/'
     source:
       { url: 'https://web.archive.org/web/20220812144943id_/https://www.casio.com/intl/watches/casio/product.A700WG-9A/', kind: official }
     movement: quartz
@@ -137,6 +145,7 @@ models:
     discontinued: false
   - id: a700wm-7a
     ref: A700WM-7A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A700WM-7A/'
     source:
       { url: 'https://web.archive.org/web/20250225200419id_/https://www.casio.com/sg/watches/casio/product.A700WM-7A/', kind: official }
     movement: quartz
@@ -150,6 +159,7 @@ models:
     discontinued: false
   - id: a700wmg-9a
     ref: A700WMG-9A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A700WMG-9A/'
     source:
       { url: 'https://web.archive.org/web/20220526115841id_/https://www.casio.com/us/watches/casio/product.A700WMG-9A/', kind: official }
     movement: quartz
@@ -170,6 +180,7 @@ models:
       url: 'https://web.archive.org/web/20220526115831id_/https://www.casio.com/sg/watches/casio/product.A700WMG-9A/'
   - id: a700wegl-3a
     ref: A700WEGL-3A
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A700WEGL-3A/'
     source:
       { url: 'https://web.archive.org/web/20240717160035id_/https://www.casio.com/fr/watches/casio/vintage/product.A700WEGL-3A/', kind: official }
     case: { weight_g: 17 }
@@ -181,6 +192,7 @@ models:
     discontinued: false
   - id: a700wegl-5a
     ref: A700WEGL-5A
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A700WEGL-5A/'
     source:
       { url: 'https://web.archive.org/web/20240717155848id_/https://www.casio.com/fr/watches/casio/vintage/product.A700WEGL-5A/', kind: official }
     case: { weight_g: 17 }
@@ -192,6 +204,7 @@ models:
     discontinued: false
   - id: a700wegl-7a
     ref: A700WEGL-7A
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A700WEGL-7A/'
     source:
       { url: 'https://web.archive.org/web/20240717155852id_/https://www.casio.com/fr/watches/casio/vintage/product.A700WEGL-7A/', kind: official }
     case: { weight_g: 17 }

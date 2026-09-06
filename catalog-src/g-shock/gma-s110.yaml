@@ -114,7 +114,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110be-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -141,7 +141,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -166,7 +166,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -191,7 +191,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -216,7 +216,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -241,7 +241,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -266,7 +266,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -291,7 +291,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -316,7 +316,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -341,7 +341,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -366,7 +366,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -391,7 +391,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -416,7 +416,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -441,7 +441,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -466,7 +466,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -491,13 +491,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gma-s110gb-1a
     ref: GMA-S110GB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110GB-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -516,7 +517,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110gb-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -543,7 +544,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -568,7 +569,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -593,13 +594,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gma-s110gs-3a
     ref: GMA-S110GS-3A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110GS-3A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -618,7 +620,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110gs-3a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -627,6 +629,7 @@ models:
     discontinued: false
   - id: gma-s110gs-8a
     ref: GMA-S110GS-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110GS-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -645,7 +648,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110gs-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -672,13 +675,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gma-s110hc-2a
     ref: GMA-S110HC-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110HC-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -697,7 +701,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -722,7 +726,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -747,7 +751,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -772,7 +776,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -797,7 +801,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -822,7 +826,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -847,13 +851,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gma-s110mc-3a
     ref: GMA-S110MC-3A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110MC-3A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -872,7 +877,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -897,13 +902,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gma-s110mp-4a1
     ref: GMA-S110MP-4A1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110MP-4A1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -922,7 +928,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110mp-4a1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -949,7 +955,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -974,13 +980,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gma-s110mp-7a
     ref: GMA-S110MP-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110MP-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -999,7 +1006,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110mp-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1008,6 +1015,7 @@ models:
     discontinued: false
   - id: gma-s110np-8a
     ref: GMA-S110NP-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110NP-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1025,7 +1033,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110np-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1034,6 +1042,7 @@ models:
     discontinued: false
   - id: gma-s110sg-7a
     ref: GMA-S110SG-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110SG-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1052,7 +1061,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110sg-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1061,6 +1070,7 @@ models:
     discontinued: false
   - id: gma-s110sr-7a
     ref: GMA-S110SR-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110SR-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1079,7 +1089,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110sr-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1088,6 +1098,7 @@ models:
     discontinued: false
   - id: gma-s110st-2a
     ref: GMA-S110ST-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110ST-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1106,7 +1117,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110st-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1115,6 +1126,7 @@ models:
     discontinued: false
   - id: gma-s110st-4a
     ref: GMA-S110ST-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110ST-4A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1133,7 +1145,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110st-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1142,6 +1154,7 @@ models:
     discontinued: false
   - id: gma-s110st-7a
     ref: GMA-S110ST-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110ST-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1160,7 +1173,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110st-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1169,6 +1182,7 @@ models:
     discontinued: false
   - id: gma-s110tb-8a
     ref: GMA-S110TB-8A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMA-S110TB-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1187,7 +1201,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110tb-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1196,6 +1210,7 @@ models:
     discontinued: false
   - id: gma-s110vc-2a
     ref: GMA-S110VC-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110VC-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1213,7 +1228,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1237,7 +1252,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1262,7 +1277,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1286,7 +1301,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -1311,13 +1326,14 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gma-s110vw-2a
     ref: GMA-S110VW-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110VW-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1336,7 +1352,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110vw-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1345,6 +1361,7 @@ models:
     discontinued: false
   - id: gma-s110vw-4a
     ref: GMA-S110VW-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110VW-4A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1363,7 +1380,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110vw-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1372,6 +1389,7 @@ models:
     discontinued: false
   - id: gma-s110vw-6a
     ref: GMA-S110VW-6A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110VW-6A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1390,7 +1408,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110vw-6a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -1399,6 +1417,7 @@ models:
     discontinued: false
   - id: gma-s110xg-4a
     ref: GMA-S110XG-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-S110XG-4A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1417,7 +1436,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     discontinued: false
     image: gma-s110xg-4a
     image_credit:
@@ -1426,6 +1445,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/gma-s110xg-4adr'
   - id: gma-s110y-9a
     ref: GMA-S110Y-9A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMA-S110Y-9A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/54/5425/qw5425_EN.pdf',
@@ -1444,7 +1464,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5425'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
     image: gma-s110y-9a
     image_credit:
       author: Casio Computer Co., Ltd.

@@ -20,6 +20,7 @@ series:
 models:
   - id: ae-1300wh-1av
     ref: AE-1300WH-1AV
+    official_url: 'https://www.casio.com/de/watches/casio/product.AE-1300WH-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715101419id_/https://www.casio.com/europe/watches/casio/product.AE-1300WH-1AV/', kind: official }
     movement: quartz
@@ -59,6 +60,7 @@ models:
     discontinued: true
   - id: ae-1300wh-8av
     ref: AE-1300WH-8AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1300WH-8AV/'
     source:
       { url: 'https://web.archive.org/web/20220725194413id_/https://www.casio.com/us/watches/casio/product.AE-1300WH-8AV/', kind: official }
     movement: quartz

@@ -20,6 +20,7 @@ series:
 models:
   - id: efv-640d-1av
     ref: EFV-640D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-640D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714221116id_/https://www.casio.com/europe/watches/edifice/product.EFV-640D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efv-640d-2av
     ref: EFV-640D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-640D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20250121013440id_/https://www.casio.com/in/watches/edifice/product.EFV-640D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efv-640d-2bv
     ref: EFV-640D-2BV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-640D-2BV/'
     source:
       { url: 'https://web.archive.org/web/20250121091004id_/https://www.casio.com/in/watches/edifice/product.EFV-640D-2BV/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: efv-640d-3av
     ref: EFV-640D-3AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-640D-3AV/'
     source:
       { url: 'https://web.archive.org/web/20241126193555id_/https://www.casio.com/europe/watches/edifice/product.EFV-640D-3AV/', kind: official }
     display: analog
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: efv-640d-5av
     ref: EFV-640D-5AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-640D-5AV/'
     source:
       { url: 'https://web.archive.org/web/20250121092343id_/https://www.casio.com/in/watches/edifice/product.EFV-640D-5AV/', kind: official }
     display: analog
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: efv-640dc-1av
     ref: EFV-640DC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-640DC-1AV/'
     source:
       { url: 'https://web.archive.org/web/20250121010918id_/https://www.casio.com/in/watches/edifice/product.EFV-640DC-1AV/', kind: official }
     display: analog
@@ -110,6 +116,7 @@ models:
     discontinued: false
   - id: efv-640dc-3av
     ref: EFV-640DC-3AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-640DC-3AV/'
     source:
       { url: 'https://web.archive.org/web/20240714221113id_/https://www.casio.com/europe/watches/edifice/product.EFV-640DC-3AV/', kind: official }
     display: analog
@@ -125,6 +132,7 @@ models:
     discontinued: false
   - id: efv-640l-2av
     ref: EFV-640L-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-640L-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240722130357id_/https://www.casio.com/id/watches/edifice/product.EFV-640L-2AV/', kind: official }
     features: [stopwatch]
@@ -143,6 +151,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: efv-640dj-2b
     ref: EFV-640DJ-2B
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFV-640DJ-2B/'
     source:
       { url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/edifice/product.EFV-640DJ-2B/', kind: official }
     case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136 }
@@ -155,6 +164,7 @@ models:
     discontinued: false
   - id: efv-640dj-3a
     ref: EFV-640DJ-3A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFV-640DJ-3A/'
     source:
       { url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/edifice/product.EFV-640DJ-3A/', kind: official }
     case: { height_mm: 47, width_mm: 44.3, depth_mm: 10.8, weight_g: 136 }

@@ -20,6 +20,7 @@ series:
 models:
   - id: efa-120d-1av
     ref: EFA-120D-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFA-120D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20231022025147id_/https://www.casio.com/us/watches/edifice/product.EFA-120D-1AV/', kind: official }
     display: ana-digi

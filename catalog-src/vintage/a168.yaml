@@ -39,6 +39,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: a168wa-1
     ref: A168WA-1
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168WA-1/'
     source:
       { url: 'https://web.archive.org/web/20240714215853id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WA-1/', kind: official }
     movement: quartz
@@ -53,6 +54,7 @@ models:
     display: digital
   - id: a168wegb-1b
     ref: A168WEGB-1B
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168WEGB-1B/'
     source:
       { url: 'https://web.archive.org/web/20240714215857id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEGB-1B/', kind: official }
     movement: quartz
@@ -67,6 +69,7 @@ models:
     display: digital
   - id: a168wegc-3
     ref: A168WEGC-3
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A168WEGC-3/'
     source:
       { url: 'https://web.archive.org/web/20240715101518id_/https://www.casio.com/europe/watches/casio/product.A168WEGC-3/', kind: official }
     movement: quartz
@@ -81,6 +84,7 @@ models:
     display: digital
   - id: a168wegg-1b
     ref: A168WEGG-1B
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A168WEGG-1B/'
     source:
       { url: 'https://web.archive.org/web/20240714215825id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEGG-1B/', kind: official }
     movement: quartz
@@ -95,6 +99,7 @@ models:
     display: digital
   - id: a168wegm-9
     ref: A168WEGM-9
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A168WEGM-9/'
     source:
       { url: 'https://web.archive.org/web/20240715101538id_/https://www.casio.com/europe/watches/casio/product.A168WEGM-9/', kind: official }
     movement: quartz
@@ -109,6 +114,7 @@ models:
     display: digital
   - id: a168weha-9a
     ref: A168WEHA-9A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A168WEHA-9A/'
     source:
       { url: 'https://web.archive.org/web/20240714220038id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEHA-9A/', kind: official }
     movement: quartz
@@ -123,6 +129,7 @@ models:
     display: digital
   - id: a168wehb-1a
     ref: A168WEHB-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A168WEHB-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220041id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEHB-1A/', kind: official }
     movement: quartz
@@ -137,6 +144,7 @@ models:
     display: digital
   - id: a168wem-1
     ref: A168WEM-1
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168WEM-1/'
     source:
       { url: 'https://web.archive.org/web/20240714215833id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-1/', kind: official }
     movement: quartz
@@ -151,6 +159,7 @@ models:
     display: digital
   - id: a168wem-2
     ref: A168WEM-2
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A168WEM-2/'
     source:
       { url: 'https://web.archive.org/web/20240714215838id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-2/', kind: official }
     movement: quartz
@@ -165,6 +174,7 @@ models:
     display: digital
   - id: a168wem-2b
     ref: A168WEM-2B
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A168WEM-2B/'
     source:
       { url: 'https://web.archive.org/web/20240714220126id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-2B/', kind: official }
     movement: quartz
@@ -179,6 +189,7 @@ models:
     display: digital
   - id: a168wem-7
     ref: A168WEM-7
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168WEM-7/'
     source:
       { url: 'https://web.archive.org/web/20240714215830id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEM-7/', kind: official }
     movement: quartz
@@ -193,6 +204,7 @@ models:
     display: digital
   - id: a168wemb-1b
     ref: A168WEMB-1B
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168WEMB-1B/'
     source:
       { url: 'https://web.archive.org/web/20240714220110id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEMB-1B/', kind: official }
     movement: quartz
@@ -207,6 +219,7 @@ models:
     display: digital
   - id: a168wepc-7a
     ref: A168WEPC-7A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168WEPC-7A/'
     edition: pac-man
     source:
       { url: 'https://web.archive.org/web/20250407153145id_/https://www.casio.com/de/watches/casio/vintage/product.A168WEPC-7A/', kind: official }
@@ -219,6 +232,7 @@ models:
     discontinued: false
   - id: a168wer-2a
     ref: A168WER-2A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A168WER-2A/'
     source:
       { url: 'https://web.archive.org/web/20240714220214id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WER-2A/', kind: official }
     movement: quartz
@@ -233,6 +247,7 @@ models:
     display: digital
   - id: a168weuc-1a
     ref: A168WEUC-1A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168WEUC-1A/'
     edition: uno
     source:
       { url: 'https://web.archive.org/web/20240714220232id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WEUC-1A/', kind: official }
@@ -248,6 +263,7 @@ models:
     display: digital
   - id: a168wg-9
     ref: A168WG-9
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168WG-9/'
     source:
       { url: 'https://web.archive.org/web/20240714215818id_/https://www.casio.com/europe/watches/casio/vintage/product.A168WG-9/', kind: official }
     movement: quartz
@@ -262,6 +278,7 @@ models:
     display: digital
   - id: a168wg-9w
     ref: A168WG-9W
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A168WG-9W/'
     source:
       { url: 'https://web.archive.org/web/20230811084202id_/https://www.casio.com/intl/watches/casio/product.A168WG-9W/', kind: official }
     movement: quartz
@@ -276,6 +293,7 @@ models:
     display: digital
   - id: a168wgg-1a
     ref: A168WGG-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A168WGG-1A/'
     source:
       { url: 'https://web.archive.org/web/20220520225647id_/https://www.casio.com/intl/watches/casio/product.A168WGG-1A/', kind: official }
     movement: quartz
@@ -290,6 +308,7 @@ models:
     display: digital
   - id: a168wgg-1b
     ref: A168WGG-1B
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168WGG-1B/'
     source:
       { url: 'https://web.archive.org/web/20221103214521id_/https://www.casio.com/us/watches/casio/product.A168WGG-1B/', kind: official }
     movement: quartz
@@ -304,6 +323,7 @@ models:
       url: 'https://web.archive.org/web/20230814194729id_/https://www.casio.com/in/watches/casio/product.A168WGG-1B/'
   - id: a168xes-1b
     ref: A168XES-1B
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168XES-1B/'
     source:
       { url: 'https://web.archive.org/web/20240714220116id_/https://www.casio.com/europe/watches/casio/vintage/product.A168XES-1B/', kind: official }
     movement: quartz
@@ -318,6 +338,7 @@ models:
     display: digital
   - id: a168xesg-9a
     ref: A168XESG-9A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168XESG-9A/'
     source:
       { url: 'https://web.archive.org/web/20240714220113id_/https://www.casio.com/europe/watches/casio/vintage/product.A168XESG-9A/', kind: official }
     movement: quartz
@@ -339,6 +360,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: a168wa-3ay
     ref: A168WA-3AY
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A168WA-3AY/'
     source:
       { url: 'https://web.archive.org/web/20240713092430id_/https://www.casio.com/es/watches/casio/vintage/product.A168WA-3AY/', kind: official }
     case: { weight_g: 50 }
@@ -350,6 +372,7 @@ models:
     discontinued: false
   - id: a168wa-5ay
     ref: A168WA-5AY
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A168WA-5AY/'
     source:
       { url: 'https://web.archive.org/web/20240713092142id_/https://www.casio.com/es/watches/casio/vintage/product.A168WA-5AY/', kind: official }
     case: { weight_g: 50 }
@@ -361,6 +384,7 @@ models:
     discontinued: false
   - id: a168wa-8ay
     ref: A168WA-8AY
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A168WA-8AY/'
     source:
       { url: 'https://web.archive.org/web/20240713092145id_/https://www.casio.com/es/watches/casio/vintage/product.A168WA-8AY/', kind: official }
     case: { weight_g: 50 }
@@ -372,6 +396,7 @@ models:
     discontinued: false
   - id: a168weck-7a
     ref: A168WECK-7A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A168WECK-7A/'
     edition: cafe-kitsune
     source:
       { url: 'https://web.archive.org/web/20240713092229id_/https://www.casio.com/es/watches/casio/vintage/product.A168WECK-7A/', kind: official }
@@ -395,6 +420,7 @@ models:
     discontinued: true
   - id: a168werb-2a
     ref: A168WERB-2A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A168WERB-2A/'
     source:
       { url: 'https://web.archive.org/web/20240717185107id_/https://www.casio.com/fr/watches/casio/vintage/product.A168WERB-2A/', kind: official }
     case: { weight_g: 49 }
@@ -406,6 +432,7 @@ models:
     discontinued: false
   - id: a168werg-2a
     ref: A168WERG-2A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A168WERG-2A/'
     source:
       { url: 'https://web.archive.org/web/20240717185053id_/https://www.casio.com/fr/watches/casio/vintage/product.A168WERG-2A/', kind: official }
     case: { weight_g: 49 }

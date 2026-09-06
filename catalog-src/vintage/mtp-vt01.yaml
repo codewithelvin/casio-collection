@@ -20,6 +20,7 @@ series:
 models:
   - id: mtp-vt01d-1b
     ref: MTP-VT01D-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01D-1B/'
     source:
       { url: 'https://web.archive.org/web/20220129023125id_/https://www.casio.com/my/watches/casio/product.MTP-VT01D-1B/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: mtp-vt01d-1b2
     ref: MTP-VT01D-1B2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01D-1B2/'
     source:
       { url: 'https://web.archive.org/web/20220625131919id_/https://www.casio.com/in/watches/casio/product.MTP-VT01D-1B2/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: mtp-vt01d-2b
     ref: MTP-VT01D-2B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01D-2B/'
     source:
       { url: 'https://web.archive.org/web/20220625110547id_/https://www.casio.com/in/watches/casio/product.MTP-VT01D-2B/', kind: official }
     display: analog
@@ -62,6 +65,7 @@ models:
     discontinued: false
   - id: mtp-vt01d-2b2
     ref: MTP-VT01D-2B2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01D-2B2/'
     source:
       { url: 'https://web.archive.org/web/20220526121205id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01D-2B2/', kind: official }
     display: analog
@@ -76,6 +80,7 @@ models:
     discontinued: false
   - id: mtp-vt01d-7b
     ref: MTP-VT01D-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01D-7B/'
     source:
       { url: 'https://web.archive.org/web/20211203013938id_/https://www.casio.com/my/watches/casio/product.MTP-VT01D-7B/', kind: official }
     display: analog
@@ -90,6 +95,7 @@ models:
     discontinued: false
   - id: mtp-vt01g-1b
     ref: MTP-VT01G-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01G-1B/'
     source:
       { url: 'https://web.archive.org/web/20220628111912id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-1B/', kind: official }
     display: analog
@@ -104,6 +110,7 @@ models:
     discontinued: false
   - id: mtp-vt01g-1b2
     ref: MTP-VT01G-1B2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01G-1B2/'
     source:
       { url: 'https://web.archive.org/web/20220522021524id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-1B2/', kind: official }
     display: analog
@@ -118,6 +125,7 @@ models:
     discontinued: false
   - id: mtp-vt01g-2b
     ref: MTP-VT01G-2B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01G-2B/'
     source:
       { url: 'https://web.archive.org/web/20220529055935id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-2B/', kind: official }
     display: analog
@@ -132,6 +140,7 @@ models:
     discontinued: false
   - id: mtp-vt01g-2b2
     ref: MTP-VT01G-2B2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01G-2B2/'
     source:
       { url: 'https://web.archive.org/web/20220628124655id_/https://www.casio.com/in/watches/casio/product.MTP-VT01G-2B2/', kind: official }
     display: analog
@@ -146,6 +155,7 @@ models:
     discontinued: false
   - id: mtp-vt01g-5b
     ref: MTP-VT01G-5B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01G-5B/'
     source:
       { url: 'https://web.archive.org/web/20240315230247id_/https://www.casio.com/ph/watches/casio/product.MTP-VT01G-5B/', kind: official }
     display: analog
@@ -160,6 +170,7 @@ models:
     discontinued: false
   - id: mtp-vt01g-7b
     ref: MTP-VT01G-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01G-7B/'
     source:
       { url: 'https://web.archive.org/web/20220526115654id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01G-7B/', kind: official }
     display: analog
@@ -174,6 +185,7 @@ models:
     discontinued: false
   - id: mtp-vt01gl-1b2
     ref: MTP-VT01GL-1B2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01GL-1B2/'
     source:
       { url: 'https://web.archive.org/web/20211019091018id_/https://www.casio.com/my/watches/casio/product.MTP-VT01GL-1B2/', kind: official }
     display: analog
@@ -188,6 +200,7 @@ models:
     discontinued: false
   - id: mtp-vt01gl-2b
     ref: MTP-VT01GL-2B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01GL-2B/'
     source:
       { url: 'https://web.archive.org/web/20210919103124id_/https://www.casio.com/my/watches/casio/product.MTP-VT01GL-2B/', kind: official }
     display: analog
@@ -202,6 +215,7 @@ models:
     discontinued: false
   - id: mtp-vt01gl-2b2
     ref: MTP-VT01GL-2B2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01GL-2B2/'
     source:
       { url: 'https://web.archive.org/web/20220928095219id_/https://www.casio.com/in/watches/casio/product.MTP-VT01GL-2B2/', kind: official }
     display: analog
@@ -216,6 +230,7 @@ models:
     discontinued: false
   - id: mtp-vt01gl-3b
     ref: MTP-VT01GL-3B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01GL-3B/'
     source:
       { url: 'https://web.archive.org/web/20240316051107id_/https://www.casio.com/ph/watches/casio/product.MTP-VT01GL-3B/', kind: official }
     display: analog
@@ -230,6 +245,7 @@ models:
     discontinued: false
   - id: mtp-vt01gl-5b
     ref: MTP-VT01GL-5B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01GL-5B/'
     source:
       { url: 'https://web.archive.org/web/20210916194905id_/https://www.casio.com/my/watches/casio/product.MTP-VT01GL-5B/', kind: official }
     display: analog
@@ -244,6 +260,7 @@ models:
     discontinued: false
   - id: mtp-vt01l-1b
     ref: MTP-VT01L-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01L-1B/'
     source:
       { url: 'https://web.archive.org/web/20220520071449id_/https://www.casio.com/in/watches/casio/product.MTP-VT01L-1B/', kind: official }
     display: analog
@@ -258,6 +275,7 @@ models:
     discontinued: false
   - id: mtp-vt01l-1b2
     ref: MTP-VT01L-1B2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01L-1B2/'
     source:
       { url: 'https://web.archive.org/web/20220626200053id_/https://www.casio.com/in/watches/casio/product.MTP-VT01L-1B2/', kind: official }
     display: analog
@@ -272,6 +290,7 @@ models:
     discontinued: false
   - id: mtp-vt01l-2b
     ref: MTP-VT01L-2B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01L-2B/'
     source:
       { url: 'https://web.archive.org/web/20220526115655id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01L-2B/', kind: official }
     display: analog
@@ -300,6 +319,7 @@ models:
     discontinued: true
   - id: mtp-vt01l-3b
     ref: MTP-VT01L-3B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01L-3B/'
     source:
       { url: 'https://web.archive.org/web/20211018192922id_/https://www.casio.com/my/watches/casio/product.MTP-VT01L-3B/', kind: official }
     display: analog
@@ -314,6 +334,7 @@ models:
     discontinued: false
   - id: mtp-vt01l-7b1
     ref: MTP-VT01L-7B1
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01L-7B1/'
     source:
       { url: 'https://web.archive.org/web/20231119064652id_/https://www.casio.com/intl/watches/casio/product.MTP-VT01L-7B1/', kind: official }
     display: analog
@@ -328,6 +349,7 @@ models:
     discontinued: false
   - id: mtp-vt01l-7b2
     ref: MTP-VT01L-7B2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01L-7B2/'
     source:
       { url: 'https://web.archive.org/web/20220526115659id_/https://www.casio.com/sg/watches/casio/product.MTP-VT01L-7B2/', kind: official }
     display: analog
@@ -349,6 +371,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: mtp-vt01b-1b
     ref: MTP-VT01B-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01B-1B/'
     source:
       { url: 'https://web.archive.org/web/20240721185846id_/https://www.casio.com/id/watches/casio/product.MTP-VT01B-1B/', kind: official }
     case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 92 }
@@ -360,6 +383,7 @@ models:
     discontinued: false
   - id: mtp-vt01b-2b
     ref: MTP-VT01B-2B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01B-2B/'
     source:
       { url: 'https://web.archive.org/web/20240721185411id_/https://www.casio.com/id/watches/casio/product.MTP-VT01B-2B/', kind: official }
     case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 92 }
@@ -371,6 +395,7 @@ models:
     discontinued: false
   - id: mtp-vt01b-7b
     ref: MTP-VT01B-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01B-7B/'
     source:
       { url: 'https://web.archive.org/web/20240721185358id_/https://www.casio.com/id/watches/casio/product.MTP-VT01B-7B/', kind: official }
     case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 92 }
@@ -382,6 +407,7 @@ models:
     discontinued: false
   - id: mtp-vt01bl-1b
     ref: MTP-VT01BL-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01BL-1B/'
     source:
       { url: 'https://web.archive.org/web/20240721185657id_/https://www.casio.com/id/watches/casio/product.MTP-VT01BL-1B/', kind: official }
     case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 43 }
@@ -393,6 +419,7 @@ models:
     discontinued: false
   - id: mtp-vt01bl-2b
     ref: MTP-VT01BL-2B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01BL-2B/'
     source:
       { url: 'https://web.archive.org/web/20240721185530id_/https://www.casio.com/id/watches/casio/product.MTP-VT01BL-2B/', kind: official }
     case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 43 }
@@ -404,6 +431,7 @@ models:
     discontinued: false
   - id: mtp-vt01bl-5b
     ref: MTP-VT01BL-5B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01BL-5B/'
     source:
       { url: 'https://web.archive.org/web/20240721185216id_/https://www.casio.com/id/watches/casio/product.MTP-VT01BL-5B/', kind: official }
     case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 43 }
@@ -415,6 +443,7 @@ models:
     discontinued: false
   - id: mtp-vt01dm-1a
     ref: MTP-VT01DM-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01DM-1A/'
     source:
       { url: 'https://web.archive.org/web/20250119222058id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01DM-1A/', kind: official }
     case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88 }
@@ -426,6 +455,7 @@ models:
     discontinued: false
   - id: mtp-vt01dm-7a
     ref: MTP-VT01DM-7A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01DM-7A/'
     source:
       { url: 'https://web.archive.org/web/20250119222040id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01DM-7A/', kind: official }
     case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 88 }
@@ -437,6 +467,7 @@ models:
     discontinued: false
   - id: mtp-vt01lm-1a
     ref: MTP-VT01LM-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01LM-1A/'
     source:
       { url: 'https://web.archive.org/web/20250119222101id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01LM-1A/', kind: official }
     case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }
@@ -448,6 +479,7 @@ models:
     discontinued: false
   - id: mtp-vt01lm-7a
     ref: MTP-VT01LM-7A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VT01LM-7A/'
     source:
       { url: 'https://web.archive.org/web/20250119222106id_/https://www.casio.com/hk/watches/casio/product.MTP-VT01LM-7A/', kind: official }
     case: { height_mm: 46, width_mm: 40, depth_mm: 8.2, weight_g: 41 }

@@ -33,6 +33,7 @@ series:
 models:
   - id: mtp-b145d-2a1v
     ref: MTP-B145D-2A1V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B145D-2A1V/'
     source:
       { url: 'https://web.archive.org/web/20240715102321id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-2A1V/', kind: official }
     display: analog
@@ -48,6 +49,7 @@ models:
     discontinued: false
   - id: mtp-b145d-2a2v
     ref: MTP-B145D-2A2V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B145D-2A2V/'
     source:
       { url: 'https://web.archive.org/web/20240715102724id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-2A2V/', kind: official }
     display: analog
@@ -63,6 +65,7 @@ models:
       url: 'https://web.archive.org/web/20240713181135id_/https://www.casio.com/es/watches/casio/product.MTP-B145D-2A2V/'
   - id: mtp-b145d-3av
     ref: MTP-B145D-3AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B145D-3AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102334id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-3AV/', kind: official }
     display: analog
@@ -78,6 +81,7 @@ models:
     discontinued: false
   - id: mtp-b145d-4a2v
     ref: MTP-B145D-4A2V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B145D-4A2V/'
     source:
       { url: 'https://web.archive.org/web/20240225135539id_/https://www.casio.com/in/watches/casio/product.MTP-B145D-4A2V/', kind: official }
     display: analog
@@ -93,6 +97,7 @@ models:
     discontinued: false
   - id: mtp-b145d-4av
     ref: MTP-B145D-4AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B145D-4AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102326id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-4AV/', kind: official }
     display: analog
@@ -108,6 +113,7 @@ models:
     discontinued: false
   - id: mtp-b145d-7bv
     ref: MTP-B145D-7BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B145D-7BV/'
     source:
       { url: 'https://web.archive.org/web/20240715103136id_/https://www.casio.com/europe/watches/casio/product.MTP-B145D-7BV/', kind: official }
     display: analog
@@ -123,6 +129,7 @@ models:
     discontinued: false
   - id: mtp-b145d-9av
     ref: MTP-B145D-9AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B145D-9AV/'
     source:
       { url: 'https://web.archive.org/web/20240225135538id_/https://www.casio.com/in/watches/casio/product.MTP-B145D-9AV/', kind: official }
     display: analog
@@ -153,6 +160,7 @@ models:
     discontinued: true
   - id: mtp-b145dc-2a2v
     ref: MTP-B145DC-2A2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MTP-B145DC-2A2V/'
     source:
       { url: 'https://web.archive.org/web/20240214084708id_/https://www.casio.com/us/watches/casio/product.MTP-B145DC-2A2V/', kind: official }
     display: analog
@@ -168,6 +176,7 @@ models:
     discontinued: false
   - id: mtp-b145dc-4av
     ref: MTP-B145DC-4AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MTP-B145DC-4AV/'
     source:
       { url: 'https://web.archive.org/web/20241218042644id_/https://www.casio.com/us/watches/casio/product.MTP-B145DC-4AV/', kind: official }
     display: analog
@@ -183,6 +192,7 @@ models:
     discontinued: false
   - id: mtp-b145g-9av
     ref: MTP-B145G-9AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B145G-9AV/'
     source:
       { url: 'https://web.archive.org/web/20241224184623id_/https://www.casio.com/my/watches/casio/product.MTP-B145G-9AV/', kind: official }
     display: analog

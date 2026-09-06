@@ -20,6 +20,7 @@ series:
 models:
   - id: efs-560hr-1a
     ref: EFS-560HR-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFS-560HR-1A/'
     source:
       { url: 'https://web.archive.org/web/20231103080422id_/https://www.casio.com/us/watches/edifice/product.EFS-560HR-1A/', kind: official }
     display: analog

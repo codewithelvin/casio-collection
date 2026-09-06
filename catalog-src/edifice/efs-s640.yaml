@@ -20,6 +20,7 @@ series:
 models:
   - id: efs-s640d-1av
     ref: EFS-S640D-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFS-S640D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220535id_/https://www.casio.com/europe/watches/edifice/product.EFS-S640D-1AV/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: efs-s640dc-1av
     ref: EFS-S640DC-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFS-S640DC-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220546id_/https://www.casio.com/europe/watches/edifice/product.EFS-S640DC-1AV/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: efs-s640pb-1av
     ref: EFS-S640PB-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFS-S640PB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220557id_/https://www.casio.com/europe/watches/edifice/product.EFS-S640PB-1AV/', kind: official }
     display: analog
@@ -62,6 +65,7 @@ models:
     discontinued: false
   - id: efs-s640ze-1a
     ref: EFS-S640ZE-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFS-S640ZE-1A/'
     source:
       { url: 'https://web.archive.org/web/20250121101357id_/https://www.casio.com/in/watches/edifice/product.EFS-S640ZE-1A/', kind: official }
     display: analog
@@ -83,6 +87,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: efs-s640pb-1a
     ref: EFS-S640PB-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFS-S640PB-1A/'
     source:
       { url: 'https://web.archive.org/web/20240601223135id_/https://www.casio.com/jp/watches/edifice/product.EFS-S640PB-1A/', kind: official }
     case: { height_mm: 50.1, width_mm: 44.5, depth_mm: 13.3, weight_g: 59 }
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: efs-s640ydc-1a
     ref: EFS-S640YDC-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFS-S640YDC-1A/'
     source:
       { url: 'https://web.archive.org/web/20240602045908id_/https://www.casio.com/jp/watches/edifice/product.EFS-S640YDC-1A/', kind: official }
     case: { height_mm: 50.1, width_mm: 44.5, depth_mm: 13.3, weight_g: 146 }

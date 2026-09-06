@@ -20,6 +20,7 @@ series:
 models:
   - id: efb-700d-1av
     ref: EFB-700D-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFB-700D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220814id_/https://www.casio.com/europe/watches/edifice/product.EFB-700D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efb-700d-2av
     ref: EFB-700D-2AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFB-700D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220810id_/https://www.casio.com/europe/watches/edifice/product.EFB-700D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efb-700d-8av
     ref: EFB-700D-8AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFB-700D-8AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220650id_/https://www.casio.com/europe/watches/edifice/product.EFB-700D-8AV/', kind: official }
     display: analog

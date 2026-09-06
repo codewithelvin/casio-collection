@@ -20,6 +20,7 @@ series:
 models:
   - id: eqs-940bl-1av
     ref: EQS-940BL-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-940BL-1AV/'
     source:
       { url: 'https://web.archive.org/web/20221001040715id_/https://www.casio.com/sg/watches/edifice/product.EQS-940BL-1AV/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: eqs-940db-1av
     ref: EQS-940DB-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQS-940DB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20221001040833id_/https://www.casio.com/sg/watches/edifice/product.EQS-940DB-1AV/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: eqs-940db-1bv
     ref: EQS-940DB-1BV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-940DB-1BV/'
     source:
       { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EQS-940DB-1BV/', kind: official }
     display: analog
@@ -62,6 +65,7 @@ models:
     discontinued: false
   - id: eqs-940dc-1av
     ref: EQS-940DC-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQS-940DC-1AV/'
     source:
       { url: 'https://web.archive.org/web/20221001042513id_/https://www.casio.com/sg/watches/edifice/product.EQS-940DC-1AV/', kind: official }
     display: analog
@@ -76,6 +80,7 @@ models:
     discontinued: false
   - id: eqs-940dc-1bv
     ref: EQS-940DC-1BV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-940DC-1BV/'
     source:
       { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EQS-940DC-1BV/', kind: official }
     display: analog
@@ -90,6 +95,7 @@ models:
     discontinued: false
   - id: eqs-940nl-1av
     ref: EQS-940NL-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-940NL-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240718074848id_/https://www.casio.com/in/watches/edifice/product.EQS-940NL-1AV/', kind: official }
     display: analog

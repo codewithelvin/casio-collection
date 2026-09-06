@@ -29,6 +29,7 @@ series:
 models:
   - id: she-4560bd-1a
     ref: SHE-4560BD-1A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4560BD-1A/'
     source:
       { url: 'https://web.archive.org/web/20240408193246id_/https://www.casio.com/intl/watches/sheen/product.SHE-4560BD-1A/', kind: official }
     display: analog
@@ -44,6 +45,7 @@ models:
     discontinued: false
   - id: she-4560d-7a
     ref: SHE-4560D-7A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4560D-7A/'
     source:
       { url: 'https://web.archive.org/web/20240408193245id_/https://www.casio.com/intl/watches/sheen/product.SHE-4560D-7A/', kind: official }
     display: analog
@@ -59,6 +61,7 @@ models:
     discontinued: false
   - id: she-4560pg-4a
     ref: SHE-4560PG-4A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4560PG-4A/'
     source:
       { url: 'https://web.archive.org/web/20240408193245id_/https://www.casio.com/intl/watches/sheen/product.SHE-4560PG-4A/', kind: official }
     display: analog

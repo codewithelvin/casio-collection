@@ -20,6 +20,7 @@ series:
 models:
   - id: eqb-1100at-2a
     ref: EQB-1100AT-2A
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EQB-1100AT-2A/'
     source:
       { url: 'https://web.archive.org/web/20240714221149id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100AT-2A/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: eqb-1100d-1a
     ref: EQB-1100D-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQB-1100D-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714221151id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100D-1A/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: eqb-1100dc-1a
     ref: EQB-1100DC-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQB-1100DC-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714221156id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100DC-1A/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: eqb-1100tms-1a
     ref: EQB-1100TMS-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQB-1100TMS-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714221153id_/https://www.casio.com/europe/watches/edifice/product.EQB-1100TMS-1A/', kind: official }
     display: analog
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: eqb-1100xdb-2a
     ref: EQB-1100XDB-2A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQB-1100XDB-2A/'
     source:
       { url: 'https://web.archive.org/web/20220925140149id_/https://www.casio.com/sg/watches/edifice/product.EQB-1100XDB-2A/', kind: official }
     display: analog
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: eqb-1100xdc-1a
     ref: EQB-1100XDC-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQB-1100XDC-1A/'
     source:
       { url: 'https://web.archive.org/web/20220703122341id_/https://www.casio.com/us/watches/edifice/product.EQB-1100XDC-1A/', kind: official }
     display: analog
@@ -110,6 +116,7 @@ models:
     discontinued: false
   - id: eqb-1100xydb-2a
     ref: EQB-1100XYDB-2A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EQB-1100XYDB-2A/'
     source:
       { url: 'https://web.archive.org/web/20210329080113id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100XYDB-2A/', kind: official }
     features: [bluetooth]
@@ -121,6 +128,7 @@ models:
     discontinued: false
   - id: eqb-1100xydc-1a
     ref: EQB-1100XYDC-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EQB-1100XYDC-1A/'
     source:
       { url: 'https://web.archive.org/web/20210324100114id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100XYDC-1A/', kind: official }
     features: [bluetooth]
@@ -132,6 +140,7 @@ models:
     discontinued: false
   - id: eqb-1100yd-1a
     ref: EQB-1100YD-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EQB-1100YD-1A/'
     source:
       { url: 'https://web.archive.org/web/20210318105741id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100YD-1A/', kind: official }
     features: [bluetooth]
@@ -143,6 +152,7 @@ models:
     discontinued: false
   - id: eqb-1100ydc-1a
     ref: EQB-1100YDC-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EQB-1100YDC-1A/'
     source:
       { url: 'https://web.archive.org/web/20210315122525id_/https://www.casio.com/jp/watches/edifice/product.EQB-1100YDC-1A/', kind: official }
     features: [bluetooth]

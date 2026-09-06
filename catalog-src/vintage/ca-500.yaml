@@ -21,6 +21,7 @@ series:
 models:
   - id: ca-500we-1a
     ref: CA-500WE-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.CA-500WE-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220013id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WE-1A/', kind: official }
     movement: quartz
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: ca-500we-4b
     ref: CA-500WE-4B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.CA-500WE-4B/'
     source:
       { url: 'https://web.archive.org/web/20240714220049id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WE-4B/', kind: official }
     movement: quartz
@@ -47,6 +49,7 @@ models:
     discontinued: false
   - id: ca-500we-7b
     ref: CA-500WE-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.CA-500WE-7B/'
     source:
       { url: 'https://web.archive.org/web/20240714220047id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WE-7B/', kind: official }
     movement: quartz
@@ -60,6 +63,7 @@ models:
     discontinued: false
   - id: ca-500weg-1a
     ref: CA-500WEG-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.CA-500WEG-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220011id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WEG-1A/', kind: official }
     movement: quartz
@@ -73,6 +77,7 @@ models:
     discontinued: false
   - id: ca-500wegg-1b
     ref: CA-500WEGG-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.CA-500WEGG-1B/'
     source:
       { url: 'https://web.archive.org/web/20240714220025id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WEGG-1B/', kind: official }
     movement: quartz
@@ -86,6 +91,7 @@ models:
     discontinued: false
   - id: ca-500wegg-9b
     ref: CA-500WEGG-9B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.CA-500WEGG-9B/'
     source:
       { url: 'https://web.archive.org/web/20240429204733id_/https://www.casio.com/europe/watches/casio/vintage/product.CA-500WEGG-9B/', kind: official }
     movement: quartz

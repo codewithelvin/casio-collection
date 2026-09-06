@@ -20,6 +20,7 @@ series:
 models:
   - id: w-201-1av
     ref: W-201-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-201-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220818235102id_/https://www.casio.com/us/watches/casio/product.W-201-1AV/', kind: official }
     movement: quartz
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: w-201-1bv
     ref: W-201-1BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-201-1BV/'
     source:
       { url: 'https://web.archive.org/web/20240917233024id_/https://www.casio.com/us/watches/casio/product.W-201-1BV/', kind: official }
     movement: quartz

@@ -33,6 +33,7 @@ series:
 models:
   - id: mdv-106-1av
     ref: MDV-106-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MDV-106-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220625033634id_/https://www.casio.com/us/watches/casio/product.MDV-106-1AV/', kind: official }
     display: analog
@@ -48,6 +49,7 @@ models:
       url: 'https://web.archive.org/web/20230722190612id_/https://www.casio.com/mx/watches/casio/product.MDV-106-1AV/'
   - id: mdv-106b-1a1v
     ref: MDV-106B-1A1V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MDV-106B-1A1V/'
     source:
       { url: 'https://web.archive.org/web/20221017180101id_/https://www.casio.com/us/watches/casio/product.MDV-106B-1A1V/', kind: official }
     display: analog
@@ -63,6 +65,7 @@ models:
     discontinued: false
   - id: mdv-106b-1a2v
     ref: MDV-106B-1A2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MDV-106B-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20221223202437id_/https://www.casio.com/us/watches/casio/product.MDV-106B-1A2V/', kind: official }
     display: analog
@@ -78,6 +81,7 @@ models:
     discontinued: false
   - id: mdv-106b-1a3v
     ref: MDV-106B-1A3V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MDV-106B-1A3V/'
     source:
       { url: 'https://web.archive.org/web/20221103214141id_/https://www.casio.com/us/watches/casio/product.MDV-106B-1A3V/', kind: official }
     display: analog
@@ -93,6 +97,7 @@ models:
     discontinued: false
   - id: mdv-106b-2av
     ref: MDV-106B-2AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MDV-106B-2AV/'
     source:
       { url: 'https://web.archive.org/web/20220612224420id_/https://www.casio.com/us/watches/casio/product.MDV-106B-2AV/', kind: official }
     display: analog
@@ -108,6 +113,7 @@ models:
     discontinued: false
   - id: mdv-106dd-1a1v
     ref: MDV-106DD-1A1V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MDV-106DD-1A1V/'
     source:
       { url: 'https://web.archive.org/web/20240922024620id_/https://www.casio.com/us/watches/casio/product.MDV-106DD-1A1V/', kind: official }
     display: analog
@@ -123,6 +129,7 @@ models:
     discontinued: false
   - id: mdv-106dd-1a2v
     ref: MDV-106DD-1A2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MDV-106DD-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20240408193744id_/https://www.casio.com/us/watches/casio/product.MDV-106DD-1A2V/', kind: official }
     display: analog
@@ -138,6 +145,7 @@ models:
     discontinued: false
   - id: mdv-106dd-1a3v
     ref: MDV-106DD-1A3V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MDV-106DD-1A3V/'
     source:
       { url: 'https://web.archive.org/web/20240408193744id_/https://www.casio.com/us/watches/casio/product.MDV-106DD-1A3V/', kind: official }
     display: analog
@@ -153,6 +161,7 @@ models:
     discontinued: false
   - id: mdv-106g-1av
     ref: MDV-106G-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MDV-106G-1AV/'
     source:
       { url: 'https://web.archive.org/web/20221122063417id_/https://www.casio.com/us/watches/casio/product.MDV-106G-1AV/', kind: official }
     display: analog

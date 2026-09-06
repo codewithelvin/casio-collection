@@ -28,6 +28,7 @@ series:
 models:
   - id: wv-200a-1av
     ref: WV-200A-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.WV-200A-1AV/'
     source:
       { url: 'https://web.archive.org/web/20230118014324id_/https://www.casio.com/us/watches/casio/product.WV-200A-1AV/', kind: official }
     movement: quartz
@@ -42,6 +43,7 @@ models:
     discontinued: false
   - id: wv-200r-1a
     ref: WV-200R-1A
+    official_url: 'https://www.casio.com/de/watches/casio/product.WV-200R-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715070909id_/https://www.casio.com/europe/watches/casio/product.WV-200R-1A/', kind: official }
     movement: quartz
@@ -56,6 +58,7 @@ models:
     discontinued: false
   - id: wv-200r-2a
     ref: WV-200R-2A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.WV-200R-2A/'
     source:
       { url: 'https://web.archive.org/web/20221204222425id_/https://www.casio.com/jp/watches/casio/product.WV-200R-2A/', kind: official }
     case: { height_mm: 52.2, width_mm: 47.7, depth_mm: 15.2, weight_g: 58 }
@@ -68,6 +71,7 @@ models:
     discontinued: false
   - id: wv-200r-3a
     ref: WV-200R-3A
+    official_url: 'https://www.casio.com/us/watches/casio/product.WV-200R-3A/'
     source:
       { url: 'https://web.archive.org/web/20240715070815id_/https://www.casio.com/europe/watches/casio/product.WV-200R-3A/', kind: official }
     movement: quartz
@@ -82,6 +86,7 @@ models:
     discontinued: false
   - id: wv-200r-4a
     ref: WV-200R-4A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.WV-200R-4A/'
     source:
       { url: 'https://web.archive.org/web/20221208200519id_/https://www.casio.com/jp/watches/casio/product.WV-200R-4A/', kind: official }
     case: { height_mm: 52.2, width_mm: 47.7, depth_mm: 15.2, weight_g: 58 }
@@ -94,6 +99,7 @@ models:
     discontinued: false
   - id: wv-200r-5a
     ref: WV-200R-5A
+    official_url: 'https://www.casio.com/us/watches/casio/product.WV-200R-5A/'
     source:
       { url: 'https://web.archive.org/web/20250115172951id_/https://www.casio.com/us/watches/casio/product.WV-200R-5A/', kind: official }
     movement: quartz
@@ -108,6 +114,7 @@ models:
     discontinued: false
   - id: wv-200rd-1a
     ref: WV-200RD-1A
+    official_url: 'https://www.casio.com/de/watches/casio/product.WV-200RD-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715070955id_/https://www.casio.com/europe/watches/casio/product.WV-200RD-1A/', kind: official }
     movement: quartz

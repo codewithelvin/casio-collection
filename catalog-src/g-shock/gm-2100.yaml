@@ -70,6 +70,7 @@ series:
 models:
   - id: gm-2100-1a
     ref: GM-2100-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -88,7 +89,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -97,6 +98,7 @@ models:
     discontinued: false
   - id: gm-2100b-3a
     ref: GM-2100B-3A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100B-3A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -115,7 +117,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100b-3a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -124,6 +126,7 @@ models:
     discontinued: false
   - id: gm-2100b-4a
     ref: GM-2100B-4A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GM-2100B-4A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -142,7 +145,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100b-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -151,6 +154,7 @@ models:
     discontinued: false
   - id: gm-2100bb-1a
     ref: GM-2100BB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100BB-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -169,7 +173,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100bb-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -178,6 +182,7 @@ models:
     discontinued: false
   - id: gm-2100bm-1a
     ref: GM-2100BM-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100BM-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -196,7 +201,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     discontinued: false
     image: gm-2100bm-1a
     image_credit:
@@ -205,6 +210,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/gm-2100bm-1adr'
   - id: gm-2100brw-1a
     ref: GM-2100BRW-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100BRW-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -223,7 +229,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100brw-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -232,6 +238,7 @@ models:
     discontinued: false
   - id: gm-2100c-5a
     ref: GM-2100C-5A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100C-5A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -250,7 +257,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100c-5a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -259,6 +266,7 @@ models:
     discontinued: false
   - id: gm-2100cb-1a
     ref: GM-2100CB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100CB-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -277,7 +285,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100cb-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -286,6 +294,7 @@ models:
     discontinued: false
   - id: gm-2100cb-3a
     ref: GM-2100CB-3A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100CB-3A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -304,7 +313,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100cb-3a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -313,6 +322,7 @@ models:
     discontinued: false
   - id: gm-2100ch-1a
     ref: GM-2100CH-1A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GM-2100CH-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -331,7 +341,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100ch-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -340,6 +350,7 @@ models:
     discontinued: false
   - id: gm-2100cl-5a
     ref: GM-2100CL-5A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100CL-5A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -358,7 +369,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100cl-5a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -367,6 +378,7 @@ models:
     discontinued: false
   - id: gm-2100g-1a9
     ref: GM-2100G-1A9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100G-1A9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -385,7 +397,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100g-1a9
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -394,6 +406,7 @@ models:
     discontinued: false
   - id: gm-2100gc-1a
     ref: GM-2100GC-1A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GM-2100GC-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -412,7 +425,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100gc-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -421,6 +434,7 @@ models:
     discontinued: false
   - id: gm-2100lxb-1a
     ref: GM-2100LXB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100LXB-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -439,7 +453,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     discontinued: false
     image: gm-2100lxb-1a
     image_credit:
@@ -448,6 +462,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/gm-2100lxb-1adr'
   - id: gm-2100lxb-1a9
     ref: GM-2100LXB-1A9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100LXB-1A9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -466,7 +481,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     discontinued: false
     image: gm-2100lxb-1a9
     image_credit:
@@ -475,6 +490,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/gm-2100lxb-1a9dr'
   - id: gm-2100m-1a
     ref: GM-2100M-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100M-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -493,7 +509,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     discontinued: false
     image: gm-2100m-1a
     image_credit:
@@ -502,6 +518,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/gm-2100m-1adr'
   - id: gm-2100mf-5a
     ref: GM-2100MF-5A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100MF-5A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -520,7 +537,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100mf-5a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -529,6 +546,7 @@ models:
     discontinued: false
   - id: gm-2100mg-1a
     ref: GM-2100MG-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100MG-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -546,7 +564,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100mg-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -555,6 +573,7 @@ models:
     discontinued: false
   - id: gm-2100mwg-1a
     ref: GM-2100MWG-1A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GM-2100MWG-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -573,7 +592,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100mwg-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -582,6 +601,7 @@ models:
     discontinued: false
   - id: gm-2100n-2a
     ref: GM-2100N-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100N-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -600,7 +620,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100n-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -609,6 +629,7 @@ models:
     discontinued: false
   - id: gm-2100rw-1a
     ref: GM-2100RW-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100RW-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -627,7 +648,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100rw-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -636,6 +657,7 @@ models:
     discontinued: false
   - id: gm-2100ss-1a
     ref: GM-2100SS-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100SS-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -654,7 +676,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100ss-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -663,6 +685,7 @@ models:
     discontinued: false
   - id: gm-2100tttr-8a
     ref: GM-2100TTTR-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100TTTR-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -681,7 +704,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100tttr-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -690,6 +713,7 @@ models:
     discontinued: false
   - id: gm-2100ws-7a
     ref: GM-2100WS-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100WS-7A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -708,7 +732,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100ws-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -717,6 +741,7 @@ models:
     discontinued: false
   - id: gm-2100ym-8a
     ref: GM-2100YM-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100YM-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -735,7 +760,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100ym-8a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -744,6 +769,7 @@ models:
     discontinued: false
   - id: gm-2100ymg-9a
     ref: GM-2100YMG-9A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100YMG-9A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -762,7 +788,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100ymg-9a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -771,6 +797,7 @@ models:
     discontinued: false
   - id: gm-2100ymg-9a9
     ref: GM-2100YMG-9A9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100YMG-9A9/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -789,7 +816,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     image: gm-2100ymg-9a9
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -798,6 +825,7 @@ models:
     discontinued: false
   - id: gm-2100yra-8a
     ref: GM-2100YRA-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GM-2100YRA-8A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5611/qw5611_EN.pdf',
@@ -816,7 +844,7 @@ models:
     display: ana-digi
     movement: quartz
     module: '5611'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, led-light]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass]
     discontinued: false
     image: gm-2100yra-8a
     image_credit:

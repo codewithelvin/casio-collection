@@ -33,6 +33,7 @@ series:
 models:
   - id: mrw-200h-1b2v
     ref: MRW-200H-1B2V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MRW-200H-1B2V/'
     source:
       { url: 'https://web.archive.org/web/20240715101233id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-1B2V/', kind: official }
     display: analog
@@ -47,6 +48,7 @@ models:
     discontinued: false
   - id: mrw-200h-1b3v
     ref: MRW-200H-1B3V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MRW-200H-1B3V/'
     source:
       { url: 'https://web.archive.org/web/20220820105326id_/https://www.casio.com/us/watches/casio/product.MRW-200H-1B3V/', kind: official }
     display: analog
@@ -61,6 +63,7 @@ models:
       url: 'https://web.archive.org/web/20240721132710id_/https://www.casio.com/id/watches/casio/product.MRW-200H-1B3V/'
   - id: mrw-200h-1bv
     ref: MRW-200H-1BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MRW-200H-1BV/'
     source:
       { url: 'https://web.archive.org/web/20240715102235id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-1BV/', kind: official }
     display: analog
@@ -75,6 +78,7 @@ models:
     discontinued: false
   - id: mrw-200h-1ev
     ref: MRW-200H-1EV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MRW-200H-1EV/'
     source:
       { url: 'https://web.archive.org/web/20231015174440id_/https://www.casio.com/in/watches/casio/product.MRW-200H-1EV/', kind: official }
     display: analog
@@ -89,6 +93,7 @@ models:
     discontinued: false
   - id: mrw-200h-2b2v
     ref: MRW-200H-2B2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MRW-200H-2B2V/'
     source:
       { url: 'https://web.archive.org/web/20220926025524id_/https://www.casio.com/us/watches/casio/product.MRW-200H-2B2V/', kind: official }
     display: analog
@@ -103,6 +108,7 @@ models:
       url: 'https://web.archive.org/web/20240721183616id_/https://www.casio.com/id/watches/casio/product.MRW-200H-2B2V/'
   - id: mrw-200h-2bv
     ref: MRW-200H-2BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MRW-200H-2BV/'
     source:
       { url: 'https://web.archive.org/web/20240715101240id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-2BV/', kind: official }
     display: analog
@@ -117,6 +123,7 @@ models:
     discontinued: false
   - id: mrw-200h-3bv
     ref: MRW-200H-3BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MRW-200H-3BV/'
     source:
       { url: 'https://web.archive.org/web/20220926040249id_/https://www.casio.com/us/watches/casio/product.MRW-200H-3BV/', kind: official }
     display: analog
@@ -131,6 +138,7 @@ models:
       url: 'https://web.archive.org/web/20240721183640id_/https://www.casio.com/id/watches/casio/product.MRW-200H-3BV/'
   - id: mrw-200h-4bv
     ref: MRW-200H-4BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MRW-200H-4BV/'
     source:
       { url: 'https://web.archive.org/web/20220813212447id_/https://www.casio.com/us/watches/casio/product.MRW-200H-4BV/', kind: official }
     display: analog
@@ -145,6 +153,7 @@ models:
       url: 'https://web.archive.org/web/20240721183558id_/https://www.casio.com/id/watches/casio/product.MRW-200H-4BV/'
   - id: mrw-200h-7bv
     ref: MRW-200H-7BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MRW-200H-7BV/'
     source:
       { url: 'https://web.archive.org/web/20240715102258id_/https://www.casio.com/europe/watches/casio/product.MRW-200H-7BV/', kind: official }
     display: analog
@@ -173,6 +182,7 @@ models:
     discontinued: true
   - id: mrw-200hd-1bv
     ref: MRW-200HD-1BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MRW-200HD-1BV/'
     source:
       { url: 'https://web.archive.org/web/20240715102255id_/https://www.casio.com/europe/watches/casio/product.MRW-200HD-1BV/', kind: official }
     display: analog
@@ -187,6 +197,7 @@ models:
     discontinued: false
   - id: mrw-200hd-7bv
     ref: MRW-200HD-7BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MRW-200HD-7BV/'
     source:
       { url: 'https://web.archive.org/web/20240715101247id_/https://www.casio.com/europe/watches/casio/product.MRW-200HD-7BV/', kind: official }
     display: analog
@@ -208,6 +219,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: mrw-200h-2b3v
     ref: MRW-200H-2B3V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MRW-200H-2B3V/'
     source:
       { url: 'https://web.archive.org/web/20240721183546id_/https://www.casio.com/id/watches/casio/product.MRW-200H-2B3V/', kind: official }
     case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39 }
@@ -268,6 +280,7 @@ models:
     discontinued: true
   - id: mrw-200hj-1b
     ref: MRW-200HJ-1B
+    official_url: 'https://www.casio.com/jp/watches/casio/product.MRW-200HJ-1B/'
     source:
       { url: 'https://web.archive.org/web/20221123112101id_/https://www.casio.com/jp/watches/casio/product.MRW-200HJ-1B/', kind: official }
     case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39 }
@@ -280,6 +293,7 @@ models:
     discontinued: false
   - id: mrw-200hj-7e
     ref: MRW-200HJ-7E
+    official_url: 'https://www.casio.com/jp/watches/casio/product.MRW-200HJ-7E/'
     source:
       { url: 'https://web.archive.org/web/20221202070634id_/https://www.casio.com/jp/watches/casio/product.MRW-200HJ-7E/', kind: official }
     case: { height_mm: 47.9, width_mm: 44.6, depth_mm: 11.6, weight_g: 39 }

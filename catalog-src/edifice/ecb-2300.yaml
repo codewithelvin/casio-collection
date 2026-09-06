@@ -20,6 +20,7 @@ series:
 models:
   - id: ecb-2300hr-1a
     ref: ECB-2300HR-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-2300HR-1A/'
     source:
       { url: 'https://web.archive.org/web/20260124130853id_/https://www.casio.com/fr/watches/edifice/product.ECB-2300HR-1A/', kind: official }
     movement: solar

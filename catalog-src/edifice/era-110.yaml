@@ -20,6 +20,7 @@ series:
 models:
   - id: era-110d-1av
     ref: ERA-110D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ERA-110D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240722130827id_/https://www.casio.com/id/watches/edifice/product.ERA-110D-1AV/', kind: official }
     features: [alarm, stopwatch, telememo]
@@ -31,6 +32,7 @@ models:
     discontinued: false
   - id: era-110d-2av
     ref: ERA-110D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ERA-110D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20220929201339id_/https://www.casio.com/sg/watches/edifice/product.ERA-110D-2AV/', kind: official }
     display: ana-digi

@@ -20,6 +20,7 @@ series:
 models:
   - id: mtp-1381d-1av
     ref: MTP-1381D-1AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-1381D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20251001055806id_/https://www.casio.com/intl/watches/casio/product.MTP-1381D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: mtp-1381d-3av
     ref: MTP-1381D-3AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-1381D-3AV/'
     source:
       { url: 'https://web.archive.org/web/20250722012730id_/https://www.casio.com/intl/watches/casio/product.MTP-1381D-3AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: mtp-1381d-7av
     ref: MTP-1381D-7AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-1381D-7AV/'
     source:
       { url: 'https://web.archive.org/web/20220524192414id_/https://www.casio.com/in/watches/casio/product.MTP-1381D-7AV/', kind: official }
     display: analog
@@ -120,6 +123,7 @@ models:
     discontinued: true
   - id: mtp-1381l-1av
     ref: MTP-1381L-1AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-1381L-1AV/'
     source:
       { url: 'https://web.archive.org/web/20231022230944id_/https://www.casio.com/za/watches/casio/product.MTP-1381L-1AV/', kind: official }
     display: analog

@@ -20,6 +20,7 @@ series:
 models:
   - id: gmd-s5600-1
     ref: GMD-S5600-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMD-S5600-1/'
     source:
       { url: 'https://web.archive.org/web/20240715021728id_/https://www.casio.com/europe/watches/gshock/product.GMD-S5600-1/', kind: official }
     year: 2023
@@ -39,6 +40,7 @@ models:
     discontinued: false
   - id: gmd-s5600-2
     ref: GMD-S5600-2
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600-2/'
     source:
       { url: 'https://web.archive.org/web/20240715021740id_/https://www.casio.com/europe/watches/gshock/product.GMD-S5600-2/', kind: official }
     year: 2023
@@ -58,6 +60,7 @@ models:
     discontinued: false
   - id: gmd-s5600-7
     ref: GMD-S5600-7
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600-7/'
     source:
       { url: 'https://web.archive.org/web/20240715021737id_/https://www.casio.com/europe/watches/gshock/product.GMD-S5600-7/', kind: official }
     year: 2023
@@ -77,6 +80,7 @@ models:
     discontinued: false
   - id: gmd-s5600-8
     ref: GMD-S5600-8
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMD-S5600-8/'
     source:
       { url: 'https://web.archive.org/web/20240715021734id_/https://www.casio.com/europe/watches/gshock/product.GMD-S5600-8/', kind: official }
     year: 2023
@@ -96,6 +100,7 @@ models:
     discontinued: false
   - id: gmd-s5600ba-1
     ref: GMD-S5600BA-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600BA-1/'
     source:
       { url: 'https://web.archive.org/web/20231230114435id_/https://www.casio.com/in/watches/gshock/product.GMD-S5600BA-1/', kind: official }
     year: 2023
@@ -115,6 +120,7 @@ models:
     discontinued: false
   - id: gmd-s5600ba-3
     ref: GMD-S5600BA-3
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600BA-3/'
     source:
       { url: 'https://web.archive.org/web/20240119144358id_/https://www.casio.com/in/watches/gshock/product.GMD-S5600BA-3/', kind: official }
     year: 2023
@@ -134,6 +140,7 @@ models:
     discontinued: false
   - id: gmd-s5600ba-4
     ref: GMD-S5600BA-4
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600BA-4/'
     source:
       { url: 'https://web.archive.org/web/20240921090138id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5600BA-4/', kind: official }
     year: 2023
@@ -153,6 +160,7 @@ models:
     discontinued: false
   - id: gmd-s5600ba-6
     ref: GMD-S5600BA-6
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600BA-6/'
     source:
       { url: 'https://web.archive.org/web/20240408193902id_/https://www.casio.com/in/watches/gshock/product.GMD-S5600BA-6/', kind: official }
     year: 2023
@@ -172,6 +180,7 @@ models:
     discontinued: false
   - id: gmd-s5600ba-7
     ref: GMD-S5600BA-7
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600BA-7/'
     source:
       { url: 'https://web.archive.org/web/20240211175411id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5600BA-7/', kind: official }
     year: 2023
@@ -191,6 +200,7 @@ models:
     discontinued: false
   - id: gmd-s5600ct-3
     ref: GMD-S5600CT-3
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMD-S5600CT-3/'
     source:
       { url: 'https://web.archive.org/web/20240214084710id_/https://www.casio.com/us/watches/gshock/product.GMD-S5600CT-3/', kind: official }
     year: 2024
@@ -210,6 +220,7 @@ models:
     discontinued: false
   - id: gmd-s5600ct-4
     ref: GMD-S5600CT-4
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMD-S5600CT-4/'
     source:
       { url: 'https://web.archive.org/web/20240119142120id_/https://www.casio.com/us/watches/gshock/product.GMD-S5600CT-4/', kind: official }
     year: 2024
@@ -229,6 +240,7 @@ models:
     discontinued: false
   - id: gmd-s5600ep-9
     ref: GMD-S5600EP-9
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600EP-9/'
     source:
       { url: 'https://web.archive.org/web/20240626071309id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5600EP-9/', kind: official }
     year: 2024
@@ -248,6 +260,7 @@ models:
     discontinued: false
   - id: gmd-s5600nc-2
     ref: GMD-S5600NC-2
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600NC-2/'
     source:
       { url: 'https://web.archive.org/web/20240119144350id_/https://www.casio.com/in/watches/gshock/product.GMD-S5600NC-2/', kind: official }
     year: 2023
@@ -267,6 +280,7 @@ models:
     discontinued: false
   - id: gmd-s5600nc-9
     ref: GMD-S5600NC-9
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600NC-9/'
     source:
       { url: 'https://web.archive.org/web/20231216203452id_/https://www.casio.com/sg/watches/gshock/product.GMD-S5600NC-9/', kind: official }
     year: 2023
@@ -286,6 +300,7 @@ models:
     discontinued: false
   - id: gmd-s5600rb-4
     ref: GMD-S5600RB-4
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMD-S5600RB-4/'
     source:
       { url: 'https://web.archive.org/web/20240921090138id_/https://www.casio.com/intl/watches/gshock/product.GMD-S5600RB-4/', kind: official }
     year: 2023
@@ -305,6 +320,7 @@ models:
     discontinued: false
   - id: gmd-s5600sg-7
     ref: GMD-S5600SG-7
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMD-S5600SG-7/'
     source:
       { url: 'https://web.archive.org/web/20231216203449id_/https://www.casio.com/us/watches/gshock/product.GMD-S5600SG-7/', kind: official }
     year: 2023

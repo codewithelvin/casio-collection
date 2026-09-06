@@ -20,6 +20,7 @@ series:
 models:
   - id: ltp-1234ds-2a
     ref: LTP-1234DS-2A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-1234DS-2A/'
     source:
       { url: 'https://web.archive.org/web/20240927000645id_/https://www.casio.com/intl/watches/casio/product.LTP-1234DS-2A/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: ltp-1234pd-7b
     ref: LTP-1234PD-7B
+    official_url: 'https://www.casio.com/de/watches/casio/product.LTP-1234PD-7B/'
     source:
       { url: 'https://web.archive.org/web/20240715102054id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PD-7B/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: ltp-1234pg-7a
     ref: LTP-1234PG-7A
+    official_url: 'https://www.casio.com/de/watches/casio/product.LTP-1234PG-7A/'
     source:
       { url: 'https://web.archive.org/web/20240715102111id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PG-7A/', kind: official }
     display: analog
@@ -62,6 +65,7 @@ models:
     discontinued: false
   - id: ltp-1234pgl-7a
     ref: LTP-1234PGL-7A
+    official_url: 'https://www.casio.com/de/watches/casio/product.LTP-1234PGL-7A/'
     source:
       { url: 'https://web.archive.org/web/20240715103059id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PGL-7A/', kind: official }
     display: analog
@@ -76,6 +80,7 @@ models:
     discontinued: false
   - id: ltp-1234pgl-7a2
     ref: LTP-1234PGL-7A2
+    official_url: 'https://www.casio.com/de/watches/casio/product.LTP-1234PGL-7A2/'
     source:
       { url: 'https://web.archive.org/web/20240715103054id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PGL-7A2/', kind: official }
     display: analog
@@ -90,6 +95,7 @@ models:
     discontinued: false
   - id: ltp-1234pl-7a2
     ref: LTP-1234PL-7A2
+    official_url: 'https://www.casio.com/de/watches/casio/product.LTP-1234PL-7A2/'
     source:
       { url: 'https://web.archive.org/web/20240715103057id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PL-7A2/', kind: official }
     display: analog
@@ -104,6 +110,7 @@ models:
     discontinued: false
   - id: ltp-1234psg-7a
     ref: LTP-1234PSG-7A
+    official_url: 'https://www.casio.com/de/watches/casio/product.LTP-1234PSG-7A/'
     source:
       { url: 'https://web.archive.org/web/20240715102048id_/https://www.casio.com/europe/watches/casio/product.LTP-1234PSG-7A/', kind: official }
     display: analog
@@ -125,6 +132,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: ltp-1234dd-1a
     ref: LTP-1234DD-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-1234DD-1A/'
     source:
       { url: 'https://web.archive.org/web/20250120041135id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-1A/', kind: official }
     case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 58 }
@@ -136,6 +144,7 @@ models:
     discontinued: false
   - id: ltp-1234dd-2a
     ref: LTP-1234DD-2A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-1234DD-2A/'
     source:
       { url: 'https://web.archive.org/web/20250120041114id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-2A/', kind: official }
     case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 58 }
@@ -147,6 +156,7 @@ models:
     discontinued: false
   - id: ltp-1234dd-4a
     ref: LTP-1234DD-4A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-1234DD-4A/'
     source:
       { url: 'https://web.archive.org/web/20250120041141id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-4A/', kind: official }
     case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 58 }
@@ -158,6 +168,7 @@ models:
     discontinued: false
   - id: ltp-1234dd-5a
     ref: LTP-1234DD-5A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-1234DD-5A/'
     source:
       { url: 'https://web.archive.org/web/20250120041130id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-5A/', kind: official }
     case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 58 }
@@ -169,6 +180,7 @@ models:
     discontinued: false
   - id: ltp-1234dd-7a
     ref: LTP-1234DD-7A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-1234DD-7A/'
     source:
       { url: 'https://web.archive.org/web/20250120041110id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DD-7A/', kind: official }
     case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 58 }
@@ -180,6 +192,7 @@ models:
     discontinued: false
   - id: ltp-1234ds-4a
     ref: LTP-1234DS-4A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-1234DS-4A/'
     source:
       { url: 'https://web.archive.org/web/20250120040759id_/https://www.casio.com/hk/watches/casio/product.LTP-1234DS-4A/', kind: official }
     case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 57 }
@@ -191,6 +204,7 @@ models:
     discontinued: false
   - id: ltp-1234gll-7a
     ref: LTP-1234GLL-7A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-1234GLL-7A/'
     source:
       { url: 'https://web.archive.org/web/20250120041121id_/https://www.casio.com/hk/watches/casio/product.LTP-1234GLL-7A/', kind: official }
     case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 25 }
@@ -202,6 +216,7 @@ models:
     discontinued: false
   - id: ltp-1234ll-7a
     ref: LTP-1234LL-7A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LTP-1234LL-7A/'
     source:
       { url: 'https://web.archive.org/web/20250120041145id_/https://www.casio.com/hk/watches/casio/product.LTP-1234LL-7A/', kind: official }
     case: { height_mm: 32, width_mm: 21, depth_mm: 7.4, weight_g: 25 }

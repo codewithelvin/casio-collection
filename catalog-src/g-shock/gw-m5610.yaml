@@ -97,6 +97,7 @@ series:
 models:
   - id: gw-m5610-1
     ref: GW-M5610-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GW-M5610-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
@@ -115,7 +116,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     image: gw-m5610-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -124,6 +125,7 @@ models:
     discontinued: false
   - id: gw-m5610-1b
     ref: GW-M5610-1B
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GW-M5610-1B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
@@ -142,7 +144,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     image: gw-m5610-1b
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -169,13 +171,14 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gw-m5610ba-1
     ref: GW-M5610BA-1
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GW-M5610BA-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
@@ -194,7 +197,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     image: gw-m5610ba-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -221,13 +224,14 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gw-m5610bc-1
     ref: GW-M5610BC-1
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GW-M5610BC-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
@@ -246,7 +250,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     image: gw-m5610bc-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -273,7 +277,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -298,7 +302,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -323,7 +327,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -348,7 +352,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -373,7 +377,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -398,7 +402,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -423,7 +427,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -448,7 +452,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -473,7 +477,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -498,13 +502,14 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gw-m5610md-7
     ref: GW-M5610MD-7
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GW-M5610MD-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
@@ -523,7 +528,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     image: gw-m5610md-7
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -550,7 +555,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -575,7 +580,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -600,13 +605,14 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gw-m5610nv-2
     ref: GW-M5610NV-2
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GW-M5610NV-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
@@ -625,7 +631,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     image: gw-m5610nv-2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -652,13 +658,14 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
     discontinued: true
   - id: gw-m5610r-1
     ref: GW-M5610R-1
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GW-M5610R-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
@@ -677,7 +684,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     image: gw-m5610r-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -686,6 +693,7 @@ models:
     discontinued: false
   - id: gw-m5610rb-4
     ref: GW-M5610RB-4
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GW-M5610RB-4/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3159/qw3159_EN.pdf',
@@ -704,7 +712,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     image: gw-m5610rb-4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -731,7 +739,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -756,7 +764,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -781,7 +789,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3159'
-    features: [world-time, stopwatch, countdown-timer, alarm]
+    features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null

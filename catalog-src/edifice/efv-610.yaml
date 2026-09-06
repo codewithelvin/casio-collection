@@ -55,6 +55,7 @@ series:
 models:
   - id: efv-610cl-7av
     ref: EFV-610CL-7AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-610CL-7AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -71,6 +72,7 @@ models:
     discontinued: false
   - id: efv-610d-1av
     ref: EFV-610D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-610D-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -87,6 +89,7 @@ models:
     discontinued: false
   - id: efv-610d-3cv
     ref: EFV-610D-3CV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFV-610D-3CV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -103,6 +106,7 @@ models:
     discontinued: false
   - id: efv-610d-5cv
     ref: EFV-610D-5CV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFV-610D-5CV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -119,6 +123,7 @@ models:
     discontinued: false
   - id: efv-610db-2av
     ref: EFV-610DB-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-610DB-2AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -135,6 +140,7 @@ models:
     discontinued: false
   - id: efv-610dc-1av
     ref: EFV-610DC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-610DC-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -151,6 +157,7 @@ models:
     discontinued: false
   - id: efv-610de-2a
     ref: EFV-610DE-2A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-610DE-2A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -167,6 +174,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/efv-610de-2audf'
   - id: efv-610de-3a
     ref: EFV-610DE-3A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-610DE-3A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -183,6 +191,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/efv-610de-3audf'
   - id: efv-610ecl-1a
     ref: EFV-610ECL-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-610ECL-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -199,6 +208,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/efv-610ecl-1audf'
   - id: efv-610el-5a
     ref: EFV-610EL-5A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-610EL-5A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -215,6 +225,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/efv-610el-5audf'
   - id: efv-610sg-5av
     ref: EFV-610SG-5AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-610SG-5AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',

@@ -29,6 +29,7 @@ series:
 models:
   - id: shn-3013d-7a
     ref: SHN-3013D-7A
+    official_url: 'https://www.casio.com/de/watches/sheen/product.SHN-3013D-7A/'
     source:
       { url: 'https://web.archive.org/web/20240714221305id_/https://www.casio.com/europe/watches/sheen/product.SHN-3013D-7A/', kind: official }
     display: analog

@@ -20,6 +20,7 @@ series:
 models:
   - id: gw-b5600-2
     ref: GW-B5600-2
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GW-B5600-2/'
     source:
       { url: 'https://web.archive.org/web/20240715021434id_/https://www.casio.com/europe/watches/gshock/product.GW-B5600-2/', kind: official }
     year: 2018
@@ -30,7 +31,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600-2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -49,7 +50,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600ar-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -68,7 +69,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 85, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600bc-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -77,6 +78,7 @@ models:
     discontinued: true
   - id: gw-b5600bc-1b
     ref: GW-B5600BC-1B
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GW-B5600BC-1B/'
     source:
       { url: 'https://web.archive.org/web/20240426213637id_/https://www.casio.com/europe/watches/gshock/product.GW-B5600BC-1B/', kind: official }
     year: 2018
@@ -87,7 +89,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 85, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600bc-1b
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -96,6 +98,7 @@ models:
     discontinued: false
   - id: gw-b5600bl-1
     ref: GW-B5600BL-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GW-B5600BL-1/'
     source:
       { url: 'https://web.archive.org/web/20220817015755id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600BL-1/', kind: official }
     year: 2019
@@ -106,7 +109,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600bl-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -115,6 +118,7 @@ models:
     discontinued: false
   - id: gw-b5600bp-1
     ref: GW-B5600BP-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GW-B5600BP-1/'
     source:
       { url: 'https://web.archive.org/web/20240314121256id_/https://www.casio.com/in/watches/gshock/product.GW-B5600BP-1/', kind: official }
     year: 2022
@@ -125,7 +129,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600bp-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -134,6 +138,7 @@ models:
     discontinued: false
   - id: gw-b5600cd-1a2
     ref: GW-B5600CD-1A2
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GW-B5600CD-1A2/'
     source:
       { url: 'https://web.archive.org/web/20240119144201id_/https://www.casio.com/us/watches/gshock/product.GW-B5600CD-1A2/', kind: official }
     year: 2023
@@ -144,7 +149,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600cd-1a2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -153,6 +158,7 @@ models:
     discontinued: false
   - id: gw-b5600cd-1a3
     ref: GW-B5600CD-1A3
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GW-B5600CD-1A3/'
     source:
       { url: 'https://web.archive.org/web/20250720205001id_/https://www.casio.com/sg/watches/gshock/product.GW-B5600CD-1A3/', kind: official }
     year: 2023
@@ -163,7 +169,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600cd-1a3
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -172,6 +178,7 @@ models:
     discontinued: false
   - id: gw-b5600cd-9
     ref: GW-B5600CD-9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GW-B5600CD-9/'
     source:
       { url: 'https://web.archive.org/web/20240119144159id_/https://www.casio.com/us/watches/gshock/product.GW-B5600CD-9/', kind: official }
     year: 2023
@@ -182,7 +189,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600cd-9
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -191,6 +198,7 @@ models:
     discontinued: false
   - id: gw-b5600ct-1
     ref: GW-B5600CT-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GW-B5600CT-1/'
     source:
       { url: 'https://web.archive.org/web/20220706033853id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600CT-1/', kind: official }
     year: 2020
@@ -201,7 +209,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600ct-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -210,6 +218,7 @@ models:
     discontinued: false
   - id: gw-b5600cy-1
     ref: GW-B5600CY-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GW-B5600CY-1/'
     source:
       { url: 'https://web.archive.org/web/20240314121114id_/https://www.casio.com/in/watches/gshock/product.GW-B5600CY-1/', kind: official }
     year: 2023
@@ -220,7 +229,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600cy-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -229,6 +238,7 @@ models:
     discontinued: false
   - id: gw-b5600dc-1
     ref: GW-B5600DC-1
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GW-B5600DC-1/'
     source:
       { url: 'https://web.archive.org/web/20220812021527id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600DC-1/', kind: official }
     year: 2020
@@ -239,7 +249,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600dc-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -258,7 +268,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600gz-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -267,6 +277,7 @@ models:
     discontinued: true
   - id: gw-b5600hr-1
     ref: GW-B5600HR-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GW-B5600HR-1/'
     source:
       { url: 'https://web.archive.org/web/20240911093513id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600HR-1/', kind: official }
     year: 2019
@@ -277,7 +288,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 85, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600hr-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -286,6 +297,7 @@ models:
     discontinued: false
   - id: gw-b5600mg-1
     ref: GW-B5600MG-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GW-B5600MG-1/'
     source:
       { url: 'https://web.archive.org/web/20240715021422id_/https://www.casio.com/europe/watches/gshock/product.GW-B5600MG-1/', kind: official }
     year: 2021
@@ -296,7 +308,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600mg-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -305,6 +317,7 @@ models:
     discontinued: false
   - id: gw-b5600sgm-1
     ref: GW-B5600SGM-1
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GW-B5600SGM-1/'
     source:
       { url: 'https://web.archive.org/web/20220812030744id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600SGM-1/', kind: official }
     year: 2020
@@ -315,7 +328,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600sgm-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -324,6 +337,7 @@ models:
     discontinued: false
   - id: gw-b5600sgz-7
     ref: GW-B5600SGZ-7
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GW-B5600SGZ-7/'
     source:
       { url: 'https://web.archive.org/web/20220817015842id_/https://www.casio.com/ph/watches/gshock/product.GW-B5600SGZ-7/', kind: official }
     year: 2020
@@ -334,7 +348,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600sgz-7
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -343,6 +357,7 @@ models:
     discontinued: false
   - id: gw-b5600sl-4
     ref: GW-B5600SL-4
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GW-B5600SL-4/'
     source:
       { url: 'https://web.archive.org/web/20220808194602id_/https://www.casio.com/us/watches/gshock/product.GW-B5600SL-4/', kind: official }
     year: 2022
@@ -353,7 +368,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600sl-4
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -362,6 +377,7 @@ models:
     discontinued: false
   - id: gw-b5600sl-5
     ref: GW-B5600SL-5
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GW-B5600SL-5/'
     source:
       { url: 'https://web.archive.org/web/20220808194811id_/https://www.casio.com/us/watches/gshock/product.GW-B5600SL-5/', kind: official }
     year: 2022
@@ -372,7 +388,7 @@ models:
     movement: solar-radio
     case: { height_mm: 48.9, width_mm: 42.8, depth_mm: 13.4, weight_g: 53, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gw-b5600sl-5
     image_credit:
       author: Casio Computer Co., Ltd.

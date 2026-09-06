@@ -29,6 +29,7 @@ series:
 models:
   - id: she-4538gl-7a
     ref: SHE-4538GL-7A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4538GL-7A/'
     source:
       { url: 'https://web.archive.org/web/20221001042737id_/https://www.casio.com/sg/watches/sheen/product.SHE-4538GL-7A/', kind: official }
     movement: quartz
@@ -43,6 +44,7 @@ models:
     discontinued: false
   - id: she-4538gl-7b
     ref: SHE-4538GL-7B
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4538GL-7B/'
     source:
       { url: 'https://web.archive.org/web/20221001040931id_/https://www.casio.com/sg/watches/sheen/product.SHE-4538GL-7B/', kind: official }
     movement: quartz
@@ -57,6 +59,7 @@ models:
     discontinued: false
   - id: she-4538pg-4a
     ref: SHE-4538PG-4A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4538PG-4A/'
     source:
       { url: 'https://web.archive.org/web/20221001042541id_/https://www.casio.com/sg/watches/sheen/product.SHE-4538PG-4A/', kind: official }
     movement: quartz

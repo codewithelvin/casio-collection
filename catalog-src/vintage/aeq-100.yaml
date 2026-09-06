@@ -33,6 +33,7 @@ series:
 models:
   - id: aeq-100w-1av
     ref: AEQ-100W-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AEQ-100W-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240721131958id_/https://www.casio.com/id/watches/casio/product.AEQ-100W-1AV/', kind: official }
     case: { height_mm: 52.5, width_mm: 47.7, depth_mm: 15.3, weight_g: 50 }
@@ -46,6 +47,7 @@ models:
     discontinued: false
   - id: aeq-100w-1bv
     ref: AEQ-100W-1BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AEQ-100W-1BV/'
     source:
       { url: 'https://web.archive.org/web/20230218221146id_/https://www.casio.com/us/watches/casio/product.AEQ-100W-1BV/', kind: official }
     display: ana-digi

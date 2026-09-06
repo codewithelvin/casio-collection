@@ -34,6 +34,7 @@ models:
     discontinued: true
   - id: a159wgea-1
     ref: A159WGEA-1
+    official_url: 'https://www.casio.com/us/watches/casio/product.A159WGEA-1/'
     source:
       { url: 'https://web.archive.org/web/20240714215850id_/https://www.casio.com/europe/watches/casio/vintage/product.A159WGEA-1/', kind: official }
     movement: quartz
@@ -90,6 +91,7 @@ models:
 # No `year` on either: the product page dates nothing (D25).
   - id: a159w-n1
     ref: A159W-N1
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A159W-N1/'
     source:
       { url: 'https://web.archive.org/web/20250406075538id_/https://www.casio.com/in/watches/casio/product.A159W-N1/', kind: official }
     movement: quartz
@@ -103,6 +105,7 @@ models:
     discontinued: false
   - id: a159wa-n1
     ref: A159WA-N1
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A159WA-N1/'
     source:
       { url: 'https://web.archive.org/web/20250523170640id_/https://www.casio.com/sg/watches/casio/product.A159WA-N1/', kind: official }
     movement: quartz
@@ -162,6 +165,7 @@ models:
 # files are.
   - id: a159wevj-7
     ref: A159WEVJ-7
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A159WEVJ-7/'
     source:
       { url: 'https://www.timekeepershop.com/en/product/193942-202048/a159wevj-7', kind: retailer }
     display: digital
@@ -226,6 +230,7 @@ models:
 # is the rule; a substring match is what would let a `-2B1DR` answer for a `-2`.
   - id: a159wevj-2
     ref: A159WEVJ-2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A159WEVJ-2/'
     source:
       { url: 'https://www.ippojapanwatch.com/products/casio-a159wevj-2jr-classic-digital-watch-blue-led-display-water-resistant-adjustable-stainless-steel-band', kind: retailer }
     display: digital

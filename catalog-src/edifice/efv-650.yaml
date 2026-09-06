@@ -20,6 +20,7 @@ series:
 models:
   - id: efv-650cl-5av
     ref: EFV-650CL-5AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-650CL-5AV/'
     source:
       { url: 'https://web.archive.org/web/20250616164001id_/https://www.casio.com/in/watches/edifice/product.EFV-650CL-5AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efv-650d-1av
     ref: EFV-650D-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFV-650D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20250121094248id_/https://www.casio.com/in/watches/edifice/product.EFV-650D-1AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efv-650d-2av
     ref: EFV-650D-2AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFV-650D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240119142118id_/https://www.casio.com/us/watches/edifice/product.EFV-650D-2AV/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: efv-650d-3av
     ref: EFV-650D-3AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFV-650D-3AV/'
     source:
       { url: 'https://web.archive.org/web/20240119142117id_/https://www.casio.com/us/watches/edifice/product.EFV-650D-3AV/', kind: official }
     display: analog
@@ -87,6 +91,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: efv-650dj-1a
     ref: EFV-650DJ-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFV-650DJ-1A/'
     source:
       { url: 'https://web.archive.org/web/20240619001840id_/https://www.casio.com/jp/watches/edifice/product.EFV-650DJ-1A/', kind: official }
     case: { height_mm: 48.6, width_mm: 43.5, depth_mm: 11, weight_g: 129 }

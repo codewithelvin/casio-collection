@@ -26,6 +26,7 @@ series:
 models:
   - id: db-360-1a
     ref: DB-360-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.DB-360-1A/'
     source:
       { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.DB-360-1A/', kind: official }
     movement: quartz
@@ -39,6 +40,7 @@ models:
     discontinued: false
   - id: db-360g-9a
     ref: DB-360G-9A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.DB-360G-9A/'
     source:
       { url: 'https://web.archive.org/web/20220526124328id_/https://www.casio.com/my/watches/casio/product.DB-360G-9A/', kind: official }
     movement: quartz

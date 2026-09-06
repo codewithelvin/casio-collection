@@ -29,6 +29,7 @@ series:
 models:
   - id: she-3047pg-5a
     ref: SHE-3047PG-5A
+    official_url: 'https://www.casio.com/de/watches/sheen/product.SHE-3047PG-5A/'
     source:
       { url: 'https://web.archive.org/web/20240714221302id_/https://www.casio.com/europe/watches/sheen/product.SHE-3047PG-5A/', kind: official }
     display: analog

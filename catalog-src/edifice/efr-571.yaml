@@ -46,6 +46,7 @@ series:
 models:
   - id: efr-571at-1a
     ref: EFR-571AT-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-571AT-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5653/qw5653_EN.pdf',
@@ -62,6 +63,7 @@ models:
     discontinued: false
   - id: efr-571d-1av
     ref: EFR-571D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-571D-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5653/qw5653_EN.pdf',
@@ -78,6 +80,7 @@ models:
     discontinued: false
   - id: efr-571db-1a1v
     ref: EFR-571DB-1A1V
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-571DB-1A1V/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5653/qw5653_EN.pdf',
@@ -94,6 +97,7 @@ models:
     discontinued: false
   - id: efr-571dc-1av
     ref: EFR-571DC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-571DC-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5653/qw5653_EN.pdf',
@@ -110,6 +114,7 @@ models:
     discontinued: false
   - id: efr-571dc-2av
     ref: EFR-571DC-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-571DC-2AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5653/qw5653_EN.pdf',
@@ -126,6 +131,7 @@ models:
     discontinued: false
   - id: efr-571md-8av
     ref: EFR-571MD-8AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-571MD-8AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5653/qw5653_EN.pdf',
@@ -142,6 +148,7 @@ models:
     discontinued: false
   - id: efr-571mdc-1av
     ref: EFR-571MDC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-571MDC-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5653/qw5653_EN.pdf',

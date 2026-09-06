@@ -20,6 +20,7 @@ series:
 models:
   - id: ba-110-1a
     ref: BA-110-1A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220308id_/https://www.casio.com/europe/watches/babyg/product.BA-110-1A/', kind: official }
     movement: quartz
@@ -35,6 +36,7 @@ models:
     display: ana-digi
   - id: ba-110-4a1
     ref: BA-110-4A1
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110-4A1/'
     source:
       { url: 'https://web.archive.org/web/20221203232752id_/https://www.casio.com/my/watches/babyg/product.BA-110-4A1/', kind: official }
     movement: quartz
@@ -50,6 +52,7 @@ models:
     display: ana-digi
   - id: ba-110-4a2
     ref: BA-110-4A2
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110-4A2/'
     source:
       { url: 'https://web.archive.org/web/20221203212347id_/https://www.casio.com/my/watches/babyg/product.BA-110-4A2/', kind: official }
     movement: quartz
@@ -65,6 +68,7 @@ models:
     display: ana-digi
   - id: ba-110-7a1
     ref: BA-110-7A1
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110-7A1/'
     source:
       { url: 'https://web.archive.org/web/20240714220334id_/https://www.casio.com/europe/watches/babyg/product.BA-110-7A1/', kind: official }
     movement: quartz
@@ -80,6 +84,7 @@ models:
     display: ana-digi
   - id: ba-110-7a3
     ref: BA-110-7A3
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110-7A3/'
     source:
       { url: 'https://web.archive.org/web/20240714220314id_/https://www.casio.com/europe/watches/babyg/product.BA-110-7A3/', kind: official }
     movement: quartz
@@ -95,6 +100,7 @@ models:
     display: ana-digi
   - id: ba-110aq-4a
     ref: BA-110AQ-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110AQ-4A/'
     source:
       { url: 'https://web.archive.org/web/20250122115101id_/https://www.casio.com/id/watches/babyg/product.BA-110AQ-4A/', kind: official }
     features: [alarm, stopwatch]
@@ -106,6 +112,7 @@ models:
     discontinued: false
   - id: ba-110bc-1a
     ref: BA-110BC-1A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110BC-1A/'
     source:
       { url: 'https://web.archive.org/web/20221203221134id_/https://www.casio.com/my/watches/babyg/product.BA-110BC-1A/', kind: official }
     movement: quartz
@@ -121,6 +128,7 @@ models:
     display: ana-digi
   - id: ba-110bc-2a
     ref: BA-110BC-2A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110BC-2A/'
     source:
       { url: 'https://web.archive.org/web/20220925151548id_/https://www.casio.com/us/watches/babyg/product.BA-110BC-2A/', kind: official }
     movement: quartz
@@ -136,6 +144,7 @@ models:
     display: ana-digi
   - id: ba-110bc-9a
     ref: BA-110BC-9A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110BC-9A/'
     source:
       { url: 'https://web.archive.org/web/20220925152030id_/https://www.casio.com/us/watches/babyg/product.BA-110BC-9A/', kind: official }
     movement: quartz
@@ -151,6 +160,7 @@ models:
     display: ana-digi
   - id: ba-110be-4a
     ref: BA-110BE-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110BE-4A/'
     source:
       { url: 'https://web.archive.org/web/20221203213028id_/https://www.casio.com/my/watches/babyg/product.BA-110BE-4A/', kind: official }
     movement: quartz
@@ -166,6 +176,7 @@ models:
     display: ana-digi
   - id: ba-110be-7a
     ref: BA-110BE-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110BE-7A/'
     source:
       { url: 'https://web.archive.org/web/20220129013731id_/https://www.casio.com/sg/watches/babyg/product.BA-110BE-7A/', kind: official }
     movement: quartz
@@ -211,6 +222,7 @@ models:
     display: ana-digi
   - id: ba-110cp-4a
     ref: BA-110CP-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110CP-4A/'
     source:
       { url: 'https://web.archive.org/web/20221203233448id_/https://www.casio.com/my/watches/babyg/product.BA-110CP-4A/', kind: official }
     movement: quartz
@@ -256,6 +268,7 @@ models:
     display: ana-digi
   - id: ba-110cr-7a
     ref: BA-110CR-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110CR-7A/'
     source:
       { url: 'https://web.archive.org/web/20221203230104id_/https://www.casio.com/my/watches/babyg/product.BA-110CR-7A/', kind: official }
     movement: quartz
@@ -286,6 +299,7 @@ models:
     display: ana-digi
   - id: ba-110fh-2a
     ref: BA-110FH-2A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110FH-2A/'
     source:
       { url: 'https://web.archive.org/web/20240307212742id_/https://www.casio.com/intl/watches/babyg/product.BA-110FH-2A/', kind: official }
     movement: quartz
@@ -301,6 +315,7 @@ models:
     display: ana-digi
   - id: ba-110fh-7a
     ref: BA-110FH-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110FH-7A/'
     source:
       { url: 'https://web.archive.org/web/20240225135620id_/https://www.casio.com/intl/watches/babyg/product.BA-110FH-7A/', kind: official }
     movement: quartz
@@ -316,6 +331,7 @@ models:
     display: ana-digi
   - id: ba-110ga-1a
     ref: BA-110GA-1A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110GA-1A/'
     source:
       { url: 'https://web.archive.org/web/20250118081617id_/https://www.casio.com/us/watches/babyg/product.BA-110GA-1A/', kind: official }
     movement: quartz
@@ -331,6 +347,7 @@ models:
     display: ana-digi
   - id: ba-110ga-7a1
     ref: BA-110GA-7A1
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110GA-7A1/'
     source:
       { url: 'https://web.archive.org/web/20250118090154id_/https://www.casio.com/us/watches/babyg/product.BA-110GA-7A1/', kind: official }
     movement: quartz
@@ -376,6 +393,7 @@ models:
     display: ana-digi
   - id: ba-110lsb-4a
     ref: BA-110LSB-4A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110LSB-4A/'
     source:
       { url: 'https://web.archive.org/web/20250118011114id_/https://www.casio.com/us/watches/babyg/product.BA-110LSB-4A/', kind: official }
     movement: quartz
@@ -421,6 +439,7 @@ models:
     display: ana-digi
   - id: ba-110pi-2a
     ref: BA-110PI-2A
+    official_url: 'https://www.casio.com/jp/watches/babyg/product.BA-110PI-2A/'
     source:
       { url: 'https://web.archive.org/web/20210729160332id_/https://www.casio.com/sg/watches/babyg/product.BA-110PI-2A/', kind: official }
     movement: quartz
@@ -436,6 +455,7 @@ models:
     display: ana-digi
   - id: ba-110pi-4a
     ref: BA-110PI-4A
+    official_url: 'https://www.casio.com/jp/watches/babyg/product.BA-110PI-4A/'
     source:
       { url: 'https://web.archive.org/web/20210917122744id_/https://www.casio.com/sg/watches/babyg/product.BA-110PI-4A/', kind: official }
     movement: quartz
@@ -451,6 +471,7 @@ models:
     display: ana-digi
   - id: ba-110pkc-4a
     ref: BA-110PKC-4A
+    official_url: 'https://www.casio.com/jp/watches/babyg/product.BA-110PKC-4A/'
     source:
       { url: 'https://web.archive.org/web/20221203221956id_/https://www.casio.com/my/watches/babyg/product.BA-110PKC-4A/', kind: official }
     movement: quartz
@@ -466,6 +487,7 @@ models:
     display: ana-digi
   - id: ba-110pl-1a
     ref: BA-110PL-1A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110PL-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220258id_/https://www.casio.com/europe/watches/babyg/product.BA-110PL-1A/', kind: official }
     movement: quartz
@@ -481,6 +503,7 @@ models:
     display: ana-digi
   - id: ba-110pl-7a1
     ref: BA-110PL-7A1
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110PL-7A1/'
     source:
       { url: 'https://web.archive.org/web/20220518191851id_/https://www.casio.com/us/watches/babyg/product.ba-110pl-7a1/', kind: official }
     movement: quartz
@@ -496,6 +519,7 @@ models:
     display: ana-digi
   - id: ba-110pl-7a2
     ref: BA-110PL-7A2
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110PL-7A2/'
     source:
       { url: 'https://web.archive.org/web/20221209113603id_/https://www.casio.com/ph/watches/babyg/product.BA-110PL-7A2/', kind: official }
     movement: quartz
@@ -526,6 +550,7 @@ models:
     display: ana-digi
   - id: ba-110rg-1a
     ref: BA-110RG-1A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110RG-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220256id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-1A/', kind: official }
     movement: quartz
@@ -541,6 +566,7 @@ models:
     display: ana-digi
   - id: ba-110rg-4a
     ref: BA-110RG-4A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110RG-4A/'
     source:
       { url: 'https://web.archive.org/web/20240714220300id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-4A/', kind: official }
     movement: quartz
@@ -556,6 +582,7 @@ models:
     display: ana-digi
   - id: ba-110rg-7a
     ref: BA-110RG-7A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110RG-7A/'
     source:
       { url: 'https://web.archive.org/web/20240714220250id_/https://www.casio.com/europe/watches/babyg/product.BA-110RG-7A/', kind: official }
     movement: quartz
@@ -571,6 +598,7 @@ models:
     display: ana-digi
   - id: ba-110sc-2a
     ref: BA-110SC-2A
+    official_url: 'https://www.casio.com/jp/watches/babyg/product.BA-110SC-2A/'
     source:
       { url: 'https://web.archive.org/web/20221203214845id_/https://www.casio.com/my/watches/babyg/product.BA-110SC-2A/', kind: official }
     movement: quartz
@@ -586,6 +614,7 @@ models:
     display: ana-digi
   - id: ba-110sc-4a
     ref: BA-110SC-4A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110SC-4A/'
     source:
       { url: 'https://web.archive.org/web/20240714220320id_/https://www.casio.com/europe/watches/babyg/product.BA-110SC-4A/', kind: official }
     movement: quartz
@@ -601,6 +630,7 @@ models:
     display: ana-digi
   - id: ba-110sc-7a
     ref: BA-110SC-7A
+    official_url: 'https://www.casio.com/de/watches/babyg/product.BA-110SC-7A/'
     source:
       { url: 'https://web.archive.org/web/20240714220246id_/https://www.casio.com/europe/watches/babyg/product.BA-110SC-7A/', kind: official }
     movement: quartz
@@ -646,6 +676,7 @@ models:
     display: ana-digi
   - id: ba-110tm-7a
     ref: BA-110TM-7A
+    official_url: 'https://www.casio.com/jp/watches/babyg/product.BA-110TM-7A/'
     source:
       { url: 'https://web.archive.org/web/20221203224954id_/https://www.casio.com/my/watches/babyg/product.BA-110TM-7A/', kind: official }
     movement: quartz
@@ -691,6 +722,7 @@ models:
     display: ana-digi
   - id: ba-110x-1a
     ref: BA-110X-1A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110X-1A/'
     source:
       { url: 'https://web.archive.org/web/20250118105525id_/https://www.casio.com/us/watches/babyg/product.BA-110X-1A/', kind: official }
     movement: quartz
@@ -706,6 +738,7 @@ models:
     display: ana-digi
   - id: ba-110x-7a1
     ref: BA-110X-7A1
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110X-7A1/'
     source:
       { url: 'https://web.archive.org/web/20221015122804id_/https://www.casio.com/intl/watches/babyg/product.BA-110X-7A1/', kind: official }
     movement: quartz
@@ -721,6 +754,7 @@ models:
     display: ana-digi
   - id: ba-110x-7a3
     ref: BA-110X-7A3
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110X-7A3/'
     source:
       { url: 'https://web.archive.org/web/20230127082521id_/https://www.casio.com/my/watches/babyg/product.BA-110X-7A3/', kind: official }
     movement: quartz
@@ -736,6 +770,7 @@ models:
     display: ana-digi
   - id: ba-110xbc-1a
     ref: BA-110XBC-1A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110XBC-1A/'
     source:
       { url: 'https://web.archive.org/web/20230127070229id_/https://www.casio.com/my/watches/babyg/product.BA-110XBC-1A/', kind: official }
     movement: quartz
@@ -751,6 +786,7 @@ models:
     display: ana-digi
   - id: ba-110xbe-7a
     ref: BA-110XBE-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110XBE-7A/'
     source:
       { url: 'https://web.archive.org/web/20230127074834id_/https://www.casio.com/sg/watches/babyg/product.BA-110XBE-7A/', kind: official }
     movement: quartz
@@ -766,6 +802,7 @@ models:
     display: ana-digi
   - id: ba-110xcp-4a
     ref: BA-110XCP-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110XCP-4A/'
     source:
       { url: 'https://web.archive.org/web/20230127090428id_/https://www.casio.com/sg/watches/babyg/product.BA-110XCP-4A/', kind: official }
     movement: quartz
@@ -781,6 +818,7 @@ models:
     display: ana-digi
   - id: ba-110xcr-7a
     ref: BA-110XCR-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110XCR-7A/'
     source:
       { url: 'https://web.archive.org/web/20230127081518id_/https://www.casio.com/my/watches/babyg/product.BA-110XCR-7A/', kind: official }
     movement: quartz
@@ -796,6 +834,7 @@ models:
     display: ana-digi
   - id: ba-110xpm-6a
     ref: BA-110XPM-6A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110XPM-6A/'
     source:
       { url: 'https://web.archive.org/web/20221012025657id_/https://www.casio.com/us/watches/babyg/product.BA-110XPM-6A/', kind: official }
     movement: quartz
@@ -811,6 +850,7 @@ models:
     display: ana-digi
   - id: ba-110xrg-1a
     ref: BA-110XRG-1A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110XRG-1A/'
     source:
       { url: 'https://web.archive.org/web/20250118002326id_/https://www.casio.com/us/watches/babyg/product.BA-110XRG-1A/', kind: official }
     movement: quartz
@@ -826,6 +866,7 @@ models:
     display: ana-digi
   - id: ba-110xrg-4a
     ref: BA-110XRG-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110XRG-4A/'
     source:
       { url: 'https://web.archive.org/web/20230127074106id_/https://www.casio.com/sg/watches/babyg/product.BA-110XRG-4A/', kind: official }
     movement: quartz
@@ -841,6 +882,7 @@ models:
     display: ana-digi
   - id: ba-110xrg-7a
     ref: BA-110XRG-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110XRG-7A/'
     source:
       { url: 'https://web.archive.org/web/20230127090743id_/https://www.casio.com/sg/watches/babyg/product.BA-110XRG-7A/', kind: official }
     movement: quartz
@@ -856,6 +898,7 @@ models:
     display: ana-digi
   - id: ba-110xslc-9a
     ref: BA-110XSLC-9A
+    official_url: 'https://www.casio.com/de/watches/babyg/product.BA-110XSLC-9A/'
     source:
       { url: 'https://web.archive.org/web/20240708220237id_/https://www.casio.com/de/watches/babyg/product.BA-110XSLC-9A/', kind: official }
     features: [alarm]
@@ -867,6 +910,7 @@ models:
     discontinued: false
   - id: ba-110xsm-2a
     ref: BA-110XSM-2A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110XSM-2A/'
     source:
       { url: 'https://web.archive.org/web/20240714220316id_/https://www.casio.com/europe/watches/babyg/product.BA-110XSM-2A/', kind: official }
     movement: quartz
@@ -882,6 +926,7 @@ models:
     display: ana-digi
   - id: ba-110xsw-7a
     ref: BA-110XSW-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110XSW-7A/'
     source:
       { url: 'https://web.archive.org/web/20230127072705id_/https://www.casio.com/sg/watches/babyg/product.BA-110XSW-7A/', kind: official }
     movement: quartz
@@ -897,6 +942,7 @@ models:
     display: ana-digi
   - id: ba-110xws-7a
     ref: BA-110XWS-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BA-110XWS-7A/'
     source:
       { url: 'https://web.archive.org/web/20240408193226id_/https://www.casio.com/intl/watches/babyg/product.BA-110XWS-7A/', kind: official }
     movement: quartz
@@ -912,6 +958,7 @@ models:
     display: ana-digi
   - id: ba-110yk-2a
     ref: BA-110YK-2A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110YK-2A/'
     source:
       { url: 'https://web.archive.org/web/20240922024900id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-2A/', kind: official }
     movement: quartz
@@ -927,6 +974,7 @@ models:
     display: ana-digi
   - id: ba-110yk-3a
     ref: BA-110YK-3A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110YK-3A/'
     source:
       { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-3A/', kind: official }
     movement: quartz
@@ -942,6 +990,7 @@ models:
     display: ana-digi
   - id: ba-110yk-4a
     ref: BA-110YK-4A
+    official_url: 'https://www.casio.com/us/watches/babyg/product.BA-110YK-4A/'
     source:
       { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-4A/', kind: official }
     movement: quartz

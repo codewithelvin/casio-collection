@@ -33,6 +33,7 @@ series:
 models:
   - id: mw-240-1b2v
     ref: MW-240-1B2V
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MW-240-1B2V/'
     source:
       { url: 'https://web.archive.org/web/20230217215005id_/https://www.casio.com/in/watches/casio/product.MW-240-1B2V/', kind: official }
     display: analog
@@ -47,6 +48,7 @@ models:
     discontinued: false
   - id: mw-240-1bv
     ref: MW-240-1BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MW-240-1BV/'
     source:
       { url: 'https://web.archive.org/web/20241127234326id_/https://www.casio.com/intl/watches/casio/product.MW-240-1BV/', kind: official }
     display: analog
@@ -61,6 +63,7 @@ models:
     discontinued: false
   - id: mw-240-1e2v
     ref: MW-240-1E2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MW-240-1E2V/'
     source:
       { url: 'https://web.archive.org/web/20240922024907id_/https://www.casio.com/us/watches/casio/product.MW-240-1E2V/', kind: official }
     display: analog
@@ -75,6 +78,7 @@ models:
       url: 'https://web.archive.org/web/20240715102424id_/https://www.casio.com/europe/watches/casio/product.MW-240-1E2V/'
   - id: mw-240-1e3v
     ref: MW-240-1E3V
+    official_url: 'https://www.casio.com/de/watches/casio/product.MW-240-1E3V/'
     source:
       { url: 'https://web.archive.org/web/20240715071040id_/https://www.casio.com/europe/watches/casio/product.MW-240-1E3V/', kind: official }
     display: analog
@@ -89,6 +93,7 @@ models:
     discontinued: false
   - id: mw-240-1ev
     ref: MW-240-1EV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MW-240-1EV/'
     source:
       { url: 'https://web.archive.org/web/20240715102420id_/https://www.casio.com/europe/watches/casio/product.MW-240-1EV/', kind: official }
     display: analog
@@ -103,6 +108,7 @@ models:
     discontinued: false
   - id: mw-240-2bv
     ref: MW-240-2BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MW-240-2BV/'
     source:
       { url: 'https://web.archive.org/web/20241125034639id_/https://www.casio.com/intl/watches/casio/product.MW-240-2BV/', kind: official }
     display: analog
@@ -117,6 +123,7 @@ models:
     discontinued: false
   - id: mw-240-3bv
     ref: MW-240-3BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MW-240-3BV/'
     source:
       { url: 'https://web.archive.org/web/20241127044622id_/https://www.casio.com/intl/watches/casio/product.MW-240-3BV/', kind: official }
     display: analog
@@ -131,6 +138,7 @@ models:
     discontinued: false
   - id: mw-240-4bv
     ref: MW-240-4BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MW-240-4BV/'
     source:
       { url: 'https://web.archive.org/web/20231119103412id_/https://www.casio.com/in/watches/casio/product.MW-240-4BV/', kind: official }
     display: analog
@@ -145,6 +153,7 @@ models:
     discontinued: false
   - id: mw-240-7bv
     ref: MW-240-7BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MW-240-7BV/'
     source:
       { url: 'https://web.archive.org/web/20241127012914id_/https://www.casio.com/intl/watches/casio/product.MW-240-7BV/', kind: official }
     display: analog
@@ -159,6 +168,7 @@ models:
     discontinued: false
   - id: mw-240-7e3v
     ref: MW-240-7E3V
+    official_url: 'https://www.casio.com/de/watches/casio/product.MW-240-7E3V/'
     source:
       { url: 'https://web.archive.org/web/20240715071052id_/https://www.casio.com/europe/watches/casio/product.MW-240-7E3V/', kind: official }
     display: analog
@@ -173,6 +183,7 @@ models:
     discontinued: false
   - id: mw-240-7ev
     ref: MW-240-7EV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MW-240-7EV/'
     source:
       { url: 'https://web.archive.org/web/20240715102428id_/https://www.casio.com/europe/watches/casio/product.MW-240-7EV/', kind: official }
     display: analog
@@ -187,6 +198,7 @@ models:
     discontinued: false
   - id: mw-240-9e3v
     ref: MW-240-9E3V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MW-240-9E3V/'
     source:
       { url: 'https://web.archive.org/web/20240715071045id_/https://www.casio.com/europe/watches/casio/product.MW-240-9E3V/', kind: official }
     display: analog
@@ -201,6 +213,7 @@ models:
     discontinued: false
   - id: mw-240b-3bv
     ref: MW-240B-3BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MW-240B-3BV/'
     source:
       { url: 'https://web.archive.org/web/20240119144158id_/https://www.casio.com/us/watches/casio/product.MW-240B-3BV/', kind: official }
     display: analog
@@ -215,6 +228,7 @@ models:
     discontinued: false
   - id: mw-240b-5bv
     ref: MW-240B-5BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MW-240B-5BV/'
     source:
       { url: 'https://web.archive.org/web/20231216203435id_/https://www.casio.com/us/watches/casio/product.MW-240B-5BV/', kind: official }
     display: analog
@@ -236,6 +250,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: mw-240-1b
     ref: MW-240-1B
+    official_url: 'https://www.casio.com/jp/watches/casio/product.MW-240-1B/'
     source:
       { url: 'https://web.archive.org/web/20221129022413id_/https://www.casio.com/jp/watches/casio/product.MW-240-1B/', kind: official }
     case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35 }
@@ -247,6 +262,7 @@ models:
     discontinued: false
   - id: mw-240-1b2
     ref: MW-240-1B2
+    official_url: 'https://www.casio.com/jp/watches/casio/product.MW-240-1B2/'
     source:
       { url: 'https://web.archive.org/web/20221204225347id_/https://www.casio.com/jp/watches/casio/product.MW-240-1B2/', kind: official }
     case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35 }
@@ -258,6 +274,7 @@ models:
     discontinued: false
   - id: mw-240-4b
     ref: MW-240-4B
+    official_url: 'https://www.casio.com/jp/watches/casio/product.MW-240-4B/'
     source:
       { url: 'https://web.archive.org/web/20221202061903id_/https://www.casio.com/jp/watches/casio/product.MW-240-4B/', kind: official }
     case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35 }
@@ -269,6 +286,7 @@ models:
     discontinued: false
   - id: mw-240-7b
     ref: MW-240-7B
+    official_url: 'https://www.casio.com/jp/watches/casio/product.MW-240-7B/'
     source:
       { url: 'https://web.archive.org/web/20221208205207id_/https://www.casio.com/jp/watches/casio/product.MW-240-7B/', kind: official }
     case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 35 }
@@ -280,6 +298,7 @@ models:
     discontinued: false
   - id: mw-240b-3b
     ref: MW-240B-3B
+    official_url: 'https://www.casio.com/jp/watches/casio/product.MW-240B-3B/'
     source:
       { url: 'https://web.archive.org/web/20241107084242id_/https://www.casio.com/jp/watches/casio/product.MW-240B-3B/', kind: official }
     case: { height_mm: 48, width_mm: 43.6, depth_mm: 10.3, weight_g: 30 }

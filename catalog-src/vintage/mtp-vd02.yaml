@@ -20,6 +20,7 @@ series:
 models:
   - id: mtp-vd02b-1e
     ref: MTP-VD02B-1E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02B-1E/'
     source:
       { url: 'https://web.archive.org/web/20220516194105id_/https://www.casio.com/in/watches/casio/product.MTP-VD02B-1E/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: mtp-vd02b-3e
     ref: MTP-VD02B-3E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02B-3E/'
     source:
       { url: 'https://web.archive.org/web/20220625111157id_/https://www.casio.com/in/watches/casio/product.MTP-VD02B-3E/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: mtp-vd02bl-3e
     ref: MTP-VD02BL-3E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02BL-3E/'
     source:
       { url: 'https://web.archive.org/web/20230203234619id_/https://www.casio.com/intl/watches/casio/product.MTP-VD02BL-3E/', kind: official }
     display: analog
@@ -62,6 +65,7 @@ models:
     discontinued: false
   - id: mtp-vd02d-1e
     ref: MTP-VD02D-1E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02D-1E/'
     source:
       { url: 'https://web.archive.org/web/20220526121206id_/https://www.casio.com/sg/watches/casio/product.MTP-VD02D-1E/', kind: official }
     display: analog
@@ -76,6 +80,7 @@ models:
     discontinued: false
   - id: mtp-vd02g-9e
     ref: MTP-VD02G-9E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02G-9E/'
     source:
       { url: 'https://web.archive.org/web/20220526121200id_/https://www.casio.com/sg/watches/casio/product.MTP-VD02G-9E/', kind: official }
     display: analog
@@ -90,6 +95,7 @@ models:
     discontinued: false
   - id: mtp-vd02l-7e
     ref: MTP-VD02L-7E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02L-7E/'
     source:
       { url: 'https://web.archive.org/web/20230713004247id_/https://www.casio.com/intl/watches/casio/product.MTP-VD02L-7E/', kind: official }
     display: analog
@@ -111,6 +117,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: mtp-vd02bl-1e
     ref: MTP-VD02BL-1E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02BL-1E/'
     source:
       { url: 'https://web.archive.org/web/20240721184406id_/https://www.casio.com/id/watches/casio/product.MTP-VD02BL-1E/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
@@ -122,6 +129,7 @@ models:
     discontinued: false
   - id: mtp-vd02bl-2e
     ref: MTP-VD02BL-2E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02BL-2E/'
     source:
       { url: 'https://web.archive.org/web/20240721184355id_/https://www.casio.com/id/watches/casio/product.MTP-VD02BL-2E/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
@@ -133,6 +141,7 @@ models:
     discontinued: false
   - id: mtp-vd02bl-5e
     ref: MTP-VD02BL-5E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02BL-5E/'
     source:
       { url: 'https://web.archive.org/web/20240721184346id_/https://www.casio.com/id/watches/casio/product.MTP-VD02BL-5E/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }
@@ -144,6 +153,7 @@ models:
     discontinued: false
   - id: mtp-vd02d-2e
     ref: MTP-VD02D-2E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02D-2E/'
     source:
       { url: 'https://web.archive.org/web/20240721184430id_/https://www.casio.com/id/watches/casio/product.MTP-VD02D-2E/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
@@ -155,6 +165,7 @@ models:
     discontinued: false
   - id: mtp-vd02d-5e
     ref: MTP-VD02D-5E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02D-5E/'
     source:
       { url: 'https://web.archive.org/web/20240721184326id_/https://www.casio.com/id/watches/casio/product.MTP-VD02D-5E/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
@@ -166,6 +177,7 @@ models:
     discontinued: false
   - id: mtp-vd02d-7e
     ref: MTP-VD02D-7E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02D-7E/'
     source:
       { url: 'https://web.archive.org/web/20240721184711id_/https://www.casio.com/id/watches/casio/product.MTP-VD02D-7E/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
@@ -177,6 +189,7 @@ models:
     discontinued: false
   - id: mtp-vd02g-1e
     ref: MTP-VD02G-1E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02G-1E/'
     source:
       { url: 'https://web.archive.org/web/20240721184441id_/https://www.casio.com/id/watches/casio/product.MTP-VD02G-1E/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 105 }
@@ -188,6 +201,7 @@ models:
     discontinued: false
   - id: mtp-vd02l-1e
     ref: MTP-VD02L-1E
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-VD02L-1E/'
     source:
       { url: 'https://web.archive.org/web/20240721184651id_/https://www.casio.com/id/watches/casio/product.MTP-VD02L-1E/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 9.6, weight_g: 55 }

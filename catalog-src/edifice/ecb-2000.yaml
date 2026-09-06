@@ -20,6 +20,7 @@ series:
 models:
   - id: ecb-2000cb-2a
     ref: ECB-2000CB-2A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2000CB-2A/'
     source:
       { url: 'https://web.archive.org/web/20250121113041id_/https://www.casio.com/in/watches/edifice/product.ECB-2000CB-2A/', kind: official }
     movement: solar
@@ -35,6 +36,7 @@ models:
     display: ana-digi
   - id: ecb-2000d-1a
     ref: ECB-2000D-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2000D-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714221220id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000D-1A/', kind: official }
     movement: solar
@@ -50,6 +52,7 @@ models:
     display: ana-digi
   - id: ecb-2000dc-1a
     ref: ECB-2000DC-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-2000DC-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714221217id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000DC-1A/', kind: official }
     movement: solar
@@ -65,6 +68,7 @@ models:
     display: ana-digi
   - id: ecb-2000dc-1b
     ref: ECB-2000DC-1B
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2000DC-1B/'
     source:
       { url: 'https://web.archive.org/web/20240307212725id_/https://www.casio.com/in/watches/edifice/product.ECB-2000DC-1B/', kind: official }
     movement: solar
@@ -80,6 +84,7 @@ models:
     display: ana-digi
   - id: ecb-2000dd-1a
     ref: ECB-2000DD-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2000DD-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220714id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000DD-1A/', kind: official }
     movement: solar
@@ -95,6 +100,7 @@ models:
     display: ana-digi
   - id: ecb-2000hr-1a
     ref: ECB-2000HR-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-2000HR-1A/'
     source:
       { url: 'https://web.archive.org/web/20241121153927id_/https://www.casio.com/us/watches/edifice/product.ECB-2000HR-1A/', kind: official }
     movement: solar
@@ -110,6 +116,7 @@ models:
     display: ana-digi
   - id: ecb-2000mfg-1a
     ref: ECB-2000MFG-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-2000MFG-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714221214id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000MFG-1A/', kind: official }
     movement: solar
@@ -125,6 +132,7 @@ models:
     display: ana-digi
   - id: ecb-2000nis-1a
     ref: ECB-2000NIS-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2000NIS-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220832id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000NIS-1A/', kind: official }
     movement: solar
@@ -140,6 +148,7 @@ models:
     display: ana-digi
   - id: ecb-2000np-1a
     ref: ECB-2000NP-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2000NP-1A/'
     source:
       { url: 'https://web.archive.org/web/20240307212722id_/https://www.casio.com/in/watches/edifice/product.ECB-2000NP-1A/', kind: official }
     movement: solar
@@ -155,6 +164,7 @@ models:
     display: ana-digi
   - id: ecb-2000pb-1a
     ref: ECB-2000PB-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-2000PB-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220842id_/https://www.casio.com/europe/watches/edifice/product.ECB-2000PB-1A/', kind: official }
     movement: solar
@@ -170,6 +180,7 @@ models:
     display: ana-digi
   - id: ecb-2000ss-2a
     ref: ECB-2000SS-2A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2000SS-2A/'
     source:
       { url: 'https://web.archive.org/web/20240827024517id_/https://www.casio.com/in/watches/edifice/product.ECB-2000SS-2A/', kind: official }
     movement: solar
@@ -185,6 +196,7 @@ models:
     display: ana-digi
   - id: ecb-2000tp-1a
     ref: ECB-2000TP-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-2000TP-1A/'
     source:
       { url: 'https://web.archive.org/web/20240307212745id_/https://www.casio.com/intl/watches/edifice/product.ECB-2000TP-1A/', kind: official }
     movement: solar
@@ -200,6 +212,7 @@ models:
     display: ana-digi
   - id: ecb-2000ycb-2a
     ref: ECB-2000YCB-2A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-2000YCB-2A/'
     source:
       { url: 'https://web.archive.org/web/20240910051437id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YCB-2A/', kind: official }
     features: [bluetooth]
@@ -211,6 +224,7 @@ models:
     discontinued: false
   - id: ecb-2000yd-1a
     ref: ECB-2000YD-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-2000YD-1A/'
     source:
       { url: 'https://web.archive.org/web/20220718073353id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YD-1A/', kind: official }
     features: [bluetooth]
@@ -222,6 +236,7 @@ models:
     discontinued: false
   - id: ecb-2000ynp-1a
     ref: ECB-2000YNP-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-2000YNP-1A/'
     source:
       { url: 'https://web.archive.org/web/20240523012937id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YNP-1A/', kind: official }
     features: [bluetooth]
@@ -233,6 +248,7 @@ models:
     discontinued: false
   - id: ecb-2000ypb-1a
     ref: ECB-2000YPB-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-2000YPB-1A/'
     source:
       { url: 'https://web.archive.org/web/20220714125920id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YPB-1A/', kind: official }
     features: [bluetooth]
@@ -244,6 +260,7 @@ models:
     discontinued: false
   - id: ecb-2000ytp-1a
     ref: ECB-2000YTP-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-2000YTP-1A/'
     source:
       { url: 'https://web.archive.org/web/20240522174237id_/https://www.casio.com/jp/watches/edifice/product.ECB-2000YTP-1A/', kind: official }
     features: [bluetooth]

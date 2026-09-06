@@ -20,6 +20,7 @@ series:
 models:
   - id: mtp-v005d-1b
     ref: MTP-V005D-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005D-1B/'
     source:
       { url: 'https://web.archive.org/web/20220516193718id_/https://www.casio.com/in/watches/casio/product.MTP-V005D-1B/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: mtp-v005d-1b4
     ref: MTP-V005D-1B4
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005D-1B4/'
     source:
       { url: 'https://web.archive.org/web/20230712233837id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-1B4/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: mtp-v005d-1b5
     ref: MTP-V005D-1B5
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005D-1B5/'
     source:
       { url: 'https://web.archive.org/web/20241126212112id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-1B5/', kind: official }
     display: analog
@@ -62,6 +65,7 @@ models:
     discontinued: false
   - id: mtp-v005d-2b4
     ref: MTP-V005D-2B4
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005D-2B4/'
     source:
       { url: 'https://web.archive.org/web/20241122135020id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-2B4/', kind: official }
     display: analog
@@ -76,6 +80,7 @@ models:
     discontinued: false
   - id: mtp-v005d-2b5
     ref: MTP-V005D-2B5
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005D-2B5/'
     source:
       { url: 'https://web.archive.org/web/20241124235234id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-2B5/', kind: official }
     display: analog
@@ -90,6 +95,7 @@ models:
     discontinued: false
   - id: mtp-v005d-7b
     ref: MTP-V005D-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005D-7B/'
     source:
       { url: 'https://web.archive.org/web/20220516181101id_/https://www.casio.com/in/watches/casio/product.MTP-V005D-7B/', kind: official }
     display: analog
@@ -104,6 +110,7 @@ models:
     discontinued: false
   - id: mtp-v005d-7b4
     ref: MTP-V005D-7B4
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005D-7B4/'
     source:
       { url: 'https://web.archive.org/web/20231105000343id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-7B4/', kind: official }
     display: analog
@@ -118,6 +125,7 @@ models:
     discontinued: false
   - id: mtp-v005d-7b5
     ref: MTP-V005D-7B5
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005D-7B5/'
     source:
       { url: 'https://web.archive.org/web/20241123033712id_/https://www.casio.com/intl/watches/casio/product.MTP-V005D-7B5/', kind: official }
     display: analog
@@ -146,6 +154,7 @@ models:
     discontinued: true
   - id: mtp-v005l-1b4
     ref: MTP-V005L-1B4
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005L-1B4/'
     source:
       { url: 'https://web.archive.org/web/20241119163432id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-1B4/', kind: official }
     display: analog
@@ -160,6 +169,7 @@ models:
     discontinued: false
   - id: mtp-v005l-1b5
     ref: MTP-V005L-1B5
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005L-1B5/'
     source:
       { url: 'https://web.archive.org/web/20241120023840id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-1B5/', kind: official }
     display: analog
@@ -174,6 +184,7 @@ models:
     discontinued: false
   - id: mtp-v005l-2b4
     ref: MTP-V005L-2B4
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005L-2B4/'
     source:
       { url: 'https://web.archive.org/web/20220526115651id_/https://www.casio.com/sg/watches/casio/product.MTP-V005L-2B4/', kind: official }
     display: analog
@@ -188,6 +199,7 @@ models:
     discontinued: false
   - id: mtp-v005l-2b5
     ref: MTP-V005L-2B5
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005L-2B5/'
     source:
       { url: 'https://web.archive.org/web/20241126191234id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-2B5/', kind: official }
     display: analog
@@ -202,6 +214,7 @@ models:
     discontinued: false
   - id: mtp-v005l-7b4
     ref: MTP-V005L-7B4
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005L-7B4/'
     source:
       { url: 'https://web.archive.org/web/20241122183939id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-7B4/', kind: official }
     display: analog
@@ -216,6 +229,7 @@ models:
     discontinued: false
   - id: mtp-v005l-7b5
     ref: MTP-V005L-7B5
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V005L-7B5/'
     source:
       { url: 'https://web.archive.org/web/20241122215456id_/https://www.casio.com/intl/watches/casio/product.MTP-V005L-7B5/', kind: official }
     display: analog

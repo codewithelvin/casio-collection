@@ -20,6 +20,7 @@ series:
 models:
   - id: a1000acd-7
     ref: A1000ACD-7
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000ACD-7/'
     edition: apc
     source:
       { url: 'https://web.archive.org/web/20241226182414id_/https://www.casio.com/de/watches/casio/vintage/product.A1000ACD-7/', kind: official }
@@ -32,6 +33,7 @@ models:
     discontinued: false
   - id: a1000acg-9
     ref: A1000ACG-9
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000ACG-9/'
     edition: apc
     source:
       { url: 'https://web.archive.org/web/20241228110230id_/https://www.casio.com/it/watches/casio/vintage/product.A1000ACG-9/', kind: official }
@@ -44,6 +46,7 @@ models:
     discontinued: false
   - id: a1000bp-2
     ref: A1000BP-2
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A1000BP-2/'
     source:
       { url: 'https://web.archive.org/web/20240715102715id_/https://www.casio.com/europe/watches/casio/product.A1000BP-2/', kind: official }
     movement: quartz
@@ -57,6 +60,7 @@ models:
     discontinued: false
   - id: a1000d-7
     ref: A1000D-7
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A1000D-7/'
     source:
       { url: 'https://web.archive.org/web/20240714215847id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000D-7/', kind: official }
     movement: quartz
@@ -70,6 +74,7 @@ models:
     discontinued: false
   - id: a1000dn-7
     ref: A1000DN-7
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A1000DN-7/'
     source:
       { url: 'https://web.archive.org/web/20240826212530id_/https://www.casio.com/de/watches/casio/vintage/product.A1000DN-7/', kind: official }
     features: [alarm]
@@ -81,6 +86,7 @@ models:
     discontinued: false
   - id: a1000m-1b
     ref: A1000M-1B
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A1000M-1B/'
     source:
       { url: 'https://web.archive.org/web/20240714215909id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000M-1B/', kind: official }
     movement: quartz
@@ -94,6 +100,7 @@ models:
     discontinued: false
   - id: a1000ma-7
     ref: A1000MA-7
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000MA-7/'
     source:
       { url: 'https://web.archive.org/web/20240714220107id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000MA-7/', kind: official }
     movement: quartz
@@ -107,6 +114,7 @@ models:
     discontinued: false
   - id: a1000mb-1b
     ref: A1000MB-1B
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000MB-1B/'
     source:
       { url: 'https://web.archive.org/web/20241006005102id_/https://www.casio.com/in/watches/casio/product.A1000MB-1B/', kind: official }
     movement: quartz
@@ -120,6 +128,7 @@ models:
     discontinued: false
   - id: a1000mcg-9
     ref: A1000MCG-9
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000MCG-9/'
     source:
       { url: 'https://web.archive.org/web/20240714215900id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000MCG-9/', kind: official }
     movement: quartz
@@ -133,6 +142,7 @@ models:
     discontinued: false
   - id: a1000mg-9
     ref: A1000MG-9
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000MG-9/'
     source:
       { url: 'https://web.archive.org/web/20230215194608id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000MG-9/', kind: official }
     features: [super-illuminator]
@@ -144,6 +154,7 @@ models:
     discontinued: false
   - id: a1000mga-5
     ref: A1000MGA-5
+    official_url: 'https://www.casio.com/de/watches/casio/vintage/product.A1000MGA-5/'
     source:
       { url: 'https://web.archive.org/web/20240714220105id_/https://www.casio.com/europe/watches/casio/vintage/product.A1000MGA-5/', kind: official }
     movement: quartz
@@ -157,6 +168,7 @@ models:
     discontinued: false
   - id: a1000mgn-9
     ref: A1000MGN-9
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000MGN-9/'
     source:
       { url: 'https://web.archive.org/web/20240717185047id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000MGN-9/', kind: official }
     features: [super-illuminator]
@@ -168,6 +180,7 @@ models:
     discontinued: false
   - id: a1000mpg-9
     ref: A1000MPG-9
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000MPG-9/'
     source:
       { url: 'https://web.archive.org/web/20240717185116id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000MPG-9/', kind: official }
     features: [super-illuminator]
@@ -179,6 +192,7 @@ models:
     discontinued: false
   - id: a1000prw-1
     ref: A1000PRW-1
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000PRW-1/'
     source:
       { url: 'https://web.archive.org/web/20240717185052id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000PRW-1/', kind: official }
     features: [super-illuminator]
@@ -190,6 +204,7 @@ models:
     discontinued: false
   - id: a1000rcg-8b
     ref: A1000RCG-8B
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000RCG-8B/'
     source:
       { url: 'https://web.archive.org/web/20240715102953id_/https://www.casio.com/europe/watches/casio/product.A1000RCG-8B/', kind: official }
     movement: quartz
@@ -203,6 +218,7 @@ models:
     discontinued: false
   - id: a1000rg-5
     ref: A1000RG-5
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000RG-5/'
     source:
       { url: 'https://web.archive.org/web/20240717185119id_/https://www.casio.com/fr/watches/casio/vintage/product.A1000RG-5/', kind: official }
     features: [super-illuminator]
@@ -221,6 +237,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: a1000rcb-1
     ref: A1000RCB-1
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1000RCB-1/'
     source:
       { url: 'https://web.archive.org/web/20240713092250id_/https://www.casio.com/es/watches/casio/vintage/product.A1000RCB-1/', kind: official }
     case: { weight_g: 99 }

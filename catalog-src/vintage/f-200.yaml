@@ -42,6 +42,7 @@ models:
     discontinued: true
   - id: f-200w-1a
     ref: F-200W-1A
+    official_url: 'https://www.casio.com/us/watches/casio/product.F-200W-1A/'
     source:
       { url: 'https://web.archive.org/web/20250122191917id_/https://www.casio.com/us/watches/casio/product.F-200W-1A/', kind: official }
     movement: quartz
@@ -55,6 +56,7 @@ models:
       url: 'https://web.archive.org/web/20240715101341id_/https://www.casio.com/europe/watches/casio/product.F-200W-1A/'
   - id: f-200w-9a
     ref: F-200W-9A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.F-200W-9A/'
     source:
       { url: 'https://web.archive.org/web/20240721131909id_/https://www.casio.com/id/watches/casio/product.F-200W-9A/', kind: official }
     case: { height_mm: 44.1, width_mm: 40, depth_mm: 11.5, weight_g: 28 }

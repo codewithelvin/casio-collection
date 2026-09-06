@@ -99,6 +99,7 @@ series:
 models:
   - id: gwf-1000-1
     ref: GWF-1000-1
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.GWF-1000-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/31/3184/qw3184_EN.pdf',
@@ -117,7 +118,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3184'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, radio-controlled, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     image: gwf-1000-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -144,7 +145,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3184'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, radio-controlled, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -169,7 +170,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3184'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, radio-controlled, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -194,7 +195,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3184'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, radio-controlled, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -219,7 +220,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3184'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, radio-controlled, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -243,7 +244,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3184'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, radio-controlled, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -269,7 +270,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3184'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, radio-controlled, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     discontinued: true
     image: gwf-1000nv-2
     image_credit:
@@ -297,7 +298,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3184'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, radio-controlled, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     discontinued: true
     image: gwf-1000rd-4
     image_credit:
@@ -324,7 +325,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3184'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, radio-controlled, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -349,7 +350,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3184'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, full-auto-calendar, el-backlight, auto-light, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, radio-controlled, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null

@@ -61,6 +61,24 @@ const en = {
   'route.profile.title': 'Collection',
   'route.authCallback.title': 'Signing you in',
 
+  // Page titles — composed only in `src/seo/titles.ts`, by both the prerender
+  // and the routes.
+  //
+  // These are deliberately WORDIER than the nav label beside them.
+  // `route.symbols.title` is "Display symbols" because that is what fits a
+  // breadcrumb; `seo.symbols.title` is the sentence the page is written to rank
+  // for. Both are correct and they are not interchangeable — the bug that
+  // produced this block was a route overwriting the second with the first, and
+  // Googlebot renders, so the shorter one is what got indexed.
+  'seo.home.title': 'Casio Vault — the Casio watch catalogue, and the ones you own',
+  'seo.line.qualifier': 'every reference in the catalogue',
+  'seo.series.references': 'references',
+  'seo.editions.title': 'Casio limited editions and collaborations',
+  'seo.edition.references': 'Casio references',
+  'seo.symbols.title': 'Casio digital watch symbols explained — what every indicator means',
+  'seo.watch.qualifier': 'specification',
+  'seo.notfound.title': 'Page not found',
+
   // FR-10.2 — the unknown route
   'notFound.title': 'That page is not here',
   'notFound.body':

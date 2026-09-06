@@ -33,6 +33,7 @@ series:
 models:
   - id: mq-24-1b
     ref: MQ-24-1B
+    official_url: 'https://www.casio.com/us/watches/casio/product.MQ-24-1B/'
     source:
       { url: 'https://web.archive.org/web/20240715102238id_/https://www.casio.com/europe/watches/casio/product.MQ-24-1B/', kind: official }
     display: analog
@@ -46,6 +47,7 @@ models:
     discontinued: false
   - id: mq-24-1b2
     ref: MQ-24-1B2
+    official_url: 'https://www.casio.com/us/watches/casio/product.MQ-24-1B2/'
     source:
       { url: 'https://web.archive.org/web/20220808131313id_/https://www.casio.com/us/watches/casio/product.MQ-24-1B2/', kind: official }
     display: analog
@@ -59,6 +61,7 @@ models:
       url: 'https://web.archive.org/web/20240721132542id_/https://www.casio.com/id/watches/casio/product.MQ-24-1B2/'
   - id: mq-24-1b3
     ref: MQ-24-1B3
+    official_url: 'https://www.casio.com/us/watches/casio/product.MQ-24-1B3/'
     source:
       { url: 'https://web.archive.org/web/20240715102214id_/https://www.casio.com/europe/watches/casio/product.MQ-24-1B3/', kind: official }
     display: analog
@@ -72,6 +75,7 @@ models:
     discontinued: false
   - id: mq-24-1e
     ref: MQ-24-1E
+    official_url: 'https://www.casio.com/us/watches/casio/product.MQ-24-1E/'
     source:
       { url: 'https://web.archive.org/web/20220907162716id_/https://www.casio.com/us/watches/casio/product.MQ-24-1E/', kind: official }
     display: analog
@@ -85,6 +89,7 @@ models:
       url: 'https://web.archive.org/web/20220907184956id_/https://www.casio.com/my/watches/casio/product.MQ-24-1E/'
   - id: mq-24-7b2l
     ref: MQ-24-7B2L
+    official_url: 'https://www.casio.com/de/watches/casio/product.MQ-24-7B2L/'
     source:
       { url: 'https://web.archive.org/web/20240715102240id_/https://www.casio.com/europe/watches/casio/product.MQ-24-7B2L/', kind: official }
     display: analog
@@ -98,6 +103,7 @@ models:
     discontinued: false
   - id: mq-24-8cl
     ref: MQ-24-8CL
+    official_url: 'https://www.casio.com/us/watches/casio/product.MQ-24-8CL/'
     source:
       { url: 'https://web.archive.org/web/20220818080712id_/https://www.casio.com/us/watches/casio/product.MQ-24-8CL/', kind: official }
     display: analog
@@ -111,6 +117,7 @@ models:
     discontinued: false
   - id: mq-24b-1b
     ref: MQ-24B-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24B-1B/'
     source:
       { url: 'https://web.archive.org/web/20241119154614id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-1B/', kind: official }
     display: analog
@@ -124,6 +131,7 @@ models:
     discontinued: false
   - id: mq-24b-3b
     ref: MQ-24B-3B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24B-3B/'
     source:
       { url: 'https://web.archive.org/web/20241119154712id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-3B/', kind: official }
     display: analog
@@ -137,6 +145,7 @@ models:
     discontinued: false
   - id: mq-24b-7b
     ref: MQ-24B-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24B-7B/'
     source:
       { url: 'https://web.archive.org/web/20241126200445id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-7B/', kind: official }
     display: analog
@@ -150,6 +159,7 @@ models:
     discontinued: false
   - id: mq-24b-8b
     ref: MQ-24B-8B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24B-8B/'
     source:
       { url: 'https://web.archive.org/web/20241119154522id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-8B/', kind: official }
     display: analog
@@ -163,6 +173,7 @@ models:
     discontinued: false
   - id: mq-24b-9b
     ref: MQ-24B-9B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24B-9B/'
     source:
       { url: 'https://web.archive.org/web/20241120021631id_/https://www.casio.com/intl/watches/casio/product.MQ-24B-9B/', kind: official }
     display: analog
@@ -176,6 +187,7 @@ models:
     discontinued: false
   - id: mq-24d-7e
     ref: MQ-24D-7E
+    official_url: 'https://www.casio.com/us/watches/casio/product.MQ-24D-7E/'
     source:
       { url: 'https://web.archive.org/web/20250119142701id_/https://www.casio.com/in/watches/casio/product.MQ-24D-7E/', kind: official }
     display: analog
@@ -189,6 +201,7 @@ models:
     discontinued: false
   - id: mq-24g-9e
     ref: MQ-24G-9E
+    official_url: 'https://www.casio.com/us/watches/casio/product.MQ-24G-9E/'
     source:
       { url: 'https://web.archive.org/web/20250930175144id_/https://www.casio.com/in/watches/casio/product.MQ-24G-9E/', kind: official }
     display: analog
@@ -202,6 +215,7 @@ models:
     discontinued: false
   - id: mq-24s-2b
     ref: MQ-24S-2B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24S-2B/'
     source:
       { url: 'https://web.archive.org/web/20240715102902id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-2B/', kind: official }
     display: analog
@@ -215,6 +229,7 @@ models:
     discontinued: false
   - id: mq-24s-4b
     ref: MQ-24S-4B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24S-4B/'
     source:
       { url: 'https://web.archive.org/web/20240715102906id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-4B/', kind: official }
     display: analog
@@ -228,6 +243,7 @@ models:
     discontinued: false
   - id: mq-24s-7b
     ref: MQ-24S-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24S-7B/'
     source:
       { url: 'https://web.archive.org/web/20240715102909id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-7B/', kind: official }
     display: analog
@@ -241,6 +257,7 @@ models:
     discontinued: false
   - id: mq-24s-8b
     ref: MQ-24S-8B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24S-8B/'
     source:
       { url: 'https://web.archive.org/web/20240715102814id_/https://www.casio.com/europe/watches/casio/product.MQ-24S-8B/', kind: official }
     display: analog
@@ -254,6 +271,7 @@ models:
     discontinued: false
   - id: mq-24uc-2b
     ref: MQ-24UC-2B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24UC-2B/'
     source:
       { url: 'https://web.archive.org/web/20240715102817id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-2B/', kind: official }
     display: analog
@@ -267,6 +285,7 @@ models:
     discontinued: false
   - id: mq-24uc-3b
     ref: MQ-24UC-3B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24UC-3B/'
     source:
       { url: 'https://web.archive.org/web/20240715102832id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-3B/', kind: official }
     display: analog
@@ -280,6 +299,7 @@ models:
     discontinued: false
   - id: mq-24uc-4b
     ref: MQ-24UC-4B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24UC-4B/'
     source:
       { url: 'https://web.archive.org/web/20240715102829id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-4B/', kind: official }
     display: analog
@@ -293,6 +313,7 @@ models:
     discontinued: false
   - id: mq-24uc-8b
     ref: MQ-24UC-8B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24UC-8B/'
     source:
       { url: 'https://web.archive.org/web/20240715102835id_/https://www.casio.com/europe/watches/casio/product.MQ-24UC-8B/', kind: official }
     display: analog
@@ -313,6 +334,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: mq-24-1el
     ref: MQ-24-1EL
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24-1EL/'
     source:
       { url: 'https://web.archive.org/web/20240920181456id_/https://www.casio.com/jp/watches/casio/product.MQ-24-1EL/', kind: official }
     case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20 }
@@ -330,6 +352,7 @@ models:
     discontinued: true
   - id: mq-24-9el
     ref: MQ-24-9EL
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MQ-24-9EL/'
     source:
       { url: 'https://web.archive.org/web/20210528151509id_/https://www.casio.com/jp/watches/casio/product.MQ-24-9EL/', kind: official }
     case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 20 }
@@ -341,6 +364,7 @@ models:
     discontinued: false
   - id: mq-24m-1e
     ref: MQ-24M-1E
+    official_url: 'https://www.casio.com/jp/watches/casio/product.MQ-24M-1E/'
     source:
       { url: 'https://web.archive.org/web/20210528201957id_/https://www.casio.com/jp/watches/casio/product.MQ-24M-1E/', kind: official }
     case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 46 }
@@ -352,6 +376,7 @@ models:
     discontinued: false
   - id: mq-24mg-1e
     ref: MQ-24MG-1E
+    official_url: 'https://www.casio.com/jp/watches/casio/product.MQ-24MG-1E/'
     source:
       { url: 'https://web.archive.org/web/20221129012027id_/https://www.casio.com/jp/watches/casio/product.MQ-24MG-1E/', kind: official }
     case: { height_mm: 38.8, width_mm: 34.9, depth_mm: 7.8, weight_g: 46 }

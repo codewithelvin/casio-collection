@@ -33,6 +33,7 @@ models:
     discontinued: true
   - id: la-11wb-1z
     ref: LA-11WB-1Z
+    official_url: 'https://www.casio.com/us/watches/casio/product.LA-11WB-1Z/'
     source:
       { url: 'https://web.archive.org/web/20221027024630id_/https://www.casio.com/us/watches/casio/product.LA-11WB-1Z/', kind: official }
     movement: quartz
@@ -41,6 +42,7 @@ models:
     discontinued: false
   - id: la-11wl-4a
     ref: LA-11WL-4A
+    official_url: 'https://www.casio.com/us/watches/casio/product.LA-11WL-4A/'
     source:
       { url: 'https://web.archive.org/web/20221012025829id_/https://www.casio.com/us/watches/casio/product.LA-11WL-4A/', kind: official }
     movement: quartz
@@ -49,6 +51,7 @@ models:
     discontinued: false
   - id: la-11wl-7a
     ref: LA-11WL-7A
+    official_url: 'https://www.casio.com/us/watches/casio/product.LA-11WL-7A/'
     source:
       { url: 'https://web.archive.org/web/20220704083720id_/https://www.casio.com/us/watches/casio/product.LA-11WL-7A/', kind: official }
     movement: quartz
@@ -64,6 +67,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: la-11wr-5a
     ref: LA-11WR-5A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LA-11WR-5A/'
     source:
       { url: 'https://web.archive.org/web/20240717155808id_/https://www.casio.com/fr/watches/casio/vintage/product.LA-11WR-5A/', kind: official }
     case: { weight_g: 34 }

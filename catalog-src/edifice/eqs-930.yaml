@@ -72,6 +72,7 @@ series:
 models:
   - id: eqs-930bl-2av
     ref: EQS-930BL-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-930BL-2AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
@@ -88,6 +89,7 @@ models:
     discontinued: false
   - id: eqs-930d-1av
     ref: EQS-930D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-930D-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
@@ -104,6 +106,7 @@ models:
     discontinued: false
   - id: eqs-930db-1av
     ref: EQS-930DB-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-930DB-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
@@ -120,6 +123,7 @@ models:
     discontinued: false
   - id: eqs-930dc-1av
     ref: EQS-930DC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-930DC-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
@@ -136,6 +140,7 @@ models:
     discontinued: false
   - id: eqs-930hr-1a
     ref: EQS-930HR-1A
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EQS-930HR-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
@@ -152,6 +157,7 @@ models:
     discontinued: false
   - id: eqs-930md-8av
     ref: EQS-930MD-8AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-930MD-8AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
@@ -168,6 +174,7 @@ models:
     discontinued: false
   - id: eqs-930mdc-1av
     ref: EQS-930MDC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-930MDC-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',
@@ -184,6 +191,7 @@ models:
     discontinued: false
   - id: eqs-930tl-1av
     ref: EQS-930TL-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-930TL-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/56/5661/qw5661_EN.pdf',

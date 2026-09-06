@@ -27,6 +27,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: gma-p2100-2a
     ref: GMA-P2100-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100-2A/'
     source:
       { url: 'https://web.archive.org/web/20240208001112id_/https://www.casio.com/my/watches/gshock/product.GMA-P2100-2A/', kind: official }
     module: '5730'
@@ -34,7 +35,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -46,6 +47,7 @@ models:
     display: ana-digi
   - id: gma-p2100-4a
     ref: GMA-P2100-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100-4A/'
     source:
       { url: 'https://web.archive.org/web/20240214084711id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100-4A/', kind: official }
     module: '5730'
@@ -53,7 +55,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -65,6 +67,7 @@ models:
     display: ana-digi
   - id: gma-p2100-7a
     ref: GMA-P2100-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100-7A/'
     source:
       { url: 'https://web.archive.org/web/20240214084710id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100-7A/', kind: official }
     module: '5730'
@@ -72,7 +75,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -84,6 +87,7 @@ models:
     display: ana-digi
   - id: gma-p2100ba-7a
     ref: GMA-P2100BA-7A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GMA-P2100BA-7A/'
     source:
       { url: 'https://web.archive.org/web/20260124015520id_/https://www.casio.com/de/watches/gshock/product.GMA-P2100BA-7A/', kind: official }
     movement: quartz
@@ -99,7 +103,7 @@ models:
       depth_mm: 11.2
       weight_g: 40
     display: ana-digi
-    features: [alarm, super-illuminator]
+    features: [world-time, alarm, multi-alarm, super-illuminator, mineral-glass, carbon-core-guard]
     image: gma-p2100ba-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -108,6 +112,7 @@ models:
     discontinued: false
   - id: gma-p2100bb-1a
     ref: GMA-P2100BB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100BB-1A/'
     source:
       { url: 'https://web.archive.org/web/20240907031039id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100BB-1A/', kind: official }
     year: 2024
@@ -117,7 +122,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100bb-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -136,7 +141,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100it-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -155,7 +160,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100it-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -165,6 +170,7 @@ models:
     display: ana-digi
   - id: gma-p2100pp-4a
     ref: GMA-P2100PP-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100PP-4A/'
     source:
       { url: 'https://web.archive.org/web/20250331180521id_/https://www.casio.com/fr/watches/gshock/product.GMA-P2100PP-4A/', kind: official }
     movement: quartz
@@ -180,7 +186,7 @@ models:
       depth_mm: 11.2
       weight_g: 40
     display: ana-digi
-    features: [super-illuminator]
+    features: [world-time, multi-alarm, super-illuminator, mineral-glass, carbon-core-guard]
     image: gma-p2100pp-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -189,6 +195,7 @@ models:
     discontinued: false
   - id: gma-p2100sg-1a
     ref: GMA-P2100SG-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-1A/'
     source:
       { url: 'https://web.archive.org/web/20240406015643id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-1A/', kind: official }
     year: 2024
@@ -198,7 +205,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100sg-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -208,6 +215,7 @@ models:
     display: ana-digi
   - id: gma-p2100sg-2a
     ref: GMA-P2100SG-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-2A/'
     source:
       { url: 'https://web.archive.org/web/20240406015700id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-2A/', kind: official }
     year: 2024
@@ -217,7 +225,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100sg-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -227,6 +235,7 @@ models:
     display: ana-digi
   - id: gma-p2100sg-4a
     ref: GMA-P2100SG-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-4A/'
     source:
       { url: 'https://web.archive.org/web/20240408193754id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100SG-4A/', kind: official }
     year: 2024
@@ -236,7 +245,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100sg-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -246,6 +255,7 @@ models:
     display: ana-digi
   - id: gma-p2100st-4a
     ref: GMA-P2100ST-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-4A/'
     source:
       { url: 'https://web.archive.org/web/20240930192848id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-4A/', kind: official }
     year: 2024
@@ -255,7 +265,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100st-4a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -265,6 +275,7 @@ models:
     display: ana-digi
   - id: gma-p2100st-7a
     ref: GMA-P2100ST-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-7A/'
     source:
       { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-7A/', kind: official }
     year: 2024
@@ -274,7 +285,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100st-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -284,6 +295,7 @@ models:
     display: ana-digi
   - id: gma-p2100st-9a
     ref: GMA-P2100ST-9A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-9A/'
     source:
       { url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100ST-9A/', kind: official }
     year: 2024
@@ -293,7 +305,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100st-9a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -303,6 +315,7 @@ models:
     display: ana-digi
   - id: gma-p2100va-7a
     ref: GMA-P2100VA-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100VA-7A/'
     source:
       { url: 'https://web.archive.org/web/20240516180332id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100VA-7A/', kind: official }
     year: 2024
@@ -312,7 +325,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100va-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -322,6 +335,7 @@ models:
     display: ana-digi
   - id: gma-p2100w-7a
     ref: GMA-P2100W-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMA-P2100W-7A/'
     source:
       { url: 'https://web.archive.org/web/20241007212343id_/https://www.casio.com/us/watches/gshock/product.GMA-P2100W-7A/', kind: official }
     year: 2024
@@ -331,7 +345,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin / Bio-based resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100w-7a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -350,7 +364,7 @@ models:
     movement: quartz
     case: { height_mm: 46, width_mm: 40.2, depth_mm: 11.2, weight_g: 40, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, shock-resistant, mineral-glass, carbon-core-guard]
     image: gma-p2100zy-1a
     image_credit:
       author: Casio Computer Co., Ltd.

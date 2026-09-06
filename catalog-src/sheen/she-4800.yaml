@@ -29,6 +29,7 @@ series:
 models:
   - id: she-4800pg-9a
     ref: SHE-4800PG-9A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4800PG-9A/'
     source:
       { url: 'https://web.archive.org/web/20220630021326id_/https://www.casio.com/intl/watches/sheen/product.SHE-4800PG-9A/', kind: official }
     display: analog

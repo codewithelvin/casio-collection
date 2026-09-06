@@ -53,6 +53,7 @@ series:
 models:
   - id: prw-35-1a
     ref: PRW-35-1A
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRW-35-1A/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3490/qw3490_EN.pdf',
@@ -70,6 +71,7 @@ models:
     discontinued: false
   - id: prw-35-7
     ref: PRW-35-7
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRW-35-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3490/qw3490_EN.pdf',
@@ -110,6 +112,7 @@ models:
   # guide never had them, because a guide is about a module and not a watch.
   - id: prw-35ld-5
     ref: PRW-35LD-5
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRW-35LD-5/'
     source:
       {
         url: 'https://www.g-central.com/pro-trek-prw-35ld-5-and-prw-35tld-7-are-the-first-casio-watches-with-a-phosphorescent-digital-lcd-display-for-light-free-viewing-in-the-dark/',
@@ -179,6 +182,7 @@ models:
   # no value for it and adding one is its own confirmed step (rule 4).
   - id: prw-35tld-7
     ref: PRW-35TLD-7
+    official_url: 'https://www.casio.com/jp/watches/protrek/product.PRW-35TLD-7/'
     source:
       {
         url: 'https://www.g-central.com/pro-trek-prw-35ld-5-and-prw-35tld-7-are-the-first-casio-watches-with-a-phosphorescent-digital-lcd-display-for-light-free-viewing-in-the-dark/',
@@ -198,6 +202,7 @@ models:
     discontinued: false
   - id: prw-35y-1b
     ref: PRW-35Y-1B
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRW-35Y-1B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3490/qw3490_EN.pdf',
@@ -215,6 +220,7 @@ models:
     discontinued: false
   - id: prw-35y-2
     ref: PRW-35Y-2
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRW-35Y-2/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3490/qw3490_EN.pdf',
@@ -232,6 +238,7 @@ models:
     discontinued: false
   - id: prw-35y-3
     ref: PRW-35Y-3
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRW-35Y-3/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3490/qw3490_EN.pdf',
@@ -249,6 +256,7 @@ models:
     discontinued: false
   - id: prw-35y-3b
     ref: PRW-35Y-3B
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRW-35Y-3B/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3490/qw3490_EN.pdf',

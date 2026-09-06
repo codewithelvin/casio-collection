@@ -20,6 +20,7 @@ series:
 models:
   - id: efr-556d-1av
     ref: EFR-556D-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFR-556D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220520id_/https://www.casio.com/europe/watches/edifice/product.EFR-556D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efr-556db-1av
     ref: EFR-556DB-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFR-556DB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220510id_/https://www.casio.com/europe/watches/edifice/product.EFR-556DB-1AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efr-556db-2av
     ref: EFR-556DB-2AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFR-556DB-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220458id_/https://www.casio.com/europe/watches/edifice/product.EFR-556DB-2AV/', kind: official }
     display: analog
@@ -95,6 +98,7 @@ models:
     discontinued: true
   - id: efr-556l-1av
     ref: EFR-556L-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFR-556L-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220448id_/https://www.casio.com/europe/watches/edifice/product.EFR-556L-1AV/', kind: official }
     display: analog
@@ -125,6 +129,7 @@ models:
     discontinued: true
   - id: efr-556pc-2av
     ref: EFR-556PC-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-556PC-2AV/'
     source:
       { url: 'https://web.archive.org/web/20220521050022id_/https://www.casio.com/in/watches/edifice/product.EFR-556PC-2AV/', kind: official }
     display: analog

@@ -20,6 +20,7 @@ series:
 models:
   - id: ef-305-1av
     ref: EF-305-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EF-305-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240821012059id_/https://www.casio.com/us/watches/edifice/product.EF-305-1AV/', kind: official }
     display: analog

@@ -20,6 +20,7 @@ series:
 models:
   - id: eqb-900db-2a
     ref: EQB-900DB-2A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQB-900DB-2A/'
     source:
       { url: 'https://web.archive.org/web/20220925140909id_/https://www.casio.com/sg/watches/edifice/product.EQB-900DB-2A/', kind: official }
     display: analog

@@ -20,6 +20,7 @@ series:
 models:
   - id: a100we-7b
     ref: A100WE-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A100WE-7B/'
     source:
       { url: 'https://web.archive.org/web/20240714220219id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WE-7B/', kind: official }
     movement: quartz
@@ -33,6 +34,7 @@ models:
     discontinued: false
   - id: a100wef-1a
     ref: A100WEF-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A100WEF-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715102948id_/https://www.casio.com/europe/watches/casio/product.A100WEF-1A/', kind: official }
     movement: quartz
@@ -46,6 +48,7 @@ models:
     discontinued: false
   - id: a100wef-3a
     ref: A100WEF-3A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A100WEF-3A/'
     source:
       { url: 'https://web.archive.org/web/20240714220118id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WEF-3A/', kind: official }
     movement: quartz
@@ -59,6 +62,7 @@ models:
     discontinued: false
   - id: a100wef-8a
     ref: A100WEF-8A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A100WEF-8A/'
     source:
       { url: 'https://web.archive.org/web/20240714220211id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WEF-8A/', kind: official }
     movement: quartz
@@ -72,6 +76,7 @@ models:
     discontinued: false
   - id: a100wefg-9a
     ref: A100WEFG-9A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A100WEFG-9A/'
     source:
       { url: 'https://web.archive.org/web/20231023225541id_/https://www.casio.com/in/watches/casio/product.A100WEFG-9A/', kind: official }
     movement: quartz
@@ -85,6 +90,7 @@ models:
     discontinued: false
   - id: a100wel-1a
     ref: A100WEL-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A100WEL-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220216id_/https://www.casio.com/europe/watches/casio/vintage/product.A100WEL-1A/', kind: official }
     movement: quartz
@@ -98,6 +104,7 @@ models:
     discontinued: false
   - id: a100wepc-1b
     ref: A100WEPC-1B
+    official_url: 'https://www.casio.com/us/watches/casio/product.A100WEPC-1B/'
     edition: pac-man
     # The one edition membership on this site that neither page already cited
     # establishes. Casio's PAC-MAN collaboration page names four references and
@@ -127,6 +134,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: a100we-1a
     ref: A100WE-1A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A100WE-1A/'
     source:
       { url: 'https://web.archive.org/web/20220810044823id_/https://www.casio.com/it/watches/casio/vintage/product.A100WE-1A/', kind: official }
     case: { weight_g: 53 }
@@ -138,6 +146,7 @@ models:
     discontinued: false
   - id: a100weg-9a
     ref: A100WEG-9A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A100WEG-9A/'
     source:
       { url: 'https://web.archive.org/web/20230208022832id_/https://www.casio.com/it/watches/casio/vintage/product.A100WEG-9A/', kind: official }
     case: { weight_g: 53 }
@@ -149,6 +158,7 @@ models:
     discontinued: false
   - id: a100wegg-1a
     ref: A100WEGG-1A
+    official_url: 'https://www.casio.com/us/watches/casio/product.A100WEGG-1A/'
     source:
       { url: 'https://web.archive.org/web/20240717155916id_/https://www.casio.com/fr/watches/casio/vintage/product.A100WEGG-1A/', kind: official }
     case: { weight_g: 53 }
@@ -160,6 +170,7 @@ models:
     discontinued: false
   - id: a100wegg-1a2
     ref: A100WEGG-1A2
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A100WEGG-1A2/'
     source:
       { url: 'https://web.archive.org/web/20230215194608id_/https://www.casio.com/fr/watches/casio/vintage/product.A100WEGG-1A2/', kind: official }
     case: { weight_g: 53 }

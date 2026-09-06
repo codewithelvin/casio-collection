@@ -20,6 +20,7 @@ series:
 models:
   - id: efb-108d-1av
     ref: EFB-108D-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFB-108D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220802id_/https://www.casio.com/europe/watches/edifice/product.EFB-108D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efb-108d-7av
     ref: EFB-108D-7AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFB-108D-7AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220756id_/https://www.casio.com/europe/watches/edifice/product.EFB-108D-7AV/', kind: official }
     display: analog

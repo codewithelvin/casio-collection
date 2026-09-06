@@ -20,6 +20,7 @@ series:
 models:
   - id: ef-539d-1a2v
     ref: EF-539D-1A2V
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EF-539D-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20220628162044id_/https://www.casio.com/in/watches/edifice/product.EF-539D-1A2V/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: ef-539d-1a5v
     ref: EF-539D-1A5V
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EF-539D-1A5V/'
     source:
       { url: 'https://web.archive.org/web/20220628162911id_/https://www.casio.com/in/watches/edifice/product.EF-539D-1A5V/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: ef-539d-1av
     ref: EF-539D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EF-539D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220527id_/https://www.casio.com/europe/watches/edifice/product.EF-539D-1AV/', kind: official }
     display: analog

@@ -20,6 +20,7 @@ series:
 models:
   - id: awg-m100-1a
     ref: AWG-M100-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.AWG-M100-1A/'
     source:
       { url: 'https://web.archive.org/web/20230327103214id_/https://www.casio.com/us/watches/gshock/product.AWG-M100-1A/', kind: official }
     year: 2012
@@ -30,7 +31,7 @@ models:
     movement: solar-radio
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56.4, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, radio-controlled, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: awg-m100-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -39,6 +40,7 @@ models:
     discontinued: false
   - id: awg-m100a-1a
     ref: AWG-M100A-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.AWG-M100A-1A/'
     source:
       { url: 'https://web.archive.org/web/20240119143922id_/https://www.casio.com/us/watches/gshock/product.AWG-M100A-1A/', kind: official }
     year: 2012
@@ -49,7 +51,7 @@ models:
     movement: solar-radio
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56.4, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, radio-controlled, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: awg-m100a-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -58,6 +60,7 @@ models:
     discontinued: false
   - id: awg-m100b-1a
     ref: AWG-M100B-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.AWG-M100B-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715021839id_/https://www.casio.com/europe/watches/gshock/product.AWG-M100B-1A/', kind: official }
     year: 2012
@@ -68,7 +71,7 @@ models:
     movement: solar-radio
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56.4, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, radio-controlled, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: awg-m100b-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -77,6 +80,7 @@ models:
     discontinued: false
   - id: awg-m100bc-2a
     ref: AWG-M100BC-2A
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100BC-2A/'
     source:
       { url: 'https://web.archive.org/web/20211006100435id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100BC-2A/', kind: official }
     movement: solar-radio
@@ -95,6 +99,7 @@ models:
     discontinued: false
   - id: awg-m100fp-1a2
     ref: AWG-M100FP-1A2
+    official_url: 'https://www.casio.com/us/watches/gshock/product.AWG-M100FP-1A2/'
     source:
       { url: 'https://web.archive.org/web/20250406050619id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100FP-1A2/', kind: official }
     movement: solar-radio
@@ -113,6 +118,7 @@ models:
     discontinued: false
   - id: awg-m100fp-1a4
     ref: AWG-M100FP-1A4
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100FP-1A4/'
     source:
       { url: 'https://web.archive.org/web/20240225135603id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100FP-1A4/', kind: official }
     movement: solar-radio
@@ -131,6 +137,7 @@ models:
     discontinued: false
   - id: awg-m100rc-1a
     ref: AWG-M100RC-1A
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100RC-1A/'
     source:
       { url: 'https://web.archive.org/web/20230530180036id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100RC-1A/', kind: official }
     movement: solar-radio
@@ -149,6 +156,7 @@ models:
     discontinued: false
   - id: awg-m100s-7a
     ref: AWG-M100S-7A
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100S-7A/'
     source:
       { url: 'https://web.archive.org/web/20210413043739id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100S-7A/', kind: official }
     movement: solar-radio
@@ -167,6 +175,7 @@ models:
     discontinued: false
   - id: awg-m100sb-2a
     ref: AWG-M100SB-2A
+    official_url: 'https://www.casio.com/de/watches/gshock/product.AWG-M100SB-2A/'
     source:
       { url: 'https://web.archive.org/web/20240715021837id_/https://www.casio.com/europe/watches/gshock/product.AWG-M100SB-2A/', kind: official }
     year: 2015
@@ -177,7 +186,7 @@ models:
     movement: solar-radio
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, radio-controlled, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: awg-m100sb-2a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -186,6 +195,7 @@ models:
     discontinued: false
   - id: awg-m100sbb-1a
     ref: AWG-M100SBB-1A
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100SBB-1A/'
     source:
       { url: 'https://web.archive.org/web/20210919175254id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SBB-1A/', kind: official }
     movement: solar-radio
@@ -204,6 +214,7 @@ models:
     discontinued: false
   - id: awg-m100sbc-1a
     ref: AWG-M100SBC-1A
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100SBC-1A/'
     source:
       { url: 'https://web.archive.org/web/20210724180947id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SBC-1A/', kind: official }
     movement: solar-radio
@@ -222,6 +233,7 @@ models:
     discontinued: false
   - id: awg-m100sbg-1a
     ref: AWG-M100SBG-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.AWG-M100SBG-1A/'
     source:
       { url: 'https://web.archive.org/web/20240119143920id_/https://www.casio.com/us/watches/gshock/product.AWG-M100SBG-1A/', kind: official }
     year: 2016
@@ -232,7 +244,7 @@ models:
     movement: solar-radio
     case: { height_mm: 52, width_mm: 46.4, depth_mm: 14.9, weight_g: 56, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, radio-controlled, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, radio-controlled, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: awg-m100sbg-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -241,6 +253,7 @@ models:
     discontinued: false
   - id: awg-m100sbp-1a
     ref: AWG-M100SBP-1A
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100SBP-1A/'
     source:
       { url: 'https://web.archive.org/web/20220406030614id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SBP-1A/', kind: official }
     movement: solar-radio
@@ -259,6 +272,7 @@ models:
     discontinued: false
   - id: awg-m100sct-1a
     ref: AWG-M100SCT-1A
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100SCT-1A/'
     source:
       { url: 'https://web.archive.org/web/20210919172649id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SCT-1A/', kind: official }
     movement: solar-radio
@@ -277,6 +291,7 @@ models:
     discontinued: false
   - id: awg-m100sdc-1a
     ref: AWG-M100SDC-1A
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100SDC-1A/'
     source:
       { url: 'https://web.archive.org/web/20210805153554id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SDC-1A/', kind: official }
     movement: solar-radio
@@ -295,6 +310,7 @@ models:
     discontinued: false
   - id: awg-m100sf-1a2
     ref: AWG-M100SF-1A2
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A2/'
     source:
       { url: 'https://web.archive.org/web/20210419001804id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A2/', kind: official }
     movement: solar-radio
@@ -313,6 +329,7 @@ models:
     discontinued: false
   - id: awg-m100sf-1a5
     ref: AWG-M100SF-1A5
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A5/'
     source:
       { url: 'https://web.archive.org/web/20220216081414id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A5/', kind: official }
     movement: solar-radio
@@ -331,6 +348,7 @@ models:
     discontinued: false
   - id: awg-m100sf-1a6
     ref: AWG-M100SF-1A6
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A6/'
     source:
       { url: 'https://web.archive.org/web/20230511074203id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SF-1A6/', kind: official }
     movement: solar-radio
@@ -349,6 +367,7 @@ models:
     discontinued: false
   - id: awg-m100smg-1a
     ref: AWG-M100SMG-1A
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100SMG-1A/'
     source:
       { url: 'https://web.archive.org/web/20210415080058id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SMG-1A/', kind: official }
     movement: solar-radio
@@ -367,6 +386,7 @@ models:
     discontinued: false
   - id: awg-m100svb-1a
     ref: AWG-M100SVB-1A
+    official_url: 'https://www.casio.com/jp/watches/gshock/product.AWG-M100SVB-1A/'
     source:
       { url: 'https://web.archive.org/web/20211203080231id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SVB-1A/', kind: official }
     movement: solar-radio

@@ -26,6 +26,7 @@ series:
 models:
   - id: dbc-611-1
     ref: DBC-611-1
+    official_url: 'https://www.casio.com/intl/watches/casio/product.DBC-611-1/'
     source:
       { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.DBC-611-1/', kind: official }
     movement: quartz
@@ -39,6 +40,7 @@ models:
     discontinued: false
   - id: dbc-611g-1
     ref: DBC-611G-1
+    official_url: 'https://www.casio.com/intl/watches/casio/product.DBC-611G-1/'
     source:
       { url: 'https://web.archive.org/web/20230217215255id_/https://www.casio.com/in/watches/casio/product.DBC-611G-1/', kind: official }
     movement: quartz

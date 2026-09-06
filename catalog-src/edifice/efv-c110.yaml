@@ -20,6 +20,7 @@ series:
 models:
   - id: efv-c110d-1a3v
     ref: EFV-C110D-1A3V
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-C110D-1A3V/'
     source:
       { url: 'https://web.archive.org/web/20240714221124id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110D-1A3V/', kind: official }
     display: ana-digi
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efv-c110d-1a4v
     ref: EFV-C110D-1A4V
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-C110D-1A4V/'
     source:
       { url: 'https://web.archive.org/web/20240714221127id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110D-1A4V/', kind: official }
     display: ana-digi
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efv-c110d-2av
     ref: EFV-C110D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-C110D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714221103id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110D-2AV/', kind: official }
     display: ana-digi
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: efv-c110d-2b
     ref: EFV-C110D-2B
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-C110D-2B/'
     source:
       { url: 'https://web.archive.org/web/20250121091959id_/https://www.casio.com/in/watches/edifice/product.EFV-C110D-2B/', kind: official }
     display: ana-digi
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: efv-c110d-5a
     ref: EFV-C110D-5A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-C110D-5A/'
     source:
       { url: 'https://web.archive.org/web/20250121093058id_/https://www.casio.com/in/watches/edifice/product.EFV-C110D-5A/', kind: official }
     display: ana-digi
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: efv-c110dc-1a
     ref: EFV-C110DC-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-C110DC-1A/'
     source:
       { url: 'https://web.archive.org/web/20250121011044id_/https://www.casio.com/in/watches/edifice/product.EFV-C110DC-1A/', kind: official }
     display: ana-digi
@@ -110,6 +116,7 @@ models:
     discontinued: false
   - id: efv-c110l-1av
     ref: EFV-C110L-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-C110L-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714221106id_/https://www.casio.com/europe/watches/edifice/product.EFV-C110L-1AV/', kind: official }
     display: ana-digi

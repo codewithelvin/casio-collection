@@ -20,6 +20,7 @@ series:
 models:
   - id: mtp-v300b-1a
     ref: MTP-V300B-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V300B-1A/'
     source:
       { url: 'https://web.archive.org/web/20220526121218id_/https://www.casio.com/sg/watches/casio/product.MTP-V300B-1A/', kind: official }
     display: analog
@@ -48,6 +49,7 @@ models:
     discontinued: true
   - id: mtp-v300gb-1a
     ref: MTP-V300GB-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V300GB-1A/'
     source:
       { url: 'https://web.archive.org/web/20220526115652id_/https://www.casio.com/sg/watches/casio/product.MTP-V300GB-1A/', kind: official }
     display: analog
@@ -62,6 +64,7 @@ models:
     discontinued: false
   - id: mtp-v300gl-1a
     ref: MTP-V300GL-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V300GL-1A/'
     source:
       { url: 'https://web.archive.org/web/20220625105321id_/https://www.casio.com/in/watches/casio/product.MTP-V300GL-1A/', kind: official }
     display: analog
@@ -146,6 +149,7 @@ models:
     discontinued: true
   - id: mtp-v300l-1a
     ref: MTP-V300L-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V300L-1A/'
     source:
       { url: 'https://web.archive.org/web/20220625141314id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-1A/', kind: official }
     display: analog
@@ -202,6 +206,7 @@ models:
     discontinued: true
   - id: mtp-v300l-7a
     ref: MTP-V300L-7A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V300L-7A/'
     source:
       { url: 'https://web.archive.org/web/20220520233847id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-7A/', kind: official }
     display: analog
@@ -230,6 +235,7 @@ models:
     discontinued: true
   - id: mtp-v300l-9a
     ref: MTP-V300L-9A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V300L-9A/'
     source:
       { url: 'https://web.archive.org/web/20220529061654id_/https://www.casio.com/in/watches/casio/product.MTP-V300L-9A/', kind: official }
     display: analog
@@ -251,6 +257,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: mtp-v300bl-5a
     ref: MTP-V300BL-5A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V300BL-5A/'
     source:
       { url: 'https://web.archive.org/web/20240721185825id_/https://www.casio.com/id/watches/casio/product.MTP-V300BL-5A/', kind: official }
     case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 49 }
@@ -262,6 +269,7 @@ models:
     discontinued: false
   - id: mtp-v300d-1a
     ref: MTP-V300D-1A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V300D-1A/'
     source:
       { url: 'https://web.archive.org/web/20240721185200id_/https://www.casio.com/id/watches/casio/product.MTP-V300D-1A/', kind: official }
     case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }
@@ -273,6 +281,7 @@ models:
     discontinued: false
   - id: mtp-v300d-7a
     ref: MTP-V300D-7A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V300D-7A/'
     source:
       { url: 'https://web.archive.org/web/20240721185230id_/https://www.casio.com/id/watches/casio/product.MTP-V300D-7A/', kind: official }
     case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }
@@ -284,6 +293,7 @@ models:
     discontinued: false
   - id: mtp-v300g-7a
     ref: MTP-V300G-7A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V300G-7A/'
     source:
       { url: 'https://web.archive.org/web/20240721185207id_/https://www.casio.com/id/watches/casio/product.MTP-V300G-7A/', kind: official }
     case: { height_mm: 47, width_mm: 41.5, depth_mm: 8.6, weight_g: 96 }

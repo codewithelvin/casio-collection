@@ -20,6 +20,7 @@ series:
 models:
   - id: efs-s500db-1av
     ref: EFS-S500DB-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFS-S500DB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220808081734id_/https://www.casio.com/us/watches/edifice/product.EFS-S500DB-1AV/', kind: official }
     display: analog

@@ -20,6 +20,7 @@ series:
 models:
   - id: gmw-bz5000gd-9
     ref: GMW-BZ5000GD-9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMW-BZ5000GD-9/'
     source:
       { url: 'https://web.archive.org/web/20251107232106id_/https://www.casio.com/uk/watches/gshock/product.GMW-BZ5000GD-9/', kind: official }
     module: '3575'
@@ -28,7 +29,7 @@ models:
     movement: solar-radio
     case: { height_mm: 49.3, width_mm: 43.6, depth_mm: 13, weight_g: 172, material: 'Stainless steel' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: gmw-bz5000gd-9
     image_credit:
       author: Casio Computer Co., Ltd.

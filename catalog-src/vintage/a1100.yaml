@@ -20,6 +20,7 @@ series:
 models:
   - id: a1100b-1
     ref: A1100B-1
+    official_url: 'https://www.casio.com/intl/watches/casio/product.A1100B-1/'
     source:
       { url: 'https://web.archive.org/web/20240714220030id_/https://www.casio.com/europe/watches/casio/vintage/product.A1100B-1/', kind: official }
     movement: quartz
@@ -33,6 +34,7 @@ models:
     discontinued: false
   - id: a1100d-1
     ref: A1100D-1
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1100D-1/'
     source:
       { url: 'https://web.archive.org/web/20240704205622id_/https://www.casio.com/europe/watches/casio/vintage/product.A1100D-1/', kind: official }
     movement: quartz
@@ -46,6 +48,7 @@ models:
     discontinued: false
   - id: a1100g-5
     ref: A1100G-5
+    official_url: 'https://www.casio.com/us/watches/casio/product.A1100G-5/'
     source:
       { url: 'https://web.archive.org/web/20240714220016id_/https://www.casio.com/europe/watches/casio/vintage/product.A1100G-5/', kind: official }
     movement: quartz
@@ -66,6 +69,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: a1100ggv-8
     ref: A1100GGV-8
+    official_url: 'https://www.casio.com/jp/watches/casio/product.A1100GGV-8/'
     source:
       { url: 'https://web.archive.org/web/20250406010854id_/https://www.casio.com/jp/watches/casio/product.A1100GGV-8/', kind: official }
     case: { height_mm: 40, width_mm: 35, depth_mm: 9.1, weight_g: 90 }
@@ -77,6 +81,7 @@ models:
     discontinued: false
   - id: a1100gv-9
     ref: A1100GV-9
+    official_url: 'https://www.casio.com/jp/watches/casio/product.A1100GV-9/'
     source:
       { url: 'https://web.archive.org/web/20250406010947id_/https://www.casio.com/jp/watches/casio/product.A1100GV-9/', kind: official }
     case: { height_mm: 40, width_mm: 35, depth_mm: 9.1, weight_g: 90 }

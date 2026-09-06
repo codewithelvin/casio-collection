@@ -49,6 +49,7 @@ import { FEATURES, type Display, type Feature, type Movement } from './vocabular
 export const FUNCTION_FEATURES: Readonly<Record<string, Feature>> = {
   world_time: 'world-time',
   auto_light: 'auto-light',
+  carbon_guard_core: 'carbon-core-guard',
   bluetooth: 'bluetooth',
   vibration: 'vibration-alarm',
   mud_resistance: 'mud-resistant',
@@ -84,7 +85,6 @@ export const FUNCTION_FEATURES: Readonly<Record<string, Feature>> = {
  */
 export const KNOWN_UNMAPPED = new Set([
   'alphagel',
-  'carbon_guard_core',
   'dlc',
   'low_temp_resistance',
   'tough_mvt',

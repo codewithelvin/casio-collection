@@ -29,6 +29,7 @@ series:
 models:
   - id: she-3806d-7a
     ref: SHE-3806D-7A
+    official_url: 'https://www.casio.com/de/watches/sheen/product.SHE-3806D-7A/'
     source:
       { url: 'https://web.archive.org/web/20240714221330id_/https://www.casio.com/europe/watches/sheen/product.SHE-3806D-7A/', kind: official }
     display: analog

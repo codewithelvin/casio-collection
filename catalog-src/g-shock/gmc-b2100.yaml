@@ -20,6 +20,7 @@ series:
 models:
   - id: gmc-b2100ad-2a
     ref: GMC-B2100AD-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMC-B2100AD-2A/'
     source:
       { url: 'https://web.archive.org/web/20241126204429id_/https://www.casio.com/us/watches/gshock/product.GMC-B2100AD-2A/', kind: official }
     module: '5733'
@@ -39,6 +40,7 @@ models:
     discontinued: false
   - id: gmc-b2100d-1a
     ref: GMC-B2100D-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMC-B2100D-1A/'
     source:
       { url: 'https://web.archive.org/web/20241126232853id_/https://www.casio.com/us/watches/gshock/product.GMC-B2100D-1A/', kind: official }
     module: '5733'
@@ -58,6 +60,7 @@ models:
     discontinued: false
   - id: gmc-b2100ze-1a
     ref: GMC-B2100ZE-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GMC-B2100ZE-1A/'
     source:
       { url: 'https://web.archive.org/web/20250121105018id_/https://www.casio.com/in/watches/gshock/product.GMC-B2100ZE-1A/', kind: official }
     year: 2024

@@ -20,6 +20,7 @@ series:
 models:
   - id: efv-140d-1av
     ref: EFV-140D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-140D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-140D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efv-140d-2av
     ref: EFV-140D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-140D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20220628210840id_/https://www.casio.com/intl/watches/edifice/product.EFV-140D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efv-140d-3av
     ref: EFV-140D-3AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-140D-3AV/'
     source:
       { url: 'https://web.archive.org/web/20221001040822id_/https://www.casio.com/sg/watches/edifice/product.EFV-140D-3AV/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: efv-140l-1av
     ref: EFV-140L-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-140L-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220628131946id_/https://www.casio.com/intl/watches/edifice/product.EFV-140L-1AV/', kind: official }
     display: analog
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: efv-140l-7av
     ref: EFV-140L-7AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-140L-7AV/'
     source:
       { url: 'https://web.archive.org/web/20221001040700id_/https://www.casio.com/in/watches/edifice/product.EFV-140L-7AV/', kind: official }
     display: analog

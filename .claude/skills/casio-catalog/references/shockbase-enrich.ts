@@ -23,6 +23,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { parseWatchPage, type ShockbaseReading } from '../../../../src/catalog/shockbase.ts'
+import { FEATURES } from '../../../../src/catalog/vocabulary.ts'
 
 const HERE = join(fileURLToPath(import.meta.url), '..')
 const REPO = join(HERE, '..', '..', '..', '..')
@@ -240,6 +241,7 @@ interface Change {
   added: string[]
   conflicts: string[]
   droppedFeatures: string[]
+  gainedFeatures: string[]
 }
 
 const changes: Change[] = []
@@ -294,14 +296,28 @@ for (const entry of entries) {
   const current = existingFeatures ? existingFeatures.split(',').map((f) => f.trim()).filter(Boolean) : []
   const dropped = current.filter((f) => !reading.features.includes(f as never))
 
+  /**
+   * Features are MERGED, never replaced.
+   *
+   * ShockBase states things the module manual does not (carbon-core-guard on
+   * 198 models) and the manual states things ShockBase has no row for
+   * (stopwatch, countdown-timer, hourly-time-signal, full-auto-calendar). Taking
+   * ShockBase's list wholesale would delete the second set from every entry; so
+   * this only ever ADDS, and `dropped` is reported rather than acted on.
+   */
+  const gained = reading.features.filter((f) => !current.includes(f))
+  if (gained.length > 0 && existingFeatures !== undefined) added.push('features+')
+
   if (added.length > 0 || conflicts.length > 0) {
-    changes.push({ entry, reading, added, conflicts, droppedFeatures: dropped })
+    changes.push({ entry, reading, added, conflicts, droppedFeatures: dropped, gainedFeatures: gained })
   }
 }
 
 console.log(`\n${changes.length} of ${entries.length} entries would change`)
 for (const change of changes) {
   const bits = change.added.map((k) => {
+    if (k === 'features+') return `features+[${change.gainedFeatures.join(' ')}]`
+    if (k === 'year_source') return 'year_source'
     const value = (change.reading as Record<string, unknown>)[k]
     return `${k}=${typeof value === 'object' ? JSON.stringify(value) : String(value)}`
   })
@@ -328,7 +344,38 @@ for (const change of [...changes].sort((a, b) => b.entry.start - a.entry.start))
   const indent = entry.indent
   const block: string[] = []
 
+  // Merge gained features into the existing inline list, in vocabulary order.
+  // Done before the insert below so `entry.keys` line numbers are still valid.
+  if (added.includes('features+') && change.gainedFeatures.length > 0) {
+    const at = entry.keys.get('features')
+    const line = at === undefined ? undefined : lines[at]
+    // `[^\n]*` rather than `.*` before `$`: the working tree is CRLF against
+    // prettier's `endOfLine: lf`, so splitting on '\n' leaves a trailing '\r'
+    // on every line. `.` does not match '\r' (it is a line terminator), so
+    // `.*$` never reached the end and EVERY single-line list was reported as
+    // "not a single-line list — left alone" — 620 of them, silently correct
+    // sounding. `[^\n]*` eats the '\r'.
+    const inline = line === undefined ? null : /^(\s*features:\s*\[)([^\]]*)(\][^\n]*)$/.exec(line)
+    if (!inline) {
+      // A features list that is not one inline array is not one this tool edits.
+      console.error(`  ${entry.ref}: features is not a single-line list — left alone`)
+    } else {
+      const current = inline[2].split(',').map((f) => f.trim()).filter(Boolean)
+      const merged = [...current, ...change.gainedFeatures].sort(
+        (a, b) => FEATURES.indexOf(a as never) - FEATURES.indexOf(b as never),
+      )
+      lines[at!] = `${inline[1]}${merged.join(', ')}${inline[3]}`
+    }
+  }
+
   for (const key of added) {
+    // `features+` is a MARKER, not a field. It is handled by the merge above,
+    // and falling through to the generic branch wrote a literal
+    // `features+: undefined` line into 620 entries — `yamlScalar(undefined)`
+    // stringifies to "undefined" rather than throwing, so nothing complained.
+    // A sentinel that shares a namespace with real keys is a trap; this is the
+    // guard, and the `plan` output now prints the gained features by name.
+    if (key === 'features+') continue
     if (key === 'case') {
       block.push(`${indent}case:`)
       for (const [k, v] of Object.entries(reading.case)) block.push(`${indent}  ${k}: ${yamlScalar(v as string | number)}`)

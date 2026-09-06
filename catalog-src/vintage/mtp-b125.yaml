@@ -20,6 +20,7 @@ series:
 models:
   - id: mtp-b125b-8av
     ref: MTP-B125B-8AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B125B-8AV/'
     source:
       { url: 'https://web.archive.org/web/20240721184601id_/https://www.casio.com/id/watches/casio/product.MTP-B125B-8AV/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 101 }
@@ -32,6 +33,7 @@ models:
     discontinued: false
   - id: mtp-b125d-1av
     ref: MTP-B125D-1AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B125D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715103012id_/https://www.casio.com/europe/watches/casio/product.MTP-B125D-1AV/', kind: official }
     display: analog
@@ -47,6 +49,7 @@ models:
     discontinued: false
   - id: mtp-b125gl-7av
     ref: MTP-B125GL-7AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B125GL-7AV/'
     source:
       { url: 'https://web.archive.org/web/20240721185146id_/https://www.casio.com/id/watches/casio/product.MTP-B125GL-7AV/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 45 }
@@ -59,6 +62,7 @@ models:
     discontinued: false
   - id: mtp-b125l-1av
     ref: MTP-B125L-1AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B125L-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715103015id_/https://www.casio.com/europe/watches/casio/product.MTP-B125L-1AV/', kind: official }
     display: analog
@@ -74,6 +78,7 @@ models:
     discontinued: false
   - id: mtp-b125m-2av
     ref: MTP-B125M-2AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B125M-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240715103009id_/https://www.casio.com/europe/watches/casio/product.MTP-B125M-2AV/', kind: official }
     display: analog
@@ -89,6 +94,7 @@ models:
     discontinued: false
   - id: mtp-b125m-7av
     ref: MTP-B125M-7AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B125M-7AV/'
     source:
       { url: 'https://web.archive.org/web/20240715103023id_/https://www.casio.com/europe/watches/casio/product.MTP-B125M-7AV/', kind: official }
     display: analog
@@ -104,6 +110,7 @@ models:
     discontinued: false
   - id: mtp-b125mg-3av
     ref: MTP-B125MG-3AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B125MG-3AV/'
     source:
       { url: 'https://web.archive.org/web/20220706032656id_/https://www.casio.com/sg/watches/casio/product.MTP-B125MG-3AV/', kind: official }
     display: analog
@@ -119,6 +126,7 @@ models:
     discontinued: false
   - id: mtp-b125mr-8av
     ref: MTP-B125MR-8AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B125MR-8AV/'
     source:
       { url: 'https://web.archive.org/web/20240721184842id_/https://www.casio.com/id/watches/casio/product.MTP-B125MR-8AV/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 75 }
@@ -131,6 +139,7 @@ models:
     discontinued: false
   - id: mtp-b125rl-5av
     ref: MTP-B125RL-5AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-B125RL-5AV/'
     source:
       { url: 'https://web.archive.org/web/20240721185008id_/https://www.casio.com/id/watches/casio/product.MTP-B125RL-5AV/', kind: official }
     case: { height_mm: 48, width_mm: 41, depth_mm: 8.3, weight_g: 45 }

@@ -70,9 +70,19 @@ describe('the mapping never invents a vocabulary value', () => {
   })
 
   it('reports an active function it has no word for instead of guessing', () => {
-    const reading = parseWatchPage(cell('cellactive', 'carbon_guard_core'))
-    expect(reading.unmapped).toEqual(['carbon_guard_core'])
+    // `dlc` and not `carbon_guard_core`: the latter WAS the example here until
+    // the client approved it into the vocabulary as `carbon-core-guard` (D76),
+    // which is the process this test describes actually completing. `dlc` is
+    // active on 48 models and still has no word.
+    const reading = parseWatchPage(cell('cellactive', 'dlc'))
+    expect(reading.unmapped).toEqual(['dlc'])
     expect(reading.features).toEqual([])
+  })
+
+  it('maps carbon_guard_core now that D76 gave it a word', () => {
+    const reading = parseWatchPage(cell('cellactive', 'carbon_guard_core'))
+    expect(reading.features).toEqual(['carbon-core-guard'])
+    expect(reading.unmapped).toEqual([])
   })
 
   it('a mapped key is never also listed as known-unmapped', () => {
@@ -265,8 +275,16 @@ describe('a whole page', () => {
       colorway: 'Black',
       case: { material: 'Resin', height_mm: 48.5, width_mm: 45.4, depth_mm: 11.8, weight_g: 51 },
     })
-    expect(reading.features).toEqual(['world-time', 'multi-alarm', 'led-light', 'mineral-glass'])
-    expect(reading.unmapped).toEqual(['carbon_guard_core'])
+    // Vocabulary order, not page order — the grid and the spec table both read
+    // this list and a stable order is what keeps two watches comparable.
+    expect(reading.features).toEqual([
+      'world-time',
+      'multi-alarm',
+      'led-light',
+      'mineral-glass',
+      'carbon-core-guard',
+    ])
+    expect(reading.unmapped).toEqual([])
   })
 
   it('does not claim the four features ShockBase has no row for', () => {

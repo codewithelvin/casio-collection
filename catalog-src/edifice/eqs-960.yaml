@@ -20,6 +20,7 @@ series:
 models:
   - id: eqs-960d-1av
     ref: EQS-960D-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQS-960D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20241129065322id_/https://www.casio.com/in/watches/edifice/product.EQS-960D-1AV/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: eqs-960dc-1av
     ref: EQS-960DC-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EQS-960DC-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.EQS-960DC-1AV/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: eqs-960pb-1av
     ref: EQS-960PB-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQS-960PB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.EQS-960PB-1AV/', kind: official }
     display: analog

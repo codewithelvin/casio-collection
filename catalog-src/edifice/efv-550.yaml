@@ -20,6 +20,7 @@ series:
 models:
   - id: efv-550d-1av
     ref: EFV-550D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-550D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220626143836id_/https://www.casio.com/intl/watches/edifice/product.EFV-550D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efv-550d-2av
     ref: EFV-550D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-550D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20220626140428id_/https://www.casio.com/intl/watches/edifice/product.EFV-550D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efv-550d-7av
     ref: EFV-550D-7AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-550D-7AV/'
     source:
       { url: 'https://web.archive.org/web/20221209060106id_/https://www.casio.com/ph/watches/edifice/product.EFV-550D-7AV/', kind: official }
     display: analog
@@ -80,6 +83,7 @@ models:
     discontinued: true
   - id: efv-550gy-8av
     ref: EFV-550GY-8AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFV-550GY-8AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220827id_/https://www.casio.com/europe/watches/edifice/product.EFV-550GY-8AV/', kind: official }
     display: analog
@@ -95,6 +99,7 @@ models:
     discontinued: false
   - id: efv-550l-1av
     ref: EFV-550L-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-550L-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220626134234id_/https://www.casio.com/intl/watches/edifice/product.EFV-550L-1AV/', kind: official }
     display: analog
@@ -125,6 +130,7 @@ models:
     discontinued: true
   - id: efv-550p-1av
     ref: EFV-550P-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-550P-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220606id_/https://www.casio.com/europe/watches/edifice/product.EFV-550P-1AV/', kind: official }
     display: analog

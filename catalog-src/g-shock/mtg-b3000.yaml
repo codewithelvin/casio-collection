@@ -20,6 +20,7 @@ series:
 models:
   - id: mtg-b3000-1a
     ref: MTG-B3000-1A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.MTG-B3000-1A/'
     source:
       { url: 'https://web.archive.org/web/20231026020353id_/https://www.casio.com/sg/watches/gshock/product.MTG-B3000-1A/', kind: official }
     year: 2023
@@ -30,7 +31,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 111, material: 'Carbon / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -39,6 +40,7 @@ models:
     discontinued: false
   - id: mtg-b3000b-1a
     ref: MTG-B3000B-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000B-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715064208id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000B-1A/', kind: official }
     year: 2022
@@ -49,7 +51,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 111, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000b-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -58,6 +60,7 @@ models:
     discontinued: false
   - id: mtg-b3000bd-1a
     ref: MTG-B3000BD-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000BD-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715064159id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000BD-1A/', kind: official }
     year: 2022
@@ -68,7 +71,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 148, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000bd-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -77,6 +80,7 @@ models:
     discontinued: false
   - id: mtg-b3000bd-1a2
     ref: MTG-B3000BD-1A2
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000BD-1A2/'
     source:
       { url: 'https://web.archive.org/web/20240715064202id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000BD-1A2/', kind: official }
     year: 2022
@@ -87,7 +91,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 148, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000bd-1a2
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -96,6 +100,7 @@ models:
     discontinued: false
   - id: mtg-b3000bde-1a
     ref: MTG-B3000BDE-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000BDE-1A/'
     source:
       { url: 'https://web.archive.org/web/20221216024030id_/https://www.casio.com/us/watches/gshock/product.MTG-B3000BDE-1A/', kind: official }
     year: 2022
@@ -106,7 +111,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 148, material: 'Carbon / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000bde-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -115,6 +120,7 @@ models:
     discontinued: false
   - id: mtg-b3000cx-9a
     ref: MTG-B3000CX-9A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000CX-9A/'
     source:
       { url: 'https://web.archive.org/web/20240715021825id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000CX-9A/', kind: official }
     year: 2022
@@ -125,7 +131,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 148, material: 'Carbon / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000cx-9a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -134,6 +140,7 @@ models:
     discontinued: false
   - id: mtg-b3000cxd-9a
     ref: MTG-B3000CXD-9A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000CXD-9A/'
     source:
       { url: 'https://web.archive.org/web/20231219150619id_/https://www.casio.com/us/watches/gshock/product.MTG-B3000CXD-9A/', kind: official }
     year: 2023
@@ -144,7 +151,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 111, material: 'Carbon / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000cxd-9a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -153,6 +160,7 @@ models:
     discontinued: false
   - id: mtg-b3000d-1a
     ref: MTG-B3000D-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000D-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715021822id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000D-1A/', kind: official }
     year: 2022
@@ -163,7 +171,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 148, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000d-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -172,6 +180,7 @@ models:
     discontinued: false
   - id: mtg-b3000d-1a9
     ref: MTG-B3000D-1A9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000D-1A9/'
     source:
       { url: 'https://web.archive.org/web/20240408193806id_/https://www.casio.com/us/watches/gshock/product.MTG-B3000D-1A9/', kind: official }
     year: 2023
@@ -182,7 +191,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 148, material: 'Resin / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000d-1a9
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -191,6 +200,7 @@ models:
     discontinued: false
   - id: mtg-b3000dn-1a
     ref: MTG-B3000DN-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000DN-1A/'
     source:
       { url: 'https://web.archive.org/web/20240515214037id_/https://www.casio.com/ph/watches/gshock/product.MTG-B3000DN-1A/', kind: official }
     year: 2024
@@ -201,7 +211,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 111, material: 'Carbon / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000dn-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -210,6 +220,7 @@ models:
     discontinued: false
   - id: mtg-b3000fr-1a
     ref: MTG-B3000FR-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000FR-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715021818id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000FR-1A/', kind: official }
     year: 2022
@@ -220,7 +231,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 13.2, weight_g: 115, material: 'Carbon / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000fr-1a
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -229,6 +240,7 @@ models:
     discontinued: false
   - id: mtg-b3000prb-1a
     ref: MTG-B3000PRB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.MTG-B3000PRB-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715065250id_/https://www.casio.com/europe/watches/gshock/product.MTG-B3000PRB-1A/', kind: official }
     year: 2023
@@ -239,7 +251,7 @@ models:
     movement: solar-radio
     case: { height_mm: 51.9, width_mm: 50.9, depth_mm: 12.1, weight_g: 111, material: 'Carbon / Stainless steel' }
     water_resistance_m: 200
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal]
+    features: [world-time, stopwatch, countdown-timer, alarm, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, screw-lock-crown, sapphire-crystal, carbon-core-guard]
     image: mtg-b3000prb-1a
     image_credit:
       author: Casio Computer Co., Ltd.

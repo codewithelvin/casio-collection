@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { profileTitle } from '../../seo/titles.ts'
 import { Col, Row, Typography, theme as antdTheme } from 'antd'
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
@@ -84,7 +85,7 @@ export default function ProfileRoute() {
   useEffect(() => {
     const previous = document.title
     if (owner) {
-      document.title = `${owner.display_name ?? owner.handle ?? handle} · ${t('app.name')}`
+      document.title = profileTitle(owner.display_name ?? owner.handle ?? handle)
     }
     return () => {
       document.title = previous

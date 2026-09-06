@@ -20,6 +20,7 @@ series:
 models:
   - id: efr-527d-2av
     ref: EFR-527D-2AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFR-527D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220446id_/https://www.casio.com/europe/watches/edifice/product.EFR-527D-2AV/', kind: official }
     display: analog

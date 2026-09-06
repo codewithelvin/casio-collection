@@ -55,6 +55,7 @@ series:
 models:
   - id: efr-s108d-1av
     ref: EFR-S108D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-S108D-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5359/qw5359_EN.pdf',
@@ -70,6 +71,7 @@ models:
     discontinued: false
   - id: efr-s108d-2av
     ref: EFR-S108D-2AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFR-S108D-2AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5359/qw5359_EN.pdf',
@@ -85,6 +87,7 @@ models:
     discontinued: false
   - id: efr-s108d-2bv
     ref: EFR-S108D-2BV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-S108D-2BV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5359/qw5359_EN.pdf',
@@ -100,6 +103,7 @@ models:
     discontinued: false
   - id: efr-s108d-3av
     ref: EFR-S108D-3AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-S108D-3AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5359/qw5359_EN.pdf',
@@ -115,6 +119,7 @@ models:
     discontinued: false
   - id: efr-s108d-7av
     ref: EFR-S108D-7AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-S108D-7AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5359/qw5359_EN.pdf',
@@ -130,6 +135,7 @@ models:
     discontinued: false
   - id: efr-s108de-2av
     ref: EFR-S108DE-2AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFR-S108DE-2AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5359/qw5359_EN.pdf',
@@ -145,6 +151,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/efr-s108de-2avudf'
   - id: efr-s108de-3av
     ref: EFR-S108DE-3AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFR-S108DE-3AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5359/qw5359_EN.pdf',
@@ -155,6 +162,7 @@ models:
     discontinued: false
   - id: efr-s108de-8av
     ref: EFR-S108DE-8AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFR-S108DE-8AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5359/qw5359_EN.pdf',
@@ -177,6 +185,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/efr-s108de-8avudf'
   - id: efr-s108dj-2a
     ref: EFR-S108DJ-2A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-2A/'
     source:
       { url: 'https://web.archive.org/web/20240523202410id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-2A/', kind: official }
     case: { height_mm: 44.8, width_mm: 39.9, depth_mm: 7.8, weight_g: 110 }
@@ -189,6 +198,7 @@ models:
     discontinued: false
   - id: efr-s108dj-2b
     ref: EFR-S108DJ-2B
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-2B/'
     source:
       { url: 'https://web.archive.org/web/20240903204539id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-2B/', kind: official }
     case: { height_mm: 44.8, width_mm: 39.9, depth_mm: 7.8, weight_g: 110 }
@@ -201,6 +211,7 @@ models:
     discontinued: false
   - id: efr-s108dj-3a
     ref: EFR-S108DJ-3A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-3A/'
     source:
       { url: 'https://web.archive.org/web/20240523002900id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-3A/', kind: official }
     case: { height_mm: 44.8, width_mm: 39.9, depth_mm: 7.8, weight_g: 110 }
@@ -213,6 +224,7 @@ models:
     discontinued: false
   - id: efr-s108dj-7a
     ref: EFR-S108DJ-7A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-7A/'
     source:
       { url: 'https://web.archive.org/web/20240307212734id_/https://www.casio.com/jp/watches/edifice/product.EFR-S108DJ-7A/', kind: official }
     case: { height_mm: 44.8, width_mm: 39.9, depth_mm: 7.8, weight_g: 110 }

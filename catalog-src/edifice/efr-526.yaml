@@ -46,6 +46,7 @@ series:
 models:
   - id: efr-526bk-1a1v
     ref: EFR-526BK-1A1V
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFR-526BK-1A1V/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -62,6 +63,7 @@ models:
     discontinued: false
   - id: efr-526d-1av
     ref: EFR-526D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-526D-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -78,6 +80,7 @@ models:
     discontinued: false
   - id: efr-526d-2av
     ref: EFR-526D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-526D-2AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -94,6 +97,7 @@ models:
     discontinued: false
   - id: efr-526d-3av
     ref: EFR-526D-3AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-526D-3AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -110,6 +114,7 @@ models:
     discontinued: false
   - id: efr-526d-5cv
     ref: EFR-526D-5CV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFR-526D-5CV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -126,6 +131,7 @@ models:
     discontinued: false
   - id: efr-526d-7av
     ref: EFR-526D-7AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-526D-7AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -142,6 +148,7 @@ models:
     discontinued: false
   - id: efr-526l-1av
     ref: EFR-526L-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-526L-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -158,6 +165,7 @@ models:
     discontinued: false
   - id: efr-526l-2av
     ref: EFR-526L-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-526L-2AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -174,6 +182,7 @@ models:
     discontinued: false
   - id: efr-526l-2cv
     ref: EFR-526L-2CV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-526L-2CV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -190,6 +199,7 @@ models:
     discontinued: false
   - id: efr-526l-7av
     ref: EFR-526L-7AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-526L-7AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',

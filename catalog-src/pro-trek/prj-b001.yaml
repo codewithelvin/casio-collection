@@ -20,6 +20,7 @@ series:
 models:
   - id: prj-b001-1
     ref: PRJ-B001-1
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRJ-B001-1/'
     source:
       { url: 'https://web.archive.org/web/20241001231104id_/https://www.casio.com/europe/watches/protrek/product.PRJ-B001-1/', kind: official }
     display: ana-digi
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: prj-b001-5
     ref: PRJ-B001-5
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRJ-B001-5/'
     source:
       { url: 'https://web.archive.org/web/20250121091726id_/https://www.casio.com/in/watches/protrek/product.PRJ-B001-5/', kind: official }
     display: ana-digi
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: prj-b001-7
     ref: PRJ-B001-7
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRJ-B001-7/'
     source:
       { url: 'https://web.archive.org/web/20240710134431id_/https://www.casio.com/intl/watches/protrek/product.PRJ-B001-7/', kind: official }
     display: ana-digi
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: prj-b001b-2
     ref: PRJ-B001B-2
+    official_url: 'https://www.casio.com/us/watches/protrek/product.PRJ-B001B-2/'
     source:
       { url: 'https://web.archive.org/web/20240915200536id_/https://www.casio.com/us/watches/protrek/product.PRJ-B001B-2/', kind: official }
     display: ana-digi
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: prj-b001b-5
     ref: PRJ-B001B-5
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRJ-B001B-5/'
     source:
       { url: 'https://web.archive.org/web/20241125040435id_/https://www.casio.com/jp/watches/protrek/product.PRJ-B001B-5/', kind: official }
     case: { height_mm: 50.3, width_mm: 46, depth_mm: 13.6, weight_g: 37 }
@@ -100,6 +105,7 @@ models:
   # else: one page per model, and every field below is on it.
   - id: prj-b001ex-1
     ref: PRJ-B001EX-1
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRJ-B001EX-1/'
     source:
       {
         url: 'https://ippojapanwatch.com/products/casio-prj-b001ex-1jr-protrek-hiker-line-gps-navigation-altimeter-barometer-thermometer',
@@ -135,6 +141,7 @@ models:
   # no page" are different facts and only the first one is true.
   - id: prj-b001nj-3
     ref: PRJ-B001NJ-3
+    official_url: 'https://www.casio.com/jp/watches/protrek/product.PRJ-B001NJ-3/'
     source:
       {
         url: 'https://ippojapanwatch.com/products/casio-prj-b001nj-3jr-quartz-x-japan-nature-conservation-society-x-pickles-the-frog-2026-2-release',
@@ -159,6 +166,7 @@ models:
     discontinued: false
   - id: prj-b001wm-1
     ref: PRJ-B001WM-1
+    official_url: 'https://www.casio.com/us/watches/protrek/product.PRJ-B001WM-1/'
     source:
       { url: 'https://web.archive.org/web/20250118012659id_/https://www.casio.com/us/watches/protrek/product.PRJ-B001WM-1/', kind: official }
     display: ana-digi

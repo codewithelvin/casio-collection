@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from 'react'
+import { searchTitle } from '../../seo/titles.ts'
 import { Button, Typography } from 'antd'
 import { useSearchParams } from 'react-router-dom'
 import { useCatalog } from '../../catalog/client.ts'
@@ -37,7 +38,7 @@ export default function SearchRoute() {
 
   useEffect(() => {
     const previous = document.title
-    if (term) document.title = `${term} · ${t('app.name')}`
+    if (term) document.title = searchTitle(term)
     return () => {
       document.title = previous
     }

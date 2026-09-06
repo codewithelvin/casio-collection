@@ -27,6 +27,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: g-5600bg-1
     ref: G-5600BG-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.G-5600BG-1/'
     source:
       { url: 'https://web.archive.org/web/20240502180318id_/https://www.casio.com/my/watches/gshock/product.G-5600BG-1/', kind: official }
     year: 2024
@@ -37,7 +38,7 @@ models:
     movement: solar
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 47, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: g-5600bg-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -46,6 +47,7 @@ models:
     discontinued: false
   - id: g-5600bg-5
     ref: G-5600BG-5
+    official_url: 'https://www.casio.com/us/watches/gshock/product.G-5600BG-5/'
     source:
       { url: 'https://web.archive.org/web/20250427044730id_/https://www.casio.com/intl/watches/gshock/product.G-5600BG-5/', kind: official }
     year: 2025
@@ -56,7 +58,7 @@ models:
     movement: solar
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 47, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: g-5600bg-5
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -65,6 +67,7 @@ models:
     discontinued: false
   - id: g-5600e-1
     ref: G-5600E-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.G-5600E-1/'
     source:
       { url: 'https://web.archive.org/web/20210922120449id_/https://www.casio.com/sg/watches/gshock/product.G-5600E-1/', kind: official }
     movement: solar
@@ -75,7 +78,7 @@ models:
     display: digital
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 50.5, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, el-backlight, afterglow, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, afterglow, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: g-5600e-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -84,6 +87,7 @@ models:
     discontinued: false
   - id: g-5600srf-1
     ref: G-5600SRF-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.G-5600SRF-1/'
     source:
       { url: 'https://web.archive.org/web/20240715065952id_/https://www.casio.com/europe/watches/gshock/product.G-5600SRF-1/', kind: official }
     module: '3496'
@@ -92,7 +96,7 @@ models:
     movement: solar
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 47, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: g-5600srf-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -103,6 +107,7 @@ models:
     discontinued: false
   - id: g-5600ue-1
     ref: G-5600UE-1
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.G-5600UE-1/'
     source:
       { url: 'https://web.archive.org/web/20230816221825id_/https://www.casio.com/ph/watches/gshock/product.G-5600UE-1/', kind: official }
     year: 2021
@@ -113,7 +118,7 @@ models:
     movement: solar
     case: { height_mm: 46.7, width_mm: 43.2, depth_mm: 12.7, weight_g: 51, material: 'Resin' }
     water_resistance_m: 200
-    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, tough-solar, power-saving, shock-resistant, mineral-glass]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, tough-solar, power-saving, shock-resistant, mineral-glass]
     image: g-5600ue-1
     image_credit:
       author: Casio Computer Co., Ltd.

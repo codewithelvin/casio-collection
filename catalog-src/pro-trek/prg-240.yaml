@@ -46,6 +46,7 @@ series:
 models:
   - id: prg-240-1
     ref: PRG-240-1
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRG-240-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3246/qw3246_EN.pdf',
@@ -63,6 +64,7 @@ models:
     discontinued: false
   - id: prg-240-3
     ref: PRG-240-3
+    official_url: 'https://www.casio.com/us/watches/protrek/product.PRG-240-3/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3246/qw3246_EN.pdf',
@@ -80,6 +82,7 @@ models:
     discontinued: false
   - id: prg-240-5
     ref: PRG-240-5
+    official_url: 'https://www.casio.com/us/watches/protrek/product.PRG-240-5/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3246/qw3246_EN.pdf',
@@ -97,6 +100,7 @@ models:
     discontinued: false
   - id: prg-240t-7
     ref: PRG-240T-7
+    official_url: 'https://www.casio.com/intl/watches/protrek/product.PRG-240T-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3246/qw3246_EN.pdf',

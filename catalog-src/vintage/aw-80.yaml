@@ -33,6 +33,7 @@ series:
 models:
   - id: aw-80-1a
     ref: AW-80-1A
+    official_url: 'https://www.casio.com/de/watches/casio/product.AW-80-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715101227id_/https://www.casio.com/europe/watches/casio/product.AW-80-1A/', kind: official }
     display: ana-digi
@@ -47,6 +48,7 @@ models:
     discontinued: false
   - id: aw-80-1av
     ref: AW-80-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AW-80-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715101221id_/https://www.casio.com/europe/watches/casio/product.AW-80-1AV/', kind: official }
     display: ana-digi
@@ -61,6 +63,7 @@ models:
     discontinued: false
   - id: aw-80-7a
     ref: AW-80-7A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AW-80-7A/'
     source:
       { url: 'https://web.archive.org/web/20210416091802id_/https://www.casio.com/jp/watches/casio/product.AW-80-7A/', kind: official }
     case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 34 }
@@ -73,6 +76,7 @@ models:
     discontinued: false
   - id: aw-80d-1av
     ref: AW-80D-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AW-80D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20250121105250id_/https://www.casio.com/us/watches/casio/product.AW-80D-1AV/', kind: official }
     display: ana-digi
@@ -87,6 +91,7 @@ models:
       url: 'https://web.archive.org/web/20250121102716id_/https://www.casio.com/in/watches/casio/product.AW-80D-1AV/'
   - id: aw-80d-7a
     ref: AW-80D-7A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AW-80D-7A/'
     source:
       { url: 'https://web.archive.org/web/20210618031640id_/https://www.casio.com/jp/watches/casio/product.AW-80D-7A/', kind: official }
     case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 85 }
@@ -99,6 +104,7 @@ models:
     discontinued: false
   - id: aw-80d-7av
     ref: AW-80D-7AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AW-80D-7AV/'
     source:
       { url: 'https://web.archive.org/web/20221123112029id_/https://www.casio.com/us/watches/casio/product.AW-80D-7AV/', kind: official }
     display: ana-digi
@@ -108,6 +114,7 @@ models:
     discontinued: false
   - id: aw-80v-3b
     ref: AW-80V-3B
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AW-80V-3B/'
     source:
       { url: 'https://web.archive.org/web/20210618031024id_/https://www.casio.com/jp/watches/casio/product.AW-80V-3B/', kind: official }
     case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 32 }
@@ -120,6 +127,7 @@ models:
     discontinued: false
   - id: aw-80v-5b
     ref: AW-80V-5B
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AW-80V-5B/'
     source:
       { url: 'https://web.archive.org/web/20241128103547id_/https://www.casio.com/jp/watches/casio/product.AW-80V-5B/', kind: official }
     case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 32 }
@@ -132,6 +140,7 @@ models:
     discontinued: false
   - id: aw-80v-5bv
     ref: AW-80V-5BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AW-80V-5BV/'
     source:
       { url: 'https://web.archive.org/web/20221008093753id_/https://www.casio.com/us/watches/casio/product.AW-80V-5BV/', kind: official }
     display: ana-digi

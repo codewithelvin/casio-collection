@@ -29,6 +29,7 @@ series:
 models:
   - id: she-3061pg-2a
     ref: SHE-3061PG-2A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-3061PG-2A/'
     source:
       { url: 'https://web.archive.org/web/20220629010514id_/https://www.casio.com/intl/watches/sheen/product.SHE-3061PG-2A/', kind: official }
     display: analog

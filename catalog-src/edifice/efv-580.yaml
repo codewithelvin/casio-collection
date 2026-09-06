@@ -20,6 +20,7 @@ series:
 models:
   - id: efv-580d-1av
     ref: EFV-580D-1AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFV-580D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220549id_/https://www.casio.com/europe/watches/edifice/product.EFV-580D-1AV/', kind: official }
     display: analog

@@ -122,7 +122,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3445'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, compass, thermometer, tide-graph, moon-data, magnetic-resistant, sapphire-crystal]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -150,7 +150,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3445'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, compass, thermometer, tide-graph, moon-data, magnetic-resistant, sapphire-crystal]
     discontinued: true
     image: gwf-d1000arr-1
     image_credit:
@@ -159,6 +159,7 @@ models:
       url: 'https://watchoutz.com/products/casio-g-shock-frogman-x-antarctic-research-rov-gwf-1000-1jf'
   - id: gwf-d1000b-1
     ref: GWF-D1000B-1
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GWF-D1000B-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/34/3445/qw3445_EN.pdf',
@@ -177,7 +178,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3445'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, compass, thermometer, tide-graph, moon-data, magnetic-resistant, sapphire-crystal]
     image: gwf-d1000b-1
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -204,7 +205,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3445'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, compass, thermometer, tide-graph, moon-data, magnetic-resistant, sapphire-crystal]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -229,7 +230,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3445'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, compass, thermometer, tide-graph, moon-data, magnetic-resistant, sapphire-crystal]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null
@@ -255,7 +256,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3445'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, compass, thermometer, tide-graph, moon-data, magnetic-resistant, sapphire-crystal]
     discontinued: true
     image: gwf-d1000mb-3
     image_credit:
@@ -282,7 +283,7 @@ models:
     display: digital
     movement: solar-radio
     module: '3445'
-    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, auto-light, compass, thermometer, tide-graph, moon-data]
+    features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, radio-controlled, tough-solar, compass, thermometer, tide-graph, moon-data, magnetic-resistant, sapphire-crystal]
     # No product shot exists by any route this project can walk — see the
     # refusal note at the head of this file.
     image: null

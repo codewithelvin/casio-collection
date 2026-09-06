@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { symbolsTitle } from '../../seo/titles.ts'
 import { SymbolGlyph } from './SymbolGlyph'
 import { SYMBOL_GROUPS, manualUrl, type WatchSymbol } from './symbols.ts'
 import { t } from '../../i18n/strings'
@@ -27,7 +28,9 @@ export default function SymbolsRoute() {
   // away does not leave this page's title over somebody else's.
   useEffect(() => {
     const previous = document.title
-    document.title = `${t('route.symbols.title')} · ${t('app.name')}`
+    // NOT route.symbols.title — that is the breadcrumb label. This page is
+    // written to rank for what a Casio display symbol means.
+    document.title = symbolsTitle()
     return () => {
       document.title = previous
     }

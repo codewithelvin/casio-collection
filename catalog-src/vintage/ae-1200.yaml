@@ -20,6 +20,7 @@ series:
 models:
   - id: ae-1200wh-1av
     ref: AE-1200WH-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1200WH-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102051id_/https://www.casio.com/europe/watches/casio/product.AE-1200WH-1AV/', kind: official }
     movement: quartz
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: ae-1200wh-1bv
     ref: AE-1200WH-1BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.AE-1200WH-1BV/'
     source:
       { url: 'https://web.archive.org/web/20240312140047id_/https://www.casio.com/in/watches/casio/product.AE-1200WH-1BV/', kind: official }
     movement: quartz
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: ae-1200wh-1cv
     ref: AE-1200WH-1CV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1200WH-1CV/'
     source:
       { url: 'https://web.archive.org/web/20240715102124id_/https://www.casio.com/europe/watches/casio/product.AE-1200WH-1CV/', kind: official }
     movement: quartz
@@ -62,6 +65,7 @@ models:
     discontinued: false
   - id: ae-1200wh-5av
     ref: AE-1200WH-5AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1200WH-5AV/'
     source:
       { url: 'https://web.archive.org/web/20220818070428id_/https://www.casio.com/us/watches/casio/product.AE-1200WH-5AV/', kind: official }
     movement: quartz
@@ -76,6 +80,7 @@ models:
     discontinued: false
   - id: ae-1200whd-1av
     ref: AE-1200WHD-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1200WHD-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102029id_/https://www.casio.com/europe/watches/casio/product.AE-1200WHD-1AV/', kind: official }
     movement: quartz
@@ -90,6 +95,7 @@ models:
     discontinued: false
   - id: ae-1200whd-7av
     ref: AE-1200WHD-7AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1200WHD-7AV/'
     source:
       { url: 'https://web.archive.org/web/20240119025636id_/https://www.casio.com/us/watches/casio/product.AE-1200WHD-7AV/', kind: official }
     movement: quartz
@@ -104,6 +110,7 @@ models:
     discontinued: false
   - id: ae-1200whl-5av
     ref: AE-1200WHL-5AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.AE-1200WHL-5AV/'
     source:
       { url: 'https://web.archive.org/web/20250115211119id_/https://www.casio.com/in/watches/casio/product.AE-1200WHL-5AV/', kind: official }
     movement: quartz
@@ -118,6 +125,7 @@ models:
     discontinued: false
   - id: ae-1200whub-3av
     ref: AE-1200WHUB-3AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1200WHUB-3AV/'
     source:
       { url: 'https://web.archive.org/web/20241114172251id_/https://www.casio.com/us/watches/casio/product.AE-1200WHUB-3AV/', kind: official }
     movement: quartz
@@ -132,6 +140,7 @@ models:
     discontinued: false
   - id: ae-1200whub-8av
     ref: AE-1200WHUB-8AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AE-1200WHUB-8AV/'
     source:
       { url: 'https://web.archive.org/web/20241114172334id_/https://www.casio.com/us/watches/casio/product.AE-1200WHUB-8AV/', kind: official }
     movement: quartz
@@ -153,6 +162,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: ae-1200wh-1a
     ref: AE-1200WH-1A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AE-1200WH-1A/'
     source:
       { url: 'https://web.archive.org/web/20241116181210id_/https://www.casio.com/jp/watches/casio/product.AE-1200WH-1A/', kind: official }
     case: { height_mm: 45, width_mm: 42.1, depth_mm: 12.5, weight_g: 39 }
@@ -165,6 +175,7 @@ models:
     discontinued: false
   - id: ae-1200whd-1a
     ref: AE-1200WHD-1A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AE-1200WHD-1A/'
     source:
       { url: 'https://web.archive.org/web/20241115135214id_/https://www.casio.com/jp/watches/casio/product.AE-1200WHD-1A/', kind: official }
     case: { height_mm: 45, width_mm: 42.1, depth_mm: 12.5, weight_g: 91 }

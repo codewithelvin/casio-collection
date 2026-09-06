@@ -20,6 +20,7 @@ series:
 models:
   - id: ecb-40bk-1a
     ref: ECB-40BK-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-40BK-1A/'
     source:
       { url: 'https://web.archive.org/web/20240307212752id_/https://www.casio.com/intl/watches/edifice/product.ECB-40BK-1A/', kind: official }
     display: ana-digi
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: ecb-40d-1a
     ref: ECB-40D-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-40D-1A/'
     source:
       { url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.ECB-40D-1A/', kind: official }
     display: ana-digi
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: ecb-40db-1a
     ref: ECB-40DB-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-40DB-1A/'
     source:
       { url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.ECB-40DB-1A/', kind: official }
     display: ana-digi
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: ecb-40dc-1a
     ref: ECB-40DC-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-40DC-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714221027id_/https://www.casio.com/europe/watches/edifice/product.ECB-40DC-1A/', kind: official }
     display: ana-digi
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: ecb-40mp-1a
     ref: ECB-40MP-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-40MP-1A/'
     source:
       { url: 'https://web.archive.org/web/20250102101152id_/https://www.casio.com/in/watches/edifice/product.ECB-40MP-1A/', kind: official }
     display: ana-digi
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: ecb-40mu-1a
     ref: ECB-40MU-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.ECB-40MU-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714221030id_/https://www.casio.com/europe/watches/edifice/product.ECB-40MU-1A/', kind: official }
     display: ana-digi
@@ -110,6 +116,7 @@ models:
     discontinued: false
   - id: ecb-40np-1a
     ref: ECB-40NP-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-40NP-1A/'
     source:
       { url: 'https://web.archive.org/web/20240718074857id_/https://www.casio.com/in/watches/edifice/product.ECB-40NP-1A/', kind: official }
     display: ana-digi
@@ -125,6 +132,7 @@ models:
     discontinued: false
   - id: ecb-40p-1a
     ref: ECB-40P-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-40P-1A/'
     source:
       { url: 'https://web.archive.org/web/20240827024551id_/https://www.casio.com/in/watches/edifice/product.ECB-40P-1A/', kind: official }
     display: ana-digi
@@ -140,6 +148,7 @@ models:
     discontinued: false
   - id: ecb-40pb-1a
     ref: ECB-40PB-1A
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.ECB-40PB-1A/'
     source:
       { url: 'https://web.archive.org/web/20240714220724id_/https://www.casio.com/europe/watches/edifice/product.ECB-40PB-1A/', kind: official }
     display: ana-digi
@@ -155,6 +164,7 @@ models:
     discontinued: false
   - id: ecb-40ynp-1a
     ref: ECB-40YNP-1A
+    official_url: 'https://www.casio.com/jp/watches/edifice/product.ECB-40YNP-1A/'
     source:
       { url: 'https://web.archive.org/web/20240527122800id_/https://www.casio.com/jp/watches/edifice/product.ECB-40YNP-1A/', kind: official }
     features: [bluetooth]

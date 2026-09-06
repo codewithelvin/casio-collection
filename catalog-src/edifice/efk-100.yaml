@@ -27,6 +27,7 @@ models:
 # No `year` on any of the entries below: the product page dates nothing (D25).
   - id: efk-100cd-1a
     ref: EFK-100CD-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFK-100CD-1A/'
     source:
       { url: 'https://web.archive.org/web/20250617184501id_/https://www.casio.com/intl/watches/edifice/product.EFK-100CD-1A/', kind: official }
     case: { height_mm: 43.5, width_mm: 39, depth_mm: 12.5, weight_g: 148, material: 'Stainless steel' }

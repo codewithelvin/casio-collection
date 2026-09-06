@@ -20,6 +20,7 @@ series:
 models:
   - id: la-20wh-1a
     ref: LA-20WH-1A
+    official_url: 'https://www.casio.com/us/watches/casio/product.LA-20WH-1A/'
     source:
       { url: 'https://web.archive.org/web/20241226224332id_/https://www.casio.com/in/watches/casio/product.LA-20WH-1A/', kind: official }
     movement: quartz
@@ -33,6 +34,7 @@ models:
     discontinued: false
   - id: la-20wh-1c
     ref: LA-20WH-1C
+    official_url: 'https://www.casio.com/us/watches/casio/product.LA-20WH-1C/'
     source:
       { url: 'https://web.archive.org/web/20240715070616id_/https://www.casio.com/europe/watches/casio/product.LA-20WH-1C/', kind: official }
     movement: quartz
@@ -46,6 +48,7 @@ models:
     discontinued: false
   - id: la-20wh-2a
     ref: LA-20WH-2A
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LA-20WH-2A/'
     source:
       { url: 'https://web.archive.org/web/20240715102201id_/https://www.casio.com/europe/watches/casio/product.LA-20WH-2A/', kind: official }
     movement: quartz
@@ -72,6 +75,7 @@ models:
     discontinued: true
   - id: la-20wh-4a1
     ref: LA-20WH-4A1
+    official_url: 'https://www.casio.com/us/watches/casio/product.LA-20WH-4A1/'
     source:
       { url: 'https://web.archive.org/web/20220626030724id_/https://www.casio.com/intl/watches/casio/product.LA-20WH-4A1/', kind: official }
     movement: quartz
@@ -85,6 +89,7 @@ models:
     discontinued: false
   - id: la-20wh-8a
     ref: LA-20WH-8A
+    official_url: 'https://www.casio.com/us/watches/casio/product.LA-20WH-8A/'
     source:
       { url: 'https://web.archive.org/web/20240715070631id_/https://www.casio.com/europe/watches/casio/product.LA-20WH-8A/', kind: official }
     movement: quartz
@@ -109,6 +114,7 @@ models:
     discontinued: true
   - id: la-20whs-2a
     ref: LA-20WHS-2A
+    official_url: 'https://www.casio.com/us/watches/casio/product.LA-20WHS-2A/'
     source:
       { url: 'https://web.archive.org/web/20250114215108id_/https://www.casio.com/us/watches/casio/product.LA-20WHS-2A/', kind: official }
     movement: quartz
@@ -122,6 +128,7 @@ models:
     discontinued: false
   - id: la-20whs-4a
     ref: LA-20WHS-4A
+    official_url: 'https://www.casio.com/us/watches/casio/product.LA-20WHS-4A/'
     source:
       { url: 'https://web.archive.org/web/20241108223510id_/https://www.casio.com/us/watches/casio/product.LA-20WHS-4A/', kind: official }
     movement: quartz
@@ -135,6 +142,7 @@ models:
     discontinued: false
   - id: la-20whs-7a
     ref: LA-20WHS-7A
+    official_url: 'https://www.casio.com/us/watches/casio/product.LA-20WHS-7A/'
     source:
       { url: 'https://web.archive.org/web/20240408193738id_/https://www.casio.com/us/watches/casio/product.LA-20WHS-7A/', kind: official }
     movement: quartz

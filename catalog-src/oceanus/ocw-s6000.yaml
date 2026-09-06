@@ -29,6 +29,7 @@ series:
 models:
   - id: ocw-s6000-1a
     ref: OCW-S6000-1A
+    official_url: 'https://www.casio.com/us/watches/oceanus/product.OCW-S6000-1A/'
     source:
       { url: 'https://web.archive.org/web/20220603223109id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000-1A/', kind: official }
     movement: solar-radio
@@ -44,6 +45,7 @@ models:
     display: analog
   - id: ocw-s6000bv-1a
     ref: OCW-S6000BV-1A
+    official_url: 'https://www.casio.com/us/watches/oceanus/product.OCW-S6000BV-1A/'
     source:
       { url: 'https://web.archive.org/web/20241229110333id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000BV-1A/', kind: official }
     movement: solar-radio
@@ -59,6 +61,7 @@ models:
     display: analog
   - id: ocw-s6000jc-2a
     ref: OCW-S6000JC-2A
+    official_url: 'https://www.casio.com/us/watches/oceanus/product.OCW-S6000JC-2A/'
     source:
       { url: 'https://web.archive.org/web/20231226141530id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000JC-2A/', kind: official }
     movement: solar-radio
@@ -74,6 +77,7 @@ models:
     display: analog
   - id: ocw-s6000sw-2a
     ref: OCW-S6000SW-2A
+    official_url: 'https://www.casio.com/us/watches/oceanus/product.OCW-S6000SW-2A/'
     source:
       { url: 'https://web.archive.org/web/20230825074523id_/https://www.casio.com/us/watches/oceanus/product.OCW-S6000SW-2A/', kind: official }
     movement: solar-radio

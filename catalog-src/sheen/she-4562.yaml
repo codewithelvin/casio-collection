@@ -29,6 +29,7 @@ series:
 models:
   - id: she-4562bm-2a
     ref: SHE-4562BM-2A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4562BM-2A/'
     source:
       { url: 'https://web.archive.org/web/20240408193243id_/https://www.casio.com/intl/watches/sheen/product.SHE-4562BM-2A/', kind: official }
     display: analog
@@ -44,6 +45,7 @@ models:
     discontinued: false
   - id: she-4562gm-4a
     ref: SHE-4562GM-4A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4562GM-4A/'
     source:
       { url: 'https://web.archive.org/web/20240927055530id_/https://www.casio.com/intl/watches/sheen/product.SHE-4562GM-4A/', kind: official }
     display: analog
@@ -59,6 +61,7 @@ models:
     discontinued: false
   - id: she-4562m-2a
     ref: SHE-4562M-2A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4562M-2A/'
     source:
       { url: 'https://web.archive.org/web/20240926121354id_/https://www.casio.com/intl/watches/sheen/product.SHE-4562M-2A/', kind: official }
     display: analog
@@ -74,6 +77,7 @@ models:
     discontinued: false
   - id: she-4562m-8a
     ref: SHE-4562M-8A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4562M-8A/'
     source:
       { url: 'https://web.archive.org/web/20240408193240id_/https://www.casio.com/intl/watches/sheen/product.SHE-4562M-8A/', kind: official }
     display: analog
@@ -89,6 +93,7 @@ models:
     discontinued: false
   - id: she-4562pgm-5a
     ref: SHE-4562PGM-5A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4562PGM-5A/'
     source:
       { url: 'https://web.archive.org/web/20240408193240id_/https://www.casio.com/intl/watches/sheen/product.SHE-4562PGM-5A/', kind: official }
     display: analog

@@ -29,6 +29,7 @@ series:
 models:
   - id: she-4547gl-3a
     ref: SHE-4547GL-3A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4547GL-3A/'
     source:
       { url: 'https://web.archive.org/web/20221001040821id_/https://www.casio.com/in/watches/sheen/product.SHE-4547GL-3A/', kind: official }
     display: analog
@@ -44,6 +45,7 @@ models:
     discontinued: false
   - id: she-4547m-2a
     ref: SHE-4547M-2A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4547M-2A/'
     source:
       { url: 'https://web.archive.org/web/20220629004536id_/https://www.casio.com/intl/watches/sheen/product.SHE-4547M-2A/', kind: official }
     display: analog
@@ -59,6 +61,7 @@ models:
     discontinued: false
   - id: she-4547pgm-4a
     ref: SHE-4547PGM-4A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4547PGM-4A/'
     source:
       { url: 'https://web.archive.org/web/20221221134300id_/https://www.casio.com/in/watches/sheen/product.SHE-4547PGM-4A/', kind: official }
     display: analog
@@ -74,6 +77,7 @@ models:
     discontinued: false
   - id: she-4547pgm-5a
     ref: SHE-4547PGM-5A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-4547PGM-5A/'
     source:
       { url: 'https://web.archive.org/web/20221001042330id_/https://www.casio.com/sg/watches/sheen/product.SHE-4547PGM-5A/', kind: official }
     display: analog

@@ -20,6 +20,7 @@ series:
 models:
   - id: w-219h-1a2v
     ref: W-219H-1A2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219H-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20240715101737id_/https://www.casio.com/europe/watches/casio/product.W-219H-1A2V/', kind: official }
     movement: quartz
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: w-219h-1av
     ref: W-219H-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219H-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715101613id_/https://www.casio.com/europe/watches/casio/product.W-219H-1AV/', kind: official }
     movement: quartz
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: w-219h-2a2v
     ref: W-219H-2A2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219H-2A2V/'
     source:
       { url: 'https://web.archive.org/web/20250122155300id_/https://www.casio.com/us/watches/casio/product.W-219H-2A2V/', kind: official }
     movement: quartz
@@ -62,6 +65,7 @@ models:
     discontinued: false
   - id: w-219h-2av
     ref: W-219H-2AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219H-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240715101732id_/https://www.casio.com/europe/watches/casio/product.W-219H-2AV/', kind: official }
     movement: quartz
@@ -76,6 +80,7 @@ models:
     discontinued: false
   - id: w-219h-4av
     ref: W-219H-4AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219H-4AV/'
     source:
       { url: 'https://web.archive.org/web/20250122152900id_/https://www.casio.com/us/watches/casio/product.W-219H-4AV/', kind: official }
     movement: quartz
@@ -90,6 +95,7 @@ models:
     discontinued: false
   - id: w-219h-8bv
     ref: W-219H-8BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219H-8BV/'
     source:
       { url: 'https://web.archive.org/web/20240715101630id_/https://www.casio.com/europe/watches/casio/product.W-219H-8BV/', kind: official }
     movement: quartz
@@ -104,6 +110,7 @@ models:
     discontinued: false
   - id: w-219hb-3av
     ref: W-219HB-3AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219HB-3AV/'
     source:
       { url: 'https://web.archive.org/web/20240119142120id_/https://www.casio.com/us/watches/casio/product.W-219HB-3AV/', kind: official }
     movement: quartz
@@ -118,6 +125,7 @@ models:
     discontinued: false
   - id: w-219hb-5av
     ref: W-219HB-5AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219HB-5AV/'
     source:
       { url: 'https://web.archive.org/web/20250122192730id_/https://www.casio.com/us/watches/casio/product.W-219HB-5AV/', kind: official }
     movement: quartz
@@ -132,6 +140,7 @@ models:
     discontinued: false
   - id: w-219hc-2bv
     ref: W-219HC-2BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219HC-2BV/'
     source:
       { url: 'https://web.archive.org/web/20240408193748id_/https://www.casio.com/us/watches/casio/product.W-219HC-2BV/', kind: official }
     movement: quartz
@@ -146,6 +155,7 @@ models:
     discontinued: false
   - id: w-219hc-3bv
     ref: W-219HC-3BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219HC-3BV/'
     source:
       { url: 'https://web.archive.org/web/20250114231016id_/https://www.casio.com/us/watches/casio/product.W-219HC-3BV/', kind: official }
     movement: quartz
@@ -160,6 +170,7 @@ models:
     discontinued: false
   - id: w-219hc-8bv
     ref: W-219HC-8BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.W-219HC-8BV/'
     source:
       { url: 'https://web.archive.org/web/20240722020717id_/https://www.casio.com/id/watches/casio/product.W-219HC-8BV/', kind: official }
     features: [alarm, stopwatch]
@@ -171,6 +182,7 @@ models:
     discontinued: false
   - id: w-219hd-1av
     ref: W-219HD-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-219HD-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102935id_/https://www.casio.com/europe/watches/casio/product.W-219HD-1AV/', kind: official }
     movement: quartz

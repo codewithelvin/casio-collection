@@ -20,6 +20,7 @@ series:
 models:
   - id: mtp-m300d-1av
     ref: MTP-M300D-1AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-M300D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20230408012641id_/https://www.casio.com/intl/watches/casio/product.MTP-M300D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: mtp-m300d-2av
     ref: MTP-M300D-2AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-M300D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20230707034054id_/https://www.casio.com/in/watches/casio/product.MTP-M300D-2AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: mtp-m300d-3av
     ref: MTP-M300D-3AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-M300D-3AV/'
     source:
       { url: 'https://web.archive.org/web/20230707033457id_/https://www.casio.com/in/watches/casio/product.MTP-M300D-3AV/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: mtp-m300d-7av
     ref: MTP-M300D-7AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-M300D-7AV/'
     source:
       { url: 'https://web.archive.org/web/20230414015208id_/https://www.casio.com/intl/watches/casio/product.MTP-M300D-7AV/', kind: official }
     display: analog
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: mtp-m300l-1av
     ref: MTP-M300L-1AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-M300L-1AV/'
     source:
       { url: 'https://web.archive.org/web/20241119160440id_/https://www.casio.com/intl/watches/casio/product.MTP-M300L-1AV/', kind: official }
     display: analog
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: mtp-m300l-7av
     ref: MTP-M300L-7AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-M300L-7AV/'
     source:
       { url: 'https://web.archive.org/web/20241115130238id_/https://www.casio.com/in/watches/casio/product.MTP-M300L-7AV/', kind: official }
     display: analog
@@ -110,6 +116,7 @@ models:
     discontinued: false
   - id: mtp-m300m-2av
     ref: MTP-M300M-2AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-M300M-2AV/'
     source:
       { url: 'https://web.archive.org/web/20230413121818id_/https://www.casio.com/intl/watches/casio/product.MTP-M300M-2AV/', kind: official }
     display: analog
@@ -125,6 +132,7 @@ models:
     discontinued: false
   - id: mtp-m300m-7av
     ref: MTP-M300M-7AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-M300M-7AV/'
     source:
       { url: 'https://web.archive.org/web/20230313000812id_/https://www.casio.com/intl/watches/casio/product.MTP-M300M-7AV/', kind: official }
     display: analog

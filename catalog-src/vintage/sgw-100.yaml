@@ -56,6 +56,7 @@ series:
 models:
   - id: sgw-100-1v
     ref: SGW-100-1V
+    official_url: 'https://www.casio.com/us/watches/casio/product.SGW-100-1V/'
     source:
       { url: 'https://web.archive.org/web/20240715101834id_/https://www.casio.com/europe/watches/casio/product.SGW-100-1V/', kind: official }
     movement: quartz
@@ -70,6 +71,7 @@ models:
     discontinued: false
   - id: sgw-100-2b
     ref: SGW-100-2B
+    official_url: 'https://www.casio.com/us/watches/casio/product.SGW-100-2B/'
     source:
       { url: 'https://web.archive.org/web/20240715101828id_/https://www.casio.com/europe/watches/casio/product.SGW-100-2B/', kind: official }
     movement: quartz
@@ -84,6 +86,7 @@ models:
     discontinued: false
   - id: sgw-100-3av
     ref: SGW-100-3AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.SGW-100-3AV/'
     source:
       { url: 'https://web.archive.org/web/20220818042235id_/https://www.casio.com/us/watches/casio/product.SGW-100-3AV/', kind: official }
     movement: quartz
@@ -98,6 +101,7 @@ models:
     discontinued: false
   - id: sgw-100b-3v
     ref: SGW-100B-3V
+    official_url: 'https://www.casio.com/us/watches/casio/product.SGW-100B-3V/'
     source:
       { url: 'https://web.archive.org/web/20220511180027id_/https://www.casio.com/us/watches/casio/product.SGW-100B-3V/', kind: official }
     movement: quartz
@@ -112,6 +116,7 @@ models:
     discontinued: false
   - id: sgw-100j-1
     ref: SGW-100J-1
+    official_url: 'https://www.casio.com/jp/watches/casio/product.SGW-100J-1/'
     source:
       { url: 'https://web.archive.org/web/20210518034716id_/https://www.casio.com/jp/watches/casio/product.SGW-100J-1/', kind: official }
     case: { height_mm: 51.5, width_mm: 47.6, depth_mm: 13.2, weight_g: 55, material: 'Resin / Aluminium' }

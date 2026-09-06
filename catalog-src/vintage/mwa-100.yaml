@@ -20,6 +20,7 @@ series:
 models:
   - id: mwa-100h-1a2v
     ref: MWA-100H-1A2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.MWA-100H-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20240922024729id_/https://www.casio.com/us/watches/casio/product.MWA-100H-1A2V/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: mwa-100h-1av
     ref: MWA-100H-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MWA-100H-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240922024907id_/https://www.casio.com/us/watches/casio/product.MWA-100H-1AV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: mwa-100h-2a
     ref: MWA-100H-2A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.MWA-100H-2A/'
     source:
       { url: 'https://web.archive.org/web/20220511123826id_/https://www.casio.com/jp/watches/casio/product.MWA-100H-2A/', kind: official }
     case: { height_mm: 50.6, width_mm: 50.6, depth_mm: 13.5, weight_g: 53 }
@@ -75,6 +78,7 @@ models:
     discontinued: false
   - id: mwa-100h-2av
     ref: MWA-100H-2AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MWA-100H-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240715101442id_/https://www.casio.com/europe/watches/casio/product.MWA-100H-2AV/', kind: official }
     display: analog
@@ -90,6 +94,7 @@ models:
     discontinued: false
   - id: mwa-100h-7av
     ref: MWA-100H-7AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MWA-100H-7AV/'
     source:
       { url: 'https://web.archive.org/web/20220701055554id_/https://www.casio.com/us/watches/casio/product.MWA-100H-7AV/', kind: official }
     display: analog
@@ -105,6 +110,7 @@ models:
     discontinued: false
   - id: mwa-100hb-1av
     ref: MWA-100HB-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MWA-100HB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102755id_/https://www.casio.com/europe/watches/casio/product.MWA-100HB-1AV/', kind: official }
     display: analog
@@ -120,6 +126,7 @@ models:
     discontinued: false
   - id: mwa-100hd-1av
     ref: MWA-100HD-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MWA-100HD-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102511id_/https://www.casio.com/europe/watches/casio/product.MWA-100HD-1AV/', kind: official }
     display: analog
@@ -135,6 +142,7 @@ models:
     discontinued: false
   - id: mwa-100hd-2av
     ref: MWA-100HD-2AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.MWA-100HD-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102800id_/https://www.casio.com/europe/watches/casio/product.MWA-100HD-2AV/', kind: official }
     display: analog
@@ -150,6 +158,7 @@ models:
     discontinued: false
   - id: mwa-100hd-7av
     ref: MWA-100HD-7AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MWA-100HD-7AV/'
     source:
       { url: 'https://web.archive.org/web/20240715102808id_/https://www.casio.com/europe/watches/casio/product.MWA-100HD-7AV/', kind: official }
     display: analog

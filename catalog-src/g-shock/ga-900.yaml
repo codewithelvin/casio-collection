@@ -20,6 +20,7 @@ series:
 models:
   - id: ga-900-1a
     ref: GA-900-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715065423id_/https://www.casio.com/europe/watches/gshock/product.GA-900-1A/', kind: official }
     year: 2020
@@ -39,6 +40,7 @@ models:
     discontinued: false
   - id: ga-900-2a
     ref: GA-900-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900-2A/'
     source:
       { url: 'https://web.archive.org/web/20240715065438id_/https://www.casio.com/europe/watches/gshock/product.GA-900-2A/', kind: official }
     year: 2020
@@ -58,6 +60,7 @@ models:
     discontinued: false
   - id: ga-900-4a
     ref: GA-900-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900-4A/'
     source:
       { url: 'https://web.archive.org/web/20240715065440id_/https://www.casio.com/europe/watches/gshock/product.GA-900-4A/', kind: official }
     year: 2020
@@ -77,6 +80,7 @@ models:
     discontinued: false
   - id: ga-900a-1a9
     ref: GA-900A-1A9
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900A-1A9/'
     source:
       { url: 'https://web.archive.org/web/20240910175528id_/https://www.casio.com/in/watches/gshock/product.GA-900A-1A9/', kind: official }
     year: 2020
@@ -96,6 +100,7 @@ models:
     discontinued: false
   - id: ga-900ag-1a
     ref: GA-900AG-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900AG-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715021256id_/https://www.casio.com/europe/watches/gshock/product.GA-900AG-1A/', kind: official }
     year: 2021
@@ -115,6 +120,7 @@ models:
     discontinued: false
   - id: ga-900as-1a
     ref: GA-900AS-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900AS-1A/'
     source:
       { url: 'https://web.archive.org/web/20220511205254id_/https://www.casio.com/us/watches/gshock/product.GA-900AS-1A/', kind: official }
     year: 2021
@@ -134,6 +140,7 @@ models:
     discontinued: false
   - id: ga-900as-7a
     ref: GA-900AS-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900AS-7A/'
     source:
       { url: 'https://web.archive.org/web/20220818221346id_/https://www.casio.com/us/watches/gshock/product.GA-900AS-7A/', kind: official }
     year: 2021
@@ -153,6 +160,7 @@ models:
     discontinued: false
   - id: ga-900bep-8a
     ref: GA-900BEP-8A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-900BEP-8A/'
     source:
       { url: 'https://web.archive.org/web/20240715021300id_/https://www.casio.com/europe/watches/gshock/product.GA-900BEP-8A/', kind: official }
     year: 2021
@@ -172,6 +180,7 @@ models:
     discontinued: false
   - id: ga-900c-1a4
     ref: GA-900C-1A4
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900C-1A4/'
     source:
       { url: 'https://web.archive.org/web/20240715021251id_/https://www.casio.com/europe/watches/gshock/product.GA-900C-1A4/', kind: official }
     year: 2020
@@ -191,6 +200,7 @@ models:
     discontinued: false
   - id: ga-900dbr-3a
     ref: GA-900DBR-3A
+    official_url: 'https://www.casio.com/intl/watches/gshock/product.GA-900DBR-3A/'
     source:
       { url: 'https://web.archive.org/web/20220625133405id_/https://www.casio.com/in/watches/gshock/product.GA-900DBR-3A/', kind: official }
     year: 2021
@@ -210,6 +220,7 @@ models:
     discontinued: false
   - id: ga-900e-1a3
     ref: GA-900E-1A3
+    official_url: 'https://www.casio.com/de/watches/gshock/product.GA-900E-1A3/'
     source:
       { url: 'https://web.archive.org/web/20240715021254id_/https://www.casio.com/europe/watches/gshock/product.GA-900E-1A3/', kind: official }
     year: 2020
@@ -229,6 +240,7 @@ models:
     discontinued: false
   - id: ga-900gc-7a
     ref: GA-900GC-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900GC-7A/'
     source:
       { url: 'https://web.archive.org/web/20240715021623id_/https://www.casio.com/europe/watches/gshock/product.GA-900GC-7A/', kind: official }
     year: 2021
@@ -248,6 +260,7 @@ models:
     discontinued: false
   - id: ga-900hc-3a
     ref: GA-900HC-3A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900HC-3A/'
     source:
       { url: 'https://web.archive.org/web/20220529023625id_/https://www.casio.com/us/watches/gshock/product.ga-900hc-3a/', kind: official }
     year: 2021
@@ -267,6 +280,7 @@ models:
     discontinued: false
   - id: ga-900hc-5a
     ref: GA-900HC-5A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900HC-5A/'
     source:
       { url: 'https://web.archive.org/web/20220814093900id_/https://www.casio.com/my/watches/gshock/product.GA-900HC-5A/', kind: official }
     year: 2021
@@ -286,6 +300,7 @@ models:
     discontinued: false
   - id: ga-900ske-8a
     ref: GA-900SKE-8A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900SKE-8A/'
     source:
       { url: 'https://web.archive.org/web/20240715021609id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKE-8A/', kind: official }
     year: 2021
@@ -305,6 +320,7 @@ models:
     discontinued: false
   - id: ga-900skl-2a
     ref: GA-900SKL-2A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900SKL-2A/'
     source:
       { url: 'https://web.archive.org/web/20240715021617id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKL-2A/', kind: official }
     year: 2022
@@ -324,6 +340,7 @@ models:
     discontinued: false
   - id: ga-900skl-7a
     ref: GA-900SKL-7A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900SKL-7A/'
     source:
       { url: 'https://web.archive.org/web/20240715021620id_/https://www.casio.com/europe/watches/gshock/product.GA-900SKL-7A/', kind: official }
     year: 2022
@@ -343,6 +360,7 @@ models:
     discontinued: false
   - id: ga-900ts-4a
     ref: GA-900TS-4A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900TS-4A/'
     source:
       { url: 'https://web.archive.org/web/20240715021612id_/https://www.casio.com/europe/watches/gshock/product.GA-900TS-4A/', kind: official }
     year: 2021
@@ -362,6 +380,7 @@ models:
     discontinued: false
   - id: ga-900ts-6a
     ref: GA-900TS-6A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900TS-6A/'
     source:
       { url: 'https://web.archive.org/web/20240715021614id_/https://www.casio.com/europe/watches/gshock/product.GA-900TS-6A/', kind: official }
     year: 2021
@@ -381,6 +400,7 @@ models:
     discontinued: false
   - id: ga-900vb-1a
     ref: GA-900VB-1A
+    official_url: 'https://www.casio.com/us/watches/gshock/product.GA-900VB-1A/'
     source:
       { url: 'https://web.archive.org/web/20240715021627id_/https://www.casio.com/europe/watches/gshock/product.GA-900VB-1A/', kind: official }
     year: 2021

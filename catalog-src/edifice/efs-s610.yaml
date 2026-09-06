@@ -20,6 +20,7 @@ series:
 models:
   - id: efs-s610d-1av
     ref: EFS-S610D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFS-S610D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20221015122856id_/https://www.casio.com/intl/watches/edifice/product.EFS-S610D-1AV/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: efs-s610db-1av
     ref: EFS-S610DB-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFS-S610DB-1AV/'
     source:
       { url: 'https://web.archive.org/web/20221001040743id_/https://www.casio.com/sg/watches/edifice/product.EFS-S610DB-1AV/', kind: official }
     display: analog
@@ -48,6 +50,7 @@ models:
     discontinued: false
   - id: efs-s610hg-1av
     ref: EFS-S610HG-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFS-S610HG-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714221010id_/https://www.casio.com/europe/watches/edifice/product.EFS-S610HG-1AV/', kind: official }
     display: analog

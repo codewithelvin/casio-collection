@@ -20,6 +20,7 @@ series:
 models:
   - id: bga-290-1a
     ref: BGA-290-1A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290-1A/'
     source:
       { url: 'https://web.archive.org/web/20230322091706id_/https://www.casio.com/in/watches/babyg/product.BGA-290-1A/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: bga-290-5a
     ref: BGA-290-5A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290-5A/'
     source:
       { url: 'https://web.archive.org/web/20230322091954id_/https://www.casio.com/in/watches/babyg/product.BGA-290-5A/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: bga-290-8a
     ref: BGA-290-8A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290-8A/'
     source:
       { url: 'https://web.archive.org/web/20230322092214id_/https://www.casio.com/in/watches/babyg/product.BGA-290-8A/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: bga-290bd-4a
     ref: BGA-290BD-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290BD-4A/'
     source:
       { url: 'https://web.archive.org/web/20220127234655id_/https://www.casio.com/sg/watches/babyg/product.BGA-290BD-4A/', kind: official }
     display: analog
@@ -80,6 +84,7 @@ models:
     discontinued: false
   - id: bga-290bd-6a
     ref: BGA-290BD-6A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290BD-6A/'
     source:
       { url: 'https://web.archive.org/web/20220706035643id_/https://www.casio.com/my/watches/babyg/product.BGA-290BD-6A/', kind: official }
     display: analog
@@ -95,6 +100,7 @@ models:
     discontinued: false
   - id: bga-290bd-7a
     ref: BGA-290BD-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290BD-7A/'
     source:
       { url: 'https://web.archive.org/web/20220127230804id_/https://www.casio.com/sg/watches/babyg/product.BGA-290BD-7A/', kind: official }
     display: analog
@@ -110,6 +116,7 @@ models:
     discontinued: false
   - id: bga-290dr-1a
     ref: BGA-290DR-1A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290DR-1A/'
     source:
       { url: 'https://web.archive.org/web/20221203222039id_/https://www.casio.com/sg/watches/babyg/product.BGA-290DR-1A/', kind: official }
     display: analog
@@ -125,6 +132,7 @@ models:
     discontinued: false
   - id: bga-290dr-7a
     ref: BGA-290DR-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290DR-7A/'
     source:
       { url: 'https://web.archive.org/web/20220518002017id_/https://www.casio.com/my/watches/babyg/product.BGA-290DR-7A/', kind: official }
     display: analog
@@ -140,6 +148,7 @@ models:
     discontinued: false
   - id: bga-290ds-4a
     ref: BGA-290DS-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290DS-4A/'
     source:
       { url: 'https://web.archive.org/web/20240408193228id_/https://www.casio.com/intl/watches/babyg/product.BGA-290DS-4A/', kind: official }
     display: analog
@@ -155,6 +164,7 @@ models:
     discontinued: false
   - id: bga-290ds-7a
     ref: BGA-290DS-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290DS-7A/'
     source:
       { url: 'https://web.archive.org/web/20231216203451id_/https://www.casio.com/sg/watches/babyg/product.BGA-290DS-7A/', kind: official }
     display: analog
@@ -170,6 +180,7 @@ models:
     discontinued: false
   - id: bga-290pa-4a
     ref: BGA-290PA-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290PA-4A/'
     source:
       { url: 'https://web.archive.org/web/20240206101643id_/https://www.casio.com/intl/watches/babyg/product.BGA-290PA-4A/', kind: official }
     display: analog
@@ -185,6 +196,7 @@ models:
     discontinued: false
   - id: bga-290pa-7a
     ref: BGA-290PA-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290PA-7A/'
     source:
       { url: 'https://web.archive.org/web/20240206101644id_/https://www.casio.com/intl/watches/babyg/product.BGA-290PA-7A/', kind: official }
     display: analog
@@ -200,6 +212,7 @@ models:
     discontinued: false
   - id: bga-290sa-2a
     ref: BGA-290SA-2A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290SA-2A/'
     source:
       { url: 'https://web.archive.org/web/20240119142315id_/https://www.casio.com/intl/watches/babyg/product.BGA-290SA-2A/', kind: official }
     display: analog
@@ -215,6 +228,7 @@ models:
     discontinued: false
   - id: bga-290sa-4a
     ref: BGA-290SA-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290SA-4A/'
     source:
       { url: 'https://web.archive.org/web/20240206101644id_/https://www.casio.com/intl/watches/babyg/product.BGA-290SA-4A/', kind: official }
     display: analog
@@ -230,6 +244,7 @@ models:
     discontinued: false
   - id: bga-290sw-4a
     ref: BGA-290SW-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290SW-4A/'
     source:
       { url: 'https://web.archive.org/web/20230324190224id_/https://www.casio.com/in/watches/babyg/product.BGA-290SW-4A/', kind: official }
     display: analog
@@ -245,6 +260,7 @@ models:
     discontinued: false
   - id: bga-290sw-7a
     ref: BGA-290SW-7A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290SW-7A/'
     source:
       { url: 'https://web.archive.org/web/20230130234556id_/https://www.casio.com/in/watches/babyg/product.BGA-290SW-7A/', kind: official }
     display: analog
@@ -260,6 +276,7 @@ models:
     discontinued: false
   - id: bga-290us-2a
     ref: BGA-290US-2A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290US-2A/'
     source:
       { url: 'https://web.archive.org/web/20240722125507id_/https://www.casio.com/id/watches/babyg/product.BGA-290US-2A/', kind: official }
     features: [alarm, stopwatch, super-illuminator]
@@ -271,6 +288,7 @@ models:
     discontinued: false
   - id: bga-290us-4a
     ref: BGA-290US-4A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290US-4A/'
     source:
       { url: 'https://web.archive.org/web/20240722125510id_/https://www.casio.com/id/watches/babyg/product.BGA-290US-4A/', kind: official }
     features: [alarm, stopwatch, super-illuminator]
@@ -282,6 +300,7 @@ models:
     discontinued: false
   - id: bga-290us-6a
     ref: BGA-290US-6A
+    official_url: 'https://www.casio.com/intl/watches/babyg/product.BGA-290US-6A/'
     source:
       { url: 'https://web.archive.org/web/20241008181011id_/https://www.casio.com/intl/watches/babyg/product.BGA-290US-6A/', kind: official }
     display: analog

@@ -20,6 +20,7 @@ series:
 models:
   - id: eqb-510d-1a
     ref: EQB-510D-1A
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EQB-510D-1A/'
     source:
       { url: 'https://web.archive.org/web/20230315092502id_/https://www.casio.com/us/watches/edifice/product.EQB-510D-1A/', kind: official }
     display: analog

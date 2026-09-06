@@ -46,6 +46,7 @@ series:
 models:
   - id: pag-240-1
     ref: PAG-240-1
+    official_url: 'https://www.casio.com/us/watches/protrek/product.PAG-240-1/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3246/qw3246_EN.pdf',
@@ -147,6 +148,7 @@ models:
     discontinued: true
   - id: pag-240t-7
     ref: PAG-240T-7
+    official_url: 'https://www.casio.com/us/watches/protrek/product.PAG-240T-7/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/32/3246/qw3246_EN.pdf',

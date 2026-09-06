@@ -20,6 +20,7 @@ series:
 models:
   - id: efb-680d-1av
     ref: EFB-680D-1AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFB-680D-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220602id_/https://www.casio.com/europe/watches/edifice/product.EFB-680D-1AV/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efb-680d-2bv
     ref: EFB-680D-2BV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFB-680D-2BV/'
     source:
       { url: 'https://web.archive.org/web/20240714220614id_/https://www.casio.com/europe/watches/edifice/product.EFB-680D-2BV/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efb-680d-7av
     ref: EFB-680D-7AV
+    official_url: 'https://www.casio.com/de/watches/edifice/product.EFB-680D-7AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220531id_/https://www.casio.com/europe/watches/edifice/product.EFB-680D-7AV/', kind: official }
     display: analog

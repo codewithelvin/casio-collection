@@ -20,6 +20,7 @@ series:
 models:
   - id: f-84w-1
     ref: F-84W-1
+    official_url: 'https://www.casio.com/jp/watches/casio/product.F-84W-1/'
     source:
       { url: 'https://web.archive.org/web/20210805132619id_/https://www.casio.com/jp/watches/casio/product.F-84W-1/', kind: official }
     case: { height_mm: 38.7, width_mm: 33.4, depth_mm: 8.5, weight_g: 21 }

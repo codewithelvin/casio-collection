@@ -20,6 +20,7 @@ series:
 models:
   - id: aq-s810w-1a2
     ref: AQ-S810W-1A2
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AQ-S810W-1A2/'
     source:
       { url: 'https://web.archive.org/web/20210917124141id_/https://www.casio.com/jp/watches/casio/product.AQ-S810W-1A2/', kind: official }
     case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 13.8, weight_g: 39.5 }
@@ -32,6 +33,7 @@ models:
     discontinued: false
   - id: aq-s810w-1a3v
     ref: AQ-S810W-1A3V
+    official_url: 'https://www.casio.com/us/watches/casio/product.AQ-S810W-1A3V/'
     source:
       { url: 'https://web.archive.org/web/20220517021032id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-1A3V/', kind: official }
     display: ana-digi
@@ -41,6 +43,7 @@ models:
     discontinued: false
   - id: aq-s810w-1a4v
     ref: AQ-S810W-1A4V
+    official_url: 'https://www.casio.com/us/watches/casio/product.AQ-S810W-1A4V/'
     source:
       { url: 'https://web.archive.org/web/20220628000742id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-1A4V/', kind: official }
     display: ana-digi
@@ -50,6 +53,7 @@ models:
     discontinued: false
   - id: aq-s810w-1av
     ref: AQ-S810W-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AQ-S810W-1AV/'
     source:
       { url: 'https://web.archive.org/web/20250325144549id_/https://www.casio.com/my/watches/casio/product.AQ-S810W-1AV/', kind: official }
     display: ana-digi
@@ -64,6 +68,7 @@ models:
     discontinued: false
   - id: aq-s810w-1bv
     ref: AQ-S810W-1BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.AQ-S810W-1BV/'
     source:
       { url: 'https://web.archive.org/web/20240721132050id_/https://www.casio.com/id/watches/casio/product.AQ-S810W-1BV/', kind: official }
     case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40 }
@@ -77,6 +82,7 @@ models:
     discontinued: false
   - id: aq-s810w-2a3v
     ref: AQ-S810W-2A3V
+    official_url: 'https://www.casio.com/us/watches/casio/product.AQ-S810W-2A3V/'
     source:
       { url: 'https://web.archive.org/web/20220628001449id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-2A3V/', kind: official }
     display: ana-digi
@@ -91,6 +97,7 @@ models:
     discontinued: false
   - id: aq-s810w-3av
     ref: AQ-S810W-3AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AQ-S810W-3AV/'
     source:
       { url: 'https://web.archive.org/web/20220627230733id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-3AV/', kind: official }
     display: ana-digi
@@ -105,6 +112,7 @@ models:
     discontinued: false
   - id: aq-s810w-8a
     ref: AQ-S810W-8A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AQ-S810W-8A/'
     source:
       { url: 'https://web.archive.org/web/20211028105144id_/https://www.casio.com/jp/watches/casio/product.AQ-S810W-8A/', kind: official }
     case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 13.8, weight_g: 39.5 }
@@ -117,6 +125,7 @@ models:
     discontinued: false
   - id: aq-s810wc-4av
     ref: AQ-S810WC-4AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AQ-S810WC-4AV/'
     source:
       { url: 'https://web.archive.org/web/20230218221146id_/https://www.casio.com/us/watches/casio/product.AQ-S810WC-4AV/', kind: official }
     display: ana-digi
@@ -126,6 +135,7 @@ models:
     discontinued: false
   - id: aq-s810wc-7a
     ref: AQ-S810WC-7A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.AQ-S810WC-7A/'
     source:
       { url: 'https://web.archive.org/web/20221202054541id_/https://www.casio.com/jp/watches/casio/product.AQ-S810WC-7A/', kind: official }
     case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40 }
@@ -138,6 +148,7 @@ models:
     discontinued: false
   - id: aq-s810wc-7av
     ref: AQ-S810WC-7AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.AQ-S810WC-7AV/'
     source:
       { url: 'https://web.archive.org/web/20241217052036id_/https://www.casio.com/us/watches/casio/product.AQ-S810WC-7AV/', kind: official }
     display: ana-digi

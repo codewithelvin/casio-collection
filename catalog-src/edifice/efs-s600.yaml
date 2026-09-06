@@ -20,6 +20,7 @@ series:
 models:
   - id: efs-s600d-1a2v
     ref: EFS-S600D-1A2V
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFS-S600D-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20240714221002id_/https://www.casio.com/europe/watches/edifice/product.EFS-S600D-1A2V/', kind: official }
     display: analog
@@ -34,6 +35,7 @@ models:
     discontinued: false
   - id: efs-s600d-1a4v
     ref: EFS-S600D-1A4V
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFS-S600D-1A4V/'
     source:
       { url: 'https://web.archive.org/web/20240714221024id_/https://www.casio.com/europe/watches/edifice/product.EFS-S600D-1A4V/', kind: official }
     display: analog

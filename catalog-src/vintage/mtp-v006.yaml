@@ -20,6 +20,7 @@ series:
 models:
   - id: mtp-v006d-1c
     ref: MTP-V006D-1C
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006D-1C/'
     source:
       { url: 'https://web.archive.org/web/20240722020816id_/https://www.casio.com/id/watches/casio/product.MTP-V006D-1C/', kind: official }
     case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 93 }
@@ -31,6 +32,7 @@ models:
     discontinued: false
   - id: mtp-v006d-7b
     ref: MTP-V006D-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006D-7B/'
     source:
       { url: 'https://web.archive.org/web/20220516192520id_/https://www.casio.com/in/watches/casio/product.MTP-V006D-7B/', kind: official }
     display: analog
@@ -45,6 +47,7 @@ models:
     discontinued: false
   - id: mtp-v006d-7c
     ref: MTP-V006D-7C
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006D-7C/'
     source:
       { url: 'https://web.archive.org/web/20240722020748id_/https://www.casio.com/id/watches/casio/product.MTP-V006D-7C/', kind: official }
     case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 93 }
@@ -56,6 +59,7 @@ models:
     discontinued: false
   - id: mtp-v006g-1c
     ref: MTP-V006G-1C
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006G-1C/'
     source:
       { url: 'https://web.archive.org/web/20240722020802id_/https://www.casio.com/id/watches/casio/product.MTP-V006G-1C/', kind: official }
     case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 93 }
@@ -67,6 +71,7 @@ models:
     discontinued: false
   - id: mtp-v006g-9b
     ref: MTP-V006G-9B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006G-9B/'
     source:
       { url: 'https://web.archive.org/web/20240704161450id_/https://www.casio.com/br/watches/casio/product.MTP-V006G-9B/', kind: official }
     case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 93 }
@@ -78,6 +83,7 @@ models:
     discontinued: false
   - id: mtp-v006gl-7b
     ref: MTP-V006GL-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006GL-7B/'
     source:
       { url: 'https://web.archive.org/web/20240704161455id_/https://www.casio.com/br/watches/casio/product.MTP-V006GL-7B/', kind: official }
     case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46 }
@@ -89,6 +95,7 @@ models:
     discontinued: false
   - id: mtp-v006gl-9b
     ref: MTP-V006GL-9B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006GL-9B/'
     source:
       { url: 'https://web.archive.org/web/20210927140002id_/https://www.casio.com/my/watches/casio/product.MTP-V006GL-9B/', kind: official }
     display: analog
@@ -103,6 +110,7 @@ models:
     discontinued: false
   - id: mtp-v006l-1b
     ref: MTP-V006L-1B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006L-1B/'
     source:
       { url: 'https://web.archive.org/web/20240704161504id_/https://www.casio.com/br/watches/casio/product.MTP-V006L-1B/', kind: official }
     case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46 }
@@ -114,6 +122,7 @@ models:
     discontinued: false
   - id: mtp-v006l-1c
     ref: MTP-V006L-1C
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006L-1C/'
     source:
       { url: 'https://web.archive.org/web/20240722020838id_/https://www.casio.com/id/watches/casio/product.MTP-V006L-1C/', kind: official }
     case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46 }
@@ -125,6 +134,7 @@ models:
     discontinued: false
   - id: mtp-v006l-7b
     ref: MTP-V006L-7B
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006L-7B/'
     source:
       { url: 'https://web.archive.org/web/20240704161515id_/https://www.casio.com/br/watches/casio/product.MTP-V006L-7B/', kind: official }
     case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46 }
@@ -136,6 +146,7 @@ models:
     discontinued: false
   - id: mtp-v006l-7c
     ref: MTP-V006L-7C
+    official_url: 'https://www.casio.com/intl/watches/casio/product.MTP-V006L-7C/'
     source:
       { url: 'https://web.archive.org/web/20240722020810id_/https://www.casio.com/id/watches/casio/product.MTP-V006L-7C/', kind: official }
     case: { height_mm: 45.1, width_mm: 38, depth_mm: 9.4, weight_g: 46 }

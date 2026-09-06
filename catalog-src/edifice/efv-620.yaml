@@ -20,6 +20,7 @@ series:
 models:
   - id: efv-620d-1a2v
     ref: EFV-620D-1A2V
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFV-620D-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20240714220854id_/https://www.casio.com/europe/watches/edifice/product.EFV-620D-1A2V/', kind: official }
     display: analog
@@ -35,6 +36,7 @@ models:
     discontinued: false
   - id: efv-620d-1a4v
     ref: EFV-620D-1A4V
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFV-620D-1A4V/'
     source:
       { url: 'https://web.archive.org/web/20240714220845id_/https://www.casio.com/europe/watches/edifice/product.EFV-620D-1A4V/', kind: official }
     display: analog
@@ -50,6 +52,7 @@ models:
     discontinued: false
   - id: efv-620d-2av
     ref: EFV-620D-2AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-620D-2AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220850id_/https://www.casio.com/europe/watches/edifice/product.EFV-620D-2AV/', kind: official }
     display: analog
@@ -65,6 +68,7 @@ models:
     discontinued: false
   - id: efv-620l-1av
     ref: EFV-620L-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFV-620L-1AV/'
     source:
       { url: 'https://web.archive.org/web/20240714220901id_/https://www.casio.com/europe/watches/edifice/product.EFV-620L-1AV/', kind: official }
     display: analog

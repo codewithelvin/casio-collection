@@ -29,6 +29,7 @@ series:
 models:
   - id: she-3069pg-2a
     ref: SHE-3069PG-2A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-3069PG-2A/'
     source:
       { url: 'https://web.archive.org/web/20220520073019id_/https://www.casio.com/intl/watches/sheen/product.SHE-3069PG-2A/', kind: official }
     display: analog
@@ -44,6 +45,7 @@ models:
     discontinued: false
   - id: she-3069pg-9a
     ref: SHE-3069PG-9A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-3069PG-9A/'
     source:
       { url: 'https://web.archive.org/web/20220629013256id_/https://www.casio.com/intl/watches/sheen/product.SHE-3069PG-9A/', kind: official }
     display: analog
@@ -59,6 +61,7 @@ models:
     discontinued: false
   - id: she-3069sg-4a
     ref: SHE-3069SG-4A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-3069SG-4A/'
     source:
       { url: 'https://web.archive.org/web/20220516091427id_/https://www.casio.com/intl/watches/sheen/product.SHE-3069SG-4A/', kind: official }
     display: analog
@@ -74,6 +77,7 @@ models:
     discontinued: false
   - id: she-3069spg-7a
     ref: SHE-3069SPG-7A
+    official_url: 'https://www.casio.com/intl/watches/sheen/product.SHE-3069SPG-7A/'
     source:
       { url: 'https://web.archive.org/web/20220518133119id_/https://www.casio.com/intl/watches/sheen/product.SHE-3069SPG-7A/', kind: official }
     display: analog

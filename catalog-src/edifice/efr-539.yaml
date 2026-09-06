@@ -68,6 +68,7 @@ series:
 models:
   - id: efr-539bk-1a2v
     ref: EFR-539BK-1A2V
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-539BK-1A2V/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -84,6 +85,7 @@ models:
     discontinued: false
   - id: efr-539bk-1av
     ref: EFR-539BK-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-539BK-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -100,6 +102,7 @@ models:
     discontinued: false
   - id: efr-539d-1a2v
     ref: EFR-539D-1A2V
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFR-539D-1A2V/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -116,6 +119,7 @@ models:
     discontinued: false
   - id: efr-539d-1av
     ref: EFR-539D-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-539D-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -132,6 +136,7 @@ models:
     discontinued: false
   - id: efr-539de-2av
     ref: EFR-539DE-2AV
+    official_url: 'https://www.casio.com/us/watches/edifice/product.EFR-539DE-2AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -143,6 +148,7 @@ models:
     discontinued: false
   - id: efr-539de-3av
     ref: EFR-539DE-3AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-539DE-3AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -154,6 +160,7 @@ models:
     discontinued: false
   - id: efr-539de-8av
     ref: EFR-539DE-8AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-539DE-8AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -170,6 +177,7 @@ models:
       url: 'https://shopcasio.fjbl.co.id/products/efr-539de-8avudf'
   - id: efr-539l-1av
     ref: EFR-539L-1AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-539L-1AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -186,6 +194,7 @@ models:
     discontinued: false
   - id: efr-539l-5av
     ref: EFR-539L-5AV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-539L-5AV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
@@ -202,6 +211,7 @@ models:
     discontinued: false
   - id: efr-539l-7cv
     ref: EFR-539L-7CV
+    official_url: 'https://www.casio.com/intl/watches/edifice/product.EFR-539L-7CV/'
     source:
       {
         url: 'https://www.casio.com/content/dam/casio/global/support/manuals/watches/pdf/53/5345/qw5345_EN.pdf',
