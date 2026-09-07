@@ -573,6 +573,35 @@ const en = {
   'request.failed': 'That did not send. Trying again usually settles it.',
   'request.duplicate': 'You have already reported that one — it is on the list.',
 
+  // Reading that queue (0006, client 2026-09-08). One account sees this page.
+  //
+  // The copy is for a maintainer rather than a visitor, so it is allowed to name
+  // decisions — D63 in particular, because "it is already in the catalogue, you
+  // just cannot see it" is the finding this page exists to surface and it makes
+  // no sense without the rule behind it.
+  'admin.requests.title': 'Reported references',
+  'admin.requests.lead':
+    'What visitors could not find. Nothing here has changed the catalogue — this is the queue, and it is read-only.',
+  'admin.requests.empty.title': 'Nothing reported yet',
+  'admin.requests.empty.body':
+    'When somebody uses “Can’t find your watch?” it appears here. An empty list means nobody has, not that something is broken.',
+  'admin.requests.failed.title': 'The queue did not load',
+  'admin.requests.failed.body':
+    'The read is refused unless your account carries the flag from migration 0006. If you have just applied it, sign out and back in — the check runs against the session you are holding.',
+  'admin.requests.count.missing': 'Not in the catalogue',
+  'admin.requests.count.withheld': 'Held back for a photograph',
+  'admin.requests.count.catalogued': 'Already catalogued',
+  'admin.requests.count.withdrawn': 'Withdrawn',
+  'admin.requests.verdict.missing': 'Not in the catalogue — seed it',
+  'admin.requests.verdict.withheld': 'In the catalogue, no photograph (D63) — find one',
+  'admin.requests.verdict.catalogued': 'Already here and visible — a search problem, not a gap',
+  'admin.requests.verdict.withdrawn': 'Withdrawn deliberately (D2)',
+  'admin.requests.asked.one': 'one person asked',
+  'admin.requests.asked.many': 'people asked',
+  'admin.requests.open': 'Open the watch',
+  'admin.requests.notes': 'Notes',
+  'admin.requests.links': 'Links',
+
   // Suggesting a correction to a watch that IS catalogued (client, 2026-08-22).
   //
   // The sibling of the D22 report above, and the copy has the same job: say what

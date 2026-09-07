@@ -1,8 +1,10 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import {
   deleteOwnAccount,
+  fetchCatalogRequests,
   fetchCollection,
   fetchCollectors,
+  fetchIsAdmin,
   fetchListedOwners,
   fetchModelOwnerCounts,
   fetchOwnLinks,
@@ -563,5 +565,72 @@ describe('publishing the profile picture (D71)', () => {
     db.invokeResult = { data: null, error: { message: 'not configured' } }
 
     await expect(setAvatarPublished(true)).rejects.toThrow('not configured')
+  })
+})
+
+/**
+ * 0006 — the review page's two reads, and the asymmetry between them.
+ *
+ * `fetchIsAdmin` answers a question the screen asks before it renders anything,
+ * so every kind of no has to arrive as `false` rather than as an exception: a
+ * paused project, a function that was never deployed, no session at all. A throw
+ * there would take out the route with a stack trace instead of the 404 a
+ * stranger is supposed to see. `fetchCatalogRequests` runs only after that
+ * answer was yes, so a failure in it is a real fault and must not be swallowed.
+ *
+ * This is the same shape as the avatar function's twelve silent days, read the
+ * other way round: turning every no into `null` is right when the answer is
+ * "show them less" and wrong when it is "the thing you were promised is broken".
+ */
+describe('the request queue', () => {
+  it('asks the database who is admin rather than deciding in the client', async () => {
+    db.result = { data: true, error: null }
+
+    await expect(fetchIsAdmin()).resolves.toBe(true)
+    expect(db.lastRpc?.name).toBe('is_admin')
+  })
+
+  /**
+   * The load-bearing one. `data` comes back as `null` for a caller the function
+   * refuses, and `null === true` is false — but a truthiness check would also
+   * pass on the string `'false'` or on `0`, and PostgREST has handed this
+   * codebase stranger shapes than that. The comparison is explicit on purpose.
+   */
+  it('is not admin when the database says anything other than true', async () => {
+    for (const data of [false, null, undefined, 'true', 0, {}]) {
+      db.result = { data, error: null }
+      await expect(fetchIsAdmin()).resolves.toBe(false)
+    }
+  })
+
+  it('is not admin when the call itself failed, and does not throw', async () => {
+    db.result = { data: null, error: { message: 'function is_admin does not exist' } }
+
+    await expect(fetchIsAdmin()).resolves.toBe(false)
+  })
+
+  it('reads the queue through the function, never the table', async () => {
+    db.result = {
+      data: [{ id: 2, ref: 'GA-2100-1A1', link: null, note: null, created_at: 'now' }],
+      error: null,
+    }
+
+    await expect(fetchCatalogRequests()).resolves.toHaveLength(1)
+    expect(db.lastRpc?.name).toBe('catalog_request_queue')
+    // 0003 gave catalog_requests no select policy and 0004 revoked select from
+    // authenticated. A read that named the table would be a change to both.
+    expect(db.lastTable).toBe('')
+  })
+
+  it('turns a refused queue read into a thrown error', async () => {
+    db.result = { data: null, error: { message: 'permission denied' } }
+
+    await expect(fetchCatalogRequests()).rejects.toThrow('permission denied')
+  })
+
+  it('reads an empty queue as empty rather than as a fault', async () => {
+    db.result = { data: null, error: null }
+
+    await expect(fetchCatalogRequests()).resolves.toEqual([])
   })
 })

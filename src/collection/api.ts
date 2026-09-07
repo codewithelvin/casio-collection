@@ -475,6 +475,66 @@ export async function submitCatalogRequest(
 }
 
 /**
+ * A queued report, as `catalog_request_queue()` returns it.
+ *
+ * **No `user_id`, and the function does not return one** — see 0006. One row is
+ * one distinct person, because the unique index is on (user_id, upper(ref)), so
+ * counting rows per reference answers "how many people asked" without anything
+ * about *which* people leaving the database.
+ */
+export interface CatalogRequestRow {
+  id: number
+  ref: string
+  link: string | null
+  note: string | null
+  created_at: string
+}
+
+/**
+ * 0006 — is the signed-in caller the one account that may read the queue?
+ *
+ * Asked on its own rather than inferred from an empty queue, because those are
+ * different answers that look identical: an admin with nothing waiting and a
+ * stranger who may not look both see zero rows. The screen shows the 404 for one
+ * and an empty state for the other.
+ *
+ * **A false here is not a failure**, so this returns rather than throws for the
+ * ordinary no. A caller with no session, a project that is not wired up (§14.2),
+ * a function that is not deployed — every one of them means "not the admin", and
+ * the screen's answer to all of them is the same 404 a stranger gets.
+ */
+export async function fetchIsAdmin(): Promise<boolean> {
+  try {
+    const supabase = await getSupabase()
+    const { data, error } = await supabase.rpc('is_admin')
+    if (error) return false
+    return data === true
+  } catch {
+    return false
+  }
+}
+
+/**
+ * D22's queue, newest first, for the one account 0006 grants it to.
+ *
+ * There is no argument and no filter. The whole table is small by construction —
+ * FR-9.5 caps each account at twenty reports — so this grows with the number of
+ * people using the site rather than with how much they ask for, and paginating
+ * it would add a way to be wrong about the length of a list whose whole problem
+ * was that nobody could see it.
+ *
+ * Unlike `fetchIsAdmin`, this one throws. By the time it runs the caller has
+ * already been told they are the admin, so a failure here is a real fault and
+ * the screen has something worth saying about it.
+ */
+export async function fetchCatalogRequests(): Promise<CatalogRequestRow[]> {
+  const supabase = await getSupabase()
+  const { data, error } = await supabase.rpc('catalog_request_queue')
+  if (error) throw new Error(`requests: ${error.message}`)
+  return (data ?? []) as CatalogRequestRow[]
+}
+
+/**
  * FR-7.6 — irreversible, and it takes no argument.
  *
  * The row removed is `auth.uid()`'s because the function has no parameter to

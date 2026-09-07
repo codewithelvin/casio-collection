@@ -179,6 +179,40 @@ async function main() {
     process.exit(1)
   }
 
+  /**
+   * **The variable was set and held the wrong kind of key for weeks.**
+   *
+   * On 2026-09-08 `SUPABASE_ACCESS_TOKEN` in `.env.local` held an `sb_secret_…`
+   * **service-role key**. The Management API cannot decode that as a token and
+   * answered `401 JWT could not be decoded`, which reads as an expired login
+   * rather than as the wrong credential entirely — so `db:check` and `fn:list`
+   * had both been failing in a way that invited re-authenticating instead of
+   * looking at the value. A service-role key is also perfectly valid *somewhere
+   * else* in this project (it is what `/casio-catalog requests` and the avatar
+   * function want, S2), which is exactly why it lands in the wrong variable.
+   *
+   * The name of a variable is a status nobody checks, and it decays the same way
+   * every other unchecked status here has. So the shape is checked before the
+   * request rather than after the refusal, and the message names what was found
+   * — never the value, which is a secret in both cases.
+   */
+  if (!token.startsWith('sbp_')) {
+    const kind = token.startsWith('sb_secret_')
+      ? 'a service-role secret key (sb_secret_…)'
+      : token.startsWith('sb_publishable_')
+        ? 'a publishable key (sb_publishable_…)'
+        : `something starting "${token.slice(0, 3)}…"`
+    console.error(
+      `migrate: SUPABASE_ACCESS_TOKEN holds ${kind}, not a personal access token.\n\n` +
+        '  This wants a Management API token, which starts `sbp_` and is made at\n' +
+        '      https://supabase.com/dashboard/account/tokens\n\n' +
+        '  A service-role key cannot run DDL through this API. If that is what is\n' +
+        '  in there, it is a real key for a different job — give it its own name\n' +
+        '  (SUPABASE_SERVICE_ROLE_KEY) rather than deleting it.',
+    )
+    process.exit(1)
+  }
+
   if (check) {
     await runCheck(ref, token)
     return

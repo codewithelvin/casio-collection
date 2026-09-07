@@ -167,6 +167,22 @@ export const routes: RouteObject[] = [
       // network at all (D1 makes every other page a file), so it is also the
       // only one with a real error state rather than a fallback.
       { path: 'collectors', lazy: () => themed(() => import('./routes/collectors')) },
+      /**
+       * 0006 — D22's queue, for the one account that may read it.
+       *
+       * **`themed` and deliberately not `guarded`**, which is the one place in
+       * this table where the §7.3 column is chosen against the obvious answer.
+       * `guarded` renders the sign-in panel over a blurred page, and that panel
+       * is an announcement: it tells anyone who guesses this URL that something
+       * is behind it. This screen does its own checking and answers a guest, a
+       * signed-in stranger and a typo with the identical 404 — see its header.
+       *
+       * It is in no sitemap, has no prerendered page, and nothing on the site
+       * links to it, so `npm run crawl` never reaches it and D66's gate has
+       * nothing to reconcile. `404.html` is a copy of `index.html` (D13), so
+       * typing the address still boots the router and resolves this route.
+       */
+      { path: 'admin/requests', lazy: () => themed(() => import('./routes/admin')) },
       { path: 'auth/callback', lazy: () => themed(() => import('./routes/auth')) },
       { path: '*', lazy: () => themed(() => import('./routes/notFound')) },
     ],
