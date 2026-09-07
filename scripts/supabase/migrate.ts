@@ -143,6 +143,29 @@ select
                         'model_owner_counts','listed_owners'))          as readers_present,
   exists (select 1 from pg_trigger
            where tgname = 'collection_items_bump_counts')               as counter_trigger,
+
+  -- 0006 (D79). The first three are the migration landing; the last two are the
+  -- two ways it could land and still be wrong, which is why they are phrased as
+  -- the *absence* of something rather than the presence.
+  exists (select 1 from information_schema.columns
+           where table_schema = 'public' and table_name = 'profiles'
+             and column_name = 'is_admin')                              as profiles_is_admin,
+  (select count(*) from pg_proc p
+     join pg_namespace n on n.oid = p.pronamespace
+    where n.nspname = 'public'
+      and p.proname in ('is_admin','catalog_request_queue'))            as queue_readers_present,
+  (select count(*) from public.profiles where is_admin)                 as admin_count,
+  -- FR-9.6 rests on this absence and D79 did not change it. A select policy
+  -- appearing here later would be somebody making a read convenient.
+  not exists (select 1 from pg_policies
+               where schemaname = 'public' and tablename = 'catalog_requests'
+                 and cmd = 'SELECT')                          as requests_still_unreadable,
+  -- D71's rule, applied to D79's column. In the allow-list, this site hands any
+  -- signed-in visitor everyone's reports.
+  not exists (select 1 from information_schema.column_privileges
+               where table_schema = 'public' and table_name = 'profiles'
+                 and grantee = 'authenticated' and privilege_type = 'UPDATE'
+                 and column_name = 'is_admin')                          as is_admin_unwritable,
   -- D14's own cautionary tale, still unverified since 2026-08-17: a probe table
   -- left in production with RLS off, readable by a public key. Reported, never
   -- dropped by this script — deleting somebody's table is not a check.
@@ -262,6 +285,14 @@ async function runCheck(ref: string, token: string) {
     ['blanket_policy_dropped', true],
     ['readers_present', 4],
     ['counter_trigger', true],
+    ['profiles_is_admin', true],
+    ['queue_readers_present', 2],
+    // Exactly one. Zero means the seeding block matched nobody and the page
+    // renders a 404 for its own owner; more than one is a grant nobody made
+    // deliberately, and this is the only place it would ever be noticed.
+    ['admin_count', 1],
+    ['requests_still_unreadable', true],
+    ['is_admin_unwritable', true],
   ]
 
   let bad = 0
@@ -279,7 +310,7 @@ async function runCheck(ref: string, token: string) {
     )
   }
 
-  console.log(bad === 0 ? '\n0005 is applied.' : `\n${bad} check(s) failed.`)
+  console.log(bad === 0 ? '\n0005 and 0006 are applied.' : `\n${bad} check(s) failed.`)
   if (bad > 0) process.exit(1)
 }
 

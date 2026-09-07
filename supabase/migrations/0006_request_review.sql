@@ -137,7 +137,10 @@ grant execute on function public.is_admin(), public.catalog_request_queue()
 -- looking applied.
 do $$
 declare
-  target constant text := 'REPLACE-WITH-YOUR-HANDLE';
+  -- `elvin`, codewithelvin@gmail.com, the first profile this project ever had
+  -- (2026-08-25) and the only account named Elvin that has a handle at all —
+  -- which is what makes this match unambiguous rather than a choice between two.
+  target constant text := 'elvin';
   touched integer;
 begin
   if target = 'REPLACE-WITH-YOUR-HANDLE' then
