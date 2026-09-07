@@ -535,6 +535,28 @@ export async function fetchCatalogRequests(): Promise<CatalogRequestRow[]> {
 }
 
 /**
+ * 0007 — clear a reference off the queue once it has been dealt with.
+ *
+ * **Ids, not a reference.** The page groups by a normalised reference and that
+ * normalisation lives in `requestQueue.ts`; asking the database to re-derive it
+ * would give two definitions of "the same reference" that agree until they do
+ * not, and on that day this deletes the wrong rows.
+ *
+ * The returned count is what actually happened, and the caller is expected to
+ * refetch rather than trust its own optimism. A refused caller and a caller
+ * naming rows that are already gone both get 0 — the screen cannot tell them
+ * apart and does not need to, because the answer to both is *show what is
+ * really there*.
+ */
+export async function dismissCatalogRequests(ids: readonly number[]): Promise<number> {
+  if (ids.length === 0) return 0
+  const supabase = await getSupabase()
+  const { data, error } = await supabase.rpc('dismiss_catalog_requests', { p_ids: ids })
+  if (error) throw new Error(`requests: ${error.message}`)
+  return typeof data === 'number' ? data : 0
+}
+
+/**
  * FR-7.6 — irreversible, and it takes no argument.
  *
  * The row removed is `auth.uid()`'s because the function has no parameter to

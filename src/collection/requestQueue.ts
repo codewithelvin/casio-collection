@@ -32,6 +32,15 @@ export interface QueuedRequest {
   /** The reference as the most recent reporter spelled it. */
   ref: string
   /**
+   * Every row behind this line, so dismissing it names rows rather than a
+   * reference (0007).
+   *
+   * The grouping key is a *normalised* reference and that normalisation lives
+   * here; a delete that re-derived it in SQL would give two definitions of "the
+   * same reference" that agree until they do not.
+   */
+  ids: number[]
+  /**
    * How many distinct people asked.
    *
    * One row IS one person: `catalog_requests_user_ref_idx` is unique on
@@ -116,6 +125,7 @@ export function groupRequests(
       const model = byRef.get(key)
       entry = {
         ref: row.ref.trim(),
+        ids: [],
         askedBy: 0,
         latest: row.created_at,
         notes: [],
@@ -127,6 +137,7 @@ export function groupRequests(
     }
 
     entry.askedBy += 1
+    entry.ids.push(row.id)
     const note = row.note?.trim()
     if (note) entry.notes.push(note)
     const link = row.link?.trim()

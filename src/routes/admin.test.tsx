@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { screen } from '@testing-library/react'
+import { screen, waitFor } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { renderApp } from '../test/renderApp'
 import { resetSupabaseClient } from '../auth/supabase.ts'
 import { resetSessionStore, useSessionStore } from '../auth/session.ts'
@@ -28,6 +29,8 @@ const { db, createClient } = vi.hoisted(() => {
     queue: [] as unknown[],
     /** Set when a caller names the table instead of the function. */
     tablesTouched: [] as string[],
+    /** Every dismiss_catalog_requests argument, in order. */
+    dismissed: [] as unknown[],
   }
 
   const from = vi.fn((table: string) => {
@@ -44,13 +47,19 @@ const { db, createClient } = vi.hoisted(() => {
     onAuthStateChange: vi.fn(() => ({ data: { subscription: { unsubscribe: vi.fn() } } })),
   }
 
-  const rpc = vi.fn((name: string) => {
+  const rpc = vi.fn((name: string, args?: unknown) => {
     if (name === 'is_admin') return Promise.resolve({ data: db.admin, error: null })
     if (name === 'catalog_request_queue') {
       // What the function returns to a caller it refuses: not an error, an empty
       // set. The screen must never depend on the difference, because the
       // database is the thing enforcing this and it enforces it silently.
       return Promise.resolve({ data: db.admin ? db.queue : [], error: null })
+    }
+    if (name === 'dismiss_catalog_requests') {
+      db.dismissed.push(args)
+      const ids = (args as { p_ids: number[] }).p_ids
+      if (db.admin) db.queue = db.queue.filter((r) => !ids.includes((r as { id: number }).id))
+      return Promise.resolve({ data: db.admin ? ids.length : 0, error: null })
     }
     return Promise.resolve({ data: null, error: null })
   })
@@ -86,6 +95,7 @@ beforeEach(() => {
   db.admin = false
   db.queue = []
   db.tablesTouched = []
+  db.dismissed = []
   localStorage.clear()
   resetSupabaseClient()
   resetSessionStore()
@@ -203,5 +213,98 @@ describe('what the queue says about each reference', () => {
     expect(
       await screen.findByText(`3 ${strings['admin.requests.asked.many']}`),
     ).toBeInTheDocument()
+  })
+})
+
+describe('clearing a reference off the queue (0007)', () => {
+  it('names the rows behind the line, not the reference', async () => {
+    signedIn()
+    db.admin = true
+    db.queue = [row('DW-9999Z', { id: 11 }), row('dw9999z', { id: 22 })]
+
+    renderApp('/admin/requests')
+    await screen.findByText(strings['admin.requests.title'])
+
+    await userEvent.click(await screen.findByRole('button', { name: strings['admin.requests.dismiss'] }))
+    await userEvent.click(await screen.findByRole('button', { name: strings['admin.requests.dismiss.yes'] }))
+
+    await waitFor(() => expect(db.dismissed).toHaveLength(1))
+    // Both rows, because one line is one reference and two people asked for it.
+    expect((db.dismissed[0] as { p_ids: number[] }).p_ids.sort()).toEqual([11, 22])
+  })
+
+  /**
+   * It asks before it deletes, and the confirmation is not decoration: this is
+   * the one destructive control on the site that removes somebody else's words.
+   */
+  it('does not delete anything until the confirmation is taken', async () => {
+    signedIn()
+    db.admin = true
+    db.queue = [row('DW-9999Z', { id: 11 })]
+
+    renderApp('/admin/requests')
+    await screen.findByText(strings['admin.requests.title'])
+
+    await userEvent.click(await screen.findByRole('button', { name: strings['admin.requests.dismiss'] }))
+    await screen.findByText(strings['admin.requests.dismiss.confirm'])
+
+    expect(db.dismissed).toHaveLength(0)
+  })
+
+  /**
+   * **A refusal returns 0, not an error**, and 0 is also what naming
+   * already-deleted rows returns. Reporting either as success is a list quietly
+   * claiming to be shorter than it is — the failure D79 exists to end, and a
+   * poor thing to reintroduce one migration later.
+   */
+  it('says so when nothing was removed', async () => {
+    signedIn()
+    db.admin = true
+    db.queue = [row('DW-9999Z', { id: 11 })]
+
+    renderApp('/admin/requests')
+    await screen.findByText(strings['admin.requests.title'])
+
+    // The database refuses between render and click — the shape of a session
+    // that expired, or a flag revoked in the SQL editor while the tab was open.
+    db.admin = false
+
+    await userEvent.click(await screen.findByRole('button', { name: strings['admin.requests.dismiss'] }))
+    await userEvent.click(await screen.findByRole('button', { name: strings['admin.requests.dismiss.yes'] }))
+
+    expect(await screen.findByText(strings['admin.requests.dismiss.failed'])).toBeInTheDocument()
+  })
+})
+
+describe('reaching the page from the header', () => {
+  const openMenu = async () =>
+    userEvent.click(await screen.findByRole('button', { name: strings['account.menu'] }))
+
+  it('offers the queue to the admin', async () => {
+    signedIn()
+    db.admin = true
+
+    renderApp('/')
+    await openMenu()
+
+    expect(await screen.findByText(strings['account.requests'])).toBeInTheDocument()
+  })
+
+  /**
+   * The row is the only thing on the site that points at this route — nothing in
+   * the markup does, which is what keeps it out of D66's crawl. So a signed-in
+   * stranger seeing it would be the only leak of its existence there is.
+   */
+  it('does not offer it to a signed-in stranger', async () => {
+    signedIn()
+    db.admin = false
+
+    renderApp('/')
+    await openMenu()
+
+    // Something from the menu, so this is asserting an absence in a menu that
+    // rendered rather than an absence caused by nothing having rendered at all.
+    await screen.findByText(strings['account.settings'])
+    expect(screen.queryByText(strings['account.requests'])).not.toBeInTheDocument()
   })
 })

@@ -192,3 +192,35 @@ describe('grouping the queue', () => {
     expect(counts).toEqual({ missing: 1, withheld: 1, catalogued: 1, withdrawn: 1 })
   })
 })
+
+describe('the rows behind a line', () => {
+  /**
+   * 0007 deletes by id, not by reference, and this is why: the grouping key is
+   * a *normalised* reference computed here. If the delete re-derived it in SQL
+   * there would be two definitions of "the same reference" — agreeing until the
+   * day they did not, and on that day removing the wrong rows.
+   */
+  it('carries every row id in the group, so a dismissal names rows', () => {
+    const queue = groupRequests(
+      [
+        row({ id: 11, ref: 'GW-M5610' }),
+        row({ id: 22, ref: 'gw-m5610' }),
+        row({ id: 33, ref: 'OTHER' }),
+      ],
+      [],
+    )
+
+    const group = queue.find((entry) => entry.ref === 'gw-m5610' || entry.ref === 'GW-M5610')
+    expect(group?.ids.sort()).toEqual([11, 22])
+    expect(queue.find((entry) => entry.ref === 'OTHER')?.ids).toEqual([33])
+  })
+
+  it('gives every group as many ids as it counted people', () => {
+    const queue = groupRequests(
+      [row({ ref: 'A-1' }), row({ ref: 'a1' }), row({ ref: 'B-2' })],
+      [],
+    )
+
+    for (const entry of queue) expect(entry.ids).toHaveLength(entry.askedBy)
+  })
+})

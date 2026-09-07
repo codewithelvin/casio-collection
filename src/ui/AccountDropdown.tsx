@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router-dom'
 import { clearCachedAvatar, readCachedAvatar } from '../auth/avatar.ts'
 import { useSessionStore } from '../auth/session.ts'
 import { useSignOut } from '../auth/useSignOut.ts'
+// A hook and a type, and nothing that renders. `admin.ts` was made its own
+// module so this import cannot drag a screen's worth of AntD into the header —
+// the `CollectorAvatar` fault, which arrived disguised as two flaky tests (§13).
+import { useIsAdmin } from '../collection/admin.ts'
 import AntdRoot from './AntdRoot'
 import { initials } from './initials'
 import { t } from '../i18n/strings'
@@ -48,6 +52,7 @@ function Dropdownable() {
   const user = useSessionStore((state) => state.user)
   const navigate = useNavigate()
   const signOut = useSignOut()
+  const isAdmin = useIsAdmin().data === true
 
   // `useState(readCachedAvatar)` rather than an effect: the value is already on
   // this machine, so there is no frame in which the header shows initials and
@@ -81,6 +86,22 @@ function Dropdownable() {
     { type: 'divider' },
     { key: 'collection', label: t('account.myCollection') },
     { key: 'settings', label: t('account.settings') },
+    /**
+     * D79's queue, for the one account that may read it.
+     *
+     * **The route is unlinked from every page and this row is not a
+     * contradiction of that.** Nothing in the site's markup points at it — no
+     * footer, no nav, no sitemap, no prerendered page — so a crawler cannot
+     * reach it and D66's gate has nothing to reconcile. This lives inside a menu
+     * that only renders for a signed-in session, and only once the *database*
+     * has said yes. A guest never downloads this chunk at all (§12).
+     *
+     * Spreading an empty array is how a menu omits a row. A `false` inside
+     * `items` is not a valid entry — it type-checks against `MenuProps` about as
+     * well as it renders, which is to say it becomes a runtime surprise instead
+     * of a compile error.
+     */
+    ...(isAdmin ? [{ key: 'requests', label: t('account.requests') }] : []),
     { type: 'divider' },
     { key: 'signout', label: t('account.signOut'), danger: true },
   ]
@@ -88,6 +109,7 @@ function Dropdownable() {
   const onClick: MenuProps['onClick'] = ({ key }) => {
     if (key === 'collection') navigate('/collection')
     if (key === 'settings') navigate('/settings')
+    if (key === 'requests') navigate('/admin/requests')
     if (key === 'signout') void signOut()
   }
 

@@ -601,6 +601,15 @@ const en = {
   'admin.requests.open': 'Open the watch',
   'admin.requests.notes': 'Notes',
   'admin.requests.links': 'Links',
+  // 0007 — clearing a reference off the queue. The confirmation says the two
+  // things that are actually true and easy to assume otherwise: it is gone
+  // rather than marked, and the catalogue is not what is being changed.
+  'admin.requests.dismiss': 'Done — remove it',
+  'admin.requests.dismiss.confirm':
+    'Remove this from the queue? It is deleted, not marked done, and nothing about the catalogue changes.',
+  'admin.requests.dismiss.yes': 'Remove it',
+  'admin.requests.dismiss.no': 'Keep it',
+  'admin.requests.dismiss.failed': 'That did not remove. The list below is what is really there.',
 
   // Suggesting a correction to a watch that IS catalogued (client, 2026-08-22).
   //
@@ -647,6 +656,8 @@ const en = {
   'account.menu': 'Account',
   'account.signedInAs': 'Signed in as',
   'account.myCollection': 'My Collection',
+  // D79's page, reached from the header. Only the one account sees this row.
+  'account.requests': 'Reported references',
   'account.settings': 'Settings',
   'account.signOut': 'Sign out',
   'account.restoring': 'Restoring your session',

@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import {
   deleteOwnAccount,
+  dismissCatalogRequests,
   fetchCatalogRequests,
   fetchCollection,
   fetchCollectors,
@@ -632,5 +633,58 @@ describe('the request queue', () => {
     db.result = { data: null, error: null }
 
     await expect(fetchCatalogRequests()).resolves.toEqual([])
+  })
+})
+
+/**
+ * 0007 — clearing a reference off the queue.
+ *
+ * The count coming back is the whole interface. A caller the function refuses
+ * gets 0, and so does a caller naming rows that are already gone; the screen
+ * cannot tell those apart and does not need to, because the answer to both is
+ * *go and ask what is really there*. What it must never do is assume, which is
+ * how a queue starts lying about its own length again.
+ */
+describe('dismissing a request', () => {
+  it('names the rows rather than the reference', async () => {
+    db.result = { data: 2, error: null }
+
+    await expect(dismissCatalogRequests([11, 22])).resolves.toBe(2)
+    expect(db.lastRpc?.name).toBe('dismiss_catalog_requests')
+    expect(db.lastRpc?.args).toEqual({ p_ids: [11, 22] })
+  })
+
+  it('never names the table', async () => {
+    db.result = { data: 1, error: null }
+
+    await dismissCatalogRequests([11])
+
+    // 0004 revoked delete from anon and authenticated; the function is the only
+    // delete path and it carries the identity check a table grant could not.
+    expect(db.lastTable).toBe('')
+  })
+
+  it('reads a refusal as nothing removed rather than as success', async () => {
+    db.result = { data: 0, error: null }
+
+    await expect(dismissCatalogRequests([11])).resolves.toBe(0)
+  })
+
+  it('reads a non-numeric answer as nothing removed', async () => {
+    for (const data of [null, undefined, 'ok', true]) {
+      db.result = { data, error: null }
+      await expect(dismissCatalogRequests([11])).resolves.toBe(0)
+    }
+  })
+
+  it('sends nothing at all when there is nothing to remove', async () => {
+    await expect(dismissCatalogRequests([])).resolves.toBe(0)
+    expect(db.lastRpc).toBeNull()
+  })
+
+  it('throws when the call itself failed', async () => {
+    db.result = { data: null, error: { message: 'permission denied' } }
+
+    await expect(dismissCatalogRequests([11])).rejects.toThrow('permission denied')
   })
 })

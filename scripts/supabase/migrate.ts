@@ -166,6 +166,17 @@ select
                where table_schema = 'public' and table_name = 'profiles'
                  and grantee = 'authenticated' and privilege_type = 'UPDATE'
                  and column_name = 'is_admin')                          as is_admin_unwritable,
+
+  -- 0007 (D80). The function, and the table grant that must not come back with
+  -- it: the delete path carries an identity check that a grant cannot.
+  exists (select 1 from pg_proc p
+     join pg_namespace n on n.oid = p.pronamespace
+    where n.nspname = 'public'
+      and p.proname = 'dismiss_catalog_requests')                       as dismiss_present,
+  not exists (select 1 from information_schema.role_table_grants
+               where table_schema = 'public' and table_name = 'catalog_requests'
+                 and grantee in ('anon','authenticated')
+                 and privilege_type = 'DELETE')             as requests_undeletable_by_grant,
   -- D14's own cautionary tale, still unverified since 2026-08-17: a probe table
   -- left in production with RLS off, readable by a public key. Reported, never
   -- dropped by this script — deleting somebody's table is not a check.
@@ -293,6 +304,8 @@ async function runCheck(ref: string, token: string) {
     ['admin_count', 1],
     ['requests_still_unreadable', true],
     ['is_admin_unwritable', true],
+    ['dismiss_present', true],
+    ['requests_undeletable_by_grant', true],
   ]
 
   let bad = 0
@@ -310,7 +323,7 @@ async function runCheck(ref: string, token: string) {
     )
   }
 
-  console.log(bad === 0 ? '\n0005 and 0006 are applied.' : `\n${bad} check(s) failed.`)
+  console.log(bad === 0 ? '\n0005, 0006 and 0007 are applied.' : `\n${bad} check(s) failed.`)
   if (bad > 0) process.exit(1)
 }
 
