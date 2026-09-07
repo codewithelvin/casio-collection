@@ -8,6 +8,19 @@
 # nothing (D25) and a news release states no specifications (D50). Neither page
 # is asked for what the other says.
 #
+# THE PHOTOGRAPHS COME FROM A DIFFERENT CASIO PAGE, and each one says so (D53).
+# Every *field* above is still read off the module manual named in `source`;
+# the photograph is read off Casio's own archived product page for that exact
+# reference (D52), which is what `image_credit.url` points at. The file itself
+# is served live by casio.com from the `/content/dam/` path that page names —
+# never a path derived from the reference, which is the whole of D41.
+#
+# NOT EVERY ENTRY HERE HAS ONE, and the ones without are not waiting on effort.
+# The archive holds Casio's product page for some of these references and not
+# others; an entry with no `image` is one whose page was never captured, or
+# whose capture names no asset for it. The typographic card is the state for
+# those, and it is a primary state rather than a fallback (D29).
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * any field the page does not state. Absent means unknown, never zero (D27).
@@ -470,12 +483,11 @@ models:
     case: { height_mm: 49.3, width_mm: 43.2, depth_mm: 13, weight_g: 110, material: 'Titanium' }
     water_resistance_m: 200
     features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, radio-controlled, bluetooth, tough-solar, power-saving, shock-resistant, sapphire-crystal]
-    # REFUSED on §10.3's budget, NOT on sourcing. The photograph is on disk at
-    # 414 852 bytes and encodes to 61.5 KB against a 40.0 KB budget at quality
-    # 66. Cropping made it WORSE, which is worth writing down: a tighter crop
-    # enlarges the subject and packs more detail into the same output width.
-    # The source is also only 360 px, so its 2x was never really 2x.
-    image: null
+    image: gmw-b5000tcf-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220626142636id_/https://www.casio.com/ph/watches/gshock/product.GMW-B5000TCF-2/'
     discontinued: false
   - id: gmw-b5000tcm-1
     ref: GMW-B5000TCM-1

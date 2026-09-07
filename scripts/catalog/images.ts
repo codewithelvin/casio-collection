@@ -12,8 +12,22 @@ import sharp from 'sharp'
 import { ID_PATTERN } from '../../src/catalog/schema.ts'
 import { IMAGE_DIR, RAW_IMAGE_DIR } from './load.ts'
 
-/** §10.3 — over either of these fails the build (D10). */
-const BUDGETS = { '': 40 * 1024, '@2x': 110 * 1024 } as const
+/**
+ * §10.3 — over either of these fails the build (D10).
+ *
+ * **1× was 40 KB until 2026-09-07 and is 45 KB because the client raised it
+ * (D78).** The 40 was never measured against what this pipeline produces: it
+ * was written before the quality ladder existed, and the ladder was then added
+ * to rescue watches the 40 refused. On 2026-09-07 the ladder ran out of room —
+ * `gmw-b5000tcf-2` came off Casio's own archived page and landed at 41.0 KB
+ * **at quality 66, the floor** — so the only remaining moves were to publish a
+ * photograph that misrepresents the watch, or show none. Both are worse than
+ * five kilobytes.
+ *
+ * The 2× budget is untouched at 110 KB, which is still the number that protects
+ * the page: it is the file a card actually pulls on a retina grid.
+ */
+const BUDGETS = { '': 45 * 1024, '@2x': 110 * 1024 } as const
 const WIDTHS = { '': 400, '@2x': 800 } as const
 /**
  * The quality to try, in order, until the file fits §10.3's budget.

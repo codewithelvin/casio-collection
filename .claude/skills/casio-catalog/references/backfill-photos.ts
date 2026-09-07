@@ -86,7 +86,14 @@ function readSeries(line: string): SeriesFile[] {
         for (let index = entry.start; index < entry.end; index++) {
           const ref = /^ {4}ref: (\S+)\s*$/.exec(lines[index])
           if (ref) entry.ref = ref[1]
-          if (/^ {4}image:/.test(lines[index])) entry.hasImage = true
+          // `image: null` is a WRITTEN ABSENCE, not a photograph. It means either
+          // "somebody looked and could not prove a licence" (D41) or "nobody has
+          // looked yet" â€” and both are exactly what this script exists to find.
+          // Testing that the *key* is present counted all 354 of G-SHOCK's gaps as
+          // filled, so `--plan` reported `0 do not` while the built catalogue
+          // withheld 354 watches from every grid under D63. A boolean has three
+          // states and the third one is what gets lost.
+          if (/^ {4}image:(?! *null\s*$)/.test(lines[index])) entry.hasImage = true
         }
       }
       // The last entry's `end` runs to EOF, which includes the file's trailing
@@ -368,15 +375,44 @@ for (const file of files) {
   const lines = [...file.lines]
   // Back to front, so an insertion never moves a line index still to be used.
   for (const entry of [...additions].sort((a, b) => b.start - a.start)) {
-    lines.splice(
-      entry.end,
-      0,
+    const block = [
       `    image: ${entry.id}`,
       `    image_credit:`,
       `      author: Casio Computer Co., Ltd.`,
       `      licence: rights-reserved`,
       `      url: ${quote(pageOf.get(entry.id)!)}`,
-    )
+    ]
+
+    /**
+     * A WRITTEN ABSENCE IS REPLACED, NOT APPENDED TO. While `hasImage` meant
+     * "the key is present", every candidate reaching here had no `image:` line
+     * at all and appending was safe. Now that `image: null` is a candidate,
+     * appending emits the key **twice** in one entry â€” last-one-wins in the
+     * loader, so it parses, publishes, and reads as correct while the file
+     * carries two contradictory claims.
+     *
+     * The comment above it goes too, and only if it is about the photograph:
+     * it says why there is none, and it is now false. A stale reason is worse
+     * than none, because the next reader takes it as the current account.
+     */
+    let at = -1
+    for (let index = entry.start; index < entry.end; index++) {
+      if (/^ {4}image:\s*null\s*$/.test(lines[index])) at = index
+    }
+    if (at >= 0) {
+      let from = at
+      while (
+        from - 1 >= entry.start &&
+        /^\s*#/.test(lines[from - 1]) &&
+        !/^\s*- id:/.test(lines[from - 1])
+      )
+        from -= 1
+      const comment = lines.slice(from, at).join('\n')
+      if (from < at && !/image|photograph/i.test(comment)) from = at
+      lines.splice(from, at - from + 1, ...block)
+    } else {
+      lines.splice(entry.end, 0, ...block)
+    }
     patched += 1
   }
 
