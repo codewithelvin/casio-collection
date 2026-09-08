@@ -43,12 +43,22 @@ export const qualifiedTitle = (subject: string, qualifier: string): string =>
 export const homeTitle = (): string => t('seo.home.title')
 export const lineTitle = (name: string): string => qualifiedTitle(name, t('seo.line.qualifier'))
 // `t()` takes a key and nothing else (D12) — there is no interpolation — so a
-// count is concatenated here rather than pushed into the dictionary.
-export const seriesTitle = (name: string, count: number): string =>
-  qualifiedTitle(name, `${count} ${t('seo.series.references')}`)
+// count is concatenated here rather than pushed into the dictionary, and the
+// plural is chosen here too, from two keys rather than one.
+//
+// **A count concatenated onto a fixed noun is a plural bug waiting for its
+// first `1`.** `/line/vintage/ws-1100/` shipped on 2026-09-08 reading
+// "WS-1100 — 1 references", live and in the prerendered `<title>`, and it was
+// invisible for as long as it was because no series in the catalogue had ever
+// held exactly one reference. Zero is correctly plural in English, so the
+// condition is `=== 1` and not `<= 1`.
+const references = (count: number): string =>
+  `${count} ${count === 1 ? t('seo.series.reference') : t('seo.series.references')}`
+
+export const seriesTitle = (name: string, count: number): string => qualifiedTitle(name, references(count))
 export const editionsTitle = (): string => siteTitle(t('seo.editions.title'))
 export const editionTitle = (name: string, count: number): string =>
-  qualifiedTitle(name, `${count} ${t('seo.edition.references')}`)
+  qualifiedTitle(name, `${count} ${count === 1 ? t('seo.edition.reference') : t('seo.edition.references')}`)
 export const symbolsTitle = (): string => siteTitle(t('seo.symbols.title'))
 export const collectorsTitle = (): string => siteTitle(t('route.collectors.title'))
 export const notFoundTitle = (): string => siteTitle(t('seo.notfound.title'))

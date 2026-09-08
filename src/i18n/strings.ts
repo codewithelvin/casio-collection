@@ -72,9 +72,15 @@ const en = {
   // Googlebot renders, so the shorter one is what got indexed.
   'seo.home.title': 'Casio Vault — the Casio watch catalogue, and the ones you own',
   'seo.line.qualifier': 'every reference in the catalogue',
+  // BOTH FORMS, because `t()` takes a key and nothing else (D12) — there is no
+  // interpolation and therefore no plural rule to hide in one. The singular
+  // keys were added 2026-09-08, when `ws-1100` became the first series with one
+  // reference in it and every title on the site read "1 references".
   'seo.series.references': 'references',
+  'seo.series.reference': 'reference',
   'seo.editions.title': 'Casio limited editions and collaborations',
   'seo.edition.references': 'Casio references',
+  'seo.edition.reference': 'Casio reference',
   'seo.symbols.title': 'Casio digital watch symbols explained — what every indicator means',
   'seo.watch.qualifier': 'specification',
   'seo.notfound.title': 'Page not found',
