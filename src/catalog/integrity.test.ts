@@ -383,6 +383,50 @@ describe('check 6 — a year read off another page cites it (D54)', () => {
   })
 })
 
+describe('check 6b — a feature read off another page cites it (D84)', () => {
+  // The live casio.com page for a W-735H, which lists "Vibration alarm" in words
+  // where the archived capture in the entry's own `source` does not.
+  const LIVE = 'https://www.casio.com/us/watches/casio/product.W-735H-1AV/'
+
+  it('fails a features_source with no features', () => {
+    const report = run(
+      aSource({ series: [aSeries({ models: [aModel({ features_source: LIVE })] })] }),
+    )
+    expect(checks(report.failures)).toEqual(['6b'])
+    expect(report.failures[0]?.message).toMatch(/features_source/)
+  })
+
+  it('fails a features_source beside an EMPTY features list', () => {
+    // The case a copy of check 6 would have missed. `build.ts` drops an empty
+    // list rather than publishing it, so without this the citation would reach
+    // `catalog.json` sitting beside no features at all.
+    const report = run(
+      aSource({ series: [aSeries({ models: [aModel({ features: [], features_source: LIVE })] })] }),
+    )
+    expect(checks(report.failures)).toEqual(['6b'])
+  })
+
+  it('passes features that carry the page stating one of them', () => {
+    const report = run(
+      aSource({
+        series: [
+          aSeries({ models: [aModel({ features: ['vibration-alarm'], features_source: LIVE })] })
+        ],
+      }),
+    )
+    expect(report.failures).toEqual([])
+  })
+
+  it('passes features with no features_source — the entry’s own source states them', () => {
+    // True of all but a handful of 3 862 models, so this is the normal shape and
+    // the citation is the exception.
+    const report = run(
+      aSource({ series: [aSeries({ models: [aModel({ features: ['alarm'] })] })] }),
+    )
+    expect(report.failures).toEqual([])
+  })
+})
+
 describe('check 5a — a photograph names whose it is (D41)', () => {
   const withImages = (models: SeriesSource['models']) =>
     aSource({

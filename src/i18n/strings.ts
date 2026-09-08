@@ -284,6 +284,11 @@ const en = {
   'spec.case.weight_g': 'Weight',
   'spec.water_resistance_m': 'Water resistance',
   'spec.features': 'Features',
+  // D84 — shown beneath the feature tags where one of them came from a page
+  // other than `source`. "Listed on" and not "announced": this is a page whose
+  // own words state the function, which is the whole of what D83 asks for, and
+  // it says nothing about when the watch appeared.
+  'spec.features.source': 'listed on',
   'spec.colorway': 'Colourway',
   'spec.line': 'Line',
   'spec.series': 'Series',

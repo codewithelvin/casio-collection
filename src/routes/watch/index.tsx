@@ -354,6 +354,24 @@ function WatchDetail({
                   {featureLabel(feature)}
                 </Tag>
               ))}
+              {/* D84 — a feature read off a page this entry does not otherwise
+                  cite says so, and it has to be *rendered* or the citation is
+                  bookkeeping. The nine W-735H references are the reason the
+                  field exists: their archived source page does not list the
+                  vibration alarm and Casio's live page does, so this link is
+                  the "open one URL and read" that D83 asks of every value. */}
+              {model.features_source ? (
+                <Typography.Paragraph type="secondary" style={{ marginBottom: 0 }}>
+                  <a
+                    href={model.features_source}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    style={{ fontSize: '0.875em' }}
+                  >
+                    {t('spec.features.source')} <ExportOutlined />
+                  </a>
+                </Typography.Paragraph>
+              ) : null}
             </div>
           ) : null}
 

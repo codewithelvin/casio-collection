@@ -190,6 +190,31 @@ export const MODEL = z.strictObject({
   case: CASE.nullish(),
   water_resistance_m: z.number().int().nonnegative().nullish(),
   features: z.array(z.enum(FEATURES)).nullish(),
+  /**
+   * D84 — the page that states a feature, where it is not the page in `source`.
+   *
+   * The third field of its kind, and it exists for the same reason the other two
+   * do: one entry citing two pages is honest only when it says which page said
+   * what. What forced it is the nine W-735H references. Each is sourced to an
+   * archived casio.com product page whose function list does not mention the
+   * `VIBRATION ALARM` printed on the watch's own bezel — and **D83 says a field
+   * comes from what a page says, never from what its photograph shows**, so the
+   * feature stayed unwritten and D83 named that as its price, payable "until a
+   * page states it in words".
+   *
+   * A page does. Casio's *live* product page for the same reference lists
+   * "Vibration alarm" in its own highlights, in words. It is a different page
+   * generation from every capture the archive holds, and casio.com answers 403
+   * to this repository's tooling and 200 to a person — so the value is checkable
+   * by opening one URL and reading, which is exactly the property D83 protects,
+   * while being unreachable to anything automated here.
+   *
+   * Absent wherever the features came off the same page as everything else,
+   * which is all but a handful of 3 862 models. Integrity check 6b enforces the
+   * direction that matters, as 4b and 6 do: a `features_source` with no
+   * `features` is a citation for a fact that is not there.
+   */
+  features_source: z.url().nullish(),
   colorway: z.string().min(1).nullish(),
   /** The image basename, which is the model id by convention. `null` is normal. */
   image: idField.nullish(),
@@ -296,6 +321,8 @@ export const PUBLISHED_MODEL = z.strictObject({
   case: publishedCase.optional(),
   water_resistance_m: z.number().optional(),
   features: z.array(z.enum(FEATURES)).optional(),
+  /** D84 — the page that states a feature, where it is not the one in `source`. */
+  features_source: z.url().optional(),
   colorway: z.string().optional(),
   image: z.string().optional(),
   image_credit: IMAGE_CREDIT.optional(),

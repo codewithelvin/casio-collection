@@ -82,6 +82,12 @@ function publishModel(model: Model, line: string, series: string): Record<string
     // the empty array would let it count as coverage in D26's density measure —
     // a facet claiming data it does not have is exactly what D26 forbids.
     features: model.features && model.features.length > 0 ? model.features : undefined,
+    // D84 — travels with the features for `year_source`'s reason. Dropped with
+    // them when the list is empty, so a citation is never published beside
+    // nothing: `compact` removes an undefined value, and check 6b refuses the
+    // combination at the source anyway.
+    features_source:
+      model.features && model.features.length > 0 ? model.features_source : undefined,
     colorway: model.colorway,
     image: model.image,
     image_credit: model.image_credit ? compact(model.image_credit) : undefined,

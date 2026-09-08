@@ -314,6 +314,19 @@ export function checkIntegrity(
         fail('6', where, `year_source with no year — a citation for a fact that is not there (D54)`)
       }
 
+      /* --- check 6b: a feature read off another page cites it (D84) --- */
+      if (model.features_source && (model.features == null || model.features.length === 0)) {
+        // The third of the same shape, after 4b and 6. An empty list counts as
+        // nothing to cite as well as a missing one, because the build drops an
+        // empty list rather than publishing it — so the citation would otherwise
+        // survive into `catalog.json` beside no features at all.
+        fail(
+          '6b',
+          where,
+          `features_source with no features — a citation for a fact that is not there (D84)`,
+        )
+      }
+
       /* --- check 9: a plausible year, or none --- */
       if (model.year != null) {
         const latest = options.currentYear + 1
