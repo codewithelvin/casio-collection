@@ -22,9 +22,43 @@
 # DELIBERATELY NOT WRITTEN:
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * any field the page does not state. Absent means unknown, never zero (D27).
-#   * `vibration-alarm`, which every one of these watches prints on its bezel in
-#     the photograph. The product page's own function list does not state it, and
-#     a feature read off a picture is a guess with a citation attached.
+#   * `vibration-alarm` — NO LONGER TRUE, AND THIS IS THE PARAGRAPH THAT SAID SO.
+#     It read: "which every one of these watches prints on its bezel in the
+#     photograph. The product page's own function list does not state it, and a
+#     feature read off a picture is a guess with a citation attached." That was
+#     right, and it is why D83 refused it on 2026-09-08 — while naming the price
+#     as payable "until a page states it in words".
+#
+#     A page does. Casio's **live** product page lists "Vibration alarm" in its
+#     own highlights, in words, alongside the 1/100-second stopwatch, the Super
+#     Illuminator and the 100-metre water resistance. It is a different page
+#     generation from every capture the archive holds: the client read it in
+#     their browser on 2026-09-08 and transcribed the block, and casio.com
+#     answers 403 to this repository and 200 to a person, re-measured the same
+#     day with full browser headers. So the feature is written, cited per-field
+#     through **D84's new `features_source`** rather than by re-pointing
+#     `source` — which would have cost each entry the five functions only the
+#     archived table states. Same shape as D54's `year_source`, same reason.
+#
+#     WHAT IS PROVEN AND WHAT IS ASSERTED, because the difference matters. The
+#     transcribed block is **one** page's. Four of these references have their
+#     live `/us/` page recorded as the referrer of a photograph the client
+#     downloaded — 1A2V, 1AV, 1BV, 8AV — so those pages were demonstrably open.
+#     The other three below carry it on the strength of one watch in nine
+#     colourways sharing one published block: all nine already hold identical
+#     case dimensions and water resistance in this file, each read off its own
+#     separate page. That is an assertion rather than a reading, and it is
+#     written down here rather than smoothed over. It is also **checkable in one
+#     click by anyone**, which is the property D83 exists to protect and the
+#     thing a feature read off a photograph could never offer.
+#
+#   * `vibration-alarm` on W-735H-1A and W-735H-8A, which is why seven entries
+#     below carry it and nine do not. Both are sourced to `/jp/` captures that
+#     state **no functions at all** — they are the two entries in this file with
+#     no `features` key — and their `official_url` is the Japanese page. Adding
+#     the feature there would mean asserting what a page in a language nobody
+#     here read says, and check 6b would have to be fed a features list invented
+#     to hang the citation on. Left alone.
 
 series:
   id: w-735
@@ -53,7 +87,8 @@ models:
     movement: quartz
     case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
     water_resistance_m: 100
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, vibration-alarm]
+    features_source: 'https://www.casio.com/us/watches/casio/product.W-735H-1A2V/'
     image: w-735h-1a2v
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -68,7 +103,8 @@ models:
     movement: quartz
     case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
     water_resistance_m: 100
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, vibration-alarm]
+    features_source: 'https://www.casio.com/us/watches/casio/product.W-735H-1A3V/'
     image: w-735h-1a3v
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -83,7 +119,8 @@ models:
     movement: quartz
     case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
     water_resistance_m: 100
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, vibration-alarm]
+    features_source: 'https://www.casio.com/us/watches/casio/product.W-735H-1AV/'
     image: w-735h-1av
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -98,7 +135,8 @@ models:
     movement: quartz
     case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
     water_resistance_m: 100
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, vibration-alarm]
+    features_source: 'https://www.casio.com/us/watches/casio/product.W-735H-1BV/'
     image: w-735h-1bv
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -113,7 +151,8 @@ models:
     movement: quartz
     case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
     water_resistance_m: 100
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, vibration-alarm]
+    features_source: 'https://www.casio.com/us/watches/casio/product.W-735H-2AV/'
     image: w-735h-2av
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -128,7 +167,8 @@ models:
     movement: quartz
     case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
     water_resistance_m: 100
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, vibration-alarm]
+    features_source: 'https://www.casio.com/intl/watches/casio/product.W-735H-5AV/'
     image: w-735h-5av
     image_credit:
       author: Casio Computer Co., Ltd.
@@ -156,7 +196,8 @@ models:
     movement: quartz
     case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
     water_resistance_m: 100
-    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow, vibration-alarm]
+    features_source: 'https://www.casio.com/us/watches/casio/product.W-735H-8AV/'
     image: w-735h-8av
     image_credit:
       author: Casio Computer Co., Ltd.
