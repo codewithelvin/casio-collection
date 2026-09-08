@@ -715,11 +715,46 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
-    # REFUSED on §10.3's budget, NOT on sourcing — the distinction matters.
-    # Casio's own page names a photograph and it is on disk at 3 213 793 bytes.
-    # Its @2x encodes to 115.5 KB against a 110.0 KB budget, at D56's quality
-    # floor of 66; the ladder does not go lower on purpose. A dial-busy
-    # Casioak in eight colours is simply expensive to encode.
+    # STILL REFUSED, AND THE REASON HAS CHANGED — the budget was solved and the
+    # provenance was not. Read this before spending another hour on it.
+    #
+    # THE BUDGET IS NOT THE PROBLEM ANY MORE. Asked to crop it on 2026-09-08,
+    # and measured rather than argued: the source is 1269 × 1361 and the case
+    # already touches all four edges, so the only fat is the strap sliver Casio's
+    # own asset leaves top and bottom. **A 14% vertical trim to 1269 × 1170
+    # encodes to 107.0 KB at quality 66 — inside the 110 KB budget with 3.0 KB
+    # spare — and loses no part of the watch**, all eight bezel faces, both text
+    # bands and every button still in frame. A 10% trim lands on 109.9 KB, which
+    # is 100 bytes of margin and not a place to ship from.
+    #
+    # **Cropping HORIZONTALLY makes it bigger**, which is the counter-intuitive
+    # half and is measured: 1231 × 1225 busts at every quality where 1269 × 1225
+    # fits. The output width is fixed at 800 px, so narrowing the source
+    # magnifies an expensive dial and removes nothing cheap. Same result
+    # `gmw-b5000tcf-2` got; the opposite of what cropping does to a desk shot.
+    #
+    # WHAT BLOCKS IT NOW IS D41. The raw file is on disk and **nothing on this
+    # machine can say which page named it.** The archive holds **0 captures** of
+    # this reference — measured 2026-09-08, and expected, because it is a 2026
+    # model — so the file did not come from an archived product page, and the
+    # cache that would have recorded where it did come from has been cleared.
+    # `image_credit.url` is "the page the file was taken from, so the claim can
+    # be checked" (check 5a), and a credit nobody can check is the one thing D41
+    # exists to refuse. The DAM URL is not a page and deriving one is the
+    # A159WA-N1 trap.
+    #
+    # The cheapest close: Casio still lists this reference, so `official_url`
+    # answers 200 to a person. Somebody opens it, confirms it names the
+    # photograph, and this becomes two lines with that page as the credit.
+    #
+    # **THE FILE IS PUBLISHED AND DELIBERATELY UNCLAIMED.** The crop is committed
+    # and `public/img/models/ga-2100cc-3a.webp` and its 2× exist at 37.1 KB and
+    # 107.0 KB, so `catalog:images` now exits 0 where it had been refusing this
+    # one file on every run since 2026-09-07. `catalog:audit` §2 will report them
+    # as a `.webp` no model claims, and that report is the queue: one confirmed
+    # URL turns it into an `image` and an `image_credit`. It is listed there
+    # rather than deleted because the measurement above cost an hour and the
+    # question left is a browser click.
     image: null
     discontinued: false
   - id: ga-2100cm-5a
