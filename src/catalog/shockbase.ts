@@ -8,11 +8,25 @@
  * so an entry sourced to it satisfies §10.6's one-page rule outright, instead of
  * carrying fields from a manual while citing a roster for identity.
  *
- * WHAT DID NOT CHANGE IS THE PHOTOGRAPH. ShockBase's own disclaimer says "This
- * website uses pictures from Casio websites. The copyright of these pictures is
- * owned by Casio" — a republisher describing itself. It cannot grant a licence
- * it does not hold, D41 refuses the shape, and nothing in this file reads,
- * derives or returns an image. That half of D74 stands.
+ * NOTHING IN THIS FILE READS, DERIVES OR RETURNS AN IMAGE — AND THE REASON IS NO
+ * LONGER THE ONE THIS COMMENT USED TO GIVE. It said that ShockBase's own
+ * disclaimer ("the copyright of these pictures is owned by Casio") means a
+ * republisher cannot grant a licence it does not hold, so that half of D74
+ * stands. **The client withdrew D74's photograph half on 2026-09-08**, because
+ * the argument is equally true of `web.archive.org`, which roughly three
+ * thousand of this catalogue's photographs already come through. ShockBase
+ * photographs are written now — twenty of them, in
+ * `catalog-src/g-shock/dw-8800.yaml`.
+ *
+ * The prohibition survives here as an **engineering** rule rather than a licence
+ * one, and it is both narrower and firmer: **this reader creates no ids.** It
+ * enriches entries that already exist, so an image arriving through it would
+ * reach the catalogue with nobody having looked at it — no filename checked
+ * against the reference, no stated colour checked against the picture, no human
+ * in the path at all. Photographs are fetched by URL against a hand-written
+ * entry instead. The test asserting that no image path can appear in this
+ * function's output is therefore still right and should not be relaxed; only its
+ * stated reason was wrong.
  *
  * THE PAGE IS A CHECKLIST, WHICH IS WHY THE THIRD STATE MATTERS. Every function
  * ShockBase knows about is printed on every watch page; what distinguishes them

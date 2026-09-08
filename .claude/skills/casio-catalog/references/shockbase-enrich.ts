@@ -15,9 +15,19 @@
 // looking perfectly healthy. The full URL carries `subseries` and `series` too,
 // and resolving those is most of what this file does.
 //
-// NOTHING HERE READS AN IMAGE. D74's photograph half stands: ShockBase's own
-// disclaimer says the pictures are Casio's copyright, so `image` and
-// `image_credit` are never read, never derived and never written.
+// NOTHING HERE READS AN IMAGE, and the reason is NOT D74 any more. This used to
+// say "D74's photograph half stands: ShockBase's own disclaimer says the
+// pictures are Casio's copyright". **The client withdrew that half on
+// 2026-09-08** — the same argument would rule out `web.archive.org`, where most
+// of this catalogue's photographs come from — and ShockBase photographs are
+// written now (`catalog-src/g-shock/dw-8800.yaml`, twenty of them).
+//
+// What stands is an engineering rule: **this tool creates no ids.** It enriches
+// entries that already exist, so an image arriving through it would land in the
+// catalogue unlooked-at — nobody checking the filename against the reference or
+// the stated colour against the picture. So `image` and `image_credit` are still
+// never read, derived or written here. Fetch photographs by URL against a
+// hand-written entry, the way `dw-8800.yaml` did.
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'

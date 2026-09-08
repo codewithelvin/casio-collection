@@ -233,7 +233,18 @@ describe('glass and light', () => {
   })
 })
 
-describe('nothing about photographs, ever (D74)', () => {
+/**
+ * **This reader emits no image path because it creates no ids — not because of
+ * D74.** The heading used to read "nothing about photographs, ever (D74)", and
+ * the client withdrew D74's photograph half on 2026-09-08; ShockBase
+ * photographs are in the catalogue now. What did not change is that
+ * `shockbase-enrich.ts` only touches entries that already exist, so an image
+ * arriving through this function would be published with nobody having checked
+ * the filename against the reference or the stated colour against the picture.
+ * **Keep this test.** If a future change makes this reader create entries, that
+ * is the moment to revisit it — not before.
+ */
+describe('no image path is ever emitted, because this reader creates no ids', () => {
   it('an image on the page is not read, derived or returned', () => {
     const html = `<img src="pics2/2100/GA-2100/GA-2100-1A_small.webp">` + row('Color:', 'Black')
     const reading = parseWatchPage(html)

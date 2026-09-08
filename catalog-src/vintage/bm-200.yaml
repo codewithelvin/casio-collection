@@ -26,6 +26,34 @@
 # as far as any page here states, so this is one entry — the same call already
 # made for BM-600 and BM-610.
 #
+# THE REFERENCES BEHIND THAT ONE ENTRY ARE NOW KNOWN, AND THE ID STAYS AS IT IS.
+# Investigated 2026-09-08 at the client's request, because `casiopart.com` names
+# **`BM200W-1V`, `-3V` and `-8V`** — a `W` this id does not carry — and that
+# looked at first like a permanent id (D2) recording a reference Casio never
+# used, which would call for a tombstone rather than a rename. It does not:
+#
+#   * **The module matches exactly.** casiopart files all three under module
+#     **983**, which is what `casiorestore.com` states here, read independently
+#     and months apart. Two unrelated sources agreeing on 983 is what settles
+#     that these are this watch rather than a near neighbour.
+#   * **The short form is this catalogue's established pattern, not a slip.**
+#     casiopart also names `BM600-1V` and `BM610-1V` at module **1284**, and this
+#     folder holds those as plain `BM-600` and `BM-610` at 1284 too. `LW-80`,
+#     `LW-101`, `W-81`, `MTD-1008` and `LW-22H` are all the same shape: a pre-web
+#     Casio whose source names the family without a colourway suffix.
+#   * So `bm-200` is a family reference with three colourways under it — which is
+#     what the paragraph above already said — and the colourways now have names.
+#     **If a page ever states `BM-200W-1V`, `-3V` or `-8V`, it is this watch and
+#     not a new one.** Recorded for the same reason `w-86.yaml` records its `QES`
+#     reasoning: so a future session does not seed a duplicate.
+#
+# WHERE THE `W` BELONGS IS NOT CONSISTENT ACROSS THE FAMILY, so do not
+# generalise it: BM-100 and BM-200 carry it, BM-600 and BM-610 do not. And
+# casiopart separates **`BM100W-1V` at module 510 from `BM100WJ-1V` at module
+# 560** — two different watches, and this catalogue holds the `WJ` at 560,
+# correctly. In this family a `W`/`WJ` difference is a module difference, so it
+# is never cosmetic.
+#
 # TWO OF ITS FEATURES DID NOT EXIST WHEN IT WAS FIRST WRITTEN. `acrylic-crystal`
 # and `ascent-descent-speed` were reported by the seeding run and written
 # nowhere, because rule 4 forbids a vocabulary growing as a side effect. **The
