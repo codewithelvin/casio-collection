@@ -31,8 +31,10 @@
 # rather than left to be inferred: if a Casio page for `W-86-1V` ever turns up,
 # it is this watch and not a new one.
 #
-# NO PHOTOGRAPH, AND THE TWO CANDIDATES WERE BOTH MEASURED BEFORE BEING REFUSED.
-# See the note on the entry.
+# PHOTOGRAPHED THE SAME DAY, BY THE THIRD CANDIDATE. Two were measured and
+# refused that morning, and a Wikimedia Commons file closed it that afternoon.
+# All three are recorded on the entry, because the two refusals are the reason
+# anybody went looking for a third.
 #
 # DELIBERATELY NOT WRITTEN:
 #   * `Backlight`, which the page lists among the features. The vocabulary has
@@ -41,6 +43,16 @@
 #     generic one, so a bare "Backlight" maps to nothing and rule 4 forbids
 #     inventing a value. The photograph shows ELECTRO LUMINESCENCE printed on
 #     the case, which would settle it and is exactly what D83 refuses.
+#
+#     STILL NOT WRITTEN, BUT THE REASON CHANGED ON 2026-09-08 AND IS NOW A
+#     QUESTION RATHER THAN A RULE. The Commons page the photograph is credited
+#     to states, in prose and not in a picture, "digital LCD watch with
+#     electroluminescent backlight" — so `el-backlight` would no longer be read
+#     off the dial. It would be read off a *different* page from `source`,
+#     which is exactly the shape D84's `features_source` exists for and which
+#     nothing currently uses. Whether an uploader's own description of his own
+#     watch is a specification source or only an image caption is the client's
+#     call, and it is not being made here by default.
 #   * `Water-Resistant` as a feature — that is `water_resistance_m`, not a facet.
 #   * `year`. The page states none. The reference is plainly old and D25 refuses
 #     a circa.
@@ -62,7 +74,9 @@ models:
     water_resistance_m: 50
     features: [alarm, stopwatch]
     colorway: Black
-    # REFUSED TWICE, BOTH REASONS MEASURED TODAY.
+    # THREE CANDIDATES IN ONE DAY — TWO REFUSED, THE THIRD PUBLISHED. Every
+    # figure below was measured rather than estimated, and the two refusals are
+    # kept because they are what a reviewer would otherwise have to re-derive.
     #
     # 1. The page named in `source` carries its own lead image,
     #    `i.ebayimg.com/images/g/bxYAAOSw7ytc94My/s-l640.jpg`, which is the
@@ -81,9 +95,34 @@ models:
     #    D41 asks for the page a photograph came from. It is also a styled shot
     #    on a wooden table rather than a product shot on a plain ground.
     #
-    # THE FIX IS ONE URL. The WatchCrunch post that carries that photograph
-    # would name an author and a page, and the file is already the right size.
-    # WatchCrunch answers 202 with an AWS WAF challenge to this machine and 200
-    # to a person, so this is a thing only a browser can settle.
-    image: null
+    # 3. AND THEN THE CLIENT ADDED ONE LINE TO `specs.txt` AND ALL OF THAT WENT
+    #    AWAY. The file below is Wikimedia Commons', and it answers every
+    #    objection the other two raised rather than trading one for another:
+    #    **3264 x 3264** against §10.3's 300 px floor and O21's 800 px
+    #    complaint; a named author who took it himself; an explicit CC BY-SA
+    #    4.0 with attribution required; and a file *page* — the thing D41 asks
+    #    for and candidate 2 could not produce — that answers **200 to this
+    #    machine**, so the licence was read here rather than believed.
+    #
+    #    IT NAMES OUR REFERENCE IN WORDS, which is what makes attaching it a
+    #    reading rather than a guess. The description states `Casio W-86 / W86
+    #    / W-86-1VQES "Illuminator"` — so §10.6 is satisfied off the page's own
+    #    prose, and nothing here was read off the picture (D83). The filename
+    #    alone would not have done it: it says `Casio_W-86_…`, which is the
+    #    series and not the reference.
+    #
+    #    THE PRECEDENT WAS ALREADY PUBLISHED AND IS BY THE SAME PHOTOGRAPHER.
+    #    `f-91w-1` is Multicherry's too, from the same upload batch, in the same
+    #    `(front closeup … retouch)` naming scheme, under the same licence and
+    #    cited by the same URL shape. This is not a new kind of source; it is
+    #    the second use of one that has been live for weeks.
+    #
+    #    Commons holds **seventeen** photographs of this watch — backplate,
+    #    internals, box, the EL backlight lit. Only this one is claimed. The
+    #    others are not a reserve to raid: each would need its own reading.
+    image: w-86-1vqes
+    image_credit:
+      author: Multicherry
+      licence: cc-by-sa-4.0
+      url: 'https://commons.wikimedia.org/wiki/File:Casio_W-86_digital_watch_(front_closeup_no_retouch).jpg'
     discontinued: true
