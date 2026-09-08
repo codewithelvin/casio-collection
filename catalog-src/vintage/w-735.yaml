@@ -1,0 +1,156 @@
+# W-735 — seeded 2026-09-08 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# FIVE OF THESE PHOTOGRAPHS WERE ADDED BY HAND, off the same page as `source`.
+# `seed-into.ts` wrote 1A2V, 1A3V, 1AV, 2AV and 8AV with no `image`, and their
+# pages do name one: the US locale files its assets under `us-assets/`, and
+# `imageUrl`'s `stemOf` matches `/assets/` with a leading slash, so every
+# candidate on a us/en capture is discarded and the function returns null. A page
+# that names a photograph read as a page that names none, with nothing going red.
+# The five URLs were copied verbatim off each reference's own page — nothing
+# derived, which is the rule the A159WA-N1 byte-identical-file trap exists for —
+# and each filename carries its own reference. Reported, not fixed: `archive.ts`
+# is not a file a catalogue run may write (rule 5).
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+#   * `vibration-alarm`, which every one of these watches prints on its bezel in
+#     the photograph. The product page's own function list does not state it, and
+#     a feature read off a picture is a guess with a citation attached.
+
+series:
+  id: w-735
+  name: W-735
+  line: vintage
+
+models:
+  - id: w-735h-1a
+    ref: W-735H-1A
+    source:
+      { url: 'https://web.archive.org/web/20210413045046id_/https://www.casio.com/jp/watches/casio/product.W-735H-1A/', kind: official }
+    case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50 }
+    water_resistance_m: 100
+    image: w-735h-1a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210413045046id_/https://www.casio.com/jp/watches/casio/product.W-735H-1A/'
+    discontinued: false
+  - id: w-735h-1a2v
+    ref: W-735H-1A2V
+    source:
+      { url: 'https://web.archive.org/web/20220819000044id_/https://www.casio.com/us/watches/casio/product.W-735H-1A2V/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    image: w-735h-1a2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220819000044id_/https://www.casio.com/us/watches/casio/product.W-735H-1A2V/'
+    discontinued: false
+  - id: w-735h-1a3v
+    ref: W-735H-1A3V
+    source:
+      { url: 'https://web.archive.org/web/20220819000117id_/https://www.casio.com/us/watches/casio/product.W-735H-1A3V/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    image: w-735h-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220819000117id_/https://www.casio.com/us/watches/casio/product.W-735H-1A3V/'
+    discontinued: false
+  - id: w-735h-1av
+    ref: W-735H-1AV
+    source:
+      { url: 'https://web.archive.org/web/20220822040327id_/https://www.casio.com/us/watches/casio/product.W-735H-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    image: w-735h-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220822040327id_/https://www.casio.com/us/watches/casio/product.W-735H-1AV/'
+    discontinued: false
+  - id: w-735h-1bv
+    ref: W-735H-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102532id_/https://www.casio.com/europe/watches/casio/product.W-735H-1BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    image: w-735h-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102532id_/https://www.casio.com/europe/watches/casio/product.W-735H-1BV/'
+    discontinued: false
+  - id: w-735h-2av
+    ref: W-735H-2AV
+    source:
+      { url: 'https://web.archive.org/web/20220926040451id_/https://www.casio.com/us/watches/casio/product.W-735H-2AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    image: w-735h-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220926040451id_/https://www.casio.com/us/watches/casio/product.W-735H-2AV/'
+    discontinued: false
+  - id: w-735h-5av
+    ref: W-735H-5AV
+    source:
+      { url: 'https://web.archive.org/web/20220627093056id_/https://www.casio.com/intl/watches/casio/product.W-735H-5AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    image: w-735h-5av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220627093056id_/https://www.casio.com/intl/watches/casio/product.W-735H-5AV/'
+    discontinued: false
+  - id: w-735h-8a
+    ref: W-735H-8A
+    source:
+      { url: 'https://web.archive.org/web/20210618031316id_/https://www.casio.com/jp/watches/casio/product.W-735H-8A/', kind: official }
+    case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50 }
+    water_resistance_m: 100
+    image: w-735h-8a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20210618031316id_/https://www.casio.com/jp/watches/casio/product.W-735H-8A/'
+    discontinued: false
+  - id: w-735h-8av
+    ref: W-735H-8AV
+    source:
+      { url: 'https://web.archive.org/web/20220926035939id_/https://www.casio.com/us/watches/casio/product.W-735H-8AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, afterglow]
+    image: w-735h-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220926035939id_/https://www.casio.com/us/watches/casio/product.W-735H-8AV/'
+    discontinued: false
