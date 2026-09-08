@@ -216,6 +216,71 @@ describe('what the queue says about each reference', () => {
   })
 })
 
+/**
+ * **The two layouts, and why the table needs a test of its own.**
+ *
+ * The page is a table at `lg` and the list it always was below that (client,
+ * 2026-09-08 — a table at 360 px either scrolls the page sideways or hides the
+ * dismiss button off-screen, both measured in a real browser). Every test above
+ * passes against **the list**, because jsdom answers `matches: false` to every
+ * media query and AntD's `useBreakpoint` therefore reports no breakpoint at all.
+ * That is the right default — the list is what renders before the query answers
+ * — but it also means the table branch would ship with nothing exercising it.
+ *
+ * So this block stubs `matchMedia` and asserts the part a layout swap can
+ * silently lose: **the column headings and the reporter's own link in the same
+ * render**. Notes and links sit in an expanded row here rather than in the flow,
+ * and if `defaultExpandedRowKeys` ever stops naming the rows that have detail,
+ * the link vanishes behind a click and nothing else in the suite fails.
+ */
+describe('the table layout (lg and above)', () => {
+  beforeEach(() => {
+    window.matchMedia = ((query: string) => {
+      const min = Number(/min-width:\s*(\d+)px/.exec(query)?.[1] ?? '0')
+      return {
+        matches: min <= 1200,
+        media: query,
+        onchange: null,
+        addListener: () => {},
+        removeListener: () => {},
+        addEventListener: () => {},
+        removeEventListener: () => {},
+        dispatchEvent: () => false,
+      }
+    }) as unknown as typeof window.matchMedia
+  })
+
+  it('renders columns, and still shows the reporter’s link without a click', async () => {
+    signedIn()
+    db.admin = true
+    db.queue = [
+      row('DW-9999Z', { note: 'Saw it in Tokyo', link: 'https://example.test/watch' }),
+      row('GA-2100-1A1'),
+    ]
+
+    renderApp('/admin/requests')
+
+    for (const column of ['ref', 'verdict', 'asked'] as const) {
+      expect(
+        await screen.findByRole('columnheader', {
+          name: strings[`admin.requests.column.${column}`],
+        }),
+      ).toBeInTheDocument()
+    }
+
+    // The payload the queue exists for, present on the first render.
+    expect(await screen.findByText('Saw it in Tokyo')).toBeInTheDocument()
+    expect(
+      await screen.findByRole('link', { name: 'https://example.test/watch' }),
+    ).toBeInTheDocument()
+
+    // And the destructive control is on every row rather than off in a scroll.
+    expect(
+      await screen.findAllByRole('button', { name: strings['admin.requests.dismiss'] }),
+    ).toHaveLength(2)
+  })
+})
+
 describe('clearing a reference off the queue (0007)', () => {
   it('names the rows behind the line, not the reference', async () => {
     signedIn()

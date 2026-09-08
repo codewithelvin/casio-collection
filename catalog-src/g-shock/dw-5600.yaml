@@ -1,9 +1,29 @@
-# PHOTOGRAPHS REFUSED, 64 of them, and this is the reason for every
+# PHOTOGRAPHS REFUSED, 62 of them, and this is the reason for every
 # `image: null` below that does not carry one of its own.
 #
-# These references are discontinued collaborations and regional limited runs.
-# Every route this project knows how to walk was walked, and the measurement is
-# recorded rather than the hope:
+# **THE HEADLINE CLAIM BELOW WAS WRONG AND FOUR ENTRIES NOW DISPROVE IT.** It
+# said every route had been walked. One had not, because nobody knew it existed:
+# **`casio.com/<locale>/watches/<segment>/support.<REF>/`**. Casio publishes a
+# *support* page for references it stopped selling decades ago — 7 878 of them
+# across the `in`, `my`, `sg`, `za` and `ph` locales, which are five of the
+# twelve locale sitemaps `sitemap.ts` does not read — and those pages name
+# `/content/dam/` assets. **262 of the 353 unphotographed G-SHOCK references are
+# named by that roster** (`Resources/rosters/casio-support-pages.tsv` in the
+# vault). `DW-5600TB-1`, `-4A`, `-4B` and `-6` were the first four taken, on
+# 2026-09-08, and each carries the route on its own entry.
+#
+# The catch, and the reason this is a work list rather than a finished job: the
+# support pages answer **403 to this repository and 200 to a person**, exactly
+# like the product pages, and the archive holds no captures of the ones probed.
+# The DAM itself answers 200 here. So each photograph costs one browser click by
+# somebody who can open the page, and what comes back is Casio's own 500 x 600
+# original. Nothing about the quality bar below has moved — a wrist shot is still
+# refused — and nothing about D63 has moved either. What moved is that "no page
+# exists" is no longer true.
+#
+# What remains true, and is worth keeping because it is the expensive part:
+# these references are discontinued collaborations and regional limited runs, and
+# every route BELOW was genuinely walked and genuinely empty.
 #
 #   * Casio's own archived product pages (D52) — only 7 of 384 G-SHOCK gaps had
 #     an archived page in ANY of 32 locales, and 3 of those named no asset.
@@ -18,12 +38,19 @@
 #     product URLs, but they are *series* pages and their images are AEM
 #     renditions: banners, 4:3 lifestyle crops and wrist shots. Not card images.
 #
-# So this is D29's typographic tile as a deliberate primary state, not an
-# oversight. What would change it is a source nobody here has: the client's own
-# photography, or a licensed pool. A wrist shot, a lifestyle photo or a listing
-# collage would not — those are refused on quality, not availability.
+# So each of the 62 is withheld from browsing under D63 — and note that the line
+# above once cited "D29's typographic tile as a deliberate primary state", which
+# is a mis-citation twice over: the rule lives in **D41's** consequence column,
+# and **D63 reversed it** on 2026-08-26. A watch with no photograph is now in no
+# grid at all rather than shown as a tile. D29 is the M1c sourcing spike.
 #
-# Measured 2026-08-24, re-checked 2026-08-26 against the page cache.
+# What would change it: the support-page route at the head of this file, the
+# client's own photography, or a licensed pool. A wrist shot, a lifestyle photo
+# or a listing collage still would not — those are refused on quality, not
+# availability.
+#
+# Measured 2026-08-24, re-checked 2026-08-26 against the page cache, and the
+# count corrected on 2026-09-08 when four of the 64 gained a photograph.
 # DW-5600 — seeded 2026-08-17 (M2b), the first G-SHOCK series in the catalogue
 # and the first entries anywhere in it sourced from an **official** Casio page.
 #
@@ -2821,9 +2848,22 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass, flash-alert]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    # PHOTOGRAPHED 2026-09-08, and the route is the point. Casio publishes a
+    # SUPPORT page for references it stopped selling — this one, in the `in`
+    # locale — and that page names a `/content/dam/` asset. The page answers
+    # 403 to this repository and 200 to a person, so the client opened it; the
+    # asset URL came out of the download's own Zone.Identifier stream rather
+    # than being derived, which is the rule the A159WA-N1 byte-identical trap
+    # exists for. Then the rendition suffix was dropped —
+    # `…_01.png.transform/product-panel/image.png` serves 396 x 475 and the
+    # bare `…_01.png` serves 500 x 600 — the same size-variant move Casio's
+    # DAM already allows elsewhere in this catalogue.
+    #   asset: https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/D/DW/DW5/DW-5600TB-1/assets/DW-5600TB-1_01.png
+    image: dw-5600tb-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/in/watches/gshock/support.DW-5600TB-1/'
     discontinued: true
   - id: dw-5600tb-4a
     ref: DW-5600TB-4A
@@ -2846,9 +2886,22 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass, flash-alert]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    # PHOTOGRAPHED 2026-09-08, and the route is the point. Casio publishes a
+    # SUPPORT page for references it stopped selling — this one, in the `in`
+    # locale — and that page names a `/content/dam/` asset. The page answers
+    # 403 to this repository and 200 to a person, so the client opened it; the
+    # asset URL came out of the download's own Zone.Identifier stream rather
+    # than being derived, which is the rule the A159WA-N1 byte-identical trap
+    # exists for. Then the rendition suffix was dropped —
+    # `…_01.png.transform/product-panel/image.png` serves 396 x 475 and the
+    # bare `…_01.png` serves 500 x 600 — the same size-variant move Casio's
+    # DAM already allows elsewhere in this catalogue.
+    #   asset: https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/D/DW/DW5/DW-5600TB-4A/assets/DW-5600TB-4A_01.png
+    image: dw-5600tb-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/in/watches/gshock/support.DW-5600TB-4A/'
     discontinued: true
   - id: dw-5600tb-4b
     ref: DW-5600TB-4B
@@ -2871,9 +2924,22 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass, flash-alert]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    # PHOTOGRAPHED 2026-09-08, and the route is the point. Casio publishes a
+    # SUPPORT page for references it stopped selling — this one, in the `in`
+    # locale — and that page names a `/content/dam/` asset. The page answers
+    # 403 to this repository and 200 to a person, so the client opened it; the
+    # asset URL came out of the download's own Zone.Identifier stream rather
+    # than being derived, which is the rule the A159WA-N1 byte-identical trap
+    # exists for. Then the rendition suffix was dropped —
+    # `…_01.png.transform/product-panel/image.png` serves 396 x 475 and the
+    # bare `…_01.png` serves 500 x 600 — the same size-variant move Casio's
+    # DAM already allows elsewhere in this catalogue.
+    #   asset: https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/D/DW/DW5/DW-5600TB-4B/assets/DW-5600TB-4B_01.png
+    image: dw-5600tb-4b
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/in/watches/gshock/support.DW-5600TB-4B/'
     discontinued: true
   - id: dw-5600tb-6
     ref: DW-5600TB-6
@@ -2896,9 +2962,22 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass, flash-alert]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    # PHOTOGRAPHED 2026-09-08, and the route is the point. Casio publishes a
+    # SUPPORT page for references it stopped selling — this one, in the `in`
+    # locale — and that page names a `/content/dam/` asset. The page answers
+    # 403 to this repository and 200 to a person, so the client opened it; the
+    # asset URL came out of the download's own Zone.Identifier stream rather
+    # than being derived, which is the rule the A159WA-N1 byte-identical trap
+    # exists for. Then the rendition suffix was dropped —
+    # `…_01.png.transform/product-panel/image.png` serves 396 x 475 and the
+    # bare `…_01.png` serves 500 x 600 — the same size-variant move Casio's
+    # DAM already allows elsewhere in this catalogue.
+    #   asset: https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/D/DW/DW5/DW-5600TB-6/assets/DW-5600TB-6_01.png
+    image: dw-5600tb-6
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/in/watches/gshock/support.DW-5600TB-6/'
     discontinued: true
   - id: dw-5600tcb-1
     ref: DW-5600TCB-1

@@ -612,6 +612,13 @@ const en = {
   'admin.requests.open': 'Open the watch',
   'admin.requests.notes': 'Notes',
   'admin.requests.links': 'Links',
+  // Column headings, added when the queue became a table (client, 2026-09-08).
+  // "Reported by" rather than "Asked by", because the cell holds a count and the
+  // verb belongs to the count string sitting in it.
+  'admin.requests.column.ref': 'Reference',
+  'admin.requests.column.verdict': 'Verdict',
+  'admin.requests.column.asked': 'Reported by',
+  'admin.requests.column.action': 'Action',
   // 0007 — clearing a reference off the queue. The confirmation says the two
   // things that are actually true and easy to assume otherwise: it is gone
   // rather than marked, and the catalogue is not what is being changed.
@@ -620,7 +627,7 @@ const en = {
     'Remove this from the queue? It is deleted, not marked done, and nothing about the catalogue changes.',
   'admin.requests.dismiss.yes': 'Remove it',
   'admin.requests.dismiss.no': 'Keep it',
-  'admin.requests.dismiss.failed': 'That did not remove. The list below is what is really there.',
+  'admin.requests.dismiss.failed': 'That did not remove. The table below is what is really there.',
 
   // Suggesting a correction to a watch that IS catalogued (client, 2026-08-22).
   //
