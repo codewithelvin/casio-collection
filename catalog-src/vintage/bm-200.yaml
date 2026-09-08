@@ -1,0 +1,63 @@
+# BM-200 — seeded 2026-09-08 from the D22 queue: a visitor reported it as
+# missing ("Retro barometer watch") and supplied the page below.
+#
+# BOTH WEB ROSTERS ANSWER NOTHING, which is the normal condition for a 1992
+# Casio: the archive index holds what casio.com published a page for and the
+# sitemap holds what Casio sells now. It is not in The Digital Watch Library's
+# Casio gallery either (853 slugs, walked 2026-09-08) and not at any canonical
+# slug form there — every `casio-bm-200` / `casio_bm200` variant hung to a 25 s
+# timeout while `casio_fs-12` and `casio-a168`, interleaved in the same run at
+# the same pace, answered 200 in under five seconds. `casiold.com`'s 227
+# listings do not have it.
+#
+# So the source is Vintage Casio Restore, which is `community` — a restorer's
+# documentation project, and the only page anybody has found that states this
+# watch's module and functions. It sits beside BM-100, BM-600 and BM-610 in this
+# catalogue, all three of which were written from community pages too.
+#
+# NO YEAR, AND THE PAGE IS THE REASON. It says "released around 1992",
+# "approx. 1991–1992" and gives one example's make date of 8 January 1992. Every
+# one of those is a circa or a date for a watch rather than for a reference, and
+# D25 refuses a circa year outright — `null` is the honest value, not 1992.
+#
+# TWO COLOUR VARIANTS, ONE REFERENCE. The page documents an orange-buttoned
+# version whose bezel reads WATER 100M RESIST and a rarer black-buttoned one
+# reading WATER 10BAR RESIST, and names no reference for either. Both are BM-200
+# as far as any page here states, so this is one entry — the same call already
+# made for BM-600 and BM-610.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `movement`. Battery-driven digital, and the page never says quartz.
+#   * the acrylic crystal the page states. There is no `acrylic` in
+#     `src/catalog/vocabulary.ts` — only `mineral-glass` and `sapphire-crystal`
+#     — and rule 4 forbids adding a value as a side effect of a seeding run.
+#   * the ascent/descent-speed function, which is this watch's whole point and
+#     the thing that distinguishes it from the BM-100. Also not in the
+#     vocabulary. Both are reported rather than written; both are the client's.
+#   * case dimensions. The page gives strap and lug widths only.
+#   * `family` — a human's judgement, never a seeding run's.
+
+series:
+  id: bm-200
+  name: BM-200
+  line: vintage
+
+models:
+  - id: bm-200
+    ref: BM-200
+    source: { url: 'https://casiorestore.com/casio-bm-200-technical-data-model-information/', kind: community }
+    display: digital
+    module: '983'
+    case: { material: 'Resin' }
+    water_resistance_m: 100
+    features: [stopwatch, multi-alarm, hourly-time-signal, led-light, altimeter, barometer]
+    # REFUSED, AND NOT FOR WANT OF A LICENCE. The page carries two photographs of
+    # the watch, 800 × 500 each, and both are the article's own header graphics:
+    # a cream field with "Casio BM-200 / Yellow button color version" set in large
+    # type beside the watch. Downloaded and looked at before this line was
+    # written. The dial in each prints CASIO BM-200, so they are excellent proof
+    # of identity — and a picture with a website's headline baked into the frame
+    # is not a catalogue photograph. Cropping does not rescue it: the watch
+    # occupies roughly 290 px of the 800, under §10.3's 300 px floor.
+    image: null
+    discontinued: true
