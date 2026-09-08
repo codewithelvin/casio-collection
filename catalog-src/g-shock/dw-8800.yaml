@@ -1,0 +1,179 @@
+# DW-8800 — the Codename, seeded 2026-09-08 from ShockBase, which is the first
+# time a photograph in this catalogue has come from there.
+#
+# THIS FILE EXISTS BECAUSE D74 WAS REVISED A SECOND TIME, by the client on
+# 2026-09-08. D74's field half was withdrawn on 2026-09-07; the photograph half
+# stood until today, and it is what had kept this series out. O20 asked whether
+# to write fourteen references nobody could see, was **answered no on
+# 2026-09-08**, and its row was left open with the reason recorded: it was
+# waiting on a photograph route rather than on a decision. This is that route.
+#
+# The argument that moved it is one D74 never engaged with. D74 refused a
+# ShockBase photograph because ShockBase's own disclaimer says the pictures are
+# Casio's and "a republisher cannot grant a licence it does not hold" — which is
+# true, and is **equally true of `web.archive.org`**, the republisher roughly
+# three thousand of this catalogue's photographs come through. Both are Casio's
+# product photography reached via a third party and used under D11:
+# non-commercial, attributed, withdrawn in full on request. The credit below is
+# byte-for-byte the shape every archive-sourced entry already carries.
+#
+# `src/catalog/shockbase.ts` STILL MAY NOT EMIT AN IMAGE PATH and its test still
+# asserts so. Nothing here went through it: `shockbase-enrich.ts` enriches
+# entries that exist and deliberately creates no ids, so these six were written
+# by hand and the photographs were fetched by URL. That test is not weakened by
+# this file and should not be.
+#
+# EVERY FIELD CAME OFF THE ONE PAGE NAMED IN `source`, read by the repo's own
+# parser (`shockbase-enrich.ts probe`) rather than by a new reader. That page
+# states specifications about the reference itself, so §10.6's one-page rule is
+# satisfied outright and no `year_source` is needed — the year is on the same
+# page as everything else, which is why D54's per-field citation is absent here
+# and present on the entries whose years came from a page their fields did not.
+#
+# THE MINIMAL URL IS A 200 THAT MEANS NO. `watch_dyn.php?model=<REF>` without
+# `subseries` and `series` serves half a page: every field reads empty while the
+# response looks healthy. All three parameters are in every URL below.
+#
+# THE PHOTOGRAPHS ARE FULL SIZE AND THE PAGE DOES NOT LINK THEM THAT WAY. Each
+# page names `<REF>_medium.webp`, which is 300 x 360 — at §10.3's floor, and it
+# would have been upscaled to make the 400 px file. Dropping the `_medium` and
+# asking for `<REF>.png` answers 200 at 500 x 600 and ~380 KB. That is the same
+# move Casio's own DAM allows and it is a size variant of a file the page named,
+# not a derived path to a different asset.
+#
+# IDENTITY IS PROVEN TWICE OVER for all six. Each filename carries its own
+# reference with a boundary after it, and each was reached from that reference's
+# own page — recorded in the downloaded file's Zone.Identifier stream. Then the
+# colour ShockBase states was checked against the picture: BJ-1 is the only
+# black one and the only one dated 1996, the five AJ are white and dated 1998.
+# Every dial prints WATER 20BAR RESIST, which is the 200 m the pages state.
+#
+# EIGHT MORE REFERENCES EXIST AND ARE NOT HERE. O20 counted fourteen from
+# ShockBase — `DW-8800MJ-1` and `-3`, `DW-8800MM-1T`/`-2T`/`-3T`, and three more
+# BJ siblings. They are absent for one reason only: nobody has fetched their
+# photographs, and after D63 a reference written without one publishes nothing.
+# The route is now known and cheap, so this is a work list rather than a wall.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `shock-resistant`, on a G-SHOCK. ShockBase has no row for it — it is
+#     implicit for every watch on the site — and an unstated field is absent
+#     rather than denied (D27, rule 2). It is not read off the dial print either,
+#     which is exactly what D83 forbids.
+#   * `data_memory` and `low_temp_resistance`, which all six pages state. Both
+#     are already in `KNOWN_UNMAPPED`, so the vocabulary has deliberately never
+#     had a word for them; rule 4 forbids a seeding run inventing one. Reported.
+#   * `nickname`. Every page states one — *Codename* — and the schema has no
+#     field for it. That is the open schema question, and it stays open.
+#   * `family` — a human's judgement, never a seeding run's.
+#   * `discontinued` — measured for the whole catalogue by `availability.ts`
+#     (D59), never written by hand.
+
+series:
+  id: dw-8800
+  name: DW-8800
+  line: g-shock
+  aka: [Codename, Mission Code]
+
+models:
+  - id: dw-8800aj-2at
+    ref: DW-8800AJ-2AT
+    source: { url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800AJ-2AT&subseries=DW-8800&series=8800', kind: community }
+    year: 1998
+    display: digital
+    movement: quartz
+    module: '1444'
+    case: { material: 'Resin / Nylon', height_mm: 48.5, width_mm: 43, depth_mm: 14.7, weight_g: 64 }
+    water_resistance_m: 200
+    features: [alarm, el-backlight, mineral-glass]
+    colorway: White
+    image: dw-8800aj-2at
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800AJ-2AT&subseries=DW-8800&series=8800'
+    discontinued: true
+  - id: dw-8800aj-2bt
+    ref: DW-8800AJ-2BT
+    source: { url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800AJ-2BT&subseries=DW-8800&series=8800', kind: community }
+    year: 1998
+    display: digital
+    movement: quartz
+    module: '1444'
+    case: { material: 'Resin / Nylon', height_mm: 48.5, width_mm: 43, depth_mm: 14.7, weight_g: 64 }
+    water_resistance_m: 200
+    features: [alarm, el-backlight, mineral-glass]
+    colorway: Multi
+    image: dw-8800aj-2bt
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800AJ-2BT&subseries=DW-8800&series=8800'
+    discontinued: true
+  - id: dw-8800aj-7at
+    ref: DW-8800AJ-7AT
+    source: { url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800AJ-7AT&subseries=DW-8800&series=8800', kind: community }
+    year: 1998
+    display: digital
+    movement: quartz
+    module: '1444'
+    case: { material: 'Resin / Nylon', height_mm: 48.5, width_mm: 43, depth_mm: 14.7, weight_g: 64 }
+    water_resistance_m: 200
+    features: [alarm, el-backlight, mineral-glass]
+    colorway: White
+    image: dw-8800aj-7at
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800AJ-7AT&subseries=DW-8800&series=8800'
+    discontinued: true
+  - id: dw-8800aj-7bt
+    ref: DW-8800AJ-7BT
+    source: { url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800AJ-7BT&subseries=DW-8800&series=8800', kind: community }
+    year: 1998
+    display: digital
+    movement: quartz
+    module: '1444'
+    case: { material: 'Resin / Nylon', height_mm: 48.5, width_mm: 43, depth_mm: 14.7, weight_g: 64 }
+    water_resistance_m: 200
+    features: [alarm, el-backlight, mineral-glass]
+    colorway: White
+    image: dw-8800aj-7bt
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800AJ-7BT&subseries=DW-8800&series=8800'
+    discontinued: true
+  - id: dw-8800aj-8t
+    ref: DW-8800AJ-8T
+    source: { url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800AJ-8T&subseries=DW-8800&series=8800', kind: community }
+    year: 1998
+    display: digital
+    movement: quartz
+    module: '1444'
+    case: { material: 'Resin / Nylon', height_mm: 48.5, width_mm: 43, depth_mm: 14.7, weight_g: 64 }
+    water_resistance_m: 200
+    features: [alarm, el-backlight, mineral-glass]
+    colorway: Multi
+    image: dw-8800aj-8t
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800AJ-8T&subseries=DW-8800&series=8800'
+    discontinued: true
+  - id: dw-8800bj-1
+    ref: DW-8800BJ-1
+    source: { url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800BJ-1&subseries=DW-8800&series=8800', kind: community }
+    year: 1996
+    display: digital
+    movement: quartz
+    module: '1444'
+    case: { material: 'Resin / Nylon', height_mm: 48.5, width_mm: 43, depth_mm: 14.7, weight_g: 64 }
+    water_resistance_m: 200
+    features: [alarm, el-backlight, mineral-glass]
+    colorway: Black
+    image: dw-8800bj-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://shockbase.org/watches/watch_dyn.php?model=DW-8800BJ-1&subseries=DW-8800&series=8800'
+    discontinued: true
