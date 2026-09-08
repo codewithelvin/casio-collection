@@ -321,6 +321,35 @@ Measured: 50 files for F-91W, and **zero** for GA-110, DW-6900, GM-2100,
 GMA-S2100, the Frogmen and the Mudmasters. The one GA-2100 file is a *modified*
 watch. That was O12, and it is closed by the archive rather than by Commons.
 
+**Re-tested at full scale on 2026-09-08, against every reference rather than a
+sample, and the G-SHOCK half held exactly.** Two routes, and the category tree
+is close to useless: walking `Category:Casio watches` recursively (43
+categories, 4 levels, 86 requests) returns 510 files total, matching **zero**
+of the 349 unphotographed G-SHOCK references. Full-text search is the real
+tool, and it needs a control or an empty answer is ambiguous — three known
+references (`W-86`, `F-91W`, a photographed G-SHOCK) at 5 hits each,
+interleaved with one nonsense reference at 0 hits, in the same run at the
+same pace. Against that: **349 unphotographed G-SHOCK references, one hit,
+and it is a false positive** (`DW-510` matches Norwegian mediaeval history).
+Commons is closed for the 353/349 gap, confirmed rather than merely sampled.
+
+**Vintage is a live source and a noisy one, which is a different problem.**
+The same search, same controls, against 144 unphotographed Vintage
+references: **93 returned a hit.** Reading all 93 rather than trusting the
+count found **three genuine watches** — `DBA-800`, `WQV-10`, `CA-502` — inside
+**90 coincidences**: a bare alphanumeric code (`A-155`, `W-76`, `CS-16`)
+matching a Rijksmuseum painting, a Bundesautobahn number, an EU Official
+Journal PDF, purely on substring overlap. **A hit count is not a finding until
+every hit is read.** Of the three: `DBA-800` (2782×2674, `CC BY 3.0`) names
+the reference in its own description — *"A Casio DBA-800 data bank"* — and
+would satisfy check 5a's naming test the same way W-86's Commons photograph
+does. `CA-502` (1280×960, `CC BY-SA 2.0`) does not name the reference in
+words at all. `WQV-10` carries only *"Copyrighted free use"*, a Wikimedia tag
+rather than a real licence. **Neither `cc-by-3.0` nor `cc-by-sa-2.0` is in
+`IMAGE_LICENCES`** — the vocabulary has no bare `CC BY` below 4.0 and no
+`CC BY-SA` below 3.0 — so `DBA-800` is otherwise-ready and gated on a
+vocabulary decision (O23), and nothing was written from any of the three.
+
 **The archived product page names the file, and casio.com serves it.** The page
 carries absolute `/content/dam/casio/product-info/…/assets/<REF>_Seq1.png` URLs,
 and those answer **200** live today with a browser agent. So D41's rule is met
