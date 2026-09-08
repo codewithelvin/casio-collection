@@ -47,5 +47,28 @@ models:
     # measured and looked at before this line was written; the dial prints
     # ILLUMINATOR and WATER 50M RESIST, which is what corroborates the 5 BAR the
     # page states, so the file is good evidence and still not publishable.
+    #
+    # A THIRD AND FOURTH CANDIDATE WERE SUPPLIED BY THE CLIENT 2026-09-08 and
+    # both are refused, for a reason that is not about pixels. Each carries its
+    # download URL in its Zone.Identifier stream, and both read
+    # `encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gc…&s=10` with
+    # `ReferrerUrl=https://www.google.com/` — Google Images' own cache, not a
+    # page. There is no author to credit, no licence to name and no URL a
+    # reviewer could open, because that URL is a cache key and expires; D41 asks
+    # for the page a photograph came from and a search engine's thumbnail cannot
+    # answer it. Neither filename names a reference either — they are both
+    # literally `images.jpeg`.
+    #
+    # WHAT THEY ARE *NOT* IS THE WRONG WATCH, and this line first said they were.
+    # The claim that they were two different watches was withdrawn after actually
+    # fetching the 288 px file above and putting all three side by side: identical
+    # case, identical bezel layout, ILLUMINATOR over the dial, 12/24HR upper
+    # left, MODE lower left, LIGHT across the bottom, ELECTRO LUMINESCENCE up the
+    # right. One LW-22H in three colours — the source page's own is **white**,
+    # the client's two are yellow and black. So identity is settled and it is the
+    # **credit** that blocks these, which is the opposite of what was written
+    # first. It is also why a page URL would close this in one step: this entry
+    # states no `colorway` (the source names none), and BM-200 in this same
+    # folder already carries two colour variants under one reference.
     image: null
     discontinued: true
