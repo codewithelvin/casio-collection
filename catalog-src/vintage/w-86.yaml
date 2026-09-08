@@ -1,0 +1,89 @@
+# W-86 — seeded 2026-09-08 from the D22 queue: a visitor reported it as missing
+# and the client supplied its specification block.
+#
+# NOT IN ANY OF THE THREE ROSTERS, and that is a statement about the rosters.
+# `survey.ts vintage:w-86 --deep` answers "No references. Both rosters were
+# asked" — the archive index holds what casio.com published a page for and the
+# sitemap holds what Casio sells now, and a Casio this old is invisible to both
+# by construction. The Digital Watch Library was then walked, which the skill
+# says is not optional: `casio-w-86`, `casio_w-86`, `casio-w86` and `casio_w86`
+# all hung to a 20 s timeout while `casio_fs-12` and `casio-a168`, interleaved
+# in the same run at the same pace, answered 200 in 2.6–4.8 s — seven control
+# hits across the run, thirteen target hangs. The hang is the absence. So this
+# watch is real, well known, and described by no page any of the three rosters
+# indexes.
+#
+# THE SOURCE IS eBay'S CATALOGUE PAGE, NOT A LISTING, and the difference is the
+# whole reason it is citable. The client pasted the block; the block prints its
+# own `eBay Product ID (ePID) 7032264970`, which resolves to `/p/7032264970` —
+# eBay's *catalogue* entry for the reference rather than one seller's listing.
+# It answers 200 to this machine, and every value below was read back off it
+# here rather than taken on trust, matching the paste exactly. A `/itm/` listing
+# would have been the wrong citation twice over: it 403s to this machine, and it
+# disappears when the item sells, which is a `source.url` that dies.
+#
+# THE REFERENCE CARRIES A DISTRIBUTOR SUFFIX AND THAT WAS THE CLIENT'S CALL.
+# `W-86-1VQES` is what the page prints; `QES` is a market/packaging code rather
+# than part of Casio's own reference, and `casiold.com` handling says to strip
+# such codes before matching. Stripping it to `W-86-1V` would have written a
+# reference no readable page states, so the client chose the printed form on
+# 2026-09-08. Under D2 that id is now permanent, so the choice is recorded here
+# rather than left to be inferred: if a Casio page for `W-86-1V` ever turns up,
+# it is this watch and not a new one.
+#
+# NO PHOTOGRAPH, AND THE TWO CANDIDATES WERE BOTH MEASURED BEFORE BEING REFUSED.
+# See the note on the entry.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `Backlight`, which the page lists among the features. The vocabulary has
+#     five specific light values — `el-backlight`, `led-light`,
+#     `super-illuminator`, `auto-light`, `afterglow` — and deliberately no
+#     generic one, so a bare "Backlight" maps to nothing and rule 4 forbids
+#     inventing a value. The photograph shows ELECTRO LUMINESCENCE printed on
+#     the case, which would settle it and is exactly what D83 refuses.
+#   * `Water-Resistant` as a feature — that is `water_resistance_m`, not a facet.
+#   * `year`. The page states none. The reference is plainly old and D25 refuses
+#     a circa.
+#   * `module`. Not stated.
+#   * `family` — a human's judgement, never a seeding run's.
+
+series:
+  id: w-86
+  name: W-86
+  line: vintage
+
+models:
+  - id: w-86-1vqes
+    ref: W-86-1VQES
+    source: { url: 'https://www.ebay.com/p/7032264970', kind: retailer }
+    display: digital
+    movement: quartz
+    case: { material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, stopwatch]
+    colorway: Black
+    # REFUSED TWICE, BOTH REASONS MEASURED TODAY.
+    #
+    # 1. The page named in `source` carries its own lead image,
+    #    `i.ebayimg.com/images/g/bxYAAOSw7ytc94My/s-l640.jpg`, which is the
+    #    evidence §10.6 says to prefer where a filename cannot prove identity.
+    #    It is **276 x 276**, under §10.3's 300 px floor, and asking for the
+    #    `s-l1600` variant returns the same 276 px file — so the original is
+    #    that size and there is nothing larger to crop. Downloaded and measured.
+    #
+    # 2. The client supplied a 1079 x 1350 photograph, and it is the right watch:
+    #    the case is square black resin and the dial prints ALARM CHRONO,
+    #    ELECTRO LUMINESCENCE, ILLUMINATOR and WATER 50M RESIST, corroborating
+    #    five separate values the eBay page states in words. Its
+    #    Zone.Identifier stream names `img.watchcrunch.com/...` with
+    #    `ReferrerUrl=https://www.watchcrunch.com/` — the site's **home page**,
+    #    not the post. So there is no page to credit, only an image URL, and
+    #    D41 asks for the page a photograph came from. It is also a styled shot
+    #    on a wooden table rather than a product shot on a plain ground.
+    #
+    # THE FIX IS ONE URL. The WatchCrunch post that carries that photograph
+    # would name an author and a page, and the file is already the right size.
+    # WatchCrunch answers 202 with an AWS WAF challenge to this machine and 200
+    # to a person, so this is a thing only a browser can settle.
+    image: null
+    discontinued: true
