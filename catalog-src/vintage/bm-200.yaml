@@ -26,14 +26,17 @@
 # as far as any page here states, so this is one entry — the same call already
 # made for BM-600 and BM-610.
 #
+# TWO OF ITS FEATURES DID NOT EXIST WHEN IT WAS FIRST WRITTEN. `acrylic-crystal`
+# and `ascent-descent-speed` were reported by the seeding run and written
+# nowhere, because rule 4 forbids a vocabulary growing as a side effect. **The
+# client added both on 2026-09-08 (O19), in their own commit**, and this is the
+# entry that asked for them: `ascent-descent-speed` is the one thing Casio
+# changed between the BM-100 and this watch, and describing it as an altimeter
+# would have lost the reason the model exists. Both ship as singletons and the
+# reasons are on the record beside the values.
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `movement`. Battery-driven digital, and the page never says quartz.
-#   * the acrylic crystal the page states. There is no `acrylic` in
-#     `src/catalog/vocabulary.ts` — only `mineral-glass` and `sapphire-crystal`
-#     — and rule 4 forbids adding a value as a side effect of a seeding run.
-#   * the ascent/descent-speed function, which is this watch's whole point and
-#     the thing that distinguishes it from the BM-100. Also not in the
-#     vocabulary. Both are reported rather than written; both are the client's.
 #   * case dimensions. The page gives strap and lug widths only.
 #   * `family` — a human's judgement, never a seeding run's.
 
@@ -50,7 +53,7 @@ models:
     module: '983'
     case: { material: 'Resin' }
     water_resistance_m: 100
-    features: [stopwatch, multi-alarm, hourly-time-signal, led-light, altimeter, barometer]
+    features: [stopwatch, multi-alarm, hourly-time-signal, led-light, altimeter, barometer, ascent-descent-speed, acrylic-crystal]
     # REFUSED, AND NOT FOR WANT OF A LICENCE. The page carries two photographs of
     # the watch, 800 × 500 each, and both are the article's own header graphics:
     # a cream field with "Casio BM-200 / Yellow button color version" set in large
