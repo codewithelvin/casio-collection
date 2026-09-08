@@ -1,0 +1,118 @@
+# WS-1400 — seeded 2026-09-08 from Casio's own
+# product pages, retrieved from the Internet Archive (D52). Every field on every
+# entry below, and every photograph, comes from the one page named in its
+# `source`.
+#
+# Where an entry carries a `year`, it came from a **different** Casio page — the
+# dated news release named in `year_source` (D54) — because a product page dates
+# nothing (D25) and a news release states no specifications (D50). Neither page
+# is asked for what the other says.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+
+series:
+  id: ws-1400
+  name: WS-1400
+  line: vintage
+
+models:
+  - id: ws-1400h-1av
+    ref: WS-1400H-1AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102923id_/https://www.casio.com/europe/watches/casio/product.WS-1400H-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 47.2, width_mm: 44.5, depth_mm: 13.4, weight_g: 43, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ws-1400h-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102923id_/https://www.casio.com/europe/watches/casio/product.WS-1400H-1AV/'
+    discontinued: false
+  - id: ws-1400h-1bv
+    ref: WS-1400H-1BV
+    source:
+      { url: 'https://web.archive.org/web/20240715102926id_/https://www.casio.com/europe/watches/casio/product.WS-1400H-1BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 47.2, width_mm: 44.5, depth_mm: 13.4, weight_g: 43, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ws-1400h-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102926id_/https://www.casio.com/europe/watches/casio/product.WS-1400H-1BV/'
+    discontinued: false
+  - id: ws-1400h-2av
+    ref: WS-1400H-2AV
+    source:
+      { url: 'https://web.archive.org/web/20241212093134id_/https://www.casio.com/us/watches/casio/product.WS-1400H-2AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 47.2, width_mm: 44.5, depth_mm: 13.4, weight_g: 43, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ws-1400h-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241212093134id_/https://www.casio.com/us/watches/casio/product.WS-1400H-2AV/'
+    discontinued: false
+  - id: ws-1400h-3av
+    ref: WS-1400H-3AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102929id_/https://www.casio.com/europe/watches/casio/product.WS-1400H-3AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 47.2, width_mm: 44.5, depth_mm: 13.4, weight_g: 43, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ws-1400h-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102929id_/https://www.casio.com/europe/watches/casio/product.WS-1400H-3AV/'
+    discontinued: false
+  - id: ws-1400h-4av
+    ref: WS-1400H-4AV
+    source:
+      { url: 'https://web.archive.org/web/20240715102916id_/https://www.casio.com/europe/watches/casio/product.WS-1400H-4AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 47.2, width_mm: 44.5, depth_mm: 13.4, weight_g: 43, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ws-1400h-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715102916id_/https://www.casio.com/europe/watches/casio/product.WS-1400H-4AV/'
+    discontinued: false
+  - id: ws-1400h-8av
+    ref: WS-1400H-8AV
+    source:
+      { url: 'https://web.archive.org/web/20241217212639id_/https://www.casio.com/us/watches/casio/product.WS-1400H-8AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 47.2, width_mm: 44.5, depth_mm: 13.4, weight_g: 43, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ws-1400h-8av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241217212639id_/https://www.casio.com/us/watches/casio/product.WS-1400H-8AV/'
+    discontinued: false
+  - id: ws-1400h-8bv
+    ref: WS-1400H-8BV
+    source:
+      { url: 'https://web.archive.org/web/20250115222315id_/https://www.casio.com/za/watches/casio/product.WS-1400H-8BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 47.2, width_mm: 44.5, depth_mm: 13.4, weight_g: 43, material: 'Resin' }
+    water_resistance_m: 100
+    features: [alarm, world-time, stopwatch, countdown-timer, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
+    image: ws-1400h-8bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20250115222315id_/https://www.casio.com/za/watches/casio/product.WS-1400H-8BV/'
+    discontinued: false
