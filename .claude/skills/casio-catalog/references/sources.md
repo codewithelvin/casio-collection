@@ -366,6 +366,32 @@ Two traps in the URLs themselves:
   `photos-<line>.json` manifest of what was fetched from where, and re-fetches on
   a mismatch rather than trusting that a file with the right name is the right
   file.
+- **AND THE DIFFERENCE BETWEEN LOCALES IS RESOLUTION, NOT JUST RE-ENCODING — up
+  to 70× the bytes for the identical filename.** Measured 2026-09-08:
+  `F-91W-1_Seq1.jpg` under `/locales/europe/en-gb/` is **28 KB**; the same
+  `F-91W-1_Seq1` under `/locales/intl/en/` as `.png` is **1.98 MB**. LW-200 is
+  the same story with a picture attached — the `europe`, `my` and `sg` assets its
+  archived pages named are **500 × 600**, and `intl` serves **2000 × 2000** of
+  the same seven product shots. This matters because **which locale a capture
+  came from is an accident of what the archive happened to crawl**, and it is
+  currently setting photograph quality for 2 694 of this catalogue's 3 385
+  credited images. `catalog:images` is the thing that notices — it says "only
+  500 px wide, so the 2× file is not really 2×. A better source is worth finding
+  when one exists" — and for a reference Casio still lists, one usually does.
+- **Three cautions on that, all measured rather than assumed.** `intl` is not
+  universal: `WS-1100H-1AV` exists only under `us/us-assets/` and `MQ-24-1E`
+  answered 404 at every path tried. Asset naming does not generalise either —
+  `_Seq1`, `_01` and a bare `<REF>` all occur, and which one exists varies by
+  reference, not by locale. And **a DAM 404 returns a 160,227-byte HTML body**,
+  so "it downloaded something" is not a success test; check the status code, or
+  a run of 404s reads as a run of large photographs.
+- **None of this licenses deriving a path.** The A159WA-N1 trap is unchanged:
+  `A159WA-N1.png` and `A159W-N1.png` are byte-identical, so a guessed URL can
+  answer 200 with the wrong watch. What is safe is trying **the filename a page
+  named** under another locale, and then putting the two copies side by side at
+  the same size and confirming by eye that it is the same watch in the same
+  colour before publishing. That check caught nothing on LW-200's six and it is
+  still the reason the upgrade was allowed.
 
 **Prefer an English capture even over a richer one.** Casio's `de` pages state
 the same rows in German — `Gehäusegröße (L x B x H)`, `Wasserdichtigkeit`,

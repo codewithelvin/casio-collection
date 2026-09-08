@@ -1,0 +1,179 @@
+# LW-200 — seeded 2026-09-08. The series reached this catalogue because the
+# client found it and put seven photographs in a folder; nothing here had ever
+# asked for it, and `survey.ts vintage:lw-200` answers "7 references across both
+# rosters", all seven listed by Casio and all seven with archive captures. So it
+# was an uncatalogued Vintage series in plain sight of both rosters.
+#
+# TWO PAGES PER ENTRY, AND NEITHER IS ASKED WHAT THE OTHER SAYS.
+#   * every FIELD comes from the archived Casio product page named in `source`
+#     (D52) — one capture per reference, read independently, across four locales
+#     (`europe`, `my`, `sg`, `us`).
+#   * every PHOTOGRAPH comes from the LIVE `intl` product page named in
+#     `image_credit.url`, which is a different page and is credited as one.
+#
+# WHY THE PHOTOGRAPH TAKES THE LONGER ROUTE. The archived pages do name an
+# asset each, and those were fetched first — `…/LW-200-1AV_Seq1.jpg` and its
+# siblings, **500 × 600**. `catalog:images` then said, of all six, "only 500 px
+# wide, so the 2× file is not really 2×. A better source is worth finding when
+# one exists." One does. Casio's live product pages 403 to this machine and 200
+# to a person, `/content/dam/` answers 200 to both, and the client had opened
+# all seven pages in a browser — so the asset each page names was fetchable here
+# once the page had named it. The bare `…/LW-200-1AV.png` under `intl` serves
+# **2000 × 2000**, four times the archived rendition.
+#
+# THAT IS A SIZE VARIANT OF A PAGE-NAMED FILE, NOT A DERIVED PATH, and the
+# difference is the whole of the A159WA-N1 rule: `A159WA-N1.png` and
+# `A159W-N1.png` are byte-identical, so inventing an asset URL publishes the
+# wrong watch. Both conditions were checked rather than assumed:
+#   * the seven files have seven distinct MD5s.
+#   * all six pairs were put side by side at the same size and compared by eye
+#     before this file was written — 1AV black on silver, 1BV black on black,
+#     2AV blue, 2BV cyan, 4AV red, 4BV pink, 7AV white. Each 2000 px file is the
+#     same product shot in the same colour as the 500 px file it replaced.
+#
+# THE CLIENT'S PASTED BLOCK IS CORROBORATION, NOT A SOURCE. It covers LW-200-7AV
+# only and it agrees with that reference's archived page field for field: 37.9 ×
+# 34.9 × 11.9 mm, 20 g, resin, 50 m, and the same eight features. It also
+# carries `icon-question for Case size (L× W× H)` — a casio.com accessibility
+# label that survives a real select-all copy and does not appear in a summary,
+# which is the same tell that cleared the W-735H block. Not one field below
+# rests on it: two independent readings agreeing is why it is worth recording.
+#
+# THE SIX SIBLINGS WERE NOT WRITTEN FROM -7AV's BLOCK, and that was the choice
+# available. Every field on every entry below was read off that entry's own
+# page, which is why the `features` lists are allowed to differ if the pages
+# differ — they happen not to. Copying one reference's block onto six others
+# would have produced the same bytes with none of the evidence.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `colorway`. Seven references that differ in nothing but colour, and not
+#     one of the seven pages states a colour in words. It is legible in every
+#     photograph and D83 is exactly the rule against reading it off one.
+#   * `year` and `module` — no page here states either. The news index that
+#     `year_source` (D54) draws on reaches 2024–2026 only.
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `official_url` and `discontinued` — read off Casio's own sitemap by
+#     `official-urls.ts` and `availability.ts` respectively (D75, D59), each in
+#     its own pass, and never by hand. `discontinued` sat on zero models for
+#     four milestones precisely because it read as a judgement call, and the
+#     sitemap is what turned it into a measurement.
+#
+# THE THREE URLs ON AN ENTRY BELOW NAME THREE DIFFERENT LOCALES AND ALL THREE ARE
+# RIGHT — do not "tidy" them into agreement. `source` is the archived capture the
+# fields were read from, whichever locale happened to be captured; `official_url`
+# is the live page Casio's sitemap lists, which is `us`; `image_credit.url` is
+# the live page that named the photograph, which is `intl`, because that is the
+# one the client opened. Each answers a different question about a different
+# page, and collapsing them would make two of the three unverifiable.
+
+series:
+  id: lw-200
+  name: LW-200
+  line: vintage
+
+models:
+  - id: lw-200-1av
+    ref: LW-200-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.LW-200-1AV/'
+    source:
+      { url: 'https://web.archive.org/web/20240715070702id_/https://www.casio.com/europe/watches/casio/product.LW-200-1AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.9, width_mm: 34.9, depth_mm: 11.9, weight_g: 20, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    image: lw-200-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/intl/watches/casio/product.LW-200-1AV/'
+    discontinued: false
+  - id: lw-200-1bv
+    ref: LW-200-1BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LW-200-1BV/'
+    source:
+      { url: 'https://web.archive.org/web/20240715070710id_/https://www.casio.com/europe/watches/casio/product.LW-200-1BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.9, width_mm: 34.9, depth_mm: 11.9, weight_g: 20, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    image: lw-200-1bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/intl/watches/casio/product.LW-200-1BV/'
+    discontinued: false
+  - id: lw-200-2av
+    ref: LW-200-2AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LW-200-2AV/'
+    source:
+      { url: 'https://web.archive.org/web/20240715070857id_/https://www.casio.com/europe/watches/casio/product.LW-200-2AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.9, width_mm: 34.9, depth_mm: 11.9, weight_g: 20, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    image: lw-200-2av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/intl/watches/casio/product.LW-200-2AV/'
+    discontinued: false
+  - id: lw-200-2bv
+    ref: LW-200-2BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LW-200-2BV/'
+    source:
+      { url: 'https://web.archive.org/web/20220526115759id_/https://www.casio.com/my/watches/casio/product.LW-200-2BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.9, width_mm: 34.9, depth_mm: 11.9, weight_g: 20, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    image: lw-200-2bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/intl/watches/casio/product.LW-200-2BV/'
+    discontinued: false
+  - id: lw-200-4av
+    ref: LW-200-4AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LW-200-4AV/'
+    source:
+      { url: 'https://web.archive.org/web/20240715070848id_/https://www.casio.com/europe/watches/casio/product.LW-200-4AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.9, width_mm: 34.9, depth_mm: 11.9, weight_g: 20, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    image: lw-200-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/intl/watches/casio/product.LW-200-4AV/'
+    discontinued: false
+  - id: lw-200-4bv
+    ref: LW-200-4BV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.LW-200-4BV/'
+    source:
+      { url: 'https://web.archive.org/web/20210920021021id_/https://www.casio.com/sg/watches/casio/product.LW-200-4BV/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.9, width_mm: 34.9, depth_mm: 11.9, weight_g: 20, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    image: lw-200-4bv
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/intl/watches/casio/product.LW-200-4BV/'
+    discontinued: false
+  - id: lw-200-7av
+    ref: LW-200-7AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.LW-200-7AV/'
+    source:
+      { url: 'https://web.archive.org/web/20220808125555id_/https://www.casio.com/us/watches/casio/product.LW-200-7AV/', kind: official }
+    movement: quartz
+    case: { height_mm: 37.9, width_mm: 34.9, depth_mm: 11.9, weight_g: 20, material: 'Resin' }
+    water_resistance_m: 50
+    features: [alarm, world-time, stopwatch, dual-time, calendar, hourly-time-signal, led-light, afterglow]
+    image: lw-200-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/intl/watches/casio/product.LW-200-7AV/'
+    discontinued: false
