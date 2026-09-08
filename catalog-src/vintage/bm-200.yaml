@@ -62,5 +62,20 @@ models:
     # of identity — and a picture with a website's headline baked into the frame
     # is not a catalogue photograph. Cropping does not rescue it: the watch
     # occupies roughly 290 px of the 800, under §10.3's 300 px floor.
+    #
+    # A THIRD CANDIDATE WAS SUPPLIED BY THE CLIENT 2026-09-08 and it is the best
+    # picture of this watch anybody here has seen — 960 × 978, the watch filling
+    # the frame on a stand, the dial printing CASIO BM-200 and WATER 100M RESIST
+    # legibly enough to read the orange buttons this file's header describes.
+    # Refused anyway, and not for the pixels. Its Zone.Identifier stream names
+    # `scontent.fgyd21-1.fna.fbcdn.net/v/t39.30808-6/702858824_…` with
+    # `ReferrerUrl=https://www.facebook.com/`: a collector's own photograph
+    # posted to Facebook, so there is no author this catalogue can name, no
+    # licence stated anywhere, and the URL itself carries an `oe=` expiry token
+    # and will stop resolving — a credit a reviewer cannot open is decoration
+    # (D41). It is also shot on a green cutting mat over a wooden floor, which is
+    # a documentation photograph rather than a product shot. **The route that
+    # would work is a permission**, not a better crop: whoever took it can grant
+    # one, and then it is `own-work` or a named licence and it goes in.
     image: null
     discontinued: true
