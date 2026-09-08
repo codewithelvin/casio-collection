@@ -144,6 +144,22 @@ export const FEATURES = [
   // Sensors
   'altimeter',
   'barometer',
+  // The calculation rather than the sensor, which is why it sits beside
+  // `altimeter` instead of inside it. BM-200 states "ascent and descent speed"
+  // as a labelled function, in metres per hour or per minute, and it is the one
+  // thing Casio changed when it replaced the BM-100 — the depth meter came out
+  // and this went in. `altimeter` says the watch knows its height; this says it
+  // knows how fast that is changing, which is what somebody walking up a hill
+  // wants and is a different claim.
+  //
+  // ADDED 2026-09-08 ON THE CLIENT'S DECISION, and added knowing it ships as a
+  // singleton: **one model states it, which is BM-200 itself.** The reason is
+  // not that the function is rare but that the entries which would carry it are
+  // pre-2000 Vintage read off The Digital Watch Library, whose page has no row
+  // for it. Kept anyway, on the `camera` precedent — the alternative is that
+  // the only reason this watch exists rather than a second BM-100 is described
+  // as an altimeter, permanently, because there was no word for it.
+  'ascent-descent-speed',
   'compass',
   'thermometer',
   'step-counter',
@@ -165,6 +181,22 @@ export const FEATURES = [
   'screw-lock-crown',
   'sapphire-crystal',
   'mineral-glass',
+  // The third crystal, and the one every vintage Casio actually has. Named
+  // `acrylic-crystal` to match `sapphire-crystal` beside it, and because
+  // "acrylic crystal" is the phrase a collector types — the material is what
+  // makes the F-91W's glass polish out with Polywatch and the sapphire above it
+  // not.
+  //
+  // ADDED 2026-09-08 ON THE CLIENT'S DECISION, with the headcount this list
+  // asks for and an honest one: **one model states it today** (BM-200, off
+  // casiorestore.com's "Glass Type: Acrylic" row) against **2 164 entries
+  // carrying one of the two values above**. So this is a gap in a facet that is
+  // already dense rather than a value with no population — and the reason the
+  // population is one is structural: the watches that have acrylic are pre-2000
+  // and were read off The Digital Watch Library, whose page has no glass row at
+  // all. Every source that states a glass type for them is one nobody has
+  // walked yet.
+  'acrylic-crystal',
   // Casio's own name for the case construction, not a paraphrase: a resin case
   // reinforced with carbon fibre, which Casio markets as Carbon Core Guard and
   // a buyer searches for by that name.
