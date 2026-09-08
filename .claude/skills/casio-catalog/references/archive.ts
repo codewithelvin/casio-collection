@@ -512,9 +512,30 @@ export function imageUrl(html: string, ref: string, others?: ReadonlySet<string>
       [...html.matchAll(/\/content\/dam\/casio\/product-info\/[^"'\s)\\]+/g)].map((m) => m[0]),
     ),
   ]
-  /** `…/assets/SHE-4539CM-4AU_Seq1.png` → `SHE-4539CM-4AU`. */
+  /**
+   * `…/assets/SHE-4539CM-4AU_Seq1.png` → `SHE-4539CM-4AU`.
+   *
+   * **THE FOLDER MAY CARRY A LOCALE PREFIX, and requiring a bare `/assets/`
+   * cost 18 entries their photograph in silence.** Casio's US locale files
+   * product assets under `us-assets/`, so `/\/assets\//` never matched, this
+   * returned `null` for every candidate on a us/en capture, the filter below
+   * emptied and `imageUrl` answered `null` — a page that names a photograph
+   * read as a page that names none, with nothing going red. Found 2026-09-08
+   * on W-735H, where five of nine pages from one template appeared to have no
+   * picture; measured across the page cache, Casio uses exactly two folder
+   * names, `assets` (1 810) and `us-assets` (318). The prefix is admitted as
+   * a locale rather than as anything, and a hyphen is required with it, so
+   * `xassets/` still does not match.
+   *
+   * The 18 is the *corrected* count. The first measurement said 31, because it
+   * matched the first `url:` in each YAML entry — which on most entries is
+   * `official_url`, the live casio.com link D75 wrote, not the page the fields
+   * were read off. It therefore counted entries seeded from a module manual.
+   * A filter that answered a question nobody asked, written to measure a
+   * filter that answered a question nobody asked.
+   */
   const stemOf = (u: string) => {
-    const asset = /\/assets\/([^/]+?)(?:_Seq\d+)?\.(?:png|jpg|jpeg)/i.exec(u)
+    const asset = /\/(?:[a-z]{2,6}-)?assets\/([^/]+?)(?:_Seq\d+)?\.(?:png|jpg|jpeg)/i.exec(u)
     return asset ? asset[1].toUpperCase() : null
   }
 

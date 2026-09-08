@@ -55,6 +55,35 @@ describe('imageUrl', () => {
     const html = pageWith('SHE-4554GYM-8AU.png', 'SHE-4554GYM-8A_model-cut.jpg')
     expect(imageUrl(html, 'SHE-4554GYM-8A')).toContain('SHE-4554GYM-8AU.png')
   })
+
+  it('reads a locale-prefixed assets folder — us-assets/ cost 18 entries a photograph', () => {
+    // Casio's US locale files product assets under `us-assets/`, and `stemOf`
+    // required a bare `/assets/`. So every candidate on a us/en capture was
+    // discarded and this returned null: a page that names a photograph read as
+    // a page that names none, silently. Five of W-735H's nine references were
+    // written with no picture by it, and 18 catalogue entries were in that
+    // position when it was found on 2026-09-08.
+    const US = '/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/W/W7/W73'
+    const html = `<img src="https://www.casio.com${US}/W-735H-1AV/us-assets/W-735H-1AV_Seq1.png">`
+    expect(imageUrl(html, 'W-735H-1AV')).toBe(`https://www.casio.com${US}/W-735H-1AV/us-assets/W-735H-1AV_Seq1.png`)
+  })
+
+  it('refuses a folder that merely ends in "assets" with no locale hyphen', () => {
+    // The prefix is admitted as a locale rather than as anything at all: the
+    // hyphen is required, so a segment that looks a bit like an asset folder
+    // does not become one.
+    const html = `<img src="https://www.casio.com/content/dam/casio/product-info/x/GA-2100-1A/xassets/GA-2100-1A_Seq1.png">`
+    expect(imageUrl(html, 'GA-2100-1A')).toBeNull()
+  })
+
+  it('still tells one reference from another inside a locale-prefixed folder', () => {
+    // The whole guard has to survive the widening: `GA-2100-1A1` is a different
+    // watch in this catalogue and its colour-variation URL sits on GA-2100-1A's
+    // own page, in whichever folder that locale uses.
+    const US = '/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G'
+    const html = `<img src="https://www.casio.com${US}/GA-2100-1A1/us-assets/GA-2100-1A1_Seq1.png">`
+    expect(imageUrl(html, 'GA-2100-1A')).toBeNull()
+  })
 })
 
 /**
