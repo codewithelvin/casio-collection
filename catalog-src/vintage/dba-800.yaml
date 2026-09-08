@@ -20,6 +20,18 @@
 #
 # `features` drops the page's "I have a light" icon: the vocabulary has five
 # specific light values and no generic one, the same call A168 and AL-180 make.
+#
+# PHOTOGRAPHED 2026-09-08, BY A SECOND SOURCE RATHER THAN A RETRY OF THE
+# REFUSED ONE. Casio's own asset is still refused for the reason above — it is
+# shared with DBA-80 and shows a black resin case where DWL states chrome
+# plated resin. Found while re-testing Wikimedia Commons at full scale against
+# every unphotographed Vintage reference (O23): `File:DBA-800.jpg`, CC BY 3.0,
+# `U1Quattro`, own work. The photograph shows a steel-look case on a steel
+# expansion bracelet — consistent with DWL's "chrome plated resin" case and
+# "B-259A steel" band, unlike the asset refused above. The page states the
+# reference in its own description — "A Casio DBA-800 data bank" — so this is
+# read off the page's prose rather than the picture (D83). `cc-by-3.0` was
+# added to `IMAGE_LICENCES` the same day (O23) because this file needed it.
 
 series:
   id: dba-800
@@ -40,5 +52,9 @@ models:
     # a resin strap. DWL states DBA-800 is **chrome plated resin** on a **B-259A
     # steel** band, so the file shows DBA-80 and not this reference. Refused for
     # the same measured reason dba-80.yaml accepts it.
-    image: null
+    image: dba-800
+    image_credit:
+      author: U1Quattro
+      licence: cc-by-3.0
+      url: 'https://commons.wikimedia.org/wiki/File:DBA-800.jpg'
     discontinued: true

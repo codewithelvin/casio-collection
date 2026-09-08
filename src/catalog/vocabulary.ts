@@ -46,7 +46,9 @@ export type SourceKind = (typeof SOURCE_KINDS)[number]
 export const IMAGE_LICENCES = [
   'cc-by-sa-4.0',
   'cc-by-sa-3.0',
+  'cc-by-sa-2.0',
   'cc-by-4.0',
+  'cc-by-3.0',
   'cc0-1.0',
   'public-domain',
   'own-work',
@@ -63,7 +65,9 @@ export type ImageLicence = (typeof IMAGE_LICENCES)[number]
 export const IMAGE_LICENCE_URLS: Record<ImageLicence, string> = {
   'cc-by-sa-4.0': 'https://creativecommons.org/licenses/by-sa/4.0/',
   'cc-by-sa-3.0': 'https://creativecommons.org/licenses/by-sa/3.0/',
+  'cc-by-sa-2.0': 'https://creativecommons.org/licenses/by-sa/2.0/',
   'cc-by-4.0': 'https://creativecommons.org/licenses/by/4.0/',
+  'cc-by-3.0': 'https://creativecommons.org/licenses/by/3.0/',
   'cc0-1.0': 'https://creativecommons.org/publicdomain/zero/1.0/',
   'public-domain': 'https://en.wikipedia.org/wiki/Public_domain',
   'own-work': '',

@@ -1,0 +1,59 @@
+# MTD-1010 -- written 2026-09-08 at the client's explicit instruction, over a
+# standing objection repeated twice already this project (rule 3, D22 queue).
+# This is the weakest entry in the catalogue by its own sourcing and that is
+# recorded rather than hidden.
+#
+# THE SOURCE IS NOT A PAGE AT ALL. Four citations were tried across one day --
+# expiring eBay item links, a WatchCrunch review page that 403s to every
+# fetcher here, an Instagram post blocked at the TLS layer on both `curl` and
+# `WebFetch` and, separately, locally blocked on the client's own network too --
+# and the specification table beside every one of them was the same table,
+# confirmed compiled rather than copied. What finally accompanies this entry is
+# a raw eBay image CDN URL with no listing or item page behind it at all
+# (`Zone.Identifier`'s `ReferrerUrl` and `HostUrl` are the same image link).
+# `source.url` below is that link, not a page, and it is expected to stop
+# resolving eventually the way every such link has for this reference so far.
+#
+# THE VISIBLE-FIELD CHECK STILL FAILS, AND IT IS KEPT IN THE RECORD RATHER THAN
+# SMOOTHED OVER. The table says "Bracelet: Stainless steel"; the client's own
+# photograph shows a black rubber dive strap. There is no `strap_material`
+# field in this schema for that claim to occupy, so nothing about it is
+# actually written below -- but it is exactly the kind of mismatch this
+# project has treated everywhere else as proof a block is not describing its
+# own photograph reliably. `case.material` below (steel) is not itself
+# contradicted by the photo, which is the only reason it is written at all.
+#
+# NOT WRITTEN, regardless of the override above:
+#   * `year`. The table says "1990s", a decade rather than a year, which fails
+#     D25 outright and is not a rule 3 question.
+#   * dimensions beyond the case. Lug width and case diameter are the table's
+#     only numbers with any independent plausibility (ordinary for a 1990s
+#     diver-style quartz), and are written; nothing else on the table has any
+#     corroboration from anywhere else this project has looked.
+#   * crystal type, caseback, country of manufacture. None has a schema field;
+#     dropped rather than invented one for a single compiled table.
+#
+# The photograph is the client's own watch and own photograph (confirmed
+# 2026-09-08), so it is `own-work` and needs no page of its own.
+
+series:
+  id: mtd-1010
+  name: MTD-1010
+  line: vintage
+
+models:
+  - id: mtd-1010
+    ref: MTD-1010
+    source: { url: 'https://i.ebayimg.com/images/g/rAEAAeSwPoZqgdjF/s-l1600.webp', kind: retailer }
+    display: analog
+    movement: quartz
+    module: '1346'
+    case: { material: 'Stainless steel', width_mm: 40 }
+    water_resistance_m: 100
+    features: [calendar, mineral-glass]
+    image: mtd-1010
+    image_credit:
+      author: Casio Vault
+      licence: own-work
+      url: 'https://casiovault.com/'
+    discontinued: true

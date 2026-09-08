@@ -1,0 +1,61 @@
+# BGX-132 -- written 2026-09-08 at the client's explicit instruction, over a
+# standing objection (rule 3, D22 queue). NOT the normal route into this
+# catalogue, and the deviation is recorded rather than hidden.
+#
+# THE SOURCE IS A COMPILED BLOCK, NOT A PAGE. The client supplied a
+# specification table assembled from an eBay listing rather than copied from
+# one page -- confirmed as compiled, the same standing the same block has had
+# since it was first refused. Rule 3 forbids exactly this ("a model assembled
+# from memory fails FR-D1"), and the client chose to proceed anyway when asked
+# directly, so `source` below is the eBay item page the block travelled with
+# rather than a page anyone here can point to for every field.
+#
+# ONE FIELD IS INDEPENDENTLY CORROBORATED AND THE REST ARE NOT. The block's
+# own header reads "Reference Number: 1849 BGX-132" -- module **1849** -- and
+# `casiopart.com` states the same module for `bgx132v-8v` on a real, live page,
+# read months apart from an unrelated source. That agreement is why `module` is
+# written with more confidence than anything else here.
+#
+# NOT WRITTEN, deliberately, regardless of the override above:
+#   * `colorway` and case colour. The client's own supplied photograph shows an
+#     opaque yellow-and-navy case; the compiled block says "Case Colour:
+#     Transparent, Band Colour: Turquoise". casiopart names five real BGX-132
+#     colourways (`-2av`, `-2bv`, `-7v`, `-8v`, `-9v`), so this is plausibly two
+#     different colourways of one family reference rather than one watch
+#     described twice -- the same shape BM-200 already carries under one id.
+#     Either way, D83 refuses reading a colour off a picture, and the table's
+#     own colour claim is exactly the field already shown to contradict its own
+#     photo, so it goes nowhere near the entry.
+#   * `year`. The block says "1990-1999", which is a range rather than a year
+#     and fails D25 outright regardless of the rule 3 question. casiopart
+#     states 1999 for `-8v` specifically; the client's original block said
+#     1997. Neither is a page stating a year for this reference as printed.
+#   * the reference form is deliberately the bare one the block itself prints
+#     ("BGX-132"), not casiopart's normalised `bgx132v-8v`. Inferring a hyphen
+#     into casiopart's form was proposed once already this project and the
+#     client said no (D2 permanence); using the form the report already typed
+#     avoids that specific problem, though it does not make the block a page.
+#
+# The photograph is the client's own watch and own photograph (confirmed
+# 2026-09-08), so it is `own-work` and needs no page of its own.
+
+series:
+  id: bgx-132
+  name: BGX-132
+  line: baby-g
+
+models:
+  - id: bgx-132
+    ref: BGX-132
+    source: { url: 'https://www.ebay.com/itm/178252562850', kind: retailer }
+    display: digital
+    movement: quartz
+    module: '1849'
+    case: { material: 'Soft Plastic' }
+    features: [stopwatch, full-auto-calendar, el-backlight, alarm, hourly-time-signal, shock-resistant]
+    image: bgx-132
+    image_credit:
+      author: Casio Vault
+      licence: own-work
+      url: 'https://casiovault.com/'
+    discontinued: true

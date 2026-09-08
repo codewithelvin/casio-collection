@@ -95,15 +95,19 @@ models:
     # picture of this watch anybody here has seen — 960 × 978, the watch filling
     # the frame on a stand, the dial printing CASIO BM-200 and WATER 100M RESIST
     # legibly enough to read the orange buttons this file's header describes.
-    # Refused anyway, and not for the pixels. Its Zone.Identifier stream names
+    # Refused at first: its Zone.Identifier stream named
     # `scontent.fgyd21-1.fna.fbcdn.net/v/t39.30808-6/702858824_…` with
-    # `ReferrerUrl=https://www.facebook.com/`: a collector's own photograph
-    # posted to Facebook, so there is no author this catalogue can name, no
-    # licence stated anywhere, and the URL itself carries an `oe=` expiry token
-    # and will stop resolving — a credit a reviewer cannot open is decoration
-    # (D41). It is also shot on a green cutting mat over a wooden floor, which is
-    # a documentation photograph rather than a product shot. **The route that
-    # would work is a permission**, not a better crop: whoever took it can grant
-    # one, and then it is `own-work` or a named licence and it goes in.
-    image: null
+    # `ReferrerUrl=https://www.facebook.com/`, which named no author and no
+    # licence, and carried an `oe=` expiry token — a credit a reviewer cannot
+    # open is decoration (D41). **The client confirmed the same day that it is
+    # their own watch and their own photograph.** That is the permission the
+    # refusal above asked for: `own-work` needs nobody's licence but the
+    # photographer's, and the photographer is the site owner. The Facebook URL
+    # is where the file happened to be re-downloaded from, not where it came
+    # from, and is dropped rather than credited.
+    image: bm-200
+    image_credit:
+      author: Casio Vault
+      licence: own-work
+      url: 'https://casiovault.com/'
     discontinued: true
