@@ -8,9 +8,34 @@
 # nothing (D25) and a news release states no specifications (D50). Neither page
 # is asked for what the other says.
 #
+# WS-1100H-1AV IS THE EXCEPTION AND ITS SOURCE IS THE LIVE PAGE, NOT A CAPTURE.
+# `survey.ts --deep` proves there is no archived page for it anywhere — zero 200s
+# in a domain-wide CDX query, re-run 2026-09-08 — while Casio's own current
+# sitemap lists the reference, which is Casio stating it exists (D48). It was one
+# of the three references this project had written off by name for exactly that
+# reason. casio.com answers **403 to this machine and 200 to a person** (measured
+# again 2026-09-08, browser headers and all), so the client read the live page in
+# their own browser and transcribed the specification block below. **Every value
+# on that entry is a sentence a reviewer can check by opening its `source`** —
+# which is the property D83 exists to protect, and it holds here even though
+# nothing automated in this repo can fetch the page.
+#
+# Its photograph did not need the browser. The live page names its asset under
+# `/content/dam/`, which **answers 200 to this machine** — that path is outside
+# the block on product pages, and the bare asset URL without the rendition
+# suffix serves Casio's 1000 × 1000 original rather than the 408 px the browser
+# is sent. The filename is `WS-1100H-1AV_01.png`, so it names the reference
+# outright and the §10.6 filename test passes without a judgement.
+#
 # DELIBERATELY NOT WRITTEN:
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * any field the page does not state. Absent means unknown, never zero (D27).
+#   * on WS-1100H-1AV, `movement` and `display`. Its sibling carries
+#     `movement: quartz` off an archived page that printed a movement row; the
+#     live page's block has no such row and a sibling is not a source.
+#   * `discontinued` anywhere — measured for the whole catalogue at once by
+#     `availability.ts` (D59), never written by hand. The live page does print
+#     "Discontinued: No longer available", and that is still not the measurement.
 
 series:
   id: ws-1100
@@ -18,6 +43,24 @@ series:
   line: vintage
 
 models:
+  - id: ws-1100h-1av
+    ref: WS-1100H-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.WS-1100H-1AV/'
+    source: { url: 'https://www.casio.com/us/watches/casio/product.WS-1100H-1AV/', kind: official }
+    case: { height_mm: 46.3, width_mm: 43, depth_mm: 13.3, weight_g: 39, material: 'Resin' }
+    water_resistance_m: 100
+    # SHORTER THAN ITS SIBLING'S ON PURPOSE. The live page states these in a
+    # highlights list; it is not the full function table the 2022 capture of the
+    # 2AV page carried, so `world-time`, `countdown-timer`, `full-auto-calendar`,
+    # `hourly-time-signal` and `afterglow` are absent rather than denied. "3
+    # alarms" is why this reads `multi-alarm` where the sibling reads `alarm`.
+    features: [stopwatch, multi-alarm, dual-time, led-light, tide-graph, moon-data]
+    image: ws-1100h-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://www.casio.com/us/watches/casio/product.WS-1100H-1AV/'
+    discontinued: false
   - id: ws-1100h-2av
     ref: WS-1100H-2AV
     source:
