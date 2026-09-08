@@ -34,6 +34,7 @@ series:
 models:
   - id: w-735h-1a
     ref: W-735H-1A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.W-735H-1A/'
     source:
       { url: 'https://web.archive.org/web/20210413045046id_/https://www.casio.com/jp/watches/casio/product.W-735H-1A/', kind: official }
     case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50 }
@@ -46,6 +47,7 @@ models:
     discontinued: false
   - id: w-735h-1a2v
     ref: W-735H-1A2V
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-735H-1A2V/'
     source:
       { url: 'https://web.archive.org/web/20220819000044id_/https://www.casio.com/us/watches/casio/product.W-735H-1A2V/', kind: official }
     movement: quartz
@@ -60,6 +62,7 @@ models:
     discontinued: false
   - id: w-735h-1a3v
     ref: W-735H-1A3V
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-735H-1A3V/'
     source:
       { url: 'https://web.archive.org/web/20220819000117id_/https://www.casio.com/us/watches/casio/product.W-735H-1A3V/', kind: official }
     movement: quartz
@@ -74,6 +77,7 @@ models:
     discontinued: false
   - id: w-735h-1av
     ref: W-735H-1AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-735H-1AV/'
     source:
       { url: 'https://web.archive.org/web/20220822040327id_/https://www.casio.com/us/watches/casio/product.W-735H-1AV/', kind: official }
     movement: quartz
@@ -88,6 +92,7 @@ models:
     discontinued: false
   - id: w-735h-1bv
     ref: W-735H-1BV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-735H-1BV/'
     source:
       { url: 'https://web.archive.org/web/20240715102532id_/https://www.casio.com/europe/watches/casio/product.W-735H-1BV/', kind: official }
     movement: quartz
@@ -102,6 +107,7 @@ models:
     discontinued: false
   - id: w-735h-2av
     ref: W-735H-2AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-735H-2AV/'
     source:
       { url: 'https://web.archive.org/web/20220926040451id_/https://www.casio.com/us/watches/casio/product.W-735H-2AV/', kind: official }
     movement: quartz
@@ -116,6 +122,7 @@ models:
     discontinued: false
   - id: w-735h-5av
     ref: W-735H-5AV
+    official_url: 'https://www.casio.com/intl/watches/casio/product.W-735H-5AV/'
     source:
       { url: 'https://web.archive.org/web/20220627093056id_/https://www.casio.com/intl/watches/casio/product.W-735H-5AV/', kind: official }
     movement: quartz
@@ -130,6 +137,7 @@ models:
     discontinued: false
   - id: w-735h-8a
     ref: W-735H-8A
+    official_url: 'https://www.casio.com/jp/watches/casio/product.W-735H-8A/'
     source:
       { url: 'https://web.archive.org/web/20210618031316id_/https://www.casio.com/jp/watches/casio/product.W-735H-8A/', kind: official }
     case: { height_mm: 51.4, width_mm: 47.1, depth_mm: 16.1, weight_g: 50 }
@@ -142,6 +150,7 @@ models:
     discontinued: false
   - id: w-735h-8av
     ref: W-735H-8AV
+    official_url: 'https://www.casio.com/us/watches/casio/product.W-735H-8AV/'
     source:
       { url: 'https://web.archive.org/web/20220926035939id_/https://www.casio.com/us/watches/casio/product.W-735H-8AV/', kind: official }
     movement: quartz
