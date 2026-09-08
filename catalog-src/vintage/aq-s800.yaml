@@ -40,14 +40,24 @@ models:
     case: { height_mm: 47.6, width_mm: 42, depth_mm: 10.6, weight_g: 33, material: 'Resin' }
     water_resistance_m: 100
     features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
-    # REFUSED, not overlooked. The one archived capture of this reference's page
-    # names no photograph — `photos.ts` found 3 asset URLs across the 4 entries
-    # here, and this is the one without. The obvious move is to reach for a
-    # sibling's file, because AQ-S800W-1BV is the same watch in the same colour
-    # to a diff: that is exactly how A159WA-N1 came to be byte-identical to
-    # A159W-N1's photograph. Never derive an asset path; only ever fetch a URL a
-    # page named.
-    image: null
+    # THE REFUSAL THAT STOOD HERE WAS WRONG, and it was wrong about the tool
+    # rather than about the watch. It read: *"the one archived capture of this
+    # reference's page names no photograph — `photos.ts` found 3 asset URLs
+    # across the 4 entries here, and this is the one without."* True of what the
+    # reader could see and false of the page: `imageUrl`'s `stemOf` required a
+    # bare `/assets/`, and Casio's US locale files this reference's assets under
+    # `us-assets/`, so every candidate was discarded in silence (D81, 2026-09-08).
+    #
+    # The file below is `us-assets/AQ-S800W-1B2V_01.png`, named on the very page
+    # this entry already cites and fetched from that URL verbatim. **The old
+    # refusal's own advice is what makes this safe** and it is kept here for the
+    # next reader: no sibling's path was derived, which is exactly how A159WA-N1
+    # came to be byte-identical to A159W-N1's photograph.
+    image: aq-s800w-1b2v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628024714id_/https://www.casio.com/us/watches/casio/product.AQ-S800W-1B2V/'
     discontinued: false
   - id: aq-s800w-1bv
     ref: AQ-S800W-1BV

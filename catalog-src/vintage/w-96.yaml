@@ -98,14 +98,25 @@ models:
     case: { height_mm: 43.9, width_mm: 35.7, depth_mm: 12.5, weight_g: 32, material: 'Resin' }
     water_resistance_m: 50
     features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
-    # REFUSED, not overlooked. Every archived capture of this reference was read
-    # — the seeding crawl and `backfill-photos.ts` after it — and none of the
-    # pages names a photograph of W-96H-3AV. The tempting move is a sibling's
-    # file: W-96H-1BV two entries up has one, and the two are the same watch in
-    # a different strap colour. That is precisely how A159WA-N1 came to be
-    # byte-identical to A159W-N1's photograph. Never derive an asset path; only
-    # ever fetch a URL a page named.
-    image: null
+    # THE REFUSAL THAT STOOD HERE WAS WRONG, and about the reader rather than
+    # the watch. It read: *"every archived capture of this reference was read —
+    # the seeding crawl and `backfill-photos.ts` after it — and none of the
+    # pages names a photograph of W-96H-3AV."* Both of those readers went
+    # through `imageUrl`, whose `stemOf` required a bare `/assets/` while
+    # Casio's US locale files this reference's assets under `us-assets/` — so
+    # two independent passes agreed, and both were blind in the same place
+    # (D81, 2026-09-08). **Two readers agreeing is not corroboration when they
+    # share a filter.**
+    #
+    # The file below is `us-assets/W-96H-3AV_01.png`, named on the very page
+    # this entry already cites. The old refusal's advice is kept because it is
+    # what makes this safe: no sibling's path was derived — W-96H-1BV's file was
+    # right there and is a different watch.
+    image: w-96h-3av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220703111058id_/https://www.casio.com/us/watches/casio/product.W-96H-3AV/'
     discontinued: false
   - id: w-96h-4av
     ref: W-96H-4AV
@@ -116,8 +127,13 @@ models:
     case: { height_mm: 43.9, width_mm: 35.7, depth_mm: 12.5, weight_g: 32, material: 'Resin' }
     water_resistance_m: 50
     features: [alarm, world-time, stopwatch, dual-time, full-auto-calendar, hourly-time-signal, led-light, afterglow]
-    # REFUSED, not overlooked — same as W-96H-3AV above. No archived capture of
-    # this reference names a photograph of it, and a sibling's file is not this
-    # watch however alike the two look in a diff.
-    image: null
+    # Same correction as W-96H-3AV above (D81): the refusal here said no
+    # archived capture named a photograph of this reference, and the capture
+    # this entry cites named `us-assets/W-96H-4AV_01.png` all along. The reader
+    # could not see a locale-prefixed asset folder.
+    image: w-96h-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220808064237id_/https://www.casio.com/us/watches/casio/product.W-96H-4AV/'
     discontinued: false
