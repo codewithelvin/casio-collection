@@ -28,4 +28,9 @@ models:
     case: { height_mm: 43.9, width_mm: 38.3, depth_mm: 12.9, weight_g: 130, material: 'Stainless steel' }
     water_resistance_m: 100
     features: [alarm, world-time, stopwatch, countdown-timer, calendar, hourly-time-signal, el-backlight, auto-light, afterglow, thermometer, mineral-glass]
+    image: efa-120d-1av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231022025147id_/https://www.casio.com/us/watches/edifice/product.EFA-120D-1AV/'
     discontinued: false

@@ -40,6 +40,11 @@ models:
     case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40, material: 'Resin' }
     water_resistance_m: 100
     features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    image: aq-s810w-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220517021032id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-1A3V/'
     discontinued: false
   - id: aq-s810w-1a4v
     ref: AQ-S810W-1A4V
@@ -50,6 +55,11 @@ models:
     case: { height_mm: 52.2, width_mm: 48.3, depth_mm: 13.7, weight_g: 40, material: 'Resin' }
     water_resistance_m: 100
     features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    image: aq-s810w-1a4v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220628000742id_/https://www.casio.com/us/watches/casio/product.AQ-S810W-1A4V/'
     discontinued: false
   - id: aq-s810w-1av
     ref: AQ-S810W-1AV
@@ -132,6 +142,11 @@ models:
     case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
     water_resistance_m: 100
     features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    image: aq-s810wc-4av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20230218221146id_/https://www.casio.com/us/watches/casio/product.AQ-S810WC-4AV/'
     discontinued: false
   - id: aq-s810wc-7a
     ref: AQ-S810WC-7A
@@ -155,4 +170,9 @@ models:
     case: { height_mm: 52.2, width_mm: 46.6, depth_mm: 13.8, weight_g: 40, material: 'Resin' }
     water_resistance_m: 100
     features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, power-saving]
+    image: aq-s810wc-7av
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241217052036id_/https://www.casio.com/us/watches/casio/product.AQ-S810WC-7AV/'
     discontinued: false

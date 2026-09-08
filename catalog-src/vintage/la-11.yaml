@@ -48,6 +48,11 @@ models:
     movement: quartz
     case: { height_mm: 31.4, width_mm: 25.5, depth_mm: 7.6, weight_g: 10, material: 'Resin' }
     features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la-11wl-4a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20221012025829id_/https://www.casio.com/us/watches/casio/product.LA-11WL-4A/'
     discontinued: false
   - id: la-11wl-7a
     ref: LA-11WL-7A
@@ -57,6 +62,11 @@ models:
     movement: quartz
     case: { height_mm: 31.4, width_mm: 25.5, depth_mm: 7.6, weight_g: 10, material: 'Resin' }
     features: [alarm, stopwatch, countdown-timer, calendar, hourly-time-signal]
+    image: la-11wl-7a
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220704083720id_/https://www.casio.com/us/watches/casio/product.LA-11WL-7A/'
     discontinued: false
 
 # ADDED 2026-08-20: 1 more references, from Casio's own

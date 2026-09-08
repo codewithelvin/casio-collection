@@ -57,6 +57,11 @@ models:
     case: { height_mm: 52.2, width_mm: 48.2, depth_mm: 16.7, weight_g: 49, material: 'Resin' }
     water_resistance_m: 100
     features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, telememo]
+    image: aeq-110w-1a3v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20220926023010id_/https://www.casio.com/us/watches/casio/product.AEQ-110W-1A3V/'
     discontinued: false
   - id: aeq-110w-1av
     ref: AEQ-110W-1AV
