@@ -1,0 +1,51 @@
+# LW-22 — seeded 2026-09-08 from the D22 queue: a visitor reported LW-22H as
+# missing and supplied the only page anybody has found for it.
+#
+# BOTH WEB ROSTERS ANSWER NOTHING. The archive index holds no capture of a
+# casio.com product page for this series, and Casio's own current sitemap does
+# not list it — `survey.ts vintage:lw-22` says "No references. Both rosters were
+# asked". It is not in The Digital Watch Library's Casio gallery either (853
+# slugs, walked 2026-09-08), it is at no canonical slug form there, and
+# `casiold.com`'s 227 listings do not have it. So the source is the one the
+# reporter named: TimeCenter / Borkutime, Casio's Hungarian distributor.
+#
+# `retailer`, not `official`. It is Casio's own distributor in Hungary and its
+# breadcrumb files the watch as `RETRO karórák > LW-22 > LW-22H` — which is where
+# the series id comes from as well as the reference — but it is a shop listing
+# and `kind` is a claim about the page.
+#
+# THE REFERENCE IS BARE, and that is what the page states: "Típus szám: Casio
+# LW-22H (RETRO) karóra". No colourway suffix is printed anywhere on it. The
+# same shape is already in this catalogue for LW-80, LW-101, BM-600, W-81 and
+# MTD-1008 — a pre-web Casio whose source names the whole reference without one.
+#
+# DELIBERATELY NOT WRITTEN:
+#   * `display` and `movement`. The page describes an LCD that shows English
+#     weekday abbreviations and lights up whole, which is a digital watch to any
+#     reader — and it never says the word. A facet that a filter is built from is
+#     not the place to start inferring (D26, rule 2).
+#   * `year`, `module`, `colorway` — the page states none of the three.
+#   * `family` — a human's judgement, proposed and never written by a seeding run.
+
+series:
+  id: lw-22
+  name: LW-22
+  line: vintage
+
+models:
+  - id: lw-22h
+    ref: LW-22H
+    source: { url: 'https://casio.timecenter.hu/casio+orak/retro+karorak/LW-22H.ora', kind: retailer }
+    case: { height_mm: 38.5, width_mm: 34.6, depth_mm: 11.2, weight_g: 24, material: 'Plastic' }
+    water_resistance_m: 50
+    features: [stopwatch, alarm, full-auto-calendar, hourly-time-signal, el-backlight]
+    # REFUSED, TWICE OVER, AND BOTH REASONS MEASURED. The page names exactly one
+    # photograph — `images/l/lw-22h.jpg`, the `l` being its own largest size —
+    # and it is **288 px wide**, under §10.3's 300 px floor, which renders softer
+    # than the typographic tile it would replace. It also carries the shop's
+    # `www.timecenter.hu` watermark across the strap in two places. Downloaded,
+    # measured and looked at before this line was written; the dial prints
+    # ILLUMINATOR and WATER 50M RESIST, which is what corroborates the 5 BAR the
+    # page states, so the file is good evidence and still not publishable.
+    image: null
+    discontinued: true
