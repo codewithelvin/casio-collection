@@ -1,0 +1,51 @@
+# FTS-100 — seeded 2026-09-09 from javys.com's older
+# hand-coded micro-site pages (Forester / LapMemory / FunWatches / Water
+# Sports / Analog Sports / PELA) rather than its series_new.php system --
+# see the reference memo on javys.com for why these needed a second reader.
+# Only id, ref, source and (where the page's own image filename verifiably
+# names this exact reference) image are written here (D27): the client asked
+# for these 4 references catalogued quickly rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — none of these pages states one.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: fts-100
+  name: FTS-100
+  line: vintage
+
+models:
+  - id: fts-100-1
+    ref: FTS-100-1
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester01.htm', kind: retailer }
+    image: fts-100-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester01.htm'
+  - id: fts-100b-1
+    ref: FTS-100B-1
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester01.htm', kind: retailer }
+    image: fts-100b-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester01.htm'
+  - id: fts-100b-5
+    ref: FTS-100B-5
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester01.htm', kind: retailer }
+    image: fts-100b-5
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester01.htm'
+  - id: fts-100d-1
+    ref: FTS-100D-1
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester01.htm', kind: retailer }
+    image: fts-100d-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester01.htm'
