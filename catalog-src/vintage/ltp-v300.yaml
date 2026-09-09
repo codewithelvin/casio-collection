@@ -210,3 +210,48 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240721184840id_/https://www.casio.com/id/watches/casio/product.LTP-V300L-7A2/'
     discontinued: false
+
+# ADDED 2026-09-09: 5 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ltp-v300d-4a2
+    ref: LTP-V300D-4A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V300D-4A2', kind: retailer }
+    image: ltp-v300d-4a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V300D-4A2'
+  - id: ltp-v300d-9a1
+    ref: LTP-V300D-9A1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V300D-9A1', kind: retailer }
+    image: ltp-v300d-9a1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V300D-9A1'
+  - id: ltp-v300d-9a2
+    ref: LTP-V300D-9A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V300D-9A2', kind: retailer }
+    image: ltp-v300d-9a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V300D-9A2'
+  - id: ltp-v300l-2a3
+    ref: LTP-V300L-2A3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V300L-2A3', kind: retailer }
+    image: ltp-v300l-2a3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V300L-2A3'
+  - id: ltp-v300l-4a2
+    ref: LTP-V300L-4A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V300L-4A2', kind: retailer }
+    image: ltp-v300l-4a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V300L-4A2'
