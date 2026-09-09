@@ -1,0 +1,67 @@
+# LTP-E412 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-e412
+  name: LTP-E412
+  line: vintage
+
+models:
+  - id: ltp-e412d-2a
+    ref: LTP-E412D-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412D-2A', kind: retailer }
+    image: ltp-e412d-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412D-2A'
+  - id: ltp-e412mgb-1a
+    ref: LTP-E412MGB-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412MGB-1A', kind: retailer }
+    image: ltp-e412mgb-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412MGB-1A'
+  - id: ltp-e412mpg-1a
+    ref: LTP-E412MPG-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412MPG-1A', kind: retailer }
+    image: ltp-e412mpg-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412MPG-1A'
+  - id: ltp-e412pg-4a
+    ref: LTP-E412PG-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412PG-4A', kind: retailer }
+    image: ltp-e412pg-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412PG-4A'
+  - id: ltp-e412pl-2a
+    ref: LTP-E412PL-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412PL-2A', kind: retailer }
+    image: ltp-e412pl-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412PL-2A'
+  - id: ltp-e412rl-5a
+    ref: LTP-E412RL-5A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412RL-5A', kind: retailer }
+    image: ltp-e412rl-5a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E412RL-5A'
