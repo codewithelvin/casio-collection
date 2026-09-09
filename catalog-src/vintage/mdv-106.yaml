@@ -175,3 +175,40 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221122063417id_/https://www.casio.com/us/watches/casio/product.MDV-106G-1AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: mdv-106-7av
+    ref: MDV-106-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MDV-106-7AV', kind: retailer }
+    image: mdv-106-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MDV-106-7AV'
+  - id: mdv-106d-1a1v
+    ref: MDV-106D-1A1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MDV-106D-1A1V', kind: retailer }
+    image: mdv-106d-1a1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MDV-106D-1A1V'
+  - id: mdv-106d-1a2v
+    ref: MDV-106D-1A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MDV-106D-1A2V', kind: retailer }
+    image: mdv-106d-1a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MDV-106D-1A2V'
+  - id: mdv-106d-7av
+    ref: MDV-106D-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MDV-106D-7AV', kind: retailer }
+    image: mdv-106d-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MDV-106D-7AV'
