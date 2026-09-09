@@ -25,3 +25,12 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9100MB-1JF'
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: gw-9100y-1
+    ref: GW-9100Y-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9100Y-1', kind: retailer }
+    image: null
