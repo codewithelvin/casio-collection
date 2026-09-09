@@ -30,3 +30,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20251003045715id_/https://www.casio.com/jp/watches/casio/product.AQ-240EG-9A/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: aq-240e-3a
+    ref: AQ-240E-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-240E-3A', kind: retailer }
+    image: aq-240e-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-240E-3A'
+  - id: aq-240e-7a
+    ref: AQ-240E-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-240E-7A', kind: retailer }
+    image: aq-240e-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-240E-7A'
