@@ -1,0 +1,51 @@
+# MTF-103 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtf-103
+  name: MTF-103
+  line: vintage
+
+models:
+  - id: mtf-103l-1av
+    ref: MTF-103L-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-103L-1AV', kind: retailer }
+    image: mtf-103l-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-103L-1AV'
+  - id: mtf-103l-7a4v
+    ref: MTF-103L-7A4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-103L-7A4V', kind: retailer }
+    image: mtf-103l-7a4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-103L-7A4V'
+  - id: mtf-103l-7a7v
+    ref: MTF-103L-7A7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-103L-7A7V', kind: retailer }
+    image: mtf-103l-7a7v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-103L-7A7V'
+  - id: mtf-103l-7av
+    ref: MTF-103L-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-103L-7AV', kind: retailer }
+    image: mtf-103l-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-103L-7AV'
