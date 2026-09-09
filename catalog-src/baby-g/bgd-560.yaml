@@ -1,0 +1,99 @@
+# BGD-560 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 10 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bgd-560
+  name: BGD-560
+  line: baby-g
+
+models:
+  - id: bgd-560bc-7
+    ref: BGD-560BC-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560BC-7', kind: retailer }
+    image: bgd-560bc-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560BC-7'
+  - id: bgd-560bc-9
+    ref: BGD-560BC-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560BC-9', kind: retailer }
+    image: bgd-560bc-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560BC-9'
+  - id: bgd-560pkc-1
+    ref: BGD-560PKC-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560PKC-1', kind: retailer }
+    image: bgd-560pkc-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560PKC-1'
+  - id: bgd-560s-6
+    ref: BGD-560S-6
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560S-6', kind: retailer }
+    image: bgd-560s-6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560S-6'
+  - id: bgd-560s-8
+    ref: BGD-560S-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560S-8', kind: retailer }
+    image: bgd-560s-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560S-8'
+  - id: bgd-560sk-1
+    ref: BGD-560SK-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560SK-1', kind: retailer }
+    image: bgd-560sk-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560SK-1'
+  - id: bgd-560sk-4
+    ref: BGD-560SK-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560SK-4', kind: retailer }
+    image: bgd-560sk-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560SK-4'
+  - id: bgd-560sk-7
+    ref: BGD-560SK-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560SK-7', kind: retailer }
+    image: bgd-560sk-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560SK-7'
+  - id: bgd-560tg-9
+    ref: BGD-560TG-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560TG-9', kind: retailer }
+    image: bgd-560tg-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560TG-9'
+  - id: bgd-560thb-7
+    ref: BGD-560THB-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560THB-7', kind: retailer }
+    image: bgd-560thb-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560THB-7'
