@@ -1,0 +1,59 @@
+# BGD-140 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bgd-140
+  name: BGD-140
+  line: baby-g
+
+models:
+  - id: bgd-140-1a
+    ref: BGD-140-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-140-1A', kind: retailer }
+    image: bgd-140-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-140-1A'
+  - id: bgd-140-1b
+    ref: BGD-140-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-140-1B', kind: retailer }
+    image: bgd-140-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-140-1B'
+  - id: bgd-140-4
+    ref: BGD-140-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-140-4', kind: retailer }
+    image: bgd-140-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-140-4'
+  - id: bgd-140-7a
+    ref: BGD-140-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-140-7A', kind: retailer }
+    image: bgd-140-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-140-7A'
+  - id: bgd-140-7b
+    ref: BGD-140-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-140-7B', kind: retailer }
+    image: bgd-140-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-140-7B'
