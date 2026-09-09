@@ -75,3 +75,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119144225id_/https://www.casio.com/in/watches/edifice/product.EQS-920PB-1AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: eqs-920bl-2av
+    ref: EQS-920BL-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-920BL-2AV', kind: retailer }
+    image: eqs-920bl-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-920BL-2AV'
+  - id: eqs-920tr-2a
+    ref: EQS-920TR-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-920TR-2A', kind: retailer }
+    image: eqs-920tr-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-920TR-2A'
