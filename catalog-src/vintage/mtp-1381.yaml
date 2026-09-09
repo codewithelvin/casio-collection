@@ -150,3 +150,64 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220809113010id_/https://www.casio.com/in/watches/casio/product.MTP-1381L-9AV/'
     discontinued: true
+
+# ADDED 2026-09-09: 7 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: mtp-1381d-2av
+    ref: MTP-1381D-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381D-2AV', kind: retailer }
+    image: mtp-1381d-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381D-2AV'
+  - id: mtp-1381d-8av
+    ref: MTP-1381D-8AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381D-8AV', kind: retailer }
+    image: mtp-1381d-8av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381D-8AV'
+  - id: mtp-1381d-9av
+    ref: MTP-1381D-9AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381D-9AV', kind: retailer }
+    image: mtp-1381d-9av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381D-9AV'
+  - id: mtp-1381g-1av
+    ref: MTP-1381G-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381G-1AV', kind: retailer }
+    image: mtp-1381g-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381G-1AV'
+  - id: mtp-1381g-9av
+    ref: MTP-1381G-9AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381G-9AV', kind: retailer }
+    image: mtp-1381g-9av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381G-9AV'
+  - id: mtp-1381gd-7av
+    ref: MTP-1381GD-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381GD-7AV', kind: retailer }
+    image: mtp-1381gd-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381GD-7AV'
+  - id: mtp-1381l-7av
+    ref: MTP-1381L-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381L-7AV', kind: retailer }
+    image: mtp-1381l-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1381L-7AV'
