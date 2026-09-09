@@ -1,0 +1,43 @@
+# BG-1201 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bg-1201
+  name: BG-1201
+  line: baby-g
+
+models:
+  - id: bg-1201-2av
+    ref: BG-1201-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1201-2AV', kind: retailer }
+    image: null
+  - id: bg-1201-2bv
+    ref: BG-1201-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1201-2BV', kind: retailer }
+    image: null
+  - id: bg-1201-3v
+    ref: BG-1201-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1201-3V', kind: retailer }
+    image: null
+  - id: bg-1201-4av
+    ref: BG-1201-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1201-4AV', kind: retailer }
+    image: null
+  - id: bg-1201-4bv
+    ref: BG-1201-4BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1201-4BV', kind: retailer }
+    image: null
+  - id: bg-1201-7v
+    ref: BG-1201-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1201-7V', kind: retailer }
+    image: null
