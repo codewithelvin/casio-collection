@@ -1,0 +1,59 @@
+# FTL-110 — seeded 2026-09-09 from javys.com's older
+# hand-coded micro-site pages (Forester / LapMemory / FunWatches / Water
+# Sports / Analog Sports / PELA) rather than its series_new.php system --
+# see the reference memo on javys.com for why these needed a second reader.
+# Only id, ref, source and (where the page's own image filename verifiably
+# names this exact reference) image are written here (D27): the client asked
+# for these 5 references catalogued quickly rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — none of these pages states one.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ftl-110
+  name: FTL-110
+  line: vintage
+
+models:
+  - id: ftl-110hl-7av
+    ref: FTL-110HL-7AV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester03.htm', kind: retailer }
+    image: ftl-110hl-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester03.htm'
+  - id: ftl-110hv-2av
+    ref: FTL-110HV-2AV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester03.htm', kind: retailer }
+    image: ftl-110hv-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester03.htm'
+  - id: ftl-110hv-3av
+    ref: FTL-110HV-3AV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester03.htm', kind: retailer }
+    image: ftl-110hv-3av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester03.htm'
+  - id: ftl-110hv-5av
+    ref: FTL-110HV-5AV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester03.htm', kind: retailer }
+    image: ftl-110hv-5av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester03.htm'
+  - id: ftl-110hv-7av
+    ref: FTL-110HV-7AV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester03.htm', kind: retailer }
+    image: ftl-110hv-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester03.htm'
