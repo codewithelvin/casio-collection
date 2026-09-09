@@ -1,5 +1,15 @@
-# PHOTOGRAPHS REFUSED, 62 of them, and this is the reason for every
+# PHOTOGRAPHS REFUSED, 59 of them, and this is the reason for every
 # `image: null` below that does not carry one of its own.
+#
+# JAVYS ADDED 3 OF THESE ON 2026-09-09. javys.com/casio, a Hong
+# Kong Casio distributor running its own per-reference product-photo pages
+# since at least 2010, was not among the routes measured below and turned
+# out to hold a large (>=300px) photograph for 3 of the 62
+# references this file had refused. Read off
+# https://www.javys.com/casio/new_web/watch/new_watch.php?id=<REF> per entry
+# and credited to Javys as `rights-reserved` (D41): the site states no
+# licence. The routes below were still walked and are still empty; javys is
+# an addition, not a correction to any of them.
 #
 # **THE HEADLINE CLAIM BELOW WAS WRONG AND FOUR ENTRIES NOW DISPROVE IT.** It
 # said every route had been walked. One had not, because nobody knew it existed:
@@ -1115,9 +1125,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass, flash-alert]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-5600hdr-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600HDR-1'
     discontinued: true
   - id: dw-5600hr-1
     ref: DW-5600HR-1
@@ -1294,9 +1306,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass, flash-alert]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-5600lg-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600LG-1'
     discontinued: true
   - id: dw-5600lh-4
     ref: DW-5600LH-4
@@ -2047,9 +2061,11 @@ models:
     movement: quartz
     module: '3229'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass, flash-alert]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-5600pr-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600PR-4'
     discontinued: true
   - id: dw-5600pt-5
     ref: DW-5600PT-5
