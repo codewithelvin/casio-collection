@@ -1,0 +1,75 @@
+# LTP-1329 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-1329
+  name: LTP-1329
+  line: vintage
+
+models:
+  - id: ltp-1329-2ev
+    ref: LTP-1329-2EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329-2EV', kind: retailer }
+    image: ltp-1329-2ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329-2EV'
+  - id: ltp-1329-4ev
+    ref: LTP-1329-4EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329-4EV', kind: retailer }
+    image: ltp-1329-4ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329-4EV'
+  - id: ltp-1329-9e1v
+    ref: LTP-1329-9E1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329-9E1V', kind: retailer }
+    image: ltp-1329-9e1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329-9E1V'
+  - id: ltp-1329-9e2v
+    ref: LTP-1329-9E2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329-9E2V', kind: retailer }
+    image: ltp-1329-9e2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329-9E2V'
+  - id: ltp-1329d-2ev
+    ref: LTP-1329D-2EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329D-2EV', kind: retailer }
+    image: ltp-1329d-2ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329D-2EV'
+  - id: ltp-1329d-4ev
+    ref: LTP-1329D-4EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329D-4EV', kind: retailer }
+    image: ltp-1329d-4ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329D-4EV'
+  - id: ltp-1329d-6ev
+    ref: LTP-1329D-6EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329D-6EV', kind: retailer }
+    image: ltp-1329d-6ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1329D-6EV'
