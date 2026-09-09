@@ -1,0 +1,105 @@
+# DBW-30 — seeded 2026-09-09 from javys.com, a Casio retailer whose site
+# catalogues each reference on its own page. Retailer and community were the
+# only routes this catalogue could actually read: casio.com's archive holds no
+# product page for this reference (`archive.ts vintage DBW-30`, 0 archived
+# captures) and the Digital Watch Library's deep pages are currently
+# unreachable — timing out under a full Chromium header set, the same failure
+# `sources.md` already records for this site.
+#
+# Module 2747's own operation guide (`manual.ts 2747`) decrypts cleanly and
+# confirms the watch's own construction in its own words — "This watch features
+# separate digital and analog timekeeping" — but carries no Specifications
+# block to read fields from. So every field below comes from javys.com's own
+# per-reference page instead, named in `source` on each model.
+#
+# `year: 2005` is D54's case: it comes from the SERIES page
+# (`series.php?series_id=DB0002`, "Data Bank: 10-Year Battery Series (NOV 2005
+# Monthly View)"), not from the per-model page named in `source`, so it
+# travels in `year_source` instead.
+#
+# Deliberately absent (D27 — absent means nobody has found it):
+#   * `movement` and `water_resistance_m` — the page states neither.
+#   * `case.height_mm` / `case.width_mm` — the page's own "Size of case / total
+#     weight" row reads "DBW-30D ...... 45.0 x 37.0 x 12.8 mm / 120 g" with no
+#     axis labelled. The smallest figure is unambiguously the watch's
+#     thickness on any wristwatch and is written as `depth_mm`; the other two
+#     are not, rather than guessed into height and width.
+#   * `image`. javys.com's only photograph per reference is 150 px wide —
+#     under §10.3's 300 px floor — so no usable photograph exists yet.
+#
+# A `databank` family in `lines.yaml` suggests itself here — the reference
+# prefix, the series' own "Data Bank" name, and the sibling DBW-320 already in
+# this catalogue with no family set. Proposed, not written (§10.6 guardrail 4a).
+
+series:
+  id: dbw-30
+  name: DBW-30
+  line: vintage
+
+models:
+  - id: dbw-30d-1av
+    ref: DBW-30D-1AV
+    source:
+      { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBW-30D-1AV', kind: retailer }
+    year: 2005
+    year_source: 'https://www.javys.com/casio/series.php?series_id=DB0002'
+    display: ana-digi
+    module: '2747'
+    case: { material: 'Stainless Steel / Aluminium', depth_mm: 12.8, weight_g: 120 }
+    features:
+      [
+        stopwatch,
+        full-auto-calendar,
+        countdown-timer,
+        multi-alarm,
+        hourly-time-signal,
+        led-light,
+        afterglow,
+        telememo,
+        world-time,
+      ]
+    image: null
+  - id: dbw-30d-7av
+    ref: DBW-30D-7AV
+    source:
+      { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBW-30D-7AV', kind: retailer }
+    year: 2005
+    year_source: 'https://www.javys.com/casio/series.php?series_id=DB0002'
+    display: ana-digi
+    module: '2747'
+    case: { material: 'Stainless Steel / Aluminium', depth_mm: 12.8, weight_g: 120 }
+    features:
+      [
+        stopwatch,
+        full-auto-calendar,
+        countdown-timer,
+        multi-alarm,
+        hourly-time-signal,
+        led-light,
+        afterglow,
+        telememo,
+        world-time,
+      ]
+    image: null
+  - id: dbw-30sg-7av
+    ref: DBW-30SG-7AV
+    source:
+      { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBW-30SG-7AV', kind: retailer }
+    year: 2005
+    year_source: 'https://www.javys.com/casio/series.php?series_id=DB0002'
+    display: ana-digi
+    module: '2747'
+    case: { material: 'Stainless Steel / Aluminium', depth_mm: 12.8, weight_g: 120 }
+    features:
+      [
+        stopwatch,
+        full-auto-calendar,
+        countdown-timer,
+        multi-alarm,
+        hourly-time-signal,
+        led-light,
+        afterglow,
+        telememo,
+        world-time,
+      ]
+    image: null
