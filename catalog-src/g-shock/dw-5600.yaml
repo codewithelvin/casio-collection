@@ -4028,3 +4028,16 @@ models:
     ref: DW-5600WC-1
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600WC-1', kind: retailer }
     image: null
+
+# MOVED HERE 2026-09-09: 1 reference from
+# catalog-src/vintage/dw-5600.yaml -- javys tags it under a generic
+# subbrand there, but the reference prefix is g-shock's throughout.
+#
+  - id: dw-5600lr-4
+    ref: DW-5600LR-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600LR-4', kind: retailer }
+    image: dw-5600lr-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600LR-4'
