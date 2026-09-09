@@ -1,0 +1,115 @@
+# LTP-1303 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 12 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-1303
+  name: LTP-1303
+  line: vintage
+
+models:
+  - id: ltp-1303d-1av
+    ref: LTP-1303D-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303D-1AV', kind: retailer }
+    image: ltp-1303d-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303D-1AV'
+  - id: ltp-1303d-4av
+    ref: LTP-1303D-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303D-4AV', kind: retailer }
+    image: ltp-1303d-4av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303D-4AV'
+  - id: ltp-1303d-7av
+    ref: LTP-1303D-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303D-7AV', kind: retailer }
+    image: ltp-1303d-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303D-7AV'
+  - id: ltp-1303d-7bv
+    ref: LTP-1303D-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303D-7BV', kind: retailer }
+    image: ltp-1303d-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303D-7BV'
+  - id: ltp-1303dd-1av
+    ref: LTP-1303DD-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303DD-1AV', kind: retailer }
+    image: ltp-1303dd-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303DD-1AV'
+  - id: ltp-1303dd-2av
+    ref: LTP-1303DD-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303DD-2AV', kind: retailer }
+    image: ltp-1303dd-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303DD-2AV'
+  - id: ltp-1303dd-4av
+    ref: LTP-1303DD-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303DD-4AV', kind: retailer }
+    image: ltp-1303dd-4av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303DD-4AV'
+  - id: ltp-1303dd-7av
+    ref: LTP-1303DD-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303DD-7AV', kind: retailer }
+    image: ltp-1303dd-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303DD-7AV'
+  - id: ltp-1303l-1av
+    ref: LTP-1303L-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303L-1AV', kind: retailer }
+    image: ltp-1303l-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303L-1AV'
+  - id: ltp-1303l-7bv
+    ref: LTP-1303L-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303L-7BV', kind: retailer }
+    image: ltp-1303l-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303L-7BV'
+  - id: ltp-1303ll-7av
+    ref: LTP-1303LL-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303LL-7AV', kind: retailer }
+    image: ltp-1303ll-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303LL-7AV'
+  - id: ltp-1303sg-7av
+    ref: LTP-1303SG-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303SG-7AV', kind: retailer }
+    image: ltp-1303sg-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1303SG-7AV'
