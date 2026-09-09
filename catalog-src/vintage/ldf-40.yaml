@@ -41,3 +41,48 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/1996-casio-ldf-40'
     discontinued: true
+
+# ADDED 2026-09-09: 5 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ldf-40-1a
+    ref: LDF-40-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-40-1A', kind: retailer }
+    image: ldf-40-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-40-1A'
+  - id: ldf-40-2a
+    ref: LDF-40-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-40-2A', kind: retailer }
+    image: ldf-40-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-40-2A'
+  - id: ldf-40-4a
+    ref: LDF-40-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-40-4A', kind: retailer }
+    image: ldf-40-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-40-4A'
+  - id: ldf-40-4b
+    ref: LDF-40-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-40-4B', kind: retailer }
+    image: ldf-40-4b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-40-4B'
+  - id: ldf-40-7a
+    ref: LDF-40-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-40-7A', kind: retailer }
+    image: ldf-40-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-40-7A'
