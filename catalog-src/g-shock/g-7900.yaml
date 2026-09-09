@@ -73,3 +73,24 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7900RF-1'
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-7900a-4
+    ref: G-7900A-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7900A-4', kind: retailer }
+    image: g-7900a-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7900A-4'
+  - id: g-7900a-7
+    ref: G-7900A-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7900A-7', kind: retailer }
+    image: g-7900a-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7900A-7'
