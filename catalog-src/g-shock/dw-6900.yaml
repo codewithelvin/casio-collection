@@ -3182,3 +3182,40 @@ models:
     # Coke bottle — see the note on DW-5600CC23-4, which it would also illustrate.
     image: null
     discontinued: false
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: dw-6900cb-8
+    ref: DW-6900CB-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CB-8', kind: retailer }
+    image: dw-6900cb-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CB-8'
+  - id: dw-6900mrc-8
+    ref: DW-6900MRC-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MRC-8', kind: retailer }
+    image: dw-6900mrc-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MRC-8'
+  - id: dw-6900scr-3
+    ref: DW-6900SCR-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SCR-3', kind: retailer }
+    image: dw-6900scr-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SCR-3'
+  - id: dw-6900ww-7
+    ref: DW-6900WW-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900WW-7', kind: retailer }
+    image: dw-6900ww-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900WW-7'
