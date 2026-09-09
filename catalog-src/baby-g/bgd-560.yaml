@@ -1,7 +1,7 @@
 # BGD-560 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 10 references catalogued
+# written here (D27): the client asked for these 12 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -97,3 +97,24 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560THB-7'
+
+# MOVED HERE 2026-09-09: 2 references from
+# catalog-src/vintage/bgd-560.yaml -- javys tags them under a generic
+# subbrand there, but the reference prefix is baby-g's throughout.
+#
+  - id: bgd-560lf-4w
+    ref: BGD-560LF-4W
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560LF-4W', kind: retailer }
+    image: bgd-560lf-4w
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560LF-4W'
+  - id: bgd-560lg-1
+    ref: BGD-560LG-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560LG-1', kind: retailer }
+    image: bgd-560lg-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGD-560LG-1'
