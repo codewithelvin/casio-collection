@@ -1,0 +1,59 @@
+# LF-20 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: lf-20
+  name: LF-20
+  line: vintage
+
+models:
+  - id: lf-20w-1a
+    ref: LF-20W-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-20W-1A', kind: retailer }
+    image: lf-20w-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-20W-1A'
+  - id: lf-20w-3a
+    ref: LF-20W-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-20W-3A', kind: retailer }
+    image: lf-20w-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-20W-3A'
+  - id: lf-20w-5a
+    ref: LF-20W-5A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-20W-5A', kind: retailer }
+    image: lf-20w-5a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-20W-5A'
+  - id: lf-20w-8a
+    ref: LF-20W-8A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-20W-8A', kind: retailer }
+    image: lf-20w-8a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-20W-8A'
+  - id: lf-20w-8a2
+    ref: LF-20W-8A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-20W-8A2', kind: retailer }
+    image: lf-20w-8a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-20W-8A2'
