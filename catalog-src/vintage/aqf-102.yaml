@@ -1,0 +1,75 @@
+# AQF-102 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: aqf-102
+  name: AQF-102
+  line: vintage
+
+models:
+  - id: aqf-102w-1bv
+    ref: AQF-102W-1BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102W-1BV', kind: retailer }
+    image: aqf-102w-1bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102W-1BV'
+  - id: aqf-102w-7bv
+    ref: AQF-102W-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102W-7BV', kind: retailer }
+    image: aqf-102w-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102W-7BV'
+  - id: aqf-102wd-1bv
+    ref: AQF-102WD-1BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102WD-1BV', kind: retailer }
+    image: aqf-102wd-1bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102WD-1BV'
+  - id: aqf-102wd-2bv
+    ref: AQF-102WD-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102WD-2BV', kind: retailer }
+    image: aqf-102wd-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102WD-2BV'
+  - id: aqf-102wd-9bv
+    ref: AQF-102WD-9BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102WD-9BV', kind: retailer }
+    image: aqf-102wd-9bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102WD-9BV'
+  - id: aqf-102wl-2bv
+    ref: AQF-102WL-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102WL-2BV', kind: retailer }
+    image: aqf-102wl-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102WL-2BV'
+  - id: aqf-102wl-4bv
+    ref: AQF-102WL-4BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102WL-4BV', kind: retailer }
+    image: aqf-102wl-4bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-102WL-4BV'
