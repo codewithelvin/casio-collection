@@ -1,0 +1,67 @@
+# STR-600 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: str-600
+  name: STR-600
+  line: vintage
+
+models:
+  - id: str-600-2v
+    ref: STR-600-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600-2V', kind: retailer }
+    image: str-600-2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600-2V'
+  - id: str-600-7v
+    ref: STR-600-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600-7V', kind: retailer }
+    image: str-600-7v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600-7V'
+  - id: str-600-8v
+    ref: STR-600-8V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600-8V', kind: retailer }
+    image: str-600-8v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600-8V'
+  - id: str-600s-1v
+    ref: STR-600S-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600S-1V', kind: retailer }
+    image: str-600s-1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600S-1V'
+  - id: str-600s-3v
+    ref: STR-600S-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600S-3V', kind: retailer }
+    image: str-600s-3v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600S-3V'
+  - id: str-600s-4v
+    ref: STR-600S-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600S-4V', kind: retailer }
+    image: str-600s-4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-600S-4V'
