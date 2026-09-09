@@ -1,0 +1,59 @@
+# MTP-B146 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-b146
+  name: MTP-B146
+  line: vintage
+
+models:
+  - id: mtp-b146d-1av
+    ref: MTP-B146D-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B146D-1AV', kind: retailer }
+    image: mtp-b146d-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B146D-1AV'
+  - id: mtp-b146d-2av
+    ref: MTP-B146D-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B146D-2AV', kind: retailer }
+    image: mtp-b146d-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B146D-2AV'
+  - id: mtp-b146d-7av
+    ref: MTP-B146D-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B146D-7AV', kind: retailer }
+    image: mtp-b146d-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B146D-7AV'
+  - id: mtp-b146g-3av
+    ref: MTP-B146G-3AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B146G-3AV', kind: retailer }
+    image: mtp-b146g-3av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B146G-3AV'
+  - id: mtp-b146g-9av
+    ref: MTP-B146G-9AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B146G-9AV', kind: retailer }
+    image: mtp-b146g-9av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B146G-9AV'
