@@ -1,0 +1,67 @@
+# MTP-E700 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-e700
+  name: MTP-E700
+  line: vintage
+
+models:
+  - id: mtp-e700b-1ev
+    ref: MTP-E700B-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700B-1EV', kind: retailer }
+    image: mtp-e700b-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700B-1EV'
+  - id: mtp-e700b-7ev
+    ref: MTP-E700B-7EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700B-7EV', kind: retailer }
+    image: mtp-e700b-7ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700B-7EV'
+  - id: mtp-e700bl-1ev
+    ref: MTP-E700BL-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700BL-1EV', kind: retailer }
+    image: mtp-e700bl-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700BL-1EV'
+  - id: mtp-e700d-1ev
+    ref: MTP-E700D-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700D-1EV', kind: retailer }
+    image: mtp-e700d-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700D-1EV'
+  - id: mtp-e700d-7ev
+    ref: MTP-E700D-7EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700D-7EV', kind: retailer }
+    image: mtp-e700d-7ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700D-7EV'
+  - id: mtp-e700l-1ev
+    ref: MTP-E700L-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700L-1EV', kind: retailer }
+    image: mtp-e700l-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E700L-1EV'
