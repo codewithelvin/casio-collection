@@ -1,0 +1,59 @@
+# GW-A1000 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gw-a1000
+  name: GW-A1000
+  line: g-shock
+
+models:
+  - id: gw-a1000-1a
+    ref: GW-A1000-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-A1000-1A', kind: retailer }
+    image: gw-a1000-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-A1000-1A'
+  - id: gw-a1000a-1a
+    ref: GW-A1000A-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-A1000A-1A', kind: retailer }
+    image: gw-a1000a-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-A1000A-1A'
+  - id: gw-a1000d-1a
+    ref: GW-A1000D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-A1000D-1A', kind: retailer }
+    image: gw-a1000d-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-A1000D-1A'
+  - id: gw-a1000fc-1a
+    ref: GW-A1000FC-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-A1000FC-1A', kind: retailer }
+    image: gw-a1000fc-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-A1000FC-1A'
+  - id: gw-a1000fc-2a
+    ref: GW-A1000FC-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-A1000FC-2A', kind: retailer }
+    image: gw-a1000fc-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-A1000FC-2A'
