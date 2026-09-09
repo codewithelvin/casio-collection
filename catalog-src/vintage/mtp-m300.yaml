@@ -146,3 +146,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230313000812id_/https://www.casio.com/intl/watches/casio/product.MTP-M300M-7AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: mtp-m300d-4av
+    ref: MTP-M300D-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-M300D-4AV', kind: retailer }
+    image: mtp-m300d-4av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-M300D-4AV'
