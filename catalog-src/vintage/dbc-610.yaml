@@ -47,3 +47,16 @@ models:
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_dbc-610'
     discontinued: true
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: dbc-610ga-1
+    ref: DBC-610GA-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-610GA-1', kind: retailer }
+    image: dbc-610ga-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-610GA-1'
