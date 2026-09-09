@@ -57,3 +57,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221221180601id_/https://www.casio.com/in/watches/sheen/product.SHE-4533PGL-7B/'
     discontinued: true
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: she-4533d-7a
+    ref: SHE-4533D-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4533D-7A', kind: retailer }
+    image: she-4533d-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4533D-7A'
+  - id: she-4533pg-4a
+    ref: SHE-4533PG-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4533PG-4A', kind: retailer }
+    image: she-4533pg-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4533PG-4A'
+  - id: she-4533pgl-7a
+    ref: SHE-4533PGL-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4533PGL-7A', kind: retailer }
+    image: she-4533pgl-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4533PGL-7A'
