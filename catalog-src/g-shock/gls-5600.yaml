@@ -57,3 +57,20 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLS-5600L-4'
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: gls-5600v-1
+    ref: GLS-5600V-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLS-5600V-1', kind: retailer }
+    image: null
+  - id: gls-5600v-3
+    ref: GLS-5600V-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLS-5600V-3', kind: retailer }
+    image: null
+  - id: gls-5600v-7
+    ref: GLS-5600V-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLS-5600V-7', kind: retailer }
+    image: null
