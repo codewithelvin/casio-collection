@@ -1,0 +1,75 @@
+# EFX-500 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: efx-500
+  name: EFX-500
+  line: edifice
+
+models:
+  - id: efx-500bb-1av
+    ref: EFX-500BB-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500BB-1AV', kind: retailer }
+    image: efx-500bb-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500BB-1AV'
+  - id: efx-500bk-1av
+    ref: EFX-500BK-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500BK-1AV', kind: retailer }
+    image: efx-500bk-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500BK-1AV'
+  - id: efx-500d-1a4v
+    ref: EFX-500D-1A4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500D-1A4V', kind: retailer }
+    image: efx-500d-1a4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500D-1A4V'
+  - id: efx-500d-1a9v
+    ref: EFX-500D-1A9V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500D-1A9V', kind: retailer }
+    image: efx-500d-1a9v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500D-1A9V'
+  - id: efx-500d-7av
+    ref: EFX-500D-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500D-7AV', kind: retailer }
+    image: efx-500d-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500D-7AV'
+  - id: efx-500p-1av
+    ref: EFX-500P-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500P-1AV', kind: retailer }
+    image: efx-500p-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500P-1AV'
+  - id: efx-500sp-1av
+    ref: EFX-500SP-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500SP-1AV', kind: retailer }
+    image: efx-500sp-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFX-500SP-1AV'
