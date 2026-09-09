@@ -154,3 +154,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210413044036id_/https://www.casio.com/jp/watches/casio/product.STR-300J-4/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: str-300s-2v
+    ref: STR-300S-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-300S-2V', kind: retailer }
+    image: str-300s-2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-300S-2V'
+  - id: str-300s-4v
+    ref: STR-300S-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-300S-4V', kind: retailer }
+    image: str-300s-4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-300S-4V'
+  - id: str-300s-7v
+    ref: STR-300S-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-300S-7V', kind: retailer }
+    image: str-300s-7v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=STR-300S-7V'
