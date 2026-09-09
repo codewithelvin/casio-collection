@@ -75,3 +75,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220524174343id_/https://www.casio.com/intl/watches/sheen/product.SHE-3066PGL-4A/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: she-3066pg-4a
+    ref: SHE-3066PG-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3066PG-4A', kind: retailer }
+    image: she-3066pg-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3066PG-4A'
+  - id: she-3066pgl-7a
+    ref: SHE-3066PGL-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3066PGL-7A', kind: retailer }
+    image: she-3066pgl-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3066PGL-7A'
+  - id: she-3066pgl-7b
+    ref: SHE-3066PGL-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3066PGL-7B', kind: retailer }
+    image: she-3066pgl-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3066PGL-7B'
