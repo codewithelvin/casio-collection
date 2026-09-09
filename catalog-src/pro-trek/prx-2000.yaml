@@ -1,7 +1,7 @@
 # PRX-2000 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 1 references catalogued
+# written here (D27): the client asked for these 2 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -14,7 +14,7 @@
 series:
   id: prx-2000
   name: PRX-2000
-  line: g-shock
+  line: pro-trek
 
 models:
   - id: prx-2000bt-1jr
@@ -25,3 +25,11 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRX-2000BT-1JR'
+  - id: prx-2000yt-1
+    ref: PRX-2000YT-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRX-2000YT-1', kind: retailer }
+    image: prx-2000yt-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRX-2000YT-1'
