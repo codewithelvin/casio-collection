@@ -206,3 +206,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241224184623id_/https://www.casio.com/my/watches/casio/product.MTP-B145G-9AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: mtp-b145sg-1av
+    ref: MTP-B145SG-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B145SG-1AV', kind: retailer }
+    image: mtp-b145sg-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B145SG-1AV'
+  - id: mtp-b145sg-7av
+    ref: MTP-B145SG-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B145SG-7AV', kind: retailer }
+    image: mtp-b145sg-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B145SG-7AV'
