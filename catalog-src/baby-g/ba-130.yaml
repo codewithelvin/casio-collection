@@ -1,0 +1,75 @@
+# BA-130 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ba-130
+  name: BA-130
+  line: baby-g
+
+models:
+  - id: ba-130-1a
+    ref: BA-130-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-1A', kind: retailer }
+    image: ba-130-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-1A'
+  - id: ba-130-1a2
+    ref: BA-130-1A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-1A2', kind: retailer }
+    image: ba-130-1a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-1A2'
+  - id: ba-130-1a3
+    ref: BA-130-1A3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-1A3', kind: retailer }
+    image: ba-130-1a3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-1A3'
+  - id: ba-130-1a4
+    ref: BA-130-1A4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-1A4', kind: retailer }
+    image: ba-130-1a4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-1A4'
+  - id: ba-130-4a
+    ref: BA-130-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-4A', kind: retailer }
+    image: ba-130-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-4A'
+  - id: ba-130-7a1
+    ref: BA-130-7A1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-7A1', kind: retailer }
+    image: ba-130-7a1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-7A1'
+  - id: ba-130-7a2
+    ref: BA-130-7A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-7A2', kind: retailer }
+    image: ba-130-7a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-130-7A2'
