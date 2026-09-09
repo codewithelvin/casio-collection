@@ -1,0 +1,75 @@
+# LAQ-2000 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: laq-2000
+  name: LAQ-2000
+  line: vintage
+
+models:
+  - id: laq-2000d-1a
+    ref: LAQ-2000D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000D-1A', kind: retailer }
+    image: laq-2000d-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000D-1A'
+  - id: laq-2000d-4a
+    ref: LAQ-2000D-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000D-4A', kind: retailer }
+    image: laq-2000d-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000D-4A'
+  - id: laq-2000d-5a
+    ref: LAQ-2000D-5A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000D-5A', kind: retailer }
+    image: laq-2000d-5a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000D-5A'
+  - id: laq-2000d-7a
+    ref: LAQ-2000D-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000D-7A', kind: retailer }
+    image: laq-2000d-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000D-7A'
+  - id: laq-2000g-1a
+    ref: LAQ-2000G-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000G-1A', kind: retailer }
+    image: laq-2000g-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000G-1A'
+  - id: laq-2000l-1a
+    ref: LAQ-2000L-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000L-1A', kind: retailer }
+    image: laq-2000l-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000L-1A'
+  - id: laq-2000l-7a
+    ref: LAQ-2000L-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000L-7A', kind: retailer }
+    image: laq-2000l-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LAQ-2000L-7A'
