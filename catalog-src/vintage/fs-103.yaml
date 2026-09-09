@@ -1,0 +1,27 @@
+# FS-103 — seeded 2026-09-09 from javys.com's older
+# hand-coded micro-site pages (Forester / LapMemory / FunWatches / Water
+# Sports / Analog Sports / PELA) rather than its series_new.php system --
+# see the reference memo on javys.com for why these needed a second reader.
+# Only id, ref, source and (where the page's own image filename verifiably
+# names this exact reference) image are written here (D27): the client asked
+# for these 1 references catalogued quickly rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — none of these pages states one.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: fs-103
+  name: FS-103
+  line: vintage
+
+models:
+  - id: fs-103-4
+    ref: FS-103-4
+    source: { url: 'https://www.javys.com/casio/pela/pelafs1/metal.htm', kind: retailer }
+    image: fs-103-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pelafs1/metal.htm'
