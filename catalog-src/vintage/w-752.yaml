@@ -1,0 +1,75 @@
+# W-752 — seeded 2026-09-09 from javys.com, a Hong Kong Casio distributor,
+# by direct request. Every field below is read off the one page named in
+# `source`; `year` comes from the series page instead
+# (`series.php?series_id=DA0006`, "Digital-Analog: SPORTY FASHION 10-Year
+# Battery Life Series (2007-07)"), so it travels in `year_source` (D54).
+#
+# `image` is javys's only photograph, 163-164px wide — under the skill's
+# usual 300px floor, published anyway per the client's 2026-09-09 instruction
+# that any confirmed photograph beats none for a reference this hard to find.
+#
+# TWO FEATURES THE PAGE STATES AND NEITHER IS WRITTEN DOWN: "Pacemaker"
+# (a beep to set exercise pace) and "Snooze Feature" are not in
+# src/catalog/vocabulary.ts's FEATURES list, and guardrail 4 says a value not
+# in the vocabulary is reported and asked about, never added as a side effect
+# of seeding three models. "Spherical Glass" is a shape, not one of the
+# tracked crystal materials (mineral/sapphire/acrylic), so it is left out for
+# the same reason rather than guessed onto one of those three.
+#
+# Deliberately absent: `water_resistance_m` is written (10 BAR = 100m, the
+# page states both); band material is never a tracked field on this project.
+
+series:
+  id: w-752
+  name: W-752
+  line: vintage
+
+models:
+  - id: w-752-2bv
+    ref: W-752-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-752-2BV', kind: retailer }
+    year: 2007
+    year_source: 'https://www.javys.com/casio/series.php?series_id=DA0006'
+    display: digital
+    movement: quartz
+    module: '2925'
+    case: { material: 'Resin / Stainless Steel' }
+    water_resistance_m: 100
+    features: [dual-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, full-auto-calendar]
+    image: w-752-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-752-2BV'
+  - id: w-752-4bv
+    ref: W-752-4BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-752-4BV', kind: retailer }
+    year: 2007
+    year_source: 'https://www.javys.com/casio/series.php?series_id=DA0006'
+    display: digital
+    movement: quartz
+    module: '2925'
+    case: { material: 'Resin / Stainless Steel' }
+    water_resistance_m: 100
+    features: [dual-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, full-auto-calendar]
+    image: w-752-4bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-752-4BV'
+  - id: w-752-9bv
+    ref: W-752-9BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-752-9BV', kind: retailer }
+    year: 2007
+    year_source: 'https://www.javys.com/casio/series.php?series_id=DA0006'
+    display: digital
+    movement: quartz
+    module: '2925'
+    case: { material: 'Resin / Stainless Steel' }
+    water_resistance_m: 100
+    features: [dual-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, full-auto-calendar]
+    image: w-752-9bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-752-9BV'
