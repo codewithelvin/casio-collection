@@ -42,3 +42,56 @@ models:
       url: 'https://web.archive.org/web/20221001040821id_/https://www.casio.com/intl/watches/sheen/product.SHN-3011BB-1A/'
     discontinued: false
     features: [mineral-glass]
+
+# ADDED 2026-09-09: 6 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: shn-3011bd-1a
+    ref: SHN-3011BD-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011BD-1A', kind: retailer }
+    image: shn-3011bd-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011BD-1A'
+  - id: shn-3011d-4a
+    ref: SHN-3011D-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011D-4A', kind: retailer }
+    image: shn-3011d-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011D-4A'
+  - id: shn-3011d-7a
+    ref: SHN-3011D-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011D-7A', kind: retailer }
+    image: shn-3011d-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011D-7A'
+  - id: shn-3011gd-7a
+    ref: SHN-3011GD-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011GD-7A', kind: retailer }
+    image: shn-3011gd-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011GD-7A'
+  - id: shn-3011gl-7a
+    ref: SHN-3011GL-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011GL-7A', kind: retailer }
+    image: shn-3011gl-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011GL-7A'
+  - id: shn-3011l-4a
+    ref: SHN-3011L-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011L-4A', kind: retailer }
+    image: shn-3011l-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-3011L-4A'
