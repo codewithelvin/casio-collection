@@ -1,0 +1,83 @@
+# G-8000 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 16 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: g-8000
+  name: G-8000
+  line: g-shock
+
+models:
+  - id: g-8000-1v
+    ref: G-8000-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000-1V', kind: retailer }
+    image: null
+  - id: g-8000-2v
+    ref: G-8000-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000-2V', kind: retailer }
+    image: null
+  - id: g-8000-3v
+    ref: G-8000-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000-3V', kind: retailer }
+    image: null
+  - id: g-8000-4v
+    ref: G-8000-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000-4V', kind: retailer }
+    image: null
+  - id: g-8000-8v
+    ref: G-8000-8V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000-8V', kind: retailer }
+    image: null
+  - id: g-8000b-2v
+    ref: G-8000B-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000B-2V', kind: retailer }
+    image: null
+  - id: g-8000b-3v
+    ref: G-8000B-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000B-3V', kind: retailer }
+    image: null
+  - id: g-8000b-4v
+    ref: G-8000B-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000B-4V', kind: retailer }
+    image: null
+  - id: g-8000c-2v
+    ref: G-8000C-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000C-2V', kind: retailer }
+    image: null
+  - id: g-8000c-3v
+    ref: G-8000C-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000C-3V', kind: retailer }
+    image: null
+  - id: g-8000f-1
+    ref: G-8000F-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000F-1', kind: retailer }
+    image: null
+  - id: g-8000f-4
+    ref: G-8000F-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000F-4', kind: retailer }
+    image: null
+  - id: g-8000f-7
+    ref: G-8000F-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000F-7', kind: retailer }
+    image: null
+  - id: g-8000f-9a
+    ref: G-8000F-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000F-9A', kind: retailer }
+    image: null
+  - id: g-8000f-9b
+    ref: G-8000F-9B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000F-9B', kind: retailer }
+    image: null
+  - id: g-8000re-3
+    ref: G-8000RE-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8000RE-3', kind: retailer }
+    image: null
