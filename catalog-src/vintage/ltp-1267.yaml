@@ -1,0 +1,59 @@
+# LTP-1267 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-1267
+  name: LTP-1267
+  line: vintage
+
+models:
+  - id: ltp-1267gl-1c
+    ref: LTP-1267GL-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1267GL-1C', kind: retailer }
+    image: ltp-1267gl-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1267GL-1C'
+  - id: ltp-1267l-1c
+    ref: LTP-1267L-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1267L-1C', kind: retailer }
+    image: ltp-1267l-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1267L-1C'
+  - id: ltp-1267l-7c4
+    ref: LTP-1267L-7C4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1267L-7C4', kind: retailer }
+    image: ltp-1267l-7c4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1267L-7C4'
+  - id: ltp-1267l-7c5
+    ref: LTP-1267L-7C5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1267L-7C5', kind: retailer }
+    image: ltp-1267l-7c5
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1267L-7C5'
+  - id: ltp-1267l-7c9
+    ref: LTP-1267L-7C9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1267L-7C9', kind: retailer }
+    image: ltp-1267l-7c9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1267L-7C9'
