@@ -1,0 +1,35 @@
+# PRG-120 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: prg-120
+  name: PRG-120
+  line: pro-trek
+
+models:
+  - id: prg-120-1av
+    ref: PRG-120-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-120-1AV', kind: retailer }
+    image: null
+  - id: prg-120-1bv
+    ref: PRG-120-1BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-120-1BV', kind: retailer }
+    image: null
+  - id: prg-120-3v
+    ref: PRG-120-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-120-3V', kind: retailer }
+    image: null
+  - id: prg-120t-7v
+    ref: PRG-120T-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-120T-7V', kind: retailer }
+    image: null
