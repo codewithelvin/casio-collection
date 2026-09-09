@@ -1,0 +1,67 @@
+# PRT-B50 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: prt-b50
+  name: PRT-B50
+  line: pro-trek
+
+models:
+  - id: prt-b50-1
+    ref: PRT-B50-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50-1', kind: retailer }
+    image: prt-b50-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50-1'
+  - id: prt-b50-2
+    ref: PRT-B50-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50-2', kind: retailer }
+    image: prt-b50-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50-2'
+  - id: prt-b50-4
+    ref: PRT-B50-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50-4', kind: retailer }
+    image: prt-b50-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50-4'
+  - id: prt-b50fe-3
+    ref: PRT-B50FE-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50FE-3', kind: retailer }
+    image: prt-b50fe-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50FE-3'
+  - id: prt-b50t-7
+    ref: PRT-B50T-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50T-7', kind: retailer }
+    image: prt-b50t-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50T-7'
+  - id: prt-b50yt-1
+    ref: PRT-B50YT-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50YT-1', kind: retailer }
+    image: prt-b50yt-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRT-B50YT-1'
