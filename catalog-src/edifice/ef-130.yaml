@@ -34,3 +34,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220808111429id_/https://www.casio.com/intl/watches/edifice/product.EF-130D-1A2V/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ef-130d-1a4v
+    ref: EF-130D-1A4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-130D-1A4V', kind: retailer }
+    image: ef-130d-1a4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-130D-1A4V'
+  - id: ef-130d-1a5v
+    ref: EF-130D-1A5V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-130D-1A5V', kind: retailer }
+    image: ef-130d-1a5v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-130D-1A5V'
