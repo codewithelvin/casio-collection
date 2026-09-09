@@ -37,3 +37,24 @@ models:
     features: [alarm, stopwatch]
     image: null
     discontinued: true
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: f-91ws-7a2
+    ref: F-91WS-7A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=F-91WS-7A2', kind: retailer }
+    image: f-91ws-7a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=F-91WS-7A2'
+  - id: f-91ws-7a3
+    ref: F-91WS-7A3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=F-91WS-7A3', kind: retailer }
+    image: f-91ws-7a3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=F-91WS-7A3'
