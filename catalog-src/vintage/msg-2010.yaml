@@ -1,0 +1,91 @@
+# MSG-2010 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 9 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: msg-2010
+  name: MSG-2010
+  line: vintage
+
+models:
+  - id: msg-2010d-2v
+    ref: MSG-2010D-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010D-2V', kind: retailer }
+    image: msg-2010d-2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010D-2V'
+  - id: msg-2010d-4v
+    ref: MSG-2010D-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010D-4V', kind: retailer }
+    image: msg-2010d-4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010D-4V'
+  - id: msg-2010d-7v
+    ref: MSG-2010D-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010D-7V', kind: retailer }
+    image: msg-2010d-7v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010D-7V'
+  - id: msg-2010d-8v
+    ref: MSG-2010D-8V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010D-8V', kind: retailer }
+    image: msg-2010d-8v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010D-8V'
+  - id: msg-2010l-1v
+    ref: MSG-2010L-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010L-1V', kind: retailer }
+    image: msg-2010l-1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010L-1V'
+  - id: msg-2010l-2av
+    ref: MSG-2010L-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010L-2AV', kind: retailer }
+    image: msg-2010l-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010L-2AV'
+  - id: msg-2010l-2bv
+    ref: MSG-2010L-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010L-2BV', kind: retailer }
+    image: msg-2010l-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010L-2BV'
+  - id: msg-2010l-4v
+    ref: MSG-2010L-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010L-4V', kind: retailer }
+    image: msg-2010l-4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010L-4V'
+  - id: msg-2010l-6v
+    ref: MSG-2010L-6V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010L-6V', kind: retailer }
+    image: msg-2010l-6v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-2010L-6V'
