@@ -1,7 +1,7 @@
 # BGA-150 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 9 references catalogued
+# written here (D27): the client asked for these 13 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -89,3 +89,40 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-150KT-7B'
+
+# MOVED HERE 2026-09-09: 4 references from
+# catalog-src/vintage/bga-150.yaml -- javys tags them under a generic
+# subbrand there, but the reference prefix is baby-g's throughout.
+#
+  - id: bga-150la-7b
+    ref: BGA-150LA-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-150LA-7B', kind: retailer }
+    image: bga-150la-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-150LA-7B'
+  - id: bga-150le-1bv
+    ref: BGA-150LE-1BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-150LE-1BV', kind: retailer }
+    image: bga-150le-1bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-150LE-1BV'
+  - id: bga-150lf-7av
+    ref: BGA-150LF-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-150LF-7AV', kind: retailer }
+    image: bga-150lf-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-150LF-7AV'
+  - id: bga-150lg-7b
+    ref: BGA-150LG-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-150LG-7B', kind: retailer }
+    image: bga-150lg-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-150LG-7B'
