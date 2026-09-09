@@ -41,3 +41,64 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/90s-casio-g-shock-dw-5900'
     discontinued: true
+
+# ADDED 2026-09-09: 7 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: dw-5900-1
+    ref: DW-5900-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900-1', kind: retailer }
+    image: dw-5900-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900-1'
+  - id: dw-5900bb-1
+    ref: DW-5900BB-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900BB-1', kind: retailer }
+    image: dw-5900bb-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900BB-1'
+  - id: dw-5900dn-1
+    ref: DW-5900DN-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900DN-1', kind: retailer }
+    image: dw-5900dn-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900DN-1'
+  - id: dw-5900dn-3
+    ref: DW-5900DN-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900DN-3', kind: retailer }
+    image: dw-5900dn-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900DN-3'
+  - id: dw-5900rs-1
+    ref: DW-5900RS-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900RS-1', kind: retailer }
+    image: dw-5900rs-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900RS-1'
+  - id: dw-5900rs-9
+    ref: DW-5900RS-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900RS-9', kind: retailer }
+    image: dw-5900rs-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900RS-9'
+  - id: dw-5900th-1
+    ref: DW-5900TH-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900TH-1', kind: retailer }
+    image: dw-5900th-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5900TH-1'
