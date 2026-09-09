@@ -1,7 +1,7 @@
 # BGA-104 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 4 references catalogued
+# written here (D27): the client asked for these 5 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -49,3 +49,16 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-104G-5B'
+
+# MOVED HERE 2026-09-09: 1 reference from
+# catalog-src/vintage/bga-104.yaml -- javys tags it under a generic
+# subbrand there, but the reference prefix is baby-g's throughout.
+#
+  - id: bga-104l-7b
+    ref: BGA-104L-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-104L-7B', kind: retailer }
+    image: bga-104l-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-104L-7B'
