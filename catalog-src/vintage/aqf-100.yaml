@@ -1,0 +1,51 @@
+# AQF-100 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: aqf-100
+  name: AQF-100
+  line: vintage
+
+models:
+  - id: aqf-100w-7bv
+    ref: AQF-100W-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-100W-7BV', kind: retailer }
+    image: aqf-100w-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-100W-7BV'
+  - id: aqf-100wb-3bv
+    ref: AQF-100WB-3BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-100WB-3BV', kind: retailer }
+    image: aqf-100wb-3bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-100WB-3BV'
+  - id: aqf-100wd-7bv
+    ref: AQF-100WD-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-100WD-7BV', kind: retailer }
+    image: aqf-100wd-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-100WD-7BV'
+  - id: aqf-100wd-9bv
+    ref: AQF-100WD-9BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-100WD-9BV', kind: retailer }
+    image: aqf-100wd-9bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQF-100WD-9BV'
