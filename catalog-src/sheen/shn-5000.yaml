@@ -1,7 +1,7 @@
 # SHN-5000 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 5 references catalogued
+# written here (D27): the client asked for these 7 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -17,6 +17,22 @@ series:
   line: sheen
 
 models:
+  - id: shn-5000bp-1av
+    ref: SHN-5000BP-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-5000BP-1AV', kind: retailer }
+    image: shn-5000bp-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-5000BP-1AV'
+  - id: shn-5000bp-7av
+    ref: SHN-5000BP-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-5000BP-7AV', kind: retailer }
+    image: shn-5000bp-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-5000BP-7AV'
   - id: shn-5000d-2av
     ref: SHN-5000D-2AV
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-5000D-2AV', kind: retailer }
