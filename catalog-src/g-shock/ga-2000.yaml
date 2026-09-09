@@ -298,3 +298,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210929005636id_/https://www.casio.com/sg/watches/gshock/product.GA-2000WM-1A/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ga-2000bt-1a
+    ref: GA-2000BT-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-2000BT-1A', kind: retailer }
+    image: ga-2000bt-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-2000BT-1A'
+  - id: ga-2000e-4
+    ref: GA-2000E-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-2000E-4', kind: retailer }
+    image: ga-2000e-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-2000E-4'
