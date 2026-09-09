@@ -1,0 +1,51 @@
+# MTP-E335 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-e335
+  name: MTP-E335
+  line: vintage
+
+models:
+  - id: mtp-e335d-1ev
+    ref: MTP-E335D-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E335D-1EV', kind: retailer }
+    image: mtp-e335d-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E335D-1EV'
+  - id: mtp-e335d-2e1v
+    ref: MTP-E335D-2E1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E335D-2E1V', kind: retailer }
+    image: mtp-e335d-2e1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E335D-2E1V'
+  - id: mtp-e335d-3ev
+    ref: MTP-E335D-3EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E335D-3EV', kind: retailer }
+    image: mtp-e335d-3ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E335D-3EV'
+  - id: mtp-e335d-7ev
+    ref: MTP-E335D-7EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E335D-7EV', kind: retailer }
+    image: mtp-e335d-7ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E335D-7EV'
