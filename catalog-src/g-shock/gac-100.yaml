@@ -1,0 +1,51 @@
+# GAC-100 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gac-100
+  name: GAC-100
+  line: g-shock
+
+models:
+  - id: gac-100-1a
+    ref: GAC-100-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GAC-100-1A', kind: retailer }
+    image: gac-100-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GAC-100-1A'
+  - id: gac-100-1a2
+    ref: GAC-100-1A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GAC-100-1A2', kind: retailer }
+    image: gac-100-1a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GAC-100-1A2'
+  - id: gac-100-8a
+    ref: GAC-100-8A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GAC-100-8A', kind: retailer }
+    image: gac-100-8a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GAC-100-8A'
+  - id: gac-100rg-7a
+    ref: GAC-100RG-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GAC-100RG-7A', kind: retailer }
+    image: gac-100rg-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GAC-100RG-7A'
