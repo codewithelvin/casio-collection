@@ -1,7 +1,7 @@
 # BG-5600 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 10 references catalogued
+# written here (D27): the client asked for these 11 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -77,3 +77,16 @@ models:
     ref: BG-5600SG-8
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600SG-8', kind: retailer }
     image: null
+
+# MOVED HERE 2026-09-09: 1 reference from
+# catalog-src/vintage/bg-5600.yaml -- javys tags it under a generic
+# subbrand there, but the reference prefix is baby-g's throughout.
+#
+  - id: bg-5600lr-4
+    ref: BG-5600LR-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600LR-4', kind: retailer }
+    image: bg-5600lr-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600LR-4'
