@@ -1,0 +1,51 @@
+# LTP-1285 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-1285
+  name: LTP-1285
+  line: vintage
+
+models:
+  - id: ltp-1285b-7b2
+    ref: LTP-1285B-7B2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1285B-7B2', kind: retailer }
+    image: ltp-1285b-7b2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1285B-7B2'
+  - id: ltp-1285b-7b3
+    ref: LTP-1285B-7B3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1285B-7B3', kind: retailer }
+    image: ltp-1285b-7b3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1285B-7B3'
+  - id: ltp-1285b-7b4
+    ref: LTP-1285B-7B4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1285B-7B4', kind: retailer }
+    image: ltp-1285b-7b4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1285B-7B4'
+  - id: ltp-1285b-7b6
+    ref: LTP-1285B-7B6
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1285B-7B6', kind: retailer }
+    image: ltp-1285b-7b6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1285B-7B6'
