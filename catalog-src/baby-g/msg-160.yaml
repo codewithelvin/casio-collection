@@ -1,7 +1,7 @@
 # MSG-160 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 1 references catalogued
+# written here (D27): the client asked for these 11 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -21,3 +21,88 @@ models:
     ref: MSG-160DG-9
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160DG-9', kind: retailer }
     image: null
+
+# MOVED HERE 2026-09-09: 10 references from
+# catalog-src/vintage/msg-160.yaml -- javys tags them under a generic
+# subbrand there, but the reference prefix is baby-g's throughout.
+#
+  - id: msg-160bl-1
+    ref: MSG-160BL-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160BL-1', kind: retailer }
+    image: msg-160bl-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160BL-1'
+  - id: msg-160c-4v
+    ref: MSG-160C-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160C-4V', kind: retailer }
+    image: msg-160c-4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160C-4V'
+  - id: msg-160d-1v
+    ref: MSG-160D-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160D-1V', kind: retailer }
+    image: msg-160d-1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160D-1V'
+  - id: msg-160d-2v
+    ref: MSG-160D-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160D-2V', kind: retailer }
+    image: msg-160d-2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160D-2V'
+  - id: msg-160d-4v
+    ref: MSG-160D-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160D-4V', kind: retailer }
+    image: msg-160d-4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160D-4V'
+  - id: msg-160d-7v
+    ref: MSG-160D-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160D-7V', kind: retailer }
+    image: msg-160d-7v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160D-7V'
+  - id: msg-160gl-9
+    ref: MSG-160GL-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160GL-9', kind: retailer }
+    image: msg-160gl-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160GL-9'
+  - id: msg-160l-2v
+    ref: MSG-160L-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160L-2V', kind: retailer }
+    image: msg-160l-2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160L-2V'
+  - id: msg-160l-4v
+    ref: MSG-160L-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160L-4V', kind: retailer }
+    image: msg-160l-4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160L-4V'
+  - id: msg-160l-7v
+    ref: MSG-160L-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160L-7V', kind: retailer }
+    image: msg-160l-7v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-160L-7V'
