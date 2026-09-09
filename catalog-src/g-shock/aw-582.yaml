@@ -41,3 +41,48 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582SC-4A'
+
+# ADDED 2026-09-09: 10 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: aw-582-1av
+    ref: AW-582-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582-1AV', kind: retailer }
+    image: null
+  - id: aw-582-3av
+    ref: AW-582-3AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582-3AV', kind: retailer }
+    image: null
+  - id: aw-582b-4a
+    ref: AW-582B-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582B-4A', kind: retailer }
+    image: null
+  - id: aw-582b-7a
+    ref: AW-582B-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582B-7A', kind: retailer }
+    image: null
+  - id: aw-582b-7a1
+    ref: AW-582B-7A1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582B-7A1', kind: retailer }
+    image: null
+  - id: aw-582c-2a
+    ref: AW-582C-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582C-2A', kind: retailer }
+    image: null
+  - id: aw-582c-4a
+    ref: AW-582C-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582C-4A', kind: retailer }
+    image: null
+  - id: aw-582e-2a
+    ref: AW-582E-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582E-2A', kind: retailer }
+    image: null
+  - id: aw-582e-9a
+    ref: AW-582E-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582E-9A', kind: retailer }
+    image: null
+  - id: aw-582tm-2a
+    ref: AW-582TM-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-582TM-2A', kind: retailer }
+    image: null
