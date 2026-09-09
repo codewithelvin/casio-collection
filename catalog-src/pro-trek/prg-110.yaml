@@ -1,0 +1,119 @@
+# PRG-110 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 18 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: prg-110
+  name: PRG-110
+  line: pro-trek
+
+models:
+  - id: prg-110-1v
+    ref: PRG-110-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110-1V', kind: retailer }
+    image: null
+  - id: prg-110-3v
+    ref: PRG-110-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110-3V', kind: retailer }
+    image: null
+  - id: prg-110ab-2v
+    ref: PRG-110AB-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110AB-2V', kind: retailer }
+    image: null
+  - id: prg-110ab-4v
+    ref: PRG-110AB-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110AB-4V', kind: retailer }
+    image: null
+  - id: prg-110ar-2v
+    ref: PRG-110AR-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110AR-2V', kind: retailer }
+    image: null
+  - id: prg-110b-3v
+    ref: PRG-110B-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110B-3V', kind: retailer }
+    image: null
+  - id: prg-110c-1
+    ref: PRG-110C-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-1', kind: retailer }
+    image: prg-110c-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-1'
+  - id: prg-110c-1b
+    ref: PRG-110C-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-1B', kind: retailer }
+    image: prg-110c-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-1B'
+  - id: prg-110c-2
+    ref: PRG-110C-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-2', kind: retailer }
+    image: prg-110c-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-2'
+  - id: prg-110c-3
+    ref: PRG-110C-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-3', kind: retailer }
+    image: prg-110c-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-3'
+  - id: prg-110c-4
+    ref: PRG-110C-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-4', kind: retailer }
+    image: prg-110c-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-4'
+  - id: prg-110c-6
+    ref: PRG-110C-6
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-6', kind: retailer }
+    image: prg-110c-6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-6'
+  - id: prg-110c-9
+    ref: PRG-110C-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-9', kind: retailer }
+    image: prg-110c-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110C-9'
+  - id: prg-110g-1v
+    ref: PRG-110G-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110G-1V', kind: retailer }
+    image: null
+  - id: prg-110g-3v
+    ref: PRG-110G-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110G-3V', kind: retailer }
+    image: null
+  - id: prg-110gb-1v
+    ref: PRG-110GB-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110GB-1V', kind: retailer }
+    image: null
+  - id: prg-110t-7v
+    ref: PRG-110T-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110T-7V', kind: retailer }
+    image: null
+  - id: prg-110y-1v
+    ref: PRG-110Y-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-110Y-1V', kind: retailer }
+    image: null
