@@ -33,3 +33,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250531201307id_/https://www.casio.com/us/watches/casio/product.LF-30W-2A/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: lf-30w-1a
+    ref: LF-30W-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-30W-1A', kind: retailer }
+    image: lf-30w-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-30W-1A'
+  - id: lf-30w-3a
+    ref: LF-30W-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-30W-3A', kind: retailer }
+    image: lf-30w-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-30W-3A'
+  - id: lf-30w-8a
+    ref: LF-30W-8A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-30W-8A', kind: retailer }
+    image: lf-30w-8a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-30W-8A'
