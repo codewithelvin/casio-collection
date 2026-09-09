@@ -20,11 +20,7 @@ models:
   - id: ga-200-1a
     ref: GA-200-1A
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-200-1A', kind: retailer }
-    image: ga-200-1a
-    image_credit:
-      author: Javys
-      licence: rights-reserved
-      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-200-1A'
+    image: null
   - id: ga-200bw-1a
     ref: GA-200BW-1A
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-200BW-1A', kind: retailer }
