@@ -154,3 +154,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193738id_/https://www.casio.com/us/watches/casio/product.LA-20WHS-7A/'
     discontinued: false
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: la-20wh-1b
+    ref: LA-20WH-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-20WH-1B', kind: retailer }
+    image: la-20wh-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-20WH-1B'
