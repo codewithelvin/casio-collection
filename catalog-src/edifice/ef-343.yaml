@@ -1,0 +1,31 @@
+# EF-343 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 3 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ef-343
+  name: EF-343
+  line: edifice
+
+models:
+  - id: ef-343-7av
+    ref: EF-343-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-343-7AV', kind: retailer }
+    image: null
+  - id: ef-343bk-1av
+    ref: EF-343BK-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-343BK-1AV', kind: retailer }
+    image: null
+  - id: ef-343d-7av
+    ref: EF-343D-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-343D-7AV', kind: retailer }
+    image: null
