@@ -33,3 +33,12 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9010MB-1'
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: gw-9010-1
+    ref: GW-9010-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9010-1', kind: retailer }
+    image: null
