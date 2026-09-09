@@ -1,0 +1,63 @@
+# MTP-1350 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-1350
+  name: MTP-1350
+  line: vintage
+
+models:
+  - id: mtp-1350bd-1a1
+    ref: MTP-1350BD-1A1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350BD-1A1', kind: retailer }
+    image: mtp-1350bd-1a1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350BD-1A1'
+  - id: mtp-1350bd-1a2
+    ref: MTP-1350BD-1A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350BD-1A2', kind: retailer }
+    image: null
+  - id: mtp-1350cd-8a1
+    ref: MTP-1350CD-8A1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350CD-8A1', kind: retailer }
+    image: mtp-1350cd-8a1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350CD-8A1'
+  - id: mtp-1350cd-8a2
+    ref: MTP-1350CD-8A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350CD-8A2', kind: retailer }
+    image: mtp-1350cd-8a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350CD-8A2'
+  - id: mtp-1350dd-1a
+    ref: MTP-1350DD-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350DD-1A', kind: retailer }
+    image: mtp-1350dd-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350DD-1A'
+  - id: mtp-1350dd-5a
+    ref: MTP-1350DD-5A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350DD-5A', kind: retailer }
+    image: mtp-1350dd-5a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1350DD-5A'
