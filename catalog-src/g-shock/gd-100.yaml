@@ -1,0 +1,139 @@
+# GD-100 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 15 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gd-100
+  name: GD-100
+  line: g-shock
+
+models:
+  - id: gd-100-1a
+    ref: GD-100-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100-1A', kind: retailer }
+    image: gd-100-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100-1A'
+  - id: gd-100-1b
+    ref: GD-100-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100-1B', kind: retailer }
+    image: gd-100-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100-1B'
+  - id: gd-100bw-1
+    ref: GD-100BW-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100BW-1', kind: retailer }
+    image: gd-100bw-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100BW-1'
+  - id: gd-100gb-1
+    ref: GD-100GB-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100GB-1', kind: retailer }
+    image: gd-100gb-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100GB-1'
+  - id: gd-100hc-1
+    ref: GD-100HC-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100HC-1', kind: retailer }
+    image: gd-100hc-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100HC-1'
+  - id: gd-100hc-4
+    ref: GD-100HC-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100HC-4', kind: retailer }
+    image: gd-100hc-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100HC-4'
+  - id: gd-100ms-1
+    ref: GD-100MS-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100MS-1', kind: retailer }
+    image: gd-100ms-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100MS-1'
+  - id: gd-100ms-3
+    ref: GD-100MS-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100MS-3', kind: retailer }
+    image: gd-100ms-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100MS-3'
+  - id: gd-100ns-7
+    ref: GD-100NS-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100NS-7', kind: retailer }
+    image: gd-100ns-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100NS-7'
+  - id: gd-100ps-3jr
+    ref: GD-100PS-3JR
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100PS-3JR', kind: retailer }
+    image: gd-100ps-3jr
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100PS-3JR'
+  - id: gd-100rf-4
+    ref: GD-100RF-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100RF-4', kind: retailer }
+    image: gd-100rf-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100RF-4'
+  - id: gd-100sc-1
+    ref: GD-100SC-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100SC-1', kind: retailer }
+    image: gd-100sc-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100SC-1'
+  - id: gd-100sc-6
+    ref: GD-100SC-6
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100SC-6', kind: retailer }
+    image: gd-100sc-6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100SC-6'
+  - id: gd-100sc-7
+    ref: GD-100SC-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100SC-7', kind: retailer }
+    image: gd-100sc-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100SC-7'
+  - id: gd-100ww-7
+    ref: GD-100WW-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100WW-7', kind: retailer }
+    image: gd-100ww-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GD-100WW-7'
