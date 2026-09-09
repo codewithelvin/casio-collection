@@ -1,0 +1,107 @@
+# MTP-E320 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 11 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-e320
+  name: MTP-E320
+  line: vintage
+
+models:
+  - id: mtp-e320d-9ev
+    ref: MTP-E320D-9EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320D-9EV', kind: retailer }
+    image: mtp-e320d-9ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320D-9EV'
+  - id: mtp-e320dy-1av
+    ref: MTP-E320DY-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320DY-1AV', kind: retailer }
+    image: mtp-e320dy-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320DY-1AV'
+  - id: mtp-e320dy-2av
+    ref: MTP-E320DY-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320DY-2AV', kind: retailer }
+    image: mtp-e320dy-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320DY-2AV'
+  - id: mtp-e320dy-7av
+    ref: MTP-E320DY-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320DY-7AV', kind: retailer }
+    image: mtp-e320dy-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320DY-7AV'
+  - id: mtp-e320l-5ev
+    ref: MTP-E320L-5EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320L-5EV', kind: retailer }
+    image: mtp-e320l-5ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320L-5EV'
+  - id: mtp-e320ly-1av
+    ref: MTP-E320LY-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320LY-1AV', kind: retailer }
+    image: mtp-e320ly-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320LY-1AV'
+  - id: mtp-e320ly-2av
+    ref: MTP-E320LY-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320LY-2AV', kind: retailer }
+    image: mtp-e320ly-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320LY-2AV'
+  - id: mtp-e320ly-7av
+    ref: MTP-E320LY-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320LY-7AV', kind: retailer }
+    image: mtp-e320ly-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320LY-7AV'
+  - id: mtp-e320m-2ev
+    ref: MTP-E320M-2EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320M-2EV', kind: retailer }
+    image: mtp-e320m-2ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320M-2EV'
+  - id: mtp-e320rl-1ev
+    ref: MTP-E320RL-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320RL-1EV', kind: retailer }
+    image: mtp-e320rl-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320RL-1EV'
+  - id: mtp-e320rl-2ev
+    ref: MTP-E320RL-2EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320RL-2EV', kind: retailer }
+    image: mtp-e320rl-2ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-E320RL-2EV'
