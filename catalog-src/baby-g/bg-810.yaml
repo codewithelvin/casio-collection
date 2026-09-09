@@ -1,7 +1,7 @@
 # BG-810 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 9 references catalogued
+# written here (D27): the client asked for these 11 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -73,3 +73,24 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-810PD-7'
+
+# MOVED HERE 2026-09-09: 2 references from
+# catalog-src/vintage/bg-810.yaml -- javys tags them under a generic
+# subbrand there, but the reference prefix is baby-g's throughout.
+#
+  - id: bg-810l-4
+    ref: BG-810L-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-810L-4', kind: retailer }
+    image: bg-810l-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-810L-4'
+  - id: bg-810lv-7
+    ref: BG-810LV-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-810LV-7', kind: retailer }
+    image: bg-810lv-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-810LV-7'
