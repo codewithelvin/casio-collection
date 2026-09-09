@@ -50,3 +50,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220707id_/https://www.casio.com/europe/watches/edifice/product.EF-129D-2AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ef-129d-7av
+    ref: EF-129D-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-129D-7AV', kind: retailer }
+    image: ef-129d-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-129D-7AV'
+  - id: ef-129sg-1av
+    ref: EF-129SG-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-129SG-1AV', kind: retailer }
+    image: ef-129sg-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-129SG-1AV'
