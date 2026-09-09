@@ -1033,3 +1033,40 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110TM-1A'
+
+# MOVED HERE 2026-09-09: 4 references from
+# catalog-src/vintage/ba-110.yaml -- javys tags them under a generic
+# subbrand there, but the reference prefix is baby-g's throughout.
+#
+  - id: ba-110lb-7a
+    ref: BA-110LB-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110LB-7A', kind: retailer }
+    image: ba-110lb-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110LB-7A'
+  - id: ba-110lc-7a
+    ref: BA-110LC-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110LC-7A', kind: retailer }
+    image: ba-110lc-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110LC-7A'
+  - id: ba-110ld-7a
+    ref: BA-110LD-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110LD-7A', kind: retailer }
+    image: ba-110ld-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110LD-7A'
+  - id: ba-110le-7aw
+    ref: BA-110LE-7AW
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110LE-7AW', kind: retailer }
+    image: ba-110le-7aw
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110LE-7AW'
