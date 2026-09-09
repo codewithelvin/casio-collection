@@ -1,5 +1,15 @@
-# PHOTOGRAPHS REFUSED, 113 of them, and this is the reason for every
+# PHOTOGRAPHS REFUSED, 88 of them, and this is the reason for every
 # `image: null` below that does not carry one of its own.
+#
+# JAVYS ADDED 25 OF THESE ON 2026-09-09. javys.com/casio, a Hong
+# Kong Casio distributor running its own per-reference product-photo pages
+# since at least 2010, was not among the routes measured below and turned
+# out to hold a large (>=300px) photograph for 25 of the 113
+# references this file had refused. Read off
+# https://www.javys.com/casio/new_web/watch/new_watch.php?id=<REF> per entry
+# and credited to Javys as `rights-reserved` (D41): the site states no
+# licence. The routes below were still walked and are still empty; javys is
+# an addition, not a correction to any of them.
 #
 # These references are discontinued collaborations and regional limited runs.
 # Every route this project knows how to walk was walked, and the measurement is
@@ -197,9 +207,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110a-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110A-4'
     discontinued: true
   - id: ga-110a-9
     ref: GA-110A-9
@@ -222,9 +234,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110a-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110A-9'
     discontinued: true
   - id: ga-110ac-4a
     ref: GA-110AC-4A
@@ -379,9 +393,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110b-1a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110B-1A2'
     discontinued: true
   - id: ga-110b-1a3
     ref: GA-110B-1A3
@@ -404,9 +420,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110b-1a3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110B-1A3'
     discontinued: true
   - id: ga-110b-2
     ref: GA-110B-2
@@ -429,9 +447,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110b-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110B-2'
     discontinued: true
   - id: ga-110b-3
     ref: GA-110B-3
@@ -454,9 +474,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110b-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110B-3'
     discontinued: true
   - id: ga-110b-4
     ref: GA-110B-4
@@ -479,9 +501,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110b-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110B-4'
     discontinued: true
   - id: ga-110bc-2a
     ref: GA-110BC-2A
@@ -733,9 +757,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110c-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110C-1A'
     discontinued: true
   - id: ga-110c-7a
     ref: GA-110C-7A
@@ -1273,9 +1299,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110ddr-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110DDR-7A'
     discontinued: true
   - id: ga-110dn-4a
     ref: GA-110DN-4A
@@ -1348,9 +1376,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110dr-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110DR-1A'
     discontinued: true
   - id: ga-110eh-8a
     ref: GA-110EH-8A
@@ -1373,9 +1403,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110eh-8a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110EH-8A'
     discontinued: true
   - id: ga-110ev-6a
     ref: GA-110EV-6A
@@ -1448,9 +1480,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110f-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110F-2'
     discontinued: true
   - id: ga-110fc-1a
     ref: GA-110FC-1A
@@ -1473,9 +1507,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110fc-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110FC-1A'
     discontinued: true
   - id: ga-110fc-2a
     ref: GA-110FC-2A
@@ -1498,9 +1534,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110fc-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110FC-2A'
     discontinued: true
   - id: ga-110frg-7a
     ref: GA-110FRG-7A
@@ -1834,9 +1872,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110hc-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110HC-2A'
     discontinued: true
   - id: ga-110hc-6a
     ref: GA-110HC-6A
@@ -1859,9 +1899,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110hc-6a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110HC-6A'
     discontinued: true
   - id: ga-110hd-8a
     ref: GA-110HD-8A
@@ -2155,9 +2197,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110la-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110LA-7A'
     discontinued: true
   - id: ga-110lb-7a
     ref: GA-110LB-7A
@@ -2180,9 +2224,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110lb-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110LB-7A'
     discontinued: true
   - id: ga-110lc-7a
     ref: GA-110LC-7A
@@ -2205,9 +2251,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110lc-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110LC-7A'
     discontinued: true
   - id: ga-110ld-7a
     ref: GA-110LD-7A
@@ -2230,9 +2278,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110ld-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110LD-7A'
     discontinued: true
   - id: ga-110le-7a
     ref: GA-110LE-7A
@@ -2847,9 +2897,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110mh-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110MH-7A'
     discontinued: true
   - id: ga-110mmc-1a
     ref: GA-110MMC-1A
@@ -3283,9 +3335,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110rf-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110RF-9A'
     discontinued: true
   - id: ga-110rg-1a
     ref: GA-110RG-1A
@@ -3603,9 +3657,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110sla-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110SLA-1A'
     discontinued: true
   - id: ga-110slb-7a
     ref: GA-110SLB-7A
@@ -3706,9 +3762,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110sn-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110SN-3A'
     discontinued: true
   - id: ga-110sn-7a
     ref: GA-110SN-7A
@@ -3731,9 +3789,11 @@ models:
     movement: quartz
     module: '5146'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, hourly-time-signal, led-light, auto-light, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-110sn-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110SN-7A'
     discontinued: true
   - id: ga-110sr-1a
     ref: GA-110SR-1A
