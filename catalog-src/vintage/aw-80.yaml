@@ -148,3 +148,48 @@ models:
     case: { height_mm: 46.8, width_mm: 40, depth_mm: 13.5, weight_g: 32, material: 'Resin' }
     features: [alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, afterglow, telememo]
     discontinued: false
+
+# ADDED 2026-09-09: 5 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: aw-80-2bv
+    ref: AW-80-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-80-2BV', kind: retailer }
+    image: aw-80-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-80-2BV'
+  - id: aw-80-4bv
+    ref: AW-80-4BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-80-4BV', kind: retailer }
+    image: aw-80-4bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-80-4BV'
+  - id: aw-80-9bv
+    ref: AW-80-9BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-80-9BV', kind: retailer }
+    image: aw-80-9bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-80-9BV'
+  - id: aw-80v-1bv
+    ref: AW-80V-1BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-80V-1BV', kind: retailer }
+    image: aw-80v-1bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-80V-1BV'
+  - id: aw-80v-3bv
+    ref: AW-80V-3BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-80V-3BV', kind: retailer }
+    image: aw-80v-3bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-80V-3BV'
