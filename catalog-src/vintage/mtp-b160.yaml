@@ -1,0 +1,51 @@
+# MTP-B160 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-b160
+  name: MTP-B160
+  line: vintage
+
+models:
+  - id: mtp-b160l-1b1v
+    ref: MTP-B160L-1B1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B160L-1B1V', kind: retailer }
+    image: mtp-b160l-1b1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B160L-1B1V'
+  - id: mtp-b160l-1b2v
+    ref: MTP-B160L-1B2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B160L-1B2V', kind: retailer }
+    image: mtp-b160l-1b2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B160L-1B2V'
+  - id: mtp-b160l-2bv
+    ref: MTP-B160L-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B160L-2BV', kind: retailer }
+    image: mtp-b160l-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B160L-2BV'
+  - id: mtp-b160l-3bv
+    ref: MTP-B160L-3BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B160L-3BV', kind: retailer }
+    image: mtp-b160l-3bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B160L-3BV'
