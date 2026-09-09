@@ -1,0 +1,27 @@
+# LTD-1034 — seeded 2026-09-09 from javys.com's older
+# hand-coded micro-site pages (Forester / LapMemory / FunWatches / Water
+# Sports / Analog Sports / PELA) rather than its series_new.php system --
+# see the reference memo on javys.com for why these needed a second reader.
+# Only id, ref, source and (where the page's own image filename verifiably
+# names this exact reference) image are written here (D27): the client asked
+# for these 1 references catalogued quickly rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — none of these pages states one.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltd-1034
+  name: LTD-1034
+  line: vintage
+
+models:
+  - id: ltd-1034a-2av
+    ref: LTD-1034A-2AV
+    source: { url: 'https://www.javys.com/casio/analogsports/sanalog03.htm', kind: retailer }
+    image: ltd-1034a-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/analogsports/sanalog03.htm'
