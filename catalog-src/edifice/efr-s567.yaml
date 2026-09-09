@@ -66,3 +66,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220626053752id_/https://www.casio.com/intl/watches/edifice/product.EFR-S567DC-1AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: efr-s567tr-2a
+    ref: EFR-S567TR-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFR-S567TR-2A', kind: retailer }
+    image: efr-s567tr-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFR-S567TR-2A'
