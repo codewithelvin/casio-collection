@@ -34,3 +34,40 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240714220552id_/https://www.casio.com/europe/watches/edifice/product.EF-552-1AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ef-552d-1av
+    ref: EF-552D-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-552D-1AV', kind: retailer }
+    image: ef-552d-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-552D-1AV'
+  - id: ef-552d-4av
+    ref: EF-552D-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-552D-4AV', kind: retailer }
+    image: ef-552d-4av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-552D-4AV'
+  - id: ef-552pb-1a2v
+    ref: EF-552PB-1A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-552PB-1A2V', kind: retailer }
+    image: ef-552pb-1a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-552PB-1A2V'
+  - id: ef-552pb-1a4v
+    ref: EF-552PB-1A4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-552PB-1A4V', kind: retailer }
+    image: ef-552pb-1a4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-552PB-1A4V'
