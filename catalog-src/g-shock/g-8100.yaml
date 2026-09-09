@@ -65,3 +65,68 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100D-7'
+
+# ADDED 2026-09-09: 12 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-8100-1
+    ref: G-8100-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100-1', kind: retailer }
+    image: null
+  - id: g-8100-2
+    ref: G-8100-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100-2', kind: retailer }
+    image: null
+  - id: g-8100-4
+    ref: G-8100-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100-4', kind: retailer }
+    image: null
+  - id: g-8100-6
+    ref: G-8100-6
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100-6', kind: retailer }
+    image: null
+  - id: g-8100-7
+    ref: G-8100-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100-7', kind: retailer }
+    image: null
+  - id: g-8100a-3
+    ref: G-8100A-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100A-3', kind: retailer }
+    image: null
+  - id: g-8100a-5
+    ref: G-8100A-5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100A-5', kind: retailer }
+    image: null
+  - id: g-8100a-7
+    ref: G-8100A-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100A-7', kind: retailer }
+    image: null
+  - id: g-8100a-9
+    ref: G-8100A-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100A-9', kind: retailer }
+    image: null
+  - id: g-8100b-3
+    ref: G-8100B-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100B-3', kind: retailer }
+    image: g-8100b-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100B-3'
+  - id: g-8100b-4
+    ref: G-8100B-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100B-4', kind: retailer }
+    image: g-8100b-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100B-4'
+  - id: g-8100b-9
+    ref: G-8100B-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100B-9', kind: retailer }
+    image: g-8100b-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-8100B-9'
