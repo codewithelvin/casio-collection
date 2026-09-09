@@ -1,0 +1,51 @@
+# G-7710 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 8 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: g-7710
+  name: G-7710
+  line: g-shock
+
+models:
+  - id: g-7710-1
+    ref: G-7710-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7710-1', kind: retailer }
+    image: null
+  - id: g-7710c-2
+    ref: G-7710C-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7710C-2', kind: retailer }
+    image: null
+  - id: g-7710c-3
+    ref: G-7710C-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7710C-3', kind: retailer }
+    image: null
+  - id: g-7710c-4
+    ref: G-7710C-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7710C-4', kind: retailer }
+    image: null
+  - id: g-7710cl-3
+    ref: G-7710CL-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7710CL-3', kind: retailer }
+    image: null
+  - id: g-7710krt-3
+    ref: G-7710KRT-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7710KRT-3', kind: retailer }
+    image: null
+  - id: g-7710rl-2
+    ref: G-7710RL-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7710RL-2', kind: retailer }
+    image: null
+  - id: g-7710rl-9
+    ref: G-7710RL-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7710RL-9', kind: retailer }
+    image: null
