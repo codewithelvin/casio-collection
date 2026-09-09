@@ -25,3 +25,24 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-500FD-4A'
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-500bd-7av
+    ref: G-500BD-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-500BD-7AV', kind: retailer }
+    image: null
+  - id: g-500gd-9av
+    ref: G-500GD-9AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-500GD-9AV', kind: retailer }
+    image: null
+  - id: g-500nm-4av
+    ref: G-500NM-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-500NM-4AV', kind: retailer }
+    image: null
+  - id: g-500xd-4a
+    ref: G-500XD-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-500XD-4A', kind: retailer }
+    image: null
