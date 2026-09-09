@@ -1,0 +1,51 @@
+# FS-01 — seeded 2026-09-09 from javys.com's older
+# hand-coded micro-site pages (Forester / LapMemory / FunWatches / Water
+# Sports / Analog Sports / PELA) rather than its series_new.php system --
+# see the reference memo on javys.com for why these needed a second reader.
+# Only id, ref, source and (where the page's own image filename verifiably
+# names this exact reference) image are written here (D27): the client asked
+# for these 8 references catalogued quickly rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — none of these pages states one.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: fs-01
+  name: FS-01
+  line: vintage
+
+models:
+  - id: fs-01a-2b
+    ref: FS-01A-2B
+    source: { url: 'https://www.javys.com/casio/pela/pesafari.htm', kind: retailer }
+    image: null
+  - id: fs-01a-3b
+    ref: FS-01A-3B
+    source: { url: 'https://www.javys.com/casio/pela/pesafari.htm', kind: retailer }
+    image: null
+  - id: fs-01a-7b
+    ref: FS-01A-7B
+    source: { url: 'https://www.javys.com/casio/pela/pesafari.htm', kind: retailer }
+    image: null
+  - id: fs-01ty-1e
+    ref: FS-01TY-1E
+    source: { url: 'https://www.javys.com/casio/pela/pefire.htm', kind: retailer }
+    image: null
+  - id: fs-01ty-2e
+    ref: FS-01TY-2E
+    source: { url: 'https://www.javys.com/casio/pela/petokyo.htm', kind: retailer }
+    image: null
+  - id: fs-01ty-4e
+    ref: FS-01TY-4E
+    source: { url: 'https://www.javys.com/casio/pela/petokyo.htm', kind: retailer }
+    image: null
+  - id: fs-01ty-5e
+    ref: FS-01TY-5E
+    source: { url: 'https://www.javys.com/casio/pela/pefire.htm', kind: retailer }
+    image: null
+  - id: fs-01ty-6e
+    ref: FS-01TY-6E
+    source: { url: 'https://www.javys.com/casio/pela/petokyo.htm', kind: retailer }
+    image: null
