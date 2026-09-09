@@ -1,0 +1,27 @@
+# GS-1010 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 2 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gs-1010
+  name: GS-1010
+  line: g-shock
+
+models:
+  - id: gs-1010-1a
+    ref: GS-1010-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GS-1010-1A', kind: retailer }
+    image: null
+  - id: gs-1010d-1a
+    ref: GS-1010D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GS-1010D-1A', kind: retailer }
+    image: null
