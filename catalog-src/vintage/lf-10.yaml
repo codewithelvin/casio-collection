@@ -1,0 +1,59 @@
+# LF-10 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: lf-10
+  name: LF-10
+  line: vintage
+
+models:
+  - id: lf-10wh-1
+    ref: LF-10WH-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-10WH-1', kind: retailer }
+    image: lf-10wh-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-10WH-1'
+  - id: lf-10wh-2
+    ref: LF-10WH-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-10WH-2', kind: retailer }
+    image: lf-10wh-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-10WH-2'
+  - id: lf-10wh-3
+    ref: LF-10WH-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-10WH-3', kind: retailer }
+    image: lf-10wh-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-10WH-3'
+  - id: lf-10wh-4
+    ref: LF-10WH-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-10WH-4', kind: retailer }
+    image: lf-10wh-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-10WH-4'
+  - id: lf-10wh-8
+    ref: LF-10WH-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-10WH-8', kind: retailer }
+    image: lf-10wh-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LF-10WH-8'
