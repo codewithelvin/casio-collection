@@ -326,3 +326,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230127141803id_/https://www.casio.com/pt/watches/casio/vintage/product.LA670WETG-9A/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: la670wd-1u
+    ref: LA670WD-1U
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA670WD-1U', kind: retailer }
+    image: la670wd-1u
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA670WD-1U'
+  - id: la670wga-2
+    ref: LA670WGA-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA670WGA-2', kind: retailer }
+    image: la670wga-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA670WGA-2'
+  - id: la670wga-6
+    ref: LA670WGA-6
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA670WGA-6', kind: retailer }
+    image: la670wga-6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA670WGA-6'
