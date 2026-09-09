@@ -61,3 +61,40 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722022708id_/https://www.casio.com/intl/watches/50th/Heritage/2000s/'
     discontinued: true
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: chr-100-1v
+    ref: CHR-100-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=CHR-100-1V', kind: retailer }
+    image: chr-100-1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=CHR-100-1V'
+  - id: chr-100-4v
+    ref: CHR-100-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=CHR-100-4V', kind: retailer }
+    image: chr-100-4v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=CHR-100-4V'
+  - id: chr-100-7v
+    ref: CHR-100-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=CHR-100-7V', kind: retailer }
+    image: chr-100-7v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=CHR-100-7V'
+  - id: chr-100-8v
+    ref: CHR-100-8V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=CHR-100-8V', kind: retailer }
+    image: chr-100-8v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=CHR-100-8V'
