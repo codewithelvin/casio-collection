@@ -303,3 +303,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240721185207id_/https://www.casio.com/id/watches/casio/product.MTP-V300G-7A/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: mtp-v300d-1a2
+    ref: MTP-V300D-1A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V300D-1A2', kind: retailer }
+    image: mtp-v300d-1a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V300D-1A2'
+  - id: mtp-v300d-2a
+    ref: MTP-V300D-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V300D-2A', kind: retailer }
+    image: mtp-v300d-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V300D-2A'
+  - id: mtp-v300d-3a
+    ref: MTP-V300D-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V300D-3A', kind: retailer }
+    image: mtp-v300d-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V300D-3A'
