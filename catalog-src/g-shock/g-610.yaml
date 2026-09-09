@@ -1,0 +1,27 @@
+# G-610 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 2 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: g-610
+  name: G-610
+  line: g-shock
+
+models:
+  - id: g-610-3av
+    ref: G-610-3AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-610-3AV', kind: retailer }
+    image: null
+  - id: g-610-7av
+    ref: G-610-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-610-7AV', kind: retailer }
+    image: null
