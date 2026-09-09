@@ -1004,3 +1004,32 @@ models:
       url: 'https://web.archive.org/web/20240922024859id_/https://www.casio.com/us/watches/babyg/product.BA-110YK-4A/'
     discontinued: false
     display: ana-digi
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ba-110th-1a
+    ref: BA-110TH-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110TH-1A', kind: retailer }
+    image: ba-110th-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110TH-1A'
+  - id: ba-110th-7a
+    ref: BA-110TH-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110TH-7A', kind: retailer }
+    image: ba-110th-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110TH-7A'
+  - id: ba-110tm-1a
+    ref: BA-110TM-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110TM-1A', kind: retailer }
+    image: ba-110tm-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BA-110TM-1A'
