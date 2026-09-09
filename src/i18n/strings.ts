@@ -630,6 +630,12 @@ const en = {
   'admin.requests.dismiss.yes': 'Remove it',
   'admin.requests.dismiss.no': 'Keep it',
   'admin.requests.dismiss.failed': 'That did not remove. The table below is what is really there.',
+  // The copy-to-Claude action (client, 2026-09-09). Only shown where there is
+  // work a skill can do — `missing` and `withheld` — so its presence already
+  // says which rows those are, without a second label repeating the verdict.
+  'admin.requests.copyPrompt': 'Copy for Claude',
+  'admin.requests.copyPrompt.done': 'Copied — paste it into Claude Code',
+  'admin.requests.copyPrompt.failed': 'The browser refused to copy that. Select the text and copy it by hand.',
 
   // Suggesting a correction to a watch that IS catalogued (client, 2026-08-22).
   //

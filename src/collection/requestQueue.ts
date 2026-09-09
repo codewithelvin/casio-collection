@@ -58,6 +58,8 @@ export interface QueuedRequest {
   verdict: RequestVerdict
   /** Set for every verdict except `missing`, so the page can link to the watch. */
   modelId: string | null
+  /** The matched model's series, for the same verdicts `modelId` carries it — `claudePrompt` needs it for `withheld`, since that is a series-level command. */
+  series: string | null
 }
 
 /**
@@ -132,6 +134,7 @@ export function groupRequests(
         links: [],
         verdict: verdictFor(model),
         modelId: model?.id ?? null,
+        series: model?.series ?? null,
       }
       grouped.set(bucket, entry)
     }
@@ -147,6 +150,41 @@ export function groupRequests(
   return [...grouped.values()].sort(
     (a, b) => b.askedBy - a.askedBy || b.latest.localeCompare(a.latest),
   )
+}
+
+/**
+ * Ready text for the one queue reader who is likely to have Claude Code open
+ * beside this page — ready to paste, in the catalogue skill's own command
+ * surface (`.claude/skills/casio-catalog`), so pasting it is the whole
+ * instruction.
+ *
+ * Only `missing` and `withheld` return anything: those are the two verdicts
+ * that mean work (§`requestQueue.ts` above), and `catalogued` / `withdrawn`
+ * have nothing for a skill to do. `withheld` needs `series` rather than `ref`
+ * because `/casio-catalog images` operates on a whole series file — there is
+ * no single-reference form — so the reference itself is folded into the note
+ * instead, telling a human (or Claude) which one to prioritise.
+ */
+export function claudePrompt(entry: QueuedRequest): string | null {
+  const context = [...entry.notes, ...entry.links]
+
+  if (entry.verdict === 'missing') {
+    const lines = [`/casio-catalog add ${entry.ref}`]
+    if (context.length > 0) lines.push('', 'From the report:', ...context)
+    return lines.join('\n')
+  }
+
+  if (entry.verdict === 'withheld' && entry.series) {
+    const lines = [
+      `/casio-catalog images ${entry.series}`,
+      '',
+      `A reader reported ${entry.ref} as missing a photograph — start with that reference.`,
+    ]
+    if (context.length > 0) lines.push('', 'From the report:', ...context)
+    return lines.join('\n')
+  }
+
+  return null
 }
 
 /** The four counts the screen leads with, so the shape of the queue is one line. */

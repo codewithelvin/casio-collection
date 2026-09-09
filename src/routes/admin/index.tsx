@@ -1,12 +1,13 @@
 import { useState, type ReactNode } from 'react'
 import { useQuery } from '@tanstack/react-query'
-import { Button, Grid, Popconfirm, Table, Tag, Typography } from 'antd'
+import { App, Button, Grid, Popconfirm, Space, Table, Tag, Typography } from 'antd'
 import type { ColumnsType } from 'antd/es/table'
 import { Link } from 'react-router-dom'
 import { useCatalog } from '../../catalog/client.ts'
 import { dismissCatalogRequests, fetchCatalogRequests } from '../../collection/api.ts'
 import { useIsAdmin } from '../../collection/admin.ts'
 import {
+  claudePrompt,
   countByVerdict,
   groupRequests,
   type QueuedRequest,
@@ -222,7 +223,10 @@ function QueueList({
                 : `${entry.askedBy} ${t('admin.requests.asked.many')}`}
             </Typography.Text>
             <span style={{ marginInlineStart: 'auto' }}>
-              <DismissButton entry={entry} onDismissed={onDismissed} />
+              <Space size={8}>
+                <CopyPromptButton entry={entry} />
+                <DismissButton entry={entry} onDismissed={onDismissed} />
+              </Space>
             </span>
           </div>
 
@@ -329,7 +333,12 @@ function QueueTable({
       title: t('admin.requests.column.action'),
       key: 'action',
       align: 'end',
-      render: (_value, entry) => <DismissButton entry={entry} onDismissed={onDismissed} />,
+      render: (_value, entry) => (
+        <Space size={8}>
+          <CopyPromptButton entry={entry} />
+          <DismissButton entry={entry} onDismissed={onDismissed} />
+        </Space>
+      ),
     },
   ]
 
@@ -388,6 +397,38 @@ const COLOUR: Record<RequestVerdict, string> = {
   withheld: 'gold',
   catalogued: 'blue',
   withdrawn: 'default',
+}
+
+/**
+ * **The reading side of D22 was a queue nobody could act on directly** — a
+ * reference, a note, a link, and then a person retyping all three into
+ * Claude Code by hand. This turns the row itself into that first message:
+ * `claudePrompt` renders the skill's own command syntax plus whatever a
+ * reporter left, so the whole action is copy here, paste there.
+ *
+ * **Absent rather than disabled where there is nothing to send** —
+ * `catalogued` and `withdrawn` get no button at all, because a button that is
+ * there but does nothing invites a click to find out why.
+ */
+function CopyPromptButton({ entry }: { entry: QueuedRequest }) {
+  const { message } = App.useApp()
+  const prompt = claudePrompt(entry)
+  if (!prompt) return null
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(prompt)
+      void message.success(t('admin.requests.copyPrompt.done'))
+    } catch {
+      void message.error(t('admin.requests.copyPrompt.failed'))
+    }
+  }
+
+  return (
+    <Button size="small" onClick={() => void copy()}>
+      {t('admin.requests.copyPrompt')}
+    </Button>
+  )
 }
 
 function DismissButton({

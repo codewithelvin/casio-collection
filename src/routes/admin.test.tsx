@@ -341,6 +341,71 @@ describe('clearing a reference off the queue (0007)', () => {
   })
 })
 
+describe('copying a prompt for Claude (client, 2026-09-09)', () => {
+  it('offers the prompt for a missing reference and copies the skill’s own syntax', async () => {
+    signedIn()
+    db.admin = true
+    db.queue = [row('DW-9999Z', { note: 'Saw it in Tokyo' })]
+    const writeText = vi.fn(() => Promise.resolve())
+    Object.assign(navigator, { clipboard: { writeText } })
+
+    renderApp('/admin/requests')
+
+    await userEvent.click(
+      await screen.findByRole('button', { name: strings['admin.requests.copyPrompt'] }),
+    )
+
+    expect(writeText).toHaveBeenCalledWith(
+      '/casio-catalog add DW-9999Z\n\nFrom the report:\nSaw it in Tokyo',
+    )
+    expect(
+      await screen.findByText(strings['admin.requests.copyPrompt.done']),
+    ).toBeInTheDocument()
+  })
+
+  /**
+   * `DW-5600BB-1` is in the fixture catalogue with no photograph — withheld
+   * by D63 — so the job is a photograph and the prompt targets its series
+   * rather than the reference itself, which has no single-watch command.
+   */
+  it('points a withheld reference at its series', async () => {
+    signedIn()
+    db.admin = true
+    db.queue = [row('DW-5600BB-1')]
+    const writeText = vi.fn(() => Promise.resolve())
+    Object.assign(navigator, { clipboard: { writeText } })
+
+    renderApp('/admin/requests')
+
+    await userEvent.click(
+      await screen.findByRole('button', { name: strings['admin.requests.copyPrompt'] }),
+    )
+
+    expect(writeText).toHaveBeenCalledWith(
+      expect.stringContaining('/casio-catalog images dw-5600'),
+    )
+    expect(writeText).toHaveBeenCalledWith(expect.stringContaining('DW-5600BB-1'))
+  })
+
+  /**
+   * `GA-2100-1A1` is catalogued and visible in the fixture — a search problem,
+   * not a gap — so there is nothing for a skill to do and no button offering
+   * to do it.
+   */
+  it('offers nothing for a reference that is already catalogued', async () => {
+    signedIn()
+    db.admin = true
+    db.queue = [row('GA-2100-1A1')]
+
+    renderApp('/admin/requests')
+
+    await screen.findByText(strings['admin.requests.verdict.catalogued'])
+    expect(
+      screen.queryByRole('button', { name: strings['admin.requests.copyPrompt'] }),
+    ).not.toBeInTheDocument()
+  })
+})
+
 describe('reaching the page from the header', () => {
   const openMenu = async () =>
     userEvent.click(await screen.findByRole('button', { name: strings['account.menu'] }))

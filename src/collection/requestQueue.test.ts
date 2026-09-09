@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { BrowseModel } from '../catalog/schema.ts'
 import type { CatalogRequestRow } from './api.ts'
-import { countByVerdict, groupRequests, normaliseRef } from './requestQueue.ts'
+import { claudePrompt, countByVerdict, groupRequests, normaliseRef } from './requestQueue.ts'
 
 const model = (overrides: Partial<BrowseModel>): BrowseModel => ({
   id: 'x-1',
@@ -222,5 +222,54 @@ describe('the rows behind a line', () => {
     )
 
     for (const entry of queue) expect(entry.ids).toHaveLength(entry.askedBy)
+  })
+})
+
+describe('a ready prompt for the one reader who has Claude Code open', () => {
+  /**
+   * The only two verdicts that mean work. `catalogued` and `withdrawn` have
+   * nothing for a skill to do, and offering a prompt there would be an action
+   * that looks live but changes nothing.
+   */
+  it('offers nothing for a watch that is already visible or withdrawn', () => {
+    const queue = groupRequests(
+      [row({ ref: 'SEEN' }), row({ ref: 'GONE' })],
+      [model({ id: 'seen', ref: 'SEEN' }), model({ id: 'gone', ref: 'GONE', tombstone: { reason: 'x' } })],
+    )
+
+    for (const entry of queue) expect(claudePrompt(entry)).toBeNull()
+  })
+
+  it('gives a missing reference the add command, in the skill’s own syntax', () => {
+    const queue = groupRequests([row({ ref: 'DW-9999Z' })], [])
+
+    expect(claudePrompt(queue[0]!)).toBe('/casio-catalog add DW-9999Z')
+  })
+
+  it('folds the reporter’s note and link into the missing prompt', () => {
+    const queue = groupRequests(
+      [row({ ref: 'DW-9999Z', note: 'Saw it in Tokyo', link: 'https://example.test/watch' })],
+      [],
+    )
+
+    expect(claudePrompt(queue[0]!)).toBe(
+      '/casio-catalog add DW-9999Z\n\nFrom the report:\nSaw it in Tokyo\nhttps://example.test/watch',
+    )
+  })
+
+  /**
+   * `withheld` has no single-reference command — `/casio-catalog images`
+   * works a whole series file — so the prompt targets the series and names
+   * the reported reference in the text instead of the command.
+   */
+  it('points a withheld reference at its series, naming the reference in the text', () => {
+    const queue = groupRequests(
+      [row({ ref: 'DW-5600X' })],
+      [model({ id: 'dw-5600-x', ref: 'DW-5600X', series: 'dw-5600', image: undefined })],
+    )
+
+    const prompt = claudePrompt(queue[0]!)
+    expect(prompt).toContain('/casio-catalog images dw-5600')
+    expect(prompt).toContain('DW-5600X')
   })
 })
