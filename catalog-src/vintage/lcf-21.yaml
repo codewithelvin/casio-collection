@@ -1,0 +1,43 @@
+# LCF-21 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 3 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: lcf-21
+  name: LCF-21
+  line: vintage
+
+models:
+  - id: lcf-21-1
+    ref: LCF-21-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-21-1', kind: retailer }
+    image: lcf-21-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-21-1'
+  - id: lcf-21-2
+    ref: LCF-21-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-21-2', kind: retailer }
+    image: lcf-21-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-21-2'
+  - id: lcf-21-4
+    ref: LCF-21-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-21-4', kind: retailer }
+    image: lcf-21-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-21-4'
