@@ -1,0 +1,83 @@
+# LTP-E306 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 8 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-e306
+  name: LTP-E306
+  line: vintage
+
+models:
+  - id: ltp-e306d-1av
+    ref: LTP-E306D-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306D-1AV', kind: retailer }
+    image: ltp-e306d-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306D-1AV'
+  - id: ltp-e306d-7a2v
+    ref: LTP-E306D-7A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306D-7A2V', kind: retailer }
+    image: ltp-e306d-7a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306D-7A2V'
+  - id: ltp-e306l-2av
+    ref: LTP-E306L-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306L-2AV', kind: retailer }
+    image: ltp-e306l-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306L-2AV'
+  - id: ltp-e306l-5av
+    ref: LTP-E306L-5AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306L-5AV', kind: retailer }
+    image: ltp-e306l-5av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306L-5AV'
+  - id: ltp-e306l-7a2v
+    ref: LTP-E306L-7A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306L-7A2V', kind: retailer }
+    image: ltp-e306l-7a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306L-7A2V'
+  - id: ltp-e306r-2av
+    ref: LTP-E306R-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306R-2AV', kind: retailer }
+    image: ltp-e306r-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306R-2AV'
+  - id: ltp-e306rg-2av
+    ref: LTP-E306RG-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306RG-2AV', kind: retailer }
+    image: ltp-e306rg-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306RG-2AV'
+  - id: ltp-e306rg-7a2v
+    ref: LTP-E306RG-7A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306RG-7A2V', kind: retailer }
+    image: ltp-e306rg-7a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E306RG-7A2V'
