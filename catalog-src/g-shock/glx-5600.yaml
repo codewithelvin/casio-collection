@@ -190,3 +190,20 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5600KI-7'
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: glx-5600-4
+    ref: GLX-5600-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5600-4', kind: retailer }
+    image: null
+  - id: glx-5600a-2
+    ref: GLX-5600A-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5600A-2', kind: retailer }
+    image: null
+  - id: glx-5600a-3
+    ref: GLX-5600A-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5600A-3', kind: retailer }
+    image: null
