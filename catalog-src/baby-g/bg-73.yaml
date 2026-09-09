@@ -1,0 +1,35 @@
+# BG-73 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bg-73
+  name: BG-73
+  line: baby-g
+
+models:
+  - id: bg-73-3b
+    ref: BG-73-3B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-73-3B', kind: retailer }
+    image: null
+  - id: bg-73-4b1
+    ref: BG-73-4B1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-73-4B1', kind: retailer }
+    image: null
+  - id: bg-73-4b2
+    ref: BG-73-4B2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-73-4B2', kind: retailer }
+    image: null
+  - id: bg-73-8b
+    ref: BG-73-8B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-73-8B', kind: retailer }
+    image: null
