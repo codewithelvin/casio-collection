@@ -1,0 +1,59 @@
+# MTP-1345 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-1345
+  name: MTP-1345
+  line: vintage
+
+models:
+  - id: mtp-1345ad-1av
+    ref: MTP-1345AD-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1345AD-1AV', kind: retailer }
+    image: mtp-1345ad-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1345AD-1AV'
+  - id: mtp-1345ad-5av
+    ref: MTP-1345AD-5AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1345AD-5AV', kind: retailer }
+    image: mtp-1345ad-5av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1345AD-5AV'
+  - id: mtp-1345ad-7av
+    ref: MTP-1345AD-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1345AD-7AV', kind: retailer }
+    image: mtp-1345ad-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1345AD-7AV'
+  - id: mtp-1345al-7av
+    ref: MTP-1345AL-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1345AL-7AV', kind: retailer }
+    image: mtp-1345al-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1345AL-7AV'
+  - id: mtp-1345bd-7av
+    ref: MTP-1345BD-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1345BD-7AV', kind: retailer }
+    image: mtp-1345bd-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1345BD-7AV'
