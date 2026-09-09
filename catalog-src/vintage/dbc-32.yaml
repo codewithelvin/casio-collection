@@ -67,3 +67,72 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/casio-dbc-32d'
     discontinued: true
+
+# ADDED 2026-09-09: 8 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: dbc-32c-1
+    ref: DBC-32C-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-1', kind: retailer }
+    image: dbc-32c-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-1'
+  - id: dbc-32c-1b
+    ref: DBC-32C-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-1B', kind: retailer }
+    image: dbc-32c-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-1B'
+  - id: dbc-32c-2
+    ref: DBC-32C-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-2', kind: retailer }
+    image: dbc-32c-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-2'
+  - id: dbc-32c-3b
+    ref: DBC-32C-3B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-3B', kind: retailer }
+    image: dbc-32c-3b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-3B'
+  - id: dbc-32c-4
+    ref: DBC-32C-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-4', kind: retailer }
+    image: dbc-32c-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-4'
+  - id: dbc-32c-8
+    ref: DBC-32C-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-8', kind: retailer }
+    image: dbc-32c-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-8'
+  - id: dbc-32c-8b
+    ref: DBC-32C-8B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-8B', kind: retailer }
+    image: dbc-32c-8b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-8B'
+  - id: dbc-32c-9b
+    ref: DBC-32C-9B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-9B', kind: retailer }
+    image: dbc-32c-9b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBC-32C-9B'
