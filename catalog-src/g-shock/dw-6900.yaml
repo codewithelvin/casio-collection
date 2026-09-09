@@ -3219,3 +3219,56 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900WW-7'
+
+# ADDED 2026-09-09: 12 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: dw-6900gm-1a
+    ref: DW-6900GM-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900GM-1A', kind: retailer }
+    image: null
+  - id: dw-6900gm-4a
+    ref: DW-6900GM-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900GM-4A', kind: retailer }
+    image: null
+  - id: dw-6900jc-2
+    ref: DW-6900JC-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900JC-2', kind: retailer }
+    image: null
+  - id: dw-6900jc-3
+    ref: DW-6900JC-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900JC-3', kind: retailer }
+    image: null
+  - id: dw-6900mc-3a
+    ref: DW-6900MC-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MC-3A', kind: retailer }
+    image: null
+  - id: dw-6900mc-4a
+    ref: DW-6900MC-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MC-4A', kind: retailer }
+    image: null
+  - id: dw-6900mc-6a
+    ref: DW-6900MC-6A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MC-6A', kind: retailer }
+    image: null
+  - id: dw-6900mc-7a
+    ref: DW-6900MC-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MC-7A', kind: retailer }
+    image: null
+  - id: dw-6900r-7
+    ref: DW-6900R-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900R-7', kind: retailer }
+    image: null
+  - id: dw-6900rc-1
+    ref: DW-6900RC-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900RC-1', kind: retailer }
+    image: null
+  - id: dw-6900re-2jf
+    ref: DW-6900RE-2JF
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900RE-2JF', kind: retailer }
+    image: null
+  - id: dw-6900wcj-9
+    ref: DW-6900WCJ-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900WCJ-9', kind: retailer }
+    image: null
