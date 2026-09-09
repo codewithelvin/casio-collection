@@ -1,0 +1,55 @@
+# BG-2000 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 9 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bg-2000
+  name: BG-2000
+  line: baby-g
+
+models:
+  - id: bg-2000-1
+    ref: BG-2000-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000-1', kind: retailer }
+    image: null
+  - id: bg-2000-3
+    ref: BG-2000-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000-3', kind: retailer }
+    image: null
+  - id: bg-2000-4
+    ref: BG-2000-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000-4', kind: retailer }
+    image: null
+  - id: bg-2000-7
+    ref: BG-2000-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000-7', kind: retailer }
+    image: null
+  - id: bg-2000-9
+    ref: BG-2000-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000-9', kind: retailer }
+    image: null
+  - id: bg-2000bc-1
+    ref: BG-2000BC-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000BC-1', kind: retailer }
+    image: null
+  - id: bg-2000bc-4
+    ref: BG-2000BC-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000BC-4', kind: retailer }
+    image: null
+  - id: bg-2000c-7
+    ref: BG-2000C-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000C-7', kind: retailer }
+    image: null
+  - id: bg-2000cg-5
+    ref: BG-2000CG-5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000CG-5', kind: retailer }
+    image: null
