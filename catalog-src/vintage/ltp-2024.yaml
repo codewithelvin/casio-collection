@@ -1,0 +1,51 @@
+# LTP-2024 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-2024
+  name: LTP-2024
+  line: vintage
+
+models:
+  - id: ltp-2024vm-7c
+    ref: LTP-2024VM-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2024VM-7C', kind: retailer }
+    image: ltp-2024vm-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2024VM-7C'
+  - id: ltp-2024vmg-3c
+    ref: LTP-2024VMG-3C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2024VMG-3C', kind: retailer }
+    image: ltp-2024vmg-3c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2024VMG-3C'
+  - id: ltp-2024vmg-7c
+    ref: LTP-2024VMG-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2024VMG-7C', kind: retailer }
+    image: ltp-2024vmg-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2024VMG-7C'
+  - id: ltp-2024vmr-9c
+    ref: LTP-2024VMR-9C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2024VMR-9C', kind: retailer }
+    image: ltp-2024vmr-9c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2024VMR-9C'
