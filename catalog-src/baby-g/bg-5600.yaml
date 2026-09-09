@@ -1,0 +1,79 @@
+# BG-5600 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 10 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bg-5600
+  name: BG-5600
+  line: baby-g
+
+models:
+  - id: bg-5600bk-1
+    ref: BG-5600BK-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600BK-1', kind: retailer }
+    image: null
+  - id: bg-5600g-2
+    ref: BG-5600G-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600G-2', kind: retailer }
+    image: null
+  - id: bg-5600g-4
+    ref: BG-5600G-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600G-4', kind: retailer }
+    image: null
+  - id: bg-5600g-7
+    ref: BG-5600G-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600G-7', kind: retailer }
+    image: null
+  - id: bg-5600hz-7
+    ref: BG-5600HZ-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600HZ-7', kind: retailer }
+    image: bg-5600hz-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600HZ-7'
+  - id: bg-5600hz-9
+    ref: BG-5600HZ-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600HZ-9', kind: retailer }
+    image: bg-5600hz-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600HZ-9'
+  - id: bg-5600ks-7
+    ref: BG-5600KS-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600KS-7', kind: retailer }
+    image: bg-5600ks-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600KS-7'
+  - id: bg-5600sa-4
+    ref: BG-5600SA-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600SA-4', kind: retailer }
+    image: bg-5600sa-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600SA-4'
+  - id: bg-5600sa-6
+    ref: BG-5600SA-6
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600SA-6', kind: retailer }
+    image: bg-5600sa-6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600SA-6'
+  - id: bg-5600sg-8
+    ref: BG-5600SG-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-5600SG-8', kind: retailer }
+    image: null
