@@ -1,0 +1,51 @@
+# LDF-10 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ldf-10
+  name: LDF-10
+  line: vintage
+
+models:
+  - id: ldf-10-1av
+    ref: LDF-10-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-10-1AV', kind: retailer }
+    image: ldf-10-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-10-1AV'
+  - id: ldf-10-4av
+    ref: LDF-10-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-10-4AV', kind: retailer }
+    image: ldf-10-4av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-10-4AV'
+  - id: ldf-10-7av
+    ref: LDF-10-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-10-7AV', kind: retailer }
+    image: ldf-10-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-10-7AV'
+  - id: ldf-10-7bv
+    ref: LDF-10-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-10-7BV', kind: retailer }
+    image: ldf-10-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-10-7BV'
