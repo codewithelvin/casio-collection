@@ -66,3 +66,20 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221012025804id_/https://www.casio.com/us/watches/casio/product.FT-500WC-5BV/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com's older
+# micro-site pages (retailer). Minimal entries only. The entries above
+# predate this block and are untouched.
+#
+  - id: ft-500wv-1bv
+    ref: FT-500WV-1BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester04.htm', kind: retailer }
+    image: null
+  - id: ft-500wv-2bv
+    ref: FT-500WV-2BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester04.htm', kind: retailer }
+    image: null
+  - id: ft-500wv-5bv
+    ref: FT-500WV-5BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester04.htm', kind: retailer }
+    image: null
