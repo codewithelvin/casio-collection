@@ -143,3 +143,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240717155822id_/https://www.casio.com/fr/watches/casio/vintage/product.B640WMR-5A/'
     discontinued: false
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: b640wd-1av
+    ref: B640WD-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=B640WD-1AV', kind: retailer }
+    image: b640wd-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=B640WD-1AV'
