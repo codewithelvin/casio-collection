@@ -1,0 +1,75 @@
+# LTP-VT02 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-vt02
+  name: LTP-VT02
+  line: vintage
+
+models:
+  - id: ltp-vt02bl-1a
+    ref: LTP-VT02BL-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02BL-1A', kind: retailer }
+    image: ltp-vt02bl-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02BL-1A'
+  - id: ltp-vt02bl-2a
+    ref: LTP-VT02BL-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02BL-2A', kind: retailer }
+    image: ltp-vt02bl-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02BL-2A'
+  - id: ltp-vt02bl-3a
+    ref: LTP-VT02BL-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02BL-3A', kind: retailer }
+    image: ltp-vt02bl-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02BL-3A'
+  - id: ltp-vt02bl-4a
+    ref: LTP-VT02BL-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02BL-4A', kind: retailer }
+    image: ltp-vt02bl-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02BL-4A'
+  - id: ltp-vt02d-1a
+    ref: LTP-VT02D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02D-1A', kind: retailer }
+    image: ltp-vt02d-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02D-1A'
+  - id: ltp-vt02d-2a
+    ref: LTP-VT02D-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02D-2A', kind: retailer }
+    image: ltp-vt02d-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02D-2A'
+  - id: ltp-vt02g-3a
+    ref: LTP-VT02G-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02G-3A', kind: retailer }
+    image: ltp-vt02g-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-VT02G-3A'
