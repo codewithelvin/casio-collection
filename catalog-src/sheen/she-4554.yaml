@@ -187,3 +187,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230121092105id_/https://www.casio.com/intl/watches/sheen/product.SHE-4554PGL-8A/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: she-4554gym-8a
+    ref: SHE-4554GYM-8A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4554GYM-8A', kind: retailer }
+    image: she-4554gym-8a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4554GYM-8A'
+  - id: she-4554pgm-4a
+    ref: SHE-4554PGM-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4554PGM-4A', kind: retailer }
+    image: she-4554pgm-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4554PGM-4A'
