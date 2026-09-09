@@ -1,0 +1,31 @@
+# GL-260 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 3 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gl-260
+  name: GL-260
+  line: g-shock
+
+models:
+  - id: gl-260a-1
+    ref: GL-260A-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GL-260A-1', kind: retailer }
+    image: null
+  - id: gl-260a-2
+    ref: GL-260A-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GL-260A-2', kind: retailer }
+    image: null
+  - id: gl-260a-3
+    ref: GL-260A-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GL-260A-3', kind: retailer }
+    image: null
