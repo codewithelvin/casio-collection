@@ -96,3 +96,104 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20241008103804id_/https://www.casio.com/es/watches/casio/vintage/product.AQ-230EGG-3A/'
     discontinued: false
+
+# ADDED 2026-09-09: 12 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: aq-230a-2a1
+    ref: AQ-230A-2A1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-2A1', kind: retailer }
+    image: aq-230a-2a1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-2A1'
+  - id: aq-230a-2a2
+    ref: AQ-230A-2A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-2A2', kind: retailer }
+    image: aq-230a-2a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-2A2'
+  - id: aq-230a-3a
+    ref: AQ-230A-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-3A', kind: retailer }
+    image: aq-230a-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-3A'
+  - id: aq-230a-4a
+    ref: AQ-230A-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-4A', kind: retailer }
+    image: aq-230a-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-4A'
+  - id: aq-230a-7a
+    ref: AQ-230A-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-7A', kind: retailer }
+    image: aq-230a-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-7A'
+  - id: aq-230a-9a
+    ref: AQ-230A-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-9A', kind: retailer }
+    image: aq-230a-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230A-9A'
+  - id: aq-230eblt-1a
+    ref: AQ-230EBLT-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EBLT-1A', kind: retailer }
+    image: aq-230eblt-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EBLT-1A'
+  - id: aq-230egl-9a
+    ref: AQ-230EGL-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EGL-9A', kind: retailer }
+    image: aq-230egl-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EGL-9A'
+  - id: aq-230el-1a
+    ref: AQ-230EL-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EL-1A', kind: retailer }
+    image: aq-230el-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EL-1A'
+  - id: aq-230elt-7a
+    ref: AQ-230ELT-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230ELT-7A', kind: retailer }
+    image: aq-230elt-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230ELT-7A'
+  - id: aq-230em-2a
+    ref: AQ-230EM-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EM-2A', kind: retailer }
+    image: aq-230em-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EM-2A'
+  - id: aq-230em-7a
+    ref: AQ-230EM-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EM-7A', kind: retailer }
+    image: aq-230em-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EM-7A'
