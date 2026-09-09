@@ -25,3 +25,60 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500B-1'
+
+# ADDED 2026-09-09: 11 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-5500c-3
+    ref: G-5500C-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500C-3', kind: retailer }
+    image: null
+  - id: g-5500c-4
+    ref: G-5500C-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500C-4', kind: retailer }
+    image: null
+  - id: g-5500c-7
+    ref: G-5500C-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500C-7', kind: retailer }
+    image: null
+  - id: g-5500jc-4
+    ref: G-5500JC-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500JC-4', kind: retailer }
+    image: null
+  - id: g-5500jc-9
+    ref: G-5500JC-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500JC-9', kind: retailer }
+    image: null
+  - id: g-5500mc-5
+    ref: G-5500MC-5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500MC-5', kind: retailer }
+    image: null
+  - id: g-5500mc-8
+    ref: G-5500MC-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500MC-8', kind: retailer }
+    image: null
+  - id: g-5500r-1
+    ref: G-5500R-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500R-1', kind: retailer }
+    image: null
+  - id: g-5500srf-2
+    ref: G-5500SRF-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500SRF-2', kind: retailer }
+    image: null
+  - id: g-5500ts-8
+    ref: G-5500TS-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500TS-8', kind: retailer }
+    image: g-5500ts-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500TS-8'
+  - id: g-5500ts-9
+    ref: G-5500TS-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500TS-9', kind: retailer }
+    image: g-5500ts-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5500TS-9'
