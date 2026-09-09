@@ -1,0 +1,59 @@
+# LTP-V009 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-v009
+  name: LTP-V009
+  line: vintage
+
+models:
+  - id: ltp-v009d-1e
+    ref: LTP-V009D-1E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V009D-1E', kind: retailer }
+    image: ltp-v009d-1e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V009D-1E'
+  - id: ltp-v009d-2e
+    ref: LTP-V009D-2E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V009D-2E', kind: retailer }
+    image: ltp-v009d-2e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V009D-2E'
+  - id: ltp-v009d-4e
+    ref: LTP-V009D-4E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V009D-4E', kind: retailer }
+    image: ltp-v009d-4e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V009D-4E'
+  - id: ltp-v009d-7e
+    ref: LTP-V009D-7E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V009D-7E', kind: retailer }
+    image: ltp-v009d-7e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V009D-7E'
+  - id: ltp-v009g-7e
+    ref: LTP-V009G-7E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V009G-7E', kind: retailer }
+    image: ltp-v009g-7e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V009G-7E'
