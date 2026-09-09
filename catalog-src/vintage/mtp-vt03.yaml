@@ -1,0 +1,67 @@
+# MTP-VT03 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-vt03
+  name: MTP-VT03
+  line: vintage
+
+models:
+  - id: mtp-vt03bl-7b
+    ref: MTP-VT03BL-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03BL-7B', kind: retailer }
+    image: mtp-vt03bl-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03BL-7B'
+  - id: mtp-vt03d-1b
+    ref: MTP-VT03D-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03D-1B', kind: retailer }
+    image: mtp-vt03d-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03D-1B'
+  - id: mtp-vt03d-3b
+    ref: MTP-VT03D-3B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03D-3B', kind: retailer }
+    image: mtp-vt03d-3b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03D-3B'
+  - id: mtp-vt03d-7b
+    ref: MTP-VT03D-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03D-7B', kind: retailer }
+    image: mtp-vt03d-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03D-7B'
+  - id: mtp-vt03l-1b
+    ref: MTP-VT03L-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03L-1B', kind: retailer }
+    image: mtp-vt03l-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03L-1B'
+  - id: mtp-vt03l-7b
+    ref: MTP-VT03L-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03L-7B', kind: retailer }
+    image: mtp-vt03l-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-VT03L-7B'
