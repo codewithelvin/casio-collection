@@ -1,0 +1,59 @@
+# LWA-300 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: lwa-300
+  name: LWA-300
+  line: vintage
+
+models:
+  - id: lwa-300h-2ev
+    ref: LWA-300H-2EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWA-300H-2EV', kind: retailer }
+    image: lwa-300h-2ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWA-300H-2EV'
+  - id: lwa-300h-7e2v
+    ref: LWA-300H-7E2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWA-300H-7E2V', kind: retailer }
+    image: lwa-300h-7e2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWA-300H-7E2V'
+  - id: lwa-300h-7ev
+    ref: LWA-300H-7EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWA-300H-7EV', kind: retailer }
+    image: lwa-300h-7ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWA-300H-7EV'
+  - id: lwa-300hb-1ev
+    ref: LWA-300HB-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWA-300HB-1EV', kind: retailer }
+    image: lwa-300hb-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWA-300HB-1EV'
+  - id: lwa-300hrg-5ev
+    ref: LWA-300HRG-5EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWA-300HRG-5EV', kind: retailer }
+    image: lwa-300hrg-5ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWA-300HRG-5EV'
