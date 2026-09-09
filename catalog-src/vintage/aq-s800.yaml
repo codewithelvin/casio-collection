@@ -89,3 +89,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715102045id_/https://www.casio.com/europe/watches/casio/product.AQ-S800WD-1EV/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: aq-s800w-1ev
+    ref: AQ-S800W-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-S800W-1EV', kind: retailer }
+    image: aq-s800w-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-S800W-1EV'
+  - id: aq-s800wd-7ev
+    ref: AQ-S800WD-7EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-S800WD-7EV', kind: retailer }
+    image: aq-s800wd-7ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-S800WD-7EV'
