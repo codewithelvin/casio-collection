@@ -37,3 +37,40 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210624211503id_/https://www.casio.com/jp/watches/gshock/product.GW-9110-1/'
     discontinued: false
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: gw-9110bp-1
+    ref: GW-9110BP-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9110BP-1', kind: retailer }
+    image: gw-9110bp-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9110BP-1'
+  - id: gw-9110bw-1
+    ref: GW-9110BW-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9110BW-1', kind: retailer }
+    image: gw-9110bw-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9110BW-1'
+  - id: gw-9110er-2
+    ref: GW-9110ER-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9110ER-2', kind: retailer }
+    image: gw-9110er-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9110ER-2'
+  - id: gw-9110gy-1
+    ref: GW-9110GY-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9110GY-1', kind: retailer }
+    image: gw-9110gy-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9110GY-1'
