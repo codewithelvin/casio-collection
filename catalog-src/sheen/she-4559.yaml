@@ -91,3 +91,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240408193244id_/https://www.casio.com/intl/watches/sheen/product.SHE-4559PG-4A/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: she-4559d-7a
+    ref: SHE-4559D-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4559D-7A', kind: retailer }
+    image: she-4559d-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4559D-7A'
+  - id: she-4559gbl-7a
+    ref: SHE-4559GBL-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4559GBL-7A', kind: retailer }
+    image: she-4559gbl-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4559GBL-7A'
