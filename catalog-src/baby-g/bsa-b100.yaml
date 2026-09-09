@@ -1,0 +1,99 @@
+# BSA-B100 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 10 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bsa-b100
+  name: BSA-B100
+  line: baby-g
+
+models:
+  - id: bsa-b100ac-2a
+    ref: BSA-B100AC-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100AC-2A', kind: retailer }
+    image: bsa-b100ac-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100AC-2A'
+  - id: bsa-b100ac-3a
+    ref: BSA-B100AC-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100AC-3A', kind: retailer }
+    image: bsa-b100ac-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100AC-3A'
+  - id: bsa-b100ac-5a
+    ref: BSA-B100AC-5A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100AC-5A', kind: retailer }
+    image: bsa-b100ac-5a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100AC-5A'
+  - id: bsa-b100mc-4a
+    ref: BSA-B100MC-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100MC-4A', kind: retailer }
+    image: bsa-b100mc-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100MC-4A'
+  - id: bsa-b100mc-8a
+    ref: BSA-B100MC-8A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100MC-8A', kind: retailer }
+    image: bsa-b100mc-8a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100MC-8A'
+  - id: bsa-b100mf-1a
+    ref: BSA-B100MF-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100MF-1A', kind: retailer }
+    image: bsa-b100mf-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100MF-1A'
+  - id: bsa-b100mf-7a
+    ref: BSA-B100MF-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100MF-7A', kind: retailer }
+    image: bsa-b100mf-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100MF-7A'
+  - id: bsa-b100mt-1a
+    ref: BSA-B100MT-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100MT-1A', kind: retailer }
+    image: bsa-b100mt-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100MT-1A'
+  - id: bsa-b100sc-1a
+    ref: BSA-B100SC-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100SC-1A', kind: retailer }
+    image: bsa-b100sc-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100SC-1A'
+  - id: bsa-b100sc-7a
+    ref: BSA-B100SC-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100SC-7A', kind: retailer }
+    image: bsa-b100sc-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BSA-B100SC-7A'
