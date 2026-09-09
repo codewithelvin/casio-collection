@@ -1,7 +1,7 @@
 # BG-2000 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 9 references catalogued
+# written here (D27): the client asked for these 11 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -53,3 +53,24 @@ models:
     ref: BG-2000CG-5
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000CG-5', kind: retailer }
     image: null
+
+# MOVED HERE 2026-09-09: 2 references from
+# catalog-src/vintage/bg-2000.yaml -- javys tags them under a generic
+# subbrand there, but the reference prefix is baby-g's throughout.
+#
+  - id: bg-2000cg-1
+    ref: BG-2000CG-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000CG-1', kind: retailer }
+    image: bg-2000cg-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000CG-1'
+  - id: bg-2000cg-7
+    ref: BG-2000CG-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000CG-7', kind: retailer }
+    image: bg-2000cg-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-2000CG-7'
