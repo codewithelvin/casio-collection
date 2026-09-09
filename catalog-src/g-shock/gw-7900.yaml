@@ -1,0 +1,83 @@
+# GW-7900 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 8 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gw-7900
+  name: GW-7900
+  line: g-shock
+
+models:
+  - id: gw-7900-1
+    ref: GW-7900-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900-1', kind: retailer }
+    image: gw-7900-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900-1'
+  - id: gw-7900b-1
+    ref: GW-7900B-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900B-1', kind: retailer }
+    image: gw-7900b-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900B-1'
+  - id: gw-7900bms-1
+    ref: GW-7900BMS-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900BMS-1', kind: retailer }
+    image: gw-7900bms-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900BMS-1'
+  - id: gw-7900cd-9
+    ref: GW-7900CD-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900CD-9', kind: retailer }
+    image: gw-7900cd-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900CD-9'
+  - id: gw-7900kg-3
+    ref: GW-7900KG-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900KG-3', kind: retailer }
+    image: gw-7900kg-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900KG-3'
+  - id: gw-7900ms-3
+    ref: GW-7900MS-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900MS-3', kind: retailer }
+    image: gw-7900ms-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900MS-3'
+  - id: gw-7900nv-2
+    ref: GW-7900NV-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900NV-2', kind: retailer }
+    image: gw-7900nv-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900NV-2'
+  - id: gw-7900rd-4
+    ref: GW-7900RD-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900RD-4', kind: retailer }
+    image: gw-7900rd-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-7900RD-4'
