@@ -27,16 +27,17 @@ import ExperimentOutlined from '@ant-design/icons/ExperimentOutlined'
 import BgColorsOutlined from '@ant-design/icons/BgColorsOutlined'
 import { Link, useParams } from 'react-router-dom'
 import {
+  browsableSorted,
   editionById,
   imageSources,
-  otherModelsInSeries,
   seriesById,
-  useCatalog,
+  useCatalogIndex,
   useModel,
+  useSeriesModels,
 } from '../../catalog/client.ts'
 import type {
   BrowseModel,
-  Catalog,
+  CatalogIndex,
   ImageCredit,
   PublishedEdition,
   PublishedModel,
@@ -75,12 +76,12 @@ import {
  */
 export default function WatchRoute() {
   const { modelId } = useParams<{ modelId: string }>()
-  const { data, isPending, isError, refetch } = useCatalog()
+  const { data, isPending, isError, refetch } = useCatalogIndex()
   // §6.2 — **the watch itself comes from `catalog/model/<id>.json`, not from the
   // catalogue**, because `catalog.json` no longer carries `source` or
-  // `image_credit` and this is the one page that renders both. The catalogue is
-  // still read beside it for the things around the watch: its line's accent, its
-  // edition, and the other references in its series.
+  // `image_credit` and this is the one page that renders both. The index is
+  // read beside it for the things around the watch that do not need a model:
+  // its line's accent, its series, its edition.
   //
   // The two queries are deliberately not chained, for the reason the series page
   // gives: taking the id straight from the URL puts both requests in flight at
@@ -90,6 +91,13 @@ export default function WatchRoute() {
 
   const model = modelDoc.data?.model
   const series = data && model ? seriesById(data, model.series) : undefined
+  // The other references in the series genuinely cannot be known before the
+  // model is, because there is no series to ask for without it — this one query
+  // is chained on purpose, and only for this strip below the fold.
+  const seriesModels = useSeriesModels(model?.series)
+  const others = browsableSorted(
+    (seriesModels.data?.models ?? []).filter((other) => other.id !== model?.id),
+  )
 
   // FR-3.7 — the title and the card tags, so a pasted link previews as the
   // reference rather than as the site name. Restored on unmount: leaving a watch
@@ -126,25 +134,27 @@ export default function WatchRoute() {
     return <EmptyState title={t('watch.notFound.title')} body={t('watch.notFound.body')} />
   }
 
-  return <WatchDetail catalog={data} model={model} series={series} />
+  return <WatchDetail catalog={data} model={model} series={series} others={others} />
 }
 
 function WatchDetail({
   catalog,
   model,
   series,
+  others,
 }: {
-  catalog: Catalog
+  catalog: CatalogIndex
   model: PublishedModel
   /** Absent only if the artefact carries a model whose series was not published. */
   series: PublishedSeries | undefined
+  /** The rest of the series, excluding this model. Empty until its file lands. */
+  others: BrowseModel[]
 }) {
   const { token } = antdTheme.useToken()
   const line = catalog.lines.find((candidate) => candidate.id === model.line)
   const edition = editionById(catalog, model.edition)
   const accent = LINE_ACCENTS[model.line] ?? token.colorPrimary
   const sources = imageSources(model.image)
-  const others = otherModelsInSeries(catalog, model)
 
   const rows = specRows(model)
 

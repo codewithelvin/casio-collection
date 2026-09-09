@@ -7,11 +7,10 @@ import { t } from '../i18n/strings'
 /**
  * M3 — the filter bar over a real grid.
  *
- * The fixture is what makes these honest. On the G-SHOCK line one model of four
- * carries a display type and three of four carry a year, so D26's gate has
- * something to actually decide rather than a made-up cohort: the year control
- * appears and the display control does not, from the same data, on the same
- * page.
+ * The fixture is what makes these honest. On the G-SHOCK line one model of
+ * four carries a display type, two of four a movement, and three of four a
+ * year — so D26's gate has something to actually decide rather than a
+ * made-up cohort.
  */
 /**
  * **Scoped to `main`, and that scope is load-bearing since §12.**
@@ -29,15 +28,19 @@ const cardsNamed = (pattern: RegExp) =>
     .queryAllByRole('link', { name: pattern })
     .map((link) => link.getAttribute('aria-label'))
 
-describe('which facets appear (FR-1.3a, D26)', () => {
-  it('offers a facet where the data is dense and hides one where it is not', async () => {
+describe('which facets appear (FR-1.3a, D26, LINE_DENSITY_THRESHOLD)', () => {
+  it('takes the line page\'s wider threshold, not the narrower default', async () => {
     renderApp('/line/g-shock')
 
-    // Year: three of four models. Display: one of four, so a Digital filter here
-    // would silently hide the three watches nobody recorded a display for.
+    // Year is exempt from the threshold regardless. Display (one of four,
+    // 25%) and Movement (two of four, 50%) both clear the line view's
+    // widened 25% gate (measured 2026-09-09: every line but G-SHOCK showed
+    // no facets at all under the old 60%, checked over the whole line) —
+    // and both would still be hidden under the narrower 60% every other
+    // view keeps, which `filters.test.ts` covers directly.
     expect(await screen.findByRole('button', { name: /Year/ })).toBeInTheDocument()
-    expect(screen.queryByRole('button', { name: /Display/ })).not.toBeInTheDocument()
-    expect(screen.queryByRole('button', { name: /Movement/ })).not.toBeInTheDocument()
+    expect(await screen.findByRole('button', { name: /Display/ })).toBeInTheDocument()
+    expect(await screen.findByRole('button', { name: /Movement/ })).toBeInTheDocument()
   })
 })
 

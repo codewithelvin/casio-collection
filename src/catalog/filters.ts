@@ -109,7 +109,10 @@ function valuesOf(model: BrowseModel, field: FacetField): string[] {
  * you press one, and then there is no way back to the other years without
  * finding the *Clear all* — the control removing the state it just created.
  */
-export function facetsFor(models: readonly BrowseModel[]): Facet[] {
+export function facetsFor(
+  models: readonly BrowseModel[],
+  minCoverage: number = DENSITY_THRESHOLD,
+): Facet[] {
   const total = models.length
   if (total === 0) return []
 
@@ -129,7 +132,7 @@ export function facetsFor(models: readonly BrowseModel[]): Facet[] {
 
     const coverage = present / total
     if (counts.size === 0) continue
-    if (field !== 'year' && coverage < DENSITY_THRESHOLD) continue
+    if (field !== 'year' && coverage < minCoverage) continue
 
     const options =
       field === 'year'

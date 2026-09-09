@@ -255,6 +255,36 @@ export function useSeriesModels(id: string | undefined): UseQueryResult<SeriesMo
   })
 }
 
+export function useLineModels(id: string | undefined): UseQueryResult<LineModels | null, Error> {
+  return useQuery({
+    queryKey: ['catalog', 'line', id ?? ''] as const,
+    queryFn: () => fetchLineModels(id ?? ''),
+    enabled: Boolean(id),
+  })
+}
+
+export function useEditionModels(id: string | undefined): UseQueryResult<EditionModels | null, Error> {
+  return useQuery({
+    queryKey: ['catalog', 'edition', id ?? ''] as const,
+    queryFn: () => fetchEditionModels(id ?? ''),
+    enabled: Boolean(id),
+  })
+}
+
+/**
+ * §6.2's third leg. `staleTime: Infinity` under the version digest, same as
+ * every other artefact — the header's field engages this once per session and
+ * the fetch is never repeated after.
+ */
+export const searchIndexQueryOptions = {
+  queryKey: ['catalog', 'search-index'] as const,
+  queryFn: () => fetchSearchIndex(),
+}
+
+export function useSearchIndex(options?: { enabled?: boolean }): UseQueryResult<SearchIndexFile, Error> {
+  return useQuery({ ...searchIndexQueryOptions, enabled: options?.enabled ?? true })
+}
+
 /**
  * One watch, with its citations.
  *

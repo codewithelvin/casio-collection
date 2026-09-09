@@ -276,5 +276,29 @@ export type CoverageField = (typeof COVERAGE_FIELDS)[number]
 /** D26 — a facet renders only where this share of the models in view carry it. */
 export const DENSITY_THRESHOLD = 0.6
 
+/**
+ * D26 widened for one view only: the whole line. Measured 2026-09-09 —
+ * G-SHOCK (catalogued from Casio's own product pages) clears 60% on every
+ * facet, and every other line clears 60% on **none** of them, at any size:
+ * Oceanus is 60 models and still shows nothing. A line mixes every family and
+ * era Casio ever sold under one name, so 60% measured across the whole thing
+ * asks a question no single-source line but G-SHOCK can answer — the rule
+ * was never wrong, the view it was first measured against just happened to
+ * be the one line rich enough to pass it.
+ *
+ * 25% still refuses a fifteen-percent field — Baby-G and Pro Trek stay dark
+ * on every facet at this threshold too, honestly, because a chip there would
+ * hide six models in seven. It is chosen to surface `features`/`discontinued`
+ * on Vintage and `display`/`movement`/`features` on Edifice, Sheen and
+ * Oceanus, which measured between 25% and 41% and were the reader-visible
+ * cost of the 60% line ever having been checked against G-SHOCK alone.
+ *
+ * Series, edition, search and collection views keep `DENSITY_THRESHOLD`
+ * unchanged — a series is one source and one product family, which is
+ * exactly where 60% was already true (F-91W's movement is 100%) and where a
+ * wider bar would start admitting the sparse facets D26 exists to hide.
+ */
+export const LINE_DENSITY_THRESHOLD = 0.25
+
 /** §10.2 check 9 — a Casio quartz watch cannot predate the Casiotron. */
 export const EARLIEST_YEAR = 1974

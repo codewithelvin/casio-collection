@@ -1,8 +1,15 @@
 import { Fragment, useEffect, useMemo } from 'react'
 import { Breadcrumb, Button, Typography, theme as antdTheme } from 'antd'
 import { Link, useParams } from 'react-router-dom'
-import { lineBySlug, lineTree, modelsInSeries, useCatalog } from '../../catalog/client.ts'
+import {
+  browsableSorted,
+  lineBySlug,
+  lineTree,
+  useCatalogIndex,
+  useLineModels,
+} from '../../catalog/client.ts'
 import { applyViewState, NO_FILTERS } from '../../catalog/filters.ts'
+import { LINE_DENSITY_THRESHOLD } from '../../catalog/vocabulary.ts'
 import type { PublishedFamily, PublishedSeries } from '../../catalog/schema.ts'
 import { WatchGrid, WINDOW } from '../../ui/WatchGrid'
 import { sectionsWithin, useReveal } from '../../ui/useReveal'
@@ -42,7 +49,7 @@ export default function LineRoute() {
   const { line: slug } = useParams<{ line: string }>()
   const { token } = antdTheme.useToken()
   const [view, setView] = useViewState()
-  const { data, isPending, isError, refetch } = useCatalog()
+  const { data, isPending, isError, refetch } = useCatalogIndex()
 
   /**
    * **"Switching line feels like nothing happens" is real, and a skeleton here
@@ -73,6 +80,11 @@ export default function LineRoute() {
    * buttons.
    */
   const line = data ? lineBySlug(data, slug) : undefined
+  // Fired off the resolved line's id rather than chained behind a render: the
+  // index carrying `lines` is already in the shell's cache by the time anyone
+  // reaches this page (`LineNav` reads it on every URL), so in practice this
+  // starts alongside the index fetch rather than after it.
+  const lineModels = useLineModels(line?.id)
 
   // Restored on unmount, same as the watch page: leaving a line for the
   // catalogue root must not leave that line's title behind.
@@ -86,10 +98,11 @@ export default function LineRoute() {
   }, [line])
 
   const groups = useMemo(() => {
-    if (!data || !line) return []
+    if (!data || !line || !lineModels.data) return []
+    const models = lineModels.data.models
     const build = (series: PublishedSeries, family?: PublishedFamily) => ({
       series,
-      models: modelsInSeries(data, series.id),
+      models: browsableSorted(models.filter((model) => model.series === series.id)),
       family,
     })
     const bySize = (a: { series: PublishedSeries; models: unknown[] }, b: typeof a) =>
@@ -120,7 +133,7 @@ export default function LineRoute() {
         .filter(inhabited)
         .sort(bySize),
     ]
-  }, [data, line])
+  }, [data, line, lineModels.data])
 
   /**
    * The filter bar reads the whole line — D26 measures density over the view,
@@ -169,8 +182,17 @@ export default function LineRoute() {
     [shownGroups, revealed.shown],
   )
 
-  if (isPending) return <SkeletonGrid />
-  if (isError || !data) return <ErrorState onRetry={() => void refetch()} />
+  if (isPending || (line && lineModels.isPending)) return <SkeletonGrid />
+  if (isError || !data || (line && lineModels.isError)) {
+    return (
+      <ErrorState
+        onRetry={() => {
+          void refetch()
+          void lineModels.refetch()
+        }}
+      />
+    )
+  }
 
   if (!line) {
     return <EmptyState title={t('line.notFound.title')} body={t('line.notFound.body')} />
@@ -196,7 +218,15 @@ export default function LineRoute() {
             {`${shownCount} ${t('home.models')}`}
           </Typography.Paragraph>
 
-          <FilterBar models={models} state={view} onChange={setView} />
+          {/* D26 widened for this one view — see LINE_DENSITY_THRESHOLD. A line
+              mixes every family and era under one name, so 60% measured across
+              the whole thing was only ever true of G-SHOCK. */}
+          <FilterBar
+            models={models}
+            state={view}
+            onChange={setView}
+            minCoverage={LINE_DENSITY_THRESHOLD}
+          />
 
           {shownGroups.length === 0 ? (
             <EmptyState

@@ -46,6 +46,17 @@ describe('facet density (D26, FR-1.3a)', () => {
     expect(fieldsOf(cohort(100, 60))).toContain('movement')
   })
 
+  it('takes a lower threshold for the one view that measured a reason to (line page)', () => {
+    // LINE_DENSITY_THRESHOLD, not the default — a line mixes every family and
+    // era under one name, and 60% across the whole thing was only ever true of
+    // G-SHOCK. 30% still passes nothing at 25%, and 25% still passes at 25%.
+    const models = cohort(100, 30)
+    expect(facetsFor(models).map((facet) => facet.field)).not.toContain('movement')
+    expect(facetsFor(models, 0.25).map((facet) => facet.field)).toContain('movement')
+    expect(facetsFor(models, 0.3).map((facet) => facet.field)).toContain('movement')
+    expect(facetsFor(models, 0.31).map((facet) => facet.field)).not.toContain('movement')
+  })
+
   it('measures density over the view, never over the catalogue', () => {
     // D26's other half, and the one that does the work: movement sits at 30%
     // across the real catalogue and at 100% inside F-91W. Same field, same

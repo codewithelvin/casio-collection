@@ -1,7 +1,7 @@
 import { Breadcrumb, Button, Tag, Typography } from 'antd'
 import ExportOutlined from '@ant-design/icons/ExportOutlined'
 import { Link, useParams } from 'react-router-dom'
-import { editionById, modelsInEdition, useCatalog } from '../../catalog/client.ts'
+import { browsableSorted, editionById, useCatalogIndex, useEditionModels } from '../../catalog/client.ts'
 import { applyViewState, NO_FILTERS } from '../../catalog/filters.ts'
 import { WatchGrid } from '../../ui/WatchGrid'
 import { SkeletonGrid } from '../../ui/SkeletonGrid'
@@ -32,17 +32,29 @@ import { editionCount, sourceLabel, t } from '../../i18n/strings'
 export default function EditionRoute() {
   const { edition: editionId } = useParams<{ edition: string }>()
   const [view, setView] = useViewState()
-  const { data, isPending, isError, refetch } = useCatalog()
+  const { data, isPending, isError, refetch } = useCatalogIndex()
+  // An edition's id is already URL-safe and is the slug (D62), so this can fire
+  // alongside the index fetch rather than waiting on `edition` to resolve.
+  const editionModels = useEditionModels(editionId)
 
-  if (isPending) return <SkeletonGrid />
-  if (isError || !data) return <ErrorState onRetry={() => void refetch()} />
+  if (isPending || editionModels.isPending) return <SkeletonGrid />
+  if (isError || !data || editionModels.isError) {
+    return (
+      <ErrorState
+        onRetry={() => {
+          void refetch()
+          void editionModels.refetch()
+        }}
+      />
+    )
+  }
 
   const edition = editionById(data, editionId)
   if (!edition) {
     return <EmptyState title={t('edition.notFound.title')} body={t('edition.notFound.body')} />
   }
 
-  const models = modelsInEdition(data, edition.id)
+  const models = browsableSorted(editionModels.data?.models ?? [])
   const shown = applyViewState(models, view)
   const seriesById = new Map(data.series.map((series) => [series.id, series]))
 

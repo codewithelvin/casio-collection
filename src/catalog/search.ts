@@ -1,4 +1,4 @@
-import type { Catalog, BrowseModel } from './schema.ts'
+import type { Catalog, BrowseModel, SearchEntryDocument } from './schema.ts'
 import { browsable, compareByRef } from './client.ts'
 import { normalise, searchTextBuilder } from './searchText.ts'
 
@@ -112,11 +112,15 @@ const RANK_REF_PREFIX = 1
 const RANK_REF_CONTAINS = 2
 const RANK_OTHER_FIELD = 3
 
-function rank(entry: SearchEntry, compact: string): number {
-  if (entry.ref === compact) return RANK_EXACT_REF
-  if (entry.ref.startsWith(compact)) return RANK_REF_PREFIX
-  if (entry.ref.includes(compact)) return RANK_REF_CONTAINS
+function rankRef(ref: string, compact: string): number {
+  if (ref === compact) return RANK_EXACT_REF
+  if (ref.startsWith(compact)) return RANK_REF_PREFIX
+  if (ref.includes(compact)) return RANK_REF_CONTAINS
   return RANK_OTHER_FIELD
+}
+
+function rank(entry: SearchEntry, compact: string): number {
+  return rankRef(entry.ref, compact)
 }
 
 /**
@@ -139,6 +143,39 @@ export function searchCatalog(index: SearchIndex, query: string, limit?: number)
     .map((entry) => ({ entry, tier: rank(entry, compact) }))
     .sort((a, b) => a.tier - b.tier || compareByRef(a.entry.model, b.entry.model))
     .map((hit) => hit.entry.model)
+
+  return limit === undefined ? hits : hits.slice(0, limit)
+}
+
+/**
+ * `searchCatalog`'s counterpart over `catalog/search-index.json` — the header
+ * field's matcher, since D62's split gave it a file with the text already
+ * normalised rather than the whole catalogue to build it from.
+ *
+ * Same ranking, same AND-of-terms rule; the only difference is the shape it
+ * reads. `SearchEntryDocument` carries no `source` or specification, so this
+ * cannot serve the results page's `FilterBar` — that still reads the full
+ * catalogue, because `display`, `movement` and `features` are not here.
+ */
+export function searchIndexEntries(
+  entries: readonly SearchEntryDocument[],
+  query: string,
+  limit?: number,
+): SearchEntryDocument[] {
+  const terms = queryTerms(query)
+  if (terms.length === 0) return []
+
+  const compact = terms.join('')
+
+  const hits = entries
+    .filter((entry) => terms.every((term) => entry.text.includes(term)))
+    .map((entry) => ({ entry, tier: rankRef(normalise(entry.ref), compact) }))
+    .sort(
+      (a, b) =>
+        a.tier - b.tier ||
+        a.entry.ref.localeCompare(b.entry.ref, 'en', { numeric: true, sensitivity: 'base' }),
+    )
+    .map((hit) => hit.entry)
 
   return limit === undefined ? hits : hits.slice(0, limit)
 }

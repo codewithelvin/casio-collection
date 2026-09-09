@@ -3,9 +3,9 @@ import { AutoComplete, Input, Typography, theme as antdTheme } from 'antd'
 import type { InputRef } from 'antd'
 import SearchOutlined from '@ant-design/icons/SearchOutlined'
 import { useNavigate } from 'react-router-dom'
-import { imageSources, useCatalog } from '../catalog/client.ts'
-import { buildSearchIndex, searchCatalog } from '../catalog/search.ts'
-import type { BrowseModel } from '../catalog/schema.ts'
+import { imageSources, useSearchIndex } from '../catalog/client.ts'
+import { searchIndexEntries } from '../catalog/search.ts'
+import type { SearchEntryDocument } from '../catalog/schema.ts'
 import { LINE_ACCENTS } from '../theme/palette.ts'
 import { watchPath } from '../paths.ts'
 import AntdRoot from './AntdRoot'
@@ -82,30 +82,31 @@ function Field({ autoFocus, focusNonce, onBlur, onStay, onClose }: SearchFieldPr
   const [debounced, setDebounced] = useState('')
 
   /**
-   * §6.2's split put the 102 KB catalogue behind this flag, and the flag is what
-   * keeps the header honest about what it costs.
+   * §6.2's split put `catalog/search-index.json` behind this flag, and the flag
+   * is what keeps the header honest about what it costs.
    *
-   * The shell renders on every URL, so a field that asked for the catalogue on
-   * mount asked for it on every URL — including the 328 line and series pages
-   * that already hold what they need, and the front door, which names no model at
+   * The shell renders on every URL, so a field that asked for the index on mount
+   * asked for it on every URL — including the 328 line and series pages that
+   * already hold what they need, and the front door, which names no model at
    * all. Nobody can search without touching the field first, so the fetch waits
    * for that touch. `SearchBox` sets it from the same three intents `prefetch.ts`
    * uses for the watch route — a pointer arriving, a finger landing, a tab
    * stop — so in practice the file is in flight before the first keystroke.
    */
   const [engaged, setEngaged] = useState(autoFocus)
-  const { data } = useCatalog({ enabled: engaged })
+  const { data } = useSearchIndex({ enabled: engaged })
 
   useEffect(() => {
     const timer = setTimeout(() => setDebounced(term), DEBOUNCE_MS)
     return () => clearTimeout(timer)
   }, [term])
 
-  // Built once per catalogue rather than per keystroke. `staleTime: Infinity`
-  // means `data` is the same object for the life of the session, so this memo
-  // genuinely holds.
-  const index = useMemo(() => (data ? buildSearchIndex(data) : null), [data])
-  const hits = useMemo(() => (index ? searchCatalog(index, debounced) : []), [index, debounced])
+  // `staleTime: Infinity` means `data` is the same object for the life of the
+  // session, so this memo genuinely holds.
+  const hits = useMemo(
+    () => (data ? searchIndexEntries(data.entries, debounced) : []),
+    [data, debounced],
+  )
 
   /**
    * Below 768 px the field does not exist until it is expanded, so focusing it
@@ -185,7 +186,7 @@ function Field({ autoFocus, focusNonce, onBlur, onStay, onClose }: SearchFieldPr
       notFoundContent={
         debounced.trim() ? (
           <Typography.Text type="secondary">
-            {index ? t('search.empty.title') : t('state.loading')}
+            {data ? t('search.empty.title') : t('state.loading')}
           </Typography.Text>
         ) : null
       }
@@ -218,7 +219,7 @@ function Field({ autoFocus, focusNonce, onBlur, onStay, onClose }: SearchFieldPr
  * list is mostly made of; §8.6 makes that a designed state rather than a hole,
  * and it has to stay designed at 32 px as well as at 400.
  */
-function ResultRow({ model }: { model: BrowseModel }) {
+function ResultRow({ model }: { model: SearchEntryDocument }) {
   const { token } = antdTheme.useToken()
   const accent = LINE_ACCENTS[model.line] ?? token.colorPrimary
   const meta = [model.name, model.year].filter(Boolean).join(' · ')

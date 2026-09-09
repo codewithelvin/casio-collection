@@ -13,6 +13,7 @@ import {
   type SortKey,
   type ViewState,
 } from '../catalog/filters.ts'
+import { DENSITY_THRESHOLD } from '../catalog/vocabulary.ts'
 import { facetLabel, facetValueLabel, sortLabel, t } from '../i18n/strings'
 
 /**
@@ -40,15 +41,24 @@ export function FilterBar({
    * modal that way: the other branch stays testable without mutating a constant.
    */
   sorts = SORTS,
+  /**
+   * D26's threshold, overridable by the one screen that measured a reason to
+   * (the line page, with `LINE_DENSITY_THRESHOLD`). Defaulted here rather than
+   * imported at every other call site, so a series, edition, search or
+   * collection screen stays on the number D26 actually names without having
+   * to say so.
+   */
+  minCoverage = DENSITY_THRESHOLD,
 }: {
   models: readonly BrowseModel[]
   state: ViewState
   onChange: (next: ViewState) => void
   sorts?: readonly SortKey[]
+  minCoverage?: number
 }) {
   const { token } = antdTheme.useToken()
   const screens = Grid.useBreakpoint()
-  const facets = useMemo(() => facetsFor(models), [models])
+  const facets = useMemo(() => facetsFor(models, minCoverage), [models, minCoverage])
   const chips = activeFilters(state.filters)
 
   // §8.2 — below 768 px every interactive element is at least 44 px tall. The
