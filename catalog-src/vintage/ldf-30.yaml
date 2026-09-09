@@ -1,0 +1,83 @@
+# LDF-30 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 8 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ldf-30
+  name: LDF-30
+  line: vintage
+
+models:
+  - id: ldf-30-1a
+    ref: LDF-30-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-1A', kind: retailer }
+    image: ldf-30-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-1A'
+  - id: ldf-30-2b
+    ref: LDF-30-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-2B', kind: retailer }
+    image: ldf-30-2b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-2B'
+  - id: ldf-30-3b
+    ref: LDF-30-3B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-3B', kind: retailer }
+    image: ldf-30-3b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-3B'
+  - id: ldf-30-4a
+    ref: LDF-30-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-4A', kind: retailer }
+    image: ldf-30-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-4A'
+  - id: ldf-30-4b
+    ref: LDF-30-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-4B', kind: retailer }
+    image: ldf-30-4b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-4B'
+  - id: ldf-30-7a
+    ref: LDF-30-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-7A', kind: retailer }
+    image: ldf-30-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-7A'
+  - id: ldf-30-7b
+    ref: LDF-30-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-7B', kind: retailer }
+    image: ldf-30-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-7B'
+  - id: ldf-30-7c
+    ref: LDF-30-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-7C', kind: retailer }
+    image: ldf-30-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-30-7C'
