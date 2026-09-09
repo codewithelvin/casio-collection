@@ -1,0 +1,51 @@
+# BGA-105 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bga-105
+  name: BGA-105
+  line: baby-g
+
+models:
+  - id: bga-105-2b
+    ref: BGA-105-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-105-2B', kind: retailer }
+    image: bga-105-2b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-105-2B'
+  - id: bga-105-4b
+    ref: BGA-105-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-105-4B', kind: retailer }
+    image: bga-105-4b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-105-4B'
+  - id: bga-105-7b
+    ref: BGA-105-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-105-7B', kind: retailer }
+    image: bga-105-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-105-7B'
+  - id: bga-105b-1b
+    ref: BGA-105B-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-105B-1B', kind: retailer }
+    image: bga-105b-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-105B-1B'
