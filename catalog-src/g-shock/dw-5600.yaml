@@ -3926,3 +3926,16 @@ models:
     # nothing about either.
     image: null
     discontinued: false
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: dw-5600tod-8
+    ref: DW-5600TOD-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600TOD-8', kind: retailer }
+    image: dw-5600tod-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600TOD-8'
