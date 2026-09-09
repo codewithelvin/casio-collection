@@ -360,3 +360,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240721132606id_/https://www.casio.com/id/watches/casio/product.LRW-200H-4E4V/'
     discontinued: false
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: lrw-200h-1ev
+    ref: LRW-200H-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-200H-1EV', kind: retailer }
+    image: lrw-200h-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-200H-1EV'
