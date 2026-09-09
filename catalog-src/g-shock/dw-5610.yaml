@@ -1,0 +1,59 @@
+# DW-5610 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: dw-5610
+  name: DW-5610
+  line: g-shock
+
+models:
+  - id: dw-5610dn-9
+    ref: DW-5610DN-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5610DN-9', kind: retailer }
+    image: dw-5610dn-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5610DN-9'
+  - id: dw-5610su-3
+    ref: DW-5610SU-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5610SU-3', kind: retailer }
+    image: dw-5610su-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5610SU-3'
+  - id: dw-5610su-8
+    ref: DW-5610SU-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5610SU-8', kind: retailer }
+    image: dw-5610su-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5610SU-8'
+  - id: dw-5610sus-5
+    ref: DW-5610SUS-5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5610SUS-5', kind: retailer }
+    image: dw-5610sus-5
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5610SUS-5'
+  - id: dw-5610y-9
+    ref: DW-5610Y-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5610Y-9', kind: retailer }
+    image: dw-5610y-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5610Y-9'
