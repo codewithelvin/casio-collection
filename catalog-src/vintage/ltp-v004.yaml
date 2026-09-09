@@ -262,3 +262,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240721183957id_/https://www.casio.com/id/watches/casio/product.LTP-V004GL-9A/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ltp-v004l-4b
+    ref: LTP-V004L-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V004L-4B', kind: retailer }
+    image: ltp-v004l-4b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V004L-4B'
+  - id: ltp-v004l-7b
+    ref: LTP-V004L-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V004L-7B', kind: retailer }
+    image: ltp-v004l-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-V004L-7B'
