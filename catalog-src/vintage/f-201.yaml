@@ -86,3 +86,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715070737id_/https://www.casio.com/europe/watches/casio/product.F-201WAM-9AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com's older
+# micro-site pages (retailer). Minimal entries only. The entries above
+# predate this block and are untouched.
+#
+  - id: f-201w-1a
+    ref: F-201W-1A
+    source: { url: 'https://www.javys.com/casio/watersports/digital_standard03.htm', kind: retailer }
+    image: f-201w-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/watersports/digital_standard03.htm'
+  - id: f-201w-9a
+    ref: F-201W-9A
+    source: { url: 'https://www.javys.com/casio/watersports/digital_standard03.htm', kind: retailer }
+    image: f-201w-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/watersports/digital_standard03.htm'
