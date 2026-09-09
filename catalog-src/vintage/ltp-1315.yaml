@@ -1,0 +1,59 @@
+# LTP-1315 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-1315
+  name: LTP-1315
+  line: vintage
+
+models:
+  - id: ltp-1315d-1bv
+    ref: LTP-1315D-1BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1315D-1BV', kind: retailer }
+    image: ltp-1315d-1bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1315D-1BV'
+  - id: ltp-1315d-2bv
+    ref: LTP-1315D-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1315D-2BV', kind: retailer }
+    image: ltp-1315d-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1315D-2BV'
+  - id: ltp-1315l-5bv
+    ref: LTP-1315L-5BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1315L-5BV', kind: retailer }
+    image: ltp-1315l-5bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1315L-5BV'
+  - id: ltp-1315l-8bv
+    ref: LTP-1315L-8BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1315L-8BV', kind: retailer }
+    image: ltp-1315l-8bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1315L-8BV'
+  - id: ltp-1315sg-7bv
+    ref: LTP-1315SG-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1315SG-7BV', kind: retailer }
+    image: ltp-1315sg-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1315SG-7BV'
