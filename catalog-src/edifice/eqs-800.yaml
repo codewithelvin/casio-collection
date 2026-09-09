@@ -63,3 +63,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220129010847id_/https://www.casio.com/tw/watches/edifice/product.EQS-800CDB-1BV/'
     discontinued: true
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: eqs-800hr-1a
+    ref: EQS-800HR-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-800HR-1A', kind: retailer }
+    image: eqs-800hr-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-800HR-1A'
