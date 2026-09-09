@@ -121,3 +121,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220818074823id_/https://www.casio.com/us/watches/casio/product.W-800HM-3AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: w-800hd-1av
+    ref: W-800HD-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-800HD-1AV', kind: retailer }
+    image: w-800hd-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-800HD-1AV'
