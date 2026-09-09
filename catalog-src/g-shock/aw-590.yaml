@@ -1,7 +1,7 @@
 # AW-590 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 3 references catalogued
+# written here (D27): the client asked for these 9 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -29,3 +29,56 @@ models:
     ref: AW-590BL-5A
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590BL-5A', kind: retailer }
     image: null
+
+# MOVED HERE 2026-09-09: 6 references from
+# catalog-src/vintage/aw-590.yaml -- javys tags them under a generic
+# subbrand there, but the reference prefix is g-shock's throughout.
+#
+  - id: aw-590l-7b
+    ref: AW-590L-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590L-7B', kind: retailer }
+    image: aw-590l-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590L-7B'
+  - id: aw-590la-7a
+    ref: AW-590LA-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590LA-7A', kind: retailer }
+    image: aw-590la-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590LA-7A'
+  - id: aw-590lc-7b
+    ref: AW-590LC-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590LC-7B', kind: retailer }
+    image: aw-590lc-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590LC-7B'
+  - id: aw-590le-1av
+    ref: AW-590LE-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590LE-1AV', kind: retailer }
+    image: aw-590le-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590LE-1AV'
+  - id: aw-590lg-7a
+    ref: AW-590LG-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590LG-7A', kind: retailer }
+    image: aw-590lg-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590LG-7A'
+  - id: aw-590lv-7b
+    ref: AW-590LV-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590LV-7B', kind: retailer }
+    image: aw-590lv-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-590LV-7B'
