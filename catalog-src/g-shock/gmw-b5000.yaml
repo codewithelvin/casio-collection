@@ -568,3 +568,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240715021746id_/https://www.casio.com/europe/watches/gshock/product.GMW-B5000TVB-1/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: gmw-b5000tfg-9
+    ref: GMW-B5000TFG-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GMW-B5000TFG-9', kind: retailer }
+    image: gmw-b5000tfg-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GMW-B5000TFG-9'
+  - id: gmw-b5000v-1
+    ref: GMW-B5000V-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GMW-B5000V-1', kind: retailer }
+    image: gmw-b5000v-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GMW-B5000V-1'
