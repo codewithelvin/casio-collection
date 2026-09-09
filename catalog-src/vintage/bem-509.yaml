@@ -1,0 +1,51 @@
+# BEM-509 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bem-509
+  name: BEM-509
+  line: vintage
+
+models:
+  - id: bem-509cl-1av
+    ref: BEM-509CL-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BEM-509CL-1AV', kind: retailer }
+    image: bem-509cl-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BEM-509CL-1AV'
+  - id: bem-509d-1av
+    ref: BEM-509D-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BEM-509D-1AV', kind: retailer }
+    image: bem-509d-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BEM-509D-1AV'
+  - id: bem-509gl-5av
+    ref: BEM-509GL-5AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BEM-509GL-5AV', kind: retailer }
+    image: bem-509gl-5av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BEM-509GL-5AV'
+  - id: bem-509l-7av
+    ref: BEM-509L-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BEM-509L-7AV', kind: retailer }
+    image: bem-509l-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BEM-509L-7AV'
