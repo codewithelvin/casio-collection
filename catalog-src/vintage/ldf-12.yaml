@@ -1,0 +1,59 @@
+# LDF-12 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ldf-12
+  name: LDF-12
+  line: vintage
+
+models:
+  - id: ldf-12-2av
+    ref: LDF-12-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-12-2AV', kind: retailer }
+    image: ldf-12-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-12-2AV'
+  - id: ldf-12-7av
+    ref: LDF-12-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-12-7AV', kind: retailer }
+    image: ldf-12-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-12-7AV'
+  - id: ldf-12-7bv
+    ref: LDF-12-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-12-7BV', kind: retailer }
+    image: ldf-12-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-12-7BV'
+  - id: ldf-12-7cv
+    ref: LDF-12-7CV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-12-7CV', kind: retailer }
+    image: ldf-12-7cv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-12-7CV'
+  - id: ldf-12-9av
+    ref: LDF-12-9AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-12-9AV', kind: retailer }
+    image: ldf-12-9av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-12-9AV'
