@@ -1,0 +1,31 @@
+# G-315 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 3 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: g-315
+  name: G-315
+  line: g-shock
+
+models:
+  - id: g-315rc-3av
+    ref: G-315RC-3AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-315RC-3AV', kind: retailer }
+    image: null
+  - id: g-315rl-2av
+    ref: G-315RL-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-315RL-2AV', kind: retailer }
+    image: null
+  - id: g-315rl-4av
+    ref: G-315RL-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-315RL-4AV', kind: retailer }
+    image: null
