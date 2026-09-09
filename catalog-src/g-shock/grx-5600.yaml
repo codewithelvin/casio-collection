@@ -1,0 +1,51 @@
+# GRX-5600 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: grx-5600
+  name: GRX-5600
+  line: g-shock
+
+models:
+  - id: grx-5600a-4
+    ref: GRX-5600A-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GRX-5600A-4', kind: retailer }
+    image: grx-5600a-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GRX-5600A-4'
+  - id: grx-5600b-2
+    ref: GRX-5600B-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GRX-5600B-2', kind: retailer }
+    image: grx-5600b-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GRX-5600B-2'
+  - id: grx-5600ge-1
+    ref: GRX-5600GE-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GRX-5600GE-1', kind: retailer }
+    image: grx-5600ge-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GRX-5600GE-1'
+  - id: grx-5600srf-3
+    ref: GRX-5600SRF-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GRX-5600SRF-3', kind: retailer }
+    image: grx-5600srf-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GRX-5600SRF-3'
