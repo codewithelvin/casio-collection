@@ -1,0 +1,59 @@
+# MTF-109 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtf-109
+  name: MTF-109
+  line: vintage
+
+models:
+  - id: mtf-109d-1av
+    ref: MTF-109D-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-109D-1AV', kind: retailer }
+    image: mtf-109d-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-109D-1AV'
+  - id: mtf-109d-2av
+    ref: MTF-109D-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-109D-2AV', kind: retailer }
+    image: mtf-109d-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-109D-2AV'
+  - id: mtf-109d-7av
+    ref: MTF-109D-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-109D-7AV', kind: retailer }
+    image: mtf-109d-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-109D-7AV'
+  - id: mtf-109l-1av
+    ref: MTF-109L-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-109L-1AV', kind: retailer }
+    image: mtf-109l-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-109L-1AV'
+  - id: mtf-109l-7av
+    ref: MTF-109L-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-109L-7AV', kind: retailer }
+    image: mtf-109l-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-109L-7AV'
