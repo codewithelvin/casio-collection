@@ -1,0 +1,155 @@
+# G-001 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 17 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: g-001
+  name: G-001
+  line: g-shock
+
+models:
+  - id: g-001-1a
+    ref: G-001-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-1A', kind: retailer }
+    image: g-001-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-1A'
+  - id: g-001-1b
+    ref: G-001-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-1B', kind: retailer }
+    image: g-001-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-1B'
+  - id: g-001-1c
+    ref: G-001-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-1C', kind: retailer }
+    image: g-001-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-1C'
+  - id: g-001-2
+    ref: G-001-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-2', kind: retailer }
+    image: g-001-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-2'
+  - id: g-001-2c
+    ref: G-001-2C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-2C', kind: retailer }
+    image: g-001-2c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-2C'
+  - id: g-001-8c
+    ref: G-001-8C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-8C', kind: retailer }
+    image: g-001-8c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-8C'
+  - id: g-001-9
+    ref: G-001-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-9', kind: retailer }
+    image: g-001-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001-9'
+  - id: g-001b-1
+    ref: G-001B-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001B-1', kind: retailer }
+    image: g-001b-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001B-1'
+  - id: g-001b-2
+    ref: G-001B-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001B-2', kind: retailer }
+    image: g-001b-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001B-2'
+  - id: g-001bb-1
+    ref: G-001BB-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001BB-1', kind: retailer }
+    image: g-001bb-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001BB-1'
+  - id: g-001cb-1
+    ref: G-001CB-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001CB-1', kind: retailer }
+    image: g-001cb-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001CB-1'
+  - id: g-001cb-7
+    ref: G-001CB-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001CB-7', kind: retailer }
+    image: g-001cb-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001CB-7'
+  - id: g-001cb-9
+    ref: G-001CB-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001CB-9', kind: retailer }
+    image: g-001cb-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001CB-9'
+  - id: g-001hc-1
+    ref: G-001HC-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001HC-1', kind: retailer }
+    image: g-001hc-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001HC-1'
+  - id: g-001hc-3
+    ref: G-001HC-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001HC-3', kind: retailer }
+    image: g-001hc-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001HC-3'
+  - id: g-001rf-9
+    ref: G-001RF-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001RF-9', kind: retailer }
+    image: g-001rf-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001RF-9'
+  - id: g-001sn-2
+    ref: G-001SN-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001SN-2', kind: retailer }
+    image: g-001sn-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-001SN-2'
