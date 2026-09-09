@@ -57,3 +57,20 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9200GY-1'
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-9200-1
+    ref: G-9200-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9200-1', kind: retailer }
+    image: null
+  - id: g-9200ms-8
+    ref: G-9200MS-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9200MS-8', kind: retailer }
+    image: null
+  - id: g-9200r-4
+    ref: G-9200R-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9200R-4', kind: retailer }
+    image: null
