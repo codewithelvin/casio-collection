@@ -1,0 +1,47 @@
+# BG-60 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bg-60
+  name: BG-60
+  line: baby-g
+
+models:
+  - id: bg-60-1e
+    ref: BG-60-1E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-60-1E', kind: retailer }
+    image: null
+  - id: bg-60-8e
+    ref: BG-60-8E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-60-8E', kind: retailer }
+    image: null
+  - id: bg-60bd-2e
+    ref: BG-60BD-2E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-60BD-2E', kind: retailer }
+    image: null
+  - id: bg-60bd-3e
+    ref: BG-60BD-3E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-60BD-3E', kind: retailer }
+    image: null
+  - id: bg-60bd-4e
+    ref: BG-60BD-4E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-60BD-4E', kind: retailer }
+    image: null
+  - id: bg-60bd-8e
+    ref: BG-60BD-8E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-60BD-8E', kind: retailer }
+    image: null
+  - id: bg-60l-5e
+    ref: BG-60L-5E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-60L-5E', kind: retailer }
+    image: null
