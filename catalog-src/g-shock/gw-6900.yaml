@@ -1,0 +1,75 @@
+# GW-6900 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gw-6900
+  name: GW-6900
+  line: g-shock
+
+models:
+  - id: gw-6900a-7jf
+    ref: GW-6900A-7JF
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900A-7JF', kind: retailer }
+    image: gw-6900a-7jf
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900A-7JF'
+  - id: gw-6900a-9jf
+    ref: GW-6900A-9JF
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900A-9JF', kind: retailer }
+    image: gw-6900a-9jf
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900A-9JF'
+  - id: gw-6900b-1
+    ref: GW-6900B-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900B-1', kind: retailer }
+    image: gw-6900b-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900B-1'
+  - id: gw-6900cc-1
+    ref: GW-6900CC-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900CC-1', kind: retailer }
+    image: gw-6900cc-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900CC-1'
+  - id: gw-6900cc-6
+    ref: GW-6900CC-6
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900CC-6', kind: retailer }
+    image: gw-6900cc-6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900CC-6'
+  - id: gw-6900kg-3
+    ref: GW-6900KG-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900KG-3', kind: retailer }
+    image: gw-6900kg-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900KG-3'
+  - id: gw-6900rd-4
+    ref: GW-6900RD-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900RD-4', kind: retailer }
+    image: gw-6900rd-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-6900RD-4'
