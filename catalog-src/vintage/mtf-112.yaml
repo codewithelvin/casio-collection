@@ -1,0 +1,67 @@
+# MTF-112 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtf-112
+  name: MTF-112
+  line: vintage
+
+models:
+  - id: mtf-112d-1c
+    ref: MTF-112D-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112D-1C', kind: retailer }
+    image: mtf-112d-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112D-1C'
+  - id: mtf-112d-7c1
+    ref: MTF-112D-7C1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112D-7C1', kind: retailer }
+    image: mtf-112d-7c1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112D-7C1'
+  - id: mtf-112d-7c5
+    ref: MTF-112D-7C5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112D-7C5', kind: retailer }
+    image: mtf-112d-7c5
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112D-7C5'
+  - id: mtf-112l-1c
+    ref: MTF-112L-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112L-1C', kind: retailer }
+    image: mtf-112l-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112L-1C'
+  - id: mtf-112l-5c
+    ref: MTF-112L-5C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112L-5C', kind: retailer }
+    image: mtf-112l-5c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112L-5C'
+  - id: mtf-112l-7c
+    ref: MTF-112L-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112L-7C', kind: retailer }
+    image: mtf-112l-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTF-112L-7C'
