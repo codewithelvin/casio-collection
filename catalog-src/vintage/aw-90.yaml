@@ -1,0 +1,63 @@
+# AW-90 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: aw-90
+  name: AW-90
+  line: vintage
+
+models:
+  - id: aw-90h-2bv
+    ref: AW-90H-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-2BV', kind: retailer }
+    image: aw-90h-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-2BV'
+  - id: aw-90h-3e2v
+    ref: AW-90H-3E2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-3E2V', kind: retailer }
+    image: aw-90h-3e2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-3E2V'
+  - id: aw-90h-4e2v
+    ref: AW-90H-4E2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-4E2V', kind: retailer }
+    image: aw-90h-4e2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-4E2V'
+  - id: aw-90h-7bv
+    ref: AW-90H-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-7BV', kind: retailer }
+    image: aw-90h-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-7BV'
+  - id: aw-90h-7ev
+    ref: AW-90H-7EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-7EV', kind: retailer }
+    image: aw-90h-7ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-7EV'
+  - id: aw-90h-9ev
+    ref: AW-90H-9EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-90H-9EV', kind: retailer }
+    image: null
