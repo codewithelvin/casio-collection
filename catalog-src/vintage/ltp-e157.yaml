@@ -1,0 +1,67 @@
+# LTP-E157 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-e157
+  name: LTP-E157
+  line: vintage
+
+models:
+  - id: ltp-e157m-7a
+    ref: LTP-E157M-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157M-7A', kind: retailer }
+    image: ltp-e157m-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157M-7A'
+  - id: ltp-e157mg-3a
+    ref: LTP-E157MG-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157MG-3A', kind: retailer }
+    image: ltp-e157mg-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157MG-3A'
+  - id: ltp-e157mg-9a
+    ref: LTP-E157MG-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157MG-9A', kind: retailer }
+    image: ltp-e157mg-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157MG-9A'
+  - id: ltp-e157mgb-1b
+    ref: LTP-E157MGB-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157MGB-1B', kind: retailer }
+    image: ltp-e157mgb-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157MGB-1B'
+  - id: ltp-e157mr-9a
+    ref: LTP-E157MR-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157MR-9A', kind: retailer }
+    image: ltp-e157mr-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157MR-9A'
+  - id: ltp-e157mrb-1b
+    ref: LTP-E157MRB-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157MRB-1B', kind: retailer }
+    image: ltp-e157mrb-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E157MRB-1B'
