@@ -148,3 +148,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220706032713id_/https://www.casio.com/us/watches/casio/product.AE-1500WHX-3AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ae-1500whc-1av
+    ref: AE-1500WHC-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AE-1500WHC-1AV', kind: retailer }
+    image: ae-1500whc-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AE-1500WHC-1AV'
+  - id: ae-1500whc-8av
+    ref: AE-1500WHC-8AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AE-1500WHC-8AV', kind: retailer }
+    image: ae-1500whc-8av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AE-1500WHC-8AV'
