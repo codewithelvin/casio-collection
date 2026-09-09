@@ -3272,3 +3272,24 @@ models:
     ref: DW-6900WCJ-9
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900WCJ-9', kind: retailer }
     image: null
+
+# MOVED HERE 2026-09-09: 2 references from
+# catalog-src/vintage/dw-6900.yaml -- javys tags them under a generic
+# subbrand there, but the reference prefix is g-shock's throughout.
+#
+  - id: dw-6900xlv-1a
+    ref: DW-6900XLV-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900XLV-1A', kind: retailer }
+    image: dw-6900xlv-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900XLV-1A'
+  - id: dw-6900xlv-7a
+    ref: DW-6900XLV-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900XLV-7A', kind: retailer }
+    image: dw-6900xlv-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900XLV-7A'
