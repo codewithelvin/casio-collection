@@ -1,0 +1,43 @@
+# GLS-5500 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 3 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gls-5500
+  name: GLS-5500
+  line: g-shock
+
+models:
+  - id: gls-5500cc-9jf
+    ref: GLS-5500CC-9JF
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLS-5500CC-9JF', kind: retailer }
+    image: gls-5500cc-9jf
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLS-5500CC-9JF'
+  - id: gls-5500mm-4
+    ref: GLS-5500MM-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLS-5500MM-4', kind: retailer }
+    image: gls-5500mm-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLS-5500MM-4'
+  - id: gls-5500p-7
+    ref: GLS-5500P-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLS-5500P-7', kind: retailer }
+    image: gls-5500p-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLS-5500P-7'
