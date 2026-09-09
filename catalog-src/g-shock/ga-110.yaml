@@ -4371,3 +4371,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230322094529id_/https://www.casio.com/sg/watches/gshock/product.GA-110Y-9A/'
     discontinued: false
+
+# MOVED HERE 2026-09-09: 1 reference from
+# catalog-src/vintage/ga-110.yaml -- javys tags it under a generic
+# subbrand there, but the reference prefix is g-shock's throughout.
+#
+  - id: ga-110le-7aw
+    ref: GA-110LE-7AW
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110LE-7AW', kind: retailer }
+    image: ga-110le-7aw
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-110LE-7AW'
