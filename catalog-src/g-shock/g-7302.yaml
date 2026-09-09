@@ -1,0 +1,39 @@
+# G-7302 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: g-7302
+  name: G-7302
+  line: g-shock
+
+models:
+  - id: g-7302rl-1av
+    ref: G-7302RL-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7302RL-1AV', kind: retailer }
+    image: null
+  - id: g-7302rl-1v
+    ref: G-7302RL-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7302RL-1V', kind: retailer }
+    image: null
+  - id: g-7302rl-2v
+    ref: G-7302RL-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7302RL-2V', kind: retailer }
+    image: null
+  - id: g-7302rl-4v
+    ref: G-7302RL-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7302RL-4V', kind: retailer }
+    image: null
+  - id: g-7302rl-7v
+    ref: G-7302RL-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7302RL-7V', kind: retailer }
+    image: null
