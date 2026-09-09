@@ -1,0 +1,59 @@
+# LDF-51 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ldf-51
+  name: LDF-51
+  line: vintage
+
+models:
+  - id: ldf-51-2a
+    ref: LDF-51-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-51-2A', kind: retailer }
+    image: ldf-51-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-51-2A'
+  - id: ldf-51-4a
+    ref: LDF-51-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-51-4A', kind: retailer }
+    image: ldf-51-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-51-4A'
+  - id: ldf-51-7a
+    ref: LDF-51-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-51-7A', kind: retailer }
+    image: ldf-51-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-51-7A'
+  - id: ldf-51-7b
+    ref: LDF-51-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-51-7B', kind: retailer }
+    image: ldf-51-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-51-7B'
+  - id: ldf-51-7c
+    ref: LDF-51-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-51-7C', kind: retailer }
+    image: ldf-51-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LDF-51-7C'
