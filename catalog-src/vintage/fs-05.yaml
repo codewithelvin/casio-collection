@@ -1,0 +1,179 @@
+# FS-05 — seeded 2026-09-09 from javys.com's older
+# hand-coded micro-site pages (Forester / LapMemory / FunWatches / Water
+# Sports / Analog Sports / PELA) rather than its series_new.php system --
+# see the reference memo on javys.com for why these needed a second reader.
+# Only id, ref, source and (where the page's own image filename verifiably
+# names this exact reference) image are written here (D27): the client asked
+# for these 20 references catalogued quickly rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — none of these pages states one.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: fs-05
+  name: FS-05
+  line: vintage
+
+models:
+  - id: fs-05-2e
+    ref: FS-05-2E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/sorbet.htm', kind: retailer }
+    image: fs-05-2e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/sorbet.htm'
+  - id: fs-05-7e
+    ref: FS-05-7E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/sorbet.htm', kind: retailer }
+    image: fs-05-7e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/sorbet.htm'
+  - id: fs-05a-4e
+    ref: FS-05A-4E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/sorbet.htm', kind: retailer }
+    image: fs-05a-4e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/sorbet.htm'
+  - id: fs-05a-6e
+    ref: FS-05A-6E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/sorbet.htm', kind: retailer }
+    image: fs-05a-6e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/sorbet.htm'
+  - id: fs-05a-9e
+    ref: FS-05A-9E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/sorbet.htm', kind: retailer }
+    image: fs-05a-9e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/sorbet.htm'
+  - id: fs-05c-1e
+    ref: FS-05C-1E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/torrid.htm', kind: retailer }
+    image: fs-05c-1e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/torrid.htm'
+  - id: fs-05c-3e
+    ref: FS-05C-3E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/torrid.htm', kind: retailer }
+    image: fs-05c-3e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/torrid.htm'
+  - id: fs-05c-5e
+    ref: FS-05C-5E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/torrid.htm', kind: retailer }
+    image: fs-05c-5e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/torrid.htm'
+  - id: fs-05c-6e
+    ref: FS-05C-6E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/torrid.htm', kind: retailer }
+    image: fs-05c-6e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/torrid.htm'
+  - id: fs-05c-9e
+    ref: FS-05C-9E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/torrid.htm', kind: retailer }
+    image: fs-05c-9e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/torrid.htm'
+  - id: fs-05f-1e
+    ref: FS-05F-1E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/reflector.htm', kind: retailer }
+    image: fs-05f-1e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/reflector.htm'
+  - id: fs-05f-2e
+    ref: FS-05F-2E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/reflector.htm', kind: retailer }
+    image: fs-05f-2e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/reflector.htm'
+  - id: fs-05f-7e
+    ref: FS-05F-7E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/reflector.htm', kind: retailer }
+    image: fs-05f-7e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/reflector.htm'
+  - id: fs-05f-7e2
+    ref: FS-05F-7E2
+    source: { url: 'https://www.javys.com/casio/pela/pela3/reflector.htm', kind: retailer }
+    image: fs-05f-7e2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/reflector.htm'
+  - id: fs-05f-9e
+    ref: FS-05F-9E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/reflector.htm', kind: retailer }
+    image: fs-05f-9e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/reflector.htm'
+  - id: fs-05k-1e
+    ref: FS-05K-1E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/candy.htm', kind: retailer }
+    image: fs-05k-1e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/candy.htm'
+  - id: fs-05k-2e
+    ref: FS-05K-2E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/candy.htm', kind: retailer }
+    image: fs-05k-2e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/candy.htm'
+  - id: fs-05k-4e
+    ref: FS-05K-4E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/candy.htm', kind: retailer }
+    image: fs-05k-4e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/candy.htm'
+  - id: fs-05k-6e
+    ref: FS-05K-6E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/candy.htm', kind: retailer }
+    image: fs-05k-6e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/candy.htm'
+  - id: fs-05k-7e
+    ref: FS-05K-7E
+    source: { url: 'https://www.javys.com/casio/pela/pela3/candy.htm', kind: retailer }
+    image: fs-05k-7e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/pela/pela3/candy.htm'
