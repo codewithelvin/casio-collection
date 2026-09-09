@@ -73,3 +73,24 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-6900KG-3'
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-6900-1
+    ref: G-6900-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-6900-1', kind: retailer }
+    image: null
+  - id: g-6900a-7
+    ref: G-6900A-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-6900A-7', kind: retailer }
+    image: null
+  - id: g-6900a-9
+    ref: G-6900A-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-6900A-9', kind: retailer }
+    image: g-6900a-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-6900A-9'
