@@ -1,0 +1,99 @@
+# GBA-800 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 10 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gba-800
+  name: GBA-800
+  line: g-shock
+
+models:
+  - id: gba-800dg-1a
+    ref: GBA-800DG-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800DG-1A', kind: retailer }
+    image: gba-800dg-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800DG-1A'
+  - id: gba-800dg-2a
+    ref: GBA-800DG-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800DG-2A', kind: retailer }
+    image: gba-800dg-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800DG-2A'
+  - id: gba-800dg-7a
+    ref: GBA-800DG-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800DG-7A', kind: retailer }
+    image: gba-800dg-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800DG-7A'
+  - id: gba-800dg-9a
+    ref: GBA-800DG-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800DG-9A', kind: retailer }
+    image: gba-800dg-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800DG-9A'
+  - id: gba-800el-4a
+    ref: GBA-800EL-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800EL-4A', kind: retailer }
+    image: gba-800el-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800EL-4A'
+  - id: gba-800lu-1a
+    ref: GBA-800LU-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800LU-1A', kind: retailer }
+    image: gba-800lu-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800LU-1A'
+  - id: gba-800lu-1a1
+    ref: GBA-800LU-1A1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800LU-1A1', kind: retailer }
+    image: gba-800lu-1a1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800LU-1A1'
+  - id: gba-800sf-1a
+    ref: GBA-800SF-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800SF-1A', kind: retailer }
+    image: gba-800sf-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800SF-1A'
+  - id: gba-800uc-2a
+    ref: GBA-800UC-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800UC-2A', kind: retailer }
+    image: gba-800uc-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800UC-2A'
+  - id: gba-800uc-5a
+    ref: GBA-800UC-5A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800UC-5A', kind: retailer }
+    image: gba-800uc-5a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBA-800UC-5A'
