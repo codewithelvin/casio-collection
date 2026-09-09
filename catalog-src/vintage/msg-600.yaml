@@ -65,3 +65,11 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-600MP-7B'
+  - id: msg-600pg-5bdr
+    ref: MSG-600PG-5BDR
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-600PG-5BDR', kind: retailer }
+    image: msg-600pg-5bdr
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-600PG-5BDR'

@@ -197,3 +197,6 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230EM-7A'
+  - id: aq-230ga-5amqy
+    ref: AQ-230GA-5AMQY
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AQ-230GA-5AMQY', kind: retailer }

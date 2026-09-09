@@ -33,3 +33,43 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEL-8A2'
+  - id: la-680wegl-4
+    ref: LA-680WEGL-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEGL-4', kind: retailer }
+    image: la-680wegl-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEGL-4'
+  - id: la-680wegl-5
+    ref: LA-680WEGL-5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEGL-5', kind: retailer }
+    image: la-680wegl-5
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEGL-5'
+  - id: la-680wegv-9a
+    ref: LA-680WEGV-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEGV-9A', kind: retailer }
+    image: la-680wegv-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEGV-9A'
+  - id: la-680wel-3
+    ref: LA-680WEL-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEL-3', kind: retailer }
+    image: la-680wel-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEL-3'
+  - id: la-680wel-8
+    ref: LA-680WEL-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEL-8', kind: retailer }
+    image: la-680wel-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-680WEL-8'

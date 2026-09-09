@@ -49,3 +49,27 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-158WEM-7'
+  - id: a-158wea-1
+    ref: A-158WEA-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-158WEA-1', kind: retailer }
+    image: a-158wea-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-158WEA-1'
+  - id: a-158wea-9
+    ref: A-158WEA-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-158WEA-9', kind: retailer }
+    image: a-158wea-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-158WEA-9'
+  - id: a-158wegv-9a
+    ref: A-158WEGV-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-158WEGV-9A', kind: retailer }
+    image: a-158wegv-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-158WEGV-9A'

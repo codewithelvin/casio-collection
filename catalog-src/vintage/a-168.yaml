@@ -41,3 +41,89 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WA-8A'
+  - id: a-168weha-9a
+    ref: A-168WEHA-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WEHA-9A', kind: retailer }
+    image: a-168weha-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WEHA-9A'
+  - id: a-168wehb-1a
+    ref: A-168WEHB-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WEHB-1A', kind: retailer }
+    image: a-168wehb-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WEHB-1A'
+  - id: a-168wemb-1b
+    ref: A-168WEMB-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WEMB-1B', kind: retailer }
+    image: a-168wemb-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WEMB-1B'
+  - id: a-168wepc-7a
+    ref: A-168WEPC-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WEPC-7A', kind: retailer }
+    image: a-168wepc-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WEPC-7A'
+  - id: a-168wer-2a
+    ref: A-168WER-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WER-2A', kind: retailer }
+    image: a-168wer-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WER-2A'
+  - id: a-168werb-2a
+    ref: A-168WERB-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WERB-2A', kind: retailer }
+    image: a-168werb-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WERB-2A'
+  - id: a-168werg-2a
+    ref: A-168WERG-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WERG-2A', kind: retailer }
+    image: a-168werg-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WERG-2A'
+  - id: a-168weuc-1a
+    ref: A-168WEUC-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WEUC-1A', kind: retailer }
+    image: a-168weuc-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WEUC-1A'
+  - id: a-168wgg-1a
+    ref: A-168WGG-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WGG-1A', kind: retailer }
+  - id: a-168wgg-1b
+    ref: A-168WGG-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168WGG-1B', kind: retailer }
+  - id: a-168xes-1b
+    ref: A-168XES-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168XES-1B', kind: retailer }
+    image: a-168xes-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168XES-1B'
+  - id: a-168xesg-9a
+    ref: A-168XESG-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168XESG-9A', kind: retailer }
+    image: a-168xesg-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-168XESG-9A'

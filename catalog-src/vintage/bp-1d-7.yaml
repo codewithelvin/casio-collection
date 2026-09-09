@@ -1,0 +1,25 @@
+# BP-1D-7 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor with a per-reference page for nearly every watch it has ever
+# sold. Only id, ref, source and (where a usable photograph was found) image
+# are written here (D27): the client asked for javys's whole roster
+# catalogued rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys's own pages state none.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bp-1d-7
+  name: BP-1D-7
+  line: vintage
+
+models:
+  - id: bp-1d-7
+    ref: BP-1D-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BP-1D-7', kind: retailer }
+    image: bp-1d-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BP-1D-7'

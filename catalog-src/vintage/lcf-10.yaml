@@ -1,0 +1,49 @@
+# LCF-10 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor with a per-reference page for nearly every watch it has ever
+# sold. Only id, ref, source and (where a usable photograph was found) image
+# are written here (D27): the client asked for javys's whole roster
+# catalogued rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys's own pages state none.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: lcf-10
+  name: LCF-10
+  line: vintage
+
+models:
+  - id: lcf-10d-2avdr
+    ref: LCF-10D-2AVDR
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-10D-2AVDR', kind: retailer }
+    image: lcf-10d-2avdr
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-10D-2AVDR'
+  - id: lcf-10d-4avdr
+    ref: LCF-10D-4AVDR
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-10D-4AVDR', kind: retailer }
+    image: lcf-10d-4avdr
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-10D-4AVDR'
+  - id: lcf-10l-2avdr
+    ref: LCF-10L-2AVDR
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-10L-2AVDR', kind: retailer }
+    image: lcf-10l-2avdr
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-10L-2AVDR'
+  - id: lcf-10l-4avdr
+    ref: LCF-10L-4AVDR
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-10L-4AVDR', kind: retailer }
+    image: lcf-10l-4avdr
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LCF-10L-4AVDR'

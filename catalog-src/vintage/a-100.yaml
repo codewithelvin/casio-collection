@@ -1,0 +1,105 @@
+# A-100 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor with a per-reference page for nearly every watch it has ever
+# sold. Only id, ref, source and (where a usable photograph was found) image
+# are written here (D27): the client asked for javys's whole roster
+# catalogued rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys's own pages state none.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: a-100
+  name: A-100
+  line: vintage
+
+models:
+  - id: a-100we-1a
+    ref: A-100WE-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WE-1A', kind: retailer }
+    image: a-100we-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WE-1A'
+  - id: a-100we-7b
+    ref: A-100WE-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WE-7B', kind: retailer }
+    image: a-100we-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WE-7B'
+  - id: a-100wef-1a
+    ref: A-100WEF-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEF-1A', kind: retailer }
+    image: a-100wef-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEF-1A'
+  - id: a-100wef-3a
+    ref: A-100WEF-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEF-3A', kind: retailer }
+    image: a-100wef-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEF-3A'
+  - id: a-100wef-8a
+    ref: A-100WEF-8A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEF-8A', kind: retailer }
+    image: a-100wef-8a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEF-8A'
+  - id: a-100wefg-9a
+    ref: A-100WEFG-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEFG-9A', kind: retailer }
+    image: a-100wefg-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEFG-9A'
+  - id: a-100weg-9a
+    ref: A-100WEG-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEG-9A', kind: retailer }
+    image: a-100weg-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEG-9A'
+  - id: a-100wegg-1a
+    ref: A-100WEGG-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEGG-1A', kind: retailer }
+    image: a-100wegg-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEGG-1A'
+  - id: a-100wegg-1a2
+    ref: A-100WEGG-1A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEGG-1A2', kind: retailer }
+    image: a-100wegg-1a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEGG-1A2'
+  - id: a-100wel-1a
+    ref: A-100WEL-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEL-1A', kind: retailer }
+    image: a-100wel-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEL-1A'
+  - id: a-100wepc-1b
+    ref: A-100WEPC-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEPC-1B', kind: retailer }
+    image: a-100wepc-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-100WEPC-1B'

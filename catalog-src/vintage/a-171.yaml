@@ -1,0 +1,57 @@
+# A-171 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor with a per-reference page for nearly every watch it has ever
+# sold. Only id, ref, source and (where a usable photograph was found) image
+# are written here (D27): the client asked for javys's whole roster
+# catalogued rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys's own pages state none.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: a-171
+  name: A-171
+  line: vintage
+
+models:
+  - id: a-171we-1a
+    ref: A-171WE-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-171WE-1A', kind: retailer }
+    image: a-171we-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-171WE-1A'
+  - id: a-171weg-9a
+    ref: A-171WEG-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-171WEG-9A', kind: retailer }
+    image: a-171weg-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-171WEG-9A'
+  - id: a-171wegg-1a
+    ref: A-171WEGG-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-171WEGG-1A', kind: retailer }
+    image: a-171wegg-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-171WEGG-1A'
+  - id: a-171wemb-1a
+    ref: A-171WEMB-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-171WEMB-1A', kind: retailer }
+    image: a-171wemb-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-171WEMB-1A'
+  - id: a-171wemg-9a
+    ref: A-171WEMG-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-171WEMG-9A', kind: retailer }
+    image: a-171wemg-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A-171WEMG-9A'

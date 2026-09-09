@@ -186,3 +186,27 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220724150133id_/https://www.casio.com/jp/watches/casio/product.LQ-139LB-7B2/'
     discontinued: false
+  - id: lq-139amv-1b3ulw
+    ref: LQ-139AMV-1B3ULW
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LQ-139AMV-1B3ULW', kind: retailer }
+    image: lq-139amv-1b3ulw
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LQ-139AMV-1B3ULW'
+  - id: lq-139amv-7b3ulw
+    ref: LQ-139AMV-7B3ULW
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LQ-139AMV-7B3ULW', kind: retailer }
+    image: lq-139amv-7b3ulw
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LQ-139AMV-7B3ULW'
+  - id: lq-139amv-9b3ulw
+    ref: LQ-139AMV-9B3ULW
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LQ-139AMV-9B3ULW', kind: retailer }
+    image: lq-139amv-9b3ulw
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LQ-139AMV-9B3ULW'

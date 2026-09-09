@@ -386,3 +386,27 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221129012027id_/https://www.casio.com/jp/watches/casio/product.MQ-24MG-1E/'
     discontinued: false
+  - id: mq-24-1b3ull
+    ref: MQ-24-1B3ULL
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MQ-24-1B3ULL', kind: retailer }
+    image: mq-24-1b3ull
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MQ-24-1B3ULL'
+  - id: mq-24-7b3ull
+    ref: MQ-24-7B3ULL
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MQ-24-7B3ULL', kind: retailer }
+    image: mq-24-7b3ull
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MQ-24-7B3ULL'
+  - id: mq-24-9b3ull
+    ref: MQ-24-9B3ULL
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MQ-24-9B3ULL', kind: retailer }
+    image: mq-24-9b3ull
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MQ-24-9B3ULL'
