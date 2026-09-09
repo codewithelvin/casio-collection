@@ -24,8 +24,14 @@
 #     axis labelled. The smallest figure is unambiguously the watch's
 #     thickness on any wristwatch and is written as `depth_mm`; the other two
 #     are not, rather than guessed into height and width.
-#   * `image`. javys.com's only photograph per reference is 150 px wide —
-#     under §10.3's 300 px floor — so no usable photograph exists yet.
+#   * (nothing — see the note below on `image`)
+#
+# UPDATED 2026-09-09: javys.com's only photograph per reference is 150 px
+# wide, under §10.3's normal 300 px floor. For a reference this rare — no
+# route here has found any other photograph of it — the client's own
+# instruction is that a small confirmed photograph beats none, so all three
+# carry it anyway rather than sit null waiting for a better source that may
+# never come.
 #
 # A `databank` family in `lines.yaml` suggests itself here — the reference
 # prefix, the series' own "Data Bank" name, and the sibling DBW-320 already in
@@ -41,6 +47,11 @@ models:
     ref: DBW-30D-1AV
     source:
       { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBW-30D-1AV', kind: retailer }
+    image: dbw-30d-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBW-30D-1AV'
     year: 2005
     year_source: 'https://www.javys.com/casio/series.php?series_id=DB0002'
     display: ana-digi
@@ -58,11 +69,15 @@ models:
         telememo,
         world-time,
       ]
-    image: null
   - id: dbw-30d-7av
     ref: DBW-30D-7AV
     source:
       { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBW-30D-7AV', kind: retailer }
+    image: dbw-30d-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBW-30D-7AV'
     year: 2005
     year_source: 'https://www.javys.com/casio/series.php?series_id=DB0002'
     display: ana-digi
@@ -80,11 +95,15 @@ models:
         telememo,
         world-time,
       ]
-    image: null
   - id: dbw-30sg-7av
     ref: DBW-30SG-7AV
     source:
       { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBW-30SG-7AV', kind: retailer }
+    image: dbw-30sg-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DBW-30SG-7AV'
     year: 2005
     year_source: 'https://www.javys.com/casio/series.php?series_id=DB0002'
     display: ana-digi
@@ -102,4 +121,3 @@ models:
         telememo,
         world-time,
       ]
-    image: null
