@@ -25,3 +25,60 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300ML-1A'
+
+# ADDED 2026-09-09: 13 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-300-2av
+    ref: G-300-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300-2AV', kind: retailer }
+    image: null
+  - id: g-300-3av
+    ref: G-300-3AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300-3AV', kind: retailer }
+    image: null
+  - id: g-300-4av
+    ref: G-300-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300-4AV', kind: retailer }
+    image: null
+  - id: g-300bwc-1av
+    ref: G-300BWC-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300BWC-1AV', kind: retailer }
+    image: null
+  - id: g-300c-4av
+    ref: G-300C-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300C-4AV', kind: retailer }
+    image: null
+  - id: g-300g-9a
+    ref: G-300G-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300G-9A', kind: retailer }
+    image: null
+  - id: g-300krt-1av
+    ref: G-300KRT-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300KRT-1AV', kind: retailer }
+    image: null
+  - id: g-300krt-3av
+    ref: G-300KRT-3AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300KRT-3AV', kind: retailer }
+    image: null
+  - id: g-300l-1av
+    ref: G-300L-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300L-1AV', kind: retailer }
+    image: null
+  - id: g-300l-2av
+    ref: G-300L-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300L-2AV', kind: retailer }
+    image: null
+  - id: g-300l-4av
+    ref: G-300L-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300L-4AV', kind: retailer }
+    image: null
+  - id: g-300sc-6a
+    ref: G-300SC-6A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300SC-6A', kind: retailer }
+    image: null
+  - id: g-300sc-9a
+    ref: G-300SC-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300SC-9A', kind: retailer }
+    image: null
