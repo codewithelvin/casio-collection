@@ -1,0 +1,31 @@
+# FT-5020 — seeded 2026-09-09 from javys.com's older
+# hand-coded micro-site pages (Forester / LapMemory / FunWatches / Water
+# Sports / Analog Sports / PELA) rather than its series_new.php system --
+# see the reference memo on javys.com for why these needed a second reader.
+# Only id, ref, source and (where the page's own image filename verifiably
+# names this exact reference) image are written here (D27): the client asked
+# for these 3 references catalogued quickly rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — none of these pages states one.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ft-5020
+  name: FT-5020
+  line: vintage
+
+models:
+  - id: ft-5020wl-1bv
+    ref: FT-5020WL-1BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester04.htm', kind: retailer }
+    image: null
+  - id: ft-5020wl-2bv
+    ref: FT-5020WL-2BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester04.htm', kind: retailer }
+    image: null
+  - id: ft-5020wl-5bv
+    ref: FT-5020WL-5BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester04.htm', kind: retailer }
+    image: null
