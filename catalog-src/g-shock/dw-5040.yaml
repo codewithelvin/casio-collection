@@ -1,0 +1,27 @@
+# DW-5040 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 1 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: dw-5040
+  name: DW-5040
+  line: g-shock
+
+models:
+  - id: dw-5040pg-1
+    ref: DW-5040PG-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5040PG-1', kind: retailer }
+    image: dw-5040pg-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5040PG-1'
