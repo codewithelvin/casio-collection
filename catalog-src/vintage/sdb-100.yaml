@@ -84,3 +84,40 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210413042623id_/https://www.casio.com/jp/watches/casio/product.SDB-100J-1B/'
     discontinued: false
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: sdb-100-1a
+    ref: SDB-100-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SDB-100-1A', kind: retailer }
+    image: sdb-100-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SDB-100-1A'
+  - id: sdb-100-1b
+    ref: SDB-100-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SDB-100-1B', kind: retailer }
+    image: sdb-100-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SDB-100-1B'
+  - id: sdb-100-3a
+    ref: SDB-100-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SDB-100-3A', kind: retailer }
+    image: sdb-100-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SDB-100-3A'
+  - id: sdb-100-4a
+    ref: SDB-100-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SDB-100-4A', kind: retailer }
+    image: sdb-100-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SDB-100-4A'
