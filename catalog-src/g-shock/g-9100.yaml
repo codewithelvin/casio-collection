@@ -33,3 +33,24 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9100BP-1'
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-9100-1
+    ref: G-9100-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9100-1', kind: retailer }
+    image: null
+  - id: g-9100-2
+    ref: G-9100-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9100-2', kind: retailer }
+    image: null
+  - id: g-9100r-4
+    ref: G-9100R-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9100R-4', kind: retailer }
+    image: null
+  - id: g-9100tc-2
+    ref: G-9100TC-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9100TC-2', kind: retailer }
+    image: null
