@@ -159,3 +159,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240205045707id_/https://www.casio.com/intl/watches/casio/product.MTD-125D-9AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: mtd-125d-1a3v
+    ref: MTD-125D-1A3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-125D-1A3V', kind: retailer }
+    image: mtd-125d-1a3v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-125D-1A3V'
+  - id: mtd-125d-2a3v
+    ref: MTD-125D-2A3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-125D-2A3V', kind: retailer }
+    image: mtd-125d-2a3v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-125D-2A3V'
+  - id: mtd-125d-7av
+    ref: MTD-125D-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-125D-7AV', kind: retailer }
+    image: mtd-125d-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-125D-7AV'
