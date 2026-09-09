@@ -1,5 +1,15 @@
-# PHOTOGRAPHS REFUSED, 4 of them, and this is the reason for every
+# PHOTOGRAPHS REFUSED, 2 of them, and this is the reason for every
 # `image: null` below that does not carry one of its own.
+#
+# JAVYS ADDED 2 OF THESE ON 2026-09-09. javys.com/casio, a Hong
+# Kong Casio distributor running its own per-reference product-photo pages
+# since at least 2010, was not among the routes measured below and turned
+# out to hold a large (>=300px) photograph for 2 of the 4
+# references this file had refused. Read off
+# https://www.javys.com/casio/new_web/watch/new_watch.php?id=<REF> per entry
+# and credited to Javys as `rights-reserved` (D41): the site states no
+# licence. The routes below were still walked and are still empty; javys is
+# an addition, not a correction to any of them.
 #
 # These references are discontinued collaborations and regional limited runs.
 # Every route this project knows how to walk was walked, and the measurement is
@@ -101,9 +111,11 @@ models:
     movement: solar
     module: '3266'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: gf-8250-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GF-8250-9'
     discontinued: true
   - id: gf-8250bs-1
     ref: GF-8250BS-1
@@ -176,9 +188,11 @@ models:
     movement: solar
     module: '3266'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, el-backlight, auto-light, tough-solar, tide-graph, moon-data, magnetic-resistant, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: gf-8250er-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GF-8250ER-2'
     discontinued: true
   - id: gf-8250k-4
     ref: GF-8250K-4
