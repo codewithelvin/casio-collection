@@ -1,0 +1,67 @@
+# MTA-2002 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mta-2002
+  name: MTA-2002
+  line: vintage
+
+models:
+  - id: mta-2002d-1a
+    ref: MTA-2002D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-1A', kind: retailer }
+    image: mta-2002d-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-1A'
+  - id: mta-2002d-1b
+    ref: MTA-2002D-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-1B', kind: retailer }
+    image: mta-2002d-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-1B'
+  - id: mta-2002d-2a
+    ref: MTA-2002D-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-2A', kind: retailer }
+    image: mta-2002d-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-2A'
+  - id: mta-2002d-2b
+    ref: MTA-2002D-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-2B', kind: retailer }
+    image: mta-2002d-2b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-2B'
+  - id: mta-2002d-7a
+    ref: MTA-2002D-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-7A', kind: retailer }
+    image: mta-2002d-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-7A'
+  - id: mta-2002d-7b
+    ref: MTA-2002D-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-7B', kind: retailer }
+    image: mta-2002d-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTA-2002D-7B'
