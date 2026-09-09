@@ -1,0 +1,67 @@
+# LTP-E169 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-e169
+  name: LTP-E169
+  line: vintage
+
+models:
+  - id: ltp-e169d-1b
+    ref: LTP-E169D-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169D-1B', kind: retailer }
+    image: ltp-e169d-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169D-1B'
+  - id: ltp-e169d-2b
+    ref: LTP-E169D-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169D-2B', kind: retailer }
+    image: ltp-e169d-2b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169D-2B'
+  - id: ltp-e169d-7b
+    ref: LTP-E169D-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169D-7B', kind: retailer }
+    image: ltp-e169d-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169D-7B'
+  - id: ltp-e169g-9b
+    ref: LTP-E169G-9B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169G-9B', kind: retailer }
+    image: ltp-e169g-9b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169G-9B'
+  - id: ltp-e169r-9b
+    ref: LTP-E169R-9B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169R-9B', kind: retailer }
+    image: ltp-e169r-9b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169R-9B'
+  - id: ltp-e169rb-1b
+    ref: LTP-E169RB-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169RB-1B', kind: retailer }
+    image: ltp-e169rb-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E169RB-1B'
