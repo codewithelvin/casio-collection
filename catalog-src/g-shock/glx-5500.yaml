@@ -25,3 +25,16 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5500A-4'
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: glx-5500-1
+    ref: GLX-5500-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5500-1', kind: retailer }
+    image: null
+  - id: glx-5500-7
+    ref: GLX-5500-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5500-7', kind: retailer }
+    image: null
