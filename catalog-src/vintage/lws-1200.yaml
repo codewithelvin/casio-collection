@@ -1,0 +1,59 @@
+# LWS-1200 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: lws-1200
+  name: LWS-1200
+  line: vintage
+
+models:
+  - id: lws-1200h-1a2v
+    ref: LWS-1200H-1A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWS-1200H-1A2V', kind: retailer }
+    image: lws-1200h-1a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWS-1200H-1A2V'
+  - id: lws-1200h-1av
+    ref: LWS-1200H-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWS-1200H-1AV', kind: retailer }
+    image: lws-1200h-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWS-1200H-1AV'
+  - id: lws-1200h-7a1v
+    ref: LWS-1200H-7A1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWS-1200H-7A1V', kind: retailer }
+    image: lws-1200h-7a1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWS-1200H-7A1V'
+  - id: lws-1200h-7a2v
+    ref: LWS-1200H-7A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWS-1200H-7A2V', kind: retailer }
+    image: lws-1200h-7a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWS-1200H-7A2V'
+  - id: lws-1200h-7a3v
+    ref: LWS-1200H-7A3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWS-1200H-7A3V', kind: retailer }
+    image: lws-1200h-7a3v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LWS-1200H-7A3V'
