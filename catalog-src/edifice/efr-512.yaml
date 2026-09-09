@@ -1,0 +1,43 @@
+# EFR-512 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 3 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: efr-512
+  name: EFR-512
+  line: edifice
+
+models:
+  - id: efr-512d-1av
+    ref: EFR-512D-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFR-512D-1AV', kind: retailer }
+    image: efr-512d-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFR-512D-1AV'
+  - id: efr-512l-1av
+    ref: EFR-512L-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFR-512L-1AV', kind: retailer }
+    image: efr-512l-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFR-512L-1AV'
+  - id: efr-512l-8av
+    ref: EFR-512L-8AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFR-512L-8AV', kind: retailer }
+    image: efr-512l-8av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFR-512L-8AV'
