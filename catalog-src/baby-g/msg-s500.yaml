@@ -1,0 +1,75 @@
+# MSG-S500 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: msg-s500
+  name: MSG-S500
+  line: baby-g
+
+models:
+  - id: msg-s500-7a
+    ref: MSG-S500-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500-7A', kind: retailer }
+    image: msg-s500-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500-7A'
+  - id: msg-s500cd-7a
+    ref: MSG-S500CD-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500CD-7A', kind: retailer }
+    image: msg-s500cd-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500CD-7A'
+  - id: msg-s500cg-1a
+    ref: MSG-S500CG-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500CG-1A', kind: retailer }
+    image: msg-s500cg-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500CG-1A'
+  - id: msg-s500g-1a
+    ref: MSG-S500G-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500G-1A', kind: retailer }
+    image: msg-s500g-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500G-1A'
+  - id: msg-s500g-2a
+    ref: MSG-S500G-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500G-2A', kind: retailer }
+    image: msg-s500g-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500G-2A'
+  - id: msg-s500g-7a
+    ref: MSG-S500G-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500G-7A', kind: retailer }
+    image: msg-s500g-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500G-7A'
+  - id: msg-s500g-7a2
+    ref: MSG-S500G-7A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500G-7A2', kind: retailer }
+    image: msg-s500g-7a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-S500G-7A2'
