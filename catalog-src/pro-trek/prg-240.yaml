@@ -116,3 +116,40 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240717155614id_/https://www.casio.com/fr/watches/protrek/product.PRG-240T-7/'
     discontinued: false
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: prg-240-1b
+    ref: PRG-240-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-240-1B', kind: retailer }
+    image: prg-240-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-240-1B'
+  - id: prg-240-8
+    ref: PRG-240-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-240-8', kind: retailer }
+    image: prg-240-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-240-8'
+  - id: prg-240b-2
+    ref: PRG-240B-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-240B-2', kind: retailer }
+    image: prg-240b-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-240B-2'
+  - id: prg-240r-5
+    ref: PRG-240R-5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-240R-5', kind: retailer }
+    image: prg-240r-5
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-240R-5'
