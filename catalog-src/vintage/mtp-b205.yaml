@@ -1,0 +1,75 @@
+# MTP-B205 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-b205
+  name: MTP-B205
+  line: vintage
+
+models:
+  - id: mtp-b205d-1e
+    ref: MTP-B205D-1E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205D-1E', kind: retailer }
+    image: mtp-b205d-1e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205D-1E'
+  - id: mtp-b205d-7e
+    ref: MTP-B205D-7E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205D-7E', kind: retailer }
+    image: mtp-b205d-7e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205D-7E'
+  - id: mtp-b205m-1e
+    ref: MTP-B205M-1E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205M-1E', kind: retailer }
+    image: mtp-b205m-1e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205M-1E'
+  - id: mtp-b205m-2e
+    ref: MTP-B205M-2E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205M-2E', kind: retailer }
+    image: mtp-b205m-2e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205M-2E'
+  - id: mtp-b205m-3e
+    ref: MTP-B205M-3E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205M-3E', kind: retailer }
+    image: mtp-b205m-3e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205M-3E'
+  - id: mtp-b205m-5e
+    ref: MTP-B205M-5E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205M-5E', kind: retailer }
+    image: mtp-b205m-5e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205M-5E'
+  - id: mtp-b205m-7e
+    ref: MTP-B205M-7E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205M-7E', kind: retailer }
+    image: mtp-b205m-7e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B205M-7E'
