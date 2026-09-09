@@ -1,0 +1,59 @@
+# LTP-1354 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-1354
+  name: LTP-1354
+  line: vintage
+
+models:
+  - id: ltp-1354d-1c
+    ref: LTP-1354D-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1354D-1C', kind: retailer }
+    image: ltp-1354d-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1354D-1C'
+  - id: ltp-1354d-7c
+    ref: LTP-1354D-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1354D-7C', kind: retailer }
+    image: ltp-1354d-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1354D-7C'
+  - id: ltp-1354l-1c
+    ref: LTP-1354L-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1354L-1C', kind: retailer }
+    image: ltp-1354l-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1354L-1C'
+  - id: ltp-1354l-7c1
+    ref: LTP-1354L-7C1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1354L-7C1', kind: retailer }
+    image: ltp-1354l-7c1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1354L-7C1'
+  - id: ltp-1354l-7c2
+    ref: LTP-1354L-7C2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1354L-7C2', kind: retailer }
+    image: ltp-1354l-7c2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-1354L-7C2'
