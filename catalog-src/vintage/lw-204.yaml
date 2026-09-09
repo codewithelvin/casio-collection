@@ -1,0 +1,35 @@
+# LW-204 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 3 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: lw-204
+  name: LW-204
+  line: vintage
+
+models:
+  - id: lw-204-1a
+    ref: LW-204-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LW-204-1A', kind: retailer }
+    image: null
+  - id: lw-204-1b
+    ref: LW-204-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LW-204-1B', kind: retailer }
+    image: null
+  - id: lw-204-4a
+    ref: LW-204-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LW-204-4A', kind: retailer }
+    image: lw-204-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LW-204-4A'
