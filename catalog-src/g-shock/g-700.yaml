@@ -1,0 +1,43 @@
+# G-700 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: g-700
+  name: G-700
+  line: g-shock
+
+models:
+  - id: g-700-1av
+    ref: G-700-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-700-1AV', kind: retailer }
+    image: null
+  - id: g-700-3av
+    ref: G-700-3AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-700-3AV', kind: retailer }
+    image: null
+  - id: g-700bd-1av
+    ref: G-700BD-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-700BD-1AV', kind: retailer }
+    image: null
+  - id: g-700bd-7av
+    ref: G-700BD-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-700BD-7AV', kind: retailer }
+    image: null
+  - id: g-700d-1av
+    ref: G-700D-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-700D-1AV', kind: retailer }
+    image: null
+  - id: g-700nm-4av
+    ref: G-700NM-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-700NM-4AV', kind: retailer }
+    image: null
