@@ -1,0 +1,55 @@
+# W-57 — seeded 2026-09-09 from javys.com's older
+# hand-coded micro-site pages (Forester / LapMemory / FunWatches / Water
+# Sports / Analog Sports / PELA) rather than its series_new.php system --
+# see the reference memo on javys.com for why these needed a second reader.
+# Only id, ref, source and (where the page's own image filename verifiably
+# names this exact reference) image are written here (D27): the client asked
+# for these 5 references catalogued quickly rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — none of these pages states one.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: w-57
+  name: W-57
+  line: vintage
+
+models:
+  - id: w-57-1av
+    ref: W-57-1AV
+    source: { url: 'https://www.javys.com/casio/watersports/digital_standard02.htm', kind: retailer }
+    image: w-57-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/watersports/digital_standard02.htm'
+  - id: w-57-1bv
+    ref: W-57-1BV
+    source: { url: 'https://www.javys.com/casio/watersports/digital_standard02.htm', kind: retailer }
+    image: w-57-1bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/watersports/digital_standard02.htm'
+  - id: w-57-2av
+    ref: W-57-2AV
+    source: { url: 'https://www.javys.com/casio/watersports/digital_standard02.htm', kind: retailer }
+    image: w-57-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/watersports/digital_standard02.htm'
+  - id: w-57v-1av
+    ref: W-57V-1AV
+    source: { url: 'https://www.javys.com/casio/watersports/digital_standard02.htm', kind: retailer }
+    image: null
+  - id: w-57v-2av
+    ref: W-57V-2AV
+    source: { url: 'https://www.javys.com/casio/watersports/digital_standard02.htm', kind: retailer }
+    image: w-57v-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/watersports/digital_standard02.htm'
