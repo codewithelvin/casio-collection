@@ -1,0 +1,35 @@
+# HDC-700 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 2 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: hdc-700
+  name: HDC-700
+  line: vintage
+
+models:
+  - id: hdc-700-3a2v
+    ref: HDC-700-3A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=HDC-700-3A2V', kind: retailer }
+    image: hdc-700-3a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=HDC-700-3A2V'
+  - id: hdc-700-3a3v
+    ref: HDC-700-3A3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=HDC-700-3A3V', kind: retailer }
+    image: hdc-700-3a3v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=HDC-700-3A3V'
