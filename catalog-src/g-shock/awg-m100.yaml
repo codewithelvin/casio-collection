@@ -403,3 +403,40 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20211203080231id_/https://www.casio.com/jp/watches/gshock/product.AWG-M100SVB-1A/'
     discontinued: false
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: awg-m100a-3a
+    ref: AWG-M100A-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AWG-M100A-3A', kind: retailer }
+    image: awg-m100a-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AWG-M100A-3A'
+  - id: awg-m100bw-1a
+    ref: AWG-M100BW-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AWG-M100BW-1A', kind: retailer }
+    image: awg-m100bw-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AWG-M100BW-1A'
+  - id: awg-m100nv-2
+    ref: AWG-M100NV-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AWG-M100NV-2', kind: retailer }
+    image: awg-m100nv-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AWG-M100NV-2'
+  - id: awg-m100srb-4a
+    ref: AWG-M100SRB-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AWG-M100SRB-4A', kind: retailer }
+    image: awg-m100srb-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AWG-M100SRB-4A'
