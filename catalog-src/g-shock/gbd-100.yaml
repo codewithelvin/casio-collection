@@ -1,0 +1,47 @@
+# GBD-100 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gbd-100
+  name: GBD-100
+  line: g-shock
+
+models:
+  - id: gbd-100-1
+    ref: GBD-100-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBD-100-1', kind: retailer }
+    image: gbd-100-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBD-100-1'
+  - id: gbd-100-1a7
+    ref: GBD-100-1A7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBD-100-1A7', kind: retailer }
+    image: gbd-100-1a7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBD-100-1A7'
+  - id: gbd-100-2
+    ref: GBD-100-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBD-100-2', kind: retailer }
+    image: gbd-100-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBD-100-2'
+  - id: gbd-100lm-1
+    ref: GBD-100LM-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBD-100LM-1', kind: retailer }
+    image: null
