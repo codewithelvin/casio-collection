@@ -312,6 +312,19 @@ export default defineConfig(({ mode }) => {
   test: {
     globals: true,
     environment: 'jsdom',
+    // jsdom's setup cost is real per the comment below — 713s of the 868s
+    // measured for the full suite went to it — and most of it is paid by
+    // files that render no component at all: schema checks, pure catalogue
+    // logic, collection mutations against a mocked client. `.test.tsx` is
+    // JSX and genuinely needs a DOM; `.test.ts` almost never does. A file
+    // that turns out to need jsdom anyway states so itself with a
+    // `// @vitest-environment jsdom` docblock, which wins over this default —
+    // that is what makes this a safe split rather than a blind one: nothing
+    // is deleted, a wrongly-classified file just opts back in.
+    environmentMatchGlobs: [
+      ['**/*.test.tsx', 'jsdom'],
+      ['**/*.test.ts', 'node'],
+    ],
     setupFiles: ['./src/test/setup.ts'],
     css: false,
 

@@ -28,12 +28,14 @@ configure({ asyncUtilTimeout: 15_000 })
 
 afterEach(() => {
   cleanup()
-  localStorage.clear()
+  // Undefined under the `node` environment (§ split below) — a pure-logic
+  // test file never touches either, so there is nothing to clear.
+  if (typeof localStorage !== 'undefined') localStorage.clear()
   // M4 — the pending intent lives in sessionStorage (§9.4) and it is a *single
   // slot*, so a leftover from one test is not stale data in the next one, it is
   // the value the next one reads. That is precisely the failure the slot's
   // expiry exists to prevent, and leaving it uncleared here would hide it.
-  sessionStorage.clear()
+  if (typeof sessionStorage !== 'undefined') sessionStorage.clear()
   // A test that overrode fetch must not leave that override for the next one.
   vi.unstubAllGlobals()
   // Likewise the Supabase build variables (§14.2): whether they are set is what
@@ -90,53 +92,60 @@ beforeEach(() => {
   )
 })
 
-// jsdom implements neither of these, and AntD's responsive grid and our own
-// theme seeding both read them. Without the stub every component test throws
-// before it asserts anything, which reads as "the component is broken".
-Object.defineProperty(window, 'matchMedia', {
-  writable: true,
-  value: vi.fn().mockImplementation((query: string) => ({
-    matches: false,
-    media: query,
-    onchange: null,
-    addListener: vi.fn(),
-    removeListener: vi.fn(),
-    addEventListener: vi.fn(),
-    removeEventListener: vi.fn(),
-    dispatchEvent: vi.fn(),
-  })),
-})
+// Everything below is a jsdom seam fix. `.test.ts` files now run under a
+// plain `node` environment by default (see vite.config.ts's
+// `environmentMatchGlobs`) and have no `window` at all — this file is shared
+// by every test regardless of environment, so each fix guards on the thing
+// it patches actually existing rather than assuming jsdom.
+if (typeof window !== 'undefined') {
+  // jsdom implements neither of these, and AntD's responsive grid and our own
+  // theme seeding both read them. Without the stub every component test throws
+  // before it asserts anything, which reads as "the component is broken".
+  Object.defineProperty(window, 'matchMedia', {
+    writable: true,
+    value: vi.fn().mockImplementation((query: string) => ({
+      matches: false,
+      media: query,
+      onchange: null,
+      addListener: vi.fn(),
+      removeListener: vi.fn(),
+      addEventListener: vi.fn(),
+      removeEventListener: vi.fn(),
+      dispatchEvent: vi.fn(),
+    })),
+  })
 
-/**
- * React Router 7's data router builds a `Request` for every navigation and
- * passes it an AbortSignal. Under vitest's jsdom environment those two come
- * from different places: jsdom defines AbortController/AbortSignal, but not
- * Request, so `Request` is still Node's undici one — and undici validates the
- * signal with an instanceof check against *its* AbortSignal. jsdom's fails it,
- * and every navigation throws before a single assertion runs.
- *
- * Stripping the signal is safe here because nothing in these tests aborts a
- * navigation; undici supplies its own. This is a jsdom seam, not application
- * behaviour, which is why it is fixed once here rather than in each test.
- */
-const NativeRequest = globalThis.Request
-class RequestWithoutForeignSignal extends NativeRequest {
-  constructor(input: RequestInfo | URL, init?: RequestInit) {
-    if (init && 'signal' in init) {
-      const { signal: _signal, ...rest } = init
-      super(input, rest)
-    } else {
-      super(input, init)
+  /**
+   * React Router 7's data router builds a `Request` for every navigation and
+   * passes it an AbortSignal. Under vitest's jsdom environment those two come
+   * from different places: jsdom defines AbortController/AbortSignal, but not
+   * Request, so `Request` is still Node's undici one — and undici validates the
+   * signal with an instanceof check against *its* AbortSignal. jsdom's fails it,
+   * and every navigation throws before a single assertion runs.
+   *
+   * Stripping the signal is safe here because nothing in these tests aborts a
+   * navigation; undici supplies its own. This is a jsdom seam, not application
+   * behaviour, which is why it is fixed once here rather than in each test.
+   */
+  const NativeRequest = globalThis.Request
+  class RequestWithoutForeignSignal extends NativeRequest {
+    constructor(input: RequestInfo | URL, init?: RequestInit) {
+      if (init && 'signal' in init) {
+        const { signal: _signal, ...rest } = init
+        super(input, rest)
+      } else {
+        super(input, init)
+      }
     }
   }
-}
-globalThis.Request = RequestWithoutForeignSignal as unknown as typeof Request
+  globalThis.Request = RequestWithoutForeignSignal as unknown as typeof Request
 
-Object.defineProperty(window, 'ResizeObserver', {
-  writable: true,
-  value: vi.fn().mockImplementation(() => ({
-    observe: vi.fn(),
-    unobserve: vi.fn(),
-    disconnect: vi.fn(),
-  })),
-})
+  Object.defineProperty(window, 'ResizeObserver', {
+    writable: true,
+    value: vi.fn().mockImplementation(() => ({
+      observe: vi.fn(),
+      unobserve: vi.fn(),
+      disconnect: vi.fn(),
+    })),
+  })
+}

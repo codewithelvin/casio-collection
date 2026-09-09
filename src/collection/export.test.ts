@@ -1,3 +1,4 @@
+// @vitest-environment jsdom
 import { describe, expect, it, vi } from 'vitest'
 import { catalogFixture } from '../test/catalogFixture'
 import { joinCollection } from './join.ts'

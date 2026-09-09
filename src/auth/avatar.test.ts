@@ -1,3 +1,4 @@
+// @vitest-environment jsdom
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { AVATAR_STORAGE_KEY, clearCachedAvatar, readCachedAvatar, refreshAvatar } from './avatar.ts'

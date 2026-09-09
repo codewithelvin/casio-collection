@@ -1,3 +1,4 @@
+// @vitest-environment jsdom
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { SESSION_STORAGE_KEY } from './config.ts'
 import { resetSupabaseClient } from './supabase.ts'
