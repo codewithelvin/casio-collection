@@ -1,0 +1,115 @@
+# G-7100 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 24 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: g-7100
+  name: G-7100
+  line: g-shock
+
+models:
+  - id: g-7100-1v
+    ref: G-7100-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100-1V', kind: retailer }
+    image: null
+  - id: g-7100-2v
+    ref: G-7100-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100-2V', kind: retailer }
+    image: null
+  - id: g-7100-3v
+    ref: G-7100-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100-3V', kind: retailer }
+    image: null
+  - id: g-7100bt-10v
+    ref: G-7100BT-10V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-10V', kind: retailer }
+    image: null
+  - id: g-7100bt-11v
+    ref: G-7100BT-11V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-11V', kind: retailer }
+    image: null
+  - id: g-7100bt-12v
+    ref: G-7100BT-12V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-12V', kind: retailer }
+    image: null
+  - id: g-7100bt-1v
+    ref: G-7100BT-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-1V', kind: retailer }
+    image: null
+  - id: g-7100bt-2v
+    ref: G-7100BT-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-2V', kind: retailer }
+    image: null
+  - id: g-7100bt-3v
+    ref: G-7100BT-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-3V', kind: retailer }
+    image: null
+  - id: g-7100bt-4v
+    ref: G-7100BT-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-4V', kind: retailer }
+    image: null
+  - id: g-7100bt-5v
+    ref: G-7100BT-5V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-5V', kind: retailer }
+    image: null
+  - id: g-7100bt-6v
+    ref: G-7100BT-6V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-6V', kind: retailer }
+    image: null
+  - id: g-7100bt-7v
+    ref: G-7100BT-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-7V', kind: retailer }
+    image: null
+  - id: g-7100bt-8v
+    ref: G-7100BT-8V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-8V', kind: retailer }
+    image: null
+  - id: g-7100bt-9v
+    ref: G-7100BT-9V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100BT-9V', kind: retailer }
+    image: null
+  - id: g-7100d-1v
+    ref: G-7100D-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100D-1V', kind: retailer }
+    image: null
+  - id: g-7100d-2v
+    ref: G-7100D-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100D-2V', kind: retailer }
+    image: null
+  - id: g-7100d-8v
+    ref: G-7100D-8V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100D-8V', kind: retailer }
+    image: null
+  - id: g-7100ft-1v
+    ref: G-7100FT-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100FT-1V', kind: retailer }
+    image: null
+  - id: g-7100ft-2v
+    ref: G-7100FT-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100FT-2V', kind: retailer }
+    image: null
+  - id: g-7100ft-4v
+    ref: G-7100FT-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100FT-4V', kind: retailer }
+    image: null
+  - id: g-7100ft-7v
+    ref: G-7100FT-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100FT-7V', kind: retailer }
+    image: null
+  - id: g-7100sc-2
+    ref: G-7100SC-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100SC-2', kind: retailer }
+    image: null
+  - id: g-7100sc-7
+    ref: G-7100SC-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-7100SC-7', kind: retailer }
+    image: null
