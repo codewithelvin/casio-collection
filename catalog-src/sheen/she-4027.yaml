@@ -1,0 +1,43 @@
+# SHE-4027 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 3 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: she-4027
+  name: SHE-4027
+  line: sheen
+
+models:
+  - id: she-4027d-1a
+    ref: SHE-4027D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4027D-1A', kind: retailer }
+    image: she-4027d-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4027D-1A'
+  - id: she-4027d-4a
+    ref: SHE-4027D-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4027D-4A', kind: retailer }
+    image: she-4027d-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4027D-4A'
+  - id: she-4027d-7a
+    ref: SHE-4027D-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4027D-7A', kind: retailer }
+    image: she-4027d-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-4027D-7A'
