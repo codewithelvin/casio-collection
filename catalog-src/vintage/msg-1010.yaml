@@ -1,0 +1,99 @@
+# MSG-1010 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 10 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: msg-1010
+  name: MSG-1010
+  line: vintage
+
+models:
+  - id: msg-1010d-1bv
+    ref: MSG-1010D-1BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010D-1BV', kind: retailer }
+    image: msg-1010d-1bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010D-1BV'
+  - id: msg-1010d-2bv
+    ref: MSG-1010D-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010D-2BV', kind: retailer }
+    image: msg-1010d-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010D-2BV'
+  - id: msg-1010d-3bv
+    ref: MSG-1010D-3BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010D-3BV', kind: retailer }
+    image: msg-1010d-3bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010D-3BV'
+  - id: msg-1010d-7bv
+    ref: MSG-1010D-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010D-7BV', kind: retailer }
+    image: msg-1010d-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010D-7BV'
+  - id: msg-1010l-1bv
+    ref: MSG-1010L-1BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-1BV', kind: retailer }
+    image: msg-1010l-1bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-1BV'
+  - id: msg-1010l-2bv
+    ref: MSG-1010L-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-2BV', kind: retailer }
+    image: msg-1010l-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-2BV'
+  - id: msg-1010l-3bv
+    ref: MSG-1010L-3BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-3BV', kind: retailer }
+    image: msg-1010l-3bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-3BV'
+  - id: msg-1010l-4b2v
+    ref: MSG-1010L-4B2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-4B2V', kind: retailer }
+    image: msg-1010l-4b2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-4B2V'
+  - id: msg-1010l-4bv
+    ref: MSG-1010L-4BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-4BV', kind: retailer }
+    image: msg-1010l-4bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-4BV'
+  - id: msg-1010l-7bv
+    ref: MSG-1010L-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-7BV', kind: retailer }
+    image: msg-1010l-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MSG-1010L-7BV'
