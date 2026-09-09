@@ -1,0 +1,39 @@
+# SHN-1000 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: shn-1000
+  name: SHN-1000
+  line: sheen
+
+models:
+  - id: shn-1000d-1a
+    ref: SHN-1000D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-1000D-1A', kind: retailer }
+    image: null
+  - id: shn-1000d-7a
+    ref: SHN-1000D-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-1000D-7A', kind: retailer }
+    image: null
+  - id: shn-1000f-1a
+    ref: SHN-1000F-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-1000F-1A', kind: retailer }
+    image: null
+  - id: shn-1000l-1a
+    ref: SHN-1000L-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-1000L-1A', kind: retailer }
+    image: null
+  - id: shn-1000l-4a
+    ref: SHN-1000L-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHN-1000L-4A', kind: retailer }
+    image: null
