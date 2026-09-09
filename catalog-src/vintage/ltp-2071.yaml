@@ -1,0 +1,83 @@
+# LTP-2071 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 8 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-2071
+  name: LTP-2071
+  line: vintage
+
+models:
+  - id: ltp-2071d-1f
+    ref: LTP-2071D-1F
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071D-1F', kind: retailer }
+    image: ltp-2071d-1f
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071D-1F'
+  - id: ltp-2071d-2f
+    ref: LTP-2071D-2F
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071D-2F', kind: retailer }
+    image: ltp-2071d-2f
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071D-2F'
+  - id: ltp-2071d-4f
+    ref: LTP-2071D-4F
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071D-4F', kind: retailer }
+    image: ltp-2071d-4f
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071D-4F'
+  - id: ltp-2071d-6f
+    ref: LTP-2071D-6F
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071D-6F', kind: retailer }
+    image: ltp-2071d-6f
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071D-6F'
+  - id: ltp-2071d-7f
+    ref: LTP-2071D-7F
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071D-7F', kind: retailer }
+    image: ltp-2071d-7f
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071D-7F'
+  - id: ltp-2071g-1f
+    ref: LTP-2071G-1F
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071G-1F', kind: retailer }
+    image: ltp-2071g-1f
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071G-1F'
+  - id: ltp-2071g-7f
+    ref: LTP-2071G-7F
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071G-7F', kind: retailer }
+    image: ltp-2071g-7f
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071G-7F'
+  - id: ltp-2071g-9f
+    ref: LTP-2071G-9F
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071G-9F', kind: retailer }
+    image: ltp-2071g-9f
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2071G-9F'
