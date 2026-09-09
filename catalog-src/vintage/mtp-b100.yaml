@@ -1,0 +1,83 @@
+# MTP-B100 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 8 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-b100
+  name: MTP-B100
+  line: vintage
+
+models:
+  - id: mtp-b100bl-1ev
+    ref: MTP-B100BL-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100BL-1EV', kind: retailer }
+    image: mtp-b100bl-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100BL-1EV'
+  - id: mtp-b100d-1ev
+    ref: MTP-B100D-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100D-1EV', kind: retailer }
+    image: mtp-b100d-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100D-1EV'
+  - id: mtp-b100l-2ev
+    ref: MTP-B100L-2EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100L-2EV', kind: retailer }
+    image: mtp-b100l-2ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100L-2EV'
+  - id: mtp-b100l-9ev
+    ref: MTP-B100L-9EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100L-9EV', kind: retailer }
+    image: mtp-b100l-9ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100L-9EV'
+  - id: mtp-b100m-2ev
+    ref: MTP-B100M-2EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100M-2EV', kind: retailer }
+    image: mtp-b100m-2ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100M-2EV'
+  - id: mtp-b100m-7ev
+    ref: MTP-B100M-7EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100M-7EV', kind: retailer }
+    image: mtp-b100m-7ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100M-7EV'
+  - id: mtp-b100mb-1ev
+    ref: MTP-B100MB-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100MB-1EV', kind: retailer }
+    image: mtp-b100mb-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100MB-1EV'
+  - id: mtp-b100rl-1ev
+    ref: MTP-B100RL-1EV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100RL-1EV', kind: retailer }
+    image: mtp-b100rl-1ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-B100RL-1EV'
