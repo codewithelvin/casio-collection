@@ -1,0 +1,67 @@
+# GM-110 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gm-110
+  name: GM-110
+  line: g-shock
+
+models:
+  - id: gm-110-1a
+    ref: GM-110-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110-1A', kind: retailer }
+    image: gm-110-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110-1A'
+  - id: gm-110b-1a
+    ref: GM-110B-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110B-1A', kind: retailer }
+    image: gm-110b-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110B-1A'
+  - id: gm-110cl-6a
+    ref: GM-110CL-6A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110CL-6A', kind: retailer }
+    image: gm-110cl-6a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110CL-6A'
+  - id: gm-110g-1a9
+    ref: GM-110G-1A9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110G-1A9', kind: retailer }
+    image: gm-110g-1a9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110G-1A9'
+  - id: gm-110rb-2a
+    ref: GM-110RB-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110RB-2A', kind: retailer }
+    image: gm-110rb-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110RB-2A'
+  - id: gm-110sg-9a
+    ref: GM-110SG-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110SG-9A', kind: retailer }
+    image: gm-110sg-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GM-110SG-9A'
