@@ -1,0 +1,35 @@
+# FT-1000 — seeded 2026-09-09 from javys.com's older
+# hand-coded micro-site pages (Forester / LapMemory / FunWatches / Water
+# Sports / Analog Sports / PELA) rather than its series_new.php system --
+# see the reference memo on javys.com for why these needed a second reader.
+# Only id, ref, source and (where the page's own image filename verifiably
+# names this exact reference) image are written here (D27): the client asked
+# for these 2 references catalogued quickly rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — none of these pages states one.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ft-1000
+  name: FT-1000
+  line: vintage
+
+models:
+  - id: ft-1000h-2av
+    ref: FT-1000H-2AV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester02.htm', kind: retailer }
+    image: ft-1000h-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester02.htm'
+  - id: ft-1000h-7av
+    ref: FT-1000H-7AV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester02.htm', kind: retailer }
+    image: ft-1000h-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester02.htm'
