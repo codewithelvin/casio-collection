@@ -1,0 +1,63 @@
+# G-011 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 11 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: g-011
+  name: G-011
+  line: g-shock
+
+models:
+  - id: g-011ad-2b
+    ref: G-011AD-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011AD-2B', kind: retailer }
+    image: null
+  - id: g-011ad-3b
+    ref: G-011AD-3B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011AD-3B', kind: retailer }
+    image: null
+  - id: g-011ad-4b
+    ref: G-011AD-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011AD-4B', kind: retailer }
+    image: null
+  - id: g-011bd-9a
+    ref: G-011BD-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011BD-9A', kind: retailer }
+    image: null
+  - id: g-011d-1a
+    ref: G-011D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011D-1A', kind: retailer }
+    image: null
+  - id: g-011d-2b
+    ref: G-011D-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011D-2B', kind: retailer }
+    image: null
+  - id: g-011d-4a
+    ref: G-011D-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011D-4A', kind: retailer }
+    image: null
+  - id: g-011d-6a
+    ref: G-011D-6A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011D-6A', kind: retailer }
+    image: null
+  - id: g-011d-7b
+    ref: G-011D-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011D-7B', kind: retailer }
+    image: null
+  - id: g-011d-8a
+    ref: G-011D-8A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011D-8A', kind: retailer }
+    image: null
+  - id: g-011gd-9a1
+    ref: G-011GD-9A1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-011GD-9A1', kind: retailer }
+    image: null
