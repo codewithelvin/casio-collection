@@ -291,3 +291,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250220062622id_/https://www.casio.com/jp/watches/casio/product.W-218HC-2A/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: w-218h-3bv
+    ref: W-218H-3BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-218H-3BV', kind: retailer }
+    image: w-218h-3bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-218H-3BV'
+  - id: w-218h-8bv
+    ref: W-218H-8BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-218H-8BV', kind: retailer }
+    image: w-218h-8bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-218H-8BV'
+  - id: w-218hd-3av
+    ref: W-218HD-3AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-218HD-3AV', kind: retailer }
+    image: w-218hd-3av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=W-218HD-3AV'
