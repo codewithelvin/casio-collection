@@ -96,3 +96,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220523120756id_/https://www.casio.com/in/watches/edifice/product.EFV-570L-2AV/'
     discontinued: true
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: efv-570l-2bv
+    ref: EFV-570L-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFV-570L-2BV', kind: retailer }
+    image: efv-570l-2bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFV-570L-2BV'
