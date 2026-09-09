@@ -1,0 +1,67 @@
+# LTP-E415 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-e415
+  name: LTP-E415
+  line: vintage
+
+models:
+  - id: ltp-e415grl-1c
+    ref: LTP-E415GRL-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415GRL-1C', kind: retailer }
+    image: ltp-e415grl-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415GRL-1C'
+  - id: ltp-e415m-7c
+    ref: LTP-E415M-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415M-7C', kind: retailer }
+    image: ltp-e415m-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415M-7C'
+  - id: ltp-e415mbr-1c
+    ref: LTP-E415MBR-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415MBR-1C', kind: retailer }
+    image: ltp-e415mbr-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415MBR-1C'
+  - id: ltp-e415mr-7c
+    ref: LTP-E415MR-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415MR-7C', kind: retailer }
+    image: ltp-e415mr-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415MR-7C'
+  - id: ltp-e415pg-1c
+    ref: LTP-E415PG-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415PG-1C', kind: retailer }
+    image: ltp-e415pg-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415PG-1C'
+  - id: ltp-e415rl-2c
+    ref: LTP-E415RL-2C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415RL-2C', kind: retailer }
+    image: ltp-e415rl-2c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E415RL-2C'
