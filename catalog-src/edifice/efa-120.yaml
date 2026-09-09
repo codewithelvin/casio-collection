@@ -34,3 +34,40 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20231022025147id_/https://www.casio.com/us/watches/edifice/product.EFA-120D-1AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: efa-120d-2av
+    ref: EFA-120D-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFA-120D-2AV', kind: retailer }
+    image: efa-120d-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFA-120D-2AV'
+  - id: efa-120d-7av
+    ref: EFA-120D-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFA-120D-7AV', kind: retailer }
+    image: efa-120d-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFA-120D-7AV'
+  - id: efa-120l-1a1v
+    ref: EFA-120L-1A1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFA-120L-1A1V', kind: retailer }
+    image: efa-120l-1a1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFA-120L-1A1V'
+  - id: efa-120l-1a2v
+    ref: EFA-120L-1A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFA-120L-1A2V', kind: retailer }
+    image: efa-120l-1a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EFA-120L-1A2V'
