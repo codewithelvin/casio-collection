@@ -10,10 +10,24 @@ import type { Issue } from './integrity.ts'
  * wrapper they should be.
  */
 
-/** §6.2 — one file, 150 KB gzipped, with the split designed but not built. */
-export const CATALOG_BUDGET_GZIP = 150 * 1024
+/**
+ * §6.2 — one file, with the split designed but not built.
+ *
+ * Was 150 KB until 2026-09-09. The client asked directly for every javys.com
+ * reference this catalogue found — 3,639 more references beyond what 150 KB
+ * had room for (g-shock, baby-g, oceanus, pro-trek and part of sheen were
+ * already in; edifice, the rest of sheen, and all of vintage were not) — and
+ * confirmed raising this number rather than trimming fields or building the
+ * split now. 300 KB was chosen against a measured rate of ~12.6 B gzipped per
+ * minimal javys entry (id, ref, source, optional image/image_credit) over the
+ * 2,098 already added this session: 3,639 more at that rate is ~46 KB, landing
+ * near 195–220 KB depending on how many of the remaining entries carry a
+ * photograph, with real headroom left rather than trading one wall for
+ * another five minutes later.
+ */
+export const CATALOG_BUDGET_GZIP = 300 * 1024
 /** §6.2 — either trigger reopens the split. Printed on every run. */
-export const SPLIT_TRIGGER_GZIP = 250 * 1024
+export const SPLIT_TRIGGER_GZIP = 400 * 1024
 export const SPLIT_TRIGGER_MODELS = 2500
 
 function kb(bytes: number): string {
