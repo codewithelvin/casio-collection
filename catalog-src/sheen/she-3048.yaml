@@ -43,3 +43,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220529082448id_/https://www.casio.com/intl/watches/sheen/product.SHE-3048PGL-7B/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: she-3048pg-4b
+    ref: SHE-3048PG-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3048PG-4B', kind: retailer }
+    image: she-3048pg-4b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3048PG-4B'
+  - id: she-3048pg-7b
+    ref: SHE-3048PG-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3048PG-7B', kind: retailer }
+    image: she-3048pg-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3048PG-7B'
