@@ -41,3 +41,32 @@ models:
       licence: rights-reserved
       url: 'https://www.casiold.com/products/casio-ws-300-new-old-stock'
     discontinued: true
+
+# ADDED 2026-09-09: 3 more references, from javys.com's older
+# micro-site pages (retailer). Minimal entries only. The entries above
+# predate this block and are untouched.
+#
+  - id: ws-300-2ev
+    ref: WS-300-2EV
+    source: { url: 'https://www.javys.com/casio/wristwatches/lapmemory.htm', kind: retailer }
+    image: ws-300-2ev
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/lapmemory.htm'
+  - id: ws-300-7bv
+    ref: WS-300-7BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/lapmemory.htm', kind: retailer }
+    image: ws-300-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/lapmemory.htm'
+  - id: ws-300b-1bv
+    ref: WS-300B-1BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/lapmemory.htm', kind: retailer }
+    image: ws-300b-1bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/lapmemory.htm'
