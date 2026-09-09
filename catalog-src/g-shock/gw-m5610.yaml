@@ -1,5 +1,15 @@
-# PHOTOGRAPHS REFUSED, 19 of them, and this is the reason for every
+# PHOTOGRAPHS REFUSED, 15 of them, and this is the reason for every
 # `image: null` below that does not carry one of its own.
+#
+# JAVYS ADDED 4 OF THESE ON 2026-09-09. javys.com/casio, a Hong
+# Kong Casio distributor running its own per-reference product-photo pages
+# since at least 2010, was not among the routes measured below and turned
+# out to hold a large (>=300px) photograph for 4 of the 19
+# references this file had refused. Read off
+# https://www.javys.com/casio/new_web/watch/new_watch.php?id=<REF> per entry
+# and credited to Javys as `rights-reserved` (D41): the site states no
+# licence. The routes below were still walked and are still empty; javys is
+# an addition, not a correction to any of them.
 #
 # These references are discontinued collaborations and regional limited runs.
 # Every route this project knows how to walk was walked, and the measurement is
@@ -172,9 +182,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: gw-m5610b-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-M5610B-1'
     discontinued: true
   - id: gw-m5610ba-1
     ref: GW-M5610BA-1
@@ -328,9 +340,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: gw-m5610cc-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-M5610CC-2'
     discontinued: true
   - id: gw-m5610cc-3
     ref: GW-M5610CC-3
@@ -353,9 +367,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: gw-m5610cc-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-M5610CC-3'
     discontinued: true
   - id: gw-m5610ew-4
     ref: GW-M5610EW-4
@@ -428,9 +444,11 @@ models:
     movement: solar-radio
     module: '3159'
     features: [world-time, stopwatch, countdown-timer, alarm, multi-alarm, el-backlight, auto-light, radio-controlled, tough-solar, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: gw-m5610kg-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-M5610KG-3'
     discontinued: true
   - id: gw-m5610lg-8
     ref: GW-M5610LG-8
