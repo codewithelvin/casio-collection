@@ -1,0 +1,55 @@
+# BG-90 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 9 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bg-90
+  name: BG-90
+  line: baby-g
+
+models:
+  - id: bg-90-2b
+    ref: BG-90-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-90-2B', kind: retailer }
+    image: null
+  - id: bg-90-4b
+    ref: BG-90-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-90-4B', kind: retailer }
+    image: null
+  - id: bg-90-7b
+    ref: BG-90-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-90-7B', kind: retailer }
+    image: null
+  - id: bg-90-8b
+    ref: BG-90-8B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-90-8B', kind: retailer }
+    image: null
+  - id: bg-90g-7b
+    ref: BG-90G-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-90G-7B', kind: retailer }
+    image: null
+  - id: bg-90pv-4b
+    ref: BG-90PV-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-90PV-4B', kind: retailer }
+    image: null
+  - id: bg-90pv-7b
+    ref: BG-90PV-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-90PV-7B', kind: retailer }
+    image: null
+  - id: bg-90sg-8b
+    ref: BG-90SG-8B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-90SG-8B', kind: retailer }
+    image: null
+  - id: bg-90she-4b
+    ref: BG-90SHE-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-90SHE-4B', kind: retailer }
+    image: null
