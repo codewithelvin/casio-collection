@@ -134,3 +134,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210518045429id_/https://www.casio.com/jp/watches/edifice/product.EQB-1000YD-1A/'
     discontinued: false
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: eqb-1000hrs-1a
+    ref: EQB-1000HRS-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQB-1000HRS-1A', kind: retailer }
+    image: eqb-1000hrs-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQB-1000HRS-1A'
