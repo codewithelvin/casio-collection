@@ -1,5 +1,15 @@
-# PHOTOGRAPHS REFUSED, 6 of them, and this is the reason for every
+# PHOTOGRAPHS REFUSED, 5 of them, and this is the reason for every
 # `image: null` below that does not carry one of its own.
+#
+# JAVYS ADDED 1 OF THESE ON 2026-09-09. javys.com/casio, a Hong
+# Kong Casio distributor running its own per-reference product-photo pages
+# since at least 2010, was not among the routes measured below and turned
+# out to hold a large (>=300px) photograph for 1 of the 6
+# references this file had refused. Read off
+# https://www.javys.com/casio/new_web/watch/new_watch.php?id=<REF> per entry
+# and credited to Javys as `rights-reserved` (D41): the site states no
+# licence. The routes below were still walked and are still empty; javys is
+# an addition, not a correction to any of them.
 #
 # These references are discontinued collaborations and regional limited runs.
 # Every route this project knows how to walk was walked, and the measurement is
@@ -2142,9 +2152,11 @@ models:
     movement: quartz
     module: '5611'
     features: [world-time, stopwatch, countdown-timer, multi-alarm, full-auto-calendar, hourly-time-signal, led-light, mineral-glass, carbon-core-guard]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: ga-2100ths-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GA-2100THS-1A'
     discontinued: true
   - id: ga-2100tl-7a
     ref: GA-2100TL-7A
