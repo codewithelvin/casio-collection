@@ -81,3 +81,28 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9200RDJ-4'
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: gw-9200-1
+    ref: GW-9200-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9200-1', kind: retailer }
+    image: null
+  - id: gw-9200msj-8
+    ref: GW-9200MSJ-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9200MSJ-8', kind: retailer }
+    image: gw-9200msj-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9200MSJ-8'
+  - id: gw-9200pj-7
+    ref: GW-9200PJ-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9200PJ-7', kind: retailer }
+    image: gw-9200pj-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-9200PJ-7'
