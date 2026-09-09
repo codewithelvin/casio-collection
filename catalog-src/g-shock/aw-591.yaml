@@ -25,3 +25,48 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591ML-1A'
+
+# ADDED 2026-09-09: 10 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: aw-591-2a
+    ref: AW-591-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591-2A', kind: retailer }
+    image: null
+  - id: aw-591-4a
+    ref: AW-591-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591-4A', kind: retailer }
+    image: null
+  - id: aw-591cl-1a
+    ref: AW-591CL-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591CL-1A', kind: retailer }
+    image: null
+  - id: aw-591ms-1a
+    ref: AW-591MS-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591MS-1A', kind: retailer }
+    image: null
+  - id: aw-591ms-2a
+    ref: AW-591MS-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591MS-2A', kind: retailer }
+    image: null
+  - id: aw-591ms-3a
+    ref: AW-591MS-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591MS-3A', kind: retailer }
+    image: null
+  - id: aw-591rl-4a
+    ref: AW-591RL-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591RL-4A', kind: retailer }
+    image: null
+  - id: aw-591sc-7a
+    ref: AW-591SC-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591SC-7A', kind: retailer }
+    image: null
+  - id: aw-591tm-1a
+    ref: AW-591TM-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591TM-1A', kind: retailer }
+    image: null
+  - id: aw-591tm-8a
+    ref: AW-591TM-8A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AW-591TM-8A', kind: retailer }
+    image: null
