@@ -1,0 +1,43 @@
+# FT-610 — seeded 2026-09-09 from javys.com's older
+# hand-coded micro-site pages (Forester / LapMemory / FunWatches / Water
+# Sports / Analog Sports / PELA) rather than its series_new.php system --
+# see the reference memo on javys.com for why these needed a second reader.
+# Only id, ref, source and (where the page's own image filename verifiably
+# names this exact reference) image are written here (D27): the client asked
+# for these 3 references catalogued quickly rather than fully read.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — none of these pages states one.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ft-610
+  name: FT-610
+  line: vintage
+
+models:
+  - id: ft-610wl-5bv
+    ref: FT-610WL-5BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester03.htm', kind: retailer }
+    image: ft-610wl-5bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester03.htm'
+  - id: ft-610wl-8bv
+    ref: FT-610WL-8BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester03.htm', kind: retailer }
+    image: ft-610wl-8bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester03.htm'
+  - id: ft-610wv-3bv
+    ref: FT-610WV-3BV
+    source: { url: 'https://www.javys.com/casio/wristwatches/forester03.htm', kind: retailer }
+    image: ft-610wv-3bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/wristwatches/forester03.htm'
