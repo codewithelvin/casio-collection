@@ -720,3 +720,184 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240119142303id_/https://www.casio.com/intl/watches/babyg/product.BG-169U-8B/'
     discontinued: false
+
+# ADDED 2026-09-09: 35 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: bg-169a-1av
+    ref: BG-169A-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-1AV', kind: retailer }
+    image: null
+  - id: bg-169a-1bv
+    ref: BG-169A-1BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-1BV', kind: retailer }
+    image: null
+  - id: bg-169a-1cv
+    ref: BG-169A-1CV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-1CV', kind: retailer }
+    image: null
+  - id: bg-169a-2bv
+    ref: BG-169A-2BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-2BV', kind: retailer }
+    image: null
+  - id: bg-169a-2cv
+    ref: BG-169A-2CV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-2CV', kind: retailer }
+    image: null
+  - id: bg-169a-2v
+    ref: BG-169A-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-2V', kind: retailer }
+    image: null
+  - id: bg-169a-3v
+    ref: BG-169A-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-3V', kind: retailer }
+    image: null
+  - id: bg-169a-4bv
+    ref: BG-169A-4BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-4BV', kind: retailer }
+    image: null
+  - id: bg-169a-4cv
+    ref: BG-169A-4CV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-4CV', kind: retailer }
+    image: null
+  - id: bg-169a-4v
+    ref: BG-169A-4V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-4V', kind: retailer }
+    image: null
+  - id: bg-169a-6v
+    ref: BG-169A-6V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-6V', kind: retailer }
+    image: null
+  - id: bg-169a-7v
+    ref: BG-169A-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-7V', kind: retailer }
+    image: null
+  - id: bg-169a-8v
+    ref: BG-169A-8V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169A-8V', kind: retailer }
+    image: null
+  - id: bg-169bk-1
+    ref: BG-169BK-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169BK-1', kind: retailer }
+    image: null
+  - id: bg-169bv-1
+    ref: BG-169BV-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169BV-1', kind: retailer }
+    image: null
+  - id: bg-169db-2b
+    ref: BG-169DB-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169DB-2B', kind: retailer }
+    image: null
+  - id: bg-169db-3
+    ref: BG-169DB-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169DB-3', kind: retailer }
+    image: null
+  - id: bg-169db-4
+    ref: BG-169DB-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169DB-4', kind: retailer }
+    image: null
+  - id: bg-169g-7
+    ref: BG-169G-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169G-7', kind: retailer }
+    image: bg-169g-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169G-7'
+  - id: bg-169mt-8
+    ref: BG-169MT-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169MT-8', kind: retailer }
+    image: null
+  - id: bg-169r-4b
+    ref: BG-169R-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169R-4B', kind: retailer }
+    image: null
+  - id: bg-169r-6
+    ref: BG-169R-6
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169R-6', kind: retailer }
+    image: bg-169r-6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169R-6'
+  - id: bg-169r-7b
+    ref: BG-169R-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169R-7B', kind: retailer }
+    image: bg-169r-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169R-7B'
+  - id: bg-169r-7c
+    ref: BG-169R-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169R-7C', kind: retailer }
+    image: bg-169r-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169R-7C'
+  - id: bg-169r-7d
+    ref: BG-169R-7D
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169R-7D', kind: retailer }
+    image: bg-169r-7d
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169R-7D'
+  - id: bg-169vr-1
+    ref: BG-169VR-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169VR-1', kind: retailer }
+    image: bg-169vr-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169VR-1'
+  - id: bg-169vr-2a
+    ref: BG-169VR-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169VR-2A', kind: retailer }
+    image: bg-169vr-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169VR-2A'
+  - id: bg-169vr-2b
+    ref: BG-169VR-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169VR-2B', kind: retailer }
+    image: bg-169vr-2b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169VR-2B'
+  - id: bg-169vr-4
+    ref: BG-169VR-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169VR-4', kind: retailer }
+    image: bg-169vr-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169VR-4'
+  - id: bg-169wh-2v
+    ref: BG-169WH-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169WH-2V', kind: retailer }
+    image: null
+  - id: bg-169wh-3v
+    ref: BG-169WH-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169WH-3V', kind: retailer }
+    image: null
+  - id: bg-169wh-4av
+    ref: BG-169WH-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169WH-4AV', kind: retailer }
+    image: null
+  - id: bg-169wh-4bv
+    ref: BG-169WH-4BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169WH-4BV', kind: retailer }
+    image: null
+  - id: bg-169wh-7v
+    ref: BG-169WH-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169WH-7V', kind: retailer }
+    image: null
+  - id: bg-169wv-7
+    ref: BG-169WV-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-169WV-7', kind: retailer }
+    image: null
