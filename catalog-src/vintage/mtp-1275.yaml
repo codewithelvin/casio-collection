@@ -1,0 +1,75 @@
+# MTP-1275 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 8 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-1275
+  name: MTP-1275
+  line: vintage
+
+models:
+  - id: mtp-1275d-1a
+    ref: MTP-1275D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275D-1A', kind: retailer }
+    image: mtp-1275d-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275D-1A'
+  - id: mtp-1275d-1a2
+    ref: MTP-1275D-1A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275D-1A2', kind: retailer }
+    image: null
+  - id: mtp-1275d-2a2
+    ref: MTP-1275D-2A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275D-2A2', kind: retailer }
+    image: null
+  - id: mtp-1275d-7a
+    ref: MTP-1275D-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275D-7A', kind: retailer }
+    image: mtp-1275d-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275D-7A'
+  - id: mtp-1275d-7b
+    ref: MTP-1275D-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275D-7B', kind: retailer }
+    image: mtp-1275d-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275D-7B'
+  - id: mtp-1275g-9a
+    ref: MTP-1275G-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275G-9A', kind: retailer }
+    image: mtp-1275g-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275G-9A'
+  - id: mtp-1275sg-7b
+    ref: MTP-1275SG-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275SG-7B', kind: retailer }
+    image: mtp-1275sg-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275SG-7B'
+  - id: mtp-1275sg-9a
+    ref: MTP-1275SG-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275SG-9A', kind: retailer }
+    image: mtp-1275sg-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1275SG-9A'
