@@ -1,0 +1,59 @@
+# LTP-E165 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-e165
+  name: LTP-E165
+  line: vintage
+
+models:
+  - id: ltp-e165d-1a
+    ref: LTP-E165D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E165D-1A', kind: retailer }
+    image: ltp-e165d-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E165D-1A'
+  - id: ltp-e165d-7a
+    ref: LTP-E165D-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E165D-7A', kind: retailer }
+    image: ltp-e165d-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E165D-7A'
+  - id: ltp-e165d-9a
+    ref: LTP-E165D-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E165D-9A', kind: retailer }
+    image: ltp-e165d-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E165D-9A'
+  - id: ltp-e165l-4a
+    ref: LTP-E165L-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E165L-4A', kind: retailer }
+    image: ltp-e165l-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E165L-4A'
+  - id: ltp-e165l-7a
+    ref: LTP-E165L-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E165L-7A', kind: retailer }
+    image: ltp-e165l-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-E165L-7A'
