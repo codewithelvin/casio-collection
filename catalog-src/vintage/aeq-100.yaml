@@ -61,3 +61,24 @@ models:
       author: Casio Computer Co., Ltd.
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240721131952id_/https://www.casio.com/id/watches/casio/product.AEQ-100W-1BV/'
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: aeq-100bw-9av
+    ref: AEQ-100BW-9AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AEQ-100BW-9AV', kind: retailer }
+    image: aeq-100bw-9av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AEQ-100BW-9AV'
+  - id: aeq-100w-2av
+    ref: AEQ-100W-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AEQ-100W-2AV', kind: retailer }
+    image: aeq-100w-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AEQ-100W-2AV'
