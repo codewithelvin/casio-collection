@@ -81,3 +81,40 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220519011230id_/https://www.casio.com/in/watches/edifice/product.EF-539D-7AV/'
     discontinued: true
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ef-539d-2av
+    ref: EF-539D-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-539D-2AV', kind: retailer }
+    image: ef-539d-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-539D-2AV'
+  - id: ef-539d-4av
+    ref: EF-539D-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-539D-4AV', kind: retailer }
+    image: ef-539d-4av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-539D-4AV'
+  - id: ef-539d-8av
+    ref: EF-539D-8AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-539D-8AV', kind: retailer }
+    image: ef-539d-8av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-539D-8AV'
+  - id: ef-539sg-1av
+    ref: EF-539SG-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-539SG-1AV', kind: retailer }
+    image: ef-539sg-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-539SG-1AV'
