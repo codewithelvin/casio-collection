@@ -33,3 +33,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20220524190104id_/https://www.casio.com/in/watches/edifice/product.EF-328D-7AV/'
     discontinued: true
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: ef-328d-1a5v
+    ref: EF-328D-1A5V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-328D-1A5V', kind: retailer }
+    image: ef-328d-1a5v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-328D-1A5V'
+  - id: ef-328d-1av
+    ref: EF-328D-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-328D-1AV', kind: retailer }
+    image: ef-328d-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-328D-1AV'
+  - id: ef-328sg-1av
+    ref: EF-328SG-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-328SG-1AV', kind: retailer }
+    image: ef-328sg-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EF-328SG-1AV'
