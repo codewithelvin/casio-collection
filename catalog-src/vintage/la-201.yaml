@@ -1,0 +1,51 @@
+# LA-201 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: la-201
+  name: LA-201
+  line: vintage
+
+models:
+  - id: la-201w-2bu
+    ref: LA-201W-2BU
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-201W-2BU', kind: retailer }
+    image: la-201w-2bu
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-201W-2BU'
+  - id: la-201w-4a3u
+    ref: LA-201W-4A3U
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-201W-4A3U', kind: retailer }
+    image: la-201w-4a3u
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-201W-4A3U'
+  - id: la-201w-4bu
+    ref: LA-201W-4BU
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-201W-4BU', kind: retailer }
+    image: la-201w-4bu
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-201W-4BU'
+  - id: la-201w-6au
+    ref: LA-201W-6AU
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-201W-6AU', kind: retailer }
+    image: la-201w-6au
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA-201W-6AU'
