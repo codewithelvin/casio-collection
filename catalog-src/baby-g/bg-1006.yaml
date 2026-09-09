@@ -1,0 +1,119 @@
+# BG-1006 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 16 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bg-1006
+  name: BG-1006
+  line: baby-g
+
+models:
+  - id: bg-1006bd-1
+    ref: BG-1006BD-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006BD-1', kind: retailer }
+    image: null
+  - id: bg-1006bd-2a
+    ref: BG-1006BD-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006BD-2A', kind: retailer }
+    image: null
+  - id: bg-1006bd-2b
+    ref: BG-1006BD-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006BD-2B', kind: retailer }
+    image: null
+  - id: bg-1006bd-4
+    ref: BG-1006BD-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006BD-4', kind: retailer }
+    image: null
+  - id: bg-1006bd-9
+    ref: BG-1006BD-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006BD-9', kind: retailer }
+    image: null
+  - id: bg-1006mt-3
+    ref: BG-1006MT-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006MT-3', kind: retailer }
+    image: null
+  - id: bg-1006sa-1
+    ref: BG-1006SA-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-1', kind: retailer }
+    image: bg-1006sa-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-1'
+  - id: bg-1006sa-1b
+    ref: BG-1006SA-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-1B', kind: retailer }
+    image: bg-1006sa-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-1B'
+  - id: bg-1006sa-1c
+    ref: BG-1006SA-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-1C', kind: retailer }
+    image: bg-1006sa-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-1C'
+  - id: bg-1006sa-3
+    ref: BG-1006SA-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-3', kind: retailer }
+    image: bg-1006sa-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-3'
+  - id: bg-1006sa-4a
+    ref: BG-1006SA-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-4A', kind: retailer }
+    image: bg-1006sa-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-4A'
+  - id: bg-1006sa-4b
+    ref: BG-1006SA-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-4B', kind: retailer }
+    image: bg-1006sa-4b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-4B'
+  - id: bg-1006sa-7a
+    ref: BG-1006SA-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-7A', kind: retailer }
+    image: bg-1006sa-7a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-7A'
+  - id: bg-1006sa-7b
+    ref: BG-1006SA-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-7B', kind: retailer }
+    image: bg-1006sa-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-7B'
+  - id: bg-1006sa-8
+    ref: BG-1006SA-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-8', kind: retailer }
+    image: bg-1006sa-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006SA-8'
+  - id: bg-1006wv-7
+    ref: BG-1006WV-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1006WV-7', kind: retailer }
+    image: null
