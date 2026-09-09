@@ -161,3 +161,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250413110648id_/https://www.casio.com/fr/watches/gshock/product.GLX-5600WHR24-2/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: glx-5600b-4
+    ref: GLX-5600B-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5600B-4', kind: retailer }
+    image: glx-5600b-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5600B-4'
+  - id: glx-5600b-8
+    ref: GLX-5600B-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5600B-8', kind: retailer }
+    image: glx-5600b-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5600B-8'
+  - id: glx-5600ki-7
+    ref: GLX-5600KI-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5600KI-7', kind: retailer }
+    image: glx-5600ki-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GLX-5600KI-7'
