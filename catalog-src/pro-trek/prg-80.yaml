@@ -1,0 +1,39 @@
+# PRG-80 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: prg-80
+  name: PRG-80
+  line: pro-trek
+
+models:
+  - id: prg-80-1v
+    ref: PRG-80-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-80-1V', kind: retailer }
+    image: null
+  - id: prg-80l-2v
+    ref: PRG-80L-2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-80L-2V', kind: retailer }
+    image: null
+  - id: prg-80l-3v
+    ref: PRG-80L-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-80L-3V', kind: retailer }
+    image: null
+  - id: prg-80t-7v
+    ref: PRG-80T-7V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-80T-7V', kind: retailer }
+    image: null
+  - id: prg-80yt-1v
+    ref: PRG-80YT-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=PRG-80YT-1V', kind: retailer }
+    image: null
