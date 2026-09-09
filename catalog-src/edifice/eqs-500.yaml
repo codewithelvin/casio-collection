@@ -30,3 +30,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20240722125911id_/https://www.casio.com/id/watches/edifice/product.EQS-500DB-1A1/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: eqs-500c-1a1
+    ref: EQS-500C-1A1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-500C-1A1', kind: retailer }
+    image: eqs-500c-1a1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-500C-1A1'
+  - id: eqs-500c-1a2
+    ref: EQS-500C-1A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-500C-1A2', kind: retailer }
+    image: eqs-500c-1a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-500C-1A2'
+  - id: eqs-500db-1a2
+    ref: EQS-500DB-1A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-500DB-1A2', kind: retailer }
+    image: eqs-500db-1a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=EQS-500DB-1A2'
