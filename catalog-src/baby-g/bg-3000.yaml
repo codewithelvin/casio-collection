@@ -1,0 +1,151 @@
+# BG-3000 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 22 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bg-3000
+  name: BG-3000
+  line: baby-g
+
+models:
+  - id: bg-3000-1
+    ref: BG-3000-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-1', kind: retailer }
+    image: null
+  - id: bg-3000-1b
+    ref: BG-3000-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-1B', kind: retailer }
+    image: null
+  - id: bg-3000-1c
+    ref: BG-3000-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-1C', kind: retailer }
+    image: bg-3000-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-1C'
+  - id: bg-3000-2
+    ref: BG-3000-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-2', kind: retailer }
+    image: null
+  - id: bg-3000-3
+    ref: BG-3000-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-3', kind: retailer }
+    image: bg-3000-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-3'
+  - id: bg-3000-4a
+    ref: BG-3000-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-4A', kind: retailer }
+    image: null
+  - id: bg-3000-4b
+    ref: BG-3000-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-4B', kind: retailer }
+    image: null
+  - id: bg-3000-4c
+    ref: BG-3000-4C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-4C', kind: retailer }
+    image: bg-3000-4c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-4C'
+  - id: bg-3000-4d
+    ref: BG-3000-4D
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-4D', kind: retailer }
+    image: bg-3000-4d
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-4D'
+  - id: bg-3000-7a
+    ref: BG-3000-7A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-7A', kind: retailer }
+    image: null
+  - id: bg-3000-7b
+    ref: BG-3000-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-7B', kind: retailer }
+    image: null
+  - id: bg-3000-8
+    ref: BG-3000-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-8', kind: retailer }
+    image: null
+  - id: bg-3000-8b
+    ref: BG-3000-8B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-8B', kind: retailer }
+    image: null
+  - id: bg-3000-8c
+    ref: BG-3000-8C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000-8C', kind: retailer }
+    image: null
+  - id: bg-3000a-1
+    ref: BG-3000A-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000A-1', kind: retailer }
+    image: bg-3000a-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000A-1'
+  - id: bg-3000a-2
+    ref: BG-3000A-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000A-2', kind: retailer }
+    image: bg-3000a-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000A-2'
+  - id: bg-3000a-4
+    ref: BG-3000A-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000A-4', kind: retailer }
+    image: bg-3000a-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000A-4'
+  - id: bg-3000a-6
+    ref: BG-3000A-6
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000A-6', kind: retailer }
+    image: bg-3000a-6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000A-6'
+  - id: bg-3000a-7
+    ref: BG-3000A-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000A-7', kind: retailer }
+    image: bg-3000a-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000A-7'
+  - id: bg-3000m-7
+    ref: BG-3000M-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000M-7', kind: retailer }
+    image: bg-3000m-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000M-7'
+  - id: bg-3000v-5
+    ref: BG-3000V-5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000V-5', kind: retailer }
+    image: null
+  - id: bg-3000x-2
+    ref: BG-3000X-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000X-2', kind: retailer }
+    image: bg-3000x-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-3000X-2'
