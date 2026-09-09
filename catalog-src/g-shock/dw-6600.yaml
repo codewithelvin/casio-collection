@@ -25,3 +25,16 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6600PC-5'
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: dw-6600f-3v
+    ref: DW-6600F-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6600F-3V', kind: retailer }
+    image: null
+  - id: dw-6600f-5v
+    ref: DW-6600F-5V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6600F-5V', kind: retailer }
+    image: null
