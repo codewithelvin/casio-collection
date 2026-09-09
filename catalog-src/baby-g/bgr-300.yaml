@@ -1,0 +1,83 @@
+# BGR-300 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 12 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bgr-300
+  name: BGR-300
+  line: baby-g
+
+models:
+  - id: bgr-300-1
+    ref: BGR-300-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300-1', kind: retailer }
+    image: null
+  - id: bgr-300-2
+    ref: BGR-300-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300-2', kind: retailer }
+    image: null
+  - id: bgr-300-4
+    ref: BGR-300-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300-4', kind: retailer }
+    image: null
+  - id: bgr-300-7
+    ref: BGR-300-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300-7', kind: retailer }
+    image: null
+  - id: bgr-300eb-7
+    ref: BGR-300EB-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300EB-7', kind: retailer }
+    image: bgr-300eb-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300EB-7'
+  - id: bgr-300em-2
+    ref: BGR-300EM-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300EM-2', kind: retailer }
+    image: bgr-300em-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300EM-2'
+  - id: bgr-300em-7
+    ref: BGR-300EM-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300EM-7', kind: retailer }
+    image: bgr-300em-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300EM-7'
+  - id: bgr-300gr-3
+    ref: BGR-300GR-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300GR-3', kind: retailer }
+    image: bgr-300gr-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300GR-3'
+  - id: bgr-300pp-4
+    ref: BGR-300PP-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300PP-4', kind: retailer }
+    image: null
+  - id: bgr-300pp-7
+    ref: BGR-300PP-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300PP-7', kind: retailer }
+    image: null
+  - id: bgr-300pv-2
+    ref: BGR-300PV-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300PV-2', kind: retailer }
+    image: null
+  - id: bgr-300pv-4
+    ref: BGR-300PV-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGR-300PV-4', kind: retailer }
+    image: null
