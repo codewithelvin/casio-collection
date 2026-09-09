@@ -1,0 +1,51 @@
+# LTP-2077 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 4 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-2077
+  name: LTP-2077
+  line: vintage
+
+models:
+  - id: ltp-2077d-1c
+    ref: LTP-2077D-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2077D-1C', kind: retailer }
+    image: ltp-2077d-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2077D-1C'
+  - id: ltp-2077d-4c
+    ref: LTP-2077D-4C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2077D-4C', kind: retailer }
+    image: ltp-2077d-4c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2077D-4C'
+  - id: ltp-2077d-7c1
+    ref: LTP-2077D-7C1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2077D-7C1', kind: retailer }
+    image: ltp-2077d-7c1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2077D-7C1'
+  - id: ltp-2077d-7c7
+    ref: LTP-2077D-7C7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2077D-7C7', kind: retailer }
+    image: ltp-2077d-7c7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2077D-7C7'
