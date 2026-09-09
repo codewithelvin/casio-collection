@@ -1,0 +1,83 @@
+# LRW-250 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 8 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: lrw-250
+  name: LRW-250
+  line: vintage
+
+models:
+  - id: lrw-250h-1a1v
+    ref: LRW-250H-1A1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-1A1V', kind: retailer }
+    image: lrw-250h-1a1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-1A1V'
+  - id: lrw-250h-1a2v
+    ref: LRW-250H-1A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-1A2V', kind: retailer }
+    image: lrw-250h-1a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-1A2V'
+  - id: lrw-250h-1a3v
+    ref: LRW-250H-1A3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-1A3V', kind: retailer }
+    image: lrw-250h-1a3v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-1A3V'
+  - id: lrw-250h-4a2v
+    ref: LRW-250H-4A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-4A2V', kind: retailer }
+    image: lrw-250h-4a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-4A2V'
+  - id: lrw-250h-4a3v
+    ref: LRW-250H-4A3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-4A3V', kind: retailer }
+    image: lrw-250h-4a3v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-4A3V'
+  - id: lrw-250h-4av
+    ref: LRW-250H-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-4AV', kind: retailer }
+    image: lrw-250h-4av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-4AV'
+  - id: lrw-250h-7bv
+    ref: LRW-250H-7BV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-7BV', kind: retailer }
+    image: lrw-250h-7bv
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-7BV'
+  - id: lrw-250h-9a1v
+    ref: LRW-250H-9A1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-9A1V', kind: retailer }
+    image: lrw-250h-9a1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LRW-250H-9A1V'
