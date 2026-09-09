@@ -3939,3 +3939,92 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600TOD-8'
+
+# ADDED 2026-09-09: 21 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: dw-5600b-1av
+    ref: DW-5600B-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600B-1AV', kind: retailer }
+    image: null
+  - id: dw-5600bl-7
+    ref: DW-5600BL-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600BL-7', kind: retailer }
+    image: null
+  - id: dw-5600br-1
+    ref: DW-5600BR-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600BR-1', kind: retailer }
+    image: null
+  - id: dw-5600br-5
+    ref: DW-5600BR-5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600BR-5', kind: retailer }
+    image: null
+  - id: dw-5600cl-1
+    ref: DW-5600CL-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600CL-1', kind: retailer }
+    image: null
+  - id: dw-5600cs-9
+    ref: DW-5600CS-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600CS-9', kind: retailer }
+    image: null
+  - id: dw-5600eh-7
+    ref: DW-5600EH-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600EH-7', kind: retailer }
+    image: null
+  - id: dw-5600fs-7jf
+    ref: DW-5600FS-7JF
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600FS-7JF', kind: retailer }
+    image: null
+  - id: dw-5600fs-9jf
+    ref: DW-5600FS-9JF
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600FS-9JF', kind: retailer }
+    image: null
+  - id: dw-5600gm-1
+    ref: DW-5600GM-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600GM-1', kind: retailer }
+    image: null
+  - id: dw-5600gm-1a
+    ref: DW-5600GM-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600GM-1A', kind: retailer }
+    image: null
+  - id: dw-5600gm-2
+    ref: DW-5600GM-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600GM-2', kind: retailer }
+    image: null
+  - id: dw-5600lc-4
+    ref: DW-5600LC-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600LC-4', kind: retailer }
+    image: null
+  - id: dw-5600lc-7
+    ref: DW-5600LC-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600LC-7', kind: retailer }
+    image: null
+  - id: dw-5600lc-9
+    ref: DW-5600LC-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600LC-9', kind: retailer }
+    image: null
+  - id: dw-5600r-3
+    ref: DW-5600R-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600R-3', kind: retailer }
+    image: null
+  - id: dw-5600rc-5
+    ref: DW-5600RC-5
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600RC-5', kind: retailer }
+    image: null
+  - id: dw-5600re-2jf
+    ref: DW-5600RE-2JF
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600RE-2JF', kind: retailer }
+    image: null
+  - id: dw-5600sa-2jf
+    ref: DW-5600SA-2JF
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600SA-2JF', kind: retailer }
+    image: null
+  - id: dw-5600sa-9jf
+    ref: DW-5600SA-9JF
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600SA-9JF', kind: retailer }
+    image: null
+  - id: dw-5600wc-1
+    ref: DW-5600WC-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5600WC-1', kind: retailer }
+    image: null
