@@ -1,7 +1,7 @@
 # G-300 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 1 references catalogued
+# written here (D27): the client asked for these 2 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -82,3 +82,16 @@ models:
     ref: G-300SC-9A
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300SC-9A', kind: retailer }
     image: null
+
+# MOVED HERE 2026-09-09: 1 reference from
+# catalog-src/vintage/g-300.yaml -- javys tags it under a generic
+# subbrand there, but the reference prefix is g-shock's throughout.
+#
+  - id: g-300lv-7av
+    ref: G-300LV-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300LV-7AV', kind: retailer }
+    image: g-300lv-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-300LV-7AV'
