@@ -182,3 +182,28 @@ models:
     ref: G-5600NV-2
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600NV-2', kind: retailer }
     image: null
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-5600a-3
+    ref: G-5600A-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600A-3', kind: retailer }
+    image: null
+  - id: g-5600a-7
+    ref: G-5600A-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600A-7', kind: retailer }
+    image: g-5600a-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600A-7'
+  - id: g-5600a-9
+    ref: G-5600A-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600A-9', kind: retailer }
+    image: g-5600a-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600A-9'
