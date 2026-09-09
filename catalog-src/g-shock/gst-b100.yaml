@@ -1,0 +1,67 @@
+# GST-B100 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gst-b100
+  name: GST-B100
+  line: g-shock
+
+models:
+  - id: gst-b100b-1a3
+    ref: GST-B100B-1A3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100B-1A3', kind: retailer }
+    image: gst-b100b-1a3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100B-1A3'
+  - id: gst-b100b-1a4
+    ref: GST-B100B-1A4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100B-1A4', kind: retailer }
+    image: gst-b100b-1a4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100B-1A4'
+  - id: gst-b100bnr-1a
+    ref: GST-B100BNR-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100BNR-1A', kind: retailer }
+    image: gst-b100bnr-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100BNR-1A'
+  - id: gst-b100d-2a
+    ref: GST-B100D-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100D-2A', kind: retailer }
+    image: gst-b100d-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100D-2A'
+  - id: gst-b100g-2a
+    ref: GST-B100G-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100G-2A', kind: retailer }
+    image: gst-b100g-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100G-2A'
+  - id: gst-b100xb-2a
+    ref: GST-B100XB-2A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100XB-2A', kind: retailer }
+    image: gst-b100xb-2a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GST-B100XB-2A'
