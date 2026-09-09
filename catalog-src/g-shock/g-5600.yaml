@@ -125,3 +125,60 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20230816221825id_/https://www.casio.com/ph/watches/gshock/product.G-5600UE-1/'
     discontinued: false
+
+# ADDED 2026-09-09: 7 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-5600b-1
+    ref: G-5600B-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600B-1', kind: retailer }
+    image: g-5600b-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600B-1'
+  - id: g-5600cc-2
+    ref: G-5600CC-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600CC-2', kind: retailer }
+    image: g-5600cc-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600CC-2'
+  - id: g-5600cc-3
+    ref: G-5600CC-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600CC-3', kind: retailer }
+    image: g-5600cc-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600CC-3'
+  - id: g-5600eb-2
+    ref: G-5600EB-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600EB-2', kind: retailer }
+    image: g-5600eb-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600EB-2'
+  - id: g-5600gr-7
+    ref: G-5600GR-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600GR-7', kind: retailer }
+    image: g-5600gr-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600GR-7'
+  - id: g-5600kg-3
+    ref: G-5600KG-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600KG-3', kind: retailer }
+    image: g-5600kg-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600KG-3'
+  - id: g-5600nv-2
+    ref: G-5600NV-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-5600NV-2', kind: retailer }
+    image: null
