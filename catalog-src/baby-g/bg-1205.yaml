@@ -1,7 +1,7 @@
 # BG-1205 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
 # distributor whose site names a page for every reference it has sold. Only
 # id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 1 references catalogued
+# written here (D27): the client asked for these 3 references catalogued
 # quickly rather than fully read, so case, display, module and features are
 # left for a deeper pass over the same pages, per model, later.
 #
@@ -14,10 +14,18 @@
 series:
   id: bg-1205
   name: BG-1205
-  line: g-shock
+  line: baby-g
 
 models:
+  - id: bg-1205-1
+    ref: BG-1205-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1205-1', kind: retailer }
+    image: null
   - id: bg-1205-7jf
     ref: BG-1205-7JF
     source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1205-7JF', kind: retailer }
+    image: null
+  - id: bg-1205pg-5dr
+    ref: BG-1205PG-5DR
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BG-1205PG-5DR', kind: retailer }
     image: null
