@@ -188,3 +188,32 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20210618030202id_/https://www.casio.com/jp/watches/casio/product.AEQ-110W-2A/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: aeq-110w-1a2v
+    ref: AEQ-110W-1A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AEQ-110W-1A2V', kind: retailer }
+    image: aeq-110w-1a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AEQ-110W-1A2V'
+  - id: aeq-110w-3a2v
+    ref: AEQ-110W-3A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AEQ-110W-3A2V', kind: retailer }
+    image: aeq-110w-3a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AEQ-110W-3A2V'
+  - id: aeq-110w-3av
+    ref: AEQ-110W-3AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AEQ-110W-3AV', kind: retailer }
+    image: aeq-110w-3av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=AEQ-110W-3AV'
