@@ -76,3 +76,48 @@ models:
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio_dw-5700c-9v'
     discontinued: true
+
+# ADDED 2026-09-09: 5 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: dw-5700bbm-1
+    ref: DW-5700BBM-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5700BBM-1', kind: retailer }
+    image: dw-5700bbm-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5700BBM-1'
+  - id: dw-5700bbm-2
+    ref: DW-5700BBM-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5700BBM-2', kind: retailer }
+    image: dw-5700bbm-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5700BBM-2'
+  - id: dw-5700slg-7
+    ref: DW-5700SLG-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5700SLG-7', kind: retailer }
+    image: dw-5700slg-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5700SLG-7'
+  - id: dw-5700th-1
+    ref: DW-5700TH-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5700TH-1', kind: retailer }
+    image: dw-5700th-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5700TH-1'
+  - id: dw-5700thb-7
+    ref: DW-5700THB-7
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5700THB-7', kind: retailer }
+    image: dw-5700thb-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-5700THB-7'
