@@ -319,3 +319,24 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20250119222035id_/https://www.casio.com/hk/watches/casio/product.MTP-1374D-7A2V/'
     discontinued: false
+
+# ADDED 2026-09-09: 2 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: mtp-1374l-1a2v
+    ref: MTP-1374L-1A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1374L-1A2V', kind: retailer }
+    image: mtp-1374l-1a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1374L-1A2V'
+  - id: mtp-1374l-2av
+    ref: MTP-1374L-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1374L-2AV', kind: retailer }
+    image: mtp-1374l-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-1374L-2AV'
