@@ -25,3 +25,28 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-200Z-1'
+
+# ADDED 2026-09-09: 4 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: gw-200ms-1
+    ref: GW-200MS-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-200MS-1', kind: retailer }
+    image: gw-200ms-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-200MS-1'
+  - id: gw-200tc-2
+    ref: GW-200TC-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-200TC-2', kind: retailer }
+    image: null
+  - id: gw-200tc-3
+    ref: GW-200TC-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-200TC-3', kind: retailer }
+    image: null
+  - id: gw-200tc-4
+    ref: GW-200TC-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-200TC-4', kind: retailer }
+    image: null
