@@ -1,0 +1,163 @@
+# BGA-200 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 18 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bga-200
+  name: BGA-200
+  line: baby-g
+
+models:
+  - id: bga-200-1e
+    ref: BGA-200-1E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-1E', kind: retailer }
+    image: bga-200-1e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-1E'
+  - id: bga-200-1e2
+    ref: BGA-200-1E2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-1E2', kind: retailer }
+    image: bga-200-1e2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-1E2'
+  - id: bga-200-2e
+    ref: BGA-200-2E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-2E', kind: retailer }
+    image: bga-200-2e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-2E'
+  - id: bga-200-3e
+    ref: BGA-200-3E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-3E', kind: retailer }
+    image: bga-200-3e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-3E'
+  - id: bga-200-4e
+    ref: BGA-200-4E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-4E', kind: retailer }
+    image: bga-200-4e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-4E'
+  - id: bga-200-4e2
+    ref: BGA-200-4E2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-4E2', kind: retailer }
+    image: bga-200-4e2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-4E2'
+  - id: bga-200-6e
+    ref: BGA-200-6E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-6E', kind: retailer }
+    image: bga-200-6e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-6E'
+  - id: bga-200-7e
+    ref: BGA-200-7E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-7E', kind: retailer }
+    image: bga-200-7e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-7E'
+  - id: bga-200-7e2
+    ref: BGA-200-7E2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-7E2', kind: retailer }
+    image: bga-200-7e2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-7E2'
+  - id: bga-200-7e3
+    ref: BGA-200-7E3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-7E3', kind: retailer }
+    image: bga-200-7e3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-7E3'
+  - id: bga-200-7e4
+    ref: BGA-200-7E4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-7E4', kind: retailer }
+    image: bga-200-7e4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200-7E4'
+  - id: bga-200ks-1e
+    ref: BGA-200KS-1E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200KS-1E', kind: retailer }
+    image: bga-200ks-1e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200KS-1E'
+  - id: bga-200lp-4e
+    ref: BGA-200LP-4E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200LP-4E', kind: retailer }
+    image: bga-200lp-4e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200LP-4E'
+  - id: bga-200lp-5e
+    ref: BGA-200LP-5E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200LP-5E', kind: retailer }
+    image: bga-200lp-5e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200LP-5E'
+  - id: bga-200lp-7e
+    ref: BGA-200LP-7E
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200LP-7E', kind: retailer }
+    image: bga-200lp-7e
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200LP-7E'
+  - id: bga-200pd-1b
+    ref: BGA-200PD-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200PD-1B', kind: retailer }
+    image: bga-200pd-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200PD-1B'
+  - id: bga-200pd-4b
+    ref: BGA-200PD-4B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200PD-4B', kind: retailer }
+    image: bga-200pd-4b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200PD-4B'
+  - id: bga-200pd-7b
+    ref: BGA-200PD-7B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200PD-7B', kind: retailer }
+    image: bga-200pd-7b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-200PD-7B'
