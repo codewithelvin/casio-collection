@@ -1,0 +1,131 @@
+# MTP-V004 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 14 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtp-v004
+  name: MTP-V004
+  line: vintage
+
+models:
+  - id: mtp-v004d-1b2
+    ref: MTP-V004D-1B2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004D-1B2', kind: retailer }
+    image: mtp-v004d-1b2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004D-1B2'
+  - id: mtp-v004d-1c
+    ref: MTP-V004D-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004D-1C', kind: retailer }
+    image: mtp-v004d-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004D-1C'
+  - id: mtp-v004d-2b
+    ref: MTP-V004D-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004D-2B', kind: retailer }
+    image: mtp-v004d-2b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004D-2B'
+  - id: mtp-v004d-7b2
+    ref: MTP-V004D-7B2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004D-7B2', kind: retailer }
+    image: mtp-v004d-7b2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004D-7B2'
+  - id: mtp-v004d-7c
+    ref: MTP-V004D-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004D-7C', kind: retailer }
+    image: mtp-v004d-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004D-7C'
+  - id: mtp-v004g-1b
+    ref: MTP-V004G-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004G-1B', kind: retailer }
+    image: mtp-v004g-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004G-1B'
+  - id: mtp-v004g-1c
+    ref: MTP-V004G-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004G-1C', kind: retailer }
+    image: mtp-v004g-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004G-1C'
+  - id: mtp-v004g-7b2
+    ref: MTP-V004G-7B2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004G-7B2', kind: retailer }
+    image: mtp-v004g-7b2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004G-7B2'
+  - id: mtp-v004l-1b
+    ref: MTP-V004L-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-1B', kind: retailer }
+    image: mtp-v004l-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-1B'
+  - id: mtp-v004l-1b2
+    ref: MTP-V004L-1B2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-1B2', kind: retailer }
+    image: mtp-v004l-1b2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-1B2'
+  - id: mtp-v004l-1c
+    ref: MTP-V004L-1C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-1C', kind: retailer }
+    image: mtp-v004l-1c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-1C'
+  - id: mtp-v004l-2b
+    ref: MTP-V004L-2B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-2B', kind: retailer }
+    image: mtp-v004l-2b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-2B'
+  - id: mtp-v004l-3b
+    ref: MTP-V004L-3B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-3B', kind: retailer }
+    image: mtp-v004l-3b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-3B'
+  - id: mtp-v004l-7c
+    ref: MTP-V004L-7C
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-7C', kind: retailer }
+    image: mtp-v004l-7c
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTP-V004L-7C'
