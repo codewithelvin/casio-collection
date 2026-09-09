@@ -1,0 +1,59 @@
+# GW-4000 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 5 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gw-4000
+  name: GW-4000
+  line: g-shock
+
+models:
+  - id: gw-4000-1a
+    ref: GW-4000-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-4000-1A', kind: retailer }
+    image: gw-4000-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-4000-1A'
+  - id: gw-4000-1a2
+    ref: GW-4000-1A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-4000-1A2', kind: retailer }
+    image: gw-4000-1a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-4000-1A2'
+  - id: gw-4000-1a3
+    ref: GW-4000-1A3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-4000-1A3', kind: retailer }
+    image: gw-4000-1a3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-4000-1A3'
+  - id: gw-4000a-1a
+    ref: GW-4000A-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-4000A-1A', kind: retailer }
+    image: gw-4000a-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-4000A-1A'
+  - id: gw-4000d-1a
+    ref: GW-4000D-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-4000D-1A', kind: retailer }
+    image: gw-4000d-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GW-4000D-1A'
