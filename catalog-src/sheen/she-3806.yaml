@@ -56,3 +56,16 @@ models:
       licence: rights-reserved
       url: 'https://web.archive.org/web/20221013124406id_/https://www.casio.com/in/watches/sheen/product.SHE-3806PG-9A/'
     discontinued: true
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: she-3806gl-9a
+    ref: SHE-3806GL-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3806GL-9A', kind: retailer }
+    image: she-3806gl-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=SHE-3806GL-9A'
