@@ -1,0 +1,43 @@
+# MTD-1069 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 3 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: mtd-1069
+  name: MTD-1069
+  line: vintage
+
+models:
+  - id: mtd-1069b-1a1v
+    ref: MTD-1069B-1A1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-1069B-1A1V', kind: retailer }
+    image: mtd-1069b-1a1v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-1069B-1A1V'
+  - id: mtd-1069b-1a2v
+    ref: MTD-1069B-1A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-1069B-1A2V', kind: retailer }
+    image: mtd-1069b-1a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-1069B-1A2V'
+  - id: mtd-1069d-1av
+    ref: MTD-1069D-1AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-1069D-1AV', kind: retailer }
+    image: mtd-1069d-1av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=MTD-1069D-1AV'
