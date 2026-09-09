@@ -177,3 +177,32 @@ models:
       licence: rights-reserved
       url: 'https://www.casio.com/intl/watches/casio/product.LW-200-7AV/'
     discontinued: false
+
+# ADDED 2026-09-09: 3 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: lw-200d-2av
+    ref: LW-200D-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LW-200D-2AV', kind: retailer }
+    image: lw-200d-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LW-200D-2AV'
+  - id: lw-200d-3av
+    ref: LW-200D-3AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LW-200D-3AV', kind: retailer }
+    image: lw-200d-3av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LW-200D-3AV'
+  - id: lw-200d-5av
+    ref: LW-200D-5AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LW-200D-5AV', kind: retailer }
+    image: lw-200d-5av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LW-200D-5AV'
