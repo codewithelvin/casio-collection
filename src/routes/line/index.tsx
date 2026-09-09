@@ -1,4 +1,4 @@
-import { Fragment, useMemo } from 'react'
+import { Fragment, useEffect, useMemo } from 'react'
 import { Breadcrumb, Button, Typography, theme as antdTheme } from 'antd'
 import { Link, useParams } from 'react-router-dom'
 import { lineBySlug, lineTree, modelsInSeries, useCatalog } from '../../catalog/client.ts'
@@ -13,6 +13,7 @@ import { FilterBar } from '../../ui/FilterBar'
 import { useViewState } from '../../ui/useViewState'
 import { LINE_ACCENTS } from '../../theme/palette.ts'
 import { seriesPath } from '../../paths.ts'
+import { lineTitle } from '../../seo/titles.ts'
 import { t } from '../../i18n/strings'
 
 /**
@@ -72,6 +73,17 @@ export default function LineRoute() {
    * buttons.
    */
   const line = data ? lineBySlug(data, slug) : undefined
+
+  // Restored on unmount, same as the watch page: leaving a line for the
+  // catalogue root must not leave that line's title behind.
+  useEffect(() => {
+    if (!line) return
+    const previous = document.title
+    document.title = lineTitle(line.name)
+    return () => {
+      document.title = previous
+    }
+  }, [line])
 
   const groups = useMemo(() => {
     if (!data || !line) return []

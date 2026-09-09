@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Breadcrumb, Button, Tag, Typography, theme as antdTheme } from 'antd'
 import { Link, useParams } from 'react-router-dom'
 import {
@@ -16,6 +17,7 @@ import { FilterBar } from '../../ui/FilterBar'
 import { useViewState } from '../../ui/useViewState'
 import { LINE_ACCENTS } from '../../theme/palette.ts'
 import { linePath } from '../../paths.ts'
+import { seriesTitle } from '../../seo/titles.ts'
 import { t } from '../../i18n/strings'
 
 /**
@@ -40,6 +42,23 @@ export default function SeriesRoute() {
   const index = useCatalogIndex()
   const file = useSeriesModels(seriesId)
 
+  const line = index.data ? lineBySlug(index.data, slug) : undefined
+  const series = index.data ? seriesById(index.data, seriesId) : undefined
+  const found = Boolean(line && series && series.line === line.id && file.data)
+
+  // Restored on unmount, same as the watch page: leaving a series for the
+  // catalogue root must not leave that series' title behind. Hooks run before
+  // any of the early returns below, so this reads `found` rather than the
+  // narrowed `series`/`file.data` those returns exist to check.
+  useEffect(() => {
+    if (!found || !series || !file.data) return
+    const previous = document.title
+    document.title = seriesTitle(series.name, file.data.models.length)
+    return () => {
+      document.title = previous
+    }
+  }, [found, series, file.data])
+
   if (index.isPending || file.isPending) return <SkeletonGrid />
   if (index.isError || !index.data || file.isError) {
     return (
@@ -52,9 +71,6 @@ export default function SeriesRoute() {
     )
   }
 
-  const line = lineBySlug(index.data, slug)
-  const series = seriesById(index.data, seriesId)
-
   // The series must exist *and* sit in the line the URL claims. Without the
   // second half, /line/edifice/f-91w would render the Vintage series under an
   // Edifice breadcrumb — a URL that looks authoritative and is wrong.
@@ -62,7 +78,7 @@ export default function SeriesRoute() {
   // `file.data` being null is the third way to get here and it is a 404 on the
   // series file, which means the URL names a series this catalogue does not
   // have — the same answer, reached from the other artefact.
-  if (!line || !series || series.line !== line.id || !file.data) {
+  if (!found || !line || !series || !file.data) {
     return <EmptyState title={t('series.notFound.title')} body={t('series.notFound.body')} />
   }
 
