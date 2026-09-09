@@ -241,3 +241,16 @@ models:
       licence: rights-reserved
       url: 'https://www.ippojapanwatch.com/products/casio-a159wevj-2jr-classic-digital-watch-blue-led-display-water-resistant-adjustable-stainless-steel-band'
     discontinued: false
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: a159wa-9
+    ref: A159WA-9
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A159WA-9', kind: retailer }
+    image: a159wa-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=A159WA-9'
