@@ -1,0 +1,67 @@
+# LTP-2089 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: ltp-2089
+  name: LTP-2089
+  line: vintage
+
+models:
+  - id: ltp-2089d-2av
+    ref: LTP-2089D-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089D-2AV', kind: retailer }
+    image: ltp-2089d-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089D-2AV'
+  - id: ltp-2089d-4av
+    ref: LTP-2089D-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089D-4AV', kind: retailer }
+    image: ltp-2089d-4av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089D-4AV'
+  - id: ltp-2089d-7a2v
+    ref: LTP-2089D-7A2V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089D-7A2V', kind: retailer }
+    image: ltp-2089d-7a2v
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089D-7A2V'
+  - id: ltp-2089l-2av
+    ref: LTP-2089L-2AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089L-2AV', kind: retailer }
+    image: ltp-2089l-2av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089L-2AV'
+  - id: ltp-2089l-4av
+    ref: LTP-2089L-4AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089L-4AV', kind: retailer }
+    image: ltp-2089l-4av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089L-4AV'
+  - id: ltp-2089l-7av
+    ref: LTP-2089L-7AV
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089L-7AV', kind: retailer }
+    image: ltp-2089l-7av
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LTP-2089L-7AV'
