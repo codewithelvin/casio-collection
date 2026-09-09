@@ -89,19 +89,30 @@ async function writeSplit(catalog: FullCatalog): Promise<void> {
     let total = 0
 
     // Written in parallel within a group: 3 827 model files one await at a time
-    // is the slowest part of the build by an order of magnitude.
-    await Promise.all(
-      [...documents].map(async ([id, document]) => {
-        const body = serialiseSplit(document)
-        total += Buffer.byteLength(body, 'utf8')
-        const gzip = gzipSync(body).length
-        if (gzip > largest.gzip) largest = { id, gzip }
-        // The id is a published id (D2) and is already constrained to the
-        // characters a filename may hold — ID_PATTERN admits letters, digits and
-        // hyphens only, so there is no path separator to escape here.
-        await writeFile(join(OUT_DIR, kind, `${id}.json`), body, 'utf8')
-      }),
-    )
+    // is the slowest part of the build by an order of magnitude. Chunked at
+    // 500 rather than one giant Promise.all, because the catalogue outgrew a
+    // Windows machine's default open-file limit before it outgrew a Linux
+    // one's — 9 626 models EMFILE'd locally at a 3 200 fd cap while every one
+    // of the other three kinds (series, line, edition — none over ~2 500)
+    // stayed fine. The chunk size only bounds concurrency, not throughput:
+    // each chunk still writes in parallel, just never more than 500 open
+    // handles for this group at once.
+    const entries = [...documents]
+    const CHUNK = 500
+    for (let start = 0; start < entries.length; start += CHUNK) {
+      await Promise.all(
+        entries.slice(start, start + CHUNK).map(async ([id, document]) => {
+          const body = serialiseSplit(document)
+          total += Buffer.byteLength(body, 'utf8')
+          const gzip = gzipSync(body).length
+          if (gzip > largest.gzip) largest = { id, gzip }
+          // The id is a published id (D2) and is already constrained to the
+          // characters a filename may hold — ID_PATTERN admits letters, digits and
+          // hyphens only, so there is no path separator to escape here.
+          await writeFile(join(OUT_DIR, kind, `${id}.json`), body, 'utf8')
+        }),
+      )
+    }
 
     report.push(
       `  ${kind.padEnd(8)} ${String(documents.size).padStart(5)} files, ` +
