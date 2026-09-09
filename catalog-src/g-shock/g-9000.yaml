@@ -25,3 +25,52 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000BP-1'
+
+# ADDED 2026-09-09: 11 more references, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-9000-1v
+    ref: G-9000-1V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000-1V', kind: retailer }
+    image: null
+  - id: g-9000-3v
+    ref: G-9000-3V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000-3V', kind: retailer }
+    image: null
+  - id: g-9000-8v
+    ref: G-9000-8V
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000-8V', kind: retailer }
+    image: null
+  - id: g-9000mc-3
+    ref: G-9000MC-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000MC-3', kind: retailer }
+    image: null
+  - id: g-9000mc-8
+    ref: G-9000MC-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000MC-8', kind: retailer }
+    image: null
+  - id: g-9000ms-1
+    ref: G-9000MS-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000MS-1', kind: retailer }
+    image: null
+  - id: g-9000mx-2
+    ref: G-9000MX-2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000MX-2', kind: retailer }
+    image: null
+  - id: g-9000mx-4
+    ref: G-9000MX-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000MX-4', kind: retailer }
+    image: null
+  - id: g-9000mx-8
+    ref: G-9000MX-8
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000MX-8', kind: retailer }
+    image: null
+  - id: g-9000r-4
+    ref: G-9000R-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000R-4', kind: retailer }
+    image: null
+  - id: g-9000tlc-4
+    ref: G-9000TLC-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-9000TLC-4', kind: retailer }
+    image: null
