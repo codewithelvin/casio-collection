@@ -1,0 +1,75 @@
+# GX-56 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 7 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: gx-56
+  name: GX-56
+  line: g-shock
+
+models:
+  - id: gx-56-1a
+    ref: GX-56-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56-1A', kind: retailer }
+    image: gx-56-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56-1A'
+  - id: gx-56-1b
+    ref: GX-56-1B
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56-1B', kind: retailer }
+    image: gx-56-1b
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56-1B'
+  - id: gx-56-4
+    ref: GX-56-4
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56-4', kind: retailer }
+    image: gx-56-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56-4'
+  - id: gx-56gb-1
+    ref: GX-56GB-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56GB-1', kind: retailer }
+    image: gx-56gb-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56GB-1'
+  - id: gx-56kg-3
+    ref: GX-56KG-3
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56KG-3', kind: retailer }
+    image: gx-56kg-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56KG-3'
+  - id: gx-56rc-1
+    ref: GX-56RC-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56RC-1', kind: retailer }
+    image: gx-56rc-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56RC-1'
+  - id: gx-56slg-1
+    ref: GX-56SLG-1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56SLG-1', kind: retailer }
+    image: gx-56slg-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GX-56SLG-1'
