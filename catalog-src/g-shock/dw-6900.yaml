@@ -1,5 +1,15 @@
-# PHOTOGRAPHS REFUSED, 81 of them, and this is the reason for every
+# PHOTOGRAPHS REFUSED, 52 of them, and this is the reason for every
 # `image: null` below that does not carry one of its own.
+#
+# JAVYS ADDED 29 OF THESE ON 2026-09-09. javys.com/casio, a Hong
+# Kong Casio distributor running its own per-reference product-photo pages
+# since at least 2010, was not among the routes measured below and turned
+# out to hold a large (>=300px) photograph for 29 of the 81
+# references this file had refused. Read off
+# https://www.javys.com/casio/new_web/watch/new_watch.php?id=<REF> per entry
+# and credited to Javys as `rights-reserved` (D41): the site states no
+# licence. The routes below were still walked and are still empty; javys is
+# an addition, not a correction to any of them.
 #
 # These references are discontinued collaborations and regional limited runs.
 # Every route this project knows how to walk was walked, and the measurement is
@@ -443,9 +453,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900cb-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CB-2'
     discontinued: true
   - id: dw-6900cb-4
     ref: DW-6900CB-4
@@ -458,9 +470,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900cb-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CB-4'
     discontinued: true
   - id: dw-6900cc-2
     ref: DW-6900CC-2
@@ -473,9 +487,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900cc-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CC-2'
     discontinued: true
   - id: dw-6900cc-3
     ref: DW-6900CC-3
@@ -488,9 +504,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900cc-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CC-3'
     discontinued: true
   - id: dw-6900cc-6
     ref: DW-6900CC-6
@@ -503,9 +521,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900cc-6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CC-6'
     discontinued: true
   - id: dw-6900cl-4
     ref: DW-6900CL-4
@@ -528,9 +548,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900cl-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CL-4'
     discontinued: true
   - id: dw-6900cr-1
     ref: DW-6900CR-1
@@ -553,9 +575,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900cr-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CR-1'
     discontinued: true
   - id: dw-6900cr-3
     ref: DW-6900CR-3
@@ -578,9 +602,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900cr-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CR-3'
     discontinued: true
   - id: dw-6900cr-7
     ref: DW-6900CR-7
@@ -603,9 +629,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900cr-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900CR-7'
     discontinued: true
   - id: dw-6900cs-1
     ref: DW-6900CS-1
@@ -953,9 +981,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900hm-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900HM-1'
     discontinued: true
   - id: dw-6900hm-2
     ref: DW-6900HM-2
@@ -978,9 +1008,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900hm-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900HM-2'
     discontinued: true
   - id: dw-6900jk-4
     ref: DW-6900JK-4
@@ -1080,9 +1112,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900ld-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900LD-7'
     discontinued: true
   - id: dw-6900ls-1
     ref: DW-6900LS-1
@@ -1263,9 +1297,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900mf-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MF-2'
     discontinued: true
   - id: dw-6900mf-4
     ref: DW-6900MF-4
@@ -1288,9 +1324,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900mf-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MF-4'
     discontinued: true
   - id: dw-6900mm-2
     ref: DW-6900MM-2
@@ -1303,9 +1341,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900mm-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MM-2'
     discontinued: true
   - id: dw-6900mm-4
     ref: DW-6900MM-4
@@ -1318,9 +1358,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900mm-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MM-4'
     discontinued: true
   - id: dw-6900mma-1
     ref: DW-6900MMA-1
@@ -1395,9 +1437,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900mr-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MR-1'
     discontinued: true
   - id: dw-6900mr-7
     ref: DW-6900MR-7
@@ -1420,9 +1464,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900mr-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900MR-7'
     discontinued: true
   - id: dw-6900ms-1
     ref: DW-6900MS-1
@@ -1496,9 +1542,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900nb-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900NB-3'
     discontinued: true
   - id: dw-6900nb-4
     ref: DW-6900NB-4
@@ -1511,9 +1559,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900nb-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900NB-4'
     discontinued: true
   - id: dw-6900nb-7
     ref: DW-6900NB-7
@@ -1869,9 +1919,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900sb-2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SB-2'
     discontinued: true
   - id: dw-6900sb-4
     ref: DW-6900SB-4
@@ -1884,9 +1936,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900sb-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SB-4'
     discontinued: true
   - id: dw-6900sb-8
     ref: DW-6900SB-8
@@ -1899,9 +1953,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900sb-8
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SB-8'
     discontinued: true
   - id: dw-6900sb-9
     ref: DW-6900SB-9
@@ -1914,9 +1970,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, hourly-time-signal, full-auto-calendar, el-backlight]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900sb-9
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SB-9'
     discontinued: true
   - id: dw-6900sby-2
     ref: DW-6900SBY-2
@@ -2194,9 +2252,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900sn-1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SN-1'
     discontinued: true
   - id: dw-6900sn-3
     ref: DW-6900SN-3
@@ -2219,9 +2279,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900sn-3
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SN-3'
     discontinued: true
   - id: dw-6900sn-4
     ref: DW-6900SN-4
@@ -2244,9 +2306,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900sn-4
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SN-4'
     discontinued: true
   - id: dw-6900sn-7
     ref: DW-6900SN-7
@@ -2269,9 +2333,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900sn-7
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SN-7'
     discontinued: true
   - id: dw-6900sp-1
     ref: DW-6900SP-1
@@ -2374,9 +2440,11 @@ models:
     movement: quartz
     module: '3230'
     features: [stopwatch, countdown-timer, alarm, full-auto-calendar, hourly-time-signal, el-backlight, mineral-glass]
-    # No product shot exists by any route this project can walk — see the
-    # refusal note at the head of this file.
-    image: null
+    image: dw-6900sw-6
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=DW-6900SW-6'
     discontinued: true
   - id: dw-6900tal-4
     ref: DW-6900TAL-4
