@@ -33,3 +33,12 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-501FD-1A'
+
+# ADDED 2026-09-09: 1 more reference, from javys.com (retailer).
+# Minimal entries only -- id, ref, source, and a photograph where javys names
+# one >=300px wide. The entries above predate this block and are untouched.
+#
+  - id: g-501xd-3a
+    ref: G-501XD-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=G-501XD-3A', kind: retailer }
+    image: null
