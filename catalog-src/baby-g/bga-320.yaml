@@ -1,0 +1,67 @@
+# BGA-320 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
+# distributor whose site names a page for every reference it has sold. Only
+# id, ref, source and (where javys names a >=300px photograph) image are
+# written here (D27): the client asked for these 6 references catalogued
+# quickly rather than fully read, so case, display, module and features are
+# left for a deeper pass over the same pages, per model, later.
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * `year` — javys dates the series' launch month, not the reference itself,
+#     and D25 wants a page that states the reference's own year.
+#   * every field a deeper read of the page in `source` would state.
+
+series:
+  id: bga-320
+  name: BGA-320
+  line: baby-g
+
+models:
+  - id: bga-320-1a
+    ref: BGA-320-1A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-1A', kind: retailer }
+    image: bga-320-1a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-1A'
+  - id: bga-320-3a
+    ref: BGA-320-3A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-3A', kind: retailer }
+    image: bga-320-3a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-3A'
+  - id: bga-320-4a
+    ref: BGA-320-4A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-4A', kind: retailer }
+    image: bga-320-4a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-4A'
+  - id: bga-320-7a1
+    ref: BGA-320-7A1
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-7A1', kind: retailer }
+    image: bga-320-7a1
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-7A1'
+  - id: bga-320-7a2
+    ref: BGA-320-7A2
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-7A2', kind: retailer }
+    image: bga-320-7a2
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-7A2'
+  - id: bga-320-9a
+    ref: BGA-320-9A
+    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-9A', kind: retailer }
+    image: bga-320-9a
+    image_credit:
+      author: Javys
+      licence: rights-reserved
+      url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=BGA-320-9A'
