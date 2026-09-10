@@ -41,3 +41,16 @@ models:
       licence: rights-reserved
       url: 'http://www.digital-watch.com/DWL/1work/casio-a659'
     discontinued: true
+
+# ADDED 2026-09-10: 1 more reference, from
+# casiodigitalwatches.com (community) -- a vintage model list, Wayback Machine
+# snapshot 20190102132624. Only id, ref, source and module (where stated) are
+# written; no year (the site dates the module, not the reference) and no image
+# (the site carries none, and javys.com's per-reference page was checked and
+# had nothing either). The entries above predate this block and are untouched.
+#
+  - id: a659-2
+    ref: A659-2
+    source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage2.htm', kind: community }
+    module: 'QW160'
+    image: null
