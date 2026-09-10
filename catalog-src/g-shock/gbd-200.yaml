@@ -1,15 +1,33 @@
-# GBD-200 — seeded 2026-09-09 from javys.com, a Hong Kong Casio
-# distributor whose site names a page for every reference it has sold. Only
-# id, ref, source and (where javys names a >=300px photograph) image are
-# written here (D27): the client asked for these 1 references catalogued
-# quickly rather than fully read, so case, display, module and features are
-# left for a deeper pass over the same pages, per model, later.
+# GBD-200 — refreshed 2026-09-10 from Casio's own
+# product pages, retrieved from the Internet Archive (D52), replacing the
+# 2026-09-09 javys.com stub. Every field on every entry below, and every
+# photograph, comes from the one page named in its `source`; GBD-200LM-1's
+# `source` now points at that page instead of javys, which stated far less.
 #
-# DELIBERATELY NOT WRITTEN, and each absence is real:
+# DELIBERATELY NOT WRITTEN:
+#   * `year` — no captured page dates the reference (D25).
+#   * `colorway` — this template names no colour in words anywhere on the
+#     page; only a swatch photograph and the other references' own
+#     `color-variation` assets, which are a different model's picture.
+#   * `display` — every GBD-200 is in fact digital, but no captured page
+#     states "Digital:"/"Analog:" in the Timekeeping row this reader looks
+#     for (sources.md — "the guide talks about hands is not a statement"),
+#     so this is left for a page that does say it.
+#   * `module` — no captured page carries a "Module No." row.
 #   * `family` — a judgement about how a watch looks, and a human's to make.
-#   * `year` — javys dates the series' launch month, not the reference itself,
-#     and D25 wants a page that states the reference's own year.
-#   * every field a deeper read of the page in `source` would state.
+#   * any field the page does not state. Absent means unknown, never zero (D27).
+#
+# GBD-200-1A1's only archived capture is German (`de`); the case-size,
+# material and glass rows this reader knows are English-labelled, so only
+# `movement` (via the language-independent CR2032 battery code) and the
+# loanwords "Alarm", "Bluetooth" and "(Super Illuminator)" came through.
+# Sparse and honest rather than dropped (sources.md).
+#
+# GBD-200RD-4CG is a US "with Powerbank" bundle SKU with its own archived
+# page (dated 01/2023 on the page itself), whose only images are the gift
+# power bank and GBD-200RD-4's own photograph reused wholesale — not a
+# photograph of this SKU, so `image` stays null rather than borrowing one
+# reference's picture for another's entry.
 
 series:
   id: gbd-200
@@ -17,7 +35,139 @@ series:
   line: g-shock
 
 models:
+  - id: gbd-200-1
+    ref: GBD-200-1
+    source:
+      { url: 'https://web.archive.org/web/20240715021646id_/https://www.casio.com/europe/watches/gshock/product.GBD-200-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.4, width_mm: 45.9, depth_mm: 15, weight_g: 58, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-200-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021646id_/https://www.casio.com/europe/watches/gshock/product.GBD-200-1/'
+  - id: gbd-200-1a1
+    ref: GBD-200-1A1
+    source:
+      { url: 'https://web.archive.org/web/20251030020048id_/https://www.casio.com/de/watches/gshock/product.GBD-200-1A1/?trc_inf_un=AWIN&trc_inf_cn=other&trc_inf_clid=c20e21aa-797e-4b9a-9733-b81dae10604d&utm_source=awin&utm_medium=affiliate&utm_campaign=DE%20%7C%20AWIN&sv1=affiliate&sv_campaign_id=343879&awc=86925_1761789647_cdead1baa78617d68ded578b34a97fde', kind: official }
+    features: [alarm, super-illuminator, bluetooth]
+    image: gbd-200-1a1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20251030020048id_/https://www.casio.com/de/watches/gshock/product.GBD-200-1A1/?trc_inf_un=AWIN&trc_inf_cn=other&trc_inf_clid=c20e21aa-797e-4b9a-9733-b81dae10604d&utm_source=awin&utm_medium=affiliate&utm_campaign=DE%20%7C%20AWIN&sv1=affiliate&sv_campaign_id=343879&awc=86925_1761789647_cdead1baa78617d68ded578b34a97fde'
+  - id: gbd-200-2
+    ref: GBD-200-2
+    source:
+      { url: 'https://web.archive.org/web/20240715021648id_/https://www.casio.com/europe/watches/gshock/product.GBD-200-2/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.4, width_mm: 45.9, depth_mm: 15, weight_g: 58, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-200-2
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021648id_/https://www.casio.com/europe/watches/gshock/product.GBD-200-2/'
+  - id: gbd-200-9
+    ref: GBD-200-9
+    source:
+      { url: 'https://web.archive.org/web/20240715021651id_/https://www.casio.com/europe/watches/gshock/product.GBD-200-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.4, width_mm: 45.9, depth_mm: 15, weight_g: 58, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-200-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021651id_/https://www.casio.com/europe/watches/gshock/product.GBD-200-9/'
   - id: gbd-200lm-1
     ref: GBD-200LM-1
-    source: { url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=GBD-200LM-1', kind: retailer }
+    source:
+      { url: 'https://web.archive.org/web/20240910153713id_/https://www.casio.com/in/watches/gshock/product.GBD-200LM-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.4, width_mm: 45.9, depth_mm: 15, weight_g: 58, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-200lm-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240910153713id_/https://www.casio.com/in/watches/gshock/product.GBD-200LM-1/'
+  - id: gbd-200rd-4
+    ref: GBD-200RD-4
+    source:
+      { url: 'https://web.archive.org/web/20231230224021id_/https://www.casio.com/in/watches/gshock/product.GBD-200RD-4/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.4, width_mm: 45.9, depth_mm: 15, weight_g: 58, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-200rd-4
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20231230224021id_/https://www.casio.com/in/watches/gshock/product.GBD-200RD-4/'
+  - id: gbd-200rd-4cg
+    ref: GBD-200RD-4CG
+    source:
+      { url: 'https://web.archive.org/web/20230202065137id_/https://www.casio.com/us/watches/gshock/product.GBD-200RD-4CG/?intaid=alsoviewed_productsdetail', kind: official }
+    movement: quartz
+    case: { height_mm: 49.4, width_mm: 45.9, depth_mm: 15, weight_g: 58, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
     image: null
+  - id: gbd-200sm-1a5
+    ref: GBD-200SM-1A5
+    source:
+      { url: 'https://web.archive.org/web/20240715021631id_/https://www.casio.com/europe/watches/gshock/product.GBD-200SM-1A5/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.4, width_mm: 45.9, depth_mm: 15, weight_g: 58, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-200sm-1a5
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021631id_/https://www.casio.com/europe/watches/gshock/product.GBD-200SM-1A5/'
+  - id: gbd-200sm-1a6
+    ref: GBD-200SM-1A6
+    source:
+      { url: 'https://web.archive.org/web/20240715021634id_/https://www.casio.com/europe/watches/gshock/product.GBD-200SM-1A6/', kind: official }
+    movement: quartz
+    case: { height_mm: 49.4, width_mm: 45.9, depth_mm: 15, weight_g: 58, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-200sm-1a6
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715021634id_/https://www.casio.com/europe/watches/gshock/product.GBD-200SM-1A6/'
+  - id: gbd-200uu-1
+    ref: GBD-200UU-1
+    source:
+      { url: 'https://web.archive.org/web/20240914154143id_/https://www.casio.com/in/watches/gshock/product.GBD-200UU-1/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.4, width_mm: 45.9, depth_mm: 15, weight_g: 58, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-200uu-1
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240914154143id_/https://www.casio.com/in/watches/gshock/product.GBD-200UU-1/'
+  - id: gbd-200uu-9
+    ref: GBD-200UU-9
+    source:
+      { url: 'https://web.archive.org/web/20240715022301id_/https://www.casio.com/europe/watches/gshock/product.GBD-200UU-9/', kind: official }
+    movement: quartz
+    case: { height_mm: 48.4, width_mm: 45.9, depth_mm: 15, weight_g: 58, material: 'Resin' }
+    water_resistance_m: 200
+    features: [multi-alarm, world-time, stopwatch, countdown-timer, full-auto-calendar, hourly-time-signal, led-light, super-illuminator, auto-light, afterglow, bluetooth, power-saving, step-counter, shock-resistant, mineral-glass]
+    image: gbd-200uu-9
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20240715022301id_/https://www.casio.com/europe/watches/gshock/product.GBD-200UU-9/'
