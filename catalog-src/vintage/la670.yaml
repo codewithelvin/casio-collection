@@ -355,3 +355,21 @@ models:
       author: Javys
       licence: rights-reserved
       url: 'https://www.javys.com/casio/new_web/watch/new_watch.php?id=LA670WGA-6'
+
+# ADDED 2026-09-10: 2 more references, from
+# casiodigitalwatches.com (community) -- a vintage model list, Wayback Machine
+# snapshot 20190102132624. Only id, ref, source and module (where stated) are
+# written; no year (the site dates the module, not the reference) and no image
+# (the site carries none, and javys.com's per-reference page was checked and
+# had nothing either). The entries above predate this block and are untouched.
+#
+  - id: la670w
+    ref: LA670W
+    source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage9.htm', kind: community }
+    module: 'QW526'
+    image: null
+  - id: la670wg
+    ref: LA670WG
+    source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage9.htm', kind: community }
+    module: 'QW526'
+    image: null
