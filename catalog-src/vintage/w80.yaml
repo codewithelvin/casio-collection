@@ -1,0 +1,29 @@
+# W80 — seeded 2026-09-10 from casiodigitalwatches.com's vintage
+# model list (Wayback Machine snapshot 20190102132624, casiopage1.htm-
+# casiopage12.htm), a community roster of pre-web Casio references with no
+# official-page equivalent. Only id, ref, source and module (where the site's
+# own Module column states one) are written here (D27).
+#
+# DELIBERATELY NOT WRITTEN, and each absence is real:
+#   * `year` — the site's "Launched" column dates the MODULE, not the
+#     reference: checked against 222 references this catalogue already had a
+#     sourced year for, it disagreed on 51% of them, always in lockstep with
+#     the module family rather than the individual reference.
+#   * `image` — the site carries no photographs anywhere, on any of its
+#     pages; javys.com was also checked per reference and found nothing
+#     (its own inventory does not reach back before circa 2000).
+#   * `family` — a judgement about how a watch looks, and a human's to make.
+#   * everything a deeper read of a page this catalogue does not have would
+#     state: `case`, `colorway`, `features`, `display`, `movement`.
+
+series:
+  id: w80
+  name: W80
+  line: vintage
+
+models:
+  - id: w80us-1v
+    ref: W80US-1V
+    source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage12.htm', kind: community }
+    module: 'QW938'
+    image: null
