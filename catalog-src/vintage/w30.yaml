@@ -15,6 +15,11 @@
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * everything a deeper read of a page this catalogue does not have would
 #     state: `case`, `colorway`, `features`, `display`, `movement`.
+#
+# W30's photograph was backfilled 2026-09-10 from the Digital Watch Library,
+# whose own `CASIO | W-30- AKA [Swimmer]` page states the same module
+# (152/QW152) independently of casiodigitalwatches.com; the photo itself
+# shows the swimmer/marlin dial logo the AKA names.
 
 series:
   id: w30
@@ -26,4 +31,8 @@ models:
     ref: W30
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage2.htm', kind: community }
     module: 'QW152'
-    image: null
+    image: w30
+    image_credit:
+      author: Felix_77
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-w-30'

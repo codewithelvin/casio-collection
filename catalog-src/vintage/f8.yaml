@@ -15,6 +15,11 @@
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * everything a deeper read of a page this catalogue does not have would
 #     state: `case`, `colorway`, `features`, `display`, `movement`.
+#
+# F8's photograph was backfilled 2026-09-10 from the Digital Watch Library,
+# whose own `CASIO | F-8` page states the same module (58/QW58)
+# independently of casiodigitalwatches.com; the watch's own dial prints
+# "F-8".
 
 series:
   id: f8
@@ -26,4 +31,8 @@ models:
     ref: F8
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage10.htm', kind: community }
     module: 'QW58'
-    image: null
+    image: f8
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_f-81'

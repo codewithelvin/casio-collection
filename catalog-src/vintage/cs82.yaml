@@ -15,6 +15,10 @@
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * everything a deeper read of a page this catalogue does not have would
 #     state: `case`, `colorway`, `features`, `display`, `movement`.
+#
+# CS82's photograph was backfilled 2026-09-10 from the Digital Watch Library,
+# whose own `CASIO | CS-82` page states the same module (231/QW231)
+# independently of casiodigitalwatches.com.
 
 series:
   id: cs82
@@ -26,4 +30,8 @@ models:
     ref: CS82
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage3.htm', kind: community }
     module: 'QW231'
-    image: null
+    image: cs82
+    image_credit:
+      author: Casiophile
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_cs-822'

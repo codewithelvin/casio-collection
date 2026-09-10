@@ -15,6 +15,15 @@
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * everything a deeper read of a page this catalogue does not have would
 #     state: `case`, `colorway`, `features`, `display`, `movement`.
+#
+# CGW50-1V's year and photograph were backfilled 2026-09-10 from Casio's own
+# 50th-anniversary Heritage timeline (1980s decade), a THIRD official surface
+# neither the sitemap nor the archive's product-page index knows about (see
+# the casio-heritage-pages-are-a-third-surface note). The tile is titled
+# `CGW-50` and this series holds exactly one reference, so the series-level
+# tile settles this specific model without ambiguity. `year` comes from the
+# asset's own filename (`1989_CGW-50_SQ.png`), not from casiodigitalwatches.com,
+# hence `year_source` rather than folding it into `source`.
 
 series:
   id: cgw50
@@ -27,4 +36,10 @@ models:
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage11.htm', kind: community }
     module: 'QW830'
     water_resistance_m: 100
-    image: null
+    year: 1989
+    year_source: 'https://web.archive.org/web/20241028215448/https://www.casio.com/intl/watches/50th/Heritage/1980s/'
+    image: cgw50-1v
+    image_credit:
+      author: Casio Computer Co., Ltd.
+      licence: rights-reserved
+      url: 'https://web.archive.org/web/20241028215448/https://www.casio.com/intl/watches/50th/Heritage/1980s/'

@@ -15,6 +15,11 @@
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * everything a deeper read of a page this catalogue does not have would
 #     state: `case`, `colorway`, `features`, `display`, `movement`.
+#
+# AB200's photograph was backfilled 2026-09-10 from the Digital Watch Library,
+# whose own `CASIO | AB-200- AKA [Telememo]` page states the same module
+# (321/QW321) independently of casiodigitalwatches.com; the photo's dial
+# itself prints "TELEMEMO 20", confirming the AKA.
 
 series:
   id: ab200
@@ -26,7 +31,11 @@ models:
     ref: AB200
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage5.htm', kind: community }
     module: 'QW321'
-    image: null
+    image: ab200
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_ab-200'
   - id: ab200g
     ref: AB200G
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage5.htm', kind: community }

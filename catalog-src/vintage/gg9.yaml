@@ -15,6 +15,11 @@
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * everything a deeper read of a page this catalogue does not have would
 #     state: `case`, `colorway`, `features`, `display`, `movement`.
+#
+# GG9's photograph was backfilled 2026-09-10 from the Digital Watch Library,
+# whose own `CASIO | GG-9- AKA [Golf]` page states the same module
+# (227/QW227) independently of casiodigitalwatches.com; the watch's own dial
+# prints "GG-9".
 
 series:
   id: gg9
@@ -26,4 +31,8 @@ models:
     ref: GG9
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage3.htm', kind: community }
     module: 'QW227'
-    image: null
+    image: gg9
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_gg-9'

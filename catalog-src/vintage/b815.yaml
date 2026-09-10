@@ -52,4 +52,8 @@ models:
     ref: B815
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage2.htm', kind: community }
     module: 'QW155'
-    image: null
+    image: b815
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-b815'

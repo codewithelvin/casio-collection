@@ -15,6 +15,10 @@
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * everything a deeper read of a page this catalogue does not have would
 #     state: `case`, `colorway`, `features`, `display`, `movement`.
+#
+# B210's photograph was backfilled 2026-09-10 from the Digital Watch Library,
+# whose own `CASIO | B210` page states the same module (400/QW400)
+# independently of casiodigitalwatches.com.
 
 series:
   id: b210
@@ -26,7 +30,11 @@ models:
     ref: B210
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage8.htm', kind: community }
     module: 'QW400'
-    image: null
+    image: b210
+    image_credit:
+      author: Digital Watch Library
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-b210'
   - id: b210g
     ref: B210G
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage8.htm', kind: community }

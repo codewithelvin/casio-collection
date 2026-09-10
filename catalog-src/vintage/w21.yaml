@@ -15,6 +15,10 @@
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * everything a deeper read of a page this catalogue does not have would
 #     state: `case`, `colorway`, `features`, `display`, `movement`.
+#
+# W21's photograph was backfilled 2026-09-10 from the Digital Watch Library,
+# whose own `CASIO | W-21- AKA [Lefty]` page states the same module
+# (152/QW152) independently of casiodigitalwatches.com.
 
 series:
   id: w21
@@ -26,4 +30,8 @@ models:
     ref: W21
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage2.htm', kind: community }
     module: 'QW152'
-    image: null
+    image: w21
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_w-212'

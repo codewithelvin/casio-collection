@@ -15,6 +15,12 @@
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * everything a deeper read of a page this catalogue does not have would
 #     state: `case`, `colorway`, `features`, `display`, `movement`.
+#
+# A151's photograph was backfilled 2026-09-10 from the Digital Watch Library,
+# whose own `CASIO | A151` page names this bare reference and states the same
+# module (415/QW415) independently of casiodigitalwatches.com -- two unrelated
+# sites agreeing on identity, which is what justified the photo without a
+# second full read of the page.
 
 series:
   id: a151
@@ -26,7 +32,11 @@ models:
     ref: A151
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage8.htm', kind: community }
     module: 'QW415'
-    image: null
+    image: a151
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio-a151'
   - id: a151g
     ref: A151G
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage9.htm', kind: community }

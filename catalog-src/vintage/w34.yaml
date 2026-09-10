@@ -15,6 +15,10 @@
 #   * `family` — a judgement about how a watch looks, and a human's to make.
 #   * everything a deeper read of a page this catalogue does not have would
 #     state: `case`, `colorway`, `features`, `display`, `movement`.
+#
+# W34's photograph was backfilled 2026-09-10 from the Digital Watch Library,
+# whose own `CASIO | W-34` page states the same module (415/QW415)
+# independently of casiodigitalwatches.com.
 
 series:
   id: w34
@@ -27,7 +31,11 @@ models:
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage9.htm', kind: community }
     module: 'QW415'
     water_resistance_m: 50
-    image: null
+    image: w34
+    image_credit:
+      author: 'The Digital Watch Library'
+      licence: rights-reserved
+      url: 'http://www.digital-watch.com/DWL/1work/casio_w-341'
   - id: w34a-1a
     ref: W34A-1A
     source: { url: 'https://web.archive.org/web/20190102132624/http://www.casiodigitalwatches.com/casiopage9.htm', kind: community }
